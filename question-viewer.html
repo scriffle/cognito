@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Question Viewer</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #242836;
+  --border: #2e3347;
+  --text: #e4e6f0;
+  --text2: #9298b4;
+  --accent: #6c8cff;
+  --accent2: #4a6adf;
+  --green: #4ade80;
+  --red: #f87171;
+  --orange: #fb923c;
+  --yellow: #fbbf24;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+
+.app { display: grid; grid-template-columns: 340px 1fr; height: 100vh; }
+
+/* Sidebar */
+.sidebar { background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; display: flex; flex-direction: column; }
+.sidebar-header { padding: 20px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--surface); z-index: 10; }
+.sidebar-header h1 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+.sidebar-header .subtitle { font-size: 12px; color: var(--text2); }
+
+.stats-bar { display: flex; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--border); background: var(--surface2); }
+.stat { text-align: center; flex: 1; }
+.stat-num { font-size: 20px; font-weight: 700; color: var(--accent); }
+.stat-label { font-size: 10px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
+
+.filters { padding: 12px 20px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 8px; }
+.filters select, .filters input {
+  width: 100%; padding: 8px 10px; background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text); border-radius: 6px; font-size: 13px; outline: none;
+}
+.filters select:focus, .filters input:focus { border-color: var(--accent); }
+
+.file-list { flex: 1; overflow-y: auto; }
+.file-group { border-bottom: 1px solid var(--border); }
+.file-group-header {
+  padding: 8px 20px; background: var(--surface2); font-size: 11px; font-weight: 600;
+  color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px;
+  display: flex; justify-content: space-between; cursor: pointer; user-select: none;
+}
+.file-group-header:hover { background: var(--border); }
+.file-item {
+  padding: 10px 20px; cursor: pointer; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 10px; transition: background 0.1s;
+}
+.file-item:hover { background: var(--surface2); }
+.file-item.active { background: rgba(108, 140, 255, 0.15); border-left: 3px solid var(--accent); }
+.file-item .code { font-size: 13px; font-weight: 600; font-family: 'SF Mono', 'Fira Code', monospace; }
+.file-item .info { font-size: 11px; color: var(--text2); }
+.file-item .badge {
+  font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-left: auto; white-space: nowrap;
+}
+.badge-count { background: rgba(108, 140, 255, 0.1); color: var(--accent); }
+
+/* Main content */
+.main { overflow-y: auto; padding: 0; }
+.main-empty { display: flex; align-items: center; justify-content: center; height: 100%; color: var(--text2); font-size: 15px; }
+
+.code-header {
+  padding: 24px 32px; border-bottom: 1px solid var(--border); background: var(--surface);
+  position: sticky; top: 0; z-index: 10;
+}
+.code-header h2 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.code-header .meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--text2); }
+.code-header .meta span { display: flex; align-items: center; gap: 4px; }
+.key-knowledge { margin-top: 10px; padding: 12px 16px; background: var(--surface2); border-radius: 8px; font-size: 13px; border-left: 3px solid var(--accent); }
+
+.level-tabs {
+  display: flex; gap: 0; padding: 0 32px; border-bottom: 1px solid var(--border);
+  background: var(--surface); position: sticky; top: 0; z-index: 9;
+}
+.level-tab {
+  padding: 12px 20px; cursor: pointer; font-size: 13px; font-weight: 500;
+  color: var(--text2); border-bottom: 2px solid transparent; transition: all 0.15s;
+}
+.level-tab:hover { color: var(--text); background: var(--surface2); }
+.level-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.level-tab .tab-count { font-size: 11px; margin-left: 4px; opacity: 0.7; }
+
+.type-filters {
+  display: flex; gap: 8px; padding: 16px 32px; align-items: center;
+}
+.type-btn {
+  padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600;
+  cursor: pointer; border: 1px solid var(--border); background: var(--surface2); color: var(--text2);
+  transition: all 0.15s;
+}
+.type-btn:hover { border-color: var(--accent); color: var(--text); }
+.type-btn.active { background: var(--accent2); border-color: var(--accent); color: white; }
+.type-label { font-size: 12px; color: var(--text2); margin-right: 4px; }
+
+.questions-grid { padding: 16px 32px 32px; display: flex; flex-direction: column; gap: 12px; }
+
+.q-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px 20px; transition: border-color 0.15s;
+}
+.q-card:hover { border-color: var(--accent); }
+.q-card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.q-type {
+  font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.q-type-tf { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+.q-type-mc { background: rgba(108, 140, 255, 0.15); color: var(--accent); }
+.q-type-cloze { background: rgba(167, 139, 250, 0.15); color: var(--purple); }
+.q-variant { font-size: 11px; color: var(--text2); }
+.q-bloom { font-size: 11px; color: var(--teal); margin-left: auto; }
+
+.q-stem { font-size: 14px; margin-bottom: 12px; line-height: 1.6; }
+.q-stem .blank {
+  background: var(--accent2); color: white; padding: 2px 8px; border-radius: 4px;
+  font-weight: 600; font-size: 12px;
+}
+
+/* TF display */
+.q-answer { display: flex; gap: 12px; margin-bottom: 8px; }
+.q-correct-badge {
+  padding: 4px 12px; border-radius: 6px; font-weight: 600; font-size: 13px;
+}
+.q-correct-true { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+.q-correct-false { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+
+/* MC options */
+.mc-options { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+.mc-option {
+  padding: 8px 12px; border-radius: 6px; font-size: 13px; display: flex; gap: 8px;
+  border: 1px solid var(--border); background: var(--surface2);
+}
+.mc-option.correct { border-color: var(--green); background: rgba(74, 222, 128, 0.08); }
+.mc-option .letter {
+  font-weight: 700; color: var(--text2); min-width: 18px;
+}
+.mc-option.correct .letter { color: var(--green); }
+
+/* Cloze blanks */
+.cloze-blanks { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.cloze-blank { background: var(--surface2); border-radius: 8px; padding: 10px 14px; }
+.cloze-blank-header { font-size: 11px; color: var(--text2); margin-bottom: 6px; font-weight: 600; }
+.cloze-options { display: flex; gap: 6px; flex-wrap: wrap; }
+.cloze-opt {
+  padding: 4px 10px; border-radius: 5px; font-size: 12px; border: 1px solid var(--border);
+}
+.cloze-opt.correct { border-color: var(--green); color: var(--green); background: rgba(74, 222, 128, 0.08); }
+.cloze-opt.distractor { color: var(--text2); }
+
+/* Explanation */
+.q-explanation {
+  font-size: 12px; color: var(--text2); padding: 8px 12px; background: var(--surface2);
+  border-radius: 6px; margin-top: 8px; border-left: 2px solid var(--green);
+}
+.q-explanation strong { color: var(--text); }
+
+.distractor-exp {
+  font-size: 12px; color: var(--text2); padding: 6px 12px; background: var(--surface2);
+  border-radius: 6px; margin-top: 4px; border-left: 2px solid var(--orange);
+}
+
+details { margin-top: 8px; }
+details summary { cursor: pointer; font-size: 12px; color: var(--accent); user-select: none; }
+details summary:hover { text-decoration: underline; }
+
+.loading { text-align: center; padding: 40px; color: var(--text2); }
+
+@media (max-width: 900px) {
+  .app { grid-template-columns: 1fr; }
+  .sidebar { max-height: 40vh; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>VC2 Question Viewer</h1>
+      <div class="subtitle">Victorian Curriculum v2 Assessment Questions</div>
+    </div>
+    <div class="stats-bar" id="stats-bar"></div>
+    <div class="filters">
+      <select id="filter-level"><option value="">All Levels</option></select>
+      <select id="filter-subject"><option value="">All Subjects</option></select>
+      <input type="text" id="filter-search" placeholder="Search codes...">
+    </div>
+    <div class="file-list" id="file-list"></div>
+  </div>
+  <div class="main" id="main">
+    <div class="main-empty">Select a question file from the sidebar</div>
+  </div>
+</div>
+
+<script>
+let allFiles = [];
+let currentFile = null;
+let currentData = null;
+let activeLevel = 'toLevel2';
+let activeTypes = new Set(['tf', 'mc', 'cloze']);
+
+// Cache loaded question data so we don't re-fetch
+const fileCache = {};
+
+async function init() {
+  try {
+    const res = await fetch('files-index.json');
+    allFiles = await res.json();
+  } catch (e) {
+    document.getElementById('file-list').innerHTML =
+      '<div class="loading">Could not load files-index.json. Run: python3 build-index.py</div>';
+    return;
+  }
+  renderStats();
+  populateFilters();
+  renderFileList();
+}
+
+function renderStats() {
+  const total = allFiles.length;
+  const questions = allFiles.reduce((s, f) => s + f.questionCount, 0);
+  const bar = document.getElementById('stats-bar');
+  bar.innerHTML = `
+    <div class="stat"><div class="stat-num">${total}</div><div class="stat-label">Files</div></div>
+    <div class="stat"><div class="stat-num">${questions.toLocaleString()}</div><div class="stat-label">Questions</div></div>
+    <div class="stat"><div class="stat-num">${new Set(allFiles.map(f=>f.level)).size}</div><div class="stat-label">Levels</div></div>
+    <div class="stat"><div class="stat-num">${new Set(allFiles.map(f=>f.subject)).size}</div><div class="stat-label">Subjects</div></div>
+  `;
+}
+
+function populateFilters() {
+  const levels = [...new Set(allFiles.map(f => f.level))].sort((a,b) => a-b);
+  const subjects = [...new Set(allFiles.map(f => f.subject))].sort();
+  const ls = document.getElementById('filter-level');
+  levels.forEach(l => { const o = document.createElement('option'); o.value = l; o.textContent = 'Year ' + l; ls.appendChild(o); });
+  const ss = document.getElementById('filter-subject');
+  subjects.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; ss.appendChild(o); });
+  ls.onchange = ss.onchange = renderFileList;
+  document.getElementById('filter-search').oninput = renderFileList;
+}
+
+function getFilteredFiles() {
+  const level = document.getElementById('filter-level').value;
+  const subject = document.getElementById('filter-subject').value;
+  const search = document.getElementById('filter-search').value.toLowerCase();
+  return allFiles.filter(f => {
+    if (level && f.level != level) return false;
+    if (subject && f.subject !== subject) return false;
+    if (search && !f.code.toLowerCase().includes(search)) return false;
+    return true;
+  });
+}
+
+function renderFileList() {
+  const files = getFilteredFiles();
+  const grouped = {};
+  files.forEach(f => {
+    const key = 'Level ' + f.level + ' / ' + f.subject;
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push(f);
+  });
+  const container = document.getElementById('file-list');
+  container.innerHTML = '';
+  Object.entries(grouped).forEach(([group, items]) => {
+    const div = document.createElement('div');
+    div.className = 'file-group';
+    div.innerHTML = '<div class="file-group-header"><span>' + group + '</span><span>' + items.length + ' codes</span></div>';
+    items.forEach(f => {
+      const item = document.createElement('div');
+      item.className = 'file-item' + (currentFile === f.path ? ' active' : '');
+      item.innerHTML =
+        '<div>' +
+          '<div class="code">' + esc(f.code) + '</div>' +
+          '<div class="info">' + (f.ageBand ? 'Ages ' + esc(f.ageBand) : '') + '</div>' +
+        '</div>' +
+        '<span class="badge badge-count">' + f.questionCount + 'q</span>';
+      item.onclick = () => loadFile(f);
+      div.appendChild(item);
+    });
+    container.appendChild(div);
+  });
+}
+
+async function loadFile(fileInfo) {
+  currentFile = fileInfo.path;
+  renderFileList();
+
+  // Load from static JSON path: questions/<path>
+  if (fileCache[fileInfo.path]) {
+    currentData = fileCache[fileInfo.path];
+    renderMain(fileInfo);
+    return;
+  }
+
+  const main = document.getElementById('main');
+  main.innerHTML = '<div class="loading">Loading...</div>';
+  try {
+    const res = await fetch('questions/' + fileInfo.path);
+    currentData = await res.json();
+    fileCache[fileInfo.path] = currentData;
+    renderMain(fileInfo);
+  } catch (e) {
+    main.innerHTML = '<div class="loading">Failed to load: questions/' + esc(fileInfo.path) + '</div>';
+  }
+}
+
+function renderMain(fileInfo) {
+  const main = document.getElementById('main');
+  const meta = currentData._meta || {};
+  const bloomsNames = {
+    toLevel2: 'Level 2 \u2014 Remember',
+    toLevel3: 'Level 3 \u2014 Understand',
+    toLevel4: 'Level 4 \u2014 Apply',
+    toLevel5: 'Level 5 \u2014 Analyse'
+  };
+
+  let html =
+    '<div class="code-header">' +
+      '<h2>' + esc(fileInfo.code) + '</h2>' +
+      '<div class="meta">' +
+        '<span>Year ' + fileInfo.level + '</span>' +
+        '<span>Ages ' + esc(meta.ageBand || '?') + '</span>' +
+        '<span>' + esc(meta.area || fileInfo.subject) + '</span>' +
+        '<span>Generated: ' + esc(meta.generatedAt || 'unknown') + '</span>' +
+      '</div>' +
+      '<div class="key-knowledge">' + esc(meta.keyKnowledge || '') + '</div>' +
+    '</div>' +
+    '<div class="level-tabs">';
+
+  ['toLevel2', 'toLevel3', 'toLevel4', 'toLevel5'].forEach(lvl => {
+    const count = (currentData[lvl] || []).length;
+    const cls = lvl === activeLevel ? ' active' : '';
+    html += '<div class="level-tab' + cls + '" onclick="switchLevel(\'' + lvl + '\')">' +
+      bloomsNames[lvl] + '<span class="tab-count">(' + count + ')</span></div>';
+  });
+
+  html += '</div><div class="type-filters"><span class="type-label">Show:</span>';
+  ['tf', 'mc', 'cloze'].forEach(t => {
+    const cls = activeTypes.has(t) ? ' active' : '';
+    html += '<div class="type-btn' + cls + '" onclick="toggleType(\'' + t + '\')">' + t.toUpperCase() + '</div>';
+  });
+  html += '</div><div class="questions-grid">';
+
+  const questions = currentData[activeLevel] || [];
+  const filtered = questions.filter(q => activeTypes.has(q.type));
+  filtered.forEach(q => { html += renderQuestion(q); });
+
+  if (filtered.length === 0) {
+    html += '<div style="text-align:center;color:var(--text2);padding:40px;">No questions match the current filters</div>';
+  }
+
+  html += '</div>';
+  main.innerHTML = html;
+}
+
+function renderQuestion(q) {
+  let html = '<div class="q-card"><div class="q-card-header">';
+  html += '<span class="q-type q-type-' + q.type + '">' + q.type + '</span>';
+  html += '<span class="q-variant">Variant ' + q.variant + '</span>';
+  html += '<span class="q-bloom">Bloom\'s ' + q.bloomsLevel + '</span>';
+  html += '</div>';
+
+  if (q.type === 'tf') {
+    html += '<div class="q-stem">' + esc(q.question) + '</div>';
+    html += '<div class="q-answer"><span class="q-correct-badge ' + (q.correct === 'True' ? 'q-correct-true' : 'q-correct-false') + '">' + q.correct + '</span></div>';
+    html += '<div class="q-explanation"><strong>Correct:</strong> ' + esc(q.correctExplanation || '') + '</div>';
+    if (q.distractors && q.distractors.length > 0) {
+      html += '<details><summary>Distractor explanation</summary>';
+      q.distractors.forEach(d => {
+        html += '<div class="distractor-exp"><strong>' + esc(d.answer) + ':</strong> ' + esc(d.explanation || '') + '</div>';
+      });
+      html += '</details>';
+    }
+  } else if (q.type === 'mc') {
+    html += '<div class="q-stem">' + esc(q.question) + '</div>';
+    html += '<div class="mc-options">';
+    const letters = 'ABCDEFGH';
+    const allOptions = [{ text: q.correct, isCorrect: true, explanation: q.correctExplanation }];
+    (q.distractors || []).forEach(d => allOptions.push({ text: d.answer, isCorrect: false, explanation: d.explanation }));
+    allOptions.forEach((opt, i) => {
+      const cls = opt.isCorrect ? ' correct' : '';
+      html += '<div class="mc-option' + cls + '"><span class="letter">' + letters[i] + '</span><span>' + esc(opt.text || '') + '</span></div>';
+    });
+    html += '</div>';
+    html += '<div class="q-explanation"><strong>Correct (' + letters[0] + '):</strong> ' + esc(q.correctExplanation || '') + '</div>';
+    if (q.distractors && q.distractors.length > 0) {
+      html += '<details><summary>Distractor explanations</summary>';
+      q.distractors.forEach((d, i) => {
+        html += '<div class="distractor-exp"><strong>' + letters[i+1] + ':</strong> ' + esc(d.explanation || '') + '</div>';
+      });
+      html += '</details>';
+    }
+  } else if (q.type === 'cloze') {
+    let sentence = esc(q.sentence || '');
+    sentence = sentence.replace(/\{\{blank:(\w+)\}\}/g, '<span class="blank">blank $1</span>');
+    html += '<div class="q-stem">' + sentence + '</div>';
+    html += '<div class="cloze-blanks">';
+    (q.blanks || []).forEach(b => {
+      html += '<div class="cloze-blank"><div class="cloze-blank-header">Blank ' + esc(b.id) + '</div><div class="cloze-options">';
+      html += '<span class="cloze-opt correct">' + esc(b.correct || '') + '</span>';
+      (b.distractors || []).forEach(d => {
+        html += '<span class="cloze-opt distractor">' + esc(d.answer || '') + '</span>';
+      });
+      html += '</div></div>';
+    });
+    html += '</div>';
+    if (q.scoring) {
+      html += '<div style="font-size:11px;color:var(--text2);margin-top:4px;">Scoring: ' + esc(q.scoring) + '</div>';
+    }
+    if (q.blanks && q.blanks.length > 0) {
+      html += '<details><summary>Blank explanations</summary>';
+      (q.blanks || []).forEach(b => {
+        html += '<div class="q-explanation"><strong>Blank ' + esc(b.id) + ' (' + esc(b.correct) + '):</strong> ' + esc(b.correctExplanation || '') + '</div>';
+        (b.distractors || []).forEach(d => {
+          html += '<div class="distractor-exp"><strong>' + esc(d.answer) + ':</strong> ' + esc(d.explanation || '') + ' <em style="opacity:0.6">[' + esc(d.misconceptionSource || '') + ']</em></div>';
+        });
+      });
+      html += '</details>';
+    }
+  }
+
+  html += '</div>';
+  return html;
+}
+
+function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = String(s); return d.innerHTML; }
+
+function switchLevel(lvl) { activeLevel = lvl; renderMain(allFiles.find(f => f.path === currentFile)); }
+function toggleType(t) { if (activeTypes.has(t)) activeTypes.delete(t); else activeTypes.add(t); renderMain(allFiles.find(f => f.path === currentFile)); }
+
+init();
+</script>
+</body>
+</html>
