@@ -229,12 +229,11 @@ function renderStats() {
   const total = allFiles.length;
   const questions = allFiles.reduce((s, f) => s + f.questionCount, 0);
   const bar = document.getElementById('stats-bar');
-  bar.innerHTML = `
-    <div class="stat"><div class="stat-num">${total}</div><div class="stat-label">Files</div></div>
-    <div class="stat"><div class="stat-num">${questions.toLocaleString()}</div><div class="stat-label">Questions</div></div>
-    <div class="stat"><div class="stat-num">${new Set(allFiles.map(f=>f.level)).size}</div><div class="stat-label">Levels</div></div>
-    <div class="stat"><div class="stat-num">${new Set(allFiles.map(f=>f.subject)).size}</div><div class="stat-label">Subjects</div></div>
-  `;
+  bar.innerHTML =
+    '<div class="stat"><div class="stat-num">' + total + '</div><div class="stat-label">Files</div></div>' +
+    '<div class="stat"><div class="stat-num">' + questions.toLocaleString() + '</div><div class="stat-label">Questions</div></div>' +
+    '<div class="stat"><div class="stat-num">' + new Set(allFiles.map(f=>f.level)).size + '</div><div class="stat-label">Levels</div></div>' +
+    '<div class="stat"><div class="stat-num">' + new Set(allFiles.map(f=>f.subject)).size + '</div><div class="stat-label">Subjects</div></div>';
 }
 
 function populateFilters() {
