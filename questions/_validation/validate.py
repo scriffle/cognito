@@ -309,16 +309,29 @@ def validate_mc_question(q: dict, age_band: str, location: str, result: Validati
         if owc > max_option:
             result.error(location, "MC_OPTION_WORDS", f"Option {i+1} is {owc} words, max {max_option}")
 
-    # Option length parity (±20%)
+    # Option length parity by word count (±20%)
     if option_wcs:
         mean_wc = sum(option_wcs) / len(option_wcs)
         if mean_wc > 0:
             for i, owc in enumerate(option_wcs):
                 if owc > mean_wc * 1.2 + 1:  # +1 for rounding tolerance on short options
-                    result.warning(
+                    result.error(
                         location,
                         "MC_OPTION_PARITY",
                         f"Option {i+1} ({owc} words) is >20% longer than mean ({mean_wc:.1f})",
+                    )
+
+    # Option length parity by character count (±30%)
+    option_ccs = [len(o) for o in all_options if o]
+    if option_ccs:
+        mean_cc = sum(option_ccs) / len(option_ccs)
+        if mean_cc > 0:
+            for i, occ in enumerate(option_ccs):
+                if occ > mean_cc * 1.3 + 5:  # +5 for tolerance on short options
+                    result.error(
+                        location,
+                        "MC_OPTION_CHAR_PARITY",
+                        f"Option {i+1} ({occ} chars) is >30% longer than mean ({mean_cc:.1f})",
                     )
 
     # Explanation
@@ -415,6 +428,53 @@ def validate_tf_balance(data: dict, result: ValidationResult):
             result.error(key, "TF_BALANCE", f"FALSE is {pct:.0f}%, minimum 55% (got {false_count}/{total})")
         elif pct > 65:
             result.error(key, "TF_BALANCE", f"FALSE is {pct:.0f}%, maximum 65% (got {false_count}/{total})")
+
+
+def validate_mc_correct_position_balance(data: dict, age_band: str, result: ValidationResult):
+    """Check that the correct answer is not systematically the longest across the file."""
+    params = AGE_BAND_PARAMS.get(age_band, {})
+    option_count = params.get("mc_option_count", 3)
+
+    # Threshold: chance level for n options is 1/n. Allow small headroom.
+    # 3 options: chance ~33%, threshold 40%. 4 options: chance ~25%, threshold 30%.
+    if option_count == 3:
+        threshold_pct = 40
+    elif option_count == 4:
+        threshold_pct = 30
+    else:
+        threshold_pct = 40  # fallback
+
+    total_mc = 0
+    longest_count = 0
+    for blooms in [2, 3, 4, 5]:
+        key = f"toLevel{blooms}"
+        arr = data.get(key, [])
+        for q in arr:
+            if not isinstance(q, dict) or q.get("type") != "mc":
+                continue
+            correct = q.get("correct", "")
+            distractors = q.get("distractors", [])
+            if not correct or not distractors:
+                continue
+            total_mc += 1
+            correct_wc = word_count(correct)
+            distractor_wcs = [word_count(d.get("answer", "")) for d in distractors]
+            max_distractor_wc = max(distractor_wcs) if distractor_wcs else 0
+            # Count only STRICTLY longest — ties are not exploitable
+            if correct_wc > max_distractor_wc:
+                longest_count += 1
+
+    if total_mc == 0:
+        return
+
+    pct = longest_count / total_mc * 100
+    if pct > threshold_pct:
+        result.error(
+            "file",
+            "MC_SYSTEMATIC_LENGTH_BIAS",
+            f"Correct answer is the longest in {longest_count}/{total_mc} MC questions "
+            f"({pct:.0f}%); maximum is {threshold_pct}% for {option_count}-option questions",
+        )
 
 
 def validate_variant_uniqueness(data: dict, result: ValidationResult):
@@ -529,20 +589,132 @@ def validate_file(filepath: str) -> ValidationResult:
 
     # Cross-question checks
     validate_tf_balance(data, result)
+    validate_mc_correct_position_balance(data, age_band, result)
     validate_variant_uniqueness(data, result)
 
     return result
+
+
+def audit_mc_length_bias(directory: str) -> dict:
+    """Run only MC length checks across a directory; return summary dict."""
+    files = []
+    for root, dirs, filenames in os.walk(directory):
+        for fn in filenames:
+            if fn.endswith(".json") and not fn.startswith(".") and ".skeleton." not in fn and ".pre-mc-regen." not in fn and ".mc-brief." not in fn:
+                files.append(os.path.join(root, fn))
+    files.sort()
+
+    biased_files = []
+    file_reports = []
+
+    for fp in files:
+        try:
+            with open(fp) as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError):
+            continue
+
+        meta = data.get("_meta", {})
+        age_band = meta.get("ageBand", "13-14")
+        params = AGE_BAND_PARAMS.get(age_band, {})
+        option_count = params.get("mc_option_count", 4)
+        threshold_pct = 50 if option_count == 3 else 40
+
+        total_mc = 0
+        longest_count = 0
+        outliers = []
+
+        for blooms in [2, 3, 4, 5]:
+            key = f"toLevel{blooms}"
+            arr = data.get(key, [])
+            for q in arr:
+                if not isinstance(q, dict) or q.get("type") != "mc":
+                    continue
+                correct = q.get("correct", "")
+                distractors = q.get("distractors", [])
+                if not correct or not distractors:
+                    continue
+                total_mc += 1
+                correct_wc = word_count(correct)
+                distractor_wcs = [word_count(d.get("answer", "")) for d in distractors]
+                max_distractor_wc = max(distractor_wcs) if distractor_wcs else 0
+                # Count only STRICTLY longest — ties are not exploitable
+                if correct_wc > max_distractor_wc:
+                    longest_count += 1
+
+                # Track worst character-length outliers
+                correct_cc = len(correct)
+                avg_dist_cc = sum(len(d.get("answer", "")) for d in distractors) / len(distractors)
+                if avg_dist_cc > 0 and correct_cc > avg_dist_cc * 1.5:
+                    pct_longer = (correct_cc / avg_dist_cc - 1) * 100
+                    outliers.append({
+                        "location": f"{key}[v{q.get('variant','?')}]",
+                        "correct_cc": correct_cc,
+                        "avg_dist_cc": avg_dist_cc,
+                        "pct_longer": pct_longer,
+                    })
+
+        if total_mc == 0:
+            continue
+
+        pct = longest_count / total_mc * 100
+        is_biased = pct > threshold_pct
+
+        report = {
+            "file": fp,
+            "code": os.path.basename(fp).replace(".json", ""),
+            "total_mc": total_mc,
+            "longest_count": longest_count,
+            "pct": pct,
+            "threshold_pct": threshold_pct,
+            "option_count": option_count,
+            "is_biased": is_biased,
+            "outliers": sorted(outliers, key=lambda x: -x["pct_longer"])[:3],
+        }
+        file_reports.append(report)
+        if is_biased:
+            biased_files.append(fp)
+
+    return {
+        "total_files": len(file_reports),
+        "biased_files": biased_files,
+        "file_reports": file_reports,
+    }
 
 
 # --- CLI ---
 
 def main():
     parser = argparse.ArgumentParser(description="Validate VC2 assessment question files")
-    parser.add_argument("path", help="Path to a JSON file or directory (with --batch)")
+    parser.add_argument("path", help="Path to a JSON file or directory (with --batch or --audit)")
     parser.add_argument("--batch", action="store_true", help="Validate all JSON files in directory")
+    parser.add_argument("--audit", action="store_true", help="Run only MC length-bias checks across a directory")
     parser.add_argument("--json", action="store_true", help="Output results as JSON")
     parser.add_argument("--strict", action="store_true", help="Treat warnings as errors")
     args = parser.parse_args()
+
+    if args.audit:
+        result = audit_mc_length_bias(args.path)
+        biased = result["biased_files"]
+        for r in result["file_reports"]:
+            if not r["is_biased"]:
+                continue
+            print(f"{r['code']}: {r['longest_count']}/{r['total_mc']} MC questions have correct=longest ({r['pct']:.0f}%) — SYSTEMATIC BIAS")
+            if r["outliers"]:
+                print(f"  Worst outliers:")
+                for o in r["outliers"]:
+                    print(f"    {o['location']}: correct ({o['correct_cc']} chars) vs avg distractor ({o['avg_dist_cc']:.0f} chars) — {o['pct_longer']:.0f}% longer")
+            print()
+
+        # Write biased file list
+        out_path = Path(__file__).parent / "audit-biased-files.txt"
+        with open(out_path, "w") as f:
+            for fp in biased:
+                f.write(fp + "\n")
+
+        print(f"AUDIT SUMMARY: {len(biased)}/{result['total_files']} files show systematic length bias")
+        print(f"Biased file list written to: {out_path}")
+        sys.exit(0 if not biased else 1)
 
     files = []
     if args.batch:

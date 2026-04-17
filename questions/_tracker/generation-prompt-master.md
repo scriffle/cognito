@@ -84,7 +84,18 @@ Every number below is a HARD LIMIT. Exceeding any limit is a validation failure.
 1. **Cover-the-options test.** A knowledgeable student must be able to answer the stem without seeing the options. If not, rewrite as a direct question.
 2. **Active voice** in stems (passive only when agent genuinely unknown).
 3. **One correct answer.** Exactly one option is defensibly correct.
-4. **Option homogeneity.** All options: same grammatical form, same type of content, similar length (within ±20% word count). The correct answer must NOT be the longest option.
+4. **Write distractors first. Always.**
+   a. For EVERY MC question, regardless of Bloom's level, write the distractors BEFORE writing the correct answer. This is mandatory, not a suggestion. Writing the correct answer first causes systematic length bias — analysis of 3,000 existing questions showed the correct answer was longest 53% of the time (target: 25%).
+   b. **Distractors are authentically complex incorrect statements.** Each distractor must:
+      - Directly address the question being asked (not dodge it or answer a different question)
+      - Contain the same level of specific detail, qualification, and domain terminology as the correct answer
+      - Sound like a knowledgeable student's genuine reasoning that happens to contain a specific error
+      - Be wrong for ONE identifiable reason, not because it is vague, oversimplified, or obviously incomplete
+   c. **All options must be interchangeable in form.** A test-wise student scanning for the "most detailed" or "most complete-sounding" option must find no signal. Every option — correct and incorrect — should read as a confident, specific, substantive claim about the topic.
+   d. **Distractor length must match or exceed the correct answer.** The simplest way to prevent length cues is to ensure distractors are never shorter than the correct answer. If the correct answer is 18 words, every distractor should be 16-22 words — not 10-12.
+   e. All options within a question must be within ±20% word count AND ±30% character count of each other.
+   f. Across the 50 MC questions in this file, the correct answer should be the longest option in no more than 25% of questions (+5% tolerance = 30% hard cap). The VALIDATOR WILL REJECT files exceeding 30%.
+   g. THE VALIDATOR WILL REJECT the file if (a) any single question violates the parity rule, or (b) the correct answer is the longest in more than 30% of MC questions.
 5. **No "All of the above" or "None of the above."**
 6. **No K-type items** ("A and C", "Both B and D").
 7. **No keyword cues.** Do not repeat a keyword from the stem only in the correct answer.
@@ -242,8 +253,8 @@ Before completing EACH question, verify:
 - [ ] Word count within limit for this age band and question type
 - [ ] No prohibited language patterns for this age band
 - [ ] Correct number of options/distractors for this age band
-- [ ] All options grammatically parallel and similar length (±20%)
-- [ ] Correct answer is NOT the longest option
+- [ ] For EACH MC question: count words AND characters in correct answer and every distractor. No option may be >20% longer/shorter than the mean word count, or >30% longer/shorter than the mean character count.
+- [ ] Across all MC questions in this file: track how often the correct answer is the longest. Target: roughly 1/n. Maximum: 50% (3-option) or 40% (4-option). If trending higher, deliberately make the next correct answers shorter or pad the distractors.
 - [ ] Every distractor explanation names a specific misconception
 - [ ] TF is a single proposition (no compound claims)
 - [ ] Cloze blanks test content words only
@@ -263,7 +274,7 @@ Before completing EACH Bloom's level, verify:
 
 These are the most common generation errors. Actively avoid them:
 
-1. **Do not make the correct answer longer than distractors.** This is the #1 test-wiseness exploit.
+1. **Distractors must match the correct answer in complexity and length.** This is the #1 test-wiseness exploit — analysis of 3,000 existing questions showed the correct answer was longest 53% of the time. The fix: read the correct answer, note its word count, level of detail, and use of domain terminology, then write each distractor to match that complexity with an authentically incorrect but plausible claim. Each distractor should sound like a student who studied hard but misunderstood one specific thing.
 2. **Do not write TF statements with compound propositions.** "X and Y" where X is true but Y is false is ambiguous.
 3. **Do not blank function words in cloze.** "The {{blank:1}} grows" where the answer is "plant" is fine. "{{blank:1}} plant grows" where the answer is "The" is not.
 4. **Do not use past tense for facts/principles.** "Water froze at 0°C" implies it no longer does.

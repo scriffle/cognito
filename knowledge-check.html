@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Knowledge Check</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #242836;
+  --border: #2e3347;
+  --text: #e4e6f0;
+  --text2: #9298b4;
+  --accent: #6c8cff;
+  --accent2: #4a6adf;
+  --green: #4ade80;
+  --red: #f87171;
+  --orange: #fb923c;
+  --yellow: #fbbf24;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --radius: 10px;
+  --transition: 0.15s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa;
+    --surface: #ffffff;
+    --surface2: #eef0f6;
+    --border: #d8dbe6;
+    --text: #1a1d27;
+    --text2: #5c6280;
+    --accent: #4a6adf;
+    --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa;
+  --surface: #ffffff;
+  --surface2: #eef0f6;
+  --border: #d8dbe6;
+  --text: #1a1d27;
+  --text2: #5c6280;
+  --accent: #4a6adf;
+  --accent2: #3554c9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.5;
+  min-height: 100vh; min-height: 100dvh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Skip link */
+.skip-link {
+  position: absolute; top: -40px; left: 0; background: var(--accent);
+  color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus { top: 0; }
+
+/* Header */
+.app-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; border-bottom: 1px solid var(--border);
+  background: var(--surface); position: sticky; top: 0; z-index: 50;
+}
+.back-btn {
+  background: none; border: none; color: var(--text2); cursor: pointer;
+  font-size: 18px; padding: 6px 10px; border-radius: 6px;
+  transition: background var(--transition); display: none; min-width: 44px; min-height: 44px;
+  display: flex; align-items: center; justify-content: center;
+}
+.back-btn:hover { background: var(--surface2); color: var(--text); }
+.back-btn[hidden] { display: none; }
+.header-title { font-size: 16px; font-weight: 600; flex: 1; }
+.header-subtitle { font-size: 12px; color: var(--text2); }
+.header-right { display: flex; gap: 8px; align-items: center; }
+.theme-toggle {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text2);
+  cursor: pointer; padding: 6px 10px; border-radius: 6px; font-size: 14px;
+  min-width: 44px; min-height: 44px; transition: all var(--transition);
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--text); }
+.dash-btn {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text2);
+  cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px;
+  font-weight: 600; min-height: 44px; transition: all var(--transition);
+}
+.dash-btn:hover { border-color: var(--accent); color: var(--text); }
+
+/* Main */
+main { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.view { display: none; }
+.view.active { display: block; }
+
+/* Level Select */
+.level-select { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh; gap: 32px; }
+.level-select h2 { font-size: 28px; font-weight: 700; text-align: center; }
+.level-select .desc { color: var(--text2); text-align: center; max-width: 480px; font-size: 15px; }
+.level-cards { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+.level-card {
+  background: var(--surface); border: 2px solid var(--border); border-radius: 16px;
+  padding: 32px 48px; cursor: pointer; text-align: center; transition: all 0.2s;
+  min-width: 200px;
+}
+.level-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.level-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.level-card .level-num { font-size: 48px; font-weight: 800; color: var(--accent); }
+.level-card .level-label { font-size: 14px; color: var(--text2); margin-top: 4px; }
+.level-card .level-ages { font-size: 12px; color: var(--text2); margin-top: 2px; }
+.continue-link {
+  padding: 12px 24px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); color: var(--text2); font-size: 13px; cursor: pointer;
+  transition: all var(--transition);
+}
+.continue-link:hover { border-color: var(--accent); color: var(--text); }
+.progress-summary { color: var(--text2); font-size: 13px; text-align: center; }
+
+/* Area Grid */
+.area-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.area-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; cursor: pointer; transition: all var(--transition);
+}
+.area-card:hover { border-color: var(--accent); }
+.area-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.area-card .area-name { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+.area-card .area-stats { font-size: 12px; color: var(--text2); margin-bottom: 8px; }
+.area-card .area-stats .assessed { color: var(--accent); font-weight: 600; }
+.progress-bar {
+  height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden;
+}
+.progress-fill { height: 100%; border-radius: 3px; transition: width 0.3s ease; }
+.progress-fill.green { background: var(--green); }
+.progress-fill.mixed { background: linear-gradient(90deg, var(--green), var(--orange)); }
+
+/* Unit Browser */
+.unit-accordion { display: flex; flex-direction: column; gap: 8px; }
+.unit-header {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 20px; cursor: pointer; transition: all var(--transition);
+  display: flex; align-items: center; gap: 12px; user-select: none;
+}
+.unit-header:hover { border-color: var(--accent); }
+.unit-header:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.unit-chevron { font-size: 12px; color: var(--text2); transition: transform 0.2s; min-width: 16px; }
+.unit-header.open .unit-chevron { transform: rotate(90deg); }
+.unit-title { font-size: 14px; font-weight: 600; flex: 1; }
+.unit-meta { font-size: 11px; color: var(--text2); display: flex; gap: 8px; align-items: center; }
+.unit-progress-mini { width: 60px; }
+.unit-body {
+  max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+}
+.unit-body.open { max-height: 5000px; }
+.unit-body-inner { padding: 4px 0 8px 28px; display: flex; flex-direction: column; gap: 6px; }
+
+/* CD Card */
+.cd-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; cursor: pointer; transition: all var(--transition);
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.cd-card:hover { border-color: var(--accent); }
+.cd-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cd-card.unavailable { opacity: 0.5; cursor: default; }
+.cd-card.unavailable:hover { border-color: var(--border); }
+.cd-left { flex: 1; min-width: 0; }
+.cd-code {
+  font-size: 11px; font-weight: 600; font-family: 'SF Mono', 'Fira Code', monospace;
+  color: var(--text2); margin-bottom: 2px;
+}
+.cd-desc { font-size: 13px; line-height: 1.5; }
+.cd-strand {
+  font-size: 10px; color: var(--purple); margin-top: 4px;
+  text-transform: uppercase; letter-spacing: 0.3px;
+}
+.cd-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
+.state-badge {
+  font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 5px;
+  text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;
+}
+.state-meeting-confirmed { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+.state-above-standard { background: rgba(168, 130, 255, 0.15); color: var(--purple); }
+.state-meeting { background: rgba(108, 140, 255, 0.15); color: var(--accent); }
+.state-approaching { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+.state-beginning { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+.state-unassessed { background: var(--surface2); color: var(--text2); }
+.state-unavailable { background: var(--surface2); color: var(--text2); font-style: italic; }
+.cd-date { font-size: 10px; color: var(--text2); }
+
+/* Selection View */
+.select-info {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 18px; margin-bottom: 16px; border-left: 3px solid var(--accent);
+  font-size: 14px; color: var(--text2);
+}
+.select-unit {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  margin-bottom: 8px; overflow: hidden;
+}
+.select-unit-header {
+  padding: 12px 16px; display: flex; align-items: center; gap: 12px;
+  cursor: pointer; user-select: none; transition: background var(--transition);
+}
+.select-unit-header:hover { background: var(--surface2); }
+.select-unit-header label { display: flex; align-items: center; gap: 10px; cursor: pointer; flex: 1; font-size: 14px; font-weight: 600; }
+.select-unit-header input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: var(--accent); flex-shrink: 0; }
+.select-unit-count { font-size: 11px; color: var(--text2); }
+.select-unit-chevron { font-size: 12px; color: var(--text2); transition: transform 0.2s; min-width: 16px; }
+.select-unit-header.open .select-unit-chevron { transform: rotate(90deg); }
+.select-unit-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.select-unit-body.open { max-height: 3000px; }
+.select-cd {
+  padding: 8px 16px 8px 46px; display: flex; align-items: flex-start; gap: 10px;
+  border-top: 1px solid var(--border); transition: background var(--transition);
+}
+.select-cd:hover { background: var(--surface2); }
+.select-cd input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; accent-color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+.select-cd-info { flex: 1; min-width: 0; }
+.select-cd-code { font-size: 11px; font-family: 'SF Mono', 'Fira Code', monospace; color: var(--text2); }
+.select-cd-desc { font-size: 13px; }
+.select-bottom {
+  position: sticky; bottom: 0; background: var(--surface); border-top: 1px solid var(--border);
+  padding: 12px 20px; display: flex; align-items: center; justify-content: space-between;
+  z-index: 20; margin-top: 16px; border-radius: var(--radius);
+}
+.select-count { font-size: 13px; color: var(--text2); }
+.select-confirm {
+  padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 600;
+  cursor: pointer; border: none; background: var(--accent); color: white;
+  transition: all 0.15s; min-height: 44px;
+}
+.select-confirm:hover:not(:disabled) { background: var(--accent2); }
+.select-confirm:disabled { opacity: 0.4; cursor: default; }
+.change-selection-btn {
+  font-size: 12px; color: var(--accent); background: none; border: 1px solid var(--border);
+  padding: 4px 12px; border-radius: 6px; cursor: pointer; transition: all var(--transition);
+  min-height: 32px;
+}
+.change-selection-btn:hover { border-color: var(--accent); background: var(--surface2); }
+
+/* Quiz View */
+.quiz-container { max-width: 640px; margin: 0 auto; }
+.quiz-header { margin-bottom: 20px; }
+.quiz-cd-info {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 18px; margin-bottom: 16px; border-left: 3px solid var(--accent);
+}
+.quiz-cd-info .cd-label { font-size: 12px; color: var(--text2); font-weight: 600; margin-bottom: 4px; }
+.quiz-cd-info .cd-text { font-size: 14px; }
+.quiz-progress { display: flex; gap: 6px; align-items: center; margin-bottom: 16px; }
+.quiz-dot {
+  width: 10px; height: 10px; border-radius: 50%; background: var(--surface2);
+  border: 1px solid var(--border); transition: all 0.2s;
+}
+.quiz-dot.current { background: var(--accent); border-color: var(--accent); transform: scale(1.2); }
+.quiz-dot.correct { background: var(--green); border-color: var(--green); }
+.quiz-dot.incorrect { background: var(--red); border-color: var(--red); }
+.quiz-counter { font-size: 12px; color: var(--text2); margin-left: auto; }
+
+.quiz-question {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; margin-bottom: 16px;
+}
+.q-bloom-badge {
+  font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px;
+  background: rgba(45, 212, 191, 0.15); color: var(--teal); margin-bottom: 12px;
+  display: inline-block; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.q-type-badge {
+  font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px;
+  text-transform: uppercase; letter-spacing: 0.5px; margin-left: 6px; display: inline-block;
+}
+.q-type-badge.tf { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+.q-type-badge.mc { background: rgba(108, 140, 255, 0.15); color: var(--accent); }
+.q-type-badge.cloze { background: rgba(167, 139, 250, 0.15); color: var(--purple); }
+
+.q-stem { font-size: 16px; margin-bottom: 20px; line-height: 1.6; }
+.q-stem .blank-marker {
+  background: var(--accent2); color: white; padding: 2px 10px; border-radius: 4px;
+  font-weight: 600; font-size: 13px;
+}
+
+/* TF Buttons */
+.tf-options { display: flex; gap: 12px; }
+.tf-btn {
+  flex: 1; padding: 14px; border-radius: 8px; font-size: 16px; font-weight: 600;
+  cursor: pointer; border: 2px solid var(--border); background: var(--surface2);
+  color: var(--text); transition: all 0.15s; min-height: 52px;
+}
+.tf-btn:hover:not(:disabled) { border-color: var(--accent); }
+.tf-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.tf-btn:disabled { cursor: default; opacity: 0.7; }
+.tf-btn.selected-correct { border-color: var(--green); background: rgba(74, 222, 128, 0.12); color: var(--green); }
+.tf-btn.selected-incorrect { border-color: var(--red); background: rgba(248, 113, 113, 0.12); color: var(--red); }
+.tf-btn.reveal-correct { border-color: var(--green); background: rgba(74, 222, 128, 0.08); }
+
+/* MC Options */
+.mc-opts { display: flex; flex-direction: column; gap: 8px; }
+.mc-opt-btn {
+  padding: 12px 16px; border-radius: 8px; font-size: 14px;
+  cursor: pointer; border: 2px solid var(--border); background: var(--surface2);
+  color: var(--text); transition: all 0.15s; text-align: left;
+  display: flex; gap: 10px; align-items: flex-start; min-height: 48px;
+}
+.mc-opt-btn:hover:not(:disabled) { border-color: var(--accent); }
+.mc-opt-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mc-opt-btn:disabled { cursor: default; }
+.mc-opt-btn .mc-letter {
+  font-weight: 700; color: var(--text2); min-width: 20px; flex-shrink: 0;
+}
+.mc-opt-btn.selected-correct { border-color: var(--green); background: rgba(74, 222, 128, 0.12); }
+.mc-opt-btn.selected-correct .mc-letter { color: var(--green); }
+.mc-opt-btn.selected-incorrect { border-color: var(--red); background: rgba(248, 113, 113, 0.12); }
+.mc-opt-btn.selected-incorrect .mc-letter { color: var(--red); }
+.mc-opt-btn.reveal-correct { border-color: var(--green); background: rgba(74, 222, 128, 0.06); }
+.mc-opt-btn.reveal-correct .mc-letter { color: var(--green); }
+
+/* Cloze */
+.cloze-sentence { font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
+.cloze-blank-slot {
+  display: inline-block; min-width: 80px; border-bottom: 2px solid var(--accent);
+  text-align: center; padding: 2px 8px; font-weight: 600; color: var(--accent);
+  margin: 0 2px;
+}
+.cloze-blank-slot.filled { color: var(--text); }
+.cloze-blank-slot.correct { border-color: var(--green); color: var(--green); }
+.cloze-blank-slot.incorrect { border-color: var(--red); color: var(--red); }
+.cloze-blanks-area { display: flex; flex-direction: column; gap: 12px; }
+.cloze-blank-group { background: var(--surface2); border-radius: 8px; padding: 12px 14px; }
+.cloze-blank-label { font-size: 11px; color: var(--text2); font-weight: 600; margin-bottom: 8px; }
+.cloze-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.cloze-chip {
+  padding: 6px 14px; border-radius: 6px; font-size: 13px;
+  cursor: pointer; border: 1px solid var(--border); background: var(--surface);
+  color: var(--text); transition: all 0.15s; min-height: 36px;
+}
+.cloze-chip:hover:not(:disabled) { border-color: var(--accent); }
+.cloze-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cloze-chip:disabled { cursor: default; opacity: 0.7; }
+.cloze-chip.selected { border-color: var(--accent); background: rgba(108, 140, 255, 0.15); color: var(--accent); }
+.cloze-chip.correct { border-color: var(--green); background: rgba(74, 222, 128, 0.12); color: var(--green); }
+.cloze-chip.incorrect { border-color: var(--red); background: rgba(248, 113, 113, 0.12); color: var(--red); }
+.cloze-chip.reveal-correct { border-color: var(--green); background: rgba(74, 222, 128, 0.06); color: var(--green); }
+
+/* Feedback */
+.feedback-bar {
+  padding: 12px 16px; border-radius: 8px; font-size: 14px; font-weight: 600;
+  margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+}
+.feedback-bar.correct { background: rgba(74, 222, 128, 0.12); color: var(--green); border: 1px solid rgba(74, 222, 128, 0.3); }
+.feedback-bar.incorrect { background: rgba(248, 113, 113, 0.12); color: var(--red); border: 1px solid rgba(248, 113, 113, 0.3); }
+.feedback-explanation {
+  font-size: 13px; color: var(--text2); padding: 10px 14px; background: var(--surface2);
+  border-radius: 6px; margin-bottom: 16px; line-height: 1.6;
+}
+
+.next-btn, .submit-cloze-btn {
+  padding: 12px 32px; border-radius: 8px; font-size: 14px; font-weight: 600;
+  cursor: pointer; border: none; background: var(--accent); color: white;
+  transition: all 0.15s; min-height: 44px;
+}
+.next-btn:hover, .submit-cloze-btn:hover { background: var(--accent2); }
+.next-btn:focus-visible, .submit-cloze-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.quiz-actions { display: flex; justify-content: flex-end; gap: 8px; }
+
+/* Results View */
+.results-container { max-width: 640px; margin: 0 auto; text-align: center; }
+.results-state {
+  font-size: 48px; margin-bottom: 8px;
+}
+.results-label { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+.results-score { font-size: 16px; color: var(--text2); margin-bottom: 24px; }
+.results-breakdown {
+  text-align: left; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;
+}
+.result-item {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; display: flex; align-items: center; gap: 12px;
+}
+.result-icon { font-size: 18px; min-width: 24px; text-align: center; }
+.result-info { flex: 1; min-width: 0; }
+.result-q-text { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.result-bloom { font-size: 10px; color: var(--teal); text-transform: uppercase; }
+.why-section {
+  text-align: left; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; margin-bottom: 24px;
+  border-left: 3px solid var(--accent);
+}
+.why-section h4 { font-size: 13px; color: var(--text2); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.why-section ul { padding-left: 20px; font-size: 14px; }
+.why-section li { margin-bottom: 6px; }
+.results-actions { display: flex; gap: 12px; justify-content: center; }
+.btn-secondary {
+  padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600;
+  cursor: pointer; border: 1px solid var(--border); background: var(--surface2);
+  color: var(--text); transition: all var(--transition); min-height: 44px;
+}
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Dashboard */
+.dash-stats { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+.dash-stat {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; flex: 1; min-width: 140px; text-align: center;
+}
+.dash-stat-num { font-size: 28px; font-weight: 700; }
+.dash-stat-num.purple { color: var(--purple); }
+.dash-stat-num.green { color: var(--green); }
+.dash-stat-num.yellow { color: var(--yellow); }
+.dash-stat-num.red { color: var(--red); }
+.dash-stat-num.accent { color: var(--accent); }
+.dash-stat-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
+.dash-filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.dash-filter-btn {
+  padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600;
+  cursor: pointer; border: 1px solid var(--border); background: var(--surface2); color: var(--text2);
+  transition: all var(--transition); min-height: 36px;
+}
+.dash-filter-btn:hover { border-color: var(--accent); color: var(--text); }
+.dash-filter-btn.active { background: var(--accent2); border-color: var(--accent); color: white; }
+.dash-area-section { margin-bottom: 16px; }
+.dash-area-label { font-size: 13px; font-weight: 600; color: var(--text2); margin-bottom: 6px; padding: 4px 0; }
+.dash-heatmap { display: flex; gap: 3px; flex-wrap: wrap; }
+.dash-cell {
+  width: 18px; height: 18px; border-radius: 3px; cursor: pointer;
+  transition: all var(--transition); position: relative;
+}
+.dash-cell:hover { transform: scale(1.4); z-index: 2; }
+.dash-cell.above-standard { background: var(--purple); }
+.dash-cell.meeting-confirmed { background: var(--green); }
+.dash-cell.meeting { background: var(--accent); }
+.dash-cell.approaching { background: var(--yellow); }
+.dash-cell.beginning { background: var(--red); }
+.dash-cell.unassessed { background: var(--surface2); border: 1px solid var(--border); }
+.dash-cell.unavailable { background: var(--surface2); opacity: 0.3; }
+.dash-legend { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.dash-legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text2); }
+.dash-legend-swatch { width: 12px; height: 12px; border-radius: 2px; }
+
+/* Tooltip */
+.tooltip {
+  position: fixed; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 12px; font-size: 12px; z-index: 100;
+  pointer-events: none; max-width: 300px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  display: none;
+}
+
+/* Toast */
+.toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 200; display: flex; flex-direction: column; gap: 8px; }
+.toast {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; font-size: 13px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  animation: toast-in 0.2s ease; max-width: 320px;
+}
+.toast.info { border-left: 3px solid var(--accent); }
+.toast.success { border-left: 3px solid var(--green); }
+.toast.warn { border-left: 3px solid var(--orange); }
+
+/* Loading */
+.loading-spinner {
+  display: flex; align-items: center; justify-content: center;
+  padding: 40px; color: var(--text2); font-size: 14px; gap: 8px;
+}
+.spinner {
+  width: 20px; height: 20px; border: 2px solid var(--border);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes toast-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+@media (max-width: 600px) {
+  main { padding: 12px; }
+  .level-card { padding: 24px 32px; min-width: 160px; }
+  .level-card .level-num { font-size: 36px; }
+  .area-grid { grid-template-columns: 1fr; }
+  .quiz-question { padding: 16px; }
+  .q-stem { font-size: 15px; }
+  .tf-options { flex-direction: column; }
+  .header-subtitle { display: none; }
+}
+
+@media print {
+  .app-header, .back-btn, .theme-toggle, .dash-btn, .next-btn, .btn-secondary, .toast-container { display: none !important; }
+  body { background: white; color: black; }
+  .view { display: block !important; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header class="app-header" role="banner">
+  <button class="back-btn" id="back-btn" hidden aria-label="Go back">&#8592;</button>
+  <div>
+    <div class="header-title" id="header-title">Knowledge Check</div>
+    <div class="header-subtitle" id="header-subtitle">Victorian Curriculum 2.0</div>
+  </div>
+  <div class="header-right">
+    <button class="dash-btn" id="dash-btn" hidden>Dashboard</button>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9681;</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="view active" id="view-level-select">
+    <div class="level-select">
+      <h2>Check Your Knowledge</h2>
+      <p class="desc">Choose your year level to begin. You'll work through short quizzes that help you understand what you already know and where to focus next.</p>
+      <div class="level-cards" role="group" aria-label="Select your year level">
+        <div class="level-card" tabindex="0" role="button" data-level="7" aria-label="Year 7, ages 12 to 13">
+          <div class="level-num">7</div>
+          <div class="level-label">Year 7</div>
+          <div class="level-ages">Ages 12-13</div>
+        </div>
+        <div class="level-card" tabindex="0" role="button" data-level="8" aria-label="Year 8, ages 13 to 14">
+          <div class="level-num">8</div>
+          <div class="level-label">Year 8</div>
+          <div class="level-ages">Ages 13-14</div>
+        </div>
+        <div class="level-card" tabindex="0" role="button" data-level="9" aria-label="Year 9, ages 14 to 15">
+          <div class="level-num">9</div>
+          <div class="level-label">Year 9</div>
+          <div class="level-ages">Ages 14-15</div>
+        </div>
+        <div class="level-card" tabindex="0" role="button" data-level="10" aria-label="Year 10, ages 15 to 16">
+          <div class="level-num">10</div>
+          <div class="level-label">Year 10</div>
+          <div class="level-ages">Ages 15-16</div>
+        </div>
+      </div>
+      <div id="continue-area"></div>
+      <div id="progress-summary" class="progress-summary"></div>
+    </div>
+  </div>
+
+  <div class="view" id="view-areas"></div>
+  <div class="view" id="view-select"></div>
+  <div class="view" id="view-units"></div>
+  <div class="view" id="view-quiz"></div>
+  <div class="view" id="view-results"></div>
+  <div class="view" id="view-dashboard"></div>
+</main>
+
+<div class="tooltip" id="tooltip"></div>
+<div class="toast-container" id="toast-container" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+(function() {
+
+// ============ STATE ============
+const STORAGE_KEY = 'vc2-knowledge-check';
+const BLOOM_LABELS = { toLevel2: 'Remember', toLevel3: 'Understand', toLevel4: 'Apply', toLevel5: 'Analyse' };
+const BLOOM_KEYS = ['toLevel2', 'toLevel3', 'toLevel4', 'toLevel5'];
+const EMAB_STATES = ['beginning', 'approaching', 'meeting', 'meeting-confirmed', 'above-standard'];
+const EMAB_LABELS = { 'above-standard': 'Above Expected Standard', 'meeting-confirmed': 'Meeting Confirmed', meeting: 'Meeting', approaching: 'Approaching', beginning: 'Beginning' };
+const EMAB_DESCRIPTORS = {
+  '7': {
+    'above-standard': 'I am above the expected standard. I can analyse, evaluate, and apply what I have learned in new and unfamiliar situations, and I do so consistently.',
+    'meeting-confirmed': 'I can analyse and evaluate this topic and apply my knowledge confidently.',
+    meeting: 'I understand this topic and can apply my knowledge.',
+    approaching: 'I can recall key facts but I am still developing my understanding.',
+    beginning: 'I need more practice with the basics of this topic.'
+  },
+  '8': {
+    'above-standard': 'I am above the expected standard. I can analyse, evaluate, and apply what I have learned in new and unfamiliar situations, and I do so consistently.',
+    'meeting-confirmed': 'I can analyse and evaluate this topic and apply my knowledge confidently.',
+    meeting: 'I understand this topic and can apply my knowledge.',
+    approaching: 'I can recall key facts but I am still developing my understanding.',
+    beginning: 'I need more practice with the basics of this topic.'
+  },
+  '9': {
+    'above-standard': 'I am above the expected standard. I can analyse, evaluate, and apply what I have learned in new and unfamiliar situations, and I do so consistently.',
+    'meeting-confirmed': 'I can analyse, evaluate, and apply disciplinary knowledge confidently in varied contexts.',
+    meeting: 'I understand the key concepts and can apply them to standard problems.',
+    approaching: 'I can recall and recognise key concepts but need more practice applying them.',
+    beginning: 'I need to revisit the foundational concepts for this topic.'
+  },
+  '10': {
+    'above-standard': 'I am above the expected standard. I can analyse, evaluate, and apply what I have learned in new and unfamiliar situations, and I do so consistently.',
+    'meeting-confirmed': 'I can analyse, evaluate, and apply disciplinary knowledge confidently in varied contexts.',
+    meeting: 'I understand the key concepts and can apply them to standard problems.',
+    approaching: 'I can recall and recognise key concepts but need more practice applying them.',
+    beginning: 'I need to revisit the foundational concepts for this topic.'
+  }
+};
+
+let unitsData = null;
+let explanationsData = null;
+let availableCodes = new Set();
+let questionCache = new Map();
+
+let appState = {
+  version: 1,
+  selectedLevel: null,
+  theme: 'system',
+  results: {},
+  selections: {}  // keyed by "areaCode_band", e.g. "S_8": { selectedCodes: [...], savedAt: "..." }
+};
+
+let currentView = 'level-select';
+let viewParams = {};
+let quizState = null;
+
+// ============ PERSISTENCE ============
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.version === 1) {
+        appState = parsed;
+        if (!appState.selections) appState.selections = {};
+        if (!appState.results) appState.results = {};
+      }
+    }
+  } catch(e) {
+    toast('Could not load saved progress', 'warn');
+  }
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+  } catch(e) {
+    toast('Could not save progress', 'warn');
+  }
+}
+
+function getResult(code) { return appState.results[code] || null; }
+
+function setResult(code, emabState, answers) {
+  const attempt = { date: new Date().toISOString(), state: emabState, answers };
+  if (!appState.results[code]) {
+    appState.results[code] = { state: emabState, lastAttempt: attempt.date, attempts: [attempt] };
+  } else {
+    appState.results[code].state = emabState;
+    appState.results[code].lastAttempt = attempt.date;
+    appState.results[code].attempts.push(attempt);
+  }
+  saveState();
+}
+
+// ============ THEME ============
+function applyTheme() {
+  if (appState.theme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else if (appState.theme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+  }
+}
+
+function toggleTheme() {
+  const cycle = { system: 'dark', dark: 'light', light: 'system' };
+  appState.theme = cycle[appState.theme] || 'system';
+  applyTheme();
+  saveState();
+  const labels = { system: 'System', dark: 'Dark', light: 'Light' };
+  toast('Theme: ' + labels[appState.theme], 'info');
+}
+
+// ============ DATA LOADING ============
+async function loadData() {
+  const el = document.getElementById('view-level-select');
+  const spinner = document.createElement('div');
+  spinner.className = 'loading-spinner';
+  spinner.innerHTML = '<div class="spinner"></div> Loading curriculum data...';
+  el.querySelector('.level-select').appendChild(spinner);
+
+  try {
+    const [units, expl, index] = await Promise.all([
+      fetch('units_of_work.json').then(r => r.json()),
+      fetch('cd_explanations.json').then(r => r.json()),
+      fetch('files-index.json').then(r => r.json())
+    ]);
+    unitsData = units;
+    explanationsData = expl;
+    index.forEach(f => availableCodes.add(f.code));
+  } catch(e) {
+    spinner.textContent = 'Failed to load data. Please check that the files are available.';
+    return;
+  }
+  spinner.remove();
+  renderLevelSelect();
+}
+
+async function loadQuestions(code, level, areaLabel) {
+  if (questionCache.has(code)) return questionCache.get(code);
+  // Extract the curriculum band level from the code itself (e.g. VC2S8U01 → 8, VC2E10LA01 → 10)
+  // The code format is VC2{AREA}{LEVEL}{STRAND}{NUM}, so we need to find the level digits
+  const areaKeys = Object.keys(unitsData.areas);
+  let bandLevel = level; // fallback
+  for (const ak of areaKeys) {
+    const prefix = 'VC2' + ak;
+    if (code.startsWith(prefix)) {
+      const rest = code.slice(prefix.length);
+      const match = rest.match(/^(\d+)/);
+      if (match) bandLevel = parseInt(match[1]);
+      break;
+    }
+  }
+  const pad = String(bandLevel).padStart(2, '0');
+  const url = `questions/level-${pad}/${areaLabel}/${code}.json`;
+  try {
+    const resp = await fetch(url);
+    if (!resp.ok) return null;
+    const data = await resp.json();
+    if (!data.toLevel2 || !data.toLevel2[0] || data.toLevel2[0].question === null) return null;
+    questionCache.set(code, data);
+    return data;
+  } catch(e) {
+    return null;
+  }
+}
+
+// ============ UTILITIES ============
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function toast(msg, type) {
+  type = type || 'info';
+  const container = document.getElementById('toast-container');
+  const t = document.createElement('div');
+  t.className = 'toast ' + type;
+  t.textContent = msg;
+  container.appendChild(t);
+  setTimeout(() => { t.remove(); }, 4000);
+}
+
+function formatDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short' });
+}
+
+function stateLabel(state) {
+  return EMAB_LABELS[state] || 'Not assessed';
+}
+
+function stateClass(state) {
+  return EMAB_STATES.includes(state) ? 'state-' + state : 'state-unassessed';
+}
+
+function isBandArea(areaCode) {
+  const area = unitsData.areas[areaCode];
+  return area && area.levelType === 'band';
+}
+
+function getBandForYear(areaCode, yearLevel) {
+  const area = unitsData.areas[areaCode];
+  if (!area) return String(yearLevel);
+  if (area.levelType === 'native') return String(yearLevel);
+  // Band mapping: year 7,8 → band "8"; year 9,10 → band "10"
+  const bm = area.bandMapping;
+  if (bm) return bm[String(yearLevel)] || String(yearLevel);
+  return yearLevel <= 8 ? '8' : '10';
+}
+
+function getSelectionKey(areaCode, yearLevel) {
+  return areaCode + '_' + getBandForYear(areaCode, yearLevel);
+}
+
+function getSelectedCodes(areaCode, yearLevel) {
+  if (!appState.selections) appState.selections = {};
+  const key = getSelectionKey(areaCode, yearLevel);
+  const sel = appState.selections[key];
+  return sel ? sel.selectedCodes : null;  // null = no selection made yet
+}
+
+function setSelectedCodes(areaCode, yearLevel, codes) {
+  const key = getSelectionKey(areaCode, yearLevel);
+  appState.selections[key] = { selectedCodes: codes, savedAt: new Date().toISOString() };
+  saveState();
+}
+
+function getBandLabel(yearLevel) {
+  const y = parseInt(yearLevel);
+  return y <= 8 ? 'Years 7\u20138' : 'Years 9\u201310';
+}
+
+// ============ ROUTER ============
+function navigate(view, params) {
+  params = params || {};
+  currentView = view;
+  viewParams = params;
+
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  const el = document.getElementById('view-' + view);
+  if (el) el.classList.add('active');
+
+  const backBtn = document.getElementById('back-btn');
+  const dashBtn = document.getElementById('dash-btn');
+  const title = document.getElementById('header-title');
+  const subtitle = document.getElementById('header-subtitle');
+
+  switch(view) {
+    case 'level-select':
+      backBtn.hidden = true;
+      dashBtn.hidden = true;
+      title.textContent = 'Knowledge Check';
+      subtitle.textContent = 'Victorian Curriculum 2.0';
+      break;
+    case 'areas':
+      backBtn.hidden = false;
+      dashBtn.hidden = false;
+      title.textContent = 'Year ' + params.level;
+      subtitle.textContent = 'Choose a learning area';
+      renderAreas(params.level);
+      break;
+    case 'select':
+      backBtn.hidden = false;
+      dashBtn.hidden = true;
+      title.textContent = params.areaLabel;
+      subtitle.textContent = 'Select your content';
+      renderSelection(params.level, params.areaCode);
+      break;
+    case 'units':
+      backBtn.hidden = false;
+      dashBtn.hidden = false;
+      title.textContent = params.areaLabel;
+      subtitle.textContent = 'Year ' + params.level;
+      renderUnits(params.level, params.areaCode);
+      break;
+    case 'quiz':
+      backBtn.hidden = false;
+      dashBtn.hidden = true;
+      title.textContent = params.code;
+      subtitle.textContent = 'Diagnostic Quiz';
+      startQuiz(params);
+      break;
+    case 'results':
+      backBtn.hidden = false;
+      dashBtn.hidden = true;
+      title.textContent = 'Results';
+      subtitle.textContent = params.code;
+      break;
+    case 'dashboard':
+      backBtn.hidden = false;
+      dashBtn.hidden = true;
+      title.textContent = 'Dashboard';
+      subtitle.textContent = 'Year ' + (appState.selectedLevel || '');
+      renderDashboard();
+      break;
+  }
+
+  history.pushState({ view, params }, '', null);
+
+  if (el) {
+    const heading = el.querySelector('h2, h3, .quiz-cd-info');
+    if (heading) heading.focus();
+  }
+}
+
+function goBack() {
+  switch(currentView) {
+    case 'areas': navigate('level-select'); break;
+    case 'select': navigate('areas', { level: viewParams.level }); break;
+    case 'units': navigate('areas', { level: viewParams.level }); break;
+    case 'quiz': navigate('units', { level: viewParams.level, areaCode: viewParams.areaCode, areaLabel: viewParams.areaLabel }); break;
+    case 'results': navigate('units', { level: viewParams.level, areaCode: viewParams.areaCode, areaLabel: viewParams.areaLabel }); break;
+    case 'dashboard': navigate('areas', { level: appState.selectedLevel }); break;
+    default: navigate('level-select');
+  }
+}
+
+// ============ RENDERERS ============
+
+function renderLevelSelect() {
+  const totalAssessed = Object.keys(appState.results).length;
+  const summary = document.getElementById('progress-summary');
+  const contArea = document.getElementById('continue-area');
+  contArea.innerHTML = '';
+
+  if (totalAssessed > 0) {
+    summary.textContent = `You've assessed ${totalAssessed} content description${totalAssessed === 1 ? '' : 's'} so far.`;
+    if (appState.selectedLevel && unitsData) {
+      const btn = document.createElement('button');
+      btn.className = 'continue-link';
+      btn.textContent = `Continue with Year ${appState.selectedLevel}`;
+      btn.addEventListener('click', () => {
+        navigate('areas', { level: appState.selectedLevel });
+      });
+      contArea.appendChild(btn);
+    }
+  } else {
+    summary.textContent = '';
+  }
+}
+
+function renderAreas(level) {
+  const el = document.getElementById('view-areas');
+  el.innerHTML = '';
+  const levelStr = String(level);
+  const grid = document.createElement('div');
+  grid.className = 'area-grid';
+
+  const areaOrder = Object.keys(unitsData.areas);
+  for (const areaCode of areaOrder) {
+    const area = unitsData.areas[areaCode];
+    const bandLevel = getBandForYear(areaCode, level);
+    if (!area.levels[bandLevel] && !area.levels[levelStr]) continue;
+    const dataLevel = area.levels[levelStr] || area.levels[bandLevel];
+    const allBandCds = dataLevel.units.flatMap(u => u.contentDescriptions);
+    const selectedCodes = getSelectedCodes(areaCode, level);
+    // For band areas: show only selected CDs (or all if no selection yet)
+    const allCds = (isBandArea(areaCode) && selectedCodes) ? allBandCds.filter(cd => selectedCodes.includes(cd.code)) : allBandCds;
+    const total = allCds.length;
+    const assessed = allCds.filter(cd => getResult(cd.code)).length;
+    const meetingPlus = allCds.filter(cd => { const r = getResult(cd.code); return r && (r.state === 'meeting' || r.state === 'meeting-confirmed'); }).length;
+    const needsSelection = isBandArea(areaCode) && !selectedCodes;
+
+    const card = document.createElement('div');
+    card.className = 'area-card';
+    card.tabIndex = 0;
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', `${area.label}: ${assessed} of ${total} assessed`);
+
+    const statsText = needsSelection
+      ? `${allBandCds.length} CDs &middot; ${getBandLabel(level)} &middot; <em>Select your content</em>`
+      : `<span class="assessed">${assessed}</span> of ${total} assessed${meetingPlus > 0 ? ' &middot; ' + meetingPlus + ' meeting+' : ''}`;
+    card.innerHTML = `
+      <div class="area-name">${esc(area.label)}</div>
+      <div class="area-stats">${statsText}</div>
+      <div class="progress-bar"><div class="progress-fill ${assessed > 0 ? 'mixed' : ''}" style="width:${total ? Math.round(assessed/total*100) : 0}%"></div></div>
+    `;
+
+    const handler = () => {
+      if (isBandArea(areaCode) && !getSelectedCodes(areaCode, level)) {
+        navigate('select', { level, areaCode, areaLabel: area.label });
+      } else {
+        navigate('units', { level, areaCode, areaLabel: area.label });
+      }
+    };
+    card.addEventListener('click', handler);
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); } });
+    grid.appendChild(card);
+  }
+
+  el.appendChild(grid);
+}
+
+function renderSelection(level, areaCode) {
+  const el = document.getElementById('view-select');
+  el.innerHTML = '';
+  const area = unitsData.areas[areaCode];
+  const bandLevel = getBandForYear(areaCode, level);
+  const levelData = area.levels[bandLevel];
+  if (!levelData) return;
+
+  const existingCodes = getSelectedCodes(areaCode, level) || [];
+  const existingSet = new Set(existingCodes);
+
+  // Info
+  const info = document.createElement('div');
+  info.className = 'select-info';
+  info.innerHTML = `<strong>${esc(area.label)}</strong> covers <strong>${getBandLabel(level)}</strong>. Select the units and topics you are studying this year.`;
+  el.appendChild(info);
+
+  // Track all checkboxes for count
+  const cdCheckboxes = [];
+  const unitCheckboxes = [];
+
+  levelData.units.forEach((unit, idx) => {
+    const unitDiv = document.createElement('div');
+    unitDiv.className = 'select-unit';
+
+    const header = document.createElement('div');
+    header.className = 'select-unit-header';
+    const unitCb = document.createElement('input');
+    unitCb.type = 'checkbox';
+    unitCb.id = 'unit-cb-' + idx;
+    const label = document.createElement('label');
+    label.htmlFor = unitCb.id;
+    label.textContent = unit.title;
+    const count = document.createElement('span');
+    count.className = 'select-unit-count';
+    count.textContent = unit.contentDescriptions.length + ' CDs';
+    const chevron = document.createElement('span');
+    chevron.className = 'select-unit-chevron';
+    chevron.innerHTML = '&#9654;';
+
+    header.appendChild(unitCb);
+    header.appendChild(label);
+    header.appendChild(count);
+    header.appendChild(chevron);
+
+    const body = document.createElement('div');
+    body.className = 'select-unit-body';
+
+    const unitCdCbs = [];
+    unit.contentDescriptions.forEach(cd => {
+      const cdDiv = document.createElement('div');
+      cdDiv.className = 'select-cd';
+      const cdCb = document.createElement('input');
+      cdCb.type = 'checkbox';
+      cdCb.checked = existingSet.has(cd.code);
+      cdCb.dataset.code = cd.code;
+      const cdInfo = document.createElement('div');
+      cdInfo.className = 'select-cd-info';
+      cdInfo.innerHTML = '<div class="select-cd-code">' + esc(cd.code) + '</div><div class="select-cd-desc">' + esc(cd.description) + '</div>';
+      cdDiv.appendChild(cdCb);
+      cdDiv.appendChild(cdInfo);
+      body.appendChild(cdDiv);
+      cdCheckboxes.push(cdCb);
+      unitCdCbs.push(cdCb);
+      cdCb.addEventListener('change', () => { syncUnitCb(); updateCount(); });
+    });
+
+    // Unit checkbox: check if all its CDs are checked
+    function syncUnitCb() {
+      const allChecked = unitCdCbs.every(cb => cb.checked);
+      const someChecked = unitCdCbs.some(cb => cb.checked);
+      unitCb.checked = allChecked;
+      unitCb.indeterminate = someChecked && !allChecked;
+    }
+    syncUnitCb();
+
+    // Unit checkbox toggles all its CDs
+    unitCb.addEventListener('change', () => {
+      unitCdCbs.forEach(cb => { cb.checked = unitCb.checked; });
+      unitCb.indeterminate = false;
+      updateCount();
+    });
+
+    // Chevron toggles body
+    const toggleBody = (e) => {
+      if (e.target === unitCb || e.target === label) return; // don't toggle on checkbox click
+      header.classList.toggle('open');
+      body.classList.toggle('open');
+    };
+    header.addEventListener('click', toggleBody);
+    chevron.addEventListener('click', (e) => { e.stopPropagation(); header.classList.toggle('open'); body.classList.toggle('open'); });
+
+    unitDiv.appendChild(header);
+    unitDiv.appendChild(body);
+    el.appendChild(unitDiv);
+    unitCheckboxes.push({ cb: unitCb, cdCbs: unitCdCbs });
+  });
+
+  // Bottom bar
+  const bottom = document.createElement('div');
+  bottom.className = 'select-bottom';
+  const countSpan = document.createElement('span');
+  countSpan.className = 'select-count';
+  const confirmBtn = document.createElement('button');
+  confirmBtn.className = 'select-confirm';
+  confirmBtn.textContent = 'Confirm Selection';
+
+  function updateCount() {
+    const n = cdCheckboxes.filter(cb => cb.checked).length;
+    const total = cdCheckboxes.length;
+    countSpan.textContent = n + ' of ' + total + ' selected';
+    confirmBtn.disabled = n === 0;
+  }
+  updateCount();
+
+  confirmBtn.addEventListener('click', () => {
+    const codes = cdCheckboxes.filter(cb => cb.checked).map(cb => cb.dataset.code);
+    if (codes.length === 0) { toast('Please select at least one content description.', 'warn'); return; }
+    setSelectedCodes(areaCode, level, codes);
+    toast(codes.length + ' content descriptions selected', 'success');
+    navigate('units', { level, areaCode, areaLabel: area.label });
+  });
+
+  bottom.appendChild(countSpan);
+  bottom.appendChild(confirmBtn);
+  el.appendChild(bottom);
+}
+
+function renderUnits(level, areaCode) {
+  const el = document.getElementById('view-units');
+  el.innerHTML = '';
+  const area = unitsData.areas[areaCode];
+  const bandLevel = getBandForYear(areaCode, level);
+  const levelStr = String(level);
+  const dataLevel = area.levels[levelStr] || area.levels[bandLevel];
+  if (!area || !dataLevel) return;
+  const levelData = dataLevel;
+  const selectedCodes = getSelectedCodes(areaCode, level);
+  const isBand = isBandArea(areaCode);
+
+  // Change Selection button for band areas
+  if (isBand && selectedCodes) {
+    const changeBar = document.createElement('div');
+    changeBar.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;';
+    changeBar.innerHTML = `<span style="font-size:12px;color:var(--text2)">${selectedCodes.length} CDs selected from ${getBandLabel(level)}</span>`;
+    const changeBtn = document.createElement('button');
+    changeBtn.className = 'change-selection-btn';
+    changeBtn.textContent = 'Change Selection';
+    changeBtn.addEventListener('click', () => navigate('select', { level, areaCode, areaLabel: area.label }));
+    changeBar.appendChild(changeBtn);
+    el.appendChild(changeBar);
+  }
+
+  const accordion = document.createElement('div');
+  accordion.className = 'unit-accordion';
+
+  levelData.units.forEach((unit, idx) => {
+    // Filter CDs by selection for band areas
+    const visibleCds = (isBand && selectedCodes)
+      ? unit.contentDescriptions.filter(cd => selectedCodes.includes(cd.code))
+      : unit.contentDescriptions;
+    if (visibleCds.length === 0) return; // skip empty units
+
+    const cdCount = visibleCds.length;
+    const assessed = visibleCds.filter(cd => getResult(cd.code)).length;
+
+    const header = document.createElement('div');
+    header.className = 'unit-header';
+    header.tabIndex = 0;
+    header.setAttribute('role', 'button');
+    header.setAttribute('aria-expanded', 'false');
+    header.innerHTML = `
+      <span class="unit-chevron">&#9654;</span>
+      <span class="unit-title">${esc(unit.title)}</span>
+      <span class="unit-meta">
+        <span>${assessed}/${cdCount}</span>
+        <span class="unit-progress-mini"><span class="progress-bar"><span class="progress-fill mixed" style="width:${cdCount ? Math.round(assessed/cdCount*100) : 0}%"></span></span></span>
+      </span>
+    `;
+
+    const body = document.createElement('div');
+    body.className = 'unit-body';
+    const inner = document.createElement('div');
+    inner.className = 'unit-body-inner';
+
+    visibleCds.forEach(cd => {
+      const available = availableCodes.has(cd.code);
+      const result = getResult(cd.code);
+      const card = document.createElement('div');
+      card.className = 'cd-card' + (available ? '' : ' unavailable');
+      card.tabIndex = 0;
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-label', `${cd.code}: ${result ? stateLabel(result.state) : available ? 'Not assessed' : 'Questions coming soon'}`);
+
+      let badgeHtml, dateHtml = '';
+      if (!available) {
+        badgeHtml = '<span class="state-badge state-unavailable">Coming soon</span>';
+      } else if (result) {
+        badgeHtml = `<span class="state-badge ${stateClass(result.state)}">${stateLabel(result.state)}</span>`;
+        dateHtml = `<span class="cd-date">${formatDate(result.lastAttempt)}</span>`;
+      } else {
+        badgeHtml = '<span class="state-badge state-unassessed">Not assessed</span>';
+      }
+
+      card.innerHTML = `
+        <div class="cd-left">
+          <div class="cd-code">${esc(cd.code)}</div>
+          <div class="cd-desc">${esc(cd.description)}</div>
+          <div class="cd-strand">${esc(cd.strandLabel)}</div>
+        </div>
+        <div class="cd-right">
+          ${badgeHtml}
+          ${dateHtml}
+        </div>
+      `;
+
+      if (available) {
+        const handler = () => navigate('quiz', {
+          code: cd.code, level, areaCode, areaLabel: area.label, description: cd.description
+        });
+        card.addEventListener('click', handler);
+        card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); } });
+      } else {
+        card.addEventListener('click', () => toast('Questions for this content description are still being developed.', 'info'));
+      }
+
+      inner.appendChild(card);
+    });
+
+    body.appendChild(inner);
+
+    const toggleUnit = () => {
+      const isOpen = header.classList.toggle('open');
+      body.classList.toggle('open');
+      header.setAttribute('aria-expanded', isOpen);
+    };
+    header.addEventListener('click', toggleUnit);
+    header.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleUnit(); } });
+
+    // Auto-open first unit
+    if (idx === 0) {
+      header.classList.add('open');
+      body.classList.add('open');
+      header.setAttribute('aria-expanded', 'true');
+    }
+
+    accordion.appendChild(header);
+    accordion.appendChild(body);
+  });
+
+  el.appendChild(accordion);
+}
+
+// ============ QUIZ ENGINE ============
+// EMAB progressive mini-test: 4 questions per Bloom's level, advancing upward.
+// Need 3 of 4 correct (75%) to advance. If fewer than 3/4 correct → stop.
+// Rating = level below where stopped. Max 16 questions.
+const QUESTIONS_PER_LEVEL = 4;
+const ADVANCE_THRESHOLD = 3; // out of 4
+
+function buildQuiz(questionsData) {
+  const selected = [];
+  for (const key of BLOOM_KEYS) {
+    const pool = questionsData[key];
+    if (pool && pool.length >= QUESTIONS_PER_LEVEL) {
+      const shuffled = shuffle(pool);
+      for (let i = 0; i < QUESTIONS_PER_LEVEL; i++) {
+        selected.push({ ...shuffled[i], bloomKey: key });
+      }
+    } else if (pool && pool.length > 0) {
+      // Use what we have, cycling if needed
+      const shuffled = shuffle(pool);
+      for (let i = 0; i < QUESTIONS_PER_LEVEL; i++) {
+        selected.push({ ...shuffled[i % shuffled.length], bloomKey: key });
+      }
+    }
+  }
+  return selected; // NOT shuffled — must stay in Bloom's order
+}
+
+function evaluateEMAB(answers) {
+  // answers grouped by Bloom's level: 4 questions per level
+  // Need 3 of 4 correct (ADVANCE_THRESHOLD) to advance
+  const levelResults = {};
+  for (const key of BLOOM_KEYS) {
+    const levelAnswers = answers.filter(a => a.bloomKey === key);
+    levelResults[key] = levelAnswers.filter(a => a.correct).length;
+  }
+
+  if (levelResults.toLevel2 < ADVANCE_THRESHOLD) return 'beginning';
+  if (levelResults.toLevel3 < ADVANCE_THRESHOLD) return 'approaching';
+  if (levelResults.toLevel4 < ADVANCE_THRESHOLD) return 'meeting';
+  if (levelResults.toLevel5 < ADVANCE_THRESHOLD) return 'meeting';
+
+  // Above Expected Standard: passed all levels AND 15 or 16 out of 16 correct
+  const totalCorrect = Object.values(levelResults).reduce((sum, n) => sum + n, 0);
+  if (totalCorrect >= 15) return 'above-standard';
+  return 'meeting-confirmed';
+}
+
+async function startQuiz(params) {
+  const el = document.getElementById('view-quiz');
+  el.innerHTML = '<div class="loading-spinner"><div class="spinner"></div> Loading questions...</div>';
+
+  const data = await loadQuestions(params.code, params.level, params.areaLabel);
+  if (!data) {
+    el.innerHTML = '<div class="loading-spinner">Questions are not available for this content description yet.</div>';
+    return;
+  }
+
+  const questions = buildQuiz(data);
+  quizState = {
+    params,
+    questions,
+    current: 0,
+    answers: [],
+    answered: false,
+    stopped: false // true when EMAB progression stops early
+  };
+
+  renderQuizQuestion();
+}
+
+function renderQuizQuestion() {
+  const el = document.getElementById('view-quiz');
+  const qs = quizState;
+  const q = qs.questions[qs.current];
+
+  el.innerHTML = '';
+  const container = document.createElement('div');
+  container.className = 'quiz-container';
+
+  // CD info
+  const info = document.createElement('div');
+  info.className = 'quiz-cd-info';
+  info.tabIndex = -1;
+  info.innerHTML = `<div class="cd-label">${esc(qs.params.code)}</div><div class="cd-text">${esc(qs.params.description)}</div>`;
+  container.appendChild(info);
+
+  // Progress dots
+  const progress = document.createElement('div');
+  progress.className = 'quiz-progress';
+  progress.setAttribute('role', 'progressbar');
+  progress.setAttribute('aria-valuenow', qs.current + 1);
+  progress.setAttribute('aria-valuemax', qs.questions.length);
+  for (let i = 0; i < qs.questions.length; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'quiz-dot';
+    if (i === qs.current) dot.classList.add('current');
+    else if (i < qs.answers.length) {
+      dot.classList.add(qs.answers[i].correct ? 'correct' : 'incorrect');
+    }
+    progress.appendChild(dot);
+  }
+  const counter = document.createElement('span');
+  counter.className = 'quiz-counter';
+  counter.textContent = `Question ${qs.current + 1} of ${qs.questions.length}`;
+  progress.appendChild(counter);
+  container.appendChild(progress);
+
+  // Question card
+  const card = document.createElement('div');
+  card.className = 'quiz-question';
+
+  const badges = document.createElement('div');
+  badges.innerHTML = `<span class="q-bloom-badge">${BLOOM_LABELS[q.bloomKey] || q.bloomKey}</span>`;
+  const typeBadge = { tf: 'tf', mc: 'mc', cloze: 'cloze' }[q.type] || '';
+  if (typeBadge) {
+    badges.innerHTML += `<span class="q-type-badge ${typeBadge}">${q.type.toUpperCase()}</span>`;
+  }
+  card.appendChild(badges);
+
+  if (q.type === 'tf') {
+    renderTF(card, q, container);
+  } else if (q.type === 'mc') {
+    renderMC(card, q, container);
+  } else if (q.type === 'cloze') {
+    renderCloze(card, q, container);
+  }
+
+  container.appendChild(card);
+  el.appendChild(container);
+}
+
+function renderTF(card, q, container) {
+  const stem = document.createElement('div');
+  stem.className = 'q-stem';
+  stem.textContent = q.question;
+  card.appendChild(stem);
+
+  const opts = document.createElement('div');
+  opts.className = 'tf-options';
+  opts.setAttribute('role', 'group');
+  opts.setAttribute('aria-label', 'Select True or False');
+
+  ['True', 'False'].forEach(val => {
+    const btn = document.createElement('button');
+    btn.className = 'tf-btn';
+    btn.textContent = val;
+    btn.addEventListener('click', () => {
+      if (quizState.answered) return;
+      quizState.answered = true;
+      const isCorrect = val === q.correct;
+      btn.classList.add(isCorrect ? 'selected-correct' : 'selected-incorrect');
+      opts.querySelectorAll('.tf-btn').forEach(b => {
+        b.disabled = true;
+        if (b.textContent === q.correct && !isCorrect) b.classList.add('reveal-correct');
+      });
+      showFeedback(container, card, isCorrect, q.correctExplanation, q);
+    });
+    opts.appendChild(btn);
+  });
+  card.appendChild(opts);
+}
+
+function renderMC(card, q, container) {
+  const stem = document.createElement('div');
+  stem.className = 'q-stem';
+  stem.textContent = q.question;
+  card.appendChild(stem);
+
+  const allOptions = shuffle([
+    { text: q.correct, isCorrect: true },
+    ...q.distractors.map(d => ({ text: d.answer, isCorrect: false, explanation: d.explanation }))
+  ]);
+
+  const opts = document.createElement('div');
+  opts.className = 'mc-opts';
+  opts.setAttribute('role', 'group');
+  opts.setAttribute('aria-label', 'Select one answer');
+  const letters = 'ABCDEFGH';
+
+  allOptions.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'mc-opt-btn';
+    btn.innerHTML = `<span class="mc-letter">${letters[i]}</span><span>${esc(opt.text)}</span>`;
+    btn.addEventListener('click', () => {
+      if (quizState.answered) return;
+      quizState.answered = true;
+      btn.classList.add(opt.isCorrect ? 'selected-correct' : 'selected-incorrect');
+      opts.querySelectorAll('.mc-opt-btn').forEach(b => {
+        b.disabled = true;
+        const bOpt = allOptions[Array.from(opts.children).indexOf(b)];
+        if (bOpt && bOpt.isCorrect && !opt.isCorrect) b.classList.add('reveal-correct');
+      });
+      showFeedback(container, card, opt.isCorrect, q.correctExplanation, q);
+    });
+    opts.appendChild(btn);
+  });
+  card.appendChild(opts);
+}
+
+function renderCloze(card, q, container) {
+  const sentence = document.createElement('div');
+  sentence.className = 'cloze-sentence';
+
+  // Parse sentence with blanks
+  let html = esc(q.sentence);
+  q.blanks.forEach(blank => {
+    const marker = `{{blank:${blank.id}}}`;
+    const escapedMarker = esc(marker);
+    html = html.replace(escapedMarker, `<span class="cloze-blank-slot" data-blank="${blank.id}">___</span>`);
+  });
+  sentence.innerHTML = html;
+  card.appendChild(sentence);
+
+  const blanksArea = document.createElement('div');
+  blanksArea.className = 'cloze-blanks-area';
+
+  const selections = {};
+
+  q.blanks.forEach(blank => {
+    const group = document.createElement('div');
+    group.className = 'cloze-blank-group';
+    group.innerHTML = `<div class="cloze-blank-label">Blank ${blank.id}</div>`;
+    const chips = document.createElement('div');
+    chips.className = 'cloze-chips';
+
+    const allOpts = shuffle([
+      { text: blank.correct, isCorrect: true },
+      ...blank.distractors.map(d => ({ text: d.answer, isCorrect: false }))
+    ]);
+
+    allOpts.forEach(opt => {
+      const chip = document.createElement('button');
+      chip.className = 'cloze-chip';
+      chip.textContent = opt.text;
+      chip.addEventListener('click', () => {
+        if (quizState.answered) return;
+        chips.querySelectorAll('.cloze-chip').forEach(c => c.classList.remove('selected'));
+        chip.classList.add('selected');
+        selections[blank.id] = opt;
+
+        // Update slot display
+        const slot = sentence.querySelector(`[data-blank="${blank.id}"]`);
+        if (slot) { slot.textContent = opt.text; slot.classList.add('filled'); }
+      });
+      chips.appendChild(chip);
+    });
+
+    group.appendChild(chips);
+    blanksArea.appendChild(group);
+  });
+
+  card.appendChild(blanksArea);
+
+  // Submit button for cloze
+  const actions = document.createElement('div');
+  actions.className = 'quiz-actions';
+  actions.style.marginTop = '16px';
+  const submitBtn = document.createElement('button');
+  submitBtn.className = 'submit-cloze-btn';
+  submitBtn.textContent = 'Check Answer';
+  submitBtn.addEventListener('click', () => {
+    if (quizState.answered) return;
+    // Check all blanks filled
+    if (Object.keys(selections).length < q.blanks.length) {
+      toast('Please fill all blanks before checking.', 'warn');
+      return;
+    }
+    quizState.answered = true;
+    submitBtn.disabled = true;
+
+    let allCorrect = true;
+    q.blanks.forEach(blank => {
+      const sel = selections[blank.id];
+      const slot = sentence.querySelector(`[data-blank="${blank.id}"]`);
+      const chips = blanksArea.querySelectorAll('.cloze-blank-group');
+      if (sel && sel.isCorrect) {
+        if (slot) slot.classList.add('correct');
+      } else {
+        allCorrect = false;
+        if (slot) { slot.classList.add('incorrect'); }
+      }
+    });
+
+    // Reveal correct/incorrect on chips
+    blanksArea.querySelectorAll('.cloze-chip').forEach(chip => {
+      chip.disabled = true;
+      // Find which blank group this chip belongs to
+    });
+
+    const explanation = q.blanks.map(b => b.correctExplanation).filter(Boolean).join(' ');
+    showFeedback(container, card, allCorrect, explanation || q.correctExplanation || '', q);
+  });
+  actions.appendChild(submitBtn);
+  card.appendChild(actions);
+}
+
+function showFeedback(container, card, isCorrect, explanation, q) {
+  quizState.answers.push({
+    correct: isCorrect,
+    bloomKey: q.bloomKey,
+    questionText: (q.question || q.sentence || '').replace(/\{\{blank:\w+\}\}/g, '___'),
+    type: q.type
+  });
+
+  // Update dots
+  const dots = container.querySelectorAll('.quiz-dot');
+  if (dots[quizState.current]) {
+    dots[quizState.current].classList.remove('current');
+    dots[quizState.current].classList.add(isCorrect ? 'correct' : 'incorrect');
+  }
+
+  const feedback = document.createElement('div');
+  feedback.className = 'feedback-bar ' + (isCorrect ? 'correct' : 'incorrect');
+  feedback.setAttribute('role', 'alert');
+  feedback.innerHTML = isCorrect ? '&#10003; Correct!' : '&#10007; Not quite';
+  card.after(feedback);
+
+  if (explanation) {
+    const exp = document.createElement('div');
+    exp.className = 'feedback-explanation';
+    exp.textContent = explanation;
+    feedback.after(exp);
+  }
+
+  // Check EMAB early stopping: after every 4th question (end of a Bloom's group)
+  const answeredCount = quizState.answers.length;
+  const isEndOfGroup = answeredCount % QUESTIONS_PER_LEVEL === 0 && answeredCount >= QUESTIONS_PER_LEVEL;
+  let shouldStop = false;
+  if (isEndOfGroup) {
+    // Check if fewer than ADVANCE_THRESHOLD correct in this group → stop
+    const groupAnswers = quizState.answers.slice(answeredCount - QUESTIONS_PER_LEVEL, answeredCount);
+    const groupCorrect = groupAnswers.filter(a => a.correct).length;
+    if (groupCorrect < ADVANCE_THRESHOLD) shouldStop = true;
+  }
+
+  const isLast = quizState.current >= quizState.questions.length - 1;
+  const shouldFinish = isLast || shouldStop;
+
+  const actions = document.createElement('div');
+  actions.className = 'quiz-actions';
+  const nextBtn = document.createElement('button');
+  nextBtn.className = 'next-btn';
+  nextBtn.textContent = shouldFinish ? 'See Results' : 'Next Question';
+  nextBtn.addEventListener('click', () => {
+    if (shouldFinish) {
+      finishQuiz();
+    } else {
+      quizState.current++;
+      quizState.answered = false;
+      renderQuizQuestion();
+    }
+  });
+  nextBtn.focus();
+  actions.appendChild(nextBtn);
+  container.appendChild(actions);
+}
+
+function finishQuiz() {
+  const qs = quizState;
+  const emabState = evaluateEMAB(qs.answers);
+
+  setResult(qs.params.code, emabState, qs.answers);
+  renderResults(qs.params, emabState, qs.answers);
+  navigate('results', qs.params);
+}
+
+function renderResults(params, emabState, answers) {
+  const el = document.getElementById('view-results');
+  el.innerHTML = '';
+  const container = document.createElement('div');
+  container.className = 'results-container';
+
+  const emojis = { 'above-standard': '&#11088;', 'meeting-confirmed': '&#127775;', meeting: '&#9989;', approaching: '&#128161;', beginning: '&#128170;' };
+  const levelStr = String(params.level);
+  const descriptors = EMAB_DESCRIPTORS[levelStr] || EMAB_DESCRIPTORS['8'];
+  const descriptor = descriptors[emabState] || '';
+  const totalCorrect = answers.filter(a => a.correct).length;
+
+  container.innerHTML = `
+    <div class="results-state">${emojis[emabState] || ''}</div>
+    <div class="results-label" style="color:var(${emabState === 'above-standard' ? '--purple' : emabState === 'meeting-confirmed' ? '--green' : emabState === 'meeting' ? '--accent' : emabState === 'approaching' ? '--yellow' : '--red'})">${stateLabel(emabState)}</div>
+    <div class="results-score">${totalCorrect} of ${answers.length} correct</div>
+    <div style="max-width:480px;margin:0 auto 24px;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:14px;color:var(--text2);text-align:center;font-style:italic">${esc(descriptor)}</div>
+  `;
+
+  // Breakdown
+  const breakdown = document.createElement('div');
+  breakdown.className = 'results-breakdown';
+  answers.forEach((a, i) => {
+    const item = document.createElement('div');
+    item.className = 'result-item';
+    item.innerHTML = `
+      <span class="result-icon">${a.correct ? '<span style="color:var(--green)">&#10003;</span>' : '<span style="color:var(--red)">&#10007;</span>'}</span>
+      <div class="result-info">
+        <div class="result-q-text">${esc(a.questionText)}</div>
+        <div class="result-bloom">${BLOOM_LABELS[a.bloomKey] || ''} &middot; ${a.type.toUpperCase()}</div>
+      </div>
+    `;
+    breakdown.appendChild(item);
+  });
+  container.appendChild(breakdown);
+
+  // Why section
+  const expl = explanationsData[params.code];
+  if (expl && expl.y && expl.y.length > 0) {
+    const why = document.createElement('div');
+    why.className = 'why-section';
+    why.innerHTML = '<h4>This is worth knowing because</h4><ul>' + expl.y.map(y => `<li>${esc(y)}</li>`).join('') + '</ul>';
+    container.appendChild(why);
+  }
+
+  // Actions
+  const actions = document.createElement('div');
+  actions.className = 'results-actions';
+  const retakeBtn = document.createElement('button');
+  retakeBtn.className = 'next-btn';
+  retakeBtn.textContent = 'Retake Quiz';
+  retakeBtn.addEventListener('click', () => navigate('quiz', params));
+
+  const backBtn = document.createElement('button');
+  backBtn.className = 'btn-secondary';
+  backBtn.textContent = 'Back to Unit';
+  backBtn.addEventListener('click', () => navigate('units', { level: params.level, areaCode: params.areaCode, areaLabel: params.areaLabel }));
+
+  actions.appendChild(retakeBtn);
+  actions.appendChild(backBtn);
+  container.appendChild(actions);
+  el.appendChild(container);
+}
+
+// ============ DASHBOARD ============
+function renderDashboard() {
+  const el = document.getElementById('view-dashboard');
+  el.innerHTML = '';
+  const level = String(appState.selectedLevel || 8);
+
+  // Gather all CDs for this level (respecting band mapping and selections)
+  const yearLevel = parseInt(level);
+  let allCds = [];
+  for (const areaCode of Object.keys(unitsData.areas)) {
+    const area = unitsData.areas[areaCode];
+    const bl = getBandForYear(areaCode, yearLevel);
+    const dataLevel = area.levels[level] || area.levels[bl];
+    if (!dataLevel) continue;
+    const selectedCodes = getSelectedCodes(areaCode, yearLevel);
+    let cds = dataLevel.units.flatMap(u => u.contentDescriptions.map(cd => ({
+      ...cd, areaCode, areaLabel: area.label
+    })));
+    if (isBandArea(areaCode) && selectedCodes) {
+      cds = cds.filter(cd => selectedCodes.includes(cd.code));
+    }
+    allCds = allCds.concat(cds);
+  }
+
+  const total = allCds.length;
+  const assessed = allCds.filter(cd => getResult(cd.code)).length;
+  const aboveStandard = allCds.filter(cd => { const r = getResult(cd.code); return r && r.state === 'above-standard'; }).length;
+  const confirmed = allCds.filter(cd => { const r = getResult(cd.code); return r && r.state === 'meeting-confirmed'; }).length;
+  const meeting = allCds.filter(cd => { const r = getResult(cd.code); return r && r.state === 'meeting'; }).length;
+  const approaching = allCds.filter(cd => { const r = getResult(cd.code); return r && r.state === 'approaching'; }).length;
+  const beginning = allCds.filter(cd => { const r = getResult(cd.code); return r && r.state === 'beginning'; }).length;
+
+  // Stats
+  const stats = document.createElement('div');
+  stats.className = 'dash-stats';
+  stats.innerHTML = `
+    <div class="dash-stat"><div class="dash-stat-num purple">${aboveStandard}</div><div class="dash-stat-label">Above</div></div>
+    <div class="dash-stat"><div class="dash-stat-num green">${confirmed}</div><div class="dash-stat-label">Confirmed</div></div>
+    <div class="dash-stat"><div class="dash-stat-num accent">${meeting}</div><div class="dash-stat-label">Meeting</div></div>
+    <div class="dash-stat"><div class="dash-stat-num yellow">${approaching}</div><div class="dash-stat-label">Approaching</div></div>
+    <div class="dash-stat"><div class="dash-stat-num red">${beginning}</div><div class="dash-stat-label">Beginning</div></div>
+  `;
+  el.appendChild(stats);
+
+  // Legend
+  const legend = document.createElement('div');
+  legend.className = 'dash-legend';
+  legend.innerHTML = `
+    <div class="dash-legend-item"><div class="dash-legend-swatch" style="background:var(--purple)"></div> Above Expected Standard</div>
+    <div class="dash-legend-item"><div class="dash-legend-swatch" style="background:var(--green)"></div> Meeting Confirmed</div>
+    <div class="dash-legend-item"><div class="dash-legend-swatch" style="background:var(--accent)"></div> Meeting</div>
+    <div class="dash-legend-item"><div class="dash-legend-swatch" style="background:var(--yellow)"></div> Approaching</div>
+    <div class="dash-legend-item"><div class="dash-legend-swatch" style="background:var(--red)"></div> Beginning</div>
+    <div class="dash-legend-item"><div class="dash-legend-swatch" style="background:var(--surface2);border:1px solid var(--border)"></div> Not assessed</div>
+  `;
+  el.appendChild(legend);
+
+  // Filters
+  const filters = document.createElement('div');
+  filters.className = 'dash-filters';
+  ['all', 'beginning', 'approaching', 'meeting', 'meeting-confirmed', 'above-standard', 'unassessed'].forEach(f => {
+    const btn = document.createElement('button');
+    btn.className = 'dash-filter-btn' + (f === 'all' ? ' active' : '');
+    btn.textContent = f === 'all' ? 'All' : f === 'unassessed' ? 'Not Assessed' : stateLabel(f);
+    btn.addEventListener('click', () => {
+      filters.querySelectorAll('.dash-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      el.querySelectorAll('.dash-cell').forEach(cell => {
+        const s = cell.dataset.state;
+        if (f === 'all') { cell.style.display = ''; }
+        else if (f === 'unassessed') { cell.style.display = (s === 'unassessed' || s === 'unavailable') ? '' : 'none'; }
+        else { cell.style.display = s === f ? '' : 'none'; }
+      });
+    });
+    filters.appendChild(btn);
+  });
+  el.appendChild(filters);
+
+  // Heatmap by area
+  for (const areaCode of Object.keys(unitsData.areas)) {
+    const area = unitsData.areas[areaCode];
+    const bl = getBandForYear(areaCode, yearLevel);
+    const dataLevel = area.levels[level] || area.levels[bl];
+    if (!dataLevel) continue;
+    let cds = dataLevel.units.flatMap(u => u.contentDescriptions);
+    const selectedCodes = getSelectedCodes(areaCode, yearLevel);
+    if (isBandArea(areaCode) && selectedCodes) {
+      cds = cds.filter(cd => selectedCodes.includes(cd.code));
+    }
+    if (cds.length === 0) continue;
+
+    const section = document.createElement('div');
+    section.className = 'dash-area-section';
+    const label = document.createElement('div');
+    label.className = 'dash-area-label';
+    label.textContent = `${area.label} (${cds.length})`;
+    section.appendChild(label);
+
+    const heatmap = document.createElement('div');
+    heatmap.className = 'dash-heatmap';
+
+    cds.forEach(cd => {
+      const cell = document.createElement('div');
+      cell.className = 'dash-cell';
+      const available = availableCodes.has(cd.code);
+      const result = getResult(cd.code);
+
+      if (!available) {
+        cell.classList.add('unavailable');
+        cell.dataset.state = 'unavailable';
+      } else if (result) {
+        cell.classList.add(result.state);
+        cell.dataset.state = result.state;
+      } else {
+        cell.classList.add('unassessed');
+        cell.dataset.state = 'unassessed';
+      }
+
+      cell.title = `${cd.code}: ${result ? stateLabel(result.state) : available ? 'Not assessed' : 'Unavailable'}`;
+      cell.addEventListener('mouseenter', e => showTooltip(e, cd, result, available));
+      cell.addEventListener('mouseleave', hideTooltip);
+      if (available) {
+        cell.addEventListener('click', () => {
+          navigate('quiz', {
+            code: cd.code, level: parseInt(level), areaCode, areaLabel: area.label, description: cd.description
+          });
+        });
+      }
+
+      heatmap.appendChild(cell);
+    });
+
+    section.appendChild(heatmap);
+    el.appendChild(section);
+  }
+}
+
+function showTooltip(e, cd, result, available) {
+  const tip = document.getElementById('tooltip');
+  let html = `<strong>${cd.code}</strong><br>${esc(cd.description).substring(0, 120)}`;
+  if (result) html += `<br><br><strong>${stateLabel(result.state)}</strong> (${result.score}/${result.total}) &middot; ${formatDate(result.lastAttempt)}`;
+  else if (!available) html += '<br><br><em>Questions coming soon</em>';
+  else html += '<br><br><em>Not yet assessed</em>';
+  tip.innerHTML = html;
+  tip.style.display = 'block';
+  const x = Math.min(e.clientX + 12, window.innerWidth - 320);
+  const y = Math.min(e.clientY + 12, window.innerHeight - 100);
+  tip.style.left = x + 'px';
+  tip.style.top = y + 'px';
+}
+
+function hideTooltip() {
+  document.getElementById('tooltip').style.display = 'none';
+}
+
+// ============ ESCAPE HTML ============
+function esc(str) {
+  if (!str) return '';
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+// ============ INIT ============
+function init() {
+  loadState();
+  applyTheme();
+
+  // Event: level cards
+  document.querySelectorAll('.level-card').forEach(card => {
+    const handler = () => {
+      const level = parseInt(card.dataset.level);
+      appState.selectedLevel = level;
+      saveState();
+      navigate('areas', { level });
+    };
+    card.addEventListener('click', handler);
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); } });
+  });
+
+  // Event: back button
+  document.getElementById('back-btn').addEventListener('click', goBack);
+
+  // Event: theme toggle
+  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+  // Event: dashboard button
+  document.getElementById('dash-btn').addEventListener('click', () => navigate('dashboard'));
+
+  // Event: browser back/forward
+  window.addEventListener('popstate', e => {
+    if (e.state && e.state.view) {
+      currentView = e.state.view;
+      viewParams = e.state.params || {};
+      navigate(e.state.view, e.state.params);
+    } else {
+      navigate('level-select');
+    }
+  });
+
+  // Event: keyboard
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') goBack();
+  });
+
+  // Save on unload
+  window.addEventListener('beforeunload', saveState);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) saveState(); });
+
+  // Load data
+  loadData();
+}
+
+init();
+
+})();
+</script>
+</body>
+</html>
