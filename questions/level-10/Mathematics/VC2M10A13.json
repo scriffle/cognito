@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10A13",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to solve simple quadratic equations using strategies including the null factor law.",
+    "generatedAt": "2026-04-18T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The null factor law states that if the product of two numbers equals zero, then at least one of those numbers must equal zero.",
+      "correct": "True",
+      "correctExplanation": "If ab = 0, then a = 0 or b = 0 (or both); this is the null factor law, and it provides the basis for solving factorised quadratic equations.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may confuse the null factor law with the multiplicative property, missing that zero is the key value."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "A quadratic equation can always be solved by dividing both sides by x, regardless of the structure of the equation.",
+      "correct": "False",
+      "correctExplanation": "Dividing by x risks losing the solution x = 0 and produces invalid algebra when x could be zero; factorising is the correct strategy.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A common error is dividing by a variable that could equal zero, losing a valid solution to the equation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A quadratic equation in the form ax² + bx + c = 0 can have up to five real solutions, depending on the values of the coefficients.",
+      "correct": "False",
+      "correctExplanation": "Quadratic equations have zero, one or two real solutions — at most two — because the polynomial is of degree two.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may confuse quadratic with higher-degree polynomials, overlooking the degree limit."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Solving x² = 9 yields only the positive solution x = 3 because square roots are always taken to be positive.",
+      "correct": "False",
+      "correctExplanation": "x² = 9 has two solutions, x = 3 and x = -3, because both satisfy the equation; the principal square root convention is separate from equation solving.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students confuse the principal square root of a number with the solutions of an equation involving squares."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The expression x² - 5x - 14 factorises to (x + 7)(x - 2) over the integers.",
+      "correct": "False",
+      "correctExplanation": "Checking: (x + 7)(x - 2) = x² + 5x - 14, not x² - 5x - 14; the correct factorisation is (x - 7)(x + 2).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may reverse the signs of the constants in the brackets, missing the correct sign pattern."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The equation 3x(x - 4) = 0 has solutions x = 3 and x = 4 because the coefficient and the constant in the bracket determine the roots.",
+      "correct": "False",
+      "correctExplanation": "Applying the null factor law, 3x = 0 gives x = 0, and x - 4 = 0 gives x = 4; the coefficient 3 is not itself a root.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may confuse coefficients with roots, forgetting that the null factor law operates on the factors themselves."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "A quadratic equation with a discriminant less than zero has no real solutions.",
+      "correct": "True",
+      "correctExplanation": "The discriminant b² - 4ac governs the nature of the roots: negative discriminant yields no real solutions, only complex ones.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may assume all quadratic equations have real solutions, missing the diagnostic role of the discriminant."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The quadratic formula can be applied to any quadratic equation regardless of whether it factorises neatly over the integers.",
+      "correct": "True",
+      "correctExplanation": "The quadratic formula x = (-b ± √(b² - 4ac)) / 2a applies universally to quadratic equations, making it especially useful when factorisation is difficult.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may treat the quadratic formula as restricted to certain equations, missing its general applicability."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Checking a solution by substituting it back into the original equation is unnecessary because the quadratic formula cannot produce an incorrect result.",
+      "correct": "False",
+      "correctExplanation": "Checking is good practice because arithmetic errors can occur at any step; substitution verifies the solution regardless of the method used.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may over-trust the quadratic formula, missing that checking guards against arithmetic rather than formula errors."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The equation x² + 4 = 0 has two real solutions, x = 2 and x = -2.",
+      "correct": "False",
+      "correctExplanation": "Rearranging gives x² = -4, which has no real solutions because a real square cannot be negative; the discriminant is negative.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may apply a sign error and treat x² = -4 as if it were x² = 4, producing two real solutions incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Factorising a quadratic is one valid strategy among several for solving quadratic equations, not the only possible approach.",
+      "correct": "True",
+      "correctExplanation": "Quadratic equations can be solved by factorising, using the quadratic formula, completing the square or graphical methods; each has appropriate uses.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may treat factorising as the only valid method, overlooking the range of solution strategies available."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The null factor law requires that the equation be arranged so that one side equals zero before the factors are considered.",
+      "correct": "True",
+      "correctExplanation": "The law operates on the product equalling zero; applying it to a non-zero right-hand side is a common source of error.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may attempt to apply the law when the right-hand side is non-zero, producing incorrect 'solutions'."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the null factor law?",
+      "correct": "If the product of two factors equals zero, then at least one of the factors must equal zero",
+      "correctExplanation": "The null factor law: if ab = 0, then a = 0 or b = 0. This provides the basis for solving factorised quadratic equations.",
+      "distractors": [
+        {
+          "answer": "If the sum of two factors equals zero, then at least one of the factors must equal zero in any general case",
+          "explanation": "The law concerns products, not sums; two non-zero factors can sum to zero."
+        },
+        {
+          "answer": "If the product of two factors equals any constant, then one of the factors must equal that constant as a direct result",
+          "explanation": "The law specifically requires the product to be zero; no analogous law holds for arbitrary constants."
+        },
+        {
+          "answer": "If one factor equals zero, then the product must equal the other factor rather than zero in the final calculation",
+          "explanation": "This reverses the direction and the conclusion of the law; zero multiplied by any factor equals zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly solves the equation x² - 5x - 14 = 0?",
+      "correct": "x = 7 or x = -2",
+      "correctExplanation": "Factorising: (x - 7)(x + 2) = 0. Applying the null factor law yields x = 7 or x = -2, which check correctly in the original equation.",
+      "distractors": [
+        {
+          "answer": "x = -7 or x = 2",
+          "explanation": "This reverses both signs; a common sign error when factorising the constant term."
+        },
+        {
+          "answer": "x = 7 or x = 2",
+          "explanation": "This keeps both roots positive, missing the required sign for the middle coefficient."
+        },
+        {
+          "answer": "x = -7 or x = -2",
+          "explanation": "This makes both roots negative, which would produce a middle coefficient of +9x rather than -5x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly solves the equation 3x(x - 4) = 0?",
+      "correct": "x = 0 or x = 4",
+      "correctExplanation": "By the null factor law, 3x = 0 gives x = 0, and x - 4 = 0 gives x = 4; the constant 3 is not itself a root.",
+      "distractors": [
+        {
+          "answer": "x = 3 or x = 4",
+          "explanation": "This treats the coefficient 3 as a root, confusing coefficients with factors in the null factor law."
+        },
+        {
+          "answer": "x = 0 or x = -4",
+          "explanation": "This applies a sign error to the factor x - 4, producing the wrong root."
+        },
+        {
+          "answer": "x = -3 or x = 4",
+          "explanation": "This treats the coefficient -3 as a root, compounding the coefficient-root confusion with a sign error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly solves the equation (x + 5)(x - 3) = 0?",
+      "correct": "x = -5 or x = 3",
+      "correctExplanation": "By the null factor law, x + 5 = 0 gives x = -5, and x - 3 = 0 gives x = 3; each factor is set equal to zero in turn.",
+      "distractors": [
+        {
+          "answer": "x = 5 or x = -3",
+          "explanation": "This reverses both signs, a common error when applying the null factor law."
+        },
+        {
+          "answer": "x = 5 or x = 3",
+          "explanation": "This applies the wrong sign to the first factor while correctly handling the second."
+        },
+        {
+          "answer": "x = -5 or x = -3",
+          "explanation": "This applies the wrong sign to the second factor while correctly handling the first."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly factorises x² + 7x + 12?",
+      "correct": "(x + 3)(x + 4)",
+      "correctExplanation": "The factor pair of +12 summing to +7 is (+3, +4), yielding (x + 3)(x + 4). Checking: x² + 4x + 3x + 12 = x² + 7x + 12.",
+      "distractors": [
+        {
+          "answer": "(x - 3)(x - 4)",
+          "explanation": "This produces x² - 7x + 12, with the wrong sign for the middle coefficient."
+        },
+        {
+          "answer": "(x + 2)(x + 6)",
+          "explanation": "Although 2 × 6 = 12, the sum 2 + 6 = 8 does not equal the middle coefficient 7."
+        },
+        {
+          "answer": "(x + 1)(x + 12)",
+          "explanation": "Although 1 × 12 = 12, the sum 1 + 12 = 13 does not equal the middle coefficient 7."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly solves x² = 16?",
+      "correct": "x = 4 or x = -4, because both values squared give 16",
+      "correctExplanation": "Both 4² = 16 and (-4)² = 16, so both values satisfy the equation; the equation x² = 16 has two real solutions.",
+      "distractors": [
+        {
+          "answer": "x = 4 only, because square roots are always positive by convention",
+          "explanation": "The principal square root is positive, but the equation has both roots."
+        },
+        {
+          "answer": "x = 16, because the square cancels when finding the solution value",
+          "explanation": "Squaring and square-rooting are inverse operations; x² = 16 does not give x = 16."
+        },
+        {
+          "answer": "x = 8, because dividing 16 by 2 gives the correct solution value",
+          "explanation": "This confuses multiplication by 2 with squaring; not the inverse operation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes the discriminant of the quadratic equation ax² + bx + c = 0?",
+      "correct": "The expression b² - 4ac, which determines the nature of the roots",
+      "correctExplanation": "The discriminant indicates how many real roots exist: positive yields two distinct, zero yields one repeated, negative yields none real.",
+      "distractors": [
+        {
+          "answer": "The expression a² - 4bc, which gives the sum of the roots of the quadratic equation",
+          "explanation": "This misidentifies both the formula and the meaning of the discriminant."
+        },
+        {
+          "answer": "The expression b² + 4ac, which determines the product of the roots of the equation",
+          "explanation": "The sign of the 4ac term is negative, not positive; this formula would not diagnose root nature correctly."
+        },
+        {
+          "answer": "The expression 2ac - b, which gives the average of the two roots of the equation",
+          "explanation": "This formula does not appear in standard quadratic theory and does not represent the discriminant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the quadratic formula for ax² + bx + c = 0?",
+      "correct": "x = (-b ± √(b² - 4ac)) / 2a",
+      "correctExplanation": "The quadratic formula provides the roots of any quadratic equation; its derivation comes from completing the square on the general form.",
+      "distractors": [
+        {
+          "answer": "x = (b ± √(b² - 4ac)) / 2a, using the positive b in the numerator throughout the formula",
+          "explanation": "The sign of b in the numerator is negative, not positive; this is a common algebraic error."
+        },
+        {
+          "answer": "x = (-b ± √(b² + 4ac)) / 2a, using the positive 4ac under the square root sign",
+          "explanation": "The 4ac term under the square root is subtracted, not added; this changes the discriminant's value."
+        },
+        {
+          "answer": "x = (-b ± √(b² - 4ac)) / a, omitting the factor of 2 from the denominator of the formula",
+          "explanation": "The denominator is 2a, not a; omitting the 2 produces incorrect roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the correct first step in solving 2x² - 8x = 0?",
+      "correct": "Factor out the common factor 2x, giving 2x(x - 4) = 0",
+      "correctExplanation": "Factoring out the highest common factor is the standard first step; after factoring, the null factor law provides the roots.",
+      "distractors": [
+        {
+          "answer": "Divide both sides by x, giving 2x - 8 = 0, so x = 4 becomes the only solution obtained",
+          "explanation": "Dividing by x loses the x = 0 solution; factoring preserves both roots."
+        },
+        {
+          "answer": "Add 8x to both sides, giving 2x² = 8x, then take the square root of each side of the equation",
+          "explanation": "This produces a non-polynomial step that is not a valid solution method and loses the x = 0 root."
+        },
+        {
+          "answer": "Substitute the quadratic formula immediately to find the roots without any prior algebraic manipulation being applied",
+          "explanation": "The formula applies but factoring is more efficient here; more importantly, the formula applied after factoring produces the same roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following equations has no real solutions?",
+      "correct": "x² + 4 = 0",
+      "correctExplanation": "Rearranging gives x² = -4, which has no real solutions because any real number squared is non-negative.",
+      "distractors": [
+        {
+          "answer": "x² - 4 = 0",
+          "explanation": "This equation factorises as (x-2)(x+2) = 0, producing two real solutions; it has real roots."
+        },
+        {
+          "answer": "x² - 2x - 3 = 0",
+          "explanation": "This factorises as (x-3)(x+1), producing two real roots; it is not without real roots."
+        },
+        {
+          "answer": "x² = 0",
+          "explanation": "This has one repeated real solution; it does have real solutions, just repeated."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the values of a, b and c in the equation 2x² - 3x + 1 = 0?",
+      "correct": "a = 2, b = -3, c = 1",
+      "correctExplanation": "In ax² + bx + c = 0, the coefficients are identified with their signs: a is the coefficient of x², b is the coefficient of x, c is the constant.",
+      "distractors": [
+        {
+          "answer": "a = 2, b = 3, c = 1, taking b positive because 3 is written positive",
+          "explanation": "The sign of b must be taken as written in the equation; -3 has a negative sign that belongs to b."
+        },
+        {
+          "answer": "a = 2, b = -3, c = 0, treating the missing constant as zero",
+          "explanation": "The constant term is 1, not 0; the equation clearly contains +1 at the end."
+        },
+        {
+          "answer": "a = 1, b = -3, c = 2, reading the coefficients right to left",
+          "explanation": "Coefficients are read with their position in the standard form, not right-to-left."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies when a quadratic equation has exactly one repeated real root?",
+      "correct": "When the discriminant b² - 4ac equals zero",
+      "correctExplanation": "A zero discriminant yields a single repeated root at x = -b/(2a), often called a double root or root of multiplicity two.",
+      "distractors": [
+        {
+          "answer": "When the discriminant b² - 4ac is less than zero, indicating the quadratic touches the x-axis at exactly one point",
+          "explanation": "Negative discriminant yields no real roots, not one repeated root; the distinction matters for graph interpretation."
+        },
+        {
+          "answer": "When the discriminant b² - 4ac is greater than zero, yielding two roots that happen to coincide after algebraic simplification",
+          "explanation": "Positive discriminant yields two distinct real roots, not a repeated root."
+        },
+        {
+          "answer": "When the coefficient a equals zero in the general form, so the equation effectively reduces to a linear expression",
+          "explanation": "If a = 0, the equation is linear rather than quadratic; this does not describe a repeated quadratic root."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The null factor law states that if the {{blank:1}} of two factors equals zero, then at least one factor must equal {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "product",
+          "correctExplanation": "The law concerns the product of factors, not their sum or any other combination.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "The law does not apply to sums; two non-zero factors can sum to zero.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "quotient",
+              "explanation": "The law does not apply to quotients; it specifically concerns products.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "Zero is the pivotal value in the null factor law.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "The law requires the factor to equal zero, not one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a constant",
+              "explanation": "The law specifies zero, not an arbitrary constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The discriminant of ax² + bx + c = 0 is {{blank:1}}; when it is {{blank:2}}, the equation has no real solutions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "b² - 4ac",
+          "correctExplanation": "The discriminant is defined as b² - 4ac in the standard form.",
+          "distractors": [
+            {
+              "answer": "b² + 4ac",
+              "explanation": "The 4ac term is subtracted, not added.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a² - 4bc",
+              "explanation": "The discriminant uses b², not a², in the standard formulation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative",
+          "correctExplanation": "A negative discriminant means no real solutions exist.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "Positive discriminant yields two distinct real solutions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Zero discriminant yields one repeated real solution, not no real solutions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The null factor law can only be applied after the quadratic expression has been arranged into factorised form with zero on one side.",
+      "correct": "True",
+      "correctExplanation": "The law requires the equation to be set to zero and the left-hand side expressed as a product of factors; these prerequisites enable valid application.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may apply the law prematurely, missing the required setup steps."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Dividing both sides of x² = 3x by x is a reliable method to find all solutions of the equation.",
+      "correct": "False",
+      "correctExplanation": "Dividing by x loses the solution x = 0; the correct method is to rearrange to x² - 3x = 0, factor as x(x-3) = 0, and apply the null factor law.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students often divide by a variable that could equal zero, losing a valid root in the process."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Completing the square provides an alternative route to the quadratic formula and always produces real solutions regardless of the original equation.",
+      "correct": "False",
+      "correctExplanation": "Completing the square produces the quadratic formula but only yields real solutions when the discriminant is non-negative; otherwise the solutions are complex.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may confuse the generality of the method with the existence of real solutions, missing the discriminant's role."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The graph of a quadratic equation that has exactly two real solutions crosses the x-axis at exactly one point in the Cartesian plane.",
+      "correct": "False",
+      "correctExplanation": "Real solutions correspond to x-intercepts; two real solutions produce two distinct crossings, not one.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may confuse the number of solutions with the number of x-axis crossings, missing their correspondence."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Two quadratic equations that share the same roots must have identical coefficients when written in standard form.",
+      "correct": "False",
+      "correctExplanation": "Two quadratics with the same roots differ only by a non-zero multiplicative constant; for example, x² - 4 = 0 and 2x² - 8 = 0 share roots but have different coefficients.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may assume same roots imply same equations, missing the role of scaling."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Verifying solutions by substitution is equally important for quadratic equations solved by factoring and by the quadratic formula.",
+      "correct": "True",
+      "correctExplanation": "Arithmetic errors can occur in either method; substitution verifies correctness independently of the solution technique used.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may trust one method over another, missing that verification is always valuable."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A quadratic equation with rational coefficients always has rational solutions when its discriminant is a positive integer.",
+      "correct": "False",
+      "correctExplanation": "Rational solutions require the discriminant to be a perfect square of a rational number, not merely a positive integer; √7 is irrational even though 7 is positive.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may conflate 'positive discriminant' with 'rational discriminant square root', missing the perfect-square requirement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "When the leading coefficient a is negative in ax² + bx + c = 0, the discriminant formula b² - 4ac still determines the nature of the roots.",
+      "correct": "True",
+      "correctExplanation": "The discriminant formula applies regardless of the sign of a; the sign affects the parabola's orientation but not the root-nature diagnosis.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may believe the formula requires a positive leading coefficient, missing its general applicability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why dividing both sides of x² = 5x by x is unsafe?",
+      "correct": "Dividing by x assumes x ≠ 0 and therefore loses any solution where x equals zero",
+      "correctExplanation": "The division is only valid when x ≠ 0; doing it unconditionally silently discards x = 0 as a potential solution.",
+      "distractors": [
+        {
+          "answer": "Dividing introduces fractions that cannot be simplified further in the remaining algebraic steps of the solution",
+          "explanation": "The resulting expression 5x/x = 5 does simplify; the issue is loss of a root, not simplification difficulty."
+        },
+        {
+          "answer": "Dividing violates the rules of algebra because multiplication and division cannot be performed on equations of degree greater than one",
+          "explanation": "Division is a valid operation on equations; the specific issue here is division by a variable expression that could equal zero."
+        },
+        {
+          "answer": "Dividing always reverses the sign of both sides, so the equation produced is not equivalent to the original equation",
+          "explanation": "Division by a positive variable does not reverse signs; the issue is root loss, not sign reversal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the null factor law works only when the right-hand side of the equation equals zero?",
+      "correct": "The law states that a product of zero requires at least one factor to be zero; a non-zero product does not force any factor to any specific value",
+      "correctExplanation": "Zero is the unique number for which its factorisation into any product requires a zero factor; no analogous statement holds for non-zero values.",
+      "distractors": [
+        {
+          "answer": "The law applies to any right-hand side value, but zero is the conventional starting point that students are taught to prefer in school contexts",
+          "explanation": "The law is mathematically specific to zero; applying it to non-zero values yields incorrect 'solutions'."
+        },
+        {
+          "answer": "The law was defined historically only in terms of zero, but modern mathematics has extended it to cover products equal to any constant",
+          "explanation": "No such extension exists; the law remains specific to products equal to zero."
+        },
+        {
+          "answer": "The law requires zero because calculators cannot process non-zero right-hand sides accurately enough for algebraic solving",
+          "explanation": "The limitation is mathematical, not computational; the law's domain is zero by its logical structure."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why completing the square is sometimes preferred over factorising?",
+      "correct": "Completing the square works for all quadratic equations, including those with irrational or complex roots that do not factorise neatly over the integers",
+      "correctExplanation": "Factorising is fast when the equation factors nicely over the integers, but completing the square generalises to all cases and is the basis for deriving the quadratic formula.",
+      "distractors": [
+        {
+          "answer": "Completing the square is faster than factorising in all cases because it requires fewer algebraic steps regardless of the equation",
+          "explanation": "Factorising is typically faster when factors over the integers exist; completing the square requires more steps but generalises."
+        },
+        {
+          "answer": "Completing the square avoids the quadratic formula entirely because it produces numerical answers without using any formula at all",
+          "explanation": "Completing the square produces the quadratic formula by exactly the same logic; it does not avoid the formula's use."
+        },
+        {
+          "answer": "Completing the square is required whenever the coefficient of x² equals one, which is why it is commonly introduced early in learning",
+          "explanation": "Factorising works well when a = 1 too; completing the square is not specifically required for that case."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why a quadratic equation can have at most two real solutions?",
+      "correct": "A polynomial of degree n has at most n real roots; the degree-two nature of a quadratic limits its real solutions to two",
+      "correctExplanation": "The fundamental theorem of algebra (for real roots, a classical corollary) bounds the number of real roots by the polynomial's degree.",
+      "distractors": [
+        {
+          "answer": "A quadratic equation represents a parabola that can only cross a horizontal line at a maximum of three points in the Cartesian plane",
+          "explanation": "A parabola can cross a horizontal line at most twice, not three times; the limit is two."
+        },
+        {
+          "answer": "A quadratic equation is defined as an equation with precisely two solutions, making any deviation from two solutions indicate a different equation type",
+          "explanation": "A quadratic can have zero, one or two real solutions; the definition by degree does not mandate exactly two."
+        },
+        {
+          "answer": "A quadratic equation is restricted to two solutions by convention in school mathematics rather than by any mathematical necessity",
+          "explanation": "The restriction arises from the degree of the polynomial, a mathematical property, not a pedagogical convention."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the discriminant diagnoses the nature of the roots rather than their specific values?",
+      "correct": "The discriminant appears under the square root in the quadratic formula, so its sign determines the existence and the type of the roots",
+      "correctExplanation": "The sign of b² - 4ac governs whether the square root is real, zero, or imaginary, which corresponds to the nature of the roots.",
+      "distractors": [
+        {
+          "answer": "The discriminant is a statistical measure that estimates how likely the roots are to be rational rather than irrational in any given quadratic",
+          "explanation": "The discriminant is algebraic, not statistical; it determines nature deterministically rather than probabilistically."
+        },
+        {
+          "answer": "The discriminant gives the product of the roots directly, which determines whether they are real or complex in all cases",
+          "explanation": "The product of the roots equals c/a, not the discriminant; the discriminant diagnoses nature differently."
+        },
+        {
+          "answer": "The discriminant equals the sum of the roots; this sum indicates their nature independent of the actual root values",
+          "explanation": "The sum of the roots equals -b/a, not the discriminant; sum alone does not diagnose root nature either."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why checking solutions by substitution remains good practice even when using the quadratic formula?",
+      "correct": "Arithmetic errors can occur at any step of applying the formula; substitution is an independent check that does not rely on the original calculation",
+      "correctExplanation": "The formula gives correct answers when applied without error, but verification guards against sign errors, arithmetic slips and transcription mistakes.",
+      "distractors": [
+        {
+          "answer": "The quadratic formula is inherently unreliable in certain cases, so substitution is required to correct the formula's systematic errors",
+          "explanation": "The formula is mathematically reliable; substitution guards against user error rather than formula failure."
+        },
+        {
+          "answer": "Substitution converts decimal answers into rational ones, which is required for final written solutions in examinations at this level",
+          "explanation": "Substitution verifies correctness; it does not convert number types or meet a formatting requirement."
+        },
+        {
+          "answer": "Substitution is required by the quadratic formula's definition as it originally appears in the standard mathematical literature",
+          "explanation": "No such requirement exists in the formula's definition; substitution is separate and is good practice for verification."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why x² + 4 = 0 has no real solutions?",
+      "correct": "Rearranging gives x² = -4, and no real number squared produces a negative result because squaring preserves or creates non-negativity",
+      "correctExplanation": "The square of any real number is non-negative; requiring it to equal a negative value has no real solution.",
+      "distractors": [
+        {
+          "answer": "The equation has no real solutions because the constant 4 is not itself a perfect square, which prevents the square root from being taken",
+          "explanation": "4 is a perfect square; the issue is the negative sign on -4, not the squareness of 4."
+        },
+        {
+          "answer": "The equation has no real solutions because negative signs automatically disqualify any quadratic from having real roots regardless of the other coefficients",
+          "explanation": "Negative signs do not automatically disqualify equations; the specific issue here is x² equalling a negative number."
+        },
+        {
+          "answer": "The equation has no real solutions because there is no x term, and quadratic equations always require a non-zero middle coefficient",
+          "explanation": "The middle coefficient can be zero; the equation x² - 4 = 0, for instance, has two real solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the equation 2x² - 8 = 0 has the same roots as x² - 4 = 0?",
+      "correct": "The two equations differ only by the factor 2, which does not change where the expression equals zero",
+      "correctExplanation": "Multiplying an equation by a non-zero constant preserves its solution set; the roots depend on where the expression is zero, not on the constant factor.",
+      "distractors": [
+        {
+          "answer": "The two equations share a factor of 4 in their constants, which directly determines that their roots must be identical in value",
+          "explanation": "The shared roots arise from the scalar factor, not from the specific constant values being related."
+        },
+        {
+          "answer": "The two equations are algebraically equivalent because multiplying any equation by a non-zero constant produces a different but equivalent equation",
+          "explanation": "The second part is correct but the first phrasing is inexact; the equations are related by scaling, which preserves roots."
+        },
+        {
+          "answer": "The two equations share roots because both have even-numbered constants, which ensures the roots will be the same in any paired comparison",
+          "explanation": "Evenness of constants is incidental; the shared roots arise from the scalar relationship between the equations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why a parabola that opens downward (a < 0) can still have two real x-intercepts?",
+      "correct": "The orientation of the parabola does not determine whether it crosses the x-axis; the discriminant determines the number of real roots regardless of orientation",
+      "correctExplanation": "A downward parabola with positive maximum above the x-axis crosses it twice; the orientation and the root existence are independent.",
+      "distractors": [
+        {
+          "answer": "Downward parabolas always have two real x-intercepts because they must cross the x-axis on the way down to negative infinity",
+          "explanation": "A downward parabola with maximum below the x-axis has no real x-intercepts; the claim is not universal."
+        },
+        {
+          "answer": "Downward parabolas never have real x-intercepts because their orientation prevents them from crossing horizontal lines at any point",
+          "explanation": "Downward parabolas routinely have two real x-intercepts when their maximum is above the x-axis."
+        },
+        {
+          "answer": "Downward parabolas always have exactly one x-intercept because they touch the x-axis only at their maximum point by definition",
+          "explanation": "A single intercept corresponds to the discriminant being zero; this is not a general feature of downward parabolas."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why factorising is often preferred when the coefficients are small integers?",
+      "correct": "Factorising provides an exact answer quickly when factors over the integers are easy to find, avoiding the decimal approximations common in formula use",
+      "correctExplanation": "For well-behaved integer-coefficient quadratics, factorising is fast and produces exact rational roots without the arithmetic burden of the quadratic formula.",
+      "distractors": [
+        {
+          "answer": "Factorising always produces more precise answers than the quadratic formula regardless of whether the roots are rational or irrational",
+          "explanation": "For irrational roots, the quadratic formula is equally precise; factorising over integers simply does not apply."
+        },
+        {
+          "answer": "Factorising is required whenever the coefficients are integers, and the quadratic formula is reserved for non-integer coefficient equations",
+          "explanation": "No such requirement exists; the quadratic formula applies to integer coefficients equally well."
+        },
+        {
+          "answer": "Factorising is preferred because it involves no square roots, which are more complex than multiplication in mental arithmetic exercises",
+          "explanation": "Factorising does not inherently avoid square roots when they are present in the problem; the preference is about efficiency for nice cases."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the quadratic formula is sometimes called a 'universal' method for solving quadratics?",
+      "correct": "The formula applies to any quadratic in standard form and reveals the roots through substitution of coefficients",
+      "correctExplanation": "Universality means that one procedure works for all quadratics, regardless of whether factors exist nicely or the discriminant is zero, positive or negative.",
+      "distractors": [
+        {
+          "answer": "The formula extends to polynomials of any degree through a straightforward generalisation of its basic structure",
+          "explanation": "The quadratic formula is specific to degree-two polynomials; higher-degree formulas (cubic, quartic) exist but are much more complex."
+        },
+        {
+          "answer": "The formula is universal because it was derived separately in multiple mathematical traditions and is therefore accepted worldwide",
+          "explanation": "Cultural universality is not the point; mathematical universality over all quadratics is."
+        },
+        {
+          "answer": "The formula is universal because it produces rational solutions regardless of the coefficients entered into it during application",
+          "explanation": "The formula can produce irrational or complex solutions; universality is over applicability, not about rationality of output."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains the relationship between the discriminant and the vertex of a parabola on the x-axis?",
+      "correct": "A discriminant of zero means the vertex lies exactly on the x-axis, and the parabola touches but does not cross it",
+      "correctExplanation": "Zero discriminant yields a single repeated root at the vertex's x-coordinate; geometrically, the parabola is tangent to the x-axis.",
+      "distractors": [
+        {
+          "answer": "A discriminant of zero means the vertex is above the x-axis, and the parabola has no x-intercepts at all in the plane",
+          "explanation": "If the vertex is above the x-axis (and the parabola opens upward), the discriminant is negative, not zero."
+        },
+        {
+          "answer": "A discriminant of zero means the parabola has two distinct x-intercepts very close together, which is why they appear as a single point",
+          "explanation": "Two distinct x-intercepts require a positive discriminant; zero discriminant is one repeated root, a single tangent point."
+        },
+        {
+          "answer": "A discriminant of zero means the parabola opens downward and crosses the x-axis at exactly one point during its descent",
+          "explanation": "Orientation is determined by a, not the discriminant; zero discriminant means tangency regardless of orientation."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "Dividing both sides of x² = 3x by x is unsafe because it assumes x ≠ {{blank:1}}, which causes the solution {{blank:2}} to be lost.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Division by x requires x to be non-zero, which is not guaranteed in the equation.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Division by 1 is trivial and not the issue; the problem arises when the divisor could equal zero.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "The value 3 is not the concern; the concern is the divisor equalling zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x = 0",
+          "correctExplanation": "The zero root is lost by dividing by x before factoring.",
+          "distractors": [
+            {
+              "answer": "x = 3",
+              "explanation": "x = 3 is preserved even after dividing; the lost root is x = 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "x = -3",
+              "explanation": "x = -3 is not a solution of this equation at all; the lost valid root is x = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The discriminant b² - 4ac determines the {{blank:1}} of the roots; when it is zero, the equation has {{blank:2}} repeated real root.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "nature",
+          "correctExplanation": "The discriminant diagnoses whether roots are real/distinct, real/repeated or complex.",
+          "distractors": [
+            {
+              "answer": "size",
+              "explanation": "The discriminant does not directly give the roots' magnitude.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sum",
+              "explanation": "The sum of the roots is -b/a, not the discriminant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "one",
+          "correctExplanation": "A zero discriminant yields a single repeated real root.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Two distinct real roots require positive discriminant.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Zero roots means no real solutions, which occurs with negative discriminant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "Two quadratic equations that share the same roots differ only by a non-zero {{blank:1}} factor, because the roots depend on where the expression equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiplicative",
+          "correctExplanation": "A multiplicative scalar does not change where the expression is zero.",
+          "distractors": [
+            {
+              "answer": "additive",
+              "explanation": "Adding a constant to one side shifts the roots; it does not preserve them.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "logarithmic",
+              "explanation": "Logarithmic factors are not at play in this algebraic relation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "Roots are precisely the values where the expression equals zero.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "Roots are identified at zero, not at one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "infinity",
+              "explanation": "Infinity is not the relevant value; zero is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Completing the square converts ax² + bx + c = 0 into a form where one side is a perfect {{blank:1}}, making the square root {{blank:2}} useful for isolating x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "square",
+          "correctExplanation": "Completing the square produces (x + h)² on one side, a perfect square expression.",
+          "distractors": [
+            {
+              "answer": "cube",
+              "explanation": "Cubic expressions are not produced by completing the square in quadratics.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "quotient",
+              "explanation": "Quotients are not the outcome of completing the square.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "directly",
+          "correctExplanation": "Taking the square root of both sides isolates x directly once the perfect square is in place.",
+          "distractors": [
+            {
+              "answer": "rarely",
+              "explanation": "Square roots are routinely useful after completing the square; rare usage misdescribes the method.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "secretly",
+              "explanation": "Secrecy is unrelated to the algebraic operation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A quadratic with rational coefficients has rational solutions only when its discriminant is a perfect {{blank:1}} of a rational number; an irrational {{blank:2}} of the discriminant yields irrational solutions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "square",
+          "correctExplanation": "Perfect squares of rationals have rational square roots; the discriminant must meet this criterion for rational solutions.",
+          "distractors": [
+            {
+              "answer": "cube",
+              "explanation": "Cubes are not the relevant structure; rational square roots require perfect squares.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sum",
+              "explanation": "Sums are not the structure required; squares are.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "root",
+          "correctExplanation": "When the square root of the discriminant is irrational, the resulting solutions are irrational.",
+          "distractors": [
+            {
+              "answer": "sign",
+              "explanation": "The sign of the discriminant determines existence of real roots, not irrationality.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "size",
+              "explanation": "Size is unrelated to rationality; the structure under the root is what matters.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Verification by substitution guards against arithmetic errors independently of the solution method; this matters especially when using the quadratic {{blank:1}}, because intermediate steps involve {{blank:2}} arithmetic that is easy to slip on.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "formula",
+          "correctExplanation": "The quadratic formula has multiple arithmetic steps where errors can creep in.",
+          "distractors": [
+            {
+              "answer": "identity",
+              "explanation": "Identities are general truths; the formula is the step-by-step procedure being discussed.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "theorem",
+              "explanation": "Theorems are statements; the formula is the procedure whose steps can go wrong.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "signed",
+          "correctExplanation": "Signed arithmetic (positive and negative values) is a common source of errors in the quadratic formula.",
+          "distractors": [
+            {
+              "answer": "trivial",
+              "explanation": "The arithmetic is not trivial; signs, squares and subtractions all create opportunities for error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "musical",
+              "explanation": "Musical is irrelevant to the arithmetic context.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A rectangle with area 72 cm² and length 6 cm more than its width leads to the quadratic w² + 6w - 72 = 0, whose positive solution gives the width.",
+      "correct": "True",
+      "correctExplanation": "Letting width = w, length = w + 6, so w(w + 6) = 72, which rearranges to w² + 6w - 72 = 0; factorising gives (w + 12)(w - 6) = 0, so w = 6 (discarding the negative).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Students may set up the equation incorrectly, missing the area-product structure or the variable assignment."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "When applying the null factor law, it is acceptable to set the right-hand side to 5 instead of zero provided that five is also a solution of the equation.",
+      "correct": "False",
+      "correctExplanation": "The law works only for products equal to zero; applying it to any other right-hand side is mathematically invalid regardless of what solutions the equation has.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Students may relax the zero requirement, producing invalid 'solutions' by applying the law where it does not apply."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A ball is thrown upward with initial velocity 20 m/s from a height of 5 m. Its height h (in metres) at time t (in seconds) is h = 5 + 20t - 5t². Which one of the following correctly finds when the ball hits the ground?",
+      "correct": "Setting h = 0 gives 5 + 20t - 5t² = 0; dividing by -5 yields t² - 4t - 1 = 0, and applying the quadratic formula gives t ≈ 4.24 seconds",
+      "correctExplanation": "Ground level corresponds to h = 0; solving the quadratic gives two roots, of which only the positive root represents physical time after throwing.",
+      "distractors": [
+        {
+          "answer": "Setting h = 5 gives 5t² - 20t = 0; factoring yields t(5t - 20) = 0, so t = 0 or t = 4 seconds as the ground impact times",
+          "explanation": "h = 5 corresponds to the starting height, not ground level; the question requires h = 0."
+        },
+        {
+          "answer": "Setting h = 20 gives -5t² + 20t - 15 = 0, from which the quadratic formula yields the ground impact time directly without requiring negative root rejection",
+          "explanation": "h = 20 is an arbitrary height above ground; it does not represent ground impact."
+        },
+        {
+          "answer": "Setting the velocity to zero gives the ground impact time, because the ball is momentarily stationary at its highest point during its motion",
+          "explanation": "Zero velocity gives the peak height, not ground impact; these are different events in the trajectory."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Which one of the following is the correct solution of x² - 6x + 9 = 0?",
+      "correct": "x = 3 is a repeated root because the equation factorises as (x - 3)²",
+      "correctExplanation": "The equation is a perfect square: (x - 3)² = 0, giving x = 3 as a repeated root (multiplicity two).",
+      "distractors": [
+        {
+          "answer": "x = 3 and x = -3 are both distinct roots, because every quadratic equation with a positive leading coefficient has two real solutions",
+          "explanation": "Not every quadratic has two distinct real solutions; this one has a zero discriminant and a repeated root."
+        },
+        {
+          "answer": "x = 9 is the only solution, because the constant term reveals the value directly after rearrangement of the equation",
+          "explanation": "The constant term does not directly give the root; factoring or the quadratic formula gives x = 3."
+        },
+        {
+          "answer": "There are no real solutions because the discriminant b² - 4ac is negative for this particular quadratic equation in standard form",
+          "explanation": "The discriminant is 36 - 36 = 0, which yields one repeated real root, not no real solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Which one of the following is the correct solution of the equation x² - 3x = 10?",
+      "correct": "Rearrange to x² - 3x - 10 = 0, factorise as (x - 5)(x + 2) = 0, so x = 5 or x = -2",
+      "correctExplanation": "Setting the equation to zero is essential before factoring; factoring and applying the null factor law gives the two real roots.",
+      "distractors": [
+        {
+          "answer": "Solve directly without rearranging: x = 10/3 after dividing both sides by x to simplify the equation to a linear one",
+          "explanation": "Dividing by x is unsafe; also, this misapplies linear methods to a quadratic."
+        },
+        {
+          "answer": "Factorise as x(x - 3) = 10, then apply the null factor law to both x and (x - 3), yielding the roots 10 and 13",
+          "explanation": "The null factor law requires the right-hand side to be zero, not 10; this misapplication is a common error."
+        },
+        {
+          "answer": "The equation has no integer solutions because 10 is not a perfect square and cannot appear in an integer-root quadratic equation",
+          "explanation": "10 does not need to be a perfect square for integer roots; factoring x² - 3x - 10 reveals them directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A rectangle has length 3 cm more than its width and an area of 54 cm². Which one of the following correctly finds the width?",
+      "correct": "Let width = w; then w(w + 3) = 54, giving w² + 3w - 54 = 0; factoring yields w = 6",
+      "correctExplanation": "The non-physical negative root is discarded because widths are positive; factoring over the integers yields the physical answer directly.",
+      "distractors": [
+        {
+          "answer": "Let width = w; then 2w + 3 = 54, giving w = 25.5 as the width by perimeter reasoning",
+          "explanation": "This uses a perimeter formula; the problem gives area, not perimeter."
+        },
+        {
+          "answer": "Let width = w; then w² = 54, giving w = √54 ≈ 7.35 cm ignoring the length-width difference specified",
+          "explanation": "This ignores the 'length is 3 more than width' relationship in the problem."
+        },
+        {
+          "answer": "Let width = w; then w + 3 = 54, giving w = 51 by additive reasoning about the dimensions",
+          "explanation": "Additive reasoning is not appropriate for area; multiplication of dimensions is required."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Applying the quadratic formula to 2x² + 5x - 3 = 0, which one of the following correctly identifies a and provides the discriminant?",
+      "correct": "a = 2 and the discriminant is 25 + 24 = 49, yielding x = (-5 ± 7) / 4, so x = 1/2 or x = -3",
+      "correctExplanation": "Identifying a = 2, b = 5, c = -3, the discriminant is 5² - 4(2)(-3) = 25 + 24 = 49; the quadratic formula gives two rational roots.",
+      "distractors": [
+        {
+          "answer": "a = 2 and the discriminant is 25 - 24 = 1, so the quadratic formula yields x = (-5 ± 1) / 4, giving x = -1 or x = -3/2",
+          "explanation": "The 4ac term is -4(2)(-3) = +24, which must be added to 25, not subtracted; sign error on c."
+        },
+        {
+          "answer": "a = 1 and the discriminant is 25 - 12 = 13, so the quadratic formula yields x = (-5 ± √13) / 2 as the solution",
+          "explanation": "a is 2 not 1; using the wrong a distorts the discriminant and the denominator."
+        },
+        {
+          "answer": "a = 2 and the discriminant is -25 - 24 = -49, so no real solutions exist for this equation under real-number operations",
+          "explanation": "The discriminant is b² - 4ac, not -b² - 4ac; the sign error produces the wrong conclusion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Which one of the following correctly identifies the error in the solution shown? 'Solve x² = 9x. Dividing by x: x = 9.'",
+      "correct": "The solution loses x = 0 by dividing by x, which assumes x ≠ 0; the correct solution rearranges to x² - 9x = 0 and factors",
+      "correctExplanation": "Division by x loses one of the two real solutions; proper setup via rearrangement and factoring preserves both x = 0 and x = 9.",
+      "distractors": [
+        {
+          "answer": "The solution uses the wrong inverse operation: instead of dividing by x, both sides should be multiplied by x to clear the variable",
+          "explanation": "Multiplying by x would produce a cubic, not simplify the equation; division is not the error type being described here."
+        },
+        {
+          "answer": "The solution is correct as shown, because x = 9 is a valid root of the equation and no further solutions exist for this equation",
+          "explanation": "x = 0 is also a valid root; losing it is the error, so the shown solution is incomplete, not correct."
+        },
+        {
+          "answer": "The solution should have added 9x to both sides before simplifying, rather than dividing, to produce a linear equation in x directly",
+          "explanation": "Adding 9x yields 2x² + 9x = 18x, which is not a standard simplification; rearrangement plus factoring is the sound path."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Which one of the following equations has x = -3 and x = 5 as its roots?",
+      "correct": "x² - 2x - 15 = 0, because (x + 3)(x - 5) = x² - 5x + 3x - 15 = x² - 2x - 15",
+      "correctExplanation": "Building from the roots: (x - r₁)(x - r₂) = (x + 3)(x - 5) = x² - 2x - 15. Checking: the roots satisfy the equation.",
+      "distractors": [
+        {
+          "answer": "x² + 2x - 15 = 0, because the sum of the roots -3 and 5 is +2 and the product is -15 in this case",
+          "explanation": "The coefficient of x is -(sum of roots), not +(sum of roots); this gives the sum right but the sign wrong."
+        },
+        {
+          "answer": "x² - 2x + 15 = 0, because the product of the roots -3 × 5 = -15 is then subtracted from zero to form the constant term",
+          "explanation": "The constant is +(product of roots), which is -15, not +15; sign error on the constant."
+        },
+        {
+          "answer": "x² + 15x - 2 = 0, placing the sum and the product into the standard form in this specific configuration of coefficients",
+          "explanation": "This misplaces the coefficients; for monic quadratics, the coefficient of x is -(sum), and the constant is +(product)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Which one of the following correctly describes the number of real solutions of x² - 4x + 5 = 0?",
+      "correct": "No real solutions exist, because the discriminant b² - 4ac = 16 - 20 = -4 is negative",
+      "correctExplanation": "The negative discriminant indicates that the equation has no real roots; its roots are complex conjugates.",
+      "distractors": [
+        {
+          "answer": "Two distinct real solutions, because a = 1 is positive and positive-leading quadratics always cross the x-axis twice",
+          "explanation": "Positive leading coefficient does not guarantee real roots; discriminant determines existence."
+        },
+        {
+          "answer": "One real repeated solution, because the discriminant equals zero in this specific coefficient arrangement",
+          "explanation": "The discriminant is -4, not zero; this misreads the calculation."
+        },
+        {
+          "answer": "Two distinct real solutions, because b² = 16 exceeds c = 5 and solutions are real in this configuration",
+          "explanation": "The discriminant b² - 4ac is what matters, not the comparison of b² to c."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Which one of the following is the correct solution of 4x² - 12x + 9 = 0?",
+      "correct": "x = 3/2 is a repeated root, because 4x² - 12x + 9 = (2x - 3)²",
+      "correctExplanation": "The expression is a perfect square: (2x - 3)² = 0, giving 2x - 3 = 0, so x = 3/2 (multiplicity two).",
+      "distractors": [
+        {
+          "answer": "x = 3/4 is a repeated root, because the leading coefficient and the constant factor into the repeated root calculation directly",
+          "explanation": "The repeated root comes from 2x - 3 = 0, giving x = 3/2, not x = 3/4."
+        },
+        {
+          "answer": "x = 3 and x = 3/4 are two distinct roots, because factoring yields two separate factors with different roots",
+          "explanation": "The expression is a perfect square, yielding one repeated root; it does not split into two distinct factors."
+        },
+        {
+          "answer": "No real solutions exist, because the discriminant b² - 4ac = 144 - 144 = 0 indicates the absence of any real roots in this case",
+          "explanation": "Zero discriminant indicates one repeated real root, not no real roots; the two outcomes are different."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A student attempts to solve x² + 5x + 6 = 0 by adding 6 to both sides and factoring x² + 5x = -6. Which one of the following correctly identifies the problem?",
+      "correct": "The null factor law requires the right-hand side to equal zero, so adding 6 moves away from the form needed for factoring-based solution",
+      "correctExplanation": "The correct move is to leave the equation set to zero and factor the left side directly; rearranging away from zero defeats the purpose.",
+      "distractors": [
+        {
+          "answer": "The student should have subtracted 6 from both sides before attempting to factor the expression in any further steps",
+          "explanation": "The equation already had the correct form (zero on right); subtracting 6 would move away from the needed form."
+        },
+        {
+          "answer": "The student should have divided both sides by x before attempting to factor, which would have simplified the equation to linear form",
+          "explanation": "Dividing by x is unsafe and would not simplify correctly; the correct method is to factor the left side set to zero."
+        },
+        {
+          "answer": "The student should have applied the quadratic formula first, then verified the solutions by substituting back into the original equation",
+          "explanation": "While the formula works, the primary issue with the shown approach is that moving constants away from zero defeats null factor law setup."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Which one of the following correctly solves x² + 2x - 8 = 0 by completing the square?",
+      "correct": "Rewrite as (x + 1)² = 9, so x + 1 = ±3, giving x = 2 or x = -4",
+      "correctExplanation": "Add 1 to both sides after isolating x² + 2x = 8, forming (x + 1)² = 9 on the left; taking square roots gives the two solutions.",
+      "distractors": [
+        {
+          "answer": "Rewrite as (x + 2)² = 12, so x + 2 = ±√12, giving x = -2 + √12 or x = -2 - √12 as the final solutions of the quadratic",
+          "explanation": "The square completion here is wrong: half the coefficient of x is 1, not 2, so (x + 1)² is correct."
+        },
+        {
+          "answer": "Rewrite as (x - 1)² = 9, so x - 1 = ±3, giving x = 4 or x = -2 as the solutions of the completed-square form",
+          "explanation": "The sign inside the bracket matches the sign of half the coefficient of x, which is +1, not -1; this is a sign error."
+        },
+        {
+          "answer": "Rewrite as (x + 1)² = 7, so x + 1 = ±√7, giving x = -1 + √7 or x = -1 - √7 as the exact irrational solutions",
+          "explanation": "The right-hand side should be 9, not 7: 8 + 1 = 9 after adding 1 to complete the square. Sign or arithmetic error on the constant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Which one of the following correctly applies the quadratic formula to x² - 4x - 5 = 0?",
+      "correct": "x = (4 ± √(16 + 20)) / 2 = (4 ± 6) / 2, giving x = 5 or x = -1",
+      "correctExplanation": "With a = 1, b = -4, c = -5, the discriminant is 16 + 20 = 36 and √36 = 6; the formula yields the two roots directly.",
+      "distractors": [
+        {
+          "answer": "x = (-4 ± √(16 + 20)) / 2 = (-4 ± 6) / 2, giving x = 1 or x = -5 as the two real roots of the equation",
+          "explanation": "The -b in the formula is -(-4) = +4, not -4; a sign error on b."
+        },
+        {
+          "answer": "x = (4 ± √(16 - 20)) / 2 = (4 ± √(-4)) / 2, giving no real roots since the discriminant is negative in this case",
+          "explanation": "The -4ac term is -4(1)(-5) = +20, not -20; sign error on c."
+        },
+        {
+          "answer": "x = (4 ± √(16 + 20)) / 1 = 4 ± 6, giving x = 10 or x = -2 as the correct two solutions of the equation",
+          "explanation": "The denominator of the formula is 2a = 2, not 1 or a; omitting it produces the wrong answers."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "When a word problem gives the area of a rectangle and a relationship between length and width, the resulting equation is {{blank:1}}; the physically meaningful root is the {{blank:2}} one, since dimensions are positive.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "quadratic",
+          "correctExplanation": "Area-based problems with linear length-width relationships produce quadratic equations in one variable.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "A linear equation would result from a perimeter relationship, not from an area relationship combined with a length-width link.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "cubic",
+              "explanation": "Cubic equations arise from three-dimensional volume problems, not two-dimensional area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "Physical dimensions must be positive; negative algebraic roots are rejected.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "Negative widths have no physical meaning in rectangle problems.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "larger",
+              "explanation": "Size is not the criterion; physical meaning (positivity) is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Solving x² = 9x by dividing both sides by x causes the solution x = {{blank:1}} to be lost; the correct approach rearranges to x² - 9x = 0 and uses the {{blank:2}} law.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Division by x silently excludes x = 0, which is a valid root of the equation.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "x = 9 is preserved by dividing by x; the lost root is x = 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "-9",
+              "explanation": "x = -9 is not a solution of this equation at all.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "null factor",
+          "correctExplanation": "The null factor law applied to x(x - 9) = 0 preserves both x = 0 and x = 9 as solutions.",
+          "distractors": [
+            {
+              "answer": "distributive",
+              "explanation": "The distributive law is used for expanding brackets, not for solving after factoring.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "associative",
+              "explanation": "The associative law is a general property of operations, not a solving strategy.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "For a quadratic to factorise neatly over the integers, its {{blank:1}} must be a perfect square; otherwise {{blank:2}} methods such as the quadratic formula are preferred.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "discriminant",
+          "correctExplanation": "A perfect-square discriminant ensures rational square root and integer factorisation when coefficients are integers.",
+          "distractors": [
+            {
+              "answer": "leading coefficient",
+              "explanation": "The leading coefficient does not need to be a perfect square for integer factorisation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "constant term",
+              "explanation": "The constant term's squareness does not guarantee factorisation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "algebraic",
+          "correctExplanation": "Algebraic methods (formula, completing the square) work when factoring is impractical.",
+          "distractors": [
+            {
+              "answer": "graphical",
+              "explanation": "Graphical methods give approximate roots rather than exact algebraic ones.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "trigonometric",
+              "explanation": "Trigonometric methods are not standard for general quadratics.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "When a physical problem produces two roots and one is negative, the negative root is usually {{blank:1}} because physical quantities such as time or length are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "discarded",
+          "correctExplanation": "Non-physical roots are rejected in favour of the physically meaningful one.",
+          "distractors": [
+            {
+              "answer": "averaged",
+              "explanation": "Averaging roots is not the standard procedure for interpreting physical problems.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "squared",
+              "explanation": "Squaring negative roots does not resolve the physical-interpretation issue.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "Lengths, times and masses are positive in physical contexts.",
+          "distractors": [
+            {
+              "answer": "complex",
+              "explanation": "Physical quantities are real, not complex, in typical Year 10 problems.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "irrational",
+              "explanation": "Physical quantities can be rational or irrational; the distinguishing feature here is positivity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A quadratic whose discriminant equals {{blank:1}} has exactly one repeated root; geometrically, its parabola is {{blank:2}} to the x-axis at that root.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "Zero discriminant produces one repeated real root.",
+          "distractors": [
+            {
+              "answer": "negative one",
+              "explanation": "Negative discriminants yield no real roots, not one repeated root.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "four",
+              "explanation": "The specific value of the discriminant does not matter for root nature; only its sign (positive, zero, negative).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tangent",
+          "correctExplanation": "Tangency corresponds to the parabola touching the x-axis at one point without crossing.",
+          "distractors": [
+            {
+              "answer": "parallel",
+              "explanation": "Parallel parabolas do not exist in the standard sense; tangency is the correct description.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "perpendicular",
+              "explanation": "Perpendicularity is not the relation between a parabola and a line at its root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Applying the quadratic formula correctly requires careful attention to the {{blank:1}} of each coefficient; sign errors on b or c are a common source of {{blank:2}} in student solutions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sign",
+          "correctExplanation": "The signs of b and c determine whether the discriminant is positive or negative.",
+          "distractors": [
+            {
+              "answer": "size",
+              "explanation": "Size matters for magnitude but not for the sign errors being discussed.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "position",
+              "explanation": "Positional notation in the formula is part of the care required, but sign is the specific issue.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "errors",
+          "correctExplanation": "Sign errors lead to incorrect discriminant values and wrong roots.",
+          "distractors": [
+            {
+              "answer": "elegance",
+              "explanation": "Elegance is not the source of the problem; correctness is.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "speed",
+              "explanation": "Speed is not at issue; correctness is the primary concern.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A quadratic that factors as a perfect square, for example (x - 5)², produces a single {{blank:1}} root x = 5; geometrically, the graph just touches the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "repeated",
+          "correctExplanation": "Perfect squares produce repeated roots of multiplicity two.",
+          "distractors": [
+            {
+              "answer": "complex",
+              "explanation": "Perfect squares of real binomials give real repeated roots.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative",
+              "explanation": "The sign of the root depends on the binomial; in (x - 5)² the root is +5, not negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x-axis",
+          "correctExplanation": "A graph with a repeated root touches the x-axis at the root without crossing it.",
+          "distractors": [
+            {
+              "answer": "y-axis",
+              "explanation": "The relevant axis for x-roots is the x-axis, not the y-axis.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "origin",
+              "explanation": "The touch point is at (5, 0), not the origin.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "For a word problem involving uniformly accelerated motion in one dimension, the resulting height equation is often {{blank:1}}; setting it to {{blank:2}} models the moment when the object returns to ground level.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "quadratic",
+          "correctExplanation": "Uniformly accelerated motion produces a quadratic relationship between height and time.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear equations arise from constant velocity, not constant acceleration.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exponential",
+              "explanation": "Exponential equations arise from proportional growth/decay, not from gravitational motion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "Height zero represents ground level, where the object has landed.",
+          "distractors": [
+            {
+              "answer": "maximum",
+              "explanation": "Setting the height to its maximum gives the peak, not the landing moment.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "infinity",
+              "explanation": "Infinity has no physical meaning here; zero gives the landing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Constructing a quadratic from known roots r₁ and r₂ gives (x - r₁)(x - r₂), which expands to x² - ({{blank:1}})x + ({{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "r₁ + r₂",
+          "correctExplanation": "The coefficient of x in the expansion is the negative of the sum of the roots.",
+          "distractors": [
+            {
+              "answer": "r₁ × r₂",
+              "explanation": "The product of the roots gives the constant term, not the x coefficient.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "r₁ - r₂",
+              "explanation": "The difference of roots does not feature in the expansion this way.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "r₁ × r₂",
+          "correctExplanation": "The constant term is the product of the roots.",
+          "distractors": [
+            {
+              "answer": "r₁ + r₂",
+              "explanation": "The sum is the coefficient of x (with sign reversal), not the constant.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "r₁ - r₂",
+              "explanation": "The difference does not appear in the coefficients of the expanded quadratic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Completing the square on x² + 2x - 8 = 0 gives (x + {{blank:1}})² = 9; taking the square root yields x = -1 ± {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Half the coefficient of x is 1; adding 1² = 1 completes the square to (x + 1)².",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Half of 2 is 1, not 2; completing the square uses half the coefficient of x.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "Half of 2 is 1, not 3; this is arithmetic error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Taking the square root of 9 gives 3; the roots are -1 + 3 = 2 or -1 - 3 = -4.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "The square root of 9 is 3, not 9.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "The square root of 9 is 3; this error likely comes from the bracket value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "The roots of 4x² - 12x + 9 = 0 are a single {{blank:1}} root because the expression is a perfect square, namely ({{blank:2}})².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "repeated",
+          "correctExplanation": "Perfect squares produce repeated roots in quadratic equations.",
+          "distractors": [
+            {
+              "answer": "imaginary",
+              "explanation": "The expression factors over the reals; the root is repeated and real.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "irrational",
+              "explanation": "The root x = 3/2 is rational; the qualitative feature is its repetition, not irrationality.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2x - 3",
+          "correctExplanation": "Checking: (2x - 3)² = 4x² - 12x + 9, matching the given expression exactly.",
+          "distractors": [
+            {
+              "answer": "2x + 3",
+              "explanation": "(2x + 3)² would have a positive middle term, not -12x.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4x - 3",
+              "explanation": "(4x - 3)² = 16x² - 24x + 9, which does not match 4x² - 12x + 9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A quadratic equation modelling a projectile's height has two positive roots when the projectile is thrown {{blank:1}} and eventually lands; the larger root represents the time at {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "upward",
+          "correctExplanation": "Upward-thrown projectiles rise, reach maximum height and fall back down, giving two positive time roots.",
+          "distractors": [
+            {
+              "answer": "downward",
+              "explanation": "A downward throw gives a monotonically decreasing height; there is only one landing time.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "horizontally",
+              "explanation": "Horizontal throws give one root under standard gravity in one dimension; the second root arises from vertical reversal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "landing",
+          "correctExplanation": "The larger root is the landing time; the smaller root would be the launching time if the trajectory were extended backward.",
+          "distractors": [
+            {
+              "answer": "launch",
+              "explanation": "The launch time is usually the smaller root or zero; the larger root is the later landing.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "apex",
+              "explanation": "The apex is at the midpoint in time, not the larger root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that the quadratic formula is always preferable to factorising because it works universally. Which one of the following best evaluates this claim?",
+      "correct": "The claim overstates universality's value; factorising is faster and exact for well-chosen coefficients, so both methods have their place",
+      "correctExplanation": "Universality and efficiency are separate criteria; the best method depends on the specific equation and what is being asked.",
+      "distractors": [
+        {
+          "answer": "The claim is entirely correct; the quadratic formula replaces all other methods and should be used for every quadratic regardless of the coefficients",
+          "explanation": "Factorising is often faster for integer-coefficient cases; preferring one method universally ignores efficiency considerations."
+        },
+        {
+          "answer": "The claim is mistaken because factorising is always preferable, and the quadratic formula should be reserved for cases beyond the senior secondary curriculum",
+          "explanation": "The quadratic formula is a core senior secondary tool; it is not reserved for beyond-curriculum work."
+        },
+        {
+          "answer": "The claim is correct because the quadratic formula is always more accurate than factorising, which introduces rounding errors in every case",
+          "explanation": "Factorising over integers is exact; rounding is not introduced. The formula's universality is not about accuracy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student argues that because every quadratic has at most two roots, solving any given quadratic will always yield two numerical answers. Which one of the following best evaluates this argument?",
+      "correct": "The argument overstates the conclusion; 'at most two' includes cases of zero, one (repeated) or two real roots, depending on the discriminant",
+      "correctExplanation": "The upper bound of two does not guarantee exactly two; the discriminant determines how many real solutions a specific equation has.",
+      "distractors": [
+        {
+          "answer": "The argument is entirely correct because every quadratic has precisely two numerical answers, never fewer, in every case encountered",
+          "explanation": "Quadratics can have zero real roots (negative discriminant) or one repeated root (zero discriminant)."
+        },
+        {
+          "answer": "The argument is mistaken because every quadratic has exactly three roots, two of which are hidden when solutions are reported",
+          "explanation": "Three roots would require a cubic; quadratics have at most two."
+        },
+        {
+          "answer": "The argument is correct because complex roots always exist and should be reported alongside real ones to give the full count of two",
+          "explanation": "Complex roots exist for negative discriminants, but the question specifies real numerical answers; counting all roots (real + complex) always gives two, but the student's argument treated only real, inconsistently."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student solving a word problem arrives at the equation w² + 10w - 200 = 0 where w is a physical length. Which one of the following best evaluates the decision to keep only the positive root?",
+      "correct": "Keeping only the positive root is correct because physical lengths are positive; the negative algebraic root has no physical meaning in this context",
+      "correctExplanation": "Mathematical problems derived from physical contexts often admit algebraic solutions that do not map to reality; selecting physically meaningful roots is part of the modelling process.",
+      "distractors": [
+        {
+          "answer": "Keeping only the positive root is incorrect because both algebraic roots should be reported regardless of the physical context of the problem",
+          "explanation": "Reporting physically meaningless roots in an applied problem is misleading; context-appropriate selection is proper."
+        },
+        {
+          "answer": "Keeping only the positive root is arbitrary because negative lengths are meaningful in some mathematical contexts and should always be included in applied problems",
+          "explanation": "Lengths in this context are positive; selection is principled, not arbitrary."
+        },
+        {
+          "answer": "Keeping only the positive root is a shortcut that avoids the need to solve the equation carefully using algebraic methods",
+          "explanation": "Selection of the physical root is a modelling step after algebraic solution, not a shortcut replacing solution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student evaluating when to use completing the square versus the quadratic formula argues that they are mathematically equivalent and the choice is purely aesthetic. Which one of the following best evaluates this view?",
+      "correct": "The methods are mathematically equivalent in outcome, but each offers pedagogical and practical advantages depending on the context and what the problem asks for",
+      "correctExplanation": "Completing the square reveals the vertex directly; the quadratic formula is procedurally reliable. Choice between them depends on what insight or efficiency is wanted.",
+      "distractors": [
+        {
+          "answer": "The view is entirely correct because the two methods are interchangeable in every respect and produce identical reasoning experiences for every student using them",
+          "explanation": "The methods share outcomes but differ in what they reveal; completing the square exposes vertex form, the formula exposes a standardised procedure."
+        },
+        {
+          "answer": "The view is mistaken because the two methods produce different numerical answers depending on which one is selected at the start of the solution",
+          "explanation": "The answers match; the claim of numerical difference is incorrect."
+        },
+        {
+          "answer": "The view is correct because both methods are equally slow in all cases and there is no practical reason to prefer one over the other",
+          "explanation": "The two methods differ in speed depending on the problem; they are not uniformly equal in pace."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student evaluates the claim that 'the discriminant is just a shortcut and students should always solve the equation fully'. Which one of the following best evaluates this claim?",
+      "correct": "The discriminant efficiently diagnoses root nature without full solution, which is valuable when root existence or type is what the problem asks for",
+      "correctExplanation": "Diagnostic use of the discriminant answers different questions from full root calculation; dismissing it as 'just a shortcut' misses its distinct purpose.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because the discriminant provides only incomplete information that must always be supplemented with full solution regardless of what the problem asks",
+          "explanation": "The discriminant answers specific questions completely on its own; full solution is needed when values are asked for, not for nature alone."
+        },
+        {
+          "answer": "The claim is mistaken because the discriminant replaces the quadratic formula entirely and students should never need to calculate actual roots in any context",
+          "explanation": "Actual root values matter when problems require them; the discriminant alone does not provide values."
+        },
+        {
+          "answer": "The claim is correct because the discriminant is always slower than full solution and its use indicates insufficient algebraic skill on the student's part",
+          "explanation": "The discriminant is quicker than full solution for its specific purpose; speed is not the issue."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student evaluates whether to check their answer to a quadratic equation by substitution. They argue that if they used the quadratic formula, checking is unnecessary. Which one of the following best evaluates this view?",
+      "correct": "Checking by substitution guards against arithmetic errors in formula application; the formula itself is mathematically reliable but its manual use is error-prone",
+      "correctExplanation": "The distinction between the formula's correctness and the user's correct application motivates substitution checking as independent verification.",
+      "distractors": [
+        {
+          "answer": "The student is correct because the quadratic formula is never applied incorrectly and checking is therefore redundant in every case",
+          "explanation": "Arithmetic errors in applying the formula are common; checking is not redundant."
+        },
+        {
+          "answer": "The student is mistaken because the quadratic formula is unreliable and always requires checking to catch the errors it produces routinely",
+          "explanation": "The formula is mathematically reliable; the issue is user error, not formula error."
+        },
+        {
+          "answer": "The student is correct because checking by substitution is longer than applying the formula and should be avoided to save time",
+          "explanation": "Checking takes little additional time and catches many common errors; avoidance for speed is not sound practice."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student argues that dividing both sides of x² = 2x by x 'works because x = 2 is a solution'. Which one of the following best evaluates the argument?",
+      "correct": "The argument is mistaken because dividing by x loses x = 0 as a solution; partial correctness of one root does not justify the method",
+      "correctExplanation": "Methods must preserve all solutions; losing one root through unwarranted division is a well-known error even when another root survives.",
+      "distractors": [
+        {
+          "answer": "The argument is correct because the solution x = 2 confirms that dividing by x is a valid method for this equation",
+          "explanation": "Preservation of one root does not validate a method that loses another; both roots matter."
+        },
+        {
+          "answer": "The argument is partially correct because x = 2 is the only real solution and the missing root would not affect the problem",
+          "explanation": "x = 0 is a real solution too; missing it is a genuine error, not negligible."
+        },
+        {
+          "answer": "The argument is mistaken because x = 2 is not actually a solution and division by x always produces incorrect solutions",
+          "explanation": "x = 2 is a valid solution; the specific issue is that x = 0 is lost, not that x = 2 is wrong."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student synthesises their quadratic-solving experience and concludes that 'every quadratic can be solved by the quadratic formula, so other methods are unnecessary to learn'. Which one of the following best evaluates this synthesis?",
+      "correct": "The synthesis overlooks what each method reveals; factorising, completing the square and graphing all build distinct insights beyond producing numerical answers",
+      "correctExplanation": "Different methods illuminate different properties of quadratics (factor structure, vertex, intercepts); a complete education engages all of them rather than collapsing to one.",
+      "distractors": [
+        {
+          "answer": "The synthesis is entirely correct because the quadratic formula is the only method needed; all others are historical curiosities with no current relevance",
+          "explanation": "Other methods remain mathematically and pedagogically valuable; their reduction to curiosities misreads their function."
+        },
+        {
+          "answer": "The synthesis is mistaken because the quadratic formula produces wrong answers and should be replaced entirely by factorising in every case",
+          "explanation": "The formula produces correct answers when applied correctly; the critique misidentifies its reliability."
+        },
+        {
+          "answer": "The synthesis is correct because the quadratic formula works for all polynomial equations regardless of degree, making other methods redundant for all polynomials",
+          "explanation": "The quadratic formula is specific to degree-two polynomials; higher-degree methods differ and are not displaced by it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A teacher argues that students should memorise the quadratic formula but need not understand its derivation. Which one of the following best evaluates this pedagogical claim?",
+      "correct": "Understanding the derivation from completing the square deepens flexibility and confidence; memorisation without understanding works short-term but limits transfer",
+      "correctExplanation": "Derivation-aware learners can reconstruct the formula if forgotten, adapt it to related problems and see its logic; pure memorisation lacks this robustness.",
+      "distractors": [
+        {
+          "answer": "The claim is entirely correct because understanding derivation is an academic luxury that has no practical benefit for problem solving in any examination",
+          "explanation": "Understanding supports flexible problem solving and transfer; it is not merely academic."
+        },
+        {
+          "answer": "The claim is mistaken because students should never memorise the formula and should always derive it from scratch during every use in every examination",
+          "explanation": "Memorisation and understanding are not opposed; memorisation supported by understanding is the pedagogical aim."
+        },
+        {
+          "answer": "The claim is correct because derivation is impossible to teach to Year 10 students and should be deferred to university studies entirely",
+          "explanation": "Year 10 students can engage with completing the square and derive the formula; deferral to university underestimates the curriculum."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student attempts to solve (x - 3)(x - 5) = 4 by setting x - 3 = 4 and x - 5 = 4 to apply the null factor law. Which one of the following best evaluates this attempt?",
+      "correct": "The null factor law requires the right-hand side to equal zero; expanding and rearranging to x² - 8x + 11 = 0 first is the correct path",
+      "correctExplanation": "Applying the null factor law to a non-zero right-hand side is a common misapplication; the law is specific to products equal to zero.",
+      "distractors": [
+        {
+          "answer": "The attempt is correct because the null factor law applies to any product equal to any constant, with each factor set to that constant in turn",
+          "explanation": "The law applies only to products equal to zero; this generalisation is invalid."
+        },
+        {
+          "answer": "The attempt is correct because setting each factor to the constant gives a system of equations whose solutions are the roots of the original equation",
+          "explanation": "The system produced is invalid; the solutions found this way are not roots of the original equation."
+        },
+        {
+          "answer": "The attempt is mistaken because the null factor law cannot be used with brackets of this form regardless of what the right-hand side equals",
+          "explanation": "The law can be used with these brackets when the right-hand side is zero; the specific issue is the non-zero right-hand side."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student argues that a quadratic with rational coefficients and a discriminant of 17 has irrational roots, and therefore 'the equation has no useful solutions'. Which one of the following best evaluates the argument?",
+      "correct": "Irrational roots are fully valid mathematical solutions; 'not useful' conflates rationality with utility in ways that misdescribe mathematical practice",
+      "correctExplanation": "Irrational numbers are valid and widely used; rejecting solutions on the basis of rationality would exclude enormous amounts of meaningful mathematics.",
+      "distractors": [
+        {
+          "answer": "The argument is entirely correct because only rational solutions are useful; irrational ones should be reported as 'no useful solution found' in any answer",
+          "explanation": "Irrational solutions are reportable and meaningful; usefulness is not restricted to rationals."
+        },
+        {
+          "answer": "The argument is mistaken because the discriminant is 17 is actually a perfect square in non-standard arithmetic systems and produces rational roots",
+          "explanation": "17 is not a perfect square in standard arithmetic; the error in the argument is not about what 17 is, but about dismissing irrational roots."
+        },
+        {
+          "answer": "The argument is correct because irrational roots cannot be expressed exactly and should always be discarded for practical computation in real-world contexts",
+          "explanation": "Irrational roots are expressed exactly as surds (√17); they are usable and not discarded."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student working on a projectile problem concludes that because the quadratic yields two positive time roots, 'the projectile lands twice'. Which one of the following best evaluates this interpretation?",
+      "correct": "Two positive time roots typically indicate one launch time and one landing time; reinterpreting both as landings misreads the physical model",
+      "correctExplanation": "For a thrown object, the smaller positive root is often the launch (if modelled from earlier) and the larger is the landing; two landings would require a bouncing model.",
+      "distractors": [
+        {
+          "answer": "The interpretation is entirely correct because two roots always mean two landings regardless of the physical setup of the problem",
+          "explanation": "Two roots do not mean two landings; they correspond to two times at which the height condition is met."
+        },
+        {
+          "answer": "The interpretation is mistaken because projectiles can only land once, so the second positive root is always a mathematical artefact with no physical meaning",
+          "explanation": "The second root often has physical meaning (e.g., the initial time when the object was at the landing height); it is not typically an artefact."
+        },
+        {
+          "answer": "The interpretation is correct because every projectile has two positive time values associated with each height, and those are both landings in the model",
+          "explanation": "Two heights at a given level occur once on the way up and once on the way down; only one is landing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student synthesises that 'understanding the null factor law is more important than memorising the quadratic formula' because the law explains why factoring works. Which one of the following best evaluates this synthesis?",
+      "correct": "Both the law and the formula are important, and they support different strategies; hierarchy between them depends on what kind of problem is being solved",
+      "correctExplanation": "The null factor law underpins factoring-based solution; the quadratic formula handles general cases. Both contribute to a complete toolkit rather than competing for supremacy.",
+      "distractors": [
+        {
+          "answer": "The synthesis is entirely correct because the null factor law replaces the quadratic formula in every case and renders it obsolete for modern students",
+          "explanation": "The null factor law relies on factoring being possible; the quadratic formula handles cases where factoring is difficult."
+        },
+        {
+          "answer": "The synthesis is mistaken because the quadratic formula is more fundamental than the null factor law and should be learned first and primarily",
+          "explanation": "The two serve different purposes; ranking them undermines integration of methods."
+        },
+        {
+          "answer": "The synthesis is correct because students who understand the null factor law can derive the quadratic formula from it without any further instruction",
+          "explanation": "The quadratic formula is derived from completing the square, not from the null factor law."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student argues that because every quadratic equation can be written as ax² + bx + c = 0, the specific values of a, b and c 'do not really matter' once the formula is applied. Which one of the following best evaluates this argument?",
+      "correct": "The specific values determine the discriminant's sign and magnitude, which determines whether real roots exist and what they are; values matter decisively",
+      "correctExplanation": "The coefficients shape every aspect of the solution — root existence, type, and value — so treating them as incidental misses how the formula translates coefficients into roots.",
+      "distractors": [
+        {
+          "answer": "The argument is entirely correct because once the formula is applied, the coefficients are absorbed into the calculation and lose individual significance completely",
+          "explanation": "The coefficients drive the calculation; their individual values determine the output at each step."
+        },
+        {
+          "answer": "The argument is mistaken because the coefficients are the only thing that matters and the formula itself is incidental to solving quadratics",
+          "explanation": "Both matter; the formula is the procedure that translates coefficients into roots."
+        },
+        {
+          "answer": "The argument is correct because the formula produces the same numerical answers regardless of the coefficients used in any specific equation",
+          "explanation": "The formula produces different answers for different coefficients; this is its defining feature."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A mature synthesis of quadratic solving recognises that factoring, completing the square and the quadratic formula each {{blank:1}} different aspects of quadratic structure, so a fluent student selects the method that best matches the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "reveal",
+          "correctExplanation": "Each method reveals different aspects: factoring shows factor structure, completing the square shows vertex, formula shows procedure.",
+          "distractors": [
+            {
+              "answer": "hide",
+              "explanation": "The methods reveal rather than hide features; the verb is constructive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "translate",
+              "explanation": "Translation is not the relevant action; revelation is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "problem",
+          "correctExplanation": "Method choice matches problem type: factorisable problems suit factoring, general problems suit the formula, vertex questions suit completing the square.",
+          "distractors": [
+            {
+              "answer": "weather",
+              "explanation": "Weather is irrelevant to mathematical method choice.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "classmate",
+              "explanation": "Peer preference does not determine method choice; problem type does.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "A student who divides x² = 6x by x loses the root x = {{blank:1}}; preserving both roots requires the {{blank:2}} approach of rearranging and factoring before applying the null factor law.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Dividing by x silently loses x = 0 as a solution.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "x = 6 is preserved; x = 0 is lost.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "-6",
+              "explanation": "x = -6 is not a solution of this equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "standard",
+          "correctExplanation": "The standard approach treats the equation as x² - 6x = 0, factors to x(x - 6) = 0, and applies the null factor law.",
+          "distractors": [
+            {
+              "answer": "graphical",
+              "explanation": "Graphical methods approximate; the standard algebraic approach is exact.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "geometric",
+              "explanation": "Geometric methods are not the standard for this; algebraic is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The discriminant {{blank:1}} the nature of the roots of a quadratic equation; a student who ignores it and applies the formula anyway may still get answers, but {{blank:2}} understanding is weaker as a result.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "diagnoses",
+          "correctExplanation": "The discriminant diagnoses root nature (real distinct, real repeated, no real) efficiently.",
+          "distractors": [
+            {
+              "answer": "conceals",
+              "explanation": "The discriminant reveals rather than conceals root nature.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "replaces",
+              "explanation": "It does not replace the formula; it supplements understanding.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "conceptual",
+          "correctExplanation": "The discriminant builds conceptual understanding even when procedures could proceed without it.",
+          "distractors": [
+            {
+              "answer": "arithmetic",
+              "explanation": "Arithmetic understanding is less affected; conceptual understanding is what the discriminant deepens.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "historical",
+              "explanation": "Historical understanding is not primarily at stake; conceptual is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "In projectile motion problems, the quadratic equation modelling height typically has two positive roots: one corresponds to the {{blank:1}} time and the other to the {{blank:2}} time at the same height.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "rising",
+          "correctExplanation": "On the way up, the projectile passes through a given height at a specific rising time.",
+          "distractors": [
+            {
+              "answer": "stationary",
+              "explanation": "Stationary points are apex points, not pairs at the same height.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "bouncing",
+              "explanation": "Bouncing introduces different models; standard projectile motion in one phase gives rising and falling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "falling",
+          "correctExplanation": "On the way down, the projectile passes through the same height at a later falling time.",
+          "distractors": [
+            {
+              "answer": "stationary",
+              "explanation": "Falling is not stationary; the roots are at times of motion.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "bouncing",
+              "explanation": "Bouncing scenarios are modelled separately.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "Evaluating student solutions requires distinguishing {{blank:1}} errors (sign slips, arithmetic) from {{blank:2}} errors (applying null factor law to non-zero RHS, dividing by variables that could be zero).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "procedural",
+          "correctExplanation": "Procedural errors are small mistakes within an otherwise correct method.",
+          "distractors": [
+            {
+              "answer": "conceptual",
+              "explanation": "Conceptual errors are the other category being contrasted with procedural.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "historical",
+              "explanation": "Historical is not a category of student error in quadratic solving.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "conceptual",
+          "correctExplanation": "Conceptual errors reflect misunderstandings of the underlying rules and principles.",
+          "distractors": [
+            {
+              "answer": "procedural",
+              "explanation": "Procedural is already named; conceptual is the contrast.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "memory",
+              "explanation": "Memory errors are a separate category; conceptual errors involve understanding.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A complete quadratic-solving education builds fluency in {{blank:1}} methods so that the learner can choose based on the problem; over-reliance on a single method reduces both efficiency and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiple",
+          "correctExplanation": "Fluency across factoring, completing the square and the quadratic formula supports adaptive problem solving.",
+          "distractors": [
+            {
+              "answer": "singular",
+              "explanation": "Singular method reliance is the pattern being critiqued.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "symbolic",
+              "explanation": "All quadratic methods are symbolic; multiplicity is the relevant dimension.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "insight",
+          "correctExplanation": "Different methods offer different insights; reliance on one method loses the perspective the others provide.",
+          "distractors": [
+            {
+              "answer": "weight",
+              "explanation": "Weight is not the analytical category being named.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "speed",
+              "explanation": "Speed is mentioned as efficiency; insight is the second quality lost.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Irrational roots are as {{blank:1}} as rational ones in mathematical practice; treating √7 or similar results as 'no useful answer' reflects a narrow view of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "valid",
+          "correctExplanation": "Irrational roots are fully valid mathematical objects, expressed exactly as surds.",
+          "distractors": [
+            {
+              "answer": "invalid",
+              "explanation": "Irrational roots are valid; the sentence contrasts narrow views with this validity.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "temporary",
+              "explanation": "Irrational roots are permanent mathematical objects, not temporary.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "numbers",
+          "correctExplanation": "Numbers include rationals and irrationals; narrowing to rationals misrepresents mathematical practice.",
+          "distractors": [
+            {
+              "answer": "answers",
+              "explanation": "Answers is less precise; the narrowness concerns number types, not answer formats.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "teachers",
+              "explanation": "Teachers are not the subject of the narrowing being critiqued.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "In modelling physical problems, algebraic solutions must be {{blank:1}} for physical meaningfulness; lengths cannot be {{blank:2}}, so negative roots are typically discarded.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "interpreted",
+          "correctExplanation": "Interpretation connects algebraic results to physical meaning.",
+          "distractors": [
+            {
+              "answer": "multiplied",
+              "explanation": "Multiplication is not the relevant operation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "rounded",
+              "explanation": "Rounding is a separate numerical concern; interpretation is primary.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative",
+          "correctExplanation": "Physical lengths are non-negative; negative roots are rejected for physical problems.",
+          "distractors": [
+            {
+              "answer": "irrational",
+              "explanation": "Irrationality is not incompatible with physical length; negativity is.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "decimal",
+              "explanation": "Decimal expressions are fine for physical lengths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "The derivation of the quadratic formula from completing the square demonstrates that the {{blank:1}} is not magical but follows directly from systematic manipulation; this insight supports both {{blank:2}} and recall.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "formula",
+          "correctExplanation": "The formula is the product of systematic algebraic work, not an arbitrary recipe.",
+          "distractors": [
+            {
+              "answer": "discriminant",
+              "explanation": "The discriminant appears in the formula but is not the topic of derivation here.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "parabola",
+              "explanation": "The parabola is the graph, not the derived formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "understanding",
+          "correctExplanation": "Understanding the derivation supports flexible use and transfer to related problems.",
+          "distractors": [
+            {
+              "answer": "guessing",
+              "explanation": "Understanding replaces guessing; the verb pair is understanding-recall.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "forgetting",
+              "explanation": "Understanding supports recall and guards against forgetting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "Applying the null factor law to (x - 3)(x - 5) = 4 by setting each factor equal to 4 is a {{blank:1}} error because the law requires the right-hand side to equal {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "conceptual",
+          "correctExplanation": "Misapplying the null factor law is a conceptual error about its scope.",
+          "distractors": [
+            {
+              "answer": "arithmetic",
+              "explanation": "Arithmetic errors are specific slips; this is a misunderstanding of the law itself.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "typographical",
+              "explanation": "Typographical errors are about writing; this is about understanding.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "The law's applicability is restricted to products equal to zero.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "The law is specifically about zero, not one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "any constant",
+              "explanation": "The law does not apply to arbitrary constants; only zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "In summary, solving quadratic equations at Year 10 level involves recognising the {{blank:1}} of methods, selecting among them based on the equation's structure, and consistently {{blank:2}} solutions by substitution or reasoning.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "variety",
+          "correctExplanation": "A variety of methods (factoring, formula, completing the square, graphing) is available.",
+          "distractors": [
+            {
+              "answer": "uniformity",
+              "explanation": "The methods are varied, not uniform; the point is their range.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "difficulty",
+              "explanation": "Difficulty is not the analytical category; variety is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "checking",
+          "correctExplanation": "Checking solutions by substitution verifies correctness and catches arithmetic errors.",
+          "distractors": [
+            {
+              "answer": "ignoring",
+              "explanation": "Ignoring solutions is the opposite of sound practice; checking is the intended move.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "translating",
+              "explanation": "Translation is not the relevant verification action; substitution is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A complete synthesis of Year 10 quadratic work holds that the null factor law, factoring, the {{blank:1}} formula and completing the square are complementary tools; skilled students pick the {{blank:2}} for the problem rather than defaulting to one approach.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "quadratic",
+          "correctExplanation": "The quadratic formula is one of the complementary tools alongside factoring and completing the square.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "The linear formula does not apply to quadratics; the quadratic formula is specific.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "cubic",
+              "explanation": "The cubic formula is for cubics; the quadratic formula is the relevant one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "right tool",
+          "correctExplanation": "Skilled students match tool to problem rather than applying one tool universally.",
+          "distractors": [
+            {
+              "answer": "easiest one",
+              "explanation": "Ease is one factor but not the sole criterion; fit with the problem matters.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "most popular",
+              "explanation": "Popularity is not the selection criterion; problem fit is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}
