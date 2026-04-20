@@ -687,16 +687,29 @@ async function loadData() {
   el.querySelector('.level-select').appendChild(spinner);
 
   try {
+    async function fetchJson(url) {
+      const r = await fetch(url, { cache: 'no-store' });
+      if (!r.ok) throw new Error(`${url} returned HTTP ${r.status}`);
+      try {
+        return await r.json();
+      } catch (e) {
+        throw new Error(`${url} is not valid JSON: ${e.message}`);
+      }
+    }
     const [units, expl, index] = await Promise.all([
-      fetch('units_of_work.json').then(r => r.json()),
-      fetch('cd_explanations.json').then(r => r.json()),
-      fetch('files-index.json').then(r => r.json())
+      fetchJson('units_of_work.json'),
+      fetchJson('cd_explanations.json'),
+      fetchJson('files-index.json')
     ]);
     unitsData = units;
     explanationsData = expl;
     index.forEach(f => availableCodes.add(f.code));
   } catch(e) {
-    spinner.textContent = 'Failed to load data. Please check that the files are available.';
+    console.error('loadData failed:', e);
+    const protoHint = location.protocol === 'file:'
+      ? ' Opening the file directly (file://) blocks fetch — start the server with `python3 serve.py` and visit http://localhost:8765/knowledge-check.html.'
+      : '';
+    spinner.innerHTML = `Failed to load data: ${e.message}.${protoHint} (See browser console for details.)`;
     return;
   }
   spinner.remove();
@@ -721,7 +734,7 @@ async function loadQuestions(code, level, areaLabel) {
   const pad = String(bandLevel).padStart(2, '0');
   const url = `questions/level-${pad}/${areaLabel}/${code}.json`;
   try {
-    const resp = await fetch(url);
+    const resp = await fetch(url, { cache: 'no-store' });
     if (!resp.ok) return null;
     const data = await resp.json();
     if (!data.toLevel2 || !data.toLevel2[0] || data.toLevel2[0].question === null) return null;
