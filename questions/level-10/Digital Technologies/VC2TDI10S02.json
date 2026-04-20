@@ -1,0 +1,1059 @@
+{
+  "_meta": {
+    "code": "VC2TDI10S02",
+    "level": 10,
+    "area": "Digital Technologies",
+    "ageBand": "15-16",
+    "keyKnowledge": "We develop cyber security threat models and explore software, user and supply chain vulnerabilities.",
+    "generatedAt": "2026-04-21T00:00:00Z",
+    "specVersions": {"mcq_rules": "1.0", "tf_rules": "1.0", "cloze_spec": "2.1", "addendum": "1.2"}
+  },
+  "toLevel2": [
+    {"type": "tf", "variant": 1, "bloomsLevel": 2,
+     "question": "A threat model in cybersecurity is a structured analysis that identifies assets, threats, vulnerabilities and possible mitigations for a system.",
+     "correct": "True",
+     "correctExplanation": "Threat modelling identifies assets, threats, vulnerabilities and mitigations as a structured analysis of system security.",
+     "distractors": [{"answer": "False", "explanation": "Threat modelling combines these elements; it is not a single-element analysis."}]},
+    {"type": "tf", "variant": 2, "bloomsLevel": 2,
+     "question": "A vulnerability is a weakness in a system that an attacker could exploit, while a threat is the potential source of harm that might act on the vulnerability.",
+     "correct": "True",
+     "correctExplanation": "Vulnerability and threat are distinct: weakness versus potential source of harm. Attacks combine the two.",
+     "distractors": [{"answer": "False", "explanation": "Vulnerability and threat are distinct concepts in cybersecurity analysis."}]},
+    {"type": "tf", "variant": 3, "bloomsLevel": 2,
+     "question": "Phishing is a category of software vulnerability in which code accepts unchecked input from a database and executes it as instructions to the operating system.",
+     "correct": "False",
+     "correctExplanation": "Phishing is a social engineering attack that targets people through deceptive messages; the described code issue resembles injection attacks, not phishing.",
+     "distractors": [{"answer": "True", "explanation": "Phishing targets people through deceit; injection is a different software-level category."}]},
+    {"type": "tf", "variant": 4, "bloomsLevel": 2,
+     "question": "A supply chain vulnerability arises when a compromised third-party component — library, service or update — affects the security of systems that depend on it.",
+     "correct": "True",
+     "correctExplanation": "Supply chain vulnerabilities flow from dependencies; compromise of an upstream component affects downstream systems.",
+     "distractors": [{"answer": "False", "explanation": "Supply chain vulnerabilities are dependency-driven; compromise propagates through components."}]},
+    {"type": "tf", "variant": 5, "bloomsLevel": 2,
+     "question": "Multi-factor authentication protects an account only during business hours and provides no defensive benefit outside those hours in any system that uses it.",
+     "correct": "False",
+     "correctExplanation": "Multi-factor authentication operates continuously; it is not confined to business hours and provides defence in depth at any time.",
+     "distractors": [{"answer": "True", "explanation": "Multi-factor authentication operates at any time; business-hours-only framing is inaccurate."}]},
+    {"type": "tf", "variant": 6, "bloomsLevel": 2,
+     "question": "The CIA triad in cybersecurity stands for Confidentiality, Integrity and Availability, which together describe common objectives for information security.",
+     "correct": "True",
+     "correctExplanation": "Confidentiality, Integrity and Availability form the classic CIA triad of information security objectives.",
+     "distractors": [{"answer": "False", "explanation": "The CIA triad names Confidentiality, Integrity and Availability."}]},
+    {"type": "tf", "variant": 7, "bloomsLevel": 2,
+     "question": "Social engineering attacks exploit only technical weaknesses in software code, with no role for human decision-making, trust or attention in the attack chain at any stage.",
+     "correct": "False",
+     "correctExplanation": "Social engineering specifically targets human decision-making, trust and attention; it is distinct from purely technical software exploits.",
+     "distractors": [{"answer": "True", "explanation": "Social engineering targets people, not just software."}]},
+    {"type": "tf", "variant": 8, "bloomsLevel": 2,
+     "question": "A strong, unique password alone provides complete protection against all account compromise regardless of phishing, credential reuse elsewhere, or data breaches affecting the service.",
+     "correct": "False",
+     "correctExplanation": "Strong passwords help but do not alone protect against phishing, breaches affecting the service, or reuse consequences; multiple controls are needed.",
+     "distractors": [{"answer": "True", "explanation": "Passwords alone are insufficient against the range of threats; defence in depth is needed."}]},
+    {"type": "tf", "variant": 9, "bloomsLevel": 2,
+     "question": "SQL injection is a software vulnerability in which untrusted input is incorporated into a database query in a way that allows the input to alter the query's structure.",
+     "correct": "True",
+     "correctExplanation": "SQL injection alters query structure through untrusted input, a well-documented software vulnerability category.",
+     "distractors": [{"answer": "False", "explanation": "SQL injection is a documented category where untrusted input alters query structure."}]},
+    {"type": "tf", "variant": 10, "bloomsLevel": 2,
+     "question": "All cyber threats originate from external attackers, and no internal user, contractor or insider of an organisation could ever contribute to a security incident in any way.",
+     "correct": "False",
+     "correctExplanation": "Insider threats — malicious or accidental — are a documented category alongside external attacks; both matter in threat modelling.",
+     "distractors": [{"answer": "True", "explanation": "Insider threats contribute to incidents alongside external attacks."}]},
+    {"type": "tf", "variant": 11, "bloomsLevel": 2,
+     "question": "Patching software means physically replacing damaged cables in a network, with no relation to applying vendor updates that address known vulnerabilities in any system.",
+     "correct": "False",
+     "correctExplanation": "Patching in cybersecurity means applying vendor-released software updates that address known vulnerabilities, not physical cable repair.",
+     "distractors": [{"answer": "True", "explanation": "Patching refers to software updates addressing vulnerabilities, not physical cable replacement."}]},
+    {"type": "tf", "variant": 12, "bloomsLevel": 2,
+     "question": "An air-gapped computer — one fully disconnected from any network — has no cybersecurity risks, because complete network isolation removes every possible attack vector across its lifetime.",
+     "correct": "False",
+     "correctExplanation": "Air-gapped systems retain risks from physical access, removable media and supply-chain delivery; isolation does not remove all vectors.",
+     "distractors": [{"answer": "True", "explanation": "Air-gapped systems still face physical, media and supply-chain vectors."}]},
+    {"type": "mc", "variant": 13, "bloomsLevel": 2,
+     "question": "Which one of the following best describes a threat model?",
+     "correct": "A structured analysis that identifies assets, threats, vulnerabilities and possible mitigations for a specific system in its operating context",
+     "correctExplanation": "Threat modelling is a structured analysis across assets, threats, vulnerabilities and mitigations.",
+     "distractors": [
+       {"answer": "A single list of passwords used by administrators across the system that provides no information about assets, threats or vulnerabilities facing the system in operation", "explanation": "A password list is not threat modelling; threat modelling addresses the broader analysis."},
+       {"answer": "A marketing document describing the cybersecurity products sold by a vendor to potential clients without any reference to the client's own assets or threats across their environment", "explanation": "A vendor marketing document is not threat modelling."},
+       {"answer": "A backup procedure that copies data to a secondary location on a fixed schedule without any analysis of what threats or vulnerabilities affect the system's operation on any given day", "explanation": "Backups are a control; threat modelling is the analysis that identifies needed controls."}
+     ]},
+    {"type": "mc", "variant": 14, "bloomsLevel": 2,
+     "question": "Which one of the following best distinguishes a vulnerability from a threat?",
+     "correct": "A vulnerability is a weakness in a system, while a threat is a potential source of harm that could act on the weakness to cause an incident",
+     "correctExplanation": "Vulnerability names the weakness; threat names the potential source of harm.",
+     "distractors": [
+       {"answer": "Vulnerability and threat are identical terms used interchangeably across cybersecurity analysis in every field and every context of digital practice today at any level", "explanation": "The terms are distinct in cybersecurity usage."},
+       {"answer": "A vulnerability is always internal to an organisation while a threat is always external, with no overlap between the two categories across any incident observed in practice", "explanation": "Internal/external framing does not map onto vulnerability/threat distinction."},
+       {"answer": "A vulnerability is a completed attack while a threat is a prevented attack, with no use of either term before an incident has occurred across any system or context", "explanation": "Completed/prevented framing is not the distinction; the terms apply prior to incidents."}
+     ]},
+    {"type": "mc", "variant": 15, "bloomsLevel": 2,
+     "question": "Which one of the following best describes a phishing attack?",
+     "correct": "A deceptive message that impersonates a trusted source to trick the recipient into disclosing information or taking harmful action",
+     "correctExplanation": "Phishing uses deception of trust to obtain information or action.",
+     "distractors": [
+       {"answer": "A software vulnerability in which a database query is altered by untrusted input that the application fails to sanitise before executing the query against the database", "explanation": "That describes SQL injection, a different attack category."},
+       {"answer": "A hardware failure in which a network card stops transmitting packets correctly and causes the device to disconnect from the network during ordinary operation on the system", "explanation": "Hardware failure is not phishing; phishing is a social-engineering attack."},
+       {"answer": "A denial-of-service attack that floods a server with requests until it becomes unable to respond to legitimate users across the network during ordinary operation of the service", "explanation": "DoS attacks are a different category from phishing."}
+     ]},
+    {"type": "mc", "variant": 16, "bloomsLevel": 2,
+     "question": "Which one of the following best describes a supply chain vulnerability?",
+     "correct": "A weakness introduced through a compromised third-party component, service or update that affects the security of systems depending on it",
+     "correctExplanation": "Supply chain vulnerabilities flow through dependencies.",
+     "distractors": [
+       {"answer": "A weakness in the physical delivery vehicles used to transport computing equipment between offices, data centres and client sites across any region in contemporary logistics operations today", "explanation": "Physical delivery is not the cybersecurity supply-chain concern; it concerns software and service dependencies."},
+       {"answer": "A weakness found only in systems that operate entirely offline and have no network connection to any third-party service or component across their full operational lifetime", "explanation": "Offline systems face other risks; supply chain compromise arrives via components and updates."},
+       {"answer": "A weakness in the internal database schema that governs how a single organisation stores its own data across its own systems regardless of any third-party involvement in the operations", "explanation": "Internal schema is an internal vulnerability, not supply chain."}
+     ]},
+    {"type": "mc", "variant": 17, "bloomsLevel": 2,
+     "question": "Which one of the following best describes multi-factor authentication?",
+     "correct": "A login approach requiring two or more distinct proofs — something you know, something you have, something you are — to verify identity",
+     "correctExplanation": "MFA combines multiple factors from distinct categories.",
+     "distractors": [
+       {"answer": "A login approach requiring two different passwords entered in sequence across two separate fields on the login page with no other category of proof involved in the verification", "explanation": "Two passwords come from the same category (something you know); this is not multi-factor."},
+       {"answer": "A login approach that requires the user to guess the correct answer to a security question drawn from a fixed list without providing any other form of proof of identity at all", "explanation": "Security questions alone are not multi-factor authentication."},
+       {"answer": "A login approach that gives the user multiple chances to enter the correct password before the system locks the account across any login session on any service", "explanation": "Multiple attempts are not MFA; MFA requires multiple distinct factor categories."}
+     ]},
+    {"type": "mc", "variant": 18, "bloomsLevel": 2,
+     "question": "Which one of the following best describes the CIA triad?",
+     "correct": "Confidentiality, Integrity and Availability — three common objectives used to frame information security goals",
+     "correctExplanation": "The CIA triad names Confidentiality, Integrity and Availability.",
+     "distractors": [
+       {"answer": "Classification, Inspection and Authorisation — three stages that every cyber incident must pass through before the security team can respond to the event in any organisation today", "explanation": "These are not the CIA triad and do not represent a standard framework."},
+       {"answer": "Cryptography, Infrastructure and Authentication — three technologies required by all cybersecurity implementations across every contemporary system at any scale of operation in practice today", "explanation": "These are not the CIA triad."},
+       {"answer": "Containment, Investigation and Analysis — three responses that every incident response team performs in sequence regardless of the incident encountered at any point in practice today", "explanation": "These are not the CIA triad; they relate loosely to incident response phases."}
+     ]},
+    {"type": "mc", "variant": 19, "bloomsLevel": 2,
+     "question": "Which one of the following best describes social engineering?",
+     "correct": "Manipulation of people through deception, urgency or authority to obtain information or action that compromises security",
+     "correctExplanation": "Social engineering targets human decision-making to compromise security.",
+     "distractors": [
+       {"answer": "Application of engineering principles to the design of physical public spaces such as parks, plazas and transit hubs across contemporary urban environments in any city today", "explanation": "That is civil or urban design, not social engineering in the cybersecurity sense."},
+       {"answer": "Automated scanning of a network to identify open ports and services across every host in the network regardless of the systems involved or the purpose of the scan conducted", "explanation": "Network scanning is a technical activity, not social engineering."},
+       {"answer": "Machine-learning research that studies the social behaviour of people interacting online without any connection to security or deception in any contemporary cybersecurity context at any level", "explanation": "That is a different field; social engineering in security uses deception to gain access."}
+     ]},
+    {"type": "mc", "variant": 20, "bloomsLevel": 2,
+     "question": "Which one of the following best describes SQL injection?",
+     "correct": "A software vulnerability in which untrusted input alters the structure of a database query, letting an attacker read, modify or delete data beyond intent",
+     "correctExplanation": "SQL injection uses untrusted input to alter query structure.",
+     "distractors": [
+       {"answer": "A hardware process in which a network card injects additional packets into a stream to improve throughput across the local network during heavy traffic on the shared medium in use", "explanation": "That is not SQL injection; it is not a standard practice."},
+       {"answer": "A deception technique used in email messages to trick the recipient into entering their password on a counterfeit website that mimics the real login page of the service", "explanation": "That is phishing, a different attack category."},
+       {"answer": "A denial-of-service approach that overwhelms a database server with excessive legitimate queries until it is unable to respond to other requests from users of the application", "explanation": "That is a denial-of-service pattern, not SQL injection."}
+     ]},
+    {"type": "mc", "variant": 21, "bloomsLevel": 2,
+     "question": "Which one of the following best describes an insider threat?",
+     "correct": "A threat originating from a person with legitimate access — employee, contractor, partner — who may cause harm through malicious action or accidental error",
+     "correctExplanation": "Insider threats originate from people with legitimate access, whether malicious or accidental.",
+     "distractors": [
+       {"answer": "A threat originating only from external attackers who have never had any legitimate access to the organisation's systems at any point across the organisation's operational history in any jurisdiction", "explanation": "External-only framing misses the insider category."},
+       {"answer": "A threat originating only from software bugs that execute without any human involvement across any system regardless of the organisation's access control or staffing arrangements in place today", "explanation": "Insider threats involve human access; software bugs are a different category."},
+       {"answer": "A threat originating only from physical intruders who enter a building without authorisation regardless of any digital access they might have obtained during the intrusion at the site", "explanation": "Physical intrusion is one category; insider threat concerns legitimate access holders specifically."}
+     ]},
+    {"type": "mc", "variant": 22, "bloomsLevel": 2,
+     "question": "Which one of the following best describes patching in the context of cybersecurity?",
+     "correct": "Applying vendor-released updates that address known vulnerabilities to reduce exposure to exploits of those disclosed flaws across running systems",
+     "correctExplanation": "Patching applies vendor updates that address known vulnerabilities.",
+     "distractors": [
+       {"answer": "Physically repairing damaged cables in a network by splicing fibre-optic strands and replacing connectors across affected data-centre racks during scheduled maintenance windows on site", "explanation": "Physical cable repair is a different activity from software patching."},
+       {"answer": "Adding new features to software that did not exist in the previous version regardless of whether any vulnerabilities were addressed in the update across the application codebase involved", "explanation": "Feature addition differs from patching, which targets known vulnerabilities."},
+       {"answer": "Removing all software from a system and reinstalling it from scratch every month regardless of whether any vulnerabilities have been disclosed in the software across any version released", "explanation": "Wholesale reinstallation is not patching; patching applies targeted updates."}
+     ]},
+    {"type": "mc", "variant": 23, "bloomsLevel": 2,
+     "question": "Which one of the following best describes why air-gapping alone does not eliminate all cybersecurity risks?",
+     "correct": "Physical access, removable media and supply-chain delivery of hardware or software remain vectors even when a system is disconnected from all networks",
+     "correctExplanation": "Air-gapped systems still face physical, media and supply-chain vectors.",
+     "distractors": [
+       {"answer": "Air-gapping eliminates every possible cybersecurity risk across the lifetime of the system regardless of physical access, removable media or supply-chain components involved", "explanation": "Air-gapping does not eliminate all vectors; physical, media and supply-chain remain."},
+       {"answer": "Air-gapping increases cybersecurity risk because disconnected systems have no patches applied regardless of the organisation's maintenance processes across the system's operational lifetime", "explanation": "Air-gapped systems can still be patched through controlled processes; the issue is not simple risk increase."},
+       {"answer": "Air-gapping is a physical security practice that has no connection to cybersecurity at any point in a system's operation across any environment in contemporary practice today", "explanation": "Air-gapping is a cybersecurity control; it affects network-borne risk specifically."}
+     ]},
+    {"type": "mc", "variant": 24, "bloomsLevel": 2,
+     "question": "Which one of the following best describes defence in depth?",
+     "correct": "A strategy of layering multiple independent controls so that failure of any single control does not by itself allow an attacker to compromise the system",
+     "correctExplanation": "Defence in depth layers controls so that single-point failure does not compromise the system.",
+     "distractors": [
+       {"answer": "A strategy of placing every control at the outer perimeter of the network with no further controls inside the network regardless of the assets or users operating within it", "explanation": "Perimeter-only defence is not defence in depth; depth implies internal layering."},
+       {"answer": "A strategy of using a single strong control that is so effective it requires no other controls anywhere in the system across the full operational lifetime of the environment involved", "explanation": "Single-strong-control strategies lack the depth of layered controls."},
+       {"answer": "A strategy of collecting the largest possible quantity of log data without any analysis or response capability attached to the logging infrastructure across any environment in operation", "explanation": "Log collection without analysis is not defence in depth."}
+     ]},
+    {"type": "cloze", "variant": 25, "bloomsLevel": 2,
+     "sentence": "A structured analysis that identifies assets, threats, vulnerabilities and mitigations for a system is a threat {{blank:1}}; a login approach requiring two or more distinct proofs of identity is {{blank:2}}-factor authentication.",
+     "blanks": [
+       {"id": "1", "correct": "model", "correctExplanation": "Threat model is the standard term for the structured analysis.",
+        "distractors": [
+          {"answer": "memory", "explanation": "Memory is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "motion", "explanation": "Motion is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "multi", "correctExplanation": "Multi-factor authentication requires two or more distinct proofs.",
+        "distractors": [
+          {"answer": "single", "explanation": "Single-factor is the contrast.", "misconceptionSource": "documented"},
+          {"answer": "zero", "explanation": "Zero-factor is not a standard term here.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 26, "bloomsLevel": 2,
+     "sentence": "The three common objectives of information security — Confidentiality, Integrity and {{blank:1}} — form the CIA triad; a software vulnerability where untrusted input alters a database query's structure is SQL {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "Availability", "correctExplanation": "Availability completes the CIA triad.",
+        "distractors": [
+          {"answer": "Authority", "explanation": "Authority is not part of the CIA triad.", "misconceptionSource": "documented"},
+          {"answer": "Accountability", "explanation": "Accountability is a related but distinct concept; not part of the classic CIA triad.", "misconceptionSource": "documented"}
+        ]},
+       {"id": "2", "correct": "injection", "correctExplanation": "SQL injection alters query structure through untrusted input.",
+        "distractors": [
+          {"answer": "rejection", "explanation": "SQL rejection is not the standard term.", "misconceptionSource": "inferred"},
+          {"answer": "deflection", "explanation": "SQL deflection is not the standard term.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"}
+  ],
+  "toLevel3": [
+    {"type": "tf", "variant": 1, "bloomsLevel": 3,
+     "question": "Threat modelling early in a system's design is always more expensive and less effective than waiting to identify threats after the system has been deployed to users in production.",
+     "correct": "False",
+     "correctExplanation": "Early threat modelling typically costs less and supports stronger security than retrofitting after deployment; shifting security 'left' is a documented practice.",
+     "distractors": [{"answer": "True", "explanation": "Early threat modelling supports stronger and cheaper outcomes than post-deployment retrofit."}]},
+    {"type": "tf", "variant": 2, "bloomsLevel": 3,
+     "question": "Social engineering and technical exploitation never appear in the same cyber incident, because attackers use only one category of vector across any single incident observed in practice.",
+     "correct": "False",
+     "correctExplanation": "Real incidents frequently chain social engineering with technical exploitation — phishing leading to credential theft and subsequent technical exploitation is a documented pattern.",
+     "distractors": [{"answer": "True", "explanation": "Social and technical vectors commonly combine in real incidents."}]},
+    {"type": "tf", "variant": 3, "bloomsLevel": 3,
+     "question": "Supply chain attacks can have wide impact because a single compromised upstream component can affect many downstream organisations that all depend on it through trusted update channels.",
+     "correct": "True",
+     "correctExplanation": "Single-point compromise of a trusted upstream component propagates through many downstream systems, producing wide impact.",
+     "distractors": [{"answer": "False", "explanation": "Upstream compromise propagates widely through trusted update channels."}]},
+    {"type": "tf", "variant": 4, "bloomsLevel": 3,
+     "question": "A risk register that lists every imaginable threat with no assessment of likelihood, impact or priority provides the same value to an organisation as one that assesses and prioritises entries.",
+     "correct": "False",
+     "correctExplanation": "Assessed and prioritised registers support action; exhaustive unassessed lists are less actionable and less useful.",
+     "distractors": [{"answer": "True", "explanation": "Assessment and prioritisation substantially increase register usefulness."}]},
+    {"type": "tf", "variant": 5, "bloomsLevel": 3,
+     "question": "User education on phishing reduces but does not eliminate the success rate of phishing campaigns, because even trained users can be deceived by well-crafted attacks under pressure.",
+     "correct": "True",
+     "correctExplanation": "Training reduces phishing success but does not eliminate it; well-crafted attacks under time pressure can succeed against trained users.",
+     "distractors": [{"answer": "False", "explanation": "Training reduces but does not eliminate phishing success; multi-layer defence remains needed."}]},
+    {"type": "tf", "variant": 6, "bloomsLevel": 3,
+     "question": "Encrypting data only at rest, with no encryption in transit between systems, provides complete protection against network-based eavesdropping on the data moving across networks.",
+     "correct": "False",
+     "correctExplanation": "At-rest encryption does not protect data in transit; network eavesdropping reads unencrypted data in motion regardless of at-rest protection.",
+     "distractors": [{"answer": "True", "explanation": "At-rest encryption does not protect in-transit data; in-transit encryption is a separate control."}]},
+    {"type": "tf", "variant": 7, "bloomsLevel": 3,
+     "question": "The principle of least privilege grants each user, process or component only the minimum permissions required to perform its function, reducing the impact of compromise of any single element.",
+     "correct": "True",
+     "correctExplanation": "Least privilege reduces blast radius of compromise by limiting each element to required permissions.",
+     "distractors": [{"answer": "False", "explanation": "Least privilege reduces impact of compromise through minimal permissions."}]},
+    {"type": "tf", "variant": 8, "bloomsLevel": 3,
+     "question": "Posting a photograph of a work laptop's login screen and recovery codes publicly on a social-media account poses no security risk because the attacker would need physical access to the laptop to use the codes.",
+     "correct": "False",
+     "correctExplanation": "Recovery codes and other on-screen artefacts can enable remote compromise without physical access; publishing them publicly is a serious exposure.",
+     "distractors": [{"answer": "True", "explanation": "Exposed recovery codes enable remote compromise; physical access is not required."}]},
+    {"type": "mc", "variant": 9, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why early threat modelling tends to cost less than retrofitting security after deployment?",
+     "correct": "Design-time decisions shape downstream implementation at low cost, while deployed systems accumulate dependencies and users that constrain retrofit options and increase change cost",
+     "correctExplanation": "Early decisions are cheap to change; deployed systems accumulate constraints that raise retrofit cost.",
+     "distractors": [
+       {"answer": "Deployed systems can be modified instantly at zero cost regardless of the dependencies, users or integrations accumulated across their operational lifetime in any field of practice today", "explanation": "Deployed systems accumulate constraints that raise the cost of change."},
+       {"answer": "Early threat modelling has no effect on downstream implementation cost regardless of the decisions made at design time across any system in any field of practice at any level today", "explanation": "Design decisions substantially affect downstream cost."},
+       {"answer": "Security retrofitting has been shown to be free across every study of deployed systems in the past decade regardless of the scale or complexity of the system involved in any industry", "explanation": "Retrofitting routinely involves substantial cost; the evidence points the other way."}
+     ]},
+    {"type": "mc", "variant": 10, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why social engineering combines with technical exploitation in real incidents?",
+     "correct": "Human factors often open initial access — credentials, installation of malware — which then enables technical exploitation inside the environment in subsequent stages of the attack",
+     "correctExplanation": "Initial access through people enables downstream technical stages of attacks.",
+     "distractors": [
+       {"answer": "Social engineering alone completes every attack regardless of the technical environment or the target system's defensive posture across any contemporary incident observed at any level today", "explanation": "Social engineering often opens access; technical exploitation follows in many incidents."},
+       {"answer": "Technical exploitation alone completes every attack regardless of any human factor in the environment across any contemporary incident across any sector at any scale observed today", "explanation": "Human factors contribute to many incidents alongside technical exploitation."},
+       {"answer": "Social engineering and technical exploitation never occur in the same incident regardless of the attacker's motive or capability across any contemporary cybersecurity case observed at any level today", "explanation": "Combined social-technical attacks are a documented pattern."}
+     ]},
+    {"type": "mc", "variant": 11, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why supply chain attacks can have wide impact?",
+     "correct": "A single upstream compromise propagates through trusted update channels to many downstream organisations that depend on the compromised component",
+     "correctExplanation": "Trust and dependency scale the impact of upstream compromise across many downstream users.",
+     "distractors": [
+       {"answer": "Supply chain attacks are always confined to a single organisation regardless of the components involved or the trust relationships across upstream and downstream parties in practice today", "explanation": "Wide propagation is precisely the distinguishing feature of supply chain attacks."},
+       {"answer": "Supply chain attacks have been eliminated across all modern systems by contemporary cybersecurity practice regardless of the components, trust relationships or update channels involved today", "explanation": "Supply chain attacks remain a serious contemporary concern."},
+       {"answer": "Supply chain attacks affect only physical components such as computer hardware and have no application to software or service dependencies across any system in contemporary practice", "explanation": "Software and service dependencies are a primary supply-chain vector."}
+     ]},
+    {"type": "mc", "variant": 12, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why assessed and prioritised risk registers support action better than exhaustive unassessed lists?",
+     "correct": "Assessment of likelihood and impact directs attention and resources to the highest-priority entries, converting listing into actionable guidance for defenders",
+     "correctExplanation": "Assessment and prioritisation direct attention and resources effectively.",
+     "distractors": [
+       {"answer": "Exhaustive unassessed lists always produce better outcomes than assessed and prioritised registers because longer lists contain more information regardless of how they are structured at any point", "explanation": "Length without assessment is less actionable than assessed prioritisation."},
+       {"answer": "Assessment of likelihood and impact has no effect on defender action because action is determined entirely by list length across any cybersecurity context at any scale of operation in practice", "explanation": "Assessment substantially affects defender action and allocation."},
+       {"answer": "Unassessed lists have been standardised across Australian cybersecurity practice in the past decade regardless of scale or sector involved across any organisation's operations today at any level", "explanation": "Assessed prioritised registers remain the recommended practice."}
+     ]},
+    {"type": "mc", "variant": 13, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why defence in depth layers multiple independent controls?",
+     "correct": "Independent layers mean that failure of any single control does not by itself compromise the system, because an attacker must defeat additional layers to reach the asset",
+     "correctExplanation": "Independent layers prevent single-control failure from leading to full compromise.",
+     "distractors": [
+       {"answer": "Multiple layers always slow down legitimate users without any additional security benefit regardless of how the layers are designed across any system in contemporary cybersecurity practice at any level today", "explanation": "Well-designed layers preserve legitimate access while increasing attacker cost."},
+       {"answer": "Multiple layers are identical in function so any single layer alone provides the same protection as all layers combined across any system across any field of operation at any level of practice today", "explanation": "Layers are typically differentiated and independent; they are not identical."},
+       {"answer": "Multiple layers have been prohibited in Australian cybersecurity practice across every sector in the past decade regardless of the assets protected or the threat environment encountered at any level", "explanation": "Defence in depth remains a standard practice."}
+     ]},
+    {"type": "mc", "variant": 14, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why user education alone is not sufficient against phishing?",
+     "correct": "Well-crafted phishing under time pressure can deceive trained users, so technical controls — MFA, email filtering, link checking — complement education rather than being replaced by it",
+     "correctExplanation": "Technical controls complement education; neither alone is sufficient against modern phishing.",
+     "distractors": [
+       {"answer": "User education eliminates every phishing attack regardless of attack quality, urgency, context or target user across every organisation in contemporary practice at any level observed today", "explanation": "Education reduces but does not eliminate success rate."},
+       {"answer": "User education has no effect on phishing success rates regardless of how it is delivered across any organisation in contemporary cybersecurity practice at any scale of operation in any sector today", "explanation": "Education has measurable effects on success rates even if not eliminating them."},
+       {"answer": "User education is prohibited in Australian cybersecurity practice across all sectors in the past decade regardless of the organisation's threat environment or the user population involved at any level", "explanation": "User education is widely practised; no such prohibition exists."}
+     ]},
+    {"type": "mc", "variant": 15, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why encryption at rest alone does not protect data moving across networks?",
+     "correct": "At-rest encryption protects stored data; in-transit data passing between systems requires separate in-transit encryption such as TLS to be protected against network eavesdropping",
+     "correctExplanation": "At-rest and in-transit protection address different phases; both are needed.",
+     "distractors": [
+       {"answer": "At-rest encryption automatically protects data in transit across networks regardless of the protocols used or the network conditions across any system in any field of contemporary practice", "explanation": "At-rest encryption does not extend to in-transit data without separate controls."},
+       {"answer": "Data in transit requires no encryption regardless of network conditions or eavesdropping risk across any contemporary system at any scale of operation in any sector at any level today", "explanation": "In-transit data requires encryption to protect against eavesdropping."},
+       {"answer": "Encryption is unnecessary for stored data and only network traffic requires encryption across any contemporary system in any field of operation at any scale of practice today", "explanation": "Both at-rest and in-transit encryption are used; neither alone suffices."}
+     ]},
+    {"type": "mc", "variant": 16, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why least privilege reduces the impact of a compromised component?",
+     "correct": "A compromised component with minimal permissions can affect only a narrow slice of the environment, containing damage that broader permissions would allow to spread",
+     "correctExplanation": "Narrow permissions contain blast radius when a component is compromised.",
+     "distractors": [
+       {"answer": "Least privilege prevents any compromise from occurring regardless of the attacker's capability, motive or access across any contemporary system in any field of practice observed today at any level", "explanation": "Least privilege limits impact rather than preventing compromise; prevention requires other controls."},
+       {"answer": "Least privilege increases the impact of compromise by giving the attacker more permissions across the environment once a single component has been compromised in any contemporary scenario today", "explanation": "Least privilege reduces rather than increases impact."},
+       {"answer": "Least privilege has been abolished in Australian cybersecurity practice across all sectors in the past decade regardless of the assets protected or the threat environment encountered in practice today", "explanation": "Least privilege remains a standard practice."}
+     ]},
+    {"type": "mc", "variant": 17, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why publishing recovery codes on social media is a serious exposure?",
+     "correct": "Recovery codes often allow account recovery without other factors, so public exposure lets any attacker recover or take over the account without needing physical access",
+     "correctExplanation": "Recovery codes function as high-power credentials; exposure enables remote takeover.",
+     "distractors": [
+       {"answer": "Recovery codes have no power over accounts regardless of how they are exposed across any platform or context of operation in contemporary cybersecurity practice today at any level observed", "explanation": "Recovery codes have substantial account-recovery power."},
+       {"answer": "Public exposure of credentials produces no consequence regardless of the credential type, the attacker's motive or the platform involved across any contemporary case observed in practice today", "explanation": "Public credential exposure routinely produces compromise."},
+       {"answer": "Physical access to the device is the only way to use any credential exposed online regardless of the credential type or the service involved across any platform in contemporary practice today", "explanation": "Remote credential use is common; physical access is not required for many credentials."}
+     ]},
+    {"type": "mc", "variant": 18, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why threat modelling identifies assets alongside threats?",
+     "correct": "Knowing what matters focuses threat analysis on risks that would affect important assets, producing prioritised mitigation rather than undirected listing of threats",
+     "correctExplanation": "Asset-aware analysis prioritises mitigation effectively.",
+     "distractors": [
+       {"answer": "Identifying assets has no effect on the prioritisation of threats regardless of how the analysis is structured across any contemporary cybersecurity context at any scale of operation today", "explanation": "Assets shape which threats matter most; prioritisation depends on them."},
+       {"answer": "Asset identification is a separate exercise from threat modelling and should never appear in the same analysis across any contemporary cybersecurity practice at any level today", "explanation": "Asset and threat identification are integral parts of threat modelling."},
+       {"answer": "Threat modelling cannot identify any threat without listing every possible asset in the universe first regardless of the system involved or its context of operation in contemporary practice", "explanation": "Threat modelling addresses the system in scope; exhaustive universal asset listing is not required."}
+     ]},
+    {"type": "mc", "variant": 19, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why buffer overflow remains a relevant vulnerability despite decades of research?",
+     "correct": "Unsafe memory-management practices persist in some codebases, and low-level languages without bounds checking can still produce exploitable overflows when developers miss bounds",
+     "correctExplanation": "Persistent unsafe practices and low-level languages sustain the category despite mitigations.",
+     "distractors": [
+       {"answer": "Buffer overflow was eliminated across every codebase in the past decade regardless of the language or practice involved across any contemporary software produced anywhere globally", "explanation": "Buffer overflow persists in some codebases and languages."},
+       {"answer": "Buffer overflow is a theoretical concept with no real-world impact across any system in contemporary practice regardless of the language or codebase involved at any scale of operation today", "explanation": "Real-world buffer-overflow exploits continue to be documented."},
+       {"answer": "Buffer overflow applies only to languages developed since 2020 and has no relevance to older languages across any contemporary codebase in any field of practice today at any level", "explanation": "Older low-level languages are precisely where buffer overflow commonly arises."}
+     ]},
+    {"type": "mc", "variant": 20, "bloomsLevel": 3,
+     "question": "Which one of the following best explains why an insecure API can be an entry point for attackers?",
+     "correct": "APIs expose programmatic access that, if weakly authenticated or validated, allows attackers to read, modify or abuse data at scale more quickly than through user interfaces",
+     "correctExplanation": "API-level access can enable rapid, programmatic attack when protections are weak.",
+     "distractors": [
+       {"answer": "APIs have no security role because they are internal implementation details with no external exposure regardless of the system or network involved across any contemporary service architecture in practice", "explanation": "Many APIs are externally exposed; exposure depends on architecture."},
+       {"answer": "APIs always authenticate perfectly regardless of how they are designed or deployed across any contemporary service in any field of practice at any scale of operation today anywhere", "explanation": "API authentication quality varies; weak authentication is a documented vulnerability."},
+       {"answer": "API security has been solved across every contemporary service in the past decade regardless of design, deployment or operational practices involved across any service worldwide today", "explanation": "API security remains a priority area with ongoing vulnerabilities documented."}
+     ]},
+    {"type": "cloze", "variant": 21, "bloomsLevel": 3,
+     "sentence": "Threat modelling early in system design typically costs {{blank:1}} than retrofitting security after deployment; supply chain attacks can have wide impact because compromise propagates through trusted {{blank:2}} channels.",
+     "blanks": [
+       {"id": "1", "correct": "less", "correctExplanation": "Early modelling costs less than retrofit after deployment.",
+        "distractors": [
+          {"answer": "more", "explanation": "Retrofit typically costs more than early modelling.", "misconceptionSource": "documented"},
+          {"answer": "nothing", "explanation": "Early modelling still has cost; 'less' is the comparative.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "update", "correctExplanation": "Trusted update channels are the propagation vector.",
+        "distractors": [
+          {"answer": "postal", "explanation": "Postal channels are not the cyber supply-chain vector at issue.", "misconceptionSource": "inferred"},
+          {"answer": "marketing", "explanation": "Marketing channels are not the propagation vector.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 22, "bloomsLevel": 3,
+     "sentence": "The principle of least {{blank:1}} grants each user or process only the minimum permissions required; in-transit data between systems requires separate encryption such as {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "privilege", "correctExplanation": "Least privilege is the principle name.",
+        "distractors": [
+          {"answer": "permission", "explanation": "The principle is 'least privilege' in standard terminology.", "misconceptionSource": "documented"},
+          {"answer": "population", "explanation": "Population is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "TLS", "correctExplanation": "TLS is the common in-transit encryption protocol for web-level traffic.",
+        "distractors": [
+          {"answer": "HTTP", "explanation": "HTTP is unencrypted; HTTPS uses TLS.", "misconceptionSource": "documented"},
+          {"answer": "FTP", "explanation": "FTP is unencrypted; TLS is the relevant protocol.", "misconceptionSource": "documented"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 23, "bloomsLevel": 3,
+     "sentence": "Social engineering and technical exploitation often {{blank:1}} in real incidents, with phishing enabling credential theft used in later stages; assessed and prioritised risk registers support {{blank:2}} better than exhaustive unassessed lists.",
+     "blanks": [
+       {"id": "1", "correct": "combine", "correctExplanation": "Combined social and technical attacks are a documented pattern.",
+        "distractors": [
+          {"answer": "contradict", "explanation": "They combine rather than contradicting each other.", "misconceptionSource": "inferred"},
+          {"answer": "compete", "explanation": "They complement rather than compete.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "action", "correctExplanation": "Action is better supported by assessment and prioritisation.",
+        "distractors": [
+          {"answer": "confusion", "explanation": "Confusion is not the supported outcome.", "misconceptionSource": "inferred"},
+          {"answer": "delay", "explanation": "Delay is not the supported outcome.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 24, "bloomsLevel": 3,
+     "sentence": "User education reduces but does not {{blank:1}} phishing success; defence in {{blank:2}} layers independent controls so single-control failure does not compromise the system.",
+     "blanks": [
+       {"id": "1", "correct": "eliminate", "correctExplanation": "Education reduces rather than eliminates phishing success.",
+        "distractors": [
+          {"answer": "increase", "explanation": "Education reduces rather than increases success.", "misconceptionSource": "inferred"},
+          {"answer": "guarantee", "explanation": "Education does not guarantee phishing success in any direction.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "depth", "correctExplanation": "Defence in depth names the layered-controls strategy.",
+        "distractors": [
+          {"answer": "silence", "explanation": "Defence in silence is not a standard term.", "misconceptionSource": "inferred"},
+          {"answer": "distance", "explanation": "Defence in distance is not the standard term.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 25, "bloomsLevel": 3,
+     "sentence": "Exposed recovery {{blank:1}} enable remote account takeover without physical access; insecure APIs allow programmatic abuse at {{blank:2}} faster than user-interface attacks.",
+     "blanks": [
+       {"id": "1", "correct": "codes", "correctExplanation": "Recovery codes expose the account to remote takeover.",
+        "distractors": [
+          {"answer": "colours", "explanation": "Colours is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "calendars", "explanation": "Calendars is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "scale", "correctExplanation": "Scale is what programmatic API attacks achieve faster than user-interface approaches.",
+        "distractors": [
+          {"answer": "sound", "explanation": "Sound is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "silence", "explanation": "Silence is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 26, "bloomsLevel": 3,
+     "sentence": "Buffer {{blank:1}} remains a relevant vulnerability in low-level languages where bounds checking may be missed; threat modelling identifies assets alongside threats to produce prioritised {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "overflow", "correctExplanation": "Buffer overflow is the standard category name.",
+        "distractors": [
+          {"answer": "underflow", "explanation": "Buffer underflow is a different condition.", "misconceptionSource": "documented"},
+          {"answer": "overload", "explanation": "Buffer overload is not the standard term.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "mitigation", "correctExplanation": "Prioritised mitigation is the outcome of asset-aware threat modelling.",
+        "distractors": [
+          {"answer": "marketing", "explanation": "Marketing is not the threat-modelling output.", "misconceptionSource": "inferred"},
+          {"answer": "manufacturing", "explanation": "Manufacturing is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"}
+  ],
+  "toLevel4": [
+    {"type": "tf", "variant": 1, "bloomsLevel": 4,
+     "question": "Applying threat modelling, a student project that stores user credentials in plain text in a shared repository has created a significant confidentiality vulnerability that merits immediate mitigation.",
+     "correct": "True",
+     "correctExplanation": "Plain-text credentials in a shared repository breach confidentiality and should be mitigated immediately through removal, rotation and proper storage.",
+     "distractors": [{"answer": "False", "explanation": "Plain-text credentials in shared repositories are a documented significant vulnerability."}]},
+    {"type": "tf", "variant": 2, "bloomsLevel": 4,
+     "question": "Applying supply-chain analysis, pinning third-party library versions and reviewing upstream changes before updating provides identical security outcomes to updating to the latest version without any review at any point.",
+     "correct": "False",
+     "correctExplanation": "Pinning with review constrains exposure to upstream compromise; unreviewed automatic updates propagate upstream compromise immediately.",
+     "distractors": [{"answer": "True", "explanation": "Pinning and review produce different exposure outcomes than unreviewed updates."}]},
+    {"type": "mc", "variant": 3, "bloomsLevel": 4,
+     "question": "Applying threat modelling to a school intranet storing student grades, which one of the following best analyses the primary assets at stake?",
+     "correct": "Student grade records and the authentication system that controls access to them are primary assets whose confidentiality and integrity matter most",
+     "correctExplanation": "Grade records and authentication are primary assets for confidentiality and integrity.",
+     "distractors": [
+       {"answer": "The primary asset is the colour scheme used across the intranet's pages, regardless of what data is stored or how authentication is arranged across the system in use at the school", "explanation": "Colour scheme is not the asset at stake; records and authentication are."},
+       {"answer": "The primary asset is the server's rack-mounting hardware in the data centre regardless of what data the server stores or how users authenticate to access that data from anywhere", "explanation": "Rack hardware is physical infrastructure rather than the data asset at stake."},
+       {"answer": "The primary asset is the electricity contract powering the servers regardless of the data stored or the authentication system in use across the intranet by students and staff at the school", "explanation": "Electricity contract is not the data asset at stake."}
+     ]},
+    {"type": "mc", "variant": 4, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses a phishing email that impersonates a bank and urges the recipient to click a link to 'verify' their account immediately?",
+     "correct": "The email uses authority and urgency to pressure the recipient into disclosing credentials, a pattern that warrants verification through the bank's own channel rather than the link",
+     "correctExplanation": "Authority-plus-urgency is a common phishing pattern; independent verification addresses it.",
+     "distractors": [
+       {"answer": "The email is routine banking correspondence and should be responded to immediately regardless of the link's destination or the urgency the message conveys to the recipient in the message body", "explanation": "The pattern fits phishing; immediate link-clicking is not appropriate."},
+       {"answer": "The email is safe to ignore entirely with no verification needed because banks never communicate with customers electronically across any channel in contemporary banking in Australia or elsewhere", "explanation": "Banks do communicate electronically; verification through known channels is the appropriate response."},
+       {"answer": "The email is prohibited from entering any Australian inbox under current law, so any such email must be a system error unrelated to cybersecurity concerns across the population in any case", "explanation": "Phishing emails routinely reach inboxes despite filtering; they are not merely system errors."}
+     ]},
+    {"type": "mc", "variant": 5, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses a developer who copies a code snippet from a public forum into a production project without reviewing it?",
+     "correct": "The action risks introducing unreviewed vulnerabilities, licensing issues and supply-chain exposure that would not exist with reviewed, trusted sources and dependency management",
+     "correctExplanation": "Unreviewed third-party code introduces multiple risks including vulnerability and licence exposure.",
+     "distractors": [
+       {"answer": "The action has no risk because public forums review all posted code before allowing publication across any forum regardless of content, licence or security implications of the snippet", "explanation": "Public forums do not universally review posted code for security."},
+       {"answer": "The action is required by federal Australian policy across all software projects regardless of the project, codebase or developer involved in any contemporary industry at any level today", "explanation": "No such policy exists; review is typically required before use."},
+       {"answer": "The action produces identical security outcomes to using reviewed trusted dependencies across any project in any field at any scale of operation in contemporary software practice today", "explanation": "Outcomes differ substantially; unreviewed code carries higher risk."}
+     ]},
+    {"type": "mc", "variant": 6, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses a web application that accepts a search term and includes it directly in an SQL query string?",
+     "correct": "The application is likely vulnerable to SQL injection; parameterised queries or prepared statements would prevent untrusted input from altering query structure",
+     "correctExplanation": "Direct inclusion enables SQL injection; parameterisation mitigates it.",
+     "distractors": [
+       {"answer": "The application is secure because SQL injection requires physical access to the database server regardless of how input is incorporated into queries across any application in practice today", "explanation": "SQL injection does not require physical access; it operates through network input."},
+       {"answer": "The application is secure because database engines always detect malicious input automatically regardless of how the application constructs queries from user input across any engine in use", "explanation": "Database engines do not universally detect application-level injection; application-side parameterisation is required."},
+       {"answer": "The application is prohibited from accepting user input under Australian cybersecurity policy across any sector regardless of the application's purpose or the industry involved in any context today", "explanation": "No such prohibition exists; user input is allowed with proper handling."}
+     ]},
+    {"type": "mc", "variant": 7, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses a ransomware incident that propagated through an organisation after an employee opened an attachment in a phishing email?",
+     "correct": "The incident chained social engineering with technical execution; both vectors require attention, and containment, backups and user training contribute to reducing future impact",
+     "correctExplanation": "Chained social-technical incidents require layered defensive response.",
+     "distractors": [
+       {"answer": "The incident resulted only from the phishing email and has no technical dimension that requires attention across any cybersecurity response at any level of practice in the sector today", "explanation": "Technical execution of ransomware is a substantive dimension alongside the social vector."},
+       {"answer": "The incident resulted only from the ransomware payload and has no social dimension that requires attention in user training across any organisation at any scale of operation in any sector", "explanation": "Social dimension matters; training complements technical controls."},
+       {"answer": "The incident was entirely due to hardware failure regardless of the attachment, the email or the attacker's behaviour across any ransomware case observed in contemporary practice at any level today", "explanation": "Ransomware incidents are not typically hardware-failure events; they are attacks."}
+     ]},
+    {"type": "mc", "variant": 8, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses a small business using the same password for email, accounting and supplier portals?",
+     "correct": "Password reuse creates a single point of failure; breach of any one service exposes all the others, and a password manager with unique passwords and MFA reduces this risk",
+     "correctExplanation": "Password reuse collapses compromise of one service into compromise of all reused services.",
+     "distractors": [
+       {"answer": "Password reuse has no security risk because each service authenticates independently regardless of whether the password has been breached elsewhere across any contemporary service in practice today", "explanation": "Credential stuffing and breach reuse are documented attack patterns."},
+       {"answer": "Password reuse is required by Australian small-business policy across all sectors regardless of the services involved or the password strength used across any account the business operates today", "explanation": "No such policy exists; unique passwords are recommended."},
+       {"answer": "Password reuse produces identical outcomes to unique passwords across every small business regardless of the services used or any breach history across any account in any industry sector today", "explanation": "Outcomes differ substantially; reuse amplifies breach impact."}
+     ]},
+    {"type": "mc", "variant": 9, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses a web service that exposes internal administrative endpoints on the public internet without authentication?",
+     "correct": "The exposure allows any network attacker to reach administrative functions, a high-risk configuration that should be remediated by requiring authentication and restricting access to trusted networks",
+     "correctExplanation": "Unauthenticated internet-exposed administration is a documented high-risk configuration.",
+     "distractors": [
+       {"answer": "The exposure is safe because attackers are unaware of administrative endpoint URLs regardless of their obvious paths across any system in contemporary web practice at any scale of operation today", "explanation": "Security through obscurity is weak; scanners and knowledge of conventions find such endpoints."},
+       {"answer": "The exposure is required by Australian web-service policy across all sectors regardless of the service's purpose or the risk profile of the administrative functions involved in the system today", "explanation": "No such policy exists; authentication and restriction are the recommended defaults."},
+       {"answer": "The exposure is prohibited by contemporary browsers which automatically block access to administrative endpoints across any website regardless of the user's intent or the service's configuration in use", "explanation": "Browsers do not universally block such endpoints; access control is the server's responsibility."}
+     ]},
+    {"type": "mc", "variant": 10, "bloomsLevel": 4,
+     "question": "Applying analysis to an incident in which a third-party analytics library was compromised to exfiltrate data, which one of the following best describes the vulnerability category?",
+     "correct": "The incident is a supply-chain compromise, where a trusted dependency was abused to exfiltrate data from downstream organisations that integrated the library into their own systems",
+     "correctExplanation": "The pattern fits supply-chain compromise through a trusted dependency.",
+     "distractors": [
+       {"answer": "The incident is an insider threat because an internal employee at the affected organisation deliberately enabled the exfiltration across each of the downstream victims regardless of third-party involvement", "explanation": "Supply-chain compromise operates through the external dependency; insider threat is a different category."},
+       {"answer": "The incident is a denial-of-service attack because the compromised library affected many downstream organisations simultaneously across the period of the incident regardless of data exfiltration involved", "explanation": "Data exfiltration is not denial-of-service; these are distinct categories."},
+       {"answer": "The incident is a physical security breach because the attacker needed to enter the office of the third-party library maintainer across the course of the compromise in every supply-chain case observed", "explanation": "Supply-chain compromise does not require physical entry; it operates through software access."}
+     ]},
+    {"type": "mc", "variant": 11, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses a student using a classroom computer without logging out at the end of the session?",
+     "correct": "The next user inherits the student's authenticated session, enabling access to personal accounts and data; logging out or using automatic session timeout is the appropriate practice",
+     "correctExplanation": "Session inheritance is a documented risk; logout or timeout addresses it.",
+     "distractors": [
+       {"answer": "The next user has no ability to access the student's accounts regardless of whether the student logged out across any contemporary classroom environment at any school at any level of education", "explanation": "Inherited sessions provide access; logout is required to prevent this."},
+       {"answer": "Logging out is prohibited in Australian classroom policy across every school regardless of the session's duration or the accounts in use across the shared computer at any time today", "explanation": "No such prohibition exists; logout is encouraged."},
+       {"answer": "The situation produces identical outcomes to logging out regardless of who uses the computer next or what accounts were active during the prior session across any classroom in any school today", "explanation": "Outcomes differ substantially; not logging out leaves sessions accessible."}
+     ]},
+    {"type": "mc", "variant": 12, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses an organisation that maintains backups but never tests restoring from them?",
+     "correct": "Untested backups may fail to restore when needed; regular restore testing confirms recoverability before an incident requires it for real system recovery",
+     "correctExplanation": "Restore testing confirms recoverability before real incidents.",
+     "distractors": [
+       {"answer": "Untested backups always restore successfully regardless of how they were created or stored across any backup system in contemporary practice at any scale of operation in any industry sector today", "explanation": "Backups can fail; testing confirms recoverability."},
+       {"answer": "Backup testing is prohibited across Australian industry under contemporary cybersecurity policy regardless of the scale or sector involved across any organisation's backup practice in any context today", "explanation": "Backup testing is widely practised and recommended."},
+       {"answer": "Backup testing produces identical outcomes to not testing regardless of the organisation, backup system or scale of operation across any contemporary industry at any level of practice in the sector today", "explanation": "Outcomes differ; testing catches issues before they matter during real recovery."}
+     ]},
+    {"type": "mc", "variant": 13, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses a mobile application that requests access to the contacts list for functionality unrelated to contacts?",
+     "correct": "The request exceeds what the app needs and conflicts with least-privilege principles; users should decline and consider whether the app can be replaced with one that requires fewer permissions",
+     "correctExplanation": "Excess permission requests breach least privilege; decline-or-replace is the appropriate response.",
+     "distractors": [
+       {"answer": "The request is necessary for every mobile application regardless of functionality or permission category across any contemporary mobile platform at any scale of operation in any app store today", "explanation": "Apps should request only permissions they need; universal contact-access is not appropriate."},
+       {"answer": "The request has no privacy implication because app store policies ensure that all requested permissions are always necessary and properly scoped across every app available anywhere today", "explanation": "Platform policies do not universally ensure minimal permissions; user assessment is still relevant."},
+       {"answer": "The request is prohibited by Australian app-store policy across every app regardless of the app's functionality or the permissions involved in any category of software available today globally", "explanation": "No such universal prohibition operates; user and platform scrutiny combine to address excess permissions."}
+     ]},
+    {"type": "mc", "variant": 14, "bloomsLevel": 4,
+     "question": "Applying analysis, which one of the following best analyses an organisation that responds to a disclosed vulnerability by patching immediately across all affected systems?",
+     "correct": "The response reduces window of exposure to the disclosed vulnerability, supporting defence against exploits that typically emerge once a vulnerability is public knowledge",
+     "correctExplanation": "Rapid patching reduces exposure during the known-exploit window.",
+     "distractors": [
+       {"answer": "The response has no effect on exposure regardless of patch speed across any organisation at any scale of operation in any contemporary industry sector in the cybersecurity field today at any level", "explanation": "Patch speed substantially affects exposure window."},
+       {"answer": "The response is prohibited under Australian cybersecurity policy because systems must never be patched after disclosure regardless of the vulnerability or the attacker capability involved in the case", "explanation": "No such prohibition exists; prompt patching is encouraged."},
+       {"answer": "The response produces identical outcomes to delaying patching for months regardless of the vulnerability severity or the attacker capability across any contemporary case in practice at any level today", "explanation": "Outcomes differ substantively; delay increases exposure window."}
+     ]},
+    {"type": "cloze", "variant": 15, "bloomsLevel": 4,
+     "sentence": "Applying threat modelling, plain-text credentials in a shared repository create a confidentiality {{blank:1}}; pinning third-party library versions with review constrains exposure to upstream {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "vulnerability", "correctExplanation": "The pattern creates a vulnerability category.",
+        "distractors": [
+          {"answer": "ceremony", "explanation": "Ceremony is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "feature", "explanation": "It is a vulnerability, not a feature, in security analysis.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "compromise", "correctExplanation": "Upstream compromise is the risk constrained by pinning with review.",
+        "distractors": [
+          {"answer": "compliments", "explanation": "Compliments is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "communities", "explanation": "Communities is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 16, "bloomsLevel": 4,
+     "sentence": "Applying analysis, a phishing email using authority and {{blank:1}} warrants verification through the organisation's own channel; a search term included directly in an SQL query is vulnerable to {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "urgency", "correctExplanation": "Authority plus urgency is the classic phishing lever.",
+        "distractors": [
+          {"answer": "humility", "explanation": "Humility is not the phishing lever.", "misconceptionSource": "inferred"},
+          {"answer": "patience", "explanation": "Patience is not the phishing lever.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "injection", "correctExplanation": "Direct inclusion enables SQL injection.",
+        "distractors": [
+          {"answer": "inspection", "explanation": "Inspection is not the vulnerability category.", "misconceptionSource": "inferred"},
+          {"answer": "illumination", "explanation": "Illumination is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 17, "bloomsLevel": 4,
+     "sentence": "Applying analysis, unreviewed code copied from public forums risks introducing vulnerabilities and licensing issues; password {{blank:1}} collapses compromise of one service into compromise of {{blank:2}} reused services.",
+     "blanks": [
+       {"id": "1", "correct": "reuse", "correctExplanation": "Reuse is the pattern creating the single point of failure.",
+        "distractors": [
+          {"answer": "rotation", "explanation": "Rotation is the contrasting good practice.", "misconceptionSource": "documented"},
+          {"answer": "removal", "explanation": "Removal is unrelated to the pattern.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "all", "correctExplanation": "All reused services are compromised when one is breached.",
+        "distractors": [
+          {"answer": "no", "explanation": "Breach of one affects others when reuse occurs, not none.", "misconceptionSource": "inferred"},
+          {"answer": "some", "explanation": "All services using the reused password are affected.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 18, "bloomsLevel": 4,
+     "sentence": "Applying analysis, ransomware that follows a phishing attachment chains social and technical {{blank:1}}; unauthenticated administrative endpoints on the public internet present a high-risk {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "vectors", "correctExplanation": "Vectors describe the combined attack paths.",
+        "distractors": [
+          {"answer": "silences", "explanation": "Silences is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "signatures", "explanation": "Signatures is a detection concept, not the combined path.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "configuration", "correctExplanation": "Configuration is the category in which the exposure sits.",
+        "distractors": [
+          {"answer": "celebration", "explanation": "Celebration is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "curriculum", "explanation": "Curriculum is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 19, "bloomsLevel": 4,
+     "sentence": "Applying analysis of a compromised third-party library, the incident is a supply-chain {{blank:1}}; session inheritance when a user does not log out exposes the next user to the prior user's authenticated {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "compromise", "correctExplanation": "Supply-chain compromise is the category.",
+        "distractors": [
+          {"answer": "celebration", "explanation": "Celebration is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "collaboration", "explanation": "Collaboration is not the compromise category.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "session", "correctExplanation": "The authenticated session is what the next user inherits.",
+        "distractors": [
+          {"answer": "ceremony", "explanation": "Ceremony is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "celebration", "explanation": "Celebration is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 20, "bloomsLevel": 4,
+     "sentence": "Applying analysis, untested {{blank:1}} may fail to restore when needed; mobile apps requesting excess permissions breach the principle of least {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "backups", "correctExplanation": "Untested backups may fail when real recovery is needed.",
+        "distractors": [
+          {"answer": "bulletins", "explanation": "Bulletins are unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "bookmarks", "explanation": "Bookmarks are unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "privilege", "correctExplanation": "Least privilege is breached by excess permission requests.",
+        "distractors": [
+          {"answer": "permission", "explanation": "The principle term is 'least privilege' in standard terminology.", "misconceptionSource": "documented"},
+          {"answer": "population", "explanation": "Population is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 21, "bloomsLevel": 4,
+     "sentence": "Applying analysis, rapid patching after disclosure reduces the window of {{blank:1}} to known exploits; password reuse across services creates a single point of {{blank:2}} that breaches of any one service activate.",
+     "blanks": [
+       {"id": "1", "correct": "exposure", "correctExplanation": "Exposure window is what rapid patching reduces.",
+        "distractors": [
+          {"answer": "eternity", "explanation": "Eternity is not the window concept at issue.", "misconceptionSource": "inferred"},
+          {"answer": "exchange", "explanation": "Exchange is not the relevant category.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "failure", "correctExplanation": "A single point of failure is what reuse creates.",
+        "distractors": [
+          {"answer": "finance", "explanation": "Finance is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "festival", "explanation": "Festival is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 22, "bloomsLevel": 4,
+     "sentence": "Applying threat modelling to a school intranet, student records and the {{blank:1}} system controlling access are primary assets; parameterised queries prevent untrusted input from altering SQL query {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "authentication", "correctExplanation": "Authentication is the access-control system.",
+        "distractors": [
+          {"answer": "ventilation", "explanation": "Ventilation is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "illumination", "explanation": "Illumination is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "structure", "correctExplanation": "Query structure is what injection alters.",
+        "distractors": [
+          {"answer": "colour", "explanation": "Colour is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "speed", "explanation": "Speed is not the altered aspect.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 23, "bloomsLevel": 4,
+     "sentence": "Applying analysis, ransomware response requires containment, {{blank:1}} and user training; app store policies do not universally ensure minimal permissions so users also assess {{blank:2}} relative to function.",
+     "blanks": [
+       {"id": "1", "correct": "backups", "correctExplanation": "Backups support recovery in ransomware response.",
+        "distractors": [
+          {"answer": "bulletins", "explanation": "Bulletins are not the response category.", "misconceptionSource": "inferred"},
+          {"answer": "benefits", "explanation": "Benefits are unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "permissions", "correctExplanation": "Permissions relative to function are what users assess.",
+        "distractors": [
+          {"answer": "packaging", "explanation": "Packaging is not the security category.", "misconceptionSource": "inferred"},
+          {"answer": "pricing", "explanation": "Pricing is unrelated to the permission assessment.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 24, "bloomsLevel": 4,
+     "sentence": "Applying analysis, a public-internet administrative endpoint without authentication allows any network {{blank:1}} to reach administrative functions; restore testing confirms backup {{blank:2}} before incidents require it.",
+     "blanks": [
+       {"id": "1", "correct": "attacker", "correctExplanation": "Network attackers reach unauthenticated endpoints.",
+        "distractors": [
+          {"answer": "artist", "explanation": "Artist is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "ambassador", "explanation": "Ambassador is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "recoverability", "correctExplanation": "Recoverability is what restore testing confirms.",
+        "distractors": [
+          {"answer": "redundancy", "explanation": "Redundancy is related but the specific tested property is recoverability.", "misconceptionSource": "documented"},
+          {"answer": "revenue", "explanation": "Revenue is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 25, "bloomsLevel": 4,
+     "sentence": "Applying analysis, a compromised third-party analytics library exfiltrating data is a supply-chain {{blank:1}}; password {{blank:2}} with MFA reduces reuse-driven single-point-of-failure risk.",
+     "blanks": [
+       {"id": "1", "correct": "compromise", "correctExplanation": "Supply-chain compromise is the category.",
+        "distractors": [
+          {"answer": "collaboration", "explanation": "Collaboration is not the compromise category.", "misconceptionSource": "inferred"},
+          {"answer": "celebration", "explanation": "Celebration is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "managers", "correctExplanation": "Password managers support unique passwords across services.",
+        "distractors": [
+          {"answer": "ministers", "explanation": "Ministers are unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "markets", "explanation": "Markets are unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 26, "bloomsLevel": 4,
+     "sentence": "Applying analysis of session inheritance, logging out or automatic {{blank:1}} addresses the risk; rapid patching after vulnerability disclosure reduces exposure because exploits commonly emerge once the vulnerability becomes {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "timeout", "correctExplanation": "Automatic timeout ends the session after inactivity.",
+        "distractors": [
+          {"answer": "takeover", "explanation": "Takeover is a threat rather than the control.", "misconceptionSource": "inferred"},
+          {"answer": "training", "explanation": "Training is a separate control; timeout is the automatic one.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "public", "correctExplanation": "Public disclosure triggers exploit emergence.",
+        "distractors": [
+          {"answer": "private", "explanation": "Private undisclosed vulnerabilities pose different risk patterns; public is the described trigger.", "misconceptionSource": "documented"},
+          {"answer": "peripheral", "explanation": "Peripheral is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"}
+  ],
+  "toLevel5": [
+    {"type": "mc", "variant": 1, "bloomsLevel": 5,
+     "question": "Evaluate the claim that 'small organisations do not need threat modelling because attackers only target large corporations'.",
+     "correct": "The claim contradicts documented evidence; small organisations are routinely targeted by automated attacks and are often chosen because their defences are weaker than large corporations",
+     "correctExplanation": "Small organisations face substantial automated and targeted attacks; size-based exemption is not supported.",
+     "distractors": [
+       {"answer": "The claim is fully correct because attackers target only large corporations regardless of the sector, size or defences of smaller organisations across any industry in any country in contemporary practice today", "explanation": "Small organisations are routinely targeted; size-based immunity is not supported."},
+       {"answer": "The claim is fully correct because small organisations have no assets worth attacking regardless of the data, access or money they handle across any sector at any scale of operation anywhere today", "explanation": "Small organisations hold valuable data, access and funds; they are attractive targets."},
+       {"answer": "The claim is fully correct because automated attacks never reach small organisations regardless of their internet presence or the defences they maintain across any contemporary cybersecurity environment today", "explanation": "Automated attacks scan broadly, reaching small organisations routinely."}
+     ]},
+    {"type": "mc", "variant": 2, "bloomsLevel": 5,
+     "question": "Evaluate the argument that 'strong user education eliminates the need for multi-factor authentication because educated users never fall for phishing'.",
+     "correct": "The argument overestimates education; well-crafted phishing can deceive trained users under pressure, and MFA reduces the impact when credentials are obtained despite training",
+     "correctExplanation": "Education reduces but does not eliminate phishing success; MFA limits impact when credentials leak.",
+     "distractors": [
+       {"answer": "The argument is fully correct because educated users never enter credentials on any phishing site regardless of the attack's quality or the pressure applied across any contemporary scenario at any level", "explanation": "Trained users can be deceived by well-crafted attacks."},
+       {"answer": "The argument is fully correct because MFA has been shown to reduce security in every study conducted across Australian cybersecurity research in the past decade regardless of the environment involved", "explanation": "Research supports MFA as substantially reducing credential-compromise impact."},
+       {"answer": "The argument is fully correct because contemporary phishing is always obviously detectable to trained users regardless of the attacker's capabilities across any contemporary case encountered in practice today", "explanation": "Contemporary phishing is often sophisticated and not obviously detectable."}
+     ]},
+    {"type": "mc", "variant": 3, "bloomsLevel": 5,
+     "question": "Evaluate the claim that 'open-source dependencies are safer than commercial ones because many people review the code'.",
+     "correct": "The claim oversimplifies; 'many eyes' does not guarantee review of any particular component, and both open and commercial ecosystems have experienced significant supply-chain incidents",
+     "correctExplanation": "Review coverage varies; both ecosystems face supply-chain risk.",
+     "distractors": [
+       {"answer": "The claim is fully correct because all open-source dependencies are fully reviewed regardless of the component's use, maintainers or source across any contemporary software ecosystem in practice today", "explanation": "Review coverage varies substantially across open-source components."},
+       {"answer": "The claim is fully correct because commercial dependencies have no review whatsoever across any vendor in any industry regardless of internal processes or third-party audits conducted anywhere today", "explanation": "Commercial dependencies vary; many have substantial internal review."},
+       {"answer": "The claim is fully correct because supply-chain incidents have been eliminated in open-source ecosystems across the past decade regardless of component, maintainer or use across every context in practice", "explanation": "Open-source ecosystems have experienced significant supply-chain incidents."}
+     ]},
+    {"type": "mc", "variant": 4, "bloomsLevel": 5,
+     "question": "Evaluate the argument that 'air-gapping solves cybersecurity because a disconnected system cannot be attacked'.",
+     "correct": "The argument overlooks physical, removable-media and supply-chain vectors that operate on disconnected systems, as documented in incidents such as Stuxnet affecting air-gapped industrial systems",
+     "correctExplanation": "Air-gapped systems face documented non-network vectors; isolation alone does not prevent all attack.",
+     "distractors": [
+       {"answer": "The argument is fully correct because disconnected systems cannot be attacked through any vector regardless of physical access, removable media or supply-chain involvement across any contemporary case at any level", "explanation": "Non-network vectors compromise air-gapped systems in documented incidents."},
+       {"answer": "The argument is fully correct because Stuxnet has been shown to have never occurred across any study of cybersecurity incidents in the past decade regardless of the systems involved in the case", "explanation": "Stuxnet is a documented incident targeting air-gapped systems."},
+       {"answer": "The argument is fully correct because air-gapping is a hardware property that eliminates every cybersecurity risk regardless of the system's operational context across any field of practice today", "explanation": "Air-gapping addresses network vectors; other vectors remain."}
+     ]},
+    {"type": "mc", "variant": 5, "bloomsLevel": 5,
+     "question": "Evaluate the claim that 'perfect security is achievable and any incident proves the organisation did something wrong'.",
+     "correct": "The claim mis-frames security; cybersecurity is about managing risk to acceptable levels rather than achieving perfect prevention, and incidents can occur even with strong controls",
+     "correctExplanation": "Risk management, not perfect prevention, frames cybersecurity.",
+     "distractors": [
+       {"answer": "The claim is fully correct because perfect security is achievable by any organisation regardless of threat environment, resources or the capabilities of attackers across any contemporary case observed in practice today", "explanation": "Perfect security is not typically achievable against capable attackers."},
+       {"answer": "The claim is fully correct because any incident always proves organisational failure regardless of controls in place or the attacker's capabilities across any contemporary incident in any sector at any level", "explanation": "Incidents can occur despite strong controls; assignment of failure requires case-specific analysis."},
+       {"answer": "The claim is fully correct because cybersecurity practice has achieved perfect security across every sector in the past decade regardless of threat evolution or attacker capabilities across any context today", "explanation": "Threat evolution continues; perfect security is not achieved."}
+     ]},
+    {"type": "mc", "variant": 6, "bloomsLevel": 5,
+     "question": "Evaluate the argument that 'reporting a vulnerability to the vendor is always the best response and should never involve going public'.",
+     "correct": "The argument oversimplifies coordinated disclosure; going public can be appropriate when vendors do not respond in reasonable time, balancing user protection with vendor remediation capacity",
+     "correctExplanation": "Coordinated disclosure balances vendor response and user protection; public disclosure has a role when vendors do not act.",
+     "distractors": [
+       {"answer": "The argument is fully correct because public disclosure is always inappropriate regardless of vendor responsiveness or user risk across any contemporary case observed in practice at any level today", "explanation": "Public disclosure has an accepted role under coordinated-disclosure norms when vendors do not act."},
+       {"answer": "The argument is fully correct because vendors always respond quickly to vulnerability reports regardless of their size, sector or internal processes across any contemporary case observed in practice today", "explanation": "Vendor responsiveness varies; some fail to respond in reasonable time."},
+       {"answer": "The argument is fully correct because user risk does not depend on vendor response regardless of the vulnerability, the exposure or the attacker capability across any case observed in practice today", "explanation": "User risk does depend on vendor response; unpatched exposure matters."}
+     ]},
+    {"type": "mc", "variant": 7, "bloomsLevel": 5,
+     "question": "Evaluate the claim that 'encryption solves privacy and no other controls are needed'.",
+     "correct": "The claim overstates encryption's scope; it addresses data confidentiality but does not by itself address access control, authorisation, retention, consent or other privacy elements",
+     "correctExplanation": "Encryption addresses confidentiality; privacy requires additional controls across access, retention and consent.",
+     "distractors": [
+       {"answer": "The claim is fully correct because encryption addresses every privacy concern regardless of access control, retention, consent or any other privacy element across any contemporary system at any level today", "explanation": "Privacy extends beyond confidentiality; encryption alone does not cover all elements."},
+       {"answer": "The claim is fully correct because access control, retention and consent are subsumed by encryption across every contemporary system regardless of the data, users or jurisdiction involved in the case", "explanation": "These concerns are distinct from encryption."},
+       {"answer": "The claim is fully correct because no privacy control other than encryption has any effect on data protection across any contemporary case in practice at any scale of operation in any sector today", "explanation": "Multiple privacy controls operate alongside encryption."}
+     ]},
+    {"type": "mc", "variant": 8, "bloomsLevel": 5,
+     "question": "Evaluate the argument that 'cybersecurity is purely a technical discipline and human factors are irrelevant'.",
+     "correct": "The argument ignores documented human factors — social engineering, user error, insider threat, culture of reporting — that substantially affect cybersecurity outcomes alongside technical controls",
+     "correctExplanation": "Human factors substantially affect cybersecurity outcomes alongside technical controls.",
+     "distractors": [
+       {"answer": "The argument is fully correct because cybersecurity outcomes depend only on technical controls regardless of social engineering, user error or culture across any contemporary organisation in any sector today", "explanation": "Human factors affect outcomes substantively alongside technical controls."},
+       {"answer": "The argument is fully correct because social engineering has been eliminated across every contemporary organisation in the past decade regardless of user training or attacker capability in any case observed", "explanation": "Social engineering remains a primary attack category."},
+       {"answer": "The argument is fully correct because human factors have been shown to have no effect on cybersecurity outcomes in every study conducted across Australian practice in the past decade at any level today", "explanation": "Research documents substantial human-factor effects on outcomes."}
+     ]},
+    {"type": "mc", "variant": 9, "bloomsLevel": 5,
+     "question": "Evaluate the claim that 'zero trust architecture eliminates the need for any other security controls across an organisation'.",
+     "correct": "The claim overstates zero trust; it is a useful architectural approach but operates alongside encryption, patching, user education and incident response rather than replacing them",
+     "correctExplanation": "Zero trust complements rather than replaces other controls.",
+     "distractors": [
+       {"answer": "The claim is fully correct because zero trust replaces encryption, patching, user education and incident response across any contemporary organisation at any scale of operation in any sector today", "explanation": "Zero trust operates alongside these controls rather than replacing them."},
+       {"answer": "The claim is fully correct because zero trust has been shown to eliminate every cybersecurity risk across every study of its adoption in Australian industry over the past decade regardless of sector", "explanation": "Zero trust reduces specific risks but does not eliminate all cybersecurity risk."},
+       {"answer": "The claim is fully correct because zero trust automatically applies to every system regardless of adoption, configuration or organisational readiness across any contemporary context in any sector today", "explanation": "Zero trust requires deliberate adoption; it does not automatically apply."}
+     ]},
+    {"type": "mc", "variant": 10, "bloomsLevel": 5,
+     "question": "Evaluate the argument that 'any breach response must focus only on containment and ignore communication with affected users'.",
+     "correct": "The argument overlooks notification obligations and trust; affected users often need timely information to protect themselves, and regulators increasingly require notification under privacy and security law",
+     "correctExplanation": "Communication with affected users is part of responsible breach response and is often legally required.",
+     "distractors": [
+       {"answer": "The argument is fully correct because affected users need no information about breaches regardless of the data exposed or the actions they could take to protect themselves across any case encountered today", "explanation": "Affected users often need timely information to protect themselves."},
+       {"answer": "The argument is fully correct because breach-notification laws have been abolished across Australian jurisdictions in the past decade regardless of breach scale or data involved in any case observed today", "explanation": "Breach-notification requirements apply in Australia under privacy law."},
+       {"answer": "The argument is fully correct because trust in organisations is unaffected by breach communication regardless of how the breach is handled across any contemporary case in any sector at any level", "explanation": "Trust is substantially affected by breach communication quality."}
+     ]},
+    {"type": "mc", "variant": 11, "bloomsLevel": 5,
+     "question": "Evaluate the claim that 'complex passwords changed every 30 days are the strongest authentication approach regardless of other controls'.",
+     "correct": "The claim is outdated; current guidance favours long memorable passwords, MFA and breach monitoring, with frequent forced changes often leading to weaker rather than stronger outcomes",
+     "correctExplanation": "Current guidance favours long memorable passwords plus MFA; frequent forced rotation often weakens security.",
+     "distractors": [
+       {"answer": "The claim is fully correct because frequent forced rotation of complex passwords always produces the strongest authentication regardless of MFA, breach monitoring or user behaviour across any contemporary case today", "explanation": "Frequent forced rotation often produces weaker rather than stronger outcomes."},
+       {"answer": "The claim is fully correct because MFA has been shown to weaken authentication in every study conducted across Australian practice in the past decade regardless of the environment involved at any level today", "explanation": "Research supports MFA as substantially strengthening authentication."},
+       {"answer": "The claim is fully correct because user behaviour is unaffected by password-rotation policy regardless of the policy's frequency or complexity requirements across any contemporary case in any sector today", "explanation": "User behaviour — reuse, writing down, simple increments — is substantially affected by rotation policy."}
+     ]},
+    {"type": "mc", "variant": 12, "bloomsLevel": 5,
+     "question": "Evaluate the argument that 'students should never learn about attack techniques because such knowledge enables crime'.",
+     "correct": "The argument contradicts how defensive practitioners are trained; understanding attack techniques is essential to effective defence, and curriculum addresses ethical practice alongside knowledge",
+     "correctExplanation": "Understanding attack techniques supports defence; ethical curriculum addresses misuse separately.",
+     "distractors": [
+       {"answer": "The argument is fully correct because knowledge of attack techniques always enables crime regardless of the learner, context or ethical framing across any curriculum in any country at any level today", "explanation": "Ethical curriculum frames knowledge for defence rather than enabling crime."},
+       {"answer": "The argument is fully correct because defensive practitioners never need to understand attack techniques across any field of cybersecurity practice in any industry sector at any level of seniority today", "explanation": "Defensive practitioners routinely need to understand attack techniques to defend effectively."},
+       {"answer": "The argument is fully correct because cybersecurity curriculum has been prohibited in Australian schools at every year level under current policy regardless of the ethical framing or delivery involved", "explanation": "Cybersecurity curriculum is supported in Australian schools at various year levels."}
+     ]},
+    {"type": "mc", "variant": 13, "bloomsLevel": 5,
+     "question": "Evaluate the claim that 'threat modelling is only useful for new systems and offers no value for existing deployed systems'.",
+     "correct": "The claim overlooks retrospective modelling; applying threat modelling to existing systems identifies current risks, guides remediation priorities and informs future changes to architecture",
+     "correctExplanation": "Threat modelling applies usefully to deployed systems as well as new ones.",
+     "distractors": [
+       {"answer": "The claim is fully correct because threat modelling has no value for deployed systems regardless of their complexity, age or risk exposure across any industry sector at any level of operation today", "explanation": "Threat modelling is valuable for deployed systems."},
+       {"answer": "The claim is fully correct because deployed systems cannot be analysed for threats regardless of their architecture, data or users across any contemporary cybersecurity context in any field of practice today", "explanation": "Deployed systems are regularly analysed for threats."},
+       {"answer": "The claim is fully correct because threat modelling has been prohibited on deployed systems under Australian cybersecurity policy across every sector in the past decade regardless of scale or risk involved", "explanation": "No such prohibition exists; threat modelling is widely applied to deployed systems."}
+     ]},
+    {"type": "mc", "variant": 14, "bloomsLevel": 5,
+     "question": "Evaluate the argument that 'compliance with cybersecurity regulations is sufficient and organisations need nothing beyond compliance'.",
+     "correct": "The argument conflates compliance with security; compliance sets a floor and may not address all relevant threats for a specific organisation, which may require measures beyond minimum requirements",
+     "correctExplanation": "Compliance sets a minimum; specific threat environments often warrant more than minimum requirements.",
+     "distractors": [
+       {"answer": "The argument is fully correct because compliance addresses every cybersecurity threat regardless of the organisation's specific environment or the attackers it faces across any sector at any scale of operation today", "explanation": "Compliance is a minimum; it may not address all organisation-specific threats."},
+       {"answer": "The argument is fully correct because cybersecurity regulations automatically cover every threat across every industry sector in every jurisdiction regardless of the organisation's specific risk profile involved", "explanation": "Regulations set minimum requirements; specific risk varies."},
+       {"answer": "The argument is fully correct because measures beyond compliance have been prohibited under Australian cybersecurity regulation across every sector in the past decade regardless of the threat environment involved", "explanation": "No such prohibition exists; organisations routinely adopt measures beyond compliance."}
+     ]},
+    {"type": "cloze", "variant": 15, "bloomsLevel": 5,
+     "sentence": "Evaluating 'small organisations do not need threat modelling', {{blank:1}} attacks reach them routinely regardless of size; evaluating 'education eliminates MFA need', well-crafted phishing can deceive trained users under {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "automated", "correctExplanation": "Automated attacks reach small organisations routinely.",
+        "distractors": [
+          {"answer": "aborted", "explanation": "Aborted attacks do not reach targets; automated does.", "misconceptionSource": "inferred"},
+          {"answer": "avoidable", "explanation": "Avoidable does not describe the reach pattern.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "pressure", "correctExplanation": "Pressure is the condition under which trained users can be deceived.",
+        "distractors": [
+          {"answer": "silence", "explanation": "Silence is not the relevant condition.", "misconceptionSource": "inferred"},
+          {"answer": "celebration", "explanation": "Celebration is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 16, "bloomsLevel": 5,
+     "sentence": "Evaluating 'open-source is safer than commercial', review coverage {{blank:1}} across components; evaluating 'air-gapping solves cybersecurity', documented incidents such as Stuxnet show non-network {{blank:2}} operate on disconnected systems.",
+     "blanks": [
+       {"id": "1", "correct": "varies", "correctExplanation": "Coverage varies across open-source components rather than being uniform.",
+        "distractors": [
+          {"answer": "vanishes", "explanation": "Vanishes overstates the variation claim.", "misconceptionSource": "inferred"},
+          {"answer": "guarantees", "explanation": "Guarantees contradicts the evaluation.", "misconceptionSource": "documented"}
+        ]},
+       {"id": "2", "correct": "vectors", "correctExplanation": "Non-network vectors operate on air-gapped systems.",
+        "distractors": [
+          {"answer": "voices", "explanation": "Voices is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "signals", "explanation": "Signals is vague; vectors is the standard term.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 17, "bloomsLevel": 5,
+     "sentence": "Evaluating 'perfect security is achievable', cybersecurity is about managing {{blank:1}} to acceptable levels rather than perfect prevention; evaluating 'encryption solves privacy', privacy requires access control, retention and {{blank:2}} alongside encryption.",
+     "blanks": [
+       {"id": "1", "correct": "risk", "correctExplanation": "Risk management frames cybersecurity.",
+        "distractors": [
+          {"answer": "rage", "explanation": "Rage is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "revenue", "explanation": "Revenue is unrelated to security framing.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "consent", "correctExplanation": "Consent joins access control and retention in privacy controls.",
+        "distractors": [
+          {"answer": "concrete", "explanation": "Concrete is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "celebration", "explanation": "Celebration is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 18, "bloomsLevel": 5,
+     "sentence": "Evaluating 'coordinated disclosure never involves going public', public disclosure is appropriate when vendors do not respond, balancing user {{blank:1}} with vendor remediation capacity; evaluating 'cybersecurity is purely technical', {{blank:2}} factors affect outcomes substantively.",
+     "blanks": [
+       {"id": "1", "correct": "protection", "correctExplanation": "User protection is balanced with vendor remediation.",
+        "distractors": [
+          {"answer": "promotion", "explanation": "Promotion is unrelated to the balance.", "misconceptionSource": "inferred"},
+          {"answer": "payment", "explanation": "Payment is unrelated to the balance.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "human", "correctExplanation": "Human factors substantially affect cybersecurity outcomes.",
+        "distractors": [
+          {"answer": "hidden", "explanation": "Hidden is not the relevant category.", "misconceptionSource": "inferred"},
+          {"answer": "historical", "explanation": "Historical is not the relevant category.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 19, "bloomsLevel": 5,
+     "sentence": "Evaluating 'zero trust eliminates other controls', zero trust complements encryption, patching, user education and incident {{blank:1}}; evaluating 'breach response ignores communication', affected users often need timely {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "response", "correctExplanation": "Incident response complements zero trust alongside the other controls.",
+        "distractors": [
+          {"answer": "release", "explanation": "Release is not the standard complement.", "misconceptionSource": "inferred"},
+          {"answer": "rebranding", "explanation": "Rebranding is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "information", "correctExplanation": "Timely information supports affected users.",
+        "distractors": [
+          {"answer": "invoices", "explanation": "Invoices is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "invitations", "explanation": "Invitations is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 20, "bloomsLevel": 5,
+     "sentence": "Evaluating 'frequent forced password rotation is strongest', current guidance favours long memorable passwords plus {{blank:1}} and breach monitoring; evaluating 'students should never learn attack techniques', defensive practitioners need to {{blank:2}} attacks to defend effectively.",
+     "blanks": [
+       {"id": "1", "correct": "MFA", "correctExplanation": "MFA joins long memorable passwords in current guidance.",
+        "distractors": [
+          {"answer": "WEP", "explanation": "WEP is a deprecated wireless protocol, unrelated to password guidance.", "misconceptionSource": "inferred"},
+          {"answer": "BIOS", "explanation": "BIOS is firmware, unrelated to authentication guidance.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "understand", "correctExplanation": "Defensive practitioners need to understand attacks to defend against them.",
+        "distractors": [
+          {"answer": "ignore", "explanation": "Ignoring attacks undermines defence.", "misconceptionSource": "documented"},
+          {"answer": "celebrate", "explanation": "Celebrating attacks is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 21, "bloomsLevel": 5,
+     "sentence": "Evaluating 'threat modelling only for new systems', retrospective modelling identifies current {{blank:1}} and guides remediation priorities; evaluating 'compliance is sufficient', compliance sets a {{blank:2}} that may not address all organisation-specific threats.",
+     "blanks": [
+       {"id": "1", "correct": "risks", "correctExplanation": "Current risks are identified by retrospective modelling.",
+        "distractors": [
+          {"answer": "rumours", "explanation": "Rumours is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "rewards", "explanation": "Rewards is not the identified category.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "floor", "correctExplanation": "Compliance sets a minimum (floor) for security.",
+        "distractors": [
+          {"answer": "ceiling", "explanation": "Compliance is a floor, not a ceiling; it is a minimum.", "misconceptionSource": "documented"},
+          {"answer": "choice", "explanation": "Choice does not describe the compliance minimum.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 22, "bloomsLevel": 5,
+     "sentence": "Evaluating 'small organisations are safe', attackers target them for {{blank:1}} defences; evaluating 'air-gapping solves cybersecurity', Stuxnet shows non-network vectors compromise disconnected {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "weaker", "correctExplanation": "Weaker defences make small organisations attractive targets.",
+        "distractors": [
+          {"answer": "stronger", "explanation": "Stronger defences would not attract; weaker does.", "misconceptionSource": "documented"},
+          {"answer": "hidden", "explanation": "Hidden defences are not the attraction; weaker ones are.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "systems", "correctExplanation": "Disconnected systems are compromised through non-network vectors.",
+        "distractors": [
+          {"answer": "silences", "explanation": "Silences is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "sessions", "explanation": "Sessions is not the category at issue.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 23, "bloomsLevel": 5,
+     "sentence": "Evaluating 'open-source is inherently safer', supply-chain {{blank:1}} have occurred in both open and commercial ecosystems; evaluating 'encryption solves privacy', encryption addresses confidentiality but not access control or {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "incidents", "correctExplanation": "Supply-chain incidents are documented across both ecosystems.",
+        "distractors": [
+          {"answer": "invitations", "explanation": "Invitations is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "illustrations", "explanation": "Illustrations is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "retention", "correctExplanation": "Retention is a privacy element distinct from encryption.",
+        "distractors": [
+          {"answer": "retail", "explanation": "Retail is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "rotation", "explanation": "Rotation is a separate concept.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 24, "bloomsLevel": 5,
+     "sentence": "Evaluating 'MFA is unnecessary with education', MFA reduces {{blank:1}} when credentials leak despite training; evaluating 'breach response ignores users', notification obligations and trust make timely {{blank:2}} part of responsible response.",
+     "blanks": [
+       {"id": "1", "correct": "impact", "correctExplanation": "MFA reduces impact when credentials leak.",
+        "distractors": [
+          {"answer": "income", "explanation": "Income is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "interest", "explanation": "Interest is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "communication", "correctExplanation": "Timely communication with users is part of responsible response.",
+        "distractors": [
+          {"answer": "celebration", "explanation": "Celebration is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "competition", "explanation": "Competition is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 25, "bloomsLevel": 5,
+     "sentence": "Evaluating 'complex password rotation is strongest', current guidance favours long memorable passwords with MFA and breach {{blank:1}}; evaluating 'students should not learn attack techniques', ethical curriculum supports defensive {{blank:2}}.",
+     "blanks": [
+       {"id": "1", "correct": "monitoring", "correctExplanation": "Breach monitoring is part of current guidance.",
+        "distractors": [
+          {"answer": "multiplication", "explanation": "Multiplication is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "marketing", "explanation": "Marketing is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "practice", "correctExplanation": "Defensive practice is supported by ethical curriculum covering attack techniques.",
+        "distractors": [
+          {"answer": "publicity", "explanation": "Publicity is unrelated.", "misconceptionSource": "inferred"},
+          {"answer": "packaging", "explanation": "Packaging is unrelated.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"},
+    {"type": "cloze", "variant": 26, "bloomsLevel": 5,
+     "sentence": "Evaluating 'threat modelling only for new systems', retrospective modelling guides remediation {{blank:1}}; evaluating 'compliance is sufficient', specific threat environments often warrant measures {{blank:2}} minimum requirements.",
+     "blanks": [
+       {"id": "1", "correct": "priorities", "correctExplanation": "Remediation priorities are guided by retrospective modelling.",
+        "distractors": [
+          {"answer": "pricing", "explanation": "Pricing is not the guided output.", "misconceptionSource": "inferred"},
+          {"answer": "parties", "explanation": "Parties is unrelated.", "misconceptionSource": "inferred"}
+        ]},
+       {"id": "2", "correct": "beyond", "correctExplanation": "Measures beyond the minimum may be warranted.",
+        "distractors": [
+          {"answer": "below", "explanation": "Below the minimum is non-compliant rather than the appropriate response.", "misconceptionSource": "documented"},
+          {"answer": "between", "explanation": "Between is not the appropriate comparative preposition here.", "misconceptionSource": "inferred"}
+        ]}
+     ],
+     "scoring": "partial"}
+  ]
+}
