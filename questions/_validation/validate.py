@@ -446,6 +446,8 @@ def validate_mc_correct_position_balance(data: dict, age_band: str, result: Vali
 
     total_mc = 0
     longest_count = 0
+    char_bias_count = 0
+    char_bias_locations = []
     for blooms in [2, 3, 4, 5]:
         key = f"toLevel{blooms}"
         arr = data.get(key, [])
@@ -464,6 +466,23 @@ def validate_mc_correct_position_balance(data: dict, age_band: str, result: Vali
             if correct_wc > max_distractor_wc:
                 longest_count += 1
 
+            # Character-based severe-bias check. Word count alone misses the
+            # full-sentence-vs-short-phrase pattern (e.g. 12w correct of 80 chars
+            # vs 8w distractors of 35 chars). Flag items where the correct option
+            # is meaningfully longer in characters than the longest distractor
+            # AND substantially above the average distractor.
+            correct_cc = len(correct)
+            distractor_ccs = [len(d.get("answer", "")) for d in distractors if d.get("answer")]
+            if distractor_ccs:
+                max_distractor_cc = max(distractor_ccs)
+                avg_distractor_cc = sum(distractor_ccs) / len(distractor_ccs)
+                if (
+                    correct_cc > max_distractor_cc + 8
+                    and correct_cc >= avg_distractor_cc * 1.3
+                ):
+                    char_bias_count += 1
+                    char_bias_locations.append(f"{key} v{q.get('variant', '?')}")
+
     if total_mc == 0:
         return
 
@@ -474,6 +493,20 @@ def validate_mc_correct_position_balance(data: dict, age_band: str, result: Vali
             "MC_SYSTEMATIC_LENGTH_BIAS",
             f"Correct answer is the longest in {longest_count}/{total_mc} MC questions "
             f"({pct:.0f}%); maximum is {threshold_pct}% for {option_count}-option questions",
+        )
+
+    # Char-based bias cap: max 10% of items may have correct >>= longest distractor in chars.
+    char_bias_pct = char_bias_count / total_mc * 100
+    if char_bias_pct > 10:
+        sample = ", ".join(char_bias_locations[:5])
+        if len(char_bias_locations) > 5:
+            sample += f" (+{len(char_bias_locations) - 5} more)"
+        result.error(
+            "file",
+            "MC_CHAR_LENGTH_BIAS",
+            f"Correct option exceeds longest distractor by >8 chars AND >=30% over avg "
+            f"in {char_bias_count}/{total_mc} MC items ({char_bias_pct:.0f}%); maximum is 10%. "
+            f"Locations: {sample}",
         )
 
 
