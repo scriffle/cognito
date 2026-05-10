@@ -605,6 +605,7 @@ const EMAB_DESCRIPTORS = {
 let unitsData = null;
 let explanationsData = null;
 let availableCodes = new Set();
+let filePathByCode = new Map();
 let questionCache = new Map();
 
 let appState = {
@@ -703,7 +704,10 @@ async function loadData() {
     ]);
     unitsData = units;
     explanationsData = expl;
-    index.forEach(f => availableCodes.add(f.code));
+    index.forEach(f => {
+      availableCodes.add(f.code);
+      filePathByCode.set(f.code, f.path);
+    });
   } catch(e) {
     console.error('loadData failed:', e);
     const protoHint = location.protocol === 'file:'
@@ -718,21 +722,11 @@ async function loadData() {
 
 async function loadQuestions(code, level, areaLabel) {
   if (questionCache.has(code)) return questionCache.get(code);
-  // Extract the curriculum band level from the code itself (e.g. VC2S8U01 → 8, VC2E10LA01 → 10)
-  // The code format is VC2{AREA}{LEVEL}{STRAND}{NUM}, so we need to find the level digits
-  const areaKeys = Object.keys(unitsData.areas);
-  let bandLevel = level; // fallback
-  for (const ak of areaKeys) {
-    const prefix = 'VC2' + ak;
-    if (code.startsWith(prefix)) {
-      const rest = code.slice(prefix.length);
-      const match = rest.match(/^(\d+)/);
-      if (match) bandLevel = parseInt(match[1]);
-      break;
-    }
-  }
-  const pad = String(bandLevel).padStart(2, '0');
-  const url = `questions/level-${pad}/${areaLabel}/${code}.json`;
+  // Resolve path via files-index.json (same approach as question-viewer.html).
+  // Avoids fragile reconstruction from area-key prefixes (e.g. "H" matching before "HE").
+  const relPath = filePathByCode.get(code);
+  if (!relPath) return null;
+  const url = `questions/${relPath}`;
   try {
     const resp = await fetch(url, { cache: 'no-store' });
     if (!resp.ok) return null;
