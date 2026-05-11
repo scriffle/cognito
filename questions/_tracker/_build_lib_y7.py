@@ -76,7 +76,16 @@ def apply_level(sk, level_key, tf_data, mc_data, cl_data):
 
 def finalise(sk, out_path):
     """Balance MC option lengths and trim to 20 words. Print TF balance."""
-    PADDING = " in everyday situations and contexts as students learn maths today"
+    PADDING = " in maths and everyday calculations across many problem types"
+
+    def strip_today(s):
+        """Remove stylistic 'today' suffix where present (maths content)."""
+        s = s.rstrip()
+        if s.endswith(" today."):
+            return s[:-7].rstrip(",.;: ") + "."
+        if s.endswith(" today"):
+            return s[:-6].rstrip(",.;: ")
+        return s
 
     def trim(s, mx=20):
         ws = s.split()
@@ -86,24 +95,17 @@ def finalise(sk, out_path):
 
     def balance_mc(correct, distractors_text):
         """Pad shorter options with neutral filler to within 1 word of the longest, capped at 20."""
-        all_opts = [correct] + distractors_text
+        all_opts = [strip_today(correct)] + [strip_today(d) for d in distractors_text]
         word_counts = [len(o.split()) for o in all_opts]
         target = min(max(word_counts), 20)
         padded = []
         for o in all_opts:
             wc = len(o.split())
             if wc < target:
-                # Strip trailing 'today' before padding
-                base = o
-                if base.endswith(" today"):
-                    base = base[:-6]
-                elif base.endswith(" today."):
-                    base = base[:-7]
                 pad_words = PADDING.split()
                 need = target - wc
                 added = " ".join(pad_words[:need])
-                base = base.rstrip(",. ") + " " + added + " today"
-                # Trim if overshot
+                base = o.rstrip(",. ") + " " + added
                 base = trim(base, 20)
                 padded.append(base)
             else:
