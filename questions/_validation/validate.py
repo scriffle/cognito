@@ -184,7 +184,7 @@ def validate_meta(data: dict, result: ValidationResult):
         result.error("_meta.ageBand", "ENUM", f"Invalid ageBand: {age_band}")
 
     level = meta.get("level")
-    if level and level not in [2, 4, 6, 8, 10]:
+    if level and level not in [2, 4, 6, 7, 8, 9, 10]:
         result.error("_meta.level", "ENUM", f"Invalid level: {level}")
 
     return meta

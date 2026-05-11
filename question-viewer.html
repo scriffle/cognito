@@ -102,7 +102,33 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 .type-btn.active { background: var(--accent2); border-color: var(--accent); color: white; }
 .type-label { font-size: 12px; color: var(--text2); margin-right: 4px; }
 
-.questions-grid { padding: 16px 32px 32px; display: flex; flex-direction: column; gap: 12px; }
+.content-split { display: grid; grid-template-columns: minmax(320px, 1fr) minmax(420px, 1.2fr); gap: 0; align-items: start; }
+.md-panel { border-right: 1px solid var(--border); padding: 16px 24px 32px; position: sticky; top: 0; max-height: 100vh; overflow-y: auto; background: var(--bg); }
+.md-panel-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; gap: 8px; flex-wrap: wrap; }
+.md-panel-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text2); font-weight: 600; }
+.md-toggle { display: inline-flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.md-toggle button {
+  padding: 5px 12px; font-size: 12px; font-weight: 600; background: var(--surface2);
+  color: var(--text2); border: none; cursor: pointer; transition: all 0.15s;
+}
+.md-toggle button.active { background: var(--accent2); color: white; }
+.md-toggle button:hover:not(.active) { color: var(--text); }
+.md-content { font-size: 13px; line-height: 1.6; color: var(--text); }
+.md-content h1 { font-size: 18px; margin: 0 0 12px; }
+.md-content h2 { font-size: 15px; margin: 18px 0 8px; color: var(--accent); }
+.md-content h3 { font-size: 13px; margin: 14px 0 6px; color: var(--text); text-transform: uppercase; letter-spacing: 0.3px; }
+.md-content p { margin: 0 0 10px; }
+.md-content ul, .md-content ol { margin: 0 0 10px 20px; }
+.md-content li { margin-bottom: 4px; }
+.md-content code { background: var(--surface2); padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.md-content pre { background: var(--surface2); padding: 10px; border-radius: 6px; overflow-x: auto; margin: 0 0 10px; }
+.md-content blockquote { border-left: 3px solid var(--accent); padding-left: 12px; margin: 0 0 10px; color: var(--text2); }
+.md-content strong { color: var(--text); }
+.md-content table { border-collapse: collapse; margin: 0 0 10px; font-size: 12px; }
+.md-content th, .md-content td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; }
+.md-content th { background: var(--surface2); }
+.md-empty { color: var(--text2); font-style: italic; }
+.questions-grid { padding: 16px 24px 32px; display: flex; flex-direction: column; gap: 12px; }
 
 .q-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
@@ -178,8 +204,11 @@ details summary:hover { text-decoration: underline; }
 @media (max-width: 900px) {
   .app { grid-template-columns: 1fr; }
   .sidebar { max-height: 40vh; }
+  .content-split { grid-template-columns: 1fr; }
+  .md-panel { position: static; max-height: none; border-right: none; border-bottom: 1px solid var(--border); }
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 </head>
 <body>
 <div class="app">
@@ -207,9 +236,11 @@ let currentFile = null;
 let currentData = null;
 let activeLevel = 'toLevel2';
 let activeTypes = new Set(['tf', 'mc', 'cloze']);
+let mdMode = 'long'; // 'long' | 'short'
 
 // Cache loaded question data so we don't re-fetch
 const fileCache = {};
+const mdCache = {}; // key: path -> { long: string|null, short: string|null }
 
 async function init() {
   try {
@@ -306,10 +337,52 @@ async function loadFile(fileInfo) {
     const res = await fetch('questions/' + fileInfo.path);
     currentData = await res.json();
     fileCache[fileInfo.path] = currentData;
+    loadMarkdown(fileInfo.path); // fire-and-forget; renderMain reads from mdCache
     renderMain(fileInfo);
   } catch (e) {
     main.innerHTML = '<div class="loading">Failed to load: questions/' + esc(fileInfo.path) + '</div>';
   }
+}
+
+async function loadMarkdown(path) {
+  if (mdCache[path]) { renderMdPanel(path); return; }
+  const longUrl = 'questions/' + path.replace(/\.json$/, '.md');
+  const shortUrl = 'questions/' + path.replace(/\.json$/, '.short.md');
+  const entry = { long: null, short: null };
+  mdCache[path] = entry;
+  const fetchText = async (url) => {
+    try { const r = await fetch(url); return r.ok ? await r.text() : null; }
+    catch (e) { return null; }
+  };
+  const [longText, shortText] = await Promise.all([fetchText(longUrl), fetchText(shortUrl)]);
+  entry.long = longText;
+  entry.short = shortText;
+  if (currentFile === path) renderMdPanel(path);
+}
+
+function renderMdPanel(path) {
+  const el = document.getElementById('md-content');
+  if (!el) return;
+  const entry = mdCache[path];
+  if (!entry) { el.innerHTML = '<div class="md-empty">Loading explainer...</div>'; return; }
+  const text = entry[mdMode];
+  const fallback = mdMode === 'long' ? entry.short : entry.long;
+  if (text) {
+    el.innerHTML = window.marked ? marked.parse(text) : '<pre>' + esc(text) + '</pre>';
+  } else if (fallback) {
+    el.innerHTML = '<div class="md-empty">No ' + mdMode + ' version available — showing fallback.</div>' +
+      (window.marked ? marked.parse(fallback) : '<pre>' + esc(fallback) + '</pre>');
+  } else {
+    el.innerHTML = '<div class="md-empty">No explainer markdown found for this code.</div>';
+  }
+  document.querySelectorAll('.md-toggle button').forEach(b => {
+    b.classList.toggle('active', b.dataset.mode === mdMode);
+  });
+}
+
+function setMdMode(mode) {
+  mdMode = mode;
+  if (currentFile) renderMdPanel(currentFile);
 }
 
 function renderMain(fileInfo) {
@@ -347,18 +420,33 @@ function renderMain(fileInfo) {
     const cls = activeTypes.has(t) ? ' active' : '';
     html += '<div class="type-btn' + cls + '" onclick="toggleType(\'' + t + '\')">' + t.toUpperCase() + '</div>';
   });
-  html += '</div><div class="questions-grid">';
+  html += '</div>';
 
+  // Split: markdown explainer on the left, questions on the right
+  html += '<div class="content-split">';
+  html += '<div class="md-panel">';
+  html +=   '<div class="md-panel-header">';
+  html +=     '<span class="md-panel-title">Explainer</span>';
+  html +=     '<div class="md-toggle">';
+  html +=       '<button data-mode="long" class="' + (mdMode === 'long' ? 'active' : '') + '" onclick="setMdMode(\'long\')">Long</button>';
+  html +=       '<button data-mode="short" class="' + (mdMode === 'short' ? 'active' : '') + '" onclick="setMdMode(\'short\')">Short</button>';
+  html +=     '</div>';
+  html +=   '</div>';
+  html +=   '<div id="md-content" class="md-content"><div class="md-empty">Loading explainer...</div></div>';
+  html += '</div>';
+
+  html += '<div class="questions-grid">';
   const questions = currentData[activeLevel] || [];
   const filtered = questions.filter(q => activeTypes.has(q.type));
   filtered.forEach(q => { html += renderQuestion(q); });
-
   if (filtered.length === 0) {
     html += '<div style="text-align:center;color:var(--text2);padding:40px;">No questions match the current filters</div>';
   }
-
   html += '</div>';
+  html += '</div>'; // .content-split
+
   main.innerHTML = html;
+  if (currentFile) renderMdPanel(currentFile);
 }
 
 function renderQuestion(q) {

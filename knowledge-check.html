@@ -249,7 +249,41 @@ main { max-width: 1200px; margin: 0 auto; padding: 20px; }
 }
 .change-selection-btn:hover { border-color: var(--accent); background: var(--surface2); }
 
-/* Quiz View */
+/* Quiz View — split layout: explainer on the left, questions on the right */
+.quiz-split { display: grid; grid-template-columns: minmax(300px, 1fr) minmax(380px, 1.2fr); gap: 24px; align-items: start; max-width: 1280px; margin: 0 auto; }
+.quiz-md-panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto;
+}
+.quiz-md-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; gap: 8px; flex-wrap: wrap; }
+.quiz-md-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text2); font-weight: 700; }
+.md-toggle { display: inline-flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.md-toggle button {
+  padding: 5px 12px; font-size: 12px; font-weight: 600; background: var(--surface2);
+  color: var(--text2); border: none; cursor: pointer; transition: all 0.15s; min-height: 28px;
+}
+.md-toggle button.active { background: var(--accent); color: white; }
+.md-toggle button:hover:not(.active) { color: var(--text); }
+.md-content { font-size: 13px; line-height: 1.6; color: var(--text); }
+.md-content h1 { font-size: 17px; margin: 0 0 10px; }
+.md-content h2 { font-size: 14px; margin: 16px 0 6px; color: var(--accent); }
+.md-content h3 { font-size: 12px; margin: 12px 0 4px; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text2); }
+.md-content p { margin: 0 0 8px; }
+.md-content ul, .md-content ol { margin: 0 0 8px 20px; }
+.md-content li { margin-bottom: 3px; }
+.md-content code { background: var(--surface2); padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.md-content pre { background: var(--surface2); padding: 10px; border-radius: 6px; overflow-x: auto; margin: 0 0 8px; }
+.md-content blockquote { border-left: 3px solid var(--accent); padding-left: 10px; margin: 0 0 8px; color: var(--text2); }
+.md-content strong { color: var(--text); }
+.md-content table { border-collapse: collapse; margin: 0 0 8px; font-size: 12px; }
+.md-content th, .md-content td { border: 1px solid var(--border); padding: 5px 8px; text-align: left; }
+.md-content th { background: var(--surface2); }
+.md-empty { color: var(--text2); font-style: italic; font-size: 13px; }
+@media (max-width: 900px) {
+  .quiz-split { grid-template-columns: 1fr; }
+  .quiz-md-panel { position: static; max-height: 320px; }
+}
+
 .quiz-container { max-width: 640px; margin: 0 auto; }
 .quiz-header { margin-bottom: 20px; }
 .quiz-cd-info {
@@ -502,6 +536,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 20px; }
   .view { display: block !important; }
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -607,6 +642,8 @@ let explanationsData = null;
 let availableCodes = new Set();
 let filePathByCode = new Map();
 let questionCache = new Map();
+let mdCache = new Map(); // code -> { long: string|null, short: string|null }
+let mdMode = 'long'; // 'long' | 'short'
 
 let appState = {
   version: 1,
@@ -718,6 +755,47 @@ async function loadData() {
   }
   spinner.remove();
   renderLevelSelect();
+}
+
+async function loadMarkdownForCode(code) {
+  if (mdCache.has(code)) return mdCache.get(code);
+  const relPath = filePathByCode.get(code);
+  if (!relPath) { const empty = { long: null, short: null }; mdCache.set(code, empty); return empty; }
+  const longUrl = 'questions/' + relPath.replace(/\.json$/, '.md');
+  const shortUrl = 'questions/' + relPath.replace(/\.json$/, '.short.md');
+  const fetchText = async (url) => {
+    try { const r = await fetch(url, { cache: 'no-store' }); return r.ok ? await r.text() : null; }
+    catch (e) { return null; }
+  };
+  const [longText, shortText] = await Promise.all([fetchText(longUrl), fetchText(shortUrl)]);
+  const entry = { long: longText, short: shortText };
+  mdCache.set(code, entry);
+  return entry;
+}
+
+function renderMdPanelInto(el, code) {
+  if (!el) return;
+  const entry = mdCache.get(code);
+  if (!entry) { el.innerHTML = '<div class="md-empty">Loading explainer...</div>'; return; }
+  const text = entry[mdMode];
+  const fallback = mdMode === 'long' ? entry.short : entry.long;
+  if (text) {
+    el.innerHTML = window.marked ? marked.parse(text) : '<pre>' + esc(text) + '</pre>';
+  } else if (fallback) {
+    el.innerHTML = '<div class="md-empty">No ' + mdMode + ' version — showing fallback.</div>' +
+      (window.marked ? marked.parse(fallback) : '<pre>' + esc(fallback) + '</pre>');
+  } else {
+    el.innerHTML = '<div class="md-empty">No explainer markdown found.</div>';
+  }
+}
+
+function setMdMode(mode) {
+  mdMode = mode;
+  document.querySelectorAll('.md-toggle button').forEach(b => {
+    b.classList.toggle('active', b.dataset.mode === mdMode);
+  });
+  const code = quizState && quizState.params && quizState.params.code;
+  if (code) renderMdPanelInto(document.getElementById('quiz-md-content'), code);
 }
 
 async function loadQuestions(code, level, areaLabel) {
@@ -1300,6 +1378,25 @@ function renderQuizQuestion() {
   const q = qs.questions[qs.current];
 
   el.innerHTML = '';
+
+  // Split layout: explainer on the left, quiz on the right
+  const split = document.createElement('div');
+  split.className = 'quiz-split';
+
+  const mdPanel = document.createElement('aside');
+  mdPanel.className = 'quiz-md-panel';
+  mdPanel.setAttribute('aria-label', 'Content description explainer');
+  mdPanel.innerHTML =
+    '<div class="quiz-md-header">' +
+      '<span class="quiz-md-title">Explainer — ' + esc(qs.params.code) + '</span>' +
+      '<div class="md-toggle" role="group" aria-label="Explainer length">' +
+        '<button data-mode="long" class="' + (mdMode === 'long' ? 'active' : '') + '" onclick="setMdMode(\'long\')">Long</button>' +
+        '<button data-mode="short" class="' + (mdMode === 'short' ? 'active' : '') + '" onclick="setMdMode(\'short\')">Short</button>' +
+      '</div>' +
+    '</div>' +
+    '<div id="quiz-md-content" class="md-content"><div class="md-empty">Loading explainer...</div></div>';
+  split.appendChild(mdPanel);
+
   const container = document.createElement('div');
   container.className = 'quiz-container';
 
@@ -1352,7 +1449,22 @@ function renderQuizQuestion() {
   }
 
   container.appendChild(card);
-  el.appendChild(container);
+  split.appendChild(container);
+  el.appendChild(split);
+
+  // Render explainer (cached or async load)
+  const code = qs.params.code;
+  const mdEl = document.getElementById('quiz-md-content');
+  if (mdCache.has(code)) {
+    renderMdPanelInto(mdEl, code);
+  } else {
+    loadMarkdownForCode(code).then(() => {
+      // Only paint if still on the same quiz/question
+      if (quizState && quizState.params && quizState.params.code === code) {
+        renderMdPanelInto(document.getElementById('quiz-md-content'), code);
+      }
+    });
+  }
 }
 
 function renderTF(card, q, container) {
