@@ -30,8 +30,28 @@ This document is the source of truth for what's done and what's outstanding.
 
 ## ❌ Outstanding (the real work)
 
+### Update 2026-05-12 — humanities scrubbed and reset
+
+After auditing L08 History (38 files, ~1900 MC items), it became clear that
+the upstream generation pass produced **both** broken correct answers and
+formulaic nonsense distractors ("X has no link to Y", "X always relies on
+random outcomes…"). Fixing in place would have cost ~15–30 hours of multi-turn
+distractor rewrites per subject for content of dubious value.
+
+**Decision: delete and rebuild from skeletons.**
+
+Wiped (214 files total, manifest codes reset to `pending`):
+- L08 History (38), Geography (29), Civics & Citizenship (20), Economics & Business (16)
+- L10 History (51), Geography (25), Civics & Citizenship (19), Economics & Business (16)
+
+Skeletons remain in place for rebuild via the per-level manifests.
+
+Kept as-is (good content or different generation pass — verify before rebuild):
+- L08 HP, Critical & Creative Thinking, Science
+- L10 HP, Science, single-file arts orphans
+
 ### 1. Padded-distractor rewrite — primary outstanding work
-**Scope: 374 files, 14,906 MC items**
+**Scope: 374 files, 14,906 MC items** (pre-humanities-wipe count — see note above)
 
 Each item has 1-3 distractors padded with filler. Need substantive rewrite of each padded distractor so it reads as natural, pedagogically meaningful content of similar length to the correct answer.
 
