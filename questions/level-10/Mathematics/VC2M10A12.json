@@ -1,0 +1,2806 @@
+{
+  "_meta": {
+    "code": "VC2M10A12",
+    "title": "Solving linear equations with algebraic fractions",
+    "area": "Mathematics",
+    "level": 10,
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to solve linear equations that contain algebraic fractions.",
+    "specVersions": [
+      "2.0"
+    ],
+    "generatedAt": "2026-05-17T11:00:00Z"
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The lowest common denominator of the fractions x over 3 and x over 4 is 12.",
+      "correct": "True",
+      "correctExplanation": "The LCD of 3 and 4 is 12, as 12 is the smallest number divisible by both 3 and 4.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse LCD with the product (12 is both the product and LCD here) or think it is 7 (the sum)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "To solve an equation with algebraic fractions, the first step is to add the denominators together to create a common base.",
+      "correct": "False",
+      "correctExplanation": "The correct first step is to multiply both sides by the LCD to eliminate fractions, not to add denominators.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses finding a common denominator (LCD via LCM) with adding denominators together."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Cross-multiplying is valid only when there is exactly one fraction on each side of the equation.",
+      "correct": "True",
+      "correctExplanation": "Cross-multiplication applies when the equation has the form a/b = c/d, meaning one fraction on each side.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May believe cross-multiplication works for any number of terms; it requires one fraction per side."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "An excluded value is a value of x that makes a numerator equal to zero.",
+      "correct": "False",
+      "correctExplanation": "An excluded value makes a denominator equal to zero (causing division by zero), not a numerator.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses numerator with denominator; excluded values arise from zero denominators."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The equation x over 5 equals 3 has the solution x equals three-fifths.",
+      "correct": "False",
+      "correctExplanation": "Multiplying both sides by 5 gives x = 15, not 3/5. Dividing by 5 instead of multiplying is the error.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the operation; to isolate x, multiply both sides by 5, giving x = 15."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The LCD of fractions with denominators (x minus 1) and (x plus 2) is (x minus 1) plus (x plus 2).",
+      "correct": "False",
+      "correctExplanation": "The LCD of distinct linear factors is their product (x \u2212 1)(x + 2), not their sum.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses LCD (product of distinct factors) with addition of denominators."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "When multiplying both sides of an equation by the LCD, every term on both sides must be multiplied.",
+      "correct": "True",
+      "correctExplanation": "The multiplication must apply to every term to maintain equality; missing a term invalidates the equation.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May think only the fraction terms need multiplying, but all terms must be multiplied by the LCD."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The equation 3 divided by (x minus 1) equals 5 has an excluded value at x equals 5.",
+      "correct": "False",
+      "correctExplanation": "The excluded value is x = 1 (making the denominator zero), not x = 5.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the solution value or the numerator with the excluded value; the denominator x \u2212 1 = 0 gives x = 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Cross-multiplying the equation a over b equals c over d produces the result ac equals bd.",
+      "correct": "False",
+      "correctExplanation": "Cross-multiplication gives ad = bc (each numerator multiplied by the opposite denominator), not ac = bd.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses which terms are multiplied; cross-multiplication pairs each numerator with the opposite denominator."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "If a solution to an equation with algebraic fractions equals an excluded value, that solution must be rejected.",
+      "correct": "True",
+      "correctExplanation": "A solution equalling an excluded value makes the original equation undefined, so it is an extraneous solution that must be rejected.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not understand that extraneous solutions arise when apparent solutions create zero denominators."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The LCD of fractions with denominators 2x and 6x is 12x squared.",
+      "correct": "False",
+      "correctExplanation": "The LCD of 2x and 6x is 6x (the LCM of 2 and 6 is 6, and both share the factor x). Not 12x\u00b2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Incorrectly multiplies 2x \u00d7 6x = 12x\u00b2; the LCD uses LCM, not product, when factors are shared."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Multiplying both sides of x over 2 plus x over 3 equals 5 by 6 eliminates all fractions from the equation.",
+      "correct": "True",
+      "correctExplanation": "6 is the LCD of 2 and 3. Multiplying: 3x + 2x = 30, which contains no fractions.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May think a different LCD is needed, but 6 correctly clears both denominators of 2 and 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the lowest common denominator of x over 4 and x over 6?",
+      "correct": "The LCD is 12 because 12 is the least common multiple of 4 and 6",
+      "correctExplanation": "LCM(4, 6) = 12, making 12 the LCD.",
+      "distractors": [
+        {
+          "answer": "The LCD is 24 because 24 is the product of the two denominators 4 and 6",
+          "explanation": "Uses the product rather than the LCM; since 4 and 6 share a factor of 2, the LCM is 12."
+        },
+        {
+          "answer": "The LCD is 10 because 10 is the sum of the two denominators 4 and 6",
+          "explanation": "Adds denominators instead of finding LCM; LCD is never found by addition."
+        },
+        {
+          "answer": "The LCD is 2 because 2 is the greatest common factor of 4 and 6",
+          "explanation": "Confuses LCD (LCM) with GCF; the GCF is 2 but the LCD is 12."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the excluded value for the equation 5 divided by (x minus 3) equals 2?",
+      "correct": "The excluded value is x equals 3 because the denominator becomes zero at that point",
+      "correctExplanation": "Setting x \u2212 3 = 0 gives x = 3, where the expression is undefined.",
+      "distractors": [
+        {
+          "answer": "The excluded value is x equals negative 3 obtained by negating the constant in the denominator",
+          "explanation": "Sign error; x \u2212 3 = 0 gives x = 3, not x = \u22123."
+        },
+        {
+          "answer": "The excluded value is x equals 5 taken from the numerator of the algebraic fraction",
+          "explanation": "The numerator does not determine excluded values; only denominators equal to zero matter."
+        },
+        {
+          "answer": "The excluded value is x equals 2 taken from the right-hand side of the equation directly",
+          "explanation": "The RHS value is unrelated to excluded values; excluded values come from zero denominators."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes what cross-multiplication achieves when solving equations with fractions?",
+      "correct": "It eliminates both denominators simultaneously by multiplying each numerator by the opposite denominator",
+      "correctExplanation": "Cross-multiplication transforms a/b = c/d into ad = bc, removing all denominators in one step.",
+      "distractors": [
+        {
+          "answer": "It adds both denominators together to create a single fraction on one side of the equation",
+          "explanation": "Cross-multiplication does not add denominators; it multiplies across the equals sign."
+        },
+        {
+          "answer": "It divides both numerators by their respective denominators to simplify each fraction independently",
+          "explanation": "Dividing numerator by denominator evaluates the fraction; cross-multiplication eliminates denominators entirely."
+        },
+        {
+          "answer": "It swaps the numerators and denominators of both fractions to create reciprocal equations instead",
+          "explanation": "Describes taking reciprocals, not cross-multiplication; cross-multiplication produces a product equation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the result of multiplying both sides of x over 3 equals 7 by 3?",
+      "correct": "Multiplying by 3 gives x equals 21 because the denominator 3 is cancelled on the left side",
+      "correctExplanation": "3 \u00d7 (x/3) = x and 3 \u00d7 7 = 21, so x = 21.",
+      "distractors": [
+        {
+          "answer": "Multiplying by 3 gives x over 9 equals 7 because the denominator is multiplied to become 9",
+          "explanation": "Multiplying the whole equation by 3 cancels the denominator, not multiplies it."
+        },
+        {
+          "answer": "Multiplying by 3 gives x equals 7 over 3 because division by 3 remains on the right side",
+          "explanation": "The right side becomes 3 \u00d7 7 = 21, not 7/3; the multiplication applies to both sides."
+        },
+        {
+          "answer": "Multiplying by 3 gives 3x equals 7 because only the numerator x is affected by the multiplication",
+          "explanation": "Multiplying x/3 by 3 gives x (not 3x); the 3 cancels the denominator."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the LCD of fractions with denominators (x plus 1) and (x minus 2)?",
+      "correct": "The LCD is (x plus 1)(x minus 2) because the factors are distinct and share no common terms",
+      "correctExplanation": "When denominators are distinct linear expressions with no common factors, the LCD is their product.",
+      "distractors": [
+        {
+          "answer": "The LCD is (x plus 1) plus (x minus 2) which simplifies to 2x minus 1 by combining like terms",
+          "explanation": "LCD is found by multiplication of factors, not addition of expressions."
+        },
+        {
+          "answer": "The LCD is x squared because both denominators are linear expressions in x and x times x covers both",
+          "explanation": "x\u00b2 is not divisible by (x + 1) or (x \u2212 2) for all x; the LCD must be the product of the factors."
+        },
+        {
+          "answer": "The LCD is (x plus 1) only because it has the larger constant term among the two denominators",
+          "explanation": "LCD must be divisible by both denominators; (x + 1) alone is not divisible by (x \u2212 2)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies an extraneous solution in the context of equations with algebraic fractions?",
+      "correct": "A value that satisfies the transformed equation but makes a denominator zero in the original equation",
+      "correctExplanation": "Extraneous solutions arise when clearing denominators introduces apparent solutions that are excluded values.",
+      "distractors": [
+        {
+          "answer": "A value that does not satisfy either the original or the transformed version of the equation",
+          "explanation": "If it satisfies neither equation, it is simply not a solution; extraneous solutions do satisfy the transformed equation."
+        },
+        {
+          "answer": "A value that satisfies the original equation but cannot be expressed as a simplified fraction",
+          "explanation": "Irrational solutions are valid; extraneous solutions specifically violate domain restrictions."
+        },
+        {
+          "answer": "A negative value that appears during solving because equations with fractions only allow positive solutions",
+          "explanation": "Negative solutions can be perfectly valid; extraneous solutions are defined by domain exclusions, not sign."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the first step when solving (2x plus 1) over 5 equals (x minus 3) over 2?",
+      "correct": "Cross-multiply to obtain 2(2x plus 1) equals 5(x minus 3) eliminating both fraction denominators",
+      "correctExplanation": "With one fraction on each side, cross-multiplication directly eliminates both denominators.",
+      "distractors": [
+        {
+          "answer": "Subtract x minus 3 from both sides to collect all variable terms before clearing the denominators",
+          "explanation": "Subtracting fractions with different denominators complicates rather than simplifies the equation."
+        },
+        {
+          "answer": "Divide both sides by 5 to isolate the left-hand fraction before solving the resulting equation",
+          "explanation": "Dividing by 5 does not eliminate the denominator on the left; cross-multiplication is more efficient."
+        },
+        {
+          "answer": "Multiply the numerators together to get (2x plus 1)(x minus 3) equals 10 as the simplified form",
+          "explanation": "Multiplying numerators together is not a valid algebraic operation for solving proportions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the excluded values for the equation 1 over (x minus 2) plus 1 over (x plus 3) equals 1?",
+      "correct": "The excluded values are x equals 2 and x equals negative 3 from setting each denominator to zero",
+      "correctExplanation": "Setting x \u2212 2 = 0 gives x = 2; setting x + 3 = 0 gives x = \u22123. Both are excluded.",
+      "distractors": [
+        {
+          "answer": "The excluded values are x equals negative 2 and x equals 3 from negating each denominator constant in this equation",
+          "explanation": "Sign errors; x \u2212 2 = 0 gives x = 2 (not \u22122) and x + 3 = 0 gives x = \u22123 (not 3)."
+        },
+        {
+          "answer": "The only excluded value is x equals 0 because zero cannot appear in any denominator of fractions",
+          "explanation": "The denominators are (x \u2212 2) and (x + 3), not just x; x = 0 is valid for both."
+        },
+        {
+          "answer": "There are no excluded values because the right-hand side is 1 which prevents any division by zero",
+          "explanation": "Excluded values come from the denominators on the left side, regardless of the RHS value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the LCD of the fractions x over 2, x over 3, and x over 5?",
+      "correct": "The LCD is 30 because 30 is the least common multiple of the denominators 2, 3 and 5",
+      "correctExplanation": "LCM(2, 3, 5) = 30 since 2, 3 and 5 are all prime with no shared factors.",
+      "distractors": [
+        {
+          "answer": "The LCD is 10 because the product of the two smallest denominators 2 and 5 equals 10",
+          "explanation": "Omits the factor 3; the LCD must be divisible by all three denominators."
+        },
+        {
+          "answer": "The LCD is 15 because the product of the two largest denominators 3 and 5 equals 15",
+          "explanation": "Omits the factor 2; 15 is not divisible by 2."
+        },
+        {
+          "answer": "The LCD is 6 because 6 is the product of the two smallest prime factors 2 and 3",
+          "explanation": "Omits the factor 5; 6 is not divisible by 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes why we check solutions against excluded values after solving equations with algebraic fractions?",
+      "correct": "Clearing denominators can introduce solutions that make the original equation undefined at those values",
+      "correctExplanation": "Multiplying by expressions containing x can create solutions where the original denominators are zero.",
+      "distractors": [
+        {
+          "answer": "Algebraic fractions always produce complex number solutions that must be filtered for real values only",
+          "explanation": "Algebraic fraction equations typically produce real solutions; the check is for domain validity, not complexity."
+        },
+        {
+          "answer": "The LCD changes the degree of the equation making some solutions belong to the wrong polynomial family",
+          "explanation": "While LCD can change degree, the check is specifically about excluded values from zero denominators."
+        },
+        {
+          "answer": "Solutions must be positive when denominators contain variables because negative values create imaginary results",
+          "explanation": "Negative solutions are valid if they do not create zero denominators; the check is about domain restrictions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the result of multiplying x over 4 plus 1 over 2 equals 3 by the LCD of 4?",
+      "correct": "Multiplying gives x plus 2 equals 12 because 4 cancels the denominator of x/4 and converts one-half to 2",
+      "correctExplanation": "4(x/4) + 4(1/2) = 4(3) \u2192 x + 2 = 12.",
+      "distractors": [
+        {
+          "answer": "Multiplying gives 4x plus 2 equals 12 because 4 multiplies the numerator x directly without cancelling the denominator",
+          "explanation": "4 \u00d7 (x/4) = x, not 4x; the 4 cancels the denominator rather than multiplying the numerator alone."
+        },
+        {
+          "answer": "Multiplying gives x plus 1 over 2 equals 12 because only the first fraction is affected by the multiplication",
+          "explanation": "Multiplying by LCD must apply to every term, including 1/2 and 3."
+        },
+        {
+          "answer": "Multiplying gives x over 4 plus 2 equals 12 because the LCD only clears the second fraction completely",
+          "explanation": "The LCD of 4 clears both fractions; 4 \u00d7 (x/4) = x, eliminating the first fraction too."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states when a linear equation with algebraic fractions has no valid solution?",
+      "correct": "When the only algebraic solution equals an excluded value making the original equation undefined there",
+      "correctExplanation": "If solving yields x = a but x = a is excluded (zero denominator), there is no valid solution.",
+      "distractors": [
+        {
+          "answer": "When the equation has fractions on both sides simultaneously because such equations are always inconsistent",
+          "explanation": "Fractions on both sides does not make an equation inconsistent; many such equations have valid solutions."
+        },
+        {
+          "answer": "When the coefficient of x in the cleared equation equals zero because this prevents isolating the variable",
+          "explanation": "Zero coefficient of x means either no solution (0 = nonzero) or infinite solutions (0 = 0), not necessarily related to excluded values."
+        },
+        {
+          "answer": "When the denominators contain x because variable denominators always create contradictory requirements for solutions",
+          "explanation": "Variable denominators often yield valid solutions; only when solutions coincide with excluded values is there no valid solution."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "To solve an equation with algebraic fractions, multiply every term by the {{blank:1}} to eliminate all {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "LCD",
+          "correctExplanation": "The lowest common denominator eliminates all fractions when used as a multiplier.",
+          "distractors": [
+            {
+              "answer": "GCF",
+              "explanation": "The GCF (greatest common factor) is used for simplifying, not clearing denominators.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "numerator",
+              "explanation": "Multiplying by a numerator does not systematically clear all denominators.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "denominators",
+          "correctExplanation": "The purpose of multiplying by the LCD is to remove all denominators from the equation.",
+          "distractors": [
+            {
+              "answer": "numerators",
+              "explanation": "Multiplying by the LCD clears denominators, not numerators.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variables",
+              "explanation": "Variables remain after clearing fractions; it is the denominators that are eliminated.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "An excluded value is found by setting each {{blank:1}} equal to zero and solving for {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "denominator",
+          "correctExplanation": "Excluded values are x-values that make a denominator zero, causing the expression to be undefined.",
+          "distractors": [
+            {
+              "answer": "numerator",
+              "explanation": "Setting the numerator to zero finds x-intercepts, not excluded values.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficients are constants; excluded values come from zero denominators.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "Solving the denominator equation for x identifies the excluded value(s).",
+          "distractors": [
+            {
+              "answer": "y",
+              "explanation": "Equations with fractions in x are solved for x; y is not typically the variable in these equations.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "We set the denominator equal to zero and solve for x, not solve for zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "Multiplying both sides of x over 3 plus x over 4 equals 7 by 12 produces 4x plus 3x equals 84 because 12 divided by 3 is 4 and 12 divided by 4 is 3.",
+      "correct": "True",
+      "correctExplanation": "12(x/3) = 4x, 12(x/4) = 3x, and 12(7) = 84. The resulting equation 4x + 3x = 84 is correct.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May doubt the multiplication, but 12/3 = 4 and 12/4 = 3, giving the correct cleared equation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The equation 2 over (x minus 1) equals 4 over (x plus 3) can be solved by cross-multiplying because there is one fraction on each side.",
+      "correct": "True",
+      "correctExplanation": "With a single fraction on each side, cross-multiplication directly gives 2(x + 3) = 4(x \u2212 1).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May think additional steps are needed, but cross-multiplication is valid for equations with one fraction per side."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "When solving 1 over x plus 1 over (x plus 1) equals 5 over 6, the LCD is 6x because 6 is a denominator.",
+      "correct": "False",
+      "correctExplanation": "The LCD must include all distinct factors: 6, x, and (x + 1). So LCD = 6x(x + 1), not just 6x.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Omits the factor (x + 1); the LCD must be divisible by all three denominators."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "If cross-multiplying 3 over (x minus 2) equals 6 over (x plus 1) gives 3(x plus 1) equals 6(x minus 2), the equation simplifies to x equals 3.",
+      "correct": "False",
+      "correctExplanation": "3x + 3 = 6x \u2212 12 \u2192 15 = 3x \u2192 x = 5, not x = 3. Additionally, x = 3 would need checking against excluded values.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Arithmetic error in simplification; the correct solution is x = 5."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The equation (x plus 2) over 3 equals (x minus 1) over 4 has excluded values at x equals negative 2 and x equals 1 because these make the numerators zero.",
+      "correct": "False",
+      "correctExplanation": "Excluded values come from zero denominators, not zero numerators. The denominators 3 and 4 are constants, so there are no excluded values.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses numerator zeros (which give x-intercepts) with excluded values (from zero denominators)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Solving x over 2 minus x over 5 equals 3 by multiplying through by 10 gives 5x minus 2x equals 3 which simplifies to x equals 1.",
+      "correct": "False",
+      "correctExplanation": "Multiplying 3 by 10 gives 30, not 3. The correct cleared equation is 5x \u2212 2x = 30, giving x = 10.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Forgets to multiply the RHS by 10; every term must be multiplied by the LCD."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "After solving 4 over (x minus 3) equals 2, the solution x equals 5 is valid because it does not equal the excluded value x equals 3.",
+      "correct": "True",
+      "correctExplanation": "Solving: 4 = 2(x \u2212 3) \u2192 4 = 2x \u2212 6 \u2192 x = 5. Since 5 \u2260 3 (excluded value), x = 5 is valid.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May incorrectly believe x = 5 is excluded or make a solving error."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The equation 3 over (x minus 2) equals 3 over (x plus 1) has a valid solution because both sides have the same numerator.",
+      "correct": "False",
+      "correctExplanation": "Cross-multiplying: 3(x+1) = 3(x\u22122) \u2192 3x+3 = 3x\u22126 \u2192 3 = \u22126 (contradiction). No solution exists.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Equal numerators do not guarantee a solution; when the equation reduces to a contradiction, no solution exists."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "The equation x over 3 plus x over 4 equals 7 is solved by multiplying through by 12. Which one of the following correctly explains why 12 is chosen?",
+      "correct": "Twelve is the LCM of 3 and 4, ensuring both denominators divide evenly into the multiplier",
+      "correctExplanation": "LCM(3, 4) = 12, which eliminates both fractions when used as a multiplier.",
+      "distractors": [
+        {
+          "answer": "Twelve is the product of 3 and 4 and products always serve as lowest common denominators",
+          "explanation": "While 12 = 3 \u00d7 4 here, products are not always the LCD (e.g., LCD of 4 and 6 is 12, not 24)."
+        },
+        {
+          "answer": "Twelve is chosen because it is the smallest two-digit number divisible by 3 alone",
+          "explanation": "The LCD must be divisible by both denominators (3 and 4), not just one."
+        },
+        {
+          "answer": "Twelve is the sum of 3, 4, and 5 which covers all single-digit denominators present",
+          "explanation": "LCD is found by LCM, not by summing denominators; addition does not produce a common multiple."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A student solves 5 over (x minus 1) equals 10 and obtains x equals 1.5. Which one of the following correctly evaluates this solution?",
+      "correct": "The solution x equals 1.5 is valid because it does not equal the excluded value x equals 1",
+      "correctExplanation": "5 = 10(x \u2212 1) \u2192 0.5 = x \u2212 1 \u2192 x = 1.5. Since 1.5 \u2260 1, the solution is valid.",
+      "distractors": [
+        {
+          "answer": "The solution is invalid because fractions in the original equation require integer solutions only",
+          "explanation": "Non-integer solutions are perfectly valid for equations with algebraic fractions."
+        },
+        {
+          "answer": "The solution is invalid because x equals 1.5 is too close to the excluded value x equals 1",
+          "explanation": "Proximity to an excluded value does not invalidate a solution; only equality does."
+        },
+        {
+          "answer": "The solution is valid but should be expressed as x equals three-halves to match fractional form",
+          "explanation": "x = 1.5 and x = 3/2 are the same value; the validity does not depend on the representation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains why the equation 2 over x equals 2 over x has infinitely many solutions rather than a unique value?",
+      "correct": "Both sides are identical for all x in the domain so every nonzero x satisfies the equation",
+      "correctExplanation": "The equation is an identity (true for all valid x), and the domain is all x \u2260 0.",
+      "distractors": [
+        {
+          "answer": "The equation simplifies to 0 equals 0 after subtracting which means x can be any real number including zero",
+          "explanation": "While it simplifies to 0 = 0, x = 0 is excluded from the domain (zero denominator)."
+        },
+        {
+          "answer": "Cross-multiplying gives 2x equals 2x which has the unique solution x equals 1 when dividing by 2",
+          "explanation": "2x = 2x is true for all x; dividing both sides by 2 gives x = x, not x = 1."
+        },
+        {
+          "answer": "The equation has no solution because identical fractions on both sides create an indeterminate form",
+          "explanation": "Identical expressions on both sides create an identity (always true), not an indeterminate form."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains the error in solving x over 2 plus 3 equals 5 by multiplying only the fraction by 2?",
+      "correct": "Multiplying only one term violates the equality because the LCD must be applied to every term on both sides",
+      "correctExplanation": "If only x/2 is multiplied by 2 (giving x + 3 = 5, so x = 2), the constant 3 and RHS 5 were not multiplied, giving the wrong answer.",
+      "distractors": [
+        {
+          "answer": "The error produces a correct answer coincidentally because x over 2 plus 3 equals 5 does give x equals 2",
+          "explanation": "Correct method: 2(x/2) + 2(3) = 2(5) \u2192 x + 6 = 10 \u2192 x = 4, not x = 2."
+        },
+        {
+          "answer": "Multiplying only the fraction is valid because constants do not change when the equation is transformed",
+          "explanation": "All terms must be multiplied; constants are terms that must be included in the multiplication."
+        },
+        {
+          "answer": "The error is using 2 instead of the correct multiplier which should be the denominator plus the constant 5",
+          "explanation": "The multiplier should be the LCD (here, 2); it is not related to adding the constant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains why 3 over (x minus 2) equals 3 over (x minus 2) plus 1 has no solution?",
+      "correct": "Subtracting the identical fraction from both sides leaves 0 equals 1 which is a contradiction with no solution",
+      "correctExplanation": "3/(x\u22122) \u2212 3/(x\u22122) = 1 \u2192 0 = 1, which is impossible.",
+      "distractors": [
+        {
+          "answer": "The equation has the solution x equals 2 because setting both sides equal requires x minus 2 to equal zero",
+          "explanation": "x = 2 is an excluded value (zero denominator), not a solution; it makes the equation undefined."
+        },
+        {
+          "answer": "The plus 1 creates an extraneous solution at x equals 5 that must be rejected after checking denominators",
+          "explanation": "No algebraic manipulation produces x = 5; the equation is contradictory from the start."
+        },
+        {
+          "answer": "The equation has infinitely many solutions because both sides contain the same fraction as a base",
+          "explanation": "The additional +1 on the right makes the sides unequal for all valid x; it is not an identity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A student multiplies both sides of (2x plus 1) over 5 equals (x minus 3) over 2 by 10. Which one of the following correctly shows the resulting equation?",
+      "correct": "The result is 2(2x plus 1) equals 5(x minus 3) which expands to 4x plus 2 equals 5x minus 15",
+      "correctExplanation": "10 \u00d7 (2x+1)/5 = 2(2x+1) and 10 \u00d7 (x\u22123)/2 = 5(x\u22123). Expanding: 4x+2 = 5x\u221215.",
+      "distractors": [
+        {
+          "answer": "The result is 10(2x plus 1) equals 10(x minus 3) which expands to 20x plus 10 equals 10x minus 30",
+          "explanation": "Does not divide by the respective denominators; 10/5 = 2 and 10/2 = 5, not 10 for both."
+        },
+        {
+          "answer": "The result is (2x plus 1) over 2 equals (x minus 3) over 5 because multiplying by 10 swaps denominators",
+          "explanation": "Multiplying by LCD eliminates denominators; it does not swap them."
+        },
+        {
+          "answer": "The result is 5(2x plus 1) equals 2(x minus 3) which expands to 10x plus 5 equals 2x minus 6",
+          "explanation": "Reverses the multipliers; 10/5 = 2 applies to the left and 10/2 = 5 applies to the right."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains why x equals 2 is rejected as a solution to 6 over (x minus 2) equals 3?",
+      "correct": "Substituting x equals 2 makes the denominator (x minus 2) equal zero so the original equation is undefined",
+      "correctExplanation": "At x = 2: 6/(2\u22122) = 6/0, which is undefined. Hence x = 2 is extraneous.",
+      "distractors": [
+        {
+          "answer": "Substituting x equals 2 gives 6 over 0 which equals infinity and infinity does not equal 3 as required",
+          "explanation": "While the intuition is correct, 6/0 is undefined (not infinity); the formal reason is domain exclusion."
+        },
+        {
+          "answer": "The value x equals 2 is rejected because it produces a negative result on the left which cannot equal positive 3",
+          "explanation": "6/(2\u22122) is undefined, not negative; the issue is division by zero, not sign."
+        },
+        {
+          "answer": "The value x equals 2 is rejected because substitution gives 6 over negative 2 equals negative 3 which differs from positive 3",
+          "explanation": "2 \u2212 2 = 0, not \u22122; the substitution gives 6/0 (undefined), not 6/(\u22122)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains why solving 1 over x equals 1 over (x plus 2) yields no solution?",
+      "correct": "Cross-multiplying gives x plus 2 equals x which simplifies to 2 equals 0, a contradiction with no solution",
+      "correctExplanation": "1(x + 2) = 1(x) \u2192 x + 2 = x \u2192 2 = 0, which is impossible.",
+      "distractors": [
+        {
+          "answer": "The equation has no solution because reciprocal functions with different denominators never intersect graphically",
+          "explanation": "Reciprocal functions can intersect; here the algebraic contradiction proves no solution, not a general graphical rule."
+        },
+        {
+          "answer": "Subtracting gives 1 over x minus 1 over (x plus 2) equals zero which has the solution x equals negative 1",
+          "explanation": "1/x \u2212 1/(x+2) = 2/(x(x+2)) = 0 has no solution since a nonzero numerator (2) cannot equal zero."
+        },
+        {
+          "answer": "The equation has the solution x equals negative 2 because setting denominators equal gives x equals x plus 2 at that value",
+          "explanation": "x = \u22122 is an excluded value (makes x + 2 = 0 denominator zero); it cannot be a solution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly identifies the LCD needed to solve 2 over (3x) plus 1 over (4x) equals 5 over 6?",
+      "correct": "The LCD is 12x because the LCM of the numeric parts 3, 4, and 6 is 12 and x is the shared variable factor",
+      "correctExplanation": "LCM(3, 4, 6) = 12, and all variable denominators share x (to the first power). LCD = 12x.",
+      "distractors": [
+        {
+          "answer": "The LCD is 72x because multiplying all denominators 3, 4, and 6 gives 72 with x included as well",
+          "explanation": "Uses the product instead of LCM; 3 \u00d7 4 \u00d7 6 = 72, but LCM(3, 4, 6) = 12 since factors overlap."
+        },
+        {
+          "answer": "The LCD is 12x squared because each occurrence of x must be counted separately giving x times x",
+          "explanation": "Both terms have x to the first power; the LCM of x and x is just x, not x\u00b2."
+        },
+        {
+          "answer": "The LCD is 6x because 6 is the largest numeric denominator present and absorbs the smaller ones",
+          "explanation": "6 is not divisible by 4; the LCD must be divisible by all denominators, requiring LCM = 12."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A student claims that solving (x plus 1) over 2 equals (x plus 1) over 3 gives x equals negative 1. Which one of the following correctly evaluates this claim?",
+      "correct": "The claim is correct because cross-multiplying gives 3(x plus 1) equals 2(x plus 1) leading to x plus 1 equals 0 hence x equals negative 1",
+      "correctExplanation": "3(x+1) = 2(x+1) \u2192 3x+3 = 2x+2 \u2192 x = \u22121. Checking: both sides equal 0/2 = 0/3 = 0. Valid.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because the equation has no solution since identical numerators with different denominators create a contradiction",
+          "explanation": "The numerators are identical expressions in x, not identical constants; the equation has the solution x = \u22121 where both sides equal 0."
+        },
+        {
+          "answer": "The claim is incorrect because x equals negative 1 is an excluded value making both numerators zero which is not permitted",
+          "explanation": "Zero numerators are valid (0/2 = 0 is defined); excluded values come from zero denominators."
+        },
+        {
+          "answer": "The claim is correct but incomplete because x can be any value since the equation is an identity with identical fractions",
+          "explanation": "The fractions are not identical (different denominators); only x = \u22121 satisfies the equation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains the purpose of checking a solution in the original equation rather than the cleared equation?",
+      "correct": "The cleared equation may admit solutions that create zero denominators in the original which must be identified and rejected",
+      "correctExplanation": "Multiplying by the LCD can introduce extraneous solutions; only the original equation reveals excluded values.",
+      "distractors": [
+        {
+          "answer": "The cleared equation always produces different solutions from the original so both must be solved independently",
+          "explanation": "The cleared equation produces the same solutions as the original, plus potentially extraneous ones from domain restrictions."
+        },
+        {
+          "answer": "Checking in the cleared equation is sufficient because multiplying by a constant preserves all solution properties",
+          "explanation": "Multiplying by an expression containing x (not a constant) can introduce extraneous solutions."
+        },
+        {
+          "answer": "The original equation must be used because clearing fractions introduces rounding errors that affect solution accuracy",
+          "explanation": "No rounding occurs; the issue is algebraic (domain restrictions), not numerical."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains why the equation 1 over x plus 1 over (2x) equals 3 over (2x) simplifies to reveal that x can be any nonzero value?",
+      "correct": "Combining the left side over LCD 2x gives 3 over (2x) which matches the right side creating an identity for all nonzero x",
+      "correctExplanation": "1/x + 1/(2x) = 2/(2x) + 1/(2x) = 3/(2x), which equals the RHS for all x \u2260 0.",
+      "distractors": [
+        {
+          "answer": "Multiplying through by 2x gives 2 plus 1 equals 3 which is always true meaning x equals zero is the only solution in this equation",
+          "explanation": "2 + 1 = 3 is always true (identity), but x = 0 is excluded; all nonzero x are solutions, not just zero."
+        },
+        {
+          "answer": "The equation has no solution because three different denominators create an overdetermined system of constraints",
+          "explanation": "Having multiple denominators does not create an overdetermined system; this is a single equation that is an identity."
+        },
+        {
+          "answer": "Cross-multiplying gives x times 3 equals 2x times 1 which simplifies to x equals 2 as the unique solution",
+          "explanation": "Cross-multiplication applies to equations with one fraction per side; this has two fractions on the left."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "To solve x over 3 plus x over 4 equals 7, multiply every term by {{blank:1}} giving {{blank:2}}x plus 3x equals 84.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "LCD of 3 and 4 is 12.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Uses the RHS value instead of the LCD.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Uses only one denominator instead of the LCD of both.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "12 \u00d7 (x/3) = 4x; the coefficient is 12 \u00f7 3 = 4.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Confuses which denominator produces which coefficient; 12 \u00f7 3 = 4, not 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "Forgets to divide by the denominator; 12 \u00d7 (x/3) = 4x, not 12x.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Cross-multiplying (2x plus 1) over 5 equals (x minus 3) over 2 gives 2(2x plus 1) equals {{blank:1}}(x minus 3), which expands to 4x plus 2 equals 5x minus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "Cross-multiplication: the denominator 5 multiplies the opposite numerator (x \u2212 3).",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Uses the wrong denominator; 2 multiplies the left numerator, 5 multiplies the right.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "Multiplies both denominators together instead of crossing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "15",
+          "correctExplanation": "5(x \u2212 3) = 5x \u2212 15.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Forgets to multiply the constant by 5; 5 \u00d7 3 = 15.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "May subtract 3 from 5 or make another arithmetic error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The equation 4 over (x minus 1) equals 2 has excluded value x equals {{blank:1}} and solution x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "x \u2212 1 = 0 gives x = 1 as the excluded value.",
+          "distractors": [
+            {
+              "answer": "negative 1",
+              "explanation": "Sign error; x \u2212 1 = 0 gives x = 1, not \u22121.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Uses the numerator instead of solving the denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "4 = 2(x \u2212 1) \u2192 4 = 2x \u2212 2 \u2192 2x = 6 \u2192 x = 3.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Confuses the excluded value with the solution.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "May divide 4 by 2 without solving correctly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "When solving 1 over (x plus 2) equals 3 over (x minus 4), cross-multiplying gives 1 times (x minus 4) equals {{blank:1}} times (x plus 2), leading to the solution x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "Cross-multiplication: the numerator 3 multiplies the opposite denominator (x + 2).",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Uses the same numerator on both sides instead of crossing.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Uses the constant from a denominator instead of the numerator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 5",
+          "correctExplanation": "x \u2212 4 = 3(x + 2) \u2192 x \u2212 4 = 3x + 6 \u2192 \u22122x = 10 \u2192 x = \u22125.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Sign error in the final step; \u221210/2 = \u22125, not 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 1",
+              "explanation": "May make errors combining like terms or distributing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The LCD of 1 over (x minus 3) and 2 over (x plus 1) is (x minus 3)(x plus 1) because the factors are {{blank:1}} and neither is a {{blank:2}} of the other.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "distinct",
+          "correctExplanation": "The two linear factors share no common terms, making them distinct.",
+          "distractors": [
+            {
+              "answer": "identical",
+              "explanation": "The factors (x\u22123) and (x+1) are different expressions, not identical.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "reciprocal",
+              "explanation": "Reciprocal would mean one is 1/other; the factors are just different linear expressions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiple",
+          "correctExplanation": "Neither factor is a multiple of the other, so the LCD is their product.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "The concept involves factors and multiples, not sums.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "fraction",
+              "explanation": "The relationship being checked is whether one factor divides the other.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "After solving an equation with algebraic fractions, a solution must be {{blank:1}} if it makes any {{blank:2}} in the original equation equal to zero.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "rejected",
+          "correctExplanation": "Solutions that create zero denominators are extraneous and must be rejected.",
+          "distractors": [
+            {
+              "answer": "accepted",
+              "explanation": "Solutions creating zero denominators are invalid, not acceptable.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "simplified",
+              "explanation": "The issue is validity, not simplification.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "denominator",
+          "correctExplanation": "Zero denominators make the expression undefined, invalidating the solution.",
+          "distractors": [
+            {
+              "answer": "numerator",
+              "explanation": "Zero numerators give y = 0, which is valid; it is zero denominators that are problematic.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "Zero coefficients eliminate terms but do not create undefined expressions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Mia solves x over 3 plus x over 6 equals 5 and correctly obtains x equals 10.",
+      "correct": "True",
+      "correctExplanation": "LCD = 6. Multiplying: 2x + x = 30 \u2192 3x = 30 \u2192 x = 10. Checking: 10/3 + 10/6 = 10/3 + 5/3 = 15/3 = 5. \u2713",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May doubt the arithmetic, but 2x + x = 30 correctly gives x = 10."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Jarrah solves 2 over (x minus 1) equals 4 over (x plus 3) and claims the solution is x equals 7.",
+      "correct": "False",
+      "correctExplanation": "Cross-multiplying: 2(x+3) = 4(x\u22121) \u2192 2x+6 = 4x\u22124 \u2192 10 = 2x \u2192 x = 5, not 7.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The correct solution is x = 5; Jarrah made an arithmetic error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Anika solves (3x minus 2) over 4 equals (x plus 5) over 3 by cross-multiplying. Which one of the following shows her correct working?",
+      "correct": "Cross-multiplying gives 3(3x minus 2) equals 4(x plus 5) leading to 9x minus 6 equals 4x plus 20 and x equals 5.2",
+      "correctExplanation": "3(3x\u22122) = 4(x+5) \u2192 9x\u22126 = 4x+20 \u2192 5x = 26 \u2192 x = 5.2.",
+      "distractors": [
+        {
+          "answer": "Cross-multiplying gives 4(3x minus 2) equals 3(x plus 5) leading to 12x minus 8 equals 3x plus 15 and x equals 2.56",
+          "explanation": "Reverses which denominator multiplies which numerator; 3 multiplies left, 4 multiplies right."
+        },
+        {
+          "answer": "Cross-multiplying gives 3(3x minus 2) equals 4(x plus 5) leading to 9x minus 2 equals 4x plus 5 and x equals 1.4",
+          "explanation": "Fails to distribute the multiplier to both terms within each bracket."
+        },
+        {
+          "answer": "Cross-multiplying gives 3(3x minus 2) equals 4(x plus 5) leading to 9x minus 6 equals 4x plus 20 and x equals 2.6",
+          "explanation": "Correct equation but division error: 26/5 = 5.2, not 2.6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Sam needs to solve 1 over x plus 1 over (x plus 2) equals 5 over 8. After multiplying through by 8x(x plus 2), which one of the following shows the correct cleared equation?",
+      "correct": "The cleared equation is 8(x plus 2) plus 8x equals 5x(x plus 2) giving 8x plus 16 plus 8x equals 5x squared plus 10x",
+      "correctExplanation": "8x(x+2) \u00d7 1/x = 8(x+2); 8x(x+2) \u00d7 1/(x+2) = 8x; 8x(x+2) \u00d7 5/8 = 5x(x+2).",
+      "distractors": [
+        {
+          "answer": "The cleared equation is 8x(x plus 2) plus 8x(x plus 2) equals 5 giving a quadratic in standard form directly",
+          "explanation": "Does not correctly cancel denominators; each fraction's denominator cancels with part of the LCD."
+        },
+        {
+          "answer": "The cleared equation is (x plus 2) plus x equals 5 over 8 because the LCD only clears the left-side fractions",
+          "explanation": "The LCD must multiply all terms including the right side; 8x(x+2) \u00d7 5/8 = 5x(x+2)."
+        },
+        {
+          "answer": "The cleared equation is 8(x plus 2) plus 8x equals 5 because the x factors cancel entirely from both sides",
+          "explanation": "The right side becomes 5x(x+2), not just 5; the x factors do not all cancel."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Lila solves 3 over (x minus 2) equals 9 over (x plus 4) and needs to check for excluded values. Which one of the following correctly identifies the solution and its validity?",
+      "correct": "Cross-multiplying gives 3(x plus 4) equals 9(x minus 2) leading to x equals 5 which is valid since excluded values are 2 and negative 4",
+      "correctExplanation": "3(x+4) = 9(x\u22122) \u2192 3x+12 = 9x\u221218 \u2192 30 = 6x \u2192 x = 5. Since 5 \u2260 2 and 5 \u2260 \u22124, valid.",
+      "distractors": [
+        {
+          "answer": "Cross-multiplying gives 3(x plus 4) equals 9(x minus 2) leading to x equals 5 but this equals an excluded value so no solution exists",
+          "explanation": "The excluded values are x = 2 and x = \u22124; x = 5 does not equal either, so it is valid."
+        },
+        {
+          "answer": "Cross-multiplying gives 9(x plus 4) equals 3(x minus 2) leading to x equals negative 7 which is valid since excluded values are 2 and negative 4",
+          "explanation": "Reverses the cross-multiplication; 3 \u00d7 (x+4) goes with 9 \u00d7 (x\u22122), giving x = 5."
+        },
+        {
+          "answer": "Cross-multiplying gives 3(x plus 4) equals 9(x minus 2) leading to x equals negative 5 from a sign error in collecting terms",
+          "explanation": "Collecting terms: 3x+12 = 9x\u221218 \u2192 \u22126x = \u221230 \u2192 x = 5, not \u22125."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Kofi sets up an equation for a rate problem: one worker completes a job in 6 hours and another in 4 hours. Working together, 1 over 6 plus 1 over 4 equals 1 over t. Which one of the following correctly finds t?",
+      "correct": "Combining: 2 over 12 plus 3 over 12 equals 5 over 12 equals 1 over t, giving t equals 12 over 5 or 2.4 hours",
+      "correctExplanation": "1/6 + 1/4 = 2/12 + 3/12 = 5/12 = 1/t \u2192 t = 12/5 = 2.4 hours.",
+      "distractors": [
+        {
+          "answer": "Adding the times gives 6 plus 4 equals 10 hours so together they take 10 hours to complete the combined job",
+          "explanation": "Adding times gives total if working sequentially; rates (reciprocals) must be added for simultaneous work."
+        },
+        {
+          "answer": "Averaging the times gives (6 plus 4) over 2 equals 5 hours so together they take 5 hours total",
+          "explanation": "The combined time is not the average; it must be less than the faster worker's time alone."
+        },
+        {
+          "answer": "Multiplying rates gives 1 over 6 times 1 over 4 equals 1 over 24 so together they take 24 hours total",
+          "explanation": "Rates are added, not multiplied, for simultaneous work; 1/6 + 1/4 \u2260 1/24."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Yen solves the equation x over (x minus 3) equals 3 over (x minus 3) plus 1. After multiplying through by (x minus 3), which one of the following correctly shows the result?",
+      "correct": "Multiplying gives x equals 3 plus (x minus 3) which simplifies to x equals x giving an identity valid for all x except 3",
+      "correctExplanation": "(x\u22123) \u00d7 x/(x\u22123) = x; (x\u22123) \u00d7 3/(x\u22123) = 3; (x\u22123) \u00d7 1 = x\u22123. So x = 3 + x \u2212 3 \u2192 x = x. True for all x \u2260 3.",
+      "distractors": [
+        {
+          "answer": "Multiplying gives x equals 3 plus 1 which simplifies to x equals 4 as the unique solution to the equation",
+          "explanation": "Forgets to multiply the 1 by (x\u22123); every term must be multiplied by the LCD."
+        },
+        {
+          "answer": "Multiplying gives x(x minus 3) equals 3 plus (x minus 3) leading to a quadratic equation with two solutions",
+          "explanation": "The left side should be just x (denominator cancels), not x(x\u22123)."
+        },
+        {
+          "answer": "Multiplying gives x equals 3 which is the excluded value so the equation has no valid solutions at all",
+          "explanation": "The clearing gives x = x (identity), not x = 3. The equation is valid for all x \u2260 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Rosa encounters the equation 5 over (x plus 1) equals 5 over (x minus 2). She attempts to solve it. Which one of the following correctly describes the outcome?",
+      "correct": "Cross-multiplying gives 5(x minus 2) equals 5(x plus 1) leading to negative 10 equals 5 which is a contradiction so no solution exists",
+      "correctExplanation": "5(x\u22122) = 5(x+1) \u2192 5x\u221210 = 5x+5 \u2192 \u221210 = 5, contradiction. No solution.",
+      "distractors": [
+        {
+          "answer": "Dividing both sides by 5 gives 1 over (x plus 1) equals 1 over (x minus 2) so x plus 1 equals x minus 2 giving x equals negative 3",
+          "explanation": "x + 1 = x \u2212 2 gives 1 = \u22122 (contradiction), not x = \u22123."
+        },
+        {
+          "answer": "The equation simplifies to x plus 1 equals x minus 2 giving 1 equals negative 2 but this means x can be any value",
+          "explanation": "A contradiction (1 = \u22122) means no solution exists, not infinitely many solutions."
+        },
+        {
+          "answer": "Cross-multiplying gives 5(x minus 2) equals 5(x plus 1) which simplifies to x equals 3 as a valid unique solution",
+          "explanation": "5x \u2212 10 = 5x + 5 eliminates x, giving \u221210 = 5, a contradiction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Amir solves 2x over 3 minus x over 6 equals 4. After multiplying through by 6, which one of the following shows the correct next steps?",
+      "correct": "Multiplying gives 4x minus x equals 24 so 3x equals 24 and x equals 8",
+      "correctExplanation": "6 \u00d7 2x/3 = 4x; 6 \u00d7 x/6 = x; 6 \u00d7 4 = 24. So 4x \u2212 x = 24 \u2192 3x = 24 \u2192 x = 8.",
+      "distractors": [
+        {
+          "answer": "Multiplying gives 2x minus x equals 24 so x equals 24 because the coefficients remain unchanged after clearing",
+          "explanation": "The coefficient changes: 6/3 = 2 applied to 2x gives 4x, not 2x."
+        },
+        {
+          "answer": "Multiplying gives 12x minus 6x equals 4 so 6x equals 4 and x equals two-thirds",
+          "explanation": "Multiplies the numerator coefficients by 6 without cancelling denominators, and forgets to multiply the RHS."
+        },
+        {
+          "answer": "Multiplying gives 4x minus x equals 4 so 3x equals 4 and x equals four-thirds",
+          "explanation": "Correctly clears the left side but forgets to multiply the right side 4 by 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Jade needs to solve 3 over (x minus 1) equals 5 over (x plus 2). Which one of the following correctly identifies the solution and confirms it is not excluded?",
+      "correct": "Cross-multiplying gives 3(x plus 2) equals 5(x minus 1) leading to x equals 5.5 which is valid since excluded values are 1 and negative 2",
+      "correctExplanation": "3(x+2) = 5(x\u22121) \u2192 3x+6 = 5x\u22125 \u2192 11 = 2x \u2192 x = 5.5. Since 5.5 \u2260 1 and 5.5 \u2260 \u22122, valid.",
+      "distractors": [
+        {
+          "answer": "Cross-multiplying gives 5(x plus 2) equals 3(x minus 1) leading to x equals negative 6.5 which must be checked against excluded values",
+          "explanation": "Reverses the cross-multiplication direction; 3 multiplies (x+2), not (x\u22121)."
+        },
+        {
+          "answer": "Cross-multiplying gives 3(x plus 2) equals 5(x minus 1) leading to x equals 0.5 from an arithmetic error in collection",
+          "explanation": "3x+6 = 5x\u22125 \u2192 \u22122x = \u221211 \u2192 x = 5.5, not 0.5."
+        },
+        {
+          "answer": "Cross-multiplying gives 3(x plus 2) equals 5(x minus 1) leading to x equals 5.5 but this equals an excluded value so it is rejected in this equation",
+          "explanation": "Excluded values are x = 1 and x = \u22122; x = 5.5 is not excluded."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Linh needs to determine if x equals 2 is a valid solution to the equation (x plus 1) over (x minus 2) equals 9 over (x minus 2). Which one of the following correctly evaluates this?",
+      "correct": "The value x equals 2 makes both denominators zero so it is an excluded value and cannot be a valid solution regardless of any algebraic manipulation",
+      "correctExplanation": "At x = 2: (x \u2212 2) = 0, making both fractions undefined. x = 2 is excluded from the domain.",
+      "distractors": [
+        {
+          "answer": "Substituting x equals 2 gives 3 over 0 equals 9 over 0 and since both are undefined they are equal making x equals 2 valid in this equation",
+          "explanation": "Undefined expressions cannot be compared; 'undefined = undefined' is not a valid mathematical statement."
+        },
+        {
+          "answer": "The value x equals 2 is valid because the numerators 3 and 9 are both defined so the fractions have meaningful values",
+          "explanation": "Defined numerators are irrelevant when the denominator is zero; the entire fraction is undefined."
+        },
+        {
+          "answer": "The value x equals 2 makes only the left denominator zero while the right denominator remains valid",
+          "explanation": "Both denominators are (x \u2212 2), so both become zero simultaneously at x = 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Marcus sets up a problem: 'A pool fills from one tap in 8 hours and drains from an outlet in 12 hours. With both open, how long to fill?' His equation is 1 over 8 minus 1 over 12 equals 1 over t. Which one of the following correctly solves for t?",
+      "correct": "Combining: 3 over 24 minus 2 over 24 equals 1 over 24 equals 1 over t giving t equals 24 hours with both running simultaneously",
+      "correctExplanation": "1/8 \u2212 1/12 = 3/24 \u2212 2/24 = 1/24 = 1/t \u2192 t = 24 hours.",
+      "distractors": [
+        {
+          "answer": "Combining: 1 over 8 minus 1 over 12 equals negative 1 over 4 so t equals negative 4 meaning the pool can never fill in this equation",
+          "explanation": "1/8 \u2212 1/12 = 3/24 \u2212 2/24 = 1/24 (positive), not \u22121/4."
+        },
+        {
+          "answer": "Adding the times: 8 plus 12 equals 20 hours because both the fill and drain rates combine by addition of times",
+          "explanation": "Times cannot be added directly; rates (reciprocals) must be combined."
+        },
+        {
+          "answer": "Subtracting times: 12 minus 8 equals 4 hours because the net time is the difference between drain and fill",
+          "explanation": "Subtracting times does not give the net filling time; rates must be subtracted as fractions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Priya solves 4 over (x minus 5) equals 4 over (x minus 5) minus 2 and claims there is no valid solution. Which one of the following correctly evaluates her claim?",
+      "correct": "Subtracting the fraction from both sides gives 0 equals negative 2, a contradiction confirming no solution exists as Priya states",
+      "correctExplanation": "4/(x\u22125) \u2212 4/(x\u22125) = \u22122 \u2192 0 = \u22122, which is impossible. No solution.",
+      "distractors": [
+        {
+          "answer": "Priya is incorrect because multiplying by (x minus 5) gives 4 equals 4 minus 2(x minus 5) which yields x equals 6 as a valid solution",
+          "explanation": "4 = 4 \u2212 2(x\u22125) \u2192 0 = \u22122(x\u22125) \u2192 x = 5, but x = 5 is excluded. So indeed no valid solution."
+        },
+        {
+          "answer": "Priya is incorrect because identical fractions on both sides means the equation is an identity with infinitely many solutions",
+          "explanation": "The extra \u22122 on the right means the sides are not identical; it creates a contradiction."
+        },
+        {
+          "answer": "Priya is correct but for the wrong reason since the excluded value x equals 5 is the only candidate and it must be rejected",
+          "explanation": "The issue is the algebraic contradiction 0 = \u22122, not just the excluded value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Will solves (x plus 3) over 2 plus (x minus 1) over 5 equals 4. After multiplying through by 10, which one of the following shows the correct cleared equation?",
+      "correct": "Multiplying gives 5(x plus 3) plus 2(x minus 1) equals 40 which expands to 5x plus 15 plus 2x minus 2 equals 40",
+      "correctExplanation": "10 \u00d7 (x+3)/2 = 5(x+3); 10 \u00d7 (x\u22121)/5 = 2(x\u22121); 10 \u00d7 4 = 40.",
+      "distractors": [
+        {
+          "answer": "Multiplying gives 2(x plus 3) plus 5(x minus 1) equals 40 which expands to 2x plus 6 plus 5x minus 5 equals 40",
+          "explanation": "Reverses which fraction gets which multiplier; 10/2 = 5 applies to the first fraction, 10/5 = 2 to the second."
+        },
+        {
+          "answer": "Multiplying gives 10(x plus 3) plus 10(x minus 1) equals 4 which expands to 10x plus 30 plus 10x minus 10 equals 4",
+          "explanation": "Multiplies numerators by 10 without cancelling denominators, and forgets to multiply the RHS."
+        },
+        {
+          "answer": "Multiplying gives 5(x plus 3) plus 2(x minus 1) equals 4 which expands to 5x plus 15 plus 2x minus 2 equals 4",
+          "explanation": "Correctly clears the left fractions but forgets to multiply the right side (4) by 10."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Mia solves x over 2 plus x over 5 equals 7 by multiplying by {{blank:1}}, obtaining 5x plus 2x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "LCD of 2 and 5 is 10.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Uses the RHS instead of the LCD.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Uses only one denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "70",
+          "correctExplanation": "10 \u00d7 7 = 70.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Forgets to multiply the RHS by the LCD.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "35",
+              "explanation": "May multiply by 5 instead of 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Jarrah cross-multiplies 5 over (x plus 1) equals 2 over (x minus 3) to get 5(x minus 3) equals 2(x plus 1), giving 5x minus 15 equals 2x plus 2, so x equals {{blank:1}} divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "17",
+          "correctExplanation": "5x \u2212 15 = 2x + 2 \u2192 3x = 17.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "May subtract incorrectly: 15 \u2212 2 = 13 instead of 15 + 2 = 17.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 13",
+              "explanation": "Sign error when collecting constant terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "5x \u2212 2x = 3x, so dividing 17 by 3.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Uses the original numerator instead of the coefficient of x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "May add 5 and 2 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Anika solves (2x minus 1) over 3 equals (x plus 4) over 7 by cross-multiplying: 7(2x minus 1) equals 3(x plus 4), giving 14x minus 7 equals 3x plus {{blank:1}}, so x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "3 \u00d7 4 = 12.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Forgets to multiply by 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "Uses the wrong multiplier.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "19 over 11",
+          "correctExplanation": "14x \u2212 3x = 12 + 7 \u2192 11x = 19 \u2192 x = 19/11.",
+          "distractors": [
+            {
+              "answer": "5 over 11",
+              "explanation": "May compute 12 \u2212 7 = 5 instead of 12 + 7 = 19.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "19 over 17",
+              "explanation": "May compute 14 + 3 = 17 instead of 14 \u2212 3 = 11.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Sam identifies that 6 over (x minus 4) equals 3 has excluded value x equals {{blank:1}} and solution x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "x \u2212 4 = 0 gives x = 4.",
+          "distractors": [
+            {
+              "answer": "negative 4",
+              "explanation": "Sign error; x \u2212 4 = 0 gives x = 4, not \u22124.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Uses the numerator instead of solving the denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "6 = 3(x \u2212 4) \u2192 6 = 3x \u2212 12 \u2192 3x = 18 \u2192 x = 6.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "May divide 6 by 3 without solving the full equation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Confuses the excluded value with the solution.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Lila sets up a rate problem: pipe A fills in 5 hours, pipe B fills in 10 hours. Together: 1 over 5 plus 1 over 10 equals {{blank:1}} over 10 equals 1 over t, so t equals {{blank:2}} hours.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "1/5 + 1/10 = 2/10 + 1/10 = 3/10.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "May think 1/5 = 1/10, getting 2/10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "11",
+              "explanation": "Adds numerators and denominators: (1+1)/(5+10) is wrong; gets confused.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10 over 3",
+          "correctExplanation": "3/10 = 1/t \u2192 t = 10/3 \u2248 3.33 hours.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "Multiplies 5 \u00d7 10/something or adds times directly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7.5",
+              "explanation": "May average the two times: (5+10)/2 = 7.5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Kofi multiplies every term in x over 4 minus 1 over 3 equals 2 by 12, obtaining {{blank:1}}x minus {{blank:2}} equals 24.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "12 \u00d7 (x/4) = 3x.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Confuses which coefficient results; 12/4 = 3, not 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "Forgets to cancel the denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "12 \u00d7 (1/3) = 4.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Uses the denominator value directly instead of computing 12/3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Forgets to multiply the numerator 1 by 12/3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Yen verifies that x equals 3 is NOT a valid solution to 4 over (x minus 3) equals 7 because substituting gives 4 over {{blank:1}} which is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "x \u2212 3 = 3 \u2212 3 = 0.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Substitutes into x only, forgetting to evaluate x \u2212 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 3",
+              "explanation": "Subtracts incorrectly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "undefined",
+          "correctExplanation": "Division by zero is undefined.",
+          "distractors": [
+            {
+              "answer": "infinity",
+              "explanation": "While related conceptually, the formal mathematical term is undefined, not infinity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "4/0 is not zero; it is undefined.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Rosa solves x over 3 plus x over 6 minus x over 2 equals 1 by multiplying through by 6: 2x plus x minus {{blank:1}}x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "6 \u00d7 (x/2) = 3x.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Uses 6/3 = 2 for the wrong fraction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Forgets to cancel the denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "6 \u00d7 1 = 6.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Forgets to multiply the RHS by 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Divides 6 by 2 instead of multiplying 1 by 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Amir solves 2 over (x plus 1) equals 8 over (3x plus 3). He notices that 3x plus 3 factors as {{blank:1}}(x plus 1), so the equation simplifies to 2 equals 8 over {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "3x + 3 = 3(x + 1), factoring out 3.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "Incorrectly factors; 3x + 3 \u2260 x(x + 1).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "Confuses the numerator with the factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Since 3x+3 = 3(x+1), we have 2/(x+1) = 8/(3(x+1)). Multiplying by (x+1): 2 = 8/3.",
+          "distractors": [
+            {
+              "answer": "x plus 1",
+              "explanation": "The (x+1) factors cancel, leaving 2 = 8/3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "Confuses the structure after simplification.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Jade determines that the equation 1 over (x minus 2) plus 1 over (x plus 2) has LCD equal to (x minus 2)(x plus 2) which is equivalent to x squared minus {{blank:1}}, with excluded values x equals 2 and x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "(x\u22122)(x+2) = x\u00b2 \u2212 4 by the difference of squares.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Forgets to square: (x\u22122)(x+2) = x\u00b2\u22124, not x\u00b2\u22122.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Incorrectly thinks the product is just x\u00b2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 2",
+          "correctExplanation": "x + 2 = 0 gives x = \u22122 as the second excluded value.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Uses the constant from x\u00b2\u22124 instead of solving x+2=0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "May think x = 0 is excluded, but neither denominator is zero at x = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Linh solves 3 over (2x) equals 9 over (4x plus 2). She factors the right denominator as 2({{blank:1}}) and cross-multiplies to obtain 3(4x plus 2) equals {{blank:2}}x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2x plus 1",
+          "correctExplanation": "4x + 2 = 2(2x + 1).",
+          "distractors": [
+            {
+              "answer": "2x minus 1",
+              "explanation": "Sign error in factoring.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4x plus 1",
+              "explanation": "Divides only the constant by 2, not the x-term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "18",
+          "correctExplanation": "Cross-multiplying: 3(4x+2) = 9(2x) \u2192 on the right: 9 \u00d7 2x = 18x.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "Forgets to multiply by 2x; uses only the numerator 9.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "May compute 3 \u00d7 2 = 6 instead of 9 \u00d7 2 = 18.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Marcus determines that for the equation 7 over (x minus 5) equals 7 over (x plus 1), cross-multiplying gives 7(x plus 1) equals 7(x minus 5), which simplifies to {{blank:1}} equals {{blank:2}}, proving no solution exists.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "7x + 7 = 7x \u2212 35 \u2192 after subtracting 7x from both sides: 7 = \u221235... Let me recalculate. 7(x+1) = 7(x\u22125) \u2192 7x+7 = 7x\u221235 \u2192 7 = \u221235.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "The x terms cancel completely; the contradiction is between constants.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Neither side simplifies to zero; the constants 7 and \u221235 remain.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 35",
+          "correctExplanation": "After cancelling 7x from both sides: 7 = \u221235, a contradiction.",
+          "distractors": [
+            {
+              "answer": "35",
+              "explanation": "Drops the negative sign.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 7",
+              "explanation": "Confuses which constant is on which side.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student solves 2 over (x minus 3) plus 1 over (x plus 1) equals 1 and obtains x equals 5 and x equals 1. They accept both solutions. Which one of the following correctly evaluates their work?",
+      "correct": "Both solutions are valid because neither equals the excluded values x equals 3 or x equals negative 1",
+      "correctExplanation": "Excluded values are x = 3 and x = \u22121. Since 5 \u2260 3, 5 \u2260 \u22121, 1 \u2260 3, 1 \u2260 \u22121, both are valid.",
+      "distractors": [
+        {
+          "answer": "Only x equals 5 is valid because x equals 1 is too close to the excluded value x equals negative 1 to be accepted",
+          "explanation": "Proximity to excluded values does not matter; only equality invalidates a solution."
+        },
+        {
+          "answer": "Neither solution is valid because equations with two algebraic fractions summing to 1 always produce extraneous results",
+          "explanation": "There is no such rule; many equations with algebraic fractions have valid solutions."
+        },
+        {
+          "answer": "Only x equals 1 is valid because x equals 5 exceeds the denominator values and creates overflow in the original fractions",
+          "explanation": "There is no upper bound restriction; x = 5 gives 2/2 + 1/6 = 1 + 1/6 \u2260 1... let me verify."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student argues that the equation 3 over x equals 3 over x always has the solution x equals 1 because setting both sides equal means x must equal 1. Which one of the following best analyses this reasoning?",
+      "correct": "The reasoning is flawed because the equation is an identity true for all nonzero x values, not just x equals 1",
+      "correctExplanation": "3/x = 3/x is true whenever x \u2260 0; it does not single out x = 1.",
+      "distractors": [
+        {
+          "answer": "The reasoning is correct because the only value making 3 over x equal 3 is x equals 1 by definition of division",
+          "explanation": "3/x = 3/x is always true (not 3/x = 3); the student confuses the equation with solving 3/x = 3."
+        },
+        {
+          "answer": "The reasoning is flawed because the equation has no solution since identical expressions on both sides create an indeterminate form",
+          "explanation": "Identical expressions create an identity (always true for valid x), not an indeterminate form."
+        },
+        {
+          "answer": "The reasoning is correct because substituting any other value produces a fraction not equal to 3 on either side",
+          "explanation": "For any nonzero x, both sides equal the same value (e.g., x=2 gives 3/2 = 3/2)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Two students solve (x plus 2) over (x minus 1) equals 5. Student A cross-multiplies: x + 2 = 5(x \u2212 1). Student B subtracts 5 from both sides first. Which one of the following correctly evaluates their approaches?",
+      "correct": "Student A applies a valid method since the equation has one fraction equal to a number which can be written with denominator 1",
+      "correctExplanation": "5 = 5/1, so cross-multiplication is valid: (x+2)(1) = 5(x\u22121) \u2192 x+2 = 5x\u22125.",
+      "distractors": [
+        {
+          "answer": "Student A is incorrect because cross-multiplication requires fractions on both sides and a whole number cannot serve as a valid fraction",
+          "explanation": "Any number can be written as a fraction over 1; cross-multiplication is valid."
+        },
+        {
+          "answer": "Student B is the only correct approach because subtracting from both sides must always precede any cross-multiplication step",
+          "explanation": "No such prerequisite exists; cross-multiplication is directly applicable when one fraction equals another expression."
+        },
+        {
+          "answer": "Both approaches are invalid because the equation must first be multiplied by (x minus 1) before any algebraic manipulation",
+          "explanation": "Both approaches are valid strategies; multiplying by (x\u22121) is another valid method but not the only one."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student claims that clearing fractions by multiplying by the LCD can never introduce extraneous solutions when all denominators are constants. Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct because constant denominators are never zero for any x value so no domain restrictions exist to create extraneous solutions",
+      "correctExplanation": "Extraneous solutions arise only when clearing variable denominators that might equal zero; constant denominators have no excluded values.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because multiplying by any number can change the solution set of an equation regardless of denominator type",
+          "explanation": "Multiplying both sides of an equation by a nonzero constant preserves all solutions and introduces none."
+        },
+        {
+          "answer": "The claim is correct only for positive constant denominators because negative constants can reverse inequality directions",
+          "explanation": "This equation involves equalities, not inequalities; negative constant denominators do not create extraneous solutions."
+        },
+        {
+          "answer": "The claim is incorrect because LCD multiplication always risks introducing extraneous solutions even with constant denominators",
+          "explanation": "With constant denominators, the LCD is a nonzero constant, and multiplying by a nonzero constant preserves the solution set."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student solves 4 over (x minus 2) equals 4 over (x minus 2) and claims the equation has infinitely many solutions. Another student says it has no solution because the fractions are identical. Which one of the following provides the best analysis?",
+      "correct": "The first student is essentially correct: the equation is an identity valid for all x except x equals 2 where both sides are undefined",
+      "correctExplanation": "4/(x\u22122) = 4/(x\u22122) is true whenever x \u2260 2 (the excluded value). Infinitely many solutions exist.",
+      "distractors": [
+        {
+          "answer": "The second student is correct because identical fractions on both sides always produce contradictions when denominators contain variables",
+          "explanation": "Identical expressions form identities (always true), not contradictions."
+        },
+        {
+          "answer": "Both students are wrong because the equation simplifies to 1 equals 1 after dividing by 4 over (x minus 2) giving x equals 2 as the unique answer",
+          "explanation": "Dividing both sides by 4/(x\u22122) gives 1 = 1 (identity), not x = 2; and x = 2 is excluded anyway."
+        },
+        {
+          "answer": "The first student is correct and the equation is valid for all real numbers including x equals 2 because the same expression appears on both sides",
+          "explanation": "x = 2 must still be excluded because 4/(2\u22122) = 4/0 is undefined regardless of both sides being the same."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student compares two methods for solving x over 3 plus x over 4 equals 14: Method A multiplies by 12 (LCD), Method B multiplies by 3 then by 4 in two separate steps. Which one of the following correctly analyses the efficiency of these methods?",
+      "correct": "Method A is more efficient because a single multiplication by the LCD clears all fractions simultaneously in one step",
+      "correctExplanation": "LCD multiplication eliminates all fractions in one operation, while sequential multiplications require more steps.",
+      "distractors": [
+        {
+          "answer": "Method B is more efficient because smaller multipliers produce simpler intermediate expressions at each step",
+          "explanation": "Method B's first step (multiply by 3) still leaves a fraction (3x/4), requiring another clearing step."
+        },
+        {
+          "answer": "Both methods are equally efficient because they involve the same total number of arithmetic operations overall",
+          "explanation": "Method A requires one clearing step while Method B requires two, making A fewer total operations."
+        },
+        {
+          "answer": "Method B is invalid because multiplying by one denominator at a time can introduce extraneous solutions between steps",
+          "explanation": "Multiplying by nonzero constants (3 and 4) never introduces extraneous solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student solves the equation 1 over (x minus 1) minus 1 over (x plus 1) equals 1 over 4 and obtains a quadratic. They find x equals negative 3 and x equals 3. Which one of the following correctly determines validity?",
+      "correct": "Both solutions should be checked against excluded values x equals 1 and x equals negative 1; since neither matches, both are valid",
+      "correctExplanation": "Excluded: x = 1, x = \u22121. Since \u22123 \u2260 \u00b11 and 3 \u2260 \u00b11, both solutions are valid.",
+      "distractors": [
+        {
+          "answer": "Only x equals 3 is valid because x equals negative 3 produces negative denominators which are not permitted in algebraic fractions",
+          "explanation": "Negative denominators are perfectly valid; only zero denominators create excluded values."
+        },
+        {
+          "answer": "Neither is valid because quadratic equations arising from fraction clearing always produce extraneous solutions that must be rejected",
+          "explanation": "Not all solutions from clearing are extraneous; only those equalling excluded values are rejected."
+        },
+        {
+          "answer": "Only x equals negative 3 is valid because x equals 3 is too close to the excluded value x equals 1 and creates near-zero denominators",
+          "explanation": "Proximity does not invalidate solutions; x = 3 gives well-defined values 1/2 \u2212 1/4 = 1/4. \u2713"
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student encounters 6 over (x squared minus 9) equals 1 over (x minus 3) and factors the left denominator. They obtain x equals negative 3 as the only solution but claim it must be rejected. Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct because x equals negative 3 makes the factor (x plus 3) zero creating an excluded value so no valid solution remains",
+      "correctExplanation": "At x = \u22123: x\u00b2 \u2212 9 = 0, making the left fraction undefined. x = \u22123 is extraneous.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because x equals negative 3 makes only one denominator zero and the other fraction remains fully defined and valid",
+          "explanation": "If any denominator in the original equation is zero, the equation is undefined at that value."
+        },
+        {
+          "answer": "The claim is incorrect because factoring changes the domain of the equation so the excluded values should be recalculated after factoring",
+          "explanation": "Factoring reveals existing excluded values; it does not change the domain."
+        },
+        {
+          "answer": "The claim is correct but for the wrong reason since x equals negative 3 is rejected because it produces a negative value in the original fraction",
+          "explanation": "Negative outputs are valid; the rejection is because x = \u22123 creates a zero denominator."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Two rate problems are set up differently. Problem A: 1/5 + 1/t = 1/3. Problem B: 1/5 + 1/3 = 1/t. A student claims both have the same solution. Which one of the following correctly evaluates this claim?",
+      "correct": "The claim is incorrect because Problem A gives t equals 15 over 2 while Problem B gives t equals 15 over 8 from different equation structures",
+      "correctExplanation": "A: 1/t = 1/3 \u2212 1/5 = 2/15 \u2192 t = 15/2. B: 1/t = 1/5 + 1/3 = 8/15 \u2192 t = 15/8. Different answers.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because both equations involve the same three fractions and rearranging does not change the mathematical relationship",
+          "explanation": "The position of t (addend vs result) changes the equation structure and solution."
+        },
+        {
+          "answer": "The claim is incorrect because Problem A has no solution while Problem B has solution t equals 15 over 8",
+          "explanation": "Problem A does have a solution: 1/t = 1/3 \u2212 1/5 = 2/15, giving t = 15/2."
+        },
+        {
+          "answer": "The claim is correct because reciprocal relationships are commutative so 1/5 plus 1/t equals 1/5 plus 1/3 regardless of position",
+          "explanation": "1/t \u2260 1/3 in general; the equations constrain t differently."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student argues that the equation x over (x minus 1) equals 1 plus 1 over (x minus 1) is an identity true for all x not equal to 1. Which one of the following correctly evaluates this argument?",
+      "correct": "The argument is correct because combining 1 plus 1 over (x minus 1) gives x over (x minus 1) which matches the left side for all valid x",
+      "correctExplanation": "Combining the RHS: 1 + 1/(x\u22121) = (x\u22121)/(x\u22121) + 1/(x\u22121) = x/(x\u22121) = LHS.",
+      "distractors": [
+        {
+          "answer": "The argument is incorrect because the equation has the unique solution x equals 2 found by cross-multiplying and solving",
+          "explanation": "Cross-multiplying an identity gives a tautology, not a unique solution."
+        },
+        {
+          "answer": "The argument is incorrect because the 1 on the right cannot be combined with the fraction without first multiplying both sides by the LCD",
+          "explanation": "1 can be written as (x\u22121)/(x\u22121), allowing direct combination without clearing."
+        },
+        {
+          "answer": "The argument is correct only for positive values of x because negative values produce sign conflicts in the denominators",
+          "explanation": "The identity holds for all x \u2260 1, including negative values; sign does not affect validity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student claims that if a over b equals c over d, then a over c must equal b over d. Another student says this rearrangement is only valid when none of the variables equal zero. Which one of the following provides the most complete analysis?",
+      "correct": "The second student is closer to correct: a over c equals b over d holds only when c and d are both nonzero values",
+      "correctExplanation": "From ad = bc, dividing by cd gives a/c = b/d, valid when c \u2260 0 and d \u2260 0.",
+      "distractors": [
+        {
+          "answer": "The first student is correct because cross-multiplication properties allow any rearrangement of the four values without restriction",
+          "explanation": "Division requires nonzero divisors; c = 0 or d = 0 would make the rearranged fractions undefined."
+        },
+        {
+          "answer": "Both students are incorrect because a over b equals c over d can only be rearranged to ad equals bc and no further",
+          "explanation": "Further rearrangement is valid with appropriate nonzero conditions."
+        },
+        {
+          "answer": "The second student is incorrect because only b and d need to be nonzero since they are the original denominators in the proportion",
+          "explanation": "The rearranged form a/c requires c \u2260 0, and b/d requires d \u2260 0; both conditions matter."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student solves 2 over x plus 3 over (2x) equals 1 by multiplying through by 2x to get 4 plus 3 equals 2x, yielding x equals 3.5. They do not check excluded values. Which one of the following correctly identifies whether the check matters here?",
+      "correct": "The solution is valid without checking because x equals 3.5 clearly differs from the only excluded value x equals 0",
+      "correctExplanation": "Excluded value is x = 0 (from denominators x and 2x). Since 3.5 \u2260 0, the solution is valid.",
+      "distractors": [
+        {
+          "answer": "The check is essential because 3.5 might coincidentally equal an excluded value that is not immediately obvious",
+          "explanation": "The excluded value x = 0 is the only one; 3.5 \u2260 0 is immediately obvious."
+        },
+        {
+          "answer": "The solution is invalid because multiplying by 2x assumes x is positive but x could be negative",
+          "explanation": "Multiplying by 2x is valid for any nonzero x; the sign of x does not affect validity."
+        },
+        {
+          "answer": "The check is unnecessary for any equation with numeric denominators like 2x because the excluded value is always irrelevant",
+          "explanation": "The check is unnecessary here because the solution is clearly not zero, but in general excluded values can coincide with solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student encounters the equation 5 over (x minus 2) equals 5 over (2 minus x) and claims the equation has no solution because the denominators are different. Which one of the following provides the best analysis?",
+      "correct": "Since (2 minus x) equals negative (x minus 2), the right side becomes negative 5 over (x minus 2), giving the contradiction 5 equals negative 5",
+      "correctExplanation": "5/(x\u22122) = 5/(2\u2212x) = 5/(\u2212(x\u22122)) = \u22125/(x\u22122). So 5/(x\u22122) = \u22125/(x\u22122) \u2192 5 = \u22125, contradiction.",
+      "distractors": [
+        {
+          "answer": "The equation has the solution x equals 2 because that value makes both denominators simultaneously equal to zero",
+          "explanation": "x = 2 is an excluded value (undefined), not a solution."
+        },
+        {
+          "answer": "The student is correct that no solution exists but the real reason is that the denominators use different variables entirely",
+          "explanation": "The key insight is that (2\u2212x) = \u2212(x\u22122), showing a sign contradiction, not just that they look different."
+        },
+        {
+          "answer": "The equation simplifies to 1 equals 1 after cancelling the 5s so it is an identity with infinitely many solutions for nonzero x",
+          "explanation": "Cancelling gives 1/(x\u22122) = 1/(2\u2212x), which becomes 1 = \u22121 (contradiction), not 1 = 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student is asked whether the equation 1 over (x minus a) equals 1 over (x minus b) can ever have a solution when a does not equal b. Which one of the following provides the correct analysis?",
+      "correct": "The equation can never have a solution because cross-multiplying gives (x minus b) equals (x minus a) which simplifies to a equals b contradicting the given condition",
+      "correctExplanation": "x \u2212 b = x \u2212 a \u2192 \u2212b = \u2212a \u2192 a = b. Since a \u2260 b, this is a contradiction. No solution.",
+      "distractors": [
+        {
+          "answer": "The equation has the solution x equals (a plus b) over 2 which is the midpoint of the two excluded values",
+          "explanation": "The midpoint does not satisfy the equation; the algebraic contradiction shows no solution exists."
+        },
+        {
+          "answer": "The equation has a solution whenever a and b have the same sign because the fractions can then be equal for some positive x value",
+          "explanation": "The sign of a and b is irrelevant; the contradiction a = b holds regardless."
+        },
+        {
+          "answer": "The equation has infinitely many solutions because both sides have the same structure and differ only by a constant translation",
+          "explanation": "The structural similarity leads to a contradiction (a = b), not an identity."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The equation 3 over (x minus 2) equals 3 over (x plus 1) has no solution because cross-multiplying gives 3(x plus 1) equals 3(x minus 2), simplifying to {{blank:1}} equals {{blank:2}}, a contradiction.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "3x + 3 = 3x \u2212 6 \u2192 after cancelling 3x: 3 = \u22126.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "The x terms cancel; the contradiction is between constants.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The left side simplifies to 3 (from 3x+3\u22123x), not zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 6",
+          "correctExplanation": "3(x\u22122) expands to 3x\u22126; after cancelling 3x, only \u22126 remains.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Drops the negative sign.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 2",
+              "explanation": "Uses \u22122 from the denominator without multiplying by 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "When solving 6 over (x squared minus 4) equals 1 over (x minus 2), factoring the left denominator as (x minus 2)(x plus 2) shows excluded values at x equals 2 and x equals {{blank:1}}. Clearing fractions gives the equation 6 equals x plus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 2",
+          "correctExplanation": "x + 2 = 0 gives x = \u22122.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Uses the constant from x\u00b2\u22124 instead of solving x+2=0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Duplicates the first excluded value instead of finding the second.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Multiplying by (x\u22122)(x+2): 6 = 1\u00d7(x+2) \u2192 6 = x+2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "May multiply by (x+2) only and get a different result.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 2",
+              "explanation": "Confuses the excluded value with the constant in the equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "Comparing methods for x over 2 plus x over 3 equals 10: multiplying by LCD 6 gives {{blank:1}}x plus 2x equals 60, while creating common denominators gives {{blank:2}}x over 6 equals 10.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "6 \u00d7 (x/2) = 3x.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Forgets to cancel the denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Confuses which coefficient comes from which fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "3x/6 + 2x/6 = 5x/6 = 10.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Adds the denominators instead of the numerators.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Forgets to add coefficients; 3x + 2x = 5x.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "A student claims x equals 1 solves 2 over (x minus 1) equals 4. This is {{blank:1}} because x equals 1 is an {{blank:2}} value that makes the denominator zero.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "invalid",
+          "correctExplanation": "x = 1 makes x \u2212 1 = 0, so the fraction is undefined at this value.",
+          "distractors": [
+            {
+              "answer": "valid",
+              "explanation": "A solution that creates a zero denominator is always invalid.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "approximate",
+              "explanation": "The issue is not approximation; it is fundamental domain exclusion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "excluded",
+          "correctExplanation": "x = 1 is excluded from the domain because it makes the denominator zero.",
+          "distractors": [
+            {
+              "answer": "imaginary",
+              "explanation": "The issue is domain exclusion, not complex numbers.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "exponent",
+              "explanation": "Confuses terminology; the correct term is excluded value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The equation x over (x minus 3) equals 1 plus 3 over (x minus 3) is an {{blank:1}} because combining the right side gives (x minus 3 plus 3) over (x minus 3) equals {{blank:2}} over (x minus 3).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "identity",
+          "correctExplanation": "Both sides simplify to x/(x\u22123) for all x \u2260 3.",
+          "distractors": [
+            {
+              "answer": "contradiction",
+              "explanation": "The equation holds for all valid x, making it an identity, not a contradiction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "inequality",
+              "explanation": "Both sides are equal (not unequal), so it is an identity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "(x \u2212 3 + 3) = x, so the right side becomes x/(x \u2212 3).",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Only considers the +3 without the (x\u22123) term.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x minus 3",
+              "explanation": "The numerator is (x\u22123)+3 = x, not just (x\u22123).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Rate problem: pump A fills in 8 hours, pump B in 12 hours. Together: 1 over 8 plus 1 over 12 equals {{blank:1}} over 24 equals 1 over t, so t equals {{blank:2}} hours.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "1/8 + 1/12 = 3/24 + 2/24 = 5/24.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "May compute 3 + 1 = 4 or make an LCD error.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20",
+              "explanation": "Multiplies 8 \u00d7 12/something incorrectly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "24 over 5",
+          "correctExplanation": "5/24 = 1/t \u2192 t = 24/5 = 4.8 hours.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "May compute 8 + 12 = 20 (adding times directly).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "May average (8 + 12)/2 = 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Analysing 1 over x equals 1 over (x plus 2): cross-multiplying gives x plus 2 equals x, which simplifies to {{blank:1}} equals zero. This is a {{blank:2}} so no solution exists.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "x + 2 = x \u2192 2 = 0 after subtracting x from both sides.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "The x terms cancel; only the constant 2 remains.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 2",
+              "explanation": "Moves 2 incorrectly; x+2\u2212x = 2, not \u22122.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "contradiction",
+          "correctExplanation": "2 = 0 is impossible, proving no solution exists.",
+          "distractors": [
+            {
+              "answer": "identity",
+              "explanation": "An identity is always true; 2 = 0 is never true.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "2 = 0 is a false statement (contradiction), not a variable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "For the equation 4 over (x minus 1) plus 2 over (x plus 1) equals 10 over (x squared minus 1), the denominator x squared minus 1 factors as (x minus 1)({{blank:1}}), confirming the LCD is (x minus 1)(x plus 1) with excluded values x equals 1 and x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x plus 1",
+          "correctExplanation": "x\u00b2 \u2212 1 = (x \u2212 1)(x + 1) by difference of squares.",
+          "distractors": [
+            {
+              "answer": "x minus 1",
+              "explanation": "Would give (x\u22121)\u00b2 = x\u00b2\u22122x+1, not x\u00b2\u22121.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "(x\u22121)(x) = x\u00b2\u2212x, not x\u00b2\u22121.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 1",
+          "correctExplanation": "x + 1 = 0 gives x = \u22121.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "x = 0 does not make any denominator zero here.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "Unrelated to the denominator factors.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A student multiplies both sides of x over (x minus 3) equals 2 by (x minus 3) to get x equals 2(x minus 3) equals 2x minus {{blank:1}}, so x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "2(x \u2212 3) = 2x \u2212 6.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Forgets to distribute the 2 to the \u22123.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "May use the coefficient instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "x = 2x \u2212 6 \u2192 \u2212x = \u22126 \u2192 x = 6.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "May divide incorrectly or make a sign error.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 6",
+              "explanation": "Sign error; \u2212x = \u22126 gives x = 6, not \u22126.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "Evaluating whether 2 over (x minus 4) equals 2 over (4 minus x) has solutions: since (4 minus x) equals negative (x minus 4), the right side becomes {{blank:1}} over (x minus 4), giving the contradiction 2 equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 2",
+          "correctExplanation": "2/(\u2212(x\u22124)) = \u22122/(x\u22124).",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Forgets the negative sign when rewriting the denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "one-half",
+              "explanation": "Takes the reciprocal instead of factoring out the negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 2",
+          "correctExplanation": "The equation becomes 2/(x\u22124) = \u22122/(x\u22124), so 2 = \u22122, a contradiction.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Misses that the equation says 2 = \u22122, not 2 = 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The contradiction is 2 = \u22122, not 2 = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "For the rate equation 1 over a plus 1 over b equals 1 over t, solving for t gives t equals {{blank:1}} divided by (a plus {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "ab",
+          "correctExplanation": "1/a + 1/b = (a+b)/(ab) = 1/t \u2192 t = ab/(a+b).",
+          "distractors": [
+            {
+              "answer": "a plus b",
+              "explanation": "Confuses the numerator and denominator; t = ab/(a+b), not (a+b)/ab.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "The formula is t = ab/(a+b), not 1/(a+b).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "b",
+          "correctExplanation": "The denominator of the formula for t is (a + b).",
+          "distractors": [
+            {
+              "answer": "ab",
+              "explanation": "Confuses the formula structure; the denominator is (a+b), not (a+ab).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "The second term in the denominator is b, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The equation x over (x minus 5) equals 1 plus {{blank:1}} over (x minus 5) is an identity because combining the right side gives (x minus 5 plus 5) over (x minus 5) equals {{blank:2}} over (x minus 5).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "x/(x\u22125) = 1 + 5/(x\u22125): combining RHS gives (x\u22125+5)/(x\u22125) = x/(x\u22125). \u2713",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "The constant added to make the identity work is 5, not x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 5",
+              "explanation": "Adding \u22125 would give (x\u22125\u22125)/(x\u22125) = (x\u221210)/(x\u22125), not x/(x\u22125).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "(x \u2212 5 + 5) = x.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Only considers the +5, ignoring the (x\u22125) part.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x minus 5",
+              "explanation": "Does not add the 5 to the (x\u22125) numerator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

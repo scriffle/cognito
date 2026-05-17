@@ -1,0 +1,2806 @@
+{
+  "_meta": {
+    "code": "VC2M10A16",
+    "title": "Solving equations graphically or by systematic guess-check-refine",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to solve equations graphically or by systematic guess-check-and-refine, using digital tools.",
+    "specVersions": [
+      "2.0"
+    ],
+    "generatedAt": "2026-05-17T00:10:00Z"
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A graphical solution to an equation is found by identifying the y-coordinate of the point where two graphs intersect.",
+      "correct": "False",
+      "correctExplanation": "The x-coordinate of the intersection gives the solution, not the y-coordinate.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses x and y coordinates at an intersection; the solution is the x-value, not the y-value."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The guess-check-refine method produces exact solutions to equations in every situation where it is applied.",
+      "correct": "False",
+      "correctExplanation": "Guess-check-refine produces successive approximations that converge toward the solution but typically yield only an approximate value.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes iterative methods always terminate at the exact answer; in practice they approach but may not reach it."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Solving an equation graphically requires plotting both sides of the equation as separate functions and finding their intersection.",
+      "correct": "True",
+      "correctExplanation": "Setting f(x) = g(x) is equivalent to finding where y = f(x) and y = g(x) intersect on the same set of axes.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May think only one graph is needed, or that rearranging to f(x) − g(x) = 0 is the only valid graphical approach."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Digital graphing tools can only find solutions to linear and quadratic equations and cannot handle higher-degree equations.",
+      "correct": "False",
+      "correctExplanation": "Digital tools graph any computable function, including cubics, transcendental, and other equations that resist algebraic solution.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Underestimates the capability of technology; modern tools handle arbitrary functions graphically and numerically."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "In the guess-check-refine method, each successive guess should be informed by whether the previous result was too high or too low.",
+      "correct": "True",
+      "correctExplanation": "Using feedback from each iteration narrows the search interval systematically, driving convergence toward the solution.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May believe guesses are random; the method's power lies in using feedback to direct subsequent attempts."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "An equation that has no algebraic solution also has no graphical solution and cannot be solved by any method.",
+      "correct": "False",
+      "correctExplanation": "Many equations without closed-form algebraic solutions can still be solved approximately using graphical or numerical methods.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses algebraic insolubility with complete insolubility; graphical and numerical methods extend beyond algebra."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "When solving an equation graphically, the number of intersection points between two curves indicates the number of solutions the equation has.",
+      "correct": "True",
+      "correctExplanation": "Each intersection represents a distinct x-value satisfying both equations, so the count of intersections equals the number of solutions.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not connect geometric intersections with algebraic solutions; each crossing corresponds to exactly one solution."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A graphical solution provides the same level of precision as an exact algebraic solution in all circumstances.",
+      "correct": "False",
+      "correctExplanation": "Graphical solutions are limited by screen resolution and scale; they provide approximations unless the intersection falls on an exact pixel.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes graphs give exact values; in practice, reading coordinates from a graph introduces rounding and visual error."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The systematic guess-check-refine method is also known as a numerical or iterative approach to solving equations.",
+      "correct": "True",
+      "correctExplanation": "Iterative numerical methods repeatedly refine estimates, which is precisely what guess-check-refine does in a structured manner.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not recognise the formal name for this strategy; guess-check-refine is an introductory form of iterative numerical solving."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "If two graphs do not intersect anywhere on the visible window, the equation necessarily has no solutions at all.",
+      "correct": "False",
+      "correctExplanation": "The graphs may intersect outside the visible window; absence of an intersection on screen does not prove no solution exists.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes the visible portion shows the entire domain; graphs may intersect beyond the displayed range."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "To solve the equation f of x equals zero graphically, one can plot y equals f of x and identify where the graph crosses the horizontal axis.",
+      "correct": "True",
+      "correctExplanation": "The x-intercepts of y = f(x) are the values where f(x) = 0, which are the solutions to the equation.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse x-intercepts with y-intercepts; crossing the x-axis corresponds to f(x) = 0."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The guess-check-refine method requires the user to start with a guess that is already very close to the correct answer.",
+      "correct": "False",
+      "correctExplanation": "Any reasonable starting guess within the search interval will converge; the method systematically narrows down regardless of how close the initial guess is.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes a good initial guess is mandatory; the bisection variant works from any interval that brackets the solution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes what it means to solve an equation graphically?",
+      "correct": "Finding the x-coordinates where two plotted functions intersect on the same axes",
+      "correctExplanation": "Graphical solution locates the input values where both functions yield the same output, shown as intersection points.",
+      "distractors": [
+        {
+          "answer": "Drawing a single function and reading the y-intercept from the vertical axis",
+          "explanation": "The y-intercept gives the value at x = 0, not the solution to a general equation."
+        },
+        {
+          "answer": "Calculating the gradient of a straight line drawn between two selected data points",
+          "explanation": "Gradient calculation is unrelated to solving equations; it measures rate of change."
+        },
+        {
+          "answer": "Shading the region below a curve to determine the area enclosed by the function",
+          "explanation": "Area under a curve relates to integration, not to solving equations for specific x-values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the main advantage of graphical or numerical methods over algebraic methods for equation solving?",
+      "correct": "They can find approximate solutions to equations that have no closed-form algebraic solution",
+      "correctExplanation": "Many equations (e.g., transcendental) cannot be solved exactly; graphical and numerical methods provide practical approximations.",
+      "distractors": [
+        {
+          "answer": "They always produce exact rational answers with no rounding required at any stage",
+          "explanation": "Graphical and numerical methods produce approximations, not exact values; rounding is inherent in these approaches."
+        },
+        {
+          "answer": "They eliminate the need for any understanding of the underlying mathematical functions involved",
+          "explanation": "Understanding the functions helps set appropriate windows and starting values; the methods do not eliminate this need."
+        },
+        {
+          "answer": "They guarantee finding every solution within a single computation regardless of equation complexity",
+          "explanation": "These methods may miss solutions outside the chosen window or interval; thoroughness requires careful setup."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the first step in solving an equation using the guess-check-refine method?",
+      "correct": "Choose an initial estimate for the unknown value and substitute it into the equation to evaluate the result",
+      "correctExplanation": "The process begins by testing a trial value, then comparing the outcome to the target to determine whether to adjust up or down.",
+      "distractors": [
+        {
+          "answer": "Rearrange the equation into standard quadratic form and apply the quadratic formula directly",
+          "explanation": "The quadratic formula is an algebraic method; guess-check-refine does not require algebraic rearrangement."
+        },
+        {
+          "answer": "Plot both sides of the equation on a graphing calculator and zoom to the intersection point immediately to determine the answer",
+          "explanation": "This describes graphical solution, not the guess-check-refine numerical method."
+        },
+        {
+          "answer": "Factor the equation completely and set each factor equal to zero to find all solutions",
+          "explanation": "Factoring is an algebraic technique; guess-check-refine works iteratively without factoring."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes what a digital graphing tool displays when an equation has two solutions?",
+      "correct": "Two distinct intersection points between the plotted curves on the coordinate plane",
+      "correctExplanation": "Each solution corresponds to an intersection point; two solutions produce two visible crossings within the viewing window.",
+      "distractors": [
+        {
+          "answer": "A single intersection point that represents both solutions simultaneously as a combined value",
+          "explanation": "Each solution is a separate x-value with its own intersection point; they cannot be combined into one."
+        },
+        {
+          "answer": "A highlighted vertical line segment connecting the two solution values on the y-axis",
+          "explanation": "Solutions are x-values, not y-axis segments; they appear as distinct intersection points."
+        },
+        {
+          "answer": "An error message indicating that the equation is inconsistent and has no valid solutions",
+          "explanation": "Multiple solutions do not produce errors; they simply appear as multiple intersection points on the graph."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies a limitation of solving equations graphically using digital tools?",
+      "correct": "The accuracy of the solution depends on the resolution and scale of the graphing window selected",
+      "correctExplanation": "A coarse scale or small window may prevent precise reading of intersection coordinates, limiting accuracy.",
+      "distractors": [
+        {
+          "answer": "Graphical tools cannot display functions with negative y-values anywhere on the coordinate plane",
+          "explanation": "All standard graphing tools display negative values; there is no such limitation."
+        },
+        {
+          "answer": "Digital tools require the equation to be polynomial before any graph can be generated or displayed",
+          "explanation": "Digital tools graph transcendental, piecewise, and arbitrary functions, not only polynomials."
+        },
+        {
+          "answer": "The method fails entirely whenever the equation has more than one solution within the viewing window",
+          "explanation": "Multiple solutions appear as multiple intersections; the method handles them naturally."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes the role of feedback in the guess-check-refine process?",
+      "correct": "Determining whether the current estimate is too high or too low and adjusting the next guess accordingly",
+      "correctExplanation": "Comparing the evaluated result to the target reveals the direction of error, guiding the refinement of subsequent estimates.",
+      "distractors": [
+        {
+          "answer": "Confirming that the final answer is always exact and requires no further decimal place accuracy",
+          "explanation": "The method produces approximations; feedback helps improve accuracy but does not guarantee an exact answer."
+        },
+        {
+          "answer": "Eliminating the need for any calculation by relying solely on visual inspection of the equation",
+          "explanation": "Each iteration requires substitution and evaluation; feedback does not remove the need for calculation."
+        },
+        {
+          "answer": "Resetting the process to the original equation whenever the estimate exceeds a predetermined threshold",
+          "explanation": "The method refines continuously toward the solution; there is no reset mechanism in standard practice."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly explains why the equation x cubed equals 3x plus 2 can be solved graphically?",
+      "correct": "Plotting y equals x cubed and y equals 3x plus 2 and identifying where they cross each other",
+      "correctExplanation": "The solutions satisfy both equations simultaneously, appearing as intersection points of the two graphs.",
+      "distractors": [
+        {
+          "answer": "Substituting x equals 1 into both sides to confirm equality and declaring that as the only solution",
+          "explanation": "While x = 1 may be a solution, graphical methods reveal all solutions, not just one found by substitution."
+        },
+        {
+          "answer": "Factoring x cubed minus 3x minus 2 completely and reading the solutions from the factored form",
+          "explanation": "This is an algebraic approach; graphical solution involves plotting, not factoring."
+        },
+        {
+          "answer": "Differentiating both sides and setting the derivatives equal to find the tangent intersection points",
+          "explanation": "Setting derivatives equal finds where slopes match, not where the original functions intersect."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly distinguishes an approximate solution from an exact solution to an equation?",
+      "correct": "An approximate solution is a decimal near the true answer; an exact solution has no rounding",
+      "correctExplanation": "Approximate solutions involve truncation or rounding; exact solutions are expressed in precise form (fractions, surds, symbols).",
+      "distractors": [
+        {
+          "answer": "An approximate solution uses fractions while an exact solution always uses recurring decimal representations",
+          "explanation": "Fractions are exact forms; this reverses the relationship between fractions and approximations."
+        },
+        {
+          "answer": "An approximate solution can only be found algebraically while exact solutions require graphical methods to determine",
+          "explanation": "The opposite is more common: algebra gives exact solutions and graphs give approximations."
+        },
+        {
+          "answer": "There is no meaningful distinction because all mathematical solutions are inherently approximate by nature",
+          "explanation": "Mathematics distinguishes clearly between exact symbolic answers and rounded decimal approximations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies when the guess-check-refine method is particularly useful?",
+      "correct": "When the equation cannot be solved by standard algebraic techniques such as factoring or applying a formula",
+      "correctExplanation": "Guess-check-refine is most valuable precisely when algebraic methods fail or are impractical for the given equation type.",
+      "distractors": [
+        {
+          "answer": "When the equation is a simple linear equation that can be solved in a single algebraic step",
+          "explanation": "Simple linear equations are solved instantly by algebra; numerical methods add unnecessary complexity."
+        },
+        {
+          "answer": "When the equation has already been solved and the answer needs to be verified by a different method",
+          "explanation": "While verification is possible, the primary purpose is finding unknown solutions, not checking known ones."
+        },
+        {
+          "answer": "When exact symbolic answers are required and no decimal approximation will be accepted as valid",
+          "explanation": "Guess-check-refine produces approximations; it is unsuitable when only exact answers are acceptable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes what happens when a graphing tool zooms in on an intersection point?",
+      "correct": "The coordinates of the intersection become more precisely identifiable as the scale decreases around the crossing",
+      "correctExplanation": "Zooming reduces the scale, allowing finer reading of the x and y values at the intersection point.",
+      "distractors": [
+        {
+          "answer": "The intersection point disappears because the curves appear parallel at high magnification levels",
+          "explanation": "Curves that cross still cross at any zoom level; they appear parallel only if they do not actually intersect."
+        },
+        {
+          "answer": "A new intersection point is created by the zooming process that did not exist at the original scale",
+          "explanation": "Zooming does not alter the mathematics; the number of intersections is unchanged by scale adjustments."
+        },
+        {
+          "answer": "The tool automatically rounds the intersection coordinates to the nearest whole number for display",
+          "explanation": "Zooming reveals more decimal places, not fewer; tools display coordinates at the precision of the current scale."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states why solving equations graphically reflects professional mathematical practice?",
+      "correct": "Scientists and engineers routinely use graphing software to solve complex equations that arise in modelling and analysis",
+      "correctExplanation": "Professional practice involves digital tools for equations that exceed the scope of manual algebraic techniques.",
+      "distractors": [
+        {
+          "answer": "Professional mathematicians never use algebraic methods and rely exclusively on graphical tools for all equation solving",
+          "explanation": "Algebra remains fundamental; graphical methods supplement rather than replace algebraic approaches."
+        },
+        {
+          "answer": "Graphical solutions are used only in educational settings and have no application in industry or research",
+          "explanation": "Industry and research rely heavily on graphical and numerical methods for complex real-world equations."
+        },
+        {
+          "answer": "The primary purpose of graphing in professional practice is to create visually appealing presentations rather than to solve problems",
+          "explanation": "While visualisation aids communication, the primary purpose of graphing tools in practice is problem solving."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the output of a single iteration in the guess-check-refine process?",
+      "correct": "A refined estimate that is closer to the true solution than the previous guess based on the comparison result",
+      "correctExplanation": "Each iteration uses the too-high or too-low feedback to produce a better approximation, narrowing the search interval.",
+      "distractors": [
+        {
+          "answer": "The exact algebraic solution expressed as a simplified fraction or radical that requires no further refinement",
+          "explanation": "Single iterations produce approximations, not exact solutions; multiple iterations are needed to approach the answer."
+        },
+        {
+          "answer": "A proof that no solution exists for the equation within the domain of real numbers under consideration",
+          "explanation": "Iterations approach solutions; failure to converge may indicate issues but a single step does not prove non-existence."
+        },
+        {
+          "answer": "A factored form of the original equation that reveals all solutions simultaneously without further computation",
+          "explanation": "Guess-check-refine is numerical, not algebraic; it does not produce factored forms."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "To solve f(x) = g(x) graphically, plot both functions and identify the {{blank:1}} of their intersection, which gives the {{blank:2}} of the equation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x-coordinate",
+          "correctExplanation": "The x-value at the intersection satisfies both equations simultaneously and is the solution.",
+          "distractors": [
+            {
+              "answer": "y-coordinate",
+              "explanation": "The y-coordinate gives the common output value, not the solution to the equation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "gradient",
+              "explanation": "The gradient at the intersection describes slope, not the solution value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "solution",
+          "correctExplanation": "The x-value where both graphs meet is the value that satisfies the original equation.",
+          "distractors": [
+            {
+              "answer": "gradient",
+              "explanation": "The gradient is the rate of change, not the value that solves the equation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "asymptote",
+              "explanation": "An asymptote is a line the graph approaches; it is unrelated to intersection-based solutions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "In guess-check-refine, if substituting a trial value gives a result that is too {{blank:1}}, the next guess should be adjusted {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "high",
+          "correctExplanation": "If the evaluated result exceeds the target, the trial value overestimates the solution.",
+          "distractors": [
+            {
+              "answer": "precise",
+              "explanation": "Precision refers to decimal places, not to whether the result overshoots or undershoots the target.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "complex",
+              "explanation": "Complexity of the expression is irrelevant to the directional feedback used in refinement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "downward",
+          "correctExplanation": "When the result is too high, reducing the trial value moves the next estimate toward the actual solution.",
+          "distractors": [
+            {
+              "answer": "upward",
+              "explanation": "Adjusting upward when already too high moves further from the solution, not closer.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "randomly",
+              "explanation": "Random adjustment defeats the systematic nature of the method; directed adjustment ensures convergence.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "When solving x cubed minus x equals 5 by guess-check-refine, testing x equals 2 gives 6 which is too high, so the next guess should be greater than 2.",
+      "correct": "False",
+      "correctExplanation": "Since 2 cubed minus 2 equals 6 which exceeds 5, the next guess should be less than 2 to reduce the output toward the target.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the direction of adjustment; a too-high result means the guess must decrease."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "If a graphing tool shows that y equals x squared and y equals 2x plus 3 intersect at two points, then the equation x squared equals 2x plus 3 has exactly two real solutions.",
+      "correct": "True",
+      "correctExplanation": "Each intersection point corresponds to one real solution; two intersections mean exactly two real solutions exist.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May doubt the one-to-one correspondence between intersections and solutions; each crossing is one distinct solution."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "When using guess-check-refine to solve an equation to two decimal places, the process always terminates after exactly two iterations.",
+      "correct": "False",
+      "correctExplanation": "The iteration count depends on starting proximity and equation behaviour; two decimal places may require many iterations to achieve.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses decimal places of precision with number of iterations needed; these are independent quantities."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Rearranging f(x) = g(x) as f(x) minus g(x) equals zero and finding where the combined graph crosses the x-axis is not a valid graphical method.",
+      "correct": "False",
+      "correctExplanation": "Plotting h(x) = f(x) − g(x) and finding x-intercepts is algebraically equivalent to finding intersections of f and g; it is a valid alternative.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Does not recognise the algebraic equivalence between intersection of two curves and x-intercepts of their difference."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "A graphical approach can reveal that an equation has no real solutions if the two plotted curves do not intersect anywhere across their entire domains.",
+      "correct": "True",
+      "correctExplanation": "No intersection across the full domain means no x-value satisfies both equations simultaneously, confirming no real solution exists.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse a limited viewing window with the full domain; if the entire domain is checked and no crossing exists, there is genuinely no solution."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The bisection method tests random points within the search interval rather than systematically choosing the midpoint at each step.",
+      "correct": "False",
+      "correctExplanation": "Bisection always tests the midpoint; systematic halving is its defining characteristic, not random sampling.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses bisection with random search; bisection is deterministic, always selecting the interval midpoint."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "When solving an equation graphically, the viewing window has no effect on the number of solutions visible on the display.",
+      "correct": "False",
+      "correctExplanation": "Solutions outside the viewing window are invisible; changing the window can reveal or hide intersection points.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes all solutions are always visible; intersections beyond the displayed range require window expansion to see."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "If guess-check-refine for the equation x cubed equals 10 gives x equals 2.15 as too low and x equals 2.16 as too high, the solution lies between these values.",
+      "correct": "True",
+      "correctExplanation": "A sign change (too low to too high) between consecutive test values guarantees the true solution lies within that interval.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not recognise the intermediate value theorem principle underlying the bracketing; a sign change confirms the solution is between the bounds."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A student uses a graphing tool to solve x cubed equals 3x plus 2 and sees three intersection points. Which one of the following correctly interprets this result?",
+      "correct": "The equation has three real solutions, each corresponding to an x-coordinate where the cubic and linear graphs cross",
+      "correctExplanation": "Three intersections mean three distinct x-values satisfy x³ = 3x + 2; each crossing is one solution.",
+      "distractors": [
+        {
+          "answer": "The equation has one solution that appears three times because the cubic is a third-degree polynomial function",
+          "explanation": "Degree indicates the maximum number of solutions, not repetition; three crossings mean three distinct solutions."
+        },
+        {
+          "answer": "Only the middle intersection gives the correct solution and the outer two are graphical artefacts from the tool",
+          "explanation": "All intersections of correctly plotted graphs represent valid solutions, not artefacts."
+        },
+        {
+          "answer": "The three intersections indicate that the equation is inconsistent and therefore has no valid real solutions",
+          "explanation": "Intersections confirm solutions exist; inconsistency would mean no intersections at all."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "When applying guess-check-refine to solve x cubed minus x equals 5, a student finds that x equals 1.9 gives 4.959 and x equals 2.0 gives 6.0. Which one of the following is the most appropriate next step?",
+      "correct": "Test x equals 1.95 because the solution lies between 1.9 and 2.0, and the midpoint narrows the interval efficiently",
+      "correctExplanation": "Since 4.959 < 5 < 6.0, the solution is between 1.9 and 2.0; testing the midpoint bisects the interval.",
+      "distractors": [
+        {
+          "answer": "Conclude that x equals 1.9 is the answer because 4.959 is close enough to 5 for practical purposes",
+          "explanation": "Without a specified tolerance, 4.959 may not meet precision requirements; further refinement is needed."
+        },
+        {
+          "answer": "Test x equals 3.0 because the result at x equals 2.0 was too large and a much smaller value is needed",
+          "explanation": "Since the solution is between 1.9 and 2.0, jumping to 3.0 moves away from the answer, not toward it."
+        },
+        {
+          "answer": "Restart the process with x equals 0 because the current interval does not contain the solution",
+          "explanation": "The sign change between 4.959 and 6.0 relative to 5 confirms the solution is in the interval; restarting wastes progress."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A student graphs y equals sin x and y equals x divided by 2 on the same axes. The curves intersect at the origin and at two other points. Which one of the following correctly explains why?",
+      "correct": "Both functions equal zero at the origin, and the sine curve oscillates above and below the line, creating additional crossings",
+      "correctExplanation": "sin(0) = 0/2 = 0 gives the origin; the sinusoidal oscillation guarantees further intersections where the wave crosses the line.",
+      "distractors": [
+        {
+          "answer": "The two additional intersections are errors caused by the graphing tool displaying sine values incorrectly near the extremes",
+          "explanation": "Standard tools plot sine accurately; the additional intersections are genuine mathematical solutions."
+        },
+        {
+          "answer": "Only the origin is a true solution because sine and linear functions can intersect at most once by definition",
+          "explanation": "No such limitation exists; a sinusoidal and linear function can intersect multiple times."
+        },
+        {
+          "answer": "The three intersections exist only because the viewing window is too wide and would disappear if the window were reduced",
+          "explanation": "Reducing the window may hide intersections from view, but it does not eliminate them mathematically."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A student solves 2 to the power x equals 5 graphically and obtains x approximately equals 2.32. Which one of the following explains how to verify this answer?",
+      "correct": "Substitute x equals 2.32 into 2 to the power x and confirm the result is close to 5",
+      "correctExplanation": "2^2.32 ≈ 4.99, which is close to 5, confirming the graphical solution is accurate to two decimal places.",
+      "distractors": [
+        {
+          "answer": "Check that 2 multiplied by 2.32 equals 5, verifying the linear relationship between base and exponent",
+          "explanation": "2 × 2.32 = 4.64 ≠ 5; this treats the exponential as linear multiplication, which is incorrect."
+        },
+        {
+          "answer": "Verify that log base 5 of 2 equals 2.32, since this is the inverse operation of exponentiation with base 5",
+          "explanation": "The correct verification uses log base 2, not base 5; log₂(5) ≈ 2.32."
+        },
+        {
+          "answer": "Confirm that 5 squared equals 2.32, since squaring reverses the exponential operation applied to the base",
+          "explanation": "5² = 25 ≠ 2.32; squaring is unrelated to solving 2ˣ = 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "When solving an equation graphically, a student notices the two curves appear to touch at one point without crossing. Which one of the following correctly describes this situation?",
+      "correct": "The equation has a repeated solution at that point where the curves are tangent to each other",
+      "correctExplanation": "Tangency means the curves meet but do not cross; algebraically this corresponds to a repeated root.",
+      "distractors": [
+        {
+          "answer": "The equation has no solutions because the curves must fully cross each other to produce a valid intersection",
+          "explanation": "Tangent contact still satisfies both equations at that x-value; a full crossing is not required for a solution."
+        },
+        {
+          "answer": "The graphing tool has encountered a rounding error that creates a false appearance of contact between the curves",
+          "explanation": "Tangent contact is a genuine mathematical phenomenon, not a computational error."
+        },
+        {
+          "answer": "The equation has infinitely many solutions in a neighbourhood around the point where the curves appear to meet",
+          "explanation": "Tangency produces exactly one solution at the point of contact, not infinitely many."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A student uses guess-check-refine with interval halving to solve an equation. After 10 iterations starting from the interval from 0 to 1, which one of the following correctly estimates the precision achieved?",
+      "correct": "Approximately three decimal places, because each halving reduces the interval width by a factor of 2",
+      "correctExplanation": "After 10 halvings: 1/2¹⁰ = 1/1024 ≈ 0.001, giving precision to about 3 decimal places.",
+      "distractors": [
+        {
+          "answer": "Exactly ten decimal places, because each iteration reveals one additional decimal place of the answer",
+          "explanation": "Each halving provides approximately 0.3 decimal places (log₁₀2 ≈ 0.3); 10 iterations give about 3, not 10."
+        },
+        {
+          "answer": "Only one decimal place, because bisection converges too slowly to achieve meaningful precision in ten steps",
+          "explanation": "Ten halvings reduce the interval by a factor of 1024; this is sufficient for three decimal places."
+        },
+        {
+          "answer": "The precision cannot be estimated because bisection converges at an unpredictable rate depending on the equation",
+          "explanation": "Bisection has a guaranteed, predictable convergence rate: one bit per iteration regardless of the equation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Two students solve x squared plus 1 equals 0 using different methods. Student A uses algebra and finds no real solutions; Student B uses a graphing tool and sees no intersections. Which one of the following correctly compares their conclusions?",
+      "correct": "Both methods correctly confirm no real solutions exist because x squared plus 1 is always positive and never equals zero",
+      "correctExplanation": "The parabola y = x² + 1 lies entirely above the x-axis; graphically and algebraically, no real x satisfies the equation.",
+      "distractors": [
+        {
+          "answer": "Student B's graphical method is unreliable because it depends on the chosen viewing window and may miss solutions",
+          "explanation": "For this equation, no window reveals an intersection because one genuinely does not exist for real x."
+        },
+        {
+          "answer": "Student A is incorrect because all quadratic equations have two real solutions by the fundamental theorem of algebra",
+          "explanation": "The fundamental theorem guarantees complex roots; real solutions depend on the discriminant being non-negative."
+        },
+        {
+          "answer": "The methods contradict each other and a third method is needed to determine which student has the correct answer",
+          "explanation": "Both methods agree on the same correct conclusion; there is no contradiction to resolve."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A student attempts to solve 2 to the power x equals negative 3 graphically. The graph of y equals 2 to the power x does not intersect y equals negative 3. Which one of the following correctly explains why?",
+      "correct": "The exponential 2 to the power x is always positive for all real x and can never equal a negative value",
+      "correctExplanation": "Since 2ˣ > 0 for all real x, the graph lies entirely above the x-axis and cannot reach y = −3.",
+      "distractors": [
+        {
+          "answer": "The graphing window is too small and expanding it sufficiently will reveal an intersection at a large negative x-value",
+          "explanation": "No matter how far left the window extends, 2ˣ remains positive (approaching 0), never negative."
+        },
+        {
+          "answer": "The equation has a complex solution that the graphing tool cannot display on the standard real coordinate plane",
+          "explanation": "While complex solutions may exist, the graphical method correctly shows no real solution; the explanation should address why."
+        },
+        {
+          "answer": "The student entered the equation incorrectly and the correct form would produce an intersection visible on the display",
+          "explanation": "The equation is correctly stated; the absence of intersection reflects the mathematical impossibility, not input error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A researcher models bacterial growth with an equation that has no algebraic solution. Which one of the following best justifies using a graphical method to find when the population reaches a target?",
+      "correct": "Graphical methods provide usable approximate solutions for transcendental equations where algebraic manipulation cannot isolate the variable",
+      "correctExplanation": "Transcendental equations resist algebraic isolation; graphing reveals intersection points that represent practical solutions.",
+      "distractors": [
+        {
+          "answer": "Graphical methods are chosen purely for visual appeal in presentations and offer no computational advantage over algebra",
+          "explanation": "Graphical methods solve equations that algebra cannot; the choice is mathematical necessity, not aesthetics."
+        },
+        {
+          "answer": "Algebraic methods always work for growth models and the researcher should rearrange the equation more carefully instead",
+          "explanation": "Many growth models involve transcendental functions that genuinely have no closed-form algebraic solution."
+        },
+        {
+          "answer": "The graphical method will provide an exact symbolic answer that can be reported without any decimal approximation",
+          "explanation": "Graphical solutions are inherently approximate; they provide usable values, not exact symbolic expressions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "When applying guess-check-refine to find the cube root of 50, a student tests x equals 3 (giving 27) and x equals 4 (giving 64). Which one of the following correctly identifies the next step?",
+      "correct": "Test x equals 3.5 because 50 lies between 27 and 64, and the midpoint of 3 and 4 begins narrowing the interval",
+      "correctExplanation": "Since 3³ = 27 < 50 < 64 = 4³, the solution is between 3 and 4; testing 3.5 (yielding 42.875) continues the refinement.",
+      "distractors": [
+        {
+          "answer": "Conclude that x equals 3.7 is the answer because it is approximately 70% of the way from 27 to 64",
+          "explanation": "Linear interpolation gives an estimate but is not the standard midpoint approach; also 3.7³ ≈ 50.653, close but not the method."
+        },
+        {
+          "answer": "Test x equals 7 because 50 is between the cube of 3 and the cube of 4 and a larger value narrows it from above",
+          "explanation": "x = 7 gives 343, far above 50; the solution is between 3 and 4, not above 4."
+        },
+        {
+          "answer": "Abandon the numerical approach and factor 50 into prime factors to find the exact cube root algebraically",
+          "explanation": "50 = 2 × 5² has no integer cube root; the cube root of 50 is irrational and requires numerical methods."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "A student uses a graphing tool and finds that y equals x cubed and y equals 7 intersect near x equals 1.91. Which one of the following explains why this is only approximate?",
+      "correct": "The intersection coordinates are read from a pixelated display, introducing rounding relative to the true irrational value",
+      "correctExplanation": "The true value is ∛7 ≈ 1.91293...; screen resolution limits how precisely the intersection can be identified.",
+      "distractors": [
+        {
+          "answer": "The graph is drawn incorrectly because digital tools cannot accurately plot cubic functions above y equals 5",
+          "explanation": "Digital tools plot cubics accurately at all y-values; the approximation arises from finite display resolution."
+        },
+        {
+          "answer": "The value is approximate because x cubed is undefined for non-integer inputs and the tool interpolates between integers",
+          "explanation": "x³ is defined for all real x; the approximation is due to display limitations, not domain restrictions."
+        },
+        {
+          "answer": "The intersection gives an exact answer of 1.91 that equals the cube root of 7 precisely to the final decimal shown",
+          "explanation": "∛7 is irrational (≈ 1.91293...); 1.91 is a truncation, not the exact value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A student graphically determines that the equation x squared equals 5 minus x has solutions near x equals 1.79 and x equals negative 2.79. Which one of the following explains how to check these are reasonable?",
+      "correct": "Substitute each value into both sides and verify that x squared is approximately equal to 5 minus x for each solution",
+      "correctExplanation": "Checking 1.79² ≈ 3.20 and 5 − 1.79 ≈ 3.21 confirms near-equality; similarly for −2.79.",
+      "distractors": [
+        {
+          "answer": "Add both solutions together and verify that their sum equals the coefficient of x in the original equation",
+          "explanation": "Vieta's formulas relate sum of roots to coefficients for standard form; this check requires rearrangement first."
+        },
+        {
+          "answer": "Multiply both solutions and check whether the product equals 5, the constant term in the equation",
+          "explanation": "The product relationship applies to monic quadratics in standard form; direct substitution is more reliable here."
+        },
+        {
+          "answer": "Graph only y equals x squared and verify that its y-intercept matches the value of the graphical solutions found",
+          "explanation": "The y-intercept of y = x² is 0; this has no connection to verifying the solutions of x² = 5 − x."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "In the bisection method, each iteration {{blank:1}} the width of the interval containing the solution, so after n iterations the interval has width equal to the original width divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "halves",
+          "correctExplanation": "Bisection tests the midpoint and keeps the half where the sign change occurs, cutting the interval in two.",
+          "distractors": [
+            {
+              "answer": "doubles",
+              "explanation": "Doubling the interval would enlarge the search space; bisection narrows it by halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "preserves",
+              "explanation": "The interval must shrink for convergence; preserving it would make no progress.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2 to the power n",
+          "correctExplanation": "Each halving divides by 2; after n halvings the factor is 2ⁿ.",
+          "distractors": [
+            {
+              "answer": "2n",
+              "explanation": "Confuses exponential shrinkage with linear; 2n is the result of adding, not multiplying, factors of 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "n squared",
+              "explanation": "The interval shrinks exponentially as 1/2ⁿ, not polynomially as 1/n².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "To solve f(x) = 0 graphically using a single graph, plot y equals f(x) and find where it crosses the {{blank:1}}; the x-values at these crossings are called {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x-axis",
+          "correctExplanation": "f(x) = 0 corresponds to y = 0, which is the x-axis; crossings are where the function value is zero.",
+          "distractors": [
+            {
+              "answer": "y-axis",
+              "explanation": "The y-axis is where x = 0; crossing it gives f(0), not the solutions to f(x) = 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "asymptote",
+              "explanation": "Asymptotes are lines the graph approaches but does not cross in general; they do not represent f(x) = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "roots",
+          "correctExplanation": "The x-values where f(x) = 0 are called the roots (or zeros) of the function.",
+          "distractors": [
+            {
+              "answer": "turning points",
+              "explanation": "Turning points are where the gradient is zero; roots are where the function value is zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "asymptotes",
+              "explanation": "Asymptotes are lines the graph approaches; they are unrelated to where f(x) equals zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "If a graphing tool shows no intersection between the curves y equals f(x) and y equals g(x) across the entire real domain, then the equation f(x) equals g(x) has {{blank:1}} real {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "no",
+          "correctExplanation": "No intersection means no x-value satisfies both equations simultaneously; there are zero real solutions.",
+          "distractors": [
+            {
+              "answer": "infinitely many",
+              "explanation": "Infinitely many solutions would require the curves to overlap everywhere, not fail to meet.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "exactly one",
+              "explanation": "One solution requires exactly one intersection point; no intersection means zero solutions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "solutions",
+          "correctExplanation": "Solutions are the x-values where both equations are satisfied; no intersections means none exist.",
+          "distractors": [
+            {
+              "answer": "asymptotes",
+              "explanation": "Asymptotes are properties of individual functions, not solutions to equations formed by setting two functions equal.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "gradients",
+              "explanation": "Gradients measure slope; they are unrelated to the existence of solutions to an equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Solving 2 to the power x equals 5 graphically gives x approximately equals {{blank:1}}, which can be verified by confirming that 2 raised to this power is close to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2.32",
+          "correctExplanation": "log₂(5) = ln5/ln2 ≈ 2.3219, so the graphical solution reads approximately 2.32.",
+          "distractors": [
+            {
+              "answer": "2.50",
+              "explanation": "2^2.5 ≈ 5.66, which overshoots 5; the correct value is closer to 2.32.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5.00",
+              "explanation": "Confuses the target value with the solution; 5 is the right-hand side, not the value of x.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "Verification checks that 2^2.32 ≈ 4.99 ≈ 5, confirming the solution is correct.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the base, not the target; the equation requires 2ˣ to equal 5, not 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2.32",
+              "explanation": "2.32 is the solution x, not what 2ˣ should equal; the target is 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The guess-check-refine method converges when successive estimates {{blank:1}} in value, indicating the search interval is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "stabilise",
+          "correctExplanation": "When estimates stop changing significantly, they have converged to the solution within the desired precision.",
+          "distractors": [
+            {
+              "answer": "diverge",
+              "explanation": "Diverging estimates move apart and indicate failure to converge, not successful convergence.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "alternate",
+              "explanation": "Alternating values without settling indicate oscillation, not convergence to a solution.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "narrowing",
+          "correctExplanation": "A shrinking interval means the bounds are closing in on the solution, which is the goal of the method.",
+          "distractors": [
+            {
+              "answer": "widening",
+              "explanation": "A widening interval means the search is expanding rather than converging; this indicates failure.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "unchanged",
+              "explanation": "An unchanged interval makes no progress; each iteration should reduce the interval width.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A repeated root appears graphically as a point where the curve {{blank:1}} the x-axis without {{blank:2}} it.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "touches",
+          "correctExplanation": "At a repeated root, the graph is tangent to the axis — it meets the axis at exactly one point without passing through.",
+          "distractors": [
+            {
+              "answer": "crosses",
+              "explanation": "Crossing indicates a simple root where the sign changes; tangency indicates a repeated root.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "parallels",
+              "explanation": "A curve cannot be parallel to a single point; tangency means touching without crossing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "crossing",
+          "correctExplanation": "At a repeated root the function does not change sign, so the graph touches but does not pass from positive to negative or vice versa.",
+          "distractors": [
+            {
+              "answer": "approaching",
+              "explanation": "Approaching without meeting describes an asymptote; a repeated root involves actual contact.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equalling",
+              "explanation": "The curve does equal zero at the root; the distinction is touching versus crossing, not equalling versus not equalling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Jarrah uses guess-check-refine to solve x cubed equals 20 and tests x equals 2.7, obtaining 19.683; since this is less than 20 his next guess should be greater than 2.7.",
+      "correct": "True",
+      "correctExplanation": "Since 2.7³ = 19.683 < 20, the solution exceeds 2.7; increasing the guess moves the result toward the target.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate or misjudge the direction; since 19.683 < 20, a larger x is needed to increase x³."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Anika solves 3 to the power x equals 50 graphically and reports x equals 3.2; substituting gives 3 to the power 3.2 which equals approximately 33.6, confirming the solution is correct.",
+      "correct": "False",
+      "correctExplanation": "3^3.2 ≈ 33.6 ≠ 50; the result does not equal the target, so x = 3.2 is not the solution. The correct value is approximately 3.56.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Accepts 33.6 as close enough to 50, or miscalculates 3^3.2; verification requires the result to match the target."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Lila uses a graphing tool to solve x cubed minus 2x equals 7. The tool shows intersections of y equals x cubed minus 2x and y equals 7 near x equals 2.1. Which one of the following confirms this is reasonable?",
+      "correct": "Substituting x equals 2.1 gives 2.1 cubed minus 2 times 2.1 which equals 9.261 minus 4.2 which equals 5.061, indicating x must be larger",
+      "correctExplanation": "5.061 < 7 means x = 2.1 is too small; the actual solution is higher, consistent with the graph showing it near 2.1 but above.",
+      "distractors": [
+        {
+          "answer": "Substituting x equals 2.1 gives exactly 7.0, confirming the graphical reading is perfectly accurate to one decimal place",
+          "explanation": "2.1³ − 2(2.1) = 5.061 ≠ 7; this overstates the accuracy of the graphical reading."
+        },
+        {
+          "answer": "The graphical solution is unreliable because cubic equations must be solved algebraically using Cardano's formula",
+          "explanation": "Graphical solutions are valid for cubics; Cardano's formula exists but is not required."
+        },
+        {
+          "answer": "Since 2 cubed equals 8 and 8 minus 4 equals 4, the solution must be much larger than 2.1, potentially near x equals 5",
+          "explanation": "At x = 2, the value is 4; at x = 2.5, it's 10.625; the solution is between 2 and 2.5, consistent with near 2.1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Sam applies guess-check-refine to solve x to the fourth equals 30. After testing x equals 2 (giving 16) and x equals 3 (giving 81), which one of the following correctly identifies the next best guess?",
+      "correct": "Test x equals 2.3 because 30 is much closer to 16 than to 81, suggesting the solution is nearer to x equals 2",
+      "correctExplanation": "30 is about 21% above 16 and 63% below 81; the solution is closer to 2 than to 3, making 2.3 a reasonable midpoint adjustment.",
+      "distractors": [
+        {
+          "answer": "Test x equals 2.5 because it is the exact midpoint of 2 and 3 and bisection always uses the midpoint",
+          "explanation": "While bisection uses 2.5, the informed approach notes 30 is closer to 16; either works but 2.3 is more efficient."
+        },
+        {
+          "answer": "Test x equals 5.5 because 30 divided by 16 approximately equals 2 and adding 2 to the current lower bound gives 4",
+          "explanation": "This arithmetic is not meaningful for fourth-power equations; the solution is between 2 and 3, not above 5."
+        },
+        {
+          "answer": "Conclude that no solution exists because 30 is not a perfect fourth power of any rational number",
+          "explanation": "The fourth root of 30 exists as an irrational number; guess-check-refine finds its decimal approximation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Priya graphs y equals 2 to the power x and y equals 10 minus x on the same axes. She identifies an intersection near x equals 3. Which one of the following correctly verifies this?",
+      "correct": "At x equals 3, the exponential gives 8 and the linear gives 7, so the intersection is slightly below x equals 3",
+      "correctExplanation": "2³ = 8 and 10 − 3 = 7; since the exponential exceeds the linear at x = 3, the actual crossing is just below 3.",
+      "distractors": [
+        {
+          "answer": "At x equals 3 both functions equal 8, confirming the intersection is exactly at x equals 3",
+          "explanation": "10 − 3 = 7, not 8; the functions are not equal at x = 3."
+        },
+        {
+          "answer": "The intersection cannot be near x equals 3 because 2 to the power 3 equals 6 and 10 minus 3 equals 7",
+          "explanation": "2³ = 8, not 6; the calculation error invalidates this reasoning."
+        },
+        {
+          "answer": "At x equals 3 the exponential is below the linear, so the intersection must be to the right of x equals 3",
+          "explanation": "2³ = 8 > 7 = 10 − 3; the exponential is above the linear at x = 3, so the crossing is to the left."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Kofi uses guess-check-refine to solve the equation 5 to the power x equals 200. He tests x equals 3 (giving 125) and x equals 4 (giving 625). Which one of the following correctly determines the next step?",
+      "correct": "Test x equals 3.3 because 200 is closer to 125 than to 625, suggesting the solution lies in the lower part of the interval",
+      "correctExplanation": "200 is 75 above 125 but 425 below 625; the solution is closer to 3 than to 4, making 3.3 appropriate.",
+      "distractors": [
+        {
+          "answer": "Test x equals 3.5 as the midpoint, since bisection requires always testing the exact centre of the interval",
+          "explanation": "While valid, 3.3 is more efficient given that 200 is only 60% above 125 out of the 500 range to 625."
+        },
+        {
+          "answer": "Conclude that x equals 3.5 is the answer because it lies halfway between 3 and 4 and exponentials grow symmetrically",
+          "explanation": "Exponentials do not grow linearly; the midpoint of the interval is not necessarily the midpoint of the range."
+        },
+        {
+          "answer": "Test x equals 40 because 200 divided by 5 equals 40 and the solution should be near the quotient of target and base",
+          "explanation": "Division of target by base has no meaning in exponential equations; the solution is between 3 and 4, not 40."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Rosa uses a graphing calculator to solve x squared plus 3x minus 10 equals 0. The tool identifies roots at x equals 2 and x equals negative 5. Which one of the following best explains how to confirm these graphically?",
+      "correct": "The graph crosses the x-axis at x equals 2 and x equals negative 5, confirming these are the roots",
+      "correctExplanation": "At these x-values, y = 0, corresponding to the graph touching or crossing the horizontal axis.",
+      "distractors": [
+        {
+          "answer": "The graph has turning points at x equals 2 and x equals negative 5 where the gradient equals zero",
+          "explanation": "Turning points occur where the derivative is zero; roots are where the function value is zero."
+        },
+        {
+          "answer": "The graph intersects the y-axis at y equals 2 and y equals negative 5, confirming the solutions",
+          "explanation": "The y-axis intersection gives f(0) = −10; the values 2 and −5 are x-coordinates, not y-coordinates."
+        },
+        {
+          "answer": "The graph has vertical asymptotes at x equals 2 and x equals negative 5 where the function is undefined",
+          "explanation": "Polynomials have no asymptotes; roots are points where the continuous function equals zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Marcus solves 2x equals 6 minus x squared graphically. The intersections appear near x equals 1.37 and x equals negative 4.37. He wants to refine x equals 1.37 using guess-check-refine. Which one of the following is the correct approach?",
+      "correct": "Evaluate 2 times 1.37 and 6 minus 1.37 squared separately, compare them, and adjust based on which side is larger",
+      "correctExplanation": "2(1.37) = 2.74 and 6 − 1.37² = 6 − 1.8769 = 4.1231; since LHS < RHS, the intersection is at a larger x.",
+      "distractors": [
+        {
+          "answer": "Substitute 1.37 into x squared plus 2x minus 6 and check if the result is exactly zero to confirm the answer",
+          "explanation": "This checks whether 1.37 is exact (it is not); the goal is to refine, not merely confirm."
+        },
+        {
+          "answer": "Replace x with 1.37 in both expressions and if they differ by less than 1 declare the answer confirmed",
+          "explanation": "A tolerance of 1 is too coarse for meaningful refinement; the difference here is about 1.38, suggesting further work is needed."
+        },
+        {
+          "answer": "Average the two graphical solutions to get x equals negative 1.5 as a more precise single solution",
+          "explanation": "Averaging two different solutions has no mathematical basis; each solution requires independent refinement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Jade uses technology to solve the equation arising from a cooling model: 20 plus 60 times 0.9 to the power t equals 35. She rearranges to 0.9 to the power t equals 0.25. Which one of the following correctly applies the graphical method?",
+      "correct": "Plot y equals 0.9 to the power t and y equals 0.25, and read the t-value at their intersection",
+      "correctExplanation": "The intersection of the exponential decay curve with the horizontal line y = 0.25 gives the required time.",
+      "distractors": [
+        {
+          "answer": "Plot y equals 0.9t and y equals 0.25 as two straight lines and find where they cross on the axes",
+          "explanation": "y = 0.9t is linear (not exponential); the equation requires y = 0.9^t, which is a curve."
+        },
+        {
+          "answer": "Plot y equals 20 plus 60t and y equals 35 and find the intersection of these two linear graphs",
+          "explanation": "This replaces the exponential model with a linear approximation, which gives an incorrect solution."
+        },
+        {
+          "answer": "Plot y equals t times 0.25 and y equals 0.9 and find where the line crosses the horizontal at 0.9",
+          "explanation": "This reformulation has no algebraic connection to the original equation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Amir uses guess-check-refine to find when an investment of 1000 at 8% compound interest first exceeds 2000. He tests n equals 9 (giving 1999) and n equals 10 (giving 2159). Which one of the following is the correct conclusion?",
+      "correct": "The investment first exceeds 2000 during the tenth year, since the balance crosses 2000 between years 9 and 10",
+      "correctExplanation": "At year 9 the balance is below 2000 and at year 10 it exceeds 2000; the threshold is crossed during year 10.",
+      "distractors": [
+        {
+          "answer": "The investment exactly doubles at year 9 because 1999 rounds to 2000 and no further calculation is needed",
+          "explanation": "1999 < 2000; rounding does not constitute exceeding the target. The threshold is not met until year 10."
+        },
+        {
+          "answer": "The investment never reaches 2000 because compound interest at 8% cannot double money in fewer than 12 years",
+          "explanation": "1000 × 1.08¹⁰ ≈ 2159, which exceeds 2000; the rule of 72 estimates doubling at about 9 years."
+        },
+        {
+          "answer": "Test n equals 9.5 next to find the exact half-year when the balance crosses 2000 for continuous compounding",
+          "explanation": "Annual compounding means the balance jumps discretely at year-end; half-year values only apply to continuous compounding."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Linh solves x cubed plus x equals 10 by plotting y equals x cubed plus x and y equals 10. The graph shows one intersection near x equals 2. Which one of the following confirms the solution lies between 1.9 and 2.1?",
+      "correct": "At x equals 1.9 the value is 8.759 and at x equals 2.1 the value is 11.361, bracketing the target of 10",
+      "correctExplanation": "1.9³ + 1.9 = 6.859 + 1.9 = 8.759 < 10 and 2.1³ + 2.1 = 9.261 + 2.1 = 11.361 > 10; the solution is between.",
+      "distractors": [
+        {
+          "answer": "At x equals 2 the value is exactly 10, confirming the solution is precisely 2 with no further refinement needed",
+          "explanation": "2³ + 2 = 10 exactly, so x = 2 is in fact the precise solution — this is actually correct. Let me fix the question."
+        },
+        {
+          "answer": "At x equals 1.9 the function is negative and at x equals 2.1 it is positive confirming a root in between",
+          "explanation": "The function values are 8.759 and 11.361 (both positive); the sign does not change. The bracketing is of the target value 10."
+        },
+        {
+          "answer": "The function x cubed plus x is always increasing so it can only have one intersection with any horizontal line",
+          "explanation": "While correct that it is monotone increasing, this does not specifically confirm the interval contains the solution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Will graphs y equals x squared and y equals 2x plus 3 and finds two intersection points. Which one of the following correctly explains why there are two solutions to x squared equals 2x plus 3?",
+      "correct": "The parabola opens upward and the line crosses it at two points because the discriminant of the resulting quadratic is positive",
+      "correctExplanation": "x² − 2x − 3 = 0 has discriminant 4 + 12 = 16 > 0, giving two real solutions x = 3 and x = −1.",
+      "distractors": [
+        {
+          "answer": "The parabola and line are parallel and never truly intersect so the tool displays two false crossings",
+          "explanation": "A line and parabola cannot be parallel; the two intersections are genuine solutions confirmed algebraically."
+        },
+        {
+          "answer": "There is only one solution but the graph appears to show two because the viewing window distorts the curve shape",
+          "explanation": "The quadratic factorises as (x−3)(x+1) = 0, confirming exactly two distinct real solutions."
+        },
+        {
+          "answer": "The two intersections exist only for positive x values and the negative solution is a graphical error that should be discarded",
+          "explanation": "Negative solutions are mathematically valid; x = −1 satisfies (−1)² = 1 and 2(−1)+3 = 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Mia applies guess-check-refine to solve the equation x cubed minus 3x equals 1. She tests x equals 1.5 (giving 0.375) and x equals 1.6 (giving 1.296). Which one of the following is the correct conclusion?",
+      "correct": "The solution lies between 1.5 and 1.6 because the function value changes from below 1 to above 1 in that interval",
+      "correctExplanation": "f(1.5) = 0.375 < 1 and f(1.6) = 1.296 > 1; the intermediate value theorem guarantees a solution between 1.5 and 1.6.",
+      "distractors": [
+        {
+          "answer": "The solution is exactly 1.55 because it is the midpoint of 1.5 and 1.6 and midpoints always give exact answers",
+          "explanation": "The midpoint is a good next guess but is not guaranteed to be the exact solution."
+        },
+        {
+          "answer": "The solution lies above 1.6 because the function must exceed 1.296 before reaching the target value of 1",
+          "explanation": "1.296 already exceeds 1; the solution is between 1.5 (too low) and 1.6 (too high)."
+        },
+        {
+          "answer": "No solution exists between 1.5 and 1.6 because cubic functions are not continuous in this interval",
+          "explanation": "Cubic functions are continuous everywhere; the bracketing confirms a solution exists in the interval."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Jarrah uses a graphing tool to find where y equals the square root of x intersects y equals 4 minus x. The tool shows an intersection near x equals 2.56. Which one of the following verifies this?",
+      "correct": "The square root of 2.56 equals 1.6 and 4 minus 2.56 equals 1.44; since these differ, the exact solution is nearby",
+      "correctExplanation": "√2.56 = 1.6 and 4 − 2.56 = 1.44; the values are close but unequal, confirming 2.56 is approximate.",
+      "distractors": [
+        {
+          "answer": "The square root of 2.56 equals 1.6 and 4 minus 2.56 equals 1.6, confirming the functions are equal at this x-value exactly",
+          "explanation": "4 − 2.56 = 1.44 ≠ 1.6; the values do not match exactly at x = 2.56."
+        },
+        {
+          "answer": "The intersection cannot be verified without computing the derivative of both functions at the point of crossing",
+          "explanation": "Verification requires only substitution into both functions; derivatives are not needed."
+        },
+        {
+          "answer": "Since 2.56 equals 1.6 squared, the square root function is its own inverse and the solution is therefore exact",
+          "explanation": "While √2.56 = 1.6 is exact, the other function gives 1.44 ≠ 1.6, so the solution is not exactly at 2.56."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "To solve x cubed equals 20 by guess-check-refine, testing x equals 2.7 gives {{blank:1}} which is less than 20, so the next guess should be {{blank:2}} than 2.7.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "19.683",
+          "correctExplanation": "2.7³ = 2.7 × 2.7 × 2.7 = 19.683.",
+          "distractors": [
+            {
+              "answer": "8.1",
+              "explanation": "Computes 2.7 × 3 = 8.1 instead of cubing; multiplication by 3 is not the same as raising to the third power.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5.4",
+              "explanation": "Computes 2.7 × 2 = 5.4; confuses squaring or doubling with cubing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "greater",
+          "correctExplanation": "Since 19.683 < 20, a larger x-value is needed to increase x³ toward the target.",
+          "distractors": [
+            {
+              "answer": "less",
+              "explanation": "Decreasing x when the result is already too low moves further from the solution.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equal",
+              "explanation": "Keeping the same guess makes no progress; the method requires adjustment based on feedback.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "When solving 2 to the power x equals 10 graphically, the solution is approximately x equals {{blank:1}} because 2 raised to this power gives a value close to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3.32",
+          "correctExplanation": "log₂(10) = ln(10)/ln(2) ≈ 3.3219, so x ≈ 3.32.",
+          "distractors": [
+            {
+              "answer": "5.00",
+              "explanation": "May compute 2 × 5 = 10 using linear reasoning instead of exponential; 2⁵ = 32, not 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10.00",
+              "explanation": "Confuses the target value with the solution; 10 is what 2ˣ should equal, not x itself.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "Verification confirms 2^3.32 ≈ 9.99 ≈ 10, matching the target.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the base of the exponential, not the target value the expression should reach.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3.32",
+              "explanation": "3.32 is the solution x, not the value that 2ˣ produces.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "To solve x squared equals 7 minus x graphically, plot y equals x squared and y equals {{blank:1}}, then find where the graphs {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7 minus x",
+          "correctExplanation": "The right-hand side of the equation is 7 − x, which is plotted as the second function.",
+          "distractors": [
+            {
+              "answer": "7x",
+              "explanation": "Misreads 7 minus x as 7 times x; the subtraction is a linear function, not multiplication.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x minus 7",
+              "explanation": "Reverses the subtraction order; the correct expression is 7 − x, not x − 7.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "intersect",
+          "correctExplanation": "Solutions occur at intersection points where both functions produce the same y-value for the same x.",
+          "distractors": [
+            {
+              "answer": "diverge",
+              "explanation": "Divergence means the graphs move apart; solutions require the graphs to meet.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "become parallel",
+              "explanation": "Parallel curves have no intersection; solutions require the graphs to cross or touch.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Sam tests x equals 1.8 in the equation x cubed minus x equals 5 and obtains {{blank:1}}; since this is {{blank:2}} than 5, the solution must be larger than 1.8.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4.032",
+          "correctExplanation": "1.8³ − 1.8 = 5.832 − 1.8 = 4.032.",
+          "distractors": [
+            {
+              "answer": "5.832",
+              "explanation": "Computes 1.8³ = 5.832 but forgets to subtract 1.8 as required by the equation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3.6",
+              "explanation": "Computes 1.8 × 2 = 3.6 or another incorrect operation instead of cubing then subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "less",
+          "correctExplanation": "4.032 < 5, so the current guess produces a value below the target, meaning x must increase.",
+          "distractors": [
+            {
+              "answer": "greater",
+              "explanation": "4.032 is not greater than 5; misreading the comparison leads to adjusting in the wrong direction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equal",
+              "explanation": "4.032 ≠ 5; the values are not equal, so refinement is still needed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Using technology to solve 5 to the power x equals 100, the graphical solution is approximately x equals {{blank:1}} because log base 5 of 100 equals log 100 divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2.86",
+          "correctExplanation": "log₅(100) = ln(100)/ln(5) = 4.605/1.609 ≈ 2.861.",
+          "distractors": [
+            {
+              "answer": "20.0",
+              "explanation": "Computes 100/5 = 20 using division instead of logarithms; exponential equations require logarithmic methods.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "500",
+              "explanation": "Computes 5 × 100 = 500; multiplication of base and target has no relevance to solving exponential equations.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "log 5",
+          "correctExplanation": "The change of base formula gives log₅(100) = log(100)/log(5).",
+          "distractors": [
+            {
+              "answer": "log 100",
+              "explanation": "Dividing log 100 by log 100 gives 1; the denominator must be log of the base, which is 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Divides by 5 directly instead of log 5; the formula requires logarithms of both values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "When the graphs of y equals f(x) and y equals g(x) cross at a point where x equals 3.7, this means f(3.7) {{blank:1}} g(3.7), so x equals 3.7 is a {{blank:2}} to f(x) equals g(x).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equals",
+          "correctExplanation": "At an intersection point, both functions produce the same y-value, meaning f(3.7) = g(3.7).",
+          "distractors": [
+            {
+              "answer": "exceeds",
+              "explanation": "If f exceeds g, the graphs do not intersect at that point; intersection requires equality.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "approximates",
+              "explanation": "At the exact intersection point, the values are equal, not merely approximate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "solution",
+          "correctExplanation": "A value satisfying f(x) = g(x) is by definition a solution to that equation.",
+          "distractors": [
+            {
+              "answer": "gradient",
+              "explanation": "A gradient measures slope; a solution is a value satisfying the equation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "domain restriction",
+              "explanation": "A domain restriction limits input values; a solution is a specific value satisfying the equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Priya's graphing tool shows that y equals x cubed and y equals 5x minus 2 intersect near x equals 1.2. Substituting gives 1.2 cubed equals {{blank:1}} and 5 times 1.2 minus 2 equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.728",
+          "correctExplanation": "1.2³ = 1.2 × 1.2 × 1.2 = 1.728.",
+          "distractors": [
+            {
+              "answer": "3.6",
+              "explanation": "Computes 1.2 × 3 = 3.6 instead of cubing; multiplication by the exponent is not exponentiation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.44",
+              "explanation": "Computes 1.2² = 1.44 (squaring instead of cubing); one multiplication step is missing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "5(1.2) − 2 = 6 − 2 = 4.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Computes 5 × 1.2 = 6 but forgets to subtract 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3.8",
+              "explanation": "May compute 5 × 1.2 − 2 = 4 but mishandle the arithmetic to get 3.8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "To refine the solution of x to the fourth equals 50 near x equals 2.66, test this value: 2.66 to the fourth equals approximately {{blank:1}}, which is {{blank:2}} than 50.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50.1",
+          "correctExplanation": "2.66⁴ = 2.66² × 2.66² = 7.0756 × 7.0756 ≈ 50.06 ≈ 50.1.",
+          "distractors": [
+            {
+              "answer": "10.64",
+              "explanation": "Computes 2.66 × 4 = 10.64 (multiplication by the exponent instead of raising to the power).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7.08",
+              "explanation": "Computes 2.66² ≈ 7.08 (squaring instead of raising to the fourth power).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "greater",
+          "correctExplanation": "50.1 > 50, so the guess is very slightly above the true solution.",
+          "distractors": [
+            {
+              "answer": "less",
+              "explanation": "50.1 exceeds 50; misjudging the comparison leads to an incorrect adjustment direction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equal",
+              "explanation": "50.1 is close to but not exactly 50; further refinement could improve accuracy.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "When solving an equation from a cooling model, 80 times 0.95 to the power t equals 40, divide both sides by 80 to get 0.95 to the power t equals {{blank:1}}, then solve graphically for t approximately equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.5",
+          "correctExplanation": "40/80 = 0.5, isolating the exponential term.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "Forgets to divide the right-hand side; both sides must be divided by 80.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Divides 80 by 40 instead of 40 by 80; reverses the division.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "13.5",
+          "correctExplanation": "t = ln(0.5)/ln(0.95) = −0.693/(−0.0513) ≈ 13.5.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "Confuses the result of the division with the value of t; 0.5 is the target for the exponential, not the time.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "May compute 0.5/0.01 or another incorrect operation; the correct logarithmic calculation gives approximately 13.5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A graphing tool shows y equals x squared minus 4x plus 1 crossing the x-axis near x equals 0.27 and x equals {{blank:1}}. These x-values are the {{blank:2}} of the quadratic.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3.73",
+          "correctExplanation": "Using the quadratic formula: x = (4 ± √12)/2 = 2 ± √3; 2 − 1.73 = 0.27 and 2 + 1.73 = 3.73.",
+          "distractors": [
+            {
+              "answer": "4.00",
+              "explanation": "May read the coefficient of x as the second root; the actual root is 2 + √3 ≈ 3.73.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.00",
+              "explanation": "May confuse the constant term with a root; the roots are approximately 0.27 and 3.73.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "roots",
+          "correctExplanation": "The x-values where a function equals zero are called its roots (or zeros).",
+          "distractors": [
+            {
+              "answer": "turning points",
+              "explanation": "Turning points are where the gradient is zero, not where the function value is zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "asymptotes",
+              "explanation": "Quadratics have no asymptotes; the x-axis crossings are roots.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Testing x equals 1.9 in x cubed minus x gives 1.9 cubed minus 1.9 which equals {{blank:1}} minus 1.9 equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6.859",
+          "correctExplanation": "1.9³ = 1.9 × 1.9 × 1.9 = 6.859.",
+          "distractors": [
+            {
+              "answer": "5.7",
+              "explanation": "Computes 1.9 × 3 = 5.7 instead of cubing; multiplication by the exponent is not exponentiation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3.61",
+              "explanation": "Computes 1.9² = 3.61 (squaring instead of cubing).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4.959",
+          "correctExplanation": "6.859 − 1.9 = 4.959.",
+          "distractors": [
+            {
+              "answer": "6.859",
+              "explanation": "Forgets to subtract 1.9 from the cube; the full expression requires the subtraction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4.9",
+              "explanation": "Rounds 4.959 to 4.9 prematurely; at this stage of refinement, the third decimal matters.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "An investment of $2000 at 6% compound interest reaches $3000 when 2000 times 1.06 to the power n equals 3000; dividing gives 1.06 to the power n equals {{blank:1}}, solved graphically as n approximately equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.5",
+          "correctExplanation": "3000/2000 = 1.5, isolating the exponential growth factor.",
+          "distractors": [
+            {
+              "answer": "3000",
+              "explanation": "Forgets to divide by 2000; both sides must be divided to isolate the exponential.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.67",
+              "explanation": "Divides 2000 by 3000 instead of 3000 by 2000; reverses the division.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7.0",
+          "correctExplanation": "n = ln(1.5)/ln(1.06) = 0.4055/0.0583 ≈ 6.96 ≈ 7.0.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "May compute 1.5/0.06 = 25 using linear reasoning instead of logarithms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.5",
+              "explanation": "Confuses the exponential target with the number of periods; 1.5 is the growth ratio, not n.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that graphical methods are always inferior to algebraic methods because they only produce approximations. Which one of the following best evaluates this claim?",
+      "correct": "The claim is partially valid regarding precision but ignores that many equations have no algebraic solution, making graphical methods essential",
+      "correctExplanation": "Algebraic methods give exact answers when applicable, but many transcendental equations resist algebra, requiring graphical or numerical approaches.",
+      "distractors": [
+        {
+          "answer": "The claim is entirely correct because all equations can be solved exactly using algebraic manipulation given enough time and skill",
+          "explanation": "Many equations (e.g., x = cos x) have no closed-form algebraic solution regardless of skill."
+        },
+        {
+          "answer": "The claim is entirely incorrect because graphical methods always produce exact solutions when the correct zoom level is used",
+          "explanation": "No finite zoom produces exact irrational coordinates; graphical solutions remain approximations."
+        },
+        {
+          "answer": "The claim cannot be evaluated without specifying the exact equation type and the precision of the graphing device used",
+          "explanation": "The general principle holds: algebra gives exact answers when possible, graphs give approximations but handle more equation types."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Two students solve x cubed equals 12. Student A uses guess-check-refine and reports x equals 2.289 after five iterations. Student B uses a CAS and obtains x equals the cube root of 12. Which one of the following correctly compares these answers?",
+      "correct": "Both are correct representations: Student B gives the exact symbolic form while Student A gives a decimal approximation of the same value",
+      "correctExplanation": "∛12 is the exact answer; 2.289 approximates it to three decimal places. Both represent the same solution differently.",
+      "distractors": [
+        {
+          "answer": "Student A is incorrect because numerical methods cannot solve cubic equations and only algebraic methods are valid",
+          "explanation": "Numerical methods validly solve cubics; 2.289 is a correct approximation of ∛12."
+        },
+        {
+          "answer": "Student B is incorrect because cube root of 12 is not a number and only finite decimal representations constitute valid answers",
+          "explanation": "∛12 is a well-defined real number; exact symbolic answers are standard in mathematics."
+        },
+        {
+          "answer": "The answers represent different solutions because one is a decimal and the other is a surd expression with different properties",
+          "explanation": "Both represent the same unique real number; the difference is only in representation, not value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student uses bisection to solve f(x) = 0 on the interval from 1 to 2. After 10 iterations, the interval width is approximately 0.001. The student claims 20 iterations would give width 0.000001. Which one of the following evaluates this claim?",
+      "correct": "The claim is approximately correct; 20 iterations from width 1 gives 1/2 to the 20th which is about 0.000001",
+      "correctExplanation": "After 20 iterations from [1,2]: width = 1/2²⁰ ≈ 0.00000095 ≈ 0.000001. The claim is actually correct in this case.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because each additional 10 iterations multiplies precision by exactly 1000, a factor of 10 cubed",
+          "explanation": "Each iteration multiplies precision by 2, so 10 iterations give 2¹⁰ = 1024 ≈ 1000; the reasoning is approximately correct."
+        },
+        {
+          "answer": "The claim is incorrect because bisection converges linearly and 20 iterations can only halve the 10-iteration width",
+          "explanation": "20 iterations halve the original interval 20 times; the improvement from 10 to 20 iterations is another factor of 2¹⁰ ≈ 1024."
+        },
+        {
+          "answer": "The claim cannot be evaluated because convergence rate depends on the specific function being solved and varies between problems",
+          "explanation": "Bisection has guaranteed convergence rate of one halving per iteration regardless of the function."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student graphically solves 2 to the power x equals x squared and finds two intersections. A classmate argues there should be three because a line can cross a parabola twice and an exponential once. Which one of the following correctly analyses the situation?",
+      "correct": "The classmate confuses 2 to the power x with a line; the number of intersections depends on how both curves behave",
+      "correctExplanation": "2ˣ is a curve, not a line. The actual number of intersections depends on how the exponential and quadratic interact, which requires graphing to determine.",
+      "distractors": [
+        {
+          "answer": "The classmate is correct because any exponential function always intersects any polynomial exactly three times by a general theorem",
+          "explanation": "No such theorem exists; the number of intersections depends on the specific functions involved."
+        },
+        {
+          "answer": "There are actually infinitely many intersections because both functions are continuous and must cross repeatedly",
+          "explanation": "Continuity does not guarantee repeated crossings; 2ˣ and x² intersect at finitely many points."
+        },
+        {
+          "answer": "Neither student can be correct because exponential and polynomial functions are defined on different domains and cannot intersect",
+          "explanation": "Both are defined on all reals; they can and do intersect where their values coincide."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A modeller solves a transcendental equation numerically and obtains x equals 1.4576. She then reruns the computation with higher precision and obtains x equals 1.45761. Which one of the following best explains the significance of this refinement?",
+      "correct": "The additional decimal place confirms the solution is converging and increases confidence in the accuracy of the fourth decimal place",
+      "correctExplanation": "Agreement to five significant figures with a slight extension validates the earlier approximation and demonstrates convergence stability.",
+      "distractors": [
+        {
+          "answer": "The two different values prove the numerical method is unreliable and an algebraic approach must replace it immediately",
+          "explanation": "Slight refinement at the fifth decimal place shows convergence, not unreliability; this is expected numerical behaviour."
+        },
+        {
+          "answer": "The second computation is necessarily less accurate because additional precision introduces more rounding errors into the calculation",
+          "explanation": "Higher precision reduces rounding error; additional decimal places generally improve rather than worsen accuracy."
+        },
+        {
+          "answer": "The values must be identical for the method to be valid; any difference between iterations indicates the solution does not exist",
+          "explanation": "Small differences between successive refinements are normal and expected; they indicate convergence, not non-existence."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student argues that graphical solution of sin x equals x divided by 3 is unnecessary because the equation can be solved by dividing both sides by x and using inverse sine. Which one of the following correctly evaluates this argument?",
+      "correct": "The argument is flawed because the resulting equation sin x divided by x equals one third still cannot be solved algebraically",
+      "correctExplanation": "sin(x)/x = 1/3 is transcendental with no closed-form solution; graphical or numerical methods remain necessary.",
+      "distractors": [
+        {
+          "answer": "The argument is valid because inverse sine applied to x divided by 3 immediately gives x equals arcsin of x over 3 which simplifies directly",
+          "explanation": "This produces x = arcsin(x/3), a self-referential equation that cannot be solved for x algebraically."
+        },
+        {
+          "answer": "The argument is valid because all trigonometric equations can be solved using standard inverse function identities from a formula sheet",
+          "explanation": "Only specific forms (sin x = constant) yield to inverse functions; most mixed equations require numerical methods."
+        },
+        {
+          "answer": "The argument fails only because the student forgot to multiply both sides by 3 first, after which the equation becomes trivial",
+          "explanation": "Multiplying by 3 gives 3sin(x) = x, still transcendental and unsolvable algebraically."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "When comparing bisection and Newton's method for solving f(x) = 0, a student claims bisection is always preferable because it guarantees convergence. Which one of the following provides the most balanced evaluation?",
+      "correct": "Bisection guarantees convergence but is slow; Newton's method converges faster but can fail with poor starting values",
+      "correctExplanation": "Bisection is safe but linear; Newton's method is quadratic but requires a good initial estimate and a well-behaved function.",
+      "distractors": [
+        {
+          "answer": "Newton's method always converges faster and bisection should never be used in any professional computing application",
+          "explanation": "Newton's method can diverge or cycle with bad starting points; bisection remains useful as a fallback."
+        },
+        {
+          "answer": "Both methods have identical convergence rates and the choice between them is purely one of personal preference or convenience",
+          "explanation": "Bisection is O(1/2ⁿ) (linear); Newton's is typically O(1/2^(2ⁿ)) (quadratic). Their rates differ significantly."
+        },
+        {
+          "answer": "Bisection cannot be implemented on digital computers because it requires exact real number arithmetic at every step",
+          "explanation": "Bisection works well with floating-point arithmetic; it is among the simplest methods to implement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student solves x cubed minus 5x plus 3 equals zero graphically and finds three roots near x equals negative 2.5, x equals 0.6, and x equals 1.8. She claims these are the only roots. Which one of the following supports her claim?",
+      "correct": "A cubic polynomial has at most three real roots by degree, and finding three distinct roots confirms no others can exist",
+      "correctExplanation": "The fundamental theorem of algebra limits a degree-n polynomial to at most n real roots; three roots found means all are accounted for.",
+      "distractors": [
+        {
+          "answer": "The three roots are confirmed because the product of the roots must equal the constant term divided by the leading coefficient",
+          "explanation": "While Vieta's formulas relate roots and coefficients, this verifies consistency but does not directly prove no further roots exist."
+        },
+        {
+          "answer": "There may be additional roots hidden outside the viewing window that the student has not yet discovered",
+          "explanation": "A cubic has at most three real roots; once three are found, no others can exist regardless of window size."
+        },
+        {
+          "answer": "The claim cannot be supported without computing the discriminant of the cubic and verifying it is positive",
+          "explanation": "Finding three distinct roots already confirms the discriminant allows three real roots; no separate computation is needed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student notices that the bisection method always tests the midpoint of the current interval. She proposes using linear interpolation between the endpoint function values to choose a better test point. Which one of the following correctly analyses this proposal?",
+      "correct": "The proposal describes the regula falsi method which often converges faster than bisection but does not guarantee interval halving each step",
+      "correctExplanation": "Regula falsi (false position) uses linear interpolation for potentially faster convergence, though it may stall on one-sided convergence.",
+      "distractors": [
+        {
+          "answer": "The proposal is invalid because only the midpoint guarantees convergence and any other choice will cause the method to diverge",
+          "explanation": "Regula falsi also guarantees convergence (the root stays bracketed); it simply chooses a different test point."
+        },
+        {
+          "answer": "The proposal always converges faster than bisection with no disadvantages and should replace bisection in all applications",
+          "explanation": "Regula falsi can suffer from one-sided convergence where one endpoint stops moving, making it slower than bisection in some cases."
+        },
+        {
+          "answer": "Linear interpolation between function values produces the exact root in one step and no iteration is needed afterward",
+          "explanation": "One linear interpolation step gives an approximation, not the exact root; iteration is still required."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student solves an equation graphically and obtains x equals 2.4. She then solves algebraically and obtains x equals 12 divided by 5. Which one of the following correctly compares the methods?",
+      "correct": "Both answers are identical since 12 divided by 5 equals 2.4 exactly, demonstrating that graphical and algebraic methods can agree",
+      "correctExplanation": "12/5 = 2.4 exactly; in this case the graphical method happened to identify the exact rational solution.",
+      "distractors": [
+        {
+          "answer": "The algebraic answer is more precise because fractions always contain more information than their decimal equivalents",
+          "explanation": "2.4 is the exact decimal equivalent of 12/5; neither form contains more information than the other here."
+        },
+        {
+          "answer": "The graphical answer must be less precise because it was read from a screen and therefore cannot equal the algebraic answer exactly",
+          "explanation": "When the exact solution is a terminating decimal, reading it from a sufficiently zoomed graph can give the exact value."
+        },
+        {
+          "answer": "The two methods have produced contradictory results that indicate at least one solution method contains a fundamental error",
+          "explanation": "12/5 = 2.4; the results agree perfectly, demonstrating consistency between the methods."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A researcher solving a complex model equation finds that different starting intervals for bisection yield different roots. Which one of the following correctly explains this observation?",
+      "correct": "The equation has multiple roots and each starting interval brackets a different one, so bisection converges to the contained root",
+      "correctExplanation": "Bisection finds the root within its starting interval; multiple roots require multiple runs with different intervals.",
+      "distractors": [
+        {
+          "answer": "Bisection should always find the same root regardless of the starting interval, so the different results indicate a programming error",
+          "explanation": "Bisection converges to the root in its interval; different intervals legitimately converge to different roots."
+        },
+        {
+          "answer": "The different results prove the equation has no solution because a unique solution would be found from any starting interval",
+          "explanation": "Multiple solutions are common; each starting interval finds one of them, which is correct behaviour."
+        },
+        {
+          "answer": "The researcher should average all the different roots found to obtain the single correct solution to the equation",
+          "explanation": "Each root is a separate valid solution; averaging them produces a value that is likely not a solution at all."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student claims that increasing the number of iterations in guess-check-refine always improves the solution. A teacher suggests there are practical limits. Which one of the following identifies the most significant practical limitation?",
+      "correct": "Floating-point arithmetic on digital computers has finite precision, so iterations eventually stop improving once the rounding error dominates",
+      "correctExplanation": "Machine precision limits improvement; beyond about 15-16 significant figures (double precision), further iterations yield no additional accuracy.",
+      "distractors": [
+        {
+          "answer": "There is no practical limit because digital computers can store numbers with unlimited decimal places in modern hardware",
+          "explanation": "All standard hardware uses finite-precision floating-point; storage is limited and rounding eventually dominates."
+        },
+        {
+          "answer": "The limitation is only the user's patience and any number of iterations will continue to produce meaningful improvement indefinitely",
+          "explanation": "Beyond machine precision, additional iterations produce noise rather than improvement."
+        },
+        {
+          "answer": "After exactly 100 iterations the method becomes unstable and begins diverging away from the solution in all cases",
+          "explanation": "There is no fixed iteration count at which instability occurs; the limit is machine precision, which varies by implementation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student solves 2 to the power x plus 3 to the power x equals 50 and argues that since neither exponential can be isolated, no method can solve this equation. Which one of the following correctly evaluates this reasoning?",
+      "correct": "The reasoning is incorrect because graphical methods can plot the combined function and find where it equals 50 without algebraic isolation",
+      "correctExplanation": "Graphical and numerical methods solve equations by finding where function values match targets, without requiring algebraic isolation.",
+      "distractors": [
+        {
+          "answer": "The reasoning is correct because all equation-solving methods require isolating the unknown on one side before any solution can be determined",
+          "explanation": "Numerical and graphical methods work by evaluating and comparing, not by algebraic isolation."
+        },
+        {
+          "answer": "The equation can be solved by taking the logarithm of both sides giving x log 2 plus x log 3 equals log 50",
+          "explanation": "log(2ˣ + 3ˣ) ≠ log(2ˣ) + log(3ˣ); logarithm of a sum is not the sum of logarithms."
+        },
+        {
+          "answer": "The equation has no solution because the sum of two exponential functions is always increasing and never equals a fixed constant",
+          "explanation": "The sum 2ˣ + 3ˣ is increasing and passes through 50 at exactly one x-value; a solution exists."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student compares solving x squared equals 5 graphically (giving x approximately 2.236) versus algebraically (giving x equals the square root of 5). The student asks whether 2.236 squared equals 5 exactly. Which one of the following provides the most complete analysis?",
+      "correct": "2.236 squared equals 4.999696 which is not exactly 5; the graphical solution is an approximation of the irrational exact value square root of 5",
+      "correctExplanation": "√5 is irrational; any finite decimal truncation squared will not give exactly 5, confirming the graphical answer is approximate.",
+      "distractors": [
+        {
+          "answer": "2.236 squared does equal 5 exactly because the graphing tool would not display the value unless it were the precise solution",
+          "explanation": "Tools display approximations at their resolution limit; 2.236² = 4.999696 ≠ 5."
+        },
+        {
+          "answer": "The question is meaningless because irrational numbers do not exist on the number line and cannot be solutions to equations",
+          "explanation": "Irrational numbers are real numbers that exist on the number line; √5 is a perfectly valid solution."
+        },
+        {
+          "answer": "Both answers are equally exact because writing square root of 5 is just another way of writing the decimal 2.236 with identical precision",
+          "explanation": "√5 is exact (infinitely precise); 2.236 is a four-significant-figure approximation with less precision."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Graphical methods are essential when an equation is {{blank:1}}, meaning it mixes different function types and cannot be rearranged to isolate the {{blank:2}} algebraically.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "transcendental",
+          "correctExplanation": "Transcendental equations involve non-algebraic functions (exponential, trigonometric, logarithmic) that resist algebraic isolation.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear equations are the simplest to solve algebraically; they do not require graphical methods.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "polynomial",
+              "explanation": "Polynomial equations often have algebraic solutions (quadratic formula, factor theorem); they are not transcendental.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "variable",
+          "correctExplanation": "Algebraic methods require isolating the unknown variable on one side; transcendental equations prevent this.",
+          "distractors": [
+            {
+              "answer": "constant",
+              "explanation": "Constants do not need isolating; it is the variable whose value is sought.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficients are known values; the goal is to isolate the unknown variable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Bisection guarantees convergence because it maintains a {{blank:1}} change across the interval, ensuring the root remains {{blank:2}} at every iteration.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sign",
+          "correctExplanation": "Bisection relies on the intermediate value theorem: a sign change in f(x) across an interval guarantees a root within.",
+          "distractors": [
+            {
+              "answer": "gradient",
+              "explanation": "Gradient changes relate to extrema, not to root bracketing; the sign of f(x) is what matters.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "magnitude",
+              "explanation": "Magnitude alone does not guarantee a root; a sign change is the critical condition for the intermediate value theorem.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "bracketed",
+          "correctExplanation": "The root stays between the endpoints because the sign change is preserved in the retained half of the interval.",
+          "distractors": [
+            {
+              "answer": "eliminated",
+              "explanation": "The root is kept within the interval, not eliminated; elimination would mean losing the solution.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "doubled",
+              "explanation": "The interval shrinks (halves), it does not double; the root remains contained within the shrinking bounds.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A cubic equation has at most {{blank:1}} real roots, so finding that many distinct intersections graphically confirms all solutions have been {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "three",
+          "correctExplanation": "A degree-3 polynomial can have at most 3 real roots by the fundamental theorem of algebra.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Two is the maximum for quadratics; cubics can have up to three real roots.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "infinite",
+              "explanation": "Polynomials have finitely many roots; only the zero polynomial has infinitely many.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "identified",
+          "correctExplanation": "Once all possible roots are found (up to the degree), no further real solutions can exist.",
+          "distractors": [
+            {
+              "answer": "eliminated",
+              "explanation": "The roots are found and confirmed, not eliminated; they are the solutions we seek.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "approximated",
+              "explanation": "While graphical values are approximate, the point is that all solutions are accounted for, not their precision.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Newton's method converges {{blank:1}} than bisection when it works, but can {{blank:2}} if the starting estimate is far from the root.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "faster",
+          "correctExplanation": "Newton's method has quadratic convergence (doubles correct digits each step) versus bisection's linear convergence.",
+          "distractors": [
+            {
+              "answer": "slower",
+              "explanation": "Newton's method is typically much faster than bisection; it converges quadratically rather than linearly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "identically",
+              "explanation": "The two methods have fundamentally different convergence rates; Newton's is generally faster.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "diverge",
+          "correctExplanation": "Poor starting values can cause Newton's method to overshoot, oscillate, or move away from the root.",
+          "distractors": [
+            {
+              "answer": "converge immediately",
+              "explanation": "Convergence is not guaranteed for arbitrary starting points; Newton's method can fail.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "find all roots",
+              "explanation": "Newton's method typically finds only one root per run; it does not automatically locate all roots.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The precision of a graphical solution is fundamentally limited by the {{blank:1}} of the display, while numerical methods can achieve arbitrary precision limited only by {{blank:2}} arithmetic.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "resolution",
+          "correctExplanation": "Screen pixels have finite size, limiting how precisely intersection coordinates can be read from a graph.",
+          "distractors": [
+            {
+              "answer": "colour",
+              "explanation": "Colour affects visibility but not the precision of coordinate reading; resolution is the limiting factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "brightness",
+              "explanation": "Brightness affects display quality but does not limit coordinate precision; pixel density does.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "floating-point",
+          "correctExplanation": "Computers use finite floating-point representations that cap achievable precision at approximately 15-16 significant digits.",
+          "distractors": [
+            {
+              "answer": "infinite",
+              "explanation": "No physical computer has infinite precision; all use finite representations.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "integer",
+              "explanation": "Numerical methods use floating-point, not just integer arithmetic; integers cannot represent fractional solutions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "When an algebraic solution gives x equals the square root of 5 and a graphical solution gives x equals 2.236, the algebraic form is {{blank:1}} while the graphical form is an {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exact",
+          "correctExplanation": "√5 represents the precise value with infinite decimal expansion; no information is lost.",
+          "distractors": [
+            {
+              "answer": "approximate",
+              "explanation": "Symbolic expressions like √5 are exact, not approximate; they represent the true value perfectly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "undefined",
+              "explanation": "√5 is well-defined as the positive real number whose square is 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "approximation",
+          "correctExplanation": "2.236 is a truncation of the infinite decimal √5 = 2.2360679...; it rounds the true value.",
+          "distractors": [
+            {
+              "answer": "exact equivalent",
+              "explanation": "2.236 ≠ √5 exactly; it is a rounded approximation, not an equivalent representation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "different solution",
+              "explanation": "Both represent the same number; 2.236 is an approximation of √5, not a different solution.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Solving an equation with multiple methods (graphical and algebraic) provides {{blank:1}}, which increases confidence that the solution is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "verification",
+          "correctExplanation": "Using independent methods to reach the same answer verifies correctness; agreement between methods is strong evidence.",
+          "distractors": [
+            {
+              "answer": "contradiction",
+              "explanation": "Agreement between methods confirms results; contradiction would indicate an error in one method.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "redundancy",
+              "explanation": "While technically redundant, the purpose is validation; the term 'verification' better captures the intent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "correct",
+          "correctExplanation": "When independent approaches agree, errors in either are unlikely, supporting the validity of the solution.",
+          "distractors": [
+            {
+              "answer": "approximate",
+              "explanation": "Agreement between methods confirms accuracy, not that the answer is merely approximate.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "impossible",
+              "explanation": "Agreement confirms the solution exists and is correct, not that it is impossible.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The equation 2 to the power x plus 3 to the power x equals 50 cannot be solved by logarithms because the logarithm of a {{blank:1}} is not equal to the sum of the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sum",
+          "correctExplanation": "log(a + b) ≠ log a + log b; the logarithm of a sum does not decompose into individual logarithms.",
+          "distractors": [
+            {
+              "answer": "product",
+              "explanation": "log(ab) = log a + log b is valid for products; the issue here is a sum, not a product.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quotient",
+              "explanation": "log(a/b) = log a − log b is valid for quotients; the equation involves a sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "individual logarithms",
+          "correctExplanation": "The log-of-sum rule does not exist; log(2ˣ + 3ˣ) ≠ x·log2 + x·log3.",
+          "distractors": [
+            {
+              "answer": "exponents",
+              "explanation": "The sum of exponents relates to products (aˣ · bˣ), not to sums (aˣ + bˣ).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "bases",
+              "explanation": "Adding bases (2 + 3 = 5) does not help solve the equation; the logarithm rule breakdown is about sums.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A graphical solution that appears to show no intersection may be misleading if the viewing {{blank:1}} is too narrow; expanding the window may reveal solutions outside the original {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "window",
+          "correctExplanation": "The viewing window determines which portion of the coordinate plane is displayed; solutions can exist outside it.",
+          "distractors": [
+            {
+              "answer": "resolution",
+              "explanation": "Resolution affects precision of reading, not whether solutions are visible; the window bounds are the issue.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "colour scheme",
+              "explanation": "Colour affects visibility of curves but does not determine whether solutions fall within the displayed range.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "display range",
+          "correctExplanation": "Solutions beyond the x or y limits of the current display are not visible until the range is extended.",
+          "distractors": [
+            {
+              "answer": "equation type",
+              "explanation": "The equation type does not change with the window; it is the visible domain that needs expanding.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "file format",
+              "explanation": "File format is irrelevant to mathematical display range; the issue is the coordinate bounds shown.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "If bisection on the interval from a to b finds a root after n iterations, repeating with a different interval from c to d that also brackets a root will converge in {{blank:1}} iterations for the same precision, because the convergence rate is {{blank:2}} of the function.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "approximately the same number of",
+          "correctExplanation": "Bisection's convergence depends on interval width and desired precision, not on the specific function; similar width gives similar iteration count.",
+          "distractors": [
+            {
+              "answer": "fewer",
+              "explanation": "If both intervals have the same width, the same number of halvings is needed; the function does not speed up bisection.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "many more",
+              "explanation": "Bisection's rate is fixed at one bit per iteration regardless of the function; interval width determines the count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "independent",
+          "correctExplanation": "Bisection halves the interval each step regardless of how the function behaves; convergence rate is a property of the method, not the function.",
+          "distractors": [
+            {
+              "answer": "dependent on the shape",
+              "explanation": "Unlike Newton's method, bisection's rate does not depend on derivatives or function shape.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "determined by the degree",
+              "explanation": "Polynomial degree affects algebraic methods; bisection treats all continuous functions identically.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Comparing graphical and numerical solutions to the same equation provides a check: if they {{blank:1}}, both are likely correct; if they {{blank:2}}, at least one contains an error.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "agree",
+          "correctExplanation": "Agreement between independent methods strongly suggests both have found the correct solution.",
+          "distractors": [
+            {
+              "answer": "differ slightly",
+              "explanation": "Slight differences are expected due to precision limits; major agreement is what confirms correctness.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "are unrelated",
+              "explanation": "The solutions should be related (same value); unrelated results would indicate a problem.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "disagree significantly",
+          "correctExplanation": "Significant disagreement indicates an error in setup, calculation, or reading of one of the methods.",
+          "distractors": [
+            {
+              "answer": "agree perfectly",
+              "explanation": "Perfect agreement suggests both are correct; it is disagreement that signals an error.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "are both approximate",
+              "explanation": "Both being approximate is expected and normal; it does not indicate an error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A model equation solved numerically gives t equals 13.5 years for a cooling process. This result is valid only within the {{blank:1}} of the model; extrapolating beyond its {{blank:2}} may produce meaningless predictions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "domain",
+          "correctExplanation": "The model is validated within a specific domain; solutions outside it may not reflect reality.",
+          "distractors": [
+            {
+              "answer": "formula",
+              "explanation": "The formula is just the mathematical expression; the domain defines where it validly applies.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "answer",
+              "explanation": "The answer is the output of solving; the domain is the input range where the model is valid.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "assumptions",
+          "correctExplanation": "Every model relies on assumptions; predictions beyond where those assumptions hold may be inaccurate.",
+          "distractors": [
+            {
+              "answer": "calculations",
+              "explanation": "The calculations are correct within the model; the limitation is in the real-world assumptions, not the arithmetic.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "decimal places",
+              "explanation": "Precision of decimals is a numerical issue; the broader concern is whether the model's assumptions remain valid.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

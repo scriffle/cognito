@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10A11",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to explore how algebraic and graphical representations connect for quadratic, reciprocal and other non-linear functions.",
+    "generatedAt": "2026-05-17T10:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The graph of every quadratic function is a parabola.",
+      "correct": "True",
+      "correctExplanation": "A quadratic function has the general form y = ax squared + bx + c, and its graph is always a parabola opening upward or downward.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes quadratic graphs can take other shapes such as straight lines or circles, which is incorrect."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The reciprocal function y = 1/x passes through the origin.",
+      "correct": "False",
+      "correctExplanation": "The function y = 1/x is undefined at x = 0, so the graph never passes through the origin; it has a vertical asymptote at x = 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the location of the asymptote with an intercept, overlooking that division by zero is undefined."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A vertical asymptote is a horizontal line that the curve approaches but never touches.",
+      "correct": "False",
+      "correctExplanation": "A vertical asymptote is a vertical line, not a horizontal one. A horizontal asymptote is the horizontal line a graph approaches.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Swaps the definitions of vertical and horizontal asymptotes."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The vertex of a parabola is the point where the curve changes direction.",
+      "correct": "True",
+      "correctExplanation": "The vertex is the turning point of a parabola; it represents either the maximum or minimum value of the quadratic function.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Incorrectly denies that the vertex is the turning point of the parabola."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The graph of y = x cubed is symmetric about the y-axis.",
+      "correct": "False",
+      "correctExplanation": "The cubic function y = x cubed has rotational symmetry about the origin, not reflective symmetry about the y-axis.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses even-function symmetry (y-axis) with odd-function symmetry (origin)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "In the equation y = ax squared, the sign of a determines whether the parabola opens upward or downward.",
+      "correct": "True",
+      "correctExplanation": "When a is positive the parabola opens upward; when a is negative it opens downward.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Incorrectly assumes a different parameter controls the direction of opening."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The graph of y = 1/x occupies all four quadrants of the Cartesian plane.",
+      "correct": "False",
+      "correctExplanation": "The graph of y = 1/x lies only in the first and third quadrants, where x and y share the same sign.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes that because the function extends in both positive and negative directions it must occupy all four quadrants."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The axis of symmetry of y = a(x minus h) squared plus k is the line x = h.",
+      "correct": "True",
+      "correctExplanation": "In turning-point form the axis of symmetry passes through the vertex at x = h, dividing the parabola into two mirror halves.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Incorrectly denies the standard relationship between turning-point form and the axis of symmetry."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "A horizontal asymptote is a line that the graph of a function must eventually cross.",
+      "correct": "False",
+      "correctExplanation": "A horizontal asymptote is a line the graph approaches but need not cross. Some functions cross their horizontal asymptote, but it is not required.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses 'approaches' with 'crosses'; an asymptote describes long-run behaviour, not a crossing requirement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The y-intercept of y = ax squared + bx + c is always equal to c.",
+      "correct": "True",
+      "correctExplanation": "Substituting x = 0 gives y = c, so the y-intercept is the constant term.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Incorrectly assumes the y-intercept depends on coefficients other than the constant term."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The domain of y = 1/x includes all real numbers.",
+      "correct": "False",
+      "correctExplanation": "The domain excludes x = 0 because division by zero is undefined; the domain is all real numbers except zero.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Overlooks the restriction at x = 0 where the function is undefined."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Increasing the absolute value of a in y = ax squared makes the parabola wider.",
+      "correct": "False",
+      "correctExplanation": "Increasing the absolute value of a makes the parabola narrower. A larger absolute value compresses the graph toward the y-axis.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the effect of the coefficient, confusing narrower with wider."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes the graph of a reciprocal function y = 1/x?",
+      "correct": "A curve in two separate branches approaching the x-axis and y-axis without touching either",
+      "correctExplanation": "The reciprocal function has two branches that approach the coordinate axes as asymptotes without intersecting them.",
+      "distractors": [
+        {
+          "answer": "A single continuous curve that crosses both the x-axis and the y-axis at the origin of the plane",
+          "explanation": "The function is undefined at x = 0, so the graph cannot cross the y-axis or pass through the origin."
+        },
+        {
+          "answer": "A parabola opening upward with its vertex located at the origin of the coordinate plane in question",
+          "explanation": "Confuses the reciprocal function with a quadratic function; y = 1/x is not a parabola."
+        },
+        {
+          "answer": "A straight line with a negative gradient passing through multiple quadrants of the Cartesian plane",
+          "explanation": "Confuses the reciprocal function with a linear function; y = 1/x is non-linear."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the vertex of the parabola y = 3(x minus 2) squared plus 5?",
+      "correct": "The point (2, 5), located at the minimum of this upward-opening parabola",
+      "correctExplanation": "In the form y = a(x minus h) squared plus k, the vertex is (h, k). Here h = 2 and k = 5, and since a = 3 is positive, it is a minimum.",
+      "distractors": [
+        {
+          "answer": "The point (negative 2, 5), located at the minimum of this upward-opening parabola",
+          "explanation": "Misreads the sign convention in turning-point form, taking h as negative 2 instead of positive 2."
+        },
+        {
+          "answer": "The point (2, negative 5), located at the maximum of this downward-opening parabola",
+          "explanation": "Negates k incorrectly and misidentifies the turning point as a maximum when a is positive."
+        },
+        {
+          "answer": "The point (5, 2), located at the maximum of this downward-opening parabola instead",
+          "explanation": "Swaps the h and k values and incorrectly labels the point as a maximum."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states both asymptotes of the graph of y = 1/x?",
+      "correct": "A vertical asymptote at x = 0 and a horizontal asymptote at y = 0",
+      "correctExplanation": "The function is undefined at x = 0, giving a vertical asymptote, and approaches zero as x tends to infinity, giving a horizontal asymptote.",
+      "distractors": [
+        {
+          "answer": "A vertical asymptote at y = 0 and a horizontal asymptote at x = 0 instead",
+          "explanation": "Swaps the labels: y = 0 is a horizontal line and x = 0 is a vertical line."
+        },
+        {
+          "answer": "A vertical asymptote at x = 1 and a horizontal asymptote at y = 1 in total",
+          "explanation": "Confuses the asymptote locations with the coefficient in the numerator."
+        },
+        {
+          "answer": "No asymptotes at all because the graph is a single continuous unbounded curve",
+          "explanation": "The function is not continuous across x = 0 and does possess two asymptotes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the effect of a negative value of a on the graph of y = ax squared?",
+      "correct": "The parabola opens downward with a maximum turning point at the origin",
+      "correctExplanation": "A negative leading coefficient reflects the parabola in the x-axis, causing it to open downward with its vertex as a maximum.",
+      "distractors": [
+        {
+          "answer": "The parabola opens upward with a minimum turning point at the origin",
+          "explanation": "Describes the case when a is positive, not negative."
+        },
+        {
+          "answer": "The parabola is reflected in the y-axis and opens to the left of the origin",
+          "explanation": "Confuses reflection in the x-axis with reflection in the y-axis; parabolas of this form open up or down."
+        },
+        {
+          "answer": "The parabola is shifted downward by a units from the standard position overall",
+          "explanation": "Confuses the role of a as a vertical dilation with a vertical translation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the range of the function y = x squared?",
+      "correct": "All real numbers greater than or equal to zero",
+      "correctExplanation": "Squaring any real number produces a non-negative result, so outputs begin at zero and extend to positive infinity.",
+      "distractors": [
+        {
+          "answer": "All real numbers from negative infinity to positive infinity",
+          "explanation": "Confuses domain with range; the domain is all real numbers but the range is restricted."
+        },
+        {
+          "answer": "All real numbers strictly greater than zero excluding zero",
+          "explanation": "Incorrectly excludes zero; when x = 0, y = 0 is part of the range."
+        },
+        {
+          "answer": "All real numbers that are less than or equal to zero",
+          "explanation": "Reverses the range; squaring produces non-negative outputs, not non-positive."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following identifies the symmetry of the graph of y = x cubed?",
+      "correct": "Rotational symmetry of order two about the origin, characteristic of odd functions",
+      "correctExplanation": "The cubic function satisfies f(negative x) = negative f(x), making it odd with point symmetry about the origin.",
+      "distractors": [
+        {
+          "answer": "Reflective symmetry about the y-axis, characteristic of even functions in general",
+          "explanation": "Describes even functions such as y = x squared; the cubic does not have y-axis symmetry."
+        },
+        {
+          "answer": "Reflective symmetry about the x-axis, indicating a downward-opening curve overall",
+          "explanation": "No standard function has x-axis symmetry as that would fail the vertical line test."
+        },
+        {
+          "answer": "Rotational symmetry of order four about the origin, characteristic of periodic functions",
+          "explanation": "Order-four rotational symmetry is unrelated to polynomial functions; the cubic has order two."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the y-intercept of y = 2x squared minus 3x plus 7?",
+      "correct": "The value 7, obtained by substituting x = 0 into the given equation directly",
+      "correctExplanation": "Setting x = 0 gives y = 2(0) squared minus 3(0) plus 7 = 7, so the graph crosses the y-axis at (0, 7).",
+      "distractors": [
+        {
+          "answer": "The value negative 3, which is the coefficient of the linear term in the equation",
+          "explanation": "Confuses the coefficient of x with the y-intercept; the constant term alone determines it."
+        },
+        {
+          "answer": "The value 2, which is the leading coefficient of the quadratic expression overall",
+          "explanation": "The leading coefficient affects the shape and direction of the parabola, not the y-intercept."
+        },
+        {
+          "answer": "The value 6, found by adding all three coefficients of the quadratic expression together",
+          "explanation": "Summing coefficients gives the value at x = 1, not the y-intercept at x = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following graphs has exactly one x-intercept and a minimum turning point?",
+      "correct": "An upward-opening parabola whose vertex lies precisely on the x-axis at that intercept",
+      "correctExplanation": "When the vertex sits on the x-axis the quadratic has a repeated root, giving exactly one x-intercept.",
+      "distractors": [
+        {
+          "answer": "An upward-opening parabola whose vertex lies entirely below the x-axis of the graph",
+          "explanation": "Such a parabola crosses the x-axis at two points, giving two x-intercepts rather than one."
+        },
+        {
+          "answer": "A downward-opening parabola whose vertex lies above the x-axis at its peak value",
+          "explanation": "A downward-opening parabola has a maximum, not a minimum turning point."
+        },
+        {
+          "answer": "A straight line passing through a single point on the x-axis with positive gradient",
+          "explanation": "A straight line is not a parabola and does not possess a turning point of any kind."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following features distinguishes non-linear functions from linear functions?",
+      "correct": "A rate of change that varies across different parts of the domain of the function",
+      "correctExplanation": "Linear functions have a constant gradient, whereas non-linear functions have a rate of change that depends on the input.",
+      "distractors": [
+        {
+          "answer": "A requirement that all output values must be negative for any positive input value",
+          "explanation": "Non-linear functions can produce positive, negative, or zero outputs for any input."
+        },
+        {
+          "answer": "A restriction that the function is defined only for positive values of the variable",
+          "explanation": "Many non-linear functions, such as y = x squared, are defined for all real numbers."
+        },
+        {
+          "answer": "A fixed total of exactly two x-intercepts regardless of the specific equation chosen",
+          "explanation": "The number of x-intercepts varies; quadratics can have zero, one, or two intercepts."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following gives the domain of y = 1/(x minus 3)?",
+      "correct": "All real numbers except x = 3, where the denominator of the expression equals zero",
+      "correctExplanation": "When x = 3 the denominator is zero and the function is undefined, so x = 3 must be excluded.",
+      "distractors": [
+        {
+          "answer": "All real numbers except x = 0, because reciprocal functions are always undefined at zero",
+          "explanation": "The exclusion depends on the specific denominator; here x minus 3 = 0 when x = 3."
+        },
+        {
+          "answer": "All real numbers greater than 3, because the function only exists to the right of three",
+          "explanation": "The function is defined for values both less than and greater than 3; only x = 3 itself is excluded."
+        },
+        {
+          "answer": "All real numbers with no restrictions, because translations do not change any domain rules",
+          "explanation": "Translating y = 1/x shifts the vertical asymptote from x = 0 to x = 3, changing the excluded value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following equations has a graph that is a parabola passing through (0, 0) and (1, 4)?",
+      "correct": "y = 4x squared, verified by substituting the two given coordinate points into the equation",
+      "correctExplanation": "With vertex at the origin the equation is y = ax squared. Substituting (1, 4) gives a = 4.",
+      "distractors": [
+        {
+          "answer": "y = x squared plus 4, verified by noting that the constant 4 matches the second point",
+          "explanation": "This equation gives y = 4 at x = 0 rather than y = 0, so it does not pass through the origin."
+        },
+        {
+          "answer": "y = 4x, verified by noting that 4 times 1 gives 4 as required by the second point",
+          "explanation": "The equation y = 4x is linear and does not produce a parabola through these two points."
+        },
+        {
+          "answer": "y = x to the fourth, verified by noting that 1 to the fourth gives 1 at the point provided",
+          "explanation": "At x = 1 this gives y = 1 not y = 4, and the graph is quartic rather than quadratic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the behaviour of y = 1/x as x takes increasingly large positive values?",
+      "correct": "The output decreases toward zero but never actually equals zero for any finite input",
+      "correctExplanation": "As x increases without bound, 1/x approaches zero from above, getting arbitrarily close but remaining positive.",
+      "distractors": [
+        {
+          "answer": "The output increases without bound as x increases because both quantities grow together",
+          "explanation": "Describes direct proportionality, not the reciprocal function whose outputs shrink as inputs grow."
+        },
+        {
+          "answer": "The output eventually equals zero precisely when x becomes sufficiently large in magnitude",
+          "explanation": "The reciprocal approaches zero asymptotically but never equals zero for any finite value of x."
+        },
+        {
+          "answer": "The output oscillates between positive and negative values as x continues to increase",
+          "explanation": "For positive x, y = 1/x is always positive; there is no oscillation of any kind present."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The graph of a quadratic function is called a {{blank:1}}, and its turning point is called the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "parabola",
+          "correctExplanation": "The U-shaped curve produced by any quadratic function is called a parabola.",
+          "distractors": [
+            {
+              "answer": "hyperbola",
+              "explanation": "A hyperbola is the graph of a reciprocal function, not a quadratic.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "ellipse",
+              "explanation": "An ellipse is a closed oval curve and not the shape of a quadratic graph.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "vertex",
+          "correctExplanation": "The turning point of a parabola is called the vertex.",
+          "distractors": [
+            {
+              "answer": "intercept",
+              "explanation": "An intercept is where the graph crosses an axis, not the turning point.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "asymptote",
+              "explanation": "An asymptote is a line the graph approaches; parabolas have a vertex, not an asymptote at their turning point.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The reciprocal function y = 1/x has a vertical {{blank:1}} at x = 0 and a horizontal {{blank:2}} at y = 0.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "asymptote",
+          "correctExplanation": "At x = 0 the function is undefined, and the graph approaches the line x = 0 without crossing it.",
+          "distractors": [
+            {
+              "answer": "intercept",
+              "explanation": "The graph does not cross the y-axis; x = 0 is an asymptote, not an intercept.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "tangent",
+              "explanation": "A tangent touches a curve at a point; x = 0 is a boundary the graph never reaches.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "asymptote",
+          "correctExplanation": "As x grows large in magnitude, y approaches 0 without reaching it, making y = 0 a horizontal asymptote.",
+          "distractors": [
+            {
+              "answer": "intercept",
+              "explanation": "The graph never touches y = 0, so it is an asymptote rather than an intercept.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "gradient",
+              "explanation": "Gradient describes the slope of a curve, not a line the graph approaches.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "Negating y = x squared to obtain y = negative x squared reflects the graph in the y-axis.",
+      "correct": "False",
+      "correctExplanation": "Multiplying by negative 1 reflects the graph in the x-axis, not the y-axis. A y-axis reflection would require replacing x with negative x.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses reflection in the x-axis (negating outputs) with reflection in the y-axis (negating inputs)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Replacing x with (x minus 3) in y = x squared shifts the graph three units to the left.",
+      "correct": "False",
+      "correctExplanation": "Replacing x with (x minus 3) shifts the graph three units to the right, not left. The vertex moves from (0, 0) to (3, 0).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Misinterprets the subtraction as a leftward shift, when (x minus h) always shifts right by h units."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The graphs of y = 2/x and y = 1/x share the same pair of asymptotes.",
+      "correct": "True",
+      "correctExplanation": "Both functions are undefined at x = 0 and approach y = 0 for large x, so both have asymptotes at x = 0 and y = 0.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes the numerator shifts an asymptote, when it only stretches the branches vertically."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "A quadratic with a positive discriminant has no x-intercepts.",
+      "correct": "False",
+      "correctExplanation": "A positive discriminant means the quadratic has two distinct real roots and therefore two x-intercepts.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the relationship between the sign of the discriminant and the number of real roots."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Adding a positive constant k to y = x squared translates the vertex to the right by k units.",
+      "correct": "False",
+      "correctExplanation": "Adding k translates the vertex upward by k units, not to the right. Horizontal translation requires modifying the x term.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses vertical translation (adding to the whole function) with horizontal translation (modifying x)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The graphs of y = 1/x and y = negative 1/x are reflections of each other in the y-axis.",
+      "correct": "False",
+      "correctExplanation": "They are reflections in the x-axis, not the y-axis. Negating the function reflects outputs across the x-axis.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses x-axis reflection (negating the function) with y-axis reflection (negating the input)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A cubic function can have at most three x-intercepts.",
+      "correct": "True",
+      "correctExplanation": "A cubic polynomial has degree 3 and therefore at most three real roots, each corresponding to an x-intercept.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses the degree of the polynomial with the number of turning points rather than roots."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The function y = 1/(x minus 2) has its vertical asymptote at x = 2.",
+      "correct": "True",
+      "correctExplanation": "Setting x minus 2 = 0 gives x = 2, where the function is undefined, creating a vertical asymptote.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes the asymptote stays at x = 0 regardless of the horizontal translation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why y = (x minus 1) squared plus 4 has no x-intercepts?",
+      "correct": "The vertex at (1, 4) is the lowest point and the parabola opens upward, so all y-values exceed zero",
+      "correctExplanation": "Since the minimum y-value is 4 and the parabola opens upward, the graph lies entirely above the x-axis.",
+      "distractors": [
+        {
+          "answer": "The vertex at (1, 4) is the highest point and the parabola opens downward, curving away from the axis",
+          "explanation": "The coefficient of the squared term is positive, meaning the parabola opens upward, not downward."
+        },
+        {
+          "answer": "The equation contains no constant term outside the bracket, eliminating any possible crossing of y = 0",
+          "explanation": "The constant 4 is present and determines the minimum y-value, which is above the x-axis."
+        },
+        {
+          "answer": "The axis of symmetry at x = 1 prevents the graph from extending far enough to cross the x-axis",
+          "explanation": "The axis of symmetry determines left-right balance, not whether the graph reaches the x-axis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly classifies the transformation from y = x squared to y = 3x squared?",
+      "correct": "A vertical dilation by factor 3 that narrows the parabola while keeping the vertex at the origin",
+      "correctExplanation": "Multiplying x squared by 3 stretches every y-value by factor 3, compressing the parabola horizontally in appearance.",
+      "distractors": [
+        {
+          "answer": "A horizontal translation of 3 units to the right, which shifts the vertex away from the origin",
+          "explanation": "A horizontal shift would appear as (x minus 3) squared, not as a coefficient multiplying x squared."
+        },
+        {
+          "answer": "A vertical translation of 3 units upward, which raises the entire parabola above the origin",
+          "explanation": "A vertical shift would add 3 to the whole expression, producing x squared plus 3 instead."
+        },
+        {
+          "answer": "A horizontal dilation by factor 3 that makes the parabola wider and flatter than the original",
+          "explanation": "A factor of 3 applied to x squared narrows the graph; widening requires a factor between 0 and 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains the difference between y = x squared and y = x cubed for negative x?",
+      "correct": "Squaring negative x gives a positive output whereas cubing negative x preserves the negative sign",
+      "correctExplanation": "A negative number squared is positive, but a negative number cubed remains negative.",
+      "distractors": [
+        {
+          "answer": "Both squaring and cubing negative x produce positive outputs of exactly the same magnitude",
+          "explanation": "Cubing preserves the negative sign, so the cubic produces negative outputs for negative inputs."
+        },
+        {
+          "answer": "Squaring negative x gives a negative output whereas cubing negative x gives a positive output",
+          "explanation": "Reverses the actual behaviour: squaring gives positive results and cubing preserves the negative."
+        },
+        {
+          "answer": "Both functions are undefined for negative x because exponents require non-negative base values",
+          "explanation": "Polynomial functions are defined for all real numbers, including negative values of the variable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following describes the effect of transforming y = 1/x to y = 1/x plus 3?",
+      "correct": "The graph shifts 3 units upward and the horizontal asymptote moves from y = 0 to y = 3",
+      "correctExplanation": "Adding 3 shifts every point up by 3 units, relocating the horizontal asymptote accordingly.",
+      "distractors": [
+        {
+          "answer": "The graph shifts 3 units to the right and the vertical asymptote moves from x = 0 to x = 3",
+          "explanation": "A horizontal shift would require subtracting 3 inside the denominator, not adding outside."
+        },
+        {
+          "answer": "The graph is stretched vertically by factor 3 while both of the original asymptotes stay unchanged",
+          "explanation": "A vertical stretch multiplies the function by 3; adding 3 causes a translation instead."
+        },
+        {
+          "answer": "The graph is reflected in the horizontal line y = 3 while both asymptotes remain at the axes",
+          "explanation": "Adding a constant translates the graph; it does not produce any kind of reflection."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains how the discriminant determines the number of x-intercepts of a quadratic?",
+      "correct": "Positive gives two intercepts, zero gives exactly one, and negative gives no real intercepts",
+      "correctExplanation": "The discriminant indicates whether the quadratic formula produces two, one, or no real solutions.",
+      "distractors": [
+        {
+          "answer": "Positive gives exactly one intercept, zero gives no intercepts, and negative gives two intercepts",
+          "explanation": "Reverses the relationship; a positive discriminant yields two distinct real roots, not one."
+        },
+        {
+          "answer": "Positive gives no intercepts at all because the parabola sits entirely above the horizontal axis",
+          "explanation": "A positive discriminant means the quadratic crosses the axis at two distinct points."
+        },
+        {
+          "answer": "The discriminant has no effect on intercepts and only determines the direction of the opening",
+          "explanation": "The direction of opening is controlled by the sign of a, not by the discriminant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following pairs consists of a quadratic function and a reciprocal function respectively?",
+      "correct": "y = 2x squared minus x plus 1 paired with y = 5/(x plus 2) as the reciprocal expression",
+      "correctExplanation": "The first is a degree-2 polynomial (quadratic) and the second has the variable in the denominator (reciprocal).",
+      "distractors": [
+        {
+          "answer": "y = 3x plus 4 paired with y = 5/(x plus 2), where the first equation is actually linear",
+          "explanation": "The first equation is linear (degree 1), not quadratic, so this pair is incorrect."
+        },
+        {
+          "answer": "y = 2x squared minus x plus 1 paired with y = x cubed minus 2x, which is a cubic function",
+          "explanation": "The second equation is a cubic polynomial, not a reciprocal function of any kind."
+        },
+        {
+          "answer": "y = 3x plus 4 paired with y = x cubed minus 2x, which are linear and cubic respectively",
+          "explanation": "Neither equation is quadratic or reciprocal; the first is linear and the second is cubic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the reciprocal function y = 1/x can never produce an output of zero?",
+      "correct": "A fraction with numerator 1 divided by any finite non-zero denominator is always non-zero",
+      "correctExplanation": "For a fraction to equal zero its numerator must be zero, but the numerator of 1/x is always 1.",
+      "distractors": [
+        {
+          "answer": "The function does produce zero at x = 0, but that specific input is excluded from the domain",
+          "explanation": "At x = 0 the function is undefined, not zero; 1/0 is not a valid computation."
+        },
+        {
+          "answer": "The function produces zero for extremely large negative values beyond the standard graphing range",
+          "explanation": "For any finite x, no matter how large, 1/x is non-zero; it approaches but never reaches zero."
+        },
+        {
+          "answer": "The function equals zero at x = 1 where dividing 1 by itself cancels the numerator completely",
+          "explanation": "Dividing 1 by 1 gives 1, not 0; the numerator and denominator do not cancel to zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following equations matches a parabola translated 2 units left and 5 units down from y = x squared?",
+      "correct": "y = (x plus 2) squared minus 5, with vertex relocated to (negative 2, negative 5)",
+      "correctExplanation": "Replacing x with (x plus 2) shifts left 2 units, and subtracting 5 shifts down 5 units.",
+      "distractors": [
+        {
+          "answer": "y = (x minus 2) squared minus 5, with vertex relocated to (2, negative 5) instead",
+          "explanation": "This shifts the parabola 2 units to the right, not to the left as required."
+        },
+        {
+          "answer": "y = (x plus 2) squared plus 5, with vertex relocated to (negative 2, 5) instead",
+          "explanation": "This shifts left correctly but moves the parabola 5 units up rather than down."
+        },
+        {
+          "answer": "y = (x minus 5) squared plus 2, with vertex relocated to (5, 2) from the origin",
+          "explanation": "Applies incorrect magnitudes and directions for both of the required translations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why y = x squared plus 1 has no x-intercepts?",
+      "correct": "The smallest value of x squared is 0, so x squared plus 1 is always at least 1",
+      "correctExplanation": "Since x squared is non-negative, adding 1 ensures every y-value is at least 1, and the graph stays above y = 0.",
+      "distractors": [
+        {
+          "answer": "The leading coefficient is positive, and any positive coefficient prevents x-intercepts entirely",
+          "explanation": "A positive coefficient only means upward opening; intercepts can still exist if vertex is below the axis."
+        },
+        {
+          "answer": "The discriminant is undefined for this quadratic, so no real roots can be determined at all",
+          "explanation": "The discriminant is 0 minus 4 = negative 4, which is defined but negative, confirming no real roots."
+        },
+        {
+          "answer": "The constant shifts the axis of symmetry away from x = 0, preventing any crossing of the axis",
+          "explanation": "The constant shifts the graph vertically, not the axis of symmetry, which remains at x = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following describes the end behaviour of y = negative 2x squared plus 3x minus 1?",
+      "correct": "As x approaches positive or negative infinity, y decreases without bound toward negative infinity",
+      "correctExplanation": "The negative leading term dominates for large x, driving y toward negative infinity in both directions.",
+      "distractors": [
+        {
+          "answer": "As x approaches positive or negative infinity, y increases without bound toward positive infinity",
+          "explanation": "This describes a positive leading coefficient; the negative coefficient here forces y downward."
+        },
+        {
+          "answer": "As x approaches positive infinity y increases, and as x approaches negative infinity y decreases",
+          "explanation": "This describes an odd-degree function with positive leading coefficient, not a negative quadratic."
+        },
+        {
+          "answer": "As x grows large in magnitude, y approaches the horizontal asymptote at y = negative 1",
+          "explanation": "Polynomial functions do not have horizontal asymptotes; that behaviour applies to rational functions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why scaling 1/x by a constant a changes steepness but not asymptote positions?",
+      "correct": "The constant scales outputs without affecting where the denominator is zero or where y approaches zero",
+      "correctExplanation": "Multiplying by a stretches the branches vertically, but x = 0 remains undefined and y still approaches 0.",
+      "distractors": [
+        {
+          "answer": "The constant shifts the graph horizontally, preserving the vertical asymptote while moving the curve",
+          "explanation": "A multiplicative constant does not shift the graph horizontally; it dilates vertically only."
+        },
+        {
+          "answer": "The constant only affects the domain by restricting the set of valid input values for the function",
+          "explanation": "Multiplying by a constant does not change the domain; x = 0 remains the only excluded value."
+        },
+        {
+          "answer": "The constant moves both asymptotes by a units in the direction of the positive vertical axis",
+          "explanation": "Multiplying does not translate asymptotes; only adding shifts the horizontal asymptote."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly describes the turning points of a cubic function?",
+      "correct": "A cubic can have zero turning points or exactly two, depending on its coefficients",
+      "correctExplanation": "A cubic either increases monotonically (zero) or has one local max and one local min (two).",
+      "distractors": [
+        {
+          "answer": "A cubic always has exactly one turning point located at its point of inflection",
+          "explanation": "An inflection point is not a turning point; the cubic may have zero or two turning points."
+        },
+        {
+          "answer": "A cubic always has exactly three turning points matching its three possible real roots",
+          "explanation": "Turning points and roots are different features; their numbers are independent of each other."
+        },
+        {
+          "answer": "A cubic never has any turning points because it extends from negative to positive infinity",
+          "explanation": "Extending to both infinities does not prevent local maxima and minima from occurring."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "In y = a(x minus h) squared plus k, the parameter h controls the {{blank:1}} translation and k controls the {{blank:2}} translation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "horizontal",
+          "correctExplanation": "The parameter h shifts the vertex left or right along the x-axis.",
+          "distractors": [
+            {
+              "answer": "vertical",
+              "explanation": "Vertical translation is controlled by k, not h.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "Translations in turning-point form are strictly horizontal or vertical.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "vertical",
+          "correctExplanation": "The parameter k shifts the vertex up or down along the y-axis.",
+          "distractors": [
+            {
+              "answer": "horizontal",
+              "explanation": "Horizontal translation is controlled by h, not k.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "rotational",
+              "explanation": "Turning-point form does not involve rotation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "When a is between 0 and 1 in y = ax squared, the parabola is {{blank:1}} than y = x squared, and when a exceeds 1 it is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "wider",
+          "correctExplanation": "A fractional positive coefficient makes the parabola appear wider.",
+          "distractors": [
+            {
+              "answer": "narrower",
+              "explanation": "Narrower occurs when a exceeds 1, not when a is between 0 and 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "taller",
+              "explanation": "Taller is not the standard description for this transformation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "narrower",
+          "correctExplanation": "A coefficient greater than 1 makes the parabola appear narrower.",
+          "distractors": [
+            {
+              "answer": "wider",
+              "explanation": "Wider occurs when a is between 0 and 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "shorter",
+              "explanation": "Shorter is not the standard description for this transformation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The discriminant of ax squared plus bx plus c = 0 is b squared minus {{blank:1}}, and a negative discriminant means no {{blank:2}} solutions exist.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4ac",
+          "correctExplanation": "The discriminant formula is b squared minus 4ac.",
+          "distractors": [
+            {
+              "answer": "2ac",
+              "explanation": "Misremembers the coefficient as 2 instead of 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4bc",
+              "explanation": "Substitutes b for a, confusing coefficient roles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "real",
+          "correctExplanation": "A negative discriminant requires the square root of a negative, which has no real value.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "The issue is absence of all real solutions, not just positive ones.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "integer",
+              "explanation": "The discriminant determines real vs non-real, not integer vs non-integer.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The function y = 1/(x minus 4) has a vertical asymptote at x = {{blank:1}} and a horizontal asymptote at y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Setting x minus 4 equal to zero gives x = 4.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Assumes the asymptote stays at the origin rather than shifting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "Negates the constant instead of solving x minus 4 = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "As x grows large, 1/(x minus 4) approaches zero.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Confuses the vertical asymptote value with the horizontal one.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Mistakes the numerator for the asymptote level.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "An upward-opening parabola with vertex below the x-axis has {{blank:1}} x-intercepts, while one with vertex above has {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "two",
+          "correctExplanation": "An upward-opening parabola with vertex below the axis must cross it at two points.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "A vertex below with upward opening guarantees two crossings.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "one",
+              "explanation": "One intercept requires the vertex exactly on the axis.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "An upward-opening parabola with vertex above the axis lies entirely above y = 0.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Two intercepts require the vertex on or below the axis.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "one",
+              "explanation": "One intercept requires the vertex exactly on the axis.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The graph of y = x cubed has {{blank:1}} symmetry about the origin, classifying it as an {{blank:2}} function.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "rotational",
+          "correctExplanation": "The cubic satisfies f(negative x) = negative f(x), giving 180-degree rotational symmetry.",
+          "distractors": [
+            {
+              "answer": "reflective",
+              "explanation": "Reflective y-axis symmetry applies to even functions, not cubics.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "translational",
+              "explanation": "Translational symmetry applies to periodic functions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "odd",
+          "correctExplanation": "A function satisfying f(negative x) = negative f(x) is classified as odd.",
+          "distractors": [
+            {
+              "answer": "even",
+              "explanation": "Even functions satisfy f(negative x) = f(x) with y-axis symmetry.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "periodic",
+              "explanation": "Periodic functions repeat at regular intervals; cubics do not.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Amir sketches y = (x plus 1) squared minus 9 and finds x-intercepts at x = 2 and x = negative 4.",
+      "correct": "True",
+      "correctExplanation": "Setting y = 0 gives (x plus 1) squared = 9, so x plus 1 = 3 or negative 3, yielding x = 2 and x = negative 4.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Performs the algebra incorrectly or misidentifies the roots by confusing signs."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Priya claims that y = 3/(x plus 5) has a horizontal asymptote at y = 3.",
+      "correct": "False",
+      "correctExplanation": "As x grows large, 3/(x plus 5) approaches 0, not 3. The numerator stretches the curve but does not shift the asymptote.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the numerator with a vertical translation, placing the asymptote at y = 3 incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Jade throws a ball from a platform. Height is h = negative 5t squared plus 20t plus 6. Which one of the following gives the maximum height?",
+      "correct": "26 metres, found using the vertex at t = 2 seconds after launch from the platform",
+      "correctExplanation": "The vertex is at t = negative 20/(2 times negative 5) = 2. Substituting gives h = negative 20 plus 40 plus 6 = 26.",
+      "distractors": [
+        {
+          "answer": "21 metres, found by substituting t = 1 into the height equation for the projectile ball",
+          "explanation": "Substituting t = 1 gives h = negative 5 plus 20 plus 6 = 21, but the maximum occurs at t = 2."
+        },
+        {
+          "answer": "6 metres, identified as the constant term representing only the initial platform height value",
+          "explanation": "The constant 6 is the height at t = 0, not the maximum height during flight."
+        },
+        {
+          "answer": "40 metres, found by doubling the coefficient of the linear term in the height equation",
+          "explanation": "Doubling the linear coefficient has no physical meaning for finding maximum height."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Marcus models bacteria that double every hour from an initial count of 500. Which one of the following functions represents the population P after t hours?",
+      "correct": "P = 500 times 2 to the power of t, representing exponential growth with base 2",
+      "correctExplanation": "Doubling every hour means the base is 2, the initial value is 500, and the exponent is t.",
+      "distractors": [
+        {
+          "answer": "P = 500 plus 2t, representing linear growth at a constant rate of 2 per hour",
+          "explanation": "Adding 2t models linear growth of 2 bacteria per hour, not a doubling."
+        },
+        {
+          "answer": "P = 500t squared, representing quadratic growth proportional to the square of time",
+          "explanation": "Quadratic growth does not model doubling; exponential growth outpaces any polynomial."
+        },
+        {
+          "answer": "P = 500/t, representing reciprocal decay as available resources are consumed over time",
+          "explanation": "A reciprocal function would cause the population to shrink, contradicting the doubling."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Lila finds that light intensity follows I = 120/d squared where d is distance. Which one of the following identifies the function type?",
+      "correct": "An inverse-square function whose output approaches zero as distance increases indefinitely",
+      "correctExplanation": "Intensity decreases proportionally to 1/d squared, with horizontal asymptote at I = 0.",
+      "distractors": [
+        {
+          "answer": "A linear function with negative gradient that reaches zero intensity at distance 120 metres",
+          "explanation": "The relationship is non-linear; intensity decreases much faster near the source."
+        },
+        {
+          "answer": "A quadratic function with a minimum turning point located at distance 120 from the source",
+          "explanation": "I = 120/d squared is a rational function, not a quadratic with a turning point."
+        },
+        {
+          "answer": "A simple reciprocal identical to y = 1/d with the constant 120 having no graphical effect",
+          "explanation": "The d squared denominator makes this inverse-square, decaying faster than simple reciprocal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Sam models a water fountain as y = negative 0.5(x minus 3) squared plus 4.5. At what horizontal distance does the water hit the ground?",
+      "correct": "x = 6 metres, from setting y = 0 and solving for the relevant positive root value",
+      "correctExplanation": "Setting y = 0 gives (x minus 3) squared = 9, so x = 6 or x = 0. The water lands at x = 6.",
+      "distractors": [
+        {
+          "answer": "x = 3 metres, identified as the vertex location where the maximum height is reached",
+          "explanation": "The vertex at x = 3 is the maximum height, not the landing point of the arc."
+        },
+        {
+          "answer": "x = 4.5 metres, read directly from the constant k in the turning-point equation given",
+          "explanation": "The value 4.5 is the maximum height in metres, not the horizontal landing distance."
+        },
+        {
+          "answer": "x = 9 metres, from doubling the vertex x-coordinate to locate the second intercept point",
+          "explanation": "Doubling the vertex gives the second intercept only when the first is at x = 0; here x = 6 is correct."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Kofi models journey time as T = 240/S where S is speed in km/h. Which one of the following describes the graph of T against S?",
+      "correct": "A reciprocal curve in the first quadrant, steep at low speeds and flattening at high speeds",
+      "correctExplanation": "Since T = 240/S is reciprocal with both positive, time decreases hyperbolically as speed increases.",
+      "distractors": [
+        {
+          "answer": "A straight line with negative gradient passing through T = 240 on the vertical axis of the graph",
+          "explanation": "Inverse variation produces a curve, not a straight line; linear decrease would be constant."
+        },
+        {
+          "answer": "A downward-opening parabola with its vertex at the point where speed equals 240 kilometres per hour",
+          "explanation": "The relationship is reciprocal, not quadratic; there is no turning point in this model."
+        },
+        {
+          "answer": "A horizontal line at T = 240 because the product of time and speed is constant at that value",
+          "explanation": "While T times S = 240 is constant, T itself varies with S; the graph is a curve."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Anika launches a rocket with height h = negative 4.9t squared plus 29.4t. When does the rocket return to the ground?",
+      "correct": "At t = 6 seconds, from factorising and selecting the non-zero root of the equation",
+      "correctExplanation": "Factorising gives t = 0 (launch) and t = 29.4/4.9 = 6 (landing).",
+      "distractors": [
+        {
+          "answer": "At t = 3 seconds, from using the vertex formula to locate the time of maximum height reached",
+          "explanation": "The vertex at t = 3 gives the time of maximum height, not the landing time."
+        },
+        {
+          "answer": "At t = 29.4 seconds, from reading the coefficient of t directly as the total flight duration",
+          "explanation": "The coefficient 29.4 represents the initial velocity, not the duration of flight."
+        },
+        {
+          "answer": "At t = 4.9 seconds, from taking the absolute value of the leading coefficient as the time",
+          "explanation": "The coefficient 4.9 relates to gravitational acceleration, not the landing time."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Rosa models production cost as C = 500/x plus 2x. Which one of the following describes the graph of C against positive x?",
+      "correct": "A curve that falls steeply, reaches a minimum value, then increases steadily as x grows",
+      "correctExplanation": "The 500/x term dominates for small x while 2x dominates for large x, creating a U-shape with a minimum.",
+      "distractors": [
+        {
+          "answer": "A straight line with positive gradient that increases at a constant rate as x increases",
+          "explanation": "The 500/x term makes the function non-linear; it cannot be a straight line."
+        },
+        {
+          "answer": "A curve that rises rapidly at first and then levels off toward a horizontal asymptote",
+          "explanation": "The 2x term causes C to increase without bound, so there is no horizontal asymptote."
+        },
+        {
+          "answer": "A downward-opening parabola with a maximum cost occurring at the vertex of the curve",
+          "explanation": "The graph has a minimum, not a maximum, and is not a standard parabola."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Jarrah graphs y = (x minus 1)(x minus 5). Which one of the following states the axis of symmetry and y-intercept?",
+      "correct": "Axis at x = 3 and y-intercept at 5, since substituting x = 0 gives (negative 1)(negative 5)",
+      "correctExplanation": "The axis is midway between roots: (1 + 5)/2 = 3. Setting x = 0 gives (negative 1)(negative 5) = 5.",
+      "distractors": [
+        {
+          "answer": "Axis at x = 3 and y-intercept at negative 5, from multiplying the root values 1 and 5 together",
+          "explanation": "The axis is correct, but (negative 1)(negative 5) = positive 5, not negative 5."
+        },
+        {
+          "answer": "Axis at x = 2.5 and y-intercept at 5, from averaging the roots incorrectly as (1 + 4)/2",
+          "explanation": "The midpoint of 1 and 5 is 3, not 2.5."
+        },
+        {
+          "answer": "Axis at x = 6 and y-intercept at negative 5, from summing the roots for the axis calculation",
+          "explanation": "The axis uses the average of roots, not their sum."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Linh graphs y = x cubed minus 3x and observes turning points. Which one of the following identifies their locations?",
+      "correct": "A local maximum near x = negative 1 and a local minimum near x = 1 on the curve",
+      "correctExplanation": "Setting 3x squared minus 3 = 0 gives x = negative 1 and x = 1 as the turning point locations.",
+      "distractors": [
+        {
+          "answer": "A single turning point at x = 0, which is the inflection point of the cubic graph only",
+          "explanation": "The inflection is at x = 0, but the cubic has two distinct turning points as well."
+        },
+        {
+          "answer": "Turning points at x = negative 3 and x = 3, coinciding with the x-intercepts of the graph",
+          "explanation": "The x-intercepts and turning points are different features with different locations."
+        },
+        {
+          "answer": "No turning points at all because all cubic functions increase monotonically from left to right",
+          "explanation": "Cubics with certain coefficients can have two turning points; only y = x cubed has none."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Will models medication concentration as C = 50/(t plus 1) where t is hours. What is the concentration after 4 hours?",
+      "correct": "10 units, from computing 50 divided by 5 after substituting t = 4 into the expression",
+      "correctExplanation": "Substituting t = 4 gives C = 50/(4 + 1) = 50/5 = 10.",
+      "distractors": [
+        {
+          "answer": "12.5 units, from dividing 50 by 4 alone without adding the 1 to the denominator first",
+          "explanation": "Omits the plus 1 in the denominator, dividing by 4 instead of 5."
+        },
+        {
+          "answer": "50 units, because the concentration remains at the initial level regardless of elapsed time",
+          "explanation": "The function is decreasing; concentration drops over time as the denominator grows."
+        },
+        {
+          "answer": "46 units, from subtracting 4 from the initial concentration of 50 as a linear decay model",
+          "explanation": "Subtracting time assumes linear decay, not reciprocal decay as modelled here."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Yen finds the x-intercepts of y = 2(x plus 3) squared minus 8. Which one of the following gives the correct values?",
+      "correct": "x = negative 1 and x = negative 5, from solving (x plus 3) squared = 4",
+      "correctExplanation": "Setting y = 0 gives (x plus 3) squared = 4, so x plus 3 = 2 or negative 2, yielding x = negative 1 and negative 5.",
+      "distractors": [
+        {
+          "answer": "x = 1 and x = 5, from ignoring the negative signs present in the turning-point form used",
+          "explanation": "Drops the negative signs, producing incorrect positive roots."
+        },
+        {
+          "answer": "x = negative 3 only, claiming the vertex is the sole point touching the x-axis of the graph",
+          "explanation": "The vertex at (negative 3, negative 8) is below the x-axis, so there are two intercepts."
+        },
+        {
+          "answer": "x = negative 3 plus root 8 and negative 3 minus root 8, giving irrational values exclusively",
+          "explanation": "Incorrect simplification; proper algebra gives integer solutions at negative 1 and negative 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Mia models resistance as R = 100/A where A is cross-sectional area. What happens to R when area is doubled?",
+      "correct": "Resistance is halved, because doubling the denominator divides the output by two",
+      "correctExplanation": "If A becomes 2A, then R = 100/(2A) = (1/2)(100/A), so resistance is halved.",
+      "distractors": [
+        {
+          "answer": "Resistance is doubled, because increasing the area increases resistance proportionally overall",
+          "explanation": "Resistance varies inversely with area; increasing area decreases resistance."
+        },
+        {
+          "answer": "Resistance is quartered, because the area appears as a squared term in the denominator",
+          "explanation": "The denominator is A, not A squared; quartering applies to inverse-square relationships."
+        },
+        {
+          "answer": "Resistance stays unchanged, because the constant 100 determines resistance independently of area",
+          "explanation": "The constant sets proportionality, but resistance still depends on area."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "A ball with height h = negative 5t squared plus 30t reaches maximum height at t = {{blank:1}} seconds and lands at t = {{blank:2}} seconds.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The vertex is at t = negative 30/(2 times negative 5) = 3.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Confuses the landing time with the time of maximum height.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Takes the coefficient 5 as the time.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "Setting h = 0 gives t(negative 5t plus 30) = 0, so t = 0 or t = 6.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Confuses maximum height time with landing time.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "Takes the coefficient of t directly instead of solving.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "The graph of y = 1/(x minus 2) plus 3 has a vertical asymptote at x = {{blank:1}} and a horizontal asymptote at y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The denominator x minus 2 equals zero when x = 2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Confuses the vertical shift with the asymptote location.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 2",
+              "explanation": "Negates the constant instead of solving x minus 2 = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The plus 3 shifts the horizontal asymptote from y = 0 to y = 3.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Ignores the vertical translation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Confuses the horizontal shift with the vertical one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Amir graphs y = (x minus 4)(x plus 2). The x-intercepts are at x = {{blank:1}} and x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Setting x minus 4 = 0 gives x = 4.",
+          "distractors": [
+            {
+              "answer": "negative 4",
+              "explanation": "Negates the root from (x minus 4).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Confuses the root of the second factor with the first.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 2",
+          "correctExplanation": "Setting x plus 2 = 0 gives x = negative 2.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Forgets to negate when solving x plus 2 = 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "Swaps the roots from the two factors.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A cooling curve T = 80/(t plus 2) plus 20 gives T = {{blank:1}} at t = 0, and T approaches {{blank:2}} as time increases.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "T = 80/2 plus 20 = 40 plus 20 = 60.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "Takes the numerator as the initial temperature.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "Adds 80 and 20 without computing 80/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "20",
+          "correctExplanation": "As t grows large, 80/(t plus 2) approaches 0, so T approaches 20.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Ignores the added constant 20.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "Confuses the numerator with the long-run value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The parabola y = negative 2(x minus 1) squared plus 18 has a {{blank:1}} turning point with extreme y-value {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "maximum",
+          "correctExplanation": "The negative coefficient opens the parabola downward, making the vertex a maximum.",
+          "distractors": [
+            {
+              "answer": "minimum",
+              "explanation": "A minimum requires a positive leading coefficient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "inflection",
+              "explanation": "Inflection points occur in cubics; quadratics have maxima or minima.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "18",
+          "correctExplanation": "The k-value in turning-point form gives the maximum as 18.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Confuses the h-value with the extreme y-value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 2",
+              "explanation": "Takes the leading coefficient as the extreme value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Priya models growth as P = 200 times 3 to the power of t. After 2 hours P = {{blank:1}}, and at t = 0 the population is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1800",
+          "correctExplanation": "P = 200 times 3 squared = 200 times 9 = 1800.",
+          "distractors": [
+            {
+              "answer": "600",
+              "explanation": "Computes 200 times 3 instead of 200 times 9.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1200",
+              "explanation": "Computes 200 times 6 instead of 200 times 9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "200",
+          "correctExplanation": "At t = 0, 3 to the power of 0 = 1, so P = 200.",
+          "distractors": [
+            {
+              "answer": "600",
+              "explanation": "Substitutes t = 1 instead of t = 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Assumes 3 to the power of 0 equals 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Marcus rewrites y = x squared minus 6x plus 9 as y = (x minus {{blank:1}}) squared, so the parabola has {{blank:2}} x-intercept(s).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "Factorising gives (x minus 3) squared.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Takes the coefficient of x directly instead of halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "Takes the constant term instead of its square root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "one",
+          "correctExplanation": "A perfect square touches the x-axis at exactly one point.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Assumes all quadratics have two intercepts.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "A perfect square equal to zero does touch the axis.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Jade evaluates y = 10/(x minus 5) at x = 7, obtaining y = {{blank:1}}, confirming the point (7, {{blank:2}}) is on the graph.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "y = 10/(7 minus 5) = 10/2 = 5.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Omits the subtraction in the denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Confuses the denominator with the output.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "The output at x = 7 is 5.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Uses the numerator instead of the quotient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Uses the denominator instead of the quotient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Comparing y = x squared with y = (x minus 4) squared plus 1, the vertex moved {{blank:1}} units right and {{blank:2}} unit up.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "The h-value shifts the vertex from (0, 0) to (4, 1).",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Confuses the vertical shift with the horizontal shift.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "Negates the horizontal shift value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "The k-value of 1 shifts the vertex up by 1.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Confuses the horizontal shift with the vertical.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Adds h and k together.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "For y = negative x cubed, as x increases y heads toward {{blank:1}} infinity, and as x decreases y heads toward {{blank:2}} infinity.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative",
+          "correctExplanation": "For large positive x, negative x cubed is large and negative.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "Without the negative, x cubed increases; the negative reverses this.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The function grows without bound, not toward zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "For large negative x, x cubed is large negative, so negative x cubed is large positive.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "Assumes both ends go the same direction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The function grows without bound.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Kofi graphs y = 2 to the power of x. At x = 3 the output is {{blank:1}}, and the horizontal asymptote is y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "2 cubed = 8.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Computes 2 times 3 instead of 2 cubed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "Computes 3 squared instead of 2 cubed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "As x decreases without bound, 2 to the power of x approaches 0.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Confuses the y-intercept with the asymptote.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Confuses the base with the asymptote.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Rosa computes R = 60/d at d = 10 and d = 20, obtaining R = {{blank:1}} and R = {{blank:2}} respectively.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "60/10 = 6.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "Takes the numerator without dividing.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "Confuses the input with the output.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "60/20 = 3.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Uses the value at d = 10 again.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "Confuses 60/2 with 60/20.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that changing k in y = a(x minus h) squared plus k affects the width of the parabola. Which one of the following evaluates this claim?",
+      "correct": "Incorrect, because k translates vertically without altering width, which depends on a alone",
+      "correctExplanation": "The parameter k shifts the vertex up or down; width is determined by the absolute value of a.",
+      "distractors": [
+        {
+          "answer": "Correct, because increasing k stretches the parabola vertically making it appear wider overall",
+          "explanation": "Vertical translation does not stretch the curve; it merely repositions without changing shape."
+        },
+        {
+          "answer": "Correct, because k and a work together to determine both position and width simultaneously",
+          "explanation": "Width depends only on a; k and a have independent effects on the graph."
+        },
+        {
+          "answer": "Incorrect, because k controls horizontal position of the vertex rather than vertical position",
+          "explanation": "Confuses k with h; k controls vertical position and h controls horizontal position."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A quadratic and a reciprocal model both fit data for small positive x. Which one of the following is the most important factor for choosing between them?",
+      "correct": "Their behaviour for large x: the quadratic diverges while the reciprocal approaches zero",
+      "correctExplanation": "For prediction beyond observed data, long-term behaviour matters: quadratics diverge while reciprocals converge.",
+      "distractors": [
+        {
+          "answer": "The number of parameters in each model, since fewer parameters always indicates better reliability",
+          "explanation": "Fewer parameters is a preference, but end behaviour matching the phenomenon is more critical."
+        },
+        {
+          "answer": "The symmetry of each graph, since only symmetric models produce valid scientific predictions",
+          "explanation": "Symmetry is a graphical property, not a criterion for model validity."
+        },
+        {
+          "answer": "The y-intercept of each model, since the larger y-intercept provides the superior predictions",
+          "explanation": "The y-intercept reflects initial value, not suitability for future prediction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student argues that y = x squared and y = 2 to the power of x grow at the same rate. Which one of the following evaluates this reasoning?",
+      "correct": "Flawed, because exponential growth eventually surpasses polynomial growth for large values of x",
+      "correctExplanation": "While both increase, 2 to the power of x eventually grows faster than x squared and the gap widens without limit.",
+      "distractors": [
+        {
+          "answer": "Correct, because both functions are increasing and share the same y-intercept at the origin",
+          "explanation": "Same y-intercept does not imply same growth rate; the rates diverge dramatically."
+        },
+        {
+          "answer": "Correct, because for x values between 0 and 4 both functions produce very similar outputs",
+          "explanation": "Similarity over a small interval does not establish equal growth rates globally."
+        },
+        {
+          "answer": "Flawed, because y = x squared decreases for negative x while the exponential function does not",
+          "explanation": "True but irrelevant to growth-rate comparison, which concerns positive x only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student claims every quadratic has exactly two x-intercepts. Which one of the following is the strongest counterexample to this claim?",
+      "correct": "y = x squared plus 4 has discriminant negative 16 and therefore no real x-intercepts at all",
+      "correctExplanation": "The discriminant 0 minus 16 = negative 16 proves no real roots exist, directly disproving the claim.",
+      "distractors": [
+        {
+          "answer": "y = x squared minus 4x plus 4 has a repeated root appearing as a single intercept point",
+          "explanation": "A repeated root challenges the claim but less definitively than having no intercepts."
+        },
+        {
+          "answer": "y = x minus 2 is a linear function and therefore cannot serve as a valid counterexample",
+          "explanation": "A linear function cannot counter a claim about quadratics."
+        },
+        {
+          "answer": "y = 2x squared plus 3x minus 5 has two intercepts and therefore actually supports the claim",
+          "explanation": "An example supporting the claim is not a counterexample."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Two cooling models are T = 100/t and T = 100/(t plus 1). Which one of the following identifies an advantage of the second model?",
+      "correct": "It is defined at t = 0, giving a finite initial temperature of 100 degrees at the start",
+      "correctExplanation": "At t = 0, the first model divides by zero, but the second gives T = 100/1 = 100.",
+      "distractors": [
+        {
+          "answer": "It has a higher horizontal asymptote, which better represents the ambient room temperature",
+          "explanation": "Both models approach T = 0; the horizontal asymptotes are identical."
+        },
+        {
+          "answer": "It has a steeper curve overall, meaning it predicts faster cooling at all time values",
+          "explanation": "The second model gives lower T at each point; it is not uniformly steeper."
+        },
+        {
+          "answer": "It shifts the vertical asymptote to t = negative 1, which has no practical significance",
+          "explanation": "Moving the asymptote from t = 0 is precisely the practical advantage for the model."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student states y = x cubed is always greater than y = x squared for all positive x. Which one of the following evaluates this?",
+      "correct": "False, because for 0 less than x less than 1, cubing gives smaller results than squaring",
+      "correctExplanation": "When 0 < x < 1, x cubed < x squared (e.g. 0.5 cubed = 0.125 < 0.25).",
+      "distractors": [
+        {
+          "answer": "True, because raising to a higher power always produces larger results for positive inputs",
+          "explanation": "Only true for inputs greater than 1; between 0 and 1, higher powers give smaller results."
+        },
+        {
+          "answer": "True, because the cubic lies above the quadratic at every visible point on standard display",
+          "explanation": "Standard displays may not clearly show the region 0 < x < 1 where the cubic is smaller."
+        },
+        {
+          "answer": "False, because the cubic is always less than the quadratic for every positive value of x",
+          "explanation": "For x > 1, x cubed exceeds x squared, so this blanket claim is also wrong."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student claims shifting y = 1/x right 3 and up 2 gives y = 1/(x plus 3) plus 2. Which one of the following identifies the error?",
+      "correct": "Shifting right requires (x minus 3) not (x plus 3); the correct form is y = 1/(x minus 3) plus 2",
+      "correctExplanation": "A rightward translation replaces x with (x minus h). Using (x plus 3) shifts left instead.",
+      "distractors": [
+        {
+          "answer": "The vertical shift should subtract 2 rather than add 2, giving y = 1/(x plus 3) minus 2",
+          "explanation": "Upward shift by 2 correctly adds 2; the error is only in the horizontal component."
+        },
+        {
+          "answer": "Translations cannot be applied to reciprocal functions because they alter asymptotes unpredictably",
+          "explanation": "Translations apply to any function; asymptotes shift predictably."
+        },
+        {
+          "answer": "The numerator should be multiplied by 3 to account for the horizontal shift of three units",
+          "explanation": "Horizontal translation replaces x, it does not scale the numerator."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student analyses y = negative (x minus 2) squared plus 9 and claims no x-intercepts exist because the coefficient is negative. Which one of the following evaluates this?",
+      "correct": "Incorrect; the vertex at (2, 9) is above the axis, so the downward-opening parabola must cross it",
+      "correctExplanation": "A downward parabola with vertex above the x-axis intersects it at two points.",
+      "distractors": [
+        {
+          "answer": "Correct, because a negative coefficient ensures the parabola lies entirely below the axis",
+          "explanation": "The negative opens downward, but the vertex at y = 9 is still above the axis."
+        },
+        {
+          "answer": "Correct, because any quadratic with negative leading coefficient always has negative discriminant",
+          "explanation": "The discriminant depends on all coefficients, not just the sign of the leading one."
+        },
+        {
+          "answer": "Incorrect, because the negative coefficient shifts the graph leftward, creating intercepts there",
+          "explanation": "The negative reflects vertically; it does not cause a horizontal shift."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "y = 2x squared gives 8 at x = 2 while y = (1/2)x squared gives 2 at x = 2. Which one of the following explains how the coefficient a affects output?",
+      "correct": "It scales output proportionally: doubling a at any x doubles the corresponding y-value",
+      "correctExplanation": "For the same x, y = ax squared is directly proportional to a.",
+      "distractors": [
+        {
+          "answer": "It shifts the graph upward, so a larger a produces a higher y-intercept for the parabola",
+          "explanation": "The coefficient dilates vertically; both graphs pass through origin with y-intercept 0."
+        },
+        {
+          "answer": "It affects only x-intercept locations and has no influence on other y-values across the curve",
+          "explanation": "The coefficient directly multiplies every y-value, affecting all outputs."
+        },
+        {
+          "answer": "It determines the axis of symmetry, and the specific y-value at x = 2 is merely coincidental",
+          "explanation": "Both graphs have axis at x = 0; the coefficient affects vertical scale only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Data shows a quantity halving over equal time intervals. Which one of the following function types best models this behaviour?",
+      "correct": "Exponential decay, because halving over equal intervals defines a constant multiplicative factor below one",
+      "correctExplanation": "Halving repeatedly means multiplying by 0.5 each interval, the defining feature of exponential decay.",
+      "distractors": [
+        {
+          "answer": "A linear function with negative gradient, because the quantity decreases at a steady absolute rate",
+          "explanation": "Halving is proportional decrease, not constant decrease; linear decay subtracts a fixed amount."
+        },
+        {
+          "answer": "A reciprocal function, because the quantity approaches zero proportionally to the reciprocal of time",
+          "explanation": "A reciprocal does not produce exact halving over equal intervals."
+        },
+        {
+          "answer": "A downward-opening quadratic, because the rate of decrease accelerates over each interval measured",
+          "explanation": "Quadratic decay eventually gives negative values; halving always remains positive."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student claims two quadratics sharing the same axis of symmetry must share the same x-intercepts. Which one of the following evaluates this?",
+      "correct": "False; they can share an axis but differ in vertical position, producing different or no intercepts",
+      "correctExplanation": "For example, y = x squared minus 4 and y = x squared minus 1 share x = 0 but have different intercepts.",
+      "distractors": [
+        {
+          "answer": "True, because the axis fixes the midpoint of intercepts, completely determining their locations",
+          "explanation": "The midpoint is fixed but the distance to each intercept depends on the discriminant."
+        },
+        {
+          "answer": "True, provided both have the same leading coefficient ensuring identical parabola shape overall",
+          "explanation": "Even with same coefficient, different constants give different intercepts."
+        },
+        {
+          "answer": "False, because no two distinct quadratics can ever share the same axis of symmetry at all",
+          "explanation": "Many quadratics share an axis; any y = a(x minus h) squared plus k with same h will."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student needs a model where output is always non-negative. Which one of the following function types is most appropriate?",
+      "correct": "An upward-opening quadratic with vertex on or above the x-axis, guaranteeing non-negative outputs",
+      "correctExplanation": "Such a parabola ensures all outputs are zero or positive across its domain.",
+      "distractors": [
+        {
+          "answer": "A cubic function, because its graph stays above the x-axis for sufficiently large positive inputs",
+          "explanation": "Cubics produce negative outputs for some inputs, violating the requirement."
+        },
+        {
+          "answer": "A reciprocal with domain restricted to positive x, keeping all output values strictly positive",
+          "explanation": "While this gives positive outputs, domain restriction may not suit the scenario."
+        },
+        {
+          "answer": "Any polynomial function, because continuity of polynomials guarantees non-negative outputs always",
+          "explanation": "Continuity does not prevent negative values; many polynomials have negative outputs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Comparing y = 4/x and y = 4/x squared, both approach zero as x increases. Which one of the following compares their decay rates?",
+      "correct": "y = 4/x squared decays faster because squaring the denominator accelerates the approach to zero",
+      "correctExplanation": "For x > 1, 4/x squared < 4/x, and the gap grows as x increases.",
+      "distractors": [
+        {
+          "answer": "Both decay at the same rate because they share the same numerator value of 4 in each expression",
+          "explanation": "The numerator sets scale, not rate; the denominator determines how fast outputs shrink."
+        },
+        {
+          "answer": "y = 4/x decays faster because dividing by a lower power produces smaller output values overall",
+          "explanation": "Lower powers in the denominator produce larger values; higher powers give faster decay."
+        },
+        {
+          "answer": "Neither approaches zero because both have a horizontal asymptote at y = 4 rather than y = 0",
+          "explanation": "Both have horizontal asymptote at y = 0, not y = 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student varies a in y = a times 2 to the power of x. Which one of the following describes the effect of changing a?",
+      "correct": "It vertically scales the graph, changing the y-intercept but preserving the asymptote at y = 0",
+      "correctExplanation": "Multiplying by a scales every output without affecting the doubling rate or the asymptote.",
+      "distractors": [
+        {
+          "answer": "It shifts the graph horizontally, moving the y-intercept position along the x-axis of the graph",
+          "explanation": "A multiplicative constant scales vertically, not horizontally."
+        },
+        {
+          "answer": "It changes the growth rate, making the function double faster or slower per unit of x elapsed",
+          "explanation": "The growth rate is set by the base 2, not by the coefficient a."
+        },
+        {
+          "answer": "It moves the horizontal asymptote from y = 0 to y = a, raising the long-run output level",
+          "explanation": "Multiplying does not add a constant; the asymptote stays at y = 0."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Solving x squared = 1/x for positive x gives x cubed = {{blank:1}}, so x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Multiplying both sides by x gives x cubed = 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Sets the equation to zero rather than equating.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Fails to multiply both sides correctly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "The cube root of 1 is 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "x = 0 makes 1/x undefined.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 1",
+              "explanation": "Negative 1 is not a positive solution.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "y = 3(x minus 1) squared minus 12 has two x-intercepts because the vertex is {{blank:1}} the x-axis and the parabola opens {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "below",
+          "correctExplanation": "The vertex at (1, negative 12) is below the x-axis.",
+          "distractors": [
+            {
+              "answer": "above",
+              "explanation": "The vertex y-value is negative 12, which is below.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "on",
+              "explanation": "The vertex is at y = negative 12, not y = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "upward",
+          "correctExplanation": "The coefficient 3 is positive, so it opens upward.",
+          "distractors": [
+            {
+              "answer": "downward",
+              "explanation": "Positive coefficient means upward.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sideways",
+              "explanation": "These parabolas open up or down only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "Comparing y = 1/x and y = 1/x squared, the latter approaches zero {{blank:1}} because its denominator grows {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "faster",
+          "correctExplanation": "Squaring the denominator makes outputs shrink more quickly.",
+          "distractors": [
+            {
+              "answer": "slower",
+              "explanation": "Larger denominators give smaller outputs, meaning faster decay.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equally",
+              "explanation": "x squared grows faster than x, so decay rates differ.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "faster",
+          "correctExplanation": "x squared increases more rapidly than x.",
+          "distractors": [
+            {
+              "answer": "slower",
+              "explanation": "x squared grows faster than x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "linearly",
+              "explanation": "x squared grows quadratically, not linearly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "y = negative (x plus 3) squared plus 16 has a {{blank:1}} value of 16, so the parabola must cross the x-axis because the vertex is {{blank:2}} it.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "maximum",
+          "correctExplanation": "Negative coefficient opens downward, making the vertex a maximum.",
+          "distractors": [
+            {
+              "answer": "minimum",
+              "explanation": "Minimum requires positive coefficient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "average",
+              "explanation": "The vertex is an extreme value, not an average.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "above",
+          "correctExplanation": "Vertex at y = 16 is above y = 0; downward opening ensures crossing.",
+          "distractors": [
+            {
+              "answer": "below",
+              "explanation": "16 is above the x-axis.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "on",
+              "explanation": "The vertex is at y = 16, not y = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "For y = 5/(x minus 2) plus 1, the horizontal asymptote shifts from y = 0 to y = {{blank:1}} due to the {{blank:2}} translation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Adding 1 shifts the asymptote from y = 0 to y = 1.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Confuses the numerator with the vertical shift.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Confuses the horizontal shift with the vertical one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "vertical",
+          "correctExplanation": "Adding a constant outside the fraction is vertical translation.",
+          "distractors": [
+            {
+              "answer": "horizontal",
+              "explanation": "The horizontal shift comes from minus 2 inside.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "Function translations are horizontal or vertical only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Since y = 2 to the power of x doubles each unit, after 10 unit increases the exponent is {{blank:1}} and the multiplier is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "Ten unit increases give exponent 10.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "Confuses doubling 10 times with exponent 20.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "Squares the count instead of using it as exponent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1024",
+          "correctExplanation": "2 to the 10 = 1024.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "Computes 2 times 10 instead of 2 to the 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "512",
+              "explanation": "Computes 2 to the 9 instead of 2 to the 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "At x = 10, x squared = 100 and 2 to the 10 = 1024. The {{blank:1}} function is larger, showing exponential growth {{blank:2}} polynomial growth.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exponential",
+          "correctExplanation": "1024 > 100, so exponential is larger.",
+          "distractors": [
+            {
+              "answer": "quadratic",
+              "explanation": "Quadratic gives 100, which is less than 1024.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "linear",
+              "explanation": "No linear function is compared here.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "overtakes",
+          "correctExplanation": "Exponential surpasses polynomial for large inputs.",
+          "distractors": [
+            {
+              "answer": "equals",
+              "explanation": "Exponential surpasses, it does not merely match.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "parallels",
+              "explanation": "The growth rates diverge; they do not stay parallel.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "For y = negative 2(x minus 5) squared plus 50, the maximum y-value is {{blank:1}} at x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "The k-value gives the maximum directly.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Confuses x-coordinate with y-maximum.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 2",
+              "explanation": "Takes the coefficient as the extreme value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "The h-value gives the x-coordinate.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "Confuses y-maximum with x-coordinate.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 5",
+              "explanation": "Negates h incorrectly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "y = 1/x squared is always {{blank:1}} for non-zero x and has {{blank:2}} symmetry about the y-axis.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "Squaring gives positive denominator, so output is always positive.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "Squaring produces positive, not negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "1 over positive is always positive, never zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "reflective",
+          "correctExplanation": "f(negative x) = f(x), so it is even with y-axis symmetry.",
+          "distractors": [
+            {
+              "answer": "rotational",
+              "explanation": "Rotational symmetry applies to odd functions.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "translational",
+              "explanation": "Translational symmetry applies to periodic functions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "At x = 0 both y = 2 to the power of x and y = 3 to the power of x equal {{blank:1}}, but for large x the base {{blank:2}} produces larger outputs.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Any positive number to the power of 0 is 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Anything to the 0 is 1, not 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Confuses the base with the value at x = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Larger base grows faster exponentially.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Smaller base grows more slowly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Base 5 is not being compared.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "y = (x minus 3)(x plus 1) opens upward because the leading coefficient is {{blank:1}}, and the axis of symmetry is x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "Expanding gives coefficient of x squared as 1 (positive).",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "The coefficient is positive 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Zero would make it linear, not quadratic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Midpoint of roots 3 and negative 1 is (3 + negative 1)/2 = 1.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Computes (3 + 1)/2 = 2 instead of (3 + negative 1)/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 1",
+              "explanation": "Takes one root as the axis instead of the midpoint.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "y = (1/2) to the power of x {{blank:1}} as x increases, representing exponential {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "decreases",
+          "correctExplanation": "Base between 0 and 1 causes decrease as x increases.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "Base less than 1 causes decrease.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "oscillates",
+              "explanation": "Exponentials with positive base do not oscillate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "decay",
+          "correctExplanation": "Decreasing exponential is called decay.",
+          "distractors": [
+            {
+              "answer": "growth",
+              "explanation": "Growth requires base greater than 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "stability",
+              "explanation": "The function is not stable; it decreases.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10A01",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to factorise algebraic expressions by identifying and extracting a common algebraic factor.",
+    "generatedAt": "2026-05-15T11:21:39Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "An algebraic factor of an expression is any term that appears in the expression after expansion.",
+      "correct": "False",
+      "correctExplanation": "A factor multiplies the expression; a term is added or subtracted within it. The two roles are distinct.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses 'factor' with 'term'. A factor multiplies; a term is added or subtracted within an expression."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Factorising an algebraic expression is the reverse of expanding brackets.",
+      "correct": "True",
+      "correctExplanation": "Expanding multiplies a factor through brackets; factorising extracts a common factor and writes the result as a product.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misconception that factorising is unrelated to expanding rather than its inverse operation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The greatest common factor of the terms 6x and 9x is 6x.",
+      "correct": "False",
+      "correctExplanation": "The greatest common factor is 3x, since 3 is the highest common factor of 6 and 9 and x divides both terms exactly.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the larger coefficient (6) with the highest common factor of the two coefficients (3)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Factorising always reduces the number of terms inside the brackets compared with the original expression.",
+      "correct": "False",
+      "correctExplanation": "Factorising preserves the number of terms inside the brackets; it only extracts a common factor outside the brackets.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses factorising with simplifying or combining like terms, which can reduce the number of terms."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The expression 3x times the binomial (2x plus 3y) is the factorised form of 6x squared plus 9xy.",
+      "correct": "True",
+      "correctExplanation": "Expanding 3x times (2x plus 3y) gives 6x squared plus 9xy, confirming that the two expressions are equivalent.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misreads the expansion of 3x times (2x plus 3y) or treats the factorised form as different in value."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Common factors of algebraic terms can only be single variables, never numerical coefficients or products.",
+      "correct": "False",
+      "correctExplanation": "Common factors may be numerical coefficients, single variables, products of variables, or even polynomial expressions.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Restricts the idea of a common factor to single variables, missing numerical and product factors."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Extracting a negative common factor reverses the sign of every term inside the resulting brackets.",
+      "correct": "True",
+      "correctExplanation": "Multiplying by a negative outside the brackets is undone by reversing the sign of each term inside, preserving the original value.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misconception that only the first term inside the brackets changes sign when a negative is extracted."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "If x is a common factor of two terms, then x squared must also be a common factor of those two terms.",
+      "correct": "False",
+      "correctExplanation": "Only the lowest power of x present in every term can be extracted as a common factor; x squared need not divide both.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses 'x is a factor' with 'every power of x is a factor', ignoring the lowest-power rule."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The expression negative 4 times (a plus 2b) expands to negative 4a minus 8b.",
+      "correct": "True",
+      "correctExplanation": "The negative coefficient distributes through both terms, giving negative 4a from negative 4 times a and negative 8b from negative 4 times 2b.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Fails to distribute the negative through the second term, giving negative 4a plus 8b incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A correctly factorised expression takes a different numerical value from the original expression for some choices of the variables.",
+      "correct": "False",
+      "correctExplanation": "Factorising changes the form but preserves the value, since the factor and the bracket multiply back to the original expression.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Treats factorising as changing the value of an expression rather than rewriting it in product form."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The expression 5x squared y times (3x minus 2y) is the factorised form of 15x cubed y minus 10x squared y squared.",
+      "correct": "True",
+      "correctExplanation": "Expanding 5x squared y times (3x minus 2y) gives 15x cubed y minus 10x squared y squared, matching the original expression exactly.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misreads the expansion or assumes the highest-power common factor is more than 5x squared y."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Once an expression has had any common factor extracted, no further common factors can ever be present inside the brackets.",
+      "correct": "False",
+      "correctExplanation": "A partial factorisation may leave further common factors inside the brackets; full factorisation requires the highest common factor.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses partial factorisation with full factorisation, missing that further factors may remain."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best defines a common algebraic factor of two terms?",
+      "correct": "An algebraic expression that divides each of the two terms exactly without leaving any remainder",
+      "correctExplanation": "A common factor is an expression that, when multiplied by another expression, yields each given term exactly with no remainder.",
+      "distractors": [
+        {
+          "answer": "An algebraic expression that appears as one of the terms in either of the two original expressions",
+          "explanation": "Confuses 'factor' with 'term' \u2014 terms are added; factors multiply."
+        },
+        {
+          "answer": "An algebraic expression that, when added to each term, gives the same numerical result every time",
+          "explanation": "Replaces multiplication with addition, which does not define a factor."
+        },
+        {
+          "answer": "An algebraic expression that has the same coefficient as the leading term in both expressions",
+          "explanation": "Reduces the idea of a factor to a coincidence of coefficients, ignoring divisibility."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the highest common factor of 6x squared and 9xy?",
+      "correct": "The monomial 3x, since 3 is the highest common factor of 6 and 9 and x divides both terms exactly",
+      "correctExplanation": "Three is the greatest common divisor of 6 and 9, and x appears in both terms to at least the first power.",
+      "distractors": [
+        {
+          "answer": "The monomial 3xy, because both x and y appear in the second term and 3 divides both coefficients when each term is divided by the chosen factor",
+          "explanation": "Adds y to the common factor even though y does not appear in the first term."
+        },
+        {
+          "answer": "The monomial 6x, because 6 is the larger of the two coefficients and x divides both terms given the structure of the algebraic expression",
+          "explanation": "Picks the larger coefficient instead of the greatest common divisor."
+        },
+        {
+          "answer": "The monomial 18x squared y, the product of the two terms divided by an integer regardless of the sign of the coefficient outside",
+          "explanation": "Confuses 'highest common factor' with the product of the terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following expressions is the factorised form of 6x squared plus 9xy?",
+      "correct": "The expression 3x times the binomial (2x plus 3y), with 3x as the highest common factor",
+      "correctExplanation": "Three x is the highest common factor of 6x squared and 9xy, and division of each term by 3x gives 2x and 3y respectively.",
+      "distractors": [
+        {
+          "answer": "The expression x times the binomial (6x plus 9y), with only x extracted as a common factor",
+          "explanation": "Misses the numerical factor of 3 that is also common to both terms."
+        },
+        {
+          "answer": "The expression 3 times the binomial (2x squared plus 3xy), with only the numerical factor extracted",
+          "explanation": "Misses the variable factor of x that is also common to both terms."
+        },
+        {
+          "answer": "The expression 3xy times the binomial (2x plus 3), with y included in the extracted factor",
+          "explanation": "Includes y in the common factor even though y does not appear in the first term."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes the relationship between factorising and expanding?",
+      "correct": "Factorising and expanding are inverse operations on algebraic expressions, each undoing the other when applied",
+      "correctExplanation": "Expanding a factorised expression returns the original; factorising an expanded expression returns the factorised form.",
+      "distractors": [
+        {
+          "answer": "Factorising and expanding are the same operation expressed in two different but equivalent notations",
+          "explanation": "Treats inverse operations as identical operations."
+        },
+        {
+          "answer": "Factorising replaces variables with numerical values, while expanding rearranges terms alphabetically when the factorisation is checked by expansion",
+          "explanation": "Confuses factorising with substitution and expanding with rearrangement."
+        },
+        {
+          "answer": "Factorising applies only to numerical expressions, while expanding applies only to algebraic expressions",
+          "explanation": "Imposes a false domain restriction on the two operations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following expressions is the factorised form of negative 4a minus 8b?",
+      "correct": "The expression negative 4 times the binomial (a plus 2b), with the negative extracted as part of the factor",
+      "correctExplanation": "Extracting negative 4 outside the brackets reverses the sign of each term inside, giving a plus 2b within the brackets.",
+      "distractors": [
+        {
+          "answer": "The expression negative 4 times the binomial (a minus 2b), keeping the signs of the original terms under the conventions of standard algebraic work",
+          "explanation": "Fails to reverse the sign of the second term when the negative is extracted."
+        },
+        {
+          "answer": "The expression 4 times the binomial (a plus 2b), without changing any signs of the terms throughout the factorisation across both terms",
+          "explanation": "Drops the negative sign entirely, giving an expression of opposite value."
+        },
+        {
+          "answer": "The expression negative 2 times the binomial (2a plus 4b), with only part of the coefficient extracted considering the powers of each variable involved",
+          "explanation": "Partially factorises, leaving a further common factor of 2 inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the factorised form of 15x cubed y minus 10x squared y squared?",
+      "correct": "The monomial 5x squared y multiplied by the binomial (3x minus 2y), with the highest common factor extracted",
+      "correctExplanation": "Five x squared y is the highest common factor; dividing each term by it gives 3x and minus 2y respectively.",
+      "distractors": [
+        {
+          "answer": "The monomial 5xy multiplied by the binomial (3x squared minus 2xy), with only one power of x extracted",
+          "explanation": "Extracts only x rather than x squared, leaving a further common factor inside."
+        },
+        {
+          "answer": "The monomial x squared y multiplied by the binomial (15x minus 10y), with the numerical factor not extracted",
+          "explanation": "Misses the numerical factor of 5 common to both terms."
+        },
+        {
+          "answer": "The monomial 5x cubed y squared multiplied by the binomial (3 minus 2), with too high a power extracted",
+          "explanation": "Extracts a higher power of x and y than divides both terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following statements about the value of a factorised expression is correct?",
+      "correct": "The factorised expression and the original expression have the same value for every value of the variables",
+      "correctExplanation": "Factorising changes the algebraic form but not the value, because the factor times the bracket equals the original.",
+      "distractors": [
+        {
+          "answer": "The factorised expression has a smaller numerical value than the original for positive variable values applied to the expression in its original form",
+          "explanation": "Treats factorising as a reduction in value rather than a change of form."
+        },
+        {
+          "answer": "The factorised expression has a different value only when the variables are negative integers across both terms of the original expression",
+          "explanation": "Imposes a false sign-dependent difference between the two forms."
+        },
+        {
+          "answer": "The factorised expression and the original have the same value only when the variable equals zero",
+          "explanation": "Mistakes the special case where both equal zero for the general equivalence."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following identifies a common algebraic factor that is a product of a coefficient and a variable?",
+      "correct": "The monomial 2x is a common factor of 4xy and 6x, combining the coefficient 2 and the variable x",
+      "correctExplanation": "A common factor may combine a numerical coefficient with one or more variables present in every term.",
+      "distractors": [
+        {
+          "answer": "The monomial 2y is a common factor of 4xy and 6x, since both expressions contain 2 as a factor",
+          "explanation": "Treats y as common to both terms even though y does not appear in 6x."
+        },
+        {
+          "answer": "The expression 4x is a common factor of 4xy and 6x, the larger of the two leading coefficients with x",
+          "explanation": "Picks the larger coefficient rather than the highest common divisor of 4 and 6."
+        },
+        {
+          "answer": "The expression x squared is a common factor of 4xy and 6x, since x appears in both terms",
+          "explanation": "Extracts a higher power of x than is present in both terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following expressions has the highest common factor 4xy?",
+      "correct": "The expression 8x squared y plus 12xy squared, where each term contains 4xy as a divisor",
+      "correctExplanation": "Four is the highest common factor of 8 and 12, and xy divides both x squared y and xy squared exactly.",
+      "distractors": [
+        {
+          "answer": "The expression 8x squared plus 12y squared, where the variables do not overlap between the two terms",
+          "explanation": "Treats xy as a common factor even though no single term contains both x and y."
+        },
+        {
+          "answer": "The expression 8xy plus 12 minus xy, with a constant term and a variable term combined given the structure of the algebraic expression",
+          "explanation": "Includes a term that has no x or y at all, so 4xy cannot be common to every term."
+        },
+        {
+          "answer": "The expression 4x plus 4y, where only the coefficient is common to the two terms regardless of the sign of the coefficient outside",
+          "explanation": "Mistakes a common coefficient for a common monomial factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the role of the highest common factor in factorising?",
+      "correct": "The highest common factor is extracted outside the brackets, leaving no further common factor inside the brackets",
+      "correctExplanation": "Extracting the greatest common factor in one step gives the fully factorised form, with no further reduction possible.",
+      "distractors": [
+        {
+          "answer": "The highest common factor is added to each term inside the brackets to give the factorised form of the expression",
+          "explanation": "Replaces multiplication by the factor with addition, which is not factorising."
+        },
+        {
+          "answer": "The highest common factor is chosen to be the term with the smallest coefficient in the expression when the factorisation is checked by expansion",
+          "explanation": "Confuses 'highest common' with 'smallest', missing the divisibility requirement."
+        },
+        {
+          "answer": "The highest common factor must always be a single variable raised to the first power, never higher for the expression as it is presented above",
+          "explanation": "Imposes a false restriction on the form of the common factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the highest common factor of 12a squared b and 18ab squared?",
+      "correct": "The monomial 6ab, combining the highest common factor of 12 and 18 with the lowest power of a and of b",
+      "correctExplanation": "Six is the greatest common divisor of 12 and 18, and ab is the highest common factor of a squared b and ab squared.",
+      "distractors": [
+        {
+          "answer": "The monomial 6a squared b squared, combining 6 with the highest power of a and the highest power of b",
+          "explanation": "Takes the highest power of each variable rather than the lowest power common to both."
+        },
+        {
+          "answer": "The monomial 12ab, since 12 is the larger of the two coefficients and ab divides both terms exactly under the conventions of standard algebraic work",
+          "explanation": "Picks the larger coefficient instead of the greatest common divisor of 12 and 18."
+        },
+        {
+          "answer": "The monomial 3ab, using a smaller common divisor that does not give the greatest common factor throughout the factorisation across both terms",
+          "explanation": "Picks a common factor that is not the greatest, leaving a further factor of 2 unused."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes 'fully factorised' form for an algebraic expression?",
+      "correct": "The form in which the highest common factor has been extracted and no further common factor remains inside",
+      "correctExplanation": "Fully factorised means the bracket contains no further common factor; partial factorisation is not yet complete.",
+      "distractors": [
+        {
+          "answer": "The form in which every term inside the brackets has been reduced to its smallest numerical value",
+          "explanation": "Treats fully factorised as numerical reduction rather than extraction of a common factor."
+        },
+        {
+          "answer": "The form in which the expression has been rewritten using only addition rather than multiplication of factors",
+          "explanation": "Reverses the direction of factorising into expansion."
+        },
+        {
+          "answer": "The form in which only a single variable, never a coefficient, has been placed outside the brackets",
+          "explanation": "Restricts the common factor to a variable, missing numerical coefficients."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "To factorise an algebraic expression, identify the {{blank:1}} common factor of every term, then divide each term by that factor and place the result inside {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "highest",
+          "correctExplanation": "The highest common factor gives the fully factorised form in one step.",
+          "distractors": [
+            {
+              "answer": "lowest",
+              "explanation": "Choosing the lowest common factor would leave further common factors inside.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "smallest",
+              "explanation": "Smallest is ambiguous and not the standard term in factorising.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "brackets",
+          "correctExplanation": "The remaining factors are written as a sum inside brackets to show the product structure.",
+          "distractors": [
+            {
+              "answer": "denominators",
+              "explanation": "Denominators are used in fractions, not in factorised polynomial expressions.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "exponents",
+              "explanation": "Exponents are powers of variables, not the location of the remaining sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The expression 6x squared plus 9xy factorises as {{blank:1}} times the binomial (2x plus 3y), and the value of the factorised form equals the value of the original for every {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3x",
+          "correctExplanation": "Three x is the highest common factor of 6x squared and 9xy.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Three alone misses the variable factor x common to both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3xy",
+              "explanation": "Three xy includes y, which is not common to the first term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "variable",
+          "correctExplanation": "Factorising preserves value at every assignment of values to the variables.",
+          "distractors": [
+            {
+              "answer": "integer",
+              "explanation": "Equivalence is not restricted to integer values of the variables.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficient is the numerical part of a term, not the variable assignment.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The expression 2 times (x plus 3) is the fully factorised form of 6x plus 18, because a common factor of 2 has been extracted.",
+      "correct": "False",
+      "correctExplanation": "The fully factorised form is 6 times (x plus 3), since the highest common factor of 6x and 18 is 6, not 2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Treats any partial factorisation as fully factorised, missing that a further factor of 3 remains."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Identifying a common algebraic factor uses the same principle as finding a common factor of two integers.",
+      "correct": "True",
+      "correctExplanation": "In both cases we look for an expression that divides every given quantity exactly; only the objects differ.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Treats algebraic factorising as unrelated to integer factor-finding, missing the shared underlying principle."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Two algebraic expressions that share the same fully factorised form must take different values at some choices of variable.",
+      "correct": "False",
+      "correctExplanation": "If two expressions share the same fully factorised form, they are identical and take the same value at every choice of variable.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses 'different in form' with 'different in value', missing the equivalence of identical factorisations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Factorising can convert a sum of products into a single product, which is useful for solving equations of the form ax squared plus bx equals 0.",
+      "correct": "True",
+      "correctExplanation": "Writing ax squared plus bx as x times (ax plus b) reduces the equation to a product equal to zero, giving x equals 0 or ax plus b equals 0.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misses the link between factorised form and the null factor law used in solving polynomial equations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Extracting negative 1 as a common factor leaves the original algebraic expression unchanged in form.",
+      "correct": "False",
+      "correctExplanation": "Extracting negative 1 reverses the sign of every term inside the brackets, so the bracketed expression looks different from the original.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Treats extracting negative 1 as identity transformation rather than a sign-reversal inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "A factorised form is most useful for simplifying an algebraic fraction when the factor appearing in the numerator also appears in the denominator.",
+      "correct": "True",
+      "correctExplanation": "A common factor in numerator and denominator may be cancelled, giving a simplified fraction expressed in lowest terms.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misses the connection between factorising and the cancellation step used to simplify algebraic fractions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The fully factorised form of an algebraic expression is always shorter to write than its expanded form.",
+      "correct": "False",
+      "correctExplanation": "The factorised form may be longer, shorter, or the same length as the expanded form; length is not a defining feature.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Imposes a length criterion on 'fully factorised', missing that the criterion is the absence of further common factors."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Once an expression is in factorised form, the original expression cannot be recovered from it.",
+      "correct": "False",
+      "correctExplanation": "Expanding the factorised form returns the original expression; the two operations are inverses.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Treats factorising as a destructive operation rather than a reversible rewriting."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why 6 times the binomial (x plus 3) is the fully factorised form of 6x plus 18?",
+      "correct": "Six is the highest common factor of 6x and 18, and dividing each term by 6 leaves no further common factor inside",
+      "correctExplanation": "The highest common factor in one step gives the fully factorised form, with the bracket holding no further common factor.",
+      "distractors": [
+        {
+          "answer": "Two is the highest common factor of 6x and 18, and 2 has been extracted to give 2 times (3x plus 9) instead",
+          "explanation": "Picks 2 as the highest common factor when 6 is greater and also divides both terms."
+        },
+        {
+          "answer": "Three is the highest common factor of 6x and 18, and 3 has been extracted to give 3 times (2x plus 6) instead",
+          "explanation": "Picks 3 as the highest common factor when 6 is greater and also divides both terms."
+        },
+        {
+          "answer": "The form 6 times (x plus 3) is the fully factorised form because the variable x has been placed outside the brackets",
+          "explanation": "Misidentifies the location of the variable; in fully factorised form the variable remains inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following expressions has a common factor that is a product of two variables?",
+      "correct": "The expression 6xy plus 9xy squared, where xy is a common factor of every term",
+      "correctExplanation": "Both terms contain xy as a factor, so xy can be extracted, leaving 3 times (2 plus 3y) inside the brackets after further factoring.",
+      "distractors": [
+        {
+          "answer": "The expression 6x plus 9y, where x and y appear as separate variables in different terms",
+          "explanation": "Treats x and y as a single common factor even though no single term contains both."
+        },
+        {
+          "answer": "The expression 6x squared plus 9, where x squared appears in one term and a constant in the other",
+          "explanation": "Treats x squared as a common factor of a term that contains no variable at all."
+        },
+        {
+          "answer": "The expression 6 plus 9, where there are no variable factors at all in either of the two terms",
+          "explanation": "Identifies a variable common factor in an expression that has no variables."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains the purpose of factorising in solving the equation 3x squared minus 12x equals 0?",
+      "correct": "Factorising 3x squared minus 12x as 3x times (x minus 4) lets the equation be split into 3x equals 0 or x minus 4 equals 0",
+      "correctExplanation": "The null factor law applies once an expression equals zero; each factor in turn may be set to zero to find the solutions.",
+      "distractors": [
+        {
+          "answer": "Factorising 3x squared minus 12x as 3x squared times (1 minus 4 over x) lets the equation be solved by setting the bracket to zero across both terms of the original expression",
+          "explanation": "Introduces an invalid factorisation that creates a fraction inside the bracket."
+        },
+        {
+          "answer": "Factorising 3x squared minus 12x as 3 times (x squared minus 4x) lets the equation be split into 3 equals 0 or x squared minus 4x equals 0",
+          "explanation": "Partially factorises, missing that x is also a common factor of both terms."
+        },
+        {
+          "answer": "Factorising 3x squared minus 12x as x times (3x minus 12) gives a factor of x without the highest common numerical factor when each term is divided by the chosen factor",
+          "explanation": "Partially factorises, leaving the numerical factor of 3 inside the bracket."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes the difference between a partial factorisation and a fully factorised form?",
+      "correct": "A partial factorisation leaves at least one further common factor inside the brackets; a fully factorised form leaves none",
+      "correctExplanation": "Full factorisation extracts the highest common factor in one step, so no further common factor remains inside.",
+      "distractors": [
+        {
+          "answer": "A partial factorisation uses only the numerical factor; a fully factorised form uses only a variable factor given the structure of the algebraic expression",
+          "explanation": "Treats the distinction as a choice of numerical versus variable factor, missing the residual-factor criterion."
+        },
+        {
+          "answer": "A partial factorisation places a coefficient inside the brackets; a fully factorised form places it outside regardless of the sign of the coefficient outside",
+          "explanation": "Confuses the standard position of coefficients with the criterion for full factorisation."
+        },
+        {
+          "answer": "A partial factorisation gives the smaller of two possible factorised forms by length, while full gives the larger",
+          "explanation": "Imposes a length criterion on the distinction, missing the residual-factor criterion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following statements about the factorised form 3x times (x minus 4) is correct?",
+      "correct": "It is equivalent in value to 3x squared minus 12x for every value of x, since expanding gives the original",
+      "correctExplanation": "Equivalence of value follows from the distributive property; expanding the factor through the bracket returns the original.",
+      "distractors": [
+        {
+          "answer": "It is equivalent in value to 3x squared minus 12x only when x is greater than 4, because of the sign of the bracket",
+          "explanation": "Mistakes a sign condition on the bracket for a condition on equivalence of the two forms."
+        },
+        {
+          "answer": "It is equivalent in value to 3x squared minus 12x only when x is an integer, because factorising requires integer variables when the factorisation is checked by expansion",
+          "explanation": "Imposes a false integer restriction on variable values."
+        },
+        {
+          "answer": "It is equivalent in value to 3x squared minus 12x only when x equals zero or four, the solutions of the equation for the expression as it is presented above",
+          "explanation": "Confuses the solution set of an equation with the equivalence of two algebraic forms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the expression 2 times (3x plus 9) is not fully factorised?",
+      "correct": "The bracket 3x plus 9 contains a further common factor of 3, so the highest common factor has not been extracted in one step",
+      "correctExplanation": "The fully factorised form is 6 times (x plus 3); the partial form leaves a residual factor of 3 inside the brackets.",
+      "distractors": [
+        {
+          "answer": "The expression 2 times (3x plus 9) is not factorised at all, because brackets cannot appear in a factorised form under the conventions of standard algebraic work",
+          "explanation": "Confuses the role of brackets; brackets are essential to factorised form, not forbidden."
+        },
+        {
+          "answer": "The expression 2 times (3x plus 9) is not fully factorised because the coefficient 2 cannot stand outside the brackets throughout the factorisation across both terms",
+          "explanation": "Mistakes a numerical coefficient as forbidden outside the brackets."
+        },
+        {
+          "answer": "The expression 2 times (3x plus 9) is not fully factorised because x must appear outside the brackets, not inside considering the powers of each variable involved",
+          "explanation": "Misplaces the variable; in factorised form the variable typically remains inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following identifies the highest common factor of the algebraic expression negative 6a squared plus 9a?",
+      "correct": "The monomial negative 3a, with the negative sign extracted along with the highest common positive factor",
+      "correctExplanation": "Extracting negative 3a gives negative 3a times (2a minus 3), which expands back to negative 6a squared plus 9a.",
+      "distractors": [
+        {
+          "answer": "The monomial 3a squared, since a squared appears in the first term and 3 divides 6 and 9 exactly",
+          "explanation": "Extracts a higher power of a than appears in both terms."
+        },
+        {
+          "answer": "The monomial 6a, since 6 is the coefficient of the leading term and a divides both terms applied to the expression in its original form",
+          "explanation": "Picks the larger coefficient instead of the greatest common divisor of 6 and 9."
+        },
+        {
+          "answer": "The monomial 9a, since 9 is the coefficient of the second term and a divides both terms across both terms of the original expression",
+          "explanation": "Picks one coefficient rather than the greatest common divisor of the two coefficients."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes how factorising connects to simplifying an algebraic fraction?",
+      "correct": "A common factor in the numerator and denominator of an algebraic fraction may be cancelled once each is factorised",
+      "correctExplanation": "Factorising exposes common factors that can be cancelled, producing the fraction in its simplest equivalent form.",
+      "distractors": [
+        {
+          "answer": "The factorised form of an algebraic fraction is always shorter than the original, regardless of cancellation when each term is divided by the chosen factor",
+          "explanation": "Imposes a length criterion on factorising that does not hold in general."
+        },
+        {
+          "answer": "Factorising the numerator only is sufficient to simplify any algebraic fraction in lowest terms given the structure of the algebraic expression",
+          "explanation": "Ignores the role of the denominator in cancellation."
+        },
+        {
+          "answer": "Cancellation between numerator and denominator is permitted only when the variables match exactly term by term regardless of the sign of the coefficient outside",
+          "explanation": "Confuses term-by-term matching with factor-by-factor cancellation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following expressions, after factorising, exposes a factor that helps solve the equation when set equal to zero?",
+      "correct": "The expression x squared minus 5x factors as x times (x minus 5), giving solutions x equals 0 and x equals 5",
+      "correctExplanation": "Once a product equals zero, each factor may be set to zero in turn using the null factor law, yielding all solutions.",
+      "distractors": [
+        {
+          "answer": "The expression x squared plus 5x factors as x times (x minus 5), giving solutions x equals 0 and x equals 5 when the factorisation is checked by expansion",
+          "explanation": "Factorises with the wrong sign on the constant inside the brackets."
+        },
+        {
+          "answer": "The expression x squared minus 5x factors as x squared times (1 minus 5 over x), giving solutions only when 5 over x equals 1",
+          "explanation": "Introduces an invalid factorisation that creates a fraction inside the bracket."
+        },
+        {
+          "answer": "The expression x squared minus 5x factors as 5 times (x squared minus x), giving solutions x equals 0 and x equals 1 for the expression as it is presented above",
+          "explanation": "Picks 5 as the common factor when only x is common to both terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes the result of extracting a negative common factor from an algebraic expression?",
+      "correct": "Each term inside the resulting brackets has the opposite sign to the corresponding term in the original expression",
+      "correctExplanation": "Multiplication by a negative outside the brackets reverses the sign of each term inside, preserving the overall value.",
+      "distractors": [
+        {
+          "answer": "Only the first term inside the brackets changes sign; the remaining terms keep their original signs under the conventions of standard algebraic work",
+          "explanation": "Applies the sign-change to only one term, missing the distributive nature of multiplication."
+        },
+        {
+          "answer": "Only the last term inside the brackets changes sign; the remaining terms keep their original signs throughout the factorisation across both terms",
+          "explanation": "Applies the sign-change to only one term, missing the distributive nature of multiplication."
+        },
+        {
+          "answer": "No term inside the brackets changes sign; the negative outside the brackets is purely cosmetic considering the powers of each variable involved",
+          "explanation": "Treats the negative as decorative rather than as a multiplier that distributes through the bracket."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following statements about the relationship between two expressions of the form a times (b plus c) and ab plus ac is correct?",
+      "correct": "They are equivalent in value at every choice of variable values, by the distributive property of multiplication over addition",
+      "correctExplanation": "Distributivity guarantees that multiplying a through (b plus c) produces ab plus ac with no change in value.",
+      "distractors": [
+        {
+          "answer": "They are equivalent only when a, b, and c are positive integers, because of how distributivity is defined applied to the expression in its original form",
+          "explanation": "Imposes a false positivity restriction on the distributive property."
+        },
+        {
+          "answer": "They are equivalent only when a equals zero, because zero multiplies both forms to give zero across both terms of the original expression",
+          "explanation": "Mistakes a special case where both equal zero for general equivalence."
+        },
+        {
+          "answer": "They are equivalent in form but not always in value, because the bracketed form contains additional structure when each term is divided by the chosen factor",
+          "explanation": "Confuses a difference in form with a difference in value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why 3x is a common factor of 6x squared and 9x but x squared is not?",
+      "correct": "Three x divides each term exactly, while x squared divides 6x squared exactly but does not divide 9x without a remainder",
+      "correctExplanation": "A common factor must divide every term exactly; x squared fails on 9x because the second term contains x only to the first power.",
+      "distractors": [
+        {
+          "answer": "Three x is numerical and x squared is variable, so only numerical factors can be common in this case given the structure of the algebraic expression",
+          "explanation": "Splits 'common factor' into a numerical-only category, which is too restrictive."
+        },
+        {
+          "answer": "Three x has a higher coefficient than x squared, so it is preferred as the common factor on those grounds regardless of the sign of the coefficient outside",
+          "explanation": "Confuses 'higher coefficient' with 'highest common factor', missing the divisibility test."
+        },
+        {
+          "answer": "Three x appears first in the original expression, so it is preferred as the common factor by convention when the factorisation is checked by expansion",
+          "explanation": "Invents a positional convention rather than applying the divisibility criterion."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "An expression is fully factorised when the {{blank:1}} common factor has been extracted, leaving no further common factor inside the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "highest",
+          "correctExplanation": "Extracting the highest common factor in one step gives the fully factorised form.",
+          "distractors": [
+            {
+              "answer": "lowest",
+              "explanation": "Lowest common factor would leave further common factors inside.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "first",
+              "explanation": "First is a positional term, not a measure of common-factor magnitude.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "brackets",
+          "correctExplanation": "The remaining factors live inside the brackets; full factorisation leaves them with no common factor.",
+          "distractors": [
+            {
+              "answer": "variables",
+              "explanation": "The criterion concerns common factors, not variables inside the bracket.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "denominators",
+              "explanation": "Denominators belong to fractions, not factorised polynomials.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Factorising the expression 3x squared minus 12x as {{blank:1}} times (x minus 4) lets the equation 3x squared minus 12x equals 0 be solved using the {{blank:2}} factor law.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3x",
+          "correctExplanation": "Three x is the highest common factor; dividing both terms by 3x gives x and minus 4.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Three alone misses the variable factor x common to both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Variable x alone misses the numerical factor 3 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "null",
+          "correctExplanation": "The null factor law sets each factor equal to zero in turn to find the solutions.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Zero is the value, not the name of the law applied to a product.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "distributive",
+              "explanation": "Distributive law expands a product over a sum; it is not used here.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "Extracting a {{blank:1}} common factor from an expression reverses the {{blank:2}} of each term inside the resulting brackets.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative",
+          "correctExplanation": "A negative factor outside the brackets reverses each term's sign inside.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "A positive factor preserves the signs of terms inside the brackets.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "Extracting a variable factor changes powers, not signs, of inside terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sign",
+          "correctExplanation": "Each term inside the brackets has the opposite sign to the corresponding term in the original.",
+          "distractors": [
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficients change in magnitude only when divided, not when sign is reversed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "exponent",
+              "explanation": "Exponents are unaffected by a sign change outside the brackets.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The expression negative 4a minus 8b factorises as {{blank:1}} times (a plus 2b), and the value of this factorised form equals the value of the original at every {{blank:2}} of a and b.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 4",
+          "correctExplanation": "Negative 4 is the highest common factor with sign preserved; the resulting bracket is a plus 2b.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Positive 4 changes the value of the expression, which is not allowed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 2",
+              "explanation": "Negative 2 leaves a further factor of 2 inside the bracket.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "assignment",
+          "correctExplanation": "Equivalent expressions take equal values at every assignment of values to the variables.",
+          "distractors": [
+            {
+              "answer": "integer",
+              "explanation": "Equivalence is not restricted to integer values.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficient is the numerical part of a term, not the assignment of variables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "When factorising the expression 15x cubed y minus 10x squared y squared, the highest common factor is {{blank:1}}, and the remaining factor inside the brackets is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5x squared y",
+          "correctExplanation": "Five is the greatest common divisor of 15 and 10, and x squared y is the lowest common power of each variable.",
+          "distractors": [
+            {
+              "answer": "5x cubed y squared",
+              "explanation": "This is too high; the lowest powers are x squared and y, not x cubed and y squared.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x squared y",
+              "explanation": "This misses the numerical factor of 5 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3x minus 2y",
+          "correctExplanation": "Dividing 15x cubed y by 5x squared y gives 3x; dividing 10x squared y squared by 5x squared y gives 2y.",
+          "distractors": [
+            {
+              "answer": "3x plus 2y",
+              "explanation": "The original has a minus between the two terms, not a plus.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3 minus 2y",
+              "explanation": "The first term after division should be 3x, not 3 alone.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "An algebraic fraction with the numerator x squared minus 4x and the denominator x is simplified by factorising the numerator as {{blank:1}}, then cancelling the common factor of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x times (x minus 4)",
+          "correctExplanation": "Factorising the numerator exposes x as a common factor with the denominator.",
+          "distractors": [
+            {
+              "answer": "4x times (x minus 1)",
+              "explanation": "This is an invalid factorisation that does not match the original.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "(x minus 4)(x plus 1)",
+              "explanation": "This is a quadratic-style factorisation that does not match the linear common factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "Once the numerator and denominator share the factor x, it cancels, leaving x minus 4.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Four is a constant inside the bracket, not a common factor with the denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x squared",
+              "explanation": "The denominator is x, not x squared, so x squared cannot cancel.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "If a quadratic ax squared plus bx has been factorised as x times (ax plus b), the equation ax squared plus bx equals 0 has x equals 0 as a solution.",
+      "correct": "True",
+      "correctExplanation": "The null factor law applied to x times (ax plus b) equals 0 gives x equals 0 or ax plus b equals 0; the first yields x equals 0.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misses the link between factorised form and the null factor law used in solving polynomial equations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "A student factorises negative 3x squared plus 6x as negative 3x times (x plus 2), and the result expands back to the original expression.",
+      "correct": "False",
+      "correctExplanation": "Negative 3x times (x plus 2) expands to negative 3x squared minus 6x, not negative 3x squared plus 6x; the correct factorisation is negative 3x times (x minus 2).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Fails to reverse the sign of the second term when a negative common factor is extracted from a difference."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Mei factorises 8x squared y plus 12xy squared in one step. Which one of the following gives the fully factorised form?",
+      "correct": "The factorised form is 4xy times the binomial (2x plus 3y), with 4xy as the highest common factor of both terms",
+      "correctExplanation": "Four is the greatest common divisor of 8 and 12, and xy is the lowest common power of x and y across the two terms.",
+      "distractors": [
+        {
+          "answer": "The factorised form is 2xy times the binomial (4x plus 6y), with only half of the numerical factor extracted for the expression as it is presented above",
+          "explanation": "Extracts 2 instead of 4, leaving a further numerical factor of 2 inside the bracket."
+        },
+        {
+          "answer": "The factorised form is 4xy times the binomial (2x squared plus 3y squared), keeping a squared variable in each bracket term",
+          "explanation": "Misreads the powers of variables remaining after division by 4xy."
+        },
+        {
+          "answer": "The factorised form is 4x squared y times the binomial (2 plus 3y over x), introducing a fractional term in the bracket",
+          "explanation": "Extracts a higher power of x than divides both terms, requiring a fraction inside the bracket."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Kofi is asked to factorise 14a squared minus 21ab. Which one of the following is the fully factorised form?",
+      "correct": "The form 7a times the binomial (2a minus 3b), with 7a as the highest common factor of the two terms",
+      "correctExplanation": "Seven is the greatest common divisor of 14 and 21, and a is the lowest common power of a across the two terms.",
+      "distractors": [
+        {
+          "answer": "The form 7 times the binomial (2a squared minus 3ab), with only the numerical factor extracted from the expression",
+          "explanation": "Misses the variable factor a common to both terms."
+        },
+        {
+          "answer": "The form a times the binomial (14a minus 21b), with only the variable factor extracted from the expression under the conventions of standard algebraic work",
+          "explanation": "Misses the numerical factor 7 common to both terms."
+        },
+        {
+          "answer": "The form 14a times the binomial (a minus 3b over 2), introducing a fractional coefficient inside the bracket throughout the factorisation across both terms",
+          "explanation": "Extracts a number that does not divide 21 exactly, requiring a fraction inside the bracket."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Yen is solving the equation 5x squared minus 20x equals 0 by factorising. Which one of the following gives the correct solution set?",
+      "correct": "The factorised form 5x times (x minus 4) equals 0 gives the solutions x equals 0 and x equals 4 by the null factor law",
+      "correctExplanation": "Each factor is set to zero in turn: 5x equals 0 gives x equals 0; x minus 4 equals 0 gives x equals 4.",
+      "distractors": [
+        {
+          "answer": "The factorised form 5x times (x minus 4) equals 0 gives only the solution x equals 4, since x equals 0 is trivial considering the powers of each variable involved",
+          "explanation": "Discards x equals 0 as a solution; the null factor law requires every factor to be considered."
+        },
+        {
+          "answer": "The factorised form 5x times (x minus 4) equals 0 gives the solutions x equals 5 and x equals 4, reading the coefficient as a root",
+          "explanation": "Reads the coefficient 5 as a root, confusing coefficient with factor."
+        },
+        {
+          "answer": "The factorised form 5x times (x minus 4) equals 0 has no real solutions, since the bracket may be negative applied to the expression in its original form",
+          "explanation": "Misapplies the null factor law and treats a sign condition as a no-solution condition."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Anika wants to simplify the algebraic fraction with numerator 6x squared plus 9xy and denominator 3x. Which one of the following gives the simplified form?",
+      "correct": "The simplified form is 2x plus 3y, obtained by factorising the numerator as 3x times (2x plus 3y) and cancelling 3x",
+      "correctExplanation": "Factorising exposes 3x as a common factor of numerator and denominator; cancelling leaves 2x plus 3y.",
+      "distractors": [
+        {
+          "answer": "The simplified form is 6x plus 9y, obtained by dividing each term of the numerator by x without removing the coefficient",
+          "explanation": "Cancels only the variable factor, missing that 3 also divides every term in the numerator."
+        },
+        {
+          "answer": "The simplified form is 2x squared plus 3xy, obtained by dividing each term by 3 only across both terms of the original expression",
+          "explanation": "Cancels only the numerical factor, missing that x also divides every term in the numerator."
+        },
+        {
+          "answer": "The simplified form is 2x plus 3y squared, obtained by treating the second term as 9xy times y when each term is divided by the chosen factor",
+          "explanation": "Introduces an extra factor of y in the second term that is not present in the original."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Lila is asked to factorise the expression 25x cubed minus 15x squared in one step. Which one of the following gives the fully factorised form?",
+      "correct": "The form 5x squared times the binomial (5x minus 3), with 5x squared as the highest common factor of the two terms",
+      "correctExplanation": "Five is the greatest common divisor of 25 and 15, and x squared is the lowest common power of x across the two terms.",
+      "distractors": [
+        {
+          "answer": "The form 5x times the binomial (5x squared minus 3x), with only one power of x extracted from the expression given the structure of the algebraic expression",
+          "explanation": "Extracts only x rather than x squared, leaving a further factor of x inside the bracket."
+        },
+        {
+          "answer": "The form 5x cubed times the binomial (5 minus 3 over x), introducing a fractional term inside the bracket regardless of the sign of the coefficient outside",
+          "explanation": "Extracts a higher power of x than divides both terms, requiring a fraction inside the bracket."
+        },
+        {
+          "answer": "The form 25x squared times the binomial (x minus 3 over 5), introducing a fractional coefficient inside the bracket when the factorisation is checked by expansion",
+          "explanation": "Extracts a number that does not divide 15 exactly, requiring a fraction inside the bracket."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Marcus is solving the equation 4x squared plus 8x equals 0 by factorising in one step. Which one of the following gives the correct solution set?",
+      "correct": "The factorised form 4x times (x plus 2) equals 0 gives the solutions x equals 0 and x equals negative 2",
+      "correctExplanation": "Each factor is set to zero in turn: 4x equals 0 gives x equals 0; x plus 2 equals 0 gives x equals negative 2.",
+      "distractors": [
+        {
+          "answer": "The factorised form 4x times (x plus 2) equals 0 gives the solutions x equals 0 and x equals positive 2 for the expression as it is presented above",
+          "explanation": "Reads the sign of the root incorrectly, taking positive 2 instead of negative 2."
+        },
+        {
+          "answer": "The factorised form 4x times (x plus 2) equals 0 gives only the solution x equals negative 2, since x equals 0 is trivial",
+          "explanation": "Discards x equals 0 as a solution; the null factor law requires every factor to be considered."
+        },
+        {
+          "answer": "The factorised form 4x times (x plus 2) equals 0 has no real solutions, since the product is always positive under the conventions of standard algebraic work",
+          "explanation": "Misapplies the null factor law and treats a sign condition as a no-solution condition."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Priya factorises an expression and checks her work by expanding the result. The original is 9a squared minus 6a, and her factorised form is 3a times (3a minus 2). Which one of the following best evaluates her check?",
+      "correct": "The check succeeds: expanding 3a times (3a minus 2) gives 9a squared minus 6a, matching the original expression",
+      "correctExplanation": "Distributing 3a through (3a minus 2) gives 9a squared minus 6a, confirming the factorisation is correct.",
+      "distractors": [
+        {
+          "answer": "The check fails: expanding 3a times (3a minus 2) gives 9a squared plus 6a, with a positive second term throughout the factorisation across both terms",
+          "explanation": "Misses the negative sign on the second term during expansion."
+        },
+        {
+          "answer": "The check fails: expanding 3a times (3a minus 2) gives 9a squared minus 2, dropping the variable from the second term",
+          "explanation": "Forgets to multiply 3a by 2 when distributing, dropping the variable."
+        },
+        {
+          "answer": "The check fails: expanding 3a times (3a minus 2) gives 6a squared minus 6a, with a coefficient error in the first term",
+          "explanation": "Adds the coefficients instead of multiplying them in the first term."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Rosa factorises 12pq plus 18p in one step. Which one of the following gives the fully factorised form?",
+      "correct": "The form 6p times the binomial (2q plus 3), with 6p as the highest common factor of the two terms",
+      "correctExplanation": "Six is the greatest common divisor of 12 and 18, and p is the lowest common power of p across the two terms.",
+      "distractors": [
+        {
+          "answer": "The form 6 times the binomial (2pq plus 3p), with only the numerical factor extracted from the two terms",
+          "explanation": "Misses the variable factor p common to both terms."
+        },
+        {
+          "answer": "The form p times the binomial (12q plus 18), with only the variable factor extracted from the two terms",
+          "explanation": "Misses the numerical factor 6 common to both terms."
+        },
+        {
+          "answer": "The form 6pq times the binomial (2 plus 3 over q), introducing a fractional term inside the bracket",
+          "explanation": "Extracts a factor that includes q even though q does not appear in the second term."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Sam wants to simplify the algebraic fraction with numerator 10x squared minus 25x and denominator 5x. Which one of the following gives the simplified form?",
+      "correct": "The simplified form is 2x minus 5, obtained by factorising the numerator as 5x times (2x minus 5) and cancelling 5x",
+      "correctExplanation": "Factorising exposes 5x as a common factor of numerator and denominator; cancelling leaves 2x minus 5.",
+      "distractors": [
+        {
+          "answer": "The simplified form is 10x minus 25, obtained by dividing each numerator term by x without removing the coefficient applied to the expression in its original form",
+          "explanation": "Cancels only the variable factor, missing that 5 also divides every term in the numerator."
+        },
+        {
+          "answer": "The simplified form is 2x squared minus 5x, obtained by dividing each numerator term by 5 only across both terms of the original expression",
+          "explanation": "Cancels only the numerical factor, missing that x also divides every term in the numerator."
+        },
+        {
+          "answer": "The simplified form is 2x minus 5 over x, obtained by leaving the second term in fractional form when each term is divided by the chosen factor",
+          "explanation": "Forgets to cancel x in the second term as well as the first, leaving an unnecessary fraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Jade factorises an expression by extracting a negative common factor. The original is negative 8x squared plus 12x, and her result is negative 4x times (2x minus 3). Which one of the following evaluates her result?",
+      "correct": "The result is correct: expanding negative 4x times (2x minus 3) gives negative 8x squared plus 12x, matching the original",
+      "correctExplanation": "The negative is distributed through both terms, giving the expected signs and matching the original expression on expansion.",
+      "distractors": [
+        {
+          "answer": "The result is incorrect: expanding negative 4x times (2x minus 3) gives negative 8x squared minus 12x, with a negative second term",
+          "explanation": "Fails to reverse the sign of the second term during expansion by a negative factor."
+        },
+        {
+          "answer": "The result is incorrect: expanding negative 4x times (2x minus 3) gives 8x squared plus 12x, dropping the negative entirely given the structure of the algebraic expression",
+          "explanation": "Drops the negative sign entirely during expansion."
+        },
+        {
+          "answer": "The result is incorrect because the highest common factor of negative 8x squared and 12x is negative 8x, not negative 4x",
+          "explanation": "Picks the larger coefficient instead of the greatest common divisor with sign."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Amir is solving the equation 6x squared minus 9x equals 0 by factorising in one step. Which one of the following gives the correct solution set?",
+      "correct": "The factorised form 3x times (2x minus 3) equals 0 gives the solutions x equals 0 and x equals three over two",
+      "correctExplanation": "Each factor is set to zero in turn: 3x equals 0 gives x equals 0; 2x minus 3 equals 0 gives x equals three over two.",
+      "distractors": [
+        {
+          "answer": "The factorised form 3x times (2x minus 3) equals 0 gives the solutions x equals 0 and x equals 3, reading 3 as the root",
+          "explanation": "Reads the constant inside the bracket as the root rather than solving 2x minus 3 equals 0."
+        },
+        {
+          "answer": "The factorised form 3x times (2x minus 3) equals 0 gives only the solution x equals three over two, since x equals 0 is trivial",
+          "explanation": "Discards x equals 0 as a solution; the null factor law requires every factor to be considered."
+        },
+        {
+          "answer": "The factorised form 3x times (2x minus 3) equals 0 has no real solutions, since the product is positive regardless of the sign of the coefficient outside",
+          "explanation": "Misapplies the null factor law and treats a sign condition as a no-solution condition."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Linh factorises 21x squared y squared minus 14xy in one step. Which one of the following gives the fully factorised form?",
+      "correct": "The form 7xy times the binomial (3xy minus 2), with 7xy as the highest common factor of the two terms",
+      "correctExplanation": "Seven is the greatest common divisor of 21 and 14; xy is the lowest common power of x and y across the two terms.",
+      "distractors": [
+        {
+          "answer": "The form 7 times the binomial (3x squared y squared minus 2xy), with only the numerical factor extracted from the two terms",
+          "explanation": "Misses the variable factor xy common to both terms."
+        },
+        {
+          "answer": "The form 7x squared y squared times the binomial (3 minus 2 over xy), introducing a fractional term inside the bracket",
+          "explanation": "Extracts a higher power of x and y than divides both terms, requiring a fraction inside the bracket."
+        },
+        {
+          "answer": "The form 14xy times the binomial (3 over 2 times xy minus 1), introducing a fractional coefficient inside the bracket when the factorisation is checked by expansion",
+          "explanation": "Extracts a number that does not divide 21 exactly, requiring a fraction inside the bracket."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Mei factorises 8x squared y plus 12xy squared as {{blank:1}} times the binomial (2x plus 3y), and checks the work by expanding to recover the original {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4xy",
+          "correctExplanation": "Four is the greatest common divisor of 8 and 12; xy is the lowest common power of the variables.",
+          "distractors": [
+            {
+              "answer": "2xy",
+              "explanation": "Two xy leaves a further numerical factor of 2 inside the bracket.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4x squared y squared",
+              "explanation": "This is too high; the lowest common powers are x and y, not x squared and y squared.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "expression",
+          "correctExplanation": "Expanding the factorised form recovers the original algebraic expression term by term.",
+          "distractors": [
+            {
+              "answer": "equation",
+              "explanation": "There is no equation here; the work is on an expression, not an equality.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "The check recovers the original expression, not a value of the variable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Kofi factorises 14a squared minus 21ab in one step as {{blank:1}} times the binomial (2a minus 3b), with the highest common factor being a product of a {{blank:2}} and the variable a.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7a",
+          "correctExplanation": "Seven is the greatest common divisor of 14 and 21, and a is the lowest common power of a in the two terms.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Seven alone misses the variable factor a common to both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "a",
+              "explanation": "Variable a alone misses the numerical factor 7 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "coefficient",
+          "correctExplanation": "A coefficient is a numerical factor in a term; here it is the number 7 outside the bracket.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "The numerical part of the common factor is a coefficient, not a variable.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "exponent",
+              "explanation": "An exponent is a power; the numerical factor 7 is not an exponent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Yen solves 5x squared minus 20x equals 0 by factorising as {{blank:1}} times (x minus 4) equals 0, then applying the {{blank:2}} factor law.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5x",
+          "correctExplanation": "Five x is the highest common factor of 5x squared and 20x.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Five alone misses the variable factor x common to both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Variable x alone misses the numerical factor 5 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "null",
+          "correctExplanation": "The null factor law sets each factor in turn equal to zero to find the solutions.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Zero is the value, not the name of the law applied to a product equal to zero.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "distributive",
+              "explanation": "The distributive law expands a product over a sum; it is not used here.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Anika simplifies the algebraic fraction with numerator 6x squared plus 9xy by first factorising the numerator as {{blank:1}} and then cancelling the factor {{blank:2}} that appears in the denominator.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3x times (2x plus 3y)",
+          "correctExplanation": "Factorising the numerator exposes 3x as a common factor with the denominator.",
+          "distractors": [
+            {
+              "answer": "3 times (2x squared plus 3xy)",
+              "explanation": "Misses the variable factor x in the common factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x times (6x plus 9y)",
+              "explanation": "Misses the numerical factor 3 in the common factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3x",
+          "correctExplanation": "Three x is the common factor with the denominator; cancelling it leaves 2x plus 3y.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Cancelling 3 only leaves an x in the denominator, so the fraction is not simplified.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Cancelling x only leaves a 3 in the denominator, so the fraction is not simplified.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Lila factorises 25x cubed minus 15x squared in one step as {{blank:1}} times the binomial (5x minus 3), with the variable factor extracted being x to the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5x squared",
+          "correctExplanation": "Five is the greatest common divisor of 25 and 15, and x squared is the lowest common power of x.",
+          "distractors": [
+            {
+              "answer": "5x",
+              "explanation": "Five x extracts only one power of x, leaving a further factor of x inside.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5x cubed",
+              "explanation": "This is too high; the lowest common power of x is x squared, not x cubed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "second power",
+          "correctExplanation": "X squared is x to the second power, the lowest common power in the two terms.",
+          "distractors": [
+            {
+              "answer": "first power",
+              "explanation": "First power is x; this misses the higher common power present in both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "third power",
+              "explanation": "Third power is x cubed; this overshoots the lowest common power.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Marcus solves 4x squared plus 8x equals 0 by factorising as {{blank:1}} times (x plus 2) equals 0, giving the solutions x equals 0 and x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4x",
+          "correctExplanation": "Four x is the highest common factor of 4x squared and 8x.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Four alone misses the variable factor x common to both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Variable x alone misses the numerical factor 4 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 2",
+          "correctExplanation": "Setting x plus 2 equal to zero gives x equals negative 2.",
+          "distractors": [
+            {
+              "answer": "positive 2",
+              "explanation": "Positive 2 makes the bracket equal to 4, not zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "Negative 4 is not consistent with setting x plus 2 to zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Priya checks her factorisation of 9a squared minus 6a by expanding {{blank:1}} and confirming the result matches the original {{blank:2}} term by term.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3a times (3a minus 2)",
+          "correctExplanation": "The factorised form, when expanded, must return the original expression to confirm correctness.",
+          "distractors": [
+            {
+              "answer": "3a times (3a plus 2)",
+              "explanation": "Plus sign inside gives 9a squared plus 6a, not minus.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3 times (3a squared minus 2a)",
+              "explanation": "This is a partial factorisation missing one power of a outside.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "expression",
+          "correctExplanation": "Comparing the expanded factorised form to the original expression confirms the factorisation.",
+          "distractors": [
+            {
+              "answer": "equation",
+              "explanation": "There is no equation here; the work is on an expression.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "The check compares expressions, not values of the variable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Rosa factorises 12pq plus 18p in one step as {{blank:1}} times (2q plus 3), and checks that the highest common factor cannot be raised any further by inspecting the {{blank:2}} of each variable in the two terms.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6p",
+          "correctExplanation": "Six is the greatest common divisor of 12 and 18; p is the lowest common power of p across the two terms.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Six alone misses the variable factor p common to both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "p",
+              "explanation": "Variable p alone misses the numerical factor 6 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "power",
+          "correctExplanation": "The lowest power of each variable across the terms determines the variable part of the common factor.",
+          "distractors": [
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficients are numerical, not variable; the criterion here concerns variable powers.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sign",
+              "explanation": "Sign is independent of power; the criterion here concerns variable powers.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Sam simplifies an algebraic fraction with numerator 10x squared minus 25x by factorising as {{blank:1}}, then cancelling the common factor of 5x with the denominator 5x to leave {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5x times (2x minus 5)",
+          "correctExplanation": "Factorising the numerator exposes 5x as a common factor with the denominator.",
+          "distractors": [
+            {
+              "answer": "5 times (2x squared minus 5x)",
+              "explanation": "Misses the variable factor x in the common factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x times (10x minus 25)",
+              "explanation": "Misses the numerical factor 5 in the common factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2x minus 5",
+          "correctExplanation": "After cancelling 5x in both numerator and denominator, the simplified form is 2x minus 5.",
+          "distractors": [
+            {
+              "answer": "10x minus 25",
+              "explanation": "This is the un-simplified numerator without cancellation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2x squared minus 5x",
+              "explanation": "This cancels only x, not the numerical factor 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Jade factorises negative 8x squared plus 12x as {{blank:1}} times (2x minus 3), extracting a {{blank:2}} common factor so that the sign of the second term inside the brackets is reversed.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 4x",
+          "correctExplanation": "Negative 4x is the highest common factor with sign preserved; expanding returns the original.",
+          "distractors": [
+            {
+              "answer": "negative 2x",
+              "explanation": "This leaves a further factor of 2 inside the bracket.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4x",
+              "explanation": "Positive 4x changes the value, since the negative sign must be carried.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative",
+          "correctExplanation": "Extracting a negative outside the bracket reverses the sign of each term inside.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "A positive common factor preserves the signs of terms inside.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "Extracting a variable factor changes powers, not signs, of inside terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Amir solves 6x squared minus 9x equals 0 by factorising as {{blank:1}} times (2x minus 3) equals 0, giving the solutions x equals 0 and x equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3x",
+          "correctExplanation": "Three x is the highest common factor of 6x squared and 9x.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Three alone misses the variable factor x common to both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Variable x alone misses the numerical factor 3 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "three over two",
+          "correctExplanation": "Setting 2x minus 3 equal to zero gives x equals three over two.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Three is the constant in the bracket, not the solution of 2x minus 3 equals 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative three over two",
+              "explanation": "The sign of the solution is positive, since 2x equals 3 gives x equals positive three over two.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Linh factorises 21x squared y squared minus 14xy in one step as {{blank:1}} times (3xy minus 2), with the variable part of the common factor being {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7xy",
+          "correctExplanation": "Seven is the greatest common divisor of 21 and 14; xy is the lowest common power of the variables.",
+          "distractors": [
+            {
+              "answer": "7x squared y squared",
+              "explanation": "This is too high; the lowest common power is xy, not x squared y squared.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "xy",
+              "explanation": "Variable factor xy alone misses the numerical factor 7 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "xy",
+          "correctExplanation": "The lowest common power of x in the two terms is x, and of y is y; together xy.",
+          "distractors": [
+            {
+              "answer": "x squared y squared",
+              "explanation": "This is the highest common power of each variable, not the lowest.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x plus y",
+              "explanation": "Variables in a common factor multiply; they are not added.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that 2 times (3x plus 9) is the fully factorised form of 6x plus 18 because a common factor has been extracted. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because the bracket 3x plus 9 contains a further common factor of 3, so the highest common factor of 6 has not been extracted",
+      "correctExplanation": "Full factorisation requires the highest common factor in one step; here only 2 was extracted, leaving 3 inside the bracket.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because any extraction of a common factor produces the fully factorised form of an expression for the expression as it is presented above under the conventions of standard algebraic work",
+          "explanation": "Treats partial factorisation as fully factorised, missing the residual-factor criterion."
+        },
+        {
+          "answer": "The claim is incorrect because brackets cannot appear in a fully factorised form of any algebraic expression throughout the factorisation across both terms considering the powers of each variable involved",
+          "explanation": "Imposes a false bracket-free rule on full factorisation."
+        },
+        {
+          "answer": "The claim is incorrect because the form 2 times (3x plus 9) is not equivalent in value to 6x plus 18 applied to the expression in its original form",
+          "explanation": "Treats a partial factorisation as changing the value, when in fact only the form differs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student factorises negative 6x squared plus 9x as negative 3x times (2x plus 3) and expands to check. Which one of the following best analyses the result?",
+      "correct": "The factorisation is incorrect because expanding negative 3x times (2x plus 3) gives negative 6x squared minus 9x, not negative 6x squared plus 9x",
+      "correctExplanation": "When a negative factor is extracted, the sign of each term inside the bracket must be reversed; here the second term should be minus 3.",
+      "distractors": [
+        {
+          "answer": "The factorisation is correct because expanding negative 3x times (2x plus 3) gives the original expression term by term across both terms of the original expression",
+          "explanation": "Misses the sign error; expanding gives a different second term in sign."
+        },
+        {
+          "answer": "The factorisation is incorrect because the highest common factor of negative 6x squared and 9x is negative 6x, not negative 3x when each term is divided by the chosen factor",
+          "explanation": "Picks the larger coefficient instead of the greatest common divisor with sign."
+        },
+        {
+          "answer": "The factorisation is incorrect because the variable x should appear outside the bracket, not inside given the structure of the algebraic expression regardless of the sign of the coefficient outside",
+          "explanation": "Misplaces the variable; in fully factorised form the variable remains inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Two students each factorise 12x squared minus 18x. Student A writes 2 times (6x squared minus 9x); student B writes 6x times (2x minus 3). Which one of the following best compares the two forms?",
+      "correct": "Student B's form is fully factorised while student A's form is only partially factorised, since 6x squared minus 9x has a further common factor of 3x",
+      "correctExplanation": "The fully factorised form extracts the highest common factor in one step; student A has stopped short with a partial extraction.",
+      "distractors": [
+        {
+          "answer": "Both students have given fully factorised forms, since each has extracted a common factor of the two terms in some way when the factorisation is checked by expansion",
+          "explanation": "Treats every common-factor extraction as fully factorised, missing the residual-factor criterion."
+        },
+        {
+          "answer": "Student A's form is fully factorised because the smaller of two possible coefficients is preferred outside the brackets for the expression as it is presented above",
+          "explanation": "Invents a 'smaller coefficient preferred' rule that is not part of factorisation."
+        },
+        {
+          "answer": "Neither form is fully factorised because the variable x has not been raised to a higher power than 1 outside the brackets under the conventions of standard algebraic work",
+          "explanation": "Imposes a false power-raising rule on full factorisation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student factorises x squared plus 3x as x times (x plus 3) and concludes that the equation x squared plus 3x equals 0 has the single solution x equals negative 3. Which one of the following best evaluates the conclusion?",
+      "correct": "The conclusion is incorrect because the null factor law applied to x times (x plus 3) equals 0 gives x equals 0 as well as x equals negative 3",
+      "correctExplanation": "Each factor must be set to zero in turn; setting x equal to zero gives a second solution that the student has overlooked.",
+      "distractors": [
+        {
+          "answer": "The conclusion is correct because x equals 0 is a trivial solution that is discarded in algebraic work by convention throughout the factorisation across both terms considering the powers of each variable involved",
+          "explanation": "Invents a convention of discarding x equals 0, which is not part of standard practice."
+        },
+        {
+          "answer": "The conclusion is incorrect because the factorisation x times (x plus 3) is not valid for the original expression applied to the expression in its original form across both terms of the original expression",
+          "explanation": "Mistakes a valid factorisation for an invalid one."
+        },
+        {
+          "answer": "The conclusion is incorrect because the equation x squared plus 3x equals 0 has no real solutions when the constant term is missing when each term is divided by the chosen factor",
+          "explanation": "Imposes a false 'missing-constant-means-no-solution' criterion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student simplifies an algebraic fraction with numerator 6x squared plus 9xy and denominator 3x by cancelling 3 in the coefficients and x in the variable, giving 2x plus 9y. Which one of the following best evaluates the result?",
+      "correct": "The simplification is incorrect because cancelling each coefficient and variable separately rather than the common factor 3x leaves an error in the second term",
+      "correctExplanation": "The correct simplification factorises the numerator as 3x times (2x plus 3y) and cancels 3x once, leaving 2x plus 3y, not 2x plus 9y.",
+      "distractors": [
+        {
+          "answer": "The simplification is correct because cancelling coefficients and variables separately is a valid method for simplifying any algebraic fraction given the structure of the algebraic expression",
+          "explanation": "Confuses term-by-term cancellation with factor cancellation, missing the correct method."
+        },
+        {
+          "answer": "The simplification is incorrect because the denominator 3x cannot be cancelled with any factor in the numerator at all regardless of the sign of the coefficient outside",
+          "explanation": "Denies the cancellation that is possible after factorising the numerator."
+        },
+        {
+          "answer": "The simplification is incorrect because the numerator cannot be factorised without a common variable in both terms when the factorisation is checked by expansion",
+          "explanation": "Misses that 3x is a common factor; both terms do contain x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student factorises 4x squared minus 12x as 4 times (x squared minus 3x) and a second student factorises the same expression as 4x times (x minus 3). Which one of the following best compares the two factorisations?",
+      "correct": "The second student's form is fully factorised because 4x is the highest common factor in one step; the first student has stopped at a partial factorisation",
+      "correctExplanation": "Full factorisation extracts the highest common factor in one step; the first student missed the variable factor x.",
+      "distractors": [
+        {
+          "answer": "Both factorisations are fully factorised because each has extracted a common factor in some valid form for the expression as it is presented above under the conventions of standard algebraic work",
+          "explanation": "Treats any common-factor extraction as fully factorised, missing the residual-factor criterion."
+        },
+        {
+          "answer": "The first student's form is preferred because numerical factors outside the bracket are clearer to read than variable ones throughout the factorisation across both terms considering the powers of each variable involved",
+          "explanation": "Invents a clarity preference for numerical factors, which is not part of full factorisation."
+        },
+        {
+          "answer": "Neither form is fully factorised because the bracket must contain only a single term, not a difference applied to the expression in its original form across both terms of the original expression",
+          "explanation": "Imposes a false single-term rule on the bracket of a fully factorised expression."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student claims that since 6x squared minus 9 has no x factor in the constant term, the highest common factor is 3 and the fully factorised form is 3 times (2x squared minus 3). Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct because x does not divide the constant term minus 9, so the highest common factor is purely numerical at 3",
+      "correctExplanation": "A variable factor must divide every term; since the second term has no x, the common factor cannot contain x.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because x is the highest common factor of any expression containing x in at least one term when each term is divided by the chosen factor",
+          "explanation": "Confuses 'appearing in one term' with 'common to every term'."
+        },
+        {
+          "answer": "The claim is incorrect because the highest common factor must always include both a coefficient and a variable given the structure of the algebraic expression",
+          "explanation": "Imposes a false 'must include both' rule on common factors."
+        },
+        {
+          "answer": "The claim is incorrect because 6x squared minus 9 cannot be factorised, since it is a difference of two terms regardless of the sign of the coefficient outside",
+          "explanation": "Denies a valid factorisation by extracting the numerical common factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student factorises 8x cubed y minus 12x squared y squared as 4xy times (2x squared minus 3xy) and claims the form is fully factorised. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because the bracket 2x squared minus 3xy still has a common factor of x, so the fully factorised form is 4x squared y times (2x minus 3y)",
+      "correctExplanation": "The highest common factor in one step is 4x squared y; the student has extracted only 4xy, leaving a further factor of x.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because the form 4xy times (2x squared minus 3xy) cannot be reduced any further in any way when the factorisation is checked by expansion for the expression as it is presented above",
+          "explanation": "Misses the further common factor of x inside the bracket."
+        },
+        {
+          "answer": "The claim is incorrect because 4xy is not a valid common factor of the two terms at all under the conventions of standard algebraic work throughout the factorisation across both terms",
+          "explanation": "Denies that 4xy divides both terms exactly, when in fact it does."
+        },
+        {
+          "answer": "The claim is incorrect because the original expression has no common factor at all between its two terms considering the powers of each variable involved applied to the expression in its original form",
+          "explanation": "Denies the existence of any common factor, when several exist."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Two students simplify the algebraic fraction with numerator 10x squared minus 25x and denominator 5x. Student A cancels 5 and x separately to get 2x minus 5. Student B factorises the numerator as 5x times (2x minus 5) and cancels 5x once. Which one of the following best compares their methods?",
+      "correct": "Both methods give 2x minus 5, but student B's method is more reliable because it factorises before cancelling, avoiding term-by-term errors in more complex cases",
+      "correctExplanation": "Factorising before cancelling is the safer method, since it cancels a common factor rather than relying on term-by-term cancellation that can mislead in complex cases.",
+      "distractors": [
+        {
+          "answer": "Student A's method gives a different result from student B's method, because separate cancellation always introduces errors across both terms of the original expression when each term is divided by the chosen factor",
+          "explanation": "Treats the two methods as producing different results, when they coincide for this simple case."
+        },
+        {
+          "answer": "Student B's method is incorrect because once the numerator is factorised, it cannot be combined with the denominator at all given the structure of the algebraic expression",
+          "explanation": "Denies the valid cancellation step that follows factorisation."
+        },
+        {
+          "answer": "Both methods are equivalent in every case, including more complex algebraic fractions with multi-term numerators and denominators regardless of the sign of the coefficient outside",
+          "explanation": "Overstates the equivalence; term-by-term cancellation fails in general."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student factorises negative 12a squared b minus 18ab squared as negative 6ab times (2a plus 3b). Another student factorises the same expression as 6ab times (negative 2a minus 3b). Which one of the following best compares the two forms?",
+      "correct": "Both forms are equivalent in value because the negative sign may be placed either outside the bracket or distributed through every term inside",
+      "correctExplanation": "Multiplying through by a negative outside the bracket or carrying it term by term inside the bracket produces the same value.",
+      "distractors": [
+        {
+          "answer": "The first form is incorrect because a negative common factor cannot be extracted from an expression with two negative terms when the factorisation is checked by expansion",
+          "explanation": "Imposes a false 'all-positive-only' rule on common-factor extraction."
+        },
+        {
+          "answer": "The second form is incorrect because every term inside a bracket must be positive in fully factorised form for the expression as it is presented above",
+          "explanation": "Imposes a false 'all-positive-inside' rule on fully factorised forms."
+        },
+        {
+          "answer": "The two forms have different values because the placement of the negative sign changes the meaning of the expression under the conventions of standard algebraic work",
+          "explanation": "Treats a notational difference as a change in value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student is asked to solve the equation 7x squared minus 14x equals 0 and writes 7 times (x squared minus 2x) equals 0, then concludes x squared minus 2x equals 0 because 7 cannot equal zero. Which one of the following best evaluates the next step?",
+      "correct": "The next step should be to factorise x squared minus 2x as x times (x minus 2), then apply the null factor law to get x equals 0 and x equals 2",
+      "correctExplanation": "Once the numerical factor 7 has been divided out, the remaining factor x squared minus 2x still has a common factor of x to extract.",
+      "distractors": [
+        {
+          "answer": "The next step should be to substitute x equals 0 directly into the original equation to confirm it as a solution throughout the factorisation across both terms considering the powers of each variable involved",
+          "explanation": "Substitutes one solution without finding all solutions through the null factor law."
+        },
+        {
+          "answer": "The next step should be to add a constant to x squared minus 2x to complete the square and find the solutions applied to the expression in its original form across both terms of the original expression",
+          "explanation": "Introduces completing the square, which is not necessary here when factorising suffices."
+        },
+        {
+          "answer": "The next step should be to set x squared minus 2x to 1 instead of zero, since 7 has been moved to the other side when each term is divided by the chosen factor",
+          "explanation": "Incorrectly divides through by 7 on only one side of the equation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student factorises 16x squared plus 8x as 4x times (4x plus 2) and claims the form is fully factorised. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because the bracket 4x plus 2 has a further common factor of 2, so the fully factorised form is 8x times (2x plus 1)",
+      "correctExplanation": "Full factorisation requires the highest common factor in one step; the student has extracted 4x and missed a further factor of 2.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because the form 4x times (4x plus 2) cannot be reduced further without rearranging the terms given the structure of the algebraic expression regardless of the sign of the coefficient outside",
+          "explanation": "Misses the further numerical factor of 2 inside the bracket."
+        },
+        {
+          "answer": "The claim is incorrect because the original expression 16x squared plus 8x has no common factor at all between the two terms when the factorisation is checked by expansion",
+          "explanation": "Denies the existence of any common factor, when several exist."
+        },
+        {
+          "answer": "The claim is incorrect because 4x is not a valid common factor of the two terms in any form for the expression as it is presented above under the conventions of standard algebraic work",
+          "explanation": "Denies that 4x divides both terms exactly, when in fact it does."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student is solving the equation 9x squared plus 15x equals 0 and factorises as 3x times (3x plus 5) equals 0. Another student solves it without factorising by dividing both sides by x to give 9x plus 15 equals 0 and concludes that x equals negative 5 over 3. Which one of the following best compares the two methods?",
+      "correct": "The first student's method finds both solutions x equals 0 and x equals negative 5 over 3, while the second student's method loses the solution x equals 0 by dividing by x",
+      "correctExplanation": "Dividing by a variable can hide a solution where that variable equals zero; factorising and applying the null factor law preserves every solution.",
+      "distractors": [
+        {
+          "answer": "Both students' methods give the same complete solution set in every case where the equation has multiple roots throughout the factorisation across both terms considering the powers of each variable involved applied to the expression in its original form",
+          "explanation": "Misses that dividing by x loses the x equals 0 solution."
+        },
+        {
+          "answer": "The first student's method is incorrect because the null factor law requires the equation to be in the form of a sum, not a product across both terms of the original expression",
+          "explanation": "Reverses the requirement of the null factor law, which applies precisely to products."
+        },
+        {
+          "answer": "The second student's method is incorrect because dividing both sides by x is not a valid operation for algebraic equations when each term is divided by the chosen factor given the structure of the algebraic expression",
+          "explanation": "Mislabels a generally permitted operation as universally invalid, missing the specific x-equals-zero issue."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student claims that the expression 4x plus 7 cannot be factorised because there is no common factor of 4x and 7. Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct because 4 and 7 share no common factor greater than 1 and 7 contains no variable, so no non-trivial common factor exists",
+      "correctExplanation": "Common factors greater than 1 require shared divisors; here the coefficients are coprime and one term has no variable, so the expression is already in fully factorised form.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because every algebraic expression can be factorised in some non-trivial way using a common factor regardless of the sign of the coefficient outside",
+          "explanation": "Overstates the scope of factorising; not every expression has a non-trivial common factor."
+        },
+        {
+          "answer": "The claim is incorrect because x is always a common factor of any expression that contains x in at least one term when the factorisation is checked by expansion",
+          "explanation": "Confuses 'appearing in one term' with 'common to every term'."
+        },
+        {
+          "answer": "The claim is incorrect because the constant 7 should be rewritten as 7x over x to introduce a common factor for the expression as it is presented above",
+          "explanation": "Introduces an artificial fraction to manufacture a common factor that does not exist."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A student factorises 12x squared minus 18x as 2 times (6x squared minus 9x). The factorisation is {{blank:1}} factorised because the bracket still has a {{blank:2}} factor of 3x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "partially",
+          "correctExplanation": "Partial factorisation extracts some but not all of the highest common factor.",
+          "distractors": [
+            {
+              "answer": "fully",
+              "explanation": "Full factorisation leaves no residual common factor inside the bracket.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "incorrectly",
+              "explanation": "The factorisation is valid as far as it goes; it is just not complete.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "common",
+          "correctExplanation": "The residual factor inside the bracket is a common factor of the remaining terms.",
+          "distractors": [
+            {
+              "answer": "constant",
+              "explanation": "The residual factor includes a variable, not just a constant.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "The residual factor includes a numerical coefficient as well as a variable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Extracting a {{blank:1}} common factor from an expression reverses the sign of every term inside the brackets, while a {{blank:2}} common factor preserves each sign.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative",
+          "correctExplanation": "A negative factor outside the bracket reverses each term's sign inside.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "A variable factor changes powers, not signs.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "constant",
+              "explanation": "Constant alone does not imply sign reversal; it is the sign that matters.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "A positive factor preserves the signs of the terms inside the bracket.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "A variable factor changes powers, not signs.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative",
+              "explanation": "A negative factor reverses signs; this contrasts with the negative case.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "Dividing both sides of the equation 9x squared plus 15x equals 0 by x is risky because it loses the solution x equals {{blank:1}}; factorising as 3x times (3x plus 5) and applying the {{blank:2}} factor law preserves every solution.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "Dividing by a variable can hide a solution where that variable equals zero.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "The lost solution is zero, not one; one does not satisfy the equation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative one",
+              "explanation": "Negative one is not a root of the equation; zero is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "null",
+          "correctExplanation": "The null factor law sets each factor in turn to zero, preserving every solution.",
+          "distractors": [
+            {
+              "answer": "distributive",
+              "explanation": "The distributive law is for expanding; it is not used here.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Zero is the value; the law is named the null factor law.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Two equivalent factorised forms negative 6ab times (2a plus 3b) and 6ab times (negative 2a minus 3b) are equal in {{blank:1}} because the negative sign may be placed either outside the bracket or distributed through every {{blank:2}} inside.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "value",
+          "correctExplanation": "Two equivalent forms take the same value at every choice of variable values.",
+          "distractors": [
+            {
+              "answer": "form",
+              "explanation": "The two forms differ in form; they coincide in value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficients differ between the forms; values coincide.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "term",
+          "correctExplanation": "Distributing a negative reverses the sign of each term inside the bracket.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "The negative distributes through terms, not separately through variables.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "factor",
+              "explanation": "The negative is itself a factor; it distributes through terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "An algebraic fraction is in lowest terms when every common {{blank:1}} of the numerator and denominator has been {{blank:2}} after each has been factorised.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "factor",
+          "correctExplanation": "A common factor of numerator and denominator may be cancelled to reduce the fraction.",
+          "distractors": [
+            {
+              "answer": "term",
+              "explanation": "Common terms are not generally cancellable; common factors are.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficients alone may not cancel without an accompanying variable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cancelled",
+          "correctExplanation": "Cancelling each common factor in turn brings the fraction to its simplest equivalent form.",
+          "distractors": [
+            {
+              "answer": "expanded",
+              "explanation": "Expansion is the reverse of factorising and does not simplify the fraction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "rearranged",
+              "explanation": "Rearrangement of terms is not the same as cancellation of factors.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A student writes 2 times (3x plus 9) as the factorised form of 6x plus 18 and claims it is fully factorised. The form is {{blank:1}} factorised because the bracket contains a further common factor of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "partially",
+          "correctExplanation": "Partial factorisation leaves a residual common factor inside the bracket.",
+          "distractors": [
+            {
+              "answer": "fully",
+              "explanation": "Full factorisation leaves no residual common factor inside the bracket.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "incorrectly",
+              "explanation": "The factorisation is valid as far as it goes; it is just not complete.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The bracket 3x plus 9 has a further common factor of 3.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "The bracket 3x plus 9 has a common factor of 3, not x; the second term has no x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3x",
+              "explanation": "Three x does not divide 9 in the second term inside the bracket.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Full factorisation of 4x squared minus 12x in one step gives {{blank:1}} times (x minus 3); the alternative form 4 times (x squared minus 3x) is only {{blank:2}} factorised because the variable factor remains inside.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4x",
+          "correctExplanation": "Four x is the highest common factor of 4x squared and 12x in one step.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Four alone misses the variable factor x common to both terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Variable x alone misses the numerical factor 4 common to both terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "partially",
+          "correctExplanation": "Partial factorisation leaves a residual common factor inside the bracket.",
+          "distractors": [
+            {
+              "answer": "fully",
+              "explanation": "Fully factorised means no residual common factor remains inside.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "incorrectly",
+              "explanation": "The partial form is valid as far as it goes; it is just not complete.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "When the expression ax squared plus bx is factorised as x times (ax plus b), the equation ax squared plus bx equals 0 yields the solutions x equals {{blank:1}} and ax plus b equals 0 by the {{blank:2}} factor law.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "Setting x to zero satisfies the first factor; the null factor law identifies it as a solution.",
+          "distractors": [
+            {
+              "answer": "b over a",
+              "explanation": "B over a is the other solution from the second factor, not the first.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "a plus b",
+              "explanation": "A plus b is not a solution; the first factor is x.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "null",
+          "correctExplanation": "The null factor law sets each factor in turn to zero to find every solution.",
+          "distractors": [
+            {
+              "answer": "distributive",
+              "explanation": "The distributive law is for expanding; it is not used here.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Zero is the value; the law is named the null factor law.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A factorisation is verified as correct when {{blank:1}} the factorised form recovers the {{blank:2}} expression term by term without error.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "expanding",
+          "correctExplanation": "Expanding the factorised form recovers the original expression when the factorisation is correct.",
+          "distractors": [
+            {
+              "answer": "substituting",
+              "explanation": "Substitution alone tests at a specific value, not algebraic identity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "simplifying",
+              "explanation": "Simplification is not the same as expansion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "original",
+          "correctExplanation": "The check compares the expansion to the original expression term by term.",
+          "distractors": [
+            {
+              "answer": "simplified",
+              "explanation": "The check compares to the original, not to a further-simplified form.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "partial",
+              "explanation": "The partial form is the factorised form; the check compares to the original.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A student's method of cancelling coefficient and variable separately in a fraction can succeed when the numerator has only one {{blank:1}}, but factorising before cancelling is safer when the numerator has more than one {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "term",
+          "correctExplanation": "A single-term numerator divides factor by factor without issue; multi-term numerators require factorising first.",
+          "distractors": [
+            {
+              "answer": "factor",
+              "explanation": "Factors are extracted; the issue concerns the number of terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "The number of variables is not the criterion; the number of terms is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "term",
+          "correctExplanation": "Multi-term numerators require factorising to expose a common factor before cancellation.",
+          "distractors": [
+            {
+              "answer": "factor",
+              "explanation": "Factors are what cancel; the issue concerns whether terms can be separately cancelled.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficients are part of terms; the criterion concerns whole terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "When an expression cannot be factorised non-trivially, the coefficients of its terms share no common factor greater than {{blank:1}} and no variable appears in every {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "one",
+          "correctExplanation": "Coprime coefficients have no common factor greater than one, so no non-trivial numerical factor exists.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Common factors are positive; one is the minimal non-trivial bound.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "the original expression",
+              "explanation": "The expression itself is not the criterion; coefficient gcd is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "term",
+          "correctExplanation": "A variable factor must divide every term; if some term lacks the variable, no such factor exists.",
+          "distractors": [
+            {
+              "answer": "coefficient",
+              "explanation": "Variables divide terms, not coefficients alone.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "The criterion concerns terms, not variables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "Extracting the highest common factor in {{blank:1}} step gives the fully factorised form, while extracting in multiple steps may leave a {{blank:2}} factorisation that is not yet fully factorised.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "one",
+          "correctExplanation": "Full factorisation requires extracting the highest common factor in a single step.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Two steps may give the same end result but each step is partial on its own.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "multiple",
+              "explanation": "Multiple steps each give partial forms; only the end form is fully factorised.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "partial",
+          "correctExplanation": "Partial factorisations leave a residual common factor inside the bracket.",
+          "distractors": [
+            {
+              "answer": "full",
+              "explanation": "Full factorisation leaves no residual common factor inside.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "incorrect",
+              "explanation": "Partial factorisations are not incorrect; they are simply incomplete.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

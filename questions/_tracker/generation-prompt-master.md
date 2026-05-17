@@ -194,6 +194,32 @@ Test analysis: comparing, explaining why, evaluating claims, reasoning from evid
 
 ---
 
+## HISTORY & PERIOD-SPECIFIC CONTENT
+
+**Scope gate — read first.** This section applies ONLY to questions about a defined historical period or past event in History, Geography (historical/colonial topics), Civics (constitutional history), or Economics (economic history). It DOES NOT apply to:
+
+- Mathematics — use present tense for definitions, properties, and rules ("The square root of 16 is 4")
+- Science — use present tense for laws, processes, and ongoing phenomena ("Cells divide by mitosis"; "Water boils at 100°C at sea level")
+- Health & Physical Education — use present tense for body systems, skills, and current public-health knowledge
+- The Arts, Languages, Technologies — use the tense that fits the content (present for general practice; past only for historical examples within the discipline)
+- Living First Nations cultural practices — see ATSI rule below, which takes precedence
+
+If the question concerns a finished historical event, decision, policy, society, or person acting in their period, follow the rules below. If in doubt about whether content is "historical" or "current," default to the tense that matches the discipline's general convention.
+
+**Inside the scope:**
+
+1. **Past tense** for events, actions, decisions, and policies of the period. "The Roman senate voted on tax policy" — not "The Roman senate votes today."
+2. **Past tense** for the views, beliefs, and practices of historical peoples acting in that period — even when their descendants live today. Distinguish "Ancient Egyptians built pyramids" (period action) from "Egyptian cultural identity continues today" (living continuity).
+3. **Past tense** for legacies framed as outcomes of the period: "Roman law shaped later legal systems."
+4. **Present tense** is reserved within history content for:
+   - Living cultural practices that genuinely continue (see ATSI rule for First Nations content)
+   - The historian's own work and methods ("Historians study fossils to build theories")
+   - Genuinely enduring institutions or principles where the claim is about their current state
+5. **Banned phrasings inside history scope:** "X today…" where X is a finished historical subject; "in any year today"; "across many years today"; or any construction that places a finished historical event in the present moment.
+6. **Domain-of-applicability check** — for every history question, ask: is the subject of this claim a finished event, a living practice, or an enduring principle? Tense it accordingly.
+
+---
+
 ## ATSI INTEGRATION
 
 If the `_source.y` or `_source.eg` fields reference Aboriginal or Torres Strait Islander knowledge:

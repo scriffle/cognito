@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10A06",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to implement algorithms using data structures in pseudocode or a programming language.",
+    "generatedAt": "2026-05-16T09:10:36Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "An algorithm is a finite sequence of well-defined instructions for solving a problem or performing a computation.",
+      "correct": "True",
+      "correctExplanation": "An algorithm is precisely a finite, ordered set of unambiguous instructions that terminates after producing a result.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse 'algorithm' with a program or believe algorithms can be infinite."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "A variable in pseudocode can store only one value at a time during program execution.",
+      "correct": "True",
+      "correctExplanation": "A variable holds a single value; assigning a new value overwrites the previous one.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses a variable with an array or list, which can store multiple values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "An array stores multiple values under separate unrelated variable names rather than a single indexed structure.",
+      "correct": "False",
+      "correctExplanation": "An array stores multiple values in a single indexed structure, accessible by position number.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses individual variables with an array, which is one named structure with indexed elements."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A loop in pseudocode always executes its instructions exactly ten times before terminating.",
+      "correct": "False",
+      "correctExplanation": "Loops execute a variable number of times depending on the counter limit or condition; there is no fixed count.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Incorrectly assumes a default or fixed iteration count for all loops."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The Euclidean algorithm finds the lowest common multiple of two numbers.",
+      "correct": "False",
+      "correctExplanation": "The Euclidean algorithm finds the greatest common divisor (GCD), not the lowest common multiple (LCM).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses GCD with LCM; both involve common properties of number pairs but are distinct."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Pseudocode is written in a specific programming language with strict syntax requirements.",
+      "correct": "False",
+      "correctExplanation": "Pseudocode uses informal, human-readable notation and is not bound to any programming language syntax.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses pseudocode (language-independent description) with actual source code in a programming language."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Bubble sort compares adjacent elements and swaps them if they are in the wrong order.",
+      "correct": "True",
+      "correctExplanation": "Bubble sort repeatedly steps through the list, compares adjacent pairs, and swaps misplaced elements.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse bubble sort with selection sort or another algorithm that uses a different comparison strategy."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "Iteration means a section of code executes only once without any form of repetition.",
+      "correct": "False",
+      "correctExplanation": "Iteration means repeated execution of a code block; executing once without repetition is sequential execution.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses iteration (repetition) with a single-pass execution."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "In selection sort, the smallest unsorted element is found and placed at the next position in the sorted portion.",
+      "correct": "True",
+      "correctExplanation": "Selection sort repeatedly selects the minimum from the unsorted portion and appends it to the sorted portion.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse selection sort with insertion sort, which inserts elements into their correct position within the sorted portion."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Debugging is the process of writing new algorithms from scratch rather than finding errors in existing ones.",
+      "correct": "False",
+      "correctExplanation": "Debugging is the process of identifying and correcting errors (bugs) in existing code or algorithms.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses debugging (error correction) with algorithm design (initial creation)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A random number generator produces truly random values that have no underlying pattern or algorithm.",
+      "correct": "False",
+      "correctExplanation": "Computer-based generators use deterministic algorithms (pseudorandom); the outputs appear random but follow a reproducible sequence from a seed.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Believes computer-generated numbers are truly random rather than algorithmically produced from a seed value."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Newton's method for square roots requires an initial guess that is refined through repeated calculation.",
+      "correct": "True",
+      "correctExplanation": "Newton's method starts with an initial approximation and iteratively improves it using the formula x_new = (x + n/x)/2.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May believe the method produces an exact answer in a single step without iteration."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly defines an array in the context of algorithm implementation?",
+      "correct": "An ordered collection of values stored under one name and accessed by index position",
+      "correctExplanation": "An array is a named data structure where elements are stored sequentially and accessed by their index.",
+      "distractors": [
+        {
+          "answer": "A single value that changes each time the algorithm reaches a new iteration step",
+          "explanation": "Describes a variable being updated in a loop, not an array."
+        },
+        {
+          "answer": "A set of separate named variables that share a common data type across the program",
+          "explanation": "Separate variables are not an array; an array is one structure with indexed elements."
+        },
+        {
+          "answer": "A temporary storage location used only during the swapping step of a sorting algorithm",
+          "explanation": "Describes a temporary variable used in swaps, not an array data structure."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following states the purpose of the Euclidean algorithm?",
+      "correct": "To find the greatest common divisor of two positive integers through repeated division",
+      "correctExplanation": "The Euclidean algorithm computes the GCD by repeatedly applying division and taking remainders.",
+      "distractors": [
+        {
+          "answer": "To find the lowest common multiple of two positive integers through repeated addition",
+          "explanation": "Confuses GCD (division-based) with LCM; the Euclidean algorithm does not use repeated addition."
+        },
+        {
+          "answer": "To determine whether a given positive integer is prime through systematic trial division",
+          "explanation": "Describes primality testing, not the Euclidean algorithm for GCD."
+        },
+        {
+          "answer": "To generate the prime factorisation of a composite number using recursive decomposition",
+          "explanation": "Describes prime factorisation, a different algorithm from the Euclidean GCD method."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes what happens during one pass of a bubble sort?",
+      "correct": "Adjacent pairs are compared from left to right, and swapped if the left element exceeds the right",
+      "correctExplanation": "Bubble sort traverses the array, comparing and swapping adjacent elements to move larger values rightward.",
+      "distractors": [
+        {
+          "answer": "The minimum element is located and moved to the beginning of the unsorted portion directly",
+          "explanation": "Describes selection sort, which finds the minimum rather than comparing adjacent pairs."
+        },
+        {
+          "answer": "Each element is inserted into its correct position within a separately maintained sorted section in this context.",
+          "explanation": "Describes insertion sort, which inserts elements rather than comparing adjacent pairs."
+        },
+        {
+          "answer": "The array is divided into two halves which are sorted independently then merged together",
+          "explanation": "Describes merge sort, which uses divide-and-conquer rather than adjacent comparisons."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the role of a counter variable in a for loop?",
+      "correct": "It tracks the current iteration number and determines when the loop terminates",
+      "correctExplanation": "A counter variable increments each iteration and is compared to a limit to control termination.",
+      "distractors": [
+        {
+          "answer": "It stores the final result produced by the algorithm after all iterations are completed",
+          "explanation": "The counter tracks progress, not the algorithm's output; a separate variable holds results."
+        },
+        {
+          "answer": "It records the total number of errors encountered during the execution of the loop",
+          "explanation": "Counters in for loops track iterations, not errors."
+        },
+        {
+          "answer": "It stores the input data that the loop processes during each individual iteration step",
+          "explanation": "Input data is stored in separate variables or arrays, not in the loop counter."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the iterative formula used in Newton's method for approximating the square root of n?",
+      "correct": "x_new = (x + n divided by x) divided by 2",
+      "correctExplanation": "Newton's method refines the guess x by averaging x and n/x: x_new = (x + n/x)/2.",
+      "distractors": [
+        {
+          "answer": "x_new = n divided by x, then multiplied by 2",
+          "explanation": "Multiplies n/x by 2 instead of averaging x and n/x."
+        },
+        {
+          "answer": "x_new = (x + n) divided by 2",
+          "explanation": "Averages x and n directly rather than x and n/x."
+        },
+        {
+          "answer": "x_new = x minus (x squared minus n) divided by x",
+          "explanation": "Applies the general Newton-Raphson formula but simplification gives the averaging form, not this unsimplified version."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes what pseudocode is used for in algorithm development?",
+      "correct": "Expressing the logic of an algorithm in structured human-readable form independent of any programming language",
+      "correctExplanation": "Pseudocode communicates algorithmic logic without requiring specific language syntax.",
+      "distractors": [
+        {
+          "answer": "Compiling instructions into machine-executable code that a computer processes directly during runtime",
+          "explanation": "Describes a compiler's role; pseudocode is not executable and serves as a design tool."
+        },
+        {
+          "answer": "Testing whether an algorithm produces correct output by running it through automated verification software in this context.",
+          "explanation": "Describes testing/verification; pseudocode is a planning notation, not a testing framework."
+        },
+        {
+          "answer": "Translating mathematical formulas into graphical flowchart diagrams for visual presentation purposes only",
+          "explanation": "Describes flowcharts; pseudocode is text-based structured notation, not graphical."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly defines what iteration means in the context of algorithm implementation?",
+      "correct": "The repeated execution of a set of instructions controlled by a loop structure",
+      "correctExplanation": "Iteration is the process of repeating instructions, typically managed by for or while loops.",
+      "distractors": [
+        {
+          "answer": "The process of breaking a problem into smaller identical subproblems solved independently",
+          "explanation": "Describes recursion or divide-and-conquer, not iteration."
+        },
+        {
+          "answer": "The sequential execution of instructions exactly once from the first line to the last",
+          "explanation": "Describes sequential execution without repetition, which is the opposite of iteration."
+        },
+        {
+          "answer": "The selection of one execution path from multiple alternatives based on a condition",
+          "explanation": "Describes conditional branching (if/else), not iteration."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the purpose of a temporary variable during a swap operation in a sorting algorithm?",
+      "correct": "It preserves one element's value before that value is overwritten by the other element",
+      "correctExplanation": "Without temporary storage, overwriting one variable with another would lose the original value permanently.",
+      "distractors": [
+        {
+          "answer": "It counts how many swap operations have been performed during the current sorting pass",
+          "explanation": "Describes a swap counter, not the temporary variable used within an individual swap."
+        },
+        {
+          "answer": "It stores the index position of the element being moved rather than its actual data value",
+          "explanation": "The temporary variable holds the data value, not the index."
+        },
+        {
+          "answer": "It permanently stores the smaller of the two elements for later comparison in subsequent passes",
+          "explanation": "The temporary variable is used only during the swap and does not persist."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies what a simulation models in a mathematical computing context?",
+      "correct": "A real-world process or system whose behaviour is approximated through repeated computational trials",
+      "correctExplanation": "Simulations use computation to model and explore the behaviour of systems that may be complex or random.",
+      "distractors": [
+        {
+          "answer": "An exact mathematical proof that establishes a theorem through formal logical deduction steps",
+          "explanation": "Proofs are deductive; simulations are experimental and approximate."
+        },
+        {
+          "answer": "A single calculation that produces a definitive answer to a well-defined numerical problem",
+          "explanation": "Describes direct computation; simulations involve repeated trials to explore behaviour."
+        },
+        {
+          "answer": "A graphical display of data points plotted on coordinate axes for visual pattern identification in this context.",
+          "explanation": "Describes data visualisation, which may accompany simulations but is not a simulation itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the function of a while loop in pseudocode?",
+      "correct": "It repeats a block of instructions for as long as a specified boolean condition remains true",
+      "correctExplanation": "A while loop checks its condition before each iteration and continues while the condition holds.",
+      "distractors": [
+        {
+          "answer": "It executes a block exactly once then checks whether to terminate based on the output produced",
+          "explanation": "Describes a do-while loop (post-condition); a while loop checks the condition first."
+        },
+        {
+          "answer": "It iterates a fixed number of times determined by a counter variable specified at declaration",
+          "explanation": "Describes a for loop with a fixed counter; while loops use boolean conditions."
+        },
+        {
+          "answer": "It branches execution into two possible paths depending on whether a condition is satisfied",
+          "explanation": "Describes a conditional (if/else), not a loop."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following identifies what debugging involves when applied to an algorithm?",
+      "correct": "Locating and correcting errors in the algorithm's logic or implementation that cause incorrect results",
+      "correctExplanation": "Debugging is the systematic process of finding and fixing errors (bugs) that produce wrong behaviour.",
+      "distractors": [
+        {
+          "answer": "Rewriting the entire algorithm from scratch using a different approach to the same problem",
+          "explanation": "Rewriting is redesign; debugging fixes specific errors within the existing algorithm."
+        },
+        {
+          "answer": "Adding additional features and functionality beyond what the original specification requires",
+          "explanation": "Describes feature addition or scope creep, not debugging."
+        },
+        {
+          "answer": "Converting pseudocode into executable code in a specific programming language for deployment",
+          "explanation": "Describes implementation or coding; debugging is about finding and fixing errors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes an index in the context of array access?",
+      "correct": "A numerical position value used to identify and retrieve a specific element from the array",
+      "correctExplanation": "The index specifies which element to access within the array, typically starting from 0 or 1.",
+      "distractors": [
+        {
+          "answer": "The total number of elements currently stored within the array data structure overall",
+          "explanation": "Describes the array's length or size, not an individual index."
+        },
+        {
+          "answer": "A label or name assigned to the array as a whole to distinguish it from other variables",
+          "explanation": "Describes the array's variable name, not an index used to access elements."
+        },
+        {
+          "answer": "The data type declaration that specifies what kind of values the array is permitted to hold",
+          "explanation": "Describes a type declaration, not an index for element access."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A {{blank:1}} stores multiple values in a single structure, while a {{blank:2}} stores only one value at a time.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "array",
+          "correctExplanation": "An array is a data structure that holds multiple values accessible by index.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "A variable holds a single value, not multiple values.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "loop",
+              "explanation": "A loop is a control structure for repetition, not a data storage structure.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "variable",
+          "correctExplanation": "A variable holds exactly one value at any given time; assigning a new value overwrites the old.",
+          "distractors": [
+            {
+              "answer": "array",
+              "explanation": "An array stores multiple values, not just one.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "function",
+              "explanation": "A function performs operations but is not primarily a single-value storage mechanism.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The Euclidean algorithm finds the greatest common {{blank:1}} of two integers by repeatedly applying {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "divisor",
+          "correctExplanation": "The Euclidean algorithm computes the GCD — greatest common divisor.",
+          "distractors": [
+            {
+              "answer": "multiple",
+              "explanation": "The GCD is about divisors, not multiples; the LCM involves multiples.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "factor",
+              "explanation": "While 'factor' is close to 'divisor', the standard term is 'greatest common divisor'.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "division",
+          "correctExplanation": "The algorithm uses repeated division (finding remainders) until the remainder is zero.",
+          "distractors": [
+            {
+              "answer": "subtraction",
+              "explanation": "While a subtraction-based variant exists, the standard Euclidean algorithm uses division.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "multiplication",
+              "explanation": "Multiplication is not part of the Euclidean algorithm's core operation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The Euclidean algorithm terminates because the remainder decreases with each iteration until reaching zero.",
+      "correct": "True",
+      "correctExplanation": "Each remainder is strictly less than the previous divisor, guaranteeing the sequence reaches zero in finite steps.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not see why remainders decrease; the division algorithm ensures each remainder is smaller than the divisor."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Bubble sort requires exactly one pass through the array to guarantee all elements are correctly sorted.",
+      "correct": "False",
+      "correctExplanation": "Bubble sort generally requires multiple passes; one pass only guarantees the largest element reaches its final position.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses one pass (which places one element) with full sorting (which requires up to n-1 passes)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Newton's method converges to the exact square root in a single iteration regardless of the initial guess.",
+      "correct": "False",
+      "correctExplanation": "Newton's method improves the approximation iteratively; multiple iterations are typically needed for convergence.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May believe the averaging formula produces the exact answer immediately without understanding iterative refinement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "A simulation using random numbers produces identical results every time it runs with the same seed value.",
+      "correct": "True",
+      "correctExplanation": "Pseudorandom generators produce reproducible sequences from a given seed, so same seed yields same results.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May believe randomness means unpredictability even with the same seed, not understanding deterministic generation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Selection sort performs fewer comparisons than bubble sort when sorting the same array of n elements.",
+      "correct": "False",
+      "correctExplanation": "Both perform O(n²) comparisons in the worst case; selection sort does not reduce comparison count over bubble sort.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May assume selection sort's fewer swaps translates to fewer comparisons, confusing the two metrics."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "An infinite loop occurs when the loop body modifies the counter variable in the correct direction each iteration.",
+      "correct": "False",
+      "correctExplanation": "If the counter moves in the correct direction, the loop approaches its termination condition and eventually exits; an infinite loop results from the opposite — failure to approach termination.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the logic; correct counter modification ensures termination, not infinite looping."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "Storing sequence terms in an array rather than printing them allows later access to any individual term by index.",
+      "correct": "True",
+      "correctExplanation": "Arrays retain all stored values, enabling random access to any element via its index at any later point.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not distinguish between output (lost after display) and storage (retained for future access)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Optimising an algorithm always requires changing its fundamental approach rather than improving individual steps.",
+      "correct": "False",
+      "correctExplanation": "Optimisation can involve improving constants, reducing redundant operations, or better data handling without changing the fundamental approach.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses optimisation (improving efficiency) with redesign (changing the algorithm entirely)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why Newton's method converges to the square root of n?",
+      "correct": "Averaging x and n/x always produces a value between them and closer to the root with each iteration",
+      "correctExplanation": "The arithmetic mean of x and n/x lies between them and is closer to √n, ensuring convergence.",
+      "distractors": [
+        {
+          "answer": "Dividing n by x always produces the exact root when x is within 50 percent of the true value",
+          "explanation": "n/x alone does not give the root; the averaging step is essential for convergence."
+        },
+        {
+          "answer": "Subtracting n from x squared approaches zero, and this difference drives the correction directly in this context.",
+          "explanation": "While x² - n relates to the error, the mechanism in Newton's method is the averaging formula."
+        },
+        {
+          "answer": "Multiplying x by itself repeatedly halves the distance to the root in each iteration step",
+          "explanation": "Self-multiplication (squaring) moves away from the root; the method uses averaging, not squaring."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why bubble sort is called a comparison-based sorting algorithm?",
+      "correct": "It determines element order by comparing pairs of values and deciding which should precede the other",
+      "correctExplanation": "Bubble sort makes ordering decisions solely through pairwise comparisons of element values.",
+      "distractors": [
+        {
+          "answer": "It compares the array's current state against a pre-sorted reference copy to identify misplacements in this context.",
+          "explanation": "No reference copy exists; bubble sort compares elements within the same array."
+        },
+        {
+          "answer": "It assigns numerical ranks to elements based on their data type before arranging them sequentially",
+          "explanation": "Ranking is not a separate step; elements are compared directly by value."
+        },
+        {
+          "answer": "It uses the array indices rather than element values to determine the correct sorted arrangement",
+          "explanation": "Indices indicate position, not value; the algorithm compares element values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why storing sequence terms in an array is preferable to using a single variable?",
+      "correct": "An array retains all previously computed terms for later access, whereas a single variable overwrites each value",
+      "correctExplanation": "A variable holds only the most recent value; an array preserves the entire sequence history.",
+      "distractors": [
+        {
+          "answer": "An array computes sequence terms faster than a variable because it parallelises the calculation steps",
+          "explanation": "Arrays do not parallelise computation; they provide storage, not speed."
+        },
+        {
+          "answer": "A single variable cannot hold numerical values large enough for sequence terms beyond the tenth position within this specific context.",
+          "explanation": "Variable capacity depends on data type, not on being a variable vs array."
+        },
+        {
+          "answer": "An array automatically generates the next term in the sequence without explicit calculation instructions",
+          "explanation": "Arrays store data passively; generating terms still requires explicit algorithm instructions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the Euclidean algorithm uses remainders rather than quotients?",
+      "correct": "The remainder determines the GCD structure: if the remainder is zero, the divisor is the GCD; otherwise iteration continues",
+      "correctExplanation": "Remainders drive the algorithm's logic — zero remainder signals termination with the GCD found.",
+      "distractors": [
+        {
+          "answer": "Quotients are always larger than the original numbers, making them unsuitable for iterative reduction steps",
+          "explanation": "Quotients are not always larger; the reason for using remainders is their role in determining the GCD."
+        },
+        {
+          "answer": "Remainders are computationally simpler to calculate than quotients, reducing the number of operations needed",
+          "explanation": "Both are computed simultaneously in division; the reason is mathematical, not computational efficiency."
+        },
+        {
+          "answer": "Quotients produce fractional values that cannot be stored in integer variables during algorithm execution",
+          "explanation": "Integer division produces integer quotients; the choice of remainders is about mathematical correctness."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains the advantage of selection sort over bubble sort in terms of swap operations?",
+      "correct": "Selection sort performs at most one swap per pass, placing the minimum directly into its final position each time",
+      "correctExplanation": "Selection sort finds the minimum then performs a single swap; bubble sort may swap many times per pass.",
+      "distractors": [
+        {
+          "answer": "Selection sort avoids swaps entirely by constructing a new sorted array in a separate memory location",
+          "explanation": "Selection sort performs swaps in-place; it does not create a separate array."
+        },
+        {
+          "answer": "Selection sort performs swaps only between adjacent elements, which requires less memory than distant swaps within this specific context.",
+          "explanation": "Selection sort swaps non-adjacent elements (minimum with current position); adjacent swaps are bubble sort."
+        },
+        {
+          "answer": "Selection sort uses a temporary variable that eliminates the need for any swap operation during the sort",
+          "explanation": "The temporary variable is used within the swap; it enables the swap rather than eliminating it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why simulations use many trials rather than a single random trial?",
+      "correct": "Multiple trials allow the distribution of outcomes to emerge, providing reliable estimates of probabilities and averages",
+      "correctExplanation": "The law of large numbers ensures that many trials converge to expected values; one trial gives only one sample.",
+      "distractors": [
+        {
+          "answer": "A single trial always produces the mean value, so multiple trials are needed only to verify the calculation",
+          "explanation": "A single random trial rarely produces exactly the mean; it is one sample from a distribution."
+        },
+        {
+          "answer": "Multiple trials are required because random number generators only produce valid outputs after repeated warm-up calls in this context.",
+          "explanation": "Generators produce valid outputs immediately; multiple trials are for statistical reliability."
+        },
+        {
+          "answer": "Each trial uses a different algorithm, and averaging results from multiple algorithms improves overall accuracy",
+          "explanation": "All trials use the same algorithm; repetition is for statistical convergence, not algorithmic diversity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why a while loop is more appropriate than a for loop when the number of iterations is unknown in advance?",
+      "correct": "A while loop continues until a condition becomes false, without requiring a predetermined iteration count at the start",
+      "correctExplanation": "While loops are condition-driven; for loops are count-driven. Unknown iteration counts suit while loops.",
+      "distractors": [
+        {
+          "answer": "A while loop executes faster than a for loop because it checks the condition only at the end of each pass",
+          "explanation": "While loops check at the start; speed is not the reason for choosing while over for."
+        },
+        {
+          "answer": "A for loop cannot access variables defined outside its structure, limiting it to fixed-range problems only",
+          "explanation": "For loops can access external variables; the distinction is about condition vs counter control."
+        },
+        {
+          "answer": "A while loop automatically adjusts its step size based on the output of each iteration, unlike a for loop",
+          "explanation": "Neither loop automatically adjusts; the programmer controls all updates within the loop body."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains what happens if a loop variable is not updated inside a while loop?",
+      "correct": "The loop condition never changes, resulting in an infinite loop that prevents program termination",
+      "correctExplanation": "If the variable controlling the condition remains unchanged, the condition is always true and the loop never exits.",
+      "distractors": [
+        {
+          "answer": "The loop executes exactly once because the language detects the missing update and forces a single iteration",
+          "explanation": "No such detection exists; the loop runs indefinitely without an update."
+        },
+        {
+          "answer": "The loop automatically increments the variable by one each iteration as a default behaviour",
+          "explanation": "There is no automatic increment; the programmer must explicitly update the variable."
+        },
+        {
+          "answer": "The program throws an immediate error message before the loop body executes for the first time",
+          "explanation": "Missing updates are logical errors, not syntax errors; no error is thrown before execution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why a temporary variable is necessary when swapping two array elements?",
+      "correct": "Assigning one element to the other's position overwrites the original value, which is lost without prior preservation",
+      "correctExplanation": "Without temporary storage, the first assignment destroys one value before it can be placed elsewhere.",
+      "distractors": [
+        {
+          "answer": "The array structure prevents direct assignment between two positions, requiring an intermediate step",
+          "explanation": "Arrays allow direct assignment; the temporary variable preserves data, not enables access."
+        },
+        {
+          "answer": "The programming language requires three assignment statements for any operation involving two variables",
+          "explanation": "No such language rule exists; the three statements are logically necessary to avoid data loss."
+        },
+        {
+          "answer": "Both elements must be compared to a neutral reference value before their positions can be exchanged",
+          "explanation": "No comparison to a reference is needed; the swap is purely an exchange of stored values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why pseudocode uses indentation to represent code structure?",
+      "correct": "Indentation visually indicates which instructions belong inside loops or conditional blocks, clarifying the control flow",
+      "correctExplanation": "Indentation shows nesting hierarchy, making it clear which statements are controlled by which structure.",
+      "distractors": [
+        {
+          "answer": "Indentation determines the execution order of statements, with more indented lines executing first",
+          "explanation": "Execution order follows sequential and structural logic, not indentation depth priority."
+        },
+        {
+          "answer": "Indentation is purely aesthetic and carries no structural meaning in pseudocode conventions at all",
+          "explanation": "Indentation conveys structure; without it, nesting relationships would be ambiguous."
+        },
+        {
+          "answer": "Indentation separates variable declarations from executable statements within the algorithm body",
+          "explanation": "Indentation shows nesting, not a declaration/execution division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains the difference between selection sort and bubble sort in terms of how they build the sorted portion?",
+      "correct": "Selection sort grows the sorted portion by finding the next minimum; bubble sort grows it by floating the maximum to the end",
+      "correctExplanation": "Selection sort selects minimums for the front; bubble sort pushes maximums to the back.",
+      "distractors": [
+        {
+          "answer": "Selection sort moves elements one position at a time; bubble sort can move elements across the entire array in one step in this context.",
+          "explanation": "Bubble sort also moves elements one position per swap; selection sort can place elements far from their start."
+        },
+        {
+          "answer": "Selection sort works from both ends towards the middle; bubble sort works strictly from left to right only",
+          "explanation": "Standard selection sort works from one end; the bidirectional variant is cocktail sort, not selection sort."
+        },
+        {
+          "answer": "Selection sort compares all pairs simultaneously; bubble sort compares pairs sequentially one at a time",
+          "explanation": "Both algorithms compare pairs sequentially; neither performs simultaneous comparisons."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why debugging often involves tracing through the algorithm step by step?",
+      "correct": "Tracing reveals the actual values of variables at each step, exposing where the logic deviates from the expected behaviour",
+      "correctExplanation": "Step-by-step tracing shows intermediate states, helping identify the exact point where an error occurs.",
+      "distractors": [
+        {
+          "answer": "Tracing is the only method available because debuggers cannot be used with pseudocode-based algorithm descriptions",
+          "explanation": "While debuggers are for executable code, tracing is preferred for understanding logic, not because alternatives are unavailable."
+        },
+        {
+          "answer": "Tracing automatically corrects errors as it identifies them, making manual fixes unnecessary after the trace",
+          "explanation": "Tracing identifies errors but does not fix them; the programmer must apply corrections."
+        },
+        {
+          "answer": "Tracing converts the algorithm into a mathematical proof, which formally verifies correctness by logical deduction",
+          "explanation": "Tracing is empirical (testing with values); formal proof is a separate verification technique."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "Bubble sort terminates when a complete pass produces no {{blank:1}}, indicating the array is fully {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "swaps",
+          "correctExplanation": "If no swaps occur during a pass, all adjacent pairs are in order, so the array is sorted.",
+          "distractors": [
+            {
+              "answer": "comparisons",
+              "explanation": "Comparisons always occur during a pass; it is the absence of swaps that signals completion.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "iterations",
+              "explanation": "Iterations (passes) always occur; the termination signal is the absence of swaps within a pass.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sorted",
+          "correctExplanation": "No swaps means every adjacent pair is already in correct order — the array is sorted.",
+          "distractors": [
+            {
+              "answer": "reversed",
+              "explanation": "No swaps indicates correct order, not reversed order.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "empty",
+              "explanation": "The array still contains all elements; it is ordered, not emptied.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Newton's method converges because averaging x and n/x always moves the estimate {{blank:1}} to the true square {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "closer",
+          "correctExplanation": "The arithmetic mean of x and n/x is always nearer to √n than the further of the two values.",
+          "distractors": [
+            {
+              "answer": "further",
+              "explanation": "The average moves closer, not further; it lies between x and n/x, closer to √n.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "parallel",
+              "explanation": "'Parallel' is a geometric term not applicable to scalar convergence.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "root",
+          "correctExplanation": "The target value is the square root of n.",
+          "distractors": [
+            {
+              "answer": "power",
+              "explanation": "The method finds square roots, not powers.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "factor",
+              "explanation": "The method targets the square root, not a factor of n.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A while loop risks becoming {{blank:1}} if the variable controlling its condition is never {{blank:2}} inside the loop body.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "infinite",
+          "correctExplanation": "Without updating the control variable, the condition never becomes false and the loop never terminates.",
+          "distractors": [
+            {
+              "answer": "empty",
+              "explanation": "The loop body still executes; the problem is it never stops, not that it is empty.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "nested",
+              "explanation": "Nesting refers to loops within loops; the issue here is non-termination.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "updated",
+          "correctExplanation": "The control variable must change to eventually falsify the condition and allow exit.",
+          "distractors": [
+            {
+              "answer": "declared",
+              "explanation": "The variable is already declared; the problem is it is not updated during execution.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "printed",
+              "explanation": "Printing the variable does not change its value or affect termination.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "In the Euclidean algorithm, when the {{blank:1}} equals zero, the current divisor is the greatest common {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "remainder",
+          "correctExplanation": "A zero remainder means the divisor divides evenly, identifying it as the GCD.",
+          "distractors": [
+            {
+              "answer": "quotient",
+              "explanation": "The quotient being zero would mean the dividend is smaller than the divisor; the termination signal is zero remainder.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "divisor",
+              "explanation": "If the divisor were zero, division would be undefined; it is the remainder that must reach zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "divisor",
+          "correctExplanation": "The GCD is the greatest common divisor of the original two numbers.",
+          "distractors": [
+            {
+              "answer": "multiple",
+              "explanation": "The algorithm finds the GCD (divisor), not the LCM (multiple).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "remainder",
+              "explanation": "The remainder reaching zero triggers termination; the GCD is the divisor at that point.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Simulations use many {{blank:1}} to estimate probabilities because a single trial cannot represent the full {{blank:2}} of possible outcomes.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trials",
+          "correctExplanation": "Repeated trials allow the frequency distribution to approximate the true probability distribution.",
+          "distractors": [
+            {
+              "answer": "algorithms",
+              "explanation": "The same algorithm runs repeatedly; it is the trials (runs) that are multiple, not the algorithms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variables",
+              "explanation": "Multiple variables store data; the repetition is of trials, not of variables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "distribution",
+          "correctExplanation": "One trial gives one outcome; many trials reveal the distribution across all possible outcomes.",
+          "distractors": [
+            {
+              "answer": "sequence",
+              "explanation": "A sequence is ordered; the concept here is about the spread of possible outcomes (distribution).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "formula",
+              "explanation": "A formula is a fixed equation; the concept is about the range of outcomes, not a formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Selection sort builds the sorted portion by repeatedly finding the {{blank:1}} element from the unsorted portion and {{blank:2}} it with the first unsorted element.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "minimum",
+          "correctExplanation": "Selection sort finds the smallest (minimum) remaining element each pass.",
+          "distractors": [
+            {
+              "answer": "maximum",
+              "explanation": "Standard selection sort finds the minimum and places it at the front, not the maximum.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "median",
+              "explanation": "Selection sort does not compute the median; it finds the minimum of the unsorted portion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "swapping",
+          "correctExplanation": "The minimum is swapped into position, exchanging it with whatever occupies the target position.",
+          "distractors": [
+            {
+              "answer": "inserting",
+              "explanation": "Insertion is the mechanism of insertion sort; selection sort uses swapping.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "appending",
+              "explanation": "Appending adds to the end; selection sort places the minimum at a specific position via swap.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Applying the Euclidean algorithm to 48 and 18 gives GCD = 6 after three iterations of division.",
+      "correct": "True",
+      "correctExplanation": "48 ÷ 18 = 2 remainder 12; 18 ÷ 12 = 1 remainder 6; 12 ÷ 6 = 2 remainder 0. GCD = 6.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate a remainder or lose track of which number divides which."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Applying Newton's method to find the square root of 25 with initial guess 10 gives 7.25 after one iteration.",
+      "correct": "False",
+      "correctExplanation": "x_new = (10 + 25/10)/2 = (10 + 2.5)/2 = 6.25, not 7.25.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May compute (10 + 25/10)/2 incorrectly, perhaps adding before dividing by 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Jarrah writes pseudocode to generate the first 10 terms of the sequence defined by t(n) = 3n + 1, storing them in an array. Which one of the following correctly implements this?",
+      "correct": "FOR n = 1 TO 10: array[n] = 3 * n + 1",
+      "correctExplanation": "A for loop from 1 to 10 computes each term and stores it at the corresponding index.",
+      "distractors": [
+        {
+          "answer": "FOR n = 1 TO 10: array[n] = 3 + n + 1",
+          "explanation": "Adds 3 and n and 1 instead of multiplying 3 by n then adding 1."
+        },
+        {
+          "answer": "FOR n = 0 TO 9: array[n] = 3 * 10 + 1",
+          "explanation": "Uses the constant 10 instead of the loop variable n, storing the same value in every position."
+        },
+        {
+          "answer": "WHILE n < 10: array[n] = 3 * n + 1",
+          "explanation": "Missing initialisation and increment of n; the while loop would be infinite without them."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Priya applies one pass of bubble sort to the array [5, 2, 8, 1, 4]. Which one of the following shows the array state after the first complete pass?",
+      "correct": "[2, 5, 1, 4, 8]",
+      "correctExplanation": "Compare and swap adjacent pairs left to right: 5>2 swap → [2,5,8,1,4]; 5<8 no swap; 8>1 swap → [2,5,1,8,4]; 8>4 swap → [2,5,1,4,8].",
+      "distractors": [
+        {
+          "answer": "[1, 2, 4, 5, 8]",
+          "explanation": "Shows the fully sorted array; one pass does not complete the sort."
+        },
+        {
+          "answer": "[2, 5, 8, 1, 4]",
+          "explanation": "Shows only the first swap (5 and 2) without continuing the pass through the rest."
+        },
+        {
+          "answer": "[5, 2, 1, 4, 8]",
+          "explanation": "Skips the first comparison, starting from position 2 instead of position 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Amir applies Newton's method starting with x = 10 to estimate the square root of 50. Which one of the following gives the correct value after one iteration?",
+      "correct": "x_new = (10 + 50/10) / 2 = 7.5",
+      "correctExplanation": "(10 + 5)/2 = 7.5.",
+      "distractors": [
+        {
+          "answer": "x_new = (10 + 50) / 2 = 30",
+          "explanation": "Adds n directly to x instead of computing n/x first."
+        },
+        {
+          "answer": "x_new = 50 / 10 / 2 = 2.5",
+          "explanation": "Divides n by x then by 2 without adding x to the quotient."
+        },
+        {
+          "answer": "x_new = (10 * 50) / 2 = 250 in this context.",
+          "explanation": "Multiplies x by n instead of dividing n by x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Lila applies the Euclidean algorithm to find GCD(84, 36). Which one of the following shows the correct sequence of remainders?",
+      "correct": "84 mod 36 = 12, then 36 mod 12 = 0, so GCD = 12",
+      "correctExplanation": "84 ÷ 36 = 2 remainder 12; 36 ÷ 12 = 3 remainder 0. The last nonzero remainder is 12.",
+      "distractors": [
+        {
+          "answer": "84 mod 36 = 12, then 36 mod 12 = 6, so GCD = 6",
+          "explanation": "36 ÷ 12 = 3 remainder 0, not remainder 6; miscalculates the second division."
+        },
+        {
+          "answer": "84 mod 36 = 48, then 48 mod 36 = 12, so GCD = 12",
+          "explanation": "Incorrectly computes 84 mod 36 as 48 (subtracted wrong direction); correct remainder is 12."
+        },
+        {
+          "answer": "36 mod 84 = 36, then 84 mod 36 = 12, so GCD = 36",
+          "explanation": "Starts with the smaller number first and then misidentifies GCD as 36 instead of continuing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Sam writes pseudocode to count how many values in an array of 20 elements exceed 50. Which one of the following correctly implements this?",
+      "correct": "SET count = 0; FOR i = 1 TO 20: IF array[i] > 50 THEN count = count + 1",
+      "correctExplanation": "Initialises a counter, iterates through all elements, and increments the counter for each value exceeding 50.",
+      "distractors": [
+        {
+          "answer": "SET count = 0; FOR i = 1 TO 20: count = count + array[i] > 50",
+          "explanation": "Attempts to add a boolean comparison result directly to count without proper conditional structure."
+        },
+        {
+          "answer": "FOR i = 1 TO 20: IF array[i] > 50 THEN PRINT count",
+          "explanation": "Prints count without initialising or incrementing it; does not actually count."
+        },
+        {
+          "answer": "SET count = 20; FOR i = 1 TO 20: IF array[i] <= 50 THEN count = count - 1",
+          "explanation": "Starts at 20 and subtracts; while logically equivalent, this does not match the standard counting pattern correctly — it would need strict implementation to work."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Rosa simulates rolling a six-sided die 1000 times and counts sixes. Which one of the following pseudocode structures correctly implements this simulation?",
+      "correct": "SET sixes = 0; FOR i = 1 TO 1000: IF RANDOM(1,6) = 6 THEN sixes = sixes + 1",
+      "correctExplanation": "Generates a random integer 1–6 in each trial and increments the counter when a 6 occurs.",
+      "distractors": [
+        {
+          "answer": "SET sixes = 0; FOR i = 1 TO 6: IF RANDOM(1,1000) = 6 THEN sixes = sixes + 1",
+          "explanation": "Loops only 6 times with range 1–1000, reversing the structure entirely."
+        },
+        {
+          "answer": "SET sixes = 1000 / 6; PRINT sixes (calculates expected value directly without running any random simulation trials)",
+          "explanation": "Calculates the expected value directly without running a simulation."
+        },
+        {
+          "answer": "FOR i = 1 TO 1000: sixes = RANDOM(1,6) (overwrites the counter each iteration instead of incrementing it conditionally)",
+          "explanation": "Overwrites sixes each iteration instead of counting; only stores the last random value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Kofi identifies a bug: his loop computes the sum of an array but always gives an answer that is too large by the value of the first element. Which one of the following is the most likely cause?",
+      "correct": "The sum variable was initialised to array[1] instead of zero, then the loop included index 1 in its range",
+      "correctExplanation": "Initialising to the first element and then also adding it in the loop counts it twice.",
+      "distractors": [
+        {
+          "answer": "The loop counter started at 0 instead of 1, causing an off-by-one error that includes an extra element in this context.",
+          "explanation": "Starting at 0 might cause an index error, but would not specifically add the first element twice."
+        },
+        {
+          "answer": "The sum variable was not declared before the loop, causing it to default to the array length",
+          "explanation": "Undeclared variables typically default to 0 or cause errors, not to the array length."
+        },
+        {
+          "answer": "The loop condition used less-than-or-equal instead of less-than, including one element past the end",
+          "explanation": "An off-by-one at the end would add the last element or cause an error, not duplicate the first."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Jade applies selection sort to [7, 3, 9, 1, 5]. Which one of the following shows the array after the first two selections are placed?",
+      "correct": "[1, 3, 9, 7, 5]",
+      "correctExplanation": "Pass 1: min is 1 (index 3), swap with index 0 → [1,3,9,7,5]. Pass 2: min of remaining [3,9,7,5] is 3 (already in place).",
+      "distractors": [
+        {
+          "answer": "[1, 3, 5, 7, 9]",
+          "explanation": "Shows the fully sorted array; only two selection passes have been applied."
+        },
+        {
+          "answer": "[3, 1, 9, 7, 5]",
+          "explanation": "Only performs one swap incorrectly, placing 3 first instead of 1."
+        },
+        {
+          "answer": "[1, 5, 9, 3, 7]",
+          "explanation": "Incorrectly identifies the second minimum or places it in the wrong position."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Marcus applies two iterations of Newton's method to estimate the square root of 10, starting with x = 3. Which one of the following gives the value after two iterations?",
+      "correct": "First: (3 + 10/3)/2 = 19/6 ≈ 3.167; Second: (19/6 + 60/19)/2 ≈ 3.1623",
+      "correctExplanation": "Iteration 1: (3 + 3.333)/2 ≈ 3.167. Iteration 2: (3.167 + 3.158)/2 ≈ 3.1623.",
+      "distractors": [
+        {
+          "answer": "First: (3 + 10)/2 = 6.5; Second: (6.5 + 10/6.5)/2 ≈ 4.019",
+          "explanation": "Adds n to x directly in the first iteration instead of computing n/x."
+        },
+        {
+          "answer": "First: 10/3/2 = 1.667; Second: 10/1.667/2 ≈ 3.0",
+          "explanation": "Computes n/x/2 without adding x, omitting the averaging step."
+        },
+        {
+          "answer": "First: (3 × 10)/2 = 15; Second: (15 + 10/15)/2 ≈ 7.83",
+          "explanation": "Multiplies x by n in the first step instead of dividing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Yen writes a while loop to find the first term in the sequence t(n) = n squared that exceeds 200. Which one of the following correctly implements this?",
+      "correct": "SET n = 1; WHILE n * n <= 200: n = n + 1; OUTPUT n, n * n",
+      "correctExplanation": "Increments n while n² ≤ 200; when the loop exits, n is the first value where n² > 200.",
+      "distractors": [
+        {
+          "answer": "SET n = 1; WHILE n <= 200: n = n + 1; OUTPUT n * n",
+          "explanation": "Tests n ≤ 200 instead of n² ≤ 200; finds when n itself exceeds 200, not n squared."
+        },
+        {
+          "answer": "SET n = 200; WHILE n * n > 200: n = n - 1; OUTPUT n within this specific context.",
+          "explanation": "Starts high and decrements; the condition is immediately true and the loop body runs indefinitely or finds the wrong boundary."
+        },
+        {
+          "answer": "FOR n = 1 TO 200: IF n * n > 200 THEN OUTPUT n * n",
+          "explanation": "Outputs all terms where n² > 200, not just the first; also iterates unnecessarily to 200."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Linh runs a simulation of 500 coin flips and counts heads. Her code gives exactly 500 heads every time. Which one of the following identifies the most likely bug?",
+      "correct": "The conditional always evaluates as true, incrementing the counter on every trial regardless of the random outcome",
+      "correctExplanation": "If the condition is always true (e.g., using = instead of == or comparing to wrong value), every flip counts as heads.",
+      "distractors": [
+        {
+          "answer": "The random number generator produces only the value 1, which always represents heads in the code",
+          "explanation": "Generators produce ranges of values; a stuck generator is extremely unlikely compared to a logic error."
+        },
+        {
+          "answer": "The counter variable overflows after reaching 255, wrapping around to appear as 500 in the output",
+          "explanation": "Overflow to exactly 500 is implausible; the issue is more likely a conditional logic error."
+        },
+        {
+          "answer": "The loop executes 500 times but the counter starts at 500 instead of zero, doubling the count",
+          "explanation": "Starting at 500 would give a result of 1000 (if all flips count), not exactly 500."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Anika needs to optimise her search algorithm which checks every element in a sorted array sequentially. Which one of the following improvements best exploits the sorted property?",
+      "correct": "Replace linear search with binary search, which halves the search space with each comparison step",
+      "correctExplanation": "Binary search on a sorted array eliminates half the remaining elements per comparison, achieving O(log n).",
+      "distractors": [
+        {
+          "answer": "Reverse the array before searching so that the target element is more likely to appear earlier in the sequence",
+          "explanation": "Reversing does not improve expected performance; the target could be anywhere regardless of order."
+        },
+        {
+          "answer": "Search from both ends simultaneously toward the middle, halving the number of elements examined each pass",
+          "explanation": "Bidirectional linear search reduces iterations by at most half; binary search is logarithmic, far more efficient."
+        },
+        {
+          "answer": "Store the array in a larger data structure that pre-indexes every possible search value for instant lookup",
+          "explanation": "While hash tables offer O(1) lookup, this changes the data structure rather than optimising the search on the existing sorted array."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Applying the Euclidean algorithm to 56 and 21: 56 mod 21 = {{blank:1}}, then 21 mod 14 = {{blank:2}}, then 14 mod 7 = 0, so GCD = 7.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "14",
+          "correctExplanation": "56 ÷ 21 = 2 remainder 14.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "56 ÷ 21 has remainder 14, not 7; perhaps confused with a later step.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "35",
+              "explanation": "56 - 21 = 35 (subtraction), but the algorithm uses modular division giving 14.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "21 ÷ 14 = 1 remainder 7.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "21 mod 14 = 7, not 14; the remainder must be less than the divisor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "21 mod 14 = 7, not 0; 14 does not divide 21 evenly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "After one pass of bubble sort on [4, 7, 2, 9, 1], the largest element {{blank:1}} moves to position {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "9",
+          "correctExplanation": "9 is the largest element; it gets compared and swapped to the right until it reaches the end.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 is not the largest; 9 is the maximum and will bubble to the end.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 is not the largest element in the array.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "The largest element moves to the last position (index 5 in 1-based indexing) after one complete pass.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Position 1 is where the smallest would go in selection sort, not where the largest goes in bubble sort.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "9 is already at position 4 in the original; it moves to position 5 (the end).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Newton's method for the square root of 20 starting at x = 5: x_new = (5 + 20/5)/2 = (5 + {{blank:1}})/2 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "20 ÷ 5 = 4.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "20/5 = 4, not 10; perhaps multiplied 5 × 2 instead of dividing 20 by 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "15",
+              "explanation": "20 - 5 = 15 (subtraction); the method uses division, giving 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4.5",
+          "correctExplanation": "(5 + 4)/2 = 9/2 = 4.5.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "5 + 4 = 9, but the formula divides by 2, giving 4.5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2.5",
+              "explanation": "Perhaps divided 5 by 2 = 2.5 without adding 20/5 = 4 first.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "To count even numbers in an array of size n: initialise count to {{blank:1}}, then loop and increment count when element mod 2 equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "The counter starts at zero because no elements have been checked yet.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Starting at 1 would overcount by one unless the first element is guaranteed even.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "n",
+              "explanation": "Starting at n and decrementing for odd numbers is unusual and error-prone.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "A number is even if its remainder when divided by 2 is zero.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Remainder 1 indicates an odd number, not even.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "The remainder of dividing by 2 is always 0 or 1, never 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "In selection sort on [8, 3, 6, 1, 5], the first pass finds minimum {{blank:1}} at index {{blank:2}} and swaps it to position 1.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "The minimum value in [8, 3, 6, 1, 5] is 1.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the second smallest; the minimum is 1 at index 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 is not the minimum; scanning the entire array reveals 1 as the smallest.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "The value 1 is located at index 4 (1-based indexing: positions 1,2,3,4,5).",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Index 2 holds the value 3, not 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Index 5 holds the value 5, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A die simulation counts sixes in 100 rolls. After running, count = 18. The experimental probability of six is 18 divided by {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "100",
+          "correctExplanation": "Experimental probability = favourable outcomes / total trials = 18/100.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Dividing by 6 gives 3, which is not a probability; 6 is the face value, not the total trials.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "18",
+              "explanation": "Dividing 18 by 18 = 1, which is not a probability less than 1 for this context.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.18",
+          "correctExplanation": "18/100 = 0.18.",
+          "distractors": [
+            {
+              "answer": "1.8",
+              "explanation": "Moves the decimal incorrectly; 18/100 = 0.18, not 1.8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "18",
+              "explanation": "Gives the count itself rather than the probability (count divided by trials).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Debugging a sum algorithm: the loop runs from i = 1 to 5 but sum starts at array[1]. The fix is to initialise sum to {{blank:1}} and start the loop at index {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Initialising to 0 ensures the first element is added once, not counted twice.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Initialising to 1 would add an extra 1 to the sum incorrectly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "array[1]",
+              "explanation": "This is the original bug; keeping array[1] as the initialiser while looping from 1 double-counts.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "With sum starting at 0, the loop should include all elements starting from index 1.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Starting at 2 skips the first element, giving a sum that is too small.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Index 0 may be out of bounds in 1-based array systems.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "To find when the sequence t(n) = 2n + 3 exceeds 50: WHILE 2*n + 3 <= 50 DO n = n + 1. The loop exits when n = {{blank:1}}, giving t(n) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "24",
+          "correctExplanation": "2(24) + 3 = 51 > 50; 2(23) + 3 = 49 ≤ 50. So n = 24 is the first to exceed 50.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "2(25) + 3 = 53; while this exceeds 50, the loop exits at n = 24 which is the first exceeding value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "23",
+              "explanation": "2(23) + 3 = 49 ≤ 50; the condition is still satisfied so the loop has not yet exited.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "51",
+          "correctExplanation": "t(24) = 2(24) + 3 = 51.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "50 does not exceed 50; the first term exceeding it is 51.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "53",
+              "explanation": "t(25) = 53; but the first exceeding term is t(24) = 51.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Swapping array[2] and array[5]: SET temp = array[2]; array[2] = array[{{blank:1}}]; array[5] = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "After saving array[2] in temp, assign array[5]'s value to array[2].",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Assigning array[2] to itself accomplishes nothing; the value from position 5 must go here.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "temp",
+              "explanation": "temp holds the old array[2]; assigning temp back to array[2] undoes the save.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "temp",
+          "correctExplanation": "temp holds the original array[2] value, which now goes into array[5] to complete the swap.",
+          "distractors": [
+            {
+              "answer": "array[2]",
+              "explanation": "array[2] now holds array[5]'s value; assigning it to array[5] would make both positions hold the same value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "array[5]",
+              "explanation": "array[5] assigned to itself does nothing; temp is needed to retrieve the saved value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A simulation of 200 coin flips expects approximately {{blank:1}} heads. If the code reports exactly 200 heads, the likely bug is in the {{blank:2}} statement.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "100",
+          "correctExplanation": "With probability 0.5 over 200 trials, the expected number of heads is 100.",
+          "distractors": [
+            {
+              "answer": "200",
+              "explanation": "200 heads in 200 flips has probability near zero; expected is about half the trials.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "50 is one quarter of 200; the expected value for a fair coin is half the trials.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "conditional",
+          "correctExplanation": "If the conditional always evaluates as true, every flip is counted as heads.",
+          "distractors": [
+            {
+              "answer": "loop",
+              "explanation": "The loop structure determines how many iterations run, not why every iteration counts as heads.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "output",
+              "explanation": "The output statement displays the result; the error is in the logic that counts heads.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Binary search on a sorted array of 1024 elements needs at most {{blank:1}} comparisons because it {{blank:2}} the search space with each step.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "log₂(1024) = 10; binary search needs at most 10 comparisons for 1024 elements.",
+          "distractors": [
+            {
+              "answer": "512",
+              "explanation": "512 is half of 1024; binary search needs logarithmic, not linear, comparisons.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1024",
+              "explanation": "1024 comparisons would be a linear search; binary search is logarithmic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "halves",
+          "correctExplanation": "Binary search eliminates half the remaining elements with each comparison.",
+          "distractors": [
+            {
+              "answer": "doubles",
+              "explanation": "The search space shrinks, not grows; halving is the mechanism.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sorts",
+              "explanation": "Binary search requires pre-sorted data but does not sort during the search.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Newton's method for square root of 2 with x = 2: x_new = (2 + 2/2)/2 = (2 + {{blank:1}})/2 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "2/2 = 1.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "2 × 2 = 4 (multiplication); the formula requires 2 ÷ 2 = 1 (division).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "2 - 2 = 0 (subtraction); the formula uses division: 2/2 = 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.5",
+          "correctExplanation": "(2 + 1)/2 = 3/2 = 1.5.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "2 + 1 = 3, but the formula divides by 2, giving 1.5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Does not perform the averaging step; 2 is the original guess, not the updated value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "Which one of the following correctly analyses why Newton's method converges faster than linear search when approximating square roots?",
+      "correct": "Newton's method has quadratic convergence, roughly doubling the correct digits each iteration, while linear search reduces error by a fixed constant",
+      "correctExplanation": "Quadratic convergence means error is squared each step, rapidly outpacing constant-step approaches.",
+      "distractors": [
+        {
+          "answer": "Newton's method uses division which is inherently faster than the addition used in linear approximation methods",
+          "explanation": "Operation type does not determine convergence rate; quadratic convergence is the mathematical reason."
+        },
+        {
+          "answer": "Newton's method requires fewer variables and less memory, which allows it to execute more iterations per second",
+          "explanation": "Memory usage does not explain convergence rate; the mathematical properties of the iteration do."
+        },
+        {
+          "answer": "Newton's method works only on perfect squares, allowing it to terminate immediately when the input is one",
+          "explanation": "Newton's method works on all positive numbers, not just perfect squares."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Which one of the following correctly evaluates the efficiency difference between bubble sort and selection sort for an array of n elements?",
+      "correct": "Both perform O(n squared) comparisons, but selection sort performs O(n) swaps compared to O(n squared) swaps for bubble sort",
+      "correctExplanation": "Selection sort does at most n swaps (one per pass); bubble sort may swap on every comparison.",
+      "distractors": [
+        {
+          "answer": "Bubble sort is always faster because it can terminate early when no swaps occur, reducing comparisons to O(n) in the best case",
+          "explanation": "While bubble sort has O(n) best case, selection sort still has advantages in swap count for nearly all inputs."
+        },
+        {
+          "answer": "Selection sort has O(n log n) comparisons because it divides the problem in half with each selection pass",
+          "explanation": "Selection sort does not divide the problem; it scans the unsorted portion linearly, giving O(n²) comparisons."
+        },
+        {
+          "answer": "Both algorithms have identical efficiency in all cases because they produce the same number of operations on any input array",
+          "explanation": "They differ in swap counts and best-case behaviour, even though worst-case comparisons are the same."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student's Euclidean algorithm implementation enters an infinite loop for certain inputs. Which one of the following identifies the most likely cause?",
+      "correct": "The remainder and divisor are not correctly reassigned between iterations, preventing the remainder from decreasing to zero",
+      "correctExplanation": "If the algorithm fails to update (divisor, remainder) correctly, the sequence does not converge to zero.",
+      "distractors": [
+        {
+          "answer": "The input values are too large for the algorithm to handle, causing numeric overflow that prevents termination",
+          "explanation": "The Euclidean algorithm works for all positive integers; overflow does not cause infinite loops in correct implementations."
+        },
+        {
+          "answer": "The algorithm uses subtraction instead of modular division, which inherently cannot terminate on even numbers",
+          "explanation": "The subtraction variant terminates for all positive integers, though more slowly; it does not fail on even numbers."
+        },
+        {
+          "answer": "The initial values are entered in the wrong order, with the smaller number first instead of the larger",
+          "explanation": "Starting with the smaller number first simply adds one extra division step; it does not cause an infinite loop."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Which one of the following correctly analyses why increasing the number of trials in a simulation improves the reliability of the probability estimate?",
+      "correct": "The law of large numbers guarantees that relative frequency converges to theoretical probability as trial count increases",
+      "correctExplanation": "More trials reduce the variance of the estimate, bringing observed frequency closer to the true probability.",
+      "distractors": [
+        {
+          "answer": "More trials allow the random number generator to cycle through its full period, ensuring all possible outcomes appear equally",
+          "explanation": "Generator period is typically much larger than trial counts; convergence is statistical, not about generator cycles."
+        },
+        {
+          "answer": "Larger trial counts eliminate the randomness from the simulation, eventually producing a deterministic exact answer",
+          "explanation": "Randomness remains in each trial; the estimate converges but individual trials stay random."
+        },
+        {
+          "answer": "Each additional trial corrects errors from previous trials, systematically removing bias from the cumulative result",
+          "explanation": "Trials are independent; new trials do not 'correct' previous ones. Convergence is about averaging."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Which one of the following analyses why storing all intermediate values in an array during an iterative algorithm uses more memory than using a single variable?",
+      "correct": "An array of n elements requires space proportional to n, while a single variable uses constant space regardless of the number of iterations",
+      "correctExplanation": "Array storage grows with the number of iterations; a single variable overwrites and stays constant.",
+      "distractors": [
+        {
+          "answer": "Arrays are slower to access than variables, so the increased access time is equivalent to using more memory overall",
+          "explanation": "Access time and memory usage are different resources; arrays use more space, not necessarily more time per access."
+        },
+        {
+          "answer": "Arrays require additional memory for index tracking that grows exponentially with the number of stored elements",
+          "explanation": "Index overhead is minimal and constant, not exponential."
+        },
+        {
+          "answer": "Variables are stored in faster processor registers while arrays must be stored in slower external memory exclusively",
+          "explanation": "Memory hierarchy is an implementation detail; the fundamental difference is O(n) vs O(1) space."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student implements bubble sort but forgets to reduce the inner loop range after each pass. Which one of the following analyses the consequence?",
+      "correct": "The algorithm still produces a correctly sorted array but performs unnecessary comparisons on elements already in their final positions",
+      "correctExplanation": "Without reducing the range, the algorithm wastes time comparing already-sorted elements but still terminates correctly.",
+      "distractors": [
+        {
+          "answer": "The algorithm produces an incorrectly sorted array because it may swap already-placed elements out of position",
+          "explanation": "Comparing sorted elements finds no swaps needed; correctness is preserved even with redundant comparisons."
+        },
+        {
+          "answer": "The algorithm enters an infinite loop because the termination condition can never be satisfied without range reduction",
+          "explanation": "The outer loop still controls termination by pass count; the algorithm terminates regardless of inner range."
+        },
+        {
+          "answer": "The algorithm crashes with an index-out-of-bounds error when comparing elements beyond the array's allocated size",
+          "explanation": "The original range stays within bounds; not reducing it does not create out-of-bounds access."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Which one of the following correctly analyses why Newton's method might fail to converge for certain initial guesses when finding cube roots?",
+      "correct": "An initial guess of zero produces a division-by-zero error in the formula, and very small guesses can cause oscillation",
+      "correctExplanation": "The formula x_new = (2x + n/x²)/3 divides by x²; x = 0 is undefined and near-zero values cause instability.",
+      "distractors": [
+        {
+          "answer": "Newton's method only works for square roots; applying it to cube roots requires a fundamentally different algorithm",
+          "explanation": "Newton's method applies to any root by adjusting the iteration formula; it is not limited to square roots."
+        },
+        {
+          "answer": "Cube roots of negative numbers are undefined in real arithmetic, so the algorithm has no valid target to converge toward",
+          "explanation": "Cube roots of negative numbers are defined in the reals (e.g., ∛(-8) = -2)."
+        },
+        {
+          "answer": "The averaging formula always overshoots the cube root, creating an ever-increasing sequence that diverges to infinity",
+          "explanation": "Convergence depends on the initial guess; for appropriate starting values, the method converges reliably."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Which one of the following evaluates whether using a seed value for a random number generator compromises the validity of a simulation?",
+      "correct": "Seeds ensure reproducibility for debugging and verification without compromising statistical validity across the generated sequence",
+      "correctExplanation": "Seeded generators still produce statistically valid pseudorandom sequences; reproducibility is a feature, not a flaw.",
+      "distractors": [
+        {
+          "answer": "Seeds introduce deterministic bias that invalidates probability estimates, making results unreliable for any statistical purpose in this context.",
+          "explanation": "Well-designed generators produce sequences that pass statistical tests regardless of the seed used."
+        },
+        {
+          "answer": "Seeds are valid only for simulations with fewer than 1000 trials; larger simulations require true hardware randomness",
+          "explanation": "Generator periods far exceed typical trial counts; seeds are valid for simulations of any practical size."
+        },
+        {
+          "answer": "Seeds guarantee identical results across different programming languages, which is their primary purpose in simulations",
+          "explanation": "Different languages may use different generator algorithms; seed reproducibility is within the same implementation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Which one of the following analyses the trade-off between readability and efficiency when optimising an algorithm?",
+      "correct": "Optimisation may introduce complex logic that reduces execution time but makes the code harder to understand and maintain",
+      "correctExplanation": "Efficient code often uses advanced techniques (bit manipulation, loop unrolling) that sacrifice clarity.",
+      "distractors": [
+        {
+          "answer": "Readable code is always slower because comments and meaningful variable names consume additional processing resources",
+          "explanation": "Comments are not executed and variable names do not affect runtime; readability is about code structure."
+        },
+        {
+          "answer": "Optimised code is always more readable because fewer lines accomplish the same task with reduced visual complexity",
+          "explanation": "Fewer lines often use dense, complex expressions that are harder to understand."
+        },
+        {
+          "answer": "The trade-off exists only in pseudocode; compiled programming languages optimise automatically regardless of code clarity",
+          "explanation": "Compilers optimise some patterns but cannot transform algorithmic complexity; the trade-off persists."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Which one of the following analyses why the Euclidean algorithm is more efficient than trial division for finding the GCD of two large numbers?",
+      "correct": "The Euclidean algorithm reduces the problem size logarithmically through repeated division, while trial division tests all integers up to the smaller number",
+      "correctExplanation": "Euclidean algorithm takes O(log(min)) steps; trial division takes O(min) steps in the worst case.",
+      "distractors": [
+        {
+          "answer": "The Euclidean algorithm uses only subtraction, which is faster than the division required by trial division methods",
+          "explanation": "The standard Euclidean algorithm uses division (modulo), which is faster than repeated subtraction."
+        },
+        {
+          "answer": "Trial division requires storing all factors in an array, consuming O(n) memory compared to the constant memory of the Euclidean method",
+          "explanation": "Trial division for GCD does not require storing factors; both methods use constant memory."
+        },
+        {
+          "answer": "The Euclidean algorithm works only on prime numbers, which reduces the search space compared to the general trial division",
+          "explanation": "The Euclidean algorithm works on all positive integers, not just primes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student's sorting algorithm correctly sorts arrays of 5 elements but fails on arrays of 20. Which one of the following is the most likely category of error?",
+      "correct": "An off-by-one error or hardcoded boundary that works for small arrays but produces incorrect indices for larger ones",
+      "correctExplanation": "Boundary errors often go undetected in small test cases but manifest when array sizes exceed the hardcoded limits.",
+      "distractors": [
+        {
+          "answer": "The sorting algorithm fundamentally cannot handle more than 10 elements due to inherent computational complexity limits",
+          "explanation": "No sorting algorithm has a fundamental element limit; all comparison sorts scale to arbitrary sizes."
+        },
+        {
+          "answer": "Arrays larger than 10 elements overflow the system's available memory, causing data corruption that disrupts the sort",
+          "explanation": "20 elements is trivially small for memory; the issue is logical, not resource-based."
+        },
+        {
+          "answer": "The algorithm works correctly but produces a different valid sort order for larger arrays due to stability differences",
+          "explanation": "Stability affects order of equal elements, not correctness; a failing sort is not merely unstable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Which one of the following analyses the difference between verifying an algorithm's correctness through tracing versus through formal proof?",
+      "correct": "Tracing tests specific inputs and reveals errors empirically; formal proof establishes correctness for all valid inputs using logical deduction",
+      "correctExplanation": "Tracing is empirical (example-based); proof is deductive (covers all cases).",
+      "distractors": [
+        {
+          "answer": "Tracing is more reliable because it tests the actual code, while proofs only apply to abstract mathematical descriptions",
+          "explanation": "Tracing tests specific cases and can miss edge cases; proofs guarantee correctness universally."
+        },
+        {
+          "answer": "Formal proof is faster to apply because it requires examining only the algorithm's structure, not its output on actual data",
+          "explanation": "Proofs are often slower and harder to construct than running traces; speed is not their advantage."
+        },
+        {
+          "answer": "Tracing and formal proof are equivalent methods that differ only in notation and always produce the same conclusions",
+          "explanation": "They differ fundamentally: tracing is finite-sample testing while proof covers all inputs logically."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Which one of the following analyses why pseudocode is preferred over actual code when first designing an algorithm?",
+      "correct": "Pseudocode allows focus on logical structure without distraction from language syntax, enabling clearer reasoning about correctness",
+      "correctExplanation": "Abstracting away syntax lets designers concentrate on algorithm logic, flow, and correctness.",
+      "distractors": [
+        {
+          "answer": "Pseudocode executes faster than real code during the design phase, providing immediate feedback on algorithm performance",
+          "explanation": "Pseudocode is not executable; it is a planning tool, not a performance testing tool."
+        },
+        {
+          "answer": "Pseudocode automatically translates into any programming language, eliminating the implementation step entirely from the process in this context.",
+          "explanation": "Translation is manual; pseudocode guides implementation but does not automate it."
+        },
+        {
+          "answer": "Real code cannot express algorithms that have not yet been fully optimised, requiring pseudocode as a necessary placeholder",
+          "explanation": "Real code can express unoptimised algorithms; pseudocode is preferred for clarity, not necessity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "Which one of the following evaluates whether running a simulation 10 times versus 10000 times produces meaningfully different probability estimates?",
+      "correct": "10 trials produce high variance estimates that may deviate far from the true probability; 10000 trials produce estimates within a narrow confidence interval",
+      "correctExplanation": "Standard error decreases as 1/√n; 10000 trials give 1/100 the standard error of 10 trials.",
+      "distractors": [
+        {
+          "answer": "10 trials are sufficient if the random number generator has been verified, since each trial is independently and identically distributed",
+          "explanation": "Independence does not guarantee accuracy from few samples; variance remains high with small sample sizes."
+        },
+        {
+          "answer": "10000 trials give exactly 1000 times better accuracy because accuracy improves linearly with the number of trials",
+          "explanation": "Accuracy improves as 1/√n, not linearly; 10000 trials give √1000 ≈ 31.6 times better precision."
+        },
+        {
+          "answer": "The number of trials does not matter because the theoretical probability is fixed regardless of experimental sample size",
+          "explanation": "The theoretical probability is fixed, but the experimental estimate's accuracy depends critically on sample size."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Newton's method has {{blank:1}} convergence, meaning the number of correct digits approximately {{blank:2}} with each iteration.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "quadratic",
+          "correctExplanation": "The error is squared each iteration, giving quadratic convergence near the root.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear convergence adds a fixed number of digits per step; Newton's is faster.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "cubic",
+              "explanation": "Standard Newton's method is quadratic, not cubic; cubic convergence applies to higher-order methods.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "doubles",
+          "correctExplanation": "Quadratic convergence means roughly doubling correct significant digits each step.",
+          "distractors": [
+            {
+              "answer": "triples",
+              "explanation": "Tripling would indicate cubic convergence, not quadratic.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "halves",
+              "explanation": "Halving digits would indicate divergence, not convergence.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Bubble sort without range reduction still terminates {{blank:1}} but performs {{blank:2}} comparisons than necessary.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "correctly",
+          "correctExplanation": "The algorithm produces the correct sorted result; it just does redundant work.",
+          "distractors": [
+            {
+              "answer": "incorrectly",
+              "explanation": "The sort is still correct; redundant comparisons do not introduce errors.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "early",
+              "explanation": "Without range reduction, it terminates at the same time or later, not earlier.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "more",
+          "correctExplanation": "Without reducing the inner range, already-sorted elements are compared unnecessarily.",
+          "distractors": [
+            {
+              "answer": "fewer",
+              "explanation": "Omitting the optimisation increases comparisons, not decreases them.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equal",
+              "explanation": "Range reduction eliminates some comparisons; without it, the count is higher.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "Selection sort performs O(n) {{blank:1}} compared to bubble sort's O(n squared) {{blank:2}}, despite both having O(n squared) comparisons.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "swaps",
+          "correctExplanation": "Selection sort does at most n swaps (one per pass through the unsorted portion).",
+          "distractors": [
+            {
+              "answer": "comparisons",
+              "explanation": "Both algorithms perform O(n²) comparisons; the difference is in swaps.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "passes",
+              "explanation": "Both algorithms perform approximately n passes; the difference is in swap count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "swaps",
+          "correctExplanation": "Bubble sort may swap on every comparison, giving up to O(n²) swaps in the worst case.",
+          "distractors": [
+            {
+              "answer": "iterations",
+              "explanation": "The comparison is specifically about swap operations, not overall iterations.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "assignments",
+              "explanation": "While related, the standard terminology for the efficiency difference is 'swaps'.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "A seeded random number generator ensures {{blank:1}} of results across runs while maintaining statistical {{blank:2}} of the generated sequence.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "reproducibility",
+          "correctExplanation": "The same seed produces the same sequence, allowing results to be replicated exactly.",
+          "distractors": [
+            {
+              "answer": "randomness",
+              "explanation": "Seeds ensure reproducibility; randomness is a property of the generator's design, not the seed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "uniqueness",
+              "explanation": "Seeds produce the same sequence each time; uniqueness would mean different results each run.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "validity",
+          "correctExplanation": "Well-designed generators produce sequences that pass statistical randomness tests regardless of seed.",
+          "distractors": [
+            {
+              "answer": "determinism",
+              "explanation": "Determinism is the mechanism (from the seed); validity is about the statistical properties being preserved.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "simplicity",
+              "explanation": "Simplicity is not a relevant statistical property of pseudorandom sequences.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The Euclidean algorithm's efficiency comes from reducing the problem size {{blank:1}}, achieving O(log n) steps compared to trial division's O({{blank:2}}) steps.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "logarithmically",
+          "correctExplanation": "Each division step reduces the numbers significantly, giving logarithmic step count.",
+          "distractors": [
+            {
+              "answer": "linearly",
+              "explanation": "Linear reduction would give O(n) steps, not the O(log n) of the Euclidean algorithm.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "exponentially",
+              "explanation": "Exponential reduction would give O(log log n) steps, which is faster than what the algorithm achieves.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n",
+          "correctExplanation": "Trial division checks up to n (or √n) possible divisors, giving linear (or sub-linear) complexity.",
+          "distractors": [
+            {
+              "answer": "log n",
+              "explanation": "O(log n) is the Euclidean algorithm's complexity; trial division is slower at O(n).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "n squared",
+              "explanation": "Trial division for GCD is O(n), not O(n²).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Tracing tests specific {{blank:1}} and may miss edge cases, while formal proof establishes correctness for {{blank:2}} valid inputs.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "inputs",
+          "correctExplanation": "Tracing runs the algorithm on particular input values chosen by the tester.",
+          "distractors": [
+            {
+              "answer": "algorithms",
+              "explanation": "Tracing tests one algorithm on specific inputs, not multiple algorithms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "outputs",
+              "explanation": "Tracing examines outputs, but it tests specific inputs to produce those outputs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "all",
+          "correctExplanation": "A formal proof covers every possible valid input through logical deduction.",
+          "distractors": [
+            {
+              "answer": "most",
+              "explanation": "Proof establishes correctness for all cases, not just most; universality is the key advantage.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "typical",
+              "explanation": "Proofs are not limited to typical cases; they cover all cases within the stated preconditions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "An off-by-one error in a sorting algorithm may go undetected in small test cases but manifests in larger arrays because the {{blank:1}} becomes relevant only when indices approach the array {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "boundary",
+          "correctExplanation": "Off-by-one errors involve boundaries (start/end positions) that small arrays may not exercise.",
+          "distractors": [
+            {
+              "answer": "algorithm",
+              "explanation": "The algorithm itself is not what manifests; the boundary condition is the issue.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "comparison",
+              "explanation": "Comparisons occur throughout; the specific issue is at boundaries.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "limits",
+          "correctExplanation": "Array limits (first and last valid indices) are where off-by-one errors cause problems.",
+          "distractors": [
+            {
+              "answer": "centre",
+              "explanation": "Off-by-one errors affect the edges/limits, not the centre of the array.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "values",
+              "explanation": "The error involves index positions (limits), not the data values stored in the array.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Optimising an algorithm may improve {{blank:1}} time at the cost of reduced code {{blank:2}}, creating a trade-off for maintainability.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "execution",
+          "correctExplanation": "Optimisation typically targets faster execution (runtime performance).",
+          "distractors": [
+            {
+              "answer": "compilation",
+              "explanation": "Compilation time is rarely the optimisation target; execution time is.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "design",
+              "explanation": "Design time is a separate phase; optimisation improves the running efficiency of the final algorithm.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "readability",
+          "correctExplanation": "Optimised code often uses complex techniques that are harder to read and understand.",
+          "distractors": [
+            {
+              "answer": "correctness",
+              "explanation": "Optimisation should preserve correctness; the trade-off is with readability, not accuracy.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "length",
+              "explanation": "While code may get shorter or longer, the fundamental trade-off is readability/clarity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "Pseudocode is preferred during algorithm design because it focuses attention on {{blank:1}} structure rather than language {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "logical",
+          "correctExplanation": "Pseudocode emphasises the logic and flow of the algorithm.",
+          "distractors": [
+            {
+              "answer": "physical",
+              "explanation": "Physical structure refers to hardware; algorithms are designed at the logical level.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "data",
+              "explanation": "While data structures matter, pseudocode primarily clarifies logical flow and control.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "syntax",
+          "correctExplanation": "Pseudocode avoids strict syntax rules, letting designers focus on correctness of logic.",
+          "distractors": [
+            {
+              "answer": "semantics",
+              "explanation": "Semantics (meaning) is what pseudocode does convey; syntax (form) is what it avoids.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "output",
+              "explanation": "Output is a goal of both pseudocode and real code; syntax is the distraction that pseudocode eliminates.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "Simulation accuracy improves with more trials because the standard error decreases proportionally to one divided by the square root of {{blank:1}}, making 10000 trials approximately {{blank:2}} times more precise than 100 trials.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n",
+          "correctExplanation": "Standard error = σ/√n, so it decreases as 1/√n where n is the number of trials.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The formula involves 1/√n, not 1/√2; n represents the trial count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sigma",
+              "explanation": "Sigma (standard deviation) is in the numerator; n (trial count) is under the root in the denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "√(10000/100) = √100 = 10 times more precise.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "The improvement is √(10000/100) = 10, not the ratio 10000/100 = 100; precision scales with √n.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "50 does not arise from the √n relationship; √100 = 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Binary search requires the array to be {{blank:1}} beforehand, achieving O(log n) time by eliminating {{blank:2}} the search space per comparison.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sorted",
+          "correctExplanation": "Binary search requires sorted order to determine which half contains the target.",
+          "distractors": [
+            {
+              "answer": "reversed",
+              "explanation": "Reversed order could work if the comparison logic is adjusted, but 'sorted' is the standard requirement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "indexed",
+              "explanation": "Arrays are always indexed; the specific requirement for binary search is sorted order.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "half",
+          "correctExplanation": "Each comparison eliminates half the remaining elements, giving logarithmic performance.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "Eliminating one element per comparison gives O(n) linear search, not O(log n).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "all",
+              "explanation": "Eliminating all elements at once would give O(1), which is not achievable by comparison-based search.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "An algorithm that works on small arrays but fails on large ones most likely contains a {{blank:1}} error that only manifests when indices approach the array {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "boundary",
+          "correctExplanation": "Boundary errors (off-by-one, hardcoded limits) are exposed by larger inputs that push index values higher.",
+          "distractors": [
+            {
+              "answer": "syntax",
+              "explanation": "Syntax errors prevent compilation/execution entirely; they do not depend on input size.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "rounding",
+              "explanation": "Rounding errors relate to numeric precision, not array size-dependent failures.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "limits",
+          "correctExplanation": "Array limits (maximum index, end conditions) are where boundary errors cause out-of-range access or skipped elements.",
+          "distractors": [
+            {
+              "answer": "middle",
+              "explanation": "Middle positions are typically safe; boundary errors manifest at the edges/limits.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "start",
+              "explanation": "While start is one boundary, the general concept is 'limits' encompassing both ends.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

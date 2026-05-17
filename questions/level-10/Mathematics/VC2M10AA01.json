@@ -1,0 +1,1172 @@
+{
+  "_meta": {
+    "code": "VC2M10AA01",
+    "title": "Polynomials and the factor and remainder theorems",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning about polynomials and how to apply the factor and remainder theorems.",
+    "specVersions": [
+      "2.0"
+    ],
+    "generatedAt": "2026-05-17T00:30:00Z"
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The degree of a polynomial is determined by the highest power of the variable that appears with a nonzero coefficient.",
+      "correct": "True",
+      "correctExplanation": "The degree is the largest exponent on the variable in the polynomial, provided its coefficient is not zero.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse degree with the number of terms or the constant; degree is specifically the highest exponent."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "According to the remainder theorem, when P(x) is divided by the quantity x minus a, the remainder equals P(a).",
+      "correct": "True",
+      "correctExplanation": "The remainder theorem states that dividing P(x) by (x − a) gives remainder P(a), found by direct substitution.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse the remainder theorem with the factor theorem or believe division is always required; P(a) directly gives the remainder."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A polynomial of degree three can have at most four x-intercepts on its graph.",
+      "correct": "False",
+      "correctExplanation": "A polynomial of degree n has at most n real roots; a cubic (degree 3) has at most three x-intercepts.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses degree with degree plus one; the maximum number of real roots equals the degree, not one more."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The factor theorem states that if P(a) equals zero then the quantity x minus a is a factor of the polynomial P(x).",
+      "correct": "True",
+      "correctExplanation": "The factor theorem is a direct consequence of the remainder theorem: zero remainder means (x − a) divides P(x) exactly.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse the direction of implication or misremember the theorem; P(a) = 0 confirms (x − a) is a factor."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The leading coefficient of a polynomial is the coefficient of the term with the lowest power of the variable.",
+      "correct": "False",
+      "correctExplanation": "The leading coefficient is attached to the highest-degree term, not the lowest; it determines the end behaviour of the graph.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses leading with constant; the leading coefficient belongs to the term of highest degree."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "A polynomial of degree four with a positive leading coefficient has both ends of its graph pointing upward.",
+      "correct": "True",
+      "correctExplanation": "Even degree with positive leading coefficient means both ends tend to positive infinity, producing an upward-opening shape.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse even and odd degree end behaviour; even degree has both ends in the same direction."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The constant term of a polynomial is the value of the polynomial when the variable is set equal to one.",
+      "correct": "False",
+      "correctExplanation": "The constant term is the value when the variable equals zero, not one; P(0) gives the constant term directly.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses x = 0 with x = 1; P(1) gives the sum of all coefficients, not the constant term alone."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "If the quantity x minus 5 is a factor of P(x), then P(5) must equal zero according to the factor theorem.",
+      "correct": "True",
+      "correctExplanation": "The factor theorem states that (x − a) is a factor if and only if P(a) = 0; here a = 5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May substitute incorrectly or confuse the sign; (x − 5) as a factor requires P(5) = 0, not P(−5) = 0."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "An expression containing a term with a negative exponent on the variable, such as x to the power negative 2, is classified as a polynomial.",
+      "correct": "False",
+      "correctExplanation": "Polynomials require all exponents to be non-negative integers; negative exponents produce rational expressions, not polynomials.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May not recall that polynomial exponents must be non-negative integers; negative exponents disqualify the expression."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A cubic polynomial always has at least one real root because its graph must cross the x-axis at least once.",
+      "correct": "True",
+      "correctExplanation": "Odd-degree polynomials have opposite end behaviours, guaranteeing at least one real x-intercept by the intermediate value theorem.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse cubic with quadratic (which can have no real roots); odd degree ensures at least one real root."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Dividing P(x) by the quantity x plus 3 and obtaining remainder zero means x equals 3 is a root of P(x).",
+      "correct": "False",
+      "correctExplanation": "Dividing by (x + 3) = (x − (−3)) with zero remainder means x = −3 is a root, not x = 3.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the sign; (x + 3) corresponds to a = −3, so the root is x = −3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The expression 3x squared plus 2x minus 7 is a polynomial of degree two with leading coefficient 3.",
+      "correct": "True",
+      "correctExplanation": "The highest power is x² with coefficient 3, making this a degree-2 polynomial (quadratic) with leading coefficient 3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May misidentify the degree or leading coefficient; x² is the highest-power term and 3 is its coefficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the remainder theorem for a polynomial P(x) divided by the linear factor x minus a?",
+      "correct": "The remainder equals P(a), found by substituting a into the polynomial expression",
+      "correctExplanation": "The remainder theorem allows evaluation of the remainder without performing long division: just compute P(a).",
+      "distractors": [
+        {
+          "answer": "The remainder equals P(negative a), found by substituting negative a into the polynomial",
+          "explanation": "Substituting −a would give the remainder for division by (x + a), not (x − a)."
+        },
+        {
+          "answer": "The remainder equals the degree of P(x) multiplied by the value of a",
+          "explanation": "The remainder has no relationship to the degree multiplied by a; it is simply P(a)."
+        },
+        {
+          "answer": "The remainder equals the leading coefficient of P(x) divided by the constant a",
+          "explanation": "The leading coefficient divided by a is unrelated to polynomial division remainder."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states what the factor theorem concludes when P(a) equals zero?",
+      "correct": "The linear expression x minus a is a factor of the polynomial P(x)",
+      "correctExplanation": "P(a) = 0 means the remainder when dividing by (x − a) is zero, so (x − a) divides P(x) exactly.",
+      "distractors": [
+        {
+          "answer": "The polynomial P(x) has no real roots and cannot be factored over the reals",
+          "explanation": "P(a) = 0 means a IS a root; this directly contradicts having no real roots."
+        },
+        {
+          "answer": "The value a is the leading coefficient of one of the factors of P(x)",
+          "explanation": "a is a root, not a coefficient; the factor theorem identifies factors, not coefficients."
+        },
+        {
+          "answer": "The polynomial P(x) must be divided by a before any factors can be identified",
+          "explanation": "No division by a is required; the factor theorem directly identifies (x − a) as a factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following expressions is classified as a polynomial?",
+      "correct": "4x cubed minus 2x squared plus 7x minus 1 with all non-negative integer exponents on x",
+      "correctExplanation": "All terms have non-negative integer exponents on the variable, satisfying the definition of a polynomial.",
+      "distractors": [
+        {
+          "answer": "3 divided by x plus 2x minus 5 which contains a term with x in the denominator",
+          "explanation": "A term with x in the denominator has a negative exponent (x⁻¹), disqualifying it as a polynomial."
+        },
+        {
+          "answer": "2x to the power one half plus x minus 4 which contains a fractional exponent on x",
+          "explanation": "Fractional exponents produce radical expressions, not polynomials; exponents must be non-negative integers."
+        },
+        {
+          "answer": "5 times 2 to the power x plus 3x minus 1 which contains an exponential term with variable exponent",
+          "explanation": "A term with the variable in the exponent (2ˣ) is exponential, not polynomial."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the degree and leading coefficient of the polynomial 2x to the fourth minus 5x cubed plus x minus 8?",
+      "correct": "Degree 4 with leading coefficient 2, determined by the term with the highest power of x",
+      "correctExplanation": "The highest power is x⁴ with coefficient 2, giving degree 4 and leading coefficient 2.",
+      "distractors": [
+        {
+          "answer": "Degree 3 with leading coefficient negative 5, determined by the second-highest power term",
+          "explanation": "The degree is the highest power (4, not 3); the leading coefficient belongs to the x⁴ term."
+        },
+        {
+          "answer": "Degree 4 with leading coefficient negative 8, determined by the constant term at the end",
+          "explanation": "The constant term is not the leading coefficient; the leading coefficient is 2 from the x⁴ term."
+        },
+        {
+          "answer": "Degree 1 with leading coefficient 1, determined by the linear term x in the expression",
+          "explanation": "Degree is the highest power (4), not the power of any individual term; the linear term does not determine degree."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes the end behaviour of a polynomial with odd degree and positive leading coefficient?",
+      "correct": "The graph falls to negative infinity on the left and rises to positive infinity on the right",
+      "correctExplanation": "Odd degree with positive leading coefficient produces opposite end behaviours: down-left and up-right.",
+      "distractors": [
+        {
+          "answer": "The graph rises to positive infinity on both the left and right sides of the coordinate plane",
+          "explanation": "Both ends rising describes even degree with positive leading coefficient, not odd degree."
+        },
+        {
+          "answer": "The graph falls to negative infinity on both the left and right sides of the coordinate plane",
+          "explanation": "Both ends falling describes even degree with negative leading coefficient, not odd degree."
+        },
+        {
+          "answer": "The graph rises on the left and falls on the right producing a shape like a downward arch",
+          "explanation": "This describes odd degree with negative leading coefficient; positive leading coefficient rises on the right."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly explains why evaluating P(2) when P(x) equals x cubed minus 3x plus 5 gives the remainder when P(x) is divided by x minus 2?",
+      "correct": "The remainder theorem states that substituting the value 2 into P(x) directly gives the division remainder",
+      "correctExplanation": "By the remainder theorem, P(a) is the remainder of P(x) ÷ (x − a); here a = 2, so P(2) is the remainder.",
+      "distractors": [
+        {
+          "answer": "Evaluating P(2) gives the quotient rather than the remainder when the polynomial is divided by x minus 2",
+          "explanation": "P(2) gives the remainder specifically, not the quotient; the quotient requires actual polynomial division to find."
+        },
+        {
+          "answer": "The value P(2) gives the degree of the quotient polynomial resulting from the division by x minus 2",
+          "explanation": "The degree of the quotient is one less than P(x); P(2) is a numerical remainder, not a degree."
+        },
+        {
+          "answer": "Substituting 2 gives the y-intercept of the quotient which equals the remainder only for linear divisors",
+          "explanation": "P(2) is the remainder by theorem; it has no special relationship to the quotient's y-intercept."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the constant term of the polynomial P(x) equals 5x cubed minus 2x squared plus 4x minus 9?",
+      "correct": "Negative 9, which is the term that contains no variable and equals P(0)",
+      "correctExplanation": "The constant term is the coefficient with no variable attached; substituting x = 0 confirms P(0) = −9.",
+      "distractors": [
+        {
+          "answer": "Positive 5, which is the leading coefficient appearing at the front of the polynomial expression",
+          "explanation": "5 is the leading coefficient of x³, not the constant term; the constant has no variable factor."
+        },
+        {
+          "answer": "Positive 4, which is the coefficient of the linear term x in the polynomial expression given",
+          "explanation": "4 is the coefficient of x, not the constant term; the constant is the term independent of x."
+        },
+        {
+          "answer": "Negative 2, which appears as the coefficient of the squared term in the polynomial expression",
+          "explanation": "−2 is the coefficient of x², not the constant; the constant term is −9."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes what it means for the quantity x minus 1 to be a factor of P(x)?",
+      "correct": "P(x) can be written as the product of x minus 1 and another polynomial with no remainder",
+      "correctExplanation": "A factor divides exactly; P(x) = (x − 1) · Q(x) with no leftover term.",
+      "distractors": [
+        {
+          "answer": "The polynomial P(x) equals zero for all values of x except when x equals 1",
+          "explanation": "A factor means P(1) = 0, not that P(x) = 0 everywhere; the polynomial has specific roots only."
+        },
+        {
+          "answer": "Dividing P(x) by x minus 1 produces a remainder equal to the leading coefficient of P(x)",
+          "explanation": "A factor means zero remainder, not a remainder equal to the leading coefficient."
+        },
+        {
+          "answer": "The graph of P(x) has a vertical asymptote at the point where x equals 1 on the horizontal axis",
+          "explanation": "Polynomials have no vertical asymptotes; (x − 1) being a factor means the graph crosses the x-axis at x = 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following values of a should be substituted into P(x) to find the remainder when P(x) is divided by x plus 4?",
+      "correct": "Negative 4, because x plus 4 can be written as x minus negative 4 and the theorem uses that value",
+      "correctExplanation": "x + 4 = x − (−4), so a = −4; the remainder theorem requires evaluating P(−4).",
+      "distractors": [
+        {
+          "answer": "Positive 4, because the number appearing in the divisor is 4 and it is substituted directly",
+          "explanation": "The sign must be negated; (x + 4) corresponds to a = −4, not +4."
+        },
+        {
+          "answer": "Zero, because the remainder is always found by evaluating the polynomial at x equals zero",
+          "explanation": "P(0) gives the constant term, not the remainder for division by an arbitrary (x − a)."
+        },
+        {
+          "answer": "One quarter, because dividing by x plus 4 requires using the reciprocal of 4 as the input value",
+          "explanation": "No reciprocal is involved; the remainder theorem uses the root of the divisor, which is −4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the maximum number of real roots that a polynomial of degree 5 can have?",
+      "correct": "Five real roots at most, because the degree sets the upper limit on the number of roots",
+      "correctExplanation": "A degree-n polynomial has at most n real roots, counting multiplicity; degree 5 allows up to 5 roots.",
+      "distractors": [
+        {
+          "answer": "Six real roots at most, because the degree plus one determines the maximum number of possible roots",
+          "explanation": "The maximum is the degree itself (5), not degree plus one (6)."
+        },
+        {
+          "answer": "Four real roots at most, because one root is always complex and cannot appear on the real number line",
+          "explanation": "Odd-degree polynomials can have all roots real; complex roots come in conjugate pairs but are not mandatory."
+        },
+        {
+          "answer": "Ten real roots at most, because each coefficient can independently contribute one root to the polynomial",
+          "explanation": "The number of roots is bounded by the degree, not the number of coefficients."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the remainder when P(x) equals x cubed minus 2x plus 1 is divided by x minus 3?",
+      "correct": "Twenty-two, found by evaluating P(3) which gives 27 minus 6 plus 1",
+      "correctExplanation": "P(3) = 3³ − 2(3) + 1 = 27 − 6 + 1 = 22.",
+      "distractors": [
+        {
+          "answer": "Negative twenty, found by evaluating P(negative 3) which gives negative 27 plus 6 plus 1",
+          "explanation": "P(−3) gives the remainder for division by (x + 3), not (x − 3); the divisor is (x − 3) so we need P(3)."
+        },
+        {
+          "answer": "Three, found by setting the divisor x minus 3 equal to zero and reporting that solution directly",
+          "explanation": "Setting x − 3 = 0 gives the value to substitute (a = 3), not the remainder itself."
+        },
+        {
+          "answer": "Zero, meaning x minus 3 is a factor of the polynomial P(x) without performing any calculation",
+          "explanation": "P(3) = 22 ≠ 0, so (x − 3) is not a factor and the remainder is not zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes the graph of a polynomial with even degree and negative leading coefficient?",
+      "correct": "Both ends of the graph point downward, falling toward negative infinity as x moves far in either direction",
+      "correctExplanation": "Even degree means both ends go the same way; negative leading coefficient means they both point down.",
+      "distractors": [
+        {
+          "answer": "The left end points upward and the right end points downward, crossing the x-axis at least once",
+          "explanation": "Opposite ends describe odd degree, not even degree; even degree has both ends in the same direction."
+        },
+        {
+          "answer": "Both ends point upward toward positive infinity as x moves far in either direction from the origin",
+          "explanation": "Both ends up describes even degree with positive leading coefficient, not negative."
+        },
+        {
+          "answer": "The graph oscillates between positive and negative infinity without settling in either direction",
+          "explanation": "All polynomials have definite end behaviour; they do not oscillate at extreme values of x."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The remainder theorem states that when P(x) is divided by x minus a, the remainder equals {{blank:1}}, found by {{blank:2}} the value a into the polynomial.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "P(a)",
+          "correctExplanation": "The remainder is the polynomial evaluated at a, written P(a).",
+          "distractors": [
+            {
+              "answer": "P(0)",
+              "explanation": "P(0) gives the constant term, not the remainder for an arbitrary divisor (x − a).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "a",
+              "explanation": "The value a is the input to the theorem, not the output; the remainder is P(a), not a itself.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "substituting",
+          "correctExplanation": "The theorem works by substituting a into P(x) and evaluating, avoiding the need for long division.",
+          "distractors": [
+            {
+              "answer": "dividing",
+              "explanation": "The theorem avoids long division; the whole point is to find the remainder by substitution instead.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "differentiating",
+              "explanation": "Differentiation is a calculus operation unrelated to the remainder theorem; substitution is required.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "If P(a) equals zero, the factor theorem guarantees that x minus a is a {{blank:1}} of P(x), meaning a is a {{blank:2}} of the polynomial.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "factor",
+          "correctExplanation": "Zero remainder means (x − a) divides P(x) exactly, making it a factor.",
+          "distractors": [
+            {
+              "answer": "multiple",
+              "explanation": "A multiple is a different relationship; (x − a) is a factor (divisor), not a multiple.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "term",
+              "explanation": "A term is a component added in the polynomial; a factor is something that multiplies to form it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "root",
+          "correctExplanation": "A root (or zero) is a value of x that makes the polynomial equal zero; P(a) = 0 means a is a root.",
+          "distractors": [
+            {
+              "answer": "coefficient",
+              "explanation": "Coefficients are the numerical multipliers of terms; a root is a value making the polynomial zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "degree",
+              "explanation": "The degree is the highest power; a root is a specific x-value, not a structural property.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "If P(x) equals x cubed minus 4x plus 5, then P(2) equals 5 means the remainder when P(x) is divided by x minus 2 is 5.",
+      "correct": "True",
+      "correctExplanation": "By the remainder theorem, P(2) = 8 − 8 + 5 = 5, which is the remainder when dividing by (x − 2).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate P(2) or not connect it to the remainder theorem; P(2) directly gives the remainder for division by (x − 2)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "If the quantity x plus 2 is a factor of P(x), then substituting x equals 2 into P(x) should give zero.",
+      "correct": "False",
+      "correctExplanation": "(x + 2) = (x − (−2)), so the factor theorem requires P(−2) = 0, not P(2) = 0. The sign must be negated.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the sign convention; (x + 2) being a factor means the root is −2, not +2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "A cubic polynomial with integer coefficients that has x equals 1 as a root can always be fully factorised into three linear factors over the rationals.",
+      "correct": "False",
+      "correctExplanation": "After extracting the factor (x − 1), the remaining quadratic may have irrational or complex roots and may not factor over the rationals.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes all cubics with one rational root have three rational roots; the remaining quadratic's discriminant may be negative or non-square."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The polynomial P(x) equals x cubed minus 6x squared plus 11x minus 6 has x equals 1, x equals 2 and x equals 3 as roots because P(1), P(2) and P(3) all equal zero.",
+      "correct": "True",
+      "correctExplanation": "P(1) = 1−6+11−6 = 0, P(2) = 8−24+22−6 = 0, P(3) = 27−54+33−6 = 0; all three values are confirmed roots.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May doubt the calculation; direct substitution confirms each value produces zero, verifying all three are roots."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "If a polynomial of degree 4 has a negative leading coefficient and positive constant term, its graph must cross the x-axis at least twice.",
+      "correct": "False",
+      "correctExplanation": "A degree-4 polynomial can have 0, 2, or 4 real roots; having a negative leading coefficient and positive constant does not guarantee at least two crossings.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes coefficient signs determine root count; end behaviour and the constant together do not guarantee a specific number of crossings."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "When using the factor theorem to factorise a cubic, testing integer factors of the constant term as possible roots is a standard first strategy.",
+      "correct": "True",
+      "correctExplanation": "By the rational root theorem, rational roots of a monic polynomial divide the constant term; testing these systematically is standard practice.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not connect the constant term's divisors to potential roots; the rational root theorem directs this strategy."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "If P(x) divided by x minus a gives a remainder of 5, then P(x) minus 5 has x minus a as a factor.",
+      "correct": "True",
+      "correctExplanation": "P(a) = 5 means (P(x) − 5) evaluated at a gives 0; by the factor theorem, (x − a) divides P(x) − 5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not see the logical step: shifting P(x) down by the remainder creates a polynomial with (x − a) as a factor."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The polynomial x to the fourth minus 1 can be factored as the product of x squared plus 1 and x squared minus 1 using the difference of squares identity.",
+      "correct": "True",
+      "correctExplanation": "x⁴ − 1 = (x²)² − 1² = (x² + 1)(x² − 1), applying the difference of squares with a = x² and b = 1.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not recognise x⁴ as (x²)²; the difference of squares applies to any expression of the form A² − B²."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "P(x) equals x cubed plus 2x squared minus 5x minus 6. Testing P(negative 1) gives 0. Which one of the following correctly identifies the consequence?",
+      "correct": "The factor x plus 1 divides P(x) exactly and the cubic can be written as the product of x plus 1 and a quadratic factor",
+      "correctExplanation": "P(−1) = 0 means (x − (−1)) = (x + 1) is a factor; dividing gives P(x) = (x + 1)(x² + x − 6).",
+      "distractors": [
+        {
+          "answer": "The factor x minus 1 divides P(x) because testing any value that gives zero confirms the positive version as a factor",
+          "explanation": "P(−1) = 0 means the root is −1, corresponding to factor (x + 1), not (x − 1)."
+        },
+        {
+          "answer": "The polynomial has no other real roots because one factor has been found and the remaining factor must be irreducible",
+          "explanation": "x² + x − 6 = (x + 3)(x − 2), so two more real roots exist."
+        },
+        {
+          "answer": "The value negative 1 is the leading coefficient of P(x) which must always appear as one of the roots",
+          "explanation": "The leading coefficient is 1 (from x³), not −1; the leading coefficient does not need to be a root."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "When P(x) equals 2x cubed minus 3x squared plus x minus 5 is divided by x minus 2, the remainder is P(2). Which one of the following correctly evaluates this remainder?",
+      "correct": "The remainder is 1, found by computing 2 times 8 minus 3 times 4 plus 2 minus 5 which equals 16 minus 12 plus 2 minus 5",
+      "correctExplanation": "P(2) = 2(8) − 3(4) + 2 − 5 = 16 − 12 + 2 − 5 = 1.",
+      "distractors": [
+        {
+          "answer": "The remainder is negative 5, which is simply the constant term of the polynomial read directly",
+          "explanation": "The constant term is the remainder only for division by x (i.e., a = 0); for (x − 2), substitution is needed."
+        },
+        {
+          "answer": "The remainder is 2, which is the value of the divisor's root and always equals the remainder by definition",
+          "explanation": "The divisor's root (a = 2) is the input to P, not the output; P(2) = 1, not 2."
+        },
+        {
+          "answer": "The remainder is 16, found by evaluating only the leading term 2 times 2 cubed and ignoring all other terms",
+          "explanation": "All terms must be evaluated; considering only the leading term omits significant contributions from lower-degree terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A student wishes to factorise P(x) equals x cubed minus 7x plus 6 completely. Testing shows P(1) equals 0. Which one of the following correctly describes the complete factorisation process?",
+      "correct": "Divide P(x) by x minus 1 to obtain a quadratic, then factorise the quadratic into two further linear factors if possible",
+      "correctExplanation": "P(x) ÷ (x − 1) = x² + x − 6 = (x + 3)(x − 2); so P(x) = (x − 1)(x + 3)(x − 2).",
+      "distractors": [
+        {
+          "answer": "Since P(1) equals zero the polynomial equals zero for all x and no further factorisation is needed",
+          "explanation": "P(1) = 0 means x = 1 is a root, not that P(x) is identically zero; the cubic still has other roots."
+        },
+        {
+          "answer": "Divide P(x) by x plus 1 because the factor theorem uses the opposite sign of the root found by testing",
+          "explanation": "P(1) = 0 means (x − 1) is the factor; the sign is already accounted for in (x − a) with a = 1."
+        },
+        {
+          "answer": "Multiply P(x) by x minus 1 to raise the degree and then apply the quadratic formula to the resulting quartic",
+          "explanation": "Multiplying increases degree unnecessarily; the correct step is to divide by the known factor to reduce degree."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "The polynomial P(x) equals x cubed plus x squared minus 10x plus 8 has P(1) equals 0. After dividing by x minus 1, which one of the following is the resulting quadratic?",
+      "correct": "x squared plus 2x minus 8, which can be further factored as the product of x plus 4 and x minus 2",
+      "correctExplanation": "Polynomial division: (x³ + x² − 10x + 8) ÷ (x − 1) = x² + 2x − 8 = (x + 4)(x − 2).",
+      "distractors": [
+        {
+          "answer": "x squared minus 2x plus 8, which is irreducible over the reals because its discriminant is negative",
+          "explanation": "The correct quotient is x² + 2x − 8; this incorrect quotient results from sign errors in the division."
+        },
+        {
+          "answer": "x squared plus 10x minus 8, obtained by reading the coefficients directly from the original polynomial",
+          "explanation": "Polynomial division requires systematic calculation, not direct reading of coefficients."
+        },
+        {
+          "answer": "x squared minus x plus 8, obtained by subtracting the divisor's constant from each coefficient of P(x)",
+          "explanation": "Subtraction of constants from coefficients is not polynomial division; the correct quotient is x² + 2x − 8."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A degree-5 polynomial has a positive leading coefficient. Which one of the following correctly describes the minimum number of real roots it must have?",
+      "correct": "At least one real root, because odd-degree polynomials must cross the x-axis due to opposite end behaviour",
+      "correctExplanation": "Degree 5 (odd) with positive leading coefficient: falls left, rises right, guaranteeing at least one crossing.",
+      "distractors": [
+        {
+          "answer": "At least five real roots, because the degree equals the minimum count of real roots for any polynomial",
+          "explanation": "Degree sets the maximum, not minimum; complex roots can reduce the real root count."
+        },
+        {
+          "answer": "Zero real roots are possible because any polynomial can have all its roots in the complex plane exclusively",
+          "explanation": "Complex roots come in conjugate pairs for real-coefficient polynomials; odd degree guarantees at least one real root."
+        },
+        {
+          "answer": "At least two real roots, because the constant term and leading coefficient have opposite signs forcing two crossings",
+          "explanation": "Opposite signs of constant and leading coefficient is not stated here; odd degree alone ensures at least one."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "P(x) equals 2x cubed minus x squared minus 13x minus 6 and P(negative 2) equals 0. Which one of the following correctly identifies the factor and explains the next step?",
+      "correct": "The factor is x plus 2, and the next step is polynomial division of P(x) by x plus 2 to find the remaining quadratic",
+      "correctExplanation": "P(−2) = 0 means (x + 2) is a factor; dividing gives the quadratic quotient for further factorisation.",
+      "distractors": [
+        {
+          "answer": "The factor is x minus 2, and the next step is division by x minus 2 to find the remaining linear factor",
+          "explanation": "P(−2) = 0 corresponds to factor (x + 2), not (x − 2); the sign must be correctly applied."
+        },
+        {
+          "answer": "The factor is 2x plus 2, and the next step is division by the leading coefficient before further factoring",
+          "explanation": "The factor theorem gives (x + 2), not (2x + 2); the leading coefficient does not enter the factor directly."
+        },
+        {
+          "answer": "The value negative 2 is the remainder when dividing P(x) by any linear factor and no specific factor is identified",
+          "explanation": "P(−2) = 0 means (x + 2) is a specific factor; zero is the remainder for that particular divisor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains why P(x) equals x squared plus 4 has no real linear factors?",
+      "correct": "P(a) is positive for every real number a because x squared is non-negative and adding 4 keeps it above zero",
+      "correctExplanation": "x² ≥ 0 for all real x, so x² + 4 ≥ 4 > 0; no real a satisfies P(a) = 0, hence no real linear factors.",
+      "distractors": [
+        {
+          "answer": "The polynomial has degree 2 which is even so the factor theorem does not apply to quadratic expressions",
+          "explanation": "The factor theorem applies to all polynomials; the issue here is that no real root exists, not inapplicability."
+        },
+        {
+          "answer": "The leading coefficient 1 cannot produce factors because only polynomials with leading coefficient greater than 1 can be factored",
+          "explanation": "Leading coefficient value has no bearing on factorability; x² − 4 has leading coefficient 1 and factors readily."
+        },
+        {
+          "answer": "The constant term 4 is positive which automatically prevents any polynomial from having real factors regardless of degree",
+          "explanation": "Many polynomials with positive constant terms have real factors (e.g., x² − 5x + 4); sign alone does not prevent factoring."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A student evaluates P(3) for the polynomial P(x) equals x cubed minus 2x squared minus 5x plus 6 and obtains zero. Which one of the following is the correct complete factorisation?",
+      "correct": "P(x) equals the product of x minus 1, x minus 3, and x plus 2 after finding all roots by further testing and division",
+      "correctExplanation": "P(3)=0 confirms (x−3) is a factor; dividing gives x²+x−2=(x−1)(x+2); so P(x)=(x−3)(x−1)(x+2).",
+      "distractors": [
+        {
+          "answer": "P(x) equals the product of x minus 3 and x squared minus 2x minus 5 with the quadratic being irreducible",
+          "explanation": "(x³−2x²−5x+6)÷(x−3)=x²+x−2, not x²−2x−5; the correct quotient factors further."
+        },
+        {
+          "answer": "P(x) equals x minus 3 multiplied by itself three times because 3 is a triple root of the cubic",
+          "explanation": "A triple root requires P(x)=(x−3)³=x³−9x²+27x−27, which does not match the given polynomial."
+        },
+        {
+          "answer": "P(x) equals x minus 3 multiplied by x squared plus 6 which has no further real factors due to its positive constant",
+          "explanation": "Dividing correctly gives x²+x−2, not x²+6; the discriminant of x²+x−2 is positive, allowing real factors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "If the remainder when P(x) is divided by x minus 5 is 12, and separately P(x) is divided by x minus 2 giving remainder negative 3, which one of the following is necessarily true?",
+      "correct": "P(5) equals 12 and P(2) equals negative 3, as each remainder equals the polynomial evaluated at the respective divisor root",
+      "correctExplanation": "By the remainder theorem: P(5) = 12 and P(2) = −3; each evaluation gives the remainder for the corresponding divisor.",
+      "distractors": [
+        {
+          "answer": "P(5) equals negative 3 and P(2) equals 12, because the remainder and divisor values are interchangeable",
+          "explanation": "Each remainder matches its own divisor's root; they are not interchangeable."
+        },
+        {
+          "answer": "Neither x minus 5 nor x minus 2 is a factor of P(x) and therefore P(x) has no real roots at all",
+          "explanation": "Non-zero remainders mean 5 and 2 are not roots, but other values might still be roots."
+        },
+        {
+          "answer": "The difference between the two remainders (15) equals the product of the two divisor roots (10)",
+          "explanation": "12 − (−3) = 15 and 5 × 2 = 10; these values coincide here but there is no general theorem linking them."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A student attempts to find a rational root of P(x) equals x cubed plus x squared minus 4x minus 4 by testing x equals 2 and obtains P(2) equals 0. Which one of the following correctly identifies all three roots?",
+      "correct": "The roots are x equals 2, x equals negative 2, and x equals negative 1, found by dividing by x minus 2 and factoring the resulting quadratic",
+      "correctExplanation": "P(x)÷(x−2)=x²+3x+2=(x+2)(x+1); roots are 2, −2, −1.",
+      "distractors": [
+        {
+          "answer": "The only root is x equals 2 because a cubic polynomial can have at most one rational root by the factor theorem",
+          "explanation": "The factor theorem places no such limit; a cubic can have up to three rational roots."
+        },
+        {
+          "answer": "The roots are x equals 2, x equals 4, and x equals negative 4, found by reading the coefficients as potential root values",
+          "explanation": "Coefficients are not directly roots; factoring the quotient x²+3x+2 gives the correct roots −2 and −1."
+        },
+        {
+          "answer": "The roots are x equals 2, x equals 1, and x equals negative 4, obtained by dividing each coefficient by the leading coefficient",
+          "explanation": "Dividing coefficients is not a valid root-finding technique; polynomial division and the quadratic formula are needed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains why x to the fourth minus 16 can be factorised as the product of x squared plus 4 and x squared minus 4?",
+      "correct": "The expression is a difference of two squares with A equals x squared and B equals 4, giving A plus B times A minus B",
+      "correctExplanation": "x⁴ − 16 = (x²)² − 4² = (x² + 4)(x² − 4), applying A² − B² = (A+B)(A−B).",
+      "distractors": [
+        {
+          "answer": "The expression is a sum of two squares which always factors into two binomials over the real numbers",
+          "explanation": "Sums of squares do not factor over the reals; this is a difference of squares, which does factor."
+        },
+        {
+          "answer": "The factorisation follows from extracting the common factor of x squared from both terms of the expression",
+          "explanation": "x² is not a common factor of x⁴ and −16 since 16 does not contain x; the method is difference of squares."
+        },
+        {
+          "answer": "The result is obtained by dividing both terms by 4 and then applying the quadratic formula to the simplified expression",
+          "explanation": "Dividing by 4 changes the polynomial; the correct method recognises (x²)² − 4² as a difference of squares pattern."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A polynomial P(x) of degree 3 with real coefficients has complex roots 2 plus i and 2 minus i. Which one of the following correctly identifies the third root given P(x) has leading coefficient 1 and constant term negative 10?",
+      "correct": "The third root is 2, because complex roots come in conjugate pairs and the product of all roots must equal 10",
+      "correctExplanation": "Product of roots = −(constant)/leading = 10; (2+i)(2−i) = 5; so third root = 10/5 = 2.",
+      "distractors": [
+        {
+          "answer": "The third root is negative 2, because complex conjugate pairs always require a real root that is the negative of the real part",
+          "explanation": "No such rule exists; the third root is determined by the constant term relationship, not by negating the real part."
+        },
+        {
+          "answer": "The third root is 5, because the product of the complex pair is 5 and this value must appear as a root of the polynomial",
+          "explanation": "5 is the product of the conjugate pair, not a root; the third root satisfies 5 × r = 10."
+        },
+        {
+          "answer": "There is no third real root because all remaining roots must also be complex when two complex roots exist",
+          "explanation": "A degree-3 polynomial has 3 roots; with one conjugate pair, the third must be real."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "To factorise x cubed minus 7x plus 6, first find a root by testing: P(1) equals 1 minus 7 plus 6 which equals {{blank:1}}, confirming that x minus {{blank:2}} is a factor.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "P(1) = 1 − 7 + 6 = 0, confirming x = 1 is a root.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Adds 1 + 6 = 7 without subtracting 7; must compute 1 − 7 + 6 = 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 12",
+              "explanation": "May compute 1 − 7 − 6 = −12, incorrectly subtracting the constant instead of adding it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Since P(1) = 0, the factor theorem gives (x − 1) as a factor.",
+          "distractors": [
+            {
+              "answer": "negative 1",
+              "explanation": "Confuses the sign; P(1) = 0 gives factor (x − 1), not (x + 1) = (x − (−1)).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "Reads the coefficient 7 as the root instead of using the value that makes P equal zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "For P(x) equals x cubed plus 3x squared minus 4, the remainder when dividing by x plus 2 is P({{blank:1}}) which equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 2",
+          "correctExplanation": "(x + 2) = (x − (−2)), so the remainder theorem requires evaluating P(−2).",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Uses +2 instead of −2; the sign in (x + 2) means the root is −2, not +2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Reads a coefficient instead of identifying the root of the divisor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "P(−2) = (−8) + 3(4) − 4 = −8 + 12 − 4 = 0.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "May compute −(−8) + 12 − 4 = 16 or another error; careful sign handling gives 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "Reads the constant term as the remainder; must substitute and evaluate fully.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A cubic polynomial with leading coefficient 1 and roots at x equals 2, x equals negative 1, and x equals 3 is expressed in factored form as (x minus 2)(x plus {{blank:1}})(x minus {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Root x = −1 gives factor (x − (−1)) = (x + 1).",
+          "distractors": [
+            {
+              "answer": "negative 1",
+              "explanation": "Would give (x + (−1)) = (x − 1), corresponding to root x = 1, not x = −1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Confuses the roots; x = −1 requires (x + 1), not (x + 2).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Root x = 3 gives factor (x − 3).",
+          "distractors": [
+            {
+              "answer": "negative 3",
+              "explanation": "Would give (x − (−3)) = (x + 3), corresponding to root x = −3, not x = 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Confuses which root goes with which factor; x = 3 requires (x − 3).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The polynomial x to the fourth minus 1 factors as (x squared plus 1)(x squared minus 1), and x squared minus 1 further factors as (x plus {{blank:1}})(x minus {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "x² − 1 = (x + 1)(x − 1) by the difference of squares.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Confuses the original constant (−1) with the factoring; x² − 1 has roots ±1, not ±4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "(x + 0) = x is not a factor of x² − 1; the roots are ±1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "x² − 1 = (x + 1)(x − 1); both factors use the value 1.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The number 4 does not appear in x² − 1; the difference of squares gives ±1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "(x − 2) is not a factor of x² − 1; substituting x = 2 gives 3 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "For P(x) equals 2x cubed minus 3x squared plus x minus 5, the remainder on division by x minus 2 is P(2) which equals {{blank:1}}, meaning x minus 2 is {{blank:2}} a factor of P(x).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "P(2) = 2(8) − 3(4) + 2 − 5 = 16 − 12 + 2 − 5 = 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Would mean (x−2) is a factor; but P(2) = 1 ≠ 0, so it is not.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 5",
+              "explanation": "Reads the constant term instead of evaluating the full polynomial at x = 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "not",
+          "correctExplanation": "Since P(2) = 1 ≠ 0, the remainder is nonzero, meaning (x − 2) does not divide P(x) evenly.",
+          "distractors": [
+            {
+              "answer": "definitely",
+              "explanation": "A nonzero remainder proves (x − 2) is not a factor; 'definitely a factor' contradicts the evidence.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "possibly",
+              "explanation": "There is no ambiguity; P(2) ≠ 0 conclusively means (x − 2) is not a factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A degree-5 polynomial with real coefficients must have at least {{blank:1}} real root because its end behaviour goes in {{blank:2}} directions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "one",
+          "correctExplanation": "Odd-degree polynomials cross the x-axis at least once because their ends point in opposite directions.",
+          "distractors": [
+            {
+              "answer": "five",
+              "explanation": "Five is the maximum number of real roots, not the minimum; some may be complex.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Odd-degree polynomials always have at least one real root; zero is not possible.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "opposite",
+          "correctExplanation": "Odd degree means one end goes to +∞ and the other to −∞, forcing at least one x-axis crossing.",
+          "distractors": [
+            {
+              "answer": "the same",
+              "explanation": "Same-direction ends describe even degree, which does not guarantee any real root.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "perpendicular",
+              "explanation": "Perpendicular is not a term used for end behaviour; ends go up or down (same or opposite).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [],
+  "toLevel5": []
+}

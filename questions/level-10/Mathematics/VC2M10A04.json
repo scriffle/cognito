@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10A04",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to expand binomial products and factorise monic quadratic expressions using various methods.",
+    "generatedAt": "2026-05-16T12:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A binomial is an algebraic expression containing exactly two terms.",
+      "correct": "True",
+      "correctExplanation": "A binomial consists of precisely two terms separated by addition or subtraction, such as x + 3 or 2x – 5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses binomial with monomial (one term) or trinomial (three terms)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Expanding (x + a)(x + b) produces a trinomial of the form x squared plus (a times b)x plus (a plus b).",
+      "correct": "False",
+      "correctExplanation": "The correct expansion is x squared plus (a + b)x plus ab. The coefficient of x is the sum of a and b, not their product.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes the stated formula is correct without recognising that the sum and product positions are reversed."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The expression x squared plus 5x plus 6 is classified as a monic quadratic trinomial.",
+      "correct": "True",
+      "correctExplanation": "A monic quadratic has a leading coefficient of 1, and this expression has three terms with the highest power being 2.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Fails to recognise that an implied coefficient of 1 still qualifies the expression as monic."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The difference of two squares pattern states that a squared minus b squared equals (a minus b)(a minus b).",
+      "correct": "False",
+      "correctExplanation": "The correct factorisation is (a + b)(a – b). Both a sum and a difference factor are required.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the difference of squares factorisation with a perfect square factorisation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Expanding (x – 4) squared produces x squared minus 8x plus 16.",
+      "correct": "True",
+      "correctExplanation": "(x – 4) squared = x squared – 2(4)x + 4 squared = x squared – 8x + 16.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May incorrectly recall the middle term or constant, perhaps expecting x squared – 4x + 16."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "To factorise x squared plus bx plus c, two numbers are sought whose sum is c and whose product is b.",
+      "correct": "False",
+      "correctExplanation": "The two numbers must have a sum equal to b (the coefficient of x) and a product equal to c (the constant term).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the roles of sum and product in the factorisation method."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The acronym FOIL stands for First, Outer, Inner, Least.",
+      "correct": "False",
+      "correctExplanation": "FOIL stands for First, Outer, Inner, Last, referring to the four products when multiplying two binomials.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses 'Last' with 'Least', which is not part of the binomial multiplication mnemonic."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A perfect square trinomial always has a negative middle term.",
+      "correct": "False",
+      "correctExplanation": "The middle term is negative when the binomial contains subtraction, as in (x – a) squared, but positive when it contains addition, as in (x + a) squared.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes all perfect square trinomials arise from (x – a) squared, ignoring the (x + a) squared form."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Factorising reverses the process of expanding brackets.",
+      "correct": "True",
+      "correctExplanation": "Factorisation rewrites an expression as a product of factors, which is the inverse of expansion.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Does not recognise that factorisation and expansion are inverse operations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The expression 9x squared minus 16 can be factorised using the difference of two squares.",
+      "correct": "False",
+      "correctExplanation": "While 16 is a perfect square, 9x squared has a coefficient of 9, making this a non-monic expression. The factorisation is (3x + 4)(3x – 4), which goes beyond monic methods.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Correctly identifies the pattern but does not distinguish monic from non-monic scope."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "When expanding (x + 3)(x – 7), the constant term in the result equals negative 21.",
+      "correct": "True",
+      "correctExplanation": "The constant term is the product of the last terms: 3 × (–7) = –21.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May calculate the constant as 3 + (–7) = –4, confusing sum with product."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "A monic quadratic expression has a leading coefficient other than one.",
+      "correct": "False",
+      "correctExplanation": "By definition, a monic polynomial has a leading coefficient of exactly 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses monic (leading coefficient 1) with non-monic quadratics."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly expands (x + 5)(x + 2)?",
+      "correct": "x squared plus 7x plus 10",
+      "correctExplanation": "Applying FOIL: x squared + 2x + 5x + 10 = x squared + 7x + 10.",
+      "distractors": [
+        {
+          "answer": "x squared plus 10x plus 7",
+          "explanation": "Swaps the coefficient of x with the constant term."
+        },
+        {
+          "answer": "x squared plus 7x minus 10",
+          "explanation": "Incorrectly assigns a negative sign to the constant despite both binomial constants being positive."
+        },
+        {
+          "answer": "x squared plus 3x plus 10",
+          "explanation": "Uses the difference (5 – 2) rather than the sum for the coefficient of x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the correct factorisation of x squared plus 9x plus 20?",
+      "correct": "(x + 4)(x + 5)",
+      "correctExplanation": "The factors of 20 that sum to 9 are 4 and 5.",
+      "distractors": [
+        {
+          "answer": "(x + 2)(x + 10)",
+          "explanation": "Uses factors of 20 that sum to 12 rather than 9."
+        },
+        {
+          "answer": "(x + 4)(x – 5)",
+          "explanation": "Incorrectly introduces a negative sign, producing a product of –20 not +20."
+        },
+        {
+          "answer": "(x + 1)(x + 20)",
+          "explanation": "Uses factors of 20 that sum to 21 rather than 9."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the difference of two squares pattern?",
+      "correct": "An expression of the form a squared minus b squared that factors into (a + b)(a – b)",
+      "correctExplanation": "The difference of two squares identity states a squared – b squared = (a + b)(a – b).",
+      "distractors": [
+        {
+          "answer": "An expression of the form a squared minus b squared that factors into (a – b)(a – b)",
+          "explanation": "Produces a perfect square factorisation rather than the difference of squares."
+        },
+        {
+          "answer": "An expression of the form a squared plus b squared that factors into (a + b)(a + b)",
+          "explanation": "A sum of two squares does not factorise over the reals using this pattern."
+        },
+        {
+          "answer": "An expression of the form a squared minus b squared that factors into (a + b) squared",
+          "explanation": "Confuses the difference of squares with a perfect square expansion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the expansion of (x – 6) squared?",
+      "correct": "x squared minus 12x plus 36",
+      "correctExplanation": "(x – 6) squared = x squared – 2(6)x + 36 = x squared – 12x + 36.",
+      "distractors": [
+        {
+          "answer": "x squared minus 6x plus 36",
+          "explanation": "Halves the middle term, using –6 instead of –2 × 6 = –12."
+        },
+        {
+          "answer": "x squared minus 12x minus 36",
+          "explanation": "Incorrectly assigns a negative sign to the constant term of a perfect square."
+        },
+        {
+          "answer": "x squared plus 12x plus 36",
+          "explanation": "Uses a positive middle term despite the binomial containing a subtraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "When factorising x squared plus bx plus c by inspection, which one of the following pairs of values must be found?",
+      "correct": "Two numbers whose sum is b and whose product is c",
+      "correctExplanation": "The factorisation (x + p)(x + q) requires p + q = b and pq = c.",
+      "distractors": [
+        {
+          "answer": "Two numbers whose product is b and whose sum is c",
+          "explanation": "Reverses the roles of the sum and product in the factorisation process."
+        },
+        {
+          "answer": "Two numbers whose difference is b and whose quotient is c",
+          "explanation": "Introduces subtraction and division, which are not part of the standard method."
+        },
+        {
+          "answer": "Two numbers whose sum is c and whose difference is b",
+          "explanation": "Assigns the sum to the constant term rather than the coefficient of x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following expressions is a monic quadratic trinomial?",
+      "correct": "x squared minus 3x plus 2",
+      "correctExplanation": "This expression has three terms, the highest power is 2, and the leading coefficient is 1.",
+      "distractors": [
+        {
+          "answer": "2x squared minus 3x plus 2",
+          "explanation": "The leading coefficient is 2, making this a non-monic quadratic."
+        },
+        {
+          "answer": "x cubed minus 3x plus 2",
+          "explanation": "The highest power is 3, making this a cubic rather than a quadratic."
+        },
+        {
+          "answer": "x squared minus 3x",
+          "explanation": "This expression has only two terms, making it a binomial rather than a trinomial."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the constant term when (x + 8)(x – 3) is expanded?",
+      "correct": "Negative 24",
+      "correctExplanation": "The constant term is the product of the last terms in each binomial: 8 × (–3) = –24.",
+      "distractors": [
+        {
+          "answer": "Positive 24",
+          "explanation": "Ignores the negative sign, treating both constants as positive."
+        },
+        {
+          "answer": "Positive 5",
+          "explanation": "Calculates the sum 8 + (–3) = 5, confusing the coefficient of x with the constant."
+        },
+        {
+          "answer": "Negative 5",
+          "explanation": "Calculates the difference 3 – 8 = –5, which is the negative of the coefficient of x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states what FOIL stands for in binomial multiplication?",
+      "correct": "First, Outer, Inner, Last",
+      "correctExplanation": "FOIL names the four partial products formed when multiplying two binomials.",
+      "distractors": [
+        {
+          "answer": "Factor, Order, Invert, Link",
+          "explanation": "Invents an incorrect meaning for the FOIL mnemonic."
+        },
+        {
+          "answer": "First, Opposite, Interior, Last",
+          "explanation": "Replaces Outer and Inner with incorrect terms."
+        },
+        {
+          "answer": "Fraction, Operate, Integrate, Limit",
+          "explanation": "Assigns calculus-related terms that have no connection to binomial expansion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the factorisation of x squared minus 25?",
+      "correct": "(x + 5)(x – 5)",
+      "correctExplanation": "x squared – 25 is a difference of two squares: x squared – 5 squared = (x + 5)(x – 5).",
+      "distractors": [
+        {
+          "answer": "(x – 5)(x – 5)",
+          "explanation": "Produces x squared – 10x + 25 when expanded, not x squared – 25."
+        },
+        {
+          "answer": "(x + 5)(x + 5)",
+          "explanation": "Produces x squared + 10x + 25 when expanded, not x squared – 25."
+        },
+        {
+          "answer": "(x + 25)(x – 1)",
+          "explanation": "Incorrectly decomposes 25 as a product rather than recognising it as 5 squared."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly expands (x + 1)(x – 1)?",
+      "correct": "x squared minus 1",
+      "correctExplanation": "This is the difference of two squares pattern: (x + 1)(x – 1) = x squared – 1.",
+      "distractors": [
+        {
+          "answer": "x squared plus 1",
+          "explanation": "Incorrectly produces a sum of squares instead of a difference."
+        },
+        {
+          "answer": "x squared minus 2x plus 1",
+          "explanation": "Expands (x – 1) squared rather than (x + 1)(x – 1)."
+        },
+        {
+          "answer": "x squared minus x minus 1",
+          "explanation": "Introduces a linear term that cancels to zero in the correct expansion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the correct factorisation of x squared minus 7x plus 12?",
+      "correct": "(x – 3)(x – 4)",
+      "correctExplanation": "The numbers –3 and –4 have a sum of –7 and a product of 12.",
+      "distractors": [
+        {
+          "answer": "(x + 3)(x + 4)",
+          "explanation": "Uses positive factors, producing a sum of +7 rather than –7."
+        },
+        {
+          "answer": "(x – 2)(x – 6)",
+          "explanation": "Uses factors of 12 that sum to –8 rather than –7."
+        },
+        {
+          "answer": "(x – 3)(x + 4)",
+          "explanation": "Mixes signs, producing a product of –12 rather than +12."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following identifies the middle term when expanding (x + a)(x + b)?",
+      "correct": "The coefficient of x equals the sum of a and b",
+      "correctExplanation": "Expanding gives x squared + (a + b)x + ab, so the middle term coefficient is a + b.",
+      "distractors": [
+        {
+          "answer": "The coefficient of x equals the product of a and b",
+          "explanation": "Confuses the middle term coefficient with the constant term."
+        },
+        {
+          "answer": "The coefficient of x equals the difference of a and b",
+          "explanation": "Uses subtraction rather than addition for the coefficient."
+        },
+        {
+          "answer": "The coefficient of x equals the quotient of a and b",
+          "explanation": "Division does not feature in binomial expansion."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A {{blank:1}} expression has a leading coefficient of one, and when factorising x squared plus bx plus c, the two required numbers must have a {{blank:2}} equal to b.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "monic",
+          "correctExplanation": "Monic means the leading coefficient is 1.",
+          "distractors": [
+            {
+              "answer": "quadratic",
+              "explanation": "Describes the degree, not the leading coefficient property.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "binomial",
+              "explanation": "Describes an expression with two terms, not the coefficient property.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sum",
+          "correctExplanation": "The two numbers p and q in (x + p)(x + q) must satisfy p + q = b.",
+          "distractors": [
+            {
+              "answer": "product",
+              "explanation": "The product of the two numbers equals c, not b.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "difference",
+              "explanation": "Subtraction is not used to find the coefficient of x in this method.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The difference of two squares identity states that a squared minus b squared equals (a plus b) times (a {{blank:1}} b), and the constant term in the expansion of (x + p)(x + q) is the {{blank:2}} of p and q.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "minus",
+          "correctExplanation": "The factorisation requires one sum factor and one difference factor.",
+          "distractors": [
+            {
+              "answer": "plus",
+              "explanation": "Using two sum factors produces (a + b) squared, not the difference of squares.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "times",
+              "explanation": "Multiplication between a and b does not appear in this identity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "product",
+          "correctExplanation": "The constant term equals pq, the product of the two constants.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "The sum of p and q gives the coefficient of x, not the constant term.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quotient",
+              "explanation": "Division is not involved in determining the constant term of an expansion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The expression x squared plus 4x plus 4 is a perfect square trinomial because 4 equals the square of half the coefficient of x.",
+      "correct": "True",
+      "correctExplanation": "Half of 4 is 2, and 2 squared is 4, confirming the perfect square pattern (x + 2) squared.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Does not apply the half-and-square test to verify the perfect square structure."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The expression x squared minus 5x plus 6 factorises as (x – 2)(x – 3) because negative 2 and negative 3 multiply to give 6 and add to give negative 5.",
+      "correct": "True",
+      "correctExplanation": "(–2) × (–3) = 6 and (–2) + (–3) = –5, matching the coefficients.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Fails to verify that both the sum and product conditions are satisfied simultaneously."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The expression x squared plus 9 can be factorised as (x + 3)(x – 3) because 9 is a perfect square.",
+      "correct": "False",
+      "correctExplanation": "x squared + 9 is a sum of two squares, which does not factorise over the real numbers. The difference of squares applies only to a squared minus b squared.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Incorrectly applies the difference of squares pattern to a sum of squares."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Expanding (x + 7)(x – 7) eliminates the linear term because the outer and inner products cancel.",
+      "correct": "True",
+      "correctExplanation": "The outer product is –7x and the inner product is +7x, which sum to zero, leaving x squared – 49.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Does not recognise that conjugate binomials always produce a difference of squares with no linear term."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The quadratic x squared plus 2x minus 15 factorises as (x + 5)(x – 3) because 5 and negative 3 are the only pair with a product of negative 15.",
+      "correct": "False",
+      "correctExplanation": "While 5 × (–3) = –15 and 5 + (–3) = 2 are both correct, other factor pairs of –15 exist (such as –5 and 3, or 15 and –1). The pair is selected because it satisfies both conditions, not because it is unique.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes the chosen factor pair is the only one with a product of –15, ignoring other combinations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "When expanding (x + a) squared, the middle term is always positive because squaring eliminates negative signs.",
+      "correct": "False",
+      "correctExplanation": "If a is negative, the middle term 2ax is negative. For example, (x – 3) squared gives x squared – 6x + 9.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the always-positive constant term with the sign of the middle term."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "Factorising by grouping requires the middle term of a quadratic to be split into two terms with the same sign.",
+      "correct": "False",
+      "correctExplanation": "The two terms may have different signs. The requirement is that their coefficients multiply to give the product of the leading coefficient and constant, not that they share a sign.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes that same-sign splits are required, not recognising that opposite-sign splits are valid when the product ac is negative."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The expression x squared minus 6x plus 9 factorises to (x + 3)(x – 3) because both 9 and x squared are perfect squares.",
+      "correct": "False",
+      "correctExplanation": "x squared – 6x + 9 is a perfect square trinomial that factorises as (x – 3) squared, not a difference of two squares.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sees perfect squares and immediately applies the difference of squares pattern, ignoring the middle term."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "The expression x squared plus 6x plus 9 can be recognised as a perfect square trinomial. Which one of the following explains why?",
+      "correct": "The constant term 9 equals the square of half the coefficient of x, confirming the pattern (x + 3) squared",
+      "correctExplanation": "Half of 6 is 3, and 3 squared is 9, verifying the perfect square structure.",
+      "distractors": [
+        {
+          "answer": "The constant 9 is odd, and odd constants in quadratic trinomials always indicate that the expression has a perfect square structure",
+          "explanation": "The parity of the constant has no bearing on whether a trinomial is a perfect square."
+        },
+        {
+          "answer": "The coefficient 6 divides evenly into the constant 9, which is a sufficient condition to establish the perfect square trinomial form",
+          "explanation": "Divisibility between the coefficient and constant does not determine perfect square status."
+        },
+        {
+          "answer": "Both 6 and 9 are multiples of 3, and having shared prime factors confirms the perfect square trinomial pattern conclusively",
+          "explanation": "Shared factors between terms do not establish the half-and-square relationship required."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A student claims that x squared plus 16 factorises as (x + 4)(x – 4). Which one of the following correctly evaluates this claim?",
+      "correct": "The claim is incorrect because (x + 4)(x – 4) expands to x squared minus 16, not x squared plus 16",
+      "correctExplanation": "The difference of two squares pattern produces a subtraction, not an addition, of the constant.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because both expressions contain x squared and a term involving 9, so the difference of squares applies directly",
+          "explanation": "Ignores the critical distinction between a sum and a difference of squares."
+        },
+        {
+          "answer": "The claim is incorrect because the correct factorisation of x squared plus 16 should be written as (x + 4)(x + 4) instead",
+          "explanation": "(x + 4)(x + 4) expands to x squared + 8x + 16, which also does not equal x squared + 16."
+        },
+        {
+          "answer": "The claim is incorrect because x squared plus 16 factorises as (x + 8)(x + 2) when the standard inspection method is applied",
+          "explanation": "(x + 8)(x + 2) expands to x squared + 10x + 16, not x squared + 16."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why x squared minus x minus 12 factorises as (x – 4)(x + 3)?",
+      "correct": "Negative 4 and positive 3 multiply to give negative 12 and add to give negative 1, matching the coefficients",
+      "correctExplanation": "(–4)(3) = –12 and (–4) + 3 = –1, satisfying both the product and sum conditions.",
+      "distractors": [
+        {
+          "answer": "Negative 4 and positive 3 are chosen because their absolute values are consecutive integers in the natural number sequence",
+          "explanation": "Consecutive absolute values are coincidental, not the basis for selecting factor pairs."
+        },
+        {
+          "answer": "The factors of 12 that are closest together in absolute value are selected, regardless of sign, to produce balanced brackets",
+          "explanation": "Closeness in value does not determine correctness; both sum and product must match."
+        },
+        {
+          "answer": "Negative 4 and positive 3 each divide evenly into the constant 12, which alone is sufficient to confirm factorisation",
+          "explanation": "Divisibility alone is insufficient; the sum condition must also be verified."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains the relationship between expanding and factorising?",
+      "correct": "Factorising is the inverse of expanding, converting a sum or difference into a product of factors",
+      "correctExplanation": "Expansion distributes factors into terms; factorisation reverses this by expressing terms as a product.",
+      "distractors": [
+        {
+          "answer": "Factorising simplifies an expression by reducing the number of terms without changing its structure",
+          "explanation": "Factorising changes the form from a sum to a product, which is a structural transformation."
+        },
+        {
+          "answer": "Factorising and expanding produce identical expressions because they are equivalent operations",
+          "explanation": "They are inverse operations that produce different forms of the same expression."
+        },
+        {
+          "answer": "Factorising removes brackets from an expression to reveal the individual terms within it",
+          "explanation": "Factorising introduces brackets (factors), not removes them."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the expansion of (x + a)(x – a) never contains a linear term?",
+      "correct": "The inner product ax and the outer product negative ax are additive inverses that sum to zero",
+      "correctExplanation": "The +ax and –ax terms cancel completely, leaving only x squared – a squared.",
+      "distractors": [
+        {
+          "answer": "The linear terms are absorbed into the constant during the final simplification step",
+          "explanation": "Linear and constant terms cannot combine; they are fundamentally different term types."
+        },
+        {
+          "answer": "The FOIL method skips the outer and inner steps when the binomials share the same variable",
+          "explanation": "FOIL always includes all four products regardless of the binomial structure."
+        },
+        {
+          "answer": "Conjugate binomials contain no linear terms individually, so none can appear in the product",
+          "explanation": "Each binomial does contain a linear term (x); it is the cross-products that cancel."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following classifies x squared minus 10x plus 25 correctly?",
+      "correct": "A perfect square trinomial that factorises as (x – 5) squared",
+      "correctExplanation": "Half of 10 is 5 and 5 squared is 25, confirming the perfect square pattern with a negative middle term.",
+      "distractors": [
+        {
+          "answer": "A difference of two squares that factorises as (x + 5)(x – 5)",
+          "explanation": "A difference of squares has no middle term; this expression has –10x."
+        },
+        {
+          "answer": "A non-factorisable trinomial because the discriminant is zero",
+          "explanation": "A zero discriminant means the quadratic has a repeated root, which corresponds to a perfect square."
+        },
+        {
+          "answer": "A standard trinomial that factorises as (x – 10)(x – 25)",
+          "explanation": "(–10)(–25) = 250, not 25, and (–10) + (–25) = –35, not –10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why x squared plus 3x – 10 factorises as (x + 5)(x – 2)?",
+      "correct": "Positive 5 and negative 2 have a product of negative 10 and a sum of positive 3",
+      "correctExplanation": "5 × (–2) = –10 and 5 + (–2) = 3, satisfying both factorisation conditions.",
+      "distractors": [
+        {
+          "answer": "The numbers 5 and 2 are selected because they are the closest factors of 10 in absolute value",
+          "explanation": "Closeness of factor values is coincidental; both sum and product conditions must be checked."
+        },
+        {
+          "answer": "Positive 5 and negative 2 are chosen because their difference equals the coefficient of x",
+          "explanation": "The relevant operation is addition (sum), not subtraction (difference)."
+        },
+        {
+          "answer": "The factorisation uses 5 and 2 because 10 divided by 2 equals 5, linking all three constants",
+          "explanation": "Division between constants does not establish the required sum-and-product relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following trinomials is NOT a perfect square?",
+      "correct": "x squared plus 8x plus 12",
+      "correctExplanation": "Half of 8 is 4, and 4 squared is 16 not 12, so this fails the perfect square test.",
+      "distractors": [
+        {
+          "answer": "x squared plus 8x plus 16",
+          "explanation": "Half of 8 is 4 and 4 squared is 16, confirming this is (x + 4) squared."
+        },
+        {
+          "answer": "x squared minus 10x plus 25",
+          "explanation": "Half of 10 is 5 and 5 squared is 25, confirming this is (x – 5) squared."
+        },
+        {
+          "answer": "x squared plus 14x plus 49",
+          "explanation": "Half of 14 is 7 and 7 squared is 49, confirming this is (x + 7) squared."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following describes the purpose of grouping when factorising a quadratic?",
+      "correct": "Splitting the middle term into two parts so that pairs of terms share a common factor",
+      "correctExplanation": "Grouping decomposes bx into two terms, then extracts a common binomial from paired groups.",
+      "distractors": [
+        {
+          "answer": "Rearranging the terms in descending order of degree to prepare for long division",
+          "explanation": "Long division is a different technique not related to factorisation by grouping."
+        },
+        {
+          "answer": "Separating the quadratic into two binomials by dividing each term by the leading coefficient",
+          "explanation": "This describes a step in non-monic factorisation, not the grouping method."
+        },
+        {
+          "answer": "Combining like terms to reduce the trinomial to a binomial before factorising",
+          "explanation": "Grouping adds an extra term to enable pairing, not reduces terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains why (x – 3) squared does not equal x squared minus 9?",
+      "correct": "Squaring a binomial produces three terms including the cross-product term negative 6x, which is absent from x squared minus 9",
+      "correctExplanation": "(x – 3) squared = x squared – 6x + 9, not x squared – 9.",
+      "distractors": [
+        {
+          "answer": "The constant should be positive 9 instead of negative 9, but the remaining terms in the expansion are otherwise completely correct",
+          "explanation": "Both the middle term –6x and the sign of the constant are affected, not just the sign."
+        },
+        {
+          "answer": "Squaring distributes over subtraction directly, so (x minus 3) squared equals x squared minus 3 squared by the distributive law",
+          "explanation": "Squaring does not distribute over subtraction; the cross-product term must be included."
+        },
+        {
+          "answer": "The expression x squared minus 9 actually results from expanding (x – 9), not from squaring the binomial (x – 3)",
+          "explanation": "x squared – 9 equals (x + 3)(x – 3), which is a product of conjugates, not a square."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why x squared minus 4x – 21 factorises as (x – 7)(x + 3)?",
+      "correct": "Negative 7 and positive 3 have a product of negative 21 and a sum of negative 4",
+      "correctExplanation": "(–7)(3) = –21 and (–7) + 3 = –4, satisfying both conditions.",
+      "distractors": [
+        {
+          "answer": "The numbers 7 and 3 are selected because 7 minus 3 equals the absolute value of the coefficient 4",
+          "explanation": "The difference is coincidental; the sum of the signed values determines correctness."
+        },
+        {
+          "answer": "Negative 7 and positive 3 are chosen because 21 divided by 7 gives 3, linking the factors to the constant",
+          "explanation": "The divisibility relationship is necessary but not sufficient without verifying the sum condition."
+        },
+        {
+          "answer": "The larger factor receives the negative sign by convention when the constant term is negative",
+          "explanation": "Sign assignment depends on the required sum, not on factor magnitude."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following describes the discriminant's role in determining whether a monic quadratic factorises over the integers?",
+      "correct": "If the discriminant b squared minus 4c is a perfect square, the quadratic factorises with integer coefficients",
+      "correctExplanation": "A perfect square discriminant produces rational roots, enabling integer factorisation for monic quadratics.",
+      "distractors": [
+        {
+          "answer": "If the discriminant is positive, the quadratic always factorises over the integers regardless of its value in standard form.",
+          "explanation": "A positive but non-square discriminant produces irrational roots that prevent integer factorisation."
+        },
+        {
+          "answer": "The discriminant determines the sign of the factors but not whether integer factorisation is possible",
+          "explanation": "The discriminant determines existence of rational roots, not merely the sign pattern."
+        },
+        {
+          "answer": "A discriminant of zero means the quadratic cannot be factorised because it has no real roots",
+          "explanation": "A zero discriminant indicates a repeated real root, producing a perfect square factorisation."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "When expanding (x + a)(x – a), the linear terms cancel because they are {{blank:1}}, leaving only the difference of two {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "additive inverses",
+          "correctExplanation": "The terms +ax and –ax sum to zero.",
+          "distractors": [
+            {
+              "answer": "equal factors",
+              "explanation": "The terms have equal magnitude but opposite signs, making them inverses not equals.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "common factors",
+              "explanation": "Common factors relate to shared divisors, not to cancellation of opposite terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "squares",
+          "correctExplanation": "The result is a squared minus b squared, a difference of two perfect squares.",
+          "distractors": [
+            {
+              "answer": "roots",
+              "explanation": "Roots refer to solutions of equations, not to the terms in the factored expression.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "products",
+              "explanation": "The result is a difference of squares, not a difference of products.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "A perfect square trinomial has the form x squared plus 2ax plus a squared, where the constant term equals the {{blank:1}} of half the {{blank:2}} of x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "square",
+          "correctExplanation": "The test for a perfect square trinomial requires squaring half the coefficient of x.",
+          "distractors": [
+            {
+              "answer": "double",
+              "explanation": "Doubling half the coefficient returns the original coefficient, not the constant.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "cube",
+              "explanation": "Cubing is not part of the perfect square trinomial pattern.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "coefficient",
+          "correctExplanation": "The coefficient of x (which is 2a) is halved to obtain a, then squared to verify the constant.",
+          "distractors": [
+            {
+              "answer": "exponent",
+              "explanation": "The exponent of x is its power (1 for the linear term), not the numerical multiplier.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "constant",
+              "explanation": "The constant term is the value being tested, not the starting point of the test.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "To factorise x squared plus bx plus c by inspection, find two numbers whose {{blank:1}} is c and whose {{blank:2}} is b.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "product",
+          "correctExplanation": "The two numbers p and q must satisfy pq = c.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "The sum of the two numbers equals b, not c.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quotient",
+              "explanation": "Division is not used in the inspection method for factorisation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sum",
+          "correctExplanation": "The two numbers p and q must satisfy p + q = b.",
+          "distractors": [
+            {
+              "answer": "product",
+              "explanation": "The product of the two numbers equals c, not b.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "difference",
+              "explanation": "Subtraction is not the operation linking the two numbers to b.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Factorisation by grouping splits the {{blank:1}} term of a quadratic into two parts, then extracts a common {{blank:2}} from each pair.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "middle",
+          "correctExplanation": "The linear (middle) term bx is decomposed into two terms whose coefficients multiply to give ac.",
+          "distractors": [
+            {
+              "answer": "constant",
+              "explanation": "The constant term is not split; it remains as part of one grouped pair.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "leading",
+              "explanation": "The leading term (x squared) is not decomposed in the grouping method.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "factor",
+          "correctExplanation": "A common algebraic factor is extracted from each pair of terms.",
+          "distractors": [
+            {
+              "answer": "term",
+              "explanation": "A common term is too vague; the method extracts a common factor, not a common term.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "The common element may include numerical coefficients, not just variables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A sum of two squares such as x squared plus b squared does not {{blank:1}} over the real numbers, unlike a {{blank:2}} of two squares.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "factorise",
+          "correctExplanation": "A sum of two squares has no real linear factors.",
+          "distractors": [
+            {
+              "answer": "expand",
+              "explanation": "Expansion applies to products, not to sums that are already in expanded form.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "simplify",
+              "explanation": "The expression is already in simplest form, but the key issue is factorisation, not simplification.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "difference",
+          "correctExplanation": "a squared – b squared = (a + b)(a – b) factorises over the reals.",
+          "distractors": [
+            {
+              "answer": "product",
+              "explanation": "A product of two squares is a different operation entirely.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quotient",
+              "explanation": "A quotient of squares relates to division, not to the factorisation pattern.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "When the discriminant b squared minus 4c is a perfect {{blank:1}}, the monic quadratic x squared plus bx plus c factorises over the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "square",
+          "correctExplanation": "A perfect square discriminant yields rational (and for monic quadratics, integer) roots.",
+          "distractors": [
+            {
+              "answer": "cube",
+              "explanation": "A perfect cube discriminant is not a condition for integer factorisation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "number",
+              "explanation": "Every discriminant is a number; the specific requirement is that it be a perfect square.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "integers",
+          "correctExplanation": "A perfect square discriminant for a monic quadratic produces integer factor pairs.",
+          "distractors": [
+            {
+              "answer": "rationals",
+              "explanation": "While technically correct, for monic quadratics with integer coefficients the factors are specifically integers.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "irrationals",
+              "explanation": "Irrational factors arise from non-square discriminants, not perfect square ones.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Anika expands (x + 6)(x – 2) and obtains x squared plus 4x minus 12, which is correct.",
+      "correct": "True",
+      "correctExplanation": "(x + 6)(x – 2) = x squared + (–2 + 6)x + (6)(–2) = x squared + 4x – 12.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate the middle term or constant and doubt Anika's correct result."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Sam factorises x squared minus 2x minus 35 as (x – 5)(x – 7), which is correct.",
+      "correct": "False",
+      "correctExplanation": "(–5)(–7) = 35 not –35. The correct factorisation is (x – 7)(x + 5), since (–7)(5) = –35 and (–7) + 5 = –2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes both factors must be negative when the constant is negative, without checking the product sign."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Jarrah expands (x + 9)(x – 4). Which one of the following is the correct result?",
+      "correct": "x squared plus 5x minus 36",
+      "correctExplanation": "(9)(–4) = –36 for the constant and 9 + (–4) = 5 for the coefficient of x.",
+      "distractors": [
+        {
+          "answer": "x squared minus 5x minus 36",
+          "explanation": "Uses –5 instead of +5 for the sum of 9 and –4."
+        },
+        {
+          "answer": "x squared plus 5x plus 36",
+          "explanation": "Incorrectly makes the constant positive when the binomial signs differ."
+        },
+        {
+          "answer": "x squared plus 13x minus 36",
+          "explanation": "Adds the absolute values 9 + 4 = 13 instead of computing 9 + (–4) = 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Priya needs to factorise x squared plus x minus 30. Which one of the following is correct?",
+      "correct": "(x + 6)(x – 5)",
+      "correctExplanation": "6 × (–5) = –30 and 6 + (–5) = 1.",
+      "distractors": [
+        {
+          "answer": "(x + 10)(x – 3)",
+          "explanation": "10 × (–3) = –30 but 10 + (–3) = 7, not 1."
+        },
+        {
+          "answer": "(x + 5)(x – 6)",
+          "explanation": "5 × (–6) = –30 but 5 + (–6) = –1, not 1."
+        },
+        {
+          "answer": "(x + 15)(x – 2)",
+          "explanation": "15 × (–2) = –30 but 15 + (–2) = 13, not 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Marcus writes the area of a rectangular garden as x squared plus 11x plus 28 square metres. Which one of the following represents the dimensions?",
+      "correct": "(x + 4) metres by (x + 7) metres",
+      "correctExplanation": "4 × 7 = 28 and 4 + 7 = 11, giving the correct factorisation.",
+      "distractors": [
+        {
+          "answer": "(x + 2) metres by (x + 14) metres",
+          "explanation": "2 × 14 = 28 but 2 + 14 = 16, not 11."
+        },
+        {
+          "answer": "(x + 4) metres by (x + 28) metres",
+          "explanation": "4 × 28 = 112, not 28."
+        },
+        {
+          "answer": "(x + 1) metres by (x + 28) metres",
+          "explanation": "1 × 28 = 28 but 1 + 28 = 29, not 11."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Lila expands (x – 8) squared. Which one of the following is the correct result?",
+      "correct": "x squared minus 16x plus 64",
+      "correctExplanation": "(x – 8) squared = x squared – 2(8)x + 64 = x squared – 16x + 64.",
+      "distractors": [
+        {
+          "answer": "x squared minus 8x plus 64",
+          "explanation": "Uses –8x instead of –2(8)x = –16x for the middle term."
+        },
+        {
+          "answer": "x squared minus 16x minus 64",
+          "explanation": "Assigns a negative sign to the constant, which is always positive in a perfect square."
+        },
+        {
+          "answer": "x squared minus 64",
+          "explanation": "Omits the middle term entirely, confusing squaring with the difference of squares."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Kofi simplifies the expression (x + 5)(x – 5) – (x squared – 10). Which one of the following is the correct result?",
+      "correct": "Negative 15",
+      "correctExplanation": "(x + 5)(x – 5) = x squared – 25. Then x squared – 25 – x squared + 10 = –15.",
+      "distractors": [
+        {
+          "answer": "Negative 35",
+          "explanation": "Subtracts 10 from –25 instead of adding: –25 – 10 = –35."
+        },
+        {
+          "answer": "Positive 15",
+          "explanation": "Reverses the subtraction order or mishandles signs."
+        },
+        {
+          "answer": "2x squared minus 35",
+          "explanation": "Fails to cancel the x squared terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Rosa factorises x squared – 9x – 22. Which one of the following is correct?",
+      "correct": "(x – 11)(x + 2)",
+      "correctExplanation": "(–11)(2) = –22 and (–11) + 2 = –9.",
+      "distractors": [
+        {
+          "answer": "(x – 22)(x + 1)",
+          "explanation": "(–22)(1) = –22 but (–22) + 1 = –21, not –9."
+        },
+        {
+          "answer": "(x + 11)(x – 2)",
+          "explanation": "(11)(–2) = –22 but 11 + (–2) = 9, not –9."
+        },
+        {
+          "answer": "(x – 11)(x – 2)",
+          "explanation": "(–11)(–2) = 22, not –22."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Amir determines that the area of a square tile can be expressed as x squared plus 12x plus 36 square centimetres. Which one of the following is the side length?",
+      "correct": "(x + 6) centimetres",
+      "correctExplanation": "x squared + 12x + 36 is a perfect square: half of 12 is 6, and 6 squared is 36, so it equals (x + 6) squared.",
+      "distractors": [
+        {
+          "answer": "(x + 12) centimetres",
+          "explanation": "(x + 12) squared = x squared + 24x + 144, not x squared + 12x + 36."
+        },
+        {
+          "answer": "(x + 3) centimetres",
+          "explanation": "(x + 3) squared = x squared + 6x + 9, not x squared + 12x + 36."
+        },
+        {
+          "answer": "(x + 36) centimetres",
+          "explanation": "(x + 36) squared produces a constant of 1296, far exceeding 36."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Jade needs to evaluate (x + 3)(x – 3) when x equals 7. Which one of the following is the most efficient approach?",
+      "correct": "Recognise the difference of squares and compute 7 squared minus 9 to obtain 40",
+      "correctExplanation": "(x + 3)(x – 3) = x squared – 9, so substituting gives 49 – 9 = 40.",
+      "distractors": [
+        {
+          "answer": "Substitute into each binomial to get 10 times 4, which equals 44",
+          "explanation": "10 × 4 = 40, not 44; this option contains an arithmetic error."
+        },
+        {
+          "answer": "Expand fully to x squared minus 3x plus 3x minus 9, then substitute x equals 7",
+          "explanation": "While valid, this approach is less efficient than applying the difference of squares directly."
+        },
+        {
+          "answer": "Recognise the perfect square and compute (7 minus 3) squared to obtain 16",
+          "explanation": "This is not a perfect square expression; it is a difference of two squares."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Linh expands (2x + 3)(x – 4). Which one of the following is the correct result?",
+      "correct": "2x squared minus 5x minus 12",
+      "correctExplanation": "2x(x) + 2x(–4) + 3(x) + 3(–4) = 2x squared – 8x + 3x – 12 = 2x squared – 5x – 12.",
+      "distractors": [
+        {
+          "answer": "2x squared minus 11x minus 12",
+          "explanation": "Incorrectly computes –8x – 3x = –11x instead of –8x + 3x = –5x."
+        },
+        {
+          "answer": "2x squared plus 5x minus 12",
+          "explanation": "Reverses the sign of the linear term."
+        },
+        {
+          "answer": "2x squared minus 5x plus 12",
+          "explanation": "Assigns a positive sign to the constant despite the product 3 × (–4) = –12."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Will factorises x squared – 64 for a class exercise. Which one of the following is the correct result?",
+      "correct": "(x + 8)(x – 8)",
+      "correctExplanation": "x squared – 64 = x squared – 8 squared = (x + 8)(x – 8).",
+      "distractors": [
+        {
+          "answer": "(x – 8)(x – 8)",
+          "explanation": "This equals x squared – 16x + 64, not x squared – 64."
+        },
+        {
+          "answer": "(x + 32)(x – 2)",
+          "explanation": "This equals x squared + 30x – 64, introducing a linear term not present."
+        },
+        {
+          "answer": "(x + 4)(x – 16)",
+          "explanation": "This equals x squared – 12x – 64, introducing a linear term."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Mia writes the expression (x + a) squared minus a squared and claims it simplifies to x squared plus 2ax. Which one of the following evaluates her claim?",
+      "correct": "Mia is correct: expanding gives x squared plus 2ax plus a squared minus a squared, leaving x squared plus 2ax",
+      "correctExplanation": "The a squared terms cancel, confirming Mia's simplification.",
+      "distractors": [
+        {
+          "answer": "Mia is incorrect because the a squared terms do not cancel when one is subtracted from a completed perfect square expression",
+          "explanation": "The a squared from the expansion and the subtracted a squared are identical and do cancel."
+        },
+        {
+          "answer": "Mia is incorrect because the result should be x squared plus 2ax plus 2a squared, obtained by adding the squared constant terms",
+          "explanation": "This would require adding a squared rather than subtracting it."
+        },
+        {
+          "answer": "Mia is correct only when a is positive, since squaring negative values fundamentally changes how the cancellation operates",
+          "explanation": "Squaring produces a squared regardless of the sign of a, so cancellation always occurs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Yen factorises x squared – 3x – 40 and writes (x + 5)(x – 8). Which one of the following verifies this?",
+      "correct": "Correct: 5 times negative 8 equals negative 40 and 5 plus negative 8 equals negative 3, satisfying both conditions",
+      "correctExplanation": "Both the product (–40) and sum (–3) conditions are satisfied.",
+      "distractors": [
+        {
+          "answer": "The factorisation is incorrect because the constant term in the original expression should be positive 40 instead of negative 40",
+          "explanation": "The original expression has –40, and 5 × (–8) correctly produces –40."
+        },
+        {
+          "answer": "The factorisation is incorrect because the correct factor pair should be (x – 5)(x + 8) with reversed signs on the constants",
+          "explanation": "(–5)(8) = –40 but (–5) + 8 = 3, not –3."
+        },
+        {
+          "answer": "The factorisation is correct only if x is restricted to values greater than 8, since negative values inside the brackets invalidate factorisation",
+          "explanation": "Factorisation is valid for all values of x, not restricted by sign."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Jarrah expands (x + 7)(x – 3) and finds that the coefficient of x is {{blank:1}} and the constant term is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "7 + (–3) = 4.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Adds absolute values 7 + 3 = 10 instead of 7 + (–3) = 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "-4",
+              "explanation": "Reverses the sign, computing (–7) + 3 = –4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "-21",
+          "correctExplanation": "7 × (–3) = –21.",
+          "distractors": [
+            {
+              "answer": "21",
+              "explanation": "Omits the negative sign from the product.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "-10",
+              "explanation": "Confuses the product with the sum of the constants.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Priya factorises x squared minus 5x plus 6 and writes (x minus {{blank:1}})(x minus {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "(–2)(–3) = 6 and (–2) + (–3) = –5.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "(–1)(–6) = 6 but (–1) + (–6) = –7, not –5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Uses the coefficient of x as a factor rather than finding the correct pair.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The pair –2 and –3 satisfies both sum and product conditions.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Uses the constant term directly as a factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Pairs with the wrong factor, producing an incorrect sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Kofi recognises that x squared minus 49 is a difference of two squares and factorises it as (x + {{blank:1}})(x – {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "49 = 7 squared, so the positive factor is (x + 7).",
+          "distractors": [
+            {
+              "answer": "49",
+              "explanation": "Uses the constant directly instead of its square root.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "24.5",
+              "explanation": "Halves 49 instead of taking its square root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "Both factors use 7, the square root of 49.",
+          "distractors": [
+            {
+              "answer": "49",
+              "explanation": "Uses the original constant instead of its square root.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "24.5",
+              "explanation": "Halves the constant instead of square rooting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Lila expands (x + 5) squared and obtains x squared plus {{blank:1}}x plus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "The middle term coefficient is 2 × 5 = 10.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Uses 5 directly instead of doubling it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "Confuses the middle term coefficient with the constant 5 squared.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "25",
+          "correctExplanation": "The constant term is 5 squared = 25.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Confuses the constant with the middle term coefficient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Uses 5 directly instead of squaring it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Amir factorises x squared plus 2x minus 24 as (x + {{blank:1}})(x – {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "6 × (–4) = –24 and 6 + (–4) = 2.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 × (–3) = –24 but 8 + (–3) = 5, not 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 × (–2) = –24 but 12 + (–2) = 10, not 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "The pair 6 and –4 satisfies both conditions.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "6 + (–3) = 3, not 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "6 + (–2) = 4, not 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Rosa expands (x – 9)(x + 2) and finds the constant is {{blank:1}} and the coefficient of x is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "-18",
+          "correctExplanation": "(–9)(2) = –18.",
+          "distractors": [
+            {
+              "answer": "18",
+              "explanation": "Omits the negative sign from the product.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "-11",
+              "explanation": "Computes the sum –9 + 2 = –7, then confuses with a different calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "-7",
+          "correctExplanation": "(–9) + 2 = –7.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Reverses the sign of the sum.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "-11",
+              "explanation": "Subtracts 2 from 9 and applies a negative sign.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Jade verifies that x squared minus 14x plus 49 is a perfect square because half of 14 is {{blank:1}} and {{blank:1}} squared equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "Half of 14 is 7.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "Uses the full coefficient instead of halving it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3.5",
+              "explanation": "Halves 7 instead of 14.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "49",
+          "correctExplanation": "7 squared = 49, matching the constant term.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "Doubles 7 instead of squaring it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "196",
+              "explanation": "Squares 14 instead of 7.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Marcus expands (x + 4)(x + 9) and writes x squared plus {{blank:1}}x plus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "13",
+          "correctExplanation": "4 + 9 = 13.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "Computes 4 × 9 = 36, confusing the product with the sum.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Computes 9 – 4 = 5, using subtraction instead of addition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "36",
+          "correctExplanation": "4 × 9 = 36.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "Uses the sum 4 + 9 = 13 instead of the product.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "72",
+              "explanation": "Doubles the product for no valid reason.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Linh factorises x squared minus x minus 20 as (x minus {{blank:1}})(x plus {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "(–5)(4) = –20 and (–5) + 4 = –1.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "(–10)(2) = –20 but (–10) + 2 = –8, not –1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20",
+              "explanation": "Uses the constant directly as a factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "The pair –5 and 4 satisfies both conditions.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "(–10)(2) = –20 but the sum is –8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "(–20)(1) = –20 but the sum is –19.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Mia evaluates (x + 6)(x – 6) at x = 10 using the difference of squares, obtaining 10 squared minus {{blank:1}} squared, which equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "The expression simplifies to x squared – 36, so the subtracted square is 6 squared.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "Uses 36 as the base being squared rather than recognising 36 = 6 squared.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "Confuses the substituted value with the constant in the expression.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "64",
+          "correctExplanation": "100 – 36 = 64.",
+          "distractors": [
+            {
+              "answer": "136",
+              "explanation": "Adds 100 + 36 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "36",
+              "explanation": "Computes only the subtracted term without performing the full calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Sam factors x squared plus 8x plus 15 by finding two numbers with a product of {{blank:1}} and a sum of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "15",
+          "correctExplanation": "The product of the two numbers must equal the constant term, 15.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "Confuses the product target with the sum target.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "120",
+              "explanation": "Multiplies 8 × 15 = 120, applying a non-monic method.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "The sum of the two numbers must equal the coefficient of x, which is 8.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "Confuses the sum target with the product target.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "23",
+              "explanation": "Adds 8 + 15 = 23, conflating the coefficient and constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Anika expands (x – 3)(x – 10) and writes x squared minus {{blank:1}}x plus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "13",
+          "correctExplanation": "(–3) + (–10) = –13, so the coefficient of x is –13.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "Multiplies 3 × 10 = 30, confusing the product with the sum.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "Computes 10 – 3 = 7, using subtraction instead of addition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "(–3)(–10) = 30.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "Uses the sum instead of the product for the constant.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "-30",
+              "explanation": "Assigns a negative sign despite both factors being negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that x squared minus 6x plus 9 and x squared minus 9 both factorise using the same pattern. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect: the first is a perfect square trinomial (x minus 3) squared, while the second is a difference of squares (x plus 3)(x minus 3)",
+      "correctExplanation": "The expressions have different structures despite both involving 9 and x squared.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because both expressions contain x squared and a constant term of 9, so the difference of two squares pattern applies equally to each",
+          "explanation": "The presence of –6x in the first expression distinguishes it as a perfect square, not a difference of squares."
+        },
+        {
+          "answer": "The claim is incorrect because neither expression factorises over the reals since 9 is not a perfect square of a variable expression",
+          "explanation": "Both expressions can be factorised; 9 = 3 squared is a perfect square of a constant."
+        },
+        {
+          "answer": "The claim is correct because both expressions equal zero when x equals 3, confirming they share an identical factorisation structure",
+          "explanation": "Sharing a root does not mean two expressions have the same factorisation; their other factors differ."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Two students factorise x squared – 2x – 8. Student A writes (x – 4)(x + 2) and Student B writes (x + 2)(x – 4). Which one of the following is the most accurate assessment?",
+      "correct": "Both factorisations are identical because multiplication is commutative, so the order of factors does not affect the product",
+      "correctExplanation": "(x – 4)(x + 2) and (x + 2)(x – 4) represent the same expression.",
+      "distractors": [
+        {
+          "answer": "Student A is correct and Student B is incorrect because the negative factor must be written first by convention",
+          "explanation": "There is no algebraic convention requiring a specific order of factors."
+        },
+        {
+          "answer": "Student B is correct because the positive factor should always precede the negative factor when writing in standard factorised form",
+          "explanation": "No standard form requires a particular ordering of binomial factors."
+        },
+        {
+          "answer": "Neither is correct because the factorisation should be written as (x – 2)(x + 4) with smaller constant first",
+          "explanation": "(–2)(4) = –8 but (–2) + 4 = 2, not –2, so this factorisation is incorrect."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student expands (x + 5) squared and writes x squared plus 25. Which one of the following identifies the fundamental error?",
+      "correct": "The student treated squaring as distributing over addition, omitting the cross-product term 2(x)(5) = 10x",
+      "correctExplanation": "(x + 5) squared = x squared + 10x + 25; the middle term arises from the cross-product.",
+      "distractors": [
+        {
+          "answer": "The student forgot to square the 5, producing x squared plus 5 instead of x squared plus 25",
+          "explanation": "The student correctly squared 5 to get 25; the error is the missing middle term."
+        },
+        {
+          "answer": "The student should have subtracted 25 because squaring a sum produces a difference of squares",
+          "explanation": "Squaring a binomial produces a trinomial, not a difference of squares."
+        },
+        {
+          "answer": "The student incorrectly applied FOIL because the two binomials are identical and FOIL requires distinct factors",
+          "explanation": "FOIL applies to any two binomials, including identical ones."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Which one of the following approaches most efficiently determines whether x squared plus 7x + 11 factorises over the integers?",
+      "correct": "Compute the discriminant: 49 minus 44 equals 5, which is not a perfect square, confirming no integer factorisation exists",
+      "correctExplanation": "A non-square discriminant means the roots are irrational, preventing integer factorisation.",
+      "distractors": [
+        {
+          "answer": "List all factor pairs of 11 and check sums; since 1 and 11 sum to 12 not 7, no valid pair exists for factorisation",
+          "explanation": "While this reaches the correct conclusion, the discriminant test is more efficient and general."
+        },
+        {
+          "answer": "Attempt to complete the square and rewrite the expression; if the result contains a non-integer fraction, factorisation over the integers fails",
+          "explanation": "Completing the square always works but does not directly determine integer factorisation."
+        },
+        {
+          "answer": "Substitute x = 1 and x = –1 to test for integer roots; if neither gives zero, the expression cannot be factorised",
+          "explanation": "Testing two values does not prove non-factorisation; it only eliminates two potential integer roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student observes that (x + a)(x + b) and (x + b)(x + a) always give the same expansion. Which one of the following provides the strongest mathematical justification?",
+      "correct": "The commutative property of multiplication guarantees factor order does not affect the product, so both expansions are necessarily identical",
+      "correctExplanation": "Commutativity of multiplication is the foundational property ensuring equivalence.",
+      "distractors": [
+        {
+          "answer": "Expanding both forms using FOIL produces the same four partial products in different order, which verifies equivalence by direct calculation",
+          "explanation": "This demonstrates equivalence for specific cases but does not provide the general justification."
+        },
+        {
+          "answer": "The associative property of addition ensures the resulting terms can be rearranged after expansion to produce matching expressions",
+          "explanation": "Associativity governs grouping, not the interchange of entire factors."
+        },
+        {
+          "answer": "The distributive property applied in reverse shows that a common factor x can be extracted from both expanded forms simultaneously",
+          "explanation": "Extracting x from binomial products is not a standard application of the distributive property."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student claims that if x squared plus bx plus c factorises as (x + p)(x + q), then c must be positive. Which one of the following correctly evaluates this claim?",
+      "correct": "The claim is false because c = pq, and if p and q have opposite signs then their product is negative",
+      "correctExplanation": "For example, x squared + x – 6 = (x + 3)(x – 2), where c = –6.",
+      "distractors": [
+        {
+          "answer": "The claim is true because the product of two numbers that appear in a factorised monic quadratic expression is always positive",
+          "explanation": "The product pq is negative when p and q have opposite signs."
+        },
+        {
+          "answer": "The claim is false only when the linear coefficient b is also negative, as a negative b necessarily forces c to be negative",
+          "explanation": "The sign of c depends on the signs of p and q, not directly on the sign of b."
+        },
+        {
+          "answer": "The claim is true because valid integer factorisation of a monic quadratic requires both factor values to share the same sign",
+          "explanation": "p and q may have opposite signs, as in (x + 5)(x – 3)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Compare two methods for factorising x squared + 5x + 6: inspection (finding two numbers summing to 5 with product 6) versus grouping (splitting 5x into 2x + 3x). Which one of the following is the most accurate comparison?",
+      "correct": "Both methods yield (x plus 2)(x plus 3), but inspection is faster for monic quadratics while grouping generalises to non-monic forms",
+      "correctExplanation": "Inspection is efficient for monic quadratics; grouping generalises to all factorisable quadratics.",
+      "distractors": [
+        {
+          "answer": "Grouping is always more reliable than inspection because it follows a systematic procedure, whereas inspection depends entirely on trial and error",
+          "explanation": "Both methods are systematic; inspection is not mere guessing for monic quadratics with small constants."
+        },
+        {
+          "answer": "Inspection works only for positive coefficients, whereas grouping is the sole method that handles all possible sign combinations",
+          "explanation": "Inspection works for any monic quadratic regardless of the signs of b and c."
+        },
+        {
+          "answer": "The two methods produce different factorisations that become equivalent only after additional algebraic simplification steps are applied",
+          "explanation": "Both methods produce identical factorisations without requiring further simplification."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student writes (x + 4) squared = x squared + 16 and uses this to claim that expanding a perfect square always gives a two-term result. Which one of the following identifies the flaw in both the expansion and the generalisation?",
+      "correct": "The expansion omits the middle term 8x, and the generalisation fails because every perfect square binomial expansion produces three terms",
+      "correctExplanation": "(x + 4) squared = x squared + 8x + 16, not x squared + 16.",
+      "distractors": [
+        {
+          "answer": "The expansion is correct but the generalisation fails because some perfect squares produce four terms",
+          "explanation": "The expansion is incorrect (missing 8x), and perfect square binomial expansions always produce exactly three terms."
+        },
+        {
+          "answer": "The expansion would be correct if the binomial were (x plus 4)(x minus 4), since the generalisation applies only to conjugate pairs",
+          "explanation": "(x + 4)(x – 4) is a different expression entirely; the student was squaring a single binomial."
+        },
+        {
+          "answer": "The expansion is nearly correct but should include a coefficient of 2 on the constant term, giving x squared plus 32",
+          "explanation": "Doubling the constant is not the correction; the missing term is 2(x)(4) = 8x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student factorises x squared – 12x + 36 as (x – 6)(x + 6). Which one of the following identifies the error and provides the correct factorisation?",
+      "correct": "The student confused difference of squares with perfect square trinomial; the correct factorisation is (x minus 6) squared",
+      "correctExplanation": "(x – 6)(x + 6) = x squared – 36, not x squared – 12x + 36. The expression is (x – 6) squared.",
+      "distractors": [
+        {
+          "answer": "The student reversed the signs in the factorisation; the correct result should be written as (x + 6)(x – 6) instead",
+          "explanation": "(x + 6)(x – 6) also equals x squared – 36, which still omits the middle term."
+        },
+        {
+          "answer": "The student used incorrect numerical factor values; the correct factorisation of this expression is (x – 4)(x – 9)",
+          "explanation": "(–4)(–9) = 36 but (–4) + (–9) = –13, not –12."
+        },
+        {
+          "answer": "The factorisation is correct because x squared minus 12x plus 36 can be rewritten as x squared minus 36 by combining the linear and constant terms",
+          "explanation": "x squared – 12x + 36 cannot be rewritten as x squared – 36; the middle term cannot be discarded."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Which one of the following correctly analyses why the expression x squared plus 4 cannot be factorised over the real numbers?",
+      "correct": "The discriminant 0 squared minus 4(4) = –16 is negative, confirming no real roots exist and the expression is irreducible over the reals",
+      "correctExplanation": "A negative discriminant means no real linear factors exist.",
+      "distractors": [
+        {
+          "answer": "The constant 4 has no integer factor pair that sums to zero, but the expression could factorise over the rationals with non-integer factors",
+          "explanation": "A negative discriminant rules out all real factorisations, not just integer ones."
+        },
+        {
+          "answer": "The expression requires complex numbers to factorise as (x + 2i)(x – 2i), proving it is also irreducible over the reals",
+          "explanation": "While the complex factorisation is correct, the discriminant test alone suffices without invoking complex numbers."
+        },
+        {
+          "answer": "The expression can be factorised as (x + 2)(x + 2) after rearranging the constant to match the perfect square pattern",
+          "explanation": "(x + 2) squared = x squared + 4x + 4, which has a linear term not present in x squared + 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student claims that for all integers n, the expression n squared – 1 always factorises as a product of two consecutive integers. Which one of the following evaluates this claim?",
+      "correct": "The claim is correct: n squared minus 1 equals (n plus 1)(n minus 1), and these factors differ by 2 for any integer n, so they are never consecutive",
+      "correctExplanation": "While (n + 1)(n – 1) are integers, they differ by 2 (not 1), so the claim about consecutive integers is imprecise.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because for any integer n, the values n + 1 and n – 1 are always consecutive integers by definition",
+          "explanation": "Consecutive integers differ by 1; n – 1 and n + 1 differ by 2."
+        },
+        {
+          "answer": "The claim is incorrect because n squared minus 1 equals zero when n = 1, producing trivial factors of zero and two",
+          "explanation": "When n = 1, n squared – 1 = 0 = (2)(0), which is a valid factorisation."
+        },
+        {
+          "answer": "The claim is incorrect because the algebraic difference of squares pattern applies only to polynomial expressions and cannot be evaluated at integer values",
+          "explanation": "Algebraic identities hold for all valid substitutions, including integers."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student is given x squared + kx + 16 and asked for which integer values of k the expression factorises over the integers. Which one of the following lists all valid values?",
+      "correct": "k can be plus or minus 17, plus or minus 10, or plus or minus 8, from the factor pairs of 16",
+      "correctExplanation": "Factor pairs (1,16), (2,8), (4,4) and their negatives give sums of ±17, ±10, ±8.",
+      "distractors": [
+        {
+          "answer": "Only k equals 8 and k equals 10 are valid because the coefficient k must be positive for a trinomial to factorise over integers",
+          "explanation": "Negative values of k also produce valid factorisations using negative factor pairs."
+        },
+        {
+          "answer": "k can be any even integer from 2 to 16 because the constant 16 is a power of 2 with exclusively even factor decompositions",
+          "explanation": "Not all even values work; for instance, k = 6 does not correspond to any factor pair of 16."
+        },
+        {
+          "answer": "Only k = 8 is valid because it equals half of 16, which is the unique value satisfying the perfect square trinomial condition",
+          "explanation": "k = 8 gives a perfect square, but other sums from factor pairs also yield valid factorisations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Which one of the following correctly explains why the expansion of (x + a)(x + b) where a does not equal b can never produce a perfect square trinomial?",
+      "correct": "A perfect square trinomial requires identical factors (x plus n) squared, so a must equal b for the pattern to apply",
+      "correctExplanation": "The perfect square form (x + n) squared demands two identical binomial factors.",
+      "distractors": [
+        {
+          "answer": "Distinct values of a and b produce a negative discriminant in the expanded trinomial, which prevents classification as a perfect square",
+          "explanation": "Distinct a and b can produce a positive discriminant; the issue is the factors not being identical."
+        },
+        {
+          "answer": "The cross-product term requires a = b = n, but this condition is a notational convention rather than a mathematical necessity",
+          "explanation": "It is a mathematical requirement, not a convention; different a and b produce (a + b)x, not 2nx."
+        },
+        {
+          "answer": "Perfect square trinomials can arise from distinct a and b provided their product happens to be a perfect square integer value",
+          "explanation": "The product being a perfect square is necessary but not sufficient; the sum must also equal twice the square root."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student tries to factorise x squared – 8x + 15 by grouping, splitting –8x into –3x – 5x. Which one of the following evaluates this approach?",
+      "correct": "The approach is valid: grouping gives x(x – 3) – 5(x – 3) = (x – 5)(x – 3), matching the result obtained by inspection",
+      "correctExplanation": "(–3)(–5) = 15 and (–3) + (–5) = –8, so the split is correct and grouping produces the right factors.",
+      "distractors": [
+        {
+          "answer": "The approach fails because the grouping method requires that the split terms always share the same algebraic sign throughout",
+          "explanation": "Grouping works with terms of any sign, provided the split satisfies the product condition."
+        },
+        {
+          "answer": "The approach produces a different factorisation than inspection, demonstrating that grouping is an unreliable method for monic quadratic trinomials",
+          "explanation": "Both methods must produce the same factorisation for a given expression."
+        },
+        {
+          "answer": "The approach is unnecessarily complex because the middle term should be split into two equal parts of negative 4x each",
+          "explanation": "(–4)(–4) = 16, not 15, so this split does not satisfy the product condition."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A student claims (x + 3) squared equals x squared plus 9. The missing term is {{blank:1}}x, which arises from the {{blank:2}} of the two terms in the binomial.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "The middle term is 2(x)(3) = 6x.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Uses the constant directly instead of doubling it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "Confuses the middle term coefficient with the constant 3 squared.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cross-product",
+          "correctExplanation": "The middle term comes from multiplying the first term by the last term and doubling.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "The sum of terms does not produce the middle term coefficient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "square",
+              "explanation": "Squaring each term individually gives the first and last terms, not the middle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "To determine if x squared plus bx plus c factorises over the integers, compute the {{blank:1}} b squared minus 4c and check whether the result is a perfect {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "discriminant",
+          "correctExplanation": "The discriminant determines the nature of the roots.",
+          "distractors": [
+            {
+              "answer": "determinant",
+              "explanation": "A determinant relates to matrices, not to quadratic factorisation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "The coefficient describes individual terms, not the factorisation test.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "square",
+          "correctExplanation": "A perfect square discriminant yields rational roots enabling integer factorisation.",
+          "distractors": [
+            {
+              "answer": "number",
+              "explanation": "Every result is a number; the specific requirement is that it be a perfect square.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "cube",
+              "explanation": "Perfect cubes are not relevant to the factorisation test for quadratics.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The expressions x squared minus 16 and x squared minus 8x plus 16 both involve 16, but the first is a difference of two {{blank:1}} and the second is a perfect square {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "squares",
+          "correctExplanation": "x squared – 16 = (x + 4)(x – 4), a difference of two squares.",
+          "distractors": [
+            {
+              "answer": "terms",
+              "explanation": "While both have two terms in their factored form, the pattern name refers specifically to squares.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "binomials",
+              "explanation": "The pattern describes the structure of the expression, not its factors.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trinomial",
+          "correctExplanation": "x squared – 8x + 16 = (x – 4) squared, a perfect square trinomial.",
+          "distractors": [
+            {
+              "answer": "binomial",
+              "explanation": "A binomial has two terms; this expression has three.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equation",
+              "explanation": "An expression is not an equation unless it contains an equals sign.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "When factorising x squared plus bx plus c where c is negative, the two factor values must have {{blank:1}} signs because their {{blank:2}} must be negative.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "opposite",
+          "correctExplanation": "A negative product requires one positive and one negative factor.",
+          "distractors": [
+            {
+              "answer": "identical",
+              "explanation": "Two factors with the same sign always produce a positive product.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative",
+              "explanation": "Two negative factors produce a positive product, not negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "product",
+          "correctExplanation": "The product of the two factors equals c, which is negative.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "The sum equals b, which may be positive, negative, or zero regardless of the sign of c.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "difference",
+              "explanation": "The difference of the factors is not a standard requirement in the factorisation method.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "Inspection and grouping are both valid methods for factorising monic quadratics, but {{blank:1}} is generally faster while {{blank:2}} extends to non-monic expressions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "inspection",
+          "correctExplanation": "Inspection directly identifies factor pairs without intermediate algebraic steps.",
+          "distractors": [
+            {
+              "answer": "grouping",
+              "explanation": "Grouping involves additional steps of splitting and extracting common factors.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "substitution",
+              "explanation": "Substitution is not a standard factorisation method for quadratics.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "grouping",
+          "correctExplanation": "Grouping can handle non-monic quadratics where the leading coefficient is not 1.",
+          "distractors": [
+            {
+              "answer": "inspection",
+              "explanation": "Inspection is primarily suited to monic quadratics.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "expansion",
+              "explanation": "Expansion is the reverse of factorisation, not a factorisation method.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A student incorrectly writes (x – 5) squared = x squared – 25. The error is treating squaring as {{blank:1}} over subtraction, which omits the {{blank:2}} term.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "distributive",
+          "correctExplanation": "The student applied (a – b) squared = a squared – b squared, as if squaring distributes over subtraction.",
+          "distractors": [
+            {
+              "answer": "commutative",
+              "explanation": "Commutativity relates to order of operations, not to distributing exponents.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "associative",
+              "explanation": "Associativity relates to grouping, not to distributing an exponent across terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "middle",
+          "correctExplanation": "The missing term is –10x, the cross-product of the binomial expansion.",
+          "distractors": [
+            {
+              "answer": "constant",
+              "explanation": "The constant term 25 is present in the student's answer.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "leading",
+              "explanation": "The leading term x squared is present in the student's answer.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "For the expression x squared plus kx plus 16, the value k = 8 produces a perfect square because 16 equals the {{blank:1}} of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "square",
+          "correctExplanation": "16 = 4 squared, and 2 × 4 = 8, satisfying the perfect square test.",
+          "distractors": [
+            {
+              "answer": "double",
+              "explanation": "Doubling 4 gives 8, which is the middle coefficient, not the constant.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "half",
+              "explanation": "Half of 4 is 2, which does not relate to the constant 16.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "Half of 8 is 4, and 4 squared = 16.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 squared = 64, not 16.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "16",
+              "explanation": "16 squared = 256, not 16.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The expansion of (x + a)(x – a) eliminates the {{blank:1}} term, while (x + a)(x + a) produces a trinomial with a {{blank:2}} constant term.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "linear",
+          "correctExplanation": "The +ax and –ax cancel, removing the linear term.",
+          "distractors": [
+            {
+              "answer": "constant",
+              "explanation": "The constant term –a squared remains in the conjugate product.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quadratic",
+              "explanation": "The x squared term is always present in the expansion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "The constant a squared is always positive regardless of the sign of a.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "a squared is always non-negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "a squared equals zero only when a = 0, not in general.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "If the discriminant of x squared plus bx plus c equals zero, the quadratic has a {{blank:1}} root and factorises as a perfect {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "repeated",
+          "correctExplanation": "A zero discriminant means both roots are equal.",
+          "distractors": [
+            {
+              "answer": "rational",
+              "explanation": "A zero discriminant does produce rational roots, but the key feature is that they are repeated.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "irrational",
+              "explanation": "A zero discriminant produces a rational repeated root, not an irrational one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "square",
+          "correctExplanation": "A repeated root means the quadratic equals (x + n) squared.",
+          "distractors": [
+            {
+              "answer": "cube",
+              "explanation": "Cubes relate to cubic expressions, not quadratics with repeated roots.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "trinomial",
+              "explanation": "While the expanded form is a trinomial, the key structural property is that it is a perfect square.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A student confuses (x + 3)(x – 3) with (x – 3) squared. The first equals x squared minus {{blank:1}} and the second equals x squared minus 6x plus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "9",
+          "correctExplanation": "(x + 3)(x – 3) = x squared – 9.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is not related to the constant; 3 × 3 = 9.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Uses the binomial constant directly instead of squaring it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "(x – 3) squared = x squared – 6x + 9.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Confuses the constant with the coefficient of x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Uses 3 directly instead of squaring it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "When c is positive and b is negative in x squared plus bx plus c, both factors in the factorisation must be {{blank:1}} because their product is positive and their sum is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative",
+          "correctExplanation": "Two negative numbers produce a positive product and a negative sum.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "Two positive numbers produce a positive sum, not a negative one.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "opposite",
+              "explanation": "Opposite signs produce a negative product, contradicting positive c.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative",
+          "correctExplanation": "Since b is negative, the sum of the two factor values must also be negative.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "A positive sum contradicts the negative coefficient b.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "A zero sum implies b = 0, not that b is negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "Factorising by grouping requires splitting bx into two terms whose coefficients have a {{blank:1}} equal to the product ac, and this method generalises to {{blank:2}} quadratics.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "product",
+          "correctExplanation": "The two coefficients used to split bx must multiply to give ac.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "The sum of the split coefficients equals b, not ac.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quotient",
+              "explanation": "Division is not part of the splitting condition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "non-monic",
+          "correctExplanation": "Grouping handles quadratics where the leading coefficient is not 1.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear expressions have degree 1 and are not factorised by this method.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "cubic",
+              "explanation": "While grouping can apply to cubics, its primary extension from monic is to non-monic quadratics.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

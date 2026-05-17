@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10A10",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to solve problems involving the gradients of parallel and perpendicular lines.",
+    "generatedAt": "2026-05-17T00:42:28Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "Two lines are parallel if and only if the product of their gradients equals negative one.",
+      "correct": "False",
+      "correctExplanation": "The condition where the product of gradients equals negative one defines perpendicular lines, not parallel lines. Parallel lines have equal gradients.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the perpendicularity condition (product of gradients = \u22121) with the parallelism condition (equal gradients)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Two lines are perpendicular when the product of their gradients equals positive one.",
+      "correct": "False",
+      "correctExplanation": "Perpendicular lines have gradients whose product is \u22121, not +1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the sign; the product must be negative one for perpendicularity."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A line perpendicular to y = 4x + 1 has gradient \u22121/4.",
+      "correct": "True",
+      "correctExplanation": "The negative reciprocal of 4 is \u22121/4; this is the gradient of any perpendicular line.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May compute the reciprocal without negating, getting 1/4 instead of \u22121/4."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A line parallel to y = \u22122x + 5 must pass through the point (0, 5).",
+      "correct": "False",
+      "correctExplanation": "A parallel line shares the gradient \u22122 but can have any y-intercept, not necessarily 5.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses sharing the same gradient with sharing the same y-intercept."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The gradient of a line perpendicular to a horizontal line is undefined because the perpendicular line is vertical.",
+      "correct": "True",
+      "correctExplanation": "A horizontal line has gradient 0; its perpendicular is vertical with an undefined gradient.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May think perpendicular to horizontal gives gradient 0 or 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Two lines with gradients 3 and \u22123 are perpendicular to each other.",
+      "correct": "False",
+      "correctExplanation": "For perpendicularity, the product must be \u22121: 3 \u00d7 (\u22123) = \u22129 \u2260 \u22121. These lines are neither parallel nor perpendicular.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes opposite signs alone indicate perpendicularity, ignoring the reciprocal requirement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The negative reciprocal of 1/3 is \u22123.",
+      "correct": "True",
+      "correctExplanation": "Reciprocal of 1/3 is 3; negating gives \u22123. Check: (1/3)(\u22123) = \u22121.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May compute \u22121/3 (just negating) rather than taking the reciprocal and negating."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "Lines y = 5x \u2212 2 and y = 5x + 9 are perpendicular because they have different y-intercepts.",
+      "correct": "False",
+      "correctExplanation": "Same gradient (5) means parallel, not perpendicular. Different intercepts only confirm they are distinct parallel lines.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the role of intercepts; gradients determine the geometric relationship."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "A line with gradient 2/5 is perpendicular to a line with gradient \u22125/2.",
+      "correct": "True",
+      "correctExplanation": "(2/5)(\u22125/2) = \u22121, confirming perpendicularity.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate the product or confuse signs."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Parallel lines can intersect at exactly one point if they have the same gradient but different intercepts.",
+      "correct": "False",
+      "correctExplanation": "Same gradient with different intercepts means the lines never meet \u2014 they are parallel with no intersection.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses parallel lines (no intersection) with lines that have one intersection point (different gradients)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The gradient of any line parallel to the x-axis is zero.",
+      "correct": "True",
+      "correctExplanation": "Lines parallel to the x-axis are horizontal, and horizontal lines have a gradient of zero.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse horizontal (gradient 0) with vertical (undefined gradient)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "If two lines have gradients m and \u2212m, they are always perpendicular regardless of the value of m.",
+      "correct": "False",
+      "correctExplanation": "For perpendicularity, m \u00d7 (\u2212m) must equal \u22121, so \u2212m\u00b2 = \u22121, meaning m = \u00b11. It only works when m = 1 or m = \u22121.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes opposite-sign gradients always give perpendicularity, ignoring the reciprocal requirement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the gradient relationship for perpendicular lines?",
+      "correct": "The product of their gradients equals \u22121, making each the negative reciprocal of the other",
+      "correctExplanation": "If m\u2081 \u00d7 m\u2082 = \u22121, the lines are perpendicular.",
+      "distractors": [
+        {
+          "answer": "The sum of their gradients equals zero, meaning they have equal magnitude but opposite signs",
+          "explanation": "Equal magnitude opposite signs gives m \u00d7 (\u2212m) = \u2212m\u00b2, which equals \u22121 only when m = \u00b11."
+        },
+        {
+          "answer": "The product of their gradients equals +1, making each the positive reciprocal of the other",
+          "explanation": "Product = +1 means both positive reciprocals; perpendicularity requires \u22121."
+        },
+        {
+          "answer": "The difference of their gradients equals one, with the steeper line having the larger value",
+          "explanation": "Gradient difference is unrelated to perpendicularity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the gradient of a line parallel to y = \u22123x + 7?",
+      "correct": "The parallel line has gradient \u22123, since parallel lines share the same gradient value",
+      "correctExplanation": "Parallel lines have identical gradients; the gradient of y = \u22123x + 7 is \u22123.",
+      "distractors": [
+        {
+          "answer": "The parallel line has gradient 3, since parallel requires the same magnitude with opposite sign",
+          "explanation": "Opposite signs indicate a different slope direction, not parallelism."
+        },
+        {
+          "answer": "The parallel line has gradient 1/3, since parallel means the reciprocal of the original gradient",
+          "explanation": "Reciprocal relates to perpendicularity, not parallelism."
+        },
+        {
+          "answer": "The parallel line has gradient 7, since the y-intercept determines the gradient of parallel lines",
+          "explanation": "The y-intercept is independent of the gradient relationship between parallel lines."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the negative reciprocal of the gradient 2/3?",
+      "correct": "\u22123/2, because the reciprocal of 2/3 is 3/2 and negating gives \u22123/2 as required",
+      "correctExplanation": "Reciprocal: 3/2. Negate: \u22123/2. Check: (2/3)(\u22123/2) = \u22121.",
+      "distractors": [
+        {
+          "answer": "\u22122/3, because negating the original gradient gives the perpendicular gradient directly without inversion",
+          "explanation": "This is just the negative, not the negative reciprocal."
+        },
+        {
+          "answer": "3/2, because the reciprocal of 2/3 is sufficient for perpendicularity without changing the sign",
+          "explanation": "The positive reciprocal gives product +1, not \u22121."
+        },
+        {
+          "answer": "2/3, because the gradient of a perpendicular line equals the original when both are fractions",
+          "explanation": "Same gradient means parallel, not perpendicular."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following pairs of lines are parallel?",
+      "correct": "y = 4x \u2212 1 and y = 4x + 6, because both lines have gradient 4 with different intercepts",
+      "correctExplanation": "Same gradient (4), different intercepts \u2014 parallel.",
+      "distractors": [
+        {
+          "answer": "y = 4x \u2212 1 and y = \u22124x + 6, because the gradients have the same absolute value of four",
+          "explanation": "Same magnitude but opposite signs means the lines intersect, not parallel."
+        },
+        {
+          "answer": "y = 4x \u2212 1 and y = x/4 + 6, because 4 and 1/4 are reciprocals indicating a parallel relationship",
+          "explanation": "Reciprocals relate to perpendicularity; parallel requires equal gradients."
+        },
+        {
+          "answer": "y = 4x \u2212 1 and y = \u22121/4x + 6, because the product of 4 and \u22121/4 shows they run alongside",
+          "explanation": "Product = \u22121 means perpendicular, not parallel."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the relationship between lines with gradients 5 and \u22121/5?",
+      "correct": "The lines are perpendicular because the product of 5 and \u22121/5 equals \u22121 as required",
+      "correctExplanation": "5 \u00d7 (\u22121/5) = \u22121, confirming perpendicularity.",
+      "distractors": [
+        {
+          "answer": "The lines are parallel because one gradient is the transformation of the other by sign change",
+          "explanation": "Sign change alone doesn't make lines parallel; parallel requires equal gradients."
+        },
+        {
+          "answer": "The lines are neither parallel nor perpendicular because the gradients have different magnitudes",
+          "explanation": "Different magnitudes are expected for perpendicular lines; the product test determines the relationship."
+        },
+        {
+          "answer": "The lines are perpendicular only if they share the same y-intercept on the coordinate plane",
+          "explanation": "Perpendicularity depends on gradients alone, not on intercepts."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the gradient of a line perpendicular to a vertical line?",
+      "correct": "The perpendicular line is horizontal with gradient zero, since vertical and horizontal lines meet at right angles",
+      "correctExplanation": "A vertical line is perpendicular to a horizontal line; horizontal lines have gradient 0.",
+      "distractors": [
+        {
+          "answer": "The perpendicular line has undefined gradient because perpendicularity preserves the undefined property",
+          "explanation": "Undefined gradient means vertical; a vertical line perpendicular to vertical would be the same line, not perpendicular."
+        },
+        {
+          "answer": "The perpendicular line has gradient 1 because the reciprocal of undefined is conventionally set to one in this coordinate system",
+          "explanation": "There is no reciprocal of undefined; the perpendicular to vertical is horizontal (gradient 0)."
+        },
+        {
+          "answer": "The perpendicular line has gradient \u22121 because negating the undefined gradient gives \u22121 by convention",
+          "explanation": "Undefined has no negative; the answer is simply gradient 0 (horizontal)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is a correct method for determining whether two lines are parallel?",
+      "correct": "Compare their gradients; if the gradients are equal then the lines are parallel by definition",
+      "correctExplanation": "Equal gradients is both necessary and sufficient for parallelism (excluding coincident lines).",
+      "distractors": [
+        {
+          "answer": "Compare their y-intercepts; if the intercepts are equal then the lines must be parallel to each other",
+          "explanation": "Equal intercepts with different gradients means the lines cross at that intercept."
+        },
+        {
+          "answer": "Multiply the gradients; if the product is \u22121 then the lines are parallel to each other by convention",
+          "explanation": "Product = \u22121 indicates perpendicularity, not parallelism."
+        },
+        {
+          "answer": "Add the gradients; if the sum equals zero then the lines run parallel in opposite directions",
+          "explanation": "Sum = 0 means opposite gradients (e.g., 3 and \u22123), which intersect."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following gradients would a line perpendicular to y = \u2212x + 4 have?",
+      "correct": "Gradient 1, because the negative reciprocal of \u22121 is 1 and (\u22121)(1) = \u22121 confirms perpendicularity",
+      "correctExplanation": "Gradient of y = \u2212x + 4 is \u22121. Negative reciprocal: \u2212(1/(\u22121)) = 1.",
+      "distractors": [
+        {
+          "answer": "Gradient \u22121, because perpendicular lines always share the same gradient as the original line given",
+          "explanation": "Same gradient means parallel, not perpendicular."
+        },
+        {
+          "answer": "Gradient 4, because the y-intercept value determines the perpendicular gradient when the coefficient is \u22121",
+          "explanation": "The y-intercept does not determine perpendicular gradients."
+        },
+        {
+          "answer": "Gradient 0, because perpendicular to a negative gradient always produces a horizontal line as the result",
+          "explanation": "Horizontal (gradient 0) is perpendicular only to vertical (undefined gradient)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes the term 'negative reciprocal'?",
+      "correct": "The result of inverting a fraction and changing its sign, used to find perpendicular gradients",
+      "correctExplanation": "For m, the negative reciprocal is \u22121/m.",
+      "distractors": [
+        {
+          "answer": "The result of subtracting a number from one, used to find the gradient of any related line",
+          "explanation": "Subtracting from one is unrelated to negative reciprocals."
+        },
+        {
+          "answer": "The result of doubling a gradient and changing its sign, used for perpendicular calculations only",
+          "explanation": "Doubling has no role in computing perpendicular gradients."
+        },
+        {
+          "answer": "The result of adding one to a gradient and negating, used to determine parallel line relationships",
+          "explanation": "Adding one and negating is not a standard gradient transformation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following pairs of gradients indicate that the two lines are neither parallel nor perpendicular?",
+      "correct": "Gradients 2 and 3, since they are unequal and their product 6 does not equal \u22121",
+      "correctExplanation": "Not equal \u2192 not parallel. Product = 6 \u2260 \u22121 \u2192 not perpendicular. Neither.",
+      "distractors": [
+        {
+          "answer": "Gradients 2 and 2, since equal gradients indicate lines that are neither parallel nor perpendicular in this coordinate system",
+          "explanation": "Equal gradients mean parallel."
+        },
+        {
+          "answer": "Gradients 2 and \u22121/2, since these are unequal and have no special geometric relationship",
+          "explanation": "2 \u00d7 (\u22121/2) = \u22121, so these are perpendicular."
+        },
+        {
+          "answer": "Gradients 2 and \u22122, since opposite signs always produce lines that are neither relationship",
+          "explanation": "Must check: 2\u00d7(\u22122) = \u22124 \u2260 \u22121, so neither \u2014 but the reasoning is wrong (it's not about opposite signs)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the gradient of a line parallel to 2x + 3y = 12?",
+      "correct": "\u22122/3, found by rearranging to y = \u22122x/3 + 4 and reading the coefficient of x",
+      "correctExplanation": "3y = \u22122x + 12, y = (\u22122/3)x + 4. Gradient is \u22122/3; parallel shares this.",
+      "distractors": [
+        {
+          "answer": "2/3, found by taking the ratio of x-coefficient to y-coefficient directly from standard form",
+          "explanation": "The gradient from ax+by=c is \u2212a/b, not a/b."
+        },
+        {
+          "answer": "3/2, found by inverting the fraction since parallel lines use reciprocal gradients as a rule in this coordinate system",
+          "explanation": "Reciprocal relates to perpendicularity, not parallelism."
+        },
+        {
+          "answer": "\u22123/2, found by swapping and negating the coefficients for the parallel relationship rule",
+          "explanation": "This would be the gradient perpendicular to a line with gradient 2/3, not \u22122/3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies when two lines are coincident rather than merely parallel?",
+      "correct": "When they have both the same gradient and the same y-intercept, meaning they are the identical line",
+      "correctExplanation": "Coincident lines overlap completely: same gradient and same intercept.",
+      "distractors": [
+        {
+          "answer": "When they have the same gradient but different y-intercepts, which causes complete geometric overlap",
+          "explanation": "Same gradient, different intercepts = parallel (no overlap)."
+        },
+        {
+          "answer": "When their gradients multiply to give \u22121 and they share the same y-intercept on the plane in this coordinate system",
+          "explanation": "Product \u22121 means perpendicular; sharing intercept means they cross at that point."
+        },
+        {
+          "answer": "When one gradient is double the other and they share a common x-intercept on the axis",
+          "explanation": "Different gradients mean the lines intersect once; they are not coincident."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "Parallel lines have {{blank:1}} gradients, while perpendicular lines have gradients whose product equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equal",
+          "correctExplanation": "Parallel lines share the same gradient value.",
+          "distractors": [
+            {
+              "answer": "opposite",
+              "explanation": "Opposite gradients (e.g., 3 and \u22123) do not guarantee parallelism.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "reciprocal",
+              "explanation": "Reciprocal gradients relate to perpendicularity, not parallelism.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121",
+          "correctExplanation": "If m\u2081 \u00d7 m\u2082 = \u22121, the lines are perpendicular.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Product 0 means one line is horizontal, not perpendicular to the other necessarily.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Product 1 means both have the same sign and reciprocal relationship, not perpendicularity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The negative reciprocal of a gradient m is found by {{blank:1}} the fraction and changing the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "inverting",
+          "correctExplanation": "The reciprocal of m is 1/m; this is the inversion step.",
+          "distractors": [
+            {
+              "answer": "doubling",
+              "explanation": "Doubling is unrelated to finding perpendicular gradients.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "halving",
+              "explanation": "Halving is not part of the negative reciprocal process.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sign",
+          "correctExplanation": "After inverting, the sign is changed to produce the negative reciprocal.",
+          "distractors": [
+            {
+              "answer": "denominator",
+              "explanation": "The denominator changes during inversion, but the final step is sign change.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "numerator",
+              "explanation": "The numerator changes during inversion, but the explicit step is negating.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "If two lines have gradients of 3 and negative one-third, the lines are parallel because both gradients are derived from the same linear family.",
+      "correct": "False",
+      "correctExplanation": "Gradients of 3 and negative one-third are negative reciprocals, meaning the lines are perpendicular, not parallel. Parallel lines require equal gradients.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Fails to recognise that negative reciprocal gradients indicate perpendicularity, not parallelism."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "A line perpendicular to y = 3x + 1 has gradient 1/3 because only the fraction is inverted.",
+      "correct": "False",
+      "correctExplanation": "The negative reciprocal of 3 is \u22121/3, not 1/3. Both inversion and sign change are required.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Forgets to negate after inverting."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Lines with gradients 4/5 and 5/4 are perpendicular to each other.",
+      "correct": "False",
+      "correctExplanation": "(4/5)(5/4) = 1, not \u22121. These are positive reciprocals, not negative reciprocals.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sees reciprocal relationship but misses the sign requirement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The line y = \u2212x/2 + 3 is perpendicular to y = 2x \u2212 1 because (\u22121/2)(2) = \u22121.",
+      "correct": "True",
+      "correctExplanation": "The product of gradients is \u22121, confirming perpendicularity.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate the product or doubt the fractional gradient."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "A line through (2, 5) parallel to y = \u22124x + 1 has equation y = \u22124x + 3.",
+      "correct": "False",
+      "correctExplanation": "Using point-slope: y \u2212 5 = \u22124(x \u2212 2) \u2192 y = \u22124x + 13, not y = \u22124x + 3.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May substitute incorrectly or use the wrong form."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "If two lines are both perpendicular to a third line, then they must be parallel to each other.",
+      "correct": "True",
+      "correctExplanation": "Both have the same gradient (negative reciprocal of the third), so they are parallel.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not see that sharing the same perpendicular relationship implies equal gradients."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The gradient of a line perpendicular to y = (2/3)x \u2212 4 is 3/2.",
+      "correct": "False",
+      "correctExplanation": "The negative reciprocal of 2/3 is \u22123/2, not 3/2. The sign must be negated.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Takes the reciprocal but forgets to negate."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Rearranging 6x + 2y = 10 to slope-intercept form gives gradient \u22123, so any parallel line also has gradient \u22123.",
+      "correct": "True",
+      "correctExplanation": "2y = \u22126x + 10, y = \u22123x + 5. Gradient is \u22123; parallel lines share this.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May rearrange incorrectly or doubt the parallel rule."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is the equation of the line parallel to y = 3x \u2212 2 that passes through the point (1, 7)?",
+      "correct": "y = 3x + 4, found using gradient 3 and substituting (1, 7) to determine the y-intercept",
+      "correctExplanation": "y \u2212 7 = 3(x \u2212 1) \u2192 y = 3x + 4.",
+      "distractors": [
+        {
+          "answer": "y = 3x + 7, found by using the y-coordinate directly as the new y-intercept value",
+          "explanation": "Substitutes y=7 as intercept without using the x-coordinate."
+        },
+        {
+          "answer": "y = 3x \u2212 2, since parallel lines must share both gradient and y-intercept to be parallel",
+          "explanation": "This is the original line; parallel lines share gradient but differ in intercept."
+        },
+        {
+          "answer": "y = \u2212(1/3)x + 7, using the perpendicular gradient with the given point for the calculation",
+          "explanation": "Uses the perpendicular gradient instead of the parallel gradient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is the equation of the line perpendicular to y = \u22122x + 5 passing through (4, 1)?",
+      "correct": "y = (1/2)x \u2212 1, found using perpendicular gradient 1/2 and substituting the given point",
+      "correctExplanation": "Perp gradient: \u2212(1/(\u22122)) = 1/2. y\u22121 = (1/2)(x\u22124) \u2192 y = x/2 \u2212 1.",
+      "distractors": [
+        {
+          "answer": "y = \u22122x + 9, found using the original gradient and substituting (4, 1) into point-slope form",
+          "explanation": "Uses the parallel gradient (\u22122) rather than the perpendicular gradient (1/2)."
+        },
+        {
+          "answer": "y = 2x \u2212 7, found by negating the gradient without inverting it before applying point-slope form",
+          "explanation": "Negates without inverting: \u2212(\u22122) = 2, which is not the negative reciprocal."
+        },
+        {
+          "answer": "y = \u2212(1/2)x + 3, found by inverting but not negating the gradient before using the given point",
+          "explanation": "Inverts to 1/2 but applies negative: \u22121/2. Should be +1/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly classifies the relationship between lines y = 5x + 1 and y = \u2212(1/5)x + 3?",
+      "correct": "The lines are perpendicular because 5 \u00d7 (\u22121/5) = \u22121, satisfying the perpendicularity condition",
+      "correctExplanation": "Gradient product: 5(\u22121/5) = \u22121. Perpendicular.",
+      "distractors": [
+        {
+          "answer": "The lines are parallel because 5 and 1/5 are related fractions that indicate the same slope",
+          "explanation": "5 and 1/5 are reciprocals, not equal; and the sign differs too."
+        },
+        {
+          "answer": "The lines are neither parallel nor perpendicular because the gradients differ in sign and magnitude",
+          "explanation": "Must check the product: it equals \u22121, confirming perpendicularity."
+        },
+        {
+          "answer": "The lines are perpendicular only at their intersection point, not along their entire length",
+          "explanation": "Perpendicularity is a property of the lines in their entirety, not just at one point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is the gradient of a line perpendicular to 4x \u2212 2y = 6?",
+      "correct": "\u22121/2, because rearranging gives gradient 2 and the negative reciprocal of 2 is \u22121/2",
+      "correctExplanation": "\u22122y = \u22124x + 6, y = 2x \u2212 3. Gradient = 2. Perp gradient: \u22121/2.",
+      "distractors": [
+        {
+          "answer": "1/2, because the reciprocal of 2 is 1/2 which is the perpendicular gradient by inversion alone",
+          "explanation": "Forgets to negate: the negative reciprocal is \u22121/2, not 1/2."
+        },
+        {
+          "answer": "2, because rearranging gives gradient 2 and parallel lines share this same value for their slope",
+          "explanation": "Gradient 2 is parallel, not perpendicular."
+        },
+        {
+          "answer": "\u22122, because negating the gradient without inverting gives the perpendicular slope directly for any line",
+          "explanation": "Negating without inverting: \u22122. But (2)(\u22122) = \u22124 \u2260 \u22121."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly finds the equation of a line through (\u22121, 4) parallel to y = \u2212x + 6?",
+      "correct": "y = \u2212x + 3, using gradient \u22121 and solving y \u2212 4 = \u22121(x \u2212 (\u22121)) for the equation",
+      "correctExplanation": "y\u22124 = \u22121(x+1) \u2192 y = \u2212x\u22121+4 = \u2212x+3.",
+      "distractors": [
+        {
+          "answer": "y = \u2212x + 5, using gradient \u22121 but adding the coordinates to find the intercept as 4+(\u22121)=5",
+          "explanation": "Incorrect intercept calculation; must use point-slope form properly."
+        },
+        {
+          "answer": "y = x + 5, using the perpendicular gradient 1 instead of the parallel gradient \u22121 by mistake",
+          "explanation": "Uses perpendicular gradient rather than parallel."
+        },
+        {
+          "answer": "y = \u2212x + 6, claiming the original line itself passes through (\u22121, 4) without verification",
+          "explanation": "Check: \u2212(\u22121)+6 = 7 \u2260 4, so (\u22121, 4) is not on the original line."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why lines with gradients 3/4 and \u22124/3 are perpendicular?",
+      "correct": "Their product (3/4)(\u22124/3) equals \u22121, which is the defining condition for perpendicular lines",
+      "correctExplanation": "(3/4)(\u22124/3) = \u221212/12 = \u22121. Perpendicularity confirmed.",
+      "distractors": [
+        {
+          "answer": "Their sum 3/4 + (\u22124/3) equals \u22127/12, which is negative and therefore indicates perpendicularity",
+          "explanation": "The sum is irrelevant to perpendicularity; only the product matters."
+        },
+        {
+          "answer": "Their denominators 4 and 3 multiply to 12, and 12 is divisible by both, confirming the relationship",
+          "explanation": "Denominator properties are unrelated to the geometric relationship."
+        },
+        {
+          "answer": "One is positive and the other negative, which is sufficient to confirm perpendicularity for any pair",
+          "explanation": "Opposite signs alone don't ensure product = \u22121; they must also be reciprocals."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is the equation of the line perpendicular to y = (1/3)x + 2 passing through (3, 0)?",
+      "correct": "y = \u22123x + 9, using perpendicular gradient \u22123 and substituting the point (3, 0) into the form",
+      "correctExplanation": "Perp gradient: \u22123. y\u22120 = \u22123(x\u22123) \u2192 y = \u22123x+9.",
+      "distractors": [
+        {
+          "answer": "y = 3x \u2212 9, using gradient 3 (reciprocal without negating) and the given point for the calculation",
+          "explanation": "Reciprocal of 1/3 is 3, but must negate to get \u22123."
+        },
+        {
+          "answer": "y = (1/3)x \u2212 1, using the same gradient as the original since the point differs from the original line",
+          "explanation": "Same gradient means parallel, not perpendicular."
+        },
+        {
+          "answer": "y = \u2212(1/3)x + 1, negating the original gradient without taking the reciprocal for perpendicularity",
+          "explanation": "\u22121/3 is not the negative reciprocal of 1/3; the negative reciprocal is \u22123."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following determines whether the lines 2x + 5y = 10 and 4x + 10y = 3 are parallel?",
+      "correct": "Rearranging both gives gradients \u22122/5 and \u22122/5, confirming parallelism since the gradients are equal",
+      "correctExplanation": "Line 1: y = \u2212(2/5)x+2. Line 2: y = \u2212(2/5)x+3/10. Same gradient.",
+      "distractors": [
+        {
+          "answer": "The coefficients 2,5 and 4,10 are proportional, but different constants mean they are perpendicular",
+          "explanation": "Proportional coefficients with different constants confirm parallelism, not perpendicularity."
+        },
+        {
+          "answer": "Dividing 4x+10y=3 by 2 gives 2x+5y=1.5, proving the lines are identical and therefore coincident",
+          "explanation": "Same left side but different right side (10 vs 1.5) means parallel, not coincident."
+        },
+        {
+          "answer": "The gradients are \u22122/5 and \u22124/10 which simplify differently, so the lines are neither relationship",
+          "explanation": "\u22124/10 = \u22122/5; they are equal, confirming parallelism."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is the perpendicular gradient for a line with equation 3x \u2212 y = 4?",
+      "correct": "\u22121/3, because rearranging gives gradient 3 and the negative reciprocal of 3 is \u22121/3 for perpendicularity",
+      "correctExplanation": "y = 3x\u22124. Gradient 3. Perp: \u22121/3.",
+      "distractors": [
+        {
+          "answer": "1/3, because the reciprocal of 3 is sufficient without the sign change for perpendicular relationships",
+          "explanation": "Must negate: reciprocal alone gives product +1, not \u22121."
+        },
+        {
+          "answer": "3, because the perpendicular line shares the same gradient as found from the rearranged original equation",
+          "explanation": "Same gradient means parallel, not perpendicular."
+        },
+        {
+          "answer": "\u22123, because negating the gradient of 3 gives the perpendicular value directly without reciprocal needed",
+          "explanation": "(3)(\u22123) = \u22129 \u2260 \u22121. Must invert AND negate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following finds the equation of the perpendicular bisector of the segment from A(0, 0) to B(4, 2)?",
+      "correct": "Midpoint (2,1), segment gradient 1/2, perp gradient \u22122, giving y \u2212 1 = \u22122(x \u2212 2) or y = \u22122x + 5",
+      "correctExplanation": "Midpoint: (2,1). Gradient AB: 2/4=1/2. Perp: \u22122. y\u22121=\u22122(x\u22122) \u2192 y=\u22122x+5.",
+      "distractors": [
+        {
+          "answer": "Midpoint (2,1), using segment gradient 1/2 directly gives y \u2212 1 = (1/2)(x \u2212 2) or y = x/2 as result",
+          "explanation": "Uses the segment gradient (parallel) instead of perpendicular."
+        },
+        {
+          "answer": "Midpoint (4,2), segment gradient 2, perp gradient \u22121/2, giving y \u2212 2 = \u2212(1/2)(x \u2212 4) for the bisector",
+          "explanation": "Midpoint is (2,1), not (4,2); (4,2) is endpoint B."
+        },
+        {
+          "answer": "Midpoint (2,1), segment gradient 2, perp gradient \u22121/2, giving y = \u2212x/2 + 2 for the perpendicular line",
+          "explanation": "Gradient AB = 2/4 = 1/2, not 2. Incorrect gradient used."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly determines that y = 2x + 1 and y = 2x + 8 cannot be perpendicular?",
+      "correct": "Both have gradient 2, so they are parallel; perpendicularity requires different gradients with product \u22121",
+      "correctExplanation": "Same gradient means parallel; parallel lines cannot be perpendicular.",
+      "distractors": [
+        {
+          "answer": "The y-intercepts 1 and 8 differ by 7, and only a difference of 1 would indicate perpendicularity here",
+          "explanation": "Y-intercept difference is irrelevant to perpendicularity."
+        },
+        {
+          "answer": "The product 2 \u00d7 2 = 4, and since 4 is not zero, the lines cannot be perpendicular to each other",
+          "explanation": "The test is product = \u22121, not product = 0."
+        },
+        {
+          "answer": "Neither line has a negative gradient, and perpendicular pairs must contain one positive and one negative",
+          "explanation": "True for most perpendicular pairs, but the key test is product = \u22121."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is the equation of a line through (6, \u22122) perpendicular to a line with gradient \u22123/4?",
+      "correct": "y = (4/3)x \u2212 10, using the negative reciprocal gradient 4/3 and substituting the given point values",
+      "correctExplanation": "Perp gradient: 4/3. y+2 = (4/3)(x\u22126) \u2192 y = (4/3)x\u22128\u22122 = (4/3)x\u221210.",
+      "distractors": [
+        {
+          "answer": "y = (3/4)x \u2212 6.5, using the reciprocal without negating and then applying point-slope form to find it",
+          "explanation": "Reciprocal of \u22123/4 is \u22124/3; then negate to get 4/3. Using 3/4 is the reciprocal of 4/3."
+        },
+        {
+          "answer": "y = \u2212(3/4)x + 2.5, using the original gradient since the perpendicular shares it through symmetry rules",
+          "explanation": "Same gradient means parallel, not perpendicular."
+        },
+        {
+          "answer": "y = \u2212(4/3)x + 6, negating the reciprocal incorrectly and misapplying the point-slope substitution step",
+          "explanation": "The negative reciprocal of \u22123/4 is +4/3, not \u22124/3."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A line parallel to y = 5x \u2212 3 has gradient {{blank:1}}, while a perpendicular line has gradient {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "Parallel lines share the same gradient.",
+          "distractors": [
+            {
+              "answer": "\u22125",
+              "explanation": "Negates instead of keeping equal.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/5",
+              "explanation": "Takes reciprocal instead of keeping equal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121/5",
+          "correctExplanation": "Negative reciprocal of 5 is \u22121/5.",
+          "distractors": [
+            {
+              "answer": "1/5",
+              "explanation": "Inverts without negating.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22125",
+              "explanation": "Negates without inverting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "To find the line through (2, 3) parallel to y = \u22124x + 1: gradient is \u22124, so y \u2212 3 = \u22124(x \u2212 2), giving y = \u22124x + {{blank:1}}. The y-intercept is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "11",
+          "correctExplanation": "y = \u22124x + 8 + 3 = \u22124x + 11.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "May compute \u22124(2)+3 = \u22125, confusing the expansion.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Uses the original y-intercept instead of computing the new one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "11",
+          "correctExplanation": "The y-intercept is the constant term: 11.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Uses the y-coordinate of the point instead.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22124",
+              "explanation": "Confuses gradient with intercept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "Lines with gradients 2/7 and \u22127/2 are {{blank:1}} because their product is (2/7)(\u22127/2) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "perpendicular",
+          "correctExplanation": "Product = \u22121 confirms perpendicularity.",
+          "distractors": [
+            {
+              "answer": "parallel",
+              "explanation": "Parallel requires equal gradients.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coincident",
+              "explanation": "Coincident requires same gradient and intercept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121",
+          "correctExplanation": "(2/7)(\u22127/2) = \u221214/14 = \u22121.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "May forget the negative sign in multiplication.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "May think opposite fractions cancel to zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The line 4x + 2y = 8 rearranges to y = {{blank:1}}x + 4. A perpendicular line has gradient {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "\u22122",
+          "correctExplanation": "2y = \u22124x + 8, y = \u22122x + 4. Gradient = \u22122.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Forgets the negative when dividing.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "May read the coefficient of x before dividing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/2",
+          "correctExplanation": "Negative reciprocal of \u22122: \u2212(1/(\u22122)) = 1/2.",
+          "distractors": [
+            {
+              "answer": "\u22121/2",
+              "explanation": "Takes reciprocal but doesn't negate: 1/(\u22122) = \u22121/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Negates without inverting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Two lines are parallel if their gradients are {{blank:1}}. If both are perpendicular to the same line, they must be {{blank:2}} to each other.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equal",
+          "correctExplanation": "Parallel lines share the same gradient.",
+          "distractors": [
+            {
+              "answer": "opposite",
+              "explanation": "Opposite gradients give intersecting lines, not parallel.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "reciprocal",
+              "explanation": "Reciprocal gradients relate to perpendicularity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "parallel",
+          "correctExplanation": "Both share the same perpendicular gradient, so they have equal gradients \u2014 hence parallel.",
+          "distractors": [
+            {
+              "answer": "perpendicular",
+              "explanation": "They share the same gradient; they are parallel, not perpendicular to each other.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coincident",
+              "explanation": "Same gradient doesn't require same intercept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The perpendicular bisector of a segment requires two things: the {{blank:1}} of the segment and the negative reciprocal of the segment's {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "midpoint",
+          "correctExplanation": "The bisector passes through the midpoint of the segment.",
+          "distractors": [
+            {
+              "answer": "endpoint",
+              "explanation": "The bisector passes through the midpoint, not an endpoint.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "length",
+              "explanation": "Length is not needed for the equation of the bisector.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "gradient",
+          "correctExplanation": "The bisector is perpendicular to the segment, so it uses the negative reciprocal of the segment's gradient.",
+          "distractors": [
+            {
+              "answer": "length",
+              "explanation": "Length does not determine the gradient of the bisector.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "intercept",
+              "explanation": "The segment's intercept is unrelated to the bisector's direction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The perpendicular bisector of the segment from A(1, 2) to B(5, 6) has equation y = \u2212x + 7.",
+      "correct": "True",
+      "correctExplanation": "Midpoint: (3,4). Gradient AB: 4/4=1. Perp gradient: \u22121. y\u22124=\u22121(x\u22123) \u2192 y=\u2212x+7.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate midpoint or gradient."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The altitude from vertex C(0, 4) to side AB, where A(\u22122, 0) and B(6, 0), has equation y = x + 4.",
+      "correct": "False",
+      "correctExplanation": "AB is horizontal (gradient 0). The altitude from C is vertical (perpendicular to horizontal), giving x = 0, not y = x + 4.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May confuse the altitude direction or apply gradient rules incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Priya needs the equation of a line through (2, \u22121) perpendicular to y = (3/2)x + 4. Which one of the following is correct?",
+      "correct": "y = \u2212(2/3)x + 1/3, using perpendicular gradient \u22122/3 and substituting the point into point-slope form",
+      "correctExplanation": "Perp gradient: \u22122/3. y+1 = \u2212(2/3)(x\u22122) \u2192 y = \u22122x/3+4/3\u22121 = \u22122x/3+1/3.",
+      "distractors": [
+        {
+          "answer": "y = (3/2)x \u2212 4, using the parallel gradient 3/2 and a new intercept found from the given point",
+          "explanation": "Uses parallel gradient, not perpendicular."
+        },
+        {
+          "answer": "y = (2/3)x \u2212 7/3, using reciprocal 2/3 without negating and then applying the point coordinates",
+          "explanation": "Reciprocal without negating; product would be +1, not \u22121."
+        },
+        {
+          "answer": "y = \u2212(3/2)x + 2, negating without inverting and using the given point to determine the intercept",
+          "explanation": "Negating without reciprocal: (3/2)(\u22123/2) = \u22129/4 \u2260 \u22121."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Sam wants to prove ABCD is a rectangle given A(0,0), B(6,0), C(6,4), D(0,4). Which one of the following gradient calculations confirms perpendicularity at vertex B?",
+      "correct": "Gradient AB = 0 and gradient BC is undefined (vertical), confirming the sides meet at 90 degrees",
+      "correctExplanation": "AB: horizontal (m=0). BC: vertical (undefined). Horizontal meets vertical at 90\u00b0.",
+      "distractors": [
+        {
+          "answer": "Gradient AB = 0 and gradient BC = 4/6 = 2/3, with product 0 confirming perpendicularity at vertex B",
+          "explanation": "BC goes from (6,0) to (6,4): same x means vertical, not gradient 2/3."
+        },
+        {
+          "answer": "Gradient AB = 6 and gradient BC = 4, with product 24 which does not equal \u22121 so it is not a rectangle",
+          "explanation": "AB gradient is 0/6=0, not 6; confuses run with gradient."
+        },
+        {
+          "answer": "Gradient AB = 0 and gradient BD = 4/6 = 2/3, using the diagonal rather than the adjacent side",
+          "explanation": "Must check adjacent sides, not diagonals, for right angles at vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Jade finds the perpendicular bisector of segment PQ where P(\u22122, 1) and Q(4, 5). Which one of the following is the correct equation?",
+      "correct": "Midpoint (1, 3), segment gradient 2/3, perp gradient \u22123/2, giving y = \u2212(3/2)x + 9/2",
+      "correctExplanation": "Mid: ((\u22122+4)/2, (1+5)/2)=(1,3). Grad: (5\u22121)/(4\u2212(\u22122))=4/6=2/3. Perp: \u22123/2. y\u22123=\u2212(3/2)(x\u22121) \u2192 y=\u22123x/2+3/2+3=\u22123x/2+9/2.",
+      "distractors": [
+        {
+          "answer": "Midpoint (1, 3), using parallel gradient 2/3 directly, giving y = (2/3)x + 7/3 as the bisector",
+          "explanation": "Uses the segment gradient (parallel to PQ), not perpendicular."
+        },
+        {
+          "answer": "Midpoint (2, 4), segment gradient 2/3, perp gradient \u22123/2, giving y = \u2212(3/2)x + 7 as the result",
+          "explanation": "Midpoint error: (\u22122+4)/2=1, not 2; (1+5)/2=3, not 4."
+        },
+        {
+          "answer": "Midpoint (1, 3), segment gradient 3/2, perp gradient \u22122/3, giving y = \u2212(2/3)x + 11/3 for the line",
+          "explanation": "Gradient of PQ is 4/6=2/3, not 3/2. Inverts rise/run."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Kofi needs a line through (\u22123, 2) parallel to the line joining A(1, 4) and B(5, 12). Which one of the following is correct?",
+      "correct": "Gradient AB = 2, so the line is y \u2212 2 = 2(x + 3), giving y = 2x + 8 as the final equation",
+      "correctExplanation": "Grad AB: (12\u22124)/(5\u22121)=8/4=2. y\u22122=2(x+3) \u2192 y=2x+8.",
+      "distractors": [
+        {
+          "answer": "Gradient AB = 1/2, using the reciprocal of the rise over run to give y = (1/2)x + 7/2 through the point",
+          "explanation": "Gradient is rise/run = 8/4 = 2, not run/rise = 4/8 = 1/2."
+        },
+        {
+          "answer": "Gradient AB = 2, but the line uses perpendicular gradient \u22121/2 giving y = \u2212(1/2)x + 1/2 through the point",
+          "explanation": "Uses perpendicular gradient when parallel was requested."
+        },
+        {
+          "answer": "Gradient AB = 4, computed as (5\u22121)/(12\u22124) = 4/8 = 1/2 which is then doubled to give the parallel slope",
+          "explanation": "Inverts the gradient formula: run/rise instead of rise/run."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Lila determines whether the triangle with vertices P(0,0), Q(4,2), R(3,\u22121) has a right angle at P. Which one of the following is the correct analysis?",
+      "correct": "Gradient PQ = 1/2 and gradient PR = \u22121/3; product is \u22121/6 \u2260 \u22121, so there is no right angle at P",
+      "correctExplanation": "PQ: 2/4=1/2. PR: \u22121/3. Product: (1/2)(\u22121/3)=\u22121/6\u2260\u22121. Not perpendicular.",
+      "distractors": [
+        {
+          "answer": "Gradient PQ = 2 and gradient PR = \u22123; product is \u22126, which is less than \u22121, confirming a right angle",
+          "explanation": "Gradients are 1/2 and \u22121/3, not 2 and \u22123. Also \u22126\u2260\u22121."
+        },
+        {
+          "answer": "Gradient PQ = 1/2 and gradient PR = \u22121/3; since both are fractions less than 1, the angle must be acute",
+          "explanation": "Fraction magnitude doesn't determine angle type; product test is needed."
+        },
+        {
+          "answer": "Gradient PQ = 1/2 and gradient PR = \u22121/3; their sum is 1/6, which is positive, confirming a right angle",
+          "explanation": "The sum is irrelevant; perpendicularity is tested by product = \u22121."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Amir finds the equation of the altitude from vertex A(1, 5) to side BC where B(3, 1) and C(7, 3). Which one of the following is correct?",
+      "correct": "Gradient BC = 1/2; altitude gradient is \u22122; equation y \u2212 5 = \u22122(x \u2212 1), giving y = \u22122x + 7",
+      "correctExplanation": "BC: (3\u22121)/(7\u22123)=2/4=1/2. Altitude perp: \u22122. y\u22125=\u22122(x\u22121) \u2192 y=\u22122x+7.",
+      "distractors": [
+        {
+          "answer": "Gradient BC = 2; altitude gradient is \u22121/2; equation y \u2212 5 = \u2212(1/2)(x \u2212 1) giving y = \u2212x/2 + 11/2",
+          "explanation": "Gradient BC = 2/4 = 1/2, not 2. Uses wrong gradient throughout."
+        },
+        {
+          "answer": "Gradient BC = 1/2; altitude gradient is 2; equation y \u2212 5 = 2(x \u2212 1), giving y = 2x + 3 for the altitude",
+          "explanation": "Uses parallel gradient to BC instead of perpendicular."
+        },
+        {
+          "answer": "Gradient BC = 1/2; altitude from B not A; equation y \u2212 1 = \u22122(x \u2212 3), giving y = \u22122x + 7 anyway",
+          "explanation": "Correct gradient but wrong vertex; altitude must pass through A(1,5)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Rosa checks whether PQRS with P(0,0), Q(4,3), R(1,7), S(\u22123,4) is a parallelogram using gradients. Which one of the following is the correct check?",
+      "correct": "PQ gradient 3/4 equals SR gradient 3/4, and QR gradient \u22124/3 equals PS gradient \u22124/3, confirming parallelism",
+      "correctExplanation": "PQ: 3/4. SR: (7\u22124)/(1\u2212(\u22123))=3/4. QR: (7\u22123)/(1\u22124)=4/(\u22123)=\u22124/3. PS: (4\u22120)/(\u22123\u22120)=\u22124/3. Both pairs parallel.",
+      "distractors": [
+        {
+          "answer": "PQ gradient 3/4 and QR gradient \u22124/3 multiply to \u22121, so the shape is a rectangle not a parallelogram",
+          "explanation": "Product \u22121 means PQ\u22a5QR (right angle), which makes it a rectangle \u2014 a special parallelogram, still valid."
+        },
+        {
+          "answer": "All four sides must have equal gradients for a parallelogram, so PQ and QR should both equal 3/4",
+          "explanation": "Only opposite sides need equal gradients, not all four."
+        },
+        {
+          "answer": "PQ and RS must have product \u22121, and QR and PS must have product \u22121 for the shape to be a parallelogram",
+          "explanation": "Parallelism requires equal gradients, not perpendicularity between opposite sides."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Will needs a line through (5, 2) perpendicular to the line through (1, 3) and (4, 9). Which one of the following is correct?",
+      "correct": "Segment gradient is 2; perpendicular gradient is \u22121/2; line: y \u2212 2 = \u2212(1/2)(x \u2212 5), giving y = \u2212x/2 + 9/2",
+      "correctExplanation": "Grad: (9\u22123)/(4\u22121)=6/3=2. Perp: \u22121/2. y\u22122=\u2212(1/2)(x\u22125) \u2192 y=\u2212x/2+5/2+2=\u2212x/2+9/2.",
+      "distractors": [
+        {
+          "answer": "Segment gradient is 1/2; perpendicular gradient is \u22122; line: y \u2212 2 = \u22122(x \u2212 5), giving y = \u22122x + 12",
+          "explanation": "Gradient is 6/3=2, not 3/6=1/2."
+        },
+        {
+          "answer": "Segment gradient is 2; perpendicular gradient is 2; line: y \u2212 2 = 2(x \u2212 5), giving y = 2x \u2212 8 for result",
+          "explanation": "Uses parallel gradient, not perpendicular."
+        },
+        {
+          "answer": "Segment gradient is 2; perpendicular gradient is 1/2; line: y \u2212 2 = (1/2)(x \u2212 5), giving y = x/2 \u2212 1/2",
+          "explanation": "Takes reciprocal without negating."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Jade determines whether triangle ABC with A(\u22121,3), B(2,\u22121), C(6,2) has a right angle. Which one of the following is the correct analysis?",
+      "correct": "Gradient AB = \u22124/3, gradient BC = 3/4; product (\u22124/3)(3/4) = \u22121, so the right angle is at vertex B",
+      "correctExplanation": "AB: (\u22121\u22123)/(2\u2212(\u22121))=\u22124/3. BC: (2\u2212(\u22121))/(6\u22122)=3/4. Product = \u22121. Right angle at B.",
+      "distractors": [
+        {
+          "answer": "Gradient AB = \u22124/3, gradient AC = \u22121/7; product is 4/21, not \u22121, so no right angle exists anywhere",
+          "explanation": "Must check all three vertex pairs; AB\u22a5BC at B confirms a right angle."
+        },
+        {
+          "answer": "Gradient AB = 3/4, gradient BC = \u22124/3; product is \u22121, but the right angle is at A not at B",
+          "explanation": "AB goes from A to B; the right angle at the shared vertex B is between AB and BC."
+        },
+        {
+          "answer": "All three gradients must multiply to \u22121 for a right-angled triangle, and here the triple product differs",
+          "explanation": "Only one pair needs product \u22121; not all three."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Marcus finds the equation of a line through (0, \u22123) perpendicular to the line 2x \u2212 5y = 10. Which one of the following is correct?",
+      "correct": "Rearranging gives gradient 2/5; perpendicular gradient is \u22125/2; line is y = \u2212(5/2)x \u2212 3 through the origin intercept",
+      "correctExplanation": "\u22125y=\u22122x+10, y=(2/5)x\u22122. Perp: \u22125/2. Through (0,\u22123): y=\u2212(5/2)x\u22123.",
+      "distractors": [
+        {
+          "answer": "Rearranging gives gradient 2/5; using 2/5 directly for the parallel line gives y = (2/5)x \u2212 3 instead",
+          "explanation": "Uses parallel gradient, not perpendicular."
+        },
+        {
+          "answer": "Rearranging gives gradient \u22122/5; perpendicular gradient 5/2; line is y = (5/2)x \u2212 3 through the point",
+          "explanation": "Gradient of 2x\u22125y=10 is +2/5, not \u22122/5. Sign error in rearranging."
+        },
+        {
+          "answer": "Rearranging gives gradient 5/2; perpendicular gradient \u22122/5; line is y = \u2212(2/5)x \u2212 3 for the answer",
+          "explanation": "Gradient is 2/5, not 5/2. Confuses coefficient positions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Priya verifies that ABCD with A(0,0), B(5,0), C(7,3), D(2,3) is a parallelogram. Which one of the following gradient pairs confirm this?",
+      "correct": "AB has gradient 0 and DC has gradient 0; AD has gradient 3/2 and BC has gradient 3/2, both pairs matching",
+      "correctExplanation": "AB: 0/5=0. DC: (3\u22123)/(7\u22122)=0. AD: 3/2. BC: (3\u22120)/(7\u22125)=3/2. Opposite sides parallel.",
+      "distractors": [
+        {
+          "answer": "AB has gradient 0 and BC has gradient 3/2; product is 0, not \u22121, so it is not a parallelogram at all",
+          "explanation": "Testing adjacent sides for perpendicularity is irrelevant to parallelogram proof."
+        },
+        {
+          "answer": "All four gradients must be equal for a parallelogram; since AB = 0 differs from AD = 3/2, it fails",
+          "explanation": "Only opposite sides need equal gradients in a parallelogram."
+        },
+        {
+          "answer": "AB gradient 5 and DC gradient 5 confirms parallelism; AD gradient 2/3 and BC gradient 2/3 confirms it",
+          "explanation": "AB gradient is 0/5=0, not 5. Confuses length with gradient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Anika needs the perpendicular bisector of segment from M(\u22121, 5) to N(3, \u22123). Which one of the following is correct?",
+      "correct": "Midpoint (1, 1); gradient MN = \u22122; perp gradient 1/2; equation y \u2212 1 = (1/2)(x \u2212 1), so y = x/2 + 1/2",
+      "correctExplanation": "Mid: (1,1). Grad: (\u22123\u22125)/(3\u2212(\u22121))=\u22128/4=\u22122. Perp: 1/2. y\u22121=(1/2)(x\u22121) \u2192 y=x/2+1/2.",
+      "distractors": [
+        {
+          "answer": "Midpoint (1, 1); gradient MN = \u22122; using \u22122 directly gives y \u2212 1 = \u22122(x \u2212 1), so y = \u22122x + 3",
+          "explanation": "Uses parallel gradient (\u22122) instead of perpendicular (1/2)."
+        },
+        {
+          "answer": "Midpoint (2, 4); gradient MN = \u22122; perp gradient 1/2; equation y \u2212 4 = (1/2)(x \u2212 2) for the bisector",
+          "explanation": "Midpoint is (1,1), not (2,4)."
+        },
+        {
+          "answer": "Midpoint (1, 1); gradient MN = 2; perp gradient \u22121/2; equation y \u2212 1 = \u2212(1/2)(x \u2212 1), so y = \u2212x/2 + 3/2",
+          "explanation": "Gradient MN is \u22128/4 = \u22122, not +2. Sign error in rise."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "The line through (3, 1) parallel to y = 2x \u2212 5 has gradient {{blank:1}} and equation y = 2x + {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Parallel means same gradient: 2.",
+          "distractors": [
+            {
+              "answer": "\u22121/2",
+              "explanation": "Uses perpendicular gradient instead of parallel.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22122",
+              "explanation": "Negates the gradient unnecessarily.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22125",
+          "correctExplanation": "y\u22121=2(x\u22123) \u2192 y=2x\u22126+1=2x\u22125.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "May compute 1+2(3)=7 instead of proper expansion.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Uses y-coordinate as intercept directly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "The perpendicular to y = (1/4)x + 3 through (8, 0) has gradient {{blank:1}} and equation y = \u22124x + {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "\u22124",
+          "correctExplanation": "Negative reciprocal of 1/4 is \u22124.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Reciprocal without negating.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22121/4",
+              "explanation": "Negates without inverting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "32",
+          "correctExplanation": "y\u22120=\u22124(x\u22128) \u2192 y=\u22124x+32.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "Uses x-coordinate as intercept.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u221232",
+              "explanation": "Sign error in expansion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Segment AB from A(0, 2) to B(4, 6) has gradient {{blank:1}}. Its perpendicular bisector passes through midpoint (2, 4) with gradient {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "(6\u22122)/(4\u22120) = 4/4 = 1.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "May compute 4/2 using midpoint x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Uses rise only, not rise/run.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121",
+          "correctExplanation": "Negative reciprocal of 1 is \u22121.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Uses same gradient (parallel to AB).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "May think perpendicular to gradient 1 is horizontal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "To check if triangle PQR has a right angle at Q, compute gradients QP and QR then check if their {{blank:1}} equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "product",
+          "correctExplanation": "Perpendicularity is tested by multiplying the two gradients.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "Sum does not test perpendicularity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "difference",
+              "explanation": "Difference is irrelevant to the perpendicularity test.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121",
+          "correctExplanation": "If m\u2081 \u00d7 m\u2082 = \u22121, the lines are perpendicular (right angle).",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Product = 0 means one line is horizontal, not necessarily perpendicular.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Product = 1 means same direction slopes, not perpendicular.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Line 3x + 6y = 18 rearranges to y = \u2212(1/2)x + 3. A parallel line through (4, 5) has equation y = \u2212(1/2)x + {{blank:1}}. A perpendicular line through (4, 5) has gradient {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "y\u22125=\u2212(1/2)(x\u22124) \u2192 y=\u2212x/2+2+5=\u2212x/2+7.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Uses original intercept instead of computing new one.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Uses y-coordinate of point directly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Negative reciprocal of \u22121/2 is 2.",
+          "distractors": [
+            {
+              "answer": "1/2",
+              "explanation": "Takes reciprocal without negating the negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22122",
+              "explanation": "Inverts and negates when negative reciprocal of negative already gives positive.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "ABCD is a rectangle if adjacent sides AB and BC are perpendicular. If AB has gradient 3, then BC must have gradient {{blank:1}} so that (3)({{blank:2}}) = \u22121.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "\u22121/3",
+          "correctExplanation": "Negative reciprocal of 3 is \u22121/3.",
+          "distractors": [
+            {
+              "answer": "1/3",
+              "explanation": "Reciprocal without negating.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22123",
+              "explanation": "Negates without inverting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121/3",
+          "correctExplanation": "The perpendicular gradient multiplied by 3 must give \u22121.",
+          "distractors": [
+            {
+              "answer": "1/3",
+              "explanation": "Would give product 1, not \u22121.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22123",
+              "explanation": "Would give product \u22129, not \u22121.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "The altitude from C(5, 6) to AB where A(1, 2) and B(7, 2) has gradient {{blank:1}} because AB is horizontal. The altitude equation is x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "undefined",
+          "correctExplanation": "AB is horizontal (gradient 0); perpendicular is vertical (undefined gradient).",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "This is AB's gradient, not the altitude's.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22121",
+              "explanation": "May think perpendicular to 0 is \u22121.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "Vertical line through C(5,6) is x = 5.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Uses y-coordinate instead of x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Uses A's x-coordinate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Segment from P(2, 3) to Q(6, 11) has midpoint ({{blank:1}}, 7) and gradient {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "(2+6)/2 = 4.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "May compute (6\u22122)/2=2 then add 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "Adds without dividing: 2+6=8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "(11\u22123)/(6\u22122) = 8/4 = 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Uses run/rise: 4/8=1/2, or confuses with another value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "Uses rise without dividing by run.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A line through (\u22122, 6) perpendicular to y = 5x has gradient {{blank:1}} and y-intercept {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "\u22121/5",
+          "correctExplanation": "Negative reciprocal of 5 is \u22121/5.",
+          "distractors": [
+            {
+              "answer": "1/5",
+              "explanation": "Reciprocal without negating.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22125",
+              "explanation": "Negates without inverting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "28/5",
+          "correctExplanation": "y\u22126=\u2212(1/5)(x+2) \u2192 y=\u2212x/5\u22122/5+6=\u2212x/5+28/5. Intercept: 28/5.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Uses y-coordinate of point directly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "32/5",
+              "explanation": "May compute 6+2/5=32/5 with sign error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "To prove a quadrilateral is a rectangle, show opposite sides are {{blank:1}} (equal gradients) and adjacent sides are {{blank:2}} (product of gradients = \u22121).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "parallel",
+          "correctExplanation": "A rectangle has two pairs of parallel sides.",
+          "distractors": [
+            {
+              "answer": "perpendicular",
+              "explanation": "Perpendicular applies to adjacent sides, not opposite.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equal",
+              "explanation": "Equal length is for rhombus/square, not the gradient test.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "perpendicular",
+          "correctExplanation": "Adjacent sides of a rectangle meet at right angles.",
+          "distractors": [
+            {
+              "answer": "parallel",
+              "explanation": "Parallel applies to opposite sides.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coincident",
+              "explanation": "Adjacent sides of a rectangle are distinct, not overlapping.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Lines 2x + 3y = 6 and 4x + 6y = 5 have gradients \u22122/3 and {{blank:1}} respectively. Since these are equal, the lines are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "\u22122/3",
+          "correctExplanation": "6y = \u22124x+5, y = \u2212(2/3)x+5/6. Gradient \u22122/3.",
+          "distractors": [
+            {
+              "answer": "\u22124/6",
+              "explanation": "While equivalent, this is unsimplified; the key point is both simplify to \u22122/3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2/3",
+              "explanation": "May forget the negative when rearranging.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "parallel",
+          "correctExplanation": "Equal gradients means the lines are parallel.",
+          "distractors": [
+            {
+              "answer": "perpendicular",
+              "explanation": "Perpendicular requires product = \u22121, not equal gradients.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coincident",
+              "explanation": "Same gradient but different intercepts (1 vs 5/6) means parallel, not coincident.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "The line through (1, \u22122) parallel to the line joining (0, 0) and (3, 9) has gradient {{blank:1}} and equation y = 3x \u2212 {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "Gradient of join: 9/3 = 3. Parallel shares this.",
+          "distractors": [
+            {
+              "answer": "1/3",
+              "explanation": "Uses reciprocal instead of equal gradient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "Uses rise without dividing by run.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "y+2=3(x\u22121) \u2192 y=3x\u22123\u22122=3x\u22125. So y=3x\u22125, and the blank is 5.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Uses y-coordinate magnitude directly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Uses the gradient value as the intercept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims lines with gradients 2 and \u22122 are perpendicular. Which one of the following correctly evaluates this?",
+      "correct": "The claim is false; the product 2 \u00d7 (\u22122) = \u22124, not \u22121, so the lines are neither parallel nor perpendicular",
+      "correctExplanation": "Perpendicularity requires product = \u22121; here it is \u22124.",
+      "distractors": [
+        {
+          "answer": "The claim is true because the gradients are equal in magnitude with opposite signs, satisfying perpendicularity",
+          "explanation": "Opposite signs alone are insufficient; the reciprocal relationship is also needed."
+        },
+        {
+          "answer": "The claim is true because one is the negative of the other, which is the definition of perpendicular slopes",
+          "explanation": "Negative of each other gives product = \u2212m\u00b2, which equals \u22121 only if m = \u00b11."
+        },
+        {
+          "answer": "The claim cannot be evaluated without knowing the y-intercepts of both lines involved in the comparison",
+          "explanation": "Gradient relationship alone determines perpendicularity; intercepts are irrelevant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Two students find the perpendicular bisector of AB where A(0,0) and B(6,4). Student X gets y = \u2212(3/2)x + 13/2. Student Y gets y = \u2212(3/2)x + 5. Which is correct?",
+      "correct": "Student X is correct: midpoint (3,2), segment gradient 2/3, perp gradient \u22123/2, y\u22122 = \u2212(3/2)(x\u22123) gives y = \u22123x/2 + 13/2",
+      "correctExplanation": "Mid:(3,2). Grad:4/6=2/3. Perp:\u22123/2. y\u22122=\u2212(3/2)(x\u22123) \u2192 y=\u22123x/2+9/2+2=\u22123x/2+13/2.",
+      "distractors": [
+        {
+          "answer": "Student Y is correct because the midpoint is (3,2) and \u2212(3/2)(3)+c=2 gives c=2+9/2=13/2 which rounds to 5",
+          "explanation": "13/2=6.5, not 5. Student Y likely made an arithmetic error."
+        },
+        {
+          "answer": "Neither is correct because the perpendicular gradient should be 3/2 (positive), not \u22123/2 as both students used",
+          "explanation": "Negative reciprocal of 2/3 is \u22123/2; the negative is correct."
+        },
+        {
+          "answer": "Both are correct because perpendicular bisectors can have multiple valid equations depending on the method used",
+          "explanation": "A perpendicular bisector is unique; only one equation is correct."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student argues that since perpendicular gradients multiply to \u22121, lines with gradients 0 and 0 must be perpendicular (0 \u00d7 0 = 0 \u2260 \u22121). Which one of the following addresses this reasoning?",
+      "correct": "The reasoning is correct that they are not perpendicular, but the proper analysis is that two horizontal lines are parallel, not perpendicular",
+      "correctExplanation": "Both have gradient 0 \u2192 parallel. Perpendicular to horizontal is vertical (undefined gradient), not another horizontal.",
+      "distractors": [
+        {
+          "answer": "The reasoning is wrong because 0 \u00d7 0 = 0 is undefined in this context and the product rule does not apply to horizontal lines",
+          "explanation": "0 \u00d7 0 = 0 is perfectly defined; the rule shows they are not perpendicular."
+        },
+        {
+          "answer": "Two horizontal lines are always perpendicular because they form a flat cross shape when drawn together on a plane",
+          "explanation": "Two horizontal lines are parallel, not crossing."
+        },
+        {
+          "answer": "The product rule only applies to non-zero gradients, so horizontal lines must be tested using a different method entirely",
+          "explanation": "The rule's failure with zero and undefined is a special case, but the conclusion (not perpendicular) is correct."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student finds the altitude from C(2, 8) to AB where A(\u22121, 2) and B(5, 4). They get y = \u22123x + 14. Which one of the following evaluates their work?",
+      "correct": "The work is correct: gradient AB is 1/3, altitude gradient is \u22123, and y \u2212 8 = \u22123(x \u2212 2) gives y = \u22123x + 14",
+      "correctExplanation": "AB: (4\u22122)/(5\u2212(\u22121))=2/6=1/3. Perp: \u22123. y\u22128=\u22123(x\u22122) \u2192 y=\u22123x+14.",
+      "distractors": [
+        {
+          "answer": "The gradient of AB should be 3 (not 1/3), giving altitude gradient \u22121/3 and equation y = \u2212x/3 + 26/3",
+          "explanation": "AB gradient is 2/6=1/3, not 6/2=3."
+        },
+        {
+          "answer": "The altitude gradient should be 1/3 (parallel to AB), giving y \u2212 8 = (1/3)(x \u2212 2) and y = x/3 + 22/3",
+          "explanation": "Altitude is perpendicular, not parallel to AB."
+        },
+        {
+          "answer": "The work has a sign error; the altitude gradient should be +3 since the negative reciprocal of 1/3 is 3",
+          "explanation": "Negative reciprocal of 1/3 is \u22123, not +3; must negate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A teacher asks whether the diagonals of a quadrilateral being perpendicular proves it is a rectangle. Which one of the following is the best response?",
+      "correct": "Perpendicular diagonals do not prove a rectangle; they prove a rhombus instead, since rectangles have equal-length diagonals",
+      "correctExplanation": "Rhombus has perpendicular diagonals; rectangle has equal diagonals. A square has both.",
+      "distractors": [
+        {
+          "answer": "Perpendicular diagonals always prove a rectangle because right angles between diagonals mean right angles at vertices",
+          "explanation": "Diagonal perpendicularity gives a rhombus; vertex right angles give a rectangle."
+        },
+        {
+          "answer": "Perpendicular diagonals prove nothing about the quadrilateral because diagonals do not determine side properties",
+          "explanation": "Perpendicular diagonals specifically characterise rhombi."
+        },
+        {
+          "answer": "Perpendicular diagonals prove a square, which is a special case that is both a rectangle and a rhombus at once",
+          "explanation": "A square has perpendicular AND equal diagonals; perpendicular alone gives rhombus only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student claims that the perpendicular bisector of any segment always has a positive gradient. Which one of the following is the strongest counterexample?",
+      "correct": "The segment from (0, 0) to (2, 4) has gradient 2; its perpendicular bisector has gradient \u22121/2, which is negative",
+      "correctExplanation": "Perp gradient: \u22121/2 (negative). This directly contradicts the claim.",
+      "distractors": [
+        {
+          "answer": "The segment from (0, 0) to (4, 0) is horizontal; its bisector is vertical with undefined gradient, not positive",
+          "explanation": "Valid counterexample but involves undefined gradient, which is an edge case."
+        },
+        {
+          "answer": "No counterexample exists because the negative reciprocal process guarantees a positive result for any segment",
+          "explanation": "Negative reciprocal of a positive gradient is negative; counterexamples exist."
+        },
+        {
+          "answer": "The claim is true because segment gradients are always negative, making their perpendicular bisectors positive",
+          "explanation": "Segment gradients can be any value; the claim is clearly false."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Compare two approaches to proving a quadrilateral is a parallelogram: (A) showing opposite sides have equal gradients, (B) showing diagonals bisect each other. Which one of the following is correct?",
+      "correct": "Both methods are valid and equivalent proofs of a parallelogram; method A uses gradient equality while B uses midpoint equality",
+      "correctExplanation": "Equal opposite-side gradients and mutual diagonal bisection are both sufficient conditions.",
+      "distractors": [
+        {
+          "answer": "Only method A works because gradient equality is the definition of parallelism and therefore of a parallelogram",
+          "explanation": "Method B (diagonals bisect) is equally valid."
+        },
+        {
+          "answer": "Only method B works because parallel sides alone could form a trapezoid if only one pair is parallel",
+          "explanation": "Method A checks both pairs of opposite sides, confirming parallelogram."
+        },
+        {
+          "answer": "Neither method alone is sufficient; both must be applied together to confirm the quadrilateral is a parallelogram",
+          "explanation": "Each method alone is sufficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student finds a line through (1, 4) perpendicular to 2x + 3y = 6 and gets y = (3/2)x + 5/2. Which one of the following evaluates this?",
+      "correct": "The work is correct: rearranging gives gradient \u22122/3; perpendicular gradient is 3/2; y \u2212 4 = (3/2)(x \u2212 1) gives y = (3/2)x + 5/2",
+      "correctExplanation": "3y=\u22122x+6, y=\u2212(2/3)x+2. Perp: 3/2. y\u22124=(3/2)(x\u22121) \u2192 y=3x/2\u22123/2+4=3x/2+5/2.",
+      "distractors": [
+        {
+          "answer": "The gradient should be \u22123/2, not 3/2, because the original has a positive coefficient for x requiring a negative perpendicular",
+          "explanation": "Original gradient is \u22122/3 (negative); its negative reciprocal is +3/2 (positive)."
+        },
+        {
+          "answer": "The gradient is correct but the intercept should be 7/2, computed as 4 \u2212 (3/2)(1) = 4 \u2212 3/2 = 5/2... which is actually right",
+          "explanation": "5/2 is correct: 4 \u2212 3/2 = 5/2."
+        },
+        {
+          "answer": "The student should have used gradient 2/3 since the original line's gradient is \u22122/3 and perpendicular just removes the negative",
+          "explanation": "Removing negative gives 2/3; must also invert, giving 3/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student claims that if line L has gradient m, then any line perpendicular to a line perpendicular to L has gradient m. Which one of the following evaluates this?",
+      "correct": "The claim is correct: the first perpendicular has gradient \u22121/m; the second perpendicular has gradient \u22121/(\u22121/m) = m, returning to the original",
+      "correctExplanation": "Double negative reciprocal returns to the original gradient.",
+      "distractors": [
+        {
+          "answer": "The claim is wrong because two perpendicular operations give \u22121/m then 1/m, which does not equal m unless m = 1",
+          "explanation": "\u22121/(\u22121/m) = m for all nonzero m, not just m = 1."
+        },
+        {
+          "answer": "The claim is true only for integer gradients; fractional gradients behave differently under repeated perpendicular operations",
+          "explanation": "The algebra works identically for all nonzero real gradients."
+        },
+        {
+          "answer": "The claim is wrong because the second perpendicular gives gradient m\u00b2 rather than m after two inversions",
+          "explanation": "\u22121/(\u22121/m) = m, not m\u00b2. The negative signs and inversions cancel correctly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Two lines have equations y = ax + 3 and y = bx \u2212 1. They are perpendicular and one passes through (2, 7). Which one of the following correctly finds both gradients?",
+      "correct": "From (2,7): 7 = 2a + 3, so a = 2. Then ab = \u22121 gives b = \u22121/2, so the lines have gradients 2 and \u22121/2",
+      "correctExplanation": "a=2 from the point. Perp condition: 2b=\u22121, b=\u22121/2.",
+      "distractors": [
+        {
+          "answer": "From (2,7): 7 = 2b \u2212 1, so b = 4. Then ab = \u22121 gives a = \u22121/4, producing gradients \u22121/4 and 4",
+          "explanation": "(2,7) is on the first line (y=ax+3), not the second."
+        },
+        {
+          "answer": "From (2,7): 7 = 2a + 3 gives a = 2, and a + b = \u22121 gives b = \u22123, producing gradients 2 and \u22123",
+          "explanation": "Perpendicular condition is ab = \u22121, not a+b = \u22121."
+        },
+        {
+          "answer": "From (2,7): a = 7/2 \u2212 3/2 = 2, and since they are perpendicular b = \u22122, giving gradients 2 and \u22122",
+          "explanation": "Perpendicular requires product \u22121: 2\u00d7(\u22122)=\u22124\u2260\u22121. b should be \u22121/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student proves a triangle has a right angle by showing two sides have gradients whose product is \u22121. A classmate argues the proof is incomplete. Which one of the following resolves the dispute?",
+      "correct": "The proof is complete: if two sides meeting at a vertex have gradient product \u22121, those sides are perpendicular and the angle is 90 degrees",
+      "correctExplanation": "Gradient product \u22121 is both necessary and sufficient for perpendicularity of the two sides.",
+      "distractors": [
+        {
+          "answer": "The proof is incomplete because gradient product \u22121 only means the lines are perpendicular somewhere, not at the vertex",
+          "explanation": "Straight lines are perpendicular everywhere, not just at intersection."
+        },
+        {
+          "answer": "The proof needs confirmation that the lines actually intersect at the shared vertex of the two sides being tested",
+          "explanation": "If the sides share a vertex, they intersect there by definition."
+        },
+        {
+          "answer": "The proof is incomplete because all three angle-pairs must be tested, not just one, to confirm the triangle has a right angle",
+          "explanation": "Finding one right angle is sufficient to classify it as right-angled."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student is asked whether the line y = 0.5x + 1 is perpendicular to y = \u22122x + 3. They compute 0.5 \u00d7 (\u22122) = \u22121 and conclude yes. A classmate doubts decimal gradients can be perpendicular. Which is correct?",
+      "correct": "The first student is correct; 0.5 = 1/2 and (1/2)(\u22122) = \u22121 confirms perpendicularity regardless of decimal or fraction format",
+      "correctExplanation": "The product test works with any numerical representation.",
+      "distractors": [
+        {
+          "answer": "The classmate is correct because perpendicularity formulas only apply to integer or simple-fraction gradients",
+          "explanation": "The product test applies to all real-number gradients."
+        },
+        {
+          "answer": "Neither is correct because 0.5 \u00d7 (\u22122) = \u22121.0, and \u22121.0 is not exactly \u22121 due to decimal imprecision",
+          "explanation": "\u22121.0 = \u22121 exactly; there is no imprecision in this calculation."
+        },
+        {
+          "answer": "Both are wrong because the correct test for perpendicularity is the sum of gradients equalling zero, not the product",
+          "explanation": "The sum test is irrelevant; the product test (= \u22121) determines perpendicularity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student argues that two lines cannot be both perpendicular and intersect at the origin simultaneously. Which one of the following correctly addresses this?",
+      "correct": "The argument is wrong; y = 2x and y = \u2212(1/2)x are perpendicular and both pass through the origin without contradiction",
+      "correctExplanation": "Lines through the origin with product \u22121 gradients are perpendicular there.",
+      "distractors": [
+        {
+          "answer": "The argument is correct because perpendicular lines must have different y-intercepts to be geometrically distinct",
+          "explanation": "Lines can share the same intercept (including 0) and still be perpendicular."
+        },
+        {
+          "answer": "The argument is correct because at the origin, both gradients would need to be zero, which contradicts perpendicularity",
+          "explanation": "Neither gradient needs to be zero; y=2x has gradient 2, y=\u2212x/2 has gradient \u22121/2."
+        },
+        {
+          "answer": "The argument depends on whether the origin is defined as a valid point for intersection in coordinate geometry",
+          "explanation": "The origin is a standard point; no special definition issues exist."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student is asked to find a line through (0, 0) perpendicular to the line joining (\u22123, 1) and (1, 5). They write: gradient = 1, perp = \u22121, line: y = \u2212x. Which one of the following evaluates this?",
+      "correct": "The work is correct: gradient of join is (5\u22121)/(1\u2212(\u22123)) = 4/4 = 1; perpendicular gradient \u22121; through origin: y = \u2212x",
+      "correctExplanation": "All steps verified: gradient 1, perp \u22121, passes through (0,0).",
+      "distractors": [
+        {
+          "answer": "The gradient should be (1\u2212(\u22123))/(5\u22121) = 4/4 = 1, computed as run/rise, not rise/run, giving the wrong direction",
+          "explanation": "Both give 1 here since rise = run = 4; the formula is rise/run = 4/4 = 1 which matches."
+        },
+        {
+          "answer": "The perpendicular gradient should be +1 since the negative reciprocal of 1 is \u2212(1/1) = \u22121, not +1... wait, \u22121 is correct",
+          "explanation": "Negative reciprocal of 1 is indeed \u22121."
+        },
+        {
+          "answer": "The line should be y = x (positive slope) because perpendicular to positive gradient gives another positive gradient",
+          "explanation": "Negative reciprocal of positive 1 is \u22121 (negative)."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A student computes the perpendicular gradient of 5 as 1/5 (forgetting to negate). The error is omitting the {{blank:1}} step, so the correct answer is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negation",
+          "correctExplanation": "The negative reciprocal requires both inverting and negating.",
+          "distractors": [
+            {
+              "answer": "inversion",
+              "explanation": "The student did invert (1/5); they forgot to negate.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "squaring",
+              "explanation": "Squaring is not part of the negative reciprocal process.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121/5",
+          "correctExplanation": "Reciprocal of 5 is 1/5; negating gives \u22121/5.",
+          "distractors": [
+            {
+              "answer": "1/5",
+              "explanation": "This is the student's incorrect answer.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22125",
+              "explanation": "Negates without inverting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Lines with gradients 3/4 and 4/3 have product (3/4)(4/3) = {{blank:1}}. Since this does not equal \u22121, the lines are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "(3/4)(4/3) = 12/12 = 1.",
+          "distractors": [
+            {
+              "answer": "\u22121",
+              "explanation": "May forget that both are positive, giving positive product.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "May think fractions cancel differently.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "not perpendicular",
+          "correctExplanation": "Product 1 \u2260 \u22121, so the perpendicularity condition is not met.",
+          "distractors": [
+            {
+              "answer": "perpendicular",
+              "explanation": "Would require product = \u22121, not +1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "parallel",
+              "explanation": "Parallel requires equal gradients, which 3/4 and 4/3 are not.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "To prove ABCD is a rectangle, show AB is parallel to DC (both gradient 2) and AB is {{blank:1}} to AD (gradient product = {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "perpendicular",
+          "correctExplanation": "Adjacent sides of a rectangle are perpendicular.",
+          "distractors": [
+            {
+              "answer": "parallel",
+              "explanation": "Adjacent sides are perpendicular, not parallel.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equal",
+              "explanation": "Equal length is a different property.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121",
+          "correctExplanation": "Perpendicular gradients have product \u22121.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Product 0 means one is horizontal, not necessarily right angle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Product 1 is for positive reciprocals, not perpendicular.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The double negative reciprocal returns to the original: starting with m, first perpendicular gives {{blank:1}}, second perpendicular gives {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "\u22121/m",
+          "correctExplanation": "Negative reciprocal of m is \u22121/m.",
+          "distractors": [
+            {
+              "answer": "1/m",
+              "explanation": "Reciprocal without negating.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u2212m",
+              "explanation": "Negates without inverting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "m",
+          "correctExplanation": "Negative reciprocal of \u22121/m: \u22121/(\u22121/m) = m.",
+          "distractors": [
+            {
+              "answer": "\u2212m",
+              "explanation": "May not fully cancel the double negation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/m",
+              "explanation": "May only apply one inversion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A student checks perpendicularity of y = 2x + 1 and y = 2x \u2212 3 by computing 2 \u00d7 2 = 4. Since 4 \u2260 \u22121, they conclude not perpendicular. The deeper reason is that equal gradients means the lines are actually {{blank:1}}, making perpendicularity {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "parallel",
+          "correctExplanation": "Equal gradients means the lines are parallel.",
+          "distractors": [
+            {
+              "answer": "coincident",
+              "explanation": "Coincident requires same intercept too.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "perpendicular",
+              "explanation": "The opposite of what equal gradients indicate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "impossible",
+          "correctExplanation": "Parallel lines cannot be perpendicular to each other.",
+          "distractors": [
+            {
+              "answer": "guaranteed",
+              "explanation": "Parallel lines are the opposite of perpendicular.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "conditional",
+              "explanation": "It is absolutely impossible, not conditional.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Gradient of vertical line is {{blank:1}}. The perpendicular (horizontal) has gradient {{blank:2}}. The standard product rule fails here because it involves division by zero.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "undefined",
+          "correctExplanation": "Vertical lines have undefined (infinite) gradient.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Zero gradient is horizontal, not vertical.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Gradient 1 is a 45\u00b0 line, not vertical.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "Horizontal lines have gradient 0.",
+          "distractors": [
+            {
+              "answer": "undefined",
+              "explanation": "Undefined is the vertical line, not its perpendicular.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22121",
+              "explanation": "\u22121 is gradient of a specific line, not horizontal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Triangle PQR with gradient PQ = 2/3 and QR = \u22123/2 has a right angle at {{blank:1}} because (2/3)(\u22123/2) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "Q",
+          "correctExplanation": "Q is the shared vertex of sides PQ and QR; the right angle is at the meeting point.",
+          "distractors": [
+            {
+              "answer": "P",
+              "explanation": "P is only on side PQ, not at the junction of the tested sides.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "R",
+              "explanation": "R is only on side QR, not at the junction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "\u22121",
+          "correctExplanation": "(2/3)(\u22123/2) = \u22126/6 = \u22121, confirming perpendicularity.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "May forget the negative sign.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "\u22126",
+              "explanation": "May multiply numerators and denominators separately without simplifying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A student claims gradient \u22121 is its own negative reciprocal since \u2212(1/(\u22121)) = {{blank:1}}. This means a line with gradient \u22121 is perpendicular to any other line with gradient {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "\u2212(1/(\u22121)) = \u2212(\u22121) = 1.",
+          "distractors": [
+            {
+              "answer": "\u22121",
+              "explanation": "May think \u22121 is its own negative reciprocal, which is false.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Incorrect computation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Gradient \u22121 is perpendicular to gradient 1, since (\u22121)(1) = \u22121.",
+          "distractors": [
+            {
+              "answer": "\u22121",
+              "explanation": "(\u22121)(\u22121) = 1 \u2260 \u22121; not perpendicular to itself.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "(\u22121)(0) = 0 \u2260 \u22121.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "Comparing two proof methods for a parallelogram: Method A checks opposite-side {{blank:1}} equality; Method B checks diagonal {{blank:2}} coincidence.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "gradient",
+          "correctExplanation": "Equal gradients of opposite sides proves they are parallel.",
+          "distractors": [
+            {
+              "answer": "length",
+              "explanation": "Equal length of opposite sides proves parallelogram too, but gradient is the slope method.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "intercept",
+              "explanation": "Intercept equality does not prove parallelism.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "midpoint",
+          "correctExplanation": "If diagonals share the same midpoint, they bisect each other \u2192 parallelogram.",
+          "distractors": [
+            {
+              "answer": "gradient",
+              "explanation": "Diagonal gradient equality doesn't prove parallelogram.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "length",
+              "explanation": "Equal diagonal length indicates rectangle, not parallelogram specifically.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "The altitude from A to BC in a triangle is perpendicular to {{blank:1}} and passes through vertex {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "BC",
+          "correctExplanation": "An altitude from A is perpendicular to the opposite side BC.",
+          "distractors": [
+            {
+              "answer": "AB",
+              "explanation": "Perpendicular to AB would be the altitude from C, not A.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "AC",
+              "explanation": "Perpendicular to AC would be the altitude from B, not A.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "A",
+          "correctExplanation": "The altitude from A passes through A and meets BC at a right angle.",
+          "distractors": [
+            {
+              "answer": "B",
+              "explanation": "B is on the base BC, not the vertex from which this altitude drops.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "C",
+              "explanation": "C is on the base BC.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A perpendicular from a point to a line gives the {{blank:1}} distance from the point to the line. The gradient of this perpendicular segment is the negative {{blank:2}} of the line's gradient.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "shortest",
+          "correctExplanation": "The perpendicular distance is the minimum distance from a point to a line.",
+          "distractors": [
+            {
+              "answer": "longest",
+              "explanation": "Perpendicular gives minimum, not maximum distance.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "average",
+              "explanation": "There is no concept of average distance to a line from a point.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "reciprocal",
+          "correctExplanation": "Perpendicular gradient = negative reciprocal of the line's gradient.",
+          "distractors": [
+            {
+              "answer": "multiple",
+              "explanation": "No multiplication rule applies here.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "square",
+              "explanation": "Squaring is not part of the perpendicular relationship.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "If AB has gradient m and the perpendicular bisector has gradient {{blank:1}}, then any point on the bisector is equidistant from {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "\u22121/m",
+          "correctExplanation": "Perpendicular bisector has gradient equal to the negative reciprocal of the segment.",
+          "distractors": [
+            {
+              "answer": "m",
+              "explanation": "Same gradient would be parallel to AB, not perpendicular.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/m",
+              "explanation": "Reciprocal without negating.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "A and B",
+          "correctExplanation": "The perpendicular bisector is the locus of points equidistant from both endpoints.",
+          "distractors": [
+            {
+              "answer": "the origin",
+              "explanation": "Equidistance from the origin is a circle, not related to the bisector.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "the midpoint",
+              "explanation": "Distance from the midpoint is not what the bisector preserves; it preserves equal distance to both endpoints.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}
