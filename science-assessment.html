@@ -112,14 +112,7 @@ main { max-width: 860px; margin: 0 auto; padding: 24px 20px; }
 .test-progress { font-size: 13px; color: var(--text2); text-align: right; }
 .test-progress strong { color: var(--text); }
 
-.progress-track {
-  height: 6px; background: var(--surface2); border-radius: 3px;
-  overflow: hidden; margin-bottom: 24px;
-}
-.progress-track-fill {
-  height: 100%; background: var(--accent); border-radius: 3px;
-  transition: width 0.4s ease;
-}
+
 
 .question-container {
   opacity: 1; transition: opacity 0.35s ease;
@@ -456,14 +449,10 @@ main { max-width: 860px; margin: 0 auto; padding: 24px 20px; }
     <div class="test-header">
       <div class="test-meta">
         <div class="test-strand" id="testStrand"></div>
-        <div class="test-level" id="testLevel"></div>
       </div>
       <div class="test-progress">
-        Question <strong id="testCurrent">1</strong> of ~<strong id="testTotal">0</strong>
+        Question <strong id="testCurrent">1</strong>
       </div>
-    </div>
-    <div class="progress-track">
-      <div class="progress-track-fill" id="progressFill" style="width:0%"></div>
     </div>
     <div class="question-container" id="questionContainer"></div>
     <div class="confirm-area">
@@ -669,18 +658,16 @@ function trimPool(pool, target) {
   if (pool.length <= target) return [...pool];
   const trimmed = [...pool];
   while (trimmed.length > target) {
-    // Count per strand
     const counts = {};
     trimmed.forEach(q => {
       const key = q.strand + '|' + q.level + '|' + q.bloomLevel;
       counts[key] = (counts[key] || 0) + 1;
     });
-    // Find the group with the most questions
     let maxKey = null, maxCount = 0;
     for (const [key, count] of Object.entries(counts)) {
       if (count > maxCount) { maxCount = count; maxKey = key; }
     }
-    // Remove a random question from that group
+    if (maxCount <= 1) break;
     const candidates = [];
     trimmed.forEach((q, i) => {
       const key = q.strand + '|' + q.level + '|' + q.bloomLevel;
@@ -745,9 +732,13 @@ function renderConfigureView(total) {
   html += '<div class="configure-stat" style="border-top:2px solid var(--border);padding-top:12px;margin-top:4px"><span class="label" style="font-weight:700;color:var(--text)">Total</span><span class="value" style="font-size:18px">' + configurePool.length + '</span></div>';
   document.getElementById('configureBreakdown').innerHTML = html;
 
+  const groups = new Set();
+  configurePool.forEach(q => groups.add(q.strand + '|' + q.level + '|' + q.bloomLevel));
+  const minQuestions = Math.min(groups.size, configurePool.length);
+
   const slider = document.getElementById('trimSlider');
   slider.max = configurePool.length;
-  slider.min = Math.min(configureStrands.length, configurePool.length);
+  slider.min = minQuestions;
   slider.value = configurePool.length;
   document.getElementById('trimValue').textContent = configurePool.length;
   updateTrimTime(configurePool.length);
@@ -855,10 +846,7 @@ function renderQuestion() {
   state.clozeSelections = {};
 
   document.getElementById('testStrand').textContent = item.strand;
-  document.getElementById('testLevel').textContent = (item.level === 8 ? 'Levels 7-8' : 'Levels 9-10') + ' — ' + BLOOMS_LABELS[item.bloomLevel];
   document.getElementById('testCurrent').textContent = state.responses.length + 1;
-  const pct = Math.round((state.responses.length / state.estimatedTotal) * 100);
-  document.getElementById('progressFill').style.width = Math.min(pct, 100) + '%';
 
   const container = document.getElementById('questionContainer');
   const confirmBtn = document.getElementById('confirmBtn');
