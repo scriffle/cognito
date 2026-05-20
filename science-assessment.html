@@ -429,7 +429,7 @@ main { max-width: 860px; margin: 0 auto; padding: 24px 20px; }
         <h3>Question Breakdown</h3>
         <div id="configureBreakdown"></div>
         <div class="trim-control">
-          <label>Adjust total questions</label>
+          <label>Starting questions (more may follow as the student advances)</label>
           <div class="trim-row">
             <input type="range" class="trim-slider" id="trimSlider" min="4" max="100" value="100">
             <span class="trim-value" id="trimValue">100</span>
@@ -845,7 +845,7 @@ function getNextQueue(strands, level, bloomLevel) {
     const filtered = state.fullPool.filter(q =>
       strands.includes(q.strand) && q.level === level && q.bloomLevel === bloomLevel
     );
-    return interleaveByStrand(filtered);
+    if (filtered.length > 0) return interleaveByStrand(filtered);
   }
   return interleaveByStrand(buildBloomQueue(strands, level, bloomLevel));
 }
