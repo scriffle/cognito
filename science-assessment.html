@@ -1237,14 +1237,6 @@ window.addEventListener('blur', () => heldKeys.clear());
 function checkShortcut() {
   if (!state || state.finished) return;
 
-  if (heldKeys.has('1') && heldKeys.has('2') && heldKeys.has('3')) {
-    heldKeys.clear();
-    state.finished = true;
-    state.endTime = Date.now();
-    showView('viewComplete');
-    return;
-  }
-
   if (state.currentIndex >= state.queue.length) return;
 
   if (heldKeys.has('q') && heldKeys.has('w') && heldKeys.has('e')) {
