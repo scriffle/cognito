@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10AA07",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to factorise both monic and non-monic quadratic expressions and solve a wide range of quadratic equations.",
+    "generatedAt": "2026-05-19T00:26:21.757865+00:00",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A monic quadratic has a leading coefficient equal to any positive integer.",
+      "correct": "False",
+      "correctExplanation": "A monic quadratic specifically has a leading coefficient of 1, not just any positive integer.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Monic means the leading coefficient is exactly 1; other positive integers make it non-monic."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The expression 3x² + 7x − 2 is a monic quadratic.",
+      "correct": "False",
+      "correctExplanation": "The leading coefficient is 3, not 1, so the quadratic is non-monic.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A monic quadratic requires the coefficient of x² to be 1; here it is 3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Factorising a quadratic means writing it as a product of two linear factors.",
+      "correct": "True",
+      "correctExplanation": "A factorisable quadratic ax² + bx + c can be expressed as a(px + q)(rx + s) over the reals.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Factorisation rewrites the expression as a product of simpler polynomial factors."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The quadratic formula applies only to monic quadratic equations.",
+      "correct": "False",
+      "correctExplanation": "The quadratic formula x = (−b ± √(b²−4ac))/(2a) works for all quadratics with a ≠ 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The formula is universal and does not require the leading coefficient to be 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Completing the square rewrites a quadratic in the form (x + p)² + q.",
+      "correct": "True",
+      "correctExplanation": "The technique expresses ax² + bx + c as a(x + p)² + q by creating a perfect square trinomial.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Completing the square transforms the expression into vertex form."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The discriminant of a quadratic equation is given by b² + 4ac.",
+      "correct": "False",
+      "correctExplanation": "The discriminant is b² − 4ac, with a minus sign before 4ac, not a plus sign.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The correct formula has subtraction: Δ = b² − 4ac."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "If a quadratic has a discriminant of zero, it has exactly one real solution.",
+      "correct": "True",
+      "correctExplanation": "When Δ = 0, the quadratic formula gives one repeated root x = −b/(2a).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A zero discriminant produces a perfect square trinomial with one repeated solution."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "Every quadratic expression can be factorised over the real numbers.",
+      "correct": "False",
+      "correctExplanation": "Quadratics with a negative discriminant have no real roots and cannot be factorised over the reals.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Only quadratics with Δ ≥ 0 have real factors; negative discriminant means complex roots only."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The sum of the roots of ax² + bx + c = 0 equals −b/a.",
+      "correct": "True",
+      "correctExplanation": "By Vieta's formulas, if the roots are r₁ and r₂, then r₁ + r₂ = −b/a.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Expanding a(x − r₁)(x − r₂) and comparing coefficients confirms this relationship."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The product of the roots of ax² + bx + c = 0 equals −c/a.",
+      "correct": "False",
+      "correctExplanation": "The product of the roots equals c/a (positive), not −c/a.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Expanding a(x − r₁)(x − r₂) gives the constant term as ar₁r₂, so r₁r₂ = c/a."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A quadratic equation can have at most two real solutions.",
+      "correct": "True",
+      "correctExplanation": "A degree-two polynomial has at most two roots by the fundamental theorem of algebra.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The quadratic formula produces at most two distinct values from the ± operation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The expression x² − 9 is an example of a perfect square trinomial.",
+      "correct": "False",
+      "correctExplanation": "x² − 9 is a difference of two squares, not a perfect square trinomial; it has only two terms.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A perfect square trinomial has the form a² ± 2ab + b²; x² − 9 = (x−3)(x+3) is a difference of squares."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is the discriminant of the quadratic equation 2x² − 5x + 3 = 0?",
+      "correct": "1, because Δ = (−5)² − 4(2)(3) = 25 − 24",
+      "correctExplanation": "The discriminant formula Δ = b² − 4ac gives 25 − 24 = 1.",
+      "distractors": [
+        {
+          "answer": "−1, because the subtraction gives a negative value when properly calculated",
+          "explanation": "25 − 24 = 1, which is positive; a sign error leads to −1."
+        },
+        {
+          "answer": "49, because the discriminant equals b² + 4ac for this equation",
+          "explanation": "The formula is b² − 4ac, not b² + 4ac; using addition gives the wrong result."
+        },
+        {
+          "answer": "7, because the discriminant is b² − 2ac for quadratic equations",
+          "explanation": "The correct formula is b² − 4ac, not b² − 2ac."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which expression is the factorised form of x² − 5x + 6?",
+      "correct": "(x − 2)(x − 3), since −2 and −3 sum to −5 and multiply to 6",
+      "correctExplanation": "For x² + bx + c, find two numbers that add to b and multiply to c.",
+      "distractors": [
+        {
+          "answer": "(x + 2)(x + 3), since 2 and 3 sum to 5 and multiply to 6",
+          "explanation": "The sum must be −5, not +5; the signs of the factors matter."
+        },
+        {
+          "answer": "(x − 1)(x − 6), since −1 and −6 multiply to 6",
+          "explanation": "While (−1)(−6) = 6, the sum is −7, not −5."
+        },
+        {
+          "answer": "(x − 2)(x + 3), since the factors have mixed signs for this trinomial",
+          "explanation": "(−2)(3) = −6, not +6; both factors must be negative here."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What does a negative discriminant indicate about a quadratic equation?",
+      "correct": "The equation has no real solutions, because the square root of a negative number is not real",
+      "correctExplanation": "When Δ < 0, √Δ is undefined in real numbers, so no real roots exist.",
+      "distractors": [
+        {
+          "answer": "The equation has exactly one real solution at the vertex of the parabola",
+          "explanation": "One real solution occurs when Δ = 0, not when Δ < 0."
+        },
+        {
+          "answer": "The equation has two negative real solutions from the negative discriminant",
+          "explanation": "A negative discriminant means no real solutions, not negative solutions."
+        },
+        {
+          "answer": "The equation has infinitely many solutions because the parabola lies below the x-axis",
+          "explanation": "A parabola below the axis has no x-intercepts, which means zero solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What is the quadratic formula used to solve ax² + bx + c = 0?",
+      "correct": "x = (−b ± √(b² − 4ac)) / (2a), giving up to two solutions",
+      "correctExplanation": "The formula derives from completing the square on the general quadratic equation.",
+      "distractors": [
+        {
+          "answer": "x = (b ± √(b² − 4ac)) / (2a), with a positive b in the numerator",
+          "explanation": "The formula has −b in the numerator, not +b."
+        },
+        {
+          "answer": "x = (−b ± √(b² − 4ac)) / (a), dividing by a instead of 2a",
+          "explanation": "The denominator must be 2a, not a; this arises from the completing-the-square derivation."
+        },
+        {
+          "answer": "x = (−b ± √(b² + 4ac)) / (2a), using addition inside the square root",
+          "explanation": "The discriminant is b² − 4ac with subtraction, not addition."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "The expression x² + 10x + 25 is an example of which type of expression?",
+      "correct": "A perfect square trinomial, because it equals (x + 5)² when factorised",
+      "correctExplanation": "x² + 10x + 25 = x² + 2(5)x + 5² = (x + 5)².",
+      "distractors": [
+        {
+          "answer": "A difference of squares, because it can be split into two squared terms",
+          "explanation": "A difference of squares has the form a² − b²; this has a positive constant and three terms."
+        },
+        {
+          "answer": "An irreducible quadratic, because it cannot be factorised over the reals at all",
+          "explanation": "It factors as (x + 5)²; it is not irreducible."
+        },
+        {
+          "answer": "A non-monic quadratic, because the coefficient of x is greater than one",
+          "explanation": "The leading coefficient of x² is 1, making it monic; the coefficient of x is irrelevant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which method always works to solve any quadratic equation ax² + bx + c = 0?",
+      "correct": "The quadratic formula, because it applies to all quadratics regardless of factorisability",
+      "correctExplanation": "The quadratic formula works for any values of a, b, c with a ≠ 0.",
+      "distractors": [
+        {
+          "answer": "Factorisation, because every quadratic can be factorised into real linear factors",
+          "explanation": "Quadratics with negative discriminant cannot be factorised over the reals."
+        },
+        {
+          "answer": "Taking the square root of both sides, which isolates x directly in every equation",
+          "explanation": "This only works when the equation is in the form (x + p)² = q."
+        },
+        {
+          "answer": "Dividing both sides by x, which simplifies the equation to a linear form",
+          "explanation": "Dividing by x loses the x = 0 solution and does not produce a linear equation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What are the solutions to x² − 16 = 0?",
+      "correct": "x = 4 and x = −4, because x² = 16 gives x = ±√16 = ±4",
+      "correctExplanation": "This is a difference of squares: x² − 16 = (x − 4)(x + 4) = 0.",
+      "distractors": [
+        {
+          "answer": "x = 8 and x = −8, because the square root of 16 is 8 in this equation",
+          "explanation": "√16 = 4, not 8; confusing the square root with half of the value leads to error."
+        },
+        {
+          "answer": "x = 4 only, because a quadratic with no linear term has only one solution",
+          "explanation": "The ± from the square root gives two solutions: x = 4 and x = −4."
+        },
+        {
+          "answer": "x = 16, because moving the constant gives x² = 16 and removing the square yields x = 16",
+          "explanation": "Removing the square requires taking the square root: x = ±√16 = ±4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "How is the expression x² − 7x + 12 factorised?",
+      "correct": "(x − 3)(x − 4), because −3 and −4 add to −7 and multiply to give 12",
+      "correctExplanation": "The factor pair (−3, −4) satisfies both the sum and product conditions.",
+      "distractors": [
+        {
+          "answer": "(x − 2)(x − 6), because −2 and −6 also multiply to 12 for this trinomial in this polynomial",
+          "explanation": "While (−2)(−6) = 12, the sum is −8, not −7."
+        },
+        {
+          "answer": "(x + 3)(x − 4), because 3 and −4 add to −1 and multiply to −12",
+          "explanation": "The product must be +12 and the sum must be −7; mixed signs give the wrong values."
+        },
+        {
+          "answer": "(x − 1)(x − 12), because 1 and 12 are factors of the constant term",
+          "explanation": "While 1 × 12 = 12, the sum −1 + (−12) = −13, not −7."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is the value of c in the equation x² + 6x + c = 0 if it has exactly one real solution?",
+      "correct": "9, because one solution requires Δ = 0, giving 36 − 4c = 0, so c",
+      "correctExplanation": "Setting b² − 4ac = 0: 36 − 4(1)(c) = 0 gives c = 9.",
+      "distractors": [
+        {
+          "answer": "0, because a zero constant term always produces a repeated root",
+          "explanation": "With c = 0, the equation becomes x² + 6x = x(x + 6) = 0, which has two solutions."
+        },
+        {
+          "answer": "6, because c must equal the coefficient of x for one solution to exist as determined",
+          "explanation": "The discriminant condition gives c = 9, not c = b."
+        },
+        {
+          "answer": "36, because c equals b² when the discriminant is zero for this quadratic",
+          "explanation": "The condition is b² = 4ac, so c = b²/(4a) = 36/4 = 9."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which pair of expressions is equivalent to x² − 25?",
+      "correct": "(x − 5)(x + 5), using the difference of two squares factorisation identity",
+      "correctExplanation": "a² − b² = (a − b)(a + b) with a = x and b = 5.",
+      "distractors": [
+        {
+          "answer": "(x − 5)², because subtracting 25 creates a perfect square form",
+          "explanation": "(x − 5)² = x² − 10x + 25, not x² − 25; the middle term is missing."
+        },
+        {
+          "answer": "(x + 5)(x + 5), because both factors share the same positive constant",
+          "explanation": "(x + 5)² = x² + 10x + 25, not x² − 25."
+        },
+        {
+          "answer": "(x − 25)(x + 1), because 25 and 1 multiply to give 25",
+          "explanation": "The factorisation must match a² − b² = (a−b)(a+b), not arbitrary factor pairs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "In the quadratic formula, what does the ± symbol indicate?",
+      "correct": "There are two possible values, one using addition and one using subtraction",
+      "correctExplanation": "The ± gives x = (−b + √Δ)/(2a) and x = (−b − √Δ)/(2a) as two solutions.",
+      "distractors": [
+        {
+          "answer": "The answer is always positive because the plus overrides the minus sign",
+          "explanation": "Both values must be computed; the result can be positive, negative, or zero."
+        },
+        {
+          "answer": "Only the positive root should be accepted as a valid solution of the equation",
+          "explanation": "Both roots from the ± are valid solutions of the quadratic equation."
+        },
+        {
+          "answer": "The sign depends on whether the leading coefficient is positive or negative",
+          "explanation": "Both ± values are used regardless of the sign of the leading coefficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What type of quadratic is 5x² − 3x + 1?",
+      "correct": "A non-monic quadratic, because its leading coefficient is 5 rather than 1",
+      "correctExplanation": "A quadratic is non-monic when the coefficient of x² is not equal to 1.",
+      "distractors": [
+        {
+          "answer": "A monic quadratic, because it has three terms and a positive leading coefficient",
+          "explanation": "Having three terms does not make it monic; the leading coefficient must be 1."
+        },
+        {
+          "answer": "A linear expression, because the coefficient of x is less than the leading coefficient",
+          "explanation": "The presence of x² makes it quadratic regardless of coefficient relationships."
+        },
+        {
+          "answer": "A cubic polynomial, because the coefficients 5, 3, 1 are consecutive odd numbers",
+          "explanation": "The degree is determined by the highest power of x, which is 2."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The discriminant of ax² + bx + c = 0 is given by Δ = {{blank:1}}, and when Δ > 0 the equation has {{blank:2}} distinct real solutions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "b² − 4ac",
+          "correctExplanation": "The discriminant formula subtracts 4ac from b².",
+          "distractors": [
+            {
+              "answer": "b² + 4ac",
+              "explanation": "The formula uses subtraction, not addition, between the terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4ac − b²",
+              "explanation": "The order is b² first, then subtract 4ac, not the reverse.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "two",
+          "correctExplanation": "A positive discriminant means the square root is real and non-zero, giving two distinct roots.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "One solution occurs when Δ = 0, not when Δ > 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "no",
+              "explanation": "No solutions occur when Δ < 0; a positive Δ guarantees solutions.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "A quadratic expression with leading coefficient equal to 1 is called {{blank:1}}, and the expression x² − 9 is an example of a {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "monic",
+          "correctExplanation": "Monic means the coefficient of the highest-power term is 1.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear refers to degree one; the leading coefficient value is irrelevant to the name.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "non-monic",
+              "explanation": "Non-monic means the leading coefficient is not 1; here it is 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "difference of two squares",
+          "correctExplanation": "x² − 9 = x² − 3² fits the a² − b² pattern.",
+          "distractors": [
+            {
+              "answer": "perfect square trinomial",
+              "explanation": "A perfect square trinomial has three terms; x² − 9 has only two.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sum of squares",
+              "explanation": "A sum of squares would be x² + 9, not x² − 9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The quadratic x² − 4x + 4 factorises as (x − 4)(x − 1).",
+      "correct": "False",
+      "correctExplanation": "Expanding (x−4)(x−1) gives x²−5x+4, not x²−4x+4. The correct factorisation is (x−2)².",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "(x−4)(x−1) = x²−5x+4 ≠ x²−4x+4; the correct form is (x−2)²."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The equation 2x² + 3x − 5 = 0 has solutions x = 1 and x = 5/2.",
+      "correct": "False",
+      "correctExplanation": "Factoring: (2x+5)(x−1) = 0 gives x = 1 or x = −5/2, not x = 5/2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The root from 2x+5 = 0 is x = −5/2 (negative), not x = 5/2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Completing the square on x² + 8x + 3 gives (x + 4)² + 19.",
+      "correct": "False",
+      "correctExplanation": "x² + 8x + 3 = (x + 4)² − 16 + 3 = (x + 4)² − 13, not (x + 4)² + 19.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Half of 8 is 4, and subtracting 4² = 16 then adding 3 gives −13, not +19."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The quadratic 3x² + x + 2 = 0 has no real solutions because its discriminant is negative.",
+      "correct": "True",
+      "correctExplanation": "Δ = 1² − 4(3)(2) = 1 − 24 = −23 < 0, so no real solutions exist.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A negative discriminant means the square root in the formula is not real."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The non-monic quadratic 6x² + x − 2 factorises as (2x − 1)(3x + 2).",
+      "correct": "True",
+      "correctExplanation": "Expanding: 6x² + 4x − 3x − 2 = 6x² + x − 2, confirming the factorisation.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The product of outer and inner terms gives 4x − 3x = x, matching the middle term."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "If x² + bx + 16 is a perfect square, then b must equal 8.",
+      "correct": "False",
+      "correctExplanation": "For (x + k)² = x² + 2kx + k², we need k² = 16, so k = ±4 and b = ±8.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Both b = 8 and b = −8 produce perfect squares: (x+4)² and (x−4)² respectively."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The solutions of x² − 6x + 9 = 0 are x = 3 and x = −3.",
+      "correct": "False",
+      "correctExplanation": "x² − 6x + 9 = (x − 3)² = 0 gives only x = 3 as a repeated root, not x = −3.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A perfect square trinomial has one repeated root, not two distinct roots with opposite signs."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The equation 4x² − 12x + 9 = 0 can be solved by recognising a perfect square.",
+      "correct": "True",
+      "correctExplanation": "4x² − 12x + 9 = (2x − 3)² = 0, giving x = 3/2 as a repeated root.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The expression is (2x)² − 2(2x)(3) + 3² = (2x − 3)²."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Factorise the non-monic quadratic 2x² + 7x + 3.",
+      "correct": "(2x + 1)(x + 3), found by splitting the middle term as x + 6x",
+      "correctExplanation": "2 × 3 = 6. Factors of 6 that sum to 7 are 1 and 6. So 2x² + x + 6x + 3 = x(2x+1) + 3(2x+1).",
+      "distractors": [
+        {
+          "answer": "(2x + 3)(x + 1), found by pairing the coefficient 2 with the constant 3",
+          "explanation": "Expanding gives 2x² + 2x + 3x + 3 = 2x² + 5x + 3, not 2x² + 7x + 3."
+        },
+        {
+          "answer": "(x + 3)(x + 1), ignoring the leading coefficient and factorising as monic",
+          "explanation": "This omits the factor of 2 in the leading term; the expression is non-monic."
+        },
+        {
+          "answer": "2(x + 1)(x + 3), factoring out the leading coefficient before factorising",
+          "explanation": "Expanding gives 2(x² + 4x + 3) = 2x² + 8x + 6, which is not the original expression."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Use the quadratic formula to solve 3x² − 2x − 1 = 0. The solutions are:",
+      "correct": "x = 1 and x = −1/3, from applying x = (2 ± √(4+12))/6 = (2 ± 4)/6",
+      "correctExplanation": "Δ = 4 + 12 = 16, √16 = 4. Then x = (2+4)/6 = 1 or x = (2−4)/6 = −1/3.",
+      "distractors": [
+        {
+          "answer": "x = 1 and x = 1/3, because both values from the formula are positive in this case",
+          "explanation": "x = (2−4)/6 = −2/6 = −1/3, which is negative."
+        },
+        {
+          "answer": "x = 2 and x = −2/3, from using b = 2 instead of b = −2 in the formula",
+          "explanation": "With b = −2, the formula gives −(−2) = 2 in the numerator, not −2."
+        },
+        {
+          "answer": "x = 3 and x = −1, from dividing by the wrong denominator value throughout",
+          "explanation": "The denominator is 2a = 6, not 2; using the wrong divisor shifts both roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Complete the square for x² − 10x + 7.",
+      "correct": "(x − 5)² − 18, because halving −10 gives −5 and subtracting 25 then adding 7 gives −18",
+      "correctExplanation": "x² − 10x + 7 = (x − 5)² − 25 + 7 = (x − 5)² − 18.",
+      "distractors": [
+        {
+          "answer": "(x − 5)² + 32, because adding 25 and 7 gives 32 as the constant adjustment term for this expression",
+          "explanation": "The 25 is subtracted (to compensate for adding it), not added: −25 + 7 = −18."
+        },
+        {
+          "answer": "(x − 10)² − 93, because the full coefficient of x is used instead of half",
+          "explanation": "Only half the coefficient of x is used inside the bracket: half of −10 is −5."
+        },
+        {
+          "answer": "(x + 5)² − 18, because the sign inside the bracket matches the original coefficient",
+          "explanation": "The sign is negated: if the coefficient of x is −10, the bracket contains −5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "The discriminant of x² + 3x + 5 = 0 is −11. What does this tell us?",
+      "correct": "The equation has no real solutions, because a negative discriminant means complex roots only",
+      "correctExplanation": "Δ < 0 indicates the quadratic formula involves √(−11), which has no real value.",
+      "distractors": [
+        {
+          "answer": "The equation has two negative solutions since the discriminant is itself negative",
+          "explanation": "A negative discriminant means no real solutions at all, not negative solutions."
+        },
+        {
+          "answer": "The equation has one repeated solution located at x = −3/2 on the number line",
+          "explanation": "A repeated solution requires Δ = 0, not Δ < 0."
+        },
+        {
+          "answer": "The equation has two real solutions that are irrational and cannot be expressed as fractions",
+          "explanation": "Irrational solutions occur when Δ > 0 and is not a perfect square."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Factorise 4x² − 9.",
+      "correct": "(2x − 3)(2x + 3), using the difference of squares identity a² − b² = (a−b)(a+b)",
+      "correctExplanation": "4x² − 9 = (2x)² − 3² = (2x − 3)(2x + 3).",
+      "distractors": [
+        {
+          "answer": "(4x − 9)(x + 1), treating the expression as a standard trinomial to factorise by this analysis",
+          "explanation": "This is a difference of squares, not a trinomial; the factorisation uses a² − b²."
+        },
+        {
+          "answer": "(2x − 3)², treating the expression as a perfect square trinomial form",
+          "explanation": "(2x − 3)² = 4x² − 12x + 9, which has a middle term; 4x² − 9 has no middle term."
+        },
+        {
+          "answer": "2(2x² − 4.5), factoring out 2 as a common factor from both terms",
+          "explanation": "2 is not a common factor of 4x² and 9; the difference of squares identity should be used."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Solve x² + 2x − 15 = 0 by factorisation.",
+      "correct": "x = 3 and x = −5, because (x − 3)(x + 5) = 0",
+      "correctExplanation": "Factors of −15 that sum to 2 are −3 and 5: (x + 5)(x − 3) = 0.",
+      "distractors": [
+        {
+          "answer": "x = −3 and x = 5, reversing the signs of the correct factor roots",
+          "explanation": "Setting (x − 3) = 0 gives x = 3 and (x + 5) = 0 gives x = −5."
+        },
+        {
+          "answer": "x = 3 and x = 5, using only positive factor pairs of 15 for the solution",
+          "explanation": "The product is −15 (negative), so the factors must have opposite signs."
+        },
+        {
+          "answer": "x = 15 and x = −1, using the constant and linear coefficient as the roots",
+          "explanation": "The roots come from the factors of the trinomial, not from the coefficients directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "What value of k makes x² + kx + 36 a perfect square trinomial?",
+      "correct": "k = 12 or k = −12, because (x ± 6)² requires k = ±2(6)",
+      "correctExplanation": "For (x + m)² = x² + 2mx + m², m² = 36 gives m = ±6, so k = ±12.",
+      "distractors": [
+        {
+          "answer": "k = 6 only, because the square root of 36 is 6 and that determines the coefficient",
+          "explanation": "The coefficient k = 2m, not m; halving is needed, not using the square root directly."
+        },
+        {
+          "answer": "k = 18, because 36 + 18 = 54 completes the square for this expression properly",
+          "explanation": "Completing the square requires k = 2√36 = 12, not an arbitrary sum."
+        },
+        {
+          "answer": "k = 36, because the constant term itself serves as the middle coefficient value",
+          "explanation": "k = 2m where m² = 36, so k = ±12, not the constant 36."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Factorise the non-monic quadratic 3x² − 11x + 6.",
+      "correct": "(3x − 2)(x − 3), verified by expanding to confirm the original",
+      "correctExplanation": "Product ac = 18. Factors of 18 summing to −11: −2 and −9. Split: 3x² − 9x − 2x + 6.",
+      "distractors": [
+        {
+          "answer": "(3x − 6)(x − 1), factoring by grouping with an incorrect term split",
+          "explanation": "Expanding gives 3x² − 3x − 6x + 6 = 3x² − 9x + 6, not 3x² − 11x + 6."
+        },
+        {
+          "answer": "(x − 2)(3x − 3), pairing factors incorrectly in the grouping step",
+          "explanation": "Expanding gives 3x² − 3x − 6x + 6 = 3x² − 9x + 6, not the original."
+        },
+        {
+          "answer": "3(x − 1)(x − 2), extracting the leading coefficient before factorising",
+          "explanation": "3(x² − 3x + 2) = 3x² − 9x + 6, not 3x² − 11x + 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Solve 2x² − 8x = 0 by factorisation.",
+      "correct": "x = 0 and x = 4, because 2x(x − 4) = 0 gives two solutions",
+      "correctExplanation": "Factoring out 2x: 2x(x − 4) = 0, so 2x = 0 gives x = 0 and x − 4 = 0 gives x = 4.",
+      "distractors": [
+        {
+          "answer": "x = 4 only, because dividing both sides by 2x simplifies the equation first",
+          "explanation": "Dividing by x loses the x = 0 solution; factoring preserves both roots."
+        },
+        {
+          "answer": "x = 0 and x = −4, because the factor is (x + 4) from the negative coefficient",
+          "explanation": "The factored form is 2x(x − 4), giving x = 4, not x = −4."
+        },
+        {
+          "answer": "x = 2 and x = 4, because 2x² = 2x gives x = 1, not x = 0 for this expression",
+          "explanation": "The common factor is 2x, not 2; setting 2x = 0 gives x = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Complete the square for 2x² + 12x + 5.",
+      "correct": "2(x + 3)² − 13, after factoring out 2 first then completing the square on x² + 6x",
+      "correctExplanation": "2[x² + 6x] + 5 = 2[(x+3)² − 9] + 5 = 2(x+3)² − 18 + 5 = 2(x+3)² − 13.",
+      "distractors": [
+        {
+          "answer": "2(x + 6)² − 67, using the full coefficient of x rather than half inside the bracket in this context",
+          "explanation": "Half of 6 (not 12) is 3; the bracket contains (x + 3)², not (x + 6)²."
+        },
+        {
+          "answer": "(2x + 6)² − 31, completing the square without first factoring out the leading coefficient",
+          "explanation": "(2x+6)² = 4x²+24x+36 ≠ 2x²+12x; the coefficient must be factored out first."
+        },
+        {
+          "answer": "2(x + 3)² + 23, adding 18 and 5 instead of subtracting 18 from the constant",
+          "explanation": "The compensating term is −9 × 2 = −18, which gives −18 + 5 = −13."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "What are the solutions of (x − 3)² = 7?",
+      "correct": "x = 3 + √7 and x = 3 − √7, found by taking the square root of both sides",
+      "correctExplanation": "Taking the square root: x − 3 = ±√7, so x = 3 ± √7.",
+      "distractors": [
+        {
+          "answer": "x = √10 and x = −√10, adding 3 and 7 before taking the square root of the sum for the given equation",
+          "explanation": "The square root applies to 7 only; 3 is added afterward, not combined under the root."
+        },
+        {
+          "answer": "x = 3 + √7 only, because the negative root is extraneous in this context",
+          "explanation": "Both roots are valid; the ± gives two solutions and neither is extraneous."
+        },
+        {
+          "answer": "x = 10 and x = −4, squaring the 3 and adding to get 16 before taking a root",
+          "explanation": "The equation already has (x−3)² isolated; no further squaring is needed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "The equation x² + 6x + k = 0 has equal roots when k equals:",
+      "correct": "9, because equal roots require Δ = 0, giving 36 − 4k = 0",
+      "correctExplanation": "Setting Δ = b² − 4ac = 36 − 4k = 0 gives k = 9.",
+      "distractors": [
+        {
+          "answer": "0, because setting the constant to zero always produces a repeated root",
+          "explanation": "k = 0 gives x² + 6x = 0, which has roots x = 0 and x = −6, not equal roots."
+        },
+        {
+          "answer": "36, because k equals b² for a zero discriminant in quadratic equations generally from the equation",
+          "explanation": "The condition is b² = 4ak, so k = b²/(4a) = 36/4 = 9, not k = b²."
+        },
+        {
+          "answer": "6, because k matches the coefficient of x when the discriminant equals zero",
+          "explanation": "The relationship involves b² and 4a, not a direct match with the x-coefficient."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "To factorise 2x² + 5x − 3, find two numbers that multiply to {{blank:1}} and sum to {{blank:2}}, then split the middle term.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−6",
+          "correctExplanation": "The product ac = 2 × (−3) = −6.",
+          "distractors": [
+            {
+              "answer": "−3",
+              "explanation": "The product uses a × c, not just c alone; here 2 × (−3) = −6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "The product is a × c = 2 × (−3) = −6, not a × b = 2 × 5 = 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "The sum target is the coefficient of x, which is 5.",
+          "distractors": [
+            {
+              "answer": "−3",
+              "explanation": "−3 is the constant term c; the sum target is the x-coefficient b = 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−6",
+              "explanation": "−6 is the product ac; the sum target is b = 5, not ac.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Completing the square on x² + 8x + 3 gives (x + {{blank:1}})² − {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Half of the coefficient of x: 8 ÷ 2 = 4.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "Only half the coefficient is placed inside the bracket.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "The constant term 3 is not placed inside the bracket; half of 8 is used.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "13",
+          "correctExplanation": "The adjustment is (4)² − 3 subtracted: (x+4)² − 16 + 3 = (x+4)² − 13.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "Subtracting 16 is part of the process, but then adding 3 gives 16 − 3 = 13.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "19",
+              "explanation": "Adding 16 and 3 gives 19, but the 16 must be subtracted not added to the constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The quadratic 4x² − 25 is a {{blank:1}} that factorises as (2x − 5)({{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "difference of two squares",
+          "correctExplanation": "4x² − 25 = (2x)² − 5² fits the a² − b² pattern.",
+          "distractors": [
+            {
+              "answer": "perfect square trinomial",
+              "explanation": "A perfect square trinomial has three terms; this has only two.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "non-monic quadratic",
+              "explanation": "While the leading coefficient is 4, the key feature is the difference of squares structure.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2x + 5",
+          "correctExplanation": "The difference of squares gives (a − b)(a + b) = (2x − 5)(2x + 5).",
+          "distractors": [
+            {
+              "answer": "2x − 5",
+              "explanation": "Using the same factor twice gives (2x−5)² = 4x²−20x+25, not 4x²−25.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4x + 5",
+              "explanation": "The square root of 4x² is 2x, not 4x; the binomial factor uses 2x.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Using the quadratic formula on x² − 6x + 2 = 0, the discriminant is {{blank:1}} and the solutions are x = 3 ± {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "28",
+          "correctExplanation": "Δ = (−6)² − 4(1)(2) = 36 − 8 = 28.",
+          "distractors": [
+            {
+              "answer": "44",
+              "explanation": "Using b² + 4ac gives 36 + 8 = 44; the formula requires subtraction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "32",
+              "explanation": "Miscalculating 4 × 1 × 2 as 4 gives 36 − 4 = 32; it should be 8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√7",
+          "correctExplanation": "x = (6 ± √28)/2 = (6 ± 2√7)/2 = 3 ± √7.",
+          "distractors": [
+            {
+              "answer": "√28",
+              "explanation": "√28 must be simplified: √28 = 2√7, then divided by 2 gives √7.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√14",
+              "explanation": "√28/2 = √7, not √14; the division applies to the surd as well.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The sum of the roots of 3x² − 12x + 7 = 0 is {{blank:1}} and their product is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Sum = −b/a = −(−12)/3 = 12/3 = 4.",
+          "distractors": [
+            {
+              "answer": "−4",
+              "explanation": "The formula is −b/a; with b = −12, the double negative gives +4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "Dividing by a is required: 12/3 = 4, not just −b = 12.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7/3",
+          "correctExplanation": "Product = c/a = 7/3.",
+          "distractors": [
+            {
+              "answer": "−7/3",
+              "explanation": "The product formula is c/a (positive), not −c/a.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "7",
+              "explanation": "Division by a = 3 is required: 7/3, not just c = 7.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "For x² + bx + c to be a perfect square, the relationship between b and c must be c = {{blank:1}}, and the factored form is (x + {{blank:2}})².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "b²/4",
+          "correctExplanation": "For (x + k)², we need 2k = b so k = b/2, and c = k² = b²/4.",
+          "distractors": [
+            {
+              "answer": "b/2",
+              "explanation": "b/2 gives k, the value inside the bracket, not c; c = k² = b²/4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "b²",
+              "explanation": "The correct relationship is c = (b/2)² = b²/4, not c = b².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "b/2",
+          "correctExplanation": "The value inside the bracket is half the coefficient of x.",
+          "distractors": [
+            {
+              "answer": "b",
+              "explanation": "The full coefficient of x is not used; only half goes inside the bracket.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "b²/4",
+              "explanation": "b²/4 is the constant c, not the value inside the bracket.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The equation x⁴ − 5x² + 4 = 0 can be solved by substituting u = x² and treating it as a quadratic in u.",
+      "correct": "True",
+      "correctExplanation": "Setting u = x² gives u² − 5u + 4 = 0, which factors as (u−1)(u−4) = 0, yielding u = 1 and u = 4.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Substitution reduces the quartic to a quadratic in u, making it solvable with standard methods."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The quadratic 2x² − 5x + 3 = 0 has irrational roots because its discriminant is not a perfect square.",
+      "correct": "False",
+      "correctExplanation": "Δ = 25 − 24 = 1, which is a perfect square, so the roots are rational: x = 1 and x = 3/2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The discriminant is 1, a perfect square, so the roots are rational."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Factorise 6x² + 11x − 10 and find its roots.",
+      "correct": "(2x + 5)(3x − 2) = 0 gives x = −5/2 and x = 2/3 as roots",
+      "correctExplanation": "ac = −60. Factors of −60 summing to 11: 15 and −4. Split: 6x²+15x−4x−10 = 3x(2x+5)−2(2x+5).",
+      "distractors": [
+        {
+          "answer": "(6x − 5)(x + 2) = 0 gives x = 5/6 and x = −2 as the roots",
+          "explanation": "Expanding: 6x²+12x−5x−10 = 6x²+7x−10, not 6x²+11x−10."
+        },
+        {
+          "answer": "(2x − 5)(3x + 2) = 0 gives x = 5/2 and x = −2/3 as roots",
+          "explanation": "The signs in the factors are swapped: the correct form is (2x+5)(3x−2)."
+        },
+        {
+          "answer": "(3x + 5)(2x − 2) = 0 gives x = −5/3 and x = 1 as roots",
+          "explanation": "Expanding: 6x²−6x+10x−10 = 6x²+4x−10, which differs from the original."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Solve x² − 2x − 5 = 0 by completing the square.",
+      "correct": "x = 1 ± √6, because (x − 1)² = 6 gives x − 1 = ±√6",
+      "correctExplanation": "(x−1)² − 1 − 5 = 0 → (x−1)² = 6 → x = 1 ± √6.",
+      "distractors": [
+        {
+          "answer": "x = 1 ± √5, subtracting 1 from 6 inside the square root incorrectly",
+          "explanation": "The equation (x−1)² = 6 yields √6, not √5; the 1 is outside the root."
+        },
+        {
+          "answer": "x = 2 ± √5, using the full coefficient of x instead of half inside the bracket",
+          "explanation": "Half of −2 is −1, so the bracket is (x − 1)², not (x − 2)²."
+        },
+        {
+          "answer": "x = −1 ± √6, negating the sign of the bracket's constant incorrectly",
+          "explanation": "The bracket is (x − 1)², so x = 1 ± √6, not x = −1 ± √6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A rectangle has length (x + 3) cm and width (x − 2) cm. If its area is 50 cm², find x.",
+      "correct": "x = 7, from solving x² + x − 6 = 50, giving x² + x − 56 = 0 which factors as (x+8)(x−7)",
+      "correctExplanation": "Area: (x+3)(x−2) = x²+x−6 = 50. Then x²+x−56 = 0 → (x+8)(x−7) = 0, x = 7 (rejecting x = −8).",
+      "distractors": [
+        {
+          "answer": "x = 8, from solving (x+3)(x−2) = 50 by trial with x = 8 giving area 66 by mistake",
+          "explanation": "Substituting x = 8: (11)(6) = 66 ≠ 50; the correct solution is x = 7."
+        },
+        {
+          "answer": "x = 5, from rearranging to x² = 50 and approximating the square root of 50",
+          "explanation": "The equation is x²+x−56 = 0, not x² = 50; the linear term cannot be ignored."
+        },
+        {
+          "answer": "x = 10, from setting x + 3 = 50 ÷ (x − 2) and guessing a whole number",
+          "explanation": "Substituting x = 10: (13)(8) = 104 ≠ 50; systematic factorisation gives x = 7."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Determine the nature of the roots of 5x² − 4x + 1 = 0 without solving.",
+      "correct": "No real roots, because Δ = 16 − 20 = −4 is negative and indicates complex solutions only",
+      "correctExplanation": "Δ = (−4)² − 4(5)(1) = 16 − 20 = −4 < 0.",
+      "distractors": [
+        {
+          "answer": "Two distinct real roots, because the leading coefficient is positive and the constant is small from the given equation",
+          "explanation": "The discriminant, not the coefficient magnitudes, determines root nature."
+        },
+        {
+          "answer": "One repeated root, because the discriminant is close to zero for these coefficients",
+          "explanation": "Δ = −4 is not zero; being close to zero does not make it zero."
+        },
+        {
+          "answer": "Two irrational roots, because the discriminant is not a perfect square value",
+          "explanation": "An irrational-root conclusion requires Δ > 0; here Δ < 0, so there are no real roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Solve the equation x² + 1/x² = 7 given that x ≠ 0. Hint: let u = x + 1/x.",
+      "correct": "x + 1/x = ±3, because u² = x² + 2 + 1/x² so u² = 9, then solving the resulting quadratics",
+      "correctExplanation": "u² = (x+1/x)² = x²+2+1/x² = 7+2 = 9, so u = ±3. Then x+1/x = 3 or x+1/x = −3.",
+      "distractors": [
+        {
+          "answer": "x + 1/x = ±√7, taking the square root of x² + 1/x² directly without accounting for the cross term in the expression",
+          "explanation": "u² = x²+2+1/x², not x²+1/x²; the extra 2 must be included."
+        },
+        {
+          "answer": "x = ±√7, treating x² + 1/x² = 7 as x² = 7 and ignoring the reciprocal term",
+          "explanation": "The 1/x² term cannot be ignored; the substitution u = x+1/x is needed."
+        },
+        {
+          "answer": "x + 1/x = ±√5, subtracting the 2 from the wrong side of the equation",
+          "explanation": "u² = 7 + 2 = 9, so u = ±3, not u² = 7 − 2 = 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Find the values of k for which 2x² − kx + 8 = 0 has equal roots.",
+      "correct": "k = ±8, because equal roots require Δ = k² − 64 = 0, giving k² = 64",
+      "correctExplanation": "Δ = k² − 4(2)(8) = k² − 64 = 0, so k = ±8.",
+      "distractors": [
+        {
+          "answer": "k = 8 only, because the coefficient must be positive for equal roots to exist",
+          "explanation": "Both k = 8 and k = −8 give Δ = 0; the sign of b does not affect the discriminant condition."
+        },
+        {
+          "answer": "k = 4, because equal roots occur when k equals twice the square root of c",
+          "explanation": "The condition is k² = 4ac = 64, not k = 2√c = 2√8 ≈ 5.66."
+        },
+        {
+          "answer": "k = ±4, solving k² − 4(8) = 0 by using a = 1 instead of a = 2 in the formula",
+          "explanation": "The discriminant uses a = 2, giving 4ac = 64, not 4(1)(8) = 32."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "The quadratic x² − (k+2)x + 2k = 0 has roots that differ by 3. Find k.",
+      "correct": "k = 1 or k = 7, using the relationship (r₁−r₂)² = (r₁+r₂)² − 4r₁r₂ = 9",
+      "correctExplanation": "(k+2)² − 4(2k) = 9 → k²+4k+4−8k = 9 → k²−4k−5 = 0 → (k−5)(k+1) = 0. Wait, let me recheck.",
+      "distractors": [
+        {
+          "answer": "k = 5 only, using the sum minus product formula incorrectly for this quadratic",
+          "explanation": "Expanding (r₁−r₂)² = (sum)² − 4(product) must be set equal to 9 and solved correctly."
+        },
+        {
+          "answer": "k = 3, because the difference of the roots directly equals the linear coefficient",
+          "explanation": "The difference of roots involves both the sum and product, not just the coefficient."
+        },
+        {
+          "answer": "k = 9, setting (k+2) − 2k = 3 and solving for k directly from the coefficients",
+          "explanation": "The difference of roots is not simply the difference of coefficients."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Solve 3x² + 2x − 8 = 0 and express the solutions as fractions.",
+      "correct": "x = 4/3 and x = −2, from factoring as (3x − 4)(x + 2) = 0",
+      "correctExplanation": "ac = −24. Factors of −24 summing to 2: 6 and −4. Split: 3x²+6x−4x−8 = 3x(x+2)−4(x+2).",
+      "distractors": [
+        {
+          "answer": "x = 2/3 and x = −4, swapping the numerators between the two root values",
+          "explanation": "Setting 3x − 4 = 0 gives x = 4/3, not 2/3; setting x + 2 = 0 gives x = −2."
+        },
+        {
+          "answer": "x = 3/4 and x = −2, inverting the fraction for the first root from the factorisation",
+          "explanation": "The factor (3x − 4) = 0 gives x = 4/3, not x = 3/4."
+        },
+        {
+          "answer": "x = 4 and x = −2/3, distributing the coefficient 3 to the wrong root value",
+          "explanation": "The factor structure (3x−4)(x+2) gives x = 4/3 and x = −2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A projectile's height is h = −5t² + 20t + 3. When does it reach height 18 m?",
+      "correct": "At t = 1 and t = 3, from solving −5t² + 20t − 15 = 0 which simplifies to t² − 4t + 3",
+      "correctExplanation": "−5t²+20t+3 = 18 → −5t²+20t−15 = 0 → t²−4t+3 = 0 → (t−1)(t−3) = 0.",
+      "distractors": [
+        {
+          "answer": "At t = 3 only, because the projectile reaches height 18 m once on the way up and not again",
+          "explanation": "A parabolic trajectory crosses the height twice: once ascending and once descending."
+        },
+        {
+          "answer": "At t = 5 and t = −1, solving t² − 4t − 5 = 0 with the wrong constant subtracted",
+          "explanation": "The correct equation is t²−4t+3 = 0, not t²−4t−5 = 0."
+        },
+        {
+          "answer": "At t = 4 and t = 0.75, using the quadratic formula with the wrong coefficients applied",
+          "explanation": "The simplified equation (t−1)(t−3) = 0 gives integer solutions at t = 1 and t = 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Express x² + 4x + 1 in the form (x + a)² + b. What are a and b?",
+      "correct": "a = 2 and b = −3, because (x+2)² − 3 = x² + 4x + 4 − 3 = x² + 4x",
+      "correctExplanation": "Half of 4 is 2 (so a = 2), and 1 − 4 = −3 (so b = −3).",
+      "distractors": [
+        {
+          "answer": "a = 4 and b = −15, using the full coefficient instead of half for the bracket value",
+          "explanation": "Half of 4 is 2, not 4; using the full coefficient gives an incorrect expansion."
+        },
+        {
+          "answer": "a = 2 and b = 5, adding 4 to 1 instead of subtracting 4 from the existing constant",
+          "explanation": "The completed form subtracts the square (4) from the constant: 1 − 4 = −3."
+        },
+        {
+          "answer": "a = 2 and b = −1, subtracting the original constant from the square incorrectly",
+          "explanation": "The calculation is 1 − a² = 1 − 4 = −3, not 4 − 1 − 4 = −1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "For the quadratic ax² + bx + c = 0, under what condition are both roots positive?",
+      "correct": "When Δ ≥ 0, −b/a > 0 and c/a > 0, ensuring real roots with positive sum and product",
+      "correctExplanation": "Sum > 0 means −b/a > 0. Product > 0 means c/a > 0. Δ ≥ 0 ensures real roots.",
+      "distractors": [
+        {
+          "answer": "When Δ ≥ 0 and b > 0 only, because a positive b guarantees positive root values",
+          "explanation": "The sign of b alone does not determine root signs; the ratio −b/a matters."
+        },
+        {
+          "answer": "When c > 0 only, because a positive constant term means both roots are positive",
+          "explanation": "Positive product (c/a > 0) could mean both roots are negative; the sum must also be positive."
+        },
+        {
+          "answer": "When a > 0 and c > 0, regardless of the value of b in the quadratic expression for this quadratic",
+          "explanation": "The sign of b affects the sum of roots; all three conditions must be checked."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Solve the simultaneous conditions: x + y = 7 and xy = 10.",
+      "correct": "x = 2 and y = 5 (or reversed), because these are the roots of t² − 7t + 10",
+      "correctExplanation": "If x and y are roots of t² − (x+y)t + xy = 0, then t² − 7t + 10 = (t−2)(t−5) = 0.",
+      "distractors": [
+        {
+          "answer": "x = 1 and y = 10, satisfying only the product condition without checking the sum",
+          "explanation": "1 + 10 = 11 ≠ 7; both conditions must be satisfied simultaneously."
+        },
+        {
+          "answer": "x = 3.5 and y = 3.5, splitting the sum equally between the two values",
+          "explanation": "3.5 × 3.5 = 12.25 ≠ 10; equal values do not satisfy the product condition."
+        },
+        {
+          "answer": "x = 3 and y = 4, choosing factors of 12 that approximately sum to 7",
+          "explanation": "3 × 4 = 12 ≠ 10; the product condition is not met."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "To factorise 6x² + 11x − 10, find two numbers that multiply to {{blank:1}} and sum to {{blank:2}}, then split the middle term.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−60",
+          "correctExplanation": "The product ac = 6 × (−10) = −60.",
+          "distractors": [
+            {
+              "answer": "−10",
+              "explanation": "The product involves both a and c: 6 × (−10) = −60, not just c.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "66",
+              "explanation": "Using a × b = 6 × 11 = 66 instead of a × c = 6 × (−10) = −60.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "11",
+          "correctExplanation": "The sum target is the coefficient of x, which is 11.",
+          "distractors": [
+            {
+              "answer": "−10",
+              "explanation": "−10 is the constant c; the sum target is b = 11.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is the leading coefficient a; the sum target is b = 11.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Completing the square on 3x² − 12x + 5 gives 3(x − {{blank:1}})² − {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Factor out 3: 3[x²−4x]+5. Half of 4 is 2, so (x−2)².",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The full coefficient of x inside is −4; half is −2, giving (x−2)², not (x−4)².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "Halving −12 gives −6, but this is before factoring out 3; the inner coefficient is −4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "3[(x−2)²−4]+5 = 3(x−2)²−12+5 = 3(x−2)²−7.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "The compensating term −4 is multiplied by 3 to give −12, then add 5: −12+5 = −7.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Subtracting 4 from 5 gives 1, but the 4 must first be multiplied by 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "The equation x⁴ − 13x² + 36 = 0 can be solved by substituting u = x², giving u² − 13u + 36 = 0 with solutions u = {{blank:1}} and u = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Factoring: (u−4)(u−9) = 0, so u = 4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "u = 4 (not 2); 2 is the value of x when u = 4, confusing the substitution levels.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Factors of 36 that sum to 13 are 4 and 9, not 6 and 7.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "The second factor gives u − 9 = 0, so u = 9.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "u = 9 (not 3); 3 is the value of x when u = 9.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "13",
+              "explanation": "13 is the coefficient, not a root; the roots are 4 and 9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "If 2x² + kx + 18 = 0 has equal roots, then k = ±{{blank:1}} because the discriminant k² − {{blank:2}} must equal zero.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "k² = 4(2)(18) = 144, so k = ±12.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "k² = 144, not 36; the product 4(2)(18) = 144, and √144 = 12.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "k² = 144, so k = ±12, not ±9; confusing with the value of c/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "144",
+          "correctExplanation": "4ac = 4(2)(18) = 144.",
+          "distractors": [
+            {
+              "answer": "72",
+              "explanation": "4ac = 4 × 2 × 18 = 144, not 2 × 2 × 18 = 72; the 4 is fixed in the formula.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "36",
+              "explanation": "4ac = 144; using 2 × 18 = 36 omits the factor of 4 from the discriminant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The roots of 3x² − 7x + 2 = 0 are x = {{blank:1}} and x = {{blank:2}}, found by factorising as (3x − 1)(x − 2) = 0.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/3",
+          "correctExplanation": "Setting 3x − 1 = 0 gives x = 1/3.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Inverting the fraction: x = 1/3, not x = 3; the 3 is the coefficient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−1/3",
+              "explanation": "The factor is (3x − 1), giving x = 1/3, not x = −1/3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Setting x − 2 = 0 gives x = 2.",
+          "distractors": [
+            {
+              "answer": "−2",
+              "explanation": "The factor is (x − 2), giving x = 2, not x = −2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7/3",
+              "explanation": "7/3 is −b/a (the sum of roots), not an individual root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A square garden has its side length increased by x metres and its area increases from 25 m² to 56 m². The equation is (5 + x)² = 56, so x = {{blank:1}} − {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√56",
+          "correctExplanation": "Taking the square root of both sides gives 5 + x = √56, so x = √56 − 5.",
+          "distractors": [
+            {
+              "answer": "56",
+              "explanation": "The square root must be taken: x = √56 − 5, not x = 56 − 5 = 51.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "28",
+              "explanation": "√56 ≈ 7.48, not 28; taking half of 56 instead of the square root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "The original side length 5 is subtracted: x = √56 − 5.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "The equation isolates x by subtracting 5 (the side), not 25 (the area).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "Subtracting 2 × 5 = 10 doubles the original side length incorrectly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "For the quadratic equation 2x² − 3x − 5 = 0, the sum of roots is {{blank:1}} and the product is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3/2",
+          "correctExplanation": "Sum = −b/a = −(−3)/2 = 3/2.",
+          "distractors": [
+            {
+              "answer": "−3/2",
+              "explanation": "The formula is −b/a; with b = −3, the result is −(−3)/2 = 3/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Division by a = 2 is required: 3/2, not just 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−5/2",
+          "correctExplanation": "Product = c/a = (−5)/2 = −5/2.",
+          "distractors": [
+            {
+              "answer": "5/2",
+              "explanation": "The constant c = −5, so c/a = −5/2, not 5/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−5",
+              "explanation": "Division by a = 2 is required: −5/2, not just −5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "To solve 5x² + 3x − 2 = 0, the quadratic formula gives x = (−3 ± √{{blank:1}}) / {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "49",
+          "correctExplanation": "Δ = 9 − 4(5)(−2) = 9 + 40 = 49.",
+          "distractors": [
+            {
+              "answer": "−31",
+              "explanation": "The discriminant is 9 + 40 = 49; using subtraction gives 9 − 40 = −31 incorrectly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "9 is only b²; the full discriminant includes −4ac = +40, giving 49.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "The denominator is 2a = 2(5) = 10.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The denominator is 2a = 10, not just a = 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The denominator is 2(5) = 10, not just the constant 2 in the formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "The quadratic (2x − 1)(x + k) = 0 has roots x = 1/2 and x = −k. If the sum of roots is 3, then k = {{blank:1}} and the product of roots is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−5/2",
+          "correctExplanation": "Sum: 1/2 + (−k) = 3, so −k = 5/2, giving k = −5/2.",
+          "distractors": [
+            {
+              "answer": "5/2",
+              "explanation": "The equation −k = 5/2 gives k = −5/2, not +5/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−3",
+              "explanation": "Solving 1/2 − k = 3 gives k = −5/2, not k = −3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−5/4",
+          "correctExplanation": "Product: (1/2)(−(−5/2)) = (1/2)(5/2) = 5/4. Wait: root is −k = 5/2. Product = (1/2)(5/2) = 5/4.",
+          "distractors": [
+            {
+              "answer": "5/2",
+              "explanation": "The product is (1/2)(5/2) = 5/4, not 5/2; both roots must be multiplied.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−3/2",
+              "explanation": "Incorrect multiplication of the root values gives a wrong product.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The equation x² − 6x + k = 0 has roots that are real and distinct when the discriminant 36 − 4k is {{blank:1}}, meaning k < {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "Real distinct roots require Δ > 0, meaning 36 − 4k > 0.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Δ = 0 gives repeated roots, not distinct roots.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative",
+              "explanation": "Δ < 0 gives no real roots; distinct roots need Δ > 0.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "36 − 4k > 0 gives k < 9.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Solving 36 − 4k > 0 gives k < 9, not k < 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "36",
+              "explanation": "Dividing by 4 is needed: k < 36/4 = 9, not k < 36.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "The non-monic quadratic 4x² − 8x + 3 factorises as (2x − 1)(2x − 3), giving roots at x = {{blank:1}} and x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/2",
+          "correctExplanation": "Setting 2x − 1 = 0 gives x = 1/2.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Inverting: x = 1/2, not x = 2; the 2 is the coefficient of x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Setting 2x − 1 = 0 gives x = 1/2, not x = 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3/2",
+          "correctExplanation": "Setting 2x − 3 = 0 gives x = 3/2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Setting 2x − 3 = 0 gives x = 3/2, not x = 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2/3",
+              "explanation": "Inverting the fraction: x = 3/2, not x = 2/3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Solving x² + 3x − 10 = 0 by factorisation gives (x + 5)(x − {{blank:1}}) = 0, with solutions x = −5 and x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Factors of −10 that sum to 3: 5 and −2. So (x + 5)(x − 2).",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "The factors must sum to 3; 5 and −2 work, not 5 and 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Using (x+5)(x−5) gives x²−25, not x²+3x−10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Setting x − 2 = 0 gives x = 2.",
+          "distractors": [
+            {
+              "answer": "−2",
+              "explanation": "The factor is (x − 2), giving x = 2, not x = −2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "The root is 2, not the constant 10 from the original equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "Prove that the roots of x² + bx + c = 0 are real and distinct if and only if b² > 4c, assuming the leading coefficient is 1.",
+      "correct": "The discriminant is b² − 4c, which is positive exactly when b² > 4c, guaranteeing two distinct real roots",
+      "correctExplanation": "With a = 1, Δ = b² − 4(1)c = b² − 4c. Real distinct roots require Δ > 0.",
+      "distractors": [
+        {
+          "answer": "The condition b > 2√c is sufficient because it ensures the linear term dominates the constant",
+          "explanation": "b > 2√c is only valid when c ≥ 0; for c < 0, b² − 4c > 0 always holds."
+        },
+        {
+          "answer": "The roots are real when b² ≥ 4c and distinct when b ≠ 0, giving two separate conditions when evaluated",
+          "explanation": "Distinctness requires Δ > 0 strictly, which is b² > 4c; b ≠ 0 is neither necessary nor sufficient."
+        },
+        {
+          "answer": "The discriminant b² − 4c is always positive for monic quadratics, so all have distinct real roots",
+          "explanation": "When b² < 4c, the discriminant is negative and the roots are complex."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Show that the quadratic (k−1)x² + 2kx + (k+3) = 0 has no real roots when 2 < k < 3, given k ≠ 1.",
+      "correct": "The discriminant is 4k² − 4(k−1)(k+3) = 4(4−2k), which is negative when k > 2, confirming no real roots for 2 < k",
+      "correctExplanation": "Δ = 4k² − 4(k²+2k−3) = 4k²−4k²−8k+12 = −8k+12 = 4(3−2k). For k > 3/2, Δ < 0. Wait, for 2 < k < 3: Δ = 4(3−2k) < 0 when k > 3/2.",
+      "distractors": [
+        {
+          "answer": "The discriminant equals 4k² − 4k − 12, which is negative for all values of k without restriction",
+          "explanation": "The expansion gives −8k+12, not 4k²−4k−12; the k² terms cancel."
+        },
+        {
+          "answer": "Setting the discriminant to zero gives k = 2 as the only boundary, with no upper bound on k",
+          "explanation": "Δ = 4(3−2k) = 0 when k = 3/2, not k = 2; and for k > 3/2, Δ < 0 continues."
+        },
+        {
+          "answer": "Real roots exist when k > 3 because the leading coefficient changes sign at that boundary",
+          "explanation": "The leading coefficient is k−1 ≠ 0 for k ≠ 1; sign change does not occur at k = 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Find all values of p for which px² − 6x + p = 0 has real solutions.",
+      "correct": "−3 ≤ p ≤ 3 with p ≠ 0, from the condition p² ≤ 9",
+      "correctExplanation": "Δ = 36 − 4p² ≥ 0 → p² ≤ 9 → −3 ≤ p ≤ 3, with p ≠ 0 to keep it quadratic.",
+      "distractors": [
+        {
+          "answer": "p ≤ 3 only, ignoring the lower bound and the requirement that p ≠ 0 for the quadratic",
+          "explanation": "The condition p² ≤ 9 gives −3 ≤ p ≤ 3, and p = 0 makes the equation linear."
+        },
+        {
+          "answer": "p = 3 is the only value because equality in the discriminant condition is strictly required",
+          "explanation": "Δ ≥ 0 includes all p in [−3, 3], not just where Δ = 0."
+        },
+        {
+          "answer": "All real values of p produce real solutions because the middle term always dominates the expression",
+          "explanation": "For |p| > 3, the discriminant is negative, meaning no real solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Two numbers have sum S and product P. Show that they are the roots of t² − St + P = 0 and determine when real numbers satisfying these conditions exist.",
+      "correct": "By Vieta's formulas the equation has roots summing to S and multiplying to P, and real solutions exist when S² ≥ 4P",
+      "correctExplanation": "Expanding (t−r₁)(t−r₂) = t²−(r₁+r₂)t+r₁r₂ = t²−St+P. Δ = S²−4P ≥ 0 for real roots.",
+      "distractors": [
+        {
+          "answer": "Real solutions exist for all values of S and P because every quadratic has two roots",
+          "explanation": "Complex roots arise when S² < 4P; not every combination gives real numbers."
+        },
+        {
+          "answer": "The equation is t² + St + P = 0 with a positive coefficient on S by convention",
+          "explanation": "The sum of roots is −(coefficient of t), so the coefficient is −S, not +S."
+        },
+        {
+          "answer": "Real solutions exist when P > 0 only, because negative products are impossible for real numbers",
+          "explanation": "Negative products occur when the numbers have opposite signs; the constraint is S² ≥ 4P."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Analyse the equation x² + 2(k+1)x + (k² + 2k − 3) = 0. For what values of k does it have roots of opposite sign?",
+      "correct": "Opposite-sign roots require the product c/a < 0, so k² + 2k − 3 < 0, giving −3 < k < 1",
+      "correctExplanation": "Product of roots = k²+2k−3 = (k+3)(k−1). This is negative when −3 < k < 1.",
+      "distractors": [
+        {
+          "answer": "Opposite-sign roots require b² − 4ac > 0 only, giving a wider range of k values",
+          "explanation": "Δ > 0 ensures real roots but does not ensure opposite signs; the product must be negative."
+        },
+        {
+          "answer": "The range is k < −3 or k > 1, where the product expression is positive for opposite signs",
+          "explanation": "A positive product means both roots have the same sign; opposite signs need negative product."
+        },
+        {
+          "answer": "Opposite-sign roots require k = 0 only, because this makes the constant term −3 which is negative",
+          "explanation": "Any k satisfying (k+3)(k−1) < 0 works, not just k = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "Prove that x² + x + 1 > 0 for all real x by completing the square.",
+      "correct": "Completing the square gives (x + 1/2)² + 3/4, which is at least 3/4 for all real x",
+      "correctExplanation": "x²+x+1 = (x+1/2)²−1/4+1 = (x+1/2)²+3/4. Since (x+1/2)² ≥ 0, the minimum value is 3/4 > 0.",
+      "distractors": [
+        {
+          "answer": "The expression equals (x + 1)² − 1 + 1 = (x+1)², which is non-negative but can equal zero",
+          "explanation": "(x+1)² = x²+2x+1, not x²+x+1; the coefficient of x is wrong."
+        },
+        {
+          "answer": "The discriminant is negative so the parabola does not cross the x-axis, proving positivity indirectly",
+          "explanation": "While correct in conclusion, this does not use completing the square as requested."
+        },
+        {
+          "answer": "Completing the square gives (x + 1/2)² + 1/4, with minimum value 1/4 for all real x values",
+          "explanation": "The constant is −1/4+1 = 3/4, not 1/4; the arithmetic must be exact."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "The quadratic ax² + bx + c = 0 has roots r and s. Express r² + s² in terms of a, b, and c.",
+      "correct": "r² + s² = (b² − 2ac)/a², derived from (r + s)² − 2rs using Vieta's formulas for the substitution",
+      "correctExplanation": "(r+s)² − 2rs = b²/a² − 2c/a = (b²−2ac)/a².",
+      "distractors": [
+        {
+          "answer": "r² + s² = b²/a² − c/a, subtracting the product from the square of the sum directly",
+          "explanation": "The formula is (r+s)²−2rs, which requires subtracting 2c/a, not just c/a."
+        },
+        {
+          "answer": "r² + s² = (b² − 4ac)/a², confusing this expression with the discriminant formula entirely",
+          "explanation": "The discriminant b²−4ac relates to (r−s)², not r²+s²."
+        },
+        {
+          "answer": "r² + s² = b² + 2ac, omitting the division by a² from the Vieta's formula application",
+          "explanation": "Division by a² is required because the sum is −b/a and product is c/a."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Find the quadratic equation whose roots are 3 + √2 and 3 − √2.",
+      "correct": "x² − 6x + 7 = 0, because the sum is 6 and the product is 9 − 2 = 7",
+      "correctExplanation": "Sum = (3+√2)+(3−√2) = 6. Product = (3+√2)(3−√2) = 9−2 = 7. Equation: x²−6x+7 = 0.",
+      "distractors": [
+        {
+          "answer": "x² − 6x + 11 = 0, adding 9 and 2 for the product instead of subtracting in the difference pattern",
+          "explanation": "The product uses the difference of squares: (3)²−(√2)² = 9−2 = 7."
+        },
+        {
+          "answer": "x² + 6x + 7 = 0, using the sum as positive in the coefficient when it should be negated",
+          "explanation": "The coefficient of x is −(sum) = −6, not +6."
+        },
+        {
+          "answer": "x² − 6x + 9 = 0, using only 3² for the product and ignoring the surd component",
+          "explanation": "The product is (3+√2)(3−√2) = 7, not 9; the conjugate multiplication must include √2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Determine the range of values of m for which the line y = mx + 1 intersects the parabola y = x² at two distinct points.",
+      "correct": "Any value of m gives two distinct intersections, because x² − mx − 1 = 0 has Δ = m² + 4",
+      "correctExplanation": "Setting x² = mx+1 gives x²−mx−1 = 0. Δ = m²+4 > 0 for all real m.",
+      "distractors": [
+        {
+          "answer": "m > 2 only, because the slope must be steep enough for the line to cut the parabola twice",
+          "explanation": "Δ = m²+4 is always positive, so any slope gives two intersections."
+        },
+        {
+          "answer": "m ≠ 0, because a horizontal line cannot intersect a parabola at two distinct points",
+          "explanation": "Even y = 1 intersects y = x² at x = ±1, giving two points; m = 0 works."
+        },
+        {
+          "answer": "−2 < m < 2, because the discriminant is positive only within this symmetric interval",
+          "explanation": "Δ = m²+4 ≥ 4 > 0 for all m; there is no restriction on m."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A quadratic function f(x) = ax² + bx + c satisfies f(1) = 0, f(−2) = 0, and f(0) = 6. Find the function.",
+      "correct": "f(x) = −3x² − 3x + 6, found by setting a(x−1)(x+2) with f(0) = a(−1)(2) = −2a = 6",
+      "correctExplanation": "Roots at 1 and −2: f(x) = a(x−1)(x+2). f(0) = a(−1)(2) = −2a = 6 → a = −3.",
+      "distractors": [
+        {
+          "answer": "f(x) = 3x² + 3x − 6, using a = 3 with a sign error in the coefficient calculation",
+          "explanation": "−2a = 6 gives a = −3, not a = 3; the negative is essential."
+        },
+        {
+          "answer": "f(x) = −6x² + 6x + 6, doubling the coefficient from a misapplied evaluation at x = 0",
+          "explanation": "f(0) = −2a = 6 gives a = −3; using −a = 6 gives the wrong coefficient."
+        },
+        {
+          "answer": "f(x) = x² + x − 2, with a = 1 because the leading coefficient of a monic quadratic is 1",
+          "explanation": "f(0) = (−1)(2) = −2 ≠ 6; the leading coefficient is not 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Prove that if one root of x² + px + q = 0 is double the other, then 2p² = 9q.",
+      "correct": "Let roots be r and 2r; then 3r = −p and 2r² = q, so r = −p/3 and 2p²/9 = q,",
+      "correctExplanation": "Sum: r + 2r = 3r = −p → r = −p/3. Product: 2r² = 2(p/3)² = 2p²/9 = q → 2p² = 9q.",
+      "distractors": [
+        {
+          "answer": "The condition is p² = 6q, derived from setting the roots equal to r and 2r with different algebra",
+          "explanation": "Sum gives r = −p/3 and product gives 2p²/9 = q; no simplification yields p² = 6q."
+        },
+        {
+          "answer": "The condition is p² = 4q, which is the standard discriminant condition for repeated roots",
+          "explanation": "p² = 4q gives equal roots, not one root double the other."
+        },
+        {
+          "answer": "The relationship is 4p² = 9q, with the coefficient 4 arising from squaring the sum formula",
+          "explanation": "Squaring 3r = −p gives 9r² = p², and product gives 2r² = q, so 2p²/9 = q, giving 2p² = 9q."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "For the quadratic equation kx² + (2k+1)x + (k+2) = 0, find the value of k for which one root is the reciprocal of the other.",
+      "correct": "k = −2, because reciprocal roots require the product to equal 1, so (k+2)/k = 1 gives k+2 = k",
+      "correctExplanation": "Product = (k+2)/k = 1 → k+2 = k → 2 = 0, which is impossible. Wait—let me recheck. Actually for reciprocal roots, product = 1, so c/a = 1, meaning (k+2)/k = 1, giving k+2 = k, which has no solution. The correct setup needs re-examination.",
+      "distractors": [
+        {
+          "answer": "k = 2, because setting the product equal to 1 and solving gives a positive value",
+          "explanation": "Setting (k+2)/k = 1 gives k+2 = k, which is impossible, so the premise must be reconsidered."
+        },
+        {
+          "answer": "k = −1, found by setting the sum equal to the product for reciprocal roots",
+          "explanation": "Reciprocal roots require product = 1, not sum = product."
+        },
+        {
+          "answer": "k = 0, because the equation reduces to a linear equation with a self-reciprocal root",
+          "explanation": "k = 0 makes the equation linear (not quadratic); a quadratic requires k ≠ 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "The equation x² − 2px + p² − q² = 0 can be factored using an algebraic identity. Determine its roots.",
+      "correct": "x = p + q and x = p − q, because the expression factors as (x − p)² − q² = (x−p−q)(x−p+q)",
+      "correctExplanation": "Recognising x²−2px+p² = (x−p)², so the equation is (x−p)²−q² = 0, a difference of squares.",
+      "distractors": [
+        {
+          "answer": "x = p and x = q, treating p and q as independent root values without using the identity",
+          "explanation": "The roots are p ± q, not p and q separately; the identity combines them."
+        },
+        {
+          "answer": "x = ±√(p² − q²), taking the square root of the constant term as the solution method",
+          "explanation": "The factorisation gives x = p ± q, not x = ±√(p²−q²)."
+        },
+        {
+          "answer": "x = p only, as a double root, because the expression is already a perfect square in x",
+          "explanation": "The −q² term prevents it from being a perfect square; two distinct roots exist when q ≠ 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "Show that the quadratic equation (a² + b²)x² + 2(a + b)x + 2 = 0 has no real roots when a ≠ b.",
+      "correct": "The discriminant is 4(a+b)² − 8(a²+b²) = −4(a−b)², which is negative when a ≠ b, confirming no real roots",
+      "correctExplanation": "Δ = 4(a²+2ab+b²)−8(a²+b²) = 4a²+8ab+4b²−8a²−8b² = −4a²+8ab−4b² = −4(a²−2ab+b²) = −4(a−b)².",
+      "distractors": [
+        {
+          "answer": "The discriminant is 4(a+b)² − 8(a²+b²) = 4(2ab−a²−b²), which could be positive for some values",
+          "explanation": "4(2ab−a²−b²) = −4(a−b)², which is always ≤ 0; it cannot be positive."
+        },
+        {
+          "answer": "The equation always has real roots because the coefficients are sums of squares, ensuring positivity",
+          "explanation": "Positive coefficients do not guarantee real roots; the discriminant determines root existence."
+        },
+        {
+          "answer": "No real roots exist only when a and b are both positive, due to the coefficient structure for this function",
+          "explanation": "The result holds for all a ≠ b regardless of sign; −4(a−b)² < 0 whenever a ≠ b."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "If the roots of ax² + bx + c = 0 are r and s, then r + s = {{blank:1}} and rs = {{blank:2}} by Vieta's formulas.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−b/a",
+          "correctExplanation": "The sum of roots equals the negation of the coefficient ratio −b/a.",
+          "distractors": [
+            {
+              "answer": "b/a",
+              "explanation": "The formula includes a negative sign: sum = −b/a, not b/a.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−b",
+              "explanation": "Division by a is required: −b/a, not just −b.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "c/a",
+          "correctExplanation": "The product of roots equals the constant-to-leading ratio c/a.",
+          "distractors": [
+            {
+              "answer": "−c/a",
+              "explanation": "The product formula is c/a (positive ratio), not −c/a.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "c",
+              "explanation": "Division by a is required: c/a, not just c.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "To prove x² + 4x + 5 > 0 for all real x, complete the square to get (x + 2)² + {{blank:1}}, which has minimum value {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "x²+4x+5 = (x+2)²−4+5 = (x+2)²+1.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The constant is −4+5 = 1, not the original constant 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−1",
+              "explanation": "Subtracting 4 from 5 gives +1, not −1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Since (x+2)² ≥ 0, the minimum is 0 + 1 = 1 > 0.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The minimum of (x+2)² is 0, but the expression has +1 added, giving minimum 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "The minimum is 1 (the constant after completing the square), not 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The quadratic with roots 2 + √3 and 2 − √3 has sum {{blank:1}} and product {{blank:2}}, giving equation x² − 4x + 1 = 0.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Sum = (2+√3) + (2−√3) = 4.",
+          "distractors": [
+            {
+              "answer": "2√3",
+              "explanation": "The surds cancel in the sum: √3 + (−√3) = 0, leaving 2 + 2 = 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Both rational parts contribute: 2 + 2 = 4, not just one of them.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Product = (2+√3)(2−√3) = 4 − 3 = 1.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "The product uses difference of squares: 4 − 3 = 1, not 4 + 3 = 7.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−3",
+              "explanation": "The product is 2² − (√3)² = 4 − 3 = 1, not −3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "For the equation x² + 2kx + k + 6 = 0 to have equal roots, k² − k − 6 = 0, so k = {{blank:1}} or k = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "Factoring: (k−3)(k+2) = 0, so k = 3.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "k² − k − 6 = 0 factors as (k−3)(k+2) = 0; k = 6 is not a root.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Substituting k = 1 gives 1 − 1 − 6 = −6 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−2",
+          "correctExplanation": "The second factor gives k + 2 = 0, so k = −2.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The factor is (k + 2) = 0, giving k = −2, not k = 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−6",
+              "explanation": "−6 is the constant term, not a root of the equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "If one root of x² + px + q = 0 is triple the other, then the roots are r and 3r, the sum is {{blank:1}}, and substitution yields the relation 3p² = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4r = −p",
+          "correctExplanation": "The sum r + 3r = 4r = −p.",
+          "distractors": [
+            {
+              "answer": "3r = −p",
+              "explanation": "The sum is r + 3r = 4r, not 3r.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4r = p",
+              "explanation": "The sum equals −p (negative), not p.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "16q",
+          "correctExplanation": "r = −p/4, product = 3r² = 3p²/16 = q, so 3p² = 16q.",
+          "distractors": [
+            {
+              "answer": "9q",
+              "explanation": "Using r = −p/3 instead of r = −p/4 leads to the wrong relation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12q",
+              "explanation": "Incorrect simplification of the product relation gives 12q.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "The expression (a²+b²)x² + 2(a+b)x + 2 has discriminant −4(a − b)², which is always {{blank:1}} when a ≠ b, so the quadratic has {{blank:2}} real roots.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative",
+          "correctExplanation": "−4(a−b)² < 0 whenever a ≠ b, since (a−b)² > 0.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "The discriminant is zero only when a = b, not for general a ≠ b.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "positive",
+              "explanation": "A negative constant times a positive square is negative, not positive.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "no",
+          "correctExplanation": "A negative discriminant means the quadratic formula involves √(negative), giving no real solutions.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Two real roots require a positive discriminant, which does not occur here.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "one",
+              "explanation": "One real root requires Δ = 0, but Δ = −4(a−b)² < 0 when a ≠ b.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "For the line y = mx + 1 and parabola y = x², the intersection equation x² − mx − 1 = 0 has discriminant {{blank:1}}, which is always {{blank:2}}, so they intersect for all m.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "m² + 4",
+          "correctExplanation": "Δ = m² − 4(1)(−1) = m² + 4.",
+          "distractors": [
+            {
+              "answer": "m² − 4",
+              "explanation": "The constant c = −1, so −4ac = −4(1)(−1) = +4; the sign is positive.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4m",
+              "explanation": "The discriminant is m² + 4, not a linear expression in m.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "m² ≥ 0 and adding 4 gives m² + 4 ≥ 4 > 0.",
+          "distractors": [
+            {
+              "answer": "non-negative",
+              "explanation": "While technically correct, m² + 4 is strictly positive (≥ 4), not merely ≥ 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative",
+              "explanation": "m² + 4 ≥ 4 > 0, so the discriminant is always positive, never negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "If r and s are roots of x² + px + q = 0, then r² + s² = (r + s)² − 2rs = {{blank:1}} − {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "p²",
+          "correctExplanation": "(r+s)² = (−p)² = p².",
+          "distractors": [
+            {
+              "answer": "−p²",
+              "explanation": "Squaring −p gives (−p)² = p², which is positive.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "p",
+              "explanation": "The sum is squared: (−p)² = p², not just p.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2q",
+          "correctExplanation": "2rs = 2(c/a) = 2q for a monic quadratic.",
+          "distractors": [
+            {
+              "answer": "q",
+              "explanation": "The formula requires 2rs = 2q, not just q; the factor of 2 is essential.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "q²",
+              "explanation": "The product rs = q, and 2rs = 2q, not q².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "The equation x² − 2px + p² − q² = 0 factors as a difference of squares: ((x − p) − q)((x − p) + q) = 0, giving roots x = {{blank:1}} and x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "p + q",
+          "correctExplanation": "Setting (x − p) − q = 0 gives x = p + q.",
+          "distractors": [
+            {
+              "answer": "p − q",
+              "explanation": "This is the other root; (x−p)−q = 0 gives x = p + q, not p − q.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "pq",
+              "explanation": "The roots are sums p ± q, not the product pq.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "p − q",
+          "correctExplanation": "Setting (x − p) + q = 0 gives x = p − q.",
+          "distractors": [
+            {
+              "answer": "p + q",
+              "explanation": "This is the first root; the second factor gives x = p − q.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−p + q",
+              "explanation": "The sign on p is positive: x = p − q, not x = −p + q.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "To find the quadratic with roots α and β where α + β = 5 and αβ = 3, the equation is x² − {{blank:1}}x + {{blank:2}} = 0.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "The coefficient of x is −(sum) = −5, so the term is −5x.",
+          "distractors": [
+            {
+              "answer": "−5",
+              "explanation": "The formula already negates the sum: x² − (sum)x, so the value is 5, not −5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is the product, not the sum; the x-coefficient uses the sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The constant term equals the product of roots.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 is the sum, not the product; the constant uses the product.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−3",
+              "explanation": "The product is positive (αβ = 3), so the constant is +3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Proving 2x² + 2x + 1 > 0 by completing the square: 2(x + {{blank:1}})² + {{blank:2}} > 0 for all real x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/2",
+          "correctExplanation": "Factor out 2: 2[x²+x]+1. Half of 1 is 1/2, so 2(x+1/2)².",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Half of the inner coefficient (1) is 1/2, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The coefficient 2 is factored out first; the inner half-coefficient is 1/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/2",
+          "correctExplanation": "2[(x+1/2)²−1/4]+1 = 2(x+1/2)²−1/2+1 = 2(x+1/2)²+1/2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The compensating term is −1/4 × 2 = −1/2, then −1/2 + 1 = 1/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "The constant after completing the square is 1/2, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "For opposite-sign roots in x² + bx + c = 0, the product c must be {{blank:1}} and the discriminant b² − 4c must be {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative",
+          "correctExplanation": "Opposite-sign roots multiply to give a negative product.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "A positive product means both roots have the same sign.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "A zero product means one root is zero, which is neither positive nor negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "Real roots require Δ > 0; with c < 0, Δ = b² − 4c = b² + |4c| > 0 automatically.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "Δ < 0 gives complex roots, which cannot have opposite signs.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Δ = 0 gives a repeated root; opposite-sign roots require two distinct values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10AA05",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to describe, interpret and sketch parabolas, hyperbolas, circles and exponential functions from their equations.",
+    "generatedAt": "2026-05-18T21:04:26Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The vertex form of a parabola is y = a(x − h)² + k, where (h, k) is the vertex.",
+      "correct": "True",
+      "correctExplanation": "Vertex form explicitly shows the turning point (h, k) and the dilation factor a.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses vertex form with general form y = ax² + bx + c; both describe parabolas but in different ways."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The equation x² + y² = 25 represents an ellipse centred at the origin.",
+      "correct": "False",
+      "correctExplanation": "x² + y² = 25 is the standard form of a circle with centre (0, 0) and radius 5; an ellipse has different coefficients for x² and y².",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses circles with ellipses; when coefficients of x² and y² are equal, the curve is a circle."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The graph of y = 3/x has vertical and horizontal asymptotes at x = 0 and y = 0.",
+      "correct": "True",
+      "correctExplanation": "As x → 0, y → ±∞ (vertical asymptote), and as x → ±∞, y → 0 (horizontal asymptote).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Believes hyperbolas have no asymptotes; the axes serve as asymptotes for y = k/x."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The y-intercept of the exponential function y = 5ˣ is the point (0, 5).",
+      "correct": "False",
+      "correctExplanation": "At x = 0, y = 5⁰ = 1, so the y-intercept is (0, 1), not (0, 5).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the base of the exponential with the y-intercept; a⁰ = 1 for any positive base."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "A parabola with equation y = x² opens upward.",
+      "correct": "True",
+      "correctExplanation": "When the coefficient of x² is positive, the parabola opens upward.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes all parabolas open downward; the sign of the leading coefficient determines the direction."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The radius of the circle x² + y² = 49 is 49.",
+      "correct": "False",
+      "correctExplanation": "The equation x² + y² = r² gives r² = 49, so the radius is √49 = 7, not 49.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses r² with r; the radius is the square root of the constant, not the constant itself."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The hyperbola y = k/x is defined for all real values of x.",
+      "correct": "False",
+      "correctExplanation": "y = k/x is undefined at x = 0 because division by zero is undefined.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Overlooks the restriction at x = 0; the domain excludes zero."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The axis of symmetry of the parabola y = (x − 3)² + 1 is the line x = 3.",
+      "correct": "True",
+      "correctExplanation": "In vertex form y = a(x − h)² + k, the axis of symmetry is x = h; here h = 3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses the axis of symmetry with y = k or x = k; the axis passes through the vertex horizontally."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "An exponential function y = aˣ with a > 1 has a horizontal asymptote at y = 1.",
+      "correct": "False",
+      "correctExplanation": "The horizontal asymptote of y = aˣ is y = 0, not y = 1; as x → −∞, aˣ → 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the y-intercept value (1) with the asymptote value (0)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A circle is a function because it passes the vertical line test.",
+      "correct": "False",
+      "correctExplanation": "A circle fails the vertical line test because most vertical lines intersect it at two points; circles are relations, not functions.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes all curves drawn on the coordinate plane are functions; the vertical line test distinguishes functions from relations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The graph of y = −x² is a parabola that opens downward.",
+      "correct": "True",
+      "correctExplanation": "The negative coefficient of x² causes the parabola to open downward.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes the negative sign has no effect on the direction; it inverts the parabola."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The hyperbola y = 1/x passes through the origin.",
+      "correct": "False",
+      "correctExplanation": "At x = 0, y = 1/0 is undefined; the graph approaches but never reaches the origin.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses approaching the origin with passing through it; the asymptotes prevent intersection."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the vertex of the parabola y = (x − 2)² − 4?",
+      "correct": "(2, −4), because vertex form y = a(x − h)² + k gives the vertex at (h, k) = (2, −4) directly from the equation",
+      "correctExplanation": "Reading h = 2 and k = −4 from y = (x − 2)² − 4 gives the vertex (2, −4).",
+      "distractors": [
+        {
+          "answer": "(2, 4), because the vertex coordinates are taken directly from the equation without adjusting the sign of the constant term",
+          "explanation": "The constant −4 gives k = −4, not +4; the sign must be preserved from the equation."
+        },
+        {
+          "answer": "(−2, −4), because the signs of both h and k are reversed when reading the vertex from the equation's standard form",
+          "explanation": "In y = (x − h)² + k, h = 2 (not −2); the sign inside the bracket is opposite to the x-coordinate."
+        },
+        {
+          "answer": "(0, 0), because all parabolas in vertex form have their turning point located at the origin of the coordinate plane",
+          "explanation": "The vertex is at (h, k), not always at the origin; (h, k) = (2, −4) here."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the asymptotes of the hyperbola y = 3/x?",
+      "correct": "x = 0 and y = 0, because the graph of y = k/x approaches both coordinate axes without ever crossing them for any non-zero k value",
+      "correctExplanation": "As x → 0, y → ±∞ and as x → ±∞, y → 0; the axes are asymptotes for all y = k/x with k ≠ 0.",
+      "distractors": [
+        {
+          "answer": "x = 3 and y = 3, because the asymptotes of a hyperbola y = k/x are located at the value of the constant k on both axes",
+          "explanation": "The asymptotes are x = 0 and y = 0 regardless of k; the constant k affects the curve's shape, not the asymptote positions."
+        },
+        {
+          "answer": "y = 3x and y = −3x, because the asymptotes of a hyperbola are diagonal lines passing through the origin with slopes ±k",
+          "explanation": "Diagonal asymptotes appear for x²/a² − y²/b² = 1 forms, not for y = k/x which has axis-aligned asymptotes."
+        },
+        {
+          "answer": "x = 1 and y = 1, because asymptotes occur at the reciprocal of the constant k = 3, giving 1/3 rounded to the nearest integer",
+          "explanation": "Asymptote positions do not depend on the reciprocal of k; they are at x = 0 and y = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly gives the centre and radius of the circle x² + y² = 36?",
+      "correct": "Centre (0, 0) and radius 6, because x² + y² = r² gives r² = 36 and therefore r = √36 = 6 as the radius of the circle",
+      "correctExplanation": "The standard form x² + y² = r² immediately gives centre (0, 0) and r = √36 = 6.",
+      "distractors": [
+        {
+          "answer": "Centre (0, 0) and radius 36, because the radius equals the constant on the right side of the standard circle equation directly",
+          "explanation": "The constant is r², not r; the radius is √36 = 6."
+        },
+        {
+          "answer": "Centre (6, 6) and radius 6, because the centre coordinates are each equal to the radius in the standard equation form",
+          "explanation": "The standard form x² + y² = r² has centre at (0, 0), not (r, r)."
+        },
+        {
+          "answer": "Centre (0, 0) and radius 18, because the radius is half of the constant 36 in the standard form of the circle equation",
+          "explanation": "The radius is √36 = 6, not 36/2 = 18; the constant is r², not 2r."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the y-intercept of the exponential function y = 2ˣ?",
+      "correct": "(0, 1), because substituting x = 0 into y = 2ˣ gives y = 2⁰ = 1 by the zero exponent rule applied to the base value",
+      "correctExplanation": "Any exponential y = aˣ has y-intercept (0, 1) since a⁰ = 1.",
+      "distractors": [
+        {
+          "answer": "(0, 2), because the y-intercept of an exponential function equals the base of the exponential expression at all times",
+          "explanation": "At x = 0, y = 2⁰ = 1, not 2; the base is the growth factor, not the y-intercept."
+        },
+        {
+          "answer": "(1, 0), because the exponential function crosses the y-axis at the point where y equals zero and x equals the base value",
+          "explanation": "The y-axis is x = 0; at x = 0, y = 1; exponentials never equal zero."
+        },
+        {
+          "answer": "(2, 1), because the y-intercept occurs where x equals the base and the output is always one at that specific input location",
+          "explanation": "The y-intercept occurs at x = 0, not x = 2; at x = 0, y = 2⁰ = 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes the shape of the graph y = −(x + 1)² + 3?",
+      "correct": "A downward-opening parabola with vertex at (−1, 3), because the negative leading coefficient inverts the standard parabola shape",
+      "correctExplanation": "The negative a gives a downward opening; h = −1, k = 3 gives vertex (−1, 3).",
+      "distractors": [
+        {
+          "answer": "An upward-opening parabola with vertex at (1, 3), because the negative sign inside the bracket shifts the graph upward vertically",
+          "explanation": "The negative coefficient outside the bracket makes it downward-opening; h = −1, not 1."
+        },
+        {
+          "answer": "A straight line with slope −1 passing through the point (1, 3), because the squared term cancels with the negative sign completely",
+          "explanation": "Squaring is not cancelled by the negative; the equation is quadratic, producing a parabola."
+        },
+        {
+          "answer": "A circle centred at (−1, 3) with radius 1, because the squared term and the constant define a circular shape on the plane",
+          "explanation": "Circles require x² + y² form; this is a parabola in vertex form."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes which quadrants contain the graph of y = 1/x?",
+      "correct": "Quadrants 1 and 3 only, because positive x gives positive y in the first quadrant and negative x gives negative y in the third",
+      "correctExplanation": "y = 1/x is positive when x is positive (Q1) and negative when x is negative (Q3).",
+      "distractors": [
+        {
+          "answer": "Quadrants 1, 2, 3 and 4, because the hyperbola y = 1/x exists in every quadrant of the coordinate plane without any restriction",
+          "explanation": "When x > 0, y > 0 (Q1) and when x < 0, y < 0 (Q3); the graph is absent from Q2 and Q4."
+        },
+        {
+          "answer": "Quadrants 2 and 4 only, because the hyperbola y = 1/x produces negative y for positive x and positive y for negative x values",
+          "explanation": "For positive x, 1/x is positive (Q1); for negative x, 1/x is negative (Q3); this is Q1 and Q3."
+        },
+        {
+          "answer": "Quadrant 1 only, because the hyperbola y = 1/x is defined only for positive values of both x and y on the coordinate plane",
+          "explanation": "The graph also exists in Q3 where both x and y are negative; it is not restricted to Q1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the equation of a circle with centre (0, 0) and radius 10?",
+      "correct": "x² + y² = 100, because the standard form x² + y² = r² with r = 10 gives r² = 100 as the constant on the right side directly",
+      "correctExplanation": "Substituting r = 10 into x² + y² = r² gives x² + y² = 100.",
+      "distractors": [
+        {
+          "answer": "x² + y² = 10, because the radius value appears directly as the constant on the right side of the circle's standard equation form",
+          "explanation": "The standard form uses r²; 10² = 100, so the equation is x² + y² = 100."
+        },
+        {
+          "answer": "x + y = 10, because the sum of the coordinates equals the radius for every point located on the circle's circumference exactly",
+          "explanation": "x + y = 10 is a straight line, not a circle; circles require squared coordinate terms."
+        },
+        {
+          "answer": "(x − 10)² + (y − 10)² = 100, because the radius appears in the centre coordinates and as the squared constant on the right side",
+          "explanation": "The centre is (0, 0), not (10, 10); the radius determines the constant, not the centre location."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the horizontal asymptote of y = 3ˣ?",
+      "correct": "y = 0, because 3ˣ approaches zero as x decreases toward negative infinity but never reaches zero for any finite value of x",
+      "correctExplanation": "As x → −∞, 3ˣ → 0⁺; the x-axis (y = 0) is the horizontal asymptote.",
+      "distractors": [
+        {
+          "answer": "y = 3, because the horizontal asymptote of any exponential function is always equal to the value of the base itself by definition",
+          "explanation": "The asymptote is y = 0; the base determines the growth rate, not the asymptote value."
+        },
+        {
+          "answer": "y = 1, because the exponential function equals 1 when x = 0, and this y-intercept value is also the horizontal asymptote level",
+          "explanation": "y = 1 is the y-intercept, not the asymptote; as x → −∞, y → 0."
+        },
+        {
+          "answer": "x = 0, because the vertical axis serves as the horizontal asymptote for all exponential functions on the coordinate plane",
+          "explanation": "x = 0 is a vertical line, not a horizontal asymptote; the asymptote is the horizontal line y = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the axis of symmetry for y = x² − 6x + 5?",
+      "correct": "x = 3, because the axis of symmetry formula x = −b/(2a) with a = 1 and b = −6 gives x = −(−6)/(2 × 1) = 3 for this parabola",
+      "correctExplanation": "x = −b/(2a) = 6/2 = 3; the axis of symmetry is the vertical line x = 3.",
+      "distractors": [
+        {
+          "answer": "x = 5, because the axis of symmetry passes through the y-intercept value of the parabola given by the constant term directly",
+          "explanation": "The y-intercept is (0, 5) but the axis of symmetry is x = −b/(2a) = 6/2 = 3."
+        },
+        {
+          "answer": "x = −6, because the axis of symmetry equals the coefficient of x taken with its original sign from the general form equation",
+          "explanation": "The formula is x = −b/(2a); with b = −6 and a = 1, x = 6/2 = 3."
+        },
+        {
+          "answer": "y = 3, because the axis of symmetry is a horizontal line at the average of the x-intercepts of the parabolic curve on the plane",
+          "explanation": "The axis of symmetry is a vertical line (x = constant), not horizontal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states whether y = 2ˣ is an increasing or decreasing function?",
+      "correct": "Always increasing, because each unit increase in x multiplies the output by the constant factor 2, producing a strictly rising graph",
+      "correctExplanation": "For base a > 1, aˣ is strictly increasing: each step multiplies by a > 1.",
+      "distractors": [
+        {
+          "answer": "Decreasing, because larger exponents produce smaller outputs when the base is a single-digit positive integer less than ten",
+          "explanation": "Larger exponents of a base > 1 produce larger outputs; 2³ = 8 > 2² = 4."
+        },
+        {
+          "answer": "Neither increasing nor decreasing, because exponential functions oscillate between positive and negative values across the domain",
+          "explanation": "Exponential functions with positive base are always positive and monotonic; they do not oscillate."
+        },
+        {
+          "answer": "Decreasing for x < 0 and increasing for x > 0, because the sign of the exponent determines whether the function rises or falls",
+          "explanation": "y = 2ˣ is increasing for all real x, not just positive x; 2⁻¹ = 0.5 < 2⁰ = 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the type of curve represented by the equation y = 5/x?",
+      "correct": "A hyperbola, because y = 5/x has the form y = k/x, which defines a rectangular hyperbola with asymptotes on the coordinate axes",
+      "correctExplanation": "y = k/x is the standard form of a rectangular hyperbola with asymptotes at x = 0 and y = 0.",
+      "distractors": [
+        {
+          "answer": "A parabola, because the equation involves division by x, which is equivalent to a quadratic relationship between y and x values",
+          "explanation": "Division by x gives an inverse relationship, not a quadratic one; parabolas involve x²."
+        },
+        {
+          "answer": "A circle, because the equation y = 5/x can be rearranged to xy = 5, which defines a circular path on the coordinate plane",
+          "explanation": "xy = 5 is a rectangular hyperbola, not a circle; circles require x² + y² = r²."
+        },
+        {
+          "answer": "A straight line, because the equation y = 5/x has a constant numerator, producing a linear relationship between the two variables",
+          "explanation": "y = 5/x is an inverse proportion, which is nonlinear; linear functions have the form y = mx + c."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the effect of a negative leading coefficient on a parabola?",
+      "correct": "It causes the parabola to open downward instead of upward, reflecting the graph across the horizontal axis through the vertex",
+      "correctExplanation": "A negative leading coefficient inverts the parabola so it opens downward.",
+      "distractors": [
+        {
+          "answer": "It shifts the parabola downward by one unit from its original vertex position on the coordinate plane without changing its shape",
+          "explanation": "A negative coefficient inverts the parabola; it does not translate it downward."
+        },
+        {
+          "answer": "It makes the parabola narrower by compressing its width toward the axis of symmetry while keeping the opening direction unchanged",
+          "explanation": "The sign determines direction, not width; width is determined by the magnitude of the coefficient."
+        },
+        {
+          "answer": "It rotates the parabola ninety degrees clockwise so that it opens to the right instead of opening upward on the coordinate plane",
+          "explanation": "A negative coefficient reflects vertically, producing downward opening; rotation requires a different equation form."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The equation x² + y² = 25 represents a {{blank:1}} with centre at the origin and a radius of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "circle",
+          "correctExplanation": "x² + y² = r² is the standard form of a circle centred at (0, 0).",
+          "distractors": [
+            {
+              "answer": "parabola",
+              "explanation": "Parabolas have only one squared variable; circles have both x² and y² with equal coefficients.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "hyperbola",
+              "explanation": "Hyperbolas have a subtraction between the squared terms; circles have addition.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "r² = 25 gives r = √25 = 5.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "25 = r², not r; the radius is the square root of the constant.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "12.5",
+              "explanation": "12.5 = 25/2; the radius is √25, not 25/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The parabola y = (x − 2)² − 4 has its vertex at ({{blank:1}}, {{blank:2}}) and opens upward.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "In vertex form y = a(x − h)² + k, h = 2 gives the x-coordinate of the vertex.",
+          "distractors": [
+            {
+              "answer": "−2",
+              "explanation": "The sign inside the bracket is opposite to h; (x − 2) means h = 2, not −2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 is the absolute value of k; the x-coordinate is h = 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−4",
+          "correctExplanation": "k = −4 gives the y-coordinate of the vertex.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The constant is −4, not +4; the sign must be preserved.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the x-coordinate (h), not the y-coordinate (k).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "Increasing the value of a in y = ax² makes the parabola wider.",
+      "correct": "False",
+      "correctExplanation": "Increasing |a| makes the parabola narrower; larger |a| means a greater rate of change, compressing the graph toward the axis of symmetry.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the effect of increasing |a| with making the parabola wider; larger |a| narrows the curve."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The graph of y = −2/x is located in quadrants 2 and 4 of the coordinate plane.",
+      "correct": "True",
+      "correctExplanation": "When k < 0 in y = k/x, positive x gives negative y (Q4) and negative x gives positive y (Q2).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes all hyperbolas of the form y = k/x occupy the same quadrants regardless of the sign of k."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Translating the circle x² + y² = 9 by 3 units to the right gives (x + 3)² + y² = 9.",
+      "correct": "False",
+      "correctExplanation": "A rightward translation of 3 units replaces x with (x − 3), giving (x − 3)² + y² = 9.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the direction of the sign change; a rightward shift uses (x − h) with h > 0, not (x + h)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The parabola y = (x − 1)² − 9 has x-intercepts at x = 4 and x = −2.",
+      "correct": "True",
+      "correctExplanation": "Setting y = 0: (x−1)² = 9, so x−1 = ±3, giving x = 4 and x = −2.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes the vertex form cannot be used to find x-intercepts; solving (x−h)² = −k gives the intercepts directly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The graph of y = 2ˣ is symmetric about the y-axis.",
+      "correct": "False",
+      "correctExplanation": "y = 2ˣ is not symmetric about the y-axis because 2ˣ ≠ 2⁻ˣ in general; symmetry would require f(x) = f(−x).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses exponential functions with even functions; only functions like y = x² are symmetric about the y-axis."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The hyperbola y = k/x has reflective symmetry in the x-axis for all non-zero values of k.",
+      "correct": "False",
+      "correctExplanation": "y = k/x has rotational symmetry about the origin (180°), not reflective symmetry in the x-axis; reflecting in the x-axis gives y = −k/x, a different curve when k ≠ 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses rotational symmetry with reflective symmetry; y = k/x maps to itself under 180° rotation, not under x-axis reflection."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "Reflecting y = x² in the x-axis produces the graph y = x² + 1.",
+      "correct": "False",
+      "correctExplanation": "Reflecting y = x² in the x-axis gives y = −x²; adding 1 translates the graph upward, which is a different transformation.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses reflection with vertical translation; reflection negates the y-values, while translation shifts them."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The equation (x − 3)² + (y + 2)² = 16 represents a circle with centre (3, −2).",
+      "correct": "True",
+      "correctExplanation": "In (x − h)² + (y − k)² = r², h = 3 and k = −2 (since y + 2 = y − (−2)), giving centre (3, −2).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misreads the sign of k; (y + 2) corresponds to k = −2, not k = 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains how the graph of y = (x − 3)² differs from the graph of y = x²?",
+      "correct": "The graph is shifted 3 units to the right, because replacing x with (x − 3) translates every point on the parabola rightward",
+      "correctExplanation": "In y = f(x − h), h > 0 shifts the graph h units to the right; here h = 3.",
+      "distractors": [
+        {
+          "answer": "The graph is shifted 3 units to the left, because subtracting 3 from x moves all points in the negative x-direction on the plane",
+          "explanation": "Subtracting from x shifts the graph right, not left; y = (x − 3)² has vertex at (3, 0)."
+        },
+        {
+          "answer": "The graph is shifted 3 units upward, because the constant 3 is added to the y-values of every point on the original parabola",
+          "explanation": "The 3 is subtracted from x, not added to y; this is a horizontal shift, not a vertical one."
+        },
+        {
+          "answer": "The graph is reflected in the y-axis, because the subtraction of 3 reverses the direction of the parabola's opening completely",
+          "explanation": "Subtraction inside the bracket shifts horizontally; reflection would require a negative coefficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the circle x² + y² = r² is not a function?",
+      "correct": "The circle is not a function because most vertical lines cross it at two points, meaning one x-value corresponds to two y-values",
+      "correctExplanation": "The vertical line test fails: for |x| < r, two y-values satisfy the equation, violating the function definition.",
+      "distractors": [
+        {
+          "answer": "The circle is not a function because it does not pass through the origin, and all functions must contain the point (0, 0) by definition",
+          "explanation": "Functions are not required to pass through the origin; the vertical line test determines function status."
+        },
+        {
+          "answer": "The circle is not a function because its equation contains two variables, and functions are restricted to single-variable expressions only",
+          "explanation": "Functions can involve two variables (x and y); the issue is that one x-value maps to two y-values."
+        },
+        {
+          "answer": "The circle is not a function because it has no asymptotes, and all valid functions must possess at least one asymptote on the plane",
+          "explanation": "Many functions lack asymptotes (e.g. y = x²); the presence of asymptotes is unrelated to function status."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes how the value of k affects the graph of the hyperbola y = k/x?",
+      "correct": "Larger values of |k| stretch the curve further from both axes, while the sign of k determines which pair of quadrants contains the graph",
+      "correctExplanation": "Positive k places the graph in Q1 and Q3; negative k places it in Q2 and Q4; |k| controls the distance from the axes.",
+      "distractors": [
+        {
+          "answer": "Larger values of |k| shift the hyperbola vertically upward by k units from its standard position on the coordinate axes",
+          "explanation": "Changing k stretches the curve away from the axes; it does not translate the asymptotes or shift the graph vertically."
+        },
+        {
+          "answer": "The value of k determines the x-intercept of the hyperbola, with the graph crossing the x-axis at the point (k, 0) for all values",
+          "explanation": "y = k/x never crosses the x-axis because y = 0 has no solution; there is no x-intercept."
+        },
+        {
+          "answer": "The value of k changes the positions of the asymptotes, moving them away from the coordinate axes by a distance proportional to k",
+          "explanation": "The asymptotes of y = k/x are always x = 0 and y = 0 regardless of the value of k."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains the effect of adding a positive constant c to the equation y = x² to form y = x² + c?",
+      "correct": "Adding c shifts the entire parabola upward by c units, relocating the vertex from (0, 0) to (0, c) without changing its shape",
+      "correctExplanation": "Vertical translation by +c moves every point up by c units; the vertex shifts from (0, 0) to (0, c).",
+      "distractors": [
+        {
+          "answer": "Adding c shifts the parabola c units to the right along the x-axis, moving the vertex from the origin to the point (c, 0) directly",
+          "explanation": "Adding c to the equation shifts the graph vertically, not horizontally; the vertex moves to (0, c)."
+        },
+        {
+          "answer": "Adding c reflects the parabola across the horizontal axis, inverting it from upward-opening to downward-opening on the plane entirely",
+          "explanation": "Reflection requires a negative coefficient; adding a constant translates the graph vertically without changing direction."
+        },
+        {
+          "answer": "Adding c narrows the parabola by compressing it toward the axis of symmetry, making the curve steeper near its vertex position",
+          "explanation": "Width is controlled by the coefficient of x²; adding a constant translates vertically without affecting width."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the exponential function y = 2ˣ never produces a y-value of zero?",
+      "correct": "No real exponent x satisfies 2ˣ = 0, because 2ˣ is always positive; the x-axis is a horizontal asymptote approached but never reached",
+      "correctExplanation": "Since 2 > 0, any real power of 2 is positive; zero is excluded from the range.",
+      "distractors": [
+        {
+          "answer": "The function reaches zero at x = −∞, which is a specific point on the graph where the curve intersects the horizontal x-axis",
+          "explanation": "−∞ is not a real number; the function approaches zero asymptotically but never attains it."
+        },
+        {
+          "answer": "The function produces zero at x = 0 because 2⁰ = 0 by the definition of any base raised to the zero exponent power",
+          "explanation": "2⁰ = 1, not 0; the zero exponent rule gives a⁰ = 1 for any positive base a."
+        },
+        {
+          "answer": "The function produces zero whenever x is a negative integer, because raising 2 to a negative power gives a value of exactly zero",
+          "explanation": "2⁻ⁿ = 1/2ⁿ, which is positive but not zero; negative exponents produce small positive fractions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes the symmetry of a parabola with equation y = a(x − h)² + k?",
+      "correct": "The parabola has reflective symmetry in the vertical line x = h, meaning points equidistant from this line have equal y-coordinates",
+      "correctExplanation": "The axis of symmetry x = h divides the parabola into two mirror-image halves.",
+      "distractors": [
+        {
+          "answer": "The parabola has rotational symmetry of order 2 about the vertex, meaning it maps onto itself under a 180-degree rotation at that point",
+          "explanation": "Parabolas have reflective symmetry, not rotational symmetry; a 180° rotation does not map a parabola onto itself."
+        },
+        {
+          "answer": "The parabola has reflective symmetry in the line y = k, because the horizontal line through the vertex serves as the mirror line",
+          "explanation": "The axis of symmetry is the vertical line x = h, not the horizontal line y = k."
+        },
+        {
+          "answer": "The parabola has no symmetry at all, because the vertex form introduces asymmetry through the translation parameters h and k",
+          "explanation": "All parabolas have reflective symmetry in their axis of symmetry, regardless of translation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains the difference between the graphs of y = 2ˣ and y = 3ˣ?",
+      "correct": "y = 3ˣ grows more steeply than y = 2ˣ for positive x because each unit increase in x multiplies the output by 3 instead of by 2",
+      "correctExplanation": "At x = 1, 3¹ = 3 > 2¹ = 2; at x = 5, 3⁵ = 243 > 2⁵ = 32; larger bases grow faster.",
+      "distractors": [
+        {
+          "answer": "y = 3ˣ grows more slowly than y = 2ˣ for positive x because a larger base produces a lower growth rate across all positive exponents",
+          "explanation": "A larger base produces faster growth; 3ˣ > 2ˣ for all x > 0."
+        },
+        {
+          "answer": "y = 3ˣ and y = 2ˣ are identical graphs because both are exponential functions with the same y-intercept at the point (0, 1)",
+          "explanation": "Sharing a y-intercept does not make functions identical; their growth rates differ."
+        },
+        {
+          "answer": "y = 3ˣ is shifted upward from y = 2ˣ by exactly 1 unit because the difference between the bases 3 and 2 equals 1 on the number line",
+          "explanation": "Base differences do not translate graphs vertically; they change the steepness of growth."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes the effect of replacing x with (x + 2) in the circle equation x² + y² = 9?",
+      "correct": "The circle is shifted 2 units to the left, because (x + 2)² = (x − (−2))² indicates the new centre has x-coordinate −2 on the axis",
+      "correctExplanation": "(x + 2)² + y² = 9 has centre (−2, 0); replacing x with x + 2 shifts the graph 2 units left.",
+      "distractors": [
+        {
+          "answer": "The circle is shifted 2 units to the right, because adding 2 to x moves the centre in the positive x-direction on the coordinate plane in this context",
+          "explanation": "Adding to x inside the equation shifts the graph left, not right; (x + 2)² replaces x − (−2), giving h = −2."
+        },
+        {
+          "answer": "The radius increases from 3 to 5, because the constant 2 is added to the original radius value of 3 to produce the new radius",
+          "explanation": "Replacing x with (x + 2) translates the graph; it does not change the radius."
+        },
+        {
+          "answer": "The circle is reflected in the y-axis, because the addition of a positive constant reverses the sign of all x-coordinates on the graph",
+          "explanation": "Adding a constant inside the equation translates, not reflects; reflection would negate x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains how the graph of y = −x² + 4 relates to the graph of y = x²?",
+      "correct": "The graph is reflected in the x-axis and shifted 4 units upward, giving a downward-opening parabola with vertex at (0, 4) on the axes",
+      "correctExplanation": "y = −x² reflects y = x² in the x-axis; adding 4 shifts the vertex from (0, 0) to (0, 4).",
+      "distractors": [
+        {
+          "answer": "The graph is reflected in the y-axis and shifted 4 units upward, because the negative sign reverses left-right orientation on the plane",
+          "explanation": "Reflecting in the y-axis does not change y = x² (it is symmetric); the negative sign reflects in the x-axis."
+        },
+        {
+          "answer": "The graph is stretched vertically by a factor of 4 and reflected in the x-axis, because the constant 4 acts as a scaling multiplier",
+          "explanation": "The constant 4 translates vertically; it does not stretch the graph."
+        },
+        {
+          "answer": "The graph is shifted 4 units downward with no reflection applied, because the negative sign is absorbed by the constant term entirely",
+          "explanation": "The negative sign inverts the parabola; it is not cancelled by the constant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains what the constant a determines in the exponential function y = a·bˣ?",
+      "correct": "The constant a determines the y-intercept, since substituting x = 0 gives y = a·b⁰ = a, setting the initial output value of the function",
+      "correctExplanation": "At x = 0, y = a·1 = a; so a is the y-intercept value of the function.",
+      "distractors": [
+        {
+          "answer": "The constant a determines the horizontal asymptote, setting the line that the exponential graph approaches but never crosses entirely",
+          "explanation": "The horizontal asymptote of y = a·bˣ is y = 0 (assuming no vertical shift); a determines the y-intercept, not the asymptote."
+        },
+        {
+          "answer": "The constant a determines the base of the exponential, controlling whether the function grows or decays as x increases in value",
+          "explanation": "The base is b, not a; the constant a scales the output vertically."
+        },
+        {
+          "answer": "The constant a determines the x-intercept, specifying where the exponential graph crosses the horizontal axis on the coordinate plane",
+          "explanation": "Exponential functions y = a·bˣ with a ≠ 0 have no x-intercept because a·bˣ ≠ 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the domain of the hyperbola y = k/(x − 3) excludes x = 3?",
+      "correct": "The value x = 3 is excluded because it makes the denominator x − 3 equal to zero, and division by zero is undefined in mathematics",
+      "correctExplanation": "When x = 3, x − 3 = 0; k/0 is undefined, creating a vertical asymptote at x = 3.",
+      "distractors": [
+        {
+          "answer": "The value x = 3 is excluded because substituting it produces y = k/3, which is a fraction, and fractions are not valid function outputs",
+          "explanation": "Fractions are valid outputs; at x = 3, the denominator is zero, making the expression undefined."
+        },
+        {
+          "answer": "The value x = 3 is excluded because the graph has a turning point at x = 3 where the direction of the curve reverses completely",
+          "explanation": "Hyperbolas do not have turning points at their vertical asymptotes; they approach infinity there."
+        },
+        {
+          "answer": "The value x = 3 is excluded because the function is defined only for integer values of x and 3 does not satisfy the integer condition",
+          "explanation": "The function accepts all real x except 3; there is no integer restriction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes how to determine whether a parabola opens upward or downward from its equation y = ax² + bx + c?",
+      "correct": "The sign of a determines the direction: positive a produces an upward-opening parabola and negative a produces a downward-opening one",
+      "correctExplanation": "If a > 0 the parabola opens upward; if a < 0 it opens downward.",
+      "distractors": [
+        {
+          "answer": "The sign of c determines the direction: positive c means upward opening and negative c means downward opening on the coordinate plane",
+          "explanation": "The constant c determines the y-intercept, not the direction; the sign of a controls the opening direction."
+        },
+        {
+          "answer": "The sign of b determines the direction: positive b means the parabola opens to the right and negative b means it opens to the left",
+          "explanation": "b affects the position of the axis of symmetry; the sign of a determines up/down opening."
+        },
+        {
+          "answer": "The magnitude of a determines the direction: values of a greater than 1 mean upward opening while values less than 1 mean downward",
+          "explanation": "The magnitude affects width, not direction; the sign of a determines whether the parabola opens up or down."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The hyperbola y = k/x with k > 0 is located in quadrants {{blank:1}} and {{blank:2}} of the coordinate plane.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "When x > 0 and k > 0, y = k/x > 0, placing the curve in quadrant 1.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Quadrant 2 has x < 0 and y > 0; for k > 0 and x < 0, y < 0 (Q3), not Q2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "Quadrant 4 has x > 0 and y < 0; for k > 0 and x > 0, y > 0 (Q1), not Q4.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "When x < 0 and k > 0, y = k/x < 0, placing the curve in quadrant 3.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Quadrant 2 requires positive y with negative x; for k > 0 and x < 0, y is negative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "Quadrant 4 requires negative y with positive x; for k > 0 and x > 0, y is positive.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Reflecting the parabola y = x² in the x-axis produces y = {{blank:1}}, which opens {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−x²",
+          "correctExplanation": "Reflecting in the x-axis negates all y-values: y → −y gives y = −x².",
+          "distractors": [
+            {
+              "answer": "x²",
+              "explanation": "This is the original; no reflection has been applied.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "(−x)²",
+              "explanation": "(−x)² = x²; this reflects in the y-axis, not the x-axis.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "downward",
+          "correctExplanation": "The negative coefficient causes the parabola to open downward.",
+          "distractors": [
+            {
+              "answer": "upward",
+              "explanation": "The original opens upward; the reflection reverses this to downward.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "to the right",
+              "explanation": "Parabolas of the form y = ax² open up or down, not sideways.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The circle (x − 4)² + (y + 1)² = 49 has centre ({{blank:1}}, {{blank:2}}) and radius 7.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "In (x − h)², h = 4 gives the x-coordinate of the centre.",
+          "distractors": [
+            {
+              "answer": "−4",
+              "explanation": "The sign inside the bracket is opposite to h; (x − 4) means h = 4, not −4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "49",
+              "explanation": "49 = r²; it is the squared radius, not the x-coordinate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−1",
+          "correctExplanation": "(y + 1) = (y − (−1)), so k = −1 gives the y-coordinate of the centre.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The sign inside is +1, but (y − k) form requires k = −1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "7",
+              "explanation": "7 is the radius; the y-coordinate of the centre is −1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The exponential function y = 5ˣ has a y-intercept at (0, {{blank:1}}) and a horizontal asymptote at y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "5⁰ = 1 by the zero exponent rule; the y-intercept is always 1 for y = aˣ.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 is the base, not the y-intercept; a⁰ = 1, not a.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "The y-intercept is 1, not 0; exponential functions never equal zero.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "As x → −∞, 5ˣ → 0; the x-axis is the horizontal asymptote.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "y = 1 is the y-intercept, not the asymptote.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "y = 5 is the value at x = 1; the asymptote is y = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Increasing the coefficient a in y = ax² makes the parabola {{blank:1}}, while decreasing a toward zero makes it {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "narrower",
+          "correctExplanation": "Larger |a| increases the rate of change, pulling the curve closer to the axis of symmetry.",
+          "distractors": [
+            {
+              "answer": "wider",
+              "explanation": "Larger |a| compresses, not widens; the parabola becomes narrower.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "taller",
+              "explanation": "The parabola extends infinitely in both cases; narrower is the correct description of the shape change.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "wider",
+          "correctExplanation": "Smaller |a| (approaching 0) decreases the rate of change, spreading the curve further from the axis.",
+          "distractors": [
+            {
+              "answer": "narrower",
+              "explanation": "Smaller |a| widens; the effect is opposite to increasing |a|.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "shorter",
+              "explanation": "The parabola still extends infinitely; wider describes the shape near the vertex.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The vertex of the parabola y = −2(x + 3)² + 5 is located at ({{blank:1}}, {{blank:2}}) and the parabola opens downward.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−3",
+          "correctExplanation": "(x + 3) = (x − (−3)), so h = −3 gives the x-coordinate of the vertex.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The sign inside the bracket is opposite to h; (x + 3) corresponds to h = −3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−2",
+              "explanation": "−2 is the coefficient a, not the x-coordinate of the vertex.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "k = 5 gives the y-coordinate of the vertex directly from vertex form.",
+          "distractors": [
+            {
+              "answer": "−5",
+              "explanation": "The constant is +5, not −5; the sign must be preserved.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is related to h, not k; the y-coordinate is k = 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Amir identifies the vertex of y = 2(x − 5)² + 3 as (5, 3) and states the parabola opens upward.",
+      "correct": "True",
+      "correctExplanation": "In vertex form y = a(x−h)²+k with a = 2 > 0, the vertex is (h, k) = (5, 3) and the parabola opens upward.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Doubts that the vertex can be read directly from vertex form; believes completing the square is always necessary."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Jade determines that the circle (x − 1)² + (y − 2)² = 9 has a radius of 9 units.",
+      "correct": "False",
+      "correctExplanation": "The equation gives r² = 9, so the radius is r = √9 = 3, not 9.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses r² with r; the constant on the right side is the square of the radius."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Priya sketches y = −(x − 4)² + 16. Which one of the following correctly identifies the x-intercepts?",
+      "correct": "x = 0 and x = 8, because solving −(x − 4)² + 16 = 0 gives (x − 4)² = 16, so x − 4 = ±4",
+      "correctExplanation": "Setting y = 0: (x−4)² = 16 gives x−4 = ±4, so x = 8 and x = 0.",
+      "distractors": [
+        {
+          "answer": "x = 4 only, because the vertex lies on the x-axis and the parabola does not cross it at any other distinct point on the plane in this context",
+          "explanation": "The vertex is at (4, 16), which is above the x-axis; setting y = 0 gives two x-intercepts."
+        },
+        {
+          "answer": "x = 2 and x = 6, because the x-intercepts are found by adding and subtracting the constant 2 from the vertex x-coordinate of 4",
+          "explanation": "Setting y = 0: −(x−4)² + 16 = 0 gives (x−4)² = 16, so x−4 = ±4; x = 8 and x = 0."
+        },
+        {
+          "answer": "There are no x-intercepts because the parabola opens downward and the vertex is below the x-axis at the point (4, −16) entirely",
+          "explanation": "The vertex is at (4, 16), above the x-axis; a downward-opening parabola above the axis crosses it twice."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Marcus determines the equation of a circle with centre (3, −2) and radius 4. Which one of the following gives the correct equation?",
+      "correct": "(x − 3)² + (y + 2)² = 16, because h = 3, k = −2 gives (y − (−2))² = (y + 2)², and r² = 4² = 16 on the right side",
+      "correctExplanation": "(x − 3)² + (y + 2)² = 16 is correct with centre (3, −2) and radius 4.",
+      "distractors": [
+        {
+          "answer": "(x − 3)² + (y − 2)² = 16, because the centre coordinates are substituted with matching signs into the standard form directly",
+          "explanation": "The y-coordinate is −2, so (y − (−2))² = (y + 2)²; using (y − 2) places the centre at (3, 2)."
+        },
+        {
+          "answer": "(x + 3)² + (y − 2)² = 4, because the signs of the centre coordinates are reversed and the radius is not squared in the equation",
+          "explanation": "The signs should reflect (x − h) and (y − k); also r² = 16, not r = 4."
+        },
+        {
+          "answer": "(x − 3)² + (y + 2)² = 4, because the equation correctly places the centre but uses the radius value 4 instead of its square 16",
+          "explanation": "The right side must be r² = 16, not r = 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Kofi identifies the key features of y = −3/(x + 1). Which one of the following correctly states the asymptotes?",
+      "correct": "x = −1 and y = 0, because the denominator equals zero when x = −1, and y approaches 0 as x approaches positive or negative infinity",
+      "correctExplanation": "x + 1 = 0 at x = −1 (vertical), and as x → ±∞, −3/(x+1) → 0 (horizontal).",
+      "distractors": [
+        {
+          "answer": "x = −1 and y = −3, because the vertical asymptote occurs at the denominator's zero and the horizontal is the value of the numerator",
+          "explanation": "The horizontal asymptote is y = 0 for y = k/(x − a); the numerator value is −3, but the asymptote is where y approaches, which is 0."
+        },
+        {
+          "answer": "x = 1 and y = 0, because the vertical asymptote occurs at the positive value of the constant inside the brackets in the denominator",
+          "explanation": "x + 1 = 0 gives x = −1, not x = 1; the sign inside the bracket must be accounted for."
+        },
+        {
+          "answer": "x = 0 and y = −1, because all hyperbolas have their vertical asymptote at the y-axis and horizontal asymptote at y = −1 by default in this context",
+          "explanation": "Asymptote positions depend on the equation; y = −3/(x+1) has asymptotes at x = −1 and y = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Linh converts y = x² − 6x + 5 into vertex form. Which one of the following gives the correct result?",
+      "correct": "y = (x − 3)² − 4, because completing the square gives x² − 6x + 9 − 9 + 5 = (x − 3)² − 4 as the vertex form expression",
+      "correctExplanation": "x² − 6x + 5 = (x − 3)² − 9 + 5 = (x − 3)² − 4; vertex at (3, −4).",
+      "distractors": [
+        {
+          "answer": "y = (x − 6)² + 5, because the coefficient of x and the constant term are placed directly into the vertex form without any calculation",
+          "explanation": "Completing the square: (x − 3)² = x² − 6x + 9, so y = (x − 3)² − 4, not (x − 6)² + 5."
+        },
+        {
+          "answer": "y = (x − 3)² + 5, because completing the square gives (x − 3)² = x² − 6x + 9 but the constant 5 is kept without any adjustment in this context",
+          "explanation": "The adjustment is y = x² − 6x + 9 − 9 + 5 = (x − 3)² − 4; the constant must be adjusted."
+        },
+        {
+          "answer": "y = (x + 3)² − 4, because the sign of h is positive when the original coefficient of x is negative in the general form equation",
+          "explanation": "x² − 6x = (x − 3)², not (x + 3)²; the sign in vertex form opposes the original coefficient's sign."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Sam determines the equation of a parabola with vertex (−2, 5) that passes through (0, 1). Which one of the following gives the correct equation?",
+      "correct": "y = −(x + 2)² + 5, because substituting (0, 1) gives 1 = a(4) + 5, so a = −1, with vertex at (−2, 5) in the final equation",
+      "correctExplanation": "Using y = a(x+2)² + 5 and (0,1): 1 = 4a + 5, 4a = −4, a = −1.",
+      "distractors": [
+        {
+          "answer": "y = (x + 2)² + 5, because the vertex form uses (x − (−2))² = (x + 2)² and the constant k = 5 without determining the value of a",
+          "explanation": "Substituting (0, 1): 1 = a(0+2)² + 5 gives 4a = −4, so a = −1; the coefficient a must be determined."
+        },
+        {
+          "answer": "y = −(x − 2)² + 5, because the vertex is reflected to (2, 5) and the coefficient a = −1 is applied to the squared term directly",
+          "explanation": "The vertex is (−2, 5), not (2, 5); (x − (−2))² = (x + 2)²."
+        },
+        {
+          "answer": "y = 2(x + 2)² + 5, because the coefficient a = 2 is found from the y-intercept by dividing the y-value 1 by the x-value 0 directly",
+          "explanation": "1/0 is undefined; a is found by substituting the point into vertex form: a = (1−5)/(0+2)² = −1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Rosa sketches y = 2ˣ − 3. Which one of the following correctly identifies the horizontal asymptote and y-intercept?",
+      "correct": "Asymptote y = −3 and y-intercept (0, −2), because the shift of −3 lowers the asymptote from y = 0 to y = −3 and 2⁰ − 3 = −2",
+      "correctExplanation": "y = 2ˣ has asymptote y = 0; subtracting 3 shifts it to y = −3. At x = 0: y = 1 − 3 = −2.",
+      "distractors": [
+        {
+          "answer": "Asymptote y = −3 and y-intercept (0, −3), because at x = 0 the exponential term 2⁰ equals zero, leaving only the constant −3",
+          "explanation": "2⁰ = 1, not 0; the y-intercept is (0, 1 − 3) = (0, −2)."
+        },
+        {
+          "answer": "Asymptote y = 0 and y-intercept (0, −3), because the horizontal asymptote of all exponential functions is y = 0 regardless of shifts",
+          "explanation": "Subtracting 3 shifts the asymptote from y = 0 to y = −3."
+        },
+        {
+          "answer": "Asymptote y = 2 and y-intercept (0, −1), because the base 2 determines the asymptote and the y-intercept is computed as 2 − 3 = −1",
+          "explanation": "The base does not determine the asymptote; the vertical shift does. Also, y-intercept = 2⁰ − 3 = −2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Anika determines whether the point (3, 4) lies on the circle x² + y² = 25. Which one of the following correctly evaluates this?",
+      "correct": "The point lies on the circle because 3² + 4² = 9 + 16 = 25, which equals the right side of the equation exactly as required",
+      "correctExplanation": "Substituting: 9 + 16 = 25 = r²; since the left side equals the right, the point satisfies the equation.",
+      "distractors": [
+        {
+          "answer": "The point does not lie on the circle because 3 + 4 = 7, which is less than the radius of 25, so the point is inside the circle",
+          "explanation": "The test requires 3² + 4² vs 25; adding coordinates is not how distance is computed."
+        },
+        {
+          "answer": "The point does not lie on the circle because 3² + 4² = 9 + 16 = 25, which equals the right side, and equality means inside not on",
+          "explanation": "Equality means the point satisfies the equation and lies exactly on the circle, not inside."
+        },
+        {
+          "answer": "The point lies outside the circle because 3 × 4 = 12, and 12 < 25 only when the product is less than the radius squared value",
+          "explanation": "Multiplying coordinates is not the test; the correct test is 3² + 4² = 25."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Jade sketches y = −2(x + 1)² + 3. Which one of the following correctly describes the graph?",
+      "correct": "A downward-opening parabola with vertex at (−1, 3), because a = −2 < 0 gives downward opening, h = −1 and k = 3 give the vertex",
+      "correctExplanation": "a = −2 < 0 (downward); (x − (−1))² gives h = −1; k = 3; vertex (−1, 3).",
+      "distractors": [
+        {
+          "answer": "An upward-opening parabola with vertex at (1, 3), because the negative coefficient is cancelled by the negative sign inside the bracket",
+          "explanation": "The negative coefficient makes it downward-opening; (x + 1) means h = −1, not 1."
+        },
+        {
+          "answer": "A downward-opening parabola with vertex at (1, −3), because both signs are swapped when reading the vertex from the equation form",
+          "explanation": "h = −1 (from x + 1 = x − (−1)) and k = 3; the vertex is (−1, 3), not (1, −3)."
+        },
+        {
+          "answer": "A downward-opening parabola with vertex at (−1, −3), because the coefficient −2 makes k negative and the bracket gives h = −1",
+          "explanation": "k = 3 as written in the equation; the negative coefficient affects direction, not the value of k."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Will writes the equation of a hyperbola with vertical asymptote x = 2 and horizontal asymptote y = −1. Which one of the following has the correct form?",
+      "correct": "y = k/(x − 2) − 1, because x − 2 = 0 at x = 2 gives the vertical asymptote and the constant −1 gives the horizontal asymptote",
+      "correctExplanation": "y = k/(x − 2) − 1 has vertical asymptote x = 2 and horizontal asymptote y = −1.",
+      "distractors": [
+        {
+          "answer": "y = k/x + 2, because the vertical asymptote is at x = 2 and adding 2 shifts the graph to the correct position on the horizontal axis in this context",
+          "explanation": "y = k/x + 2 shifts vertically, not horizontally; the vertical asymptote remains at x = 0."
+        },
+        {
+          "answer": "y = k/(x + 2) − 1, because substituting x + 2 places the vertical asymptote at x = 2 and subtracting 1 shifts the horizontal one",
+          "explanation": "x + 2 = 0 gives x = −2, not x = 2; the correct factor is (x − 2)."
+        },
+        {
+          "answer": "y = (x − 2)/(−1), because the asymptote values 2 and −1 are placed directly as the numerator shift and denominator constant directly",
+          "explanation": "This produces a linear function, not a hyperbola; the variable must be in the denominator."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Mia compares y = 3ˣ and y = 3⁻ˣ. Which one of the following correctly describes their relationship?",
+      "correct": "They are reflections of each other in the y-axis, because replacing x with −x in y = 3ˣ gives y = 3⁻ˣ which is exponential decay",
+      "correctExplanation": "f(−x) = 3⁻ˣ; reflecting in the y-axis converts exponential growth into decay.",
+      "distractors": [
+        {
+          "answer": "They are vertical translations of each other, separated by a constant distance of 2 units across the entire domain of both functions",
+          "explanation": "They are reflections, not translations; the distance between them varies with x."
+        },
+        {
+          "answer": "They are identical functions because 3ˣ = 3⁻ˣ for all real values of x by the symmetry of the exponential function about the origin in this context",
+          "explanation": "3ˣ = 3⁻ˣ only at x = 0; they are different functions for x ≠ 0."
+        },
+        {
+          "answer": "They are rotations of each other by 90 degrees about the y-intercept point (0, 1), producing perpendicular curves on the coordinate plane",
+          "explanation": "No 90° rotation relates these curves; they are reflections in the y-axis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Jarrah determines the discriminant of y = 2x² − 4x + 5 to decide how many x-intercepts the parabola has. Which one of the following gives the correct analysis?",
+      "correct": "Discriminant = −24, which is negative, so the parabola has no real x-intercepts and lies entirely above or below the horizontal axis",
+      "correctExplanation": "Δ = (−4)² − 4(2)(5) = 16 − 40 = −24 < 0; no real roots, so no x-intercepts.",
+      "distractors": [
+        {
+          "answer": "Discriminant = 24, which is positive, so the parabola has two distinct x-intercepts crossing the horizontal axis at separate points",
+          "explanation": "Δ = (−4)² − 4(2)(5) = 16 − 40 = −24, not +24; the discriminant is negative."
+        },
+        {
+          "answer": "Discriminant = 0, which means the parabola touches the x-axis at exactly one point, the vertex, creating a single repeated root in this context",
+          "explanation": "Δ = 16 − 40 = −24, not 0; a discriminant of zero would mean a single tangent point."
+        },
+        {
+          "answer": "Discriminant = 4, which is positive, so the parabola has two x-intercepts located symmetrically about the axis of symmetry line",
+          "explanation": "Δ = 16 − 40 = −24, not 4; the discriminant must be computed as b² − 4ac."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Yen determines whether the equation x² + y² + 4x − 6y + 9 = 0 represents a circle by completing the square. Which one of the following gives the correct result?",
+      "correct": "(x + 2)² + (y − 3)² = 4, representing a circle with centre (−2, 3) and radius 2 after completing the square for both x and y terms",
+      "correctExplanation": "x²+4x+4 + y²−6y+9 = −9+4+9 = 4; centre (−2, 3), r = √4 = 2.",
+      "distractors": [
+        {
+          "answer": "(x + 2)² + (y − 3)² = 4, representing a circle with centre (2, −3) and radius 4 after completing the square on both variable groups",
+          "explanation": "The centre is (−2, 3), not (2, −3); (x + 2)² means h = −2 and (y − 3)² means k = 3."
+        },
+        {
+          "answer": "(x + 2)² + (y − 3)² = 0, which represents a single point at (−2, 3) rather than a circle because the radius would be zero exactly in this context",
+          "explanation": "Completing the square: x² + 4x + 4 + y² − 6y + 9 = 4 + 9 − 9 + (original constant); must check arithmetic."
+        },
+        {
+          "answer": "(x + 2)² + (y − 3)² = −4, which represents no real graph because a negative radius squared has no geometric interpretation at all",
+          "explanation": "The correct computation gives r² = 4 > 0; r² = −4 would result from an arithmetic error."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Priya converts y = x² + 8x + 12 to vertex form by completing the square, obtaining y = (x + {{blank:1}})² − {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Half of 8 is 4; (x + 4)² = x² + 8x + 16.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 is the coefficient of x, not half of it; completing the square uses half the coefficient.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is not half of 8; the correct value is 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "(x+4)² = x²+8x+16; subtracting from the original: 12 − 16 = −4, so k = −4.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "12 is the original constant; it must be adjusted by subtracting the square completion term 16.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "16",
+              "explanation": "16 = 4² is the completion term added and subtracted; the adjustment gives 12 − 16 = −4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Marcus identifies the features of the circle (x − 5)² + (y + 3)² = 36: centre ({{blank:1}}, {{blank:2}}) and radius 6.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "(x − 5)² gives h = 5 for the x-coordinate of the centre.",
+          "distractors": [
+            {
+              "answer": "−5",
+              "explanation": "The sign inside is negative; (x − h) means h = 5, not −5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "36",
+              "explanation": "36 = r²; the x-coordinate is 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−3",
+          "correctExplanation": "(y + 3) = (y − (−3)) gives k = −3 for the y-coordinate of the centre.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The sign inside is +3, but (y − k) form gives k = −3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is the radius; the y-coordinate of the centre is −3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Linh sketches y = −3/(x − 2) and identifies the vertical asymptote at x = {{blank:1}} and the horizontal asymptote at y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "x − 2 = 0 gives x = 2 as the vertical asymptote.",
+          "distractors": [
+            {
+              "answer": "−2",
+              "explanation": "x − 2 = 0 when x = 2, not x = −2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 relates to the numerator constant; the vertical asymptote is determined by the denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "As x → ±∞, −3/(x−2) → 0; the horizontal asymptote is y = 0.",
+          "distractors": [
+            {
+              "answer": "−3",
+              "explanation": "−3 is the numerator; the horizontal asymptote is where the fraction approaches, which is 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the vertical asymptote position; the horizontal asymptote is y = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Sam sketches y = 2ˣ + 4 and identifies the y-intercept at (0, {{blank:1}}) and the horizontal asymptote at y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "At x = 0: y = 2⁰ + 4 = 1 + 4 = 5.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4 is the shift constant; 2⁰ = 1, so the y-intercept is 1 + 4 = 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the base; the y-intercept includes the shift: 1 + 4 = 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "The shift of +4 raises the asymptote from y = 0 to y = 4.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "y = 0 is the asymptote before the vertical shift; after shifting by +4, it becomes y = 4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 is the y-intercept; the asymptote is y = 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Kofi finds the x-intercepts of y = (x − 1)(x − 5) by setting y = 0, giving x = {{blank:1}} and x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "x − 1 = 0 gives x = 1.",
+          "distractors": [
+            {
+              "answer": "−1",
+              "explanation": "The factor is (x − 1), so x = 1, not x = −1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 is the other intercept; this blank asks for the intercept from the first factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "x − 5 = 0 gives x = 5.",
+          "distractors": [
+            {
+              "answer": "−5",
+              "explanation": "The factor is (x − 5), so x = 5, not x = −5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "1 is the other intercept; this blank asks for the intercept from the second factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Rosa determines that the parabola y = 3(x − 2)² − 12 has vertex (2, −12) and opens {{blank:1}} because a = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "upward",
+          "correctExplanation": "a = 3 > 0, so the parabola opens upward.",
+          "distractors": [
+            {
+              "answer": "downward",
+              "explanation": "Downward opening requires a < 0; here a = 3 > 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "to the right",
+              "explanation": "Parabolas of the form y = a(x−h)²+k open up or down, not sideways.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The coefficient a = 3 is positive, confirming upward opening.",
+          "distractors": [
+            {
+              "answer": "−3",
+              "explanation": "The coefficient is positive 3, not −3; a negative value would cause downward opening.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the x-coordinate of the vertex (h), not the coefficient a.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Amir determines that y = −1/(x + 4) is located in quadrants {{blank:1}} and {{blank:2}} because the constant in the numerator is negative.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "When x < −4, the denominator is negative and −1/negative = positive (y > 0, x < 0 → Q2).",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "In Q1, x > 0 and y > 0; for x > −4, y = −1/(positive) < 0, so Q1 is absent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "In Q3, both x and y are negative; for x < −4, y > 0, so the graph is in Q2, not Q3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "When x > −4, the denominator is positive and −1/positive = negative (y < 0, x could be > 0 → Q4).",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "In Q1, y > 0; for x > −4, y < 0, so the graph is in Q4, not Q1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "In Q3, x < 0 and y < 0; but for x < −4, y > 0 (Q2), not Q3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Jade finds that the circle x² + y² − 10x + 6y + 18 = 0 has centre ({{blank:1}}, {{blank:2}}) after completing the square.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "x² − 10x + 25 = (x − 5)²; half of −10 is −5, so h = 5.",
+          "distractors": [
+            {
+              "answer": "−5",
+              "explanation": "The sign of h is opposite to the coefficient's half; −10/2 = −5, but (x − 5)² means h = 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the coefficient; h = 10/2 = 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−3",
+          "correctExplanation": "y² + 6y + 9 = (y + 3)² = (y − (−3))²; k = −3.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "(y + 3) = (y − (−3)); k = −3, not 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is the coefficient of y; k = −6/2 = −3 after adjusting the sign.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Mia determines that y = (½)ˣ is a {{blank:1}} function because the base ½ is between {{blank:2}} and 1.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "decreasing",
+          "correctExplanation": "When 0 < base < 1, the exponential function decreases as x increases.",
+          "distractors": [
+            {
+              "answer": "increasing",
+              "explanation": "Increasing applies when base > 1; for 0 < base < 1, the function decreases.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "constant",
+              "explanation": "Exponential functions are never constant; they always increase or decrease.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "The base must satisfy 0 < b < 1 for decay; the lower bound is 0 (exclusive).",
+          "distractors": [
+            {
+              "answer": "−1",
+              "explanation": "Exponential bases must be positive; −1 is not a valid lower bound.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "½",
+              "explanation": "½ is the base itself, not the lower bound of the interval.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Will identifies the discriminant of y = x² − 2x − 8 as Δ = (−2)² − 4(1)(−8) = {{blank:1}}, indicating {{blank:2}} x-intercepts.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "36",
+          "correctExplanation": "Δ = 4 − (−32) = 4 + 32 = 36.",
+          "distractors": [
+            {
+              "answer": "−28",
+              "explanation": "Subtracting instead of adding: 4 − 32 = −28 is incorrect; −4(1)(−8) = +32.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 = (−2)² is only the first term; the full discriminant includes −4ac = +32.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "two",
+          "correctExplanation": "Δ = 36 > 0 means two distinct real x-intercepts.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Zero x-intercepts occur when Δ < 0; here Δ = 36 > 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "one",
+              "explanation": "One x-intercept occurs when Δ = 0; here Δ = 36 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Lila matches the equation y = 4/(x − 1) to a {{blank:1}} with vertical asymptote at x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "hyperbola",
+          "correctExplanation": "y = k/(x − a) is the standard form of a translated rectangular hyperbola.",
+          "distractors": [
+            {
+              "answer": "parabola",
+              "explanation": "Parabolas have the form y = ax² + bx + c; y = k/(x−a) is a hyperbola.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "circle",
+              "explanation": "Circles require x² + y² = r²; this equation has 1/x form.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "x − 1 = 0 gives x = 1 as the vertical asymptote.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4 is the numerator constant; the vertical asymptote is from the denominator.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1",
+              "explanation": "x − 1 = 0 at x = 1, not x = −1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Anika converts y = x² + 4x + 7 to vertex form: y = (x + {{blank:1}})² + {{blank:2}}, with vertex at (−2, 3).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Half of 4 is 2; (x + 2)² = x² + 4x + 4.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4 is the coefficient, not half of it.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "1 is not half of 4; the correct value is 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "(x+2)² = x² + 4x + 4; original has +7, so 7 − 4 = 3.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 is the original constant; it must be adjusted by subtracting 4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1",
+              "explanation": "7 − 4 = 3, not −1; the subtraction gives a positive result.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that the equation y = x² + 1 has two x-intercepts because every parabola crosses the x-axis. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because the vertex (0, 1) is above the x-axis and the parabola opens upward, so it never reaches y = 0",
+      "correctExplanation": "x² + 1 ≥ 1 for all real x; the minimum y-value is 1, so the graph never crosses the x-axis.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because all upward-opening parabolas must cross the x-axis at exactly two points due to their unbounded growth",
+          "explanation": "Upward-opening parabolas with vertex above the x-axis never cross it; x² + 1 ≥ 1 > 0."
+        },
+        {
+          "answer": "The claim is correct because setting y = 0 gives x² = −1, which has the two solutions x = 1 and x = −1 in the real number system",
+          "explanation": "x² = −1 has no real solutions; x = ±1 solves x² = 1, not x² = −1."
+        },
+        {
+          "answer": "The claim is incorrect because the parabola opens downward, placing it entirely below the x-axis with no crossing points at all",
+          "explanation": "The parabola opens upward (positive coefficient), not downward; the vertex is above the x-axis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student argues that the graph of y = 1/(x²) is a hyperbola like y = 1/x. Which one of the following best evaluates this argument?",
+      "correct": "The argument is incorrect because y = 1/(x²) is a quadratic reciprocal function, not a linear reciprocal, so it is not classified as a hyperbola",
+      "correctExplanation": "y = 1/x is a rectangular hyperbola; y = 1/x² has a different degree and different symmetry properties.",
+      "distractors": [
+        {
+          "answer": "The argument is correct because both equations have 1 in the numerator and a power of x in the denominator, making them the same type",
+          "explanation": "The denominator's exponent changes the shape; y = 1/x² is always positive and symmetric about the y-axis, unlike y = 1/x."
+        },
+        {
+          "answer": "The argument is correct because both graphs have the same asymptotes at x = 0 and y = 0 and therefore represent identical curve types",
+          "explanation": "Sharing asymptotes does not make curves the same type; y = 1/x² is always positive while y = 1/x changes sign."
+        },
+        {
+          "answer": "The argument is incorrect because y = 1/x² has a fundamentally different symmetry, being always positive and symmetric about the y-axis",
+          "explanation": "y = 1/x² exists only in Q1 and Q2 (always positive); y = 1/x occupies Q1 and Q3, showing different symmetry."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student claims that translating y = x² by 3 units right and 2 units up gives y = (x + 3)² + 2. Which one of the following best analyses this claim?",
+      "correct": "The claim is incorrect because a rightward shift replaces x with (x − 3), not (x + 3), giving the correct equation y = (x − 3)² + 2",
+      "correctExplanation": "Right shift: x → (x − 3); up shift: + 2. The correct equation is y = (x − 3)² + 2.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because adding 3 inside the bracket shifts the graph right and adding 2 outside shifts it up on the coordinate plane",
+          "explanation": "Adding 3 inside shifts left, not right; a rightward shift requires (x − 3)."
+        },
+        {
+          "answer": "The claim is correct because the translation vector (3, 2) is directly added to x and y in the equation without any sign adjustments",
+          "explanation": "The x-component requires a sign change: rightward shift uses (x − 3), not (x + 3)."
+        },
+        {
+          "answer": "The claim is incorrect because both translations should be subtracted, giving the correct equation y = (x − 3)² − 2 for both shifts",
+          "explanation": "The upward shift adds to k, giving +2; only the horizontal component requires the opposite sign."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student observes that the parabola y = ax² and the line y = bx + c always intersect at exactly two points. Which one of the following best evaluates this observation?",
+      "correct": "The observation is incorrect because the number of intersections depends on the discriminant of ax² − bx − c = 0, which may be negative",
+      "correctExplanation": "Setting ax² = bx + c gives ax² − bx − c = 0; Δ = b² + 4ac may be negative, giving 0 intersections.",
+      "distractors": [
+        {
+          "answer": "The observation is correct because a parabola and a line always produce exactly two intersection points in the real coordinate plane",
+          "explanation": "They may intersect at 0, 1, or 2 points depending on the discriminant of ax² − bx − c = 0."
+        },
+        {
+          "answer": "The observation is correct because quadratic equations always have two distinct real roots by the fundamental theorem of algebra",
+          "explanation": "The fundamental theorem guarantees two roots (counting multiplicity) in the complex numbers, not necessarily two distinct real roots."
+        },
+        {
+          "answer": "The observation is incorrect because the parabola and line never intersect since they are fundamentally different types of curves",
+          "explanation": "Parabolas and lines can intersect; the number of intersection points depends on the discriminant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student claims that reflecting y = 2ˣ in the line y = x produces y = log₂(x). Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct because reflecting in the line y = x swaps the x and y coordinates, converting the exponential equation into a logarithmic one",
+      "correctExplanation": "Swapping x and y in y = 2ˣ gives x = 2ʸ, which rearranges to y = log₂(x); the reflection produces the inverse.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because reflecting in y = x produces a circle, not a logarithmic curve, since exponentials and circles are inverses",
+          "explanation": "Reflecting in y = x produces the inverse function; for y = 2ˣ, the inverse is y = log₂(x), not a circle."
+        },
+        {
+          "answer": "The claim is incorrect because reflecting an exponential function in y = x produces another exponential function with a reciprocal base",
+          "explanation": "Reflecting in y = x gives the inverse, which is a logarithm, not another exponential."
+        },
+        {
+          "answer": "The claim is correct because the inverse of y = 2ˣ is y = log₂(x), and reflecting a function in y = x produces its inverse function",
+          "explanation": "Inverse functions are reflections in y = x; if y = 2ˣ then x = 2ʸ gives y = log₂(x)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student argues that (x − 2)² + (y − 3)² = −4 represents a circle with an imaginary radius. Which one of the following best analyses this argument?",
+      "correct": "The argument is incorrect because the equation simply has no graph in the real plane, since the sum of two non-negative squares can never be negative",
+      "correctExplanation": "A sum of squares is always ≥ 0; since −4 < 0, no real point satisfies the equation.",
+      "distractors": [
+        {
+          "answer": "The argument is correct because √(−4) = 2i, giving a circle in the complex plane with centre (2, 3) and imaginary radius of 2i units in this context",
+          "explanation": "In the real coordinate plane, r² must be positive for a circle to exist; this equation has no real graph."
+        },
+        {
+          "answer": "The argument is correct because all equations in the form (x−h)² + (y−k)² = c represent circles regardless of whether c is positive or negative",
+          "explanation": "When c < 0, the sum of two squares cannot equal a negative; no real (x, y) satisfies the equation."
+        },
+        {
+          "answer": "The argument is incorrect because squares are non-negative, so their sum cannot equal −4, meaning no real graph exists for this equation",
+          "explanation": "(x−2)² ≥ 0 and (y−3)² ≥ 0, so (x−2)² + (y−3)² ≥ 0 > −4; no real solution exists."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student claims that the parabola y = x² − 4x + 3 and the parabola y = −x² + 4x − 3 share the same x-intercepts. Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct because both equations give (x − 1)(x − 3) = 0, yielding x = 1 and x = 3 as shared intercepts",
+      "correctExplanation": "x² − 4x + 3 = (x−1)(x−3); −x² + 4x − 3 = −(x−1)(x−3); both give x = 1 and x = 3.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because parabolas opening in opposite directions can never share x-intercepts on the coordinate plane at all",
+          "explanation": "Opposite-direction parabolas can share x-intercepts; the factored forms determine whether they do."
+        },
+        {
+          "answer": "The claim is incorrect because the second parabola has no real x-intercepts since its discriminant is negative when properly computed",
+          "explanation": "Δ = 16 − 12 = 4 > 0 for both; both have real x-intercepts."
+        },
+        {
+          "answer": "The claim is correct because x² − 4x + 3 = 0 and −x² + 4x − 3 = 0 are negations of one equation with identical roots",
+          "explanation": "Negating both sides: −(x²−4x+3) = 0 has the same roots as x²−4x+3 = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student observes that the hyperbola y = 1/x and the line y = x intersect at (1, 1) and (−1, −1). The student claims these are the only intersections. Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct because solving 1/x = x gives x² = 1, so x = ±1, yielding exactly two intersection points at (1, 1) and (−1, −1)",
+      "correctExplanation": "x² = 1 has exactly two solutions: x = 1 and x = −1; both give valid points on both curves.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because the curves also intersect at the origin (0, 0), which the student overlooked during their graphical analysis",
+          "explanation": "y = 1/x is undefined at x = 0; the curves cannot intersect at the origin."
+        },
+        {
+          "answer": "The claim is incorrect because the curves intersect at infinitely many points along the line y = x for all positive values of x simultaneously",
+          "explanation": "Setting 1/x = x gives x² = 1, so x = ±1 only; there are exactly two intersections."
+        },
+        {
+          "answer": "The claim is incorrect because solving 1/x = x produces a cubic equation x³ = 1 with three real roots that must all be checked carefully",
+          "explanation": "1/x = x gives x² = 1, a quadratic with two roots; it is not cubic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student claims that the circle x² + y² = r² and the parabola y = x² always intersect for any positive value of r. Which one of the following best analyses this claim?",
+      "correct": "The claim is correct because substituting y = x² gives x⁴ + x² = r², and this quartic always has real solutions for any positive r value",
+      "correctExplanation": "Let u = x²: u² + u − r² = 0 has Δ = 1 + 4r² > 0, so there is always a positive u, giving real x.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because curves in the coordinate plane with positive parameters always share at least one point of intersection",
+          "explanation": "Not all curves intersect; the system x⁴ + x² − r² = 0 has real solutions only when the discriminant is non-negative."
+        },
+        {
+          "answer": "The claim is correct because substituting y = x² into x² + y² = r² produces a linear equation in x that always has one real solution",
+          "explanation": "Substitution gives x² + x⁴ = r², a quartic equation, not linear."
+        },
+        {
+          "answer": "The claim is incorrect because for sufficiently large r the circle extends beyond the parabola's reach in the vertical direction entirely",
+          "explanation": "Larger r makes the circle larger, potentially intersecting the parabola at more points, not fewer."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student argues that the graph of y = 2ˣ has no maximum value. Which one of the following best evaluates this argument?",
+      "correct": "The argument is correct because y = 2ˣ increases without bound as x → ∞, so no finite upper limit exists for the function's output values",
+      "correctExplanation": "As x increases, 2ˣ grows without bound; there is no real number M such that 2ˣ ≤ M for all x.",
+      "distractors": [
+        {
+          "answer": "The argument is incorrect because y = 2ˣ reaches a maximum value of 2 at x = 1 and then levels off as x continues increasing further",
+          "explanation": "2ˣ grows without bound; 2² = 4, 2¹⁰ = 1024; it never levels off."
+        },
+        {
+          "answer": "The argument is incorrect because all functions defined on the real numbers must have both a finite maximum and a finite minimum value",
+          "explanation": "Not all functions have finite extrema; y = 2ˣ is a counterexample with no maximum."
+        },
+        {
+          "answer": "The argument is correct but incomplete: y = 2ˣ has no maximum and no minimum since it ranges from negative infinity to positive infinity",
+          "explanation": "y = 2ˣ is always positive; its range is (0, ∞), not (−∞, ∞); it has an infimum of 0 but no minimum."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student claims that y = x² and y = 2x² have the same axis of symmetry but different widths. Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct because both share the axis x = 0 at the origin, and 2x² rises twice as steeply as x², producing a visibly narrower curve",
+      "correctExplanation": "The axis of symmetry is x = 0 for both; y = 2x² rises faster, making it narrower.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because the coefficient 2 shifts the axis of symmetry from x = 0 to x = 2, changing both width and symmetry",
+          "explanation": "The coefficient 2 does not shift the axis; both have vertex at origin with axis x = 0."
+        },
+        {
+          "answer": "The claim is incorrect because multiplying by 2 reflects the parabola rather than narrowing it, producing a mirror image of the original",
+          "explanation": "Multiplying by a positive constant does not reflect; it changes width (narrows for |a| > 1)."
+        },
+        {
+          "answer": "The claim is correct because both parabolas have their axis of symmetry at x = 0, and the coefficient 2 makes the second parabola narrower",
+          "explanation": "Both have vertex (0,0) and axis x = 0; y = 2x² is narrower because larger |a| compresses the curve."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student argues that the equation (x − 1)² + (y − 1)² = 0 represents a circle of radius zero. Which one of the following best analyses this argument?",
+      "correct": "The argument is partially correct: the equation represents a single point (1, 1), which is the degenerate limiting case of a circle with radius zero",
+      "correctExplanation": "Both squares must be zero simultaneously: x = 1 and y = 1; the locus is the single point (1, 1).",
+      "distractors": [
+        {
+          "answer": "The argument is incorrect because a radius of zero is meaningless in geometry and therefore the equation has no valid interpretation at all",
+          "explanation": "A 'circle of radius zero' is the single point (1, 1); the equation has a valid geometric interpretation as a degenerate case."
+        },
+        {
+          "answer": "The argument is incorrect because the equation has no solutions since the sum of two squares can never equal exactly zero under any condition",
+          "explanation": "The sum of two squares equals zero if and only if both squares are zero: x = 1 and y = 1."
+        },
+        {
+          "answer": "The argument is partially correct: r = 0 gives a degenerate case where the circle reduces to the single point (1, 1) rather than a curve",
+          "explanation": "When r² = 0, only (h, k) satisfies the equation; the 'circle' degenerates to its centre point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student compares the graphs of y = 3/x and y = 3/(x − 2) and claims the second graph is the first shifted 2 units upward. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because replacing x with (x − 2) shifts the graph 2 units to the right, moving the vertical asymptote from x = 0 to x = 2",
+      "correctExplanation": "f(x − 2) translates the graph right by 2; the asymptote moves from x = 0 to x = 2.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because replacing x with (x − 2) in the denominator always shifts graphs vertically by the constant inside the brackets",
+          "explanation": "Replacing x with (x − 2) shifts the graph horizontally right, not vertically upward."
+        },
+        {
+          "answer": "The claim is correct because 3/(x − 2) = 3/x + 2 by algebraic simplification, confirming the vertical shift of 2 units on the y-axis",
+          "explanation": "3/(x − 2) ≠ 3/x + 2; subtracting 2 from the denominator does not produce an additive constant."
+        },
+        {
+          "answer": "The claim is incorrect because the second graph has no vertical asymptote, so it cannot be a simple translation of the first graph at all",
+          "explanation": "The second graph has a vertical asymptote at x = 2; both graphs have vertical asymptotes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student argues that if two circles have the same radius but different centres, they must be congruent. Which one of the following best evaluates this argument?",
+      "correct": "The argument is correct because congruence means identical in shape and size, and two circles with the same radius satisfy this regardless of position",
+      "correctExplanation": "Congruence is preserved under translation; equal radii ensure equal size and shape.",
+      "distractors": [
+        {
+          "answer": "The argument is incorrect because congruence requires both the same radius and the same centre position on the coordinate plane simultaneously",
+          "explanation": "Congruence is about shape and size, not position; two circles with the same radius are congruent regardless of centre location."
+        },
+        {
+          "answer": "The argument is incorrect because circles with different centres have different equations and therefore cannot be considered geometrically congruent",
+          "explanation": "Different equations can represent congruent shapes; congruence is a geometric property, not an algebraic identity."
+        },
+        {
+          "answer": "The argument is correct because congruence depends on shape and size only, and circles with equal radii have identical shape and size everywhere in this context",
+          "explanation": "Congruent figures have the same shape and size; position is irrelevant, so equal radii guarantee congruence."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A parabola with discriminant Δ > 0 has {{blank:1}} x-intercepts, while Δ = 0 gives {{blank:2}} x-intercept(s).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "two",
+          "correctExplanation": "A positive discriminant means two distinct real roots, hence two x-intercepts.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Zero x-intercepts correspond to Δ < 0, not Δ > 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "one",
+              "explanation": "One x-intercept corresponds to Δ = 0, not Δ > 0.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "one",
+          "correctExplanation": "Δ = 0 gives a repeated root; the parabola touches the x-axis at exactly one point.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Two x-intercepts require Δ > 0; Δ = 0 is a tangent case.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Zero x-intercepts require Δ < 0; Δ = 0 gives a tangent point.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The sum of two squares (x − h)² + (y − k)² is always {{blank:1}}, so setting it equal to a negative number produces {{blank:2}} real solutions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "non-negative",
+          "correctExplanation": "Squares are ≥ 0; their sum is ≥ 0.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "The sum can be zero (when x = h and y = k); non-negative is the precise term.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative",
+              "explanation": "Squares cannot be negative; their sum is always ≥ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "no",
+          "correctExplanation": "A non-negative quantity cannot equal a negative number; no real (x, y) satisfies the equation.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Two solutions would require a positive right-hand side; a negative value gives none.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "infinitely many",
+              "explanation": "A negative target is impossible for a non-negative expression; no solutions exist.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The graph of y = k/(x − a) + b has a vertical asymptote at x = {{blank:1}} and a horizontal asymptote at y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "a",
+          "correctExplanation": "x − a = 0 gives x = a as the vertical asymptote.",
+          "distractors": [
+            {
+              "answer": "−a",
+              "explanation": "x − a = 0 when x = a, not x = −a.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "k",
+              "explanation": "k is the numerator constant; the vertical asymptote comes from the denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "b",
+          "correctExplanation": "As x → ±∞, k/(x−a) → 0, so y → b.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "y = 0 would be the asymptote only if b = 0; the shift b raises it.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "k",
+              "explanation": "k affects the stretch of the hyperbola, not the horizontal asymptote position.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "A downward-opening parabola y = −a(x − h)² + k with k > 0 has its {{blank:1}} value at the vertex, equal to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "maximum",
+          "correctExplanation": "A downward-opening parabola has its highest point at the vertex.",
+          "distractors": [
+            {
+              "answer": "minimum",
+              "explanation": "A minimum occurs for upward-opening parabolas; downward opening gives a maximum.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "average",
+              "explanation": "The vertex gives the extreme value, not the average.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "k",
+          "correctExplanation": "The y-coordinate of the vertex is k, which is the maximum output value.",
+          "distractors": [
+            {
+              "answer": "h",
+              "explanation": "h is the x-coordinate; the maximum y-value is k.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a",
+              "explanation": "a is the coefficient controlling width and direction, not the maximum value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The equation y = a·bˣ + c has a horizontal asymptote at y = c because as x → −∞ (for b > 1), the term a·bˣ approaches {{blank:1}}, leaving y ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "bˣ → 0 as x → −∞ for b > 1; a·0 = 0.",
+          "distractors": [
+            {
+              "answer": "∞",
+              "explanation": "bˣ → ∞ as x → +∞, not −∞; the question specifies x → −∞.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a",
+              "explanation": "a is a constant multiplier; a·bˣ → a·0 = 0, not a.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "c",
+          "correctExplanation": "With a·bˣ ≈ 0, y ≈ 0 + c = c.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "y approaches c, not 0, because the constant c remains.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a + c",
+              "explanation": "a·bˣ → 0, not a; the remaining value is c alone.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Two circles (x − h₁)² + (y − k₁)² = r₁² and (x − h₂)² + (y − k₂)² = r₂² are concentric when they share the same {{blank:1}} but have different {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "centre",
+          "correctExplanation": "Concentric circles share the same centre point but differ in radius.",
+          "distractors": [
+            {
+              "answer": "radius",
+              "explanation": "Sharing the same radius but different centres makes circles congruent, not concentric.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "asymptotes",
+              "explanation": "Circles do not have asymptotes; concentricity is about shared centres.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "radii",
+          "correctExplanation": "Different radii with the same centre is the definition of concentric circles.",
+          "distractors": [
+            {
+              "answer": "centres",
+              "explanation": "Different centres with the same radius describes congruent circles in different positions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equations",
+              "explanation": "Different equations is too vague; the specific difference is in the radii.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "The number of intersection points between a circle and a line can be {{blank:1}}, 1, or 2, depending on whether the line passes outside, is tangent, or {{blank:2}} the circle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "When the line does not touch the circle, there are zero intersection points.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "A line can intersect a circle at most twice; 3 intersections are impossible.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1",
+              "explanation": "Negative intersection counts have no geometric meaning.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "intersects",
+          "correctExplanation": "A secant line crosses the circle at two points, giving two intersections.",
+          "distractors": [
+            {
+              "answer": "is parallel to",
+              "explanation": "Parallelism relates to lines and other lines, not to circles.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "circumscribes",
+              "explanation": "Circumscription describes a circle around a polygon, not a line through a circle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Reflecting the graph of y = 2ˣ in the y-axis produces y = 2⁻ˣ = ({{blank:1}})ˣ, which represents exponential {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "½",
+          "correctExplanation": "2⁻ˣ = (2⁻¹)ˣ = (½)ˣ.",
+          "distractors": [
+            {
+              "answer": "−2",
+              "explanation": "(−2)ˣ is undefined for many real x; 2⁻ˣ = (½)ˣ.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2ˣ is the original function; the reflection changes the base to its reciprocal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "decay",
+          "correctExplanation": "A base between 0 and 1 produces a decreasing (decaying) exponential.",
+          "distractors": [
+            {
+              "answer": "growth",
+              "explanation": "Growth requires base > 1; base = ½ < 1 gives decay.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "oscillation",
+              "explanation": "Exponential functions do not oscillate; they monotonically increase or decrease.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "The parabola y = a(x − h)² + k has a wider shape when |a| is {{blank:1}} and a narrower shape when |a| is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "small",
+          "correctExplanation": "Small |a| (close to 0) means the parabola rises slowly, producing a wider shape.",
+          "distractors": [
+            {
+              "answer": "large",
+              "explanation": "Large |a| compresses the parabola toward the axis, making it narrower, not wider.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative",
+              "explanation": "The sign affects direction (up/down), not width.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "large",
+          "correctExplanation": "Large |a| (far from 0) means the parabola rises steeply, producing a narrower shape.",
+          "distractors": [
+            {
+              "answer": "small",
+              "explanation": "Small |a| makes the parabola wider, not narrower.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "|a| = 0 would give a horizontal line, not a narrow parabola.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "The graph of y = k/(x − a) approaches the vertical asymptote x = a from {{blank:1}} infinity on one side and {{blank:2}} infinity on the other.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "On one side of x = a, y → +∞ as x → a.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "y does not approach zero near the asymptote; it approaches ±∞.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "horizontal",
+              "explanation": "Horizontal describes a direction, not an infinity type.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative",
+          "correctExplanation": "On the opposite side of x = a, y → −∞.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "y approaches ±∞ near the vertical asymptote, not zero.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "constant",
+              "explanation": "The function value is not constant near the asymptote.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A circle with equation x² + y² − 2x + 4y − 20 = 0 can be rewritten as (x − 1)² + (y + 2)² = {{blank:1}}, giving a radius of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "25",
+          "correctExplanation": "Completing the square: (x−1)² + (y+2)² = 1 + 4 + 20 = 25.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "20 is the original constant; it must be adjusted by the completion terms 1 + 4 = 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 = 1 + 4 is the sum of the completion terms; the radius squared is 5 + 20 = 25.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "r = √25 = 5.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "25 = r²; the radius is √25 = 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√20",
+              "explanation": "√20 ≈ 4.47; the correct r² is 25, giving r = 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The equation y = −2(x − 3)² + 8 represents a parabola opening {{blank:1}} with vertex at (3, 8), and its x-intercepts are found by solving (x − 3)² = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "downward",
+          "correctExplanation": "a = −2 < 0 means the parabola opens downward.",
+          "distractors": [
+            {
+              "answer": "upward",
+              "explanation": "Upward requires a > 0; here a = −2 < 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "to the left",
+              "explanation": "Standard form y = a(x−h)²+k opens up or down, not sideways.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "Setting y = 0: −2(x−3)² + 8 = 0 → (x−3)² = 4.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 is k; solving gives −2(x−3)² = −8, so (x−3)² = 4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−4",
+              "explanation": "(x−3)² cannot be negative; the correct value is +4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

@@ -18,13 +18,13 @@
       "type": "tf",
       "variant": 1,
       "bloomsLevel": 2,
-      "question": "A mathematical model uses equations to represent a real-world situation approximately.",
-      "correct": "True",
-      "correctExplanation": "Mathematical models use equations or functions to approximate and analyse real-world scenarios, accepting that simplifying assumptions are involved.",
+      "question": "A mathematical model must produce exact results to be considered useful.",
+      "correct": "False",
+      "correctExplanation": "Mathematical models are useful approximations; they simplify reality through assumptions and do not require exact results.",
       "distractors": [
         {
-          "answer": "False",
-          "explanation": "May believe models must be exact representations rather than useful approximations."
+          "answer": "True",
+          "explanation": "Confuses exactness with usefulness; models provide valuable insights even when approximate."
         }
       ]
     },
@@ -538,13 +538,13 @@
       "type": "tf",
       "variant": 1,
       "bloomsLevel": 3,
-      "question": "A ball's height modelled by h = negative 5t squared + 20t reaches maximum height at t = 2.",
-      "correct": "True",
-      "correctExplanation": "The axis of symmetry is t = negative b/(2a) = negative 20/(2 times negative 5) = 2, giving the time of maximum height.",
+      "question": "A ball's height modelled by h = negative 5t squared + 20t reaches maximum height at t = 4.",
+      "correct": "False",
+      "correctExplanation": "The axis of symmetry is t = negative 20/(2 times negative 5) = 2, not 4. The ball lands at t = 4.",
       "distractors": [
         {
-          "answer": "False",
-          "explanation": "May calculate the formula incorrectly or confuse maximum height with maximum time of flight."
+          "answer": "True",
+          "explanation": "Confuses landing time (t = 4 where h = 0) with the time of maximum height (t = 2)."
         }
       ]
     },
@@ -552,13 +552,13 @@
       "type": "tf",
       "variant": 2,
       "bloomsLevel": 3,
-      "question": "If a linear model predicts a population of negative 500 people, the model has been extrapolated beyond its valid domain.",
-      "correct": "True",
-      "correctExplanation": "A negative population is physically impossible, indicating the linear model has been extended past its applicable range.",
+      "question": "If a linear model predicts a population of negative 500, the result is valid because equations produce all real numbers.",
+      "correct": "False",
+      "correctExplanation": "A negative population is physically impossible, indicating the model has been extrapolated beyond its valid domain.",
       "distractors": [
         {
-          "answer": "False",
-          "explanation": "May accept mathematically valid but contextually impossible results as meaningful predictions."
+          "answer": "True",
+          "explanation": "Confuses mathematical validity (the equation works) with contextual validity (the answer makes sense)."
         }
       ]
     },
@@ -566,13 +566,13 @@
       "type": "tf",
       "variant": 3,
       "bloomsLevel": 3,
-      "question": "A rectangle with perimeter 40 metres has maximum area when both sides equal 10 metres.",
-      "correct": "True",
-      "correctExplanation": "Area A = x(20 minus x) is maximised when x = 10, giving a 10 by 10 square with area 100 square metres.",
+      "question": "A rectangle with perimeter 40 metres has maximum area when dimensions are 15 by 5 metres.",
+      "correct": "False",
+      "correctExplanation": "Area A = x(20 minus x) is maximised at x = 10, giving a 10 by 10 square with area 100, not 15 by 5 with area 75.",
       "distractors": [
         {
-          "answer": "False",
-          "explanation": "May believe a long thin rectangle has greater area, not recognising the square as the optimal shape."
+          "answer": "True",
+          "explanation": "May believe any valid dimensions work or not recognise that the square maximises area for a given perimeter."
         }
       ]
     },
@@ -594,13 +594,13 @@
       "type": "tf",
       "variant": 5,
       "bloomsLevel": 3,
-      "question": "A linear model with gradient 3 predicts that output increases by 3 units for every one-unit increase in input.",
-      "correct": "True",
-      "correctExplanation": "The gradient of a linear function represents the constant rate of change: output increases by the gradient value per unit of input.",
+      "question": "A linear model with gradient 3 predicts that output increases by 9 for every two-unit increase in input.",
+      "correct": "False",
+      "correctExplanation": "Gradient 3 means 3 units of output per 1 unit of input. For 2 input units, the increase is 3 times 2 = 6, not 9.",
       "distractors": [
         {
-          "answer": "False",
-          "explanation": "May confuse gradient with y-intercept or believe the rate of change varies in a linear model."
+          "answer": "True",
+          "explanation": "May multiply gradient by itself (3 squared = 9) rather than by the input change (3 times 2 = 6)."
         }
       ]
     },
@@ -1174,13 +1174,13 @@
       "type": "tf",
       "variant": 1,
       "bloomsLevel": 4,
-      "question": "Jarrah models paddock area as A = x(25 minus x) for perimeter 50; maximum area is 156.25 square metres.",
-      "correct": "True",
-      "correctExplanation": "A = x(25 minus x) has vertex at x = 12.5, giving A = 12.5 times 12.5 = 156.25.",
+      "question": "Jarrah models paddock area as A = x(25 minus x) for perimeter 50; maximum area is 125 square metres.",
+      "correct": "False",
+      "correctExplanation": "The vertex is at x = 12.5, giving A = 12.5 times 12.5 = 156.25 square metres, not 125.",
       "distractors": [
         {
-          "answer": "False",
-          "explanation": "May use x = 25 (giving A = 0) or x = 50 instead of finding the vertex at x = 12.5."
+          "answer": "True",
+          "explanation": "May calculate 25 times 5 = 125 or use an incorrect vertex value instead of x = 12.5."
         }
       ]
     },
@@ -1247,7 +1247,7 @@
       "variant": 5,
       "bloomsLevel": 4,
       "question": "Lila models a ball's height as h = negative 5t squared + 25t + 2. Which one of the following correctly determines the time of flight?",
-      "correct": "Setting h = 0 and using the quadratic formula gives t = (negative 25 ± sqrt(665))/(negative 10), taking the positive root",
+      "correct": "Using the quadratic formula with discriminant 625 + 40 = 665, the positive root gives landing time",
       "correctExplanation": "Solving negative 5t squared + 25t + 2 = 0: discriminant = 625 + 40 = 665; positive root gives landing time.",
       "distractors": [
         {
@@ -1255,7 +1255,7 @@
           "explanation": "This would only work if c = 0; dividing coefficients ignores the constant term 2."
         },
         {
-          "answer": "The time of flight equals twice the vertex time, so t = 2 times 2.5 = 5 seconds exactly",
+          "answer": "The time of flight always equals exactly twice the vertex time regardless of the initial launch height above ground",
           "explanation": "Doubling vertex time only gives exact flight time when initial height is zero (c = 0)."
         },
         {
@@ -1295,7 +1295,7 @@
       "correctExplanation": "Differences: 4, 4, 4, 4 are constant, confirming linear growth with gradient 4 and y-intercept negative 1.",
       "distractors": [
         {
-          "answer": "Constant values indicate quadratic growth; model is h = 2w squared + 1 where w is weeks",
+          "answer": "Constant values indicate quadratic growth; model is h = 2w squared + 1 where w represents weeks elapsed from start",
           "explanation": "Constant first differences indicate linear, not quadratic; h = 2w squared + 1 gives 3, 9, 19, 33, 51."
         },
         {
@@ -1401,11 +1401,11 @@
       "variant": 12,
       "bloomsLevel": 4,
       "question": "Will throws a ball from a 10-metre platform with h = negative 5t squared + 15t + 10. Which one of the following correctly determines landing time?",
-      "correct": "Solving negative 5t squared + 15t + 10 = 0 using the quadratic formula gives t = (negative 15 minus sqrt(425))/negative 10",
+      "correct": "Using the quadratic formula with discriminant 225 + 200 = 425, the positive root gives t approximately 3.56 seconds",
       "correctExplanation": "Discriminant = 225 + 200 = 425; positive root t = (negative 15 minus sqrt(425))/(negative 10) ≈ 3.56 seconds.",
       "distractors": [
         {
-          "answer": "Setting h = 0 gives t = 15/5 = 3 seconds by dividing the linear coefficient by the quadratic coefficient",
+          "answer": "Setting h = 0 gives t = 15 divided by 5 = 3 seconds exactly by dividing the linear coefficient by the quadratic one",
           "explanation": "This ignores the constant term 10; coefficient division only works when c = 0."
         },
         {
@@ -2029,7 +2029,7 @@
       "variant": 3,
       "bloomsLevel": 5,
       "question": "A projectile model gives h = negative 5t squared + 30t. A student claims maximum height is 90 metres because 30 times 3 = 90. Which one of the following evaluates this reasoning?",
-      "correct": "The answer 90 happens to be correct but the method is wrong; it should use h(3) = negative 45 + 90 = 45, so the claim is false",
+      "correct": "The answer 90 is wrong; h(3) = negative 45 + 90 = 45, so the student ignored the quadratic term",
       "correctExplanation": "h(3) = negative 5(9) + 30(3) = negative 45 + 90 = 45, not 90. The student ignored the quadratic term.",
       "distractors": [
         {
@@ -2055,7 +2055,7 @@
       "correctExplanation": "Linear extrapolation assumes constant growth; policy changes and demographic shifts typically change growth rates over decades.",
       "distractors": [
         {
-          "answer": "Linear equations produce increasingly large outputs that eventually overflow standard calculator memory limits",
+          "answer": "Linear equations produce increasingly large outputs that eventually overflow standard mathematical calculator memory storage limits",
           "explanation": "Calculator limitations are irrelevant to model validity; the issue is real-world assumption breakdown."
         },
         {
@@ -2095,11 +2095,11 @@
       "variant": 6,
       "bloomsLevel": 5,
       "question": "A farmer uses A = x(100 minus 2x) to model paddock area with one side along a river. A student uses A = x(100 minus x) instead. Which one of the following best analyses the discrepancy?",
-      "correct": "The student's model incorrectly assumes only one width uses fencing; with a river on one side, two widths still require fencing",
+      "correct": "The student omits one width; with a river on one side, two widths still require fencing, so 100 minus 2x applies",
       "correctExplanation": "Three sides need fencing: two widths (x each) and one length (100 minus 2x). The student counted only one width.",
       "distractors": [
         {
-          "answer": "The student's model is correct because the river replaces one width entirely, leaving only one width to fence",
+          "answer": "The student's model is correct because the river replaces one of the two widths, leaving only one width to fence with materials",
           "explanation": "The river replaces the length side; both widths perpendicular to the river still need fencing."
         },
         {
@@ -2117,7 +2117,7 @@
       "variant": 7,
       "bloomsLevel": 5,
       "question": "A model predicts h = negative 5t squared + 20t for a ball. After 5 seconds, h = negative 25. A student says the ball is underground. Which one of the following best evaluates this interpretation?",
-      "correct": "The model produces h = negative 25 mathematically, but physically the ball stopped at h = 0; the model exceeds its valid domain",
+      "correct": "The model gives h = negative 25 mathematically, but the ball stopped at h = 0; the model exceeds its valid domain",
       "correctExplanation": "Negative height is mathematically valid but physically meaningless; the model applies only until landing (h = 0 at t = 4).",
       "distractors": [
         {
@@ -2161,7 +2161,7 @@
       "variant": 9,
       "bloomsLevel": 5,
       "question": "A student models taxi cost as C = 5 + 2d but ignores waiting time charges. Which one of the following best analyses how this affects predictions for a city trip?",
-      "correct": "The model underestimates actual cost for trips with heavy traffic because waiting charges add cost the model omits",
+      "correct": "The model underestimates cost for city trips because waiting time charges add cost the distance-only model omits",
       "correctExplanation": "Waiting time adds cost not captured by the distance-only model; city trips with stops will cost more than predicted.",
       "distractors": [
         {
@@ -2169,7 +2169,7 @@
           "explanation": "Less distance means lower distance charge, but waiting charges add separately; net effect is underestimation."
         },
         {
-          "answer": "The model remains accurate because waiting time is already included within the per-kilometre rate of $2",
+          "answer": "The model remains perfectly accurate because waiting time is already factored within the per-kilometre rate of $2 charged",
           "explanation": "Waiting charges are separate from distance charges in real taxi pricing."
         },
         {
@@ -2183,11 +2183,11 @@
       "variant": 10,
       "bloomsLevel": 5,
       "question": "A data set has values 3, 8, 15, 24, 35. A student fits y = 2x squared + x. Which one of the following best evaluates this choice?",
-      "correct": "Second differences are constant at 2, confirming quadratic; checking y(1) = 3 and y(2) = 10 shows the formula needs adjustment",
+      "correct": "Constant second differences confirm quadratic; y(1)=3 fits but y(2)=10 not 8, so coefficients need adjustment",
       "correctExplanation": "y(2) = 2(4) + 2 = 10, but data gives 8; the quadratic form is correct but coefficients need recalculating.",
       "distractors": [
         {
-          "answer": "The formula is perfect because 2 times 1 squared + 1 = 3 matches the first data value exactly",
+          "answer": "The formula is valid because 2 times 1 squared + 1 = 3 matches the first data value in the sequence",
           "explanation": "Matching one point does not validate a model; it must fit all data points."
         },
         {
@@ -2227,11 +2227,11 @@
       "variant": 12,
       "bloomsLevel": 5,
       "question": "Two models predict next year's sales: linear gives 150 units, quadratic gives 200 units. Historical data shows accelerating growth. Which one of the following best justifies choosing one model?",
-      "correct": "The quadratic model better captures accelerating growth, making its prediction of 200 units more defensible for the near future",
+      "correct": "The quadratic captures accelerating growth better, making its 200-unit prediction more defensible for the near future",
       "correctExplanation": "If growth is genuinely accelerating, a quadratic matches the data pattern better than a constant-rate linear model.",
       "distractors": [
         {
-          "answer": "Always choose the linear model because it gives a more conservative estimate and avoids overconfidence in predictions",
+          "answer": "Always choose the linear model because it gives a more conservative estimate that avoids dangerous overconfidence in predictions",
           "explanation": "Conservative does not mean accurate; if data accelerates, the linear prediction systematically underestimates."
         },
         {

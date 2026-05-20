@@ -1,0 +1,2606 @@
+{
+  "_meta": {
+    "code": "VC2M7A06",
+    "level": 7,
+    "area": "Mathematics",
+    "ageBand": "11-12",
+    "keyKnowledge": "We are learning to manipulate formulas with several variables and explore what happens when variables change.",
+    "generatedAt": "2026-05-18T08:14:07Z",
+    "specVersions": {
+      "generation-prompt-master": "2.1",
+      "validation": "2.1"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A formula is an equation that shows the relationship between variables.",
+      "correct": "True",
+      "correctExplanation": "A formula uses variables connected by operations to express a relationship.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Formulas always express relationships between two or more quantities."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "In the formula A = l times w, the letter A stands for length.",
+      "correct": "False",
+      "correctExplanation": "A stands for area; l stands for length.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses A for area with A for a side measurement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Rearranging a formula changes the relationship it describes.",
+      "correct": "False",
+      "correctExplanation": "Rearranging rewrites the same relationship to isolate a different variable.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True thinks rearranging alters what the formula means."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "In the formula d = s times t, if speed doubles then distance also doubles.",
+      "correct": "True",
+      "correctExplanation": "With time held constant, doubling s doubles the product s times t.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This follows directly from the multiplication relationship."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The formula for the perimeter of a rectangle is P = l + w.",
+      "correct": "False",
+      "correctExplanation": "The correct formula is P = 2(l + w) or P = 2l + 2w.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True only adds one length and one width."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Substituting values into a formula means replacing variables with numbers.",
+      "correct": "True",
+      "correctExplanation": "Substitution replaces each variable with its given numerical value.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the standard definition of substitution."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "In C = 2 times pi times r, the variable r represents the diameter.",
+      "correct": "False",
+      "correctExplanation": "The variable r represents the radius; the diameter is 2r.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses radius with diameter."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "If a formula has three variables, knowing two of them lets you find the third.",
+      "correct": "True",
+      "correctExplanation": "With two known values, you can substitute and solve for the remaining variable.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is a fundamental principle of working with formulas."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The formula V = l times w times h has only two variables.",
+      "correct": "False",
+      "correctExplanation": "V = l times w times h has four variables: V, l, w and h.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True may count only the right-hand-side letters."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "When rearranging d = s times t to find t, you multiply d by s.",
+      "correct": "False",
+      "correctExplanation": "To isolate t you divide d by s, giving t = d divided by s.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True applies the inverse operation incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Doubling the radius in C = 2 times pi times r will double the circumference.",
+      "correct": "True",
+      "correctExplanation": "C = 2 times pi times (2r) = 2 times (2 times pi times r), which is double.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Since C depends linearly on r, doubling r doubles C."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "A formula can only be written one way and cannot be rearranged.",
+      "correct": "False",
+      "correctExplanation": "Any formula can be rearranged to make a different variable the subject.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True does not know that formulas can be rearranged."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "In the formula A = l times w, what does w represent?",
+      "correct": "Width",
+      "correctExplanation": "In the area formula, l is length and w is width.",
+      "distractors": [
+        {
+          "answer": "Area",
+          "explanation": "A is area, not w."
+        },
+        {
+          "answer": "Weight",
+          "explanation": "Weight is not part of the area formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "If d = s times t and s = 5 and t = 3, what is d?",
+      "correct": "15",
+      "correctExplanation": "d = 5 times 3 = 15.",
+      "distractors": [
+        {
+          "answer": "8",
+          "explanation": "This adds 5 and 3 instead of multiplying."
+        },
+        {
+          "answer": "2",
+          "explanation": "This divides 5 by 3 and rounds."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which formula gives the perimeter of a rectangle?",
+      "correct": "P = 2l + 2w",
+      "correctExplanation": "Perimeter adds all four sides: two lengths and two widths.",
+      "distractors": [
+        {
+          "answer": "P = l times w",
+          "explanation": "This gives area, not perimeter."
+        },
+        {
+          "answer": "P = l + w",
+          "explanation": "This only adds one length and one width."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What does it mean to make t the subject of a formula?",
+      "correct": "Rewrite it so t is alone on one side",
+      "correctExplanation": "Making a variable the subject isolates it on one side of the equals sign.",
+      "distractors": [
+        {
+          "answer": "Replace t with a number",
+          "explanation": "That is substitution, not rearranging."
+        },
+        {
+          "answer": "Remove t from the formula entirely",
+          "explanation": "The variable stays; it just moves to one side."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "In C = 2 times pi times r, what is C when r = 7? (Use pi = 3.14)",
+      "correct": "43.96",
+      "correctExplanation": "C = 2 times 3.14 times 7 = 43.96.",
+      "distractors": [
+        {
+          "answer": "21.98",
+          "explanation": "This uses pi times r without the factor of 2."
+        },
+        {
+          "answer": "44",
+          "explanation": "This rounds 43.96 to 44, which is close but not exact."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which variable is the subject of d = s times t?",
+      "correct": "d",
+      "correctExplanation": "The subject is the variable that appears alone on one side.",
+      "distractors": [
+        {
+          "answer": "s",
+          "explanation": "s is multiplied by t on the right side."
+        },
+        {
+          "answer": "t",
+          "explanation": "t is multiplied by s on the right side."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "If A = l times w and A = 24 and l = 6, what is w?",
+      "correct": "4",
+      "correctExplanation": "24 = 6 times w, so w = 24 divided by 6 = 4.",
+      "distractors": [
+        {
+          "answer": "18",
+          "explanation": "This subtracts 6 from 24."
+        },
+        {
+          "answer": "30",
+          "explanation": "This adds 6 to 24."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What operation undoes multiplication when rearranging?",
+      "correct": "Division",
+      "correctExplanation": "Division is the inverse of multiplication.",
+      "distractors": [
+        {
+          "answer": "Addition",
+          "explanation": "Addition undoes subtraction, not multiplication."
+        },
+        {
+          "answer": "Squaring",
+          "explanation": "Squaring raises to a power; it does not undo multiplication."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "In P = 2(l + w), if l = 10 and w = 5, what is P?",
+      "correct": "30",
+      "correctExplanation": "P = 2(10 + 5) = 2 times 15 = 30.",
+      "distractors": [
+        {
+          "answer": "15",
+          "explanation": "This calculates l + w but forgets to multiply by 2."
+        },
+        {
+          "answer": "50",
+          "explanation": "This calculates 2 times l times w instead."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which formula correctly rearranges A = bh to find h?",
+      "correct": "h = A divided by b",
+      "correctExplanation": "Dividing both sides by b isolates h.",
+      "distractors": [
+        {
+          "answer": "h = A times b",
+          "explanation": "This multiplies instead of dividing."
+        },
+        {
+          "answer": "h = b divided by A",
+          "explanation": "This divides the wrong way around."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "What is the value of V = lwh when l = 2, w = 3, h = 4?",
+      "correct": "24",
+      "correctExplanation": "V = 2 times 3 times 4 = 24.",
+      "distractors": [
+        {
+          "answer": "9",
+          "explanation": "This adds 2 + 3 + 4 instead of multiplying."
+        },
+        {
+          "answer": "20",
+          "explanation": "This multiplies only two of the three values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "If d = s times t, which rearrangement finds speed?",
+      "correct": "s = d divided by t",
+      "correctExplanation": "Dividing both sides by t gives s = d divided by t.",
+      "distractors": [
+        {
+          "answer": "s = d times t",
+          "explanation": "This multiplies instead of dividing."
+        },
+        {
+          "answer": "s = t divided by d",
+          "explanation": "This divides the wrong quantities."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "In the formula d = s times t, d stands for {{blank:1}} and t stands for {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "distance",
+          "correctExplanation": "In the speed-distance-time formula, d represents distance.",
+          "distractors": [
+            {
+              "answer": "speed",
+              "explanation": "Speed is represented by s, not d.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "time",
+              "explanation": "Time is represented by t, not d.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "time",
+          "correctExplanation": "In the formula, t represents time.",
+          "distractors": [
+            {
+              "answer": "distance",
+              "explanation": "Distance is represented by d, not t.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "speed",
+              "explanation": "Speed is represented by s, not t.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "To rearrange A = l times w for w, divide both sides by {{blank:1}} to get w = A divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "l",
+          "correctExplanation": "Dividing both sides by l isolates w.",
+          "distractors": [
+            {
+              "answer": "w",
+              "explanation": "Dividing by w would isolate l, not w.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "A",
+              "explanation": "Dividing by A does not isolate any useful variable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "l",
+          "correctExplanation": "The rearranged formula is w = A divided by l.",
+          "distractors": [
+            {
+              "answer": "w",
+              "explanation": "w is the variable being found, not the divisor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "A",
+              "explanation": "A is already on the left side of the division.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "Doubling the base of a triangle while keeping the height the same will double the area.",
+      "correct": "True",
+      "correctExplanation": "A = half times b times h. Doubling b gives half times 2b times h = 2 times the original area.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Area depends linearly on the base, so doubling base doubles area."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "In the formula v = u + at, making a the subject gives a = v minus u minus t.",
+      "correct": "False",
+      "correctExplanation": "The correct rearrangement is a = (v minus u) divided by t.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True forgets to divide by t after subtracting u."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "If speed triples while time stays the same, the distance also triples.",
+      "correct": "True",
+      "correctExplanation": "d = s times t, so tripling s gives 3s times t = 3d.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Distance is directly proportional to speed when time is constant."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Rearranging C = 2 times pi times r for r gives r = C times 2 times pi.",
+      "correct": "False",
+      "correctExplanation": "The correct rearrangement is r = C divided by (2 times pi).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True multiplies instead of dividing."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "In V = l times w times h, halving the height while keeping l and w the same halves the volume.",
+      "correct": "True",
+      "correctExplanation": "Replacing h with h divided by 2 gives l times w times h divided by 2 = half the original volume.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Volume depends linearly on height."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Making h the subject of A = half times b times h gives h = A times 2 times b.",
+      "correct": "False",
+      "correctExplanation": "The correct rearrangement is h = 2A divided by b.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True multiplies by b instead of dividing."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "If two variables in a formula are multiplied, increasing one while holding the other constant always decreases the result.",
+      "correct": "False",
+      "correctExplanation": "Increasing a factor in a multiplication increases the product.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses the effect of multiplication with that of division."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "In P = 2l + 2w, doubling l while keeping w the same will double the entire perimeter.",
+      "correct": "False",
+      "correctExplanation": "Doubling l gives P_new = 2(2l) + 2w = 4l + 2w, which is not double 2l + 2w unless w = 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True assumes that doubling one part doubles the whole."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "The formula A = half times b times h is rearranged for h. What is the result?",
+      "correct": "h = 2A divided by b",
+      "correctExplanation": "Multiply both sides by 2, then divide by b.",
+      "distractors": [
+        {
+          "answer": "h = A divided by 2b",
+          "explanation": "This divides by 2b instead of multiplying by 2 first."
+        },
+        {
+          "answer": "h = Ab divided by 2",
+          "explanation": "This multiplies A by b instead of dividing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "In d = s times t, if d = 120 and t = 4, what rearrangement finds s?",
+      "correct": "s = 120 divided by 4",
+      "correctExplanation": "s = d divided by t = 120 divided by 4 = 30.",
+      "distractors": [
+        {
+          "answer": "s = 120 times 4",
+          "explanation": "This multiplies instead of dividing."
+        },
+        {
+          "answer": "s = 4 divided by 120",
+          "explanation": "This divides the wrong way around."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "In V = lwh, what happens to V when h is tripled and l and w stay the same?",
+      "correct": "V triples",
+      "correctExplanation": "Replacing h with 3h gives l times w times 3h = 3 times lwh.",
+      "distractors": [
+        {
+          "answer": "V increases by 3",
+          "explanation": "Increasing by 3 means adding 3; tripling means multiplying by 3."
+        },
+        {
+          "answer": "V stays the same",
+          "explanation": "Changing h directly changes V."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "The formula F = ma is rearranged for m. What is m?",
+      "correct": "m = F divided by a",
+      "correctExplanation": "Dividing both sides by a isolates m.",
+      "distractors": [
+        {
+          "answer": "m = F times a",
+          "explanation": "This multiplies instead of dividing."
+        },
+        {
+          "answer": "m = a divided by F",
+          "explanation": "This divides the wrong way around."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "In A = pi times r squared, what happens to A when r is doubled?",
+      "correct": "A becomes four times as large",
+      "correctExplanation": "A = pi times (2r) squared = pi times 4r squared = 4 times pi times r squared.",
+      "distractors": [
+        {
+          "answer": "A becomes twice as large",
+          "explanation": "Doubling r quadruples the area because r is squared."
+        },
+        {
+          "answer": "A increases by 2 pi",
+          "explanation": "The factor of pi is already in the original formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A rectangle has P = 2l + 2w. If P = 30 and l = 9, what is w?",
+      "correct": "6",
+      "correctExplanation": "30 = 2(9) + 2w gives 2w = 12, so w = 6.",
+      "distractors": [
+        {
+          "answer": "12",
+          "explanation": "This is 30 minus 18, forgetting to divide by 2."
+        },
+        {
+          "answer": "3",
+          "explanation": "This divides 30 by 9 and rounds, using the wrong method."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "The formula for speed is s = d divided by t. If d stays the same but t doubles, what happens to s?",
+      "correct": "s halves",
+      "correctExplanation": "Dividing d by a larger number produces a smaller result.",
+      "distractors": [
+        {
+          "answer": "s doubles",
+          "explanation": "Doubling the divisor decreases the quotient."
+        },
+        {
+          "answer": "s stays the same",
+          "explanation": "Changing t while d is fixed changes s."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which rearrangement of E = mc squared correctly isolates m?",
+      "correct": "m = E divided by c squared",
+      "correctExplanation": "Dividing both sides by c squared isolates m.",
+      "distractors": [
+        {
+          "answer": "m = E times c squared",
+          "explanation": "This multiplies instead of dividing."
+        },
+        {
+          "answer": "m = c squared divided by E",
+          "explanation": "This has the fraction upside down."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "In the formula I = PRT, what does doubling both P and T do to I?",
+      "correct": "I becomes four times as large",
+      "correctExplanation": "I = (2P)(R)(2T) = 4PRT = 4I.",
+      "distractors": [
+        {
+          "answer": "I becomes two times as large",
+          "explanation": "Doubling two multiplied factors quadruples the product."
+        },
+        {
+          "answer": "I remains exactly the same",
+          "explanation": "Changing P and T directly changes I."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A formula y = 3x + 5 is rearranged for x. What is x?",
+      "correct": "x = (y minus 5) divided by 3",
+      "correctExplanation": "Subtract 5, then divide by 3.",
+      "distractors": [
+        {
+          "answer": "x = y divided by 3 minus 5",
+          "explanation": "This divides first, giving the wrong order."
+        },
+        {
+          "answer": "x = 3y minus 5",
+          "explanation": "This multiplies y by 3 instead of dividing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "If C = 2 times pi times r and C = 31.4, what is r? (pi = 3.14)",
+      "correct": "5",
+      "correctExplanation": "r = 31.4 divided by (2 times 3.14) = 31.4 divided by 6.28 = 5.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "This divides by pi only, forgetting the factor of 2."
+        },
+        {
+          "answer": "15.7",
+          "explanation": "This divides 31.4 by 2 without dividing by pi."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "In d = s times t, both s and t are halved. What happens to d?",
+      "correct": "d is divided by 4",
+      "correctExplanation": "d = (s/2)(t/2) = st/4 = d/4.",
+      "distractors": [
+        {
+          "answer": "d is halved",
+          "explanation": "Halving both factors divides the product by 4, not 2."
+        },
+        {
+          "answer": "d stays the same",
+          "explanation": "Changing both factors changes the product."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "Rearranging A = l times w for l gives l = {{blank:1}} divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "A",
+          "correctExplanation": "Dividing both sides by w puts A on top.",
+          "distractors": [
+            {
+              "answer": "w",
+              "explanation": "w is the divisor, not the dividend.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "l",
+              "explanation": "l is the variable being found, not a known value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "w",
+          "correctExplanation": "Dividing by w isolates l on one side.",
+          "distractors": [
+            {
+              "answer": "l",
+              "explanation": "l is what you are solving for; you divide by the other variable.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "A",
+              "explanation": "A is the dividend, not the divisor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "In d = s times t, if s = 60 and t = 3, then d = {{blank:1}}. If d = 200 and s = 50, then t = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "180",
+          "correctExplanation": "60 times 3 = 180.",
+          "distractors": [
+            {
+              "answer": "63",
+              "explanation": "This adds 60 and 3 instead of multiplying.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20",
+              "explanation": "This divides 60 by 3 instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "200 divided by 50 = 4.",
+          "distractors": [
+            {
+              "answer": "150",
+              "explanation": "This subtracts 50 from 200.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "250",
+              "explanation": "This adds 50 to 200.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "Doubling the radius in C = 2 times pi times r makes C become {{blank:1}} times as large, because C depends {{blank:2}} on r.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Replacing r with 2r gives 2 times the original circumference.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Quadrupling happens when a squared variable is doubled.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "pi",
+              "explanation": "Pi is a constant, not a multiplier from doubling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "linearly",
+          "correctExplanation": "C = 2 pi r has r to the first power, so the relationship is linear.",
+          "distractors": [
+            {
+              "answer": "quadratically",
+              "explanation": "A quadratic dependence would mean r is squared.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "inversely",
+              "explanation": "An inverse dependence would mean increasing r decreases C.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "If V = lwh and l = 5, w = 4, h = 3, then V = {{blank:1}}. Doubling h to 6 gives V = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "5 times 4 times 3 = 60.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This adds 5 + 4 + 3 instead of multiplying.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20",
+              "explanation": "This multiplies only l times w.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "120",
+          "correctExplanation": "5 times 4 times 6 = 120.",
+          "distractors": [
+            {
+              "answer": "63",
+              "explanation": "This adds 3 to 60 instead of recalculating.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "180",
+              "explanation": "This triples the original volume instead of doubling h.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Making r the subject of A = pi times r squared gives r = the square root of {{blank:1}} divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "A",
+          "correctExplanation": "Dividing both sides by pi and taking the square root puts A under the root.",
+          "distractors": [
+            {
+              "answer": "r",
+              "explanation": "r is the variable being found, not under the root sign.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is not in this formula; it appears in the circumference formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "pi",
+          "correctExplanation": "A divided by pi goes under the square root.",
+          "distractors": [
+            {
+              "answer": "A",
+              "explanation": "A is the dividend, not the divisor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "r",
+              "explanation": "r is the variable being isolated, not a divisor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "In F = ma, if F = 30 and m = 5, then a = {{blank:1}}. Tripling the mass to 15 while keeping F at 30 gives a = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "30 divided by 5 = 6.",
+          "distractors": [
+            {
+              "answer": "150",
+              "explanation": "This multiplies 30 by 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "This subtracts 5 from 30.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "30 divided by 15 = 2.",
+          "distractors": [
+            {
+              "answer": "45",
+              "explanation": "This multiplies 30 by 1.5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "18",
+              "explanation": "This multiplies 6 by 3 instead of dividing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "If a rectangle's area is 48 and the length is 8, the width is found by dividing 48 by 8.",
+      "correct": "True",
+      "correctExplanation": "A = lw gives 48 = 8w, so w = 48 divided by 8 = 6.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the standard rearrangement to find a missing dimension."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "In d = s times t, tripling s and halving t keeps d the same.",
+      "correct": "False",
+      "correctExplanation": "d_new = 3s times (t/2) = 1.5st = 1.5d, which is 50 percent more, not the same.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True assumes the changes cancel out."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A school hall has area A = lw. If A = 200 m² and w = 8 m, what is l?",
+      "correct": "25 m",
+      "correctExplanation": "l = 200 divided by 8 = 25 m.",
+      "distractors": [
+        {
+          "answer": "16 m",
+          "explanation": "This divides 200 by a wrong width."
+        },
+        {
+          "answer": "1600 m",
+          "explanation": "This multiplies 200 by 8 instead of dividing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A cyclist uses d = st. They travel 45 km in 1.5 hours. What is their speed?",
+      "correct": "30 km/h",
+      "correctExplanation": "s = 45 divided by 1.5 = 30.",
+      "distractors": [
+        {
+          "answer": "67.5 km/h",
+          "explanation": "This multiplies 45 by 1.5."
+        },
+        {
+          "answer": "43.5 km/h",
+          "explanation": "This subtracts 1.5 from 45."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A triangle has area 36 cm² and base 9 cm. Using A = half bh, what is h?",
+      "correct": "8 cm",
+      "correctExplanation": "36 = half times 9 times h gives 9h = 72, so h = 8.",
+      "distractors": [
+        {
+          "answer": "4 cm",
+          "explanation": "This divides 36 by 9 without doubling first."
+        },
+        {
+          "answer": "18 cm",
+          "explanation": "This uses 36 divided by 2 without dividing by the base."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A pool's volume is V = lwh. If V = 60 m³, l = 5 m and w = 4 m, what is h?",
+      "correct": "3 m",
+      "correctExplanation": "h = 60 divided by (5 times 4) = 60 divided by 20 = 3.",
+      "distractors": [
+        {
+          "answer": "12 m",
+          "explanation": "This divides 60 by 5 only."
+        },
+        {
+          "answer": "48 m",
+          "explanation": "This multiplies 60 by something incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "In P = 2l + 2w, if P = 34 and w = 5, what is l?",
+      "correct": "12",
+      "correctExplanation": "34 = 2l + 10, so 2l = 24 and l = 12.",
+      "distractors": [
+        {
+          "answer": "14.5",
+          "explanation": "This subtracts 5 from 34 and divides by 2."
+        },
+        {
+          "answer": "24",
+          "explanation": "This subtracts 10 from 34 but forgets to divide by 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A car travels d = 60t km. If fuel costs $1.50 per 10 km, what is the fuel cost for a 3-hour trip?",
+      "correct": "$27",
+      "correctExplanation": "d = 60 times 3 = 180 km. Cost = 180 divided by 10 times 1.50 = $27.",
+      "distractors": [
+        {
+          "answer": "$9",
+          "explanation": "This uses 60 km instead of 180 km."
+        },
+        {
+          "answer": "$180",
+          "explanation": "This treats 180 km as $180 without applying the rate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A garden has area A = lw = 72 m². If the length is doubled, what must w become to keep A at 72?",
+      "correct": "Halved",
+      "correctExplanation": "A = (2l)(w/2) = lw = 72, so w must halve to maintain the same area.",
+      "distractors": [
+        {
+          "answer": "Doubled",
+          "explanation": "Doubling both would give 4 times the area."
+        },
+        {
+          "answer": "Unchanged",
+          "explanation": "Doubling l without changing w would double A."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Using v = u + at, if v = 25, u = 5 and a = 4, what is t?",
+      "correct": "5",
+      "correctExplanation": "25 = 5 + 4t gives 4t = 20, so t = 5.",
+      "distractors": [
+        {
+          "answer": "7.5",
+          "explanation": "This divides 25 + 5 by 4."
+        },
+        {
+          "answer": "20",
+          "explanation": "This stops at 4t = 20 without dividing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A painter estimates paint needed with V = A times coats divided by coverage. If A = 40, coats = 2 and coverage = 10, how many litres?",
+      "correct": "8 litres",
+      "correctExplanation": "V = 40 times 2 divided by 10 = 80 divided by 10 = 8.",
+      "distractors": [
+        {
+          "answer": "4 litres",
+          "explanation": "This divides 40 by 10 and ignores the coats."
+        },
+        {
+          "answer": "800 litres",
+          "explanation": "This multiplies all three values together."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "In C = 2 pi r, if C = 62.8 cm, what is the diameter? (pi = 3.14)",
+      "correct": "20 cm",
+      "correctExplanation": "r = 62.8 divided by 6.28 = 10, diameter = 2r = 20 cm.",
+      "distractors": [
+        {
+          "answer": "10 cm",
+          "explanation": "This gives the radius, not the diameter."
+        },
+        {
+          "answer": "31.4 cm",
+          "explanation": "This halves C without dividing by pi."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A phone plan costs C = 20 + 0.05m dollars for m texts. If the bill is $32.50, how many texts were sent?",
+      "correct": "250",
+      "correctExplanation": "32.50 = 20 + 0.05m gives 0.05m = 12.50, so m = 250.",
+      "distractors": [
+        {
+          "answer": "650",
+          "explanation": "This divides 32.50 by 0.05 without subtracting 20."
+        },
+        {
+          "answer": "12.50",
+          "explanation": "This stops at 0.05m = 12.50 without dividing by 0.05."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A rectangle's length is 3 times its width. If P = 48, what is the width?",
+      "correct": "6",
+      "correctExplanation": "P = 2(3w) + 2w = 8w = 48, so w = 6.",
+      "distractors": [
+        {
+          "answer": "12",
+          "explanation": "This divides 48 by 4 instead of 8."
+        },
+        {
+          "answer": "16",
+          "explanation": "This divides 48 by 3 instead of 8."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "A rectangle has A = lw. If A = 56 and l = 7, then w = {{blank:1}}. Doubling l to 14 while keeping A at 56 gives w = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "56 divided by 7 = 8.",
+          "distractors": [
+            {
+              "answer": "49",
+              "explanation": "This subtracts 7 from 56.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "63",
+              "explanation": "This adds 7 to 56.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "56 divided by 14 = 4.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 was the width before l was doubled.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "42",
+              "explanation": "This subtracts 14 from 56.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Using d = st, a runner covers 12 km in 1.5 hours. Their speed is {{blank:1}} km/h. At that speed, 24 km takes {{blank:2}} hours.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "12 divided by 1.5 = 8 km/h.",
+          "distractors": [
+            {
+              "answer": "13.5",
+              "explanation": "This adds 12 and 1.5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "18",
+              "explanation": "This multiplies 12 by 1.5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "24 divided by 8 = 3 hours.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "This divides 24 by 12 instead of 8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "16",
+              "explanation": "This doubles the speed instead of finding the time.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A triangle has A = half bh. If b = 10 and h = 6, then A = {{blank:1}}. Keeping A the same but changing b to 15 gives h = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "half times 10 times 6 = 30.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "This calculates 10 times 6 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "16",
+              "explanation": "This adds 10 and 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "30 = half times 15 times h gives 15h = 60, so h = 4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "This divides 30 by 15 directly without doubling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 was the original height, not the new one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Using v = u + at with u = 10 and a = 3, after t = 4 the velocity is {{blank:1}}. To reach v = 40, the time needed is {{blank:2}} seconds.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "22",
+          "correctExplanation": "10 + 3 times 4 = 10 + 12 = 22.",
+          "distractors": [
+            {
+              "answer": "17",
+              "explanation": "This uses a = 4 and t = 3 by mistake.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "52",
+              "explanation": "This calculates 10 times 3 + 4 times 3 incorrectly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "40 = 10 + 3t gives 3t = 30, so t = 10.",
+          "distractors": [
+            {
+              "answer": "13.3",
+              "explanation": "This divides 40 by 3 without subtracting u.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "This stops at 3t = 30 without dividing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "In P = 2l + 2w, if P = 40 and l = 12, then w = {{blank:1}}. If w is doubled to 16, the new perimeter is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "40 = 24 + 2w gives 2w = 16, so w = 8.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "This subtracts 12 from 40 and divides by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "28",
+              "explanation": "This subtracts 12 from 40.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "56",
+          "correctExplanation": "P = 2(12) + 2(16) = 24 + 32 = 56.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "This uses w = 12 for both dimensions.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "This doubles the original perimeter.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A phone plan charges C = 15 + 0.10m. For 100 texts, C = ${{blank:1}}. To keep C at $30, the maximum texts are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "25",
+          "correctExplanation": "15 + 0.10 times 100 = 15 + 10 = 25.",
+          "distractors": [
+            {
+              "answer": "10.15",
+              "explanation": "This calculates 0.10 + 15/100 by mistake.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "115",
+              "explanation": "This adds 100 to 15.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "150",
+          "correctExplanation": "30 = 15 + 0.10m gives 0.10m = 15, so m = 150.",
+          "distractors": [
+            {
+              "answer": "300",
+              "explanation": "This divides 30 by 0.10 without subtracting 15.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "15",
+              "explanation": "This is the fixed cost, not the text count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "V = lwh. A box has l = 10, w = 5, h = 3 giving V = {{blank:1}}. Halving h to 1.5 gives V = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "150",
+          "correctExplanation": "10 times 5 times 3 = 150.",
+          "distractors": [
+            {
+              "answer": "18",
+              "explanation": "This adds 10 + 5 + 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "This multiplies only 10 times 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "75",
+          "correctExplanation": "10 times 5 times 1.5 = 75.",
+          "distractors": [
+            {
+              "answer": "148.5",
+              "explanation": "This subtracts 1.5 from 150.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "300",
+              "explanation": "This doubles instead of halving.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Using C = 2 pi r with pi = 3.14, if r = 10 then C = {{blank:1}} cm. If C = 94.2 then r = {{blank:2}} cm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "62.8",
+          "correctExplanation": "2 times 3.14 times 10 = 62.8.",
+          "distractors": [
+            {
+              "answer": "31.4",
+              "explanation": "This uses pi times r without the factor of 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20",
+              "explanation": "This doubles the radius without using pi.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "15",
+          "correctExplanation": "94.2 divided by 6.28 = 15.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "This divides 94.2 by 3.14 without dividing by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "47.1",
+              "explanation": "This divides 94.2 by 2 without dividing by pi.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "If F = ma and F = 24, m = 8, then a = {{blank:1}}. Doubling the force to 48 while keeping m = 8 gives a = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "24 divided by 8 = 3.",
+          "distractors": [
+            {
+              "answer": "32",
+              "explanation": "This adds 24 and 8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "192",
+              "explanation": "This multiplies 24 by 8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "48 divided by 8 = 6.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "This subtracts 8 from 48.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 was the original acceleration.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A car averages s = d/t. Driving 240 km in 4 hours gives s = {{blank:1}} km/h. Driving the same distance in 3 hours gives s = {{blank:2}} km/h.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "240 divided by 4 = 60.",
+          "distractors": [
+            {
+              "answer": "244",
+              "explanation": "This adds 240 and 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "960",
+              "explanation": "This multiplies 240 by 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "80",
+          "correctExplanation": "240 divided by 3 = 80.",
+          "distractors": [
+            {
+              "answer": "237",
+              "explanation": "This subtracts 3 from 240.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "720",
+              "explanation": "This multiplies 240 by 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "A = half bh for a triangle. If A = 45 and b = 9, then h = {{blank:1}}. If the base is tripled to 27 and A stays 45, then h = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "45 = half times 9 times h gives 9h = 90, so h = 10.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "This divides 45 by 9 without doubling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "36",
+              "explanation": "This subtracts 9 from 45.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3.33",
+          "correctExplanation": "45 = half times 27 times h gives 27h = 90, h = 90/27 ≈ 3.33.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10 was the height before the base was tripled.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.67",
+              "explanation": "This divides 45 by 27 without doubling first.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "P = 2l + 2w. If l = 15 and w = 10, P = {{blank:1}}. If l increases to 20 and w stays 10, P = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "2(15) + 2(10) = 30 + 20 = 50.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "This uses l + w only.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "150",
+              "explanation": "This multiplies l times w.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "60",
+          "correctExplanation": "2(20) + 2(10) = 40 + 20 = 60.",
+          "distractors": [
+            {
+              "answer": "200",
+              "explanation": "This multiplies 20 times 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "55",
+              "explanation": "This adds 5 to the old perimeter.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "In A = lw, if l is increased by 50% and w is decreased by 50%, how does A change?",
+      "correct": "A decreases to 75% of the original",
+      "correctExplanation": "1.5l times 0.5w = 0.75lw, which is 75% of the original area.",
+      "distractors": [
+        {
+          "answer": "A stays the same",
+          "explanation": "The percentage changes do not cancel because they apply to different values."
+        },
+        {
+          "answer": "A decreases to 50% of the original",
+          "explanation": "This would require both dimensions to decrease."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "The formula d = st is used for two trips. Trip 1: s = 80, t = 2. Trip 2: s = 60, t = 3. Which trip covers more distance?",
+      "correct": "Trip 2 with 180 km",
+      "correctExplanation": "Trip 1: 80 times 2 = 160 km. Trip 2: 60 times 3 = 180 km.",
+      "distractors": [
+        {
+          "answer": "Trip 1 with 160 km",
+          "explanation": "160 km is less than 180 km."
+        },
+        {
+          "answer": "Both cover the same distance",
+          "explanation": "160 and 180 are not equal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A rectangle and a triangle share the same base b and height h. How do their areas compare?",
+      "correct": "The triangle's area is half the rectangle's",
+      "correctExplanation": "Rectangle: bh. Triangle: half bh. The ratio is 1 to 2.",
+      "distractors": [
+        {
+          "answer": "The triangle's area equals the rectangle's",
+          "explanation": "The triangle formula includes a factor of one half."
+        },
+        {
+          "answer": "The triangle's area is double the rectangle's",
+          "explanation": "The triangle has less area, not more."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "In V = lwh, l is doubled and h is halved. What happens to V?",
+      "correct": "V stays the same",
+      "correctExplanation": "V = (2l)(w)(h/2) = lwh, so the changes cancel out.",
+      "distractors": [
+        {
+          "answer": "V doubles",
+          "explanation": "Doubling one dimension and halving another keeps the product unchanged."
+        },
+        {
+          "answer": "V is halved",
+          "explanation": "The doubling of l offsets the halving of h exactly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Two pools: V1 = 10 times 4 times 2 and V2 = 8 times 5 times 3. Which holds more?",
+      "correct": "V2 at 120 cubic metres",
+      "correctExplanation": "V1 = 10 times 4 times 2 = 80. V2 = 8 times 5 times 3 = 120. V2 is larger.",
+      "distractors": [
+        {
+          "answer": "V1 at 80 cubic metres",
+          "explanation": "80 is less than 120."
+        },
+        {
+          "answer": "Both hold the same volume",
+          "explanation": "80 and 120 are not equal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A formula has y = 4x + 2z. If x = 3 and z = 5, what is y? If x doubles to 6 while z stays at 5, what is the new y?",
+      "correct": "y = 22 then y = 34",
+      "correctExplanation": "Original: 4(3) + 2(5) = 12 + 10 = 22. New: 4(6) + 2(5) = 24 + 10 = 34.",
+      "distractors": [
+        {
+          "answer": "y = 22 then y = 44",
+          "explanation": "This doubles the entire result, not just the x-term."
+        },
+        {
+          "answer": "y = 22 then y = 32",
+          "explanation": "This only adds 10 to the original, doubling x contribution without recalculating."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "In P = 2l + 2w, both l and w increase by 5. By how much does P increase?",
+      "correct": "20",
+      "correctExplanation": "P_new = 2(l+5) + 2(w+5) = 2l + 10 + 2w + 10 = P + 20.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "This adds 5 once for each dimension, not twice."
+        },
+        {
+          "answer": "5",
+          "explanation": "This only accounts for one side increasing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A farmer's field has A = lw = 600 m². The length is reduced by 10 m and the width increased by 10 m. Is the area still 600?",
+      "correct": "Not necessarily; it depends on the dimensions",
+      "correctExplanation": "If l = 30 and w = 20, new area = 20 times 30 = 600. But if l = 40, w = 15, new area = 30 times 25 = 750.",
+      "distractors": [
+        {
+          "answer": "Yes, the area is always 600",
+          "explanation": "Adding and subtracting equal amounts changes area unless the shape is a special case."
+        },
+        {
+          "answer": "The area always exceeds 600",
+          "explanation": "Some combinations give less than 600."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "In d = st, a train is 20% faster but takes 25% less time. How does d change?",
+      "correct": "d decreases to 90% of the original",
+      "correctExplanation": "d_new = 1.2s times 0.75t = 0.9st = 0.9d.",
+      "distractors": [
+        {
+          "answer": "d stays the same",
+          "explanation": "1.2 times 0.75 = 0.9, not 1.0."
+        },
+        {
+          "answer": "d increases by 5%",
+          "explanation": "This incorrectly adds the percentages."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "C = 2 pi r and A = pi r squared. If r doubles, C doubles. By what factor does A change?",
+      "correct": "A becomes four times larger",
+      "correctExplanation": "A = pi(2r)² = 4 pi r², so A is multiplied by 4.",
+      "distractors": [
+        {
+          "answer": "A becomes two times larger",
+          "explanation": "Doubling r doubles C but quadruples A because of the squared term."
+        },
+        {
+          "answer": "A grows by a factor of pi",
+          "explanation": "The factor depends on the exponent of r, not on pi."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Two plans: Plan A charges C = 50 + 2n. Plan B charges C = 5n. For what n are costs equal?",
+      "correct": "Approximately 17 items",
+      "correctExplanation": "50 + 2n = 5n gives 50 = 3n, so n = 16.67. Round to 17 for whole items.",
+      "distractors": [
+        {
+          "answer": "Exactly 10 items",
+          "explanation": "50 + 20 = 70 and 50 ≠ 70."
+        },
+        {
+          "answer": "Exactly 25 items",
+          "explanation": "50 + 50 = 100 and 125 ≠ 100."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A formula T = a + bx has T = 10 when x = 1 and T = 16 when x = 3. What are a and b?",
+      "correct": "a = 7 and b = 3",
+      "correctExplanation": "b = (16 minus 10) divided by (3 minus 1) = 3. Then 10 = a + 3 gives a = 7.",
+      "distractors": [
+        {
+          "answer": "a = 10 and b = 2",
+          "explanation": "10 + 2(3) = 16 works, but 10 + 2(1) = 12, not 10."
+        },
+        {
+          "answer": "a = 4 and b = 6",
+          "explanation": "4 + 6(1) = 10 works, but 4 + 6(3) = 22, not 16."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A box has V = lwh = 240 cm³. If every dimension is doubled, what is the new volume?",
+      "correct": "1920 cm³",
+      "correctExplanation": "V_new = 2l times 2w times 2h = 8lwh = 8 times 240 = 1920.",
+      "distractors": [
+        {
+          "answer": "480 cm³",
+          "explanation": "This doubles the volume once, not accounting for all three dimensions."
+        },
+        {
+          "answer": "960 cm³",
+          "explanation": "This quadruples V, accounting for only two dimensions doubling."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "In A = half bh, if both b and h increase by 20%, by what percentage does A increase?",
+      "correct": "44%",
+      "correctExplanation": "A_new = half(1.2b)(1.2h) = half times 1.44bh = 1.44A. Increase = 44%.",
+      "distractors": [
+        {
+          "answer": "40%",
+          "explanation": "This adds the two 20% increases but ignores the compounding."
+        },
+        {
+          "answer": "20%",
+          "explanation": "Only one dimension changing by 20% would give this result."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "In A = lw, if l increases by 50% to 1.5l and w stays the same, A becomes {{blank:1}} times the original. If w also increases by 50%, A becomes {{blank:2}} times the original.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.5",
+          "correctExplanation": "1.5l times w = 1.5lw.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Doubling would require l to double, not increase by 50%.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "This would be a decrease, not an increase.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2.25",
+          "correctExplanation": "1.5l times 1.5w = 2.25lw.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "This adds the two 50% increases instead of multiplying.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.5",
+              "explanation": "This is the factor for one dimension only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "d = st. Trip 1: s = 90, t = 2 gives d = {{blank:1}} km. Trip 2 covers the same distance at s = 60, so t = {{blank:2}} hours.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "180",
+          "correctExplanation": "90 times 2 = 180.",
+          "distractors": [
+            {
+              "answer": "92",
+              "explanation": "This adds 90 and 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "45",
+              "explanation": "This divides 90 by 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "180 divided by 60 = 3.",
+          "distractors": [
+            {
+              "answer": "120",
+              "explanation": "This subtracts 60 from 180.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 was the time for the first trip.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "V = lwh = 360. Original: l = 10, w = 6, h = 6. If l is halved to 5, the product wh must equal {{blank:1}} to maintain V. One option is w = 9, h = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "72",
+          "correctExplanation": "360 divided by 5 = 72.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "This is the original wh = 6 times 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "180",
+              "explanation": "This divides 360 by 2 instead of 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "72 divided by 9 = 8.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This divides 72 by 6 instead of 9.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 was the original height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "P = 2l + 2w. If l and w both increase by 3, the new perimeter is P + {{blank:1}} because each side gains {{blank:2}} extra.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "Each of the 4 sides gains 3, but P = 2l + 2w so 2(3) + 2(3) = 12.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "This accounts for only one length and one width.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "This only accounts for one side.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Each of the two lengths gains 3 and each width gains 3.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is the total added to one pair of sides, not each side.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 is the total perimeter increase, not per side.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A = pi r². If r = 5, A = 25 pi. If r is tripled to 15, A = {{blank:1}} pi, which is {{blank:2}} times the original.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "225",
+          "correctExplanation": "pi times 15 squared = 225 pi.",
+          "distractors": [
+            {
+              "answer": "75",
+              "explanation": "This multiplies 25 by 3 instead of squaring 15.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "45",
+              "explanation": "This calculates 3 times 15 instead of 15 squared.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "225 divided by 25 = 9.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Tripling r triples the radius but the area increases by 3 squared = 9.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is double the tripling factor, not the correct area ratio.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "In y = 4x + 2z, if x = 5 and z = 3, then y = {{blank:1}}. Halving x to 2.5 while keeping z = 3 gives y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "26",
+          "correctExplanation": "4(5) + 2(3) = 20 + 6 = 26.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "This multiplies 4 times 5 times 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "14",
+              "explanation": "This calculates 4 + 5 + 2 + 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "16",
+          "correctExplanation": "4(2.5) + 2(3) = 10 + 6 = 16.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "This halves the entire result instead of just the x-term.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "23",
+              "explanation": "This subtracts 3 from 26 instead of recalculating.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "d = st. A train is 25% faster (s becomes 1.25s) and time is reduced by 20% (t becomes 0.8t). The new d is {{blank:1}} times the original, which is a change of {{blank:2}} percent.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "1.25 times 0.8 = 1.0, so distance is unchanged.",
+          "distractors": [
+            {
+              "answer": "1.05",
+              "explanation": "This adds 25% and subtracts 20% to get 5%.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.95",
+              "explanation": "This subtracts the percentage difference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "Since 1.0 times original means no change, the percentage change is 0.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The factors multiply, they do not simply add or subtract.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "-5",
+              "explanation": "A negative change would mean a decrease, but there is no change.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "C = 2 pi r. If C1 = 2 pi (4) and C2 = 2 pi (12), the ratio C2 to C1 is {{blank:1}} to 1 because the radius is {{blank:2}} times larger.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "C2/C1 = 12/4 = 3.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 is the difference 12 minus 4, not the ratio.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "This compares 12 to 2, not to 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "12 divided by 4 = 3.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 is the difference, not the multiplicative factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "This divides 12 by the factor of 2 in the formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "V = lwh. Doubling every dimension multiplies V by {{blank:1}}. Tripling every dimension multiplies V by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "2 times 2 times 2 = 8.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "This adds the three doublings instead of multiplying.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "This only accounts for one dimension doubling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "27",
+          "correctExplanation": "3 times 3 times 3 = 27.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "This accounts for only two dimensions tripling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "This only accounts for one dimension tripling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A = half bh. Both b and h double. The new area is {{blank:1}} times the original because the factor is 2 times {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "half(2b)(2h) = half times 4bh = 4A.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Doubling one dimension alone gives a factor of 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "This would be the result of doubling three multiplied dimensions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "The two factors of 2 multiply: 2 times 2 = 4.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4 is the final combined factor, not the second individual factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "The second dimension also doubles, contributing a factor of 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "F = ma. If F is kept constant at 20 and m increases from 4 to 10, a changes from {{blank:1}} to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "20 divided by 4 = 5.",
+          "distractors": [
+            {
+              "answer": "24",
+              "explanation": "This adds 20 and 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "This multiplies 20 by 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "20 divided by 10 = 2.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "This is the mass, not the acceleration.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 was the original acceleration.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "Two formulas: y = 3x + 10 and y = 5x. They give the same y when x = {{blank:1}} and the shared value is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "3(5) + 10 = 25 and 5(5) = 25.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "3(2) + 10 = 16 and 5(2) = 10, not equal.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "3(10) + 10 = 40 and 5(10) = 50, not equal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "25",
+          "correctExplanation": "Both formulas give y = 25 when x = 5.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "3(5) = 15 is only part of the first formula.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "35",
+              "explanation": "This adds 10 to 25.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

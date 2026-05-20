@@ -1,0 +1,2606 @@
+{
+  "_meta": {
+    "code": "VC2M7M01",
+    "level": 7,
+    "area": "Mathematics",
+    "ageBand": "11-12",
+    "keyKnowledge": "We are learning the formulas for areas of rectangles, triangles and parallelograms, and applying them to solve problems.",
+    "generatedAt": "2026-05-18T08:18:07Z",
+    "specVersions": {
+      "generation-prompt-master": "2.1",
+      "validation": "2.1"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The area of a rectangle is found by multiplying length by width.",
+      "correct": "True",
+      "correctExplanation": "A = l × w is the standard rectangle area formula.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the definition of rectangle area."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Area is measured in centimetres.",
+      "correct": "False",
+      "correctExplanation": "Area is measured in square units such as cm², not cm.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses linear units with area units."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The area of a triangle is half the area of a rectangle with the same base and height.",
+      "correct": "True",
+      "correctExplanation": "A triangle with base b and height h has area half × b × h, which is half of b × h.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A triangle can be formed by cutting a rectangle diagonally."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A parallelogram has the same area formula as a rectangle: base times height.",
+      "correct": "True",
+      "correctExplanation": "The area of a parallelogram is A = b × h, just like a rectangle.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The perpendicular height is used, giving the same formula."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The height of a triangle is always one of its sides.",
+      "correct": "False",
+      "correctExplanation": "The height is the perpendicular distance from the base to the opposite vertex, which may be inside the triangle.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses a side length with the perpendicular height."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "A rectangle with sides 5 cm and 8 cm has an area of 13 cm².",
+      "correct": "False",
+      "correctExplanation": "The area is 5 × 8 = 40 cm², not 5 + 8 = 13 cm².",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True adds the sides instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "A parallelogram always has four right angles.",
+      "correct": "False",
+      "correctExplanation": "A parallelogram has opposite angles equal, but they are not necessarily right angles.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses parallelograms with rectangles."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "If a rectangle has area 36 cm² and width 4 cm, the length is 8 cm.",
+      "correct": "False",
+      "correctExplanation": "36 ÷ 4 = 9 cm, not 8 cm.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True may estimate rather than divide accurately."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Doubling the base of a triangle always doubles its area.",
+      "correct": "True",
+      "correctExplanation": "A = half × b × h. Replacing b with 2b gives half × 2b × h = 2 × original area.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Area is proportional to base when height is constant."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The slant side of a parallelogram is used as the height in the area formula.",
+      "correct": "False",
+      "correctExplanation": "The height must be perpendicular to the base, not along the slant side.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses slant length with perpendicular height."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A triangle with base 6 cm and height 4 cm has an area of 24 cm².",
+      "correct": "False",
+      "correctExplanation": "The area is half × 6 × 4 = 12 cm², not 6 × 4 = 24 cm².",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True forgets to halve the product."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "A square is a special type of rectangle.",
+      "correct": "True",
+      "correctExplanation": "A square has four right angles and equal sides, meeting all rectangle criteria.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "All squares satisfy the definition of a rectangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is the area of a rectangle with length 7 cm and width 3 cm?",
+      "correct": "21 cm²",
+      "correctExplanation": "A = 7 × 3 = 21 cm².",
+      "distractors": [
+        {
+          "answer": "10 cm²",
+          "explanation": "This adds 7 and 3 instead of multiplying."
+        },
+        {
+          "answer": "20 cm²",
+          "explanation": "This rounds down from 21."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which formula gives the area of a triangle?",
+      "correct": "A = half × b × h",
+      "correctExplanation": "The triangle area formula uses half the product of base and height.",
+      "distractors": [
+        {
+          "answer": "A = b × h",
+          "explanation": "This is the parallelogram formula, not the triangle formula."
+        },
+        {
+          "answer": "A = 2 × b × h",
+          "explanation": "This doubles instead of halving."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What is the area of a parallelogram with base 10 cm and height 6 cm?",
+      "correct": "60 cm²",
+      "correctExplanation": "A = 10 × 6 = 60 cm².",
+      "distractors": [
+        {
+          "answer": "16 cm²",
+          "explanation": "This adds 10 and 6 instead of multiplying."
+        },
+        {
+          "answer": "30 cm²",
+          "explanation": "This halves the product, confusing it with a triangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which unit is correct for measuring area?",
+      "correct": "cm²",
+      "correctExplanation": "Area is measured in square units.",
+      "distractors": [
+        {
+          "answer": "cm",
+          "explanation": "cm measures length, not area."
+        },
+        {
+          "answer": "cm³",
+          "explanation": "cm³ measures volume, not area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "A rectangle has area 48 cm² and length 8 cm. What is the width?",
+      "correct": "6 cm",
+      "correctExplanation": "48 ÷ 8 = 6 cm.",
+      "distractors": [
+        {
+          "answer": "40 cm",
+          "explanation": "This subtracts 8 from 48."
+        },
+        {
+          "answer": "56 cm",
+          "explanation": "This adds 8 to 48."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "What is the area of a triangle with base 10 cm and height 8 cm?",
+      "correct": "40 cm²",
+      "correctExplanation": "A = half × 10 × 8 = 40 cm².",
+      "distractors": [
+        {
+          "answer": "80 cm²",
+          "explanation": "This uses b × h without halving."
+        },
+        {
+          "answer": "18 cm²",
+          "explanation": "This adds 10 and 8 instead of using the formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Why does the parallelogram area formula use perpendicular height?",
+      "correct": "It gives the true distance between base and top",
+      "correctExplanation": "The perpendicular height gives the actual spacing between the parallel sides.",
+      "distractors": [
+        {
+          "answer": "It is the longest measurement in the shape",
+          "explanation": "The slant side is often longer than the height."
+        },
+        {
+          "answer": "It makes the area calculation smaller",
+          "explanation": "Using height is about accuracy, not making numbers smaller."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "A rectangle is 12 m long and 5 m wide. What is its area?",
+      "correct": "60 m²",
+      "correctExplanation": "A = 12 × 5 = 60 m².",
+      "distractors": [
+        {
+          "answer": "34 m²",
+          "explanation": "This calculates perimeter (2×12 + 2×5) instead of area."
+        },
+        {
+          "answer": "17 m²",
+          "explanation": "This adds 12 and 5 instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which shape has the area formula A = b × h?",
+      "correct": "Parallelogram",
+      "correctExplanation": "Both rectangles and parallelograms use base times height.",
+      "distractors": [
+        {
+          "answer": "Triangle",
+          "explanation": "The triangle formula includes a factor of one half."
+        },
+        {
+          "answer": "Circle",
+          "explanation": "The circle formula uses pi times radius squared."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "A triangle has base 14 cm and height 6 cm. What is its area?",
+      "correct": "42 cm²",
+      "correctExplanation": "A = half × 14 × 6 = 42 cm².",
+      "distractors": [
+        {
+          "answer": "84 cm²",
+          "explanation": "This uses 14 × 6 without halving."
+        },
+        {
+          "answer": "20 cm²",
+          "explanation": "This adds 14 and 6 instead of using the formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "What happens to a rectangle's area if both dimensions are doubled?",
+      "correct": "The area becomes four times as large",
+      "correctExplanation": "2l × 2w = 4lw.",
+      "distractors": [
+        {
+          "answer": "The area becomes twice as large",
+          "explanation": "Doubling both dimensions quadruples the area."
+        },
+        {
+          "answer": "The area remains exactly the same",
+          "explanation": "Changing dimensions always changes the area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A parallelogram has base 9 cm and height 7 cm. What is its area?",
+      "correct": "63 cm²",
+      "correctExplanation": "A = 9 × 7 = 63 cm².",
+      "distractors": [
+        {
+          "answer": "32 cm²",
+          "explanation": "This adds 9 + 7 + 9 + 7 to get the perimeter."
+        },
+        {
+          "answer": "16 cm²",
+          "explanation": "This adds 9 and 7 only."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The area of a rectangle is found using A = {{blank:1}} × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "length",
+          "correctExplanation": "Area equals length multiplied by width.",
+          "distractors": [
+            {
+              "answer": "height",
+              "explanation": "Height is used for triangles and parallelograms, not typically for rectangles.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "perimeter",
+              "explanation": "Perimeter measures the distance around, not the space inside.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "width",
+          "correctExplanation": "Width is the second dimension multiplied by length.",
+          "distractors": [
+            {
+              "answer": "base",
+              "explanation": "Base is used with parallelograms and triangles, not standard rectangle labelling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "Diagonals are not used in the area formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "Area is measured in {{blank:1}} units such as cm{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "square",
+          "correctExplanation": "Area counts how many unit squares fit inside a shape.",
+          "distractors": [
+            {
+              "answer": "cubic",
+              "explanation": "Cubic units measure volume, not area.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "linear",
+              "explanation": "Linear units measure length, not area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "²",
+          "correctExplanation": "The superscript 2 denotes squared, meaning two-dimensional.",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "The superscript 3 denotes cubed, which is for volume.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "cm",
+              "explanation": "A plain unit without a power measures length, not area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A triangle can be seen as half of a parallelogram with the same base and height.",
+      "correct": "True",
+      "correctExplanation": "Joining two identical triangles creates a parallelogram, so one triangle is half.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This geometric relationship underpins the triangle area formula."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The area of a composite shape can be found by splitting it into simpler shapes.",
+      "correct": "True",
+      "correctExplanation": "Breaking a shape into rectangles and triangles allows their areas to be calculated separately and added.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the standard approach for composite area problems."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Changing the slant of a parallelogram without changing its base and height changes its area.",
+      "correct": "False",
+      "correctExplanation": "Area depends only on base and perpendicular height, not on the slant angle.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True thinks the slant affects the enclosed space."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "If a triangle and a rectangle share the same base and height, the triangle's area is half the rectangle's.",
+      "correct": "True",
+      "correctExplanation": "Triangle: half × b × h. Rectangle: b × h. The ratio is 1 to 2.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This directly follows from comparing the two formulas."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "A parallelogram with a base of 12 cm and a slant side of 5 cm has area 60 cm².",
+      "correct": "False",
+      "correctExplanation": "Area requires the perpendicular height, not the slant side, so 12 × 5 = 60 only if 5 is the height.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True uses the slant side as the height."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "To find the height of a triangle, divide the area by the base.",
+      "correct": "False",
+      "correctExplanation": "You must multiply the area by 2 first, then divide by the base: h = 2A ÷ b.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True forgets to double the area before dividing."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "Rotating a parallelogram changes its area.",
+      "correct": "False",
+      "correctExplanation": "Rotation preserves all dimensions, so the area remains the same.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True thinks orientation affects area."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "If two triangles have the same area, they must have the same base and height.",
+      "correct": "False",
+      "correctExplanation": "Different combinations of base and height can give the same area; for example half × 4 × 6 = half × 3 × 8.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True does not consider that area depends on the product, not individual values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A composite L-shape can be split into two rectangles measuring 8 × 3 and 4 × 5. What is the total area?",
+      "correct": "44 cm²",
+      "correctExplanation": "8 × 3 = 24 and 4 × 5 = 20. Total = 44 cm².",
+      "distractors": [
+        {
+          "answer": "60 cm²",
+          "explanation": "This multiplies 8 × 3 × 5 ÷ 2 incorrectly."
+        },
+        {
+          "answer": "24 cm²",
+          "explanation": "This only counts one of the two rectangles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A triangle has area 30 cm² and base 10 cm. What is the height?",
+      "correct": "6 cm",
+      "correctExplanation": "30 = half × 10 × h gives 10h = 60, so h = 6.",
+      "distractors": [
+        {
+          "answer": "3 cm",
+          "explanation": "This divides 30 by 10 without doubling."
+        },
+        {
+          "answer": "15 cm",
+          "explanation": "This divides 30 by 2 without using the base."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Why does the parallelogram have the same area formula as a rectangle?",
+      "correct": "Cutting and rearranging it gives a rectangle",
+      "correctExplanation": "The perpendicular height creates a rectangle of equal area.",
+      "distractors": [
+        {
+          "answer": "All parallelograms are already rectangles",
+          "explanation": "Rectangles are a special case of parallelograms, not the reverse."
+        },
+        {
+          "answer": "The slant side equals the actual height",
+          "explanation": "The slant side and height are different measurements."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A garden is shaped like a triangle with base 15 m and height 8 m. What area of turf is needed?",
+      "correct": "60 m²",
+      "correctExplanation": "A = half × 15 × 8 = 60 m².",
+      "distractors": [
+        {
+          "answer": "120 m²",
+          "explanation": "This uses base × height without halving."
+        },
+        {
+          "answer": "23 m²",
+          "explanation": "This adds 15 and 8."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A parallelogram has area 72 cm² and base 9 cm. What is its height?",
+      "correct": "8 cm",
+      "correctExplanation": "72 ÷ 9 = 8 cm.",
+      "distractors": [
+        {
+          "answer": "63 cm",
+          "explanation": "This subtracts 9 from 72."
+        },
+        {
+          "answer": "648 cm",
+          "explanation": "This multiplies 72 by 9."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Two triangles have the same base of 10 cm. Triangle A has height 6 cm and Triangle B has height 8 cm. How much larger is B's area?",
+      "correct": "10 cm²",
+      "correctExplanation": "A_A = 30. A_B = 40. Difference = 10 cm².",
+      "distractors": [
+        {
+          "answer": "2 cm²",
+          "explanation": "This is the difference in heights, not areas."
+        },
+        {
+          "answer": "20 cm²",
+          "explanation": "This doubles the actual area difference."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "A rectangle is cut diagonally into two triangles. Each triangle has what fraction of the rectangle's area?",
+      "correct": "One half",
+      "correctExplanation": "A diagonal splits a rectangle into two congruent triangles.",
+      "distractors": [
+        {
+          "answer": "One third",
+          "explanation": "A diagonal creates two equal parts, not three."
+        },
+        {
+          "answer": "One quarter",
+          "explanation": "Two triangles make the whole rectangle, not four."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which measurement is the height of a parallelogram?",
+      "correct": "The perpendicular distance from base to top",
+      "correctExplanation": "Height must be at right angles to the base.",
+      "distractors": [
+        {
+          "answer": "The full length of the slant side of the shape",
+          "explanation": "The slant side runs at an angle, not perpendicular."
+        },
+        {
+          "answer": "The length of the longer diagonal inside it",
+          "explanation": "The diagonal connects opposite corners."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A composite shape is a rectangle (6 × 4) with a triangular section (base 6, height 3) on top. What is the total area?",
+      "correct": "33 cm²",
+      "correctExplanation": "Rectangle: 24. Triangle: half × 6 × 3 = 9. Total = 33.",
+      "distractors": [
+        {
+          "answer": "42 cm²",
+          "explanation": "This uses 6 × 4 + 6 × 3 without halving the triangle."
+        },
+        {
+          "answer": "24 cm²",
+          "explanation": "This only counts the rectangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A parallelogram has base 12 cm and two possible heights: 5 cm to the top, 7 cm to the side. Which is correct for area?",
+      "correct": "5 cm, giving area 60 cm²",
+      "correctExplanation": "The height must be perpendicular to the chosen base.",
+      "distractors": [
+        {
+          "answer": "7 cm, giving area 84 cm²",
+          "explanation": "7 cm is the slant height, not the perpendicular height."
+        },
+        {
+          "answer": "Both are correct",
+          "explanation": "Only the perpendicular height gives the correct area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "A triangular sail has base 4 m and height 6 m. What is its area?",
+      "correct": "12 m²",
+      "correctExplanation": "A = half × 4 × 6 = 12 m².",
+      "distractors": [
+        {
+          "answer": "24 m²",
+          "explanation": "This uses base × height without halving."
+        },
+        {
+          "answer": "10 m²",
+          "explanation": "This adds 4 and 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "If the height of a parallelogram is halved, what happens to the area?",
+      "correct": "The area is halved",
+      "correctExplanation": "A = b × h, so halving h halves A.",
+      "distractors": [
+        {
+          "answer": "The area stays the same",
+          "explanation": "Changing the height changes the area."
+        },
+        {
+          "answer": "The area is quartered",
+          "explanation": "Halving one dimension halves the area, not quarters it."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A triangle with base 12 cm and height 10 cm has area {{blank:1}} cm². A rectangle with the same dimensions has area {{blank:2}} cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "half × 12 × 10 = 60.",
+          "distractors": [
+            {
+              "answer": "120",
+              "explanation": "This multiplies without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "22",
+              "explanation": "This adds 12 and 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "120",
+          "correctExplanation": "12 × 10 = 120.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "60 is the triangle's area, not the rectangle's.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "22",
+              "explanation": "This adds instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "A parallelogram with base 8 cm and perpendicular height 5 cm has area {{blank:1}} cm². Its slant side of 6 cm is {{blank:2}} used in the area formula.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "40",
+          "correctExplanation": "8 × 5 = 40.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "This uses 8 × 6, the slant side.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "13",
+              "explanation": "This adds 8 and 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "not",
+          "correctExplanation": "The slant side is not the perpendicular height.",
+          "distractors": [
+            {
+              "answer": "always",
+              "explanation": "The slant side is not used for area calculations.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sometimes",
+              "explanation": "The slant side is never used as the height in the formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A triangle has area 24 cm² and base 8 cm. Its height is {{blank:1}} cm because 24 = half × 8 × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "24 = half × 8 × h gives 8h = 48, so h = 6.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "This divides 24 by 8 without doubling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "16",
+              "explanation": "This subtracts 8 from 24.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "The height appears in the formula as the unknown value.",
+          "distractors": [
+            {
+              "answer": "24",
+              "explanation": "24 is the area, not the height.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 is the base, not the height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "A composite shape made of a 10 × 4 rectangle and a 10 × 3 triangle has total area {{blank:1}} cm². The triangle contributes {{blank:2}} cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "55",
+          "correctExplanation": "Rectangle: 40. Triangle: half × 10 × 3 = 15. Total = 55.",
+          "distractors": [
+            {
+              "answer": "70",
+              "explanation": "This uses 40 + 30 without halving the triangle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40",
+              "explanation": "This only counts the rectangle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "15",
+          "correctExplanation": "half × 10 × 3 = 15.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "This uses 10 × 3 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "This calculates half of 10 + 3 and rounds.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Doubling the height of a triangle while keeping the base the same makes the area {{blank:1}} times larger. Doubling both base and height makes it {{blank:2}} times larger.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "half × b × 2h = 2 × half × b × h.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Doubling one dimension only doubles the area.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.5",
+              "explanation": "This would mean a 50% increase, not a doubling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "half × 2b × 2h = 4 × half × b × h.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Doubling both dimensions quadruples, not doubles, the area.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 would apply if three dimensions were doubled.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The area formula for a triangle is A = half × {{blank:1}} × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "base",
+          "correctExplanation": "The base is the chosen side of the triangle.",
+          "distractors": [
+            {
+              "answer": "length",
+              "explanation": "Length is typically used for rectangles.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "perimeter",
+              "explanation": "Perimeter measures the boundary, not area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "height",
+          "correctExplanation": "Height is the perpendicular distance from base to opposite vertex.",
+          "distractors": [
+            {
+              "answer": "width",
+              "explanation": "Width is used for rectangles, not triangles.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "side",
+              "explanation": "A specific side length is not the same as perpendicular height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A triangular garden with base 20 m and height 8 m needs 80 m² of mulch.",
+      "correct": "True",
+      "correctExplanation": "A = half × 20 × 8 = 80 m².",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The calculation confirms the statement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "A parallelogram with base 15 cm and slant side 10 cm has area 150 cm².",
+      "correct": "False",
+      "correctExplanation": "Area requires the perpendicular height, not the slant side; 10 cm may not be the height.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True uses the slant side as the height without checking."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A rectangular classroom floor is 9 m by 7 m. Tiles cost $12 per m². What is the total tile cost?",
+      "correct": "$756",
+      "correctExplanation": "Area = 63 m². Cost = 63 × 12 = $756.",
+      "distractors": [
+        {
+          "answer": "$192",
+          "explanation": "This uses 16 × 12, adding the sides instead."
+        },
+        {
+          "answer": "$63",
+          "explanation": "This is the area without applying the cost."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A triangular shade sail has vertices that give a base of 5 m and height of 4 m. How much fabric is needed?",
+      "correct": "10 m²",
+      "correctExplanation": "A = half × 5 × 4 = 10 m².",
+      "distractors": [
+        {
+          "answer": "20 m²",
+          "explanation": "This uses 5 × 4 without halving."
+        },
+        {
+          "answer": "9 m²",
+          "explanation": "This adds 5 and 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A parallelogram-shaped garden bed has base 3.5 m and height 2 m. What is its area?",
+      "correct": "7 m²",
+      "correctExplanation": "A = 3.5 × 2 = 7 m².",
+      "distractors": [
+        {
+          "answer": "5.5 m²",
+          "explanation": "This adds 3.5 and 2."
+        },
+        {
+          "answer": "11 m²",
+          "explanation": "This calculates perimeter-like values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A rectangular lawn is 25 m by 10 m with a triangular pond (base 6 m, height 4 m) cut out. What is the grass area?",
+      "correct": "238 m²",
+      "correctExplanation": "Lawn: 250. Pond: half × 6 × 4 = 12. Grass: 250 − 12 = 238.",
+      "distractors": [
+        {
+          "answer": "226 m²",
+          "explanation": "This subtracts 24 instead of 12, using b × h for the triangle."
+        },
+        {
+          "answer": "250 m²",
+          "explanation": "This forgets to subtract the pond."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Paint covers 10 m² per litre. A wall is 8 m by 3 m. How many litres are needed?",
+      "correct": "2.4 litres",
+      "correctExplanation": "Area = 24 m². Litres = 24 ÷ 10 = 2.4.",
+      "distractors": [
+        {
+          "answer": "24 litres",
+          "explanation": "This uses the area as the number of litres."
+        },
+        {
+          "answer": "11 litres",
+          "explanation": "This adds 8 and 3, then divides incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A kite-shaped sign can be split into two triangles each with base 1.2 m and height 0.8 m. What is the total area?",
+      "correct": "0.96 m²",
+      "correctExplanation": "Each triangle: half × 1.2 × 0.8 = 0.48. Total: 0.96.",
+      "distractors": [
+        {
+          "answer": "1.92 m²",
+          "explanation": "This uses base × height for each triangle."
+        },
+        {
+          "answer": "0.48 m²",
+          "explanation": "This counts only one triangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Carpet costs $45 per m². A room is 6 m by 4 m with a 2 m by 1 m cupboard area excluded. What is the carpet cost?",
+      "correct": "$990",
+      "correctExplanation": "Carpet area: 24 − 2 = 22 m². Cost: 22 × 45 = $990.",
+      "distractors": [
+        {
+          "answer": "$1080",
+          "explanation": "This uses the full 24 m² without subtracting."
+        },
+        {
+          "answer": "$900",
+          "explanation": "This uses 20 m² instead of 22 m²."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A triangular plot has area 54 m² and base 12 m. What is the height?",
+      "correct": "9 m",
+      "correctExplanation": "54 = half × 12 × h gives 12h = 108, so h = 9.",
+      "distractors": [
+        {
+          "answer": "4.5 m",
+          "explanation": "This divides 54 by 12 without doubling."
+        },
+        {
+          "answer": "27 m",
+          "explanation": "This divides 54 by 2 without using the base."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A parallelogram tile has base 15 cm and height 8 cm. How many tiles cover a 1200 cm² wall?",
+      "correct": "10 tiles",
+      "correctExplanation": "Each tile: 120 cm². Tiles needed: 1200 ÷ 120 = 10.",
+      "distractors": [
+        {
+          "answer": "8 tiles",
+          "explanation": "This divides 1200 by 150, using base × 10."
+        },
+        {
+          "answer": "100 tiles",
+          "explanation": "This divides 1200 by 12 instead of 120."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A sandwich is cut into a triangle with base 10 cm and height 8 cm. Two sandwiches are made. What is the total triangle area?",
+      "correct": "80 cm²",
+      "correctExplanation": "Each: half × 10 × 8 = 40. Total: 80 cm².",
+      "distractors": [
+        {
+          "answer": "160 cm²",
+          "explanation": "This uses 10 × 8 × 2 without halving."
+        },
+        {
+          "answer": "40 cm²",
+          "explanation": "This counts only one sandwich."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A field has a rectangular section (30 × 20 m) and a triangular section (base 30 m, height 10 m). What is the total area?",
+      "correct": "750 m²",
+      "correctExplanation": "Rectangle: 600. Triangle: half × 30 × 10 = 150. Total: 750.",
+      "distractors": [
+        {
+          "answer": "900 m²",
+          "explanation": "This uses 600 + 300, not halving the triangle."
+        },
+        {
+          "answer": "600 m²",
+          "explanation": "This counts only the rectangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A parallelogram has area 96 cm² and height 8 cm. What is its base?",
+      "correct": "12 cm",
+      "correctExplanation": "96 ÷ 8 = 12 cm.",
+      "distractors": [
+        {
+          "answer": "88 cm",
+          "explanation": "This subtracts 8 from 96."
+        },
+        {
+          "answer": "768 cm",
+          "explanation": "This multiplies 96 by 8."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "A rectangular floor is 8 m by 5 m. Its area is {{blank:1}} m². At $15 per m², the cost is ${{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "40",
+          "correctExplanation": "8 × 5 = 40.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "This adds 8 and 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "26",
+              "explanation": "This calculates 2 × (8 + 5).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "600",
+          "correctExplanation": "40 × 15 = 600.",
+          "distractors": [
+            {
+              "answer": "55",
+              "explanation": "This adds 40 and 15.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "195",
+              "explanation": "This uses 13 × 15.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A triangular flag has base 60 cm and height 40 cm. Its area is {{blank:1}} cm². Two flags use {{blank:2}} cm² of fabric.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1200",
+          "correctExplanation": "half × 60 × 40 = 1200.",
+          "distractors": [
+            {
+              "answer": "2400",
+              "explanation": "This uses 60 × 40 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "This adds 60 and 40.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2400",
+          "correctExplanation": "2 × 1200 = 2400.",
+          "distractors": [
+            {
+              "answer": "1200",
+              "explanation": "This is only one flag.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4800",
+              "explanation": "This doubles 2400 again.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A parallelogram garden has base 12 m and height 4 m, giving area {{blank:1}} m². If mulch costs $8 per m², the total cost is ${{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "48",
+          "correctExplanation": "12 × 4 = 48.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "This adds 12 and 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "24",
+              "explanation": "This halves the product as if it were a triangle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "384",
+          "correctExplanation": "48 × 8 = 384.",
+          "distractors": [
+            {
+              "answer": "56",
+              "explanation": "This adds 48 and 8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "128",
+              "explanation": "This uses 16 × 8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A room is 10 m by 6 m with a 2 m by 2 m pillar. The usable floor area is {{blank:1}} m² and the pillar area is {{blank:2}} m².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "56",
+          "correctExplanation": "60 − 4 = 56.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "This does not subtract the pillar.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "64",
+              "explanation": "This adds the pillar area instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "2 × 2 = 4.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This adds 2 + 2 + 2 + 2 for perimeter.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "This uses one side of the pillar only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A triangle has area 35 cm² and height 7 cm. Its base is {{blank:1}} cm because 35 = half × b × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "35 = half × b × 7 gives 7b = 70, so b = 10.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "This divides 35 by 7 without doubling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "28",
+              "explanation": "This subtracts 7 from 35.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "The height value 7 appears in the formula.",
+          "distractors": [
+            {
+              "answer": "35",
+              "explanation": "35 is the area, not a dimension.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the base, not the height used.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A composite shape has a 5 × 8 rectangle and a triangle with base 5 and height 4. The total area is {{blank:1}} and the triangle adds {{blank:2}} cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "Rectangle: 40. Triangle: half × 5 × 4 = 10. Total = 50.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "This uses 40 + 20 without halving the triangle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40",
+              "explanation": "This counts only the rectangle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "half × 5 × 4 = 10.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "This uses 5 × 4 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "This adds 5 and 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Paint covers 12 m² per litre. A wall is 6 m by 4 m (area {{blank:1}} m²) and needs {{blank:2}} litres.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "24",
+          "correctExplanation": "6 × 4 = 24.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "This adds 6 and 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "48",
+              "explanation": "This doubles the area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "24 ÷ 12 = 2.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This uses the coverage rate as the answer.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "288",
+              "explanation": "This multiplies 24 by 12.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A parallelogram has area 84 cm² and base 12 cm. The height is {{blank:1}} cm. Doubling the base gives area {{blank:2}} cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "84 ÷ 12 = 7.",
+          "distractors": [
+            {
+              "answer": "72",
+              "explanation": "This subtracts 12 from 84.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "96",
+              "explanation": "This adds 12 to 84.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "168",
+          "correctExplanation": "24 × 7 = 168.",
+          "distractors": [
+            {
+              "answer": "84",
+              "explanation": "Doubling the base doubles the area.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "336",
+              "explanation": "This quadruples instead of doubling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A rectangular park is 50 m × 30 m with a triangular garden (base 20 m, height 10 m). The remaining park area is {{blank:1}} m² and the garden is {{blank:2}} m².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1400",
+          "correctExplanation": "1500 − 100 = 1400.",
+          "distractors": [
+            {
+              "answer": "1500",
+              "explanation": "This forgets to subtract the garden.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1300",
+              "explanation": "This subtracts 200 instead of 100.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "100",
+          "correctExplanation": "half × 20 × 10 = 100.",
+          "distractors": [
+            {
+              "answer": "200",
+              "explanation": "This uses 20 × 10 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "This adds 20 and 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Tiles are 20 cm × 20 cm (area {{blank:1}} cm² each). A 1600 cm² surface needs {{blank:2}} tiles.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "400",
+          "correctExplanation": "20 × 20 = 400.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "This adds 20 + 20.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "This calculates 4 × 20.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "1600 ÷ 400 = 4.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "This divides 1600 by 20.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "This divides 1600 by 200.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "A triangular sail has base 8 m and height 5 m, giving area {{blank:1}} m². Two identical sails need {{blank:2}} m² of fabric.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20",
+          "correctExplanation": "half × 8 × 5 = 20.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "This uses 8 × 5 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "13",
+              "explanation": "This adds 8 and 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "40",
+          "correctExplanation": "2 × 20 = 40.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "This counts only one sail.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "This doubles 40 again.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A path is a 2 m wide strip around a 10 × 6 rectangle. The outer rectangle is 14 × {{blank:1}} m, and the path area is {{blank:2}} m².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "6 + 2 + 2 = 10 m.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This only adds 2 once instead of on both sides.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "This adds 2 to 10 instead of 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "80",
+          "correctExplanation": "Outer: 14 × 10 = 140. Inner: 10 × 6 = 60. Path: 80.",
+          "distractors": [
+            {
+              "answer": "140",
+              "explanation": "This gives the outer rectangle area, not just the path.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "60",
+              "explanation": "This gives the inner area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A rectangle and a triangle share a base of 12 cm. The rectangle is 12 × 8 and the triangle has height 8. What fraction of the rectangle is the triangle?",
+      "correct": "One half",
+      "correctExplanation": "Triangle: 48. Rectangle: 96. Ratio: 48/96 = 1/2.",
+      "distractors": [
+        {
+          "answer": "One third",
+          "explanation": "The ratio is 1:2, not 1:3."
+        },
+        {
+          "answer": "Two thirds",
+          "explanation": "The triangle is smaller than the rectangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A parallelogram is tilted so its slant side increases from 5 cm to 7 cm but the base (10 cm) and height (4 cm) stay the same. How does the area change?",
+      "correct": "The area stays at 40 cm²",
+      "correctExplanation": "Area depends on base and perpendicular height, not slant side.",
+      "distractors": [
+        {
+          "answer": "The area increases to 70 cm²",
+          "explanation": "This multiplies base by the new slant."
+        },
+        {
+          "answer": "The area decreases",
+          "explanation": "Increasing slant does not change the perpendicular height."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A composite shape is made of a rectangle 10 × 6 and a triangle removed (base 4, height 3). What is the remaining area?",
+      "correct": "54 cm²",
+      "correctExplanation": "Rectangle: 60. Triangle: half × 4 × 3 = 6. Remaining: 54.",
+      "distractors": [
+        {
+          "answer": "48 cm²",
+          "explanation": "This subtracts 12 instead of 6."
+        },
+        {
+          "answer": "60 cm²",
+          "explanation": "This forgets to remove the triangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Two triangles have equal areas. Triangle A has base 8 cm and height 6 cm. Triangle B has base 12 cm. What is B's height?",
+      "correct": "4 cm",
+      "correctExplanation": "A_A = 24. For B: 24 = half × 12 × h gives h = 4.",
+      "distractors": [
+        {
+          "answer": "6 cm",
+          "explanation": "This assumes equal heights, not equal areas."
+        },
+        {
+          "answer": "2 cm",
+          "explanation": "This divides 24 by 12 without doubling."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A rectangular field (40 × 25 m) has a parallelogram path (base 40 m, height 2 m) through its centre. What grassy area remains?",
+      "correct": "920 m²",
+      "correctExplanation": "Field: 1000. Path: 40 × 2 = 80. Grass: 920.",
+      "distractors": [
+        {
+          "answer": "960 m²",
+          "explanation": "This uses half × 40 × 2 for the path."
+        },
+        {
+          "answer": "1000 m²",
+          "explanation": "This forgets to subtract the path."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student claims a parallelogram with base 8 and slant 6 has area 48. Under what condition is this correct?",
+      "correct": "Only if the height equals 6 cm",
+      "correctExplanation": "If the slant happens to equal the height, 8 × 6 = 48 is correct.",
+      "distractors": [
+        {
+          "answer": "The claim is always correct",
+          "explanation": "The slant is not always equal to the height."
+        },
+        {
+          "answer": "The claim is never correct",
+          "explanation": "It would be correct if height equals 6 cm."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A triangle's base is tripled and its height is halved. How does the area change?",
+      "correct": "It becomes 1.5 times the original",
+      "correctExplanation": "half × 3b × (h/2) = 0.75bh. Wait — half × 3b × h/2 = 3bh/4. Original = bh/2. Ratio = (3bh/4)/(bh/2) = 3/2 = 1.5.",
+      "distractors": [
+        {
+          "answer": "It remains the same as before",
+          "explanation": "3 × 0.5 = 1.5, not 1."
+        },
+        {
+          "answer": "The area becomes three times larger",
+          "explanation": "Halving the height offsets some of the tripling."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A rectangular room (5 × 4 m) has a triangular alcove (base 2 m, height 1.5 m) added. What is the total floor area?",
+      "correct": "21.5 m²",
+      "correctExplanation": "Room: 20. Alcove: half × 2 × 1.5 = 1.5. Total: 21.5.",
+      "distractors": [
+        {
+          "answer": "23 m²",
+          "explanation": "This uses 2 × 1.5 = 3 without halving."
+        },
+        {
+          "answer": "20 m²",
+          "explanation": "This ignores the alcove."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A farmer compares two plots. Plot A is a 30 × 20 m rectangle. Plot B is a parallelogram with base 25 m and height 26 m. Which is larger?",
+      "correct": "Plot B at 650 m²",
+      "correctExplanation": "Plot A: 600. Plot B: 25 × 26 = 650.",
+      "distractors": [
+        {
+          "answer": "Plot A at 600 m²",
+          "explanation": "600 is less than 650."
+        },
+        {
+          "answer": "Both are equal in area",
+          "explanation": "600 and 650 are different."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A wall is 3 m by 2.5 m with a triangular window (base 1 m, height 0.8 m) removed. What area needs painting?",
+      "correct": "7.1 m²",
+      "correctExplanation": "Wall: 7.5. Window: half × 1 × 0.8 = 0.4. Paint: 7.1.",
+      "distractors": [
+        {
+          "answer": "6.7 m²",
+          "explanation": "This subtracts 0.8 instead of 0.4."
+        },
+        {
+          "answer": "7.5 m²",
+          "explanation": "This ignores the window."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A designer increases a parallelogram's base by 20% and decreases its height by 20%. What happens to the area?",
+      "correct": "The area decreases to 96% of the original",
+      "correctExplanation": "1.2b × 0.8h = 0.96bh.",
+      "distractors": [
+        {
+          "answer": "The area stays the same as the original",
+          "explanation": "1.2 × 0.8 = 0.96, not 1.0."
+        },
+        {
+          "answer": "The area increases by about 20 percent",
+          "explanation": "The changes partially cancel but result in a net decrease."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A composite shape has a 12 × 5 rectangle with two triangles (each base 4, height 5) added to either end. What is the total area?",
+      "correct": "80 cm²",
+      "correctExplanation": "Rectangle: 60. Each triangle: 10. Total: 60 + 20 = 80.",
+      "distractors": [
+        {
+          "answer": "100 cm²",
+          "explanation": "This uses 60 + 40, not halving the triangles."
+        },
+        {
+          "answer": "60 cm²",
+          "explanation": "This counts only the rectangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Which change to a triangle produces a bigger area increase: doubling the base or doubling the height?",
+      "correct": "Both produce the same increase",
+      "correctExplanation": "half × 2b × h = half × b × 2h = bh. Both double the area.",
+      "distractors": [
+        {
+          "answer": "Doubling the base gives a bigger increase",
+          "explanation": "Both changes have the same multiplicative effect."
+        },
+        {
+          "answer": "Doubling the height gives a bigger increase",
+          "explanation": "The formula is symmetric in b and h scaling."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A parallelogram's base is halved and its height is tripled. The new area is what fraction of the original?",
+      "correct": "1.5 times the original",
+      "correctExplanation": "0.5b × 3h = 1.5bh.",
+      "distractors": [
+        {
+          "answer": "3 times the original",
+          "explanation": "Only the height triples; the halved base offsets it."
+        },
+        {
+          "answer": "0.5 times the original",
+          "explanation": "This only accounts for the halved base."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A rectangle 10 × 8 has a triangle (base 10, height 4) removed from one end. The remaining area is {{blank:1}} cm² and the triangle is {{blank:2}} cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "80 − 20 = 60.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "This is the full rectangle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40",
+              "explanation": "This halves the rectangle instead.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "20",
+          "correctExplanation": "half × 10 × 4 = 20.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "This uses 10 × 4 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "14",
+              "explanation": "This adds 10 and 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Tripling the base and halving the height of a triangle changes the area by a factor of {{blank:1}} because 3 × 0.5 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.5",
+          "correctExplanation": "The area becomes 1.5 times the original.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "This only accounts for the tripled base.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "This only accounts for the halved height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.5",
+          "correctExplanation": "3 multiplied by 0.5 equals 1.5.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 × 0.5 = 1.5, not 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "This adds 3 and 0.5 then multiplies by something else.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "Two triangles have equal areas of 36 cm². Triangle A has base 9, so height = {{blank:1}}. Triangle B has base 12, so height = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "36 = half × 9 × h gives 9h = 72, h = 8.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "This divides 36 by 9 without doubling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "27",
+              "explanation": "This subtracts 9 from 36.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "36 = half × 12 × h gives 12h = 72, h = 6.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "This divides 36 by 12 without doubling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "24",
+              "explanation": "This subtracts 12 from 36.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "A parallelogram with base 10 is tilted more. The slant increases from 6 to 8 but the height stays at 5. The area remains {{blank:1}} cm² because area depends on {{blank:2}}, not slant.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "10 × 5 = 50.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "This uses 10 × 8, the new slant.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "60",
+              "explanation": "This uses 10 × 6, the old slant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "perpendicular height",
+          "correctExplanation": "Area = base × perpendicular height.",
+          "distractors": [
+            {
+              "answer": "slant side",
+              "explanation": "Slant side is not used in the area formula.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "Diagonals are not used in the area formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A 20 × 15 rectangle has a triangle (base 8, height 6) cut out. The remaining area is {{blank:1}} m². The cut-out is {{blank:2}} m².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "276",
+          "correctExplanation": "300 − 24 = 276.",
+          "distractors": [
+            {
+              "answer": "300",
+              "explanation": "This is the full rectangle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "252",
+              "explanation": "This subtracts 48 instead of 24.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "24",
+          "correctExplanation": "half × 8 × 6 = 24.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "This uses 8 × 6 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "14",
+              "explanation": "This adds 8 and 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Increasing a rectangle's length by 25% (factor {{blank:1}}) and width by 20% (factor 1.2) gives an area factor of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.25",
+          "correctExplanation": "A 25% increase means multiplying by 1.25.",
+          "distractors": [
+            {
+              "answer": "0.25",
+              "explanation": "0.25 is the fractional increase, not the factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "25 is the percentage, not the multiplicative factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.5",
+          "correctExplanation": "1.25 × 1.2 = 1.5.",
+          "distractors": [
+            {
+              "answer": "1.45",
+              "explanation": "This adds 0.25 and 0.20 to 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2.25",
+              "explanation": "This multiplies the percentage increases incorrectly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A composite: 8 × 6 rectangle plus two triangles (base 3, height 6 each). Total area = 48 + {{blank:1}} = {{blank:2}} cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "18",
+          "correctExplanation": "Each triangle: half × 3 × 6 = 9. Two: 18.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "This uses 2 × 3 × 6 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "This counts only one triangle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "66",
+          "correctExplanation": "48 + 18 = 66.",
+          "distractors": [
+            {
+              "answer": "84",
+              "explanation": "This uses 48 + 36.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "57",
+              "explanation": "This uses 48 + 9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A parallelogram's base is increased by 50% (factor 1.5) and height decreased by a third (factor {{blank:1}}). The area changes by a factor of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.667",
+          "correctExplanation": "Decreasing by one third means multiplying by 2/3 ≈ 0.667.",
+          "distractors": [
+            {
+              "answer": "0.333",
+              "explanation": "This is one third, not two thirds.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.333",
+              "explanation": "This increases by a third instead of decreasing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "1.5 × 0.667 ≈ 1.0, so the area is unchanged.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "This only accounts for the height decrease.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.5",
+              "explanation": "This only accounts for the base increase.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A 12 × 10 rectangle has a triangle (base 12, height 5) sitting on top. Total area is {{blank:1}} cm². The triangle is {{blank:2}}% of the total.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "150",
+          "correctExplanation": "Rectangle: 120. Triangle: 30. Total: 150.",
+          "distractors": [
+            {
+              "answer": "120",
+              "explanation": "This counts only the rectangle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "180",
+              "explanation": "This uses 120 + 60.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "20",
+          "correctExplanation": "30 ÷ 150 × 100 = 20%.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "This divides 30 by 120 instead of 150.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "This uses the triangle area as the percentage.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "Doubling every dimension of a rectangle multiplies the area by {{blank:1}}. Tripling every dimension multiplies it by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "2 × 2 = 4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Doubling one dimension doubles the area, but both double gives × 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 applies to volume, not area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "3 × 3 = 9.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Tripling one dimension triples area, but both triple gives × 9.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 adds the factors instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A wall is 4 m × 3 m with a triangular window (base 1.2, height 0.9). Paintable area is {{blank:1}} m² and the window is {{blank:2}} m².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "11.46",
+          "correctExplanation": "12 − 0.54 = 11.46.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This is the full wall.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10.92",
+              "explanation": "This subtracts 1.08 instead of 0.54.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.54",
+          "correctExplanation": "half × 1.2 × 0.9 = 0.54.",
+          "distractors": [
+            {
+              "answer": "1.08",
+              "explanation": "This uses 1.2 × 0.9 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2.1",
+              "explanation": "This adds 1.2 and 0.9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A triangle has area A. If both base and height are multiplied by k, the new area is k{{blank:1}} times A. For k = 3 the area becomes {{blank:2}} times A.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "²",
+          "correctExplanation": "half × kb × kh = k² × half × b × h.",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "Cubing applies to volume scaling, not area.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "³",
+              "explanation": "Cubing applies to volume scaling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "3² = 9.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "This applies the scale factor once instead of squaring.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "This doubles the scale factor instead of squaring.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

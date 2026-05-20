@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M8A01",
+    "level": 8,
+    "area": "Mathematics",
+    "ageBand": "13-14",
+    "keyKnowledge": "We are learning to expand, factorise, rearrange and simplify linear expressions using algebraic properties.",
+    "generatedAt": "2026-05-18T10:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "Expanding an expression means adding the term outside the brackets to each term inside the brackets.",
+      "correct": "False",
+      "correctExplanation": "Expanding uses multiplication, not addition. The distributive law multiplies the outside factor by each inside term.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses multiplying with adding; expansion requires distributing multiplication across terms inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Factorising an expression means writing it as a product of its factors.",
+      "correct": "True",
+      "correctExplanation": "Factorising is the reverse of expanding: an expression is rewritten as the product of two or more factors.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses factorising with expanding or simplifying, not recognising it as writing an expression as a product of factors."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The expression 3(x + 4) expands to 3x + 4.",
+      "correct": "False",
+      "correctExplanation": "The 3 must multiply both terms inside the brackets: 3 times x gives 3x and 3 times 4 gives 12, so the result is 3x + 12.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Forgets to distribute the multiplier to the second term inside the brackets, multiplying only the first term."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Like terms must have both the same variable and the same coefficient to be combined.",
+      "correct": "False",
+      "correctExplanation": "Like terms need identical variable parts (same variable, same power) but may have different coefficients. For example, 3x and 7x are like terms despite different coefficients.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the requirement for matching variable parts with a requirement for matching coefficients."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The terms 5x and 5y are like terms because they share the same coefficient.",
+      "correct": "False",
+      "correctExplanation": "Like terms must have identical variable parts. Although 5x and 5y share the coefficient 5, they have different variables and cannot be combined.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses matching coefficients with matching variable parts, believing that shared coefficients make terms combinable."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "When expanding negative brackets, the sign of every term inside the brackets changes.",
+      "correct": "False",
+      "correctExplanation": "A negative sign outside brackets multiplies each term inside by negative 1, which reverses each sign. However, the statement is only true when the multiplier is exactly negative 1; for other negative multipliers such as negative 3, both multiplication and sign change occur.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Overgeneralises the sign-change rule to all negative multipliers, ignoring that the coefficient also scales each term."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The highest common factor of 8x and 12 is 4.",
+      "correct": "True",
+      "correctExplanation": "The HCF of 8 and 12 is 4. Since 12 has no variable part, 4 is the highest common factor of both terms.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May incorrectly try to include x in the common factor or miscalculate the HCF of 8 and 12."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The distributive law states that a(b + c) equals ab + c.",
+      "correct": "False",
+      "correctExplanation": "The distributive law gives a(b + c) = ab + ac. The factor a must multiply both terms inside, not just the first.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Applies the outside factor to only the first term, believing the second term remains unchanged."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Simplifying an expression means collecting like terms and reducing the expression to fewer terms.",
+      "correct": "True",
+      "correctExplanation": "Simplifying involves combining like terms to produce an equivalent expression with fewer terms.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses simplifying with expanding or factorising, not recognising that combining like terms is the key operation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Rearranging an equation changes the subject of the equation to a different variable.",
+      "correct": "True",
+      "correctExplanation": "Rearranging isolates a different variable on one side of the equation, making that variable the new subject.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May not recognise that rearranging specifically refers to changing which variable is the subject of the formula."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The expression 2(3x + 5) expands to 5x + 7.",
+      "correct": "False",
+      "correctExplanation": "Expanding gives 2 times 3x = 6x and 2 times 5 = 10, so the result is 6x + 10, not 5x + 7.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Adds the multiplier to each term instead of multiplying, producing 3x + 2 = 5x and 5 + 2 = 7."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Factorising 15x + 10 gives 5(3x + 2).",
+      "correct": "True",
+      "correctExplanation": "The HCF of 15 and 10 is 5. Dividing each term by 5 gives 3x and 2, so 15x + 10 = 5(3x + 2).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate the HCF or divide the terms incorrectly, not recognising 5 as the correct common factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly expands 4(x + 3)?",
+      "correct": "4x + 12",
+      "correctExplanation": "Multiplying 4 by x gives 4x and multiplying 4 by 3 gives 12, so 4(x + 3) = 4x + 12.",
+      "distractors": [
+        {
+          "answer": "4x + 3",
+          "explanation": "Multiplies only the first term by 4 and leaves the second term unchanged, forgetting to distribute."
+        },
+        {
+          "answer": "x + 12",
+          "explanation": "Multiplies only the second term by 4 and leaves the first term unchanged, misapplying the distributive law."
+        },
+        {
+          "answer": "8x + 3",
+          "explanation": "Adds 4 to x to get 8x and leaves 3 unchanged, confusing multiplication with addition."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the factorised form of 6x + 18?",
+      "correct": "6(x + 3)",
+      "correctExplanation": "The HCF of 6 and 18 is 6. Dividing each term by 6 gives x and 3, so 6x + 18 = 6(x + 3).",
+      "distractors": [
+        {
+          "answer": "3(2x + 18)",
+          "explanation": "Uses 3 as the factor but only divides the first term, leaving 18 undivided inside the brackets."
+        },
+        {
+          "answer": "2(3x + 18)",
+          "explanation": "Uses 2 as the factor but only divides the first term, not recognising that 18 must also be divided by 2."
+        },
+        {
+          "answer": "6(x + 18)",
+          "explanation": "Divides only the first term by 6, leaving 18 unchanged inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following expressions is equivalent to 5x + 3x?",
+      "correct": "8x",
+      "correctExplanation": "The terms 5x and 3x are like terms with the same variable part, so their coefficients add: 5 + 3 = 8, giving 8x.",
+      "distractors": [
+        {
+          "answer": "15x",
+          "explanation": "Multiplies the coefficients (5 times 3) instead of adding them."
+        },
+        {
+          "answer": "8x squared",
+          "explanation": "Adds the coefficients correctly but incorrectly increases the power of x when combining like terms."
+        },
+        {
+          "answer": "53x",
+          "explanation": "Concatenates the digits 5 and 3 rather than performing an arithmetic operation on the coefficients."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the purpose of the distributive law in algebra?",
+      "correct": "It multiplies a factor outside brackets by each separate term inside the brackets",
+      "correctExplanation": "The distributive law states that a(b + c) = ab + ac, distributing the outside factor across all inside terms.",
+      "distractors": [
+        {
+          "answer": "It adds a factor outside brackets to each separate term positioned inside the brackets",
+          "explanation": "Confuses multiplication with addition in the distributive law, applying a + b + c instead of a(b + c)."
+        },
+        {
+          "answer": "It multiplies a factor outside brackets by only the very first term inside the brackets",
+          "explanation": "Applies the factor to only one term, missing the requirement to distribute across all terms."
+        },
+        {
+          "answer": "It divides each separate term inside the brackets by the factor positioned outside the brackets",
+          "explanation": "Reverses the operation, confusing expanding (multiply) with the inverse process of factorising (divide)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly expands negative 2(x minus 5)?",
+      "correct": "negative 2x plus 10",
+      "correctExplanation": "Multiplying negative 2 by x gives negative 2x, and negative 2 by negative 5 gives positive 10.",
+      "distractors": [
+        {
+          "answer": "negative 2x minus 10",
+          "explanation": "Multiplies negative 2 by x correctly but treats negative 2 times negative 5 as negative 10, forgetting that two negatives make a positive."
+        },
+        {
+          "answer": "2x minus 10",
+          "explanation": "Drops the negative sign from the first term, treating negative 2 times x as positive 2x."
+        },
+        {
+          "answer": "negative 2x plus 5",
+          "explanation": "Multiplies the first term correctly but fails to multiply the second term by negative 2, leaving it as positive 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the highest common factor of 10x and 15?",
+      "correct": "5",
+      "correctExplanation": "The HCF of 10 and 15 is 5. Since 15 has no variable part, 5 is the highest common factor of both terms.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "Chooses the larger coefficient as the common factor without checking whether it divides 15 evenly."
+        },
+        {
+          "answer": "15",
+          "explanation": "Selects the larger constant as the common factor without checking whether it divides 10 evenly."
+        },
+        {
+          "answer": "5x",
+          "explanation": "Includes the variable x in the HCF despite x not appearing in both terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following pairs are like terms?",
+      "correct": "7a and negative 3a",
+      "correctExplanation": "Both terms contain the variable a to the first power, making them like terms that can be combined.",
+      "distractors": [
+        {
+          "answer": "7a and negative 3b",
+          "explanation": "The terms have different variables (a and b) and are not like terms, despite having similar coefficient magnitudes."
+        },
+        {
+          "answer": "7a and 7a squared",
+          "explanation": "Although both contain the variable a, the powers differ (first power versus second power), so they are not like terms."
+        },
+        {
+          "answer": "7a and negative 3",
+          "explanation": "One term has a variable while the other is a constant; they are not like terms because their variable parts differ."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the expanded form of 7(2y minus 1)?",
+      "correct": "14y minus 7",
+      "correctExplanation": "Multiplying 7 by 2y gives 14y and 7 by negative 1 gives negative 7, so the expansion is 14y minus 7.",
+      "distractors": [
+        {
+          "answer": "14y minus 1",
+          "explanation": "Multiplies only the first term by 7 and leaves the constant unchanged, failing to distribute fully."
+        },
+        {
+          "answer": "9y minus 1",
+          "explanation": "Adds 7 to the coefficient of y instead of multiplying, treating 7 + 2y as 9y."
+        },
+        {
+          "answer": "14y plus 7",
+          "explanation": "Multiplies both terms correctly in magnitude but drops the negative sign, turning minus 1 into plus 7."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly simplifies 9m minus 4m plus 2m?",
+      "correct": "7m",
+      "correctExplanation": "All three terms are like terms: 9 minus 4 plus 2 equals 7, giving 7m.",
+      "distractors": [
+        {
+          "answer": "72m",
+          "explanation": "Multiplies the coefficients (9 times 4 times 2) instead of adding and subtracting them."
+        },
+        {
+          "answer": "3m",
+          "explanation": "Subtracts all coefficients from the first: 9 minus 4 minus 2 = 3, misreading the plus sign as minus."
+        },
+        {
+          "answer": "7m cubed",
+          "explanation": "Combines the coefficients correctly but incorrectly raises the power of m, treating three terms as m cubed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the factorised form of 12a minus 8?",
+      "correct": "4(3a minus 2)",
+      "correctExplanation": "The HCF of 12 and 8 is 4. Dividing each term by 4 gives 3a and 2, so 12a minus 8 = 4(3a minus 2).",
+      "distractors": [
+        {
+          "answer": "2(6a minus 8)",
+          "explanation": "Uses 2 as the factor but only divides the first term, leaving 8 unchanged inside the brackets."
+        },
+        {
+          "answer": "4(3a minus 8)",
+          "explanation": "Divides only the first term by 4, leaving the constant 8 undivided inside the brackets."
+        },
+        {
+          "answer": "8(4a minus 1)",
+          "explanation": "Uses 8 as the factor, but 12 divided by 8 does not give a whole number, so 8 is not a common factor of 12a."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states what it means to rearrange an equation?",
+      "correct": "To isolate a specified variable on one side by performing inverse operations on both sides",
+      "correctExplanation": "Rearranging involves using inverse operations on both sides of the equation to make a chosen variable the subject.",
+      "distractors": [
+        {
+          "answer": "To substitute numerical values into the equation and then calculate the final result directly",
+          "explanation": "Describes substitution rather than rearranging; substitution replaces variables with values instead of isolating a variable."
+        },
+        {
+          "answer": "To remove all brackets from the equation by applying the distributive property to every term",
+          "explanation": "Describes expanding rather than rearranging; expanding removes brackets but does not change the subject."
+        },
+        {
+          "answer": "To multiply both sides of the equation by the same constant to produce larger coefficient values",
+          "explanation": "Describes one step that might occur during rearranging but misses the purpose of isolating a variable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly expands 5(3p plus 2)?",
+      "correct": "15p plus 10",
+      "correctExplanation": "Multiplying 5 by 3p gives 15p and 5 by 2 gives 10, so the expansion is 15p plus 10.",
+      "distractors": [
+        {
+          "answer": "15p plus 2",
+          "explanation": "Multiplies only the first term by 5 and leaves the constant unchanged, failing to distribute."
+        },
+        {
+          "answer": "8p plus 7",
+          "explanation": "Adds 5 to each coefficient instead of multiplying: 3 + 5 = 8 and 2 + 5 = 7."
+        },
+        {
+          "answer": "15p plus 25",
+          "explanation": "Multiplies 5 by 3p correctly but then multiplies 5 by 5 instead of 5 by 2 for the constant term."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "To expand an expression such as 3(x + 4), {{blank:1}} the term outside the brackets by each term inside, giving 3x + {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiply",
+          "correctExplanation": "Expanding uses the distributive law, which multiplies the outside factor by each inside term.",
+          "distractors": [
+            {
+              "answer": "divide",
+              "explanation": "Confuses expanding (multiply) with the inverse operation used in factorising (divide).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "add",
+              "explanation": "Confuses the distributive law operation (multiplication) with addition of terms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "3 multiplied by 4 equals 12.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Fails to multiply the constant by 3, leaving it unchanged after expansion.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "7",
+              "explanation": "Adds 3 and 4 instead of multiplying them.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "Factorising is the reverse of {{blank:1}}; it rewrites an expression as a {{blank:2}} of its factors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "expanding",
+          "correctExplanation": "Factorising reverses the expanding process: expanding removes brackets, while factorising introduces them.",
+          "distractors": [
+            {
+              "answer": "simplifying",
+              "explanation": "Confuses factorising's inverse (expanding) with the separate process of collecting like terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "substituting",
+              "explanation": "Confuses factorising with substitution, which replaces variables with numerical values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "product",
+          "correctExplanation": "A factorised expression is written as a product (multiplication) of its factors.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "Confuses the factorised form (a product) with expanded form (a sum of terms).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quotient",
+              "explanation": "Confuses the factorised form (a product) with division, perhaps thinking of dividing by the HCF.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "Expanding 2(x + 3) and expanding 2(x minus 3) produce expressions with the same constant term.",
+      "correct": "False",
+      "correctExplanation": "Expanding 2(x + 3) gives 2x + 6, while expanding 2(x minus 3) gives 2x minus 6. The constant terms are positive 6 and negative 6, which differ.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Focuses only on the magnitude of the constant (both 6) without attending to the sign difference."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "An expression can only be factorised when every term contains a variable part.",
+      "correct": "False",
+      "correctExplanation": "Factorisation requires a common factor, which can be purely numerical. For example, 4x + 2 = 2(2x + 1) even though 2 has no variable.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Believes factorising requires a variable in every term, not recognising that numerical common factors are sufficient."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The expression 3x + 7 cannot be factorised further because 3 and 7 share no common factor other than 1.",
+      "correct": "True",
+      "correctExplanation": "The HCF of 3 and 7 is 1, and x does not appear in both terms, so no meaningful factorisation exists.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May attempt to factor out x or 1, not understanding that factorising by 1 does not simplify the expression."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Subtracting a bracketed expression such as minus (2x minus 5) requires changing the sign of every term inside the brackets.",
+      "correct": "True",
+      "correctExplanation": "Distributing the negative sign gives negative 2x plus 5. Each term's sign reverses when multiplied by negative 1.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May believe only the first term's sign changes, leaving the second term unchanged."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The expressions 2(x + 4) and 2x + 4 are equivalent because expanding 2(x + 4) gives 2x + 4.",
+      "correct": "False",
+      "correctExplanation": "Expanding 2(x + 4) gives 2x + 8, not 2x + 4. The 2 must multiply both the x and the 4.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Forgets to distribute the 2 to the second term inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Collecting like terms in 6a + 4b minus 3a gives 3a + 4b + 1.",
+      "correct": "False",
+      "correctExplanation": "6a minus 3a = 3a, and 4b stays unchanged. The result is 3a + 4b, with no extra constant term.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May believe the subtracted coefficient produces a leftover constant, adding 1 instead of recognising the subtraction only affects like terms."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The expression negative 4(x + 3) expands to negative 4x plus 3.",
+      "correct": "False",
+      "correctExplanation": "Negative 4 must multiply both terms: negative 4 times x = negative 4x and negative 4 times 3 = negative 12, giving negative 4x minus 12.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Multiplies only the first term by negative 4 and leaves the second term unchanged at positive 3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Rearranging y = 2x + 5 for x requires subtracting 5 then dividing by 2.",
+      "correct": "True",
+      "correctExplanation": "Subtracting 5 from both sides gives y minus 5 = 2x. Dividing both sides by 2 gives x = (y minus 5)/2.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May believe dividing should happen before subtracting, or that subtracting is not needed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why 5x and 5x squared are not like terms?",
+      "correct": "They contain the same variable but raised to different powers, so they cannot be combined",
+      "correctExplanation": "Like terms require identical variable parts, including identical powers. 5x has x to the first power while 5x squared has x to the second power.",
+      "distractors": [
+        {
+          "answer": "They share the same coefficient of 5 but different constants, so they cannot be combined",
+          "explanation": "Neither term has a separate constant; the difference is in the power of x, not in any constant term."
+        },
+        {
+          "answer": "They both contain the variable x with the same power, so they can in fact be combined",
+          "explanation": "Incorrectly claims the powers are the same; x and x squared have powers 1 and 2 respectively."
+        },
+        {
+          "answer": "They have different numerical coefficients and therefore different variable parts overall",
+          "explanation": "Both terms have the same coefficient (5); the difference lies in the exponent of x, not the coefficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly simplifies 3(x + 2) + 2(x minus 1)?",
+      "correct": "5x + 4",
+      "correctExplanation": "Expanding gives 3x + 6 + 2x minus 2. Collecting like terms: 3x + 2x = 5x and 6 minus 2 = 4, giving 5x + 4.",
+      "distractors": [
+        {
+          "answer": "5x + 8",
+          "explanation": "Expands correctly but adds the constants 6 + 2 = 8 instead of 6 minus 2 = 4, ignoring the negative sign."
+        },
+        {
+          "answer": "5x minus 4",
+          "explanation": "Combines x-terms correctly but reverses the sign of the constant, computing 2 minus 6 instead of 6 minus 2."
+        },
+        {
+          "answer": "6x + 4",
+          "explanation": "Miscalculates the x-coefficient, possibly adding the multipliers 3 + 2 + 1 = 6 instead of correctly expanding."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is the fully factorised form of 18x minus 12?",
+      "correct": "6(3x minus 2)",
+      "correctExplanation": "The HCF of 18 and 12 is 6. Dividing: 18x divided by 6 = 3x and 12 divided by 6 = 2, giving 6(3x minus 2).",
+      "distractors": [
+        {
+          "answer": "3(6x minus 4)",
+          "explanation": "Uses 3 as the factor, which is a common factor but not the highest; the expression can be factorised further."
+        },
+        {
+          "answer": "2(9x minus 6)",
+          "explanation": "Uses 2 as the factor, which is a common factor but not the highest; further factorisation is possible."
+        },
+        {
+          "answer": "6(3x minus 12)",
+          "explanation": "Divides only the first term by 6, leaving 12 unchanged inside the brackets instead of dividing it as well."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly expands and simplifies 5(x minus 3) minus 2(x minus 1)?",
+      "correct": "3x minus 13",
+      "correctExplanation": "Expanding: 5x minus 15 minus 2x plus 2. Collecting like terms: 5x minus 2x = 3x and minus 15 plus 2 = minus 13.",
+      "distractors": [
+        {
+          "answer": "3x minus 17",
+          "explanation": "Expands the second bracket as minus 2x minus 2 instead of minus 2x plus 2, computing minus 15 minus 2 = minus 17."
+        },
+        {
+          "answer": "7x minus 13",
+          "explanation": "Adds the x-coefficients (5 + 2 = 7) instead of subtracting, misreading the minus sign before the second bracket."
+        },
+        {
+          "answer": "3x minus 11",
+          "explanation": "Computes the constant as minus 15 plus 4 = minus 11, multiplying 2 by 2 instead of 2 by 1 for the second constant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following demonstrates a correct first step in rearranging y = 4x minus 7 to make x the subject?",
+      "correct": "Add 7 to both sides to obtain y + 7 = 4x",
+      "correctExplanation": "Adding 7 to both sides isolates the term containing x on the right, as the next step before dividing by 4.",
+      "distractors": [
+        {
+          "answer": "Divide both sides by 4 to obtain y/4 = x minus 7",
+          "explanation": "Divides only the left side correctly but fails to divide the constant (minus 7) by 4 as well, producing an incorrect equation."
+        },
+        {
+          "answer": "Subtract 4x from both sides to obtain y minus 4x = minus 7",
+          "explanation": "Moves the x-term to the left side but does not isolate x, making the rearrangement more complex."
+        },
+        {
+          "answer": "Multiply both sides by 4 to obtain 4y = 4x minus 7",
+          "explanation": "Multiplies only the left side by 4, or fails to distribute 4 across both terms on the right side."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why expanding negative 4(2x minus 3) produces positive 12 as the constant term?",
+      "correct": "Negative 4 multiplied by negative 3 produces positive 12, since two negative values multiply to give a positive result",
+      "correctExplanation": "The product of two negative numbers is positive: negative 4 times negative 3 = positive 12.",
+      "distractors": [
+        {
+          "answer": "Negative 4 multiplied by positive 3 produces positive 12, since the negative signs from both terms cancel each other",
+          "explanation": "Misidentifies the sign of 3 in the expression; the term is minus 3 (negative), not positive 3."
+        },
+        {
+          "answer": "The negative sign only applies to the first term inside the brackets, leaving the constant 3 multiplied by 4 to give 12",
+          "explanation": "Fails to distribute the negative 4 to all terms, believing it only affects the first term."
+        },
+        {
+          "answer": "Adding 4 and 3 gives 7, and then doubling 7 gives 14, but rounding produces the simplified constant of 12",
+          "explanation": "Applies addition and rounding instead of multiplication, misunderstanding the distributive law entirely."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following shows the correct simplification of 8a minus 3b + 2a + 5b?",
+      "correct": "10a + 2b",
+      "correctExplanation": "Combining like terms: 8a + 2a = 10a and minus 3b + 5b = 2b.",
+      "distractors": [
+        {
+          "answer": "10a minus 2b",
+          "explanation": "Combines a-terms correctly but subtracts 3 from 5 in the wrong order, giving minus 2b instead of positive 2b."
+        },
+        {
+          "answer": "6a + 8b",
+          "explanation": "Subtracts the a-coefficients (8 minus 2 = 6) and adds the b-coefficients (3 + 5 = 8), mishandling the operation signs."
+        },
+        {
+          "answer": "10a + 8b",
+          "explanation": "Combines a-terms correctly but adds the b-coefficients (3 + 5 = 8) instead of computing minus 3 + 5 = 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following expressions is equivalent to 2(3x + 4) minus (x + 1)?",
+      "correct": "5x + 7",
+      "correctExplanation": "Expanding: 6x + 8 minus x minus 1. Collecting like terms: 6x minus x = 5x and 8 minus 1 = 7.",
+      "distractors": [
+        {
+          "answer": "5x + 9",
+          "explanation": "Expands the second bracket incorrectly as minus x plus 1, computing 8 + 1 = 9 instead of 8 minus 1 = 7."
+        },
+        {
+          "answer": "7x + 7",
+          "explanation": "Adds the x-coefficients (6 + 1 = 7) instead of subtracting, ignoring the minus sign before the second bracket."
+        },
+        {
+          "answer": "5x + 3",
+          "explanation": "Expands 2(3x + 4) as 6x + 4 instead of 6x + 8, forgetting to multiply the constant by 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is the fully factorised form of negative 6x minus 9?",
+      "correct": "negative 3(2x + 3)",
+      "correctExplanation": "Factoring out negative 3: negative 6x divided by negative 3 = 2x and negative 9 divided by negative 3 = 3, giving negative 3(2x + 3).",
+      "distractors": [
+        {
+          "answer": "3(negative 2x minus 3)",
+          "explanation": "Factors out positive 3 instead of negative 3; while equivalent, this is not the conventional fully factorised form with a negative leading factor."
+        },
+        {
+          "answer": "negative 3(2x minus 3)",
+          "explanation": "Divides negative 6x correctly but divides negative 9 by negative 3 as negative 3 instead of positive 3, making a sign error."
+        },
+        {
+          "answer": "negative 6(x + 9)",
+          "explanation": "Uses negative 6 as the factor but only divides the first term, leaving 9 unchanged inside the brackets."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly rearranges the formula P = 2L + 2W to make W the subject?",
+      "correct": "W = (P minus 2L) divided by 2",
+      "correctExplanation": "Subtracting 2L from both sides gives P minus 2L = 2W. Dividing both sides by 2 gives W = (P minus 2L)/2.",
+      "distractors": [
+        {
+          "answer": "W = P divided by 2 minus 2L",
+          "explanation": "Divides only P by 2 first without subtracting 2L, producing an incorrect rearrangement."
+        },
+        {
+          "answer": "W = (P minus 2L) multiplied by 2",
+          "explanation": "Multiplies instead of dividing in the final step, applying the inverse of the required operation."
+        },
+        {
+          "answer": "W = P minus L",
+          "explanation": "Oversimplifies by dividing the entire equation by 2 and dropping the coefficient of L, losing the structure of the formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following shows the correct expansion of negative (5x minus 2)?",
+      "correct": "negative 5x plus 2",
+      "correctExplanation": "Distributing negative 1: negative 1 times 5x = negative 5x and negative 1 times negative 2 = positive 2.",
+      "distractors": [
+        {
+          "answer": "negative 5x minus 2",
+          "explanation": "Changes the sign of the first term but leaves the second term's sign unchanged, only partially distributing the negative."
+        },
+        {
+          "answer": "5x minus 2",
+          "explanation": "Removes the brackets without changing any signs, ignoring the negative sign outside the brackets entirely."
+        },
+        {
+          "answer": "5x plus 2",
+          "explanation": "Changes the sign of the second term to positive but also incorrectly makes the first term positive."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why 9x + 6 factorises to 3(3x + 2)?",
+      "correct": "The HCF of 9 and 6 is 3, and dividing each term by 3 gives 3x and 2 inside the brackets",
+      "correctExplanation": "Finding the HCF and dividing each term by it produces the factors: 3 outside and (3x + 2) inside.",
+      "distractors": [
+        {
+          "answer": "The HCF of 9 and 6 is 9, and dividing each term by 9 gives x and two thirds inside the brackets",
+          "explanation": "Incorrectly identifies 9 as the HCF; 9 does not divide 6 evenly, so the factorisation would introduce fractions."
+        },
+        {
+          "answer": "Multiplying 3 by each term inside the brackets gives 9x + 6, confirming that 3 is the correct sum factor",
+          "explanation": "The verification step is correct but the reasoning names it a 'sum factor' rather than a common factor, showing a misunderstanding of factorising."
+        },
+        {
+          "answer": "Both 9x and 6 are divisible by 6, and dividing each term by 6 gives three halves x and 1 inside the brackets",
+          "explanation": "Incorrectly identifies 6 as the HCF; 9 divided by 6 is not a whole number, so 6 is not a factor of 9."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "Expanding 3(2x minus 5) gives {{blank:1}} minus {{blank:2}}, because the 3 multiplies both terms inside the brackets.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6x",
+          "correctExplanation": "3 multiplied by 2x equals 6x.",
+          "distractors": [
+            {
+              "answer": "5x",
+              "explanation": "Adds 3 and 2 instead of multiplying them, giving 5x.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "2x",
+              "explanation": "Fails to multiply the coefficient of x by 3, leaving the term unchanged.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "15",
+          "correctExplanation": "3 multiplied by 5 equals 15.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Fails to multiply the constant by 3, leaving it unchanged.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "8",
+              "explanation": "Adds 3 and 5 instead of multiplying them.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "To factorise 20x + 30, first identify the highest common factor, which is {{blank:1}}, then write the expression as {{blank:2}}(2x + 3).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "The HCF of 20 and 30 is 10.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Identifies a common factor that is not the highest; 5 divides both terms but 10 is larger.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "20",
+              "explanation": "Uses the coefficient of the first term, but 20 does not divide 30 evenly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "The HCF of 10 is placed outside the brackets as the factor.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Uses a common factor that is not the highest, leaving the expression only partially factorised.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "2",
+              "explanation": "Uses 2 as the factor, which does not produce the quotients 2x and 3 inside the brackets.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "To simplify 7x + 3 minus 4x + 9, combine the {{blank:1}} terms to get 3x, and combine the constants to get {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "like",
+          "correctExplanation": "Like terms share the same variable part and can be combined by adding or subtracting coefficients.",
+          "distractors": [
+            {
+              "answer": "constant",
+              "explanation": "Confuses like terms (same variable) with constant terms (no variable).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "unlike",
+              "explanation": "Unlike terms have different variable parts and cannot be combined.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "3 + 9 = 12.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Subtracts 9 minus 3 instead of adding, misreading the operation sign.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "27",
+              "explanation": "Multiplies 3 and 9 instead of adding them.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "When rearranging y = 3x + 8 for x, first {{blank:1}} 8 from both sides, then {{blank:2}} both sides by 3.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "subtract",
+          "correctExplanation": "Subtracting 8 from both sides removes the constant from the right, giving y minus 8 = 3x.",
+          "distractors": [
+            {
+              "answer": "add",
+              "explanation": "Adding 8 moves the constant in the wrong direction, producing y + 8 = 3x + 16.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "multiply",
+              "explanation": "Confuses the inverse of addition (subtraction) with multiplication.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "divide",
+          "correctExplanation": "Dividing both sides by 3 isolates x, giving x = (y minus 8)/3.",
+          "distractors": [
+            {
+              "answer": "multiply",
+              "explanation": "Applies the same operation as in the original equation rather than the inverse.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "subtract",
+              "explanation": "Confuses the inverse of multiplication (division) with subtraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "In the expression 4(a + 2) minus 3(a minus 1), expanding the first bracket gives 4a + 8, and expanding the second bracket with the negative sign gives negative 3a {{blank:1}} {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "plus",
+          "correctExplanation": "Negative 3 times negative 1 gives positive 3, so the sign is plus.",
+          "distractors": [
+            {
+              "answer": "minus",
+              "explanation": "Fails to account for the double negative (negative 3 times negative 1), leaving the sign as minus.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "times",
+              "explanation": "Confuses the operation connecting the terms (addition/subtraction) with multiplication.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Negative 3 multiplied by negative 1 equals positive 3.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Fails to multiply the constant by 3, leaving it as 1.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "4",
+              "explanation": "Confuses the multiplier from the first bracket (4) with the result of the second bracket's constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The expression negative 8x + 12y can be factorised by taking out the common factor {{blank:1}}, giving {{blank:2}}(2x minus 3y).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 4",
+          "correctExplanation": "The HCF of 8 and 12 is 4, and factoring out negative 4 makes both terms inside the brackets positive or follows the standard sign pattern.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Identifies the correct magnitude but positive sign, which would give 4(negative 2x + 3y) rather than matching the given inside-brackets form.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 8",
+              "explanation": "Uses 8 as the factor, but 8 does not divide 12 evenly, so this is not a valid common factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 4",
+          "correctExplanation": "The factor negative 4 is placed outside the brackets.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Uses the positive version of the HCF, which would produce different signs inside the brackets.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 2",
+              "explanation": "Uses 2 instead of 4 as the factor; 2 is a common factor but not the highest.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Anika expands 5(2x minus 3) and writes 10x minus 15; this expansion is correct.",
+      "correct": "True",
+      "correctExplanation": "5 times 2x = 10x and 5 times negative 3 = negative 15, so 10x minus 15 is correct.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscompute 5 times negative 3, expecting positive 15 or a different product."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Sam simplifies 4(x + 3) minus 2(x + 5) and obtains 2x minus 2; this result is correct.",
+      "correct": "False",
+      "correctExplanation": "Expanding gives 4x + 12 minus 2x minus 10 = 2x + 2, not 2x minus 2. Sam made a sign error with the constants.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Accepts Sam's result without checking the expansion; the correct constant is positive 2, not negative 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Jarrah buys 3 shirts at (x + 12) dollars each and 2 hats at (x minus 5) dollars each. Which one of the following represents the total cost after expanding and simplifying?",
+      "correct": "5x + 26 dollars",
+      "correctExplanation": "3(x + 12) + 2(x minus 5) = 3x + 36 + 2x minus 10 = 5x + 26.",
+      "distractors": [
+        {
+          "answer": "5x + 46 dollars",
+          "explanation": "Adds 36 + 10 = 46 instead of 36 minus 10 = 26, ignoring the negative sign in the second expansion."
+        },
+        {
+          "answer": "5x minus 26 dollars",
+          "explanation": "Reverses the sign of the constant, computing minus 36 + 10 or confusing the subtraction direction."
+        },
+        {
+          "answer": "6x + 26 dollars",
+          "explanation": "Miscalculates the x-coefficient, possibly adding 3 + 2 + 1 = 6 from the expressions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A rectangular garden has length (3x + 4) metres and width (2x minus 1) metres. Priya writes the perimeter expression as 2(3x + 4) + 2(2x minus 1). Which one of the following is the simplified perimeter?",
+      "correct": "10x + 6 metres",
+      "correctExplanation": "Expanding: 6x + 8 + 4x minus 2 = 10x + 6.",
+      "distractors": [
+        {
+          "answer": "10x + 10 metres",
+          "explanation": "Adds 8 + 2 = 10 instead of 8 minus 2 = 6, ignoring the negative in the second bracket."
+        },
+        {
+          "answer": "5x + 3 metres",
+          "explanation": "Calculates (3x + 4) + (2x minus 1) = 5x + 3 but forgets to multiply each dimension by 2 for the perimeter."
+        },
+        {
+          "answer": "12x + 6 metres",
+          "explanation": "Miscalculates the x-coefficient, possibly multiplying 3 by 2 twice or adding an extra 2x term."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A V/Line ticket costs (2x + 5) dollars. Kofi buys 4 tickets and receives a discount of (3x minus 2) dollars. Which one of the following represents the amount Kofi pays?",
+      "correct": "5x + 22 dollars",
+      "correctExplanation": "4(2x + 5) minus (3x minus 2) = 8x + 20 minus 3x + 2 = 5x + 22.",
+      "distractors": [
+        {
+          "answer": "5x + 18 dollars",
+          "explanation": "Expands the discount as minus 3x minus 2 instead of minus 3x plus 2, giving 20 minus 2 = 18."
+        },
+        {
+          "answer": "11x + 22 dollars",
+          "explanation": "Adds the x-coefficients (8 + 3 = 11) instead of subtracting, ignoring that the discount is subtracted."
+        },
+        {
+          "answer": "5x + 20 dollars",
+          "explanation": "Forgets to include the plus 2 from expanding the negative bracket, keeping only the 20 from the first expansion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Lila factorises the expression 24a minus 16 and writes 4(6a minus 4). Which one of the following best describes the error?",
+      "correct": "The expression is not fully factorised because 6a minus 4 still has a common factor of 2",
+      "correctExplanation": "The HCF of 24 and 16 is 8, not 4. Writing 4(6a minus 4) is partially factorised; the full factorisation is 8(3a minus 2).",
+      "distractors": [
+        {
+          "answer": "The factorisation is completely incorrect because 4 is not a factor of either 24a or 16",
+          "explanation": "4 is a factor of both terms, so the factorisation is valid but incomplete, not completely incorrect."
+        },
+        {
+          "answer": "The signs inside the brackets are wrong because subtraction should become addition after factorising",
+          "explanation": "The signs are correct; the issue is that the HCF used is too small, not that the signs are swapped."
+        },
+        {
+          "answer": "The expression should be written as 8(6a minus 4) to include a higher common factor outside",
+          "explanation": "Using 8 as the factor is correct, but 24a divided by 8 is 3a and 16 divided by 8 is 2, giving 8(3a minus 2), not 8(6a minus 4)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Marcus rearranges A = 5h minus 3 to make h the subject and writes h = (A + 3)/5. Which one of the following correctly evaluates Marcus's rearrangement?",
+      "correct": "The rearrangement is correct because adding 3 and then dividing by 5 correctly isolates h",
+      "correctExplanation": "Adding 3: A + 3 = 5h. Dividing by 5: h = (A + 3)/5. Both inverse operations are applied correctly.",
+      "distractors": [
+        {
+          "answer": "The rearrangement is incorrect because the 3 should be subtracted rather than added to both sides",
+          "explanation": "Since the original has minus 3, adding 3 is the correct inverse operation to remove it from the right side."
+        },
+        {
+          "answer": "The rearrangement is incorrect because both sides should be divided by 5 before adding the 3",
+          "explanation": "Dividing first would give A/5 = h minus 3/5, which is valid but less efficient; the given rearrangement is still correct."
+        },
+        {
+          "answer": "The rearrangement is incorrect because the final step should multiply by 5 rather than divide by 5",
+          "explanation": "Since h is multiplied by 5 in the original, dividing by 5 is the correct inverse operation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A school canteen charges (x + 2) dollars for a sandwich and (x minus 1) dollars for a juice. Yen buys 5 sandwiches and 3 juices. Which one of the following is the simplified total cost?",
+      "correct": "8x + 7 dollars",
+      "correctExplanation": "5(x + 2) + 3(x minus 1) = 5x + 10 + 3x minus 3 = 8x + 7.",
+      "distractors": [
+        {
+          "answer": "8x + 13 dollars",
+          "explanation": "Adds 10 + 3 = 13 instead of 10 minus 3 = 7, ignoring the negative in the second expansion."
+        },
+        {
+          "answer": "8x + 1 dollars",
+          "explanation": "Computes 10 minus 3 but also subtracts 3 twice or makes an arithmetic error with the constants."
+        },
+        {
+          "answer": "15x minus 3 dollars",
+          "explanation": "Multiplies the x-coefficients (5 times 3 = 15) instead of adding them, and only keeps the second constant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Rosa expands negative 3(4m minus 7) and writes negative 12m minus 21. Which one of the following identifies the error?",
+      "correct": "The constant should be positive 21 because negative 3 multiplied by negative 7 equals positive 21",
+      "correctExplanation": "Negative 3 times negative 7 = positive 21. Rosa wrote negative 21, missing the double-negative rule.",
+      "distractors": [
+        {
+          "answer": "The coefficient should be positive 12m because negative 3 multiplied by 4m equals positive 12m",
+          "explanation": "Negative 3 times 4m correctly gives negative 12m, so this term has no error."
+        },
+        {
+          "answer": "Both terms are correct and Rosa has expanded the expression without any algebraic errors",
+          "explanation": "The first term is correct but the second is wrong; negative 3 times negative 7 is positive 21, not negative 21."
+        },
+        {
+          "answer": "The constant should be negative 7 because the 3 should only multiply the first term inside the brackets",
+          "explanation": "The distributive law requires multiplying every term inside the brackets, not just the first."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A rectangular pool has area A = 6w + 18 square metres, where w is the width. Amir factorises the area to find one pair of dimensions. Which one of the following is correct?",
+      "correct": "6(w + 3), giving dimensions 6 metres and (w + 3) metres",
+      "correctExplanation": "The HCF of 6w and 18 is 6. Factorising: 6w + 18 = 6(w + 3).",
+      "distractors": [
+        {
+          "answer": "3(2w + 18), giving dimensions 3 metres and (2w + 18) metres",
+          "explanation": "Uses 3 as the factor but only divides the first term by 3, leaving 18 unchanged inside the brackets."
+        },
+        {
+          "answer": "2(3w + 9), giving dimensions 2 metres and (3w + 9) metres",
+          "explanation": "Uses 2 as the factor, which is not the HCF; the expression inside can be factorised further."
+        },
+        {
+          "answer": "6(w + 18), giving dimensions 6 metres and (w + 18) metres",
+          "explanation": "Divides only the first term by 6, leaving the constant 18 undivided."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Jade expands and simplifies 2(3x + 1) + 4(x minus 3) and obtains 10x + 14. Which one of the following identifies the error?",
+      "correct": "The constant should be negative 10 because 2 minus 12 equals negative 10, not positive 14",
+      "correctExplanation": "Expanding: 6x + 2 + 4x minus 12 = 10x minus 10. Jade added 2 + 12 = 14 instead of 2 minus 12 = minus 10.",
+      "distractors": [
+        {
+          "answer": "The x-coefficient should be 7x because 3 + 4 = 7, not including the multiplier on the first bracket",
+          "explanation": "The x-coefficient is correctly calculated: 2 times 3 = 6 and 4 times 1 = 4, so 6 + 4 = 10."
+        },
+        {
+          "answer": "The expansion is entirely correct and Jade has made no errors in the simplification process",
+          "explanation": "The x-terms are correct (10x) but the constant is wrong; 2 minus 12 = minus 10, not 14."
+        },
+        {
+          "answer": "The constant should be positive 2 because the minus 12 cancels completely with the 12 from expanding",
+          "explanation": "The 12 comes from 4 times 3 = 12, and 2 minus 12 = minus 10, not zero or positive 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A phone plan charges a monthly fee of (2x + 10) dollars for calls and (x minus 4) dollars for data. Linh's total monthly charge is the sum of these. Which one of the following is the simplified total?",
+      "correct": "3x + 6 dollars",
+      "correctExplanation": "(2x + 10) + (x minus 4) = 3x + 6.",
+      "distractors": [
+        {
+          "answer": "3x + 14 dollars",
+          "explanation": "Adds 10 + 4 = 14 instead of 10 minus 4 = 6, ignoring the negative sign on the second constant."
+        },
+        {
+          "answer": "2x + 6 dollars",
+          "explanation": "Forgets to include the x from the second expression, only counting the 2x from the first."
+        },
+        {
+          "answer": "3x minus 6 dollars",
+          "explanation": "Reverses the sign of the constant, computing minus 10 + 4 = minus 6 or similar sign error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "The formula for the area of a trapezium is A = h(a + b)/2. Will rearranges for h and writes h = 2A/(a + b). Which one of the following correctly evaluates Will's rearrangement?",
+      "correct": "The rearrangement is correct because multiplying both sides by 2 and dividing by (a + b) isolates h",
+      "correctExplanation": "From A = h(a + b)/2, multiplying both sides by 2 gives 2A = h(a + b). Dividing by (a + b) gives h = 2A/(a + b).",
+      "distractors": [
+        {
+          "answer": "The rearrangement is incorrect because h should equal A multiplied by 2 multiplied by (a + b)",
+          "explanation": "This multiplies instead of divides by (a + b), producing an expression that does not isolate h correctly."
+        },
+        {
+          "answer": "The rearrangement is incorrect because h should equal (A minus b) multiplied by 2 divided by a",
+          "explanation": "Attempts to separate a and b, which is invalid since they are added inside the brackets and multiplied together with h."
+        },
+        {
+          "answer": "The rearrangement is incorrect because the 2 should remain in the denominator, giving h = A/(a + b)",
+          "explanation": "Fails to move the 2 from the denominator to the numerator, effectively halving the correct answer."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "An MCG ticket costs (4n + 3) dollars for adults and (2n minus 1) dollars for children. A family buys 2 adult and 3 child tickets. Which one of the following is the simplified total cost?",
+      "correct": "14n + 3 dollars",
+      "correctExplanation": "2(4n + 3) + 3(2n minus 1) = 8n + 6 + 6n minus 3 = 14n + 3.",
+      "distractors": [
+        {
+          "answer": "14n + 9 dollars",
+          "explanation": "Adds 6 + 3 = 9 instead of 6 minus 3 = 3, ignoring the negative sign in the second expansion."
+        },
+        {
+          "answer": "14n minus 3 dollars",
+          "explanation": "Subtracts incorrectly, computing 6 minus 3 but then applying the minus sign to the total constant."
+        },
+        {
+          "answer": "10n + 3 dollars",
+          "explanation": "Miscalculates the x-coefficient: 4 times 2 = 8 and 2 times 1 = 2, giving 8 + 2 = 10 instead of 8 + 6 = 14."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Mia expands 6(2x minus 3) and obtains {{blank:1}} minus {{blank:2}}. She then subtracts 4x to get a simplified expression of 8x minus 18.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12x",
+          "correctExplanation": "6 multiplied by 2x equals 12x.",
+          "distractors": [
+            {
+              "answer": "8x",
+              "explanation": "Adds 6 and 2 instead of multiplying, giving 8x.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "6x",
+              "explanation": "Multiplies only the coefficient 6 by 1 instead of by 2, leaving the x-coefficient unchanged.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "18",
+          "correctExplanation": "6 multiplied by 3 equals 18.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Fails to multiply the constant by 6, leaving it unchanged.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "9",
+              "explanation": "Adds 6 and 3 instead of multiplying them.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A shop sells notebooks for (x + 3) dollars each. Amir buys 5 notebooks and pays with a 50 dollar note. His change in simplified form is {{blank:1}} minus {{blank:2}} dollars.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "35",
+          "correctExplanation": "Total cost is 5(x + 3) = 5x + 15. Change is 50 minus (5x + 15) = 35 minus 5x. The constant part is 50 minus 15 = 35.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "Writes the change as 50 minus 5x without subtracting the constant 15 from 50.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "45",
+              "explanation": "Subtracts only the 5 from 50 (the number of notebooks) instead of the full constant 15.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5x",
+          "correctExplanation": "The variable part of the cost is 5x, which is subtracted from 50 after removing the constant.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "Forgets to multiply the price variable by 5 notebooks.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "3x",
+              "explanation": "Uses the constant 3 from the price as the coefficient instead of the number of notebooks (5).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Kofi factorises 14m minus 21 by identifying the HCF as {{blank:1}}, giving the factorised form {{blank:2}}(2m minus 3).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "The HCF of 14 and 21 is 7.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "Uses the first coefficient as the HCF, but 14 does not divide 21 evenly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Uses the quotient of the second term rather than the common factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "The HCF 7 is placed outside the brackets.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "Uses the first coefficient instead of the HCF as the outside factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "21",
+              "explanation": "Uses the second coefficient instead of the HCF.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Priya rearranges the formula C = 3d + 8 to find d. She first subtracts {{blank:1}} from both sides, then divides both sides by {{blank:2}} to isolate d.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "Subtracting 8 removes the constant from the right side: C minus 8 = 3d.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Subtracts the coefficient of d instead of the constant, confusing the two terms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "d",
+              "explanation": "Subtracts the variable instead of the constant, not applying inverse operations correctly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Dividing by 3 isolates d: d = (C minus 8)/3.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "Divides by the constant instead of the coefficient, confusing which value multiplies d.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "d",
+              "explanation": "Attempts to divide by the variable itself, which does not isolate d.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Sam simplifies 3(2a + 5) minus 2(a + 4). Expanding gives 6a + 15 minus 2a minus 8. Collecting like terms, the simplified result is {{blank:1}} plus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4a",
+          "correctExplanation": "6a minus 2a = 4a.",
+          "distractors": [
+            {
+              "answer": "8a",
+              "explanation": "Adds 6 and 2 instead of subtracting, ignoring the minus sign.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "2a",
+              "explanation": "Subtracts incorrectly, possibly computing 6 minus 2 minus 2 or making another arithmetic error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "15 minus 8 = 7.",
+          "distractors": [
+            {
+              "answer": "23",
+              "explanation": "Adds 15 + 8 = 23 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Computes 15 minus 12, perhaps multiplying 2 by a wrong factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A rectangular park has length (4x + 6) metres and width x metres. Rosa writes the perimeter as 2(4x + 6) + 2x. After expanding and simplifying, the perimeter is {{blank:1}} plus {{blank:2}} metres.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10x",
+          "correctExplanation": "Expanding: 8x + 12 + 2x = 10x + 12. The x-component is 10x.",
+          "distractors": [
+            {
+              "answer": "8x",
+              "explanation": "Forgets to add the 2x from the width term, only counting the expansion of 2(4x + 6).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6x",
+              "explanation": "Adds 4 + 2 = 6 without applying the multiplier of 2 to the length expression.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "2 times 6 = 12.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Fails to multiply the constant by 2 when expanding 2(4x + 6).",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "24",
+              "explanation": "Multiplies 6 by 4 instead of by 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Jade rearranges T = 7n minus 4 to make n the subject. Adding 4 to both sides gives T + 4 = 7n, and dividing both sides by {{blank:1}} gives n = (T + {{blank:2}})/7.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "Dividing both sides by 7 isolates n.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Divides by the constant that was added rather than by the coefficient of n.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "n",
+              "explanation": "Attempts to divide by the variable instead of its coefficient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "The 4 was added to both sides in the previous step, so T + 4 appears in the numerator.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Confuses the constant with the coefficient, placing 7 in the numerator instead of 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Uses 7 minus 4 = 3, subtracting the values instead of keeping 4 from the rearrangement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Linh expands negative 4(3y minus 2) and obtains negative 12y {{blank:1}} {{blank:2}}, correctly applying the distributive law with a negative multiplier.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "plus",
+          "correctExplanation": "Negative 4 times negative 2 = positive 8, so the operation is plus.",
+          "distractors": [
+            {
+              "answer": "minus",
+              "explanation": "Forgets the double-negative rule, treating negative 4 times negative 2 as negative.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "times",
+              "explanation": "Confuses the connecting operation between terms with multiplication.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "Negative 4 times negative 2 = positive 8.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Fails to multiply by 4, leaving the constant unchanged.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "6",
+              "explanation": "Adds 4 and 2 instead of multiplying them.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A bike hire company charges a flat fee of 15 dollars plus (2n + 1) dollars per hour. For 3 hours, the total cost is 15 + 3(2n + 1). Expanding and simplifying gives {{blank:1}} plus {{blank:2}} dollars.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6n",
+          "correctExplanation": "3 times 2n = 6n.",
+          "distractors": [
+            {
+              "answer": "2n",
+              "explanation": "Forgets to multiply 2n by 3, leaving the variable term unchanged.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5n",
+              "explanation": "Adds 3 and 2 instead of multiplying, giving 5n.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "18",
+          "correctExplanation": "3 times 1 = 3, and 15 + 3 = 18.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "Adds 15 + 1 = 16, forgetting to multiply the 1 by 3 first.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "15",
+              "explanation": "Ignores the constant from expanding 3(2n + 1), only keeping the flat fee.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "To factorise 30p minus 20, the HCF of 30 and 20 is {{blank:1}}, and the fully factorised form is {{blank:2}}(3p minus 2).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "The HCF of 30 and 20 is 10.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Identifies a common factor but not the highest; 5 divides both but 10 is larger.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "20",
+              "explanation": "Uses the smaller term as the HCF, but 20 does not divide 30 evenly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "The HCF 10 is placed outside the brackets.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Uses 5 instead of 10, leaving the expression only partially factorised.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "15",
+              "explanation": "Halves 30 instead of finding the HCF with 20.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Marcus collects like terms in 5x + 2y minus 3x + 6y. The x-terms combine to give {{blank:1}} and the y-terms combine to give {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2x",
+          "correctExplanation": "5x minus 3x = 2x.",
+          "distractors": [
+            {
+              "answer": "8x",
+              "explanation": "Adds 5 + 3 = 8 instead of subtracting, ignoring the minus sign.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "15x",
+              "explanation": "Multiplies 5 and 3 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8y",
+          "correctExplanation": "2y + 6y = 8y.",
+          "distractors": [
+            {
+              "answer": "4y",
+              "explanation": "Subtracts 6 minus 2 = 4 instead of adding, misreading the sign.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12y",
+              "explanation": "Multiplies 2 and 6 instead of adding.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Will rearranges y = 5x minus 9 for x. After adding 9 and dividing by 5, the result is x = (y {{blank:1}} 9) divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "plus",
+          "correctExplanation": "Adding 9 to both sides gives y + 9 = 5x, so the numerator is y plus 9.",
+          "distractors": [
+            {
+              "answer": "minus",
+              "explanation": "Subtracts 9 instead of adding, applying the wrong inverse operation.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "times",
+              "explanation": "Confuses the rearrangement step with multiplication instead of addition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "Dividing both sides by 5 isolates x.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "Divides by the constant instead of the coefficient of x.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "Attempts to divide by the variable being isolated, which is circular.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that 3(x + 4) minus 2(x minus 1) simplifies to x + 14. Which one of the following correctly evaluates this claim?",
+      "correct": "The claim is correct because 3x + 12 minus 2x + 2 simplifies to x + 14",
+      "correctExplanation": "Expanding: 3x + 12 minus 2x + 2 = x + 14. The student's answer is correct.",
+      "distractors": [
+        {
+          "answer": "The claim is wrong because the constant should be 10, since 12 minus 2 equals 10",
+          "explanation": "Subtracts 2 instead of adding it; negative 2 times negative 1 gives positive 2, so the constants are 12 + 2 = 14."
+        },
+        {
+          "answer": "The claim is wrong because the x-coefficient should be 5, from 3x plus 2x",
+          "explanation": "Adds the x-coefficients instead of subtracting; the minus sign means 3x minus 2x = x."
+        },
+        {
+          "answer": "The claim is wrong because negative 2 times negative 1 gives negative 2, making the constant 10",
+          "explanation": "Makes a sign error in expanding: negative 2 times negative 1 = positive 2, not negative 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Two students factorise 24x minus 36. Student A writes 6(4x minus 6) and Student B writes 12(2x minus 3). Which one of the following best analyses both factorisations?",
+      "correct": "Both factorisations are valid but only Student B's is fully factorised, since 4x minus 6 can be factorised further by 2",
+      "correctExplanation": "The HCF of 24 and 36 is 12. Student A uses 6 (valid but not the HCF), and the inside can be factorised further. Student B uses 12, which is the HCF.",
+      "distractors": [
+        {
+          "answer": "Student A is correct and fully factorised while Student B has divided the terms incorrectly inside the brackets",
+          "explanation": "Student B's division is correct: 24 divided by 12 = 2 and 36 divided by 12 = 3. Student A is not fully factorised."
+        },
+        {
+          "answer": "Both factorisations are fully factorised since each correctly identifies a common factor of the two original terms",
+          "explanation": "While both are valid, only a factorisation using the HCF is considered fully factorised."
+        },
+        {
+          "answer": "Neither factorisation is correct because the HCF of 24 and 36 is 4, not 6 or 12, so both students used wrong factors",
+          "explanation": "The HCF of 24 and 36 is 12, not 4. Both 6 and 12 are valid factors, though only 12 gives full factorisation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student expands negative 5(2x minus 3) and writes negative 10x minus 15. Which one of the following identifies the specific error in reasoning?",
+      "correct": "The student treated negative 5 times negative 3 as negative 15 instead of positive 15, failing to apply the rule that two negatives multiply to a positive",
+      "correctExplanation": "Negative 5 times negative 3 = positive 15. The correct expansion is negative 10x + 15.",
+      "distractors": [
+        {
+          "answer": "The student multiplied the first term incorrectly, since negative 5 times 2x should give positive 10x rather than negative 10x",
+          "explanation": "Negative 5 times 2x correctly gives negative 10x. The first term has no error."
+        },
+        {
+          "answer": "The student should have added 5 to each term rather than multiplying, since the expression involves subtraction inside the brackets",
+          "explanation": "Expanding always involves multiplication via the distributive law, regardless of the operation inside the brackets."
+        },
+        {
+          "answer": "The student reversed all the signs correctly but miscalculated the numerical values, producing 15 instead of the correct value of 10",
+          "explanation": "5 times 3 is 15, not 10. The numerical calculation is correct; only the sign of the second term is wrong."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Three students simplify 4(x + 2) minus 3(x minus 1). Their answers are: Student A: x + 11, Student B: x + 5, Student C: 7x + 11. Which one of the following correctly identifies all errors?",
+      "correct": "Student A is correct; Student B subtracted 3 instead of adding 3 for the second constant; Student C added the x-coefficients instead of subtracting",
+      "correctExplanation": "Expanding: 4x + 8 minus 3x + 3 = x + 11. Student A is right. Student B got 8 minus 3 = 5 (sign error). Student C got 4 + 3 = 7 (added instead of subtracted).",
+      "distractors": [
+        {
+          "answer": "Student B is correct; Student A incorrectly added the constants; Student C incorrectly added the x-coefficients instead of subtracting them",
+          "explanation": "Student B's constant of 5 comes from 8 minus 3, but the correct computation is 8 + 3 = 11 because negative 3 times negative 1 = positive 3."
+        },
+        {
+          "answer": "All three students made errors because the correct answer is x + 2, found by computing 8 minus 3 minus 3 for the constants",
+          "explanation": "The constants are 8 and positive 3 (not negative 3), giving 8 + 3 = 11. The answer x + 11 is correct."
+        },
+        {
+          "answer": "Student C is correct; Student A and Student B both made sign errors when expanding the second set of brackets in the expression",
+          "explanation": "Student C's x-coefficient of 7 is wrong (4 minus 3 = 1, not 4 + 3 = 7), and the constant 11 is correct only for Student A."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student claims that factorising always makes an expression shorter. Which one of the following provides the best counterexample to this claim?",
+      "correct": "The expression 2x + 3 has no common factor other than 1, so factorising as 1(2x + 3) does not shorten the expression at all",
+      "correctExplanation": "When no meaningful common factor exists, factorising either cannot be done or produces an expression that is the same length or longer.",
+      "distractors": [
+        {
+          "answer": "The expression 6x + 12 factorises to 6(x + 2), which has fewer symbols and therefore disproves the student's general claim",
+          "explanation": "This example supports the claim rather than countering it, since the factorised form is indeed shorter."
+        },
+        {
+          "answer": "The expression 4x minus 8 factorises to 4(x minus 2), and counting the characters shows these are equal in length overall",
+          "explanation": "While character counts may be similar, this does not clearly counter the claim; the key issue is expressions with no common factor."
+        },
+        {
+          "answer": "Factorising always shortens expressions because the highest common factor reduces the size of every numerical coefficient present",
+          "explanation": "This agrees with the student's claim rather than countering it, and ignores cases where no HCF greater than 1 exists."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student rearranges y = 2x + 6 for x and writes x = y/2 + 6. Which one of the following explains why this rearrangement is incorrect?",
+      "correct": "The student divided only the 2x term by 2, not the entire right side; the correct rearrangement subtracts 6 first, then divides: x = (y minus 6)/2",
+      "correctExplanation": "Rearranging requires subtracting 6 from both sides first, then dividing by 2: x = (y minus 6)/2.",
+      "distractors": [
+        {
+          "answer": "The student should have multiplied both sides by 2 before subtracting 6, giving x = 2y minus 6 as the correct rearrangement",
+          "explanation": "Multiplying both sides by 2 would give 2y = 4x + 12, which moves further from isolating x."
+        },
+        {
+          "answer": "The student should have subtracted 2x from both sides to give y minus 2x = 6, then solved for x from that equation",
+          "explanation": "While algebraically valid, this approach gives negative 2x = 6 minus y, and solving gives x = (y minus 6)/2, the same correct answer."
+        },
+        {
+          "answer": "The rearrangement is actually correct because dividing y by 2 and keeping the 6 maintains the equality between both sides",
+          "explanation": "Dividing only part of one side does not maintain equality; the 6 must also be divided by 2 or subtracted first."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Two equivalent expressions for the perimeter of a rectangle are 2(L + W) and 2L + 2W. A student claims a third form, L + W + L + W, is not equivalent. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because L + W + L + W simplifies to 2L + 2W, which is the expanded form of 2(L + W) and therefore equivalent",
+      "correctExplanation": "All three forms are equivalent. L + W + L + W collects to 2L + 2W, which factors to 2(L + W).",
+      "distractors": [
+        {
+          "answer": "The claim is correct because L + W + L + W has four terms while the other forms have only two, making them structurally different expressions",
+          "explanation": "Having different numbers of terms does not make expressions inequivalent; like terms combine to produce the same value."
+        },
+        {
+          "answer": "The claim is correct because the third form adds the dimensions sequentially rather than multiplying, which changes the mathematical operation applied",
+          "explanation": "Repeated addition of the same quantity is equivalent to multiplication; L + L = 2L, so the forms are equivalent."
+        },
+        {
+          "answer": "The claim is partially correct because L + W + L + W only equals 2(L + W) when L and W take specific positive integer values",
+          "explanation": "Algebraic equivalence holds for all values of L and W, not just specific ones."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student simplifies 6x minus 2(x + 3) and writes 4x + 6. Another student claims the answer should be 4x minus 6. Which one of the following correctly determines who is right?",
+      "correct": "The second student is correct; expanding negative 2(x + 3) gives negative 2x minus 6, and 6x minus 2x minus 6 equals 4x minus 6",
+      "correctExplanation": "Negative 2 times 3 = negative 6, not positive 6. The correct result is 4x minus 6.",
+      "distractors": [
+        {
+          "answer": "The first student is correct; expanding negative 2(x + 3) gives negative 2x plus 6, and 6x minus 2x plus 6 equals 4x plus 6",
+          "explanation": "Negative 2 times positive 3 = negative 6, not positive 6. This error treats the negative multiplier as only affecting x."
+        },
+        {
+          "answer": "Neither student is correct; the answer should be 4x minus 3 because only the x-term is multiplied by 2 while the 3 remains unchanged",
+          "explanation": "The distributive law requires multiplying both terms inside the brackets by negative 2."
+        },
+        {
+          "answer": "Both students are correct because 4x + 6 and 4x minus 6 are equivalent expressions that differ only in notation style",
+          "explanation": "4x + 6 and 4x minus 6 are not equivalent; they produce different values for any non-zero substitution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student factorises negative 10x minus 15 as negative 5(2x + 3). Another student writes 5(negative 2x minus 3). Which one of the following correctly analyses both forms?",
+      "correct": "Both factorisations are algebraically equivalent and correct, since negative 5(2x + 3) expands to the same expression as 5(negative 2x minus 3)",
+      "correctExplanation": "Expanding both: negative 5 times 2x = negative 10x, negative 5 times 3 = negative 15. And 5 times negative 2x = negative 10x, 5 times negative 3 = negative 15. Both give negative 10x minus 15.",
+      "distractors": [
+        {
+          "answer": "Only the first factorisation is correct because factorising a negative expression requires a negative factor outside the brackets at all times",
+          "explanation": "There is no rule requiring the outside factor to be negative; both positive and negative factors can be valid if the expression inside adjusts accordingly."
+        },
+        {
+          "answer": "Only the second factorisation is correct because the HCF of 10 and 15 is the positive number 5, which must always appear outside brackets",
+          "explanation": "While the magnitude of the HCF is 5, either positive 5 or negative 5 can be factored out, with corresponding changes inside."
+        },
+        {
+          "answer": "Neither factorisation is fully correct because the HCF of 10 and 15 is 10, and the correct form is negative 10(x + 1.5)",
+          "explanation": "The HCF of 10 and 15 is 5, not 10. Using 10 would introduce a fraction, which is not the standard fully factorised form."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student claims that when rearranging C = 2(L + W), dividing both sides by 2 first and then subtracting L gives W = C/2 minus L. Another student subtracts 2L first and then divides by 2, obtaining W = (C minus 2L)/2. Which one of the following is correct?",
+      "correct": "Both methods produce equivalent results because C/2 minus L equals (C minus 2L)/2 when expressed with a common denominator",
+      "correctExplanation": "C/2 minus L = C/2 minus 2L/2 = (C minus 2L)/2. Both rearrangements are correct and equivalent.",
+      "distractors": [
+        {
+          "answer": "Only the first method is correct because dividing first avoids the need to deal with the 2L subtraction term entirely",
+          "explanation": "Both methods are valid. The first divides then subtracts; the second subtracts then divides. Both reach the same result."
+        },
+        {
+          "answer": "Only the second method is correct because the first method incorrectly divides C by 2 without also dividing L by 2",
+          "explanation": "The first method subtracts L after dividing by 2, which is algebraically valid. L does not need dividing because it was subtracted, not part of the original division."
+        },
+        {
+          "answer": "Neither method is correct because the brackets must be expanded first, giving C = 2L + 2W, before any rearrangement begins",
+          "explanation": "Expanding first is one approach, but dividing the unexpanded form by 2 is equally valid. The brackets do not need expanding."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student expands 3(2a minus b) minus 2(a minus 3b) and obtains 4a + 3b. Which one of the following correctly evaluates this answer?",
+      "correct": "The answer is correct; expanding gives 6a minus 3b minus 2a plus 6b, which simplifies to 4a plus 3b",
+      "correctExplanation": "6a minus 2a = 4a, and minus 3b plus 6b = 3b. The student's answer is correct.",
+      "distractors": [
+        {
+          "answer": "The answer is incorrect; the b-coefficient should be minus 9b because minus 3b minus 6b equals minus 9b after expansion",
+          "explanation": "Negative 2 times negative 3b gives positive 6b, not negative 6b. The b-terms are minus 3b + 6b = 3b."
+        },
+        {
+          "answer": "The answer is incorrect; the a-coefficient should be 8a because 6a plus 2a equals 8a when both terms are positive",
+          "explanation": "The second term gives negative 2a (not positive 2a), so 6a minus 2a = 4a."
+        },
+        {
+          "answer": "The answer is incorrect; the result should be 4a minus 3b because the b-terms both carry negative signs after expansion",
+          "explanation": "Negative 2 times negative 3b = positive 6b, so the b-terms are minus 3b + 6b = positive 3b."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student argues that 5(x + 2) equals 5x + 2 because the 5 only multiplies the first term. Which one of the following is the most precise mathematical reason this argument fails?",
+      "correct": "The distributive law requires multiplying the factor by every term inside the brackets, giving 5x + 10, not 5x + 2",
+      "correctExplanation": "a(b + c) = ab + ac. The 5 must multiply both x and 2. Omitting the multiplication of the second term violates the distributive law.",
+      "distractors": [
+        {
+          "answer": "The expansion is wrong because the brackets mean the addition must be performed before the multiplication takes place",
+          "explanation": "This describes the order of operations for numerical evaluation, not algebraic expansion. With variables, the distributive law is the correct approach."
+        },
+        {
+          "answer": "The expansion is wrong because 5 should be added to both x and 2 inside the brackets, giving (5 + x)(5 + 2)",
+          "explanation": "Multiplication by 5 is not the same as adding 5 to each term; this produces an entirely different expression."
+        },
+        {
+          "answer": "The expansion is wrong because the correct process divides both x and 2 by 5 to remove the factor outside the brackets",
+          "explanation": "Expanding multiplies, not divides. Dividing by the outside factor is part of factorising, not expanding."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Comparing the methods of two students: Student A simplifies 2(3x + 1) minus (x minus 4) by expanding all brackets first, while Student B rewrites it as 2(3x + 1) + (negative 1)(x minus 4). Which one of the following is correct?",
+      "correct": "Both approaches are valid and produce the same result of 5x + 6, but Student B's method makes the negative distribution more explicit",
+      "correctExplanation": "Both expand to 6x + 2 minus x + 4 = 5x + 6. Student B's approach explicitly shows the multiplication by negative 1.",
+      "distractors": [
+        {
+          "answer": "Student A's method is correct but Student B's introduces an error because multiplying by negative 1 changes all signs incorrectly",
+          "explanation": "Multiplying by negative 1 correctly reverses all signs: negative 1 times x = negative x, negative 1 times negative 4 = positive 4."
+        },
+        {
+          "answer": "Student B's method is correct but Student A's fails because subtracting brackets does not require distributing the negative sign",
+          "explanation": "Subtracting a bracketed expression does require distributing the negative sign; both methods handle this correctly."
+        },
+        {
+          "answer": "Neither approach is valid because the expression contains two different brackets that cannot be combined by any algebraic method",
+          "explanation": "Expressions with multiple brackets are routinely expanded and simplified by distributing and collecting like terms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student claims that rearranging y = mx + c for m gives m = y minus c divided by x. Another student claims it gives m = (y minus c)/x. Which one of the following correctly analyses the difference?",
+      "correct": "The second student is correct; the brackets are essential to show that both y and c are in the numerator before dividing by x",
+      "correctExplanation": "Without brackets, y minus c/x means y minus (c/x), which only divides c by x. The correct form is (y minus c)/x.",
+      "distractors": [
+        {
+          "answer": "Both students express the same formula because the brackets do not change the order of operations in this context",
+          "explanation": "Brackets are critical: y minus c/x ≠ (y minus c)/x. Division has higher precedence than subtraction."
+        },
+        {
+          "answer": "The first student is correct because writing the division without brackets follows standard algebraic convention for linear formulas",
+          "explanation": "Standard convention does not omit necessary brackets. Without them, the expression has a different mathematical meaning."
+        },
+        {
+          "answer": "Neither student is correct because the proper rearrangement should give m = y/x minus c, with no brackets needed at all",
+          "explanation": "y/x minus c is not equivalent to (y minus c)/x. The correct rearrangement divides the entire quantity (y minus c) by x."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A student claims that 2(x + 5) minus (x + 3) equals x + 7. The expansion gives 2x + 10 minus x minus 3, which simplifies to x + {{blank:1}}. The student's answer of x + 7 is therefore {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "10 minus 3 = 7.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "Adds 10 + 3 = 13 instead of subtracting, ignoring the negative sign from expanding the second bracket.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "2",
+              "explanation": "Computes 5 minus 3 = 2, forgetting that the 5 was multiplied by 2 to give 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "correct",
+          "correctExplanation": "The student's answer matches the fully expanded and simplified result.",
+          "distractors": [
+            {
+              "answer": "incorrect",
+              "explanation": "May have made an error in the verification and concluded the answer is wrong when it is actually right.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "incomplete",
+              "explanation": "The expression x + 7 is fully simplified and cannot be reduced further.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Student A factorises 16x minus 24 as 4(4x minus 6) and Student B factorises it as 8(2x minus 3). Student B's factorisation is {{blank:1}} factorised because the HCF of 16 and 24 is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "fully",
+          "correctExplanation": "Student B uses 8, which is the HCF, making the factorisation complete.",
+          "distractors": [
+            {
+              "answer": "partially",
+              "explanation": "Confuses Student B's factorisation with Student A's; Student B used the HCF and is fully factorised.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "incorrectly",
+              "explanation": "Student B's factorisation is valid; 8 times 2x = 16x and 8 times 3 = 24.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "The HCF of 16 and 24 is 8.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Identifies a common factor but not the highest; 4 divides both but 8 is larger.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "16",
+              "explanation": "Uses the first coefficient as the HCF, but 16 does not divide 24 evenly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A student expands negative 3(4x minus 5) and writes negative 12x minus 15. The error is in the {{blank:1}} term, which should be {{blank:2}} 15.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "constant",
+          "correctExplanation": "The x-term (negative 12x) is correct. The error is in the constant: negative 3 times negative 5 should give positive 15.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "The variable term negative 12x is correct; the error is in the constant term.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coefficient",
+              "explanation": "The coefficient of x (negative 12) is correct; the error is in the sign of the constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "Negative 3 times negative 5 = positive 15.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "The student already wrote negative 15; this would confirm the error rather than correct it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The constant is not zero; negative 3 times negative 5 produces a non-zero positive value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "When comparing 3(x + 4) and 3x + 4, substituting x = 2 gives 3(6) = {{blank:1}} for the first expression and 6 + 4 = {{blank:2}} for the second, proving they are not equivalent.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "18",
+          "correctExplanation": "3(2 + 4) = 3(6) = 18.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Computes 3 times 2 + 4 = 10, not distributing the 3 to both terms inside the brackets.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "14",
+              "explanation": "Computes 3 times 2 = 6, then 6 + 4 + 4 = 14, making an arithmetic error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "3(2) + 4 = 6 + 4 = 10.",
+          "distractors": [
+            {
+              "answer": "18",
+              "explanation": "Gets the same value as the first expression, which would incorrectly suggest equivalence.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "Computes 3 times 4 = 12, ignoring the x-term entirely.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "To verify that x = 3 is the solution of 5x minus 7 = 8, substitute x = 3 into the left side: 5(3) minus 7 = {{blank:1}}. Since this {{blank:2}} the right side, x = 3 is confirmed.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "5 times 3 = 15, and 15 minus 7 = 8.",
+          "distractors": [
+            {
+              "answer": "22",
+              "explanation": "Adds 15 + 7 = 22 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Computes 5 + 3 minus 7 = 1, adding instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "equals",
+          "correctExplanation": "The left side evaluates to 8, which equals the right side of 8, confirming the solution.",
+          "distractors": [
+            {
+              "answer": "exceeds",
+              "explanation": "Would indicate that the substitution gives a value larger than 8, which is not the case.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "approximates",
+              "explanation": "The result is exact, not approximate; algebraic solutions are verified by exact equality.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A student simplifies 7y minus 3(2y minus 4) as 7y minus 6y minus 12 = y minus 12. The error occurs because negative 3 times negative 4 should give {{blank:1}} 12, not {{blank:2}} 12.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "Negative 3 times negative 4 = positive 12, since two negatives multiply to a positive.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "This repeats the student's error, treating the product of two negatives as negative.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Two negatives do not cancel to zero; they produce a positive product.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative",
+          "correctExplanation": "The student incorrectly wrote negative 12 instead of positive 12.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "Would reverse the meaning; the student's error was writing negative, not positive.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "unsigned",
+              "explanation": "All constants in algebraic expressions have a sign; the issue is which sign is correct.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A student writes that 4x squared and 4x are like terms. This is {{blank:1}} because like terms must have the same variable raised to the same {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "incorrect",
+          "correctExplanation": "4x squared has x to the power of 2 while 4x has x to the power of 1; the powers differ, so they are not like terms.",
+          "distractors": [
+            {
+              "answer": "correct",
+              "explanation": "Would affirm the student's error; the terms have different powers of x and cannot be combined.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "justified",
+              "explanation": "The claim is not justified; same variable is necessary but not sufficient — same power is also required.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "power",
+          "correctExplanation": "Like terms require identical variable parts, meaning the same variable raised to the same power.",
+          "distractors": [
+            {
+              "answer": "coefficient",
+              "explanation": "Like terms can have different coefficients; it is the variable and its power that must match.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "sign",
+              "explanation": "Like terms can have different signs; the variable and its power must match, not the sign.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Two methods of rearranging A = bh for h are: Method 1 divides both sides by b to get h = A/b; Method 2 subtracts b from both sides. Method {{blank:1}} is correct because h is {{blank:2}} by b in the original formula.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Since h is multiplied by b, the inverse operation is division, which Method 1 uses.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Method 2 subtracts b, but the relationship is multiplicative (bh), not additive (b + h), so subtraction is the wrong inverse.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "neither",
+              "explanation": "Method 1 is correct; dividing both sides by b isolates h.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiplied",
+          "correctExplanation": "In A = bh, h is multiplied by b, so the inverse operation is division.",
+          "distractors": [
+            {
+              "answer": "added",
+              "explanation": "If h were added to b, subtraction would be correct, but bh means b times h.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "divided",
+              "explanation": "If h were divided by b, multiplication would be correct, but the formula shows multiplication.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A student claims 5(x minus 2) and 5x minus 2 are equivalent. Testing with x = 4: the first expression gives 5(2) = 10 and the second gives 5(4) minus 2 = {{blank:1}}. Since 10 does not equal {{blank:2}}, the expressions are not equivalent.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "18",
+          "correctExplanation": "5(4) minus 2 = 20 minus 2 = 18.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Would suggest both expressions give the same value, incorrectly confirming equivalence.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "22",
+              "explanation": "Adds 20 + 2 = 22 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "18",
+          "correctExplanation": "The comparison shows 10 ≠ 18, proving the expressions differ.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Would make the comparison trivial (10 ≠ 10 is false), failing to show non-equivalence.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20",
+              "explanation": "Uses 5(4) = 20 but forgets to subtract the 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A student simplifies 8m minus 2(3m + 1) as 2m minus 2 and another gets 2m + 2. The correct constant is minus {{blank:1}} because negative 2 times positive 1 equals negative {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Negative 2 times 1 = negative 2, so the constant is minus 2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Fails to multiply the constant by 2, leaving it as 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Uses 2 times 3 = 6 from the first term, confusing it with the constant term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Negative 2 times positive 1 equals negative 2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Ignores the multiplication by 2, treating the constant as unchanged.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Uses the coefficient of m (3) instead of the constant (1) from inside the brackets.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Comparing two rearrangements of P = 4s for s: Student A writes s = P/4 and Student B writes s = P minus 4. Student {{blank:1}} is correct because s is {{blank:2}} by 4 in the original formula, requiring the inverse operation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "A",
+          "correctExplanation": "Since s is multiplied by 4 in P = 4s, dividing by 4 (Student A's approach) is the correct inverse.",
+          "distractors": [
+            {
+              "answer": "B",
+              "explanation": "Student B subtracts 4, but the operation on s is multiplication, not addition, so subtraction is the wrong inverse.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "neither",
+              "explanation": "Student A's rearrangement is correct; dividing both sides by 4 gives s = P/4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiplied",
+          "correctExplanation": "In P = 4s, the variable s is multiplied by 4, so dividing is the inverse operation.",
+          "distractors": [
+            {
+              "answer": "increased",
+              "explanation": "Describes an additive change; in P = 4s, s is scaled by multiplication, not increased by addition.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "subtracted",
+              "explanation": "There is no subtraction in the formula; s is multiplied by 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A student argues that factorising and expanding are the same process. This is {{blank:1}} because expanding removes brackets using multiplication while factorising {{blank:2}} brackets using common factors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "incorrect",
+          "correctExplanation": "Factorising and expanding are inverse processes, not identical ones.",
+          "distractors": [
+            {
+              "answer": "correct",
+              "explanation": "Would affirm the student's error; expanding and factorising are opposite operations.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "plausible",
+              "explanation": "The claim is not plausible; the two operations produce structurally different expressions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "introduces",
+          "correctExplanation": "Factorising introduces brackets by extracting common factors, the reverse of expanding.",
+          "distractors": [
+            {
+              "answer": "removes",
+              "explanation": "Removing brackets describes expanding, not factorising.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "simplifies",
+              "explanation": "Simplifying is a separate process of collecting like terms; factorising specifically introduces brackets.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

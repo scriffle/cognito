@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M9A04",
+    "level": 9,
+    "area": "Mathematics",
+    "ageBand": "13-14",
+    "keyKnowledge": "We are learning to find the gradient, midpoint and distance between two points on the Cartesian plane.",
+    "generatedAt": "2026-05-17T11:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The gradient between two points is calculated as the change in x divided by the change in y.",
+      "correct": "False",
+      "correctExplanation": "Gradient is calculated as the change in y divided by the change in x (rise over run), not x over y.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the gradient formula; the correct ratio is change in y over change in x."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The midpoint of a line segment is found by averaging the x-coordinates and averaging the y-coordinates of the two endpoints.",
+      "correct": "True",
+      "correctExplanation": "Midpoint M = ((x₁ + x₂)/2, (y₁ + y₂)/2), which is the average of each coordinate pair.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May confuse midpoint with distance; the midpoint formula uses averages of coordinates."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The distance formula is derived from the properties of similar triangles.",
+      "correct": "False",
+      "correctExplanation": "The distance formula is derived from the theorem of Pythagoras, not similar triangles. The horizontal and vertical changes form two sides of a right triangle, and the distance is the hypotenuse.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May confuse the derivation; while similar triangles appear in coordinate geometry, the distance formula specifically applies a squared plus b squared equals c squared."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The distance between two points on the Cartesian plane can be a negative value.",
+      "correct": "False",
+      "correctExplanation": "Distance is always non-negative because it involves the square root of a sum of squares.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May confuse distance with directed difference; distance is a magnitude and cannot be negative."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The gradient of a line segment joining (1, 2) and (3, 8) is 3.",
+      "correct": "True",
+      "correctExplanation": "m = (8 − 2)/(3 − 1) = 6/2 = 3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate the rise or run; the differences are 6 and 2, giving a gradient of 3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The midpoint formula requires subtracting the coordinates of the two endpoints.",
+      "correct": "False",
+      "correctExplanation": "The midpoint formula adds the coordinates and divides by 2. Subtraction is used in the gradient and distance formulas.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the midpoint formula with gradient or distance; midpoint uses addition, not subtraction."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The distance between two points with the same y-coordinate equals the absolute difference of their x-coordinates.",
+      "correct": "True",
+      "correctExplanation": "When y-values are equal, the vertical change is 0 and d = |x₂ − x₁|.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May think the full distance formula is always needed; when one coordinate is shared, the formula simplifies."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The gradient of a horizontal line segment is undefined.",
+      "correct": "False",
+      "correctExplanation": "A horizontal segment has zero change in y, so the gradient is 0/run = 0, not undefined.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses horizontal with vertical; vertical segments have undefined gradient, horizontal segments have gradient zero."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "To find the distance between (0, 0) and (3, 4), the result is the square root of 25.",
+      "correct": "True",
+      "correctExplanation": "d = √(3² + 4²) = √(9 + 16) = √25 = 5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May add 3 + 4 = 7 instead of squaring; the formula requires squaring each difference first."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The midpoint of the segment from (2, 6) to (8, 10) is the point (4, 7).",
+      "correct": "False",
+      "correctExplanation": "M = ((2+8)/2, (6+10)/2) = (5, 8), not (4, 7).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May subtract instead of average; (8−2)/2 = 3 and (10−6)/2 = 2 give half-differences, not the midpoint."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A negative gradient indicates that the line segment falls from left to right.",
+      "correct": "True",
+      "correctExplanation": "A negative gradient means y decreases as x increases, so the segment slopes downward from left to right.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Reverses the direction; negative gradient does produce a downward slope from left to right."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The gradient between two points changes depending on which point is labelled as the first point.",
+      "correct": "False",
+      "correctExplanation": "Swapping the points negates both numerator and denominator, so the gradient remains the same.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "May think the order matters; swapping both differences preserves the ratio."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the formula for the gradient between two points (x one, y one) and (x two, y two)?",
+      "correct": "(y two minus y one) divided by (x two minus x one), representing the ratio of vertical to horizontal change",
+      "correctExplanation": "Gradient = rise/run = (y₂ − y₁)/(x₂ − x₁).",
+      "distractors": [
+        {
+          "answer": "(x two minus x one) divided by (y two minus y one), representing the ratio of horizontal to vertical change",
+          "explanation": "Reverses the gradient formula; it should be change in y over change in x."
+        },
+        {
+          "answer": "(x two plus x one) divided by (y two plus y one), representing the sum ratio of both coordinate pairs",
+          "explanation": "Addition is used in the midpoint formula, not the gradient formula."
+        },
+        {
+          "answer": "(y two plus y one) divided by (x two plus x one), representing the combined average of both coordinates",
+          "explanation": "Adding coordinates relates to midpoint, not gradient; gradient uses subtraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the midpoint formula for endpoints (x one, y one) and (x two, y two)?",
+      "correct": "The midpoint is ((x one plus x two) divided by 2, (y one plus y two) divided by 2) using coordinate averages",
+      "correctExplanation": "M = ((x₁ + x₂)/2, (y₁ + y₂)/2).",
+      "distractors": [
+        {
+          "answer": "The midpoint is ((x two minus x one) divided by 2, (y two minus y one) divided by 2) using coordinate differences",
+          "explanation": "Subtraction gives half the change, not the midpoint; the formula requires addition."
+        },
+        {
+          "answer": "The midpoint is (x one times x two, y one times y two) using the product of each coordinate pair directly",
+          "explanation": "Multiplying coordinates has no relationship to the midpoint formula."
+        },
+        {
+          "answer": "The midpoint is ((x one plus y one) divided by 2, (x two plus y two) divided by 2) mixing both coordinates",
+          "explanation": "The formula averages x-values together and y-values together, not x with y."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the distance formula between two points on the Cartesian plane?",
+      "correct": "The square root of (x two minus x one) squared plus (y two minus y one) squared gives the distance",
+      "correctExplanation": "d = √((x₂ − x₁)² + (y₂ − y₁)²), derived from Pythagoras' theorem.",
+      "distractors": [
+        {
+          "answer": "The square root of (x two plus x one) squared plus (y two plus y one) squared gives the distance value",
+          "explanation": "The formula uses subtraction of coordinates, not addition."
+        },
+        {
+          "answer": "The value (x two minus x one) squared plus (y two minus y one) squared without any square root applied",
+          "explanation": "This gives the square of the distance; the square root must be applied for the actual distance."
+        },
+        {
+          "answer": "The absolute value of (x two minus x one) plus (y two minus y one) gives the direct distance between points",
+          "explanation": "This gives the Manhattan distance, not the Euclidean distance; squaring and square-rooting are required."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies what the gradient of a line segment measures?",
+      "correct": "The steepness of the segment, expressed as the ratio of vertical change to horizontal change between endpoints",
+      "correctExplanation": "Gradient measures rise over run, indicating how steeply the segment inclines or declines.",
+      "distractors": [
+        {
+          "answer": "The length of the segment, calculated using the square root of the sum of squared coordinate differences",
+          "explanation": "This describes the distance formula, not the gradient."
+        },
+        {
+          "answer": "The centre point of the segment, found by averaging the x-coordinates and the y-coordinates of both endpoints",
+          "explanation": "This describes the midpoint, not the gradient."
+        },
+        {
+          "answer": "The angle between the segment and the y-axis, measured in degrees from the vertical reference line upward",
+          "explanation": "Gradient relates to the angle with the x-axis via tangent, not the angle with the y-axis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the mathematical theorem from which the distance formula is derived?",
+      "correct": "Pythagoras' theorem, because the horizontal and vertical changes form the two shorter sides of a right triangle",
+      "correctExplanation": "The distance between two points is the hypotenuse of a right triangle with legs |Δx| and |Δy|.",
+      "distractors": [
+        {
+          "answer": "The triangle inequality, because the distance between two points is always less than the sum of two sides",
+          "explanation": "The triangle inequality is a different concept; the distance formula comes from Pythagoras' theorem."
+        },
+        {
+          "answer": "The midpoint theorem, because the distance equals twice the length from the midpoint to either endpoint value",
+          "explanation": "The midpoint theorem relates to parallel sides in triangles, not to the distance formula."
+        },
+        {
+          "answer": "The angle-sum property, because the internal angles of the coordinate triangle must add to 180 degrees total",
+          "explanation": "The angle-sum property does not produce the distance formula; Pythagoras' theorem does."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states what happens to the gradient when the two labelled points are swapped?",
+      "correct": "The gradient remains unchanged, because both the numerator and denominator reverse sign simultaneously",
+      "correctExplanation": "Swapping gives (y₁−y₂)/(x₁−x₂) = −(y₂−y₁)/−(x₂−x₁) = same value.",
+      "distractors": [
+        {
+          "answer": "The gradient becomes its negative, because reversing the order of subtraction changes the sign of the result",
+          "explanation": "Both numerator and denominator change sign, so the negatives cancel."
+        },
+        {
+          "answer": "The gradient becomes its reciprocal, because swapping the points exchanges the roles of rise and run values",
+          "explanation": "Swapping points does not exchange rise and run; both differences simply reverse sign."
+        },
+        {
+          "answer": "The gradient becomes zero, because the direction of measurement cancels out the original calculated value entirely",
+          "explanation": "Swapping points does not zero the gradient; the ratio remains identical."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies what the midpoint of a line segment represents?",
+      "correct": "The point located exactly halfway between the two endpoints, dividing the segment into two equal parts",
+      "correctExplanation": "The midpoint is equidistant from both endpoints, splitting the segment in half.",
+      "distractors": [
+        {
+          "answer": "The point where the segment crosses the x-axis, found by setting the y-coordinate equal to zero in the formula",
+          "explanation": "This describes the x-intercept, not the midpoint."
+        },
+        {
+          "answer": "The point where the segment has its maximum height above the x-axis on the Cartesian coordinate plane",
+          "explanation": "The highest point of a segment is an endpoint, not necessarily the midpoint."
+        },
+        {
+          "answer": "The point where the gradient of the segment changes from positive to negative or from negative to positive",
+          "explanation": "A straight line segment has constant gradient; it does not change at the midpoint."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the relationship between distance and direction on the Cartesian plane?",
+      "correct": "Distance is always non-negative regardless of direction, because squaring eliminates negative values in the formula",
+      "correctExplanation": "The distance formula squares differences before summing, ensuring a non-negative result under the square root.",
+      "distractors": [
+        {
+          "answer": "Distance can be positive or negative depending on direction, just as gradient can be positive or negative",
+          "explanation": "Unlike gradient, distance is a magnitude and is always non-negative."
+        },
+        {
+          "answer": "Distance is positive when moving right and negative when moving left across the Cartesian coordinate plane",
+          "explanation": "Distance has no directional sign; it measures magnitude only."
+        },
+        {
+          "answer": "Distance is zero whenever the two points share one coordinate, because the shared value cancels in the formula",
+          "explanation": "Sharing one coordinate makes only one squared term zero; the other still contributes to the distance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes what collinear points are?",
+      "correct": "Points that all lie on the same straight line, having equal gradients between consecutive pairs of points",
+      "correctExplanation": "Collinear points share a common line; this is verified by checking that gradients between pairs are equal.",
+      "distractors": [
+        {
+          "answer": "Points that form a right angle when connected, with perpendicular gradients between adjacent pairs of points",
+          "explanation": "Right angles indicate perpendicularity, not collinearity."
+        },
+        {
+          "answer": "Points that are equidistant from the origin, lying on a circle centred at the coordinate system origin point",
+          "explanation": "Equidistant from the origin means they lie on a circle, not a line."
+        },
+        {
+          "answer": "Points that form a triangle with equal side lengths when connected, creating an equilateral shape on the plane",
+          "explanation": "An equilateral triangle has points that are definitely not collinear."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies what the distance formula calculates?",
+      "correct": "The straight-line length between two points, measuring the shortest path connecting them on the plane",
+      "correctExplanation": "The distance formula gives the Euclidean (straight-line) distance between two points.",
+      "distractors": [
+        {
+          "answer": "The total horizontal and vertical path length between two points, summing both coordinate differences together",
+          "explanation": "This describes taxicab distance, not Euclidean distance."
+        },
+        {
+          "answer": "The gradient of the line connecting two points, measuring the rate of change between the coordinate values",
+          "explanation": "Gradient measures steepness, not length; different formula entirely."
+        },
+        {
+          "answer": "The area of the rectangle formed by the two points and their horizontal and vertical projections on axes",
+          "explanation": "The formula calculates a length, not an area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states the gradient of a vertical line segment?",
+      "correct": "The gradient is undefined, because the horizontal change between the endpoints is zero and division by zero is undefined",
+      "correctExplanation": "Vertical segments have Δx = 0, making rise/run = rise/0, which is undefined.",
+      "distractors": [
+        {
+          "answer": "The gradient is zero, because vertical segments have no horizontal change and zero change means zero gradient",
+          "explanation": "Zero horizontal change causes division by zero, making gradient undefined, not zero."
+        },
+        {
+          "answer": "The gradient is one, because vertical segments rise and run by equal amounts in the coordinate system always",
+          "explanation": "A gradient of one describes a 45° line; vertical segments have no run at all."
+        },
+        {
+          "answer": "The gradient is infinity, because dividing any positive number by zero produces an infinite result in mathematics",
+          "explanation": "Division by zero is undefined in real numbers, not infinite; the gradient does not exist."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states what the distance between two points sharing the same x-coordinate equals?",
+      "correct": "The absolute difference of their y-coordinates, because the horizontal change is zero and only vertical distance remains",
+      "correctExplanation": "When x₁ = x₂, d = √(0² + (y₂−y₁)²) = |y₂ − y₁|.",
+      "distractors": [
+        {
+          "answer": "The absolute difference of their x-coordinates, because the vertical change is zero and only horizontal distance remains",
+          "explanation": "This applies when y-coordinates are equal, not x-coordinates."
+        },
+        {
+          "answer": "The sum of both y-coordinates, because both values contribute positively to the total distance between the points",
+          "explanation": "Distance uses the difference of coordinates, not their sum."
+        },
+        {
+          "answer": "Zero, because points on the same vertical line are treated as the same location in coordinate geometry calculations",
+          "explanation": "Points on the same vertical line can be different distances apart depending on their y-coordinates."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The gradient formula calculates the ratio of the change in {{blank:1}} to the change in {{blank:2}} between two points.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "y",
+          "correctExplanation": "Gradient = (y₂ − y₁)/(x₂ − x₁); the numerator is the change in y.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "Reverses the formula; the change in x is the denominator, not the numerator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "distance",
+              "explanation": "Distance is a separate calculation; gradient uses changes in coordinates, not distance.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "The denominator of the gradient formula is the change in x (the run).",
+          "distractors": [
+            {
+              "answer": "y",
+              "explanation": "Reverses the formula; the change in y is the numerator, not the denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "gradient",
+              "explanation": "Gradient is the result of the calculation, not a component within it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The midpoint formula finds the {{blank:1}} of the x-coordinates and the {{blank:2}} of the y-coordinates.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "average",
+          "correctExplanation": "Midpoint x = (x₁ + x₂)/2, which is the average.",
+          "distractors": [
+            {
+              "answer": "difference",
+              "explanation": "Difference is used in gradient and distance formulas, not midpoint.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "product",
+              "explanation": "Multiplying coordinates is not part of the midpoint formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "average",
+          "correctExplanation": "Midpoint y = (y₁ + y₂)/2, which is the average.",
+          "distractors": [
+            {
+              "answer": "difference",
+              "explanation": "Difference is used in gradient and distance, not midpoint.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "product",
+              "explanation": "Multiplying coordinates is not part of the midpoint formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The gradient between (2, 3) and (6, 11) is 4.",
+      "correct": "False",
+      "correctExplanation": "m = (11 − 3)/(6 − 2) = 8/4 = 2, not 4. The error likely comes from using only the numerator.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the rise (8) with the gradient; dividing by the run (4) gives 2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The midpoint of (negative 2, 6) and (4, negative 2) is (1, 2).",
+      "correct": "True",
+      "correctExplanation": "M = ((−2+4)/2, (6+(−2))/2) = (2/2, 4/2) = (1, 2).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May add incorrectly with negatives; −2 + 4 = 2 and 6 + (−2) = 4, halved to (1, 2)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The distance between (3, 1) and (7, 4) is 25.",
+      "correct": "False",
+      "correctExplanation": "d = √((7−3)² + (4−1)²) = √(16+9) = √25 = 5, not 25. The value 25 is the square of the distance.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Forgets to take the square root; 25 is the sum of squared differences, not the distance."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Three points are collinear if the distances between consecutive pairs are equal.",
+      "correct": "False",
+      "correctExplanation": "Equal distances indicate equal spacing but do not guarantee collinearity. Three equally spaced points can form a triangle. Collinearity requires equal gradients between consecutive pairs.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses equidistance with collinearity; only equal gradients between pairs confirm that three points lie on one line."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The distance from (0, 0) to (5, 0) is 5 because the points share the same y-coordinate.",
+      "correct": "True",
+      "correctExplanation": "When y-coordinates are equal, d = |x₂ − x₁| = |5 − 0| = 5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May think the full formula is always needed; sharing a y-coordinate simplifies distance to |Δx|."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The midpoint of (0, 0) and (6, 8) is (12, 16).",
+      "correct": "False",
+      "correctExplanation": "M = (3, 4). The values 12 and 16 result from doubling instead of halving.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Multiplies instead of dividing by 2; the midpoint formula divides the sum by 2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The gradient between (4, 10) and (4, 3) is undefined because both points share the same x-coordinate.",
+      "correct": "True",
+      "correctExplanation": "m = (3−10)/(4−4) = −7/0, which is undefined. The points form a vertical segment.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May think the gradient is zero; sharing x-coordinates makes the denominator zero, yielding undefined."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The gradient between (1, 5) and (3, 1) is positive because both y-values are positive.",
+      "correct": "False",
+      "correctExplanation": "m = (1 − 5)/(3 − 1) = −4/2 = −2. The gradient is negative because y decreases as x increases.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the sign of coordinates with the sign of the gradient; the gradient depends on the change, not the values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the distance between two points is always non-negative?",
+      "correct": "Squaring each coordinate difference ensures both terms are non-negative before summing and taking the square root",
+      "correctExplanation": "Squaring eliminates negative signs, and the square root of a non-negative number is non-negative.",
+      "distractors": [
+        {
+          "answer": "The formula uses absolute values around each coordinate difference, which forces all inputs to become positive",
+          "explanation": "The formula uses squaring, not absolute values, to ensure non-negative terms."
+        },
+        {
+          "answer": "Negative distances are converted to positive values at the final step by convention in coordinate geometry rules",
+          "explanation": "No conversion is needed; the formula naturally produces non-negative values through squaring."
+        },
+        {
+          "answer": "The formula adds the coordinates instead of subtracting them, which prevents negative results from occurring",
+          "explanation": "The formula uses subtraction; squaring, not addition, ensures non-negative values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why swapping the labels of two points does not change the calculated gradient?",
+      "correct": "Both the rise and run change sign simultaneously, so the two negatives cancel in the division producing the same ratio",
+      "correctExplanation": "(y₁−y₂)/(x₁−x₂) = (−(y₂−y₁))/(−(x₂−x₁)) = (y₂−y₁)/(x₂−x₁).",
+      "distractors": [
+        {
+          "answer": "The gradient formula contains absolute values that remove any sign changes caused by swapping the point labels",
+          "explanation": "The formula does not use absolute values; the sign preservation comes from both terms changing sign."
+        },
+        {
+          "answer": "The gradient depends only on the x-coordinates, so changing which point is first does not affect the y-component",
+          "explanation": "The gradient depends on both x and y differences; both are affected by swapping."
+        },
+        {
+          "answer": "The midpoint formula is embedded within the gradient formula, and midpoints are unaffected by point ordering",
+          "explanation": "The midpoint formula is separate from the gradient formula; the gradient uses subtraction, not averages."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the midpoint of a segment with endpoints (2, 4) and (8, 10) is (5, 7)?",
+      "correct": "Averaging the x-values gives (2 plus 8) divided by 2 equals 5 and averaging the y-values gives (4 plus 10) divided by 2 equals 7",
+      "correctExplanation": "M = ((2+8)/2, (4+10)/2) = (5, 7).",
+      "distractors": [
+        {
+          "answer": "Subtracting the x-values gives 8 minus 2 equals 6 and halving gives 3, then adding 2 gives the midpoint x-value of 5",
+          "explanation": "While this produces the correct x-value, the standard method is averaging, not subtracting and adding back."
+        },
+        {
+          "answer": "Multiplying the coordinates gives 2 times 8 equals 16 and 4 times 10 equals 40, then halving each product gives (8, 20)",
+          "explanation": "The midpoint formula adds and divides by 2, not multiplies and divides."
+        },
+        {
+          "answer": "Dividing each coordinate by 2 gives (1, 2) and (4, 5), then selecting the larger pair gives the midpoint as (4, 5)",
+          "explanation": "Dividing individual coordinates by 2 is not the midpoint formula; the sum must be divided."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains the connection between the distance formula and a right triangle?",
+      "correct": "The horizontal and vertical differences form the two shorter sides, and the distance is the hypotenuse of the right triangle",
+      "correctExplanation": "The right triangle has legs |Δx| and |Δy|; by Pythagoras, the hypotenuse is √(Δx² + Δy²).",
+      "distractors": [
+        {
+          "answer": "The distance formula calculates the area of the right triangle formed by the horizontal and vertical coordinate differences",
+          "explanation": "The formula calculates a length (hypotenuse), not an area."
+        },
+        {
+          "answer": "The two points serve as the endpoints of the hypotenuse, and the formula finds the length of the shortest side",
+          "explanation": "The formula finds the hypotenuse length, not the shortest side."
+        },
+        {
+          "answer": "The right angle is located at the midpoint of the segment, splitting the distance into two equal perpendicular parts",
+          "explanation": "The right angle is at the corner where horizontal and vertical lines meet, not at the midpoint."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly explains how to determine whether three points are collinear?",
+      "correct": "Calculate the gradient between two pairs of points; if both gradients are equal, all three points lie on one line",
+      "correctExplanation": "Equal gradients between pairs confirm that all three points share a single straight line.",
+      "distractors": [
+        {
+          "answer": "Calculate the distance between each pair of points; if all three distances are equal, the points are collinear",
+          "explanation": "Equal distances describe an equilateral triangle, not collinear points."
+        },
+        {
+          "answer": "Find the midpoint of one pair; if the third point lies at that midpoint, then all three points are collinear",
+          "explanation": "The third point need not be at the midpoint to be collinear; any point on the line qualifies."
+        },
+        {
+          "answer": "Check that all three points have positive coordinates; points in the first quadrant are always on the same line",
+          "explanation": "Quadrant location has no bearing on collinearity; collinearity depends on gradient equality."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the distance between (0, 0) and (3, 4) equals exactly 5?",
+      "correct": "Because 3 squared plus 4 squared equals 9 plus 16 equals 25, and the square root of 25 equals exactly 5",
+      "correctExplanation": "d = √(9 + 16) = √25 = 5. This is a Pythagorean triple (3, 4, 5).",
+      "distractors": [
+        {
+          "answer": "Because 3 plus 4 equals 7 and rounding down to the nearest integer gives 5 as the approximate distance value",
+          "explanation": "The formula requires squaring, not adding; 3 + 4 = 7, not 5."
+        },
+        {
+          "answer": "Because 3 times 4 equals 12 and taking the square root of 12 rounds to approximately 5 as an estimate",
+          "explanation": "The formula uses addition of squares, not multiplication of coordinates."
+        },
+        {
+          "answer": "Because the midpoint between 0 and 3 is 1.5 and between 0 and 4 is 2, and these average to approximately 5",
+          "explanation": "Midpoint values are unrelated to distance calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the gradient between (1, 5) and (3, 1) is negative?",
+      "correct": "The y-value decreases from 5 to 1 while the x-value increases from 1 to 3, producing a negative rise over positive run",
+      "correctExplanation": "m = (1−5)/(3−1) = −4/2 = −2. The decrease in y over an increase in x gives a negative gradient.",
+      "distractors": [
+        {
+          "answer": "The x-value is smaller than the y-value at the first point, and this imbalance always produces negative gradients",
+          "explanation": "The relative sizes of x and y at one point do not determine the gradient sign."
+        },
+        {
+          "answer": "Both points have positive coordinates, and gradients between positive coordinate points are always negative values",
+          "explanation": "The sign of coordinates does not determine gradient sign; the changes determine it."
+        },
+        {
+          "answer": "The distance between the points is less than 5, and short segments always have negative gradient values associated",
+          "explanation": "Segment length has no bearing on gradient sign."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the gradient between (4, 7) and (4, 12) is undefined rather than zero?",
+      "correct": "The x-coordinates are equal, making the run zero, and dividing the rise by zero is undefined in mathematics",
+      "correctExplanation": "m = (12−7)/(4−4) = 5/0, which is undefined.",
+      "distractors": [
+        {
+          "answer": "The y-coordinates differ, and differing y-values always produce undefined gradients regardless of x-coordinate values",
+          "explanation": "Differing y-values are normal; it is the equal x-values that cause the undefined gradient."
+        },
+        {
+          "answer": "The run is 5, which is an odd number, and odd-numbered runs produce undefined gradients on the Cartesian plane",
+          "explanation": "The run is 0, not 5; odd or even run values have no special effect on gradient."
+        },
+        {
+          "answer": "The gradient equals 5, because the rise is 5 and the run should be treated as 1 when the x-values are equal",
+          "explanation": "Setting run to 1 when it is actually 0 is mathematically incorrect."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the gradient between (5, 8) and (1, 8) is zero?",
+      "correct": "Both points share the same y-coordinate, so the rise is zero and the gradient equals zero divided by the run",
+      "correctExplanation": "m = (8−8)/(1−5) = 0/(−4) = 0. A horizontal segment always has zero gradient.",
+      "distractors": [
+        {
+          "answer": "Both points share the same y-coordinate, so the run is zero and the gradient is undefined for this pair of points",
+          "explanation": "It is the run that is nonzero (1−5 = −4); zero run (same x) gives undefined gradient, not zero."
+        },
+        {
+          "answer": "The x-coordinates differ by 4, so the gradient equals the difference in x-values divided by the rise, giving a value of 4",
+          "explanation": "Gradient is rise over run, not run over rise; the rise here is zero, making the gradient zero."
+        },
+        {
+          "answer": "The gradient is negative because moving from x equals 5 to x equals 1 involves travelling in the negative direction along the x-axis",
+          "explanation": "The direction of travel along the x-axis affects the sign of the run, but zero rise still produces zero gradient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the midpoint of (2, 9) and (8, 3) is (5, 6)?",
+      "correct": "Averaging the x-values gives (2 plus 8) divided by 2 equals 5, and averaging the y-values gives (9 plus 3) divided by 2 equals 6",
+      "correctExplanation": "M = ((2+8)/2, (9+3)/2) = (5, 6).",
+      "distractors": [
+        {
+          "answer": "Subtracting the x-values gives 8 minus 2 equals 6, and subtracting the y-values gives 9 minus 3 equals 6, then halving each result",
+          "explanation": "The midpoint formula uses addition and halving, not subtraction and halving; this approach does not locate the centre."
+        },
+        {
+          "answer": "Multiplying each coordinate pair and dividing by 2 gives (2 times 8) divided by 2 and (9 times 3) divided by 2 respectively",
+          "explanation": "Multiplying coordinates is not part of the midpoint formula; the formula averages by adding and dividing by 2."
+        },
+        {
+          "answer": "Adding all four coordinate values gives 2 plus 8 plus 9 plus 3 equals 22, then dividing by 4 to obtain each midpoint coordinate",
+          "explanation": "The x- and y-coordinates must be averaged separately; pooling all values produces an incorrect single number."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the distance between (0, 0) and (0, 7) equals 7?",
+      "correct": "The points share the same x-coordinate, so the horizontal difference is zero and the distance reduces to the absolute vertical difference of 7",
+      "correctExplanation": "d = √((0−0)² + (7−0)²) = √(0+49) = 7.",
+      "distractors": [
+        {
+          "answer": "The points share the same x-coordinate, so the distance equals the sum of both y-coordinates, which gives zero plus 7 equals 7",
+          "explanation": "Distance uses the difference of coordinates, not their sum; this works here by coincidence since one coordinate is zero."
+        },
+        {
+          "answer": "The distance formula simplifies to zero because both x-values are zero, and squaring zero removes any contribution from the vertical change",
+          "explanation": "Only the x-difference squares to zero; the y-difference squared (49) remains under the square root."
+        },
+        {
+          "answer": "The distance equals 49 because squaring the y-difference gives 49 and no square root is needed when both x-coordinates are zero",
+          "explanation": "The square root must always be applied in the distance formula; 49 is the squared distance, not the distance itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why reversing the order of two points does not change the gradient?",
+      "correct": "Reversing the labels negates both the rise and the run, so the ratio of rise to run remains unchanged in value",
+      "correctExplanation": "If m = (y₂−y₁)/(x₂−x₁), swapping gives (y₁−y₂)/(x₁−x₂) = (−(y₂−y₁))/(−(x₂−x₁)) = m.",
+      "distractors": [
+        {
+          "answer": "Reversing the labels negates only the rise while the run stays the same, producing a gradient with the opposite sign",
+          "explanation": "Both numerator and denominator are negated, so the negatives cancel; the gradient does not change sign."
+        },
+        {
+          "answer": "Reversing the labels has no effect because the gradient formula uses absolute values of the differences in its calculation",
+          "explanation": "The gradient formula does not use absolute values; it preserves sign to indicate direction of slope."
+        },
+        {
+          "answer": "Reversing the labels doubles the gradient because each difference is counted once in each direction from both labelled endpoints",
+          "explanation": "Swapping labels does not double any value; the negation in both rise and run cancels out exactly."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The gradient between (2, 3) and (6, 11) is calculated as (11 minus 3) divided by (6 minus 2), which equals {{blank:1}} divided by {{blank:2}}, giving 2.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "11 − 3 = 8 is the rise.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "Adds 11 + 3 = 14 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Confuses the rise with the run; 6 − 2 = 4 is the run.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "6 − 2 = 4 is the run.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "Confuses the run with the rise; 11 − 3 = 8 is the rise.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Uses the x-coordinate directly instead of the difference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The distance between (3, 1) and (7, 4) involves squaring the differences: (7 minus 3) squared equals {{blank:1}} and (4 minus 1) squared equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "16",
+          "correctExplanation": "(7 − 3)² = 4² = 16.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Forgets to square the difference; 4 is the difference, not its square.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "49",
+              "explanation": "Squares the coordinate 7 instead of the difference 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "(4 − 1)² = 3² = 9.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Forgets to square the difference; 3 is the difference, not its square.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "16",
+              "explanation": "Squares the coordinate 4 instead of the difference 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The midpoint of (negative 2, 6) and (4, negative 2) has x-coordinate (negative 2 plus 4) divided by 2 equals {{blank:1}} and y-coordinate (6 plus negative 2) divided by 2 equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "(−2 + 4)/2 = 2/2 = 1.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "May add absolute values |−2| + 4 = 6, then halve to get 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 3",
+              "explanation": "May subtract 4 from −2 and halve: (−6)/2 = −3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "(6 + (−2))/2 = 4/2 = 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Forgets to divide by 2 after adding the y-coordinates.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "May subtract 6 from −2 and not halve.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "To check collinearity of three points, the gradient between the first pair must {{blank:1}} the gradient between the second pair, confirming all points lie on a single {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equal",
+          "correctExplanation": "Equal gradients between pairs confirm the points share one straight line.",
+          "distractors": [
+            {
+              "answer": "exceed",
+              "explanation": "Collinearity requires equal gradients, not one being larger than the other.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negate",
+              "explanation": "Negated gradients indicate a change in direction, not collinearity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "line",
+          "correctExplanation": "Collinear points all lie on the same straight line.",
+          "distractors": [
+            {
+              "answer": "circle",
+              "explanation": "Points on a circle are concyclic, not collinear.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "triangle",
+              "explanation": "Three collinear points cannot form a triangle; they lie on a line.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The distance between (0, 0) and (5, 0) simplifies to {{blank:1}} because the points share the same {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "d = |5 − 0| = 5.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "Squares the difference instead of using the absolute value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Confuses having the same y-coordinate with having zero distance.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "y-coordinate",
+          "correctExplanation": "Both points have y = 0, so only the x-difference determines the distance.",
+          "distractors": [
+            {
+              "answer": "x-coordinate",
+              "explanation": "The x-coordinates are 0 and 5, which are different.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "gradient",
+              "explanation": "Sharing a gradient is irrelevant here; it is the shared y-coordinate that simplifies the formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The gradient between (1, 5) and (3, 1) is (1 minus 5) divided by (3 minus 1), which equals negative 4 divided by 2, giving {{blank:1}}. This negative value indicates the segment slopes {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 2",
+          "correctExplanation": "−4/2 = −2.",
+          "distractors": [
+            {
+              "answer": "positive 2",
+              "explanation": "Ignores the negative sign; −4 ÷ 2 = −2, not +2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "Forgets to divide by the run; −4 is only the rise.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "downward",
+          "correctExplanation": "A negative gradient means the segment falls from left to right.",
+          "distractors": [
+            {
+              "answer": "upward",
+              "explanation": "Upward corresponds to a positive gradient, not negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "horizontally",
+              "explanation": "Horizontal corresponds to gradient zero, not a non-zero gradient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Sam calculates the midpoint of (2, 8) and (6, 4) as (8, 12) by adding the coordinates without dividing.",
+      "correct": "False",
+      "correctExplanation": "The correct midpoint is ((2+6)/2, (8+4)/2) = (4, 6). Sam forgot to divide by 2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The midpoint formula requires dividing the sums by 2; (8, 12) is twice the correct midpoint."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Jade finds the distance between (1, 2) and (4, 6) is 5.",
+      "correct": "True",
+      "correctExplanation": "d = √((4−1)² + (6−2)²) = √(9+16) = √25 = 5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "May miscalculate; 3² + 4² = 9 + 16 = 25, and √25 = 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Amir calculates the gradient between (1, 3) and (5, 11). Which one of the following is the correct gradient?",
+      "correct": "Gradient equals 2, because the rise is 11 minus 3 equals 8 and the run is 5 minus 1 equals 4",
+      "correctExplanation": "m = 8/4 = 2.",
+      "distractors": [
+        {
+          "answer": "Gradient equals 8, because the rise is 11 minus 3 equals 8 and no division by the run is required",
+          "explanation": "The rise must be divided by the run to obtain the gradient."
+        },
+        {
+          "answer": "Gradient equals 4, because the run is 5 minus 1 equals 4 and the run alone determines the gradient value",
+          "explanation": "The run is the denominator; the gradient is the ratio of rise to run."
+        },
+        {
+          "answer": "Gradient equals one-half, because the run is 4 and the rise is 8, giving run divided by rise as the ratio",
+          "explanation": "Gradient is rise over run, not run over rise."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Lila finds the midpoint of (negative 4, 2) and (6, negative 8). Which one of the following is correct?",
+      "correct": "The midpoint is (1, negative 3), because averaging gives (negative 4 plus 6) divided by 2 and (2 plus negative 8) divided by 2",
+      "correctExplanation": "M = (2/2, −6/2) = (1, −3).",
+      "distractors": [
+        {
+          "answer": "The midpoint is (5, negative 5), because subtracting gives (6 minus negative 4) divided by 2 and (negative 8 minus 2) divided by 2",
+          "explanation": "The midpoint uses addition of coordinates, not subtraction."
+        },
+        {
+          "answer": "The midpoint is (2, negative 6), because the sum of x-values is 2 and the sum of y-values is negative 6 without dividing",
+          "explanation": "The sums must be divided by 2 to find the midpoint."
+        },
+        {
+          "answer": "The midpoint is (negative 2, 4), because subtracting the larger from the smaller coordinate gives each midpoint value",
+          "explanation": "Subtracting the larger from the smaller does not produce the midpoint."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Marcus calculates the distance between (2, 1) and (5, 5). Which one of the following is the correct distance?",
+      "correct": "Distance equals 5, because (5 minus 2) squared plus (5 minus 1) squared equals 9 plus 16 equals 25 and the square root is 5",
+      "correctExplanation": "d = √(9+16) = √25 = 5.",
+      "distractors": [
+        {
+          "answer": "Distance equals 25, because (5 minus 2) squared plus (5 minus 1) squared equals 9 plus 16 and no square root is needed",
+          "explanation": "The square root must be applied; 25 is the squared distance."
+        },
+        {
+          "answer": "Distance equals 7, because the differences are 3 and 4, and adding them directly gives 7 as the total distance value",
+          "explanation": "Adding differences gives the taxicab distance, not the Euclidean distance."
+        },
+        {
+          "answer": "Distance equals the square root of 7, because 3 plus 4 equals 7 and only then is the square root taken of the resulting sum value",
+          "explanation": "The differences must be squared before adding; √7 is incorrect."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Priya checks whether (1, 2), (3, 6), and (5, 10) are collinear. Which one of the following gives the correct conclusion?",
+      "correct": "The points are collinear, because the gradient from (1, 2) to (3, 6) is 2 and from (3, 6) to (5, 10) is also 2",
+      "correctExplanation": "Both gradients equal 2, confirming all three points lie on one line.",
+      "distractors": [
+        {
+          "answer": "The points are not collinear, because each pair produces a different distance value between the consecutive endpoints",
+          "explanation": "Different distances between pairs do not rule out collinearity; equal gradients confirm it."
+        },
+        {
+          "answer": "The points are collinear, because the distances from (1, 2) to (3, 6) and from (3, 6) to (5, 10) are both equal",
+          "explanation": "Equal distances indicate equal spacing but do not alone confirm collinearity; gradient equality does."
+        },
+        {
+          "answer": "The points are not collinear, because the midpoint of (1, 2) and (5, 10) is (3, 6) which means they form a triangle",
+          "explanation": "If the midpoint lies on the segment, the three points are collinear, not forming a triangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Kofi needs to find the gradient of the line segment from (negative 3, 4) to (1, negative 2). Which one of the following is correct?",
+      "correct": "Gradient equals negative three-halves, because the rise is negative 6 and the run is 4, giving negative 6 divided by 4",
+      "correctExplanation": "m = (−2−4)/(1−(−3)) = −6/4 = −3/2.",
+      "distractors": [
+        {
+          "answer": "Gradient equals three-halves, because the rise is 6 and the run is 4, and the gradient is always a positive ratio",
+          "explanation": "The rise is −6, not 6; the gradient can be negative."
+        },
+        {
+          "answer": "Gradient equals negative two-thirds, because the rise is negative 2 and the run is 3, using only the coordinates as values",
+          "explanation": "The gradient uses differences, not the raw coordinate values."
+        },
+        {
+          "answer": "Gradient equals negative 6, because the rise is negative 6 and the run is 1, taken from the x-coordinate of the second point",
+          "explanation": "The run is 1 − (−3) = 4, not 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Rosa finds the midpoint of (0, 0) and (10, 6). Which one of the following is the correct midpoint?",
+      "correct": "(5, 3), because the averages of the coordinates are 10 divided by 2 equals 5 and 6 divided by 2 equals 3",
+      "correctExplanation": "M = ((0+10)/2, (0+6)/2) = (5, 3).",
+      "distractors": [
+        {
+          "answer": "(10, 6), because the second point is already the endpoint and the midpoint coincides with the second endpoint",
+          "explanation": "The midpoint lies between the endpoints, not at either one."
+        },
+        {
+          "answer": "(5, 6), because only the x-coordinate is halved while the y-coordinate remains at its original endpoint value",
+          "explanation": "Both coordinates must be averaged; y should also be halved to 3."
+        },
+        {
+          "answer": "(10, 3), because only the y-coordinate is halved while the x-coordinate stays at its endpoint value of 10",
+          "explanation": "Both coordinates must be averaged; x should also be halved to 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Anika calculates the distance between (negative 1, 3) and (2, 7). Which one of the following is the correct distance?",
+      "correct": "Distance equals 5, because the squared differences are 9 and 16, summing to 25, and the square root of 25 is 5",
+      "correctExplanation": "d = √((2−(−1))² + (7−3)²) = √(9+16) = √25 = 5.",
+      "distractors": [
+        {
+          "answer": "Distance equals the square root of 10, because the differences are 3 and 1, squaring to 9 and 1, summing to 10",
+          "explanation": "The y-difference is 7 − 3 = 4, not 1."
+        },
+        {
+          "answer": "Distance equals 7, because adding the absolute differences 3 and 4 gives 7 as the total path length between points",
+          "explanation": "This calculates the taxicab distance; the Euclidean formula requires squaring and square-rooting."
+        },
+        {
+          "answer": "Distance equals the square root of 58, because the differences are 3 and 7, squaring to 9 and 49, summing to 58",
+          "explanation": "The differences are (2−(−1)) = 3 and (7−3) = 4, not 3 and 7."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Will determines the gradient between (3, negative 1) and (7, 7). Which one of the following is the correct gradient?",
+      "correct": "Gradient equals 2, because the rise is 7 minus negative 1 equals 8 and the run is 7 minus 3 equals 4",
+      "correctExplanation": "m = (7−(−1))/(7−3) = 8/4 = 2.",
+      "distractors": [
+        {
+          "answer": "Gradient equals negative 2, because the first y-value is negative 1 and negative values always produce negative gradients",
+          "explanation": "A negative y-value does not determine the gradient sign; the change in y does."
+        },
+        {
+          "answer": "Gradient equals 6, because the rise is 7 minus 1 equals 6 and the run is treated as exactly 1 for simplification purposes",
+          "explanation": "The rise is 7 − (−1) = 8, not 6; and the run is 4, not 1."
+        },
+        {
+          "answer": "Gradient equals one-half, because the run 4 is divided by the rise 8 instead of the other way around",
+          "explanation": "Gradient is rise over run, not run over rise."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Linh finds the midpoint of (negative 6, 3) and (2, negative 5). Which one of the following is correct?",
+      "correct": "(negative 2, negative 1), because the averages are (negative 6 plus 2) divided by 2 and (3 plus negative 5) divided by 2",
+      "correctExplanation": "M = (−4/2, −2/2) = (−2, −1).",
+      "distractors": [
+        {
+          "answer": "(4, 4), because the differences are 2 minus negative 6 equals 8 and negative 5 minus 3 equals negative 8, halved to (4, 4)",
+          "explanation": "The midpoint uses addition of coordinates, not the difference."
+        },
+        {
+          "answer": "(negative 4, negative 2), because adding gives negative 4 and negative 2, and no further division is needed",
+          "explanation": "The sums must be divided by 2 to find the midpoint."
+        },
+        {
+          "answer": "(negative 3, 1.5), because averaging the absolute values of x gives 3 and averaging the absolute values of y gives 1.5",
+          "explanation": "Averaging absolute values ignores signs; the actual signed values must be used."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Jade checks whether (0, 1), (2, 5), and (4, 9) are collinear. Which one of the following is correct?",
+      "correct": "The points are collinear, because both gradients equal 2, confirming all three lie on one line",
+      "correctExplanation": "(5−1)/(2−0) = 2 and (9−5)/(4−2) = 2. Equal gradients confirm collinearity.",
+      "distractors": [
+        {
+          "answer": "The points are not collinear, because the three distances between consecutive pairs differ, which rules out alignment along one line",
+          "explanation": "Equal spacing is not required for collinearity; equal gradients are sufficient."
+        },
+        {
+          "answer": "The points are not collinear, because the first x-coordinate is zero, preventing collinearity with points that have positive x-values",
+          "explanation": "Having a zero coordinate does not prevent collinearity."
+        },
+        {
+          "answer": "The points are collinear only because all three y-coordinates are odd numbers, and odd-valued coordinates always produce collinear points",
+          "explanation": "The parity of coordinates has no bearing on collinearity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Sam calculates the distance between (negative 2, 3) and (4, negative 5). Which one of the following is the correct distance?",
+      "correct": "Distance equals 10, because (4 minus negative 2) squared is 36 and (negative 5 minus 3) squared is 64, summing to 100",
+      "correctExplanation": "d = √(36 + 64) = √100 = 10.",
+      "distractors": [
+        {
+          "answer": "Distance equals 100, because the squared differences are 36 and 64, and the sum is the distance without square root",
+          "explanation": "100 is the squared distance; the square root must be applied."
+        },
+        {
+          "answer": "Distance equals 14, because the absolute differences are 6 and 8, and adding these gives 14 as the total path distance between the points",
+          "explanation": "Adding absolute differences gives taxicab distance, not Euclidean distance."
+        },
+        {
+          "answer": "Distance equals the square root of 52, because the differences are 6 and 4, squaring to 36 and 16, totalling 52",
+          "explanation": "The y-difference is |−5 − 3| = 8, not 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Mia needs the midpoint of (1, 9) and (7, 3) for a construction problem. Which one of the following is correct?",
+      "correct": "(4, 6), because (1 plus 7) divided by 2 equals 4 and (9 plus 3) divided by 2 equals 6 using the formula",
+      "correctExplanation": "M = (8/2, 12/2) = (4, 6).",
+      "distractors": [
+        {
+          "answer": "(8, 12), because adding 1 plus 7 gives 8 and adding 9 plus 3 gives 12 and these sums are the midpoint values",
+          "explanation": "The sums must be divided by 2; (8, 12) is not the midpoint."
+        },
+        {
+          "answer": "(3, 3), because subtracting 1 from 7 gives 6 and 3 from 9 gives 6, then halving both gives 3 and 3 as midpoint",
+          "explanation": "The midpoint uses addition, not subtraction of coordinates."
+        },
+        {
+          "answer": "(3.5, 4.5), because the midpoint lies one-quarter of the way from (1, 9) to (7, 3) along the segment line",
+          "explanation": "The midpoint is exactly halfway, not one-quarter; (3.5, 4.5) is incorrect."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Amir calculates the gradient between (1, 3) and (5, 11) as rise divided by run, which equals {{blank:1}} divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "Rise = 11 − 3 = 8.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Confuses rise with run; 4 is the run (5 − 1).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "14",
+              "explanation": "Adds 11 + 3 = 14 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "Run = 5 − 1 = 4.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "Confuses run with rise; 8 is the rise (11 − 3).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Adds 5 + 1 = 6 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Lila averages the coordinates of (negative 4, 2) and (6, negative 8) to find the midpoint x-value as {{blank:1}} and y-value as {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "(−4 + 6)/2 = 2/2 = 1.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "May subtract signs incorrectly: (4 + 6)/2 = 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 4",
+              "explanation": "Uses only the first x-coordinate without averaging.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 3",
+          "correctExplanation": "(2 + (−8))/2 = −6/2 = −3.",
+          "distractors": [
+            {
+              "answer": "negative 6",
+              "explanation": "Forgets to divide the sum by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "May take absolute values: (2 + 8)/2 = 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Marcus finds the distance between (2, 1) and (5, 5) by computing the square root of {{blank:1}} plus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "9",
+          "correctExplanation": "(5 − 2)² = 3² = 9.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Forgets to square the difference.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "Squares the coordinate 5 instead of the difference 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "16",
+          "correctExplanation": "(5 − 1)² = 4² = 16.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Forgets to square the difference.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "Squares the coordinate 5 instead of the difference 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Priya confirms collinearity of (1, 2), (3, 6), (5, 10) because both pairwise gradients equal {{blank:1}}, meaning all three points lie on one {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "(6−2)/(3−1) = 4/2 = 2 and (10−6)/(5−3) = 4/2 = 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Uses only the rise without dividing by the run.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "May average the x-coordinates instead of computing the gradient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "line",
+          "correctExplanation": "Equal gradients confirm all three points are collinear — on one straight line.",
+          "distractors": [
+            {
+              "answer": "circle",
+              "explanation": "Collinear points lie on a line, not a circle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "triangle",
+              "explanation": "Collinear points cannot form a triangle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Kofi finds the gradient from (negative 3, 4) to (1, negative 2) as (negative 2 minus 4) divided by (1 minus negative 3), giving {{blank:1}} divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 6",
+          "correctExplanation": "−2 − 4 = −6.",
+          "distractors": [
+            {
+              "answer": "negative 2",
+              "explanation": "Uses only the second y-coordinate without subtracting the first.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "positive 6",
+              "explanation": "Ignores the negative sign: |−2 − 4| = 6, but the sign matters.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "1 − (−3) = 1 + 3 = 4.",
+          "distractors": [
+            {
+              "answer": "negative 2",
+              "explanation": "Subtracts 3 from 1 without handling the double negative: 1 − 3 = −2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Uses only the second x-coordinate without subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Rosa finds the midpoint of (0, 0) and (10, 6) by halving each sum: x equals {{blank:1}} and y equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "(0 + 10)/2 = 10/2 = 5.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Forgets to divide by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Uses only the first x-coordinate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "(0 + 6)/2 = 6/2 = 3.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Forgets to divide by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Uses only the first y-coordinate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Anika finds the distance between (negative 1, 3) and (2, 7) by computing the square root of ({{blank:1}} squared plus {{blank:2}} squared).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "2 − (−1) = 3.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Subtracts 2 − 1 = 1 without handling the negative sign.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 3",
+              "explanation": "Reverses the subtraction order: −1 − 2 = −3. The sign does not matter for squaring but indicates confusion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "7 − 3 = 4.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Uses the y-coordinate directly instead of the difference.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "Adds 7 + 3 = 10 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Will finds the gradient between (3, negative 1) and (7, 7) as {{blank:1}} divided by {{blank:2}}, giving 2.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "7 − (−1) = 8.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Subtracts 7 − 1 = 6 without handling the negative sign on −1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 8",
+              "explanation": "Reverses the order: −1 − 7 = −8. While this changes the sign, the final gradient should be positive 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "7 − 3 = 4.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Adds 7 + 3 = 10 instead of subtracting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "Uses the x-coordinate directly instead of the difference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Linh finds the midpoint of (negative 6, 3) and (2, negative 5) with x equals (negative 6 plus 2) divided by 2 equals {{blank:1}} and y equals (3 plus negative 5) divided by 2 equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative 2",
+          "correctExplanation": "(−6 + 2)/2 = −4/2 = −2.",
+          "distractors": [
+            {
+              "answer": "negative 4",
+              "explanation": "Forgets to divide the sum by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Takes absolute values: (6 + 2)/2 = 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative 1",
+          "correctExplanation": "(3 + (−5))/2 = −2/2 = −1.",
+          "distractors": [
+            {
+              "answer": "negative 2",
+              "explanation": "Forgets to divide the sum by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Takes absolute values: (3 + 5)/2 = 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Jade checks collinearity of (0, 1), (2, 5), (4, 9): gradient from first to second is {{blank:1}} and from second to third is {{blank:2}}, confirming collinearity.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "(5 − 1)/(2 − 0) = 4/2 = 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Uses the rise only without dividing by the run.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Uses the y-coordinate of the second point instead of the gradient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "(9 − 5)/(4 − 2) = 4/2 = 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Uses the rise only without dividing by the run.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "May average the y-values instead of computing the gradient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Sam finds the distance between (negative 2, 3) and (4, negative 5) using the differences {{blank:1}} and {{blank:2}}, which when squared and summed give 100.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "4 − (−2) = 6.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Subtracts 4 − 2 = 2 without handling the negative sign.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative 6",
+              "explanation": "Reverses the order: −2 − 4 = −6, but the absolute difference is 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "|−5 − 3| = 8 (or equivalently, 3 − (−5) = 8).",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Subtracts |−5 − (−3)| = 2, using the wrong sign for the first y-value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Uses only the y-coordinate of the second point.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Mia finds the midpoint of (1, 9) and (7, 3) as ({{blank:1}}, {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "(1 + 7)/2 = 8/2 = 4.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "Forgets to divide by 2 after adding.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Subtracts 7 − 1 = 6 then halves: 6/2 = 3, using difference instead of sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "(9 + 3)/2 = 12/2 = 6.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "Forgets to divide by 2 after adding.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Subtracts 9 − 3 = 6 then halves: 6/2 = 3, using difference instead of sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that the gradient between (2, 3) and (6, 3) is undefined because the y-values are the same. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect; equal y-values produce a rise of zero, giving gradient zero, not undefined",
+      "correctExplanation": "m = (3−3)/(6−2) = 0/4 = 0. The gradient is defined and equals zero.",
+      "distractors": [
+        {
+          "answer": "The claim is correct; when y-values are equal the gradient formula produces zero over zero which is undefined",
+          "explanation": "The denominator is 6 − 2 = 4, not zero; only the numerator is zero."
+        },
+        {
+          "answer": "The claim is correct; horizontal segments have undefined gradient just like vertical segments on the Cartesian plane",
+          "explanation": "Horizontal segments have gradient zero; only vertical segments have undefined gradient."
+        },
+        {
+          "answer": "The claim is incorrect; the gradient is 4 because the run between the x-values 2 and 6 is the gradient",
+          "explanation": "The gradient is rise/run = 0/4 = 0, not the run itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student calculates the distance from (1, 2) to (4, 6) as 3 plus 4 equals 7 by adding the coordinate differences. Which one of the following correctly identifies the error?",
+      "correct": "The differences must be squared before adding; the correct calculation gives the square root of 9 plus 16 equals 5",
+      "correctExplanation": "d = √(3² + 4²) = √25 = 5, not 3 + 4 = 7.",
+      "distractors": [
+        {
+          "answer": "The student is correct; adding the absolute differences gives the true Euclidean distance between two points",
+          "explanation": "Adding absolute differences gives taxicab distance, not Euclidean distance."
+        },
+        {
+          "answer": "The differences should be multiplied instead of added; 3 times 4 equals 12, which is the correct distance",
+          "explanation": "The formula squares and adds, not multiplies; 12 is not the distance."
+        },
+        {
+          "answer": "The student should subtract the differences; 4 minus 3 equals 1, which gives the correct distance between them",
+          "explanation": "Subtracting the differences is not part of the distance formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Two students find the gradient between (negative 2, 5) and (4, negative 1). Student A gets negative 1 and Student B gets positive 1. Which one of the following is correct?",
+      "correct": "Student A is correct; the rise is negative 6 and the run is 6, giving negative 6 divided by 6 equals negative 1",
+      "correctExplanation": "m = (−1−5)/(4−(−2)) = −6/6 = −1.",
+      "distractors": [
+        {
+          "answer": "Student B is correct; the run is negative 6 and the rise is 6, giving 6 divided by negative 6 equals positive 1",
+          "explanation": "The run is 4 − (−2) = 6, positive. The rise is −1 − 5 = −6, negative."
+        },
+        {
+          "answer": "Both are correct; the gradient can be positive or negative depending on which point is labelled first or second",
+          "explanation": "Swapping points does not change the gradient; both numerator and denominator change sign."
+        },
+        {
+          "answer": "Neither is correct; the gradient is negative 3 because the rise is negative 6 and the run is 2 from the x-values",
+          "explanation": "The run is 4 − (−2) = 6, not 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student finds the midpoint of (3, 7) and (9, 1) as (3, 3) by subtracting coordinates. Which one of the following correctly identifies the error?",
+      "correct": "The midpoint formula requires adding coordinates then dividing by 2; the correct midpoint is (6, 4)",
+      "correctExplanation": "M = ((3+9)/2, (7+1)/2) = (6, 4). The student subtracted instead of averaging.",
+      "distractors": [
+        {
+          "answer": "The student is correct; subtracting coordinates and halving is a valid alternative method for finding midpoints",
+          "explanation": "Subtracting coordinates gives half the change, not the midpoint."
+        },
+        {
+          "answer": "The error is in the division; the student should have subtracted and then multiplied by 2 to find (12, 12)",
+          "explanation": "Multiplying differences by 2 moves further from the correct midpoint."
+        },
+        {
+          "answer": "The midpoint formula does not apply here because the segment crosses from the first quadrant to another quadrant",
+          "explanation": "The midpoint formula applies to all segments regardless of which quadrants the endpoints are in."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Compare two methods for checking if (2, 5) lies on the line through (0, 1) and (4, 9). Method A uses gradient comparison. Method B uses the distance formula. Which one is more appropriate?",
+      "correct": "Method A is more appropriate; equal gradients from (0, 1) to (2, 5) and (0, 1) to (4, 9) confirm collinearity directly",
+      "correctExplanation": "Gradient (0,1)→(2,5) = 4/2 = 2. Gradient (0,1)→(4,9) = 8/4 = 2. Equal gradients prove collinearity.",
+      "distractors": [
+        {
+          "answer": "Method B is more appropriate; equal distances from (2, 5) to both endpoints confirm the point lies on the line",
+          "explanation": "Equal distances from (2, 5) to endpoints means it is on the perpendicular bisector, not necessarily the line."
+        },
+        {
+          "answer": "Both methods are equally appropriate; they always produce the same conclusion for any set of three given points",
+          "explanation": "The distance method does not directly test collinearity; gradient comparison is the correct approach."
+        },
+        {
+          "answer": "Neither method works; the only valid approach is to substitute into the equation of the line and verify directly",
+          "explanation": "Gradient comparison is a valid method that does not require finding the equation first."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student claims that the distance from A to B is always different from the distance from B to A. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect; squaring eliminates sign differences, so the distance is the same regardless of point order",
+      "correctExplanation": "Reversing the order changes signs of differences, but squaring makes both versions identical.",
+      "distractors": [
+        {
+          "answer": "The claim is correct; the direction of travel changes the sign of the distance, making A to B different from B to A",
+          "explanation": "Distance is a magnitude with no sign; it does not depend on direction."
+        },
+        {
+          "answer": "The claim is correct; the formula uses subtraction, and reversing the order always produces a different numerical answer",
+          "explanation": "Squaring the reversed differences produces the same result."
+        },
+        {
+          "answer": "The claim is incorrect only when the points share a coordinate; otherwise the distance does change with order",
+          "explanation": "Distance is always independent of order, regardless of whether coordinates are shared."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student argues that if the gradient between points A and B equals the gradient between B and C, then C must lie between A and B. Which one of the following correctly evaluates this argument?",
+      "correct": "The argument is flawed; equal gradients confirm collinearity, but C could lie beyond B rather than between A and B",
+      "correctExplanation": "Collinearity means the three points share a line, but C can be on either side of B or A.",
+      "distractors": [
+        {
+          "answer": "The argument is correct; equal gradients between consecutive pairs guarantee that the middle point lies between both endpoints",
+          "explanation": "C is not necessarily the middle point; it could extend the line beyond B."
+        },
+        {
+          "answer": "The argument is correct; the midpoint of A and B must always coincide with C whenever the gradients are equal",
+          "explanation": "C need not be the midpoint; any collinear point satisfies equal gradients."
+        },
+        {
+          "answer": "The argument is flawed; equal gradients do not prove any geometric relationship between the three points at all",
+          "explanation": "Equal gradients do prove collinearity; the flaw is in the claim about position."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student calculates the midpoint of (1, 8) and (5, 2) as (2, 3) by halving each coordinate separately instead of averaging. Which one of the following identifies the error?",
+      "correct": "The student halved individual coordinates instead of adding them first; the correct midpoint is (3, 5)",
+      "correctExplanation": "M = ((1+5)/2, (8+2)/2) = (3, 5). Halving individual coordinates is not the midpoint formula.",
+      "distractors": [
+        {
+          "answer": "The student is correct; halving each coordinate separately is a valid shortcut for finding the midpoint efficiently",
+          "explanation": "Halving individual coordinates gives half the endpoint, not the midpoint between two endpoints."
+        },
+        {
+          "answer": "The error is that both coordinates should be doubled rather than halved, giving the correct midpoint as (2, 16)",
+          "explanation": "Doubling coordinates moves away from the correct midpoint."
+        },
+        {
+          "answer": "The formula requires subtracting and halving: (5 minus 1) divided by 2 and (8 minus 2) divided by 2, giving (2, 3)",
+          "explanation": "This gives half the differences, not the midpoint. The midpoint adds then halves."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student states that the gradient between (2, 4) and (2, 10) is 6 because the rise is 6 and the run can be treated as 1. Which one of the following is correct?",
+      "correct": "The student is incorrect; the run is zero because both x-values equal 2, making the gradient undefined rather than 6",
+      "correctExplanation": "m = (10−4)/(2−2) = 6/0, which is undefined.",
+      "distractors": [
+        {
+          "answer": "The student is correct; when the run is zero it is conventional to replace it with 1 to avoid an undefined result",
+          "explanation": "There is no such convention; division by zero remains undefined in mathematics."
+        },
+        {
+          "answer": "The student is incorrect; the gradient should be zero because the run is zero and any number divided by zero is zero",
+          "explanation": "Division by zero is undefined, not zero."
+        },
+        {
+          "answer": "The student is incorrect; the gradient is 3 because the rise 6 must be divided by the shared x-coordinate 2",
+          "explanation": "The denominator is the difference of x-values (which is 0), not the shared x-value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student is asked whether the distance from (0, 0) to (6, 8) equals 6 plus 8 equals 14. Which one of the following correctly evaluates this?",
+      "correct": "The student is incorrect; the Euclidean distance requires squaring, summing, and square-rooting, giving the square root of 100 equals 10",
+      "correctExplanation": "d = √(36 + 64) = √100 = 10, not 6 + 8 = 14.",
+      "distractors": [
+        {
+          "answer": "The student is correct; the distance equals the sum of the absolute coordinate differences along each axis direction",
+          "explanation": "This describes taxicab distance, not Euclidean distance."
+        },
+        {
+          "answer": "The student is correct; the distance formula simplifies to addition when one endpoint is at the origin of the plane",
+          "explanation": "The formula does not simplify to addition at the origin; squaring is still required."
+        },
+        {
+          "answer": "The student is incorrect; the distance is the square root of 14, because 6 plus 8 equals 14 inside the square root",
+          "explanation": "The differences must be squared before adding; √14 is not the correct distance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A quadrilateral has vertices A(0, 0), B(4, 2), C(6, 6), D(2, 4). A student uses gradients to check if opposite sides are parallel. Which one of the following correctly completes this analysis?",
+      "correct": "Gradient of AB equals gradient of DC equals one-half, and gradient of BC equals gradient of AD equals 2, confirming a parallelogram",
+      "correctExplanation": "AB: 2/4=1/2, DC: (6−4)/(6−2)=1/2, BC: (6−2)/(6−4)=2, AD: 4/2=2. Opposite sides parallel.",
+      "distractors": [
+        {
+          "answer": "All four sides have equal gradient of 1, making the shape a square rather than a general parallelogram figure",
+          "explanation": "The gradients differ between adjacent sides; the shape is a parallelogram, not a square."
+        },
+        {
+          "answer": "Only one pair of opposite sides is parallel, making the quadrilateral a trapezium rather than a parallelogram shape",
+          "explanation": "Both pairs of opposite sides have equal gradients, confirming a full parallelogram."
+        },
+        {
+          "answer": "No sides are parallel because all four gradients are different values, so the shape is an irregular quadrilateral",
+          "explanation": "Opposite sides share gradients: AB and DC both have gradient 1/2; BC and AD both have gradient 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student argues that the midpoint of a segment always lies in the same quadrant as both endpoints. Which one of the following correctly evaluates this argument?",
+      "correct": "The argument is incorrect; if endpoints are in different quadrants, the midpoint may lie in a third quadrant or on an axis",
+      "correctExplanation": "For example, (−4, 3) and (6, −1) have midpoint (1, 1), which is in quadrant I while endpoints are in quadrants II and IV.",
+      "distractors": [
+        {
+          "answer": "The argument is correct; averaging coordinates always produces a point in the same quadrant as the larger endpoint",
+          "explanation": "The midpoint can be in a different quadrant from both endpoints."
+        },
+        {
+          "answer": "The argument is correct; the midpoint inherits the quadrant of the endpoint with the larger absolute coordinate values",
+          "explanation": "No such inheritance rule exists; the midpoint is simply the average."
+        },
+        {
+          "answer": "The argument is incorrect only when the endpoints lie on an axis; otherwise the midpoint shares a quadrant with both",
+          "explanation": "The midpoint can differ from both endpoints' quadrants even when neither lies on an axis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student notices that the distance from (0, 0) to (3, 4) equals 5 and states this forms a Pythagorean triple. Which one of the following best evaluates this observation?",
+      "correct": "The observation is correct; 3, 4, 5 satisfy a squared plus b squared equals c squared, and the distance formula reflects this directly",
+      "correctExplanation": "3² + 4² = 9 + 16 = 25 = 5². The distance formula is a direct application of Pythagoras' theorem.",
+      "distractors": [
+        {
+          "answer": "The observation is incorrect; Pythagorean triples apply only to triangles drawn on paper, not to coordinate geometry calculations",
+          "explanation": "Coordinate geometry applies Pythagoras' theorem; the connection is fundamental."
+        },
+        {
+          "answer": "The observation is incorrect; the values 3, 4, 5 are consecutive integers and that coincidence has no mathematical significance",
+          "explanation": "3, 4, 5 satisfy a² + b² = c², which is the defining property of a Pythagorean triple."
+        },
+        {
+          "answer": "The observation is correct only by coincidence; most distance calculations do not relate to Pythagorean triples at all",
+          "explanation": "Every distance calculation uses Pythagoras' theorem; integer triples are special cases but the relationship is always present."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student claims that if the distance from A to B equals the distance from B to C, then B is the midpoint of AC. Which one of the following correctly evaluates this claim?",
+      "correct": "The claim is incomplete; B must also be collinear with A and C for it to be the midpoint of the segment AC",
+      "correctExplanation": "Equal distances alone make B equidistant but it could be off the line AC. Collinearity is also required.",
+      "distractors": [
+        {
+          "answer": "The claim is completely correct; equal distances from B to both endpoints is sufficient to prove B is the midpoint",
+          "explanation": "B could be equidistant from A and C without lying on segment AC."
+        },
+        {
+          "answer": "The claim is completely incorrect; equal distances have no relationship to midpoints in coordinate geometry at all",
+          "explanation": "Equal distances plus collinearity do define the midpoint; the claim is partially correct."
+        },
+        {
+          "answer": "The claim is correct only when A, B, and C all have positive coordinates in the first quadrant of the plane",
+          "explanation": "Quadrant location is irrelevant; the claim's incompleteness is about collinearity, not quadrants."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A horizontal segment has equal {{blank:1}} values for both endpoints, giving a rise of zero and therefore a gradient of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "y",
+          "correctExplanation": "Equal y-values mean no vertical change (rise = 0).",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "Equal x-values produce a vertical segment with undefined gradient, not a horizontal one.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "gradient",
+              "explanation": "Gradient is a result, not a coordinate value; the equal values are the y-coordinates.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "0 divided by any non-zero run equals 0.",
+          "distractors": [
+            {
+              "answer": "undefined",
+              "explanation": "Undefined gradient applies to vertical segments, not horizontal ones.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "one",
+              "explanation": "A gradient of one indicates a 45° line, not a horizontal one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Adding differences instead of squaring them calculates {{blank:1}} distance rather than {{blank:2}} distance.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "taxicab",
+          "correctExplanation": "Taxicab (Manhattan) distance sums absolute differences without squaring.",
+          "distractors": [
+            {
+              "answer": "Euclidean",
+              "explanation": "Euclidean distance requires squaring, summing, and square-rooting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "angular",
+              "explanation": "Angular distance measures angles, not path lengths between points.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "Euclidean",
+          "correctExplanation": "Euclidean distance uses the Pythagorean formula with squaring.",
+          "distractors": [
+            {
+              "answer": "taxicab",
+              "explanation": "Taxicab distance is the simpler sum-of-differences measure.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "midpoint",
+              "explanation": "Midpoint is a location, not a type of distance.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "When checking collinearity by gradients, the student computes m between two pairs; if the values are {{blank:1}}, the points lie on a single {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equal",
+          "correctExplanation": "Equal gradients between pairs confirm the points share one line.",
+          "distractors": [
+            {
+              "answer": "opposite",
+              "explanation": "Opposite gradients indicate different slopes, not collinearity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "reciprocal",
+              "explanation": "Reciprocal gradients relate to perpendicular lines, not collinear points.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "line",
+          "correctExplanation": "Collinear points lie on the same straight line.",
+          "distractors": [
+            {
+              "answer": "circle",
+              "explanation": "Points on a circle are concyclic, not collinear.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "plane",
+              "explanation": "All points on the Cartesian plane are already on the same plane; collinearity is a stronger condition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The midpoint of a segment with endpoints in different quadrants may lie in a {{blank:1}} quadrant or on an {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "third",
+          "correctExplanation": "The midpoint is the average of coordinates and can fall in any quadrant.",
+          "distractors": [
+            {
+              "answer": "same",
+              "explanation": "The midpoint does not necessarily share a quadrant with either endpoint.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "opposite",
+              "explanation": "The midpoint could be in any quadrant, not necessarily the opposite one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "axis",
+          "correctExplanation": "If one averaged coordinate is zero, the midpoint lies on an axis.",
+          "distractors": [
+            {
+              "answer": "endpoint",
+              "explanation": "The midpoint lies between the endpoints, not on one of them.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "The midpoint does not necessarily lie on a diagonal; it can be anywhere the averages place it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The distance formula is a direct application of {{blank:1}} theorem, where the horizontal and vertical changes form the two {{blank:2}} of a right triangle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "Pythagoras'",
+          "correctExplanation": "a² + b² = c² with a = Δx, b = Δy, c = distance.",
+          "distractors": [
+            {
+              "answer": "midpoint",
+              "explanation": "The midpoint theorem is about parallel sides, not distance.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "gradient",
+              "explanation": "There is no 'gradient theorem'; the distance formula comes from Pythagoras.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "legs",
+          "correctExplanation": "The shorter sides (legs) are Δx and Δy; the distance is the hypotenuse.",
+          "distractors": [
+            {
+              "answer": "hypotenuses",
+              "explanation": "A right triangle has one hypotenuse; the changes form the legs.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "diagonals",
+              "explanation": "Diagonals belong to quadrilaterals; the sides of a right triangle are called legs and hypotenuse.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Reversing the order of points in the distance formula does not change the result because {{blank:1}} eliminates the effect of {{blank:2}} differences.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "squaring",
+          "correctExplanation": "Squaring a negative difference gives the same result as squaring the positive version.",
+          "distractors": [
+            {
+              "answer": "averaging",
+              "explanation": "Averaging is part of the midpoint formula, not the distance formula.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "halving",
+              "explanation": "Halving is not part of the distance formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sign",
+          "correctExplanation": "Squaring removes the sign: (−a)² = a².",
+          "distractors": [
+            {
+              "answer": "magnitude",
+              "explanation": "Squaring preserves magnitude; it is the sign that gets eliminated.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coordinate",
+              "explanation": "Squaring affects the sign of the difference, not the coordinates themselves.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "To verify a parallelogram using coordinate geometry, check that both pairs of {{blank:1}} sides have {{blank:2}} gradients.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "opposite",
+          "correctExplanation": "In a parallelogram, opposite sides are parallel.",
+          "distractors": [
+            {
+              "answer": "adjacent",
+              "explanation": "Adjacent sides meet at a vertex; they are generally not parallel in a parallelogram.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "Diagonals are interior segments, not sides of the quadrilateral.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "equal",
+          "correctExplanation": "Parallel sides have identical gradients.",
+          "distractors": [
+            {
+              "answer": "perpendicular",
+              "explanation": "Perpendicular gradients indicate right angles, not parallel sides.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "reciprocal",
+              "explanation": "Reciprocal gradients relate to perpendicular lines, not parallel ones.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Equal distances from B to both A and C confirm B is {{blank:1}} from both, but {{blank:2}} is also required to prove B is the midpoint of AC.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equidistant",
+          "correctExplanation": "Equal distances mean B is the same distance from A as from C.",
+          "distractors": [
+            {
+              "answer": "collinear",
+              "explanation": "Collinearity is a separate condition that must also hold, not the same as equidistance.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "perpendicular",
+              "explanation": "Perpendicularity describes angles, not distance relationships.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "collinearity",
+          "correctExplanation": "B must lie on segment AC, not just be equidistant from its endpoints.",
+          "distractors": [
+            {
+              "answer": "symmetry",
+              "explanation": "Symmetry is a geometric property but does not specifically mean lying on the same line.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "perpendicularity",
+              "explanation": "Perpendicularity is about angle relationships, not about proving midpoint position.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "The values 3, 4, 5 form a Pythagorean {{blank:1}} because 3 squared plus 4 squared equals 5 squared, which the distance formula applies as the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "triple",
+          "correctExplanation": "A Pythagorean triple is a set of three positive integers satisfying a² + b² = c².",
+          "distractors": [
+            {
+              "answer": "pair",
+              "explanation": "Three numbers form a triple, not a pair.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sequence",
+              "explanation": "While the numbers are in sequence, the correct mathematical term is Pythagorean triple.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "hypotenuse",
+          "correctExplanation": "The distance is the hypotenuse of the right triangle formed by the coordinate differences.",
+          "distractors": [
+            {
+              "answer": "gradient",
+              "explanation": "The gradient is rise/run, a different calculation from the distance.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "midpoint",
+              "explanation": "The midpoint is a location, not a length calculated by the distance formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "When a student treats a zero run as 1 to avoid an undefined gradient, the error is that division by {{blank:1}} is {{blank:2}} and cannot be replaced by a different value.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "The run is zero for vertical segments, making the gradient formula undefined.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "The student incorrectly replaced zero with one; the actual run is zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "infinity",
+              "explanation": "Infinity is not the denominator; zero is the value causing the problem.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "undefined",
+          "correctExplanation": "In mathematics, division by zero has no defined result.",
+          "distractors": [
+            {
+              "answer": "infinite",
+              "explanation": "While informally described as infinite, the correct mathematical term is undefined.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative",
+              "explanation": "Division by zero is not negative; it is undefined.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "The midpoint formula uses {{blank:1}} of coordinates while the gradient formula uses {{blank:2}} of coordinates.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sums",
+          "correctExplanation": "The midpoint formula adds coordinates then divides by 2.",
+          "distractors": [
+            {
+              "answer": "differences",
+              "explanation": "Differences are used in the gradient and distance formulas, not midpoint.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "products",
+              "explanation": "No standard coordinate geometry formula multiplies coordinates.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "differences",
+          "correctExplanation": "The gradient formula subtracts coordinates: (y₂ − y₁)/(x₂ − x₁).",
+          "distractors": [
+            {
+              "answer": "sums",
+              "explanation": "Sums are used in the midpoint formula, not gradient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "products",
+              "explanation": "No standard coordinate geometry formula multiplies coordinates.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "To confirm a quadrilateral is a parallelogram using gradients, both pairs of opposite sides must be {{blank:1}}, which requires their gradients to be {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "parallel",
+          "correctExplanation": "A parallelogram has both pairs of opposite sides parallel.",
+          "distractors": [
+            {
+              "answer": "perpendicular",
+              "explanation": "Perpendicular sides define a rectangle, which is a special case.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "congruent",
+              "explanation": "Equal length (congruence) of opposite sides is necessary but not what gradient comparison tests.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "equal",
+          "correctExplanation": "Parallel lines have identical gradients.",
+          "distractors": [
+            {
+              "answer": "opposite",
+              "explanation": "Opposite gradients indicate lines sloping in different directions, not parallel.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "reciprocal",
+              "explanation": "Reciprocal gradients relate to perpendicular lines, not parallel.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

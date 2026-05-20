@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10AA06",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to use polynomial understanding to sketch curves and describe their features from their equation.",
+    "generatedAt": "2026-05-19T00:15:58.701348+00:00",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A polynomial of degree three is called a quartic.",
+      "correct": "False",
+      "correctExplanation": "A degree-three polynomial is a cubic, not a quartic. A quartic has degree four.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A quartic is degree four; degree three is classified as a cubic."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The y-intercept of any polynomial is found by substituting x = 1 into the equation.",
+      "correct": "False",
+      "correctExplanation": "The y-intercept is found by substituting x = 0, not x = 1, giving the constant term of the polynomial.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Substituting x = 0 gives the y-intercept; assuming x = 1 confuses evaluation with intercept determination."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A quadratic polynomial can have at most two x-intercepts.",
+      "correct": "True",
+      "correctExplanation": "A degree-two polynomial has at most two real roots, corresponding to at most two x-intercepts.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The fundamental theorem of algebra limits a degree-n polynomial to at most n real roots."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The end behaviour of a polynomial depends only on its constant term.",
+      "correct": "False",
+      "correctExplanation": "End behaviour is determined by the leading term (highest-degree term and its coefficient), not the constant term.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The leading term dominates for large |x|; the constant term only affects the y-intercept."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "A polynomial of degree four can have at most three turning points.",
+      "correct": "True",
+      "correctExplanation": "A degree-n polynomial has at most n − 1 turning points, so a quartic has at most three.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The relationship between degree and maximum turning points is degree minus one."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The graph of every cubic polynomial passes through the origin.",
+      "correct": "False",
+      "correctExplanation": "A cubic passes through the origin only when its constant term is zero; most cubics have a non-zero constant.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Only polynomials with zero constant term pass through the origin, regardless of degree."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "If the leading coefficient of a cubic is positive, the graph rises to the right.",
+      "correct": "True",
+      "correctExplanation": "A positive leading coefficient on an odd-degree polynomial means the graph rises as x approaches positive infinity.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "End behaviour for odd-degree polynomials follows the sign of the leading coefficient on the right side."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A polynomial of degree five always has exactly five x-intercepts.",
+      "correct": "False",
+      "correctExplanation": "A degree-five polynomial has at most five x-intercepts but may have fewer due to complex roots or repeated roots.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The degree gives the maximum number of x-intercepts, not the exact number."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The degree of the polynomial y = 3x⁴ − 2x + 7 is three.",
+      "correct": "False",
+      "correctExplanation": "The degree is the highest power of x, which is 4, not 3.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The highest power is x⁴, so the degree is 4; confusing the number of distinct terms with degree leads to this error."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Multiplying a polynomial by −1 reflects its graph across the x-axis.",
+      "correct": "True",
+      "correctExplanation": "Replacing f(x) with −f(x) reflects every point across the x-axis, inverting all y-values.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Negating the entire polynomial flips the graph vertically about the x-axis."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A linear polynomial has exactly one turning point.",
+      "correct": "False",
+      "correctExplanation": "A linear polynomial (degree one) is a straight line and has no turning points at all.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A turning point requires a change in direction; linear functions are monotonic with no turning points."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The leading coefficient determines whether a parabola opens upward or downward.",
+      "correct": "True",
+      "correctExplanation": "For a quadratic, a positive leading coefficient opens upward and a negative one opens downward.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The sign of the leading coefficient controls the concavity direction for all even-degree polynomials."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is the degree of the polynomial y = 5x³ − x² + 2x − 8?",
+      "correct": "3, because the highest power of x in the polynomial is three",
+      "correctExplanation": "The degree is the largest exponent appearing on the variable.",
+      "distractors": [
+        {
+          "answer": "5, because the coefficient of the highest-power term is five",
+          "explanation": "The leading coefficient is 5 but the degree refers to the exponent, not the coefficient."
+        },
+        {
+          "answer": "4, because there are four separate terms in the polynomial expression",
+          "explanation": "The number of terms does not determine the degree; only the highest exponent matters."
+        },
+        {
+          "answer": "2, because the middle term contains x squared as its variable part",
+          "explanation": "The x² term has degree 2 but the polynomial's degree is set by the highest-power term."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "How many x-intercepts can a cubic polynomial have at most?",
+      "correct": "Three, because a polynomial of degree n has at most n real roots",
+      "correctExplanation": "The fundamental theorem of algebra limits real roots to the degree of the polynomial.",
+      "distractors": [
+        {
+          "answer": "Two, because cubic curves have one turning point and cross the axis at most twice",
+          "explanation": "Cubics can have up to two turning points and three x-intercepts."
+        },
+        {
+          "answer": "One, because every cubic must cross the x-axis exactly once at its inflection point",
+          "explanation": "Every cubic crosses the x-axis at least once, but it may cross up to three times."
+        },
+        {
+          "answer": "Four, because the degree plus one gives the maximum number of real roots",
+          "explanation": "The maximum number of real roots equals the degree, not degree plus one."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which feature of a polynomial is found by evaluating it at x = 0?",
+      "correct": "The y-intercept, because substituting x = 0 gives the output value where the graph crosses the y-axis",
+      "correctExplanation": "Setting x = 0 isolates the constant term, which is the y-intercept.",
+      "distractors": [
+        {
+          "answer": "The x-intercept, because setting x to zero finds where the graph meets the horizontal axis for this graph",
+          "explanation": "The x-intercepts are found by setting y = 0, not x = 0."
+        },
+        {
+          "answer": "The degree, because the value at zero reveals the highest power present in the polynomial",
+          "explanation": "The degree is determined by the highest exponent, not by evaluation at a point."
+        },
+        {
+          "answer": "The leading coefficient, because substituting zero removes all other terms leaving only the lead term",
+          "explanation": "Substituting x = 0 removes all terms with x, leaving the constant, not the leading coefficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What name is given to a polynomial of degree two?",
+      "correct": "Quadratic, because degree-two polynomials have x² as their highest-power term",
+      "correctExplanation": "Polynomials are named by degree: linear (1), quadratic (2), cubic (3), quartic (4).",
+      "distractors": [
+        {
+          "answer": "Cubic, because the prefix refers to the number of terms rather than the power of x",
+          "explanation": "Cubic refers to degree three; the name relates to the exponent, not the term count."
+        },
+        {
+          "answer": "Linear, because the graph of a degree-two polynomial forms a straight line segment",
+          "explanation": "Linear refers to degree one; a quadratic produces a parabola, not a straight line."
+        },
+        {
+          "answer": "Quartic, because the four letters in the prefix correspond to degree two polynomials",
+          "explanation": "Quartic refers to degree four; the prefix has no relationship to the number of letters."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What is the maximum number of turning points a quadratic polynomial can have?",
+      "correct": "One, because a polynomial of degree n has at most n − 1 turning points",
+      "correctExplanation": "A quadratic has degree two, so at most 2 − 1 = 1 turning point.",
+      "distractors": [
+        {
+          "answer": "Two, because the degree itself gives the maximum number of turning points for a polynomial",
+          "explanation": "The maximum number of turning points is degree minus one, not the degree itself."
+        },
+        {
+          "answer": "Zero, because quadratics are U-shaped curves that continuously increase or decrease",
+          "explanation": "A parabola has exactly one vertex, which is a turning point."
+        },
+        {
+          "answer": "Three, because quadratics can form S-shaped curves with multiple changes in direction overall",
+          "explanation": "Quadratics form parabolas with a single vertex, not S-shaped curves."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which term determines the end behaviour of a polynomial for very large values of x?",
+      "correct": "The leading term, because it dominates all other terms when x is very large in magnitude",
+      "correctExplanation": "For large |x|, lower-degree terms become negligible compared to the highest-degree term.",
+      "distractors": [
+        {
+          "answer": "The constant term, because it sets the baseline around which the polynomial fluctuates overall",
+          "explanation": "The constant term affects the y-intercept but becomes negligible for large x."
+        },
+        {
+          "answer": "The middle term, because it balances the contributions of the highest and lowest degree terms in this polynomial",
+          "explanation": "No single middle term governs end behaviour; only the leading term matters for large x."
+        },
+        {
+          "answer": "The linear term, because it determines the overall slope of the polynomial graph",
+          "explanation": "The linear term affects local slope but is overwhelmed by higher-degree terms for large x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What happens to the graph of a polynomial when its equation is multiplied by −1?",
+      "correct": "It is reflected across the x-axis, reversing the sign of every y-value on the curve",
+      "correctExplanation": "Multiplying by −1 replaces f(x) with −f(x), flipping the graph vertically.",
+      "distractors": [
+        {
+          "answer": "It is reflected across the y-axis, reversing the direction of the graph horizontally",
+          "explanation": "Reflection across the y-axis requires replacing x with −x, not multiplying the whole function by −1."
+        },
+        {
+          "answer": "It is translated one unit downward, shifting every point on the graph lower by one unit",
+          "explanation": "Multiplying by −1 reflects, not translates; subtracting 1 would translate downward."
+        },
+        {
+          "answer": "It is unchanged because multiplying by a constant does not affect the shape of the graph at all",
+          "explanation": "Multiplying by −1 changes the sign of every output, which changes the graph significantly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "A polynomial has the factored form y = (x − 1)(x + 3). What are its x-intercepts?",
+      "correct": "x = 1 and x = −3, because each factor equals zero at these respective values of x",
+      "correctExplanation": "Setting each factor to zero gives x − 1 = 0 (x = 1) and x + 3 = 0 (x = −3).",
+      "distractors": [
+        {
+          "answer": "x = −1 and x = 3, because the intercepts are the negatives of the numbers appearing in the factors",
+          "explanation": "The signs are determined by solving each factor equal to zero, not by negating the constants."
+        },
+        {
+          "answer": "x = 1 and x = 3, because both constants in the factors are taken as positive x-intercept values",
+          "explanation": "The factor (x + 3) gives x = −3, not x = 3; the sign within the factor must be accounted for."
+        },
+        {
+          "answer": "x = 0 only, because the y-intercept and x-intercept coincide at the origin for factored polynomials",
+          "explanation": "Factored polynomials have x-intercepts at the zeros of each factor, not necessarily at the origin."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which of the following is a quartic polynomial?",
+      "correct": "y = 2x⁴ − x³ + 5, because the highest power of x present is four",
+      "correctExplanation": "A quartic polynomial has degree four, meaning the highest exponent is 4.",
+      "distractors": [
+        {
+          "answer": "y = 4x³ + 2x, because the coefficient 4 indicates a quartic polynomial classification",
+          "explanation": "The coefficient 4 is not the degree; the highest power here is 3, making it a cubic."
+        },
+        {
+          "answer": "y = x² − 3x + 1, because it has three terms which defines a quartic polynomial",
+          "explanation": "The number of terms does not determine the degree; this is a quadratic."
+        },
+        {
+          "answer": "y = x⁵ − x⁴ + x, because the presence of an x⁴ term makes it quartic overall",
+          "explanation": "The degree is determined by the highest power, which is 5 here, making it a quintic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What is the y-intercept of the polynomial y = x³ − 4x² + x − 6?",
+      "correct": "−6, because substituting x = 0 gives y = 0 − 0 + 0 − 6",
+      "correctExplanation": "The y-intercept equals the constant term when all x-terms vanish at x = 0.",
+      "distractors": [
+        {
+          "answer": "1, because the coefficient of the x term is the y-intercept of the polynomial in the factored form",
+          "explanation": "The coefficient of x is not the y-intercept; the constant term is the y-intercept."
+        },
+        {
+          "answer": "−4, because the largest coefficient in the polynomial determines the y-intercept value",
+          "explanation": "The y-intercept is the constant term, not the largest coefficient."
+        },
+        {
+          "answer": "0, because cubic polynomials always pass through the origin by definition",
+          "explanation": "Only cubics with zero constant term pass through the origin."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "If a cubic polynomial has a positive leading coefficient, what is its end behaviour?",
+      "correct": "It falls to the left and rises to the right as x approaches negative and positive infinity",
+      "correctExplanation": "For odd-degree polynomials with positive leading coefficients, f(x) → −∞ as x → −∞ and f(x) → +∞ as x → +∞.",
+      "distractors": [
+        {
+          "answer": "It rises to the left and falls to the right because cubics are symmetric about the origin",
+          "explanation": "This describes a negative leading coefficient; not all cubics are symmetric about the origin."
+        },
+        {
+          "answer": "It rises on both sides because a positive coefficient means the graph opens upward like a parabola",
+          "explanation": "Rising on both sides describes even-degree polynomials with positive leading coefficients."
+        },
+        {
+          "answer": "It falls on both sides because cubic functions always approach negative infinity at both ends",
+          "explanation": "Falling on both sides describes even-degree polynomials with negative leading coefficients."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "How many turning points does a straight line have?",
+      "correct": "Zero, because a linear polynomial has constant slope and never changes direction at any point",
+      "correctExplanation": "A linear function is monotonic, so it has no local maxima or minima.",
+      "distractors": [
+        {
+          "answer": "One, because every polynomial graph must have at least one turning point",
+          "explanation": "Polynomials of degree one have no turning points; only degree two and above can."
+        },
+        {
+          "answer": "Two, because the line turns at each of its endpoints on the visible graph for this expression",
+          "explanation": "Endpoints of a visible section are not turning points; a line extends infinitely with no turns."
+        },
+        {
+          "answer": "Infinitely many, because every point on a line could be considered a turning point",
+          "explanation": "A turning point requires a change in direction; a straight line has constant direction."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A polynomial of degree three is called a {{blank:1}} and has at most {{blank:2}} turning points.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cubic",
+          "correctExplanation": "Degree-three polynomials are classified as cubics.",
+          "distractors": [
+            {
+              "answer": "quadratic",
+              "explanation": "A quadratic is degree two, not degree three.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quartic",
+              "explanation": "A quartic is degree four, not degree three.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "A degree-n polynomial has at most n − 1 turning points, so 3 − 1 = 2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The maximum turning points equal degree minus one, not the degree itself.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "A cubic can have up to two turning points, not just one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The y-intercept of a polynomial is found by substituting {{blank:1}} into the equation, giving the value of the {{blank:2}} term.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x = 0",
+          "correctExplanation": "Setting x to zero eliminates all terms containing x, leaving the constant.",
+          "distractors": [
+            {
+              "answer": "x = 1",
+              "explanation": "Substituting x = 1 gives f(1), not the y-intercept.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "y = 0",
+              "explanation": "Setting y = 0 finds x-intercepts, not the y-intercept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "constant",
+          "correctExplanation": "When x = 0, all terms with x vanish, leaving only the constant term.",
+          "distractors": [
+            {
+              "answer": "leading",
+              "explanation": "The leading term contains the highest power of x, which vanishes at x = 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "linear",
+              "explanation": "The linear term (coefficient of x) also vanishes at x = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The polynomial y = x³ − 3x has x-intercepts at x = 0, x = 3 and x = −3.",
+      "correct": "False",
+      "correctExplanation": "Factoring gives y = x(x² − 3) = x(x − √3)(x + √3), so the roots are 0, √3 and −√3, not 0, 3 and −3.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The factor x² − 3 gives roots at ±√3 ≈ ±1.73, not ±3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The graph of y = −2x³ + x rises to the left and falls to the right.",
+      "correct": "True",
+      "correctExplanation": "The leading coefficient is −2 (negative) and the degree is odd, so the graph rises left and falls right.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "For odd-degree polynomials with negative leading coefficients, the end behaviour is reversed from the positive case."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The polynomial y = x⁴ − 4x² has exactly two x-intercepts.",
+      "correct": "False",
+      "correctExplanation": "Factoring gives y = x²(x² − 4) = x²(x − 2)(x + 2), which has three distinct x-intercepts: 0, 2, −2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The factor x² gives a repeated root at zero, but there are still three distinct x-intercept values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "If y = (x − 2)²(x + 1), then x = 2 is a repeated root where the graph crosses the x-axis.",
+      "correct": "False",
+      "correctExplanation": "A root with even multiplicity causes the graph to touch and bounce off the x-axis without crossing.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Even-multiplicity roots produce tangent behaviour, not crossing; the graph touches but does not pass through."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The polynomial y = x⁴ + 1 has no real x-intercepts because x⁴ + 1 is always positive.",
+      "correct": "True",
+      "correctExplanation": "Since x⁴ ≥ 0 for all real x, the expression x⁴ + 1 ≥ 1 > 0, so the graph never meets the x-axis.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Adding a positive constant to a non-negative even power ensures all outputs are positive."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The graph of y = x³ − 6x² + 9x crosses the x-axis at exactly three distinct points.",
+      "correct": "False",
+      "correctExplanation": "Factoring gives y = x(x − 3)², which has roots at x = 0 and x = 3 only — two distinct x-intercepts.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The repeated factor (x − 3)² gives a double root at x = 3, reducing the distinct intercept count to two."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A quartic polynomial with a negative leading coefficient falls toward negative infinity on both sides.",
+      "correct": "True",
+      "correctExplanation": "Even-degree polynomials with negative leading coefficients have both ends pointing downward.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "For even degree, both ends behave the same way, determined by the sign of the leading coefficient."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The polynomial y = 2x³ + 5x² − 3x has a y-intercept of 5.",
+      "correct": "False",
+      "correctExplanation": "Substituting x = 0 gives y = 0 + 0 − 0 = 0, so the y-intercept is 0, not 5.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The y-intercept is the constant term; here every term contains x, so the constant is 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "The polynomial y = x(x − 2)(x + 4) has x-intercepts at which values?",
+      "correct": "x = 0, x = 2 and x = −4, found by setting each linear factor equal to zero",
+      "correctExplanation": "Each factor gives one root: x = 0, x − 2 = 0 gives x = 2, x + 4 = 0 gives x = −4.",
+      "distractors": [
+        {
+          "answer": "x = 0, x = −2 and x = 4, because the signs of the constants in the factors are reversed",
+          "explanation": "The roots come from solving each factor equal to zero, not from negating the constants."
+        },
+        {
+          "answer": "x = 2 and x = −4 only, because the factor x does not produce an intercept value",
+          "explanation": "The factor x gives x = 0 as an intercept; all three factors contribute roots."
+        },
+        {
+          "answer": "x = 8 only, because the product of the constants 2 and 4 determines the single root",
+          "explanation": "Each factor independently contributes a root; the constants are not multiplied together."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "What are the end behaviour characteristics of y = −x⁴ + 3x² − 1?",
+      "correct": "The graph falls on both sides, because the leading coefficient is negative and the degree is even",
+      "correctExplanation": "An even-degree polynomial with negative leading coefficient has both ends approaching −∞.",
+      "distractors": [
+        {
+          "answer": "The graph rises on both sides, because quartic polynomials always open upward regardless of sign",
+          "explanation": "The sign of the leading coefficient determines direction; negative means both ends fall."
+        },
+        {
+          "answer": "The graph falls left and rises right, because the negative sign affects only the left portion in this context",
+          "explanation": "This end behaviour applies to odd-degree polynomials, not even-degree ones."
+        },
+        {
+          "answer": "The graph rises left and falls right, because the negative coefficient reverses the natural direction",
+          "explanation": "Both ends of an even-degree polynomial behave identically based on the leading coefficient sign."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "For the polynomial y = (x + 1)²(x − 3), what happens at x = −1?",
+      "correct": "The graph touches the x-axis and turns back, because the root has even multiplicity of two",
+      "correctExplanation": "A double root (multiplicity 2) causes the curve to be tangent to the x-axis at that point.",
+      "distractors": [
+        {
+          "answer": "The graph crosses the x-axis, because all roots cause the graph to pass through the axis",
+          "explanation": "Only odd-multiplicity roots cause crossings; even-multiplicity roots cause tangent behaviour."
+        },
+        {
+          "answer": "The graph has a vertical asymptote, because the squared factor creates a discontinuity at that point",
+          "explanation": "Polynomials are continuous everywhere; squared factors do not create asymptotes."
+        },
+        {
+          "answer": "The graph has a horizontal tangent above the x-axis, because the squared factor lifts the curve",
+          "explanation": "The double root occurs on the x-axis, not above it; the curve touches y = 0 at x = −1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "How many distinct x-intercepts does y = x²(x − 1)(x + 2)² have?",
+      "correct": "Three distinct intercepts at x = 0, x = 1 and x = −2",
+      "correctExplanation": "Despite repeated factors, there are three distinct root values: 0, 1 and −2.",
+      "distractors": [
+        {
+          "answer": "Five distinct intercepts, because the total degree of the polynomial is five from the given polynomial",
+          "explanation": "The degree counts roots with multiplicity; the distinct intercept count is three."
+        },
+        {
+          "answer": "Two distinct intercepts, because repeated roots do not count as separate x-intercepts",
+          "explanation": "Repeated roots are still distinct x-intercepts; multiplicity affects behaviour, not count."
+        },
+        {
+          "answer": "Four distinct intercepts, because each squared factor contributes two separate crossing points",
+          "explanation": "A squared factor gives one intercept value with multiplicity two, not two separate values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "The polynomial y = −x³ + 4x can be factored as which expression?",
+      "correct": "y = −x(x² − 4) = −x(x − 2)(x + 2), giving three linear factors over the reals",
+      "correctExplanation": "Factoring out −x first gives −x(x² − 4), then the difference of squares completes the factorisation.",
+      "distractors": [
+        {
+          "answer": "y = −(x³ + 4x) = −x(x² + 4), because the sign distributes to give a sum of squares",
+          "explanation": "The original expression has +4x, so factoring out −x gives −x(x² − 4), not −x(x² + 4)."
+        },
+        {
+          "answer": "y = −x(x − 4), because the 4x term provides a single factor of x minus four",
+          "explanation": "This ignores the cubic term structure; x² − 4 must be factored as a difference of squares."
+        },
+        {
+          "answer": "y = (−x + 2)(x + 2), because the expression factors directly into two binomials",
+          "explanation": "A cubic cannot factor into just two linear factors; three factors are needed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "What is the y-intercept of the polynomial y = 2(x − 1)(x + 3)(x − 5)?",
+      "correct": "30, because substituting x = 0 gives y = 2(−1)(3)(−5) = 30 after evaluation",
+      "correctExplanation": "Evaluating at x = 0: 2 × (−1) × 3 × (−5) = 30.",
+      "distractors": [
+        {
+          "answer": "−30, because the product of the constants gives a negative result before applying the coefficient",
+          "explanation": "The product (−1)(3)(−5) = 15, and 2 × 15 = 30; the two negative factors give a positive product."
+        },
+        {
+          "answer": "0, because polynomials in factored form always pass through the origin",
+          "explanation": "Only factored polynomials with an x factor pass through the origin; this one does not."
+        },
+        {
+          "answer": "15, because the product of 1, 3 and 5 gives 15 which is then the y-intercept value",
+          "explanation": "The signs within each factor must be included when substituting x = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "A polynomial of degree five with a positive leading coefficient has which end behaviour?",
+      "correct": "Falls to the left and rises to the right, following the pattern for odd degree with positive lead",
+      "correctExplanation": "Odd-degree polynomials with positive leading coefficients go from −∞ on the left to +∞ on the right.",
+      "distractors": [
+        {
+          "answer": "Rises on both sides, because a positive coefficient means the graph always increases eventually",
+          "explanation": "Rising on both sides describes even-degree polynomials with positive leading coefficients."
+        },
+        {
+          "answer": "Falls on both sides, because degree five allows the graph to trend downward at both extremes",
+          "explanation": "Falling on both sides describes even-degree polynomials with negative leading coefficients."
+        },
+        {
+          "answer": "Rises to the left and falls to the right, because higher-degree polynomials reverse the standard pattern",
+          "explanation": "This describes odd degree with a negative leading coefficient; the sign is not reversed for higher degrees."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "For the polynomial y = x⁴ − 5x² + 4, what are the x-intercepts?",
+      "correct": "x = ±1 and x = ±2, because the polynomial factors as (x² − 1)(x² − 4) = (x−1)(x+1)(x−2)(x+2)",
+      "correctExplanation": "Substituting u = x² gives u² − 5u + 4 = (u−1)(u−4), then back-substituting gives four roots.",
+      "distractors": [
+        {
+          "answer": "x = 1 and x = 4 only, because the quadratic in x² has roots at u = 1 and u = 4",
+          "explanation": "The roots u = 1 and u = 4 correspond to x = ±1 and x = ±2 after taking square roots."
+        },
+        {
+          "answer": "x = ±√5 and x = ±2, because the middle coefficient determines one pair of intercepts",
+          "explanation": "The factorisation (x²−1)(x²−4) gives roots at ±1 and ±2, not ±√5."
+        },
+        {
+          "answer": "x = 0 and x = ±2, because the constant term 4 factors as 2 × 2 for the nonzero roots",
+          "explanation": "Substituting x = 0 gives y = 4 ≠ 0, so x = 0 is not a root."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "The curve y = (x − 3)³ crosses the x-axis at x = 3. What is the multiplicity of this root?",
+      "correct": "Three, because the factor (x − 3) appears with an exponent of three in the expression",
+      "correctExplanation": "The multiplicity of a root equals the exponent on its corresponding factor.",
+      "distractors": [
+        {
+          "answer": "One, because the curve crosses the x-axis at that point rather than just touching it",
+          "explanation": "Odd-multiplicity roots cause crossings, but the multiplicity is 3, not 1."
+        },
+        {
+          "answer": "Two, because a cubic has degree three and the multiplicity is one less than the degree",
+          "explanation": "Multiplicity is the exponent on the factor, not degree minus one."
+        },
+        {
+          "answer": "Zero, because repeated roots at the same location count as a single root with no multiplicity",
+          "explanation": "Every root has a multiplicity of at least 1; the exponent on the factor determines it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "How many turning points does the polynomial y = x³ − 3x have?",
+      "correct": "Two turning points, because a cubic has at most two and this one has a local max and min",
+      "correctExplanation": "Differentiating gives 3x² − 3 = 0, so x = ±1, giving two turning points.",
+      "distractors": [
+        {
+          "answer": "One turning point, because cubic polynomials can only change direction once",
+          "explanation": "Cubics can have zero or two turning points; this one has two stationary points."
+        },
+        {
+          "answer": "Three turning points, because the degree of the polynomial equals the number of turning points",
+          "explanation": "The maximum number of turning points is degree minus one, so a cubic has at most two."
+        },
+        {
+          "answer": "Zero turning points, because the graph increases monotonically from left to right as a cubic",
+          "explanation": "This cubic has a local max and min near x = ±1; it is not monotonic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "The polynomial y = −2(x + 1)(x − 4) has its vertex at what x-coordinate?",
+      "correct": "x = 1.5, because the axis of symmetry is the average of the roots: (−1 + 4) ÷ 2",
+      "correctExplanation": "For a quadratic in factored form, the vertex x-coordinate is the midpoint of the two roots.",
+      "distractors": [
+        {
+          "answer": "x = 3, because the larger root determines the location of the vertex of the parabola",
+          "explanation": "The vertex lies midway between the roots, not at the larger root."
+        },
+        {
+          "answer": "x = −2.5, because the vertex is found by averaging the coefficients −1 and −4 directly",
+          "explanation": "The roots are −1 and 4 (not −1 and −4); the midpoint is (−1 + 4)/2 = 1.5."
+        },
+        {
+          "answer": "x = 2, because the leading coefficient shifts the vertex one unit to the right of the midpoint for the given curve",
+          "explanation": "The leading coefficient affects the width and direction, not the horizontal position of the vertex."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "What feature does the graph of y = (x − 2)⁴ exhibit at x = 2?",
+      "correct": "A touch point where the graph is tangent to the x-axis, because the root has even multiplicity four",
+      "correctExplanation": "Even-multiplicity roots cause the graph to touch the axis and turn back without crossing.",
+      "distractors": [
+        {
+          "answer": "A crossing point where the graph passes through the x-axis, as all roots produce crossings",
+          "explanation": "Only odd-multiplicity roots produce crossings; even multiplicity gives tangent behaviour."
+        },
+        {
+          "answer": "An inflection point where the concavity changes from upward to downward at the axis",
+          "explanation": "An inflection point changes concavity but a fourth-power root creates a flat touch, not an inflection."
+        },
+        {
+          "answer": "A cusp where the graph forms a sharp corner at the axis before changing direction abruptly",
+          "explanation": "Polynomial graphs are smooth; they never form cusps at their roots."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The polynomial y = x(x − 2)(x + 5) has x-intercepts at x = 0, x = {{blank:1}} and x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Setting the factor (x − 2) to zero gives x = 2.",
+          "distractors": [
+            {
+              "answer": "−2",
+              "explanation": "The factor is (x − 2), so x = 2 not −2; the sign is reversed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "The value 5 comes from the wrong factor; (x + 5) = 0 gives x = −5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−5",
+          "correctExplanation": "Setting the factor (x + 5) to zero gives x = −5.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The factor is (x + 5), so x = −5 not 5; the sign change is missed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−2",
+              "explanation": "This value does not correspond to any factor in the polynomial.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "A polynomial of degree four with a {{blank:1}} leading coefficient has end behaviour where both sides point {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "A positive leading coefficient with even degree makes both ends rise.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "A negative leading coefficient makes both ends fall, not rise.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "A zero leading coefficient would reduce the degree; it cannot be the leading coefficient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "upward",
+          "correctExplanation": "Even degree with positive lead means f(x) → +∞ on both sides.",
+          "distractors": [
+            {
+              "answer": "downward",
+              "explanation": "Downward end behaviour on both sides requires a negative leading coefficient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "in opposite directions",
+              "explanation": "Opposite end behaviour occurs for odd-degree polynomials, not even.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The root x = 4 in y = (x − 4)² (x + 1) has multiplicity {{blank:1}}, so the graph {{blank:2}} the x-axis at that point.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The factor (x − 4) is raised to the power 2, giving multiplicity 2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The exponent on (x − 4) is 2, not 1; the multiplicity matches the exponent.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "The degree of the polynomial is 3, but the multiplicity of this root is 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "touches",
+          "correctExplanation": "Even-multiplicity roots cause the graph to touch and turn back without crossing.",
+          "distractors": [
+            {
+              "answer": "crosses",
+              "explanation": "Crossing occurs at odd-multiplicity roots; even multiplicity gives a touch point.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "misses",
+              "explanation": "The graph does reach the x-axis at a root; it cannot miss a point where y = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The y-intercept of y = −3(x − 1)(x + 2) is {{blank:1}}, found by substituting x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "Substituting x = 0: −3(0 − 1)(0 + 2) = −3(−1)(2) = 6.",
+          "distractors": [
+            {
+              "answer": "−6",
+              "explanation": "The product (−1)(2) = −2, then −3 × −2 = 6, not −6; the double negative is missed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−3",
+              "explanation": "Only the leading coefficient is −3; the full evaluation at x = 0 gives 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "The y-intercept is always found by evaluating the polynomial at x = 0.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Substituting x = 1 gives f(1), not the y-intercept.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−2",
+              "explanation": "Substituting x = −2 gives zero (an x-intercept), not the y-intercept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The graph of y = −x³ + 4x rises to the {{blank:1}} and falls to the {{blank:2}} due to its negative leading coefficient.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "left",
+          "correctExplanation": "A negative leading coefficient on an odd-degree polynomial makes the graph rise to the left.",
+          "distractors": [
+            {
+              "answer": "right",
+              "explanation": "Rising to the right occurs with a positive leading coefficient on an odd-degree polynomial.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "top",
+              "explanation": "End behaviour is described as left or right, not top or bottom.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "right",
+          "correctExplanation": "With negative odd-degree lead, the graph falls as x approaches positive infinity.",
+          "distractors": [
+            {
+              "answer": "left",
+              "explanation": "The graph rises to the left and falls to the right, not the reverse.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "bottom",
+              "explanation": "End behaviour refers to horizontal direction, not vertical position.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A degree-five polynomial has at most {{blank:1}} turning points and at most {{blank:2}} x-intercepts.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "The maximum number of turning points is degree minus one: 5 − 1 = 4.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The maximum turning points equal degree minus one, not the degree itself.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Three is two less than the degree; the correct formula gives 5 − 1 = 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "A polynomial of degree n has at most n real roots, so at most 5 x-intercepts.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The degree gives the maximum number of x-intercepts, not degree minus one.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "The degree itself limits real roots; there is no squaring or doubling involved.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The polynomial y = x⁴ − 2x³ − 3x² + 4x + 4 can be factored to reveal a repeated root at x = −1.",
+      "correct": "True",
+      "correctExplanation": "Factoring gives y = (x + 1)²(x − 2)², confirming a repeated root at x = −1 with multiplicity 2.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Synthetic division or factor theorem confirms (x + 1) is a repeated factor."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The polynomial y = x³ − x has a turning point at the origin because the graph passes through (0, 0).",
+      "correct": "False",
+      "correctExplanation": "The graph passes through (0, 0) as an x-intercept, but the turning points are at x = ±1/√3, not at the origin.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Passing through a point does not make it a turning point; the derivative must be zero and change sign there."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A cubic polynomial has roots at x = −2, x = 1 and x = 3, and passes through (0, 12). What is its equation?",
+      "correct": "y = 2(x + 2)(x − 1)(x − 3), because the leading coefficient is found from f(0) = 12",
+      "correctExplanation": "Setting y = a(x+2)(x−1)(x−3) and substituting (0,12): a(2)(−1)(−3) = 6a = 12, so a = 2.",
+      "distractors": [
+        {
+          "answer": "y = 2(x − 2)(x + 1)(x + 3), because the factor signs are the negatives of the given root values",
+          "explanation": "The factors are (x − root), so roots −2, 1, 3 give factors (x+2), (x−1), (x−3)."
+        },
+        {
+          "answer": "y = (x + 2)(x − 1)(x − 3), because the y-intercept condition is automatically satisfied here",
+          "explanation": "Evaluating at x = 0 gives (2)(−1)(−3) = 6 ≠ 12, so a coefficient is needed."
+        },
+        {
+          "answer": "y = 12(x + 2)(x − 1)(x − 3), because the y-intercept value becomes the leading coefficient directly",
+          "explanation": "The y-intercept constrains the coefficient through evaluation at x = 0, not by direct assignment."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "The polynomial y = x⁴ − 8x² + 16 can be written in factored form. How many distinct x-intercepts does it have?",
+      "correct": "Two distinct x-intercepts at x = 2 and x = −2, because the polynomial factors as (x² − 4)² = (x−2)²(x+2)²",
+      "correctExplanation": "The quartic is a perfect square: (x² − 4)², giving double roots at ±2.",
+      "distractors": [
+        {
+          "answer": "Four distinct x-intercepts, because a quartic polynomial can have up to four real roots",
+          "explanation": "Although the degree is four, the repeated factors give only two distinct root values."
+        },
+        {
+          "answer": "One distinct x-intercept at x = 2 only, because the squared factor counts as a single root",
+          "explanation": "Both (x − 2)² and (x + 2)² contribute distinct roots at x = 2 and x = −2."
+        },
+        {
+          "answer": "No x-intercepts, because the expression x⁴ − 8x² + 16 is always positive for all real values of x",
+          "explanation": "The expression equals zero at x = ±2; it is non-negative but not strictly positive everywhere."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Sketch analysis: the polynomial y = −x³ + 3x² − 2x has which set of features?",
+      "correct": "x-intercepts at 0, 1, 2; y-intercept 0; rises left, falls right; up to two turning points between roots",
+      "correctExplanation": "Factoring: −x(x² − 3x + 2) = −x(x−1)(x−2). The negative cubic lead gives rise-left, fall-right behaviour.",
+      "distractors": [
+        {
+          "answer": "x-intercepts at 0, 1, 2; y-intercept −2; falls left, rises right with at most three turning points from the equation",
+          "explanation": "The y-intercept is f(0) = 0 not −2, and a cubic has at most two turning points."
+        },
+        {
+          "answer": "x-intercepts at 0 and 2 only; y-intercept 0; rises on both sides with a single turning point",
+          "explanation": "There are three distinct roots at 0, 1, 2; rising on both sides applies to even-degree polynomials."
+        },
+        {
+          "answer": "x-intercepts at −1 and 2; y-intercept 2; falls on both sides with two turning points between roots",
+          "explanation": "The correct roots are 0, 1, 2 from the factorisation; falling on both sides applies to even-degree polynomials."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "For the polynomial y = 2(x − 1)²(x + 3), what is the behaviour at each x-intercept?",
+      "correct": "The graph touches the axis at x = 1 and crosses the axis at x = −3, determined by root multiplicity",
+      "correctExplanation": "x = 1 has multiplicity 2 (even, touch) and x = −3 has multiplicity 1 (odd, cross).",
+      "distractors": [
+        {
+          "answer": "The graph crosses at x = 1 and touches at x = −3, because the squared factor causes crossing",
+          "explanation": "Even-multiplicity roots cause touching, not crossing; the logic is reversed here."
+        },
+        {
+          "answer": "The graph crosses at both intercepts, because all polynomial roots produce axis crossings",
+          "explanation": "Only odd-multiplicity roots produce crossings; even multiplicity produces touch points."
+        },
+        {
+          "answer": "The graph touches at both intercepts, because the coefficient 2 doubles the tangent behaviour",
+          "explanation": "The leading coefficient affects steepness but not the touch-versus-cross behaviour at roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A quartic polynomial has a positive leading coefficient and roots at x = −3, −1, 1, 3. Between which consecutive roots must a local minimum occur?",
+      "correct": "Between x = −3 and x = −1, and between x = 1 and x = 3, where the curve dips",
+      "correctExplanation": "A positive quartic crosses the axis at four points; it must dip between consecutive pairs of roots.",
+      "distractors": [
+        {
+          "answer": "Between x = −1 and x = 1 only, because the central interval always contains the global minimum",
+          "explanation": "A local minimum between −1 and 1 also exists, but local minima occur between other consecutive roots too."
+        },
+        {
+          "answer": "At x = 0 only, because symmetry places the minimum at the midpoint of the root span",
+          "explanation": "While the function may be symmetric, local minima exist between each pair of consecutive roots."
+        },
+        {
+          "answer": "No local minimum exists between any roots, because quartic polynomials only have maxima between roots",
+          "explanation": "A positive-leading quartic must dip to cross back through the axis, creating local minima."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "The polynomial y = −(x + 2)³(x − 1) has what combination of end behaviour and root features?",
+      "correct": "Falls left, falls right; touches nowhere; crosses at x = −2 with a cubic inflection and at x = 1 simply",
+      "correctExplanation": "Degree 4 with negative lead falls both sides. Odd-multiplicity roots at −2 (mult 3) and 1 (mult 1) both cross.",
+      "distractors": [
+        {
+          "answer": "Rises left, rises right; touches at x = −2 because the cubed factor creates tangent contact with the axis",
+          "explanation": "Degree 4 with negative lead falls both sides; odd multiplicity 3 causes crossing, not touching."
+        },
+        {
+          "answer": "Falls left, rises right; crosses at both intercepts with no inflection in the crossing pattern",
+          "explanation": "This is even degree so both ends go the same direction; odd-degree end behaviour does not apply."
+        },
+        {
+          "answer": "Rises left, falls right; the graph touches at x = 1 and crosses at x = −2 with a turning point",
+          "explanation": "Even-degree polynomials have the same end behaviour on both sides, not opposite."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "To sketch y = x³ − 9x, the key features in correct combination are:",
+      "correct": "Roots at x = −3, 0, 3; y-intercept 0; falls left, rises right; two turning points near x = ±√3",
+      "correctExplanation": "Factoring: x(x²−9) = x(x−3)(x+3). Positive cubic lead gives fall-left, rise-right. Turning points where f'(x) = 0.",
+      "distractors": [
+        {
+          "answer": "Roots at x = −3 and 3 only; y-intercept −9; rises on both sides with one turning point at origin",
+          "explanation": "x = 0 is also a root (y-intercept is 0), and a cubic has at most two turning points."
+        },
+        {
+          "answer": "Roots at x = 0 and 9; y-intercept 0; falls left, rises right; one turning point at x = 4.5",
+          "explanation": "The roots are at 0, ±3 from factoring x(x−3)(x+3), not at 0 and 9."
+        },
+        {
+          "answer": "Roots at x = ±3; y-intercept −9; rises left, falls right; two turning points at x = ±1",
+          "explanation": "x = 0 is also a root, the y-intercept is 0, and the end behaviour direction is reversed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A polynomial has equation y = (x − a)²(x − b) where a < b. Describe the sketch near the roots.",
+      "correct": "The graph touches the x-axis at x = a and crosses at x = b, with a local extremum at the touch point",
+      "correctExplanation": "The double root at a gives tangent contact (even multiplicity); the simple root at b gives a crossing.",
+      "distractors": [
+        {
+          "answer": "The graph crosses at x = a and touches at x = b, because the first factor listed always produces crossings",
+          "explanation": "Multiplicity determines behaviour, not the order of factors; even multiplicity at a gives a touch."
+        },
+        {
+          "answer": "The graph crosses at both x = a and x = b, because the squared factor unfolds into two distinct crossings",
+          "explanation": "A squared factor gives one touch point, not two crossings; multiplicity 2 is even."
+        },
+        {
+          "answer": "The graph touches at both roots, because the overall degree is odd which forces all tangent contacts",
+          "explanation": "Only the root with even multiplicity produces a touch; the simple root at b causes a crossing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "The graph of y = x⁴ − 4x³ + 4x² can be described as having which root structure?",
+      "correct": "A double root at x = 0 and a double root at x = 2, where the graph touches the axis at both points",
+      "correctExplanation": "Factoring: x²(x² − 4x + 4) = x²(x − 2)². Both roots have even multiplicity, so the graph touches at both.",
+      "distractors": [
+        {
+          "answer": "A single root at x = 0 and a triple root at x = 2, with crossing behaviour at each intercept",
+          "explanation": "The factorisation is x²(x − 2)², not x(x − 2)³; both roots have multiplicity 2."
+        },
+        {
+          "answer": "Four distinct roots at x = 0, 1, 2, 3 with the graph crossing the axis at each of the four points",
+          "explanation": "The polynomial factors as x²(x−2)², giving only two distinct root values."
+        },
+        {
+          "answer": "A single root at x = 0 only, because the remaining factor has no further real roots in the expression",
+          "explanation": "The factor (x − 2)² gives an additional root at x = 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A quintic polynomial with positive leading coefficient and five distinct real roots must have exactly how many turning points?",
+      "correct": "Four turning points, because the graph must change direction between each consecutive pair of roots",
+      "correctExplanation": "With five distinct roots and positive leading coefficient, the graph alternates above and below, requiring four direction changes.",
+      "distractors": [
+        {
+          "answer": "Five turning points, because the degree equals the number of turning points for polynomials with all real roots",
+          "explanation": "The maximum is degree minus one = 4; the degree itself is never the turning point count."
+        },
+        {
+          "answer": "Three turning points, because a quintic always has an odd number of turning points less than five",
+          "explanation": "With five distinct roots, the graph must change direction four times, not three."
+        },
+        {
+          "answer": "Two turning points, because only even-degree polynomials can have more than two turning points",
+          "explanation": "Odd-degree polynomials can have up to degree minus one turning points."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "The polynomial y = −x⁴ + 5x² − 4 factors as −(x²−1)(x²−4). Which sketch features are correct?",
+      "correct": "x-intercepts at ±1 and ±2; y-intercept −4; graph falls on both sides; three turning points between intercepts",
+      "correctExplanation": "The four roots come from x²=1 and x²=4. Negative quartic lead gives both ends falling.",
+      "distractors": [
+        {
+          "answer": "x-intercepts at ±1 and ±2; y-intercept 4; graph rises on both sides with one turning point at the origin",
+          "explanation": "The y-intercept is −4 not 4, and a quartic can have up to three turning points."
+        },
+        {
+          "answer": "x-intercepts at 1 and 4 only; y-intercept −4; graph falls left and rises right with two turning points",
+          "explanation": "The roots are ±1 and ±2 from taking square roots; opposite end behaviour applies to odd degree."
+        },
+        {
+          "answer": "x-intercepts at ±2 only; y-intercept −4; graph falls on both sides with two turning points total",
+          "explanation": "Both x² − 1 = 0 and x² − 4 = 0 produce roots, giving four intercepts at ±1 and ±2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "For the polynomial y = a(x − p)(x − q)(x − r) with a > 0 and p < q < r, what is the sign of y when p < x < q?",
+      "correct": "Positive, because exactly two factors are negative and one is positive in that interval, giving a positive product",
+      "correctExplanation": "For p < x < q: (x−p) > 0, (x−q) < 0, (x−r) < 0. Product: (+)(−)(−) = (+), multiplied by a > 0 gives positive.",
+      "distractors": [
+        {
+          "answer": "Negative, because one factor is positive and two are negative giving an overall negative product with a positive coefficient",
+          "explanation": "Two negative factors multiply to give a positive, so (+)(−)(−) = (+), not negative."
+        },
+        {
+          "answer": "Zero, because the polynomial equals zero everywhere between consecutive roots of the expression",
+          "explanation": "The polynomial is zero only at the roots themselves, not between them."
+        },
+        {
+          "answer": "Undefined, because the sign cannot be determined without knowing the exact values of the three roots",
+          "explanation": "The sign depends only on the number of negative factors, which is deterministic in each interval."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "The polynomial y = x³ − 4x factors as x(x − 2)(x + 2), so it has x-intercepts at {{blank:1}} and its end behaviour is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x = 0, 2, −2",
+          "correctExplanation": "Setting each factor to zero gives three roots: 0, 2 and −2.",
+          "distractors": [
+            {
+              "answer": "x = 0 and 4",
+              "explanation": "The factor x² − 4 gives ±2, not 4; the difference of squares is overlooked.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x = 2 and −2 only",
+              "explanation": "The factor x also contributes a root at x = 0 that is missed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "falls left, rises right",
+          "correctExplanation": "Positive leading coefficient with odd degree gives this end behaviour pattern.",
+          "distractors": [
+            {
+              "answer": "rises on both sides",
+              "explanation": "This describes even-degree polynomials with positive leading coefficient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "rises left, falls right",
+              "explanation": "This describes odd-degree polynomials with a negative leading coefficient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "In the polynomial y = (x + 1)²(x − 3), the graph {{blank:1}} at x = −1 and {{blank:2}} at x = 3.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "touches the x-axis",
+          "correctExplanation": "The root x = −1 has even multiplicity 2, causing tangent contact.",
+          "distractors": [
+            {
+              "answer": "crosses the x-axis",
+              "explanation": "Crossing occurs at odd-multiplicity roots; multiplicity 2 gives touching.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "has a vertical asymptote",
+              "explanation": "Polynomials never have vertical asymptotes; they are continuous everywhere.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "crosses the x-axis",
+          "correctExplanation": "The root x = 3 has odd multiplicity 1, so the graph passes through.",
+          "distractors": [
+            {
+              "answer": "touches the x-axis",
+              "explanation": "Touching occurs at even-multiplicity roots; multiplicity 1 gives crossing.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "has a local maximum",
+              "explanation": "A local maximum may exist near x = 3 but the root itself is a crossing point.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "The quartic y = x⁴ − 5x² + 4 factors as (x−1)(x+1)(x−2)(x+2), giving {{blank:1}} distinct x-intercepts and at most {{blank:2}} turning points.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "There are four distinct linear factors, each contributing one x-intercept.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Each pair ±1 and ±2 represents distinct values; there are four, not two.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "The degree gives the maximum number of roots, and all four factors are distinct.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "A degree-four polynomial has at most 4 − 1 = 3 turning points.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The maximum turning points equal degree minus one, not the degree itself.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Two is one fewer than the correct maximum of three for a quartic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "For the cubic y = −2x³ + 6x, the y-intercept is {{blank:1}} and the graph {{blank:2}} to the left.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Substituting x = 0: −2(0)³ + 6(0) = 0.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "The coefficient of x is 6, but the y-intercept is the value at x = 0, which is 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−2",
+              "explanation": "The leading coefficient is −2, but evaluating at x = 0 gives 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "rises",
+          "correctExplanation": "Negative leading coefficient with odd degree means the graph rises as x → −∞.",
+          "distractors": [
+            {
+              "answer": "falls",
+              "explanation": "A negative odd-degree polynomial rises to the left and falls to the right.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "levels off",
+              "explanation": "Polynomial graphs do not level off at infinity; they diverge.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The polynomial y = (x − 2)³ crosses the x-axis at x = 2 with an {{blank:1}} point, and its multiplicity is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "inflection",
+          "correctExplanation": "A cubic root (odd multiplicity ≥ 3) creates an inflection-type crossing where the curve flattens.",
+          "distractors": [
+            {
+              "answer": "turning",
+              "explanation": "A turning point requires the graph to change direction; a cubic root causes a flattened crossing instead.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "tangent",
+              "explanation": "Tangent contact occurs at even-multiplicity roots; odd multiplicity 3 produces a crossing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The factor (x − 2) is raised to the power 3, giving multiplicity 3.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The exponent on the factor is 3, not 1; multiplicity matches the exponent.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "The multiplicity equals the exponent 3, not 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A polynomial with equation y = a(x − 1)(x − 4) and y-intercept of 12 has a = {{blank:1}} and vertex x-coordinate of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "Substituting x = 0: a(−1)(−4) = 4a = 12, so a = 3.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "The y-intercept constrains a through 4a = 12; a is not equal to the y-intercept itself.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−3",
+              "explanation": "The product (−1)(−4) = 4 is positive, so 4a = 12 gives a = 3, not −3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2.5",
+          "correctExplanation": "The vertex x-coordinate is the midpoint of the roots: (1 + 4)/2 = 2.5.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The midpoint of 1 and 4 is 2.5, not 2; both roots must be averaged correctly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "The vertex is at the midpoint of the roots, not at the larger root itself.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "The graph of y = −x⁴ + x² has x-intercepts where x² ({{blank:1}}) = 0, giving roots at x = 0, {{blank:2}} and x = −1.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−x² + 1",
+          "correctExplanation": "Factoring out x²: y = x²(−x² + 1), so the remaining factor is −x² + 1.",
+          "distractors": [
+            {
+              "answer": "x² − 1",
+              "explanation": "Factoring −x⁴ + x² gives x²(−x² + 1), not x²(x² − 1); the sign is reversed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−x + 1",
+              "explanation": "The inner factor comes from −x⁴ + x² = x²(−x² + 1), not x²(−x + 1).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x = 1",
+          "correctExplanation": "Setting −x² + 1 = 0 gives x² = 1, so x = 1 (and x = −1).",
+          "distractors": [
+            {
+              "answer": "x = 2",
+              "explanation": "Solving −x² + 1 = 0 gives x = ±1, not x = 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x = √2",
+              "explanation": "The equation −x² + 1 = 0 gives x² = 1, not x² = 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "For the polynomial y = 3(x + 1)(x − 2)(x − 5), the y-intercept is {{blank:1}} and there are {{blank:2}} x-intercepts.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "Substituting x = 0: 3(1)(−2)(−5) = 3 × 10 = 30.",
+          "distractors": [
+            {
+              "answer": "−30",
+              "explanation": "The product (1)(−2)(−5) = 10, then 3 × 10 = 30; the double negative yields positive.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "15",
+              "explanation": "All three factor values at x = 0 must be multiplied together with the coefficient 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "There are three distinct linear factors, giving three distinct x-intercepts.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The number of x-intercepts equals the number of distinct linear factors, which is three.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "All three factors (x+1), (x−2), (x−5) contribute roots at −1, 2, and 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A cubic with positive leading coefficient, a double root at x = 1, and a single root at x = −2 has the form y = a(x − 1){{blank:1}}(x + 2) where it {{blank:2}} at x = 1.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "²",
+          "correctExplanation": "A double root at x = 1 means the factor (x − 1) has exponent 2.",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "A cubic exponent on one factor would make the polynomial degree 4 when combined with (x + 2).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "¹",
+              "explanation": "Without an exponent, x = 1 would be a simple root, not a double root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "touches the x-axis",
+          "correctExplanation": "Even multiplicity at x = 1 causes the graph to touch without crossing.",
+          "distractors": [
+            {
+              "answer": "crosses the x-axis",
+              "explanation": "Crossing occurs at odd-multiplicity roots; the double root causes tangent contact.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "has a vertical tangent",
+              "explanation": "Polynomial graphs have smooth, finite-slope tangent lines at all points.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The end behaviour of y = −3x⁵ + x³ − 2 is determined by the leading term {{blank:1}}, so the graph rises to the {{blank:2}} and falls to the right.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−3x⁵",
+          "correctExplanation": "The leading term is the term with the highest degree, which is −3x⁵.",
+          "distractors": [
+            {
+              "answer": "x³",
+              "explanation": "The x³ term has a lower degree than x⁵ and does not determine end behaviour.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−2",
+              "explanation": "The constant term affects the y-intercept but not the end behaviour.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "left",
+          "correctExplanation": "A negative coefficient on an odd-degree term means the graph rises to the left.",
+          "distractors": [
+            {
+              "answer": "right",
+              "explanation": "With a negative odd-degree leading term, the graph falls to the right, not rises.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "centre",
+              "explanation": "End behaviour describes what happens as x → ±∞, not near the centre of the graph.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "To find the equation of a cubic through (0, −6) with roots at −1, 2, 3, set y = a(x + 1)(x − 2)(x − 3) and solve for a = {{blank:1}}, giving the leading coefficient a sign that is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−1",
+          "correctExplanation": "Substituting (0, −6): a(1)(−2)(−3) = 6a = −6, so a = −1.",
+          "distractors": [
+            {
+              "answer": "−6",
+              "explanation": "The y-intercept value constrains a through evaluation, not by direct assignment.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "The equation 6a = −6 gives a = −1, not a = 1; the sign must match the y-intercept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative",
+          "correctExplanation": "Since a = −1, the leading coefficient is negative.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "The calculation gives a = −1, which is negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "A zero leading coefficient would eliminate the cubic term entirely.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A quartic polynomial with all four roots real and distinct must cross the x-axis {{blank:1}} times and have exactly {{blank:2}} turning points.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Four distinct real roots each with multiplicity 1 (odd) means four crossings.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "All four distinct roots produce crossings, not just two.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Each of the four distinct simple roots produces a crossing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Between four distinct roots, the graph must change direction three times, giving three turning points.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The maximum turning points for a quartic is 3 (degree minus one), and with four roots it achieves this maximum.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Three direction changes are required to weave through four distinct crossings.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A polynomial y = ax⁴ + bx³ + cx² + dx + e has a > 0, four distinct real roots, and a local maximum between the two middle roots that is below the x-axis. What does this imply about the graph?",
+      "correct": "The graph crosses the x-axis four times but the local maximum between the middle roots lies below the axis",
+      "correctExplanation": "A positive quartic with four roots rises on both ends and must have its central local max below the axis for four crossings.",
+      "distractors": [
+        {
+          "answer": "The graph has only two x-intercepts because the central portion remains entirely below the x-axis",
+          "explanation": "The problem states four distinct real roots, so the graph must cross four times."
+        },
+        {
+          "answer": "The graph touches the x-axis at two points and crosses at two others creating tangent contact",
+          "explanation": "Four distinct roots each have multiplicity 1, so all four are crossings, not tangent contacts."
+        },
+        {
+          "answer": "The local maximum above the x-axis implies the polynomial has complex roots between the middle pair",
+          "explanation": "The maximum is stated to be below the axis, and all roots are real."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "The polynomial y = x⁵ − 5x³ + 4x factors completely over the reals. Analyse its root structure and symmetry.",
+      "correct": "The roots are x = 0, ±1, ±2 and the function is odd, so the graph has rotational symmetry about the origin",
+      "correctExplanation": "Factoring: x(x⁴−5x²+4) = x(x²−1)(x²−4) = x(x−1)(x+1)(x−2)(x+2). All powers are odd in f(x), confirming f(−x) = −f(x).",
+      "distractors": [
+        {
+          "answer": "The roots are x = 0, ±1, ±2 and the function is even with reflective symmetry about the y-axis",
+          "explanation": "All terms have odd exponents, so f(−x) = −f(x), making it odd, not even."
+        },
+        {
+          "answer": "The roots are x = ±1 and ±2 only because the x factor does not produce a valid root value",
+          "explanation": "The factor x gives root x = 0, which is a valid x-intercept."
+        },
+        {
+          "answer": "The roots are x = 0, ±√5 and ±2 because the cubic coefficient determines two of the root pairs",
+          "explanation": "The factorisation gives x²−1 and x²−4, so roots are ±1 and ±2, not ±√5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Two cubic polynomials share the same three x-intercepts but have leading coefficients of opposite sign. Compare their graphs.",
+      "correct": "The graphs cross at the same three points but have opposite end behaviour and are reflections across the x-axis",
+      "correctExplanation": "Negating the leading coefficient reflects the graph across the x-axis, reversing end behaviour.",
+      "distractors": [
+        {
+          "answer": "The graphs are identical because x-intercepts alone determine the shape of a cubic polynomial",
+          "explanation": "The leading coefficient affects end behaviour and vertical scaling; the graphs differ."
+        },
+        {
+          "answer": "The graphs share x-intercepts but one has more turning points than the other due to the sign change for this polynomial",
+          "explanation": "Both cubics have the same degree and the same maximum number of turning points."
+        },
+        {
+          "answer": "The graphs cannot share three intercepts if their leading coefficients differ in sign for any cubic",
+          "explanation": "Different leading coefficients change the shape but roots can remain the same."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A quartic polynomial has a double root at x = 2 and a double root at x = −1, with a positive leading coefficient. Describe the complete sketch.",
+      "correct": "The graph touches the x-axis at both roots, opens upward, and has a local maximum between them",
+      "correctExplanation": "Both double roots give touch points. Positive quartic rises on both ends. Between touch points the graph dips, creating a local max above or at the dips.",
+      "distractors": [
+        {
+          "answer": "The graph crosses the x-axis at both roots because double roots always produce crossing behaviour",
+          "explanation": "Double roots (even multiplicity) produce touch points, not crossings."
+        },
+        {
+          "answer": "The graph touches at x = 2 and crosses at x = −1 because the negative root behaves differently",
+          "explanation": "Both roots have the same multiplicity 2; the sign of the root does not affect touch vs cross."
+        },
+        {
+          "answer": "The graph is entirely above the x-axis because the double roots prevent any contact with the axis",
+          "explanation": "Double roots mean the graph touches the x-axis at those points; it is not entirely above."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Analyse the polynomial y = x⁴ − 2x³ − x² + 2x. Determine its factored form and describe the graph near each root.",
+      "correct": "y = x(x−1)(x+1)(x−2) with simple crossings at all four roots and end behaviour rising on both sides",
+      "correctExplanation": "Factoring: x(x³−2x²−x+2) = x(x−1)(x+1)(x−2). All roots have multiplicity 1, and positive quartic rises both sides.",
+      "distractors": [
+        {
+          "answer": "y = x²(x−1)(x+2) with a touch at x = 0 and crossings at x = 1 and x = −2 along the curve",
+          "explanation": "The correct factorisation gives four distinct simple roots, not a double root at x = 0."
+        },
+        {
+          "answer": "y = x(x−2)(x²+1) with only two real roots at x = 0 and x = 2, since x²+1 has no real solutions",
+          "explanation": "The factor x²+1 does not appear; the correct factorisation has four real roots."
+        },
+        {
+          "answer": "y = (x²−1)(x²−2x) with crossings at ±1 and a touch at x = 0 because x² creates even multiplicity",
+          "explanation": "The factor x²−2x = x(x−2) gives simple roots at 0 and 2, not a double root at 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A degree-six polynomial has a positive leading coefficient, roots at x = −3, −1, 1, 3 each with multiplicity 1, and a double root at x = 0. Describe its key features.",
+      "correct": "The graph crosses the axis at ±3 and ±1, touches at x = 0, rises on both sides, with at most five turning points",
+      "correctExplanation": "Simple roots (odd mult) give crossings. Double root (even mult) gives touch. Even degree positive lead rises both sides.",
+      "distractors": [
+        {
+          "answer": "The graph crosses at all six root locations because the total degree is six and all roots are real",
+          "explanation": "The double root at x = 0 gives a touch point; only the four simple roots produce crossings."
+        },
+        {
+          "answer": "The graph touches at all roots because the polynomial can be expressed as a perfect square overall",
+          "explanation": "Only x = 0 has even multiplicity; the other four roots have odd multiplicity and give crossings."
+        },
+        {
+          "answer": "The graph has exactly six turning points because the degree of the polynomial is six in total",
+          "explanation": "The maximum number of turning points is degree minus one = 5, not the degree itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "The polynomial y = −(x − 1)²(x + 2)² is a quartic with two double roots. Evaluate whether the graph ever goes above the x-axis.",
+      "correct": "The graph never goes above the x-axis because the expression is the negative of a product of squares, making it non-positive everywhere",
+      "correctExplanation": "Since (x−1)² ≥ 0 and (x+2)² ≥ 0, their product is ≥ 0, and the negative sign makes y ≤ 0 for all x.",
+      "distractors": [
+        {
+          "answer": "The graph goes above the axis between x = −2 and x = 1 because the two negative signs cancel",
+          "explanation": "The overall negative sign applies to the entire non-negative product, keeping y ≤ 0."
+        },
+        {
+          "answer": "The graph goes above the axis for x > 1 because both squared factors become large positive values",
+          "explanation": "The negative sign in front ensures the product of squares remains non-positive for all x values."
+        },
+        {
+          "answer": "The graph oscillates above and below the axis because quartic polynomials always have mixed sign regions",
+          "explanation": "This particular quartic is ≤ 0 everywhere due to its structure as −(square × square)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Compare the graphs of y = x³ and y = x³ − 3x. How does adding the −3x term change the curve's features?",
+      "correct": "Adding −3x introduces two additional x-intercepts at x = ±√3 and creates two turning points that the basic cubic lacks",
+      "correctExplanation": "y = x³ passes through the origin only with no turning points. y = x³−3x = x(x²−3) has roots at 0, ±√3 and two turning points.",
+      "distractors": [
+        {
+          "answer": "Adding −3x shifts the entire cubic downward by 3 units without changing the number of intercepts or turning points when evaluated",
+          "explanation": "The term −3x is not a vertical shift; it changes the shape by altering the derivative."
+        },
+        {
+          "answer": "Adding −3x changes only the y-intercept from 0 to −3 while preserving the single root at the origin",
+          "explanation": "At x = 0, −3(0) = 0, so the y-intercept is unchanged; the term creates additional roots."
+        },
+        {
+          "answer": "Adding −3x rotates the cubic graph clockwise by a fixed angle about the origin without adding features",
+          "explanation": "Polynomial transformations do not rotate; adding a linear term changes roots and turning points."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student claims that every polynomial of odd degree must cross the x-axis at least once. Evaluate this claim using end behaviour analysis.",
+      "correct": "The claim is correct because odd-degree polynomials have opposite end behaviours, so by continuity the graph must cross the x-axis",
+      "correctExplanation": "Odd degree means one end goes to +∞ and the other to −∞. By the intermediate value theorem, the graph must cross y = 0.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because y = x³ + 1000 never reaches the x-axis for any real input value as determined",
+          "explanation": "Even x³ + 1000 eventually reaches −∞ as x → −∞, crossing the x-axis at x = −10."
+        },
+        {
+          "answer": "The claim is correct only for cubics but fails for degree five and higher odd-degree polynomials",
+          "explanation": "All odd-degree polynomials have opposite end behaviour, regardless of the specific odd degree."
+        },
+        {
+          "answer": "The claim is incorrect because the intermediate value theorem does not apply to polynomial functions",
+          "explanation": "The IVT applies to all continuous functions, and polynomials are continuous everywhere."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "The graph of y = (x − a)ⁿ where n is a positive even integer has a specific feature at x = a. Generalise this feature.",
+      "correct": "The graph touches the x-axis at x = a forming a flat tangent point, and the flatness increases as n increases",
+      "correctExplanation": "Even-power roots create tangent points. Higher even powers make the curve flatter near the root before curving away.",
+      "distractors": [
+        {
+          "answer": "The graph crosses the x-axis at x = a with increasing steepness as n grows larger in value",
+          "explanation": "Even powers create touch points, not crossings; crossings occur only for odd powers."
+        },
+        {
+          "answer": "The graph has a cusp at x = a that becomes sharper as the even exponent n increases in size by this analysis",
+          "explanation": "Polynomials are infinitely smooth and never form cusps; the graph is flat near even-multiplicity roots."
+        },
+        {
+          "answer": "The graph has no contact with the x-axis for large even n because the curve stays above the axis",
+          "explanation": "The graph always touches the x-axis at x = a regardless of how large n is."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A polynomial has equation y = (x + 3)(x + 1)(x − 1)(x − 3). Without expanding, determine the y-intercept and whether the graph has a line of symmetry.",
+      "correct": "The y-intercept is 9 and the graph is symmetric about x = 0 because the roots are symmetric about the origin",
+      "correctExplanation": "At x = 0: (3)(1)(−1)(−3) = 9. Roots at ±1 and ±3 are symmetric about 0, giving axis of symmetry x = 0.",
+      "distractors": [
+        {
+          "answer": "The y-intercept is −9 and the graph has no symmetry because the product of four factors is negative",
+          "explanation": "The product (3)(1)(−1)(−3) = 9, not −9; the two negative factors give a positive product."
+        },
+        {
+          "answer": "The y-intercept is 9 but the graph has no line of symmetry because quartics are never symmetric",
+          "explanation": "This quartic has roots symmetric about x = 0, giving it reflective symmetry about the y-axis."
+        },
+        {
+          "answer": "The y-intercept is 3 and the graph is symmetric about x = 1 because the roots average to one",
+          "explanation": "The y-intercept is 9 and the roots average to 0, giving symmetry about x = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Explain why a polynomial of degree four with no real roots must satisfy a > 0 and have its global minimum above the x-axis.",
+      "correct": "A positive leading coefficient ensures both ends rise, and if the minimum value is positive, the graph stays above the axis entirely",
+      "correctExplanation": "With a > 0, the quartic rises on both sides. If the global minimum exceeds zero, the graph never reaches y = 0.",
+      "distractors": [
+        {
+          "answer": "A negative leading coefficient could also produce a quartic with no real roots if the maximum is below the axis",
+          "explanation": "A negative quartic falls on both sides, so it always goes below the axis and crosses it."
+        },
+        {
+          "answer": "The global minimum must be exactly at the x-axis for the polynomial to have no real roots at all",
+          "explanation": "If the minimum is at the axis, the polynomial has a real root (where it touches); above means no roots."
+        },
+        {
+          "answer": "Any leading coefficient sign works because the absence of real roots depends only on the discriminant value",
+          "explanation": "A negative leading coefficient means the quartic falls on both sides, guaranteeing real roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "The polynomial y = x⁶ − x⁴ − x² + 1 can be factored by grouping. Analyse its root structure and graph symmetry.",
+      "correct": "Grouping gives (x²−1)(x⁴−1) = (x²−1)²(x²+1), with double roots at ±1 and no other real roots, symmetric about x = 0",
+      "correctExplanation": "x⁶−x⁴−x²+1 = x⁴(x²−1)−(x²−1) = (x²−1)(x⁴−1) = (x²−1)(x²−1)(x²+1) = (x²−1)²(x²+1).",
+      "distractors": [
+        {
+          "answer": "The polynomial has six distinct real roots because its degree is six, filling the maximum capacity",
+          "explanation": "The factor (x²+1) has no real roots, and (x²−1)² gives only two distinct real roots at ±1."
+        },
+        {
+          "answer": "Grouping gives (x³−1)(x³+1) with real roots at 1 and −1 only, each with multiplicity three",
+          "explanation": "x⁶−x⁴−x²+1 does not factor as a difference and sum of cubes; the correct grouping uses x²."
+        },
+        {
+          "answer": "The polynomial factors as (x−1)⁶ with a single root of multiplicity six at x = 1 and no symmetry in the expression",
+          "explanation": "Expanding (x−1)⁶ does not give x⁶−x⁴−x²+1; the factorisation has two distinct real roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A cubic polynomial f(x) = x³ + px + q has an inflection point at the origin. Determine what constraints this places on the coefficients.",
+      "correct": "The inflection point at the origin requires q = 0, since f(0) = q and f″(0) = 0 automatically",
+      "correctExplanation": "f″(x) = 6x, so f″(0) = 0 always. The inflection point at (0,0) also requires f(0) = q = 0.",
+      "distractors": [
+        {
+          "answer": "Both p = 0 and q = 0 are required because the inflection point must also be a stationary point",
+          "explanation": "An inflection point need not be stationary; f'(0) = p can be any value."
+        },
+        {
+          "answer": "Only p = 0 is required because the linear term must vanish for inflection to occur at the origin",
+          "explanation": "The second derivative is 6x regardless of p; q = 0 is needed for f(0) = 0."
+        },
+        {
+          "answer": "No constraints are placed on either coefficient because all cubics have an inflection at the origin",
+          "explanation": "All depressed cubics have f″(0) = 0, but the graph passes through the origin only when q = 0."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The polynomial y = x⁴ − 6x² + 9 factors as (x² − 3)², giving double roots at x = {{blank:1}} and x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√3",
+          "correctExplanation": "Setting x² − 3 = 0 gives x² = 3, so x = √3.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The equation x² = 3 gives x = √3, not x = 3; the square root is needed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "The constant 9 is the square of 3 in the factorisation, not a root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−√3",
+          "correctExplanation": "The other solution of x² = 3 is x = −√3.",
+          "distractors": [
+            {
+              "answer": "−3",
+              "explanation": "The equation x² = 3 gives x = −√3, not x = −3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Zero is not a root; substituting x = 0 gives 9 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "A degree-five polynomial with three distinct real roots, one of multiplicity {{blank:1}}, has the remaining two roots as a complex conjugate pair, which means the graph crosses the axis {{blank:2}} times.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "If three real roots include one of multiplicity 3 and two simple complex roots, total degree is 3+2 = 5.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Multiplicity 5 for one root would account for the full degree with no complex roots.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "If all three real roots had multiplicity 1, that accounts for only degree 3; the complex pair adds 2 for degree 5, but the question says three distinct real roots with one having higher multiplicity. Actually one root has multiplicity 3 and the other two are complex.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The complex conjugate pair does not cross the real axis. The three real roots (one with mult 3, which is odd) all produce crossings.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Complex roots do not produce x-intercepts; only the three real roots create crossings.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "All three real root values produce crossings since their multiplicities are odd.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The expression −(x−1)²(x+1)² is always {{blank:1}} because each squared factor is non-negative and the overall negative sign {{blank:2}} the product.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "non-positive",
+          "correctExplanation": "The product of two squares is ≥ 0, and negating gives ≤ 0.",
+          "distractors": [
+            {
+              "answer": "non-negative",
+              "explanation": "The negative sign in front makes the entire expression ≤ 0, not ≥ 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The expression is zero only when x = 1 or x = −1; elsewhere it is strictly negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negates",
+          "correctExplanation": "Multiplying a non-negative quantity by −1 makes it non-positive.",
+          "distractors": [
+            {
+              "answer": "preserves",
+              "explanation": "The negative sign changes the sign of the product, not preserves it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "doubles",
+              "explanation": "The negative sign reverses the sign, it does not multiply the magnitude by two.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "For y = x³ − 3x² + 3x − 1, factoring gives (x − 1)³, which means x = 1 is a root of multiplicity {{blank:1}} and the graph exhibits an {{blank:2}} at that point.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The factor (x − 1) appears cubed, giving multiplicity 3.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The exponent on the factor is 3, not 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "The multiplicity is the exponent 3, not 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inflection crossing",
+          "correctExplanation": "Odd multiplicity ≥ 3 creates a crossing with an inflection-type flattening.",
+          "distractors": [
+            {
+              "answer": "tangent touch",
+              "explanation": "Tangent touch occurs at even multiplicity; odd multiplicity 3 produces a crossing.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sharp cusp",
+              "explanation": "Polynomial graphs are smooth and never form cusps.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "Comparing y = x⁴ and y = x⁴ − 4x², the additional term −4x² creates {{blank:1}} new x-intercepts and introduces {{blank:2}} turning points not present in the original graph.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "y = x⁴ − 4x² = x²(x²−4) = x²(x−2)(x+2). The original y = x⁴ has root x = 0 only; the new roots are ±2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The polynomial has three distinct roots (0, ±2) but 0 was already a root of x⁴; only two are new.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "The term −4x² changes the root structure, adding x = ±2 as new intercepts.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "y = x⁴ has one turning point at the origin; y = x⁴ − 4x² has three, so two additional turning points appear.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The additional term changes the shape significantly, introducing local extrema.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "A quartic has at most 3 turning points total; going from 1 to 3 adds only 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A polynomial y = a(x − r₁)(x − r₂)...(x − rₙ) has its y-intercept equal to {{blank:1}}, and the sign of the y-intercept depends on the product of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "a(−r₁)(−r₂)...(−rₙ)",
+          "correctExplanation": "Substituting x = 0 into each factor gives (0 − rₖ) = −rₖ, multiplied by a.",
+          "distractors": [
+            {
+              "answer": "a · r₁ · r₂ · ... · rₙ",
+              "explanation": "Each factor at x = 0 is (0 − rₖ) = −rₖ, not just rₖ; the signs matter.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "r₁ + r₂ + ... + rₙ",
+              "explanation": "The y-intercept is a product, not a sum, of the evaluated factors.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "the leading coefficient and the negated roots",
+          "correctExplanation": "The sign depends on a and on (−r₁)(−r₂)...(−rₙ), which accounts for root signs.",
+          "distractors": [
+            {
+              "answer": "only the leading coefficient",
+              "explanation": "The signs of the roots also affect the sign of the y-intercept.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "only the number of terms in the polynomial",
+              "explanation": "The number of terms is irrelevant; the product of evaluated factors determines the sign.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "An even-degree polynomial with a negative leading coefficient has end behaviour where both sides approach {{blank:1}}, meaning the graph must have a global {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative infinity",
+          "correctExplanation": "A negative leading coefficient on even degree sends both ends to −∞.",
+          "distractors": [
+            {
+              "answer": "positive infinity",
+              "explanation": "Positive infinity on both sides occurs with a positive leading coefficient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Polynomial ends diverge to infinity, not converge to zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "maximum",
+          "correctExplanation": "Since both ends fall, the graph must reach a highest point somewhere, which is the global maximum.",
+          "distractors": [
+            {
+              "answer": "minimum",
+              "explanation": "Both ends go to −∞, so the graph rises to a peak; the extremum is a maximum.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "inflection point",
+              "explanation": "An inflection point changes concavity; the global extremum of a downward-opening even-degree polynomial is a maximum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The polynomial y = (x² − 4)(x² − 9) has roots at {{blank:1}} and its y-intercept is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x = ±2 and x = ±3",
+          "correctExplanation": "Setting x²−4 = 0 gives x = ±2; setting x²−9 = 0 gives x = ±3.",
+          "distractors": [
+            {
+              "answer": "x = 4 and x = 9",
+              "explanation": "The roots come from x² = 4 and x² = 9, giving ±2 and ±3, not 4 and 9.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x = 2 and x = 3 only",
+              "explanation": "Both positive and negative square roots are solutions: ±2 and ±3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "36",
+          "correctExplanation": "Substituting x = 0: (0−4)(0−9) = (−4)(−9) = 36.",
+          "distractors": [
+            {
+              "answer": "−36",
+              "explanation": "The product (−4)(−9) = 36 is positive because both factors are negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "13",
+              "explanation": "The y-intercept is the product (−4)(−9) = 36, not the sum −4 + (−9) = −13.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "If a polynomial has roots that are symmetric about x = h, then x = {{blank:1}} is an axis of symmetry, and the graph of an even-degree polynomial with this property is {{blank:2}} about that vertical line.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "h",
+          "correctExplanation": "Symmetrically placed roots about x = h create an axis of symmetry at x = h.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The axis of symmetry is at x = h, which is not necessarily zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2h",
+              "explanation": "The axis is at the centre of the symmetric roots, which is x = h, not x = 2h.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "symmetric",
+          "correctExplanation": "An even-degree polynomial with symmetric roots about x = h has reflective symmetry about x = h.",
+          "distractors": [
+            {
+              "answer": "asymmetric",
+              "explanation": "The symmetric root placement guarantees the graph has reflective symmetry.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "periodic",
+              "explanation": "Polynomials are not periodic functions; symmetry here means reflection, not repetition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "The graph of y = x(x − 2)²(x + 2)² has {{blank:1}} distinct x-intercepts and the graph behaviour alternates between crossing and touching: it {{blank:2}} at x = 0.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The roots are x = 0 (mult 1), x = 2 (mult 2), x = −2 (mult 2): three distinct values.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The degree is 5, but repeated roots reduce the distinct count to three.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "There are three distinct root values: 0, 2, and −2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "crosses",
+          "correctExplanation": "The root at x = 0 has multiplicity 1 (odd), so the graph crosses the x-axis there.",
+          "distractors": [
+            {
+              "answer": "touches",
+              "explanation": "Touching occurs at even-multiplicity roots; x = 0 has multiplicity 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "has a flat tangent",
+              "explanation": "A flat tangent requires higher even multiplicity; multiplicity 1 gives a simple crossing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A quintic polynomial with positive leading coefficient and exactly one real root (multiplicity {{blank:1}}) has its remaining four roots as two complex conjugate pairs, and its graph crosses the x-axis exactly {{blank:2}} time(s).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "With four complex roots (two conjugate pairs) and one real root, the real root has multiplicity 1.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Multiplicity 5 would mean all roots are the same real number; the remaining four are complex here.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "Multiplicity 3 plus four complex roots would give degree 7, not 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Only the single real root produces an x-intercept; complex roots do not appear on the real axis.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Complex roots contribute to the degree but not to x-intercepts.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "The one real root with odd multiplicity produces exactly one crossing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The polynomial y = −2(x − 1)(x + 1)(x − 3)(x + 3) has its y-intercept at y = {{blank:1}} and the graph {{blank:2}} on both sides due to its even degree and negative leading coefficient.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−18",
+          "correctExplanation": "At x = 0: −2(−1)(1)(−3)(3) = −2(1)(−9) = −2 × 9 = −18. Wait: (−1)(1)(−3)(3) = (−1)(1) × (−3)(3) = (−1)(−9) = 9. Then −2 × 9 = −18.",
+          "distractors": [
+            {
+              "answer": "18",
+              "explanation": "The product (−1)(1)(−3)(3) = 9, and −2 × 9 = −18, not 18; the leading coefficient is negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−2",
+              "explanation": "The full product at x = 0 must be computed: −2(−1)(1)(−3)(3) = −18.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "falls",
+          "correctExplanation": "Even degree with negative leading coefficient means both ends approach −∞.",
+          "distractors": [
+            {
+              "answer": "rises",
+              "explanation": "Rising on both sides requires a positive leading coefficient for even degree.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "diverges in opposite directions",
+              "explanation": "Opposite end behaviour occurs for odd-degree polynomials, not even.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

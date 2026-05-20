@@ -2,47 +2,52 @@
 
 ## What this is
 
-A parallel work queue for building VC2 question files for **Years 7–10 (Levels 07–10)**. Multiple Claude Code sessions work simultaneously. Each session claims codes from the queue, builds complete JSON from skeletons, validates, and checks in.
+A parallel work queue for building VC2 question files for **Years 7–10 (Levels 07–10)**. Multiple Claude Code sessions work simultaneously. Each session claims codes atomically, builds complete JSON from skeletons, validates, and checks in.
 
 **Levels 1–6 are out of scope.** Do not attempt any code below Level 07. The Victorian Curriculum only mandates Years 7–8 and 9–10 content at this stage.
 
 **No Python builder scripts.** Every file is hand-authored JSON. Every item is bespoke.
 
-**Scope:** 758 codes across L07–L10. ~124 done. ~634 pending.
+---
+
+> ## ⚡ Atomic claims are now the only correct way
+>
+> Hand-editing `generation-queue.json` to claim codes is **race-prone** and has caused collisions. The whole project — both pipelines — now uses a `mkdir`-atomic claim system under `claims/<pipeline>/<CODE>/`. The queue file is still the source of truth for *what is pending*, but locks live on the filesystem.
+>
+> Use the scripts. Do not hand-edit the queue.
+>
+> See the project-wide canonical handoff: `CONTENT_HANDOFF.md` (sections 1, 2, 5, 7).
 
 ---
 
 ## Session workflow
 
-### 1. Check out codes
+### 1. Check out codes (atomic)
 
 ```bash
 cd "/Users/jirrahmacarthur/Claude Cowork access/Kulin Nation Curriculum"
+
+# Claim 4 pending codes. Filter by subject and/or level.
+python3 scripts/claim.py --session gen-Y10-S2 --count 4 \
+    --pipeline questions --subject Mathematics --level 10
+```
+
+The script prints exactly the codes locked to you (one per line). They are race-safe — even three sessions racing for the same four codes get three disjoint sets of four.
+
+To inspect what's still pending before claiming:
+
+```bash
 python3 << 'PYEOF'
 import json, os
 q = json.load(open('questions/_tracker/generation-queue.json'))
-codes = q['codes']
-# Check filesystem for what's actually built
-for code, info in codes.items():
-    lv = str(info['level']).zfill(2)
-    folder = info['folder']
-    fpath = f"questions/level-{lv}/{folder}/{code}.json"
-    if os.path.exists(fpath):
-        info['status'] = 'done'
-
-pending = [(c, i) for c, i in codes.items() if i['status'] == 'pending']
-claimed = [(c, i) for c, i in codes.items() if i['status'] == 'claimed']
-done = [(c, i) for c, i in codes.items() if i['status'] == 'done']
-print(f"Done: {len(done)} | Claimed: {len(claimed)} | Pending: {len(pending)}")
-print(f"\nNext 4 available:")
-for c, i in pending[:4]:
+pending = sorted(
+    [(c, i) for c, i in q['codes'].items() if i.get('status') == 'pending'],
+    key=lambda x: (x[1].get('level', 99), x[1].get('area',''), x[0])
+)
+print(f"Pending: {len(pending)}")
+for c, i in pending[:8]:
     print(f"  {c} — L{str(i['level']).zfill(2)} {i['area']} ({i['ageBand']}) — {i['keyKnowledge'][:80]}")
 PYEOF
-```
-
-Claim codes by editing `questions/_tracker/generation-queue.json`:
-```json
-"VC2XXXXX": { "status": "claimed", "claimedBy": "session-XXX", "claimedAt": "2026-05-16T...", ... }
 ```
 
 **Claim 4 codes at a time.** Prefer codes from the same level and subject for consistency.
@@ -68,13 +73,28 @@ For each claimed code:
 
 5. **Fix any errors** and re-validate.
 
-### 3. Check in
+### 3. Check in (atomic)
 
 ```bash
-python3 questions/_tracker/update_manifests.py
+python3 scripts/release.py --session gen-Y10-S2 --pipeline questions \
+    --codes VC2M10M01 VC2M10M02 VC2M10M03 VC2M10M04
 ```
 
-Update `generation-queue.json` — set each completed code to `"status": "done"`.
+The release script:
+1. Verifies the `.json` file exists at the expected path.
+2. Runs `questions/_validation/validate.py` on each (pass `--skip-validate` only if you have a good reason).
+3. Flips each code in `generation-queue.json` to `"status": "done"` and strips claim metadata.
+4. Runs `python3 questions/_tracker/update_manifests.py`.
+5. Removes the atomic claim directory.
+
+If validate fails on any code, the claim stays open until you fix and retry. To abandon a claim without files:
+
+```bash
+python3 scripts/release.py --session gen-Y10-S2 --pipeline questions \
+    --codes VC2M10M04 --abandon
+```
+
+> **Do not hand-edit `generation-queue.json` to mark codes done.** The script does it correctly and consistently. Hand-edits diverge from filesystem state and cause the navigator to show stale data.
 
 ---
 
@@ -395,8 +415,21 @@ That document is the ultimate authority. This handoff summarises it for speed.
 
 Open a new Claude Code session and say:
 
-> Read `questions/_tracker/HANDOFF-GENERATION.md` and `questions/_tracker/generation-prompt-master.md`. Claim the next 4 available codes from `questions/_tracker/generation-queue.json` and build them. Only Levels 07–10 are in scope. No Python scripts — write each JSON file directly. Validate each one before checking in.
+> Read `CONTENT_HANDOFF.md`, then `questions/_tracker/HANDOFF-GENERATION.md` and `questions/_tracker/generation-prompt-master.md`. Your session ID is `gen-S2`. Claim 4 pending codes with:
+> ```
+> python3 scripts/claim.py --session gen-S2 --count 4 --pipeline questions
+> ```
+> Build each JSON file by hand (no builder scripts) from the corresponding skeleton, validate with `questions/_validation/validate.py`, then release with:
+> ```
+> python3 scripts/release.py --session gen-S2 --pipeline questions --codes <CODES...>
+> ```
+> Only Levels 07–10 are in scope.
 
-To target a specific level or subject:
+To target a specific level and subject:
 
-> Read `questions/_tracker/HANDOFF-GENERATION.md` and `questions/_tracker/generation-prompt-master.md`. Claim 4 codes from Level 10 Mathematics in `questions/_tracker/generation-queue.json` and build them. No Python scripts — write each JSON file directly. Validate each one before checking in.
+> Read `CONTENT_HANDOFF.md` and `questions/_tracker/generation-prompt-master.md`. Your session ID is `gen-Y10-Maths-S2`. Claim 4 codes with:
+> ```
+> python3 scripts/claim.py --session gen-Y10-Maths-S2 --count 4 \
+>     --pipeline questions --subject Mathematics --level 10
+> ```
+> Build each JSON file by hand, validate, then release with `scripts/release.py --pipeline questions --codes <CODES...>`. Only Levels 07–10 are in scope.

@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10AA02",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to devise and use algorithms and simulations to solve mathematical problems.",
+    "generatedAt": "2026-05-18T20:28:42Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "An algorithm is a vague set of guidelines that may produce different results each time.",
+      "correct": "False",
+      "correctExplanation": "An algorithm is a precisely defined, finite sequence of steps that produces a deterministic output for a given input.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses an algorithm with a heuristic or general strategy; algorithms require exact, unambiguous instructions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "A Monte Carlo simulation uses random sampling to estimate numerical results.",
+      "correct": "True",
+      "correctExplanation": "Monte Carlo methods generate random inputs and aggregate outcomes to approximate quantities that may be difficult to compute analytically.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes Monte Carlo methods use systematic enumeration rather than random sampling."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The Sieve of Eratosthenes identifies composite numbers by testing divisibility against every integer up to n.",
+      "correct": "False",
+      "correctExplanation": "The Sieve of Eratosthenes eliminates multiples of each prime starting from 2, requiring checks only up to the square root of n.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the sieve's efficient elimination process with exhaustive trial division up to n."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Pseudocode describes the logic of an algorithm using structured English rather than a specific programming language.",
+      "correct": "True",
+      "correctExplanation": "Pseudocode is a language-independent representation that focuses on algorithmic logic without requiring syntactically correct code.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Believes pseudocode must follow the syntax rules of a particular programming language."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "A simulation must produce the exact theoretical answer to be considered valid.",
+      "correct": "False",
+      "correctExplanation": "Simulations produce estimates that approximate theoretical values; validity depends on convergence behaviour, not exact agreement.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Conflates simulation estimates with exact analytical solutions; simulations are inherently approximate."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "An iterative algorithm executes each step exactly once before producing its output.",
+      "correct": "False",
+      "correctExplanation": "An iterative algorithm repeats a set of steps multiple times, typically until a stopping condition is met.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses iteration (repeated cycling through steps) with sequential execution (each step performed once)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Newton's method is an iterative technique for approximating the roots of a differentiable function.",
+      "correct": "True",
+      "correctExplanation": "Newton's method uses the tangent line at a current estimate to generate a closer approximation, repeating until convergence.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes Newton's method is a direct computation that yields an exact root in one step."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A recursive algorithm solves a problem by dividing it into larger subproblems at each step.",
+      "correct": "False",
+      "correctExplanation": "A recursive algorithm divides a problem into smaller subproblems of the same type, each closer to a base case.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the direction of recursion; subproblems must be smaller, not larger, to ensure termination."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The bisection method finds a root of a continuous function by repeatedly halving an interval.",
+      "correct": "True",
+      "correctExplanation": "Bisection narrows the interval containing a root by selecting the subinterval where the function changes sign, halving the width each iteration.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Believes the bisection method selects random points within the interval rather than systematically halving it."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Increasing the number of trials in a Monte Carlo simulation always decreases the computation time required.",
+      "correct": "False",
+      "correctExplanation": "Increasing trials improves estimate accuracy but increases computation time proportionally.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses improved accuracy with reduced computational cost; more trials require more processing."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A flowchart uses standardised symbols to represent the steps and decision points of an algorithm.",
+      "correct": "True",
+      "correctExplanation": "Flowcharts employ rectangles for processes, diamonds for decisions, and arrows for flow to visually represent algorithmic structure.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes flowcharts are informal sketches without standardised conventions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The output of every algorithm depends on random number generation.",
+      "correct": "False",
+      "correctExplanation": "Most algorithms are deterministic and produce the same output for the same input; only stochastic algorithms rely on random numbers.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Overgeneralises from Monte Carlo and other stochastic methods to all algorithms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best defines the term 'algorithm' in a mathematical context?",
+      "correct": "A finite sequence of precisely defined steps that produces a specific output from a given input",
+      "correctExplanation": "An algorithm is characterised by finiteness, definiteness of each step, specified inputs and outputs, and effectiveness.",
+      "distractors": [
+        {
+          "answer": "A graphical representation of data points arranged on a coordinate plane for visual interpretation",
+          "explanation": "Describes a scatter plot or graph, not an algorithm; confuses data display with computational procedure."
+        },
+        {
+          "answer": "A conjecture about the behaviour of a mathematical function that has not yet been formally proved",
+          "explanation": "Describes a mathematical conjecture; confuses hypothesis generation with procedural computation."
+        },
+        {
+          "answer": "A rough numerical estimate obtained by substituting convenient values into a complex expression",
+          "explanation": "Describes numerical approximation technique, not the structured step-by-step nature of an algorithm."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the purpose of a Monte Carlo simulation?",
+      "correct": "To estimate numerical quantities through repeated random sampling and aggregation of outcomes",
+      "correctExplanation": "Monte Carlo simulations use random trials to approximate values that may be analytically intractable.",
+      "distractors": [
+        {
+          "answer": "To prove mathematical theorems rigorously through systematic deductive reasoning from established axioms",
+          "explanation": "Confuses simulation with formal proof; Monte Carlo methods estimate rather than prove."
+        },
+        {
+          "answer": "To display statistical results graphically using histograms, box plots, and cumulative frequency diagrams",
+          "explanation": "Confuses the presentation of results with the simulation process itself."
+        },
+        {
+          "answer": "To solve algebraic equations symbolically by applying standard factorisation and simplification rules",
+          "explanation": "Confuses symbolic algebra with probabilistic estimation; Monte Carlo does not manipulate expressions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes the Sieve of Eratosthenes?",
+      "correct": "A systematic procedure that identifies all prime numbers up to a given limit by eliminating multiples",
+      "correctExplanation": "The Sieve of Eratosthenes marks multiples of each prime starting from 2, leaving only primes unmarked.",
+      "distractors": [
+        {
+          "answer": "A method for factorising large composite numbers into their individual prime components using repeated trial division",
+          "explanation": "Describes prime factorisation, not the sieve; the sieve identifies primes rather than factorising composites."
+        },
+        {
+          "answer": "A technique for approximating irrational numbers by generating increasingly accurate rational sequences",
+          "explanation": "Describes rational approximation methods; the sieve deals with prime identification, not irrational numbers."
+        },
+        {
+          "answer": "A procedure for solving polynomial equations by systematically testing each integer as a potential root",
+          "explanation": "Describes the rational root theorem approach; the sieve eliminates composite numbers, not equation roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly states what pseudocode is used for in algorithm design?",
+      "correct": "Describing the logic of an algorithm in structured English without the syntax of any specific language",
+      "correctExplanation": "Pseudocode communicates algorithmic logic in a human-readable, language-independent format.",
+      "distractors": [
+        {
+          "answer": "Compiling source code into machine-readable binary instructions for direct execution by a processor",
+          "explanation": "Describes a compiler's function; pseudocode is not compiled or executed by any machine."
+        },
+        {
+          "answer": "Encrypting sensitive data before transmission through networks using standardised security protocols",
+          "explanation": "Describes encryption software; pseudocode is a planning tool, not a security mechanism."
+        },
+        {
+          "answer": "Debugging existing programs by highlighting syntax errors and runtime exceptions in coloured output",
+          "explanation": "Describes an IDE debugger feature; pseudocode is written before any program code exists."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes what an iterative process does in mathematics?",
+      "correct": "Repeats a defined set of operations multiple times, refining the result until a stopping condition holds",
+      "correctExplanation": "Iteration cycles through the same steps repeatedly, converging toward a desired result or termination criterion.",
+      "distractors": [
+        {
+          "answer": "Produces a single output by applying every operation in a fixed sequence exactly once without repetition",
+          "explanation": "Describes sequential execution; iteration specifically involves repeating steps multiple times."
+        },
+        {
+          "answer": "Generates a formal proof by deriving each subsequent statement logically from the established premises",
+          "explanation": "Describes deductive proof construction; iteration is a computational process, not a logical derivation."
+        },
+        {
+          "answer": "Translates a mathematical expression from one notation system into an equivalent alternative notation",
+          "explanation": "Describes notational conversion; iteration involves repeated application of operations, not translation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the role of a base case in a recursive algorithm?",
+      "correct": "It provides the simplest instance of the problem that can be solved directly without further recursion",
+      "correctExplanation": "The base case terminates recursion by handling the simplest subproblem, preventing infinite self-reference.",
+      "distractors": [
+        {
+          "answer": "It determines the maximum number of times the algorithm is permitted to call itself during execution",
+          "explanation": "Confuses the base case with an iteration counter; the base case defines when recursion stops naturally."
+        },
+        {
+          "answer": "It converts the recursive algorithm into an equivalent iterative version for improved processing speed",
+          "explanation": "Confuses base case with algorithm transformation; the base case is a termination condition, not a conversion step."
+        },
+        {
+          "answer": "It generates the random seed values required to initialise the first recursive call of the algorithm",
+          "explanation": "Confuses base case with random initialisation; the base case provides a non-recursive answer, not random seeds."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes what the bisection method requires to begin?",
+      "correct": "A continuous function and an interval whose endpoints produce function values of opposite sign",
+      "correctExplanation": "The intermediate value theorem guarantees a root exists in an interval where the function changes sign.",
+      "distractors": [
+        {
+          "answer": "A polynomial equation expressed in standard form with all coefficients identified as rational numbers",
+          "explanation": "Overspecifies the requirement; bisection works on any continuous function, not only rational polynomials."
+        },
+        {
+          "answer": "The exact derivative of the function evaluated at two distinct points within the domain of interest",
+          "explanation": "Confuses bisection with Newton's method; bisection does not require derivative information."
+        },
+        {
+          "answer": "A lookup table of previously computed function values stored in ascending order of the input variable",
+          "explanation": "Describes tabulated data; bisection evaluates the function at new midpoints, not from stored tables."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes the term 'convergence' in the context of numerical algorithms?",
+      "correct": "The behaviour where successive approximations produced by the algorithm approach a fixed target value",
+      "correctExplanation": "Convergence means each iteration brings the estimate closer to the true value, with the error shrinking.",
+      "distractors": [
+        {
+          "answer": "The process by which an algorithm's memory usage decreases steadily with each successive computational step",
+          "explanation": "Confuses convergence with memory optimisation; convergence refers to approaching a target value."
+        },
+        {
+          "answer": "The property that allows an algorithm to accept inputs of any data type without modification or error",
+          "explanation": "Describes type flexibility, not convergence; convergence is about successive approximations approaching a limit."
+        },
+        {
+          "answer": "The requirement that every variable in the algorithm be initialised to a specific non-zero starting value",
+          "explanation": "Describes initialisation practice; convergence is about the behaviour of outputs over repeated iterations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies what a stopping condition does in an iterative algorithm?",
+      "correct": "It defines the criterion that determines when the algorithm has produced a sufficiently accurate result",
+      "correctExplanation": "The stopping condition halts iteration once a tolerance, maximum iteration count, or convergence test is met.",
+      "distractors": [
+        {
+          "answer": "It selects the optimal starting value that minimises the total number of iterations needed for the result",
+          "explanation": "Confuses stopping condition with initialisation strategy; the stopping condition determines when to halt."
+        },
+        {
+          "answer": "It converts the iterative process into a closed-form expression that can be evaluated in a single step",
+          "explanation": "Confuses stopping with algebraic simplification; the stopping condition halts iteration, not reformulates it."
+        },
+        {
+          "answer": "It randomly interrupts the algorithm at an unpredictable point to test the robustness of intermediate values",
+          "explanation": "Confuses stopping condition with random termination; the condition is deterministic and precisely defined."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best explains why algorithms require a finite number of steps?",
+      "correct": "An algorithm that never terminates cannot produce a definite output, so finiteness ensures a usable result",
+      "correctExplanation": "Finiteness guarantees that the algorithm halts and delivers an answer within a bounded number of operations.",
+      "distractors": [
+        {
+          "answer": "Computers have limited memory capacity, so each algorithm must fit entirely within available storage space",
+          "explanation": "Memory constraints affect implementation but are not the defining reason algorithms must be finite."
+        },
+        {
+          "answer": "Mathematical conventions prohibit any procedure that cannot be expressed using a single closed-form formula",
+          "explanation": "No such convention exists; many valid algorithms involve loops and branching that resist closed-form expression."
+        },
+        {
+          "answer": "Regulatory standards mandate that all computational procedures must complete within a government-specified timeframe to be valid",
+          "explanation": "No such regulation exists; finiteness is a mathematical property, not a regulatory requirement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly describes the relationship between a simulation and a mathematical model?",
+      "correct": "A simulation executes the rules of a mathematical model repeatedly to generate approximate numerical results",
+      "correctExplanation": "Simulations operationalise models by running them computationally, often with random or varied inputs.",
+      "distractors": [
+        {
+          "answer": "A simulation replaces the mathematical model entirely, eliminating the need for any underlying equations",
+          "explanation": "Simulations are built upon mathematical models; they implement the model's rules, not replace them."
+        },
+        {
+          "answer": "A mathematical model is derived by observing the outputs of a simulation and fitting curves to the data",
+          "explanation": "Reverses the relationship; the model is formulated first and the simulation implements it."
+        },
+        {
+          "answer": "A simulation and a mathematical model are identical terms describing the same abstract formal structure",
+          "explanation": "They are distinct concepts; a model is an abstract representation, a simulation is its computational execution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best identifies the purpose of a loop structure in algorithm design?",
+      "correct": "To execute a block of instructions repeatedly until a specified termination condition is satisfied",
+      "correctExplanation": "Loops enable controlled repetition, allowing the algorithm to iterate until convergence or completion.",
+      "distractors": [
+        {
+          "answer": "To permanently store intermediate calculation results in a database for retrieval by other algorithms later",
+          "explanation": "Describes data persistence; loops control repetition of steps, not long-term storage of results."
+        },
+        {
+          "answer": "To convert the algorithm from a recursive formulation into a format compatible with parallel processing units",
+          "explanation": "Confuses loop purpose with algorithm transformation; loops enable repetition, not parallelisation."
+        },
+        {
+          "answer": "To display a formatted summary of all input values before the algorithm begins its primary calculations",
+          "explanation": "Describes output formatting; loops repeat a block of instructions, not display summaries."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A {{blank:1}} is a finite sequence of precisely defined steps that produces a deterministic output, while a {{blank:2}} uses random sampling to estimate numerical results.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "algorithm",
+          "correctExplanation": "An algorithm is a step-by-step deterministic procedure with a defined start and end.",
+          "distractors": [
+            {
+              "answer": "heuristic",
+              "explanation": "A heuristic is a rule of thumb, not a precisely defined finite procedure.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "formula",
+              "explanation": "A formula expresses a relationship but is not itself a sequence of executable steps.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "simulation",
+          "correctExplanation": "A simulation runs a model repeatedly with varied inputs to approximate outcomes.",
+          "distractors": [
+            {
+              "answer": "derivation",
+              "explanation": "A derivation is a logical proof process, not a repeated random-sampling procedure.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "calculation",
+              "explanation": "A single calculation produces one exact result, not a statistical estimate from many trials.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The Sieve of Eratosthenes identifies all {{blank:1}} numbers up to a given limit by systematically eliminating {{blank:2}} of each prime starting from two.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "prime",
+          "correctExplanation": "Prime numbers are those with exactly two distinct factors; the sieve isolates them by removing composites.",
+          "distractors": [
+            {
+              "answer": "composite",
+              "explanation": "Composite numbers are what the sieve eliminates, not what it identifies.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "rational",
+              "explanation": "Rational numbers include fractions and decimals; the sieve operates on positive integers only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiples",
+          "correctExplanation": "The sieve marks off multiples of each identified prime, leaving only primes unmarked.",
+          "distractors": [
+            {
+              "answer": "factors",
+              "explanation": "Factors divide into a number; the sieve removes multiples (products), not factors.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "square roots",
+              "explanation": "Square roots determine the search limit but are not what gets eliminated.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A Monte Carlo estimate of pi converges to exactly 3.14159 after precisely one thousand random trials.",
+      "correct": "False",
+      "correctExplanation": "Monte Carlo estimates are probabilistic; one thousand trials yield an approximation whose precision varies with each run, not an exact value.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes a fixed trial count guarantees a specific decimal result; ignores the stochastic nature of the method."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The accuracy of a Monte Carlo simulation generally improves as the number of random trials increases.",
+      "correct": "True",
+      "correctExplanation": "By the law of large numbers, increasing the sample size reduces the standard error of the estimate, improving accuracy on average.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Believes that adding more trials introduces more randomness and therefore worsens the estimate."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Newton's method is guaranteed to converge to a root for any continuous function regardless of the starting value.",
+      "correct": "False",
+      "correctExplanation": "Newton's method can diverge, oscillate, or converge to an unintended root if the starting value is poorly chosen or the function has problematic features.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Overgeneralises convergence; Newton's method requires suitable initial conditions and well-behaved derivatives."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Recursive algorithms that lack a properly defined base case risk entering an infinite loop of self-referencing calls.",
+      "correct": "True",
+      "correctExplanation": "Without a base case to terminate recursion, each call generates another, eventually exhausting resources or running indefinitely.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes recursion always terminates naturally without an explicit base case."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The bisection method converges faster than Newton's method for all types of root-finding problems.",
+      "correct": "False",
+      "correctExplanation": "Bisection converges linearly while Newton's method converges quadratically when conditions are met; bisection is slower but more reliable.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses reliability with speed; bisection's guaranteed convergence does not imply faster convergence."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "A deterministic algorithm produces different outputs each time it runs on identical input data.",
+      "correct": "False",
+      "correctExplanation": "A deterministic algorithm produces the same output every time for the same input; only stochastic algorithms vary between runs.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses deterministic algorithms with stochastic processes that incorporate randomness."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "An algorithm with O(n²) time complexity requires proportionally more operations than an O(n) algorithm as the input size grows.",
+      "correct": "True",
+      "correctExplanation": "Quadratic growth means doubling the input roughly quadruples the operations, whereas linear growth only doubles them.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes Big-O notation describes constant-time differences rather than growth rate relationships."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "A simulation that uses a fixed random seed will produce different results each time the program executes.",
+      "correct": "False",
+      "correctExplanation": "A fixed seed initialises the pseudorandom number generator identically each run, producing identical sequences and therefore identical results.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Conflates pseudorandom generation with true randomness; a fixed seed ensures reproducibility."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A student claims that a Monte Carlo estimate of a probability becomes exact once the number of trials exceeds ten thousand. Which one of the following best explains why this claim is incorrect?",
+      "correct": "The estimate remains an approximation for any finite number of trials because random sampling always introduces variability",
+      "correctExplanation": "Finite samples produce estimates subject to sampling variability; exactness requires infinitely many trials in the limit.",
+      "distractors": [
+        {
+          "answer": "The estimate becomes exact at ten thousand trials because the law of large numbers guarantees convergence at that precise threshold",
+          "explanation": "Misapplies the law of large numbers; it describes asymptotic behaviour, not a specific threshold for exactness."
+        },
+        {
+          "answer": "Monte Carlo estimates are always exact regardless of trial count because the random samples perfectly represent the population",
+          "explanation": "Assumes random sampling eliminates all estimation error; finite samples always carry some degree of uncertainty."
+        },
+        {
+          "answer": "The estimate oscillates unpredictably between correct and incorrect values no matter how many trials are performed",
+          "explanation": "Overstates instability; increasing trials reduces variability rather than causing unpredictable oscillation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why the Sieve of Eratosthenes only needs to check primes up to the square root of n?",
+      "correct": "Any composite number up to n has at least one prime factor at or below the square root of n by the factor-pair property",
+      "correctExplanation": "If both factors exceeded the square root, their product would exceed n, so one factor must be at or below it.",
+      "distractors": [
+        {
+          "answer": "Primes larger than the square root of n are too computationally expensive for the algorithm to process efficiently",
+          "explanation": "Computational cost is not the reason; the mathematical structure of factors determines the stopping point."
+        },
+        {
+          "answer": "The algorithm uses the square root as a random cutoff to balance speed against the completeness of results",
+          "explanation": "The cutoff is mathematically determined, not a random or arbitrary design choice for performance tuning."
+        },
+        {
+          "answer": "Primes above the square root of n do not exist because all large numbers are necessarily composite by definition",
+          "explanation": "Large primes exist; the reason is about factor pairs, not the non-existence of large primes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes the relationship between the number of Monte Carlo trials and the standard error of the resulting estimate?",
+      "correct": "The standard error decreases in proportion to the inverse of the square root of the number of trials performed",
+      "correctExplanation": "Standard error scales as 1/√n, so quadrupling the trials halves the error.",
+      "distractors": [
+        {
+          "answer": "The standard error increases proportionally with each additional trial because more data introduces more random noise",
+          "explanation": "More data reduces, not increases, the standard error; additional trials improve precision."
+        },
+        {
+          "answer": "The standard error remains constant regardless of the number of trials because randomness is uniformly distributed",
+          "explanation": "The standard error decreases with more trials; it is not fixed by the distributional properties of randomness."
+        },
+        {
+          "answer": "The standard error halves each time the number of trials doubles because of a direct linear inverse relationship",
+          "explanation": "The relationship is inverse square-root, not inverse linear; halving the error requires quadrupling trials."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why Newton's method uses the derivative of the function at each iteration?",
+      "correct": "The derivative provides the slope of the tangent line, which the method uses to compute a refined root estimate",
+      "correctExplanation": "Newton's method constructs a tangent at the current point and follows it to the x-axis for the next approximation.",
+      "distractors": [
+        {
+          "answer": "The derivative determines the curvature of the function, allowing the algorithm to jump directly to the exact root",
+          "explanation": "The derivative gives the slope of the tangent, not the curvature; it does not produce the exact root in one step."
+        },
+        {
+          "answer": "The derivative acts as a random perturbation that prevents the algorithm from becoming trapped at local extrema",
+          "explanation": "The derivative is deterministic, not random; it provides directional information for the tangent line approximation."
+        },
+        {
+          "answer": "The derivative converts the nonlinear function into a linear equation whose solution refines the root estimate",
+          "explanation": "Confuses linearisation with permanent conversion; the tangent approximation is local and recalculated each step."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best distinguishes a recursive algorithm from an iterative algorithm?",
+      "correct": "A recursive algorithm solves a problem by calling itself on smaller subproblems, while an iterative one uses repeated loops",
+      "correctExplanation": "Recursion self-references with diminishing subproblems; iteration repeats a loop body until a condition is met.",
+      "distractors": [
+        {
+          "answer": "A recursive algorithm processes data in parallel across multiple processors, while an iterative one uses only a single processor",
+          "explanation": "Recursion describes self-referencing calls, not parallel processing; both can run on a single processor."
+        },
+        {
+          "answer": "A recursive algorithm always executes faster than an iterative algorithm because it divides the problem into fewer steps",
+          "explanation": "Recursion is not inherently faster; it can be slower due to overhead from repeated function calls."
+        },
+        {
+          "answer": "A recursive algorithm uses random input values at each stage, while an iterative algorithm uses predetermined fixed values",
+          "explanation": "Recursion does not involve randomness; it involves self-calling with smaller subproblems."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains what happens when the bisection method is applied to a function that does not change sign on the given interval?",
+      "correct": "The method cannot guarantee convergence to a root because the intermediate value theorem's precondition is not met",
+      "correctExplanation": "Without opposite signs at the endpoints, the theorem provides no guarantee of a root within the interval.",
+      "distractors": [
+        {
+          "answer": "The method converges to the nearest local minimum of the function because sign-change absence indicates an extremum",
+          "explanation": "Bisection finds roots, not extrema; without a sign change, it cannot identify any feature of the function."
+        },
+        {
+          "answer": "The method selects a random midpoint and reports it as the root because no better information is available",
+          "explanation": "Bisection does not resort to random selection; it requires a sign change to proceed with any midpoint choice."
+        },
+        {
+          "answer": "The method doubles the interval width at each step to search for a sign change in a broader region of the domain",
+          "explanation": "Bisection narrows intervals; it does not expand them, and cannot self-correct for a missing sign change."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why pseudocode is preferred over a specific programming language when first designing an algorithm?",
+      "correct": "Pseudocode allows the designer to focus on logical structure without being constrained by language-specific syntax",
+      "correctExplanation": "Pseudocode separates algorithmic logic from implementation details, making the design accessible to all readers.",
+      "distractors": [
+        {
+          "answer": "Pseudocode executes faster than any compiled programming language because it bypasses the compilation stage entirely",
+          "explanation": "Pseudocode cannot execute at all; it is a design tool, not an executable language."
+        },
+        {
+          "answer": "Pseudocode automatically detects logical errors during the writing process and highlights them for the designer",
+          "explanation": "Pseudocode has no automated error detection; it is a manual planning notation without any processor."
+        },
+        {
+          "answer": "Pseudocode generates valid code in all popular programming languages simultaneously through automatic translation",
+          "explanation": "No automatic translation occurs; pseudocode requires manual conversion to a specific language."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why a stochastic simulation may produce different results on successive runs?",
+      "correct": "The simulation incorporates random number generation, and different random sequences lead to different sample outcomes",
+      "correctExplanation": "Stochastic simulations draw from pseudorandom streams; different seeds or sequences produce different trajectories.",
+      "distractors": [
+        {
+          "answer": "The simulation's mathematical model changes its equations automatically between each consecutive execution of the program",
+          "explanation": "The model remains fixed; only the random inputs change between runs, not the underlying equations."
+        },
+        {
+          "answer": "The computer's processor operates at variable clock speeds, causing rounding errors that differ between sequential runs",
+          "explanation": "Clock speed variation does not meaningfully alter simulation outputs; the randomness is in the sampling process."
+        },
+        {
+          "answer": "The simulation detects previously generated outputs and deliberately avoids repeating them in subsequent executions",
+          "explanation": "Simulations do not track or avoid past outputs; each run is independent of previous executions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why computational complexity is relevant when choosing between two algorithms that solve the same problem?",
+      "correct": "Computational complexity describes how resource requirements grow with input size, affecting feasibility for large inputs",
+      "correctExplanation": "An algorithm that is efficient at small scale may become impractical for large inputs if its complexity class is too high.",
+      "distractors": [
+        {
+          "answer": "Computational complexity measures the physical size of the computer required to execute the algorithm on large datasets",
+          "explanation": "Complexity measures growth of operations or memory, not the physical dimensions of hardware."
+        },
+        {
+          "answer": "Computational complexity determines the programming language best suited for implementing each of the two algorithms",
+          "explanation": "Complexity is language-independent; it describes abstract resource growth, not language suitability."
+        },
+        {
+          "answer": "Computational complexity indicates whether the algorithm will produce a correct answer or an approximate result only",
+          "explanation": "Correctness is separate from complexity; both exact and approximate algorithms have defined complexity classes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why a simulation of coin tosses approaches a fifty-percent heads proportion as the number of tosses increases?",
+      "correct": "The law of large numbers ensures that the sample proportion converges to the true probability as trials increase",
+      "correctExplanation": "Independent trials with equal probability accumulate toward the expected proportion as the sample grows.",
+      "distractors": [
+        {
+          "answer": "The coin develops a physical bias toward fairness as more tosses are performed due to wear on its surfaces",
+          "explanation": "Physical wear does not cause convergence; the explanation is statistical, not mechanical."
+        },
+        {
+          "answer": "The simulation counts only the tosses that produce heads and discards all tosses that produce tails from the sample",
+          "explanation": "No selective counting occurs; every toss contributes to the overall proportion."
+        },
+        {
+          "answer": "The random number generator memorises previous outcomes and adjusts future values to balance the running proportion",
+          "explanation": "Standard generators produce independent values; they do not compensate for previous outcomes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best classifies the type of problem that a Monte Carlo simulation is most suited to solve?",
+      "correct": "Problems where analytical solutions are intractable or unavailable and numerical estimation through random sampling is viable",
+      "correctExplanation": "Monte Carlo excels when the solution space is too complex for closed-form analysis but can be sampled stochastically.",
+      "distractors": [
+        {
+          "answer": "Problems with exact closed-form solutions that require only direct substitution of known constant values into a formula",
+          "explanation": "Closed-form problems are solved analytically; Monte Carlo is unnecessary when a direct formula exists."
+        },
+        {
+          "answer": "Problems involving symbolic manipulation of algebraic expressions to produce simplified equivalent forms of equations",
+          "explanation": "Symbolic algebra is handled by computer algebra systems, not Monte Carlo; no random sampling is involved."
+        },
+        {
+          "answer": "Problems requiring the construction of formal logical proofs to establish the truth of mathematical propositions",
+          "explanation": "Formal proofs are deductive; Monte Carlo is probabilistic and does not prove theorems."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why an algorithm must include a termination condition?",
+      "correct": "Without a termination condition the algorithm may continue indefinitely, consuming resources without producing a result",
+      "correctExplanation": "An algorithm must halt to be useful; the termination condition ensures it finishes within a bounded number of steps.",
+      "distractors": [
+        {
+          "answer": "Termination conditions are cosmetic labels required by programming style guides but have no effect on algorithm behaviour",
+          "explanation": "Termination conditions are essential, not cosmetic; without one, the algorithm may run indefinitely."
+        },
+        {
+          "answer": "Termination conditions prevent the algorithm from accepting any new input data after the initial dataset is loaded",
+          "explanation": "Confuses termination with input gating; the condition controls when processing stops, not when input is accepted."
+        },
+        {
+          "answer": "Termination conditions reset all computed values to zero so the algorithm can be restarted immediately on new inputs",
+          "explanation": "Describes reinitialisation, not termination; stopping does not inherently reset values."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "In a Monte Carlo simulation of pi, random points are generated within a {{blank:1}}, and the ratio of points falling inside an inscribed {{blank:2}} estimates pi divided by four.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "square",
+          "correctExplanation": "The bounding region is a unit square within which the circle is inscribed.",
+          "distractors": [
+            {
+              "answer": "triangle",
+              "explanation": "A triangle does not inscribe a circle in the standard Monte Carlo pi estimation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "rectangle",
+              "explanation": "A non-square rectangle would distort the ratio and not yield pi/4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "circle",
+          "correctExplanation": "The inscribed circle's area relative to the square's area gives the pi/4 ratio.",
+          "distractors": [
+            {
+              "answer": "parabola",
+              "explanation": "A parabola is not a closed region and cannot be inscribed within a square for area estimation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "ellipse",
+              "explanation": "A general ellipse would yield a different area ratio not directly related to pi/4.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Newton's method uses the {{blank:1}} of the function at the current estimate to construct a tangent line, then finds the x-intercept as the next {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "derivative",
+          "correctExplanation": "The derivative gives the slope of the tangent line used to linearise the function locally.",
+          "distractors": [
+            {
+              "answer": "integral",
+              "explanation": "The integral measures accumulated area, not the slope needed for tangent construction.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "limit",
+              "explanation": "A limit describes behaviour at a point but does not directly give the slope of the tangent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "approximation",
+          "correctExplanation": "Each x-intercept of the tangent serves as a refined estimate of the root.",
+          "distractors": [
+            {
+              "answer": "maximum",
+              "explanation": "The x-intercept of the tangent is an approximation of the root, not a maximum.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "asymptote",
+              "explanation": "An asymptote is a line the function approaches; it is not what Newton's method computes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The bisection method requires a continuous function with values of opposite {{blank:1}} at the endpoints, guaranteeing a root by the {{blank:2}} value theorem.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sign",
+          "correctExplanation": "Opposite signs at the endpoints ensure the function crosses zero within the interval.",
+          "distractors": [
+            {
+              "answer": "magnitude",
+              "explanation": "Opposite magnitudes do not guarantee a zero crossing; only opposite signs do.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "gradient",
+              "explanation": "Opposite gradients indicate direction change but do not guarantee a root exists between endpoints.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "intermediate",
+          "correctExplanation": "The intermediate value theorem guarantees a continuous function attains every value between its endpoint values.",
+          "distractors": [
+            {
+              "answer": "extreme",
+              "explanation": "The extreme value theorem guarantees maximum and minimum values, not root existence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mean",
+              "explanation": "The mean value theorem relates to derivatives and average rates of change, not zero crossings.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "A recursive algorithm breaks a problem into smaller {{blank:1}} of the same type and includes a {{blank:2}} case that provides a direct answer without further recursion.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "subproblems",
+          "correctExplanation": "Recursion works by reducing the original problem into smaller instances that approach the base case.",
+          "distractors": [
+            {
+              "answer": "datasets",
+              "explanation": "Datasets are collections of data; recursion operates on problem instances, not data collections.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variables",
+              "explanation": "Variables store values within a computation; recursion divides the problem structure, not the variables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "base",
+          "correctExplanation": "The base case terminates recursion by solving the simplest instance directly.",
+          "distractors": [
+            {
+              "answer": "test",
+              "explanation": "A test case verifies correctness but does not terminate the recursion process itself.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "limit",
+              "explanation": "A limit describes mathematical convergence behaviour, not the termination point of a recursive algorithm.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "An algorithm with O(n²) time complexity has {{blank:1}} growth, meaning that doubling the input size approximately {{blank:2}} the number of operations.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "quadratic",
+          "correctExplanation": "O(n²) means operations grow with the square of the input size.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear growth is O(n), where doubling input doubles operations, not quadruples them.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exponential",
+              "explanation": "Exponential growth is O(2ⁿ), far faster than quadratic for large inputs.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "quadruples",
+          "correctExplanation": "Doubling input in an O(n²) algorithm multiplies operations by 2² = 4.",
+          "distractors": [
+            {
+              "answer": "doubles",
+              "explanation": "Doubling operations corresponds to O(n) linear growth, not O(n²) quadratic growth.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "halves",
+              "explanation": "Halving operations would indicate a sublinear algorithm, the opposite of quadratic growth.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A {{blank:1}} algorithm produces the same output each time for identical input, whereas a {{blank:2}} algorithm may produce different results due to random sampling.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "deterministic",
+          "correctExplanation": "Deterministic algorithms have no random element and always yield identical outputs for identical inputs.",
+          "distractors": [
+            {
+              "answer": "sequential",
+              "explanation": "Sequential describes execution order, not whether outputs vary; sequential algorithms can still be stochastic.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "iterative",
+              "explanation": "Iterative describes repeated looping, not determinism; iterative algorithms can incorporate randomness.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "stochastic",
+          "correctExplanation": "Stochastic algorithms incorporate random elements, causing variation between runs.",
+          "distractors": [
+            {
+              "answer": "recursive",
+              "explanation": "Recursive algorithms call themselves on subproblems but are not inherently random.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "parallel",
+              "explanation": "Parallel algorithms distribute work across processors but are not defined by randomness.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Amir designs a simulation to estimate the probability of drawing two red cards in succession from a standard deck without replacement. Running five thousand trials provides a reasonable Monte Carlo estimate of this probability.",
+      "correct": "True",
+      "correctExplanation": "Five thousand independent trials of the two-card draw, with the proportion of successes recorded, yields a Monte Carlo estimate with a standard error small enough for practical purposes.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Believes five thousand trials is too few for any meaningful estimate; underestimates the precision achievable with moderate sample sizes."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Jade applies Newton's method to f(x) = x² − 4 with starting value x₀ = 0 and obtains a convergent sequence of approximations.",
+      "correct": "False",
+      "correctExplanation": "At x₀ = 0 the derivative f'(0) = 0, making the Newton's method update formula undefined due to division by zero.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes Newton's method converges from any starting value; overlooks that a zero derivative causes the method to fail."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Jade writes an algorithm to estimate √5 using Newton's method with x₀ = 3 and the update rule xₙ₊₁ = (xₙ + 5/xₙ)/2. Which one of the following gives the value of x₁?",
+      "correct": "2.3333, computed by evaluating (3 + 5/3)/2 = (3 + 1.6667)/2 = 4.6667/2 to four decimal places correctly",
+      "correctExplanation": "Substituting x₀ = 3 gives (3 + 1.6667)/2 = 4.6667/2 = 2.3333, the correct first Newton's method iterate.",
+      "distractors": [
+        {
+          "answer": "2.5000, computed by evaluating (3 + 5/3)/2 with the fraction 5/3 rounded down to 1.0000 before the division by two",
+          "explanation": "Premature rounding of the fraction produces an incorrect intermediate value and a wrong final result."
+        },
+        {
+          "answer": "3.3333, computed by adding 3 to the result of 5 divided by 3 without performing the final division by two",
+          "explanation": "Omits the averaging step; the formula requires dividing the sum by two, not returning the sum directly."
+        },
+        {
+          "answer": "1.6667, computed by evaluating only 5/3 without adding the current estimate or dividing by two as the formula requires",
+          "explanation": "Uses only one term of the formula; the update rule requires both xₙ and 5/xₙ before averaging."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Marcus uses the bisection method on f(x) = x³ − 2 over the interval [1, 2]. Which one of the following correctly identifies the first midpoint and the next interval?",
+      "correct": "[1, 1.5], because f(1) = −1 is negative and f(1.5) = 1.375 is positive, so the sign change lies in this subinterval",
+      "correctExplanation": "The midpoint is 1.5, and since f(1) < 0 < f(1.5), the root lies in [1, 1.5] by the intermediate value theorem.",
+      "distractors": [
+        {
+          "answer": "[1, 1.5], because f(1.5) is positive and the root must lie between the two positive function values at 1 and 1.5",
+          "explanation": "f(1) = −1 is negative, not positive; the next interval requires endpoints of opposite sign."
+        },
+        {
+          "answer": "[1.5, 2], because f(1) is negative and f(1.5) must therefore also be negative by the continuity of the function",
+          "explanation": "f(1.5) = 1.375 is positive; assuming both endpoints are negative contradicts the actual function values."
+        },
+        {
+          "answer": "[1.25, 1.75], because bisection splits the original interval into four equal parts and selects the second quarter",
+          "explanation": "Bisection halves the interval at the midpoint, not into quarters; the first midpoint is 1.5, not 1.25 or 1.75."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Priya runs a Monte Carlo simulation with 10 000 trials to estimate the probability of rolling a sum of seven with two fair dice. Her estimate is 0.1648. Which one of the following best evaluates this result?",
+      "correct": "The estimate is consistent with the theoretical value of approximately 0.1667, within the expected range of sampling variability",
+      "correctExplanation": "With 10 000 trials the standard error is about 0.004, so 0.1648 falls within roughly one standard error of 1/6 ≈ 0.1667.",
+      "distractors": [
+        {
+          "answer": "The estimate is clearly wrong because the exact probability of seven is 1/6 and no simulation should ever deviate from this value",
+          "explanation": "Simulations always have sampling variability; a small deviation from the theoretical value is expected, not erroneous."
+        },
+        {
+          "answer": "The estimate proves that the theoretical probability of 1/6 is incorrect because experimental data overrides mathematical reasoning",
+          "explanation": "A single simulation does not disprove theory; it provides one sample estimate subject to random variation."
+        },
+        {
+          "answer": "The estimate is unreliable because 10 000 trials is far too few to achieve any useful level of precision for this problem",
+          "explanation": "Ten thousand trials typically produce a standard error around 0.004, which is adequate for two-decimal-place precision."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Kofi writes a recursive function to compute the factorial of n. The base case returns 1 when n equals 0, and the recursive case returns n multiplied by the factorial of (n − 1). Which one of the following correctly traces the execution of factorial(4)?",
+      "correct": "4 × 3 × 2 × 1 × 1 = 24, because the recursion computes 4 × factorial(3) down to 1 × factorial(0) which returns one",
+      "correctExplanation": "factorial(4) = 4×3×2×1×1 = 24, with factorial(0) returning 1 as the base case terminates the recursion chain.",
+      "distractors": [
+        {
+          "answer": "4 × 3 × 2 = 24, because the recursion skips the base case and stops when the multiplier reaches 1 instead of reaching 0",
+          "explanation": "Omits the multiplication by 1 from factorial(1) calling factorial(0); the base case at n=0 is reached, not skipped."
+        },
+        {
+          "answer": "4 × 3 × 2 × 1 × 0 = 0, because the recursion continues through zero and multiplying by zero gives a final product of zero",
+          "explanation": "The base case at n=0 returns 1, stopping recursion before zero is included as a multiplicative factor."
+        },
+        {
+          "answer": "4 + 3 + 2 + 1 + 0 = 10, because the recursive function adds consecutive integers rather than multiplying successive factors",
+          "explanation": "The operation is multiplication, not addition; factorial is defined as the product of integers from n down to 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Linh simulates drawing marbles from a bag containing 3 red and 7 blue marbles, with replacement, 5000 times. Her simulation reports that red appeared 1520 times. Which one of the following gives the best estimate of the probability of drawing a red marble?",
+      "correct": "0.3040, calculated by dividing 1520 red draws by the total of 5000 trials to obtain the relative frequency estimate",
+      "correctExplanation": "The relative frequency 1520/5000 = 0.3040 is the empirical probability estimate from the simulation.",
+      "distractors": [
+        {
+          "answer": "0.3000, because the theoretical probability is 3/10 and the simulation result should be replaced with this exact value",
+          "explanation": "The question asks for the simulation estimate, not the theoretical value; the two may differ due to sampling."
+        },
+        {
+          "answer": "0.3500, calculated by dividing the number of red draws by the number of blue draws rather than by the total trials",
+          "explanation": "Dividing by blue draws (3480) gives an odds ratio, not a probability; probability requires division by total trials."
+        },
+        {
+          "answer": "1520, because probability is expressed as a count of favourable outcomes without normalisation by total trial number",
+          "explanation": "A probability must be normalised to a value between 0 and 1; a raw count is a frequency, not a probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Sam writes pseudocode for an iterative algorithm that starts with x = 1 and repeatedly doubles x until x exceeds 1000. Which one of the following correctly identifies the value of x when the algorithm terminates?",
+      "correct": "1024, because the doubling sequence proceeds 1, 2, 4, 8, ..., 512, 1024 and 1024 is the first value exceeding 1000",
+      "correctExplanation": "Powers of two grow as 2ⁿ; 2¹⁰ = 1024 is the first power of two above 1000.",
+      "distractors": [
+        {
+          "answer": "512, because the algorithm stops at the last value before exceeding 1000 and outputs that value instead of continuing",
+          "explanation": "The condition checks after doubling; the algorithm continues past 512 to 1024 before the stopping condition triggers."
+        },
+        {
+          "answer": "2000, because the algorithm doubles the last valid value of 1000 one additional time before checking the condition",
+          "explanation": "1000 is never exactly reached; the sequence goes 512, 1024, and 1024 already exceeds the threshold."
+        },
+        {
+          "answer": "1000, because the algorithm adjusts the final doubling step so that the output is exactly equal to the specified limit",
+          "explanation": "Repeated doubling does not land on 1000; the powers of two skip from 512 to 1024."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Rosa uses a simulation to model a queue at a service counter where customers arrive at random intervals averaging 3 minutes. After 10 000 simulated arrivals, the average wait time is 7.2 minutes. Which one of the following best interprets this result?",
+      "correct": "The result suggests that under the modelled conditions the expected wait time for a customer is approximately 7.2 minutes",
+      "correctExplanation": "Simulated averages over many trials estimate the expected value of wait time under the specified distributional assumptions.",
+      "distractors": [
+        {
+          "answer": "The result is meaningless because a simulation cannot model random arrivals accurately enough for any practical conclusions",
+          "explanation": "Queueing simulations are a standard operations research tool; 10 000 arrivals provides a reliable average."
+        },
+        {
+          "answer": "The result proves that every individual customer will wait exactly 7.2 minutes before being served at the counter",
+          "explanation": "An average does not guarantee individual outcomes; actual wait times vary around the mean."
+        },
+        {
+          "answer": "The result indicates a flaw in the simulation because the average wait time should equal the average arrival interval",
+          "explanation": "Wait time depends on service rate and queue dynamics, not just arrival rate; they need not be equal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Anika writes an algorithm that applies the Sieve of Eratosthenes to find all primes up to 100. Which one of the following correctly identifies the largest prime whose multiples must be explicitly marked?",
+      "correct": "7, because 7² = 49 is at most 100 while 11² = 121 exceeds 100, so 7 is the last prime needing its multiples marked",
+      "correctExplanation": "Composites up to 100 with smallest prime factor > 7 would require that factor² ≤ 100, but 11² = 121 > 100.",
+      "distractors": [
+        {
+          "answer": "11, because 11² = 121 just exceeds 100 and therefore 11 must still be fully processed within the sieve's range",
+          "explanation": "Since 121 > 100, no composite ≤ 100 has 11 as its smallest prime factor; 11's multiples are already marked by smaller primes."
+        },
+        {
+          "answer": "10, because the square root of 100 is exactly 10 and the sieve must process every integer up to and including this value",
+          "explanation": "10 is not prime; the sieve processes only primes, and the largest relevant prime is 7 because 7² = 49 ≤ 100."
+        },
+        {
+          "answer": "13, because the sieve must check every prime below half of 100 to ensure all composite numbers have been eliminated",
+          "explanation": "The relevant bound is √100 = 10, not 100/2 = 50; primes larger than 7 have squares exceeding 100."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Will runs a Monte Carlo simulation to estimate the area under y = x² from x = 0 to x = 1 by generating 8000 random points in the unit square. Of these, 2680 fall below the curve. Which one of the following gives the best estimate of the integral?",
+      "correct": "0.3350, computed by dividing 2680 points below the curve by the 8000 total points in the unit square sample",
+      "correctExplanation": "The ratio 2680/8000 = 0.335 estimates the proportion of the unit square below y = x², hence the integral.",
+      "distractors": [
+        {
+          "answer": "0.3333, because the exact integral of x² from 0 to 1 equals 1/3 and this should be used instead of the simulation result",
+          "explanation": "The question asks for the simulation estimate, not the exact value; using the exact answer defeats the purpose."
+        },
+        {
+          "answer": "2680, because the count of favourable points alone represents the area without any further calculation required",
+          "explanation": "The count must be normalised by total points to convert a frequency into a proportion representing area."
+        },
+        {
+          "answer": "0.6650, computed by dividing the number of points above the curve by the total number of generated random points",
+          "explanation": "Points above the curve estimate the complement of the area; the area itself uses points below the curve."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Mia writes a recursive algorithm to compute the nth Fibonacci number. For large n, the algorithm becomes extremely slow. Which one of the following best explains the primary cause of this inefficiency?",
+      "correct": "The algorithm is slow because recursive function calls use more memory than iterative loops for every single operation",
+      "correctExplanation": "Memory overhead per call is not the primary issue; the exponential branching and redundant recomputation dominate.",
+      "distractors": [
+        {
+          "answer": "The algorithm runs out of random numbers to assign to each recursive branch, causing the processor to stall repeatedly",
+          "explanation": "Fibonacci recursion is deterministic; no random numbers are involved, and the issue is redundant computation."
+        },
+        {
+          "answer": "The algorithm cannot store integers larger than 2³², so overflow errors force repeated recalculations from the beginning",
+          "explanation": "Integer overflow is a separate issue; the slowdown comes from exponential redundant calls, not data type limits."
+        },
+        {
+          "answer": "The algorithm generates an exponentially growing number of redundant recursive calls for the same subproblems repeatedly",
+          "explanation": "Naive Fibonacci recursion recomputes the same values exponentially many times without storing previous results."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Jarrah implements the bisection method for f(x) = eˣ − 3 on [0, 2]. After three iterations, the interval width is 0.25. Which one of the following correctly gives the interval width after five iterations?",
+      "correct": "0.0625, because each iteration halves the interval width, so two more halvings give 0.25 × 0.5 × 0.5 = 0.0625",
+      "correctExplanation": "Bisection halves the interval each step; after two more halvings, 0.25 × (1/2)² = 0.0625.",
+      "distractors": [
+        {
+          "answer": "0.1250, because each iteration reduces the interval by a fixed amount of 0.0625 subtracted from the current width",
+          "explanation": "Bisection halves the width; it does not subtract a constant amount from the width each iteration."
+        },
+        {
+          "answer": "0.1000, because five iterations correspond to dividing the original interval into ten equal segments of length 0.2 each",
+          "explanation": "Bisection does not divide into equal segments; it halves the remaining interval, producing powers of one-half."
+        },
+        {
+          "answer": "0.0500, because the interval shrinks by a factor of five from iteration three to iteration five regardless of starting width",
+          "explanation": "The shrinkage factor per iteration is 1/2, not 1/5; two additional halvings give a factor of 1/4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Yen designs a simulation to estimate the proportion of times three coins all land heads when tossed simultaneously. After 4000 trials, 492 produce all heads. Which one of the following gives the simulation estimate and evaluates it against the theoretical value?",
+      "correct": "0.1230, which is consistent with the theoretical value of 0.125 given the expected sampling variability at this trial count",
+      "correctExplanation": "492/4000 = 0.1230 is within approximately one standard error of 1/8 = 0.125, indicating reasonable agreement.",
+      "distractors": [
+        {
+          "answer": "0.1230, which is significantly below the theoretical 0.1250 and proves the simulation's random number generator is faulty",
+          "explanation": "A 0.002 deviation is well within expected sampling variability for 4000 trials; it does not indicate a fault."
+        },
+        {
+          "answer": "0.1250, because the simulation must be adjusted to match the theoretical value before any conclusion can be reported",
+          "explanation": "Adjusting the simulation output to match theory defeats the purpose of empirical estimation."
+        },
+        {
+          "answer": "492, which already represents the probability and does not require division by the total number of simulated trials",
+          "explanation": "A raw count is a frequency, not a probability; division by total trials is needed for the relative frequency estimate."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Priya applies Newton's method to f(x) = x² − 7 with x₀ = 3. The update rule xₙ₊₁ = (xₙ + 7/xₙ)/2 gives x₁ = {{blank:1}}, which is closer to √7 ≈ {{blank:2}} than the starting value.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2.6667",
+          "correctExplanation": "Substituting x₀ = 3 gives (3 + 7/3)/2 = (3 + 2.3333)/2 = 5.3333/2 = 2.6667.",
+          "distractors": [
+            {
+              "answer": "2.3333",
+              "explanation": "This is the value of 7/3 alone, not the result of averaging with x₀.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3.5000",
+              "explanation": "This would result from (3 + 7/3)/2 with 7/3 miscalculated as 4; 7/3 ≈ 2.333.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2.6458",
+          "correctExplanation": "√7 ≈ 2.6458 to four decimal places.",
+          "distractors": [
+            {
+              "answer": "2.8284",
+              "explanation": "This is √8, not √7; confuses the radicand.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2.4495",
+              "explanation": "This is √6, not √7; uses the wrong radicand in the square root.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Marcus uses the bisection method on f(x) = x³ − 5 over [1, 2]. The first midpoint is {{blank:1}}, and since f(1.5) = −1.625, the root lies in the interval {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.5",
+          "correctExplanation": "The midpoint of [1, 2] is (1 + 2)/2 = 1.5.",
+          "distractors": [
+            {
+              "answer": "1.25",
+              "explanation": "1.25 is the midpoint of [1, 1.5], which would be the second iteration, not the first.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.75",
+              "explanation": "1.75 is the midpoint of [1.5, 2], not of the original interval [1, 2].",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "[1.5, 2]",
+          "correctExplanation": "Since f(1.5) < 0 and f(2) = 3 > 0, the sign change occurs in [1.5, 2].",
+          "distractors": [
+            {
+              "answer": "[1, 1.5]",
+              "explanation": "Both f(1) = −4 and f(1.5) = −1.625 are negative; no sign change occurs in this subinterval.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "[1, 2]",
+              "explanation": "The interval must be narrowed at each step; retaining the original interval contradicts the bisection process.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Linh runs a Monte Carlo simulation to estimate the probability of rolling a total of nine with two fair dice. Out of 6000 trials, {{blank:1}} outcomes produce a nine on average, giving an estimate of approximately {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "667",
+          "correctExplanation": "The theoretical probability is 4/36 ≈ 0.1111; 6000 × 0.1111 ≈ 667 expected favourable outcomes.",
+          "distractors": [
+            {
+              "answer": "1000",
+              "explanation": "1000/6000 ≈ 0.1667, which corresponds to the probability of rolling a seven, not a nine.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "500",
+              "explanation": "500/6000 ≈ 0.0833, which corresponds to 3/36, not the 4/36 probability for a sum of nine.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.1111",
+          "correctExplanation": "The probability of a sum of nine is 4/36 = 1/9 ≈ 0.1111.",
+          "distractors": [
+            {
+              "answer": "0.1667",
+              "explanation": "0.1667 ≈ 6/36 corresponds to a sum of seven, the most common outcome, not nine.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.0833",
+              "explanation": "0.0833 ≈ 3/36 corresponds to a sum of four or ten, not nine.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Sam traces a recursive factorial algorithm for n = 5. The recursion expands to 5 × 4 × 3 × 2 × 1 × {{blank:1}}, where the base case returns {{blank:2}} when n equals zero.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "factorial(0)",
+          "correctExplanation": "The recursive chain reaches factorial(0), which is the base case.",
+          "distractors": [
+            {
+              "answer": "factorial(−1)",
+              "explanation": "The base case triggers at n = 0; the algorithm does not recurse to negative values.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "factorial(1)",
+              "explanation": "factorial(1) calls factorial(0); it is not itself the base case.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "The base case factorial(0) = 1 terminates the recursion and begins unwinding the call stack.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Returning 0 would make every factorial zero; the base case must return 1 for the product to be correct.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "Returning 5 would multiply the chain by an extra factor of 5, producing an incorrect result.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Amir uses the Sieve of Eratosthenes to find primes up to 50. The sieve begins by marking multiples of {{blank:1}} as composite, then proceeds to multiples of 3, 5, and finally {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The sieve starts with the smallest prime, 2, and eliminates all its multiples first.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1 is not prime; the sieve does not eliminate multiples of 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 is composite and already eliminated; the sieve only processes primes as its basis.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "The largest prime whose multiples need marking is 7, since 7² = 49 ≤ 50 but 11² = 121 > 50.",
+          "distractors": [
+            {
+              "answer": "11",
+              "explanation": "11² = 121 > 50, so composites with smallest factor 11 do not appear below 50.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is not prime; the sieve only marks multiples of primes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Jade estimates the area under y = sin(x) from 0 to π using a Monte Carlo approach within a bounding {{blank:1}} of area π × 1. Out of 5000 random points, 3180 fall below the curve, giving an estimate of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "rectangle",
+          "correctExplanation": "The bounding rectangle has width π and height 1, enclosing the sine curve from 0 to π.",
+          "distractors": [
+            {
+              "answer": "circle",
+              "explanation": "A circle does not efficiently bound the rectangular region from 0 to π with height 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "triangle",
+              "explanation": "A triangle would not enclose the full sine curve from 0 to π.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2.0000",
+          "correctExplanation": "The estimate is (3180/5000) × π = 0.636 × 3.1416 ≈ 2.00, close to the exact value of 2.",
+          "distractors": [
+            {
+              "answer": "3.1800",
+              "explanation": "This treats the count as the area directly without multiplying by the bounding region's area.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.6360",
+              "explanation": "This is the ratio 3180/5000 without multiplication by the bounding area π.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Rosa writes pseudocode for a linear search that checks each element of a list from first to last. The worst-case number of comparisons for a list of n items is {{blank:1}}, giving a time complexity of O({{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n",
+          "correctExplanation": "In the worst case the target is the last element or absent, requiring all n comparisons.",
+          "distractors": [
+            {
+              "answer": "n/2",
+              "explanation": "n/2 is the average-case number of comparisons for a successful search, not the worst case.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "log n",
+              "explanation": "log n comparisons correspond to binary search, not linear search.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n",
+          "correctExplanation": "Linear search has O(n) worst-case time complexity because it may examine every element.",
+          "distractors": [
+            {
+              "answer": "n²",
+              "explanation": "O(n²) describes quadratic algorithms like bubble sort, not single-pass linear search.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "O(1) describes constant time; linear search's worst case grows proportionally with input size.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Kofi simulates a random walk on a number line starting at 0. Each step moves +1 or −1 with equal probability. After 100 steps, the expected {{blank:1}} from the origin is proportional to the {{blank:2}} of the number of steps.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "distance",
+          "correctExplanation": "The expected absolute distance from the origin grows with the number of steps taken.",
+          "distractors": [
+            {
+              "answer": "velocity",
+              "explanation": "Velocity measures rate of change; the random walk has expected velocity zero due to symmetry.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "position",
+              "explanation": "The expected position (signed) is zero by symmetry; the expected distance (unsigned) is not.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "square root",
+          "correctExplanation": "The expected distance from the origin in a symmetric random walk grows as √n.",
+          "distractors": [
+            {
+              "answer": "logarithm",
+              "explanation": "Logarithmic growth is slower than square root; it does not describe random walk displacement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "square",
+              "explanation": "Square growth would mean distance grows as n², far exceeding the actual √n relationship.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Yen writes an algorithm to convert a decimal number to binary by repeatedly dividing by {{blank:1}} and recording each remainder. The binary representation is read from the {{blank:2}} remainder to the first.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Binary uses base 2; repeated division by 2 extracts each binary digit as a remainder.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Division by 10 extracts decimal digits, not binary digits.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "Division by 8 produces octal digits, not binary digits.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "last",
+          "correctExplanation": "The remainders are read in reverse order, from the last computed to the first, to form the binary number.",
+          "distractors": [
+            {
+              "answer": "first",
+              "explanation": "Reading from the first remainder to the last would reverse the binary representation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "middle",
+              "explanation": "There is no meaningful middle starting point; the correct reading order is last to first.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Mia estimates π by throwing 10 000 darts at a unit square containing an inscribed quarter-circle. If 7856 darts land inside the quarter-circle, the estimate of π is {{blank:1}} × (7856/10000), which equals approximately {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "The area of a quarter-circle of radius 1 is π/4, so π = 4 × (proportion inside).",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Multiplying by 2 would estimate π/2, not π.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "Multiplying by 1 gives the proportion inside the quarter-circle, which equals π/4, not π.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3.1424",
+          "correctExplanation": "4 × 0.7856 = 3.1424, which is close to π ≈ 3.1416.",
+          "distractors": [
+            {
+              "answer": "7.8560",
+              "explanation": "This results from multiplying by 10 instead of 4, vastly overestimating π.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.7856",
+              "explanation": "This is the raw proportion without the factor of 4 needed to convert from π/4 to π.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Anika applies Newton's method to solve eˣ = 3, rewritten as f(x) = eˣ − 3. With x₀ = 1, the derivative f'(x) = {{blank:1}}, and the update gives x₁ = x₀ − f(x₀)/f'(x₀) = 1 − (e − 3)/e ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "eˣ",
+          "correctExplanation": "The derivative of eˣ − 3 is eˣ, since the derivative of a constant is zero.",
+          "distractors": [
+            {
+              "answer": "3eˣ",
+              "explanation": "The coefficient 3 belongs to the constant term, not to the exponential; d/dx(eˣ−3) = eˣ.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "xeˣ⁻¹",
+              "explanation": "This applies the power rule incorrectly to the exponential function; d/dx(eˣ) = eˣ.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.1036",
+          "correctExplanation": "x₁ = 1 − (e−3)/e = 1 − (2.7183−3)/2.7183 = 1 − (−0.2817)/2.7183 ≈ 1 + 0.1036 ≈ 1.1036.",
+          "distractors": [
+            {
+              "answer": "0.8964",
+              "explanation": "This subtracts 0.1036 instead of adding it; the negative f(x₀) makes the correction positive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1.2817",
+              "explanation": "This adds f(x₀) directly without dividing by f'(x₀), ignoring the derivative in the update.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Will writes a binary search algorithm for a sorted list of 1024 items. The maximum number of comparisons needed is {{blank:1}}, because each comparison {{blank:2}} the remaining search space.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "log₂(1024) = 10, so at most 10 comparisons are needed for binary search.",
+          "distractors": [
+            {
+              "answer": "512",
+              "explanation": "512 is half of 1024; binary search does not require n/2 comparisons.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1024",
+              "explanation": "1024 comparisons corresponds to linear search, not binary search.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "halves",
+          "correctExplanation": "Binary search eliminates half the remaining elements with each comparison.",
+          "distractors": [
+            {
+              "answer": "quarters",
+              "explanation": "Quartering would correspond to a different search strategy, not standard binary search.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "doubles",
+              "explanation": "Doubling the search space is the opposite of what binary search does; it narrows, not expands.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that the bisection method is superior to Newton's method for all root-finding problems because it always converges. Which one of the following best evaluates this claim?",
+      "correct": "The claim is overstated because while bisection reliably converges, Newton's method often converges much faster when applicable",
+      "correctExplanation": "Bisection is robust but slow (linear); Newton's method converges quadratically when the function is well-behaved and differentiable.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because guaranteed convergence is the only relevant criterion when comparing numerical root-finding algorithms",
+          "explanation": "Convergence guarantee is important but not the sole criterion; speed, accuracy, and differentiability requirements also matter."
+        },
+        {
+          "answer": "The claim is correct because Newton's method requires exact symbolic solutions before it can even begin its first iteration",
+          "explanation": "Newton's method requires a starting estimate and derivative, not an exact symbolic solution."
+        },
+        {
+          "answer": "The claim is incorrect because bisection also fails to converge whenever the function has more than one root in the interval",
+          "explanation": "Bisection converges to a root when the function changes sign; multiple roots cause issues only if no sign change exists."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student runs two Monte Carlo simulations to estimate the same integral: one uses 1000 trials and the other uses 4000 trials. Which one of the following best compares the expected standard errors of the two estimates?",
+      "correct": "The 4000-trial estimate has approximately half the standard error because standard error scales as the inverse square root of n",
+      "correctExplanation": "Since √4000/√1000 = 2, the 4000-trial error is 1/2 of the 1000-trial error by the 1/√n relationship.",
+      "distractors": [
+        {
+          "answer": "The 4000-trial estimate has one quarter the standard error because standard error decreases in direct proportion to trial count",
+          "explanation": "Standard error decreases as 1/√n, not 1/n; quadrupling trials halves the error, not quarters it."
+        },
+        {
+          "answer": "Both estimates have identical standard errors because the underlying mathematical function being integrated remains the same",
+          "explanation": "Standard error depends on sample size, not just the function; more trials reduce the error."
+        },
+        {
+          "answer": "The 4000-trial estimate has four times the standard error because additional trials amplify the accumulated random sampling noise",
+          "explanation": "More trials reduce rather than amplify error; the law of large numbers drives convergence, not divergence."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Jade claims that replacing the bisection method with Newton's method will always reduce the number of iterations needed to reach a given accuracy. Which one of the following best evaluates this claim?",
+      "correct": "The claim is not universally true because Newton's method may diverge or require more iterations when the derivative is near zero",
+      "correctExplanation": "Newton's method converges quadratically under ideal conditions but can fail or slow dramatically near stationary points.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because Newton's quadratic convergence guarantees fewer iterations than bisection under all possible conditions",
+          "explanation": "Newton's method can diverge with poor starting values or non-differentiable functions, producing no answer at all."
+        },
+        {
+          "answer": "The claim is correct because bisection's linear convergence means it requires infinitely many iterations to reach any finite accuracy",
+          "explanation": "Bisection reaches any finite accuracy in a bounded number of steps; it is slow but always terminates."
+        },
+        {
+          "answer": "The claim is incorrect because both methods always require exactly the same number of iterations for any given accuracy target",
+          "explanation": "The methods have different convergence rates; their iteration counts differ depending on the problem."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A data analyst uses a Monte Carlo simulation to estimate the mean of a non-normal population. A colleague argues that the results are invalid because the population is not normally distributed. Which one of the following best evaluates this argument?",
+      "correct": "The argument is invalid because Monte Carlo sampling does not require normality, and the central limit theorem applies to the sample means",
+      "correctExplanation": "Monte Carlo works on any specified distribution, and the CLT ensures sample mean distributions approach normality regardless.",
+      "distractors": [
+        {
+          "answer": "The argument is valid because Monte Carlo simulations can only produce meaningful estimates from populations that are normally distributed",
+          "explanation": "Monte Carlo makes no distributional assumptions; it samples from whatever distribution is specified."
+        },
+        {
+          "answer": "The argument is valid because the central limit theorem only applies to normal populations, so non-normal sampling is mathematically undefined",
+          "explanation": "The CLT applies to sample means from any distribution with finite variance, not just normal distributions."
+        },
+        {
+          "answer": "The argument is invalid because the non-normality of the population means the simulation results are more accurate than analytical methods",
+          "explanation": "Non-normality does not inherently improve simulation accuracy; it simply does not invalidate the simulation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student notices that a naive recursive Fibonacci algorithm has exponential time complexity and proposes adding memoisation to improve performance. Which one of the following best analyses the effect of this change?",
+      "correct": "Memoisation reduces the time complexity from exponential to O(n) by storing computed values and eliminating redundant recursive calls",
+      "correctExplanation": "Each Fibonacci value is computed once and retrieved in O(1) for subsequent calls, giving n total computations.",
+      "distractors": [
+        {
+          "answer": "Memoisation has no effect because the recursive call structure remains identical regardless of whether results are stored for reuse",
+          "explanation": "Memoisation eliminates redundant calls by returning stored values, fundamentally changing the computation performed."
+        },
+        {
+          "answer": "Memoisation increases the time complexity to O(2ⁿ · n) because each stored value requires n additional operations to retrieve later",
+          "explanation": "Hash-based retrieval is O(1); memoisation reduces rather than increases the total computation."
+        },
+        {
+          "answer": "Memoisation makes the algorithm slower because the overhead of storing and retrieving values exceeds the savings from avoided calls",
+          "explanation": "Storage overhead is minimal compared to the exponential reduction in redundant calls for Fibonacci."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student argues that increasing the number of Monte Carlo trials from 1000 to 1 000 000 will make the estimate one thousand times more accurate. Which one of the following best evaluates this argument?",
+      "correct": "The argument is correct because each additional trial eliminates exactly one source of random error from the aggregate Monte Carlo estimate",
+      "correctExplanation": "Error reduction is statistical, not additive; individual trials do not each remove one discrete error source.",
+      "distractors": [
+        {
+          "answer": "The argument is correct because accuracy in Monte Carlo simulations scales in direct linear proportion to the number of trials used",
+          "explanation": "Accuracy scales as 1/√n, not 1/n; linear scaling vastly overstates the improvement from additional trials."
+        },
+        {
+          "answer": "The argument is incorrect because accuracy cannot improve at all beyond 1000 trials due to the inherent limits of pseudorandom generation",
+          "explanation": "Accuracy continues to improve indefinitely with more trials; there is no 1000-trial ceiling for pseudorandom generators."
+        },
+        {
+          "answer": "The argument is incorrect because increasing trials by a factor of 1000 improves accuracy by only about 32 times, following the 1/√n scaling",
+          "explanation": "√1000 ≈ 31.6, so the standard error decreases by a factor of approximately 32, not 1000."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Marcus writes two algorithms to find the maximum value in an unsorted list: one scans linearly in O(n) and the other sorts the list in O(n log n) then reads the last element. Which one of the following best compares the two approaches?",
+      "correct": "The linear scan is more efficient overall because its O(n) complexity is lower than the O(n log n) cost of sorting for this task",
+      "correctExplanation": "For finding a single maximum, sorting introduces unnecessary overhead; a single O(n) pass suffices.",
+      "distractors": [
+        {
+          "answer": "The sorting approach is more efficient because a sorted list provides the answer immediately by inspecting only the final element",
+          "explanation": "Reading the last element is O(1), but the sorting step costs O(n log n), making the total approach slower than linear scan."
+        },
+        {
+          "answer": "Both approaches have identical efficiency because both ultimately examine every element in the unsorted list at least once during execution",
+          "explanation": "Both examine all elements, but the sorting approach does far more work per element; examining all elements does not imply equal cost."
+        },
+        {
+          "answer": "The linear scan is less efficient because it does not organise the data, making it impossible to verify the correctness of the result",
+          "explanation": "Correctness does not require sorted data; a single pass tracking the maximum is provably correct."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Priya argues that a Monte Carlo simulation of a fair coin should produce exactly 50% heads after a sufficiently large number of trials. Which one of the following best evaluates this argument?",
+      "correct": "The argument is imprecise because the proportion approaches 50% with increasing trials but may never equal it exactly in a finite sample",
+      "correctExplanation": "For any finite n, the proportion 0.50000... exactly is just one of many possible outcomes; the expectation is 50% but individual runs vary.",
+      "distractors": [
+        {
+          "answer": "The argument is correct because the law of large numbers guarantees the proportion will equal exactly 50% once the trial count is large enough",
+          "explanation": "The law of large numbers guarantees convergence in probability, not exact equality at any finite sample size."
+        },
+        {
+          "answer": "The argument is correct because a fair coin by definition produces heads exactly half the time in every finite experiment conducted",
+          "explanation": "Fairness describes the probability per toss, not the exact outcome distribution of a finite experiment."
+        },
+        {
+          "answer": "The argument is incorrect because Monte Carlo simulations using pseudorandom generators always introduce a systematic persistent bias",
+          "explanation": "Well-designed generators produce near-unbiased results; the issue is sampling variability, not systematic bias."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student claims that the Sieve of Eratosthenes becomes impractical for finding all primes up to 10⁹ because it requires checking divisibility by every integer up to 10⁹. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because the sieve does not check divisibility at all; it simply enumerates every odd number below the given limit",
+      "correctExplanation": "The sieve does eliminate by multiples (a form of divisibility), but only for primes up to √n, not every integer.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because the sieve must test every integer below the limit as a potential prime factor for elimination purposes",
+          "explanation": "The sieve only processes primes up to √(10⁹) ≈ 31623, not all integers up to 10⁹."
+        },
+        {
+          "answer": "The claim is correct because the memory required to store 10⁹ Boolean values exceeds the capacity of all modern computer systems",
+          "explanation": "10⁹ Booleans require about 1 GB of memory, which is well within modern system capabilities."
+        },
+        {
+          "answer": "The claim is incorrect because modern segmented sieve implementations handle limits of 10⁹ by processing primes up to √(10⁹) only",
+          "explanation": "Segmented sieves partition the range and process primes only up to ≈31623, making 10⁹ feasible."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student proposes using Newton's method to find a root of f(x) = |x| starting from x₀ = 1. Which one of the following best analyses why this approach is problematic?",
+      "correct": "Newton's method is problematic because |x| is not differentiable at x = 0, causing the iterates to oscillate rather than converge",
+      "correctExplanation": "The derivative of |x| is undefined at the root x = 0; iterates alternate between positive and negative values without converging.",
+      "distractors": [
+        {
+          "answer": "Newton's method fails because |x| has no roots, so there is no value for the algorithm to converge toward at any starting point",
+          "explanation": "|x| has a root at x = 0; the problem is the non-differentiability at that point, not the absence of a root."
+        },
+        {
+          "answer": "Newton's method succeeds because the absolute value function is continuous everywhere, which is sufficient for convergence to occur",
+          "explanation": "Continuity alone is insufficient; Newton's method requires differentiability, which |x| lacks at x = 0."
+        },
+        {
+          "answer": "Newton's method fails because the function |x| produces only positive outputs, and roots require negative function values as well",
+          "explanation": "f(0) = 0 is the root; the issue is the derivative's non-existence at 0, not the function's range."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Linh compares a brute-force algorithm with O(n³) complexity to an optimised algorithm with O(n log n) complexity for the same task. For n = 1000, which one of the following best analyses the practical difference?",
+      "correct": "The O(n log n) algorithm is overwhelmingly faster, performing roughly 10 000 operations compared to 10⁹ for the brute-force approach",
+      "correctExplanation": "At n = 1000, n³ = 10⁹ versus n log₂ n ≈ 10 000; the optimised algorithm is approximately 100 000 times faster.",
+      "distractors": [
+        {
+          "answer": "The O(n³) algorithm performs approximately 10⁹ operations while the O(n log n) algorithm performs roughly 10⁴, a dramatic efficiency gap",
+          "explanation": "1000 × log₂(1000) ≈ 10 000 is correct for O(n log n); the five-order-of-magnitude gap makes the brute force impractical."
+        },
+        {
+          "answer": "Both algorithms perform approximately the same number of operations because Big-O notation ignores the constant factors that dominate",
+          "explanation": "Constant factors matter but cannot bridge a gap of five orders of magnitude between 10⁹ and 10⁴."
+        },
+        {
+          "answer": "The brute-force algorithm is more practical because its simpler implementation compensates for its higher operation count entirely",
+          "explanation": "Simplicity does not compensate for 100 000× more operations; the performance difference is overwhelming."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student suggests that a simulation estimating a rare event (probability 0.001) should use 100 trials to obtain a reliable estimate. Which one of the following best evaluates this suggestion?",
+      "correct": "The suggestion is adequate because the central limit theorem guarantees normality of the sample proportion at exactly 100 observations",
+      "correctExplanation": "The CLT approximation for proportions requires np ≥ 5; here np = 0.1, far below the threshold for reliable normality.",
+      "distractors": [
+        {
+          "answer": "The suggestion is adequate because 100 trials is a universally accepted minimum sample size for any Monte Carlo estimation problem",
+          "explanation": "Sample size adequacy depends on the probability being estimated; rare events require far more trials for stable estimates."
+        },
+        {
+          "answer": "The suggestion is excessive because even 10 trials would reliably detect an event with probability 0.001 through random sampling",
+          "explanation": "With probability 0.001, 10 trials have a 99% chance of observing zero events; this is far too few, not excessive."
+        },
+        {
+          "answer": "The suggestion is inadequate because 100 trials would expect only 0.1 occurrences of the event, providing almost no useful information",
+          "explanation": "With E[X] = 0.1 events in 100 trials, most runs observe zero events, making the estimate unreliable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Sam analyses two sorting algorithms: Algorithm A with O(n²) average-case complexity and Algorithm B with O(n log n) average-case complexity. For small inputs of n = 10, Algorithm A runs faster due to lower constant overhead. Which one of the following best explains when Algorithm B becomes the better practical choice?",
+      "correct": "Algorithm B becomes the better choice once n is large enough that the quadratic growth of A outweighs its constant-factor advantage",
+      "correctExplanation": "At some crossover n, the n² term dominates A's lower overhead, and B's n log n scaling provides faster execution.",
+      "distractors": [
+        {
+          "answer": "Algorithm B is always the better choice regardless of input size because lower Big-O complexity is the only factor that determines speed",
+          "explanation": "Big-O describes asymptotic growth; constant factors dominate at small n, so lower complexity alone does not guarantee speed."
+        },
+        {
+          "answer": "Algorithm B never becomes the better choice because Algorithm A's simplicity means it outperforms at every possible input size tested",
+          "explanation": "As n grows, n² grows much faster than n log n; there exists a crossover point beyond which B is faster."
+        },
+        {
+          "answer": "Algorithm B becomes faster at n = 100 because this is the universal crossover point where O(n log n) always overtakes O(n²) complexity",
+          "explanation": "The crossover depends on specific constant factors and implementation; 100 is not a universal threshold."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student claims that using a fixed random seed in a Monte Carlo simulation makes the results deterministic and therefore scientifically useless. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because a fixed seed eliminates all sampling variability, producing an estimate that is exactly equal to the true value",
+      "correctExplanation": "A fixed seed produces one deterministic path, not the true value; it is reproducible but still an approximation.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because deterministic results from a fixed seed are statistically invalid and can never be used in scientific analysis",
+          "explanation": "Fixed-seed results are valid for a given sample; reproducibility is a strength, not a weakness, of scientific computation."
+        },
+        {
+          "answer": "The claim is correct because the pseudorandom sequence from a fixed seed is always biased toward values near the seed number itself",
+          "explanation": "Well-designed generators produce uniformly distributed sequences regardless of the seed value."
+        },
+        {
+          "answer": "The claim is incorrect because fixed seeds provide reproducibility, and running multiple seeds gives independent samples for confidence intervals",
+          "explanation": "Multiple independent seeds yield independent runs that collectively provide variation estimates and confidence intervals."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Newton's method converges {{blank:1}} when the initial estimate is close to the root and the function is smooth, but it may {{blank:2}} when the derivative is zero or nearly zero at an iterate.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "quadratically",
+          "correctExplanation": "Near a simple root with a smooth function, Newton's method doubles the number of correct digits each iteration.",
+          "distractors": [
+            {
+              "answer": "linearly",
+              "explanation": "Linear convergence describes bisection; Newton's method achieves the faster quadratic rate under ideal conditions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "logarithmically",
+              "explanation": "No standard root-finding method converges logarithmically; this rate is not applicable here.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "diverge",
+          "correctExplanation": "A zero or near-zero derivative causes a division by a very small number, producing a large, erratic update.",
+          "distractors": [
+            {
+              "answer": "converge faster",
+              "explanation": "A near-zero derivative causes instability, not acceleration; the method is likely to fail.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "terminate",
+              "explanation": "The method does not gracefully terminate; it either oscillates or produces increasingly inaccurate estimates.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The bisection method has {{blank:1}} convergence, gaining approximately one binary digit of accuracy per iteration, whereas Newton's method has {{blank:2}} convergence under ideal conditions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "linear",
+          "correctExplanation": "Bisection reduces the interval by half each step, a constant factor characteristic of linear convergence.",
+          "distractors": [
+            {
+              "answer": "quadratic",
+              "explanation": "Quadratic convergence doubles the digits of accuracy per step; bisection achieves only one digit per step.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exponential",
+              "explanation": "Exponential convergence would be faster than quadratic; bisection is slower, not faster, than this.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "quadratic",
+          "correctExplanation": "Newton's method approximately doubles the number of correct digits each iteration when conditions are met.",
+          "distractors": [
+            {
+              "answer": "cubic",
+              "explanation": "Cubic convergence applies to Halley's method, not Newton's method.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "constant",
+              "explanation": "Constant convergence would mean no improvement; Newton's method improves rapidly under ideal conditions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A Monte Carlo estimate has standard error proportional to 1/√n, so to {{blank:1}} the standard error an analyst must {{blank:2}} the number of trials.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "halve",
+          "correctExplanation": "Halving the standard error is a common precision target in Monte Carlo estimation.",
+          "distractors": [
+            {
+              "answer": "double",
+              "explanation": "Doubling the error would mean making the estimate worse, which is the opposite of the analytical goal.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "eliminate",
+              "explanation": "Standard error cannot be eliminated with finite trials; it can only be reduced.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "quadruple",
+          "correctExplanation": "Since SE ∝ 1/√n, halving SE requires multiplying n by 4 (because 1/√(4n) = (1/2)/√n).",
+          "distractors": [
+            {
+              "answer": "double",
+              "explanation": "Doubling trials reduces SE by a factor of √2 ≈ 1.41, not by half.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "halve",
+              "explanation": "Halving trials would increase the standard error, not decrease it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Memoisation transforms a naive recursive Fibonacci algorithm from {{blank:1}} time complexity to O(n) by storing previously computed values and avoiding {{blank:2}} calls.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exponential",
+          "correctExplanation": "The naive recursive Fibonacci has O(2ⁿ) or O(φⁿ) time complexity due to branching.",
+          "distractors": [
+            {
+              "answer": "quadratic",
+              "explanation": "Quadratic O(n²) underestimates the naive Fibonacci complexity, which grows exponentially.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "logarithmic",
+              "explanation": "Logarithmic time is far too efficient; naive Fibonacci recursion is dramatically slower.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "redundant",
+          "correctExplanation": "Without memoisation, the same Fibonacci values are recomputed exponentially many times.",
+          "distractors": [
+            {
+              "answer": "recursive",
+              "explanation": "Memoisation does not eliminate recursion; it eliminates redundant recomputation within the recursion.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sequential",
+              "explanation": "Sequential calls execute in order; the issue is duplicated work, not sequentiality.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A segmented sieve improves the Sieve of Eratosthenes for large limits by processing the range in {{blank:1}} that fit in cache memory, reducing {{blank:2}} misses and improving runtime.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "segments",
+          "correctExplanation": "Segmentation partitions the range into blocks sized to fit in CPU cache for efficient access.",
+          "distractors": [
+            {
+              "answer": "layers",
+              "explanation": "Layers is not a standard term in sieve implementations; segments describe the partitioned blocks.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "dimensions",
+              "explanation": "Dimensions describe array rank, not the partitioning strategy of a segmented sieve.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cache",
+          "correctExplanation": "Cache misses occur when data is not in fast memory; segmentation keeps working data in cache.",
+          "distractors": [
+            {
+              "answer": "rounding",
+              "explanation": "Rounding errors are a floating-point concern; the sieve operates on integers and is not affected by rounding.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "overflow",
+              "explanation": "Integer overflow relates to value size limits; cache misses relate to memory access patterns.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "When comparing algorithms, {{blank:1}} complexity measures the resources used in the most demanding input scenario, while {{blank:2}} complexity averages over all possible inputs.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "worst-case",
+          "correctExplanation": "Worst-case analysis considers the input that requires the most resources, providing an upper bound.",
+          "distractors": [
+            {
+              "answer": "best-case",
+              "explanation": "Best-case analysis considers the least demanding input, providing a lower bound, not the most demanding.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "space",
+              "explanation": "Space complexity measures memory usage, not the scenario under which resources are measured.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "average-case",
+          "correctExplanation": "Average-case analysis takes the expected resource usage across all inputs, often weighted by probability.",
+          "distractors": [
+            {
+              "answer": "amortised",
+              "explanation": "Amortised analysis averages cost over a sequence of operations, not across all possible inputs.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "optimal",
+              "explanation": "Optimal describes the best possible algorithm, not a method of complexity analysis.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "The {{blank:1}} limit theorem explains why Monte Carlo sample means approximate the population mean as the number of trials grows, regardless of the underlying {{blank:2}} shape.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "central",
+          "correctExplanation": "The central limit theorem states that sample means converge to normality as sample size increases.",
+          "distractors": [
+            {
+              "answer": "extreme",
+              "explanation": "The extreme value theorem concerns maximum and minimum values of functions, not sample mean distributions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "intermediate",
+              "explanation": "The intermediate value theorem guarantees continuous functions attain intermediate values, not sample mean behaviour.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "distribution",
+          "correctExplanation": "The CLT applies regardless of the population distribution's shape, requiring only finite variance.",
+          "distractors": [
+            {
+              "answer": "sample",
+              "explanation": "The theorem describes the sample mean distribution, not the sample shape; it applies to any population distribution.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "parameter",
+              "explanation": "Parameters are numerical characteristics; the CLT's generality is about distributional shape, not parameter values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A Monte Carlo estimate of a rare event with probability p = 0.001 requires at least {{blank:1}} trials to expect even a small number of occurrences, because the expected count equals n × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "thousands",
+          "correctExplanation": "With p = 0.001, at least several thousand trials are needed to expect a meaningful count of events.",
+          "distractors": [
+            {
+              "answer": "hundreds",
+              "explanation": "100 trials yield an expected count of only 0.1 events, which is insufficient for reliable estimation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tens",
+              "explanation": "10 trials yield an expected count of 0.01, making observation of the event extremely unlikely.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "p",
+          "correctExplanation": "The expected number of occurrences in n trials is n × p for independent Bernoulli events.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "n × n = n² is not the expected count formula; the correct formula uses the probability, not the sample size.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/p",
+              "explanation": "n × (1/p) = n/p overestimates by a factor of 1/p²; the expected count is n × p.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "An algorithm that checks every possible combination of n items has {{blank:1}} time complexity, making it impractical for large n compared to a polynomial-time {{blank:2}} approach.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exponential",
+          "correctExplanation": "Checking all 2ⁿ combinations gives exponential O(2ⁿ) growth, which is intractable for large n.",
+          "distractors": [
+            {
+              "answer": "polynomial",
+              "explanation": "Polynomial growth (e.g. O(n³)) is much slower than exponential; all-combinations is not polynomial.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "logarithmic",
+              "explanation": "Logarithmic growth is extremely efficient; brute-force combination checking is the opposite.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "approximation",
+          "correctExplanation": "Polynomial-time approximation algorithms trade exactness for feasibility on large inputs.",
+          "distractors": [
+            {
+              "answer": "exhaustive",
+              "explanation": "Exhaustive search is what the brute-force approach already is; it is not the efficient alternative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "randomised",
+              "explanation": "Randomised algorithms may help but are not inherently polynomial-time; approximation is the key contrast.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "Newton's method applied to a polynomial with a {{blank:1}} root at x = a converges more slowly because the derivative also equals zero at a, requiring a modified formula to restore {{blank:2}} convergence.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "repeated",
+          "correctExplanation": "A repeated root means f(a) = 0 and f'(a) = 0, which degrades Newton's standard convergence rate.",
+          "distractors": [
+            {
+              "answer": "complex",
+              "explanation": "Complex roots involve imaginary components; the convergence issue here is about multiplicity, not complex numbers.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "irrational",
+              "explanation": "Irrational roots have full convergence rate if they are simple; irrationality does not affect convergence speed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "quadratic",
+          "correctExplanation": "The modified Newton's method restores the standard quadratic convergence rate for repeated roots.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear convergence is the degraded rate; the modification aims to restore the faster quadratic rate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "cubic",
+              "explanation": "Cubic convergence exceeds standard Newton's method; the goal is restoring quadratic, not achieving cubic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Variance reduction techniques such as {{blank:1}} sampling improve Monte Carlo efficiency by using knowledge of the problem structure to reduce the {{blank:2}} of the estimate.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "stratified",
+          "correctExplanation": "Stratified sampling partitions the sample space and samples each stratum, reducing variability.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Random sampling is the baseline Monte Carlo approach; it does not reduce variance beyond standard levels.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "biased",
+              "explanation": "Biased sampling introduces systematic error rather than reducing variance.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "variance",
+          "correctExplanation": "Variance reduction directly targets the spread of the estimate around the true value.",
+          "distractors": [
+            {
+              "answer": "bias",
+              "explanation": "Bias is a systematic error; variance reduction techniques address random error, not systematic error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mean",
+              "explanation": "Reducing the mean of the estimate would change its target value, not improve its precision.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The {{blank:1}} of an algorithm measures how its resource requirements grow with input size, and an algorithm is considered {{blank:2}} if its complexity is bounded by a polynomial function of n.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "complexity",
+          "correctExplanation": "Computational complexity quantifies how time or space requirements scale with input size.",
+          "distractors": [
+            {
+              "answer": "accuracy",
+              "explanation": "Accuracy measures how close an output is to the true value, not how resource usage scales.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "stability",
+              "explanation": "Stability describes sensitivity to input perturbations, not resource growth with input size.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tractable",
+          "correctExplanation": "Polynomial-time algorithms are generally considered tractable, meaning they are feasible for large inputs.",
+          "distractors": [
+            {
+              "answer": "optimal",
+              "explanation": "Optimal means the best possible algorithm; polynomial time is about feasibility, not optimality.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "convergent",
+              "explanation": "Convergence describes iterative behaviour approaching a limit, not the complexity class of an algorithm.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

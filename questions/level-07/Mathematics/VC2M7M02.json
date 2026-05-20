@@ -1,0 +1,2606 @@
+{
+  "_meta": {
+    "code": "VC2M7M02",
+    "level": 7,
+    "area": "Mathematics",
+    "ageBand": "11-12",
+    "keyKnowledge": "We are learning to calculate the volume of right prisms using formulas.",
+    "generatedAt": "2026-05-18T08:22:35Z",
+    "specVersions": {
+      "generation-prompt-master": "2.1",
+      "validation": "2.1"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "Volume measures how much space a three-dimensional object takes up.",
+      "correct": "True",
+      "correctExplanation": "Volume is the amount of 3D space inside a solid shape.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the standard definition of volume."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Volume is measured in square centimetres.",
+      "correct": "False",
+      "correctExplanation": "Volume is measured in cubic units such as cm³, not cm².",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses area units with volume units."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A rectangular prism has eight faces.",
+      "correct": "False",
+      "correctExplanation": "A rectangular prism has six faces, not eight.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True may confuse vertices (8) with faces (6)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The volume of a rectangular prism is found by adding length, width and height.",
+      "correct": "False",
+      "correctExplanation": "Volume is found by multiplying: V = l × w × h.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True adds dimensions instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "One litre is equal to 1000 cubic centimetres.",
+      "correct": "True",
+      "correctExplanation": "1 L = 1000 mL = 1000 cm³.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is a standard metric conversion."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "A triangular prism has a triangular cross-section.",
+      "correct": "True",
+      "correctExplanation": "A triangular prism is formed by extending a triangle along a length.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The cross-section defines the type of prism."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Doubling the height of a prism always doubles its volume.",
+      "correct": "True",
+      "correctExplanation": "V = base area × height, so doubling h doubles V.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Volume is directly proportional to height."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A cube with side length 3 cm has a volume of 9 cm³.",
+      "correct": "False",
+      "correctExplanation": "V = 3 × 3 × 3 = 27 cm³, not 3 × 3 = 9.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True calculates area instead of volume."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The cross-section of a right prism is the same shape at every point along its length.",
+      "correct": "True",
+      "correctExplanation": "A right prism has a uniform cross-section from one end to the other.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is a defining feature of prisms."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A cylinder is a type of prism.",
+      "correct": "False",
+      "correctExplanation": "A cylinder has a circular cross-section but is not classified as a prism because prisms have polygonal cross-sections.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True knows cylinders share properties with prisms but misclassifies them."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A rectangular prism with dimensions 5 × 4 × 2 has a volume of 11 cm³.",
+      "correct": "False",
+      "correctExplanation": "V = 5 × 4 × 2 = 40 cm³, not 5 + 4 + 2 = 11.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True adds the dimensions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The formula V = lwh only works for cubes.",
+      "correct": "False",
+      "correctExplanation": "V = lwh works for all rectangular prisms; cubes are a special case where l = w = h.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True thinks a separate formula is needed for non-cube boxes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is the volume of a rectangular prism with l = 6, w = 4, h = 3?",
+      "correct": "72 cm³",
+      "correctExplanation": "V = 6 × 4 × 3 = 72.",
+      "distractors": [
+        {
+          "answer": "13 cm³",
+          "explanation": "This adds 6 + 4 + 3 = 13."
+        },
+        {
+          "answer": "24 cm³",
+          "explanation": "This only multiplies two dimensions: 6 × 4 = 24."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which unit measures volume?",
+      "correct": "cm³",
+      "correctExplanation": "Cubic centimetres measure three-dimensional space.",
+      "distractors": [
+        {
+          "answer": "cm²",
+          "explanation": "cm² measures area, not volume."
+        },
+        {
+          "answer": "cm",
+          "explanation": "cm measures length."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What is the volume of a cube with side 5 cm?",
+      "correct": "125 cm³",
+      "correctExplanation": "V = 5 × 5 × 5 = 125.",
+      "distractors": [
+        {
+          "answer": "25 cm³",
+          "explanation": "This calculates 5 × 5, which is the face area."
+        },
+        {
+          "answer": "15 cm³",
+          "explanation": "This calculates 5 × 3 = 15."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "How many cm³ are in 1 litre?",
+      "correct": "1000",
+      "correctExplanation": "1 litre = 1000 cm³.",
+      "distractors": [
+        {
+          "answer": "100",
+          "explanation": "This confuses with 10 × 10 = 100."
+        },
+        {
+          "answer": "10 000",
+          "explanation": "This confuses with 1 m² in cm²."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What shape is the cross-section of a triangular prism?",
+      "correct": "A triangle",
+      "correctExplanation": "A triangular prism has a triangular cross-section.",
+      "distractors": [
+        {
+          "answer": "A rectangle",
+          "explanation": "The rectangular faces are sides, not the cross-section."
+        },
+        {
+          "answer": "A circle",
+          "explanation": "Circles are cross-sections of cylinders."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "A box is 10 cm long, 5 cm wide and 3 cm tall. What is its volume?",
+      "correct": "150 cm³",
+      "correctExplanation": "V = 10 × 5 × 3 = 150.",
+      "distractors": [
+        {
+          "answer": "18 cm³",
+          "explanation": "This adds 10 + 5 + 3 = 18."
+        },
+        {
+          "answer": "50 cm³",
+          "explanation": "This calculates 10 × 5 only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What does the formula V = Ah mean?",
+      "correct": "Volume equals base area times height",
+      "correctExplanation": "A is the cross-sectional area and h is the prism height.",
+      "distractors": [
+        {
+          "answer": "Volume equals base area plus height",
+          "explanation": "Area and height are multiplied, not added."
+        },
+        {
+          "answer": "Volume equals half the area times height",
+          "explanation": "Halving applies to triangles, not the general prism formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "A rectangular fish tank is 40 cm × 20 cm × 30 cm. What is its volume?",
+      "correct": "24 000 cm³",
+      "correctExplanation": "V = 40 × 20 × 30 = 24 000.",
+      "distractors": [
+        {
+          "answer": "90 cm³",
+          "explanation": "This adds 40 + 20 + 30 = 90."
+        },
+        {
+          "answer": "800 cm³",
+          "explanation": "This multiplies only 40 × 20 = 800."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is a right prism?",
+      "correct": "A 3D shape with a uniform cross-section",
+      "correctExplanation": "The cross-section is the same at every point along its length.",
+      "distractors": [
+        {
+          "answer": "Any 3D shape with flat faces",
+          "explanation": "Pyramids have flat faces but are not prisms."
+        },
+        {
+          "answer": "A shape with all right angles",
+          "explanation": "Triangular prisms have non-right angles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "A cube has side length 4 cm. What is its volume?",
+      "correct": "64 cm³",
+      "correctExplanation": "V = 4 × 4 × 4 = 64.",
+      "distractors": [
+        {
+          "answer": "16 cm³",
+          "explanation": "This calculates 4 × 4, the face area."
+        },
+        {
+          "answer": "12 cm³",
+          "explanation": "This calculates 4 × 3 = 12."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which formula calculates the volume of any right prism?",
+      "correct": "V = base area × height",
+      "correctExplanation": "For any prism, multiply the cross-section area by the height.",
+      "distractors": [
+        {
+          "answer": "V = l × w",
+          "explanation": "This only gives the base area of a rectangle."
+        },
+        {
+          "answer": "V = 2(l + w + h)",
+          "explanation": "This relates to surface dimensions, not volume."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A rectangular prism has V = 120 cm³ and base area 30 cm². What is its height?",
+      "correct": "4 cm",
+      "correctExplanation": "h = 120 ÷ 30 = 4.",
+      "distractors": [
+        {
+          "answer": "90 cm",
+          "explanation": "This subtracts 30 from 120."
+        },
+        {
+          "answer": "3600 cm",
+          "explanation": "This multiplies 120 by 30."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "Volume is measured in {{blank:1}} units such as cm{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cubic",
+          "correctExplanation": "Volume measures three-dimensional space using cubic units.",
+          "distractors": [
+            {
+              "answer": "square",
+              "explanation": "Square units measure area, not volume.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "linear",
+              "explanation": "Linear units measure length.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "³",
+          "correctExplanation": "The superscript 3 indicates cubed, meaning three dimensions.",
+          "distractors": [
+            {
+              "answer": "²",
+              "explanation": "The superscript 2 is for area, not volume.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "⁴",
+              "explanation": "There is no standard use of the fourth power in measurement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The volume of a rectangular prism is V = l × w × {{blank:1}}. One litre equals {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "h",
+          "correctExplanation": "Height is the third dimension multiplied to find volume.",
+          "distractors": [
+            {
+              "answer": "A",
+              "explanation": "A represents area, which is only two dimensions.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "P",
+              "explanation": "P represents perimeter, not a dimension.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1000",
+          "correctExplanation": "1 litre = 1000 cm³ is a standard metric conversion.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "100 cm³ is only 0.1 litres.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 cm³ is only 0.01 litres.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The volume of a triangular prism equals the area of the triangle times the length of the prism.",
+      "correct": "True",
+      "correctExplanation": "V = (half × b × h) × L, where L is the prism length.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This extends the cross-section area along the prism's depth."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "A rectangular prism with a base area of 20 cm² and height 5 cm has a volume of 25 cm³.",
+      "correct": "False",
+      "correctExplanation": "V = 20 × 5 = 100 cm³, not 20 + 5 = 25.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True adds area and height instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Two prisms with the same cross-sectional area but different heights will have equal volumes.",
+      "correct": "False",
+      "correctExplanation": "Different heights give different volumes even if the cross-section is the same.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True forgets that height also affects volume."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "To convert cm³ to litres, divide by 1000.",
+      "correct": "True",
+      "correctExplanation": "1 L = 1000 cm³, so dividing by 1000 converts correctly.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the standard conversion method."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "A triangular prism can never have a greater volume than a rectangular prism.",
+      "correct": "False",
+      "correctExplanation": "A triangular prism with a large enough cross-section and height can exceed any given rectangular prism.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True assumes one shape always holds more."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Halving the height of a prism halves its volume.",
+      "correct": "True",
+      "correctExplanation": "V = A × h, so replacing h with h/2 gives half the original volume.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Volume is directly proportional to height."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "If all three dimensions of a rectangular prism are doubled, the volume doubles.",
+      "correct": "False",
+      "correctExplanation": "V_new = 2l × 2w × 2h = 8lwh, so the volume is multiplied by 8.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True thinks doubling each dimension only doubles the total."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "A hexagonal prism has a pentagonal cross-section.",
+      "correct": "False",
+      "correctExplanation": "A hexagonal prism has a hexagonal cross-section; a pentagon has five sides, not six.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True confuses pentagon (5 sides) with hexagon (6 sides)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A triangular prism has a cross-section with base 6 cm and height 4 cm. The prism is 10 cm long. What is the volume?",
+      "correct": "120 cm³",
+      "correctExplanation": "Triangle area = half × 6 × 4 = 12. V = 12 × 10 = 120.",
+      "distractors": [
+        {
+          "answer": "240 cm³",
+          "explanation": "This uses 6 × 4 × 10 without halving the triangle."
+        },
+        {
+          "answer": "20 cm³",
+          "explanation": "This adds 6 + 4 + 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A fish tank is 50 × 30 × 20 cm. How many litres does it hold?",
+      "correct": "30 litres",
+      "correctExplanation": "V = 30 000 cm³ ÷ 1000 = 30 L.",
+      "distractors": [
+        {
+          "answer": "3 litres",
+          "explanation": "This divides by 10 000 instead of 1000."
+        },
+        {
+          "answer": "300 litres",
+          "explanation": "This divides by 100 instead of 1000."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A rectangular prism has V = 240 cm³, l = 10 and w = 6. What is h?",
+      "correct": "4 cm",
+      "correctExplanation": "h = 240 ÷ (10 × 6) = 240 ÷ 60 = 4.",
+      "distractors": [
+        {
+          "answer": "24 cm",
+          "explanation": "This divides 240 by 10 only."
+        },
+        {
+          "answer": "40 cm",
+          "explanation": "This divides 240 by 6 only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "What happens to the volume of a prism if the height triples?",
+      "correct": "The volume triples",
+      "correctExplanation": "V = A × h, so tripling h triples V.",
+      "distractors": [
+        {
+          "answer": "The volume increases by 3",
+          "explanation": "Tripling means multiplying by 3, same as increasing by a factor of 3."
+        },
+        {
+          "answer": "The volume stays the same",
+          "explanation": "Changing height changes volume."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A hexagonal prism has cross-section area 45 cm² and height 8 cm. What is its volume?",
+      "correct": "360 cm³",
+      "correctExplanation": "V = 45 × 8 = 360.",
+      "distractors": [
+        {
+          "answer": "53 cm³",
+          "explanation": "This adds 45 and 8."
+        },
+        {
+          "answer": "720 cm³",
+          "explanation": "This doubles the correct answer."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Two rectangular prisms: A is 8 × 5 × 3 and B is 6 × 4 × 5. Which has greater volume?",
+      "correct": "Both are equal at 120 cm³",
+      "correctExplanation": "A: 120. B: 120. They are equal.",
+      "distractors": [
+        {
+          "answer": "Prism A at 120 cm³",
+          "explanation": "Both have the same volume."
+        },
+        {
+          "answer": "Prism B at 120 cm³",
+          "explanation": "Both have the same volume."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "A container holds 2.5 litres. What is this in cm³?",
+      "correct": "2500 cm³",
+      "correctExplanation": "2.5 × 1000 = 2500 cm³.",
+      "distractors": [
+        {
+          "answer": "250 cm³",
+          "explanation": "This multiplies by 100 instead of 1000."
+        },
+        {
+          "answer": "25 000 cm³",
+          "explanation": "This multiplies by 10 000 instead of 1000."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A triangular prism has V = 90 cm³ and length 10 cm. What is the area of its triangular cross-section?",
+      "correct": "9 cm²",
+      "correctExplanation": "A = 90 ÷ 10 = 9 cm².",
+      "distractors": [
+        {
+          "answer": "80 cm²",
+          "explanation": "This subtracts 10 from 90."
+        },
+        {
+          "answer": "900 cm²",
+          "explanation": "This multiplies instead of dividing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Why does V = Ah work for any right prism?",
+      "correct": "The cross-section is uniform along the height",
+      "correctExplanation": "Every slice has the same area A, so total volume = A × h.",
+      "distractors": [
+        {
+          "answer": "Only rectangular prisms have uniform slices",
+          "explanation": "All right prisms have uniform cross-sections."
+        },
+        {
+          "answer": "The formula only applies to triangular prisms",
+          "explanation": "The formula works for any right prism shape."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A swimming pool is shaped like a rectangular prism: 25 m × 10 m × 1.5 m. What is its volume?",
+      "correct": "375 m³",
+      "correctExplanation": "V = 25 × 10 × 1.5 = 375.",
+      "distractors": [
+        {
+          "answer": "36.5 m³",
+          "explanation": "This adds the three dimensions."
+        },
+        {
+          "answer": "250 m³",
+          "explanation": "This only multiplies 25 × 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "If you triple every dimension of a rectangular prism, what happens to the volume?",
+      "correct": "It becomes 27 times larger",
+      "correctExplanation": "3 × 3 × 3 = 27.",
+      "distractors": [
+        {
+          "answer": "It triples",
+          "explanation": "Tripling each of three dimensions gives 27 times, not 3 times."
+        },
+        {
+          "answer": "It becomes 9 times larger",
+          "explanation": "9 results from tripling only two dimensions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A pentagonal prism has cross-section area 30 cm² and height 12 cm. What is V?",
+      "correct": "360 cm³",
+      "correctExplanation": "V = 30 × 12 = 360.",
+      "distractors": [
+        {
+          "answer": "42 cm³",
+          "explanation": "This adds 30 and 12."
+        },
+        {
+          "answer": "180 cm³",
+          "explanation": "This halves the answer unnecessarily."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A triangular prism has triangle base 8 cm, triangle height 5 cm and length 12 cm. The cross-section area is {{blank:1}} cm² and V = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20",
+          "correctExplanation": "half × 8 × 5 = 20.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "This uses 8 × 5 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "13",
+              "explanation": "This adds 8 and 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "240",
+          "correctExplanation": "20 × 12 = 240.",
+          "distractors": [
+            {
+              "answer": "480",
+              "explanation": "This uses 40 × 12.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "32",
+              "explanation": "This adds 20 and 12.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "A fish tank is 60 × 25 × 20 cm. Its volume is {{blank:1}} cm³ which equals {{blank:2}} litres.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30000",
+          "correctExplanation": "60 × 25 × 20 = 30 000.",
+          "distractors": [
+            {
+              "answer": "105",
+              "explanation": "This adds all three dimensions.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1500",
+              "explanation": "This multiplies only 60 × 25.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "30 000 ÷ 1000 = 30.",
+          "distractors": [
+            {
+              "answer": "300",
+              "explanation": "This divides by 100 instead of 1000.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "This divides by 10 000.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "V = Ah. If A = 36 cm² and h = 5 cm, then V = {{blank:1}} cm³. If V = 200 and A = 25, then h = {{blank:2}} cm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "180",
+          "correctExplanation": "36 × 5 = 180.",
+          "distractors": [
+            {
+              "answer": "41",
+              "explanation": "This adds 36 and 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7.2",
+              "explanation": "This divides 36 by 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "200 ÷ 25 = 8.",
+          "distractors": [
+            {
+              "answer": "175",
+              "explanation": "This subtracts 25 from 200.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5000",
+              "explanation": "This multiplies 200 by 25.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "A rectangular prism has l = 10, w = 4, h = 3, giving V = {{blank:1}} cm³. Doubling h to 6 gives V = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "120",
+          "correctExplanation": "10 × 4 × 3 = 120.",
+          "distractors": [
+            {
+              "answer": "17",
+              "explanation": "This adds 10 + 4 + 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40",
+              "explanation": "This multiplies 10 × 4 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "240",
+          "correctExplanation": "10 × 4 × 6 = 240.",
+          "distractors": [
+            {
+              "answer": "123",
+              "explanation": "This adds 3 to 120.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "360",
+              "explanation": "This triples instead of doubling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A cube has side 6 cm. Its volume is {{blank:1}} cm³ and each face has area {{blank:2}} cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "216",
+          "correctExplanation": "6 × 6 × 6 = 216.",
+          "distractors": [
+            {
+              "answer": "18",
+              "explanation": "This adds 6 + 6 + 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "36",
+              "explanation": "This calculates 6 × 6, which is face area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "36",
+          "correctExplanation": "6 × 6 = 36.",
+          "distractors": [
+            {
+              "answer": "216",
+              "explanation": "216 is the volume, not the face area.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "This adds 6 + 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Converting 4500 cm³ to litres gives {{blank:1}} L. Converting 2.5 L to cm³ gives {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4.5",
+          "correctExplanation": "4500 ÷ 1000 = 4.5.",
+          "distractors": [
+            {
+              "answer": "45",
+              "explanation": "This divides by 100 instead of 1000.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.45",
+              "explanation": "This divides by 10 000.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2500",
+          "correctExplanation": "2.5 × 1000 = 2500.",
+          "distractors": [
+            {
+              "answer": "250",
+              "explanation": "This multiplies by 100 instead of 1000.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "This multiplies by 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A rectangular tank 80 × 40 × 50 cm holds 160 litres.",
+      "correct": "True",
+      "correctExplanation": "V = 80 × 40 × 50 = 160 000 cm³ = 160 L.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The calculation and conversion confirm the statement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "A triangular prism with triangle base 6, height 8 and length 10 has volume 480 cm³.",
+      "correct": "False",
+      "correctExplanation": "V = half × 6 × 8 × 10 = 240 cm³, not 6 × 8 × 10 = 480.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A student choosing True forgets to halve the triangle area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A rectangular planter box is 1.2 m × 0.5 m × 0.4 m. How many litres of soil does it hold?",
+      "correct": "240 litres",
+      "correctExplanation": "V = 120 × 50 × 40 cm = 240 000 cm³ = 240 L.",
+      "distractors": [
+        {
+          "answer": "24 litres",
+          "explanation": "This divides by 10 000 instead of 1000."
+        },
+        {
+          "answer": "2.1 litres",
+          "explanation": "This adds 1.2 + 0.5 + 0.4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A triangular prism tent has triangle base 2 m, height 1.5 m and length 3 m. What is the volume?",
+      "correct": "4.5 m³",
+      "correctExplanation": "V = half × 2 × 1.5 × 3 = 4.5.",
+      "distractors": [
+        {
+          "answer": "9 m³",
+          "explanation": "This uses 2 × 1.5 × 3 without halving."
+        },
+        {
+          "answer": "6.5 m³",
+          "explanation": "This adds the dimensions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "An aquarium is 60 × 30 × 40 cm. How many litres does it hold?",
+      "correct": "72 litres",
+      "correctExplanation": "V = 72 000 cm³ = 72 L.",
+      "distractors": [
+        {
+          "answer": "7.2 litres",
+          "explanation": "This divides by 10 000."
+        },
+        {
+          "answer": "720 litres",
+          "explanation": "This divides by 100."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A rectangular prism has volume 360 cm³. Its base is 12 × 6. What is the height?",
+      "correct": "5 cm",
+      "correctExplanation": "Base area = 72. h = 360 ÷ 72 = 5.",
+      "distractors": [
+        {
+          "answer": "30 cm",
+          "explanation": "This divides 360 by 12 only."
+        },
+        {
+          "answer": "60 cm",
+          "explanation": "This divides 360 by 6 only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A shipping container is 6 m × 2.5 m × 2.5 m. How many 1 m³ crates fit inside?",
+      "correct": "37 crates",
+      "correctExplanation": "V = 37.5 m³, so 37 whole crates fit.",
+      "distractors": [
+        {
+          "answer": "38 crates",
+          "explanation": "38 would require 38 m³; only 37.5 is available."
+        },
+        {
+          "answer": "15 crates",
+          "explanation": "This adds 6 + 2.5 + 2.5 and rounds."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A hexagonal prism pencil has cross-section area 0.5 cm² and length 19 cm. What is its volume?",
+      "correct": "9.5 cm³",
+      "correctExplanation": "V = 0.5 × 19 = 9.5.",
+      "distractors": [
+        {
+          "answer": "19.5 cm³",
+          "explanation": "This adds 0.5 and 19."
+        },
+        {
+          "answer": "190 cm³",
+          "explanation": "This multiplies 10 × 19 by mistake."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A rectangular pool is 12 m × 5 m × 1.2 m. Water fills it to 0.8 m. What volume of water is in the pool?",
+      "correct": "48 m³",
+      "correctExplanation": "V = 12 × 5 × 0.8 = 48.",
+      "distractors": [
+        {
+          "answer": "72 m³",
+          "explanation": "This uses the full depth of 1.2 m."
+        },
+        {
+          "answer": "18 m³",
+          "explanation": "This adds 12 + 5 + 0.8 and rounds."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A wedge-shaped door stop is a triangular prism: triangle base 8 cm, height 3 cm, length 12 cm. What is its volume?",
+      "correct": "144 cm³",
+      "correctExplanation": "V = half × 8 × 3 × 12 = 144.",
+      "distractors": [
+        {
+          "answer": "288 cm³",
+          "explanation": "This uses 8 × 3 × 12 without halving."
+        },
+        {
+          "answer": "23 cm³",
+          "explanation": "This adds 8 + 3 + 12."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A rectangular tank holds 80 litres. The base is 50 × 40 cm. What is the water depth in cm?",
+      "correct": "40 cm",
+      "correctExplanation": "80 L = 80 000 cm³. h = 80 000 ÷ 2000 = 40 cm.",
+      "distractors": [
+        {
+          "answer": "4 cm",
+          "explanation": "This divides 80 by 20, confusing litres with cm³."
+        },
+        {
+          "answer": "160 cm",
+          "explanation": "This divides 80 000 by 500."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A builder needs 0.6 m³ of concrete. If the slab is 3 m × 2 m, how thick must it be?",
+      "correct": "0.1 m",
+      "correctExplanation": "0.6 ÷ 6 = 0.1 m = 10 cm.",
+      "distractors": [
+        {
+          "answer": "1.0 m",
+          "explanation": "This divides 6 by 6 instead of 0.6 by 6."
+        },
+        {
+          "answer": "0.3 m",
+          "explanation": "This divides 0.6 by 2 only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Two identical triangular prism roof sections (base 4 m, height 2 m, length 8 m) make a full roof. What is the total volume?",
+      "correct": "64 m³",
+      "correctExplanation": "Each: half × 4 × 2 × 8 = 32. Total: 64.",
+      "distractors": [
+        {
+          "answer": "128 m³",
+          "explanation": "This uses 4 × 2 × 8 × 2 without halving."
+        },
+        {
+          "answer": "32 m³",
+          "explanation": "This counts only one section."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A box holds 2 litres. Its base is 20 × 10 cm. What is its height?",
+      "correct": "10 cm",
+      "correctExplanation": "2 L = 2000 cm³. h = 2000 ÷ 200 = 10.",
+      "distractors": [
+        {
+          "answer": "100 cm",
+          "explanation": "This divides 2000 by 20 only."
+        },
+        {
+          "answer": "1 cm",
+          "explanation": "This divides 2 by 2 instead of converting."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "A rectangular tank is 80 × 40 × 30 cm. Its volume is {{blank:1}} cm³, which is {{blank:2}} litres.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "96000",
+          "correctExplanation": "80 × 40 × 30 = 96 000.",
+          "distractors": [
+            {
+              "answer": "150",
+              "explanation": "This adds 80 + 40 + 30.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3200",
+              "explanation": "This multiplies 80 × 40 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "96",
+          "correctExplanation": "96 000 ÷ 1000 = 96.",
+          "distractors": [
+            {
+              "answer": "9.6",
+              "explanation": "This divides by 10 000.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "960",
+              "explanation": "This divides by 100.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A triangular prism has triangle base 10, height 6 and length 15. Cross-section area = {{blank:1}} cm². Volume = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "half × 10 × 6 = 30.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "This uses 10 × 6 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "16",
+              "explanation": "This adds 10 and 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "450",
+          "correctExplanation": "30 × 15 = 450.",
+          "distractors": [
+            {
+              "answer": "900",
+              "explanation": "This uses 60 × 15.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "45",
+              "explanation": "This adds 30 and 15.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A fish tank is 50 × 25 × 30 cm. It holds {{blank:1}} cm³ or {{blank:2}} litres when full.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "37500",
+          "correctExplanation": "50 × 25 × 30 = 37 500.",
+          "distractors": [
+            {
+              "answer": "105",
+              "explanation": "This adds 50 + 25 + 30.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1250",
+              "explanation": "This multiplies 50 × 25 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "37.5",
+          "correctExplanation": "37 500 ÷ 1000 = 37.5.",
+          "distractors": [
+            {
+              "answer": "375",
+              "explanation": "This divides by 100.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3.75",
+              "explanation": "This divides by 10 000.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "V = lwh. A box is 15 × 8 × 6 giving V = {{blank:1}} cm³. Doubling h to 12 gives V = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "720",
+          "correctExplanation": "15 × 8 × 6 = 720.",
+          "distractors": [
+            {
+              "answer": "29",
+              "explanation": "This adds 15 + 8 + 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "120",
+              "explanation": "This multiplies 15 × 8 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1440",
+          "correctExplanation": "15 × 8 × 12 = 1440.",
+          "distractors": [
+            {
+              "answer": "732",
+              "explanation": "This adds 12 to 720.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2160",
+              "explanation": "This triples instead of doubling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A prism has V = 500 cm³ and height 10 cm. Its base area is {{blank:1}} cm². If height increases to 20, V becomes {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "500 ÷ 10 = 50.",
+          "distractors": [
+            {
+              "answer": "490",
+              "explanation": "This subtracts 10 from 500.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5000",
+              "explanation": "This multiplies 500 by 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1000",
+          "correctExplanation": "50 × 20 = 1000.",
+          "distractors": [
+            {
+              "answer": "520",
+              "explanation": "This adds 20 to 500.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "500",
+              "explanation": "This keeps the old volume.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A 2.5 litre container equals {{blank:1}} cm³. If its base area is 50 cm², the height is {{blank:2}} cm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2500",
+          "correctExplanation": "2.5 × 1000 = 2500.",
+          "distractors": [
+            {
+              "answer": "250",
+              "explanation": "This multiplies by 100.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25000",
+              "explanation": "This multiplies by 10 000.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "50",
+          "correctExplanation": "2500 ÷ 50 = 50.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "This divides 2500 by 25.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2450",
+              "explanation": "This subtracts 50 from 2500.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A cube with side 8 cm has volume {{blank:1}} cm³. In litres this is {{blank:2}} L.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "512",
+          "correctExplanation": "8 × 8 × 8 = 512.",
+          "distractors": [
+            {
+              "answer": "24",
+              "explanation": "This adds 8 + 8 + 8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "64",
+              "explanation": "This calculates 8 × 8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.512",
+          "correctExplanation": "512 ÷ 1000 = 0.512.",
+          "distractors": [
+            {
+              "answer": "5.12",
+              "explanation": "This divides by 100.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "51.2",
+              "explanation": "This divides by 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A triangular prism wedge: base 5, triangle height 4, length 20. The triangle area is {{blank:1}} cm² and V = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "half × 5 × 4 = 10.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "This uses 5 × 4 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "This adds 5 and 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "200",
+          "correctExplanation": "10 × 20 = 200.",
+          "distractors": [
+            {
+              "answer": "400",
+              "explanation": "This uses 20 × 20.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "This adds 10 and 20.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A rectangular pool is 10 × 5 × 1.5 m. Volume = {{blank:1}} m³. In litres (1 m³ = 1000 L) this is {{blank:2}} L.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "75",
+          "correctExplanation": "10 × 5 × 1.5 = 75.",
+          "distractors": [
+            {
+              "answer": "16.5",
+              "explanation": "This adds 10 + 5 + 1.5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "This multiplies 10 × 5 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "75000",
+          "correctExplanation": "75 × 1000 = 75 000.",
+          "distractors": [
+            {
+              "answer": "7500",
+              "explanation": "This multiplies by 100.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "750",
+              "explanation": "This multiplies by 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A slab is 4 m × 3 m × 0.15 m. Its volume is {{blank:1}} m³. If 0.2 m thick instead, V = {{blank:2}} m³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.8",
+          "correctExplanation": "4 × 3 × 0.15 = 1.8.",
+          "distractors": [
+            {
+              "answer": "7.15",
+              "explanation": "This adds 4 + 3 + 0.15.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "This multiplies 4 × 3 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2.4",
+          "correctExplanation": "4 × 3 × 0.2 = 2.4.",
+          "distractors": [
+            {
+              "answer": "1.85",
+              "explanation": "This adds 0.05 to 1.8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12.2",
+              "explanation": "This adds 0.2 to 12.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Two identical triangular prisms (base 6, height 4, length 10) together have V = {{blank:1}} cm³. Each has V = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "240",
+          "correctExplanation": "Each: half × 6 × 4 × 10 = 120. Two: 240.",
+          "distractors": [
+            {
+              "answer": "480",
+              "explanation": "This uses 6 × 4 × 10 × 2 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "120",
+              "explanation": "This counts only one prism.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "120",
+          "correctExplanation": "half × 6 × 4 × 10 = 120.",
+          "distractors": [
+            {
+              "answer": "240",
+              "explanation": "240 is the total for both.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "60",
+              "explanation": "This divides 120 by 2 again.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A box has base 25 × 20 cm and height h. To hold 10 litres ({{blank:1}} cm³), the height must be {{blank:2}} cm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10000",
+          "correctExplanation": "10 × 1000 = 10 000 cm³.",
+          "distractors": [
+            {
+              "answer": "1000",
+              "explanation": "This multiplies by 100.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "This multiplies by 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "20",
+          "correctExplanation": "10 000 ÷ 500 = 20.",
+          "distractors": [
+            {
+              "answer": "400",
+              "explanation": "This divides 10 000 by 25 only.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "500",
+              "explanation": "This is the base area, not the height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "Two rectangular prisms have the same volume. Prism A is 10 × 6 × 4. Prism B is 8 × 5 × h. What is h?",
+      "correct": "6",
+      "correctExplanation": "V_A = 240. 240 = 40h, so h = 6.",
+      "distractors": [
+        {
+          "answer": "4.8",
+          "explanation": "This divides 240 by 50."
+        },
+        {
+          "answer": "3",
+          "explanation": "This divides 240 by 80."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A rectangular tank is 50 × 30 × 40 cm. Water fills it to 25 cm deep. How many more litres are needed to fill it?",
+      "correct": "22.5 litres",
+      "correctExplanation": "Full: 60 000 cm³. Water: 37 500 cm³. Gap: 22 500 cm³ = 22.5 L.",
+      "distractors": [
+        {
+          "answer": "60 litres",
+          "explanation": "This gives the full tank capacity, not the gap."
+        },
+        {
+          "answer": "37.5 litres",
+          "explanation": "This gives the current water volume."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A triangular prism has triangle base 10, height 6, length 15. A rectangular prism is 10 × 3 × 15. How do their volumes compare?",
+      "correct": "Both equal 450 cm³",
+      "correctExplanation": "Triangular: half × 10 × 6 × 15 = 450. Rectangular: 10 × 3 × 15 = 450.",
+      "distractors": [
+        {
+          "answer": "The rectangular prism is larger",
+          "explanation": "Both are 450 cm³."
+        },
+        {
+          "answer": "The triangular prism is larger",
+          "explanation": "Both are 450 cm³."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Every dimension of a rectangular prism is halved. By what factor does the volume change?",
+      "correct": "It becomes one-eighth",
+      "correctExplanation": "0.5 × 0.5 × 0.5 = 0.125 = 1/8.",
+      "distractors": [
+        {
+          "answer": "It halves",
+          "explanation": "Halving three dimensions gives 1/8, not 1/2."
+        },
+        {
+          "answer": "It becomes one-quarter",
+          "explanation": "1/4 results from halving two dimensions only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A pool 12 × 5 m is filled to 1 m. A hose adds 500 L per hour. How long to raise the level to 1.5 m?",
+      "correct": "60 hours",
+      "correctExplanation": "Extra volume: 12 × 5 × 0.5 = 30 m³ = 30 000 L. Time: 30 000 ÷ 500 = 60 hours.",
+      "distractors": [
+        {
+          "answer": "6 hours",
+          "explanation": "This divides by 5000 instead of 500."
+        },
+        {
+          "answer": "30 hours",
+          "explanation": "This uses 15 m³ instead of 30 m³."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A hexagonal prism candle has cross-section area 12 cm² and height 15 cm. After burning, the height is 9 cm. What volume of wax has burned?",
+      "correct": "72 cm³",
+      "correctExplanation": "Burned volume: 12 × (15 − 9) = 12 × 6 = 72.",
+      "distractors": [
+        {
+          "answer": "108 cm³",
+          "explanation": "This calculates 12 × 9, the remaining volume."
+        },
+        {
+          "answer": "180 cm³",
+          "explanation": "This gives the original full volume."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A builder needs a 0.5 m thick concrete slab for a 6 × 4 m area. Concrete costs $150 per m³. What is the total cost?",
+      "correct": "$1800",
+      "correctExplanation": "V = 6 × 4 × 0.5 = 12 m³. Cost: 12 × 150 = $1800.",
+      "distractors": [
+        {
+          "answer": "$3600",
+          "explanation": "This uses 0.5 m thickness twice."
+        },
+        {
+          "answer": "$900",
+          "explanation": "This uses only half the base area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Two containers hold the same volume. Container A is 20 × 10 × 15 cm. Container B is 25 × 12 × h. What is h?",
+      "correct": "10 cm",
+      "correctExplanation": "V_A = 3000. 300h = 3000, h = 10.",
+      "distractors": [
+        {
+          "answer": "12 cm",
+          "explanation": "This divides 3000 by 250."
+        },
+        {
+          "answer": "8 cm",
+          "explanation": "This divides 3000 by 375."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A rectangular prism is scaled: l doubles, w triples, h is halved. What factor does V change by?",
+      "correct": "3",
+      "correctExplanation": "2 × 3 × 0.5 = 3.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "This multiplies 2 × 3 without the halving."
+        },
+        {
+          "answer": "12",
+          "explanation": "This multiplies all three scale factors without the halving."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A triangular prism gutter (base 20 cm, height 15 cm) runs 5 m. What is its capacity in litres?",
+      "correct": "75 litres",
+      "correctExplanation": "A = half × 20 × 15 = 150 cm². V = 150 × 500 = 75 000 cm³ = 75 L.",
+      "distractors": [
+        {
+          "answer": "150 litres",
+          "explanation": "This uses the full rectangle area, not half."
+        },
+        {
+          "answer": "7.5 litres",
+          "explanation": "This divides by 10 000 instead of 1000."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A rectangular tank (100 × 60 × 50 cm) is 40% full. How many litres of water are inside?",
+      "correct": "120 litres",
+      "correctExplanation": "Full: 300 000 cm³. 40%: 120 000 cm³ = 120 L.",
+      "distractors": [
+        {
+          "answer": "300 litres",
+          "explanation": "This gives the full tank capacity."
+        },
+        {
+          "answer": "180 litres",
+          "explanation": "This calculates 60% instead of 40%."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A pentagonal prism has cross-section 25 cm² and height 16 cm. A second has cross-section 20 cm² and height h. For equal volumes, h = ?",
+      "correct": "20 cm",
+      "correctExplanation": "V1 = 400. 20h = 400, h = 20.",
+      "distractors": [
+        {
+          "answer": "16 cm",
+          "explanation": "This assumes equal heights, not equal volumes."
+        },
+        {
+          "answer": "25 cm",
+          "explanation": "This uses the first prism's cross-section."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A box is 30 × 20 × 10 cm. Cubes of side 10 cm are packed in. How many fit?",
+      "correct": "6",
+      "correctExplanation": "30 ÷ 10 = 3, 20 ÷ 10 = 2, 10 ÷ 10 = 1. Total: 6.",
+      "distractors": [
+        {
+          "answer": "60",
+          "explanation": "This divides the box volume by 10, not by 1000."
+        },
+        {
+          "answer": "3",
+          "explanation": "This only counts one layer of cubes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A designer makes a prism with a cross-shaped cross-section (area 20 cm²) and height 30 cm. What is the volume?",
+      "correct": "600 cm³",
+      "correctExplanation": "V = 20 × 30 = 600 regardless of the cross-section shape.",
+      "distractors": [
+        {
+          "answer": "50 cm³",
+          "explanation": "This adds 20 and 30."
+        },
+        {
+          "answer": "10 cm³",
+          "explanation": "This calculates some other incorrect product."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Prism A is 10 × 8 × 5 = {{blank:1}} cm³. Prism B has the same volume with base 20 × 10. B's height is {{blank:2}} cm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "400",
+          "correctExplanation": "10 × 8 × 5 = 400.",
+          "distractors": [
+            {
+              "answer": "23",
+              "explanation": "This adds 10 + 8 + 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "This multiplies 10 × 8 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "400 ÷ 200 = 2.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "This divides 400 by 20 only.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40",
+              "explanation": "This divides 400 by 10 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "A tank is 80 × 40 × 50 cm (V = {{blank:1}} cm³ = {{blank:2}} L).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "160000",
+          "correctExplanation": "80 × 40 × 50 = 160 000.",
+          "distractors": [
+            {
+              "answer": "170",
+              "explanation": "This adds 80 + 40 + 50.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4000",
+              "explanation": "This multiplies 80 × 50 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "160",
+          "correctExplanation": "160 000 ÷ 1000 = 160.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "This divides by 10 000.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1600",
+              "explanation": "This divides by 100.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A triangular prism (base 8, tri height 6, length 20) has V = {{blank:1}} cm³. A rectangular prism 8 × 3 × 20 has V = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "480",
+          "correctExplanation": "half × 8 × 6 × 20 = 480.",
+          "distractors": [
+            {
+              "answer": "960",
+              "explanation": "This uses 8 × 6 × 20 without halving.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "34",
+              "explanation": "This adds 8 + 6 + 20.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "480",
+          "correctExplanation": "8 × 3 × 20 = 480.",
+          "distractors": [
+            {
+              "answer": "31",
+              "explanation": "This adds 8 + 3 + 20.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "240",
+              "explanation": "This halves 480 unnecessarily.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Every dimension of a 4 × 3 × 2 prism is doubled. Original V = {{blank:1}} cm³. New V = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "24",
+          "correctExplanation": "4 × 3 × 2 = 24.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "This adds 4 + 3 + 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "This multiplies 4 × 3 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "192",
+          "correctExplanation": "8 × 6 × 4 = 192. (Also 24 × 8 = 192.)",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "This doubles once instead of cubing the factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "96",
+              "explanation": "This multiplies by 4 instead of 8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A pool is 10 × 4 × 1.5 m = {{blank:1}} m³. A hose adds 200 L/hr. Filling from empty takes {{blank:2}} hours.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "10 × 4 × 1.5 = 60.",
+          "distractors": [
+            {
+              "answer": "15.5",
+              "explanation": "This adds 10 + 4 + 1.5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40",
+              "explanation": "This multiplies 10 × 4 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "300",
+          "correctExplanation": "60 m³ = 60 000 L. 60 000 ÷ 200 = 300.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "This divides 60 by 2 without converting to litres.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "60",
+              "explanation": "This confuses m³ with litres.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A candle (cross-section 8 cm², height 20 cm) burns to 12 cm. Wax burned = {{blank:1}} cm³. Wax remaining = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "64",
+          "correctExplanation": "8 × (20 − 12) = 8 × 8 = 64.",
+          "distractors": [
+            {
+              "answer": "160",
+              "explanation": "This gives the original full volume.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "96",
+              "explanation": "This gives the remaining volume.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "96",
+          "correctExplanation": "8 × 12 = 96.",
+          "distractors": [
+            {
+              "answer": "64",
+              "explanation": "64 is the burned amount, not the remainder.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "160",
+              "explanation": "160 is the full volume.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A box is 40 × 30 × 20 cm. Cubes of side 10 cm inside: {{blank:1}} along the length and {{blank:2}} total.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "40 ÷ 10 = 4.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the count along the width.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40",
+              "explanation": "This uses the full length.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "24",
+          "correctExplanation": "4 × 3 × 2 = 24.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This counts only one layer.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "This adds 4 + 3 + 2 and rounds.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Container A: 25 × 20 × 16 cm. Container B: 40 × 10 × h. For equal volume, h = {{blank:1}} cm. Both hold {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20",
+          "correctExplanation": "V_A = 8000. 400h = 8000, h = 20.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This divides 8000 by 1000.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "200",
+              "explanation": "This divides 8000 by 40 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8000",
+          "correctExplanation": "25 × 20 × 16 = 8000.",
+          "distractors": [
+            {
+              "answer": "61",
+              "explanation": "This adds 25 + 20 + 16.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "500",
+              "explanation": "This multiplies 25 × 20 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A prism is scaled: l × 2, w × 3, h stays the same. The volume factor is {{blank:1}}. Original V = 100 gives new V = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "2 × 3 × 1 = 6.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "This adds 2 + 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "This uses only the width factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "600",
+          "correctExplanation": "100 × 6 = 600.",
+          "distractors": [
+            {
+              "answer": "500",
+              "explanation": "This uses factor 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "200",
+              "explanation": "This uses factor 2 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A 100 × 60 × 50 cm tank is 40% full. Water inside = {{blank:1}} L. To fill it completely needs {{blank:2}} more litres.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "120",
+          "correctExplanation": "300 000 × 0.4 = 120 000 cm³ = 120 L.",
+          "distractors": [
+            {
+              "answer": "300",
+              "explanation": "This is the full tank.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "180",
+              "explanation": "This is 60% of the tank.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "180",
+          "correctExplanation": "300 − 120 = 180 L.",
+          "distractors": [
+            {
+              "answer": "300",
+              "explanation": "This is the full capacity, not the remaining space.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "120",
+              "explanation": "This is the current amount, not what is needed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A hexagonal prism (cross-section 18 cm², h = 14) has V = {{blank:1}} cm³. To match this volume with cross-section 21 cm², h must be {{blank:2}} cm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "252",
+          "correctExplanation": "18 × 14 = 252.",
+          "distractors": [
+            {
+              "answer": "32",
+              "explanation": "This adds 18 and 14.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "126",
+              "explanation": "This halves 252.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "252 ÷ 21 = 12.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "14 was the original height.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "21",
+              "explanation": "This confuses cross-section area with height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A concrete path is 0.1 m thick, 1 m wide and 20 m long. Volume = {{blank:1}} m³. At $180 per m³, cost = ${{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "0.1 × 1 × 20 = 2.",
+          "distractors": [
+            {
+              "answer": "21.1",
+              "explanation": "This adds 0.1 + 1 + 20.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20",
+              "explanation": "This multiplies 1 × 20 only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "360",
+          "correctExplanation": "2 × 180 = 360.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "This costs for only 1 m³.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3600",
+              "explanation": "This uses 20 m³ instead of 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

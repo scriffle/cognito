@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M8A04",
+    "level": 8,
+    "area": "Mathematics",
+    "ageBand": "13-14",
+    "keyKnowledge": "We are learning to use algorithms and testing procedures to find and fix errors.",
+    "generatedAt": "2026-05-18T12:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to use algorithms and testing procedures to find and fix errors.",
+    "y": [
+      "Debugging algorithms develops systematic thinking and problem-solving skills.",
+      "Testing procedures help us verify that our algorithms produce correct outputs for all valid inputs.",
+      "These skills transfer directly to coding, engineering and any process that requires quality assurance."
+    ],
+    "eg": [
+      "Tracing through an algorithm step by step to find where an error occurs.",
+      "Using test cases with known answers to verify an algorithm's output.",
+      "Identifying a logical error in a flowchart that classifies numbers incorrectly.",
+      "Fixing an algorithm that fails for edge cases, such as negative numbers or zero.",
+      "Writing test cases for an algorithm that calculates the mean of a dataset.",
+      "Comparing our algorithm's output with a partner's to identify discrepancies."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "An algorithm is a random set of instructions with no particular order required.",
+      "correct": "False",
+      "correctExplanation": "An algorithm is a finite sequence of well-defined, ordered instructions. The order matters and the steps must be specific.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "An algorithm is a finite sequence of well-defined, ordered instructions. The order matters and the steps must be specific."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Tracing an algorithm means running it on a computer to check the output.",
+      "correct": "False",
+      "correctExplanation": "Tracing means following the steps by hand, recording the value of each variable at each step. It does not require a computer.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Tracing means following the steps by hand, recording the value of each variable at each step. It does not require a computer."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A test case is a specific input paired with the expected correct output.",
+      "correct": "True",
+      "correctExplanation": "A test case provides a known input and the expected output so you can verify whether the algorithm produces the right result.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A test case provides a known input and the expected output so you can verify whether the algorithm produces the right result."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Debugging means writing a new algorithm from scratch when the first one fails.",
+      "correct": "False",
+      "correctExplanation": "Debugging means finding and fixing the error in the existing algorithm, not replacing the entire algorithm.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Debugging means finding and fixing the error in the existing algorithm, not replacing the entire algorithm."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "A logical error produces incorrect results even though each step runs without stopping.",
+      "correct": "True",
+      "correctExplanation": "A logical error means the steps execute but the reasoning is wrong, so the output is incorrect.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A logical error means the steps execute but the reasoning is wrong, so the output is incorrect."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "An edge case is any input that the algorithm handles easily without special attention.",
+      "correct": "False",
+      "correctExplanation": "An edge case is an unusual or boundary input, such as zero or a negative number, that may cause errors if not handled.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "An edge case is an unusual or boundary input, such as zero or a negative number, that may cause errors if not handled."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "A flowchart uses shapes and arrows to represent the steps of an algorithm.",
+      "correct": "True",
+      "correctExplanation": "Flowcharts use standard shapes like rectangles for processes, diamonds for decisions, and arrows to show the order of steps.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Flowcharts use standard shapes like rectangles for processes, diamonds for decisions, and arrows to show the order of steps."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "If one test case gives the correct output, the algorithm is guaranteed to be error-free.",
+      "correct": "False",
+      "correctExplanation": "One passing test case does not prove correctness. The algorithm may still fail on other inputs, especially edge cases.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "One passing test case does not prove correctness. The algorithm may still fail on other inputs, especially edge cases."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Verifying an algorithm means checking its output against known correct answers.",
+      "correct": "True",
+      "correctExplanation": "Verification involves comparing the algorithm's output to expected results to confirm it works correctly.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Verification involves comparing the algorithm's output to expected results to confirm it works correctly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A decision box in a flowchart is drawn as a rectangle.",
+      "correct": "False",
+      "correctExplanation": "A decision box is drawn as a diamond shape. Rectangles represent process steps.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A decision box is drawn as a diamond shape. Rectangles represent process steps."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Testing with multiple different inputs helps identify errors an algorithm may contain.",
+      "correct": "True",
+      "correctExplanation": "Using a variety of inputs, including typical values and edge cases, increases the chance of discovering hidden errors.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Using a variety of inputs, including typical values and edge cases, increases the chance of discovering hidden errors."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The order of steps in an algorithm does not matter as long as every step is included.",
+      "correct": "False",
+      "correctExplanation": "The order of steps is critical. Rearranging steps usually changes the output or causes the algorithm to fail.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The order of steps is critical. Rearranging steps usually changes the output or causes the algorithm to fail."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is the purpose of tracing an algorithm?",
+      "correct": "To follow each step by hand and record the variable values at every stage",
+      "correctExplanation": "Tracing means manually stepping through the algorithm, writing down what happens to each variable, so you can spot where an error occurs.",
+      "distractors": [
+        {
+          "answer": "To draw a flowchart that represents the algorithm in a visual diagram format",
+          "explanation": "Drawing a flowchart represents the algorithm visually but is not the same as tracing through it step by step."
+        },
+        {
+          "answer": "To rewrite the algorithm using different variable names for better clarity overall",
+          "explanation": "Renaming variables improves readability but does not trace the execution or reveal errors."
+        },
+        {
+          "answer": "To count the total number of steps the algorithm contains from start to finish",
+          "explanation": "Counting steps measures length but does not track variable values or identify errors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which of the following best describes a test case?",
+      "correct": "A specific input value paired with the expected correct output for that input",
+      "correctExplanation": "A test case defines what goes in and what should come out, so the algorithm's actual output can be compared to the expected result.",
+      "distractors": [
+        {
+          "answer": "A written description of the overall purpose of the algorithm being evaluated",
+          "explanation": "Describing the purpose explains what the algorithm does but is not a test case."
+        },
+        {
+          "answer": "A flowchart showing each decision point that occurs within the tested algorithm",
+          "explanation": "A flowchart represents the algorithm structure but is not a test case with input and expected output."
+        },
+        {
+          "answer": "A list of every variable that the algorithm uses during its complete execution",
+          "explanation": "Listing variables describes the algorithm's data but does not test it against expected outputs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What shape represents a decision in a standard flowchart?",
+      "correct": "A diamond shape where the outcome determines which path the flow follows next",
+      "correctExplanation": "In standard flowcharts a diamond shape represents a decision point, typically with Yes and No branches.",
+      "distractors": [
+        {
+          "answer": "A rectangle shape where a single calculation or action is carried out directly",
+          "explanation": "Rectangles represent process steps or actions, not decisions."
+        },
+        {
+          "answer": "An oval shape that marks the beginning or the ending point of the algorithm",
+          "explanation": "Ovals mark the start or end of a flowchart, not decision points."
+        },
+        {
+          "answer": "A parallelogram shape used to show when data is entered or displayed onscreen",
+          "explanation": "Parallelograms represent input or output operations, not decisions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "An algorithm adds every number in a list. What type of error has occurred if it accidentally skips the last number?",
+      "correct": "A logical error because the algorithm runs without stopping but produces wrong output",
+      "correctExplanation": "The algorithm completes without crashing but gives an incorrect total because its logic misses the final value.",
+      "distractors": [
+        {
+          "answer": "A syntax error because the instructions are written in the wrong programming format",
+          "explanation": "Syntax errors prevent the algorithm from running. This algorithm runs but produces a wrong result."
+        },
+        {
+          "answer": "A rounding error because decimal values are shortened during the calculation step",
+          "explanation": "Rounding errors involve precision loss with decimals. Skipping a list item is a logic problem."
+        },
+        {
+          "answer": "An input error because the list of numbers was entered incorrectly from the start",
+          "explanation": "The list was entered correctly. The error is in how the algorithm processes the list."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Why is it important to test an algorithm with edge cases?",
+      "correct": "Edge cases reveal errors that typical inputs might not expose during normal testing",
+      "correctExplanation": "Edge cases such as zero, negative numbers, or empty lists can trigger errors that standard test values miss.",
+      "distractors": [
+        {
+          "answer": "Edge cases run faster than normal inputs so they speed up the testing process",
+          "explanation": "Edge cases do not run faster. Their value is in exposing hidden errors."
+        },
+        {
+          "answer": "Edge cases confirm that the flowchart has the correct number of shapes drawn",
+          "explanation": "Edge cases test the algorithm's output, not the visual layout of a flowchart."
+        },
+        {
+          "answer": "Edge cases are only needed when the algorithm already contains a known error",
+          "explanation": "Edge cases should be tested whether or not errors are known, to catch hidden problems."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "What does it mean to verify the output of an algorithm?",
+      "correct": "To check whether the output matches the expected correct answer for that input",
+      "correctExplanation": "Verification compares the algorithm's actual output against a known correct result to confirm accuracy.",
+      "distractors": [
+        {
+          "answer": "To increase the speed at which the algorithm carries out its processing steps",
+          "explanation": "Making an algorithm faster relates to efficiency, not verification of correctness."
+        },
+        {
+          "answer": "To reduce the number of steps that the algorithm requires to finish running",
+          "explanation": "Reducing steps improves efficiency but does not verify that outputs are correct."
+        },
+        {
+          "answer": "To convert the algorithm from written steps into a flowchart representation form",
+          "explanation": "Converting to a flowchart changes the representation but does not verify the output."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which of the following is an example of an edge case for an algorithm that divides two numbers?",
+      "correct": "Using zero as the divisor to test how the algorithm handles division by zero",
+      "correctExplanation": "Division by zero is undefined and is a classic edge case that algorithms must handle to avoid errors.",
+      "distractors": [
+        {
+          "answer": "Using the numbers 10 and 2, which gives a straightforward result of exactly 5",
+          "explanation": "10 divided by 2 is a standard case with a clean result, not an edge case."
+        },
+        {
+          "answer": "Using the numbers 8 and 4, which produces an exact whole number result of 2",
+          "explanation": "8 divided by 4 is a routine calculation and does not test boundary conditions."
+        },
+        {
+          "answer": "Using two even numbers because they always produce a whole number as output",
+          "explanation": "Two even numbers are typical inputs and do not test boundary or unusual conditions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "In a trace table, what information is recorded at each step of the algorithm?",
+      "correct": "The current value of each variable after that step has been completed in order",
+      "correctExplanation": "A trace table tracks how variable values change at every step, making it easy to spot where an error occurs.",
+      "distractors": [
+        {
+          "answer": "The name of the person who originally wrote each step of the algorithm being traced",
+          "explanation": "A trace table records variable values, not authorship information."
+        },
+        {
+          "answer": "The total amount of time each individual step takes to run during full execution",
+          "explanation": "Timing steps relates to performance analysis, not tracing variable values for debugging."
+        },
+        {
+          "answer": "The colour code assigned to each step so the algorithm is easier to read visually",
+          "explanation": "Colour coding is a presentation choice, not part of a trace table."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is the first thing you should do when you suspect an algorithm contains an error?",
+      "correct": "Trace through the algorithm step by step to identify where the error first appears",
+      "correctExplanation": "Tracing the algorithm with a specific input lets you see exactly which step produces an incorrect result.",
+      "distractors": [
+        {
+          "answer": "Delete the entire algorithm and begin writing a completely different one from scratch",
+          "explanation": "Deleting the algorithm wastes work. It is better to find and fix the specific error."
+        },
+        {
+          "answer": "Ask someone else to write the algorithm for you so you avoid making further mistakes",
+          "explanation": "Having someone else rewrite it does not develop your debugging skills and may not fix the issue."
+        },
+        {
+          "answer": "Change the expected output to match what the algorithm currently produces as results",
+          "explanation": "Changing the expected output hides the error instead of fixing it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "An algorithm is meant to find the largest number in a list. It outputs 8 when the list is 3, 8, 12, 5. What does this tell you?",
+      "correct": "The algorithm contains an error because 12 is the largest value in that list",
+      "correctExplanation": "The correct largest value is 12, not 8. The algorithm has a logical error that stops it from checking every item.",
+      "distractors": [
+        {
+          "answer": "The algorithm is correct because 8 appears second in the list and is quite large",
+          "explanation": "8 is not the largest. The algorithm should return 12."
+        },
+        {
+          "answer": "The list itself is wrong because the numbers are not arranged in ascending order",
+          "explanation": "A correct algorithm should find the largest number regardless of the order."
+        },
+        {
+          "answer": "The test case is invalid because lists must contain at least five separate numbers",
+          "explanation": "There is no requirement for lists to have five or more numbers. Four items is a valid test case."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which of the following describes how a flowchart arrow functions?",
+      "correct": "It shows the direction of flow from one step to the next step in the process",
+      "correctExplanation": "Arrows connect shapes in a flowchart and show the order in which steps are performed.",
+      "distractors": [
+        {
+          "answer": "The output is correct because 6 doubled equals 14 and then 14 minus 1 gives 13",
+          "explanation": "Arrows show flow direction, not error locations."
+        },
+        {
+          "answer": "It indicates which variable is the most important at each stage of the algorithm",
+          "explanation": "Arrows indicate sequence, not variable importance."
+        },
+        {
+          "answer": "It separates the algorithm into independent sections that can run at the same time",
+          "explanation": "Arrows show sequential flow, not parallel sections."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What is the difference between a logical error and a syntax error in an algorithm?",
+      "correct": "A logical error produces wrong output while a syntax error prevents the algorithm running",
+      "correctExplanation": "Syntax errors stop execution entirely because instructions are malformed. Logical errors let the algorithm run but give incorrect results.",
+      "distractors": [
+        {
+          "answer": "A logical error only occurs in flowcharts while a syntax error only occurs in written code",
+          "explanation": "Both types of error can occur in any representation of an algorithm."
+        },
+        {
+          "answer": "A syntax error is more serious than a logical error because it produces wrong answers",
+          "explanation": "Syntax errors prevent running; logical errors produce wrong answers. Both are serious."
+        },
+        {
+          "answer": "A logical error can be found by checking spelling while a syntax error requires tracing",
+          "explanation": "This reverses the two: syntax relates to form and structure, logical errors require tracing."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A {{blank:1}} is a step-by-step set of instructions for solving a problem, and {{blank:2}} means following each step by hand to check the values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "algorithm",
+          "correctExplanation": "algorithm is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "flowchart",
+              "explanation": "A flowchart is a visual diagram of an algorithm, not the algorithm itself.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "A variable stores a value. It is not a set of instructions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tracing",
+          "correctExplanation": "tracing is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "debugging",
+              "explanation": "Debugging is fixing errors. Tracing is the process of stepping through to find them.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "testing",
+              "explanation": "Testing checks outputs against expected results. Tracing specifically follows each step by hand.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "A {{blank:1}} error means the algorithm runs but gives the wrong answer, while an {{blank:2}} is an unusual input such as zero that may cause problems.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "logical",
+          "correctExplanation": "logical is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "syntax",
+              "explanation": "A syntax error prevents the algorithm from running at all.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "rounding",
+              "explanation": "Rounding errors affect precision of decimals, not the logic of the steps.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "edge case",
+          "correctExplanation": "edge case is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "test case",
+              "explanation": "A test case is any input with an expected output. An edge case is specifically an unusual boundary input.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "A variable stores data. An edge case is a type of input, not a storage location.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "An algorithm that works for positive integers is guaranteed to work for negative integers too.",
+      "correct": "False",
+      "correctExplanation": "Negative integers are edge cases. An algorithm tested only on positives may fail when negatives are input because operations like division or comparison may behave differently.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Negative integers are edge cases. An algorithm tested only on positives may fail when negatives are input because operations like division or comparison may behave differently."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "When a trace table shows the same variable taking the wrong value at step 3, the error is likely in step 3 or earlier.",
+      "correct": "True",
+      "correctExplanation": "If the variable first becomes incorrect at step 3, the error must be at or before that step, since later steps have not yet executed.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "If the variable first becomes incorrect at step 3, the error must be at or before that step, since later steps have not yet executed."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Two algorithms that produce the same output for one test case must produce the same output for every input.",
+      "correct": "False",
+      "correctExplanation": "Different algorithms can agree on some inputs but disagree on others. One passing test case does not prove equivalence.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Different algorithms can agree on some inputs but disagree on others. One passing test case does not prove equivalence."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Including boundary values such as zero in your test cases improves the reliability of testing.",
+      "correct": "True",
+      "correctExplanation": "Boundary values like zero, the smallest allowed input, and the largest allowed input often expose errors that typical values miss.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Boundary values like zero, the smallest allowed input, and the largest allowed input often expose errors that typical values miss."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "An algorithm that sorts a list from smallest to largest can be tested by checking only whether the first element is the smallest.",
+      "correct": "False",
+      "correctExplanation": "Checking only the first element does not confirm the entire list is sorted. Every consecutive pair must be in order.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Checking only the first element does not confirm the entire list is sorted. Every consecutive pair must be in order."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "If an algorithm calculates the mean of five numbers as 14 but the correct mean is 12, you should trace each arithmetic step to find the error.",
+      "correct": "True",
+      "correctExplanation": "Tracing the addition and division steps reveals where the calculation goes wrong, such as an incorrect sum or dividing by the wrong number.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Tracing the addition and division steps reveals where the calculation goes wrong, such as an incorrect sum or dividing by the wrong number."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A flowchart that correctly classifies even and odd numbers for values 2 to 10 will definitely classify all whole numbers correctly.",
+      "correct": "False",
+      "correctExplanation": "Passing a small range of values does not prove the flowchart handles all inputs. It may fail on zero, negative numbers, or very large values.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Passing a small range of values does not prove the flowchart handles all inputs. It may fail on zero, negative numbers, or very large values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Comparing your algorithm output with a partner's output guarantees that both algorithms are completely free of errors.",
+      "correct": "False",
+      "correctExplanation": "Both algorithms could contain the same error. Cross-checking reveals discrepancies but does not guarantee correctness.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Both algorithms could contain the same error. Cross-checking reveals discrepancies but does not guarantee correctness."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "An algorithm calculates the total cost of n items at 4 dollars each. For n = 5 it outputs 24. Which of the following best explains the error?",
+      "correct": "The algorithm runs the loop one extra time, calculating 6 times 4 instead of 5 times 4",
+      "correctExplanation": "5 items at 4 dollars each should total 20. An output of 24 equals 6 times 4, suggesting the loop executes one extra iteration.",
+      "distractors": [
+        {
+          "answer": "The algorithm multiplies 5 by 5 instead of 5 by 4, producing 25 then rounding down to 24 dollars",
+          "explanation": "5 times 5 is 25, not 24, and rounding down is not how integer multiplication works."
+        },
+        {
+          "answer": "The algorithm subtracts 1 from the total at each step, so the output is always one less than expected",
+          "explanation": "If 1 were subtracted at each of 5 steps, the total would be 20 minus 5 = 15, not 24."
+        },
+        {
+          "answer": "The algorithm squares the item price instead of multiplying it by the total number of items purchased",
+          "explanation": "4 squared is 16, not 24. Squaring the price does not explain the observed output."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A student writes an algorithm to find the largest number in a list. It works for the list 5, 9, 3 but fails for the list 5, 9, 3, 12. What is the most likely error?",
+      "correct": "The algorithm stops checking after the third item in the list instead of continuing to the end",
+      "correctExplanation": "The algorithm works for three items but fails when a fourth is added, suggesting it does not iterate through the entire list.",
+      "distractors": [
+        {
+          "answer": "The algorithm stops checking after the third item in the list instead of continuing through to the very end",
+          "explanation": "Standard arithmetic algorithms handle multi-digit numbers. The issue is list traversal, not number size."
+        },
+        {
+          "answer": "The algorithm sorts the list before checking so it always picks the last number regardless",
+          "explanation": "If it sorted and picked the last, it would return 12 for the second list. The failure indicates incomplete traversal."
+        },
+        {
+          "answer": "The algorithm finds the smallest number instead of the largest number due to a sign error",
+          "explanation": "If it found the smallest, it would return 3 for both lists. It returns 9 for the first, suggesting partial traversal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A flowchart checks whether a number is positive, negative, or zero. Which set of test cases is most effective?",
+      "correct": "Testing with a positive number, a negative number, and zero to cover all three branches of the decision",
+      "correctExplanation": "Each branch of the flowchart must be tested at least once. Positive, negative, and zero cover all three cases.",
+      "distractors": [
+        {
+          "answer": "Testing with three different positive numbers to confirm the positive branch works reliably",
+          "explanation": "This only tests one branch. The negative and zero branches remain untested."
+        },
+        {
+          "answer": "Testing with zero alone because zero is the most difficult edge case for classification",
+          "explanation": "Zero tests one branch but leaves positive and negative branches unverified."
+        },
+        {
+          "answer": "Testing with one very large positive number because large inputs are hardest to classify correctly",
+          "explanation": "One large positive tests only the positive branch. Size does not affect classification difficulty."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A trace table for an algorithm shows that a running total is 0, 5, 9, 14 after processing the list 5, 4, 5. The correct running totals should be 0, 5, 9, 14. What can you conclude?",
+      "correct": "The trace shows the algorithm is working correctly for this specific test case input",
+      "correctExplanation": "0 + 5 = 5, 5 + 4 = 9, 9 + 5 = 14. Every value matches the expected running total, so no error is detected for this input.",
+      "distractors": [
+        {
+          "answer": "The algorithm has an error because the final total should be 15 instead of 14",
+          "explanation": "5 + 4 + 5 = 14, not 15. The trace is correct."
+        },
+        {
+          "answer": "The trace table is invalid because a running total should never start at the value zero",
+          "explanation": "A running total correctly starts at 0 before any values are added."
+        },
+        {
+          "answer": "The algorithm skipped the second number because 9 minus 5 equals 4 instead of adding 4",
+          "explanation": "The trace shows 5 + 4 = 9, which is correct addition, not subtraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why might an algorithm that correctly calculates the mean of 10, 20, 30 fail when given the input 0, 0, 0?",
+      "correct": "It may produce the correct mean of 0 but could also divide by zero if it counts non-zero items only",
+      "correctExplanation": "If the algorithm counts only non-zero values as the divisor, it would attempt to divide by zero when all inputs are zero.",
+      "distractors": [
+        {
+          "answer": "Zero values cannot be added together, so the sum step fails before reaching the division step",
+          "explanation": "Zero can be added like any other number. 0 + 0 + 0 = 0 is a valid calculation."
+        },
+        {
+          "answer": "The mean of all zeroes is undefined so no algorithm should be expected to handle this case",
+          "explanation": "The mean of 0, 0, 0 is 0 divided by 3, which equals 0. It is defined."
+        },
+        {
+          "answer": "The algorithm would give the correct answer because the mean calculation handles all numbers equally",
+          "explanation": "This assumes the algorithm is correct, but the question asks why it might fail. An algorithm counting only non-zero values would fail."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "An algorithm converts temperatures from Celsius to Fahrenheit using F = C times 9 divided by 5 plus 32. It gives F = 50 when C = 10. Is this correct?",
+      "correct": "Yes, because 10 times 9 divided by 5 equals 18, and 18 plus 32 equals 50 degrees Fahrenheit",
+      "correctExplanation": "10 × 9 ÷ 5 = 18, and 18 + 32 = 50. The algorithm produces the correct result.",
+      "distractors": [
+        {
+          "answer": "No, because the algorithm should add 32 first and then multiply by 9 divided by 5",
+          "explanation": "The correct formula multiplies first then adds 32. Adding 32 first would give the wrong answer."
+        },
+        {
+          "answer": "No, because 10 times 9 is 90 and 90 divided by 5 is 18, so the answer should be 20",
+          "explanation": "The calculation 18 + 32 = 50, not 18 + 2. The value 20 has no basis in this formula."
+        },
+        {
+          "answer": "No, because the correct formula is F equals C plus 32 times 9 divided by 5 for any value",
+          "explanation": "This formula is incorrect. The standard conversion is F = (C × 9 ÷ 5) + 32."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Two students independently write algorithms to calculate the area of a triangle. Student A gets 24 square centimetres and Student B gets 12 square centimetres for a triangle with base 8 and height 6. Who is correct?",
+      "correct": "Student A, because the area is half times base times height, giving 0.5 times 8 times 6 equals 24 square centimetres",
+      "correctExplanation": "Area = 0.5 × 8 × 6 = 0.5 × 48 = 24. Student A's answer of 24 is correct.",
+      "distractors": [
+        {
+          "answer": "Student B, because the triangle area formula divides the base by the height, giving 8 divided by 6 equals 1.33",
+          "explanation": "Dividing base by height is not the triangle area formula. The correct formula is 0.5 × base × height."
+        },
+        {
+          "answer": "Both students are correct because different methods can give different valid answers for the same triangle",
+          "explanation": "The area of a specific triangle has only one correct value. Different methods must give the same answer."
+        },
+        {
+          "answer": "Neither student, because the triangle area formula requires the length of all three sides to be calculated",
+          "explanation": "The base-height formula requires only the base and the perpendicular height, not all three sides."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A flowchart classifies a student's score as Pass if score is 50 or above, and Fail otherwise. For score = 49 it outputs Pass. Where is the error?",
+      "correct": "The decision box likely uses greater than 49 or greater than or equal to 49 instead of greater than or equal to 50",
+      "correctExplanation": "The decision boundary is wrong. If the condition is score ≥ 49, then 49 passes incorrectly. It should be score ≥ 50.",
+      "distractors": [
+        {
+          "answer": "The flowchart arrow from the decision box points to the wrong output box, swapping Pass and Fail",
+          "explanation": "If Pass and Fail were swapped, 49 would show Fail (which is correct), not Pass. The error is in the condition."
+        },
+        {
+          "answer": "The score 49 is an edge case that flowcharts cannot classify, so the output is unreliable in this case",
+          "explanation": "Flowcharts can classify any valid input. 49 is not beyond the capability of a correctly designed flowchart."
+        },
+        {
+          "answer": "The error is in the test case because 49 rounds up to 50, so the Pass output is actually correct",
+          "explanation": "Scores are not rounded in this context. 49 is strictly below 50 and should fail."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "sentence": "An algorithm that works for small lists but fails for a list of 1000 items may have an error related to {{blank:1}}, and testing with both typical values and {{blank:2}} helps uncover such issues.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "scalability",
+          "correctExplanation": "scalability is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "accuracy",
+              "explanation": "Accuracy relates to correctness of individual calculations, not performance with larger inputs.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "readability",
+              "explanation": "Readability concerns how easy the algorithm is to understand, not whether it handles large inputs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "edge cases",
+          "correctExplanation": "edge cases is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "flowcharts",
+              "explanation": "Flowcharts represent algorithms visually. They are not a type of test input.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variables",
+              "explanation": "Variables store data within the algorithm. Edge cases are specific types of test inputs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "sentence": "When tracing an algorithm, you record the value of each {{blank:1}} at every step in a {{blank:2}} to identify where the first incorrect value appears.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "variable",
+          "correctExplanation": "variable is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "input",
+              "explanation": "Inputs are the starting values given to the algorithm. Variables include inputs but also all intermediate values that change during execution.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "output",
+              "explanation": "The output is the final result. Tracing records all intermediate variable values, not just the end result.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trace table",
+          "correctExplanation": "trace table is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "flowchart",
+              "explanation": "A flowchart shows the structure of an algorithm. A trace table records variable values at each step during execution.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "spreadsheet",
+              "explanation": "A spreadsheet is a general tool. The specific term for recording variable values during algorithm tracing is a trace table.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "sentence": "If an algorithm produces the correct output for inputs 1, 5, and 10 but fails for input 0, then 0 is an {{blank:1}} that reveals a {{blank:2}} error in the algorithm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "edge case",
+          "correctExplanation": "edge case is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "test case",
+              "explanation": "Every input used for testing is a test case, but zero is specifically an edge case because it sits at a boundary.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variable",
+              "explanation": "A variable is a storage location in the algorithm. An edge case is a type of input value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "logical",
+          "correctExplanation": "logical is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "syntax",
+              "explanation": "A syntax error prevents the algorithm from running at all. The algorithm runs but gives wrong output for zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "rounding",
+              "explanation": "Rounding errors affect decimal precision. A failure on zero input is a logic problem, not a precision issue.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "sentence": "Comparing your algorithm's output with a {{blank:1}} output for the same inputs is called {{blank:2}}, and it helps identify discrepancies.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "partner's",
+          "correctExplanation": "partner's is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "teacher's",
+              "explanation": "While a teacher's output could be used, the standard practice described is comparing with a partner's independent work.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "computer's",
+              "explanation": "A computer runs algorithms but the strategy described involves human collaboration with a partner.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cross-checking",
+          "correctExplanation": "cross-checking is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "debugging",
+              "explanation": "Debugging is finding and fixing errors. Cross-checking is specifically comparing two independent outputs to spot differences.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "tracing",
+              "explanation": "Tracing follows steps one by one. Cross-checking compares final outputs from two sources.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A {{blank:1}} in a flowchart is drawn as a diamond shape and directs the flow along different paths depending on whether the condition is {{blank:2}} or false.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "decision",
+          "correctExplanation": "decision is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "process",
+              "explanation": "A process step is drawn as a rectangle and performs a calculation or action, not a branching choice.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "terminator",
+              "explanation": "A terminator is drawn as an oval and marks the start or end, not a branching point.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "true",
+          "correctExplanation": "true is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "Decision outcomes are labelled true/false or yes/no, not positive/negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "correct",
+              "explanation": "The branches are true and false, not correct and incorrect. Correct implies a value judgement beyond the condition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "If a trace table shows the running total changing from 15 to 20 when the next input is 4, the algorithm has added {{blank:1}} instead of 4, indicating an error at that {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "5 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "If 4 were added correctly the total would go from 15 to 19, not 20.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "15",
+              "explanation": "Adding 15 to 15 would give 30, not 20. The increase is only 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "step",
+          "correctExplanation": "step is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "input",
+              "explanation": "The input value 4 is correct. The error is in how the algorithm processes that input at this step.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "output",
+              "explanation": "The output is the final result. The error occurs at a specific processing step, not at the output stage.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "question": "An algorithm doubles a number and subtracts 1. For input 6, it outputs 13. What can you conclude about this test?",
+      "correct": "The output is wrong because 6 doubled is 12, and 12 minus 1 is 11 not 13",
+      "correctExplanation": "2 × 6 − 1 = 11. The output of 13 indicates the algorithm has an error.",
+      "distractors": [
+        {
+          "answer": "The output is correct because 6 doubled is 14 and 14 minus 1 equals 13",
+          "explanation": "6 doubled is 12, not 14. The correct result is 11."
+        },
+        {
+          "answer": "The test is invalid because doubling and subtracting needs two separate algorithms",
+          "explanation": "A single algorithm can perform multiple operations. The test case is valid."
+        },
+        {
+          "answer": "The output is correct because the algorithm adds 1 after doubling the number",
+          "explanation": "The algorithm subtracts 1, not adds 1. Even adding 1 would give 13, but that contradicts the stated operation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "question": "A trace table for an algorithm processing input 4 shows: step 1 result = 8, step 2 result = 5, step 3 result = 15. If step 1 doubles the input, what does step 2 likely do?",
+      "correct": "Step 2 subtracts 3 from the result because 8 minus 3 equals 5",
+      "correctExplanation": "Step 1: 4 × 2 = 8. Step 2: 8 − 3 = 5. Step 3: 5 × 3 = 15.",
+      "distractors": [
+        {
+          "answer": "Step 2 divides by 2 because 8 divided by 2 gives a value close to 5",
+          "explanation": "8 ÷ 2 = 4, not 5. Subtracting 3 gives exactly 5."
+        },
+        {
+          "answer": "Step 2 adds 3 to the input because 4 plus 3 gives 7, which is close to 5",
+          "explanation": "Step 2 operates on the result of step 1 (8), not the original input (4)."
+        },
+        {
+          "answer": "Step 2 halves the original input because half of 4 is 2 which rounds up to 5",
+          "explanation": "Half of 4 is 2, not 5. Steps operate on the previous result, not the original input."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "question": "An algorithm checks whether a number is a multiple of 4. It correctly identifies 12 and 20 but incorrectly accepts 14. What is the likely error?",
+      "correct": "The algorithm checks divisibility by 2 instead of 4, since 14 is divisible by 2 but not 4",
+      "correctExplanation": "14 ÷ 2 = 7 (divisible by 2) but 14 ÷ 4 = 3.5 (not divisible by 4). The condition checks the wrong divisor.",
+      "distractors": [
+        {
+          "answer": "The algorithm checks whether the last digit of the number ends in 4, since the number 14 ends in 4",
+          "explanation": "Ending in 4 does not mean divisible by 4. For example, 14 ÷ 4 = 3.5."
+        },
+        {
+          "answer": "The number 14 is a multiple of 4 because 4 times 3.5 gives exactly 14",
+          "explanation": "Multiples of 4 must be whole-number products. 3.5 is not a whole number, so 14 is not a multiple of 4."
+        },
+        {
+          "answer": "The algorithm fails because it cannot handle two-digit numbers larger than 12",
+          "explanation": "The algorithm handles 20 correctly. The issue is the divisibility condition, not the number size."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "question": "A student traces an algorithm that squares a number then adds 1. For input 3, the trace shows: step 1 result = 6, step 2 result = 7. Where is the error?",
+      "correct": "Step 1 doubles instead of squaring because 3 times 2 is 6 but 3 squared is 9",
+      "correctExplanation": "Squaring 3 gives 9, not 6. The algorithm multiplies by 2 instead of squaring.",
+      "distractors": [
+        {
+          "answer": "Step 2 is wrong because it should add 2 instead of 1 to give a final answer of 8",
+          "explanation": "The algorithm adds 1, which is correct for step 2. The error is in step 1 where 3 should be squared to 9."
+        },
+        {
+          "answer": "The trace is correct because squaring 3 gives 6 and adding 1 produces 7 as the output",
+          "explanation": "3 squared is 9, not 6. The student confuses squaring with doubling."
+        },
+        {
+          "answer": "Both steps are wrong because 3 squared is 12 and 12 plus 1 gives the correct output 13",
+          "explanation": "3 squared is 9, not 12. 3 × 4 = 12, but squaring means multiplying by itself."
+        }
+      ]
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Kai traces an algorithm that calculates the perimeter of a rectangle with length 7 and width 3, and the trace gives 20. The algorithm is correct.",
+      "correct": "True",
+      "correctExplanation": "Perimeter = 2 × (7 + 3) = 2 × 10 = 20. The trace matches the correct formula, so the algorithm works for this input.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Perimeter = 2 × (7 + 3) = 2 × 10 = 20. The trace matches the correct formula, so the algorithm works for this input."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Mia's algorithm outputs the mean of 8, 12, 10 as 10. Her algorithm contains a logical error.",
+      "correct": "False",
+      "correctExplanation": "Mean = (8 + 12 + 10) ÷ 3 = 30 ÷ 3 = 10. The output is correct, so there is no logical error for this input.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Mean = (8 + 12 + 10) ÷ 3 = 30 ÷ 3 = 10. The output is correct, so there is no logical error for this input."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "An algorithm to calculate a restaurant bill adds the prices of each item and applies a 10 per cent surcharge. For items costing 15, 20, and 25 dollars, it outputs 66 dollars. What is the error?",
+      "correct": "The algorithm totals 60, adds 10 per cent surcharge of 6, giving 66 which is correct",
+      "correctExplanation": "15 + 20 + 25 = 60. Ten per cent of 60 is 6. Total is 60 + 6 = 66. The algorithm is actually correct.",
+      "distractors": [
+        {
+          "answer": "The surcharge should be applied to each individual item before they are added together instead",
+          "explanation": "10% of each item then summed gives the same total as 10% of the sum. The order does not matter."
+        },
+        {
+          "answer": "The algorithm adds the surcharge before totalling the items, giving a different incorrect result",
+          "explanation": "The output of 66 matches the correct calculation. Surcharge timing is not the issue."
+        },
+        {
+          "answer": "The algorithm doubles the surcharge by applying it twice, once to the subtotal and once to the total",
+          "explanation": "If applied twice, the total would be 60 + 6 + 6.6 = 72.6, not 66."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A flowchart converts a student's mark out of 50 to a percentage. For a mark of 35, it outputs 60 per cent. Where is the error?",
+      "correct": "The flowchart divides by 50 then multiplies by 100, but 35 divided by 50 times 100 equals 70 per cent, not 60",
+      "correctExplanation": "35 ÷ 50 × 100 = 70%. The output of 60% is wrong, so the flowchart likely uses an incorrect divisor or multiplier.",
+      "distractors": [
+        {
+          "answer": "The flowchart is correct because 35 out of 50 equals 60 per cent when rounded to the nearest ten",
+          "explanation": "35 ÷ 50 = 0.7, which is 70%, not 60%. Rounding 70 to the nearest ten gives 70, not 60."
+        },
+        {
+          "answer": "The flowchart multiplies by 50 instead of dividing, giving a result far larger than 100 per cent",
+          "explanation": "35 × 50 = 1750, which is far from 60. Multiplying instead of dividing does not explain this output."
+        },
+        {
+          "answer": "The output is correct because percentage conversion requires subtracting the mark from 100 per cent",
+          "explanation": "100 − 35 = 65, not 60. Subtracting from 100 gives a complement, not a percentage of the total."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "An algorithm counts the number of even numbers in the list 4, 7, 12, 9, 6 and outputs 2. Apply the algorithm correctly to determine the error.",
+      "correct": "The list contains three even numbers (4, 12, and 6), so the algorithm undercounts by one and likely skips the last item",
+      "correctExplanation": "4, 12, and 6 are even (three items). The algorithm outputs 2, suggesting it misses one even number, probably 6 at the end.",
+      "distractors": [
+        {
+          "answer": "The algorithm is correct because only 4 and 12 are even numbers in the given list of five values",
+          "explanation": "6 is also even (6 ÷ 2 = 3). The list contains three even numbers, not two."
+        },
+        {
+          "answer": "The algorithm counts odd numbers instead of even numbers and should output 3 for this particular list",
+          "explanation": "If it counted odds (7 and 9), it would output 2. But the question says it counts evens. The correct even count is 3."
+        },
+        {
+          "answer": "The algorithm miscounts because 7 is actually even, so the output should be four even numbers total",
+          "explanation": "7 is odd (7 ÷ 2 = 3.5). The correct even count is 3: the values 4, 12, and 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A student tests a sorting algorithm with the list 3, 1, 4, 1, 5, 9 and gets 1, 1, 3, 4, 5, 9. Then they test with 5, 5, 5, 5 and get 5, 5, 5, 5. Which statement best evaluates these results?",
+      "correct": "Both outputs are correct, but further testing with edge cases like an empty list or a single item is still needed",
+      "correctExplanation": "The sorted outputs match expectations. However, two passing tests do not guarantee correctness for all inputs.",
+      "distractors": [
+        {
+          "answer": "The algorithm is fully verified because the second test uses all identical values, which is the hardest case",
+          "explanation": "Identical values test one scenario. Edge cases like empty lists, single items, or reverse-sorted lists also matter."
+        },
+        {
+          "answer": "The first test is sufficient on its own because it contains both repeated and distinct values in the list",
+          "explanation": "One test case, even a varied one, cannot verify the algorithm for all possible inputs."
+        },
+        {
+          "answer": "The second test is invalid because an input where all values are the same cannot test a sorting algorithm",
+          "explanation": "Identical values are a valid edge case. The algorithm should handle them without error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "An algorithm calculates simple interest using I = P times r times t. For P = 500, r = 0.05, t = 3, it outputs 75. Is the algorithm working correctly for this test case?",
+      "correct": "Yes, because 500 times 0.05 times 3 equals 75, which matches the correct simple interest formula result",
+      "correctExplanation": "I = 500 × 0.05 × 3 = 75. The output matches the expected result.",
+      "distractors": [
+        {
+          "answer": "No, because the interest should be 500 times 5 times 3 which equals 7500 dollars in total interest",
+          "explanation": "The rate 0.05 is already in decimal form. Using 5 instead of 0.05 would be incorrect."
+        },
+        {
+          "answer": "No, because simple interest divides by 100 at the end, so the answer should be 0.75 dollars instead",
+          "explanation": "The rate is already expressed as 0.05 (which is 5 ÷ 100). Dividing by 100 again would be wrong."
+        },
+        {
+          "answer": "No, because the formula should compound the interest each year to give a total greater than 75 dollars",
+          "explanation": "The question specifies simple interest, not compound interest. Simple interest uses I = Prt."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A flowchart classifies triangles: equilateral if all sides equal, isosceles if exactly two sides equal, scalene otherwise. For sides 5, 5, 8 it outputs equilateral. What is the error?",
+      "correct": "The decision checks only whether two sides are equal rather than checking all three sides are equal for equilateral",
+      "correctExplanation": "5, 5, 8 has two equal sides, making it isosceles. The flowchart incorrectly classifies it as equilateral because it checks only one pair.",
+      "distractors": [
+        {
+          "answer": "The triangle 5, 5, 8 is equilateral because the two equal sides make it qualify under both definitions",
+          "explanation": "Equilateral requires all three sides equal. 5, 5, 8 has a side of 8 that differs from 5."
+        },
+        {
+          "answer": "The flowchart should check the angles rather than the sides to correctly classify triangle types",
+          "explanation": "Sides are a valid way to classify triangles. The error is in the decision logic, not the measurement used."
+        },
+        {
+          "answer": "The output is wrong because 5, 5, 8 is scalene since no triangle can have exactly two equal sides",
+          "explanation": "Isosceles triangles have exactly two equal sides. 5, 5, 8 is isosceles, not scalene."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "An algorithm finds the range of a dataset by subtracting the smallest value from the largest. For the dataset 3, 8, 15, 2, 11, it outputs 12. Trace the algorithm to find the error.",
+      "correct": "The range should be 15 minus 2 equals 13, so the algorithm likely identifies the wrong minimum or maximum value",
+      "correctExplanation": "Largest = 15, smallest = 2, range = 15 − 2 = 13. The output of 12 suggests the algorithm uses 3 as the minimum instead of 2.",
+      "distractors": [
+        {
+          "answer": "The output is correct because the range is calculated as 15 minus 3 equals 12 using the first value",
+          "explanation": "The range uses the actual minimum (2), not the first item in the list (3). The algorithm should find 2."
+        },
+        {
+          "answer": "The range should be 11 minus 2 equals 9 because the second-largest number is used in the calculation",
+          "explanation": "Range uses the largest value, which is 15, not the second largest."
+        },
+        {
+          "answer": "The algorithm is correct because range means the difference between the first and last items in the list",
+          "explanation": "Range is the difference between the largest and smallest values, not the first and last positions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A Melbourne café uses an algorithm to calculate the total for n coffees at 5 dollars each with a 2-dollar service fee. It gives 27 for 6 coffees. Identify the error.",
+      "correct": "Six coffees at 5 dollars plus 2 dollars fee equals 32, so the algorithm may be using 25 instead of 30 for the coffee total",
+      "correctExplanation": "6 × 5 + 2 = 32. The output of 27 suggests the algorithm calculates 5 × 5 + 2 = 27, multiplying by n − 1.",
+      "distractors": [
+        {
+          "answer": "The total is correct because 6 coffees at 4.50 dollars each equals 27 after rounding down the price",
+          "explanation": "The price is given as 5 dollars, not 4.50. 6 × 4.50 = 27, but this assumes the wrong price."
+        },
+        {
+          "answer": "The service fee of 2 dollars should be applied to each coffee giving 6 times 7 equals 42 dollars total",
+          "explanation": "The fee is a flat charge, not per item. The error is in the coffee count, not the fee structure."
+        },
+        {
+          "answer": "The algorithm is correct because the service fee is subtracted rather than added at the final calculation",
+          "explanation": "5 × 6 − 2 = 28, not 27. Subtracting the fee does not explain the output either."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Priya writes an algorithm to check whether a number is divisible by both 3 and 5. It correctly identifies 15 and 30 but incorrectly says 9 is divisible by both. What is the error?",
+      "correct": "The algorithm checks divisibility by 3 or 5 using OR logic instead of requiring both conditions with AND logic",
+      "correctExplanation": "9 is divisible by 3 but not by 5. If the algorithm uses OR, 9 passes the check incorrectly.",
+      "distractors": [
+        {
+          "answer": "The algorithm only checks divisibility by 3 and never checks divisibility by 5 at all during execution",
+          "explanation": "If it only checked for 3, then 15 and 30 would pass (they are divisible by 3), but so would 9. However, the question says it checks both — the error is in combining the conditions."
+        },
+        {
+          "answer": "Nine is actually divisible by both 3 and 5 because 9 divided by 5 equals 1 remainder 4, which rounds to 2",
+          "explanation": "9 ÷ 5 = 1.8. Divisibility means zero remainder, not rounding. 9 is not divisible by 5."
+        },
+        {
+          "answer": "The algorithm works correctly because any number divisible by 3 is automatically divisible by 5 as well",
+          "explanation": "Divisibility by 3 does not imply divisibility by 5. For example, 9 and 12 are divisible by 3 but not 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "An algorithm converts a mark out of 80 to a percentage. For a mark of 60 it outputs 80 per cent. A student claims this is wrong. Evaluate the claim.",
+      "correct": "The student is correct because 60 divided by 80 times 100 equals 75 per cent, not 80 per cent as the algorithm outputs",
+      "correctExplanation": "60 ÷ 80 × 100 = 75%. The output of 80% is incorrect. The algorithm likely divides by the wrong total.",
+      "distractors": [
+        {
+          "answer": "The student is wrong because 60 out of 80 equals 80 per cent when you subtract 60 from the total of 80 then add 100",
+          "explanation": "80 − 60 + 100 = 120, not 80. This is not a valid percentage calculation."
+        },
+        {
+          "answer": "The algorithm is correct because percentages are calculated by dividing the total by the mark then multiplying",
+          "explanation": "Percentage = (mark ÷ total) × 100, not (total ÷ mark) × 100. 80 ÷ 60 × 100 ≈ 133%, not 80%."
+        },
+        {
+          "answer": "The student is wrong because the output rounds 75 up to 80 per cent, which is standard rounding practice",
+          "explanation": "75 does not round to 80 under any standard rounding rule. 75 rounds to 80 only if rounding to the nearest 10, which is not standard for percentages."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Marcus designs a test plan for an algorithm that finds the median of a list. Which set of test cases is most thorough?",
+      "correct": "An odd-length list, an even-length list, a single-item list, and a list with all identical values to cover key cases",
+      "correctExplanation": "These cover the main cases: odd length (middle value), even length (average of two middles), single item (trivial), and identical values (boundary).",
+      "distractors": [
+        {
+          "answer": "Three different lists that each contain five numbers arranged in ascending order to fully verify the sorting works correctly",
+          "explanation": "All three lists have odd length and are pre-sorted. This misses even-length, unsorted, and edge cases."
+        },
+        {
+          "answer": "One list of ten random numbers because a large test covers more possible values than several small tests",
+          "explanation": "One large list tests one scenario. Multiple targeted tests cover more algorithm branches."
+        },
+        {
+          "answer": "Two lists where the median is already known so you can compare the output with the expected answer directly",
+          "explanation": "While knowing expected answers is essential, only two tests miss important cases like single items and even lengths."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A V/Line ticketing algorithm charges 8 dollars per zone plus a 3-dollar booking fee. For 4 zones, it charges 34 dollars. Apply the algorithm to find the error.",
+      "correct": "Four zones at 8 dollars each plus 3 dollars equals 35, so the algorithm undercharges by 1 dollar at this input",
+      "correctExplanation": "4 × 8 + 3 = 35. The output is 34, which is 1 dollar short. The algorithm may subtract 1 or miscalculate the fee.",
+      "distractors": [
+        {
+          "answer": "The output is correct because 4 zones at 8 dollars equals 32, plus a 2-dollar fee rounds to 34 dollars total",
+          "explanation": "The fee is 3 dollars, not 2. 32 + 3 = 35. The output of 34 is incorrect."
+        },
+        {
+          "answer": "The fee should be multiplied by the number of zones so the total is 4 times 11 equals 44 dollars overall",
+          "explanation": "The booking fee is a flat charge applied once, not per zone."
+        },
+        {
+          "answer": "The algorithm is correct because 8 times 4 equals 32 and 32 plus 3 minus 1 equals 34 after a standard discount",
+          "explanation": "No discount is mentioned in the algorithm. The expected total is 35."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "An algorithm calculates the area of a rectangle as length times width. For length = 8 and width = 5, it outputs 45. The correct area is {{blank:1}} square units, so the error is an overcount of {{blank:2}} square units.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "40",
+          "correctExplanation": "40 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "45",
+              "explanation": "45 is the incorrect output. The correct area is 8 × 5 = 40.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "13",
+              "explanation": "13 is the perimeter formula applied incorrectly (8 + 5 = 13). Area is length times width.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "5 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The difference between 45 and 40 is 5, not 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "45 minus 40 is 5, not 8. The overcount matches one extra width.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Tracing an algorithm that adds 3, 7, 5 gives a running total of 0, 3, 10, 14. The value after adding 5 should be {{blank:1}}, so the error is at step {{blank:2}} where 7 was processed.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "15",
+          "correctExplanation": "15 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "14 is the incorrect running total from the trace. The correct sum of 3 + 7 + 5 is 15.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the value after step 2 in the trace. The final correct total is 3 + 7 + 5 = 15.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "2 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Step 3 adds 5 to the running total. The error occurs at step 2 where 3 + 7 should give 10 but the trace shows 10, then 10 + 5 = 15 should follow but gives 14. Actually the error is at step 2: 3 + 7 = 10 is correct, so the error is at step 3 where 10 + 5 should be 15 but gives 14. Wait — recheck: 0, 3, 10, 14. Step 1: 0+3=3 correct. Step 2: 3+7=10 correct. Step 3: 10+5 should be 15 but gives 14. The error is at step 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Step 1 gives 0 + 3 = 3, which is correct. The error occurs later.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A flowchart classifies numbers as positive if greater than zero and negative otherwise. Input 0 gets classified as {{blank:1}}. To fix this, a separate check for {{blank:2}} should be added before the positive-negative decision.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative",
+          "correctExplanation": "negative is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "The condition is 'greater than zero' for positive. Zero is not greater than zero, so it falls to the otherwise branch: negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The flowchart has no zero category. It only has positive and otherwise (negative). Zero is classified as negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "zero is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "The flowchart already has a negative path. The missing check is for zero, which is neither positive nor negative.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "decimals",
+              "explanation": "Decimals can be positive or negative and are handled by the existing branches. The edge case is zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "An algorithm finds the mean of 12, 8, 10, 6. The correct sum is {{blank:1}} and dividing by 4 gives a mean of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "36",
+          "correctExplanation": "36 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "12 + 8 + 10 + 6 = 36, not 30. This error might come from miscounting or skipping a value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40",
+              "explanation": "12 + 8 + 10 + 6 = 36, not 40. Adding 4 extra suggests confusing a value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "9 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "36 ÷ 4 = 9, not 10. Using 40 ÷ 4 would give 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "36 ÷ 3 = 12, not 36 ÷ 4. This error comes from dividing by the wrong count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A test plan for an algorithm that divides two numbers should include the edge case where the divisor is {{blank:1}}, because division by this value is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "zero is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "Dividing by one gives the same number and is not problematic. Zero causes the algorithm to fail.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negative",
+              "explanation": "Dividing by a negative number is valid. The critical edge case is zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "undefined",
+          "correctExplanation": "undefined is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Division by zero does not equal zero. It is undefined because no number multiplied by zero gives the dividend.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "infinity",
+              "explanation": "While limits may approach infinity, division by zero is formally undefined in mathematics, not equal to infinity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "An algorithm calculates the cost of n movie tickets at 16 dollars each. For n = 0 it should output {{blank:1}} dollars, and for n = 3 it should output {{blank:2}} dollars.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "0 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "0 tickets cost 0 dollars. 16 is the cost of one ticket.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "0 × 16 = 0, not 1. There is no minimum charge mentioned.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "48",
+          "correctExplanation": "48 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "32",
+              "explanation": "3 × 16 = 48, not 32. 32 is 2 × 16.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "19",
+              "explanation": "3 + 16 = 19. This adds the number of tickets to the price instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Kai's algorithm outputs the maximum of the list 7, 3, 11, 5 as 7. The correct maximum is {{blank:1}}, so the algorithm likely stops after checking the {{blank:2}} item only.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "11",
+          "correctExplanation": "11 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 is the algorithm's incorrect output. The actual maximum in 7, 3, 11, 5 is 11.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 is the last item in the list, not the largest. The maximum is 11.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "first",
+          "correctExplanation": "first is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "last",
+              "explanation": "If it stopped at the last item, it would output 5, not 7. Outputting 7 suggests it reads only the first item.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "second",
+              "explanation": "The second item is 3. Outputting 7 means the algorithm uses the first item.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Testing an algorithm with typical values, edge cases, and boundary values is called {{blank:1}} testing. If the algorithm passes all tests, it increases our {{blank:2}} that the algorithm is correct.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "systematic",
+          "correctExplanation": "systematic is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Random testing uses arbitrary inputs. Systematic testing deliberately selects typical, edge, and boundary values.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "manual",
+              "explanation": "Manual means done by hand. Systematic describes the structured selection of test cases.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "confidence",
+          "correctExplanation": "confidence is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "proof",
+              "explanation": "Testing does not prove an algorithm is correct for all inputs. It increases confidence but cannot guarantee perfection.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "speed",
+              "explanation": "Testing verifies correctness, not speed. Passing tests increases confidence in accuracy.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A trace table for an algorithm processing the list 2, 4, 6 shows the running total as 0, 2, 6, 11. The correct final total is {{blank:1}}, so the error produces an overcount of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "12 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "11",
+              "explanation": "11 is the incorrect traced output. The correct total is 2 + 4 + 6 = 12.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is the last item in the list, not the sum. 2 + 4 + 6 = 12.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "1 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The difference between 12 and 11 is 1, not 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "12 minus 11 is 1, not 5. The overcount is the gap between traced and correct totals.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "An MCG turnstile algorithm counts entries. If it counts 4502 but manual checks show 4500, the algorithm has an {{blank:1}} of {{blank:2}} entries.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "overcount",
+          "correctExplanation": "overcount is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "undercount",
+              "explanation": "The algorithm counted 4502, which is more than the actual 4500. This is an overcount, not an undercount.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "error rate",
+              "explanation": "Error rate is a ratio or percentage. The specific term for counting too many is overcount.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "2 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "4502",
+              "explanation": "4502 is the total count, not the size of the error. The overcount is 4502 − 4500 = 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4500",
+              "explanation": "4500 is the correct count. The error is 4502 − 4500 = 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "A flowchart to determine whether a year is a leap year should first check divisibility by {{blank:1}} and then handle the exceptions for years divisible by 100 and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "4 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Leap years are divisible by 4, not 2. Many even years (like 2023 is odd but 2022 is even and not a leap year) are not leap years.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "Divisibility by 10 has nothing to do with leap years. The first check is divisibility by 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "400",
+          "correctExplanation": "400 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "1000",
+              "explanation": "The leap year rule uses 4, 100, and 400. There is no 1000 condition.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "200",
+              "explanation": "The exception after 100 is 400, not 200. Years divisible by 400 are leap years.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "When debugging, if the algorithm gives the correct output for inputs 1 to 10 but fails for input {{blank:1}}, you should investigate how the algorithm handles {{blank:2}} values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "0 is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "11",
+              "explanation": "11 is one beyond the tested range and may also need checking, but 0 is a classic boundary value that algorithms often mishandle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 is within the range 1 to 10 where the algorithm works. The question asks about a value where it fails.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "boundary",
+          "correctExplanation": "boundary is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "typical",
+              "explanation": "Typical values are in the normal range where the algorithm already works. The issue is with boundary values like 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "large",
+              "explanation": "Large values could be problematic, but 0 is a boundary value, not a large value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "Two algorithms both calculate the sum of the first n positive integers. Algorithm A adds numbers one by one in a loop. Algorithm B uses the formula n times (n + 1) divided by 2. Both give 55 for n = 10. Which analysis is most accurate?",
+      "correct": "Both give 55 because the sum 1 + 2 + ... + 10 = 55 and 10(11)/2 = 55, but further testing is needed",
+      "correctExplanation": "Both methods are mathematically equivalent for this input. However, agreement on one test case does not prove equivalence for all inputs.",
+      "distractors": [
+        {
+          "answer": "Algorithm B is superior because formulas never contain errors, so only Algorithm A needs additional testing with more values",
+          "explanation": "Both algorithms should be tested. A formula can be implemented incorrectly."
+        },
+        {
+          "answer": "Algorithm A is more reliable because it adds each number individually, ensuring no step is skipped during the calculation",
+          "explanation": "Adding individually is not inherently more reliable. Loop errors can cause skipped or extra additions."
+        },
+        {
+          "answer": "The algorithms cannot be compared because they use fundamentally different approaches and operate on different data types",
+          "explanation": "Different approaches to the same problem can and should be compared using the same test cases."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student claims that testing an algorithm with 50 random inputs is always better than testing with 5 carefully chosen inputs. Analyse this claim.",
+      "correct": "The claim is flawed because 5 strategic inputs covering edge cases can outperform 50 random inputs missing key scenarios",
+      "correctExplanation": "Quality of test cases matters more than quantity. Strategic inputs targeting edge cases and decision branches reveal errors that random inputs may never trigger.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because more test cases always means better coverage and a higher chance of catching every possible error",
+          "explanation": "More tests help only if they cover different scenarios. 50 tests in the same range miss edge cases."
+        },
+        {
+          "answer": "The claim is correct because random testing removes human bias that might cause a tester to overlook important inputs",
+          "explanation": "Random testing reduces one type of bias but may miss critical boundary values that targeted testing finds."
+        },
+        {
+          "answer": "Neither approach matters because algorithms either work for all inputs or fail for all inputs without any middle ground",
+          "explanation": "Algorithms can work for some inputs and fail for others, especially at edge cases and boundaries."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "An algorithm calculates weekly pay as hours times rate, capped at 40 hours. For 45 hours at 25 dollars per hour, it pays 1125 dollars. Analyse whether the cap is working.",
+      "correct": "The cap is not working because 40 hours at 25 dollars equals 1000, but the algorithm pays 1125 for 45 hours",
+      "correctExplanation": "40 × 25 = 1000. The output of 1125 = 45 × 25, so the algorithm ignores the 40-hour cap.",
+      "distractors": [
+        {
+          "answer": "The cap is working correctly because 1125 dollars includes 5 hours of overtime at a higher penalty rate of pay",
+          "explanation": "No overtime rate is mentioned. The algorithm should cap at 40 hours, not add overtime."
+        },
+        {
+          "answer": "The cap works but the rate is wrong because the algorithm multiplies by 26 instead of 25 dollars per hour",
+          "explanation": "45 × 26 = 1170, not 1125. The rate is correct at 25; the cap is not applied."
+        },
+        {
+          "answer": "The output is correct because the cap only applies when hours exceed 50, not 40, based on standard payroll rules",
+          "explanation": "The question states the cap is at 40 hours. There is no standard 50-hour rule mentioned."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A grading algorithm assigns A for 85 and above, B for 70 to 84, C for 50 to 69, and Fail below 50. A student with 70 gets a C. Another with 85 gets a B. Analyse the pattern of errors.",
+      "correct": "Both boundary values are classified one grade lower, suggesting the algorithm uses strict inequality (greater than) instead of greater than or equal to",
+      "correctExplanation": "70 should be B but gets C; 85 should be A but gets B. The boundaries are excluded, indicating > instead of ≥ in the conditions.",
+      "distractors": [
+        {
+          "answer": "Only the first case is an error because 85 could reasonably be classified as either A or B depending on the rounding used",
+          "explanation": "85 is explicitly in the A range (85 and above). There is no rounding; both cases show the same boundary error."
+        },
+        {
+          "answer": "The algorithm checks grades in the wrong order, starting from Fail and working upward instead of from A downward",
+          "explanation": "Checking order alone does not explain why exact boundary values are misclassified. The inequality type is the issue."
+        },
+        {
+          "answer": "The errors are unrelated because each grade boundary operates independently and one error does not predict another",
+          "explanation": "Both errors occur at exact boundary values, showing a systematic pattern of using > instead of ≥."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "An algorithm to find the second-largest number in a list works for 3, 8, 5 (outputs 5) but fails for 8, 3, 5 (outputs 3). Analyse the likely cause.",
+      "correct": "The algorithm assumes the list is sorted and picks the second position rather than finding the actual second-largest value by comparison",
+      "correctExplanation": "In 3, 8, 5 the second position happens to be 8 (not second-largest). Wait — it outputs 5 which is correct. In 8, 3, 5 the second position is 3, not 5. The algorithm picks the second element by position.",
+      "distractors": [
+        {
+          "answer": "The algorithm sorts the list first and then picks the wrong index, selecting the third element instead of the second",
+          "explanation": "If sorted to 3, 5, 8, the second element is 5 (correct for both lists). The error must be positional, not sorted-index."
+        },
+        {
+          "answer": "The algorithm fails because 8 appears first in the second list and the algorithm cannot handle the largest value being at position one",
+          "explanation": "The issue is broader than just position one. The algorithm picks position two regardless of values."
+        },
+        {
+          "answer": "The two lists produce different outputs because the algorithm is nondeterministic and gives random results each time it runs",
+          "explanation": "Algorithms are deterministic. The same input always gives the same output. The error is in the logic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A Melbourne tram fare algorithm charges 2 dollars per zone. Zone 1 covers the city, Zone 2 extends to inner suburbs. A passenger travelling from Zone 1 to Zone 2 is charged 4 dollars, but another travelling within Zone 1 only is also charged 4 dollars. Analyse the error.",
+      "correct": "The algorithm charges for both zones regardless of whether the passenger crosses a zone boundary or stays in one zone only",
+      "correctExplanation": "Staying in Zone 1 should cost 2 dollars (one zone). The algorithm charges 4 (two zones) even for single-zone travel.",
+      "distractors": [
+        {
+          "answer": "The fare is correct because passengers must always pay for Zone 1 and Zone 2 regardless of their actual journey distance",
+          "explanation": "A passenger in Zone 1 only should pay for one zone. The algorithm should check which zones are actually traversed."
+        },
+        {
+          "answer": "The error is in the zone pricing because 2 dollars per zone is too low and should be 4 dollars per zone instead",
+          "explanation": "The price per zone is given as 2 dollars. The error is in counting zones, not in the price per zone."
+        },
+        {
+          "answer": "The algorithm works correctly because Zone 1 travel requires entering and exiting, which counts as two zone crossings",
+          "explanation": "Entering and exiting the same zone is one zone of travel, not two crossings."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Two algorithms count vowels in a word. Algorithm A counts a, e, i, o, u. Algorithm B counts a, e, i, o, u, y. For the word 'happy', A gives 1 and B gives 2. Analyse which is more appropriate for Australian English spelling.",
+      "correct": "Both are defensible since y functions as a vowel sound in 'happy' but is not traditionally classified as a vowel letter in Australian English",
+      "correctExplanation": "In Australian English, y is typically classified as a consonant letter even when it makes a vowel sound. The choice depends on whether the algorithm counts letters or sounds.",
+      "distractors": [
+        {
+          "answer": "Algorithm B is always correct because y is officially a vowel in the English alphabet and must always be counted",
+          "explanation": "Y is traditionally classified as a consonant in English, though it sometimes makes vowel sounds."
+        },
+        {
+          "answer": "Algorithm A is always correct because y can never function as a vowel in any English word regardless of context",
+          "explanation": "Y functions as a vowel sound in words like 'gym', 'happy', and 'fly'. Whether to count it depends on the task."
+        },
+        {
+          "answer": "Neither algorithm is correct because the word 'happy' contains two vowels — the letters a and the final y — giving a count of 2",
+          "explanation": "This contradicts itself by saying neither is correct then stating B's answer of 2 is right."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A sorting algorithm is tested with: an already sorted list, a reverse-sorted list, a list with duplicates, and a single-item list. All four pass. A classmate argues the algorithm is now proven correct. Evaluate this argument.",
+      "correct": "The argument is too strong because four tests increase confidence but cannot prove correctness for all possible inputs and orderings",
+      "correctExplanation": "Testing can reveal errors but cannot prove their absence. The algorithm may still fail on inputs not covered by these four cases.",
+      "distractors": [
+        {
+          "answer": "The argument is valid because these four cases cover every possible category of input a sorting algorithm can receive",
+          "explanation": "Other cases exist: lists with negative numbers, very large lists, lists with all identical values, and more."
+        },
+        {
+          "answer": "The argument is valid because if the algorithm handles the hardest case of reverse sorting it handles everything easier",
+          "explanation": "Reverse sorting is one difficult case, but errors can occur with specific value combinations unrelated to sort order."
+        },
+        {
+          "answer": "The argument fails only because the tester did not include a list of exactly two items, which is the only missing case",
+          "explanation": "Many cases beyond two-item lists are missing. No finite set of tests proves correctness."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "An algorithm rounds numbers to the nearest integer. It rounds 2.5 to 2 and 3.5 to 4. A student says the algorithm is inconsistent. Analyse whether this is a genuine error.",
+      "correct": "This is banker's rounding, which rounds halves to the nearest even integer. It is a valid rounding method, not an error",
+      "correctExplanation": "Banker's rounding rounds 0.5 to the nearest even number: 2.5 → 2 (even), 3.5 → 4 (even). This is a deliberate method used in finance.",
+      "distractors": [
+        {
+          "answer": "The student is correct because all values ending in 0.5 must always round up under the standard rounding rule taught in schools",
+          "explanation": "Round-half-up is common in schools but is not the only valid method. Banker's rounding is standard in many industries."
+        },
+        {
+          "answer": "The algorithm has a random error that causes it to round up sometimes and round down at other times unpredictably",
+          "explanation": "The pattern is predictable: halves round to the nearest even integer. This is systematic, not random."
+        },
+        {
+          "answer": "Both outputs are wrong because 2.5 should round to 3 and 3.5 should round to 3 since both are closest to 3",
+          "explanation": "3.5 is equidistant from 3 and 4, not closer to 3. Standard rounding gives 3.5 → 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Two students design test plans for an algorithm that calculates the area of a circle given its radius. Student A tests with radii 1, 5, and 10. Student B tests with radii 0, 1, negative 3, and 1000. Whose plan is stronger?",
+      "correct": "Student B's plan is stronger because it tests zero, negative, and large inputs that Student A's plan misses",
+      "correctExplanation": "Student B tests zero (edge), negative (invalid input), large (scalability), and normal (radius 1). Student A tests only typical positive values.",
+      "distractors": [
+        {
+          "answer": "Student A's plan is stronger because three evenly spaced positive values give a thorough sample of the algorithm's behaviour",
+          "explanation": "Three positive values miss boundary conditions and invalid inputs that commonly cause errors."
+        },
+        {
+          "answer": "Both plans are equally strong because neither student tests with decimal radii, which is the most important edge case",
+          "explanation": "Decimal inputs are useful but less critical than zero, negative, and very large inputs for revealing algorithm flaws."
+        },
+        {
+          "answer": "Neither plan is adequate because circle area algorithms require at least 20 test cases to be properly validated and verified",
+          "explanation": "There is no fixed minimum number. Well-chosen cases covering branches and edges are more important than raw quantity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A flowchart calculates electricity bills using two rates: 0.25 dollars per kWh for the first 500 kWh and 0.35 dollars per kWh beyond that. For 700 kWh it outputs 195 dollars. Analyse whether this is correct.",
+      "correct": "The output is correct because the first 500 kWh costs 125 dollars and the remaining 200 kWh costs 70 dollars, totalling 195 dollars",
+      "correctExplanation": "500 × 0.25 = 125. (700 − 500) × 0.35 = 200 × 0.35 = 70. Total = 125 + 70 = 195.",
+      "distractors": [
+        {
+          "answer": "The output is wrong because all 700 kWh should be charged at 0.35 dollars, giving 700 times 0.35 equals 245 dollars",
+          "explanation": "The tiered system charges the first 500 at the lower rate. Only usage beyond 500 is at the higher rate."
+        },
+        {
+          "answer": "The output is wrong because the algorithm should average the two rates, giving 700 times 0.30 equals 210 dollars in total",
+          "explanation": "Tiered pricing does not use an average rate. Each tier is applied to its own range of usage."
+        },
+        {
+          "answer": "The output is wrong because 700 times 0.25 equals 175 and that is the correct amount for all usage at the base rate",
+          "explanation": "Usage beyond 500 kWh is charged at the higher rate of 0.35, not the base rate of 0.25."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "An algorithm checks whether a triangle with sides a, b, c is valid using a + b > c. It accepts sides 3, 4, 5 and rejects 1, 2, 3. Analyse whether the algorithm is complete.",
+      "correct": "The algorithm is incomplete because the triangle inequality requires checking all three pairs: a+b>c, a+c>b, and b+c>a",
+      "correctExplanation": "Checking only a + b > c may accept invalid triangles like 1, 5, 3 where 1 + 3 = 4 < 5. All three inequalities are needed.",
+      "distractors": [
+        {
+          "answer": "The algorithm is complete because checking one inequality is sufficient since the other two automatically follow from it",
+          "explanation": "One inequality does not imply the others. For example, 1 + 5 > 3 is true but 1 + 3 > 5 is false."
+        },
+        {
+          "answer": "The algorithm is complete because 3, 4, 5 is a right triangle and any algorithm that identifies right triangles is sufficient",
+          "explanation": "The algorithm checks triangle validity, not whether it is a right triangle. These are different properties."
+        },
+        {
+          "answer": "The algorithm should reject 3, 4, 5 as well because the triangle inequality only applies to equilateral triangles by definition",
+          "explanation": "The triangle inequality applies to all triangles, not just equilateral ones. 3, 4, 5 is a valid triangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A parking algorithm at a Melbourne car park charges 5 dollars for the first hour and 3 dollars per additional hour. For 0 hours it charges 5 dollars. Analyse whether this is an error and what edge case it reveals.",
+      "correct": "This reveals a minimum-charge edge case where the algorithm applies the first-hour fee even when no time has passed, which may be intended or an error",
+      "correctExplanation": "Charging 5 dollars for 0 hours could be intentional (entry fee) or an error (no parking should cost nothing). The algorithm does not handle the zero-hours case separately.",
+      "distractors": [
+        {
+          "answer": "The output is definitely correct because entering a car park always costs 5 dollars as a non-refundable entry fee everywhere",
+          "explanation": "Not all car parks charge an entry fee. Whether 0 hours should cost 5 dollars depends on the business rules."
+        },
+        {
+          "answer": "The output is definitely wrong and the algorithm should charge 3 dollars for 0 hours using the additional hour rate only",
+          "explanation": "No mathematical rule says 0 hours costs 3 dollars. The issue is whether the first-hour charge applies at 0 hours."
+        },
+        {
+          "answer": "Zero hours is not a valid input because a car park visit must always last at least one full hour to be processed and charged correctly",
+          "explanation": "Zero is a valid edge case that the algorithm should handle explicitly, even if the decision is to charge nothing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student writes one algorithm to convert Celsius to Fahrenheit and another to convert Fahrenheit back to Celsius. For 20 degrees Celsius, the first gives 68 Fahrenheit, and converting 68 back gives 19.9 Celsius. Analyse the discrepancy.",
+      "correct": "The 0.1-degree difference suggests a rounding error in one or both algorithms, likely from truncating intermediate decimal values during calculation",
+      "correctExplanation": "C → F: 20 × 9 ÷ 5 + 32 = 68. F → C: (68 − 32) × 5 ÷ 9 = 36 × 5 ÷ 9 = 180 ÷ 9 = 20. So 19.9 indicates rounding in the reverse conversion.",
+      "distractors": [
+        {
+          "answer": "The discrepancy is expected because temperature conversions are inherently approximate and can never be perfectly reversed",
+          "explanation": "The conversion formulas are exact inverses. Any discrepancy comes from implementation, not mathematical limitation."
+        },
+        {
+          "answer": "The first algorithm is wrong because 20 Celsius should convert to 70 Fahrenheit, and that would convert back correctly",
+          "explanation": "20 × 9 ÷ 5 + 32 = 68, not 70. The forward conversion is correct."
+        },
+        {
+          "answer": "Both algorithms are correct and the discrepancy is caused by the thermometer used to measure the original temperature",
+          "explanation": "No physical measurement is involved. The discrepancy is a computational rounding issue in the algorithms."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "An algorithm that passes all test cases with positive inputs but fails for negative inputs likely has an error related to how it handles {{blank:1}}, and this type of oversight is best caught by including {{blank:2}} in the test plan.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sign",
+          "correctExplanation": "sign is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "magnitude",
+              "explanation": "Magnitude is the size of a number regardless of sign. The failure on negatives specifically indicates a sign-handling error.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "precision",
+              "explanation": "Precision relates to decimal places. Failing on negatives indicates the algorithm mishandles the sign, not decimal precision.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "edge cases",
+          "correctExplanation": "edge cases is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "more inputs",
+              "explanation": "Adding more inputs of the same type will not reveal the error. Specifically targeting edge cases like negatives is needed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "larger numbers",
+              "explanation": "Larger positive numbers will still pass. The issue is with negative values, which are edge cases.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "When two algorithms produce different outputs for the same input, the {{blank:1}} between them reveals that at least one contains an error, and {{blank:2}} both algorithms with the same test cases helps identify which one is incorrect.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "discrepancy",
+          "correctExplanation": "discrepancy is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "similarity",
+              "explanation": "Similarity means they agree. Different outputs indicate a discrepancy, not a similarity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "correlation",
+              "explanation": "Correlation describes a statistical relationship. The specific term for different outputs is discrepancy.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tracing",
+          "correctExplanation": "tracing is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "rewriting",
+              "explanation": "Rewriting creates new algorithms. Tracing the existing ones step by step reveals where they diverge.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "deleting",
+              "explanation": "Deleting an algorithm removes it. Tracing compares the step-by-step execution to find the error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A grading algorithm that misclassifies exact boundary scores like 50 and 85 likely uses {{blank:1}} inequality instead of {{blank:2}} inequality in its decision conditions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "strict",
+          "correctExplanation": "strict is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "reverse",
+              "explanation": "Reverse inequality would swap greater-than and less-than entirely. The issue is excluding boundary values, which is strict inequality.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "double",
+              "explanation": "Double inequality is not a standard term. The issue is strict (>) versus inclusive (≥).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inclusive",
+          "correctExplanation": "inclusive is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "exclusive",
+              "explanation": "Exclusive means the same as strict — excluding the boundary. The fix requires inclusive inequality.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "approximate",
+              "explanation": "Approximate inequality is not a standard mathematical concept. The needed fix is inclusive (≥) inequality.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "An algorithm that works for lists of length 5 but crashes for an empty list has poor handling of {{blank:1}}, and the crash could be prevented by adding a {{blank:2}} at the start to check the list length.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "edge cases",
+          "correctExplanation": "edge cases is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "large inputs",
+              "explanation": "An empty list is not a large input. It is an edge case at the lower boundary of list length.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "data types",
+              "explanation": "The list is the correct data type. The issue is its length being zero, which is an edge case.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "validation step",
+          "correctExplanation": "validation step is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "sorting step",
+              "explanation": "Sorting arranges items. The fix requires checking whether the list is empty before processing.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "output step",
+              "explanation": "An output step produces results. The fix requires checking input validity at the start.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "When an algorithm's output differs from the expected result by a consistent amount across all test cases, the error is likely a {{blank:1}} error rather than a {{blank:2}} error.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "systematic",
+          "correctExplanation": "systematic is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "logical",
+              "explanation": "While a systematic error is a type of logical error, the specific term for consistent deviation is systematic.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "calculation",
+              "explanation": "Calculation error is vague. Systematic specifically describes a consistent, repeatable deviation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "random",
+          "correctExplanation": "random is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "syntax",
+              "explanation": "Syntax errors prevent execution entirely. The algorithm runs but has consistent deviation, ruling out syntax issues.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "rounding",
+              "explanation": "Rounding errors cause small variable deviations. A consistent offset across all inputs is systematic, not rounding-related.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A robust test plan should include {{blank:1}} values that sit exactly on decision boundaries and {{blank:2}} values that are just above and below those boundaries.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "boundary",
+          "correctExplanation": "boundary is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "typical",
+              "explanation": "Typical values sit in the middle of a range. Boundary values sit at the exact edges where decisions change.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random values are unstructured. Boundary values are deliberately chosen at exact decision points.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "adjacent",
+          "correctExplanation": "adjacent is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "distant",
+              "explanation": "Distant values sit far from boundaries and test general behaviour. Adjacent values sit right next to boundaries to test edge transitions.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equal",
+              "explanation": "Equal values would be the same as boundary values. Adjacent means just above and just below the boundary.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "If two different algorithms for the same task agree on 100 test cases but disagree on the 101st, the disagreement proves that at least one algorithm contains a {{blank:1}}, and the 101st case should be analysed to determine which algorithm's {{blank:2}} is flawed.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "bug",
+          "correctExplanation": "bug is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "feature",
+              "explanation": "A feature is intended behaviour. Disagreement on the same input means at least one has unintended incorrect behaviour — a bug.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "limitation",
+              "explanation": "A limitation is a known constraint. The disagreement indicates an actual error, not a documented constraint.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "logic",
+          "correctExplanation": "logic is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "syntax",
+              "explanation": "Both algorithms run and produce output, so neither has a syntax error. The issue is in the reasoning (logic).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "formatting",
+              "explanation": "Formatting affects how output looks, not what value is produced. The error is in the logical reasoning.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "An algorithm that sorts numbers correctly for lists of length 1 to 10 but fails for length 100 may have a {{blank:1}} issue, and increasing the {{blank:2}} of test inputs would have caught this earlier.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "scalability",
+          "correctExplanation": "scalability is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "accuracy",
+              "explanation": "The algorithm is accurate for small inputs. The failure at larger size indicates a scalability problem.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "readability",
+              "explanation": "Readability is about code clarity. The algorithm's failure on large inputs is a functional scalability issue.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "range",
+          "correctExplanation": "range is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "number",
+              "explanation": "Adding more tests within the same small range would not catch the failure. Extending the range of input sizes is needed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "precision",
+              "explanation": "Precision relates to decimal accuracy. The fix requires testing with a wider range of list lengths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A well-designed test plan uses {{blank:1}} testing to check exact boundary values and {{blank:2}} testing to verify behaviour across typical input ranges.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "boundary",
+          "correctExplanation": "boundary is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Random testing uses arbitrary values. Boundary testing specifically targets values at decision thresholds.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "stress",
+              "explanation": "Stress testing pushes the algorithm to extreme loads. Boundary testing checks exact decision-point values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "functional",
+          "correctExplanation": "functional is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "visual",
+              "explanation": "Visual testing checks appearance. Functional testing verifies the algorithm produces correct outputs for typical inputs.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "manual",
+              "explanation": "Manual describes how the test is performed. Functional describes what the test checks — correct behaviour across normal inputs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "When an algorithm correctly handles inputs 1 through 99 but fails for input 100, the value 100 likely triggers an {{blank:1}} condition that was not anticipated, such as an index exceeding the maximum {{blank:2}} of a data structure.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "overflow",
+          "correctExplanation": "overflow is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "underflow",
+              "explanation": "Underflow occurs when a value is too small. Exceeding a maximum at input 100 indicates overflow.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "timeout",
+              "explanation": "Timeout means the algorithm takes too long. The failure at exactly 100 suggests a capacity limit, not a time limit.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "capacity",
+          "correctExplanation": "capacity is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "speed",
+              "explanation": "Speed relates to how fast the algorithm runs. The failure at 100 is about exceeding storage or index limits.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "accuracy",
+              "explanation": "Accuracy relates to correctness of values. The failure is caused by exceeding the data structure's capacity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Evaluating an algorithm involves checking not only that it produces {{blank:1}} outputs but also that it handles all valid inputs within the problem's {{blank:2}} without failing.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "correct",
+          "correctExplanation": "correct is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "fast",
+              "explanation": "Speed is important but secondary. The primary evaluation criterion is correctness of output.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "formatted",
+              "explanation": "Formatting affects presentation. Evaluation primarily checks whether outputs are correct.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "domain",
+          "correctExplanation": "domain is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "code",
+              "explanation": "Code is the implementation. Domain refers to the set of all valid inputs the algorithm should handle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "flowchart",
+              "explanation": "A flowchart is a visual representation. Domain describes the range of valid inputs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A {{blank:1}} approach to debugging involves changing one variable at a time and observing the effect, while a {{blank:2}} approach tries random changes and hopes the error disappears.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "systematic",
+          "correctExplanation": "systematic is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "creative",
+              "explanation": "Creative problem-solving has value, but the structured, one-variable-at-a-time method is called systematic.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "automated",
+              "explanation": "Automated means done by a computer. Systematic describes the structured human reasoning approach.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trial-and-error",
+          "correctExplanation": "trial-and-error is the correct answer for this blank.",
+          "distractors": [
+            {
+              "answer": "scientific",
+              "explanation": "Scientific method is structured and hypothesis-driven. Random changes without analysis are trial-and-error.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "collaborative",
+              "explanation": "Collaborative means working with others. Random changes made alone or in a group are still trial-and-error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

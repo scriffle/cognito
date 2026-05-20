@@ -1,0 +1,2811 @@
+{
+  "_meta": {
+    "code": "VC2M9P03",
+    "level": 9,
+    "area": "Mathematics",
+    "ageBand": "13-14",
+    "keyKnowledge": "We are learning to design and run simulations to estimate probabilities that cannot be calculated easily.",
+    "generatedAt": "2026-05-18T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to design and run simulations to estimate probabilities that cannot be calculated easily."
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A simulation uses a model to imitate a real-world random process.",
+      "correct": "True",
+      "correctExplanation": "Simulations replicate chance events using models like dice, spinners, or random-number generators.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks simulations must use real objects."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "A simulation always gives the exact probability of an event.",
+      "correct": "False",
+      "correctExplanation": "Simulations give estimates. More trials improve accuracy but never guarantee exact values.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses estimation with exact calculation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A random-number generator can be used to simulate a coin toss.",
+      "correct": "True",
+      "correctExplanation": "Assigning 0 to tails and 1 to heads, for example, models a fair coin.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks only physical coins can model coin tosses."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Running more trials in a simulation makes the estimate less reliable.",
+      "correct": "False",
+      "correctExplanation": "More trials generally improve reliability by reducing random variation.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the effect of increasing sample size."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "A simulation must use physical objects such as dice or coins.",
+      "correct": "False",
+      "correctExplanation": "Simulations can use computers, spreadsheets, or random-number tables.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses simulation tools with physical experiments."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Each trial in a simulation produces one possible outcome.",
+      "correct": "True",
+      "correctExplanation": "A trial is one run of the simulation, yielding a single result.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses a trial with the entire simulation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "A spinner with equal sections can simulate equally likely outcomes.",
+      "correct": "True",
+      "correctExplanation": "Equal sections give each outcome the same chance, modelling fairness.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks spinners are always biased."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A simulation of 10 trials is just as reliable as one of 1000 trials.",
+      "correct": "False",
+      "correctExplanation": "Larger samples reduce sampling variability and give more stable estimates.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Ignores the effect of sample size."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Simulations are useful when theoretical probability is hard to calculate.",
+      "correct": "True",
+      "correctExplanation": "Complex events, such as queuing or weather, are often easier to simulate than solve analytically.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks simulation is only for simple problems."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Every simulation gives exactly the same result when repeated.",
+      "correct": "False",
+      "correctExplanation": "Random variation means different runs can produce different estimates.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses deterministic calculations with random simulations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A simulation can prove that a probability is exactly 0.5.",
+      "correct": "False",
+      "correctExplanation": "Simulations estimate probabilities. No finite number of trials can prove an exact value.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses estimation with mathematical proof."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Simulations can only be run on a computer.",
+      "correct": "False",
+      "correctExplanation": "Manual tools like dice, coins, cards, and random-number tables can also run simulations.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Limits simulations to digital tools."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is a simulation in mathematics?",
+      "correct": "A model that imitates a random process",
+      "correctExplanation": "A model that imitates a random process",
+      "distractors": [
+        {
+          "answer": "An exact calculation of probability",
+          "explanation": "Simulations estimate, not calculate exactly."
+        },
+        {
+          "answer": "A single trial of an experiment",
+          "explanation": "A simulation involves many trials."
+        },
+        {
+          "answer": "A graph that shows all outcomes",
+          "explanation": "Graphs display results, not simulate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which tool could simulate drawing a card from a deck?",
+      "correct": "A random-number generator, 1-52",
+      "correctExplanation": "A random-number generator with 52 values",
+      "distractors": [
+        {
+          "answer": "A single standard six-sided die",
+          "explanation": "A die has only 6 outcomes."
+        },
+        {
+          "answer": "A fair coin flipped just once",
+          "explanation": "A coin has only 2 outcomes."
+        },
+        {
+          "answer": "A ruler marked in centimetres",
+          "explanation": "A ruler does not produce random outcomes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Why do we run many trials in a simulation?",
+      "correct": "To get a more stable estimate",
+      "correctExplanation": "To get a more stable estimate",
+      "distractors": [
+        {
+          "answer": "To increase the true probability",
+          "explanation": "True probability does not change."
+        },
+        {
+          "answer": "To make the simulation go faster",
+          "explanation": "More trials take more time."
+        },
+        {
+          "answer": "To reduce the number of outcomes",
+          "explanation": "Outcomes do not decrease."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What does 'random' mean in a simulation?",
+      "correct": "Each outcome is determined by chance",
+      "correctExplanation": "Each outcome is determined by chance",
+      "distractors": [
+        {
+          "answer": "The outcomes follow a fixed pattern",
+          "explanation": "Patterns are not random."
+        },
+        {
+          "answer": "Only one result is ever possible",
+          "explanation": "Random implies multiple possibilities."
+        },
+        {
+          "answer": "The experimenter chooses each result",
+          "explanation": "Choosing removes randomness."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "A student flips a coin 50 times and gets 28 heads. The estimated P(heads) is?",
+      "correct": "0.56",
+      "correctExplanation": "0.56",
+      "distractors": [
+        {
+          "answer": "28",
+          "explanation": "Gives the count, not the proportion."
+        },
+        {
+          "answer": "0.28",
+          "explanation": "Divides by 100 instead of 50."
+        },
+        {
+          "answer": "0.50",
+          "explanation": "Uses theoretical, not simulated."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which of these is NOT a simulation tool?",
+      "correct": "A calculator for exact answers",
+      "correctExplanation": "A calculator showing exact answers",
+      "distractors": [
+        {
+          "answer": "A fair die rolled many times",
+          "explanation": "Dice can model random events."
+        },
+        {
+          "answer": "A spreadsheet with random functions",
+          "explanation": "Spreadsheets can generate random numbers."
+        },
+        {
+          "answer": "A spinner with coloured sections",
+          "explanation": "Spinners model chance events."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What is one trial in a simulation?",
+      "correct": "A single run of the model",
+      "correctExplanation": "A single run of the experiment model",
+      "distractors": [
+        {
+          "answer": "The total of all runs combined",
+          "explanation": "That is the entire simulation."
+        },
+        {
+          "answer": "The theoretical probability value",
+          "explanation": "Theory is separate from simulation."
+        },
+        {
+          "answer": "The average of every outcome",
+          "explanation": "Averaging comes after many trials."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "A student uses random digits 1-6 to simulate a die. Digit 4 appears 18 times in 100 trials. Estimated P(4)?",
+      "correct": "0.18",
+      "correctExplanation": "0.18",
+      "distractors": [
+        {
+          "answer": "4",
+          "explanation": "The digit itself, not the probability."
+        },
+        {
+          "answer": "0.04",
+          "explanation": "Divides by 1000 instead of 100."
+        },
+        {
+          "answer": "18",
+          "explanation": "Gives the count, not the proportion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Why might a simulation result differ from theoretical probability?",
+      "correct": "Random variation in small samples",
+      "correctExplanation": "Random variation affects small samples",
+      "distractors": [
+        {
+          "answer": "The simulation is always wrong",
+          "explanation": "Simulations can be good estimates."
+        },
+        {
+          "answer": "Theoretical probability is a guess",
+          "explanation": "Theory is mathematically derived."
+        },
+        {
+          "answer": "Random events cannot be simulated",
+          "explanation": "Simulation is designed for random events."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What should you do before running a simulation?",
+      "correct": "Decide what model fits the event",
+      "correctExplanation": "Decide what model represents the event",
+      "distractors": [
+        {
+          "answer": "Calculate the exact answer first",
+          "explanation": "If you could, simulation would be unnecessary."
+        },
+        {
+          "answer": "Run the simulation once quickly",
+          "explanation": "Planning comes before running."
+        },
+        {
+          "answer": "Choose the answer you expect",
+          "explanation": "Expecting an answer introduces bias."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "How many trials is typically enough for a reliable simulation?",
+      "correct": "Several hundred or more",
+      "correctExplanation": "Several hundred or more trials",
+      "distractors": [
+        {
+          "answer": "Exactly 10 every time",
+          "explanation": "10 trials gives a poor estimate."
+        },
+        {
+          "answer": "One trial is usually enough",
+          "explanation": "One trial is highly unreliable."
+        },
+        {
+          "answer": "Exactly 3 for all cases",
+          "explanation": "3 trials is far too few."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A simulation of rolling two dice records the sum each time. After 200 rolls, sum 7 appears 35 times. Estimated P(sum 7)?",
+      "correct": "35/200 = 0.175",
+      "correctExplanation": "35/200 = 0.175",
+      "distractors": [
+        {
+          "answer": "7/200 = 0.035",
+          "explanation": "Uses the sum value, not its frequency."
+        },
+        {
+          "answer": "35/100 = 0.35",
+          "explanation": "Divides by 100 instead of 200."
+        },
+        {
+          "answer": "35 on its own",
+          "explanation": "Gives the count, not the probability."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A simulation uses a {{blank:1}} to imitate a real-world random process, and each run is called a {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "model",
+          "correctExplanation": "Simulations use models such as dice, spinners, or computer programs.",
+          "distractors": [
+            {
+              "answer": "formula",
+              "explanation": "Formulas calculate exact values, not simulate.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "graph",
+              "explanation": "Graphs display results, not simulate processes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trial",
+          "correctExplanation": "Each individual run of the simulation is one trial.",
+          "distractors": [
+            {
+              "answer": "result",
+              "explanation": "Result is the outcome, not the run itself.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sample",
+              "explanation": "Sample describes a collection, not a single run.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The more {{blank:1}} you run in a simulation, the closer the estimate gets to the {{blank:2}} probability.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trials",
+          "correctExplanation": "More trials reduce random variation.",
+          "distractors": [
+            {
+              "answer": "graphs",
+              "explanation": "Graphs are a display tool, not a simulation input.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "formulas",
+              "explanation": "Formulas are not run in simulations.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "true",
+          "correctExplanation": "The law of large numbers says estimates converge to the true probability.",
+          "distractors": [
+            {
+              "answer": "estimated",
+              "explanation": "Estimated refers to the simulation output, not the target.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "maximum",
+              "explanation": "Probability converges to the true value, not a maximum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A well-designed simulation matches the probability model of the real event.",
+      "correct": "True",
+      "correctExplanation": "The simulation tool must have the same probabilities as the real event to produce valid estimates.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks any random tool works for any event."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Using a coin to simulate an event with P=1/3 gives accurate results.",
+      "correct": "False",
+      "correctExplanation": "A fair coin has P=1/2, not 1/3. A three-section spinner or grouping digits 1-3 from 1-9 would be better.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes any random tool matches any probability."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Simulations produce different estimates each time because of random variation.",
+      "correct": "True",
+      "correctExplanation": "Randomness means each set of trials can yield a different proportion.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Expects simulations to give identical results every time."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "A simulation of 50 trials can be trusted just as much as one of 5000 trials.",
+      "correct": "False",
+      "correctExplanation": "Larger samples give more stable and trustworthy estimates.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Ignores sample size effects on reliability."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "To simulate P = 0.3, you could use random digits 0-9 and count 0, 1 and 2 as success.",
+      "correct": "True",
+      "correctExplanation": "Digits 0, 1, 2 represent 3 of 10 equally likely outcomes, matching P = 0.3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks random digits cannot model non-uniform probabilities."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "A simulation replaces the need for any theoretical analysis.",
+      "correct": "False",
+      "correctExplanation": "Simulation complements theory. When theory is available, it gives exact answers; simulation estimates.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Thinks simulation is always superior to theory."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "If a simulation gives P ≈ 0.48 for a fair coin, the coin must be biased.",
+      "correct": "False",
+      "correctExplanation": "Random variation can produce estimates near but not exactly 0.5 even for a fair coin.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses sampling variability with actual bias."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "A simulation always overestimates the true probability of an event.",
+      "correct": "False",
+      "correctExplanation": "Simulations can overestimate or underestimate due to random variation; there is no systematic direction.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Thinks simulation error always goes one way."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "To simulate an event with P = 1/6, which tool is best?",
+      "correct": "A fair six-sided die",
+      "correctExplanation": "A fair six-sided die",
+      "distractors": [
+        {
+          "answer": "A fair coin flipped once",
+          "explanation": "A coin gives P = 1/2."
+        },
+        {
+          "answer": "A spinner with 4 equal parts",
+          "explanation": "Gives P = 1/4."
+        },
+        {
+          "answer": "A deck of 52 playing cards",
+          "explanation": "52 outcomes is unnecessarily complex."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A simulation of 100 trials gives 37 successes. A second run gives 41. Why do they differ?",
+      "correct": "Random variation between runs",
+      "correctExplanation": "Random variation between runs",
+      "distractors": [
+        {
+          "answer": "The model changed between runs",
+          "explanation": "The same model was used."
+        },
+        {
+          "answer": "The first run had an error",
+          "explanation": "Both runs are valid."
+        },
+        {
+          "answer": "100 trials is too many",
+          "explanation": "More trials improve estimates."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which method simulates P = 0.2 using random digits 0-9?",
+      "correct": "Count digits 0 and 1 as success",
+      "correctExplanation": "Count digits 0 and 1 as success",
+      "distractors": [
+        {
+          "answer": "Count digits 0 through 4 instead",
+          "explanation": "That gives P = 0.5."
+        },
+        {
+          "answer": "Count only digit 0 as success",
+          "explanation": "That gives P = 0.1."
+        },
+        {
+          "answer": "Count all even digits instead",
+          "explanation": "That gives P = 0.5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A student simulates a basketball free-throw rate of 70%. Which model works?",
+      "correct": "Digits 0-9, count 0-6 as a make",
+      "correctExplanation": "Random digits 0-9, count 0-6 as a make",
+      "distractors": [
+        {
+          "answer": "A coin flip, heads means a make",
+          "explanation": "Coin gives 50%, not 70%."
+        },
+        {
+          "answer": "A die roll, 1-4 means a make",
+          "explanation": "Die gives 4/6 = 67%."
+        },
+        {
+          "answer": "Digits 0-9, count 0-3 as make",
+          "explanation": "That gives 40%, not 70%."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "What is the purpose of recording results in each simulation trial?",
+      "correct": "To calculate relative frequency",
+      "correctExplanation": "To calculate the relative frequency later",
+      "distractors": [
+        {
+          "answer": "To prove theoretical probability",
+          "explanation": "Simulation estimates, not proves."
+        },
+        {
+          "answer": "To make the simulation look neat",
+          "explanation": "Recording serves a mathematical purpose."
+        },
+        {
+          "answer": "To show it was truly random",
+          "explanation": "Randomness is built into the model."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "After 500 trials, P(event) ≈ 0.62. After 5000 trials, P ≈ 0.58. Which is more reliable?",
+      "correct": "The 5000-trial estimate",
+      "correctExplanation": "The 5000-trial estimate",
+      "distractors": [
+        {
+          "answer": "The 500-trial estimate",
+          "explanation": "Fewer trials give less stable results."
+        },
+        {
+          "answer": "Both are equally reliable",
+          "explanation": "More trials improve reliability."
+        },
+        {
+          "answer": "Neither is useful at all",
+          "explanation": "Both give useful estimates."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "How would you simulate choosing 3 people from 10 without replacement?",
+      "correct": "Number 1-10, draw 3 different values",
+      "correctExplanation": "Number them 1-10, draw 3 random different numbers",
+      "distractors": [
+        {
+          "answer": "Roll a die 3 times, skip repeats",
+          "explanation": "A die only has numbers 1-6."
+        },
+        {
+          "answer": "Flip a coin 10 times for each",
+          "explanation": "A coin cannot select 3 from 10."
+        },
+        {
+          "answer": "Use a spinner with 3 sections",
+          "explanation": "3 sections cannot represent 10 people."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A simulation estimates P(winning) ≈ 0.12. The theoretical value is 0.10. What should you conclude?",
+      "correct": "Reasonable given sampling variation",
+      "correctExplanation": "The estimate is reasonable given sampling variation",
+      "distractors": [
+        {
+          "answer": "The simulation is definitely wrong",
+          "explanation": "0.12 is close to 0.10."
+        },
+        {
+          "answer": "The theoretical value must be wrong",
+          "explanation": "Theory is based on the model."
+        },
+        {
+          "answer": "The simulation model needs changing",
+          "explanation": "The model is correct; variation is expected."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "What makes a simulation 'fair'?",
+      "correct": "Model matches real probabilities",
+      "correctExplanation": "The model matches the real probabilities",
+      "distractors": [
+        {
+          "answer": "It always gives 0.5 as output",
+          "explanation": "0.5 only applies to fair coins."
+        },
+        {
+          "answer": "It runs at least 1000 trials",
+          "explanation": "Trial count affects reliability, not fairness."
+        },
+        {
+          "answer": "It uses expensive software",
+          "explanation": "Software cost is irrelevant to fairness."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A teacher asks: simulate rolling two dice and finding the sum. What should one trial produce?",
+      "correct": "One sum from two random values",
+      "correctExplanation": "One sum from two randomly chosen values",
+      "distractors": [
+        {
+          "answer": "Two sums from one roll each",
+          "explanation": "One trial gives one sum."
+        },
+        {
+          "answer": "A list of every possible sum",
+          "explanation": "Listing all sums is the sample space."
+        },
+        {
+          "answer": "The average of all sums so far",
+          "explanation": "Averaging comes after all trials."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which simulation tool models a 1-in-4 chance?",
+      "correct": "Spinner, 4 equal parts, 1 shaded",
+      "correctExplanation": "A spinner with 4 equal sections, 1 shaded",
+      "distractors": [
+        {
+          "answer": "Two coin flips, both heads only",
+          "explanation": "P(HH) = 1/4 but needs 2 flips per trial."
+        },
+        {
+          "answer": "A die showing only numbers 1-4",
+          "explanation": "That models 4 outcomes, not P = 1/4."
+        },
+        {
+          "answer": "Random digit 0-9, choose digit 4",
+          "explanation": "That gives P = 1/10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Why is it important to use truly random numbers in a simulation?",
+      "correct": "Patterns would bias the estimate",
+      "correctExplanation": "Patterns would bias the estimated probability",
+      "distractors": [
+        {
+          "answer": "Random numbers improve the graphs",
+          "explanation": "Graphs are unrelated to randomness quality."
+        },
+        {
+          "answer": "Non-random numbers run faster",
+          "explanation": "Speed is not improved by non-randomness."
+        },
+        {
+          "answer": "Only random numbers can be stored",
+          "explanation": "Any numbers can be stored."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "To simulate an event with P = 0.4 using random digits 0–9, assign digits {{blank:1}} to 3 as success. In 200 trials with 74 successes, the estimate is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Digits 0,1,2,3 give 4 of 10 outcomes = 0.4.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Starting from 1 gives only 3 digits (1,2,3) = P=0.3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Digits 4-9 give P=0.6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.37",
+          "correctExplanation": "74/200 = 0.37.",
+          "distractors": [
+            {
+              "answer": "0.74",
+              "explanation": "Divides by 100 instead of 200.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "74",
+              "explanation": "Gives the count, not the proportion.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The law of large numbers says that as trials increase, the relative frequency approaches the {{blank:1}} probability. This is why simulations need many {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "true",
+          "correctExplanation": "The true (theoretical) probability is the limit of the relative frequency.",
+          "distractors": [
+            {
+              "answer": "estimated",
+              "explanation": "Estimated is what the simulation gives.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "average",
+              "explanation": "Average is a summary statistic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trials",
+          "correctExplanation": "More trials improve the estimate.",
+          "distractors": [
+            {
+              "answer": "models",
+              "explanation": "One model is used; trials are repeated.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "graphs",
+              "explanation": "Graphs display results but don't improve estimates.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A simulation that matches the probabilities of the real event is called a {{blank:1}} model. If the model does not match, the results will be {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "valid",
+          "correctExplanation": "A valid model accurately represents the real probabilities.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Randomness is a feature, not a measure of correctness.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "fast",
+              "explanation": "Speed does not determine accuracy.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "biased",
+          "correctExplanation": "A mismatched model introduces systematic error.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Random variation is expected even in valid models.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "exact",
+              "explanation": "Mismatched models do not give exact answers.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "In a simulation, each {{blank:1}} produces one outcome. After all trials, divide the number of successes by the total to get the {{blank:2}} frequency.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trial",
+          "correctExplanation": "One trial = one run of the model.",
+          "distractors": [
+            {
+              "answer": "graph",
+              "explanation": "Graphs display data, not produce outcomes.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "formula",
+              "explanation": "Formulas calculate, not simulate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "relative",
+          "correctExplanation": "Relative frequency = successes / total trials.",
+          "distractors": [
+            {
+              "answer": "absolute",
+              "explanation": "Absolute frequency is the count, not the proportion.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "cumulative",
+              "explanation": "Cumulative adds up over time.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "To simulate P = 1/3, use a spinner with {{blank:1}} equal sections, marking one as success. A fair die works if you count outcomes 1 and {{blank:2}} as success.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "1 out of 3 sections gives P = 1/3.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "1 out of 2 gives P = 1/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "1 out of 6 gives P = 1/6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Counting 1 and 2 from a 6-sided die gives 2/6 = 1/3.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "1,2,3 gives 3/6 = 1/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "1,2,3,4,5,6 gives 6/6 = 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A student runs 50 simulation trials and gets P ≈ 0.44. Another runs 500 and gets P ≈ 0.39. The {{blank:1}}-trial result is likely closer to the true probability because larger samples reduce {{blank:2}} variation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "500",
+          "correctExplanation": "More trials give a more stable estimate.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "50 trials give a less reliable estimate.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "100 was not the number used.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "random",
+          "correctExplanation": "Random sampling variation decreases with more trials.",
+          "distractors": [
+            {
+              "answer": "systematic",
+              "explanation": "Systematic error is not reduced by more trials.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "total",
+              "explanation": "Total variation is not the precise term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A simulation can never be used to check a theoretical calculation.",
+      "correct": "False",
+      "correctExplanation": "Running a simulation and comparing the estimate to the theoretical value is a common validation technique.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Fails to see simulation as a tool for verifying theory."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Increasing simulation trials beyond 10 000 has no effect on the estimate.",
+      "correct": "False",
+      "correctExplanation": "While improvements become smaller, more trials continue to reduce variation and improve the estimate.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Thinks there is a fixed threshold beyond which trials add nothing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Design a simulation for the birthday problem (P that 2 of 23 share a birthday).",
+      "correct": "Generate 23 numbers 1-365, check repeats",
+      "correctExplanation": "Generate 23 random numbers 1–365 and check for repeats",
+      "distractors": [
+        {
+          "answer": "Flip a coin 23 times, count heads",
+          "explanation": "Coins do not model birthdays."
+        },
+        {
+          "answer": "Roll a die 23 times, check sixes",
+          "explanation": "A die has 6, not 365 outcomes."
+        },
+        {
+          "answer": "Ask 23 people their real birthdays",
+          "explanation": "This is data collection, not simulation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A student simulates drawing marbles (3R, 2B) without replacement. Which model works?",
+      "correct": "Cards 1-5, draw 2 without returning",
+      "correctExplanation": "Number cards 1-5, draw 2 without returning",
+      "distractors": [
+        {
+          "answer": "Roll a die twice, ignoring sixes",
+          "explanation": "A die does not model 5 marbles."
+        },
+        {
+          "answer": "Flip a coin twice, heads is red",
+          "explanation": "A coin gives P=0.5, not 3/5."
+        },
+        {
+          "answer": "Use random digits 0-9 for each",
+          "explanation": "10 digits for 5 marbles is incorrect."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "After 1000 trials, a simulation gives P ≈ 0.167. The theoretical answer is 1/6 ≈ 0.167. What does this suggest?",
+      "correct": "The simulation model is likely valid",
+      "correctExplanation": "The simulation model is likely valid",
+      "distractors": [
+        {
+          "answer": "The simulation was not random enough",
+          "explanation": "Close agreement suggests good randomness."
+        },
+        {
+          "answer": "1000 trials was too few to tell",
+          "explanation": "1000 trials is reasonable for comparison."
+        },
+        {
+          "answer": "The theoretical answer must be wrong",
+          "explanation": "Theory and simulation agree."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "How can you simulate a biased coin with P(H) = 0.7?",
+      "correct": "Digits 0-9, count 0-6 as heads",
+      "correctExplanation": "Random digits 0-9, count 0-6 as heads",
+      "distractors": [
+        {
+          "answer": "A fair coin, counting heads only",
+          "explanation": "A fair coin gives P = 0.5."
+        },
+        {
+          "answer": "A die, counting even numbers",
+          "explanation": "That gives P = 0.5."
+        },
+        {
+          "answer": "Digits 0-9, count 0-4 as heads",
+          "explanation": "That gives P = 0.5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "What is a limitation of using simulation rather than theoretical calculation?",
+      "correct": "Results are estimates that vary",
+      "correctExplanation": "Results are estimates that vary between runs",
+      "distractors": [
+        {
+          "answer": "Simulations are always wrong",
+          "explanation": "Simulations are useful estimates."
+        },
+        {
+          "answer": "Simulations cannot use randomness",
+          "explanation": "Randomness is fundamental to simulation."
+        },
+        {
+          "answer": "Theory is always harder to grasp",
+          "explanation": "Difficulty depends on the problem."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "You need P(at least one 6 in four rolls). Theory gives 1−(5/6)⁴. A simulation uses?",
+      "correct": "Roll 4 virtual dice, check for any 6",
+      "correctExplanation": "Roll a virtual die 4 times per trial, record if any show 6",
+      "distractors": [
+        {
+          "answer": "Roll one die and multiply by four",
+          "explanation": "Multiplying one roll does not simulate four."
+        },
+        {
+          "answer": "Flip 4 coins, count heads as 6s",
+          "explanation": "Coins do not model dice."
+        },
+        {
+          "answer": "Generate one random number only",
+          "explanation": "Four rolls need four numbers per trial."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Why should you repeat a simulation with different random seeds?",
+      "correct": "To check that the estimate is stable",
+      "correctExplanation": "To check that the estimate is stable",
+      "distractors": [
+        {
+          "answer": "To get a lower probability value",
+          "explanation": "Different seeds do not guarantee lower values."
+        },
+        {
+          "answer": "To fix errors in the first run",
+          "explanation": "Repeating does not fix errors."
+        },
+        {
+          "answer": "To use up all available numbers",
+          "explanation": "Random numbers are not a limited resource."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A simulation runs 200 trials for a 3-child family (P(boy)=0.5). It records families with all boys. What model is used?",
+      "correct": "Flip 3 coins per trial, count all H",
+      "correctExplanation": "Flip 3 coins per trial, count all heads",
+      "distractors": [
+        {
+          "answer": "Flip 1 coin 200 times and count H",
+          "explanation": "One coin per trial does not model 3 children."
+        },
+        {
+          "answer": "Roll a die 3 times, count sixes",
+          "explanation": "A die is not needed for P = 0.5."
+        },
+        {
+          "answer": "Draw 3 cards per trial from deck",
+          "explanation": "Cards add unnecessary complexity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "In a spreadsheet simulation, RAND() gives a number between 0 and 1. How do you model P = 0.35?",
+      "correct": "Count RAND() below 0.35 as success",
+      "correctExplanation": "Count RAND() values below 0.35 as success",
+      "distractors": [
+        {
+          "answer": "Count RAND() above 0.35 as success",
+          "explanation": "That gives P = 0.65."
+        },
+        {
+          "answer": "Round RAND() to 0 or 1 then count",
+          "explanation": "Rounding gives P = 0.5."
+        },
+        {
+          "answer": "Multiply RAND() by 0.35 each time",
+          "explanation": "Multiplication does not model probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "What is the advantage of computer simulation over physical simulation?",
+      "correct": "Speed: thousands of trials per second",
+      "correctExplanation": "Speed: thousands of trials in seconds",
+      "distractors": [
+        {
+          "answer": "Computers always give exact values",
+          "explanation": "Computers still use random processes."
+        },
+        {
+          "answer": "Physical tools are never random",
+          "explanation": "Physical tools can be genuinely random."
+        },
+        {
+          "answer": "Computer results never vary at all",
+          "explanation": "Computer simulations also show variation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A teacher wants to estimate P(3 heads in 5 coin flips). Describe one trial.",
+      "correct": "Flip 5 coins, check for exactly 3 H",
+      "correctExplanation": "Flip 5 coins, record if exactly 3 are heads",
+      "distractors": [
+        {
+          "answer": "Flip 3 coins, check if all are H",
+          "explanation": "3 coins does not model 5 flips."
+        },
+        {
+          "answer": "Flip 1 coin 5 times, count total",
+          "explanation": "Same as correct but check for exactly 3."
+        },
+        {
+          "answer": "Flip 5 coins, just record the total",
+          "explanation": "Need to check for exactly 3, not just count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A student's simulation of P(sum=7 from two dice) gives 0.19 after 50 trials. Theory says 1/6 ≈ 0.167. What should they do?",
+      "correct": "Run more trials to improve it",
+      "correctExplanation": "Run more trials to improve the estimate",
+      "distractors": [
+        {
+          "answer": "Change the model to match 1/6",
+          "explanation": "The model is correct; variation is expected."
+        },
+        {
+          "answer": "Accept 0.19 as exact probability",
+          "explanation": "0.19 is an estimate, not exact."
+        },
+        {
+          "answer": "Conclude that theory is wrong",
+          "explanation": "Theory is based on the model, which is correct."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "To simulate a 3-child family, use 3 coin flips per trial. If all 3 show heads, that trial counts as a {{blank:1}}. After 100 trials with 13 all-heads results, P(all boys) ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "success",
+          "correctExplanation": "Success means the target outcome occurred.",
+          "distractors": [
+            {
+              "answer": "failure",
+              "explanation": "A failure is the non-target outcome.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "trial",
+              "explanation": "The trial is the run, not the specific outcome.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.13",
+          "correctExplanation": "13/100 = 0.13.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "Gives the count, not the proportion.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.013",
+              "explanation": "Divides by 1000.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Using RAND() in a spreadsheet: if RAND() < {{blank:1}}, the event occurs (for P=0.3). In 500 trials, expect about {{blank:2}} successes.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.3",
+          "correctExplanation": "Values below 0.3 occur 30% of the time.",
+          "distractors": [
+            {
+              "answer": "0.7",
+              "explanation": "Would give P = 0.7.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "RAND() gives values between 0 and 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "150",
+          "correctExplanation": "0.3 × 500 = 150.",
+          "distractors": [
+            {
+              "answer": "300",
+              "explanation": "Uses 0.6 × 500.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "Uses 0.3 × 100.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A simulation validates a theoretical result when the estimated probability is {{blank:1}} to the theoretical value. The closeness improves with more {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "close",
+          "correctExplanation": "Close agreement suggests the model is valid.",
+          "distractors": [
+            {
+              "answer": "equal",
+              "explanation": "Exact equality is unlikely with finite trials.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "opposite",
+              "explanation": "Opposite values indicate a flawed model.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trials",
+          "correctExplanation": "More trials reduce random variation.",
+          "distractors": [
+            {
+              "answer": "models",
+              "explanation": "One model is used throughout.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "tools",
+              "explanation": "Different tools do not improve convergence.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "For a birthday simulation with 30 people, generate {{blank:1}} random integers from 1 to 365 per trial. Check if any number {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "One random birthday per person.",
+          "distractors": [
+            {
+              "answer": "365",
+              "explanation": "365 is the range of dates, not the count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 is the number of months, not people.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "repeats",
+          "correctExplanation": "A repeat means two people share a birthday.",
+          "distractors": [
+            {
+              "answer": "exceeds 30",
+              "explanation": "Comparing to 30 is not meaningful here.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equals zero",
+              "explanation": "Zero is not a birthday.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Random digits 0-9 can model P = {{blank:1}} by counting how many of the 10 digits meet the condition. For P = 0.7, count digits 0 to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "k/10",
+          "correctExplanation": "k digits out of 10 gives P = k/10.",
+          "distractors": [
+            {
+              "answer": "k/100",
+              "explanation": "Would need 100 digits, not 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10/k",
+              "explanation": "Inverts the fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "Digits 0,1,2,3,4,5,6 = 7 digits = P = 0.7.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "Digits 0-7 = 8 digits = P = 0.8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9",
+              "explanation": "Digits 0-9 = 10 digits = P = 1.0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A simulation of P(at least one 6 in 4 rolls) runs 1000 trials. The count of successes is 524. The estimate is {{blank:1}}. Theory gives 1 − (5/6)⁴ ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.524",
+          "correctExplanation": "524/1000 = 0.524.",
+          "distractors": [
+            {
+              "answer": "524",
+              "explanation": "Count, not proportion.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.0524",
+              "explanation": "Divides by 10000.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.518",
+          "correctExplanation": "1 − (5/6)⁴ = 1 − 625/1296 ≈ 0.518.",
+          "distractors": [
+            {
+              "answer": "0.667",
+              "explanation": "Uses 1 − 1/3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.482",
+              "explanation": "Subtracts the wrong way.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A well-designed simulation must have three elements: a {{blank:1}} that matches the real probabilities, a method for generating random outcomes, and enough {{blank:2}} for a stable estimate.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "model",
+          "correctExplanation": "The model defines how the simulation represents the real event.",
+          "distractors": [
+            {
+              "answer": "graph",
+              "explanation": "Graphs display results; they are not the design element.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "formula",
+              "explanation": "Formulas calculate; models simulate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trials",
+          "correctExplanation": "Sufficient trials reduce sampling error.",
+          "distractors": [
+            {
+              "answer": "graphs",
+              "explanation": "Graphs are for display.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variables",
+              "explanation": "Variables are part of the model, not a count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "If a simulation gives P ≈ 0.48 and another run gives 0.51, the true probability is likely near {{blank:1}}. Averaging both estimates gives {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.5",
+          "correctExplanation": "Both estimates cluster around 0.5.",
+          "distractors": [
+            {
+              "answer": "0.48",
+              "explanation": "0.48 is just one estimate.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.99",
+              "explanation": "Far from both estimates.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.495",
+          "correctExplanation": "(0.48 + 0.51)/2 = 0.495.",
+          "distractors": [
+            {
+              "answer": "0.48",
+              "explanation": "Only uses one value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.51",
+              "explanation": "Only uses the other value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "To model 'without replacement' in a simulation, each chosen item must be {{blank:1}} from the pool. This changes the {{blank:2}} for subsequent draws.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "removed",
+          "correctExplanation": "Without replacement means items are not returned.",
+          "distractors": [
+            {
+              "answer": "returned",
+              "explanation": "Returning describes with replacement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "doubled",
+              "explanation": "Doubling is not a sampling method.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "probabilities",
+          "correctExplanation": "Removing items changes the composition and probabilities.",
+          "distractors": [
+            {
+              "answer": "outcomes",
+              "explanation": "The possible outcomes change, but probability change is the key effect.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "model",
+              "explanation": "The model stays the same; the probabilities shift.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A spinner with 5 equal sections, 2 shaded, simulates P = {{blank:1}}. In 300 spins, expect about {{blank:2}} successes.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.4",
+          "correctExplanation": "2/5 = 0.4.",
+          "distractors": [
+            {
+              "answer": "0.2",
+              "explanation": "Uses 1/5 instead of 2/5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "Uses half the spinner.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "120",
+          "correctExplanation": "0.4 × 300 = 120.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "Uses 0.2 × 300.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "150",
+              "explanation": "Uses 0.5 × 300.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "A Monte Carlo simulation estimates an area by randomly dropping {{blank:1}} into a region and counting how many land inside the target shape. The proportion approximates the {{blank:2}} ratio.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "points",
+          "correctExplanation": "Random points are placed in the bounding region.",
+          "distractors": [
+            {
+              "answer": "lines",
+              "explanation": "Lines are not typically used in Monte Carlo area estimation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "shapes",
+              "explanation": "Individual points, not shapes, are dropped.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "area",
+          "correctExplanation": "Points inside / total points ≈ target area / bounding area.",
+          "distractors": [
+            {
+              "answer": "perimeter",
+              "explanation": "Perimeter is a length, not estimated by point-dropping.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "volume",
+              "explanation": "Volume applies to 3D, not 2D area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "If two simulation runs of 500 trials give estimates 0.32 and 0.28, the combined estimate uses {{blank:1}} successes out of {{blank:2}} total trials.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "300",
+          "correctExplanation": "(0.32 × 500) + (0.28 × 500) = 160 + 140 = 300.",
+          "distractors": [
+            {
+              "answer": "160",
+              "explanation": "Only counts one run.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "600",
+              "explanation": "Adds 500 + 100.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1000",
+          "correctExplanation": "500 + 500 = 1000.",
+          "distractors": [
+            {
+              "answer": "500",
+              "explanation": "Only one run.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "Incorrect total.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A queuing simulation models customer arrivals at a bank. Why is simulation better than theory here?",
+      "correct": "Arrival patterns are complex and variable",
+      "correctExplanation": "Arrival patterns are complex and variable",
+      "distractors": [
+        {
+          "answer": "Banks are too small for theory to work",
+          "explanation": "Size is irrelevant."
+        },
+        {
+          "answer": "Theory cannot use any random numbers",
+          "explanation": "Theory uses probability models."
+        },
+        {
+          "answer": "Simulations need no model assumptions",
+          "explanation": "Simulations still require model assumptions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student runs 100 trials and gets P ≈ 0.24. Theory gives 0.20. Should the model be changed?",
+      "correct": "Not necessarily; 0.24 is normal variation",
+      "correctExplanation": "Not necessarily; 0.24 is within expected variation",
+      "distractors": [
+        {
+          "answer": "Yes; the model must match theory exactly",
+          "explanation": "Exact match is unrealistic."
+        },
+        {
+          "answer": "Yes; the 0.04 difference is very large",
+          "explanation": "0.04 is small for 100 trials."
+        },
+        {
+          "answer": "Run fewer trials to reduce the gap",
+          "explanation": "Fewer trials increase variation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "How can simulation estimate pi?",
+      "correct": "Drop random points in a square and circle",
+      "correctExplanation": "Drop random points in a square enclosing a circle",
+      "distractors": [
+        {
+          "answer": "Roll a die many times and then average",
+          "explanation": "Dice do not relate to pi."
+        },
+        {
+          "answer": "Measure circumference with a ruler tool",
+          "explanation": "That is physical measurement, not simulation."
+        },
+        {
+          "answer": "Count prime numbers below one thousand",
+          "explanation": "Primes are unrelated to pi estimation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "What does 'Monte Carlo method' refer to?",
+      "correct": "Using random sampling for estimates",
+      "correctExplanation": "Using random sampling to estimate numerical results",
+      "distractors": [
+        {
+          "answer": "A specific programming language only",
+          "explanation": "Monte Carlo is a method, not a language."
+        },
+        {
+          "answer": "A type of graph for probability",
+          "explanation": "It is a computational method."
+        },
+        {
+          "answer": "A formula for exact probability",
+          "explanation": "Monte Carlo gives estimates, not exact values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Compare two simulations: A runs 100 trials, B runs 10 000. Both model the same event. Which statement is true?",
+      "correct": "B has a smaller margin of error",
+      "correctExplanation": "B's estimate has a smaller margin of error",
+      "distractors": [
+        {
+          "answer": "A is just as reliable as B here",
+          "explanation": "More trials improve reliability."
+        },
+        {
+          "answer": "B always gives the exact probability",
+          "explanation": "No finite simulation gives exact values."
+        },
+        {
+          "answer": "A is better because it runs faster",
+          "explanation": "Speed does not determine accuracy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A simulation of weather uses historical data distributions. Why might it fail for future predictions?",
+      "correct": "Climate change may shift distributions",
+      "correctExplanation": "Climate change may shift the distributions",
+      "distractors": [
+        {
+          "answer": "Historical data is always inaccurate",
+          "explanation": "Historical data is often accurate for its period."
+        },
+        {
+          "answer": "Simulations cannot use real data sets",
+          "explanation": "Simulations commonly use real data."
+        },
+        {
+          "answer": "Weather is completely unpredictable",
+          "explanation": "Weather has measurable patterns."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Design a simulation to estimate P(sum > 10) for three dice.",
+      "correct": "Roll 3 virtual dice, check sum > 10",
+      "correctExplanation": "Roll 3 virtual dice per trial and check if the sum exceeds 10",
+      "distractors": [
+        {
+          "answer": "Roll 1 die 3 times and average",
+          "explanation": "Averaging is not the same as summing."
+        },
+        {
+          "answer": "Use one random number from 3-18",
+          "explanation": "This skips the die-rolling step."
+        },
+        {
+          "answer": "Flip 3 coins, count heads above 1",
+          "explanation": "Coins do not model dice sums."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A simulation estimates P(both children are girls) in a 2-child family. After 800 trials, 190 show two girls. Estimate and comment.",
+      "correct": "P ≈ 0.2375, close to theoretical 0.25",
+      "correctExplanation": "P ≈ 0.2375, close to the theoretical 0.25",
+      "distractors": [
+        {
+          "answer": "P = 190, which is the exact answer",
+          "explanation": "190 is a count, not a probability."
+        },
+        {
+          "answer": "P ≈ 0.19, very far from the theory",
+          "explanation": "190/800 = 0.2375, not 0.19."
+        },
+        {
+          "answer": "P ≈ 0.25 exactly, confirming theory",
+          "explanation": "0.2375 is close but not exactly 0.25."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Why might a physical simulation (e.g. dice) give different results from a computer simulation of the same event?",
+      "correct": "Random variation differs between runs",
+      "correctExplanation": "Random variation differs between any two runs",
+      "distractors": [
+        {
+          "answer": "Physical tools are always more accurate",
+          "explanation": "Accuracy depends on trial count, not tool."
+        },
+        {
+          "answer": "Computers cannot model physical events",
+          "explanation": "Computers model physical events well."
+        },
+        {
+          "answer": "Physical tools have different odds",
+          "explanation": "If fair, they share the same probabilities."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A simulation of a game shows P(win) ≈ 0.05 after 10 000 trials. A player claims P(win) = 0.10. How to investigate?",
+      "correct": "Re-run; check if 0.10 is in range",
+      "correctExplanation": "Re-run and check if 0.10 falls in the confidence range",
+      "distractors": [
+        {
+          "answer": "Accept the player's claim as correct",
+          "explanation": "Claims need evidence."
+        },
+        {
+          "answer": "Reduce trials to get closer to 0.10",
+          "explanation": "Fewer trials increase error."
+        },
+        {
+          "answer": "Change the model to match the claim",
+          "explanation": "The model should reflect reality, not claims."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "How does variance in simulation estimates change with trial count?",
+      "correct": "Variance decreases as trials increase",
+      "correctExplanation": "Variance decreases as trials increase",
+      "distractors": [
+        {
+          "answer": "Variance increases with more trials",
+          "explanation": "More trials stabilise the estimate."
+        },
+        {
+          "answer": "Variance is always exactly zero",
+          "explanation": "Random variation is always present."
+        },
+        {
+          "answer": "Variance is unrelated to trial count",
+          "explanation": "Trial count directly affects variance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A teacher compares 5 students' simulations (200 trials each) of the same event. Results: 0.31, 0.28, 0.33, 0.29, 0.30. What does this tell you?",
+      "correct": "True probability is near 0.30, normal variation",
+      "correctExplanation": "The true probability is near 0.30 with expected variation",
+      "distractors": [
+        {
+          "answer": "The true probability is exactly 0.302",
+          "explanation": "Cannot determine the exact value."
+        },
+        {
+          "answer": "One student must have made an error",
+          "explanation": "All results are close; variation is normal."
+        },
+        {
+          "answer": "200 trials is too few for conclusions",
+          "explanation": "200 trials gives useful estimates."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student finds P(event) via simulation changes from 0.45 (100 trials) to 0.42 (1000 trials) to 0.415 (10 000 trials). What pattern emerges?",
+      "correct": "Estimates stabilise as trials increase",
+      "correctExplanation": "Estimates stabilise as trials increase",
+      "distractors": [
+        {
+          "answer": "The probability is decreasing over time",
+          "explanation": "Probability is fixed; the estimate converges."
+        },
+        {
+          "answer": "More trials make the estimate worse",
+          "explanation": "The opposite is true."
+        },
+        {
+          "answer": "The simulation model is getting worse",
+          "explanation": "The model stays the same across runs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "Why is it important to record the number of trials alongside a simulation estimate?",
+      "correct": "Trial count shows estimate reliability",
+      "correctExplanation": "Trial count indicates how reliable the estimate is",
+      "distractors": [
+        {
+          "answer": "To prove the simulation was completed",
+          "explanation": "Completion is not the purpose."
+        },
+        {
+          "answer": "Trial count does not matter at all",
+          "explanation": "Trial count is central to reliability."
+        },
+        {
+          "answer": "To make the report more detailed",
+          "explanation": "Trial count has mathematical significance."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A Monte Carlo estimate of pi uses a square of side 2 enclosing a unit circle. The ratio of points inside the circle to total points approximates {{blank:1}}/4. Multiply by 4 to estimate {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "pi",
+          "correctExplanation": "Circle area = π; square area = 4. Ratio = π/4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the side length, not the ratio.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 is the square area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "pi",
+          "correctExplanation": "4 × (π/4) = π.",
+          "distractors": [
+            {
+              "answer": "2pi",
+              "explanation": "Doubling gives circumference, not pi.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 is the multiplier, not the result.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Simulation variance decreases at a rate proportional to 1/{{blank:1}}, where n is the number of trials. Quadrupling trials {{blank:2}} the standard error.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n",
+          "correctExplanation": "Variance of a proportion ∝ 1/n.",
+          "distractors": [
+            {
+              "answer": "n²",
+              "explanation": "Variance decreases as 1/n, not 1/n².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2n",
+              "explanation": "The relationship is 1/n.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "halves",
+          "correctExplanation": "SE ∝ 1/√n; quadrupling n doubles √n, halving SE.",
+          "distractors": [
+            {
+              "answer": "quarters",
+              "explanation": "Quartering would require 16× trials.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "doubles",
+              "explanation": "More trials decrease, not increase, error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "To check if a simulation model is valid, compare the simulation estimate to a {{blank:1}} result when one exists. If they are close, the model is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "theoretical",
+          "correctExplanation": "Theoretical results provide exact benchmarks.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Random is a feature of simulation, not a benchmark.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "previous",
+              "explanation": "A previous simulation is also an estimate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "valid",
+          "correctExplanation": "Close agreement supports the model's accuracy.",
+          "distractors": [
+            {
+              "answer": "exact",
+              "explanation": "Models are never exact; they approximate.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "biased",
+              "explanation": "Close agreement suggests lack of bias.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "In a bootstrap simulation, you resample {{blank:1}} replacement from observed data. This estimates the {{blank:2}} distribution of a statistic.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "with",
+          "correctExplanation": "Bootstrap resamples with replacement to mimic sampling variability.",
+          "distractors": [
+            {
+              "answer": "without",
+              "explanation": "Without replacement gives the same sample every time.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "before",
+              "explanation": "Before is not a resampling term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sampling",
+          "correctExplanation": "Bootstrap estimates the sampling distribution.",
+          "distractors": [
+            {
+              "answer": "population",
+              "explanation": "Population distribution is fixed; bootstrap estimates sampling variability.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "normal",
+              "explanation": "Bootstrap does not assume normality.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A simulation of 5000 trials gives P ≈ 0.312 ± 0.013. This means the true probability likely lies between {{blank:1}} and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.299",
+          "correctExplanation": "0.312 − 0.013 = 0.299.",
+          "distractors": [
+            {
+              "answer": "0.013",
+              "explanation": "0.013 is the margin, not the lower bound.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.312",
+              "explanation": "0.312 is the point estimate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.325",
+          "correctExplanation": "0.312 + 0.013 = 0.325.",
+          "distractors": [
+            {
+              "answer": "0.312",
+              "explanation": "0.312 is the centre, not the upper bound.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "0.5 is unrelated.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "To simulate a waiting time with exponential distribution, use the formula t = −(1/λ) × ln({{blank:1}}), where U is a uniform random number between 0 and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "U",
+          "correctExplanation": "The inverse transform method uses −ln(U)/λ.",
+          "distractors": [
+            {
+              "answer": "λ",
+              "explanation": "λ is the rate parameter, not the random input.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "t",
+              "explanation": "t is the output, not the input.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "U is uniform on (0, 1).",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "U is between 0 and 1, not 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "RAND() gives values in (0,1).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Comparing simulation (P ≈ 0.52, n=1000) to theory (P = 0.5): the difference of {{blank:1}} is likely due to {{blank:2}} variation, not model error.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.02",
+          "correctExplanation": "0.52 − 0.50 = 0.02.",
+          "distractors": [
+            {
+              "answer": "0.52",
+              "explanation": "0.52 is the estimate, not the difference.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.50",
+              "explanation": "0.50 is the theory, not the difference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "random",
+          "correctExplanation": "Small differences in finite trials are expected.",
+          "distractors": [
+            {
+              "answer": "systematic",
+              "explanation": "Systematic error would persist with more trials.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "measurement",
+              "explanation": "This is estimation variation, not measurement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A simulation of a card game runs 2000 trials. Wins = 340. The estimated P(win) = {{blank:1}}. A 95% confidence interval has width approximately 2 × root(0.17 × 0.83 / 2000) ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.17",
+          "correctExplanation": "340/2000 = 0.17.",
+          "distractors": [
+            {
+              "answer": "340",
+              "explanation": "Count, not proportion.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.34",
+              "explanation": "Divides by 1000.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.017",
+          "correctExplanation": "root(0.17 × 0.83/2000) ≈ 0.0084; ×2 ≈ 0.017.",
+          "distractors": [
+            {
+              "answer": "0.17",
+              "explanation": "Confuses the estimate with the margin.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.83",
+              "explanation": "0.83 is 1 − p.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "To assess whether a die is fair via simulation, roll it {{blank:1}} times and check if each face appears close to 1/6 of the total. A chi-squared test can formalise this by comparing observed and {{blank:2}} frequencies.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "many",
+          "correctExplanation": "Many rolls (e.g. 600+) are needed for a reliable test.",
+          "distractors": [
+            {
+              "answer": "six",
+              "explanation": "Six rolls is far too few.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "two",
+              "explanation": "Two rolls cannot assess fairness.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "expected",
+          "correctExplanation": "Chi-squared compares observed vs expected frequencies.",
+          "distractors": [
+            {
+              "answer": "theoretical",
+              "explanation": "Expected is the standard term in chi-squared tests.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random is not the comparison term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "Stratified sampling in simulation divides the input space into {{blank:1}} and samples from each. This can reduce {{blank:2}} compared to simple random sampling.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "strata",
+          "correctExplanation": "Strata are subgroups of the input space.",
+          "distractors": [
+            {
+              "answer": "halves",
+              "explanation": "Stratification can use any number of groups.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "pairs",
+              "explanation": "Pairs is too specific.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "variance",
+          "correctExplanation": "Stratified sampling reduces estimate variance.",
+          "distractors": [
+            {
+              "answer": "bias",
+              "explanation": "Stratification reduces variance, not necessarily bias.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "trials",
+              "explanation": "Trial count stays the same.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A simulation run produces P̂ = 0.45 from n = 400. The standard error of the estimate is root(p̂(1−p̂)/n) = root(0.45 × {{blank:1}} / 400) ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.55",
+          "correctExplanation": "1 − 0.45 = 0.55.",
+          "distractors": [
+            {
+              "answer": "0.45",
+              "explanation": "Should use 1 − p̂, not p̂.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "400",
+              "explanation": "400 is n, not 1 − p̂.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.025",
+          "correctExplanation": "root(0.2475/400) = root(0.000619) ≈ 0.025.",
+          "distractors": [
+            {
+              "answer": "0.45",
+              "explanation": "Confuses the proportion with the SE.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.0006",
+              "explanation": "Gives the variance, not the SE.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "Averaging k independent simulation estimates each based on n trials gives a combined estimate with standard error reduced by a factor of {{blank:1}}. With k=4, this {{blank:2}} the SE.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "root k",
+          "correctExplanation": "Averaging k estimates divides SE by √k.",
+          "distractors": [
+            {
+              "answer": "k",
+              "explanation": "Dividing by k applies to variance, not SE.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2k",
+              "explanation": "2k is not the correct factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "halves",
+          "correctExplanation": "√4 = 2, so SE is halved.",
+          "distractors": [
+            {
+              "answer": "quarters",
+              "explanation": "Quartering requires k=16.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "doubles",
+              "explanation": "Averaging reduces, not increases, error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    }
+  ]
+}

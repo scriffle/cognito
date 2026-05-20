@@ -1,0 +1,2811 @@
+{
+  "_meta": {
+    "code": "VC2M9P01",
+    "level": 9,
+    "area": "Mathematics",
+    "ageBand": "13-14",
+    "keyKnowledge": "We are learning to list all outcomes for two-step experiments (with and without replacement) and assign probabilities.",
+    "generatedAt": "2026-05-18T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to list all outcomes for two-step experiments (with and without replacement) and assign probabilities."
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A two-step experiment involves two separate stages.",
+      "correct": "True",
+      "correctExplanation": "Two-step experiments have two distinct phases, such as flipping a coin then rolling a die.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses multi-step with single-step experiments."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "When sampling with replacement, the total number of items decreases after each draw.",
+      "correct": "False",
+      "correctExplanation": "With replacement, the item is returned, so the total stays the same.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses with replacement and without replacement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A tree diagram can show all outcomes of a two-step experiment.",
+      "correct": "True",
+      "correctExplanation": "Tree diagrams branch at each step to display every possible outcome.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks tree diagrams only work for single-step experiments."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Without replacement means the first item chosen can be chosen again.",
+      "correct": "False",
+      "correctExplanation": "Without replacement means the chosen item is not returned to the pool.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses without and with replacement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Flipping a coin twice is a two-step experiment.",
+      "correct": "True",
+      "correctExplanation": "Each flip is one step, so two flips make a two-step experiment.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks repeated identical actions are not multi-step."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "In a two-step experiment, the outcomes of each step are always equally likely.",
+      "correct": "False",
+      "correctExplanation": "Outcomes are equally likely only if each event is fair. Biased spinners or weighted dice produce unequal outcomes.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes all experiments involve fair events."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "When drawing two cards without replacement from a standard deck, there are 52 × 52 possible outcomes.",
+      "correct": "False",
+      "correctExplanation": "Without replacement gives 52 × 51 ordered outcomes because the first card is not returned.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Applies the with-replacement count to a without-replacement scenario."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The sample space lists every possible outcome of an experiment.",
+      "correct": "True",
+      "correctExplanation": "The sample space is the complete set of all possible outcomes.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses sample space with a subset of outcomes."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "With replacement, each draw has the same probability distribution as the first draw.",
+      "correct": "True",
+      "correctExplanation": "Replacing the item restores the original conditions for each subsequent draw.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks replacement changes the probabilities."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The probabilities in a sample space can add to any value.",
+      "correct": "False",
+      "correctExplanation": "Probabilities of all outcomes in a sample space must sum to exactly 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Thinks probability totals are flexible."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "In a two-step experiment, the order of outcomes does not matter.",
+      "correct": "False",
+      "correctExplanation": "Order typically matters: drawing red then blue is a different outcome from blue then red.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses outcomes with events where order may be combined."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "A two-step experiment always has exactly four outcomes.",
+      "correct": "False",
+      "correctExplanation": "The number of outcomes depends on how many possibilities exist at each step. A coin flip followed by a die roll has 2 × 6 = 12 outcomes.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes each step has only two options."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "How many outcomes does flipping a coin then rolling a die give?",
+      "correct": "12 outcomes",
+      "correctExplanation": "Correct. 12 outcomes.",
+      "distractors": [
+        {
+          "answer": "6 outcomes",
+          "explanation": "Only counts the die."
+        },
+        {
+          "answer": "8 outcomes",
+          "explanation": "Incorrect multiplication."
+        },
+        {
+          "answer": "2 outcomes",
+          "explanation": "Only counts the coin."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "What does 'with replacement' mean?",
+      "correct": "The item is returned before the next draw",
+      "correctExplanation": "Correct. The item is returned before the next draw.",
+      "distractors": [
+        {
+          "answer": "The item is discarded after use",
+          "explanation": "Describes without replacement."
+        },
+        {
+          "answer": "A new item replaces the old one",
+          "explanation": "The original item is returned, not replaced."
+        },
+        {
+          "answer": "Both items are drawn together",
+          "explanation": "This describes simultaneous draws."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which tool displays all outcomes of a two-step experiment?",
+      "correct": "A tree diagram",
+      "correctExplanation": "Correct. A tree diagram.",
+      "distractors": [
+        {
+          "answer": "A bar chart",
+          "explanation": "Bar charts show frequencies, not sample spaces."
+        },
+        {
+          "answer": "A pie chart",
+          "explanation": "Pie charts show proportions, not outcomes."
+        },
+        {
+          "answer": "A line graph",
+          "explanation": "Line graphs show trends over time."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "A bag holds 3 red and 2 blue marbles. One is drawn with replacement. How many outcomes for two draws?",
+      "correct": "25 outcomes",
+      "correctExplanation": "Correct. 25 outcomes.",
+      "distractors": [
+        {
+          "answer": "10 outcomes",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "20 outcomes",
+          "explanation": "Uses 5 × 4, which is without replacement."
+        },
+        {
+          "answer": "9 outcomes",
+          "explanation": "Only counts red combinations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What is the sample space for flipping two coins?",
+      "correct": "HH, HT, TH, TT",
+      "correctExplanation": "Correct. HH, HT, TH, TT.",
+      "distractors": [
+        {
+          "answer": "HH, HT, TT only",
+          "explanation": "Misses the TH outcome."
+        },
+        {
+          "answer": "H, T",
+          "explanation": "This is for one flip, not two."
+        },
+        {
+          "answer": "HH, TT only",
+          "explanation": "Misses the mixed outcomes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "In a two-step experiment, each branch of a tree diagram represents what?",
+      "correct": "One possible result at that step",
+      "correctExplanation": "Correct. One possible result at that step.",
+      "distractors": [
+        {
+          "answer": "The final combined outcome",
+          "explanation": "Branches show single-step results."
+        },
+        {
+          "answer": "The probability of all outcomes",
+          "explanation": "Each branch shows one result."
+        },
+        {
+          "answer": "A repeated trial of the experiment",
+          "explanation": "Branches represent possibilities, not repetitions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "A spinner has sections A, B, C. How many outcomes for two spins?",
+      "correct": "9 outcomes",
+      "correctExplanation": "Correct. 9 outcomes.",
+      "distractors": [
+        {
+          "answer": "6 outcomes",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "3 outcomes",
+          "explanation": "Only counts one spin."
+        },
+        {
+          "answer": "12 outcomes",
+          "explanation": "Incorrect multiplication."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What changes when sampling without replacement?",
+      "correct": "The pool size decreases by one",
+      "correctExplanation": "Correct. The pool size decreases by one.",
+      "distractors": [
+        {
+          "answer": "The pool size stays the same",
+          "explanation": "Describes with replacement."
+        },
+        {
+          "answer": "The probabilities stay equal",
+          "explanation": "Probabilities change as items are removed."
+        },
+        {
+          "answer": "The experiment becomes one step",
+          "explanation": "It remains multi-step."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which pair of events forms a two-step experiment?",
+      "correct": "Rolling a die then spinning a spinner",
+      "correctExplanation": "Correct. Rolling a die then spinning a spinner.",
+      "distractors": [
+        {
+          "answer": "Rolling one die once",
+          "explanation": "This is a single-step experiment."
+        },
+        {
+          "answer": "Choosing one card from a deck",
+          "explanation": "One draw is single-step."
+        },
+        {
+          "answer": "Measuring temperature at noon",
+          "explanation": "This is an observation, not a chance experiment."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "When drawing without replacement from 10 items, how many ordered pairs?",
+      "correct": "90 ordered pairs",
+      "correctExplanation": "Correct. 90 ordered pairs.",
+      "distractors": [
+        {
+          "answer": "100 ordered pairs",
+          "explanation": "Uses 10 × 10, which is with replacement."
+        },
+        {
+          "answer": "45 ordered pairs",
+          "explanation": "Counts unordered pairs instead."
+        },
+        {
+          "answer": "20 ordered pairs",
+          "explanation": "Uses addition instead of multiplication."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "What is the multiplication principle for counting outcomes?",
+      "correct": "Multiply choices at each step",
+      "correctExplanation": "Correct. Multiply choices at each step.",
+      "distractors": [
+        {
+          "answer": "Add choices at each step",
+          "explanation": "Adding gives total options, not combined outcomes."
+        },
+        {
+          "answer": "Subtract second from first",
+          "explanation": "Subtraction does not apply here."
+        },
+        {
+          "answer": "Divide total by number of steps",
+          "explanation": "Division is not the counting rule."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A coin flip followed by a card draw from 4 cards gives how many outcomes?",
+      "correct": "8 total outcomes",
+      "correctExplanation": "Correct. 8 total outcomes.",
+      "distractors": [
+        {
+          "answer": "6 total outcomes",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "4 total outcomes",
+          "explanation": "Only counts the cards."
+        },
+        {
+          "answer": "2 total outcomes",
+          "explanation": "Only counts the coin flip."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A two-step experiment has two {{blank:1}}, and the set of all possible results is called the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "stages",
+          "correctExplanation": "Each step or stage produces its own set of outcomes.",
+          "distractors": [
+            {
+              "answer": "answers",
+              "explanation": "Stages, not answers, describe the steps of an experiment.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "totals",
+              "explanation": "Totals describe sums, not experimental steps.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sample space",
+          "correctExplanation": "The sample space is the complete list of all outcomes.",
+          "distractors": [
+            {
+              "answer": "probability",
+              "explanation": "Probability is a number, not a set of outcomes.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "frequency",
+              "explanation": "Frequency counts how often outcomes occur, not the set itself.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "When sampling with {{blank:1}}, the item is returned before the next draw, so probabilities stay {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "replacement",
+          "correctExplanation": "With replacement means the item goes back into the pool.",
+          "distractors": [
+            {
+              "answer": "removal",
+              "explanation": "Removal describes without replacement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "reduction",
+              "explanation": "Reduction is not a sampling term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "constant",
+          "correctExplanation": "Returning the item means each draw has the same probability.",
+          "distractors": [
+            {
+              "answer": "halved",
+              "explanation": "Probabilities are not halved with replacement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "doubled",
+              "explanation": "Replacement does not double probabilities.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "If two events are independent, the outcome of one does not affect the other.",
+      "correct": "True",
+      "correctExplanation": "Independence means no influence between events.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses independent with dependent events."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Drawing without replacement from a bag makes the second draw independent of the first.",
+      "correct": "False",
+      "correctExplanation": "Without replacement changes the pool, making the draws dependent.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses dependent sampling with independent events."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "For two independent coin flips, P(HH) = 0.5 × 0.5 = 0.25.",
+      "correct": "True",
+      "correctExplanation": "The probability of H on each flip is 0.5, and independence allows multiplication.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks joint probability is found by addition."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "In a tree diagram, probabilities on each set of branches from a node should add to 1.",
+      "correct": "True",
+      "correctExplanation": "Branches from any node represent all possibilities at that step and must total 1.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks branch probabilities are independent of each other."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Drawing two cards without replacement from 52 gives 52 × 52 possible pairs.",
+      "correct": "False",
+      "correctExplanation": "Without replacement gives 52 × 51 ordered pairs because the first card is not returned.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Applies the with-replacement formula."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The probability of getting at least one head in two coin flips is 0.50.",
+      "correct": "False",
+      "correctExplanation": "P(at least one H) = 1 − P(TT) = 1 − 0.25 = 0.75.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses P(at least one) with P(exactly one) or P(one flip)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A tree diagram for a two-step experiment always has the same number of branches at each level.",
+      "correct": "False",
+      "correctExplanation": "If the number of options differs at each step, branch counts differ. For example, a coin then a die gives 2 then 6.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes symmetry in all tree diagrams."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Sampling with replacement from 5 items twice gives 25 equally likely outcomes.",
+      "correct": "False",
+      "correctExplanation": "There are 25 ordered outcomes (5 × 5), but they are equally likely only if each item is equally likely to be drawn. This statement omits that condition.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes equal likelihood without checking."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A bag has 4 red and 6 blue. One is drawn, replaced, then another drawn. What is P(red then blue)?",
+      "correct": "4/10 × 6/10 = 24/100",
+      "correctExplanation": "4/10 × 6/10 = 24/100",
+      "distractors": [
+        {
+          "answer": "4/10 + 6/10 = 1",
+          "explanation": "Adds instead of multiplying for a sequence."
+        },
+        {
+          "answer": "4/10 × 6/9 = 24/90",
+          "explanation": "Uses without-replacement denominator."
+        },
+        {
+          "answer": "4/10 × 4/10 = 16/100",
+          "explanation": "Uses red probability for both draws."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "How does a tree diagram show probability for two steps?",
+      "correct": "Multiply along the branches for each path",
+      "correctExplanation": "Multiply along the branches for each path",
+      "distractors": [
+        {
+          "answer": "Add all branch probabilities together",
+          "explanation": "Adding gives total probability, not path probability."
+        },
+        {
+          "answer": "List the highest probability branch only",
+          "explanation": "All paths must be considered."
+        },
+        {
+          "answer": "Divide the first step by the second",
+          "explanation": "Division is not the rule for path probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A jar has 3 green and 2 yellow. Without replacement, what is P(green then yellow)?",
+      "correct": "3/5 × 2/4 = 6/20",
+      "correctExplanation": "3/5 × 2/4 = 6/20",
+      "distractors": [
+        {
+          "answer": "3/5 × 2/5 = 6/25",
+          "explanation": "Does not adjust the denominator."
+        },
+        {
+          "answer": "3/5 + 2/5 = 1",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "2/5 × 3/4 = 6/20",
+          "explanation": "Reverses the order of draws."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "What is the total number of outcomes for rolling two dice?",
+      "correct": "36 outcomes",
+      "correctExplanation": "36 outcomes",
+      "distractors": [
+        {
+          "answer": "12 outcomes",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "6 outcomes",
+          "explanation": "Only counts one die."
+        },
+        {
+          "answer": "72 outcomes",
+          "explanation": "Doubles the correct count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why does 'without replacement' change the second probability?",
+      "correct": "Removing one item changes the pool size",
+      "correctExplanation": "Removing one item changes the pool size",
+      "distractors": [
+        {
+          "answer": "The first item was unlucky",
+          "explanation": "Luck is not a mathematical factor."
+        },
+        {
+          "answer": "The experiment resets between steps",
+          "explanation": "Without replacement does not reset."
+        },
+        {
+          "answer": "All probabilities are always equal",
+          "explanation": "Probabilities change when the pool changes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "In a two-step experiment with events A and B, when are they independent?",
+      "correct": "When P(B) is the same regardless of A",
+      "correctExplanation": "When P(B) is the same regardless of A",
+      "distractors": [
+        {
+          "answer": "When A and B cannot both occur",
+          "explanation": "Describes mutually exclusive, not independent."
+        },
+        {
+          "answer": "When they happen at the same time",
+          "explanation": "Simultaneous events can be dependent."
+        },
+        {
+          "answer": "When the sample space is small",
+          "explanation": "Size does not determine independence."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "A spinner has equal sections 1, 2, 3. What is P(odd then even) in two spins?",
+      "correct": "2/3 × 1/3 = 2/9",
+      "correctExplanation": "2/3 × 1/3 = 2/9",
+      "distractors": [
+        {
+          "answer": "1/3 × 1/3 = 1/9",
+          "explanation": "Uses P(one specific odd) instead of P(any odd)."
+        },
+        {
+          "answer": "2/3 + 1/3 = 1",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "1/2 × 1/2 = 1/4",
+          "explanation": "Assumes equal odd/even split."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A box has 5 balls numbered 1 to 5. Two drawn without replacement. How many ordered pairs?",
+      "correct": "20 ordered pairs",
+      "correctExplanation": "20 ordered pairs",
+      "distractors": [
+        {
+          "answer": "25 ordered pairs",
+          "explanation": "Uses 5 × 5, which is with replacement."
+        },
+        {
+          "answer": "10 ordered pairs",
+          "explanation": "Counts unordered pairs."
+        },
+        {
+          "answer": "15 ordered pairs",
+          "explanation": "Incorrect calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "What does each end-point of a tree diagram represent?",
+      "correct": "One combined outcome of all steps",
+      "correctExplanation": "One combined outcome of all steps",
+      "distractors": [
+        {
+          "answer": "The probability of the first step only",
+          "explanation": "End-points show the full sequence."
+        },
+        {
+          "answer": "A single branch value",
+          "explanation": "Each end-point is a complete path."
+        },
+        {
+          "answer": "The total of all probabilities",
+          "explanation": "The total is found by summing all paths."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which scenario is sampling with replacement?",
+      "correct": "Picking a name, returning it, then picking again",
+      "correctExplanation": "Picking a name from a hat, returning it, picking again",
+      "distractors": [
+        {
+          "answer": "Dealing cards one by one from a shuffled deck",
+          "explanation": "Dealing removes cards, which is without replacement."
+        },
+        {
+          "answer": "Choosing two different students for two roles",
+          "explanation": "Each student is chosen once."
+        },
+        {
+          "answer": "Removing a marble and keeping it to one side",
+          "explanation": "Keeping it aside is without replacement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "A coin is tossed then a card drawn from 4 suits. What fraction of outcomes include heads?",
+      "correct": "4 out of 8, which is 1/2",
+      "correctExplanation": "4 out of 8, which is 1/2",
+      "distractors": [
+        {
+          "answer": "1 out of 8",
+          "explanation": "Counts only one specific outcome with heads."
+        },
+        {
+          "answer": "4 out of 4, which is 1",
+          "explanation": "Ignores the coin toss."
+        },
+        {
+          "answer": "2 out of 8, which is 1/4",
+          "explanation": "Only counts two of the four suit options with heads."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "If P(A) = 0.3 and P(B) = 0.4, and A and B are independent, what is P(A then B)?",
+      "correct": "0.12",
+      "correctExplanation": "0.12",
+      "distractors": [
+        {
+          "answer": "0.70",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "0.10",
+          "explanation": "Incorrect multiplication."
+        },
+        {
+          "answer": "0.34",
+          "explanation": "Averages the two probabilities."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "In a two-step experiment, the total outcomes equal the number of outcomes in step 1 {{blank:1}} by the number in step 2. This is called the {{blank:2}} principle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiplied",
+          "correctExplanation": "The multiplication principle counts combined outcomes.",
+          "distractors": [
+            {
+              "answer": "divided",
+              "explanation": "Division does not count combined outcomes.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "added",
+              "explanation": "Addition counts alternatives, not sequences.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiplication",
+          "correctExplanation": "Also called the fundamental counting principle.",
+          "distractors": [
+            {
+              "answer": "addition",
+              "explanation": "Addition counts either/or, not both/and.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "subtraction",
+              "explanation": "Subtraction is not a counting principle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "When sampling {{blank:1}} replacement, the pool shrinks by one after each draw, making the draws {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "without",
+          "correctExplanation": "Without replacement removes items from the pool.",
+          "distractors": [
+            {
+              "answer": "with",
+              "explanation": "With replacement returns items.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "before",
+              "explanation": "Before is not a sampling term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "dependent",
+          "correctExplanation": "The second draw depends on what was removed first.",
+          "distractors": [
+            {
+              "answer": "independent",
+              "explanation": "Removing an item creates dependence.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "impossible",
+              "explanation": "The draws are still possible, just dependent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "To find the probability of a specific path in a tree diagram, {{blank:1}} the probabilities along that path. To find P(an event), {{blank:2}} the probabilities of all paths in that event.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiply",
+          "correctExplanation": "Path probability = product of branch probabilities.",
+          "distractors": [
+            {
+              "answer": "add",
+              "explanation": "Adding gives incorrect path probabilities.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "divide",
+              "explanation": "Division is not used for path probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "add",
+          "correctExplanation": "P(event) = sum of probabilities of all favourable paths.",
+          "distractors": [
+            {
+              "answer": "multiply",
+              "explanation": "Multiplying paths gives incorrect event probability.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "subtract",
+              "explanation": "Subtraction is not used for combining paths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "If events A and B are independent, then P(A and B) = P(A) {{blank:1}} P(B). If dependent, P(A and B) = P(A) × P(B {{blank:2}} A).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "×",
+          "correctExplanation": "For independent events, multiply the individual probabilities.",
+          "distractors": [
+            {
+              "answer": "+",
+              "explanation": "Addition finds P(A or B) for mutually exclusive events.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "÷",
+              "explanation": "Division is not used in this formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "given",
+          "correctExplanation": "P(B given A) is the conditional probability of B after A occurs.",
+          "distractors": [
+            {
+              "answer": "without",
+              "explanation": "Without does not describe conditional probability.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "before",
+              "explanation": "The notation means 'given', not 'before'.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Rolling a die twice with outcomes 1–6 gives {{blank:1}} total outcomes. The probability of rolling two sixes is 1 over {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "36",
+          "correctExplanation": "6 × 6 = 36 outcomes.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "12 is 6 + 6, not 6 × 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Only counts one roll.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "36",
+          "correctExplanation": "P(6,6) = 1/6 × 1/6 = 1/36.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "Uses 1/12 instead of 1/36.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Only considers one roll.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Drawing from 8 cards without replacement twice gives 8 × {{blank:1}} = {{blank:2}} ordered pairs.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "After removing one card, 7 remain.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 × 8 is the with-replacement count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Subtracts 2 instead of 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "56",
+          "correctExplanation": "8 × 7 = 56.",
+          "distractors": [
+            {
+              "answer": "64",
+              "explanation": "64 is 8 × 8, the with-replacement count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "48",
+              "explanation": "Incorrect multiplication.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "For dependent events, individual probabilities can be multiplied directly without adjustment.",
+      "correct": "False",
+      "correctExplanation": "Dependent events require conditional probability: P(A and B) = P(A) × P(B|A), not P(A) × P(B).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Applies the independence formula to dependent events."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Drawing with replacement always gives fewer outcomes than drawing without replacement.",
+      "correct": "False",
+      "correctExplanation": "With replacement from n items gives n² outcomes; without gives n(n−1). Since n² > n(n−1) for n ≥ 2, with replacement gives more.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Reverses the comparison."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A bag has 5 red, 3 blue. Without replacement, what is P(two reds)?",
+      "correct": "5/8 × 4/7 = 20/56",
+      "correctExplanation": "5/8 × 4/7 = 20/56",
+      "distractors": [
+        {
+          "answer": "5/8 × 5/8 = 25/64",
+          "explanation": "Uses with-replacement probabilities."
+        },
+        {
+          "answer": "5/8 × 3/7 = 15/56",
+          "explanation": "Uses P(blue) for the second draw."
+        },
+        {
+          "answer": "5/8 + 4/7 = 67/56",
+          "explanation": "Adds instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A tree diagram for drawing 2 from 4 colours (with replacement) has how many end-points?",
+      "correct": "16 end-points",
+      "correctExplanation": "16 end-points",
+      "distractors": [
+        {
+          "answer": "8 end-points",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "12 end-points",
+          "explanation": "Uses 4 × 3, which is without replacement."
+        },
+        {
+          "answer": "4 end-points",
+          "explanation": "Only counts one draw."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Two dice are rolled. What is P(sum equals 7)?",
+      "correct": "6/36 = 1/6",
+      "correctExplanation": "6/36 = 1/6",
+      "distractors": [
+        {
+          "answer": "7/36",
+          "explanation": "Assumes 7 out of 36 outcomes give a sum of 7."
+        },
+        {
+          "answer": "1/12",
+          "explanation": "Halves the correct probability."
+        },
+        {
+          "answer": "2/36 = 1/18",
+          "explanation": "Only counts two of the six favourable pairs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "From 10 students, 2 chosen without replacement for president and treasurer. How many ways?",
+      "correct": "90 ways",
+      "correctExplanation": "90 ways",
+      "distractors": [
+        {
+          "answer": "100 ways",
+          "explanation": "Uses 10 × 10, which allows the same student twice."
+        },
+        {
+          "answer": "45 ways",
+          "explanation": "Counts unordered pairs instead of ordered."
+        },
+        {
+          "answer": "20 ways",
+          "explanation": "Adds instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A spinner has P(red)=0.6, P(blue)=0.4. What is P(red both spins)?",
+      "correct": "0.36",
+      "correctExplanation": "0.36",
+      "distractors": [
+        {
+          "answer": "1.20",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "0.60",
+          "explanation": "Only considers one spin."
+        },
+        {
+          "answer": "0.24",
+          "explanation": "Multiplies 0.6 × 0.4 instead of 0.6 × 0.6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A jar has 6 green, 4 yellow. P(green then yellow) without replacement?",
+      "correct": "6/10 × 4/9 = 24/90",
+      "correctExplanation": "6/10 × 4/9 = 24/90",
+      "distractors": [
+        {
+          "answer": "6/10 × 4/10 = 24/100",
+          "explanation": "Does not adjust denominator."
+        },
+        {
+          "answer": "4/10 × 6/9 = 24/90",
+          "explanation": "Reverses the draw order."
+        },
+        {
+          "answer": "6/10 + 4/9 = 94/90",
+          "explanation": "Adds instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "How many outcomes when tossing a coin three times?",
+      "correct": "8 outcomes",
+      "correctExplanation": "8 outcomes",
+      "distractors": [
+        {
+          "answer": "6 outcomes",
+          "explanation": "Adds 2 + 2 + 2 instead of multiplying."
+        },
+        {
+          "answer": "3 outcomes",
+          "explanation": "Counts only one outcome per toss."
+        },
+        {
+          "answer": "4 outcomes",
+          "explanation": "Counts outcomes of only two tosses."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A deck has 4 aces in 52 cards. P(two aces) without replacement?",
+      "correct": "4/52 × 3/51",
+      "correctExplanation": "4/52 × 3/51",
+      "distractors": [
+        {
+          "answer": "4/52 × 4/52",
+          "explanation": "Does not adjust for removal of first ace."
+        },
+        {
+          "answer": "4/52 + 3/51",
+          "explanation": "Adds instead of multiplying."
+        },
+        {
+          "answer": "4/52 × 4/51",
+          "explanation": "Does not reduce the ace count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "P(at least one head in two fair coin flips)?",
+      "correct": "3/4",
+      "correctExplanation": "3/4",
+      "distractors": [
+        {
+          "answer": "1/2",
+          "explanation": "Only considers one flip."
+        },
+        {
+          "answer": "1/4",
+          "explanation": "Finds P(both heads) instead of at least one."
+        },
+        {
+          "answer": "2/4",
+          "explanation": "Counts HT and TH but misses HH."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A bag has 3 red, 2 blue, 1 green. Two drawn with replacement. How many distinct ordered pairs?",
+      "correct": "36 ordered pairs",
+      "correctExplanation": "36 ordered pairs",
+      "distractors": [
+        {
+          "answer": "30 ordered pairs",
+          "explanation": "Uses 6 × 5, which is without replacement."
+        },
+        {
+          "answer": "12 ordered pairs",
+          "explanation": "Adds outcomes instead of multiplying."
+        },
+        {
+          "answer": "15 ordered pairs",
+          "explanation": "Counts unordered combinations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Two cards drawn without replacement from 13 hearts. P(both hearts from full deck)?",
+      "correct": "13/52 × 12/51",
+      "correctExplanation": "13/52 × 12/51",
+      "distractors": [
+        {
+          "answer": "13/52 × 13/52",
+          "explanation": "With-replacement formula."
+        },
+        {
+          "answer": "13/52 × 12/52",
+          "explanation": "Wrong denominator for second draw."
+        },
+        {
+          "answer": "13/52 + 12/51",
+          "explanation": "Adds instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A biased coin has P(H)=0.7. What is P(TT) in two flips?",
+      "correct": "0.09",
+      "correctExplanation": "0.09",
+      "distractors": [
+        {
+          "answer": "0.30",
+          "explanation": "Uses P(T) once instead of squaring."
+        },
+        {
+          "answer": "0.49",
+          "explanation": "Finds P(HH) instead of P(TT)."
+        },
+        {
+          "answer": "0.21",
+          "explanation": "Finds P(H)×P(T) instead of P(T)×P(T)."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "P(red then blue) from 4 red and 6 blue without replacement = {{blank:1}}/10 × 6/{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "4 red out of 10 total.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is the blue count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the total, not the red count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "After removing one, 9 remain.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Does not adjust for removal.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "Subtracts 2 instead of 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "With replacement from n items, the number of ordered pairs is n {{blank:1}} n. Without replacement, it is n × (n − {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "×",
+          "correctExplanation": "Multiply choices at each step.",
+          "distractors": [
+            {
+              "answer": "+",
+              "explanation": "Addition counts alternatives, not sequences.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "÷",
+              "explanation": "Division is not the counting principle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "One item is removed, leaving n−1.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Only 1 item is removed per draw.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "n−0 = n, which is with replacement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "For independent events, P(A and B) = P(A) × P(B). Two fair coins: P(HH) = 0.5 × {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.5",
+          "correctExplanation": "Each coin has P(H) = 0.5.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "P(H) is 0.5, not 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.25",
+              "explanation": "0.25 is the answer, not the input.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.25",
+          "correctExplanation": "0.5 × 0.5 = 0.25.",
+          "distractors": [
+            {
+              "answer": "0.50",
+              "explanation": "Only uses one probability.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.00",
+              "explanation": "Adds instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A box has 7 items. Drawing 2 without replacement gives 7 × {{blank:1}} = {{blank:2}} ordered pairs.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "After one is drawn, 6 remain.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 × 7 is the with-replacement count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Subtracts 2 instead of 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "42",
+          "correctExplanation": "7 × 6 = 42.",
+          "distractors": [
+            {
+              "answer": "49",
+              "explanation": "49 is 7 × 7.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "35",
+              "explanation": "Incorrect multiplication.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "P(at least one 6 in two rolls) = 1 − P(no sixes) = 1 − ({{blank:1}}/6)² = 1 − {{blank:2}}/36.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "P(not 6) = 5/6 per roll.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1/6 is P(getting a 6).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6/6 = 1, meaning certain, which is wrong.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "25",
+          "correctExplanation": "(5/6)² = 25/36.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Adds 5+5 instead of squaring.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "36",
+              "explanation": "36/36 = 1, leaving P = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Drawing a king then a queen from 52 cards without replacement: P = 4/52 × {{blank:1}}/{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "There are still 4 queens after removing a king.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Only 3 if a queen was removed, but a king was removed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 counts both kings and queens.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "51",
+          "correctExplanation": "After one card drawn, 51 remain.",
+          "distractors": [
+            {
+              "answer": "52",
+              "explanation": "Does not adjust for removal.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "Subtracts 2 instead of 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A spinner with sections A(0.5), B(0.3), C(0.2) is spun twice. P(A then C) = {{blank:1}} × {{blank:2}} = 0.10.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.5",
+          "correctExplanation": "P(A) = 0.5.",
+          "distractors": [
+            {
+              "answer": "0.3",
+              "explanation": "0.3 is P(B).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.2",
+              "explanation": "0.2 is P(C).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.2",
+          "correctExplanation": "P(C) = 0.2.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "0.5 is P(A), not P(C).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.3",
+              "explanation": "0.3 is P(B).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "In a tree diagram, the sum of probabilities at each node's branches must equal {{blank:1}}. To find the probability of a path, {{blank:2}} along the branches.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "All possibilities from a node sum to 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Probabilities cannot all be zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "Probabilities at a node never exceed 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiply",
+          "correctExplanation": "Path probability = product of branch probabilities.",
+          "distractors": [
+            {
+              "answer": "add",
+              "explanation": "Adding gives incorrect path probabilities.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "divide",
+              "explanation": "Division is not used along paths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A bag has 3 red, 7 blue. P(blue then blue) with replacement = {{blank:1}}/10 × 7/10 = {{blank:2}}/100.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "P(blue) = 7/10 each draw with replacement.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the red count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the total.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "49",
+          "correctExplanation": "7 × 7 = 49.",
+          "distractors": [
+            {
+              "answer": "21",
+              "explanation": "Multiplies 3 × 7 instead of 7 × 7.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "14",
+              "explanation": "Adds 7 + 7 instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "From 6 items, the number of 2-item ordered selections without replacement is {{blank:1}}. With replacement it is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "6 × 5 = 30.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "36 is 6 × 6, the with-replacement count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "Adds instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "36",
+          "correctExplanation": "6 × 6 = 36.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "30 is the without-replacement count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "15",
+              "explanation": "Counts unordered pairs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Three coins are tossed. The total outcomes = 2 × 2 × {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Each coin has 2 outcomes.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the number of coins, not outcomes per coin.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is 2 × 3, not the outcome count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "2 × 2 × 2 = 8.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Adds 2+2+2 instead of multiplying.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Only counts two coins.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "P(no aces in two draws without replacement) from 52 cards = 48/52 × {{blank:1}}/{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "47",
+          "correctExplanation": "After one non-ace drawn, 47 non-aces remain.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "Does not adjust for the removed card.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "46",
+              "explanation": "Subtracts 2 non-aces instead of 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "51",
+          "correctExplanation": "After one card drawn, 51 remain.",
+          "distractors": [
+            {
+              "answer": "52",
+              "explanation": "Does not adjust the total.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "Subtracts 2 from total instead of 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A bag has 5 red and 5 blue. Two drawn without replacement. Why is P(red, red) not 1/4?",
+      "correct": "The second draw has 4/9, not 5/10",
+      "correctExplanation": "The second draw has 4/9, not 5/10",
+      "distractors": [
+        {
+          "answer": "Because red and blue are not equally likely",
+          "explanation": "They are equally likely on the first draw."
+        },
+        {
+          "answer": "Because the events are independent",
+          "explanation": "Without replacement makes them dependent."
+        },
+        {
+          "answer": "Because the order does not matter here",
+          "explanation": "Order affects the probability calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Compare P(at least one red) with and without replacement from 3 red, 7 blue.",
+      "correct": "Without replacement gives a slightly higher P",
+      "correctExplanation": "Without replacement gives a slightly higher P",
+      "distractors": [
+        {
+          "answer": "With replacement gives higher P",
+          "explanation": "Removing a non-red increases P(red) next draw."
+        },
+        {
+          "answer": "Both are exactly the same",
+          "explanation": "Replacement affects the probabilities."
+        },
+        {
+          "answer": "Cannot compare the two methods",
+          "explanation": "Both probabilities can be calculated and compared."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A tree diagram shows 3 paths to event E with probabilities 0.12, 0.08, 0.06. What is P(E)?",
+      "correct": "0.26",
+      "correctExplanation": "0.26",
+      "distractors": [
+        {
+          "answer": "0.12",
+          "explanation": "Uses only the highest path probability."
+        },
+        {
+          "answer": "0.000576",
+          "explanation": "Multiplies all three path probabilities."
+        },
+        {
+          "answer": "0.08",
+          "explanation": "Uses only the middle path."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Why does drawing cards without replacement make a tree diagram asymmetric?",
+      "correct": "Branch probabilities change based on prior draws",
+      "correctExplanation": "Branch probabilities change based on prior draws",
+      "distractors": [
+        {
+          "answer": "The cards are different sizes",
+          "explanation": "Physical size does not affect probability."
+        },
+        {
+          "answer": "The tree must be redrawn after each draw",
+          "explanation": "The tree is drawn once but with adjusted probabilities."
+        },
+        {
+          "answer": "Without replacement has fewer total branches",
+          "explanation": "The number of branches is the same; only probabilities differ."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Two events each have P=0.5. Are they always independent?",
+      "correct": "No; dependence is about mutual influence",
+      "correctExplanation": "No; dependence relates to how one affects the other",
+      "distractors": [
+        {
+          "answer": "Yes; equal probabilities means independence",
+          "explanation": "Equal P does not guarantee independence."
+        },
+        {
+          "answer": "Only if both events always succeed",
+          "explanation": "Success does not determine independence."
+        },
+        {
+          "answer": "They must be mutually exclusive events",
+          "explanation": "Mutually exclusive events with P=0.5 each cannot co-occur, so they are dependent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A class of 12 boys and 8 girls. Two chosen without replacement. P(both boys)?",
+      "correct": "12/20 × 11/19 = 132/380",
+      "correctExplanation": "12/20 × 11/19 = 132/380",
+      "distractors": [
+        {
+          "answer": "12/20 × 12/20 = 144/400",
+          "explanation": "With-replacement formula."
+        },
+        {
+          "answer": "12/20 × 11/20 = 132/400",
+          "explanation": "Wrong denominator for second draw."
+        },
+        {
+          "answer": "12/20 + 11/19 = 448/380",
+          "explanation": "Adds instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "When is using 'with replacement' a reasonable model for real-world sampling?",
+      "correct": "When the population far exceeds the sample",
+      "correctExplanation": "When the population is very large relative to sample",
+      "distractors": [
+        {
+          "answer": "When you sample the whole population",
+          "explanation": "Sampling the whole population is a census."
+        },
+        {
+          "answer": "Only in fair coin flip experiments",
+          "explanation": "Many real scenarios approximate with replacement."
+        },
+        {
+          "answer": "When every item is exactly identical",
+          "explanation": "Identical items do not require replacement modelling."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student calculates P(HH or TT) = P(HH) + P(TT) = 0.50. Is this correct for fair coins?",
+      "correct": "Yes; 0.25 + 0.25 = 0.50 by addition rule",
+      "correctExplanation": "Yes; 0.25 + 0.25 = 0.50 by addition rule",
+      "distractors": [
+        {
+          "answer": "No; the answer should be 0.25",
+          "explanation": "Only counts one of the two outcomes."
+        },
+        {
+          "answer": "No; you must multiply not add",
+          "explanation": "Addition is correct for mutually exclusive events."
+        },
+        {
+          "answer": "Yes, but only if coins are biased",
+          "explanation": "Fair coins give this result by symmetry."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A bag has 2 red, 3 blue, 5 green. Without replacement, P(red then green)?",
+      "correct": "2/10 × 5/9 = 10/90",
+      "correctExplanation": "2/10 × 5/9 = 10/90",
+      "distractors": [
+        {
+          "answer": "2/10 × 5/10 = 10/100",
+          "explanation": "Does not adjust denominator."
+        },
+        {
+          "answer": "5/10 × 2/9 = 10/90",
+          "explanation": "Reverses the draw order."
+        },
+        {
+          "answer": "2/10 + 5/9 = 68/90",
+          "explanation": "Adds instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "How does the number of ordered pairs compare to unordered pairs when drawing 2 from n?",
+      "correct": "Ordered pairs = 2 × unordered pairs",
+      "correctExplanation": "Ordered pairs = 2 × unordered pairs",
+      "distractors": [
+        {
+          "answer": "They are always equal",
+          "explanation": "Each unordered pair has two orderings."
+        },
+        {
+          "answer": "Ordered = unordered + n",
+          "explanation": "The relationship is multiplicative, not additive."
+        },
+        {
+          "answer": "Unordered pairs = 2 × ordered pairs",
+          "explanation": "Reverses the relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Three marbles drawn with replacement from 4. How many ordered outcomes?",
+      "correct": "64 outcomes",
+      "correctExplanation": "64 outcomes",
+      "distractors": [
+        {
+          "answer": "12 outcomes",
+          "explanation": "Adds 4 three times."
+        },
+        {
+          "answer": "24 outcomes",
+          "explanation": "Uses 4 × 3 × 2 (without replacement permutations)."
+        },
+        {
+          "answer": "81 outcomes",
+          "explanation": "Cubes 4 + extra; 4³ = 64."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Why can P(A and B) = P(A) × P(B) only be used for independent events?",
+      "correct": "Dependence means P(B) changes after A occurs",
+      "correctExplanation": "Dependence means P(B) changes after A occurs",
+      "distractors": [
+        {
+          "answer": "Because multiplication only works for small numbers",
+          "explanation": "Multiplication works for all probability values."
+        },
+        {
+          "answer": "Independent events always have P = 0.5",
+          "explanation": "Independence does not require P = 0.5."
+        },
+        {
+          "answer": "The formula was only proven for coins",
+          "explanation": "The rule applies to any independent events."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A lottery draws 5 from 45 without replacement. Why does order not matter for the jackpot?",
+      "correct": "Any arrangement of the same 5 numbers wins",
+      "correctExplanation": "Any arrangement of the same 5 numbers wins",
+      "distractors": [
+        {
+          "answer": "Because each number is equally likely",
+          "explanation": "True but does not explain why order is irrelevant."
+        },
+        {
+          "answer": "Because the draws are independent",
+          "explanation": "Without replacement makes them dependent."
+        },
+        {
+          "answer": "Order always matters in probability",
+          "explanation": "Many situations treat outcomes as unordered."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A biased spinner has P(A)=0.5, P(B)=0.3, P(C)=0.2. What is P(same result in two spins)?",
+      "correct": "0.25 + 0.09 + 0.04 = 0.38",
+      "correctExplanation": "0.25 + 0.09 + 0.04 = 0.38",
+      "distractors": [
+        {
+          "answer": "0.5 + 0.3 + 0.2 = 1.0",
+          "explanation": "Adds single-spin probabilities."
+        },
+        {
+          "answer": "0.5 × 0.3 × 0.2 = 0.03",
+          "explanation": "Multiplies all three."
+        },
+        {
+          "answer": "(0.5 + 0.3 + 0.2)² = 1.0",
+          "explanation": "Squares the total incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "P(at least one 6 in 3 rolls) = 1 − P(no 6)³ = 1 − (5/6)³ = 1 − {{blank:1}}/216 = {{blank:2}}/216.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "125",
+          "correctExplanation": "5³ = 125.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "Adds 5+5+5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "150",
+              "explanation": "Incorrect cube.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "91",
+          "correctExplanation": "216 − 125 = 91.",
+          "distractors": [
+            {
+              "answer": "86",
+              "explanation": "Incorrect subtraction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "Incorrect subtraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "From 10 items, the number of 3-item ordered selections without replacement is 10 × 9 × {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "After 2 removed, 8 remain.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Does not adjust for removals.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "Subtracts 3 instead of 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "720",
+          "correctExplanation": "10 × 9 × 8 = 720.",
+          "distractors": [
+            {
+              "answer": "1000",
+              "explanation": "10³ = 1000, which is with replacement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "27",
+              "explanation": "Adds instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A tree for 2 draws without replacement from 3R, 2B has first-level branches P(R) = {{blank:1}}/5 and P(B) = {{blank:2}}/5.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "3 red out of 5 total.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the blue count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 is the total.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "2 blue out of 5 total.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the red count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Only 1 if one blue was already drawn.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Comparing with and without replacement from 6R, 4B: P(RR) with = 36/100; P(RR) without = 6/10 × {{blank:1}}/9 = {{blank:2}}/90.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "After one red removed, 5 red remain.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Does not adjust for removal.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Confuses red and blue counts.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "6 × 5 = 30.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "Uses 6 × 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "24",
+              "explanation": "Uses 6 × 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "For mutually exclusive events, P(A or B) = P(A) + P(B). For non-exclusive, subtract P(A {{blank:1}} B) to avoid {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "and",
+          "correctExplanation": "P(A and B) is the overlap.",
+          "distractors": [
+            {
+              "answer": "or",
+              "explanation": "P(A or B) is what we are calculating.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "not",
+              "explanation": "P(not B) is unrelated.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "double-counting",
+          "correctExplanation": "Without subtracting, the overlap is counted twice.",
+          "distractors": [
+            {
+              "answer": "undercounting",
+              "explanation": "Without subtraction, we overcount.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "division",
+              "explanation": "Division is not the issue.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "P(both aces) from 52 cards without replacement = 4/52 × 3/51 = {{blank:1}}/{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "4 × 3 = 12.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "Uses 4 × 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "Adds 4 + 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2652",
+          "correctExplanation": "52 × 51 = 2652.",
+          "distractors": [
+            {
+              "answer": "2704",
+              "explanation": "Uses 52 × 52.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2600",
+              "explanation": "Incorrect multiplication.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A spinner (P(A)=0.4, P(B)=0.6) spun twice. P(different results) = 1 − P(same) = 1 − (0.16 + {{blank:1}}) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.36",
+          "correctExplanation": "P(BB) = 0.6² = 0.36.",
+          "distractors": [
+            {
+              "answer": "0.60",
+              "explanation": "Uses P(B) once instead of squaring.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.24",
+              "explanation": "Uses 0.4 × 0.6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.48",
+          "correctExplanation": "1 − (0.16 + 0.36) = 1 − 0.52 = 0.48.",
+          "distractors": [
+            {
+              "answer": "0.52",
+              "explanation": "This is P(same), not P(different).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.24",
+              "explanation": "Uses P(A)×P(B) only.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Drawing 2 from 5 without replacement: ordered selections = {{blank:1}}; unordered combinations = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20",
+          "correctExplanation": "5 × 4 = 20.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "Uses 5 × 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "Counts unordered pairs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "20 ÷ 2 = 10 (each pair counted twice in ordered).",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "Does not divide by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "Divides by 4 instead of 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "If P(rain) = 0.3 and days are independent, P(rain on both of two days) = {{blank:1}} and P(no rain on either day) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.09",
+          "correctExplanation": "0.3 × 0.3 = 0.09.",
+          "distractors": [
+            {
+              "answer": "0.60",
+              "explanation": "Adds instead of multiplying.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.30",
+              "explanation": "Only considers one day.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.49",
+          "correctExplanation": "0.7 × 0.7 = 0.49.",
+          "distractors": [
+            {
+              "answer": "0.70",
+              "explanation": "Only considers one day.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.40",
+              "explanation": "Uses 1 − 0.6 incorrectly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A 4-digit PIN using digits 0–9 with repetition allowed has {{blank:1}} total combinations. Without repetition: 10 × 9 × 8 × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10000",
+          "correctExplanation": "10⁴ = 10000.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "Adds 10 four times.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1000",
+              "explanation": "Only uses 10³.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "After 3 digits used, 7 remain.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Subtracts 4 instead of 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "Does not adjust for used digits.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Two events: P(A) = 0.5, P(B|A) = 0.4. P(A and B) = {{blank:1}}. If independent, P(A and B) would equal P(A) × P(B) = 0.5 × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.20",
+          "correctExplanation": "P(A) × P(B|A) = 0.5 × 0.4 = 0.20.",
+          "distractors": [
+            {
+              "answer": "0.90",
+              "explanation": "Adds 0.5 + 0.4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.45",
+              "explanation": "Averages the probabilities.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.4",
+          "correctExplanation": "If independent, P(B) = P(B|A) = 0.4.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "Uses P(A) instead of P(B).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.2",
+              "explanation": "Uses the joint probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "Comparing experiments: tossing 2 coins gives {{blank:1}} outcomes; rolling 2 dice gives {{blank:2}} outcomes.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "2 × 2 = 4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Only counts one coin.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "Uses 2³ instead of 2².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "36",
+          "correctExplanation": "6 × 6 = 36.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "Adds 6 + 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "Only counts one die.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "all"
+    }
+  ]
+}

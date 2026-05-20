@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M9SP03",
+    "level": 9,
+    "area": "Mathematics",
+    "ageBand": "13-14",
+    "keyKnowledge": "We are learning to design, test and refine algorithms based on geometric constructions and theorems.",
+    "generatedAt": null,
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to design, test and refine algorithms based on geometric constructions and theorems.",
+    "y": [
+      "Designing geometric algorithms requires us to combine precise mathematical knowledge with logical, step-by-step thinking.",
+      "Testing and refining algorithms develops our debugging skills and deepens our understanding of the underlying geometry.",
+      "These skills connect geometry to computer science and are used in CAD software, robotics and computational geometry."
+    ],
+    "eg": [
+      "Designing an algorithm to construct the perpendicular bisector of a line segment using compass and straightedge steps.",
+      "Writing pseudocode to determine whether a given set of three side lengths can form a valid triangle.",
+      "Creating an algorithm that tests whether a point lies inside a given circle.",
+      "Testing a bisection algorithm against edge cases and refining it to handle special configurations.",
+      "Designing an algorithm to calculate the area of any polygon given its vertex coordinates.",
+      "Comparing the efficiency of two different algorithms for the same geometric task."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "An algorithm is a finite sequence of well-defined steps that solves a specified problem.",
+      "correct": "True",
+      "correctExplanation": "An algorithm must have clear, unambiguous steps and terminate after a finite number of operations.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses algorithms with heuristics or informal strategies that may not be finite or well-defined."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "A compass and straightedge construction counts as an algorithm because it follows repeatable steps.",
+      "correct": "True",
+      "correctExplanation": "Classical geometric constructions are algorithms with defined inputs (given segments/angles) and precise operations.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes algorithms require digital computation, ignoring classical procedural definitions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The perpendicular bisector of a line segment passes through the segment's midpoint at a right angle.",
+      "correct": "True",
+      "correctExplanation": "By definition, a perpendicular bisector is perpendicular to the segment and intersects at its midpoint.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses perpendicular bisector with angle bisector or median."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "An algorithm must include a conditional statement to be considered valid.",
+      "correct": "False",
+      "correctExplanation": "Many algorithms are purely sequential with no branching. A sequence of compass-and-straightedge steps has no conditions.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses algorithm structure with programming constructs; not all algorithms need conditionals."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Pseudocode is a formal programming language used to run geometric algorithms on computers.",
+      "correct": "False",
+      "correctExplanation": "Pseudocode is an informal, human-readable notation for describing algorithms. It cannot be directly executed by a computer.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses pseudocode with actual code, not recognising it as a planning tool rather than executable language."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The triangle inequality states that any two sides of a triangle must together be longer than the third side.",
+      "correct": "True",
+      "correctExplanation": "For sides a, b, c: a + b > c, a + c > b, and b + c > a must all hold.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses the triangle inequality with other triangle properties such as the angle sum."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Testing an algorithm means checking its output against expected results for a range of inputs.",
+      "correct": "True",
+      "correctExplanation": "Testing verifies correctness by comparing outputs to known solutions across typical and edge cases.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes testing only checks whether the algorithm runs without crashing, ignoring output verification."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A flowchart uses arrows to show the sequence of steps but cannot represent decision points.",
+      "correct": "False",
+      "correctExplanation": "Flowcharts use diamond shapes to represent decision points with branching paths (yes/no or true/false).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Incorrectly limits flowchart notation, not recognising the standard diamond decision symbol."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Refining an algorithm means rewriting it in a different programming language.",
+      "correct": "False",
+      "correctExplanation": "Refining means improving the logic, correcting errors, or handling edge cases — not merely translating between languages.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses translation between languages with the process of debugging and improving algorithm logic."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "An angle bisector divides a line segment into two equal parts.",
+      "correct": "False",
+      "correctExplanation": "An angle bisector divides an angle into two equal parts, not a line segment. A perpendicular bisector divides a segment.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses angle bisector with perpendicular bisector; the two constructions serve different purposes."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A geometric construction performed with a ruler and protractor follows the same constraints as a compass-and-straightedge construction.",
+      "correct": "False",
+      "correctExplanation": "Compass-and-straightedge constructions prohibit measurement of lengths and angles; rulers and protractors allow direct measurement.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Fails to distinguish between construction tools, not recognising the measurement restriction in classical constructions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The output of a geometric algorithm is always a numerical value.",
+      "correct": "False",
+      "correctExplanation": "Geometric algorithms can output points, lines, angles, constructed figures, or boolean results (e.g. whether a point is inside a circle), not only numbers.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes geometric algorithms only produce numerical results, ignoring geometric objects as valid outputs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes the purpose of pseudocode in algorithm design?",
+      "correct": "It provides a structured, human-readable plan of the algorithm's logic before implementation in code",
+      "correctExplanation": "Pseudocode outlines the logical steps without language-specific syntax, aiding planning and communication.",
+      "distractors": [
+        {
+          "answer": "It converts geometric theorems directly into executable machine code for computer-aided design software",
+          "explanation": "Confuses pseudocode with a compiler or code generator."
+        },
+        {
+          "answer": "It replaces the need for testing by guaranteeing the algorithm will produce correct results every time",
+          "explanation": "Assumes pseudocode verifies correctness, confusing planning with testing."
+        },
+        {
+          "answer": "It measures the efficiency of an algorithm by counting the total number of computational steps required",
+          "explanation": "Confuses pseudocode with complexity analysis or benchmarking tools."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which one of the following geometric constructions can be performed using only a compass and straightedge?",
+      "correct": "Bisecting a given angle into two congruent parts using intersecting arcs drawn from the vertex",
+      "correctExplanation": "Angle bisection is one of the classical compass-and-straightedge constructions.",
+      "distractors": [
+        {
+          "answer": "Trisecting any given angle into three congruent parts using intersecting arcs drawn from the vertex",
+          "explanation": "Angle trisection is generally impossible with compass and straightedge alone, as proved by Wantzel."
+        },
+        {
+          "answer": "Constructing a square with area equal to that of a given circle using arcs and perpendicular lines",
+          "explanation": "Squaring the circle is impossible with compass and straightedge, as proved by Lindemann."
+        },
+        {
+          "answer": "Measuring the length of a curved arc segment using a straightedge placed along the curve's tangent",
+          "explanation": "Compass-and-straightedge constructions cannot measure curved lengths directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly identifies the shape used for a decision point in a standard flowchart?",
+      "correct": "A diamond shape that contains a condition with two or more branches for different outcomes",
+      "correctExplanation": "Diamonds represent decisions in flowcharts, with branches for yes/no or other conditional outcomes.",
+      "distractors": [
+        {
+          "answer": "A rectangle shape that contains a condition with two or more branches for different outcomes possible",
+          "explanation": "Rectangles represent process steps (actions), not decisions."
+        },
+        {
+          "answer": "An oval shape that contains a condition with arrows directing the algorithm to different next steps",
+          "explanation": "Ovals represent start and end points (terminators) in a flowchart, not decision points."
+        },
+        {
+          "answer": "A parallelogram shape that contains a condition evaluated before the algorithm continues to execute",
+          "explanation": "Parallelograms represent input/output operations, not conditional branching."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes the triangle inequality theorem?",
+      "correct": "The sum of the lengths of any two sides of a triangle must be strictly greater than the third side",
+      "correctExplanation": "The triangle inequality requires a + b > c for all three side combinations.",
+      "distractors": [
+        {
+          "answer": "The sum of the lengths of any two sides of a triangle must be equal to or less than the third side",
+          "explanation": "Reverses the inequality direction, which would make triangle formation impossible."
+        },
+        {
+          "answer": "The product of the lengths of any two sides of a triangle must be strictly greater than the third side",
+          "explanation": "Confuses addition with multiplication; the triangle inequality involves sums, not products."
+        },
+        {
+          "answer": "The difference of the lengths of any two sides of a triangle must be strictly greater than the third",
+          "explanation": "Confuses the sum condition with a difference condition, which relates to a different bound."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the first step in constructing the perpendicular bisector of segment AB?",
+      "correct": "Place the compass point on A and draw an arc with radius greater than half the length of segment AB",
+      "correctExplanation": "The first step sets a radius large enough so the arcs from both endpoints will intersect.",
+      "distractors": [
+        {
+          "answer": "Place the compass point on the midpoint of AB and draw an arc with radius equal to the full segment",
+          "explanation": "Finding the midpoint is the goal of the construction, not a starting step."
+        },
+        {
+          "answer": "Use a protractor to measure a right angle at the midpoint of AB and mark the perpendicular direction",
+          "explanation": "Protractors are not used in compass-and-straightedge constructions."
+        },
+        {
+          "answer": "Draw a line parallel to AB at a measured distance and connect its endpoints to form a perpendicular",
+          "explanation": "This describes a parallel construction method, not perpendicular bisector construction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which one of the following correctly defines an edge case in algorithm testing?",
+      "correct": "An input at the boundary of valid values that may reveal errors in the algorithm's handling of limits",
+      "correctExplanation": "Edge cases test extreme or boundary inputs where algorithms are most likely to fail.",
+      "distractors": [
+        {
+          "answer": "An input that produces the most common expected output, confirming the algorithm works for typical use, in this geometric context",
+          "explanation": "Describes a typical case, not an edge case; edge cases specifically target boundaries."
+        },
+        {
+          "answer": "An input that causes the algorithm to run the fastest, demonstrating optimal performance under load",
+          "explanation": "Describes a best-case performance scenario, not an edge case for correctness testing."
+        },
+        {
+          "answer": "An input chosen randomly from the full domain to check whether the algorithm is statistically reliable",
+          "explanation": "Describes random testing or sampling, not targeted edge case analysis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which one of the following terms describes a set of instructions that repeats a group of steps a specified number of times?",
+      "correct": "A loop, which executes the enclosed block of steps repeatedly until a termination condition is reached",
+      "correctExplanation": "Loops are the algorithmic structure for repetition, controlled by a counter or condition.",
+      "distractors": [
+        {
+          "answer": "A variable, which stores a changing value and updates it once each time the entire algorithm completes",
+          "explanation": "Variables store data but do not control repetition of steps."
+        },
+        {
+          "answer": "A function, which groups related steps together and executes them exactly once when called by name",
+          "explanation": "Functions organise code but do not inherently repeat; they run once per call."
+        },
+        {
+          "answer": "A conditional, which selects between different paths based on whether a tested statement is true or false",
+          "explanation": "Conditionals handle branching, not repetition."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which one of the following best describes the purpose of the Shoelace formula in geometry?",
+      "correct": "It calculates the area of a polygon given the coordinates of its vertices listed in sequential order",
+      "correctExplanation": "The Shoelace formula computes polygon area from ordered vertex coordinates using cross products.",
+      "distractors": [
+        {
+          "answer": "It calculates the perimeter of a polygon given the coordinates of its vertices listed in random order",
+          "explanation": "Confuses area calculation with perimeter; the Shoelace formula computes area, not perimeter."
+        },
+        {
+          "answer": "It determines whether a set of given points are collinear by checking if the cross products sum to zero",
+          "explanation": "Collinearity testing is related but distinct; the Shoelace formula calculates area directly."
+        },
+        {
+          "answer": "It finds the centroid of a polygon by averaging the coordinates of its vertices listed in any ordering",
+          "explanation": "Centroid calculation uses averaging of coordinates; the Shoelace formula is specifically for area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is an essential property of any well-defined algorithm?",
+      "correct": "It must terminate after a finite number of steps and produce a definite output for valid input data",
+      "correctExplanation": "Termination and determinism are fundamental requirements for an algorithm to be well-defined.",
+      "distractors": [
+        {
+          "answer": "It must use at least one loop structure and one conditional branch to handle all possible input cases",
+          "explanation": "Not all algorithms require loops or conditionals; sequential algorithms are valid."
+        },
+        {
+          "answer": "It must be written in a specific programming language before it can be considered a proper algorithm",
+          "explanation": "Algorithms are language-independent; they can be expressed in pseudocode, flowcharts, or natural language."
+        },
+        {
+          "answer": "It must produce a different output each time it runs to demonstrate that it adapts to changing contexts",
+          "explanation": "Deterministic algorithms produce the same output for the same input; variability is not required."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which one of the following describes how a compass is used in geometric constructions?",
+      "correct": "It draws arcs and circles of a set radius, transferring distances without direct measurement of length",
+      "correctExplanation": "A compass preserves a radius and creates arcs, enabling constructions without numerical measurement.",
+      "distractors": [
+        {
+          "answer": "It measures angles between two line segments and transfers the measured angle to a new vertex point",
+          "explanation": "Confuses compass with protractor; compasses create arcs, not angle measurements."
+        },
+        {
+          "answer": "It draws straight lines between two marked points and extends them to create parallel line segments",
+          "explanation": "Confuses compass with straightedge; compasses draw curves, not straight lines."
+        },
+        {
+          "answer": "It calculates the midpoint of a segment by measuring the total length and marking the halfway position",
+          "explanation": "Confuses compass use with ruler measurement; compass constructions avoid direct length calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which one of the following statements about the angle sum of a triangle is correct?",
+      "correct": "The interior angles of any triangle in Euclidean geometry sum to exactly one hundred and eighty degrees",
+      "correctExplanation": "The angle sum property is a fundamental theorem of Euclidean geometry.",
+      "distractors": [
+        {
+          "answer": "The interior angles of any triangle in Euclidean geometry sum to exactly three hundred and sixty degrees",
+          "explanation": "Confuses the triangle angle sum with the angle sum around a point."
+        },
+        {
+          "answer": "The interior angles of any triangle in Euclidean geometry sum to exactly ninety degrees in all triangles",
+          "explanation": "Confuses the total angle sum with the measure of a single right angle."
+        },
+        {
+          "answer": "The interior angles of any triangle in Euclidean geometry depend on the lengths of the triangle's sides",
+          "explanation": "While angles relate to sides via trigonometry, the sum is always 180° regardless of side lengths."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which one of the following is the correct order of operations for constructing an equilateral triangle on segment AB?",
+      "correct": "Set compass to AB length, draw arcs from A and B, then connect A and B to the intersection point",
+      "correctExplanation": "This produces a triangle with all sides equal to AB.",
+      "distractors": [
+        {
+          "answer": "Measure AB with a ruler, mark points at one-third and two-thirds along AB, then connect them above",
+          "explanation": "Uses measurement and does not create equal side lengths; confuses equilateral construction with trisection."
+        },
+        {
+          "answer": "Draw a circle centred at the midpoint of AB with radius AB, then connect the top of the circle to endpoints",
+          "explanation": "The radius should be AB centred at endpoints, not at the midpoint; this produces a different figure."
+        },
+        {
+          "answer": "Set compass to half of AB, draw arcs from A and B, then connect A and B to the arc intersection point",
+          "explanation": "Using half the length of AB produces an isosceles triangle, not an equilateral triangle."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "An algorithm is a {{blank:1}} sequence of steps designed to solve a specific {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "finite",
+          "correctExplanation": "Algorithms must terminate after a finite number of steps.",
+          "distractors": [
+            {
+              "answer": "infinite",
+              "explanation": "Confuses algorithms with non-terminating processes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "continuous",
+              "explanation": "Confuses discrete algorithmic steps with continuous processes.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "problem",
+          "correctExplanation": "Algorithms are designed to solve a defined problem or complete a defined task.",
+          "distractors": [
+            {
+              "answer": "equation",
+              "explanation": "Narrows the scope to algebra, ignoring broader problem-solving.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "diagram",
+              "explanation": "Confuses the output format with the purpose of the algorithm.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "In a standard flowchart, a diamond shape represents a {{blank:1}} and a rectangle represents a {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "decision",
+          "correctExplanation": "Diamonds contain conditions with branching paths for different outcomes.",
+          "distractors": [
+            {
+              "answer": "process",
+              "explanation": "Confuses the decision symbol with the process symbol.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "terminator",
+              "explanation": "Confuses the decision symbol with the start/end symbol.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "process",
+          "correctExplanation": "Rectangles represent actions or operations performed in the algorithm.",
+          "distractors": [
+            {
+              "answer": "decision",
+              "explanation": "Reverses the roles of rectangle and diamond symbols.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "input",
+              "explanation": "Confuses rectangles with parallelograms, which represent input/output.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A geometric algorithm that works correctly for all tested inputs is guaranteed to work for every possible input.",
+      "correct": "False",
+      "correctExplanation": "Testing can reveal bugs but cannot prove correctness for all inputs. A formal proof or exhaustive analysis is needed.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes testing is equivalent to formal verification, not recognising the limitations of finite test cases."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "An algorithm to determine whether three side lengths form a valid triangle checks all three triangle inequality conditions.",
+      "correct": "True",
+      "correctExplanation": "All three conditions (a+b>c, a+c>b, b+c>a) must hold; checking only one pair is insufficient.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Incorrectly assumes one inequality check is sufficient or that checking all three is redundant."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The order in which steps are executed in a geometric algorithm has no effect on the final output.",
+      "correct": "False",
+      "correctExplanation": "Step order matters in most algorithms. For example, drawing arcs before establishing reference points produces incorrect constructions.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes algorithmic steps are commutative, ignoring sequential dependencies in constructions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Debugging an algorithm means identifying where the logic produces incorrect results and correcting the steps.",
+      "correct": "True",
+      "correctExplanation": "Debugging involves locating logical errors and modifying the algorithm to produce correct outputs.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses debugging with other development activities such as documentation or optimisation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Two algorithms that solve the same geometric problem must use identical sequences of steps.",
+      "correct": "False",
+      "correctExplanation": "Multiple valid algorithms can solve the same problem. For example, the perpendicular bisector can be constructed by different arc methods.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes uniqueness of algorithmic solutions, not recognising that different approaches can achieve the same result."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "An algorithm expressed as pseudocode can always be translated into a flowchart representation.",
+      "correct": "True",
+      "correctExplanation": "Pseudocode and flowcharts are equivalent representations of algorithmic logic; any pseudocode can be expressed as a flowchart.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Incorrectly assumes flowcharts are more limited than pseudocode in expressive power."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A triangle-validity algorithm only needs to check whether all three side lengths are positive numbers.",
+      "correct": "False",
+      "correctExplanation": "Positive lengths are necessary but not sufficient. The algorithm must also verify all three triangle inequality conditions (a+b>c, a+c>b, b+c>a).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes positivity alone guarantees a valid triangle, ignoring the triangle inequality requirement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "A protractor measurement and a compass-and-straightedge construction produce results with the same level of precision.",
+      "correct": "False",
+      "correctExplanation": "Compass-and-straightedge constructions are theoretically exact, while protractor measurements are limited by the instrument's resolution and human reading error.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Fails to distinguish between exact geometric construction and approximate physical measurement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why an algorithm to construct a perpendicular bisector uses arcs from both endpoints of the segment?",
+      "correct": "Arcs from both endpoints intersect at points equidistant from A and B, defining the perpendicular bisector line",
+      "correctExplanation": "The locus of points equidistant from two endpoints is the perpendicular bisector of the segment joining them.",
+      "distractors": [
+        {
+          "answer": "Arcs from both endpoints create parallel lines that intersect at a right angle above the original segment line",
+          "explanation": "Arcs create circles, not parallel lines; the perpendicular bisector is defined by equidistance, not parallelism."
+        },
+        {
+          "answer": "Arcs from both endpoints measure the exact length of the segment, which is needed to calculate the midpoint",
+          "explanation": "The construction finds the midpoint without measuring; confuses the geometric method with arithmetic calculation."
+        },
+        {
+          "answer": "Arcs from both endpoints produce a circle that passes through both endpoints and has a diameter equal to AB",
+          "explanation": "This describes a circle with AB as diameter, not the perpendicular bisector construction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why side lengths 2, 3, and 8 cannot form a valid triangle?",
+      "correct": "The sum 2 + 3 = 5 is less than 8, which violates the triangle inequality requiring any two sides to exceed the third",
+      "correctExplanation": "The triangle inequality requires a + b > c for all combinations; 2 + 3 < 8 fails this condition.",
+      "distractors": [
+        {
+          "answer": "The product 2 × 3 = 6 is less than 8, which violates the triangle area rule requiring sides to multiply above the third",
+          "explanation": "Confuses the triangle inequality (sum condition) with multiplication; no such product rule exists."
+        },
+        {
+          "answer": "The difference 8 − 3 = 5 is greater than 2, which means the shortest side is too far from the other two side lengths",
+          "explanation": "Misapplies the relationship; the relevant condition is a + b > c, not c − b > a."
+        },
+        {
+          "answer": "The ratio 2 : 3 is not equal to 3 : 8, which violates the proportional similarity condition for triangle formation",
+          "explanation": "Confuses triangle validity with similarity conditions; proportional ratios are irrelevant to the triangle inequality."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which one of the following describes a situation where a geometric algorithm would need a conditional branch?",
+      "correct": "When the algorithm must handle different cases, such as checking whether a triangle is acute, right or obtuse",
+      "correctExplanation": "Classification problems require branching because different input categories lead to different processing paths.",
+      "distractors": [
+        {
+          "answer": "When the algorithm must repeat the same construction step multiple times on consecutive geometric figures given",
+          "explanation": "Repetition is handled by loops, not conditional branches."
+        },
+        {
+          "answer": "When the algorithm must store intermediate values like angle measures or side lengths for later use in steps",
+          "explanation": "Storing values uses variables, not conditional branches."
+        },
+        {
+          "answer": "When the algorithm must output its result in a specific format such as degrees or radians for the final answer",
+          "explanation": "Output formatting is a sequential step, not a decision requiring branching."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which one of the following distinguishes refining an algorithm from merely re-testing it with the same inputs?",
+      "correct": "Refining involves modifying the algorithm's logic or steps to improve correctness, efficiency or edge case handling",
+      "correctExplanation": "Refinement changes the algorithm itself; re-testing only re-runs unchanged logic on the same data.",
+      "distractors": [
+        {
+          "answer": "Refining involves running the algorithm again with identical inputs to confirm that the same outputs are produced",
+          "explanation": "This describes re-testing, not refining; refinement requires actual changes to the algorithm."
+        },
+        {
+          "answer": "Refining involves translating the algorithm into a different programming language without changing any of its logic",
+          "explanation": "Translation preserves logic; refinement changes logic to improve the algorithm."
+        },
+        {
+          "answer": "Refining involves adding comments and documentation to the algorithm without altering any of the procedural steps",
+          "explanation": "Documentation improves readability but does not refine the algorithm's logic or performance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why the Shoelace formula requires vertices to be listed in sequential order?",
+      "correct": "The formula computes signed areas of trapezoids between consecutive vertices, and scrambled order produces incorrect signs",
+      "correctExplanation": "Sequential ordering ensures each cross product contributes the correct signed area to the total.",
+      "distractors": [
+        {
+          "answer": "The formula only works for regular polygons and sequential ordering ensures all sides have identical measured lengths",
+          "explanation": "The Shoelace formula works for any simple polygon, not only regular ones; ordering is about signs, not regularity."
+        },
+        {
+          "answer": "The formula calculates perimeter first and then derives area, so vertices must be ordered by increasing distance",
+          "explanation": "The Shoelace formula computes area directly from coordinates; it does not calculate perimeter at any stage."
+        },
+        {
+          "answer": "The formula requires vertices to be sorted by their x-coordinates from smallest to largest for proper integration",
+          "explanation": "Sequential order means traversing the polygon boundary, not sorting by x-coordinate value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains the concept of algorithmic efficiency in the context of geometric constructions?",
+      "correct": "An efficient algorithm achieves the correct result using fewer steps or simpler operations than alternative approaches",
+      "correctExplanation": "Efficiency compares algorithms by the number and complexity of steps needed to reach the same result.",
+      "distractors": [
+        {
+          "answer": "An efficient algorithm is one that produces a more visually appealing geometric figure than the alternative methods",
+          "explanation": "Visual quality is irrelevant to algorithmic efficiency; efficiency measures resource usage, not aesthetics."
+        },
+        {
+          "answer": "An efficient algorithm is one that requires the most advanced mathematical knowledge to understand and implement",
+          "explanation": "Complexity of understanding is unrelated to efficiency; simpler algorithms can be more efficient."
+        },
+        {
+          "answer": "An efficient algorithm is one that can only be performed by a computer, not by hand with physical drawing instruments",
+          "explanation": "Efficiency is tool-independent; a compass construction can be more efficient than a digital alternative."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Which one of the following is an example of testing a geometric algorithm against an edge case?",
+      "correct": "Checking whether a triangle-validity algorithm correctly rejects input where two sides sum to exactly the third side",
+      "correctExplanation": "The boundary case a + b = c is degenerate (collinear points) and should be rejected by a correct algorithm.",
+      "distractors": [
+        {
+          "answer": "Checking whether a triangle-validity algorithm accepts a well-known Pythagorean triple such as the values 3, 4, 5",
+          "explanation": "A Pythagorean triple is a standard valid input, not an edge case; edge cases target boundaries."
+        },
+        {
+          "answer": "Running the algorithm once with a single set of valid side lengths and confirming the output says it is valid",
+          "explanation": "One successful run with a typical input is basic testing, not edge case testing."
+        },
+        {
+          "answer": "Asking a classmate to follow the algorithm's steps and confirming they arrive at the same output as the designer",
+          "explanation": "Peer review verifies clarity of instructions, not edge case handling."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why a compass-and-straightedge construction cannot trisect an arbitrary angle?",
+      "correct": "The operations of compass and straightedge generate only quadratic field extensions, which cannot produce cube roots",
+      "correctExplanation": "Angle trisection requires solving a cubic equation, which lies outside the constructible number field.",
+      "distractors": [
+        {
+          "answer": "The compass cannot draw arcs small enough to divide an angle into three precisely equal parts at any given vertex",
+          "explanation": "The limitation is algebraic, not physical; compass precision is not the issue with trisection impossibility."
+        },
+        {
+          "answer": "A straightedge is too imprecise to divide an arc into three equal parts because it can only create straight lines",
+          "explanation": "The impossibility is mathematical (proven by Wantzel), not a practical limitation of the straightedge tool."
+        },
+        {
+          "answer": "Trisection requires exactly three compass settings, but the construction only allows two arcs to be drawn at once",
+          "explanation": "There is no restriction on the number of arcs; the impossibility is algebraic, not procedural."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which one of the following explains why an algorithm to check if a point lies inside a circle uses a distance comparison?",
+      "correct": "A point is inside a circle when its distance from the centre is strictly less than the radius of the circle",
+      "correctExplanation": "The definition of a circle as the set of points at distance r from the centre gives the containment test.",
+      "distractors": [
+        {
+          "answer": "A point is inside a circle when its distance from the nearest point on the circumference is greater than the radius",
+          "explanation": "Distance from circumference is not the standard test; distance from centre compared to radius is correct."
+        },
+        {
+          "answer": "A point is inside a circle when both its x-coordinate and y-coordinate fall within the bounding square of the circle",
+          "explanation": "The bounding square test is an approximation; points in the corners of the square are outside the circle."
+        },
+        {
+          "answer": "A point is inside a circle when the angle subtended by the point at the centre is less than three hundred sixty degrees",
+          "explanation": "All points subtend 360° at the centre when considering the full rotation; this is not a containment test."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which one of the following correctly classifies the steps in an algorithm to construct an angle bisector?",
+      "correct": "Drawing arcs from the vertex, then arcs from the intersection points, is a sequence of geometric operations without branching",
+      "correctExplanation": "Angle bisector construction is a purely sequential algorithm with no decisions or repetitions.",
+      "distractors": [
+        {
+          "answer": "Drawing arcs from the vertex and then checking if the arcs intersect is a conditional branching operation in the algorithm",
+          "explanation": "The arcs always intersect when radius is sufficient; no conditional check is needed in a correct construction."
+        },
+        {
+          "answer": "Drawing arcs from the vertex and repeating until the bisector is exact is a loop structure requiring a termination condition",
+          "explanation": "The construction terminates in a fixed number of steps; no loop or iteration is needed."
+        },
+        {
+          "answer": "Drawing arcs from the vertex and then from the intersection points is a recursive procedure calling itself at each stage",
+          "explanation": "The construction is sequential, not recursive; each step is performed once in order."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best explains why algorithms should be tested with both valid and invalid inputs?",
+      "correct": "Testing with invalid inputs verifies that the algorithm correctly rejects or handles data that falls outside its domain",
+      "correctExplanation": "Robust algorithms must handle bad input gracefully, not just process good input correctly.",
+      "distractors": [
+        {
+          "answer": "Testing with invalid inputs confirms the algorithm runs faster when given incorrect data compared to correct data values",
+          "explanation": "Speed comparison between valid and invalid inputs is irrelevant to correctness testing."
+        },
+        {
+          "answer": "Testing with invalid inputs demonstrates the algorithm can convert incorrect data into correct results automatically each time",
+          "explanation": "Algorithms should reject invalid input, not transform it into correct output."
+        },
+        {
+          "answer": "Testing with invalid inputs ensures the algorithm's pseudocode is written in proper formatting with correct indentation levels",
+          "explanation": "Invalid input testing checks logic, not code formatting or presentation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which one of the following best describes the relationship between geometric theorems and geometric algorithms?",
+      "correct": "Theorems provide the mathematical justification for why an algorithm's steps produce a correct geometric result",
+      "correctExplanation": "Algorithms implement procedures; theorems prove those procedures yield correct results.",
+      "distractors": [
+        {
+          "answer": "Theorems are informal descriptions of algorithms written in everyday language without any mathematical notation or proof",
+          "explanation": "Theorems are formal mathematical statements with proofs, not informal algorithm descriptions."
+        },
+        {
+          "answer": "Theorems replace algorithms entirely because a proven theorem eliminates the need for a step-by-step computational process",
+          "explanation": "Theorems justify methods but do not replace the need for algorithms to carry out constructions."
+        },
+        {
+          "answer": "Theorems and algorithms are identical concepts expressed in different formats with no meaningful mathematical distinction",
+          "explanation": "Theorems state truths about geometry; algorithms are procedures. They serve different purposes."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The triangle inequality states that the {{blank:1}} of any two sides must be {{blank:2}} the third side.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sum",
+          "correctExplanation": "The triangle inequality involves adding two side lengths.",
+          "distractors": [
+            {
+              "answer": "product",
+              "explanation": "Confuses the additive condition with multiplication.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "difference",
+              "explanation": "Confuses the sum condition with subtraction.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "greater than",
+          "correctExplanation": "The strict inequality a + b > c is required for a valid triangle.",
+          "distractors": [
+            {
+              "answer": "equal to",
+              "explanation": "Allows degenerate collinear cases, which are not valid triangles.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "less than",
+              "explanation": "Reverses the inequality, contradicting the triangle inequality theorem.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Testing an algorithm involves comparing its {{blank:1}} against {{blank:2}} results for a range of inputs.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "output",
+          "correctExplanation": "Testing checks whether the algorithm produces the correct output.",
+          "distractors": [
+            {
+              "answer": "speed",
+              "explanation": "Confuses correctness testing with performance benchmarking.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "length",
+              "explanation": "Confuses the concept of output with the number of steps.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "expected",
+          "correctExplanation": "Expected results serve as the benchmark for verifying correctness.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Random results have no role in verifying algorithm correctness.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "approximate",
+              "explanation": "Testing checks for exact correctness, not approximations.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A perpendicular bisector divides a line segment into two {{blank:1}} parts and meets the segment at a {{blank:2}} angle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equal",
+          "correctExplanation": "The bisector passes through the midpoint, creating two equal halves.",
+          "distractors": [
+            {
+              "answer": "unequal",
+              "explanation": "Contradicts the definition of bisection.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "parallel",
+              "explanation": "Confuses the result of bisection with the orientation of the bisector.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "right",
+          "correctExplanation": "Perpendicular means meeting at 90 degrees.",
+          "distractors": [
+            {
+              "answer": "straight",
+              "explanation": "A straight angle is 180°, not the angle formed by perpendicular lines.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "acute",
+              "explanation": "An acute angle is less than 90°, not the angle at which a perpendicular meets a line.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Pseudocode describes an algorithm using {{blank:1}} language rather than a specific {{blank:2}} language.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "structured",
+          "correctExplanation": "Pseudocode uses structured, human-readable notation to describe logic.",
+          "distractors": [
+            {
+              "answer": "machine",
+              "explanation": "Machine language is binary code, not the human-readable form of pseudocode.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "spoken",
+              "explanation": "Spoken language lacks the structured format needed for algorithmic description.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "programming",
+          "correctExplanation": "Pseudocode is language-independent, unlike actual code in a programming language.",
+          "distractors": [
+            {
+              "answer": "natural",
+              "explanation": "Natural language is closer to pseudocode than programming language; the contrast is with formal code.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "mathematical",
+              "explanation": "Mathematical language is used within pseudocode; the contrast is with programming syntax.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Refining an algorithm involves identifying {{blank:1}} in the logic and modifying the steps to improve {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "errors",
+          "correctExplanation": "Refinement corrects logical mistakes found during testing.",
+          "distractors": [
+            {
+              "answer": "inputs",
+              "explanation": "Inputs are data, not flaws in the algorithm's logic.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "outputs",
+              "explanation": "Outputs are results, not problems to be identified in the algorithm.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "correctness",
+          "correctExplanation": "The primary goal of refinement is to make the algorithm produce correct results.",
+          "distractors": [
+            {
+              "answer": "appearance",
+              "explanation": "Visual appearance of pseudocode or flowcharts is not the focus of refinement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "speed",
+              "explanation": "While efficiency can be improved, the primary purpose of refinement is correctness.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A compass-and-straightedge construction achieves {{blank:1}} precision because it avoids direct {{blank:2}} of lengths.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exact",
+          "correctExplanation": "Compass-and-straightedge constructions are theoretically exact, relying on geometric properties.",
+          "distractors": [
+            {
+              "answer": "approximate",
+              "explanation": "Compass constructions are exact in theory, unlike measurement-based methods.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "estimated",
+              "explanation": "Estimation implies imprecision, contradicting the exactness of classical constructions.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "measurement",
+          "correctExplanation": "Classical constructions transfer and compare lengths without measuring numerical values.",
+          "distractors": [
+            {
+              "answer": "drawing",
+              "explanation": "Drawing is an essential part of construction; the restriction is on measurement, not drawing.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "calculation",
+              "explanation": "While no calculation is needed, the key restriction is on measurement of lengths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "An algorithm that constructs the circumcentre of a triangle by intersecting two perpendicular bisectors will also locate the centre of the circumscribed circle.",
+      "correct": "True",
+      "correctExplanation": "The circumcentre is the intersection of perpendicular bisectors and is equidistant from all three vertices, making it the centre of the circumscribed circle.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Fails to recognise that perpendicular bisector intersection defines the circumcentre by the equidistance property."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "An algorithm that checks side lengths 5, 10, and 5 against the triangle inequality should classify this as a valid triangle.",
+      "correct": "False",
+      "correctExplanation": "5 + 5 = 10, which is not strictly greater than 10. The triangle inequality requires strict inequality, so these lengths are collinear and do not form a triangle.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the weak inequality (≥) with the strict inequality (>) required by the triangle inequality."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Amir writes an algorithm to determine whether three given side lengths can form a triangle. His algorithm checks only whether a + b > c. Which one of the following identifies the flaw?",
+      "correct": "The algorithm must check all three inequalities: a + b > c, a + c > b, and b + c > a, not just one combination",
+      "correctExplanation": "Checking only one pair can pass invalid triangles. For example, a=1, b=2, c=10 passes a+b>c only if mislabelled.",
+      "distractors": [
+        {
+          "answer": "The algorithm should check whether a + b + c equals one hundred and eighty, which is the correct triangle condition for valid triangles, in this geometric context",
+          "explanation": "The angle sum rule (180°) applies to angles, not side lengths; it cannot validate side lengths."
+        },
+        {
+          "answer": "The algorithm should check whether a × b > c², which is the correct multiplication-based triangle inequality test for all side lengths",
+          "explanation": "No such multiplication-based inequality exists for triangle validity; the condition is additive."
+        },
+        {
+          "answer": "The algorithm is correct because checking one inequality is sufficient when the sides are sorted in ascending order",
+          "explanation": "Even with sorted sides, one check is insufficient. For a ≤ b ≤ c, a + b > c is necessary but checking the smallest pair is the critical one, not any single check."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Lila designs a flowchart to classify a triangle as equilateral, isosceles, or scalene. Which one of the following describes the correct decision structure?",
+      "correct": "First check if all three sides are equal, then check if exactly two sides are equal, then classify as scalene otherwise",
+      "correctExplanation": "Checking equilateral first avoids misclassifying it as isosceles; the remaining cases separate naturally.",
+      "distractors": [
+        {
+          "answer": "First check if two sides are equal and classify as isosceles, then check if the third side also matches for equilateral",
+          "explanation": "Checking isosceles first would misclassify equilateral triangles as isosceles before the equilateral check."
+        },
+        {
+          "answer": "Check all three conditions simultaneously in a single decision box and output the classification in one branching step",
+          "explanation": "A single decision box cannot evaluate three mutually exclusive conditions; sequential checks are needed."
+        },
+        {
+          "answer": "First check if no sides are equal and classify as scalene, then check equilateral, then classify the remainder as isosceles",
+          "explanation": "Checking scalene first risks misclassifying borderline cases and does not follow standard decision hierarchy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Jade uses the Shoelace formula to calculate the area of a quadrilateral with vertices (0,0), (4,0), (4,3), (0,3). Which one of the following gives the correct area?",
+      "correct": "12 square units, computed as half the absolute value of the sum of the cross products of consecutive vertex pairs",
+      "correctExplanation": "Shoelace: ½|x₁y₂−x₂y₁ + x₂y₃−x₃y₂ + x₃y₄−x₄y₃ + x₄y₁−x₁y₄| = ½|0+12+0−0−0+0−0−0| = 12.",
+      "distractors": [
+        {
+          "answer": "16 square units, computed by summing the products of all four x-coordinates with all four y-coordinates in sequence",
+          "explanation": "Confuses the Shoelace cross products with simple coordinate multiplication, producing an incorrect total."
+        },
+        {
+          "answer": "7 square units, computed as half the perimeter of the quadrilateral using the vertex coordinate differences measured",
+          "explanation": "Confuses area with half-perimeter; the Shoelace formula computes area, not a perimeter-based quantity."
+        },
+        {
+          "answer": "24 square units, computed as the absolute value of the sum of cross products without the required factor of one half",
+          "explanation": "Omits the ½ factor from the Shoelace formula, doubling the correct area result."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Kofi writes pseudocode to construct the perpendicular bisector of segment PQ. His code places the compass at P, draws an arc, then draws the bisector. Which one of the following identifies the missing step?",
+      "correct": "He must also place the compass at Q and draw a second arc with the same radius to find the intersection points",
+      "correctExplanation": "The perpendicular bisector is determined by two intersection points of equal-radius arcs from both endpoints.",
+      "distractors": [
+        {
+          "answer": "He must measure the length of PQ with a ruler and mark the exact midpoint before drawing any arcs from the endpoints",
+          "explanation": "Measuring defeats the purpose of the construction; the midpoint is found through arc intersection, not measurement."
+        },
+        {
+          "answer": "He must draw a complete circle centred at P rather than an arc, to ensure the perpendicular bisector crosses the circle",
+          "explanation": "A full circle is unnecessary; arcs are sufficient, and the bisector is not defined by crossing a circle centred at P."
+        },
+        {
+          "answer": "He must use a protractor to verify the angle is exactly ninety degrees after drawing the first arc from endpoint P",
+          "explanation": "Protractors are not used in compass-and-straightedge constructions; the right angle emerges from the method."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Priya tests her triangle-validity algorithm with input (3, 4, 7). The algorithm outputs 'valid triangle'. Which one of the following correctly identifies the bug?",
+      "correct": "The algorithm uses a weak inequality (≥) instead of a strict inequality (>), accepting the degenerate case 3 + 4 = 7",
+      "correctExplanation": "3 + 4 = 7 fails the strict inequality a + b > c, so (3,4,7) is collinear and not a valid triangle.",
+      "distractors": [
+        {
+          "answer": "The algorithm incorrectly calculates 3 + 4 as 8 instead of 7, which causes it to pass the triangle inequality check, in this geometric context",
+          "explanation": "An arithmetic error in the algorithm is unlikely; the systematic issue is the inequality type, not addition."
+        },
+        {
+          "answer": "The algorithm produces identical results because the Pythagorean theorem implies the triangle inequality is satisfied",
+          "explanation": "Even if it skipped one check, the root cause is using ≥ rather than >, since 3 + 4 = 7 exactly."
+        },
+        {
+          "answer": "The algorithm crashes because the Pythagorean theorem cannot be applied to lengths that do not form a valid geometric triangle",
+          "explanation": "The algorithm tests validity for any triangle, not just right triangles; Pythagorean triples are irrelevant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Sam designs an algorithm to find the incentre of a triangle. Which one of the following correctly describes the key construction step?",
+      "correct": "Construct the angle bisectors of at least two interior angles and find their intersection point inside the triangle",
+      "correctExplanation": "The incentre is the intersection of angle bisectors and is equidistant from all three sides.",
+      "distractors": [
+        {
+          "answer": "Construct the perpendicular bisectors of at least two sides and find their intersection point inside the triangle",
+          "explanation": "Perpendicular bisectors locate the circumcentre, not the incentre; different constructions serve different centres."
+        },
+        {
+          "answer": "Construct the medians from at least two vertices to the midpoints of opposite sides and find their intersection",
+          "explanation": "Medians locate the centroid, not the incentre; the centroid divides each median in a 2:1 ratio."
+        },
+        {
+          "answer": "Construct the altitudes from at least two vertices perpendicular to opposite sides and find their intersection point",
+          "explanation": "Altitudes locate the orthocentre, not the incentre; the orthocentre may lie outside the triangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Yen writes an algorithm to determine whether a point (3, 2) lies inside the circle centred at (1, 1) with radius 3. Which one of the following shows the correct computation?",
+      "correct": "Distance = √((3−1)² + (2−1)²) = √5 ≈ 2.24, which is less than 3, so the point is inside the circle",
+      "correctExplanation": "The point-to-centre distance √5 ≈ 2.24 < 3 = radius, confirming the point lies within the circle.",
+      "distractors": [
+        {
+          "answer": "Distance = |3−1| + |2−1| = 3, which equals the radius, so the point lies exactly on the circle's circumference",
+          "explanation": "Uses Manhattan distance instead of Euclidean distance; circle containment requires the Euclidean metric."
+        },
+        {
+          "answer": "Distance = (3−1)² + (2−1)² = 5, which is greater than 3, so the point lies outside the boundary of the circle",
+          "explanation": "Compares the squared distance to the radius instead of to the squared radius; 5 < 9 = 3², so the point is inside."
+        },
+        {
+          "answer": "Distance = √((3+1)² + (2+1)²) = √25 = 5, which is greater than 3, so the point lies outside the circle boundary",
+          "explanation": "Adds coordinates instead of subtracting, producing an incorrect distance calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Rosa designs an algorithm to calculate the area of triangle with vertices A(0,0), B(6,0), C(3,4). Which one of the following applies the Shoelace formula correctly?",
+      "correct": "Area = ½|0×0 − 6×0 + 6×4 − 3×0 + 3×0 − 0×4| = ½|24| = 12 square units, matching the base-height calculation",
+      "correctExplanation": "Shoelace: ½|x₁y₂−x₂y₁ + x₂y₃−x₃y₂ + x₃y₁−x₁y₃| = ½|0−0+24−0+0−0| = 12. Also: ½×6×4 = 12.",
+      "distractors": [
+        {
+          "answer": "Area = ½|0×6 + 6×3 + 3×0 − 0×0 − 0×3 − 4×0| = ½|18| = 9 square units, using the simplified coordinate method",
+          "explanation": "Applies the formula incorrectly by multiplying x-coordinates with each other instead of cross-multiplying x and y."
+        },
+        {
+          "answer": "Area = |0×0 − 6×0 + 6×4 − 3×0 + 3×0 − 0×4| = |24| = 24 square units, without the halving step in the formula",
+          "explanation": "Omits the essential ½ factor from the Shoelace formula, doubling the correct area."
+        },
+        {
+          "answer": "Area = ½|(0+6+3) × (0+0+4)| = ½|36| = 18 square units, by multiplying the coordinate sums together directly",
+          "explanation": "Incorrectly sums coordinates and multiplies; the Shoelace formula uses cross products, not coordinate sums."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Marcus writes an algorithm to construct an equilateral triangle on segment AB of length 5 cm. After drawing arcs from A and B, he finds no intersection. Which one of the following identifies the error?",
+      "correct": "The compass radius was set to less than 5 cm, so the arcs from A and B did not reach far enough to intersect",
+      "correctExplanation": "For an equilateral triangle, the radius must equal AB; a shorter radius prevents the arcs from meeting.",
+      "distractors": [
+        {
+          "answer": "The compass radius was set to exactly 5 cm, which creates arcs that are tangent but produce only a single point, in this geometric context",
+          "explanation": "A radius equal to AB produces two intersection points (one on each side of AB), not a tangent."
+        },
+        {
+          "answer": "The straightedge was too short to connect the intersection point back to both endpoints of the original segment line",
+          "explanation": "Straightedge length is irrelevant; the issue is compass radius, not the connecting step."
+        },
+        {
+          "answer": "The segment AB must be horizontal for the equilateral triangle construction to work correctly with compass arcs drawn",
+          "explanation": "Segment orientation does not affect compass-and-straightedge constructions; they work at any angle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Linh adapts a triangle-validity algorithm to also classify valid triangles as right-angled. Which one of the following correctly extends the algorithm?",
+      "correct": "After confirming validity, check whether a² + b² = c² for the longest side c, and classify as right-angled if true",
+      "correctExplanation": "The Pythagorean theorem characterises right triangles; checking against the longest side is correct.",
+      "distractors": [
+        {
+          "answer": "After confirming validity, check whether a + b = c for the longest side c, and classify as right-angled if this holds",
+          "explanation": "a + b = c is the degenerate case (collinear points), not the right-angle condition; confuses inequality with Pythagoras."
+        },
+        {
+          "answer": "After confirming validity, check whether all three angles are less than ninety degrees and classify accordingly each time",
+          "explanation": "This classifies acute triangles, not right triangles; a right triangle has one angle equal to exactly 90°."
+        },
+        {
+          "answer": "After confirming validity, check whether the three sides are in the ratio 3 : 4 : 5 and classify as right-angled only then",
+          "explanation": "3:4:5 is one right triangle, but not the only one; the check must use a² + b² = c² for any right triangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Anika tests her perpendicular bisector algorithm using segment AB where A and B are the same point. Which one of the following describes the expected behaviour?",
+      "correct": "The algorithm should identify this as an invalid input because a zero-length segment has no defined perpendicular bisector",
+      "correctExplanation": "A degenerate segment of length zero has no midpoint to bisect and no direction to be perpendicular to.",
+      "distractors": [
+        {
+          "answer": "The algorithm should output every line through point A because all directions are perpendicular to a single point location",
+          "explanation": "While geometrically arguable, an algorithm should reject degenerate input rather than outputting infinite solutions."
+        },
+        {
+          "answer": "The algorithm should output a single point at A because the perpendicular bisector of a zero-length segment is the point",
+          "explanation": "A perpendicular bisector is a line, not a point; a zero-length segment makes the construction undefined."
+        },
+        {
+          "answer": "The algorithm should draw a circle centred at A with radius zero, which represents the degenerate bisector of the segment",
+          "explanation": "A zero-radius circle is a point, not a line; the perpendicular bisector construction is undefined for coincident points."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Will designs an algorithm to determine the type of quadrilateral given four vertex coordinates. Which one of the following is the most robust first step?",
+      "correct": "Calculate all four side lengths and both diagonal lengths using the distance formula applied to consecutive vertex pairs",
+      "correctExplanation": "Side and diagonal lengths provide the data needed to classify quadrilaterals by their geometric properties.",
+      "distractors": [
+        {
+          "answer": "Sort the four vertices alphabetically by their label names and then connect them in that alphabetical order for analysis",
+          "explanation": "Alphabetical sorting of labels has no geometric meaning; vertex order must follow the polygon boundary."
+        },
+        {
+          "answer": "Calculate the perimeter by summing all four side lengths and compare the result to known quadrilateral perimeter values",
+          "explanation": "Perimeter alone cannot distinguish quadrilateral types; squares and rhombi can share the same perimeter."
+        },
+        {
+          "answer": "Measure each interior angle using the arctangent function and classify based on whether any angle exceeds ninety degrees",
+          "explanation": "While angles help, calculating all side and diagonal lengths first is more robust and enables classification by congruence."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "To check whether side lengths 5, 7, and 11 form a valid triangle, the algorithm verifies that {{blank:1}} + {{blank:2}} is greater than 11.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "The two shorter sides must sum to more than the longest side.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "While 7 + 11 > 5 is also checked, the critical test is 5 + 7 > 11.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "11",
+              "explanation": "Using 11 here would test 11 + 7 > 11, which is trivially true and not the critical check.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "5 + 7 = 12 > 11, so the triangle inequality holds for this combination.",
+          "distractors": [
+            {
+              "answer": "11",
+              "explanation": "5 + 11 > 11 is trivially true; the critical check involves the two shorter sides.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is not one of the given side lengths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "The Shoelace formula calculates the {{blank:1}} of a polygon from the {{blank:2}} of its vertices listed in order.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "area",
+          "correctExplanation": "The Shoelace formula computes the area using cross products of consecutive vertex coordinates.",
+          "distractors": [
+            {
+              "answer": "perimeter",
+              "explanation": "Perimeter requires summing side lengths, not cross products of coordinates.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "centroid",
+              "explanation": "The centroid uses coordinate averaging, not the Shoelace cross-product method.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "coordinates",
+          "correctExplanation": "The formula operates on the x,y coordinate pairs of each vertex.",
+          "distractors": [
+            {
+              "answer": "angles",
+              "explanation": "Angles are not inputs to the Shoelace formula; only coordinates are used.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "lengths",
+              "explanation": "Side lengths are not direct inputs; the formula uses vertex coordinates.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "In a flowchart, a {{blank:1}} shape represents a decision and the possible outcomes are shown as {{blank:2}} paths.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "diamond",
+          "correctExplanation": "Standard flowchart notation uses diamonds for decision points.",
+          "distractors": [
+            {
+              "answer": "rectangle",
+              "explanation": "Rectangles represent process steps, not decisions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "circle",
+              "explanation": "Circles are not standard flowchart symbols for decisions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "branching",
+          "correctExplanation": "Decision outcomes lead to different branches in the flowchart.",
+          "distractors": [
+            {
+              "answer": "parallel",
+              "explanation": "Parallel paths imply simultaneous execution, not decision outcomes.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "reversed",
+              "explanation": "Reversed paths imply going backwards, not taking different routes based on conditions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "To find the circumcentre, construct the perpendicular {{blank:1}} of at least two {{blank:2}} of the triangle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "bisectors",
+          "correctExplanation": "Perpendicular bisectors of sides intersect at the circumcentre.",
+          "distractors": [
+            {
+              "answer": "lines",
+              "explanation": "Generic lines do not define the circumcentre construction.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "altitudes",
+              "explanation": "Altitudes locate the orthocentre, not the circumcentre.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sides",
+          "correctExplanation": "The circumcentre is found by bisecting the sides perpendicularly.",
+          "distractors": [
+            {
+              "answer": "angles",
+              "explanation": "Bisecting angles locates the incentre, not the circumcentre.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "medians",
+              "explanation": "Medians connect vertices to midpoints but do not define the circumcentre.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A point lies inside a circle when its {{blank:1}} from the centre is {{blank:2}} the radius.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "distance",
+          "correctExplanation": "The containment test compares Euclidean distance from the centre to the radius.",
+          "distractors": [
+            {
+              "answer": "angle",
+              "explanation": "Angles do not determine whether a point is inside or outside a circle.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "coordinate",
+              "explanation": "A single coordinate is insufficient; distance is the correct measure.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "less than",
+          "correctExplanation": "Points inside the circle are strictly closer to the centre than the radius.",
+          "distractors": [
+            {
+              "answer": "equal to",
+              "explanation": "Points at distance equal to the radius lie on the circle, not inside it.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "greater than",
+              "explanation": "Points at distance greater than the radius lie outside the circle.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Priya's algorithm classifies triangle (3, 4, 5) as {{blank:1}} because 3² + 4² {{blank:2}} 5².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "right-angled",
+          "correctExplanation": "The Pythagorean relationship 9 + 16 = 25 confirms a right angle.",
+          "distractors": [
+            {
+              "answer": "equilateral",
+              "explanation": "An equilateral triangle has all sides equal; 3, 4, 5 are not equal.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "obtuse",
+              "explanation": "An obtuse triangle would have a² + b² < c², not a² + b² = c².",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "equals",
+          "correctExplanation": "9 + 16 = 25, satisfying the Pythagorean theorem exactly.",
+          "distractors": [
+            {
+              "answer": "exceeds",
+              "explanation": "If a² + b² > c², the triangle is acute, not right-angled.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "is less than",
+              "explanation": "If a² + b² < c², the triangle is obtuse, not right-angled.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "An equilateral triangle constructed on segment AB requires setting the compass radius to {{blank:1}} the length of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equal to",
+          "correctExplanation": "All sides must equal AB, so the compass radius matches the segment length.",
+          "distractors": [
+            {
+              "answer": "half",
+              "explanation": "Half the segment length would produce an isosceles triangle, not equilateral.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "double",
+              "explanation": "Double the segment length would produce a much larger triangle with unequal sides.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "AB",
+          "correctExplanation": "The segment AB defines the side length of the equilateral triangle.",
+          "distractors": [
+            {
+              "answer": "the radius",
+              "explanation": "Circular reasoning; the radius is what is being set, not the reference length.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "the diagonal",
+              "explanation": "A segment has no diagonal; diagonals belong to polygons with four or more sides.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Marcus tests his algorithm with input (1, 1, 10). The algorithm should {{blank:1}} this input because 1 + 1 is {{blank:2}} 10.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "reject",
+          "correctExplanation": "1 + 1 = 2 < 10, violating the triangle inequality, so the input is invalid.",
+          "distractors": [
+            {
+              "answer": "accept",
+              "explanation": "Accepting would mean the algorithm has a bug; these lengths cannot form a triangle.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "ignore",
+              "explanation": "Algorithms should process all inputs, not skip them; rejection is the correct response.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "less than",
+          "correctExplanation": "2 < 10, so the triangle inequality a + b > c fails.",
+          "distractors": [
+            {
+              "answer": "equal to",
+              "explanation": "1 + 1 = 2, not 10; this is arithmetically incorrect.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "greater than",
+              "explanation": "1 + 1 = 2 < 10; the sum is clearly less, not greater.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "The angle bisector algorithm first draws an arc from the {{blank:1}} to create two intersection points on the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertex",
+          "correctExplanation": "The first arc is centred at the vertex of the angle being bisected.",
+          "distractors": [
+            {
+              "answer": "midpoint",
+              "explanation": "There is no midpoint in an angle bisector construction; the arc originates from the vertex.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "endpoint",
+              "explanation": "Endpoint is ambiguous; the specific term is vertex for the point where the angle is formed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "arms",
+          "correctExplanation": "The arc crosses both arms (rays) of the angle, creating the reference points for the next step.",
+          "distractors": [
+            {
+              "answer": "bisector",
+              "explanation": "The bisector has not been drawn yet; the arc crosses the original angle's arms.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "base",
+              "explanation": "Angles do not have a base in this context; the arc crosses the two rays forming the angle.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A {{blank:1}} algorithm checks whether a point (x, y) satisfies x² + y² < r² to determine if it lies {{blank:2}} the circle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "containment",
+          "correctExplanation": "The algorithm tests whether the point is contained within the circle.",
+          "distractors": [
+            {
+              "answer": "intersection",
+              "explanation": "Intersection tests whether two shapes overlap, not whether a point is inside one shape.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "tangency",
+              "explanation": "Tangency tests whether a line touches a circle at one point, not point containment.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inside",
+          "correctExplanation": "x² + y² < r² means the point's distance from the origin is less than r.",
+          "distractors": [
+            {
+              "answer": "outside",
+              "explanation": "x² + y² < r² indicates inside, not outside; outside would require x² + y² > r².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "on",
+              "explanation": "x² + y² = r² indicates on the circle; strict inequality means inside.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Lila's algorithm constructs the {{blank:1}} of triangle ABC by finding where two {{blank:2}} from vertices to opposite midpoints intersect.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "centroid",
+          "correctExplanation": "The centroid is the intersection of medians drawn from vertices to opposite side midpoints.",
+          "distractors": [
+            {
+              "answer": "circumcentre",
+              "explanation": "The circumcentre is found using perpendicular bisectors, not medians.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "incentre",
+              "explanation": "The incentre is found using angle bisectors, not medians.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "medians",
+          "correctExplanation": "Medians connect each vertex to the midpoint of the opposite side.",
+          "distractors": [
+            {
+              "answer": "altitudes",
+              "explanation": "Altitudes are perpendicular to opposite sides, not drawn to midpoints.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "bisectors",
+              "explanation": "Angle bisectors divide angles, not connect vertices to midpoints.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Sam's flowchart uses a loop to repeat the perpendicular bisector construction for each {{blank:1}} of a triangle, producing three bisectors that meet at the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "side",
+          "correctExplanation": "Perpendicular bisectors are constructed for each side of the triangle.",
+          "distractors": [
+            {
+              "answer": "angle",
+              "explanation": "Bisecting angles produces angle bisectors, locating the incentre instead.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "vertex",
+              "explanation": "Vertices are points, not segments that can be bisected perpendicularly.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "circumcentre",
+          "correctExplanation": "The three perpendicular bisectors of a triangle's sides intersect at the circumcentre.",
+          "distractors": [
+            {
+              "answer": "incentre",
+              "explanation": "The incentre is where angle bisectors meet, not perpendicular bisectors.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "centroid",
+              "explanation": "The centroid is where medians meet, not perpendicular bisectors.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims that an algorithm checking all three triangle inequalities is redundant because checking a + b > c is sufficient when a ≤ b ≤ c. Which one of the following best evaluates this claim?",
+      "correct": "The claim is correct: when sorted with a ≤ b ≤ c, checking a + b > c guarantees the other two inequalities hold",
+      "correctExplanation": "When a ≤ b ≤ c, a + c > b and b + c > a are automatically satisfied since c ≥ b ≥ a, so a + b > c is the binding constraint.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because sorting does not change the mathematical relationships between the three side lengths at all",
+          "explanation": "Sorting does not change the values, but it identifies which inequality is the binding one; the claim is valid."
+        },
+        {
+          "answer": "The claim is correct only for right triangles because the Pythagorean theorem provides the required additional constraint",
+          "explanation": "The simplification works for all triangles, not just right triangles; the Pythagorean theorem is irrelevant here."
+        },
+        {
+          "answer": "The claim is incorrect because a + c > b must also be verified separately even when sides are sorted in ascending order, in this geometric context",
+          "explanation": "When a ≤ b ≤ c, a + c ≥ a + b > c ≥ b, so a + c > b holds automatically; separate verification is unnecessary."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Two students write different algorithms for the same geometric construction. Student A uses 5 steps and Student B uses 8 steps. Which one of the following analyses is most appropriate?",
+      "correct": "Fewer steps do not automatically make an algorithm better; correctness, clarity, and robustness must also be compared across both versions",
+      "correctExplanation": "Efficiency is only one criterion; a shorter algorithm may miss edge cases or be harder to understand and maintain.",
+      "distractors": [
+        {
+          "answer": "Student A's algorithm is superior because fewer steps always indicates a more efficient and therefore better approach overall",
+          "explanation": "Fewer steps may sacrifice clarity or miss edge cases; efficiency alone does not determine quality."
+        },
+        {
+          "answer": "Student B's algorithm is superior because more steps indicate more thorough checking and greater precision in the construction",
+          "explanation": "More steps could indicate redundancy or poor design, not necessarily greater thoroughness or precision."
+        },
+        {
+          "answer": "Both algorithms are equally valid because the number of steps has no bearing on the quality of a geometric construction algorithm",
+          "explanation": "Step count is relevant to efficiency but is not the sole determinant; the claim that it has no bearing is too strong."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A student's algorithm for constructing a perpendicular bisector sometimes fails when the segment is very short. Which one of the following best explains the likely cause?",
+      "correct": "The compass radius is fixed rather than relative to the segment length, so arcs may not intersect for short segments",
+      "correctExplanation": "A fixed radius that exceeds half the segment length works, but if the segment is shorter than the fixed radius threshold, the construction may behave unexpectedly.",
+      "distractors": [
+        {
+          "answer": "Short segments cannot have perpendicular bisectors because the bisector would extend infinitely in both directions from them",
+          "explanation": "Every non-degenerate segment has a perpendicular bisector regardless of length; length does not affect existence."
+        },
+        {
+          "answer": "The straightedge cannot be aligned precisely enough with short segments because the endpoints are too close together for visual accuracy",
+          "explanation": "Physical precision is not the algorithmic issue; the problem is in the compass radius logic, not straightedge alignment."
+        },
+        {
+          "answer": "The algorithm works correctly for all lengths because perpendicular bisector constructions are inherently length-independent",
+          "explanation": "While the mathematical construction is length-independent, an algorithm using a fixed radius can fail for certain lengths."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Analyse why the Shoelace formula gives a negative result when vertices are listed in clockwise order. Which one of the following provides the correct explanation?",
+      "correct": "The cross products yield signed areas, and clockwise traversal produces negative sums; the absolute value corrects this orientation dependence",
+      "correctExplanation": "The Shoelace formula computes a signed area; clockwise ordering gives negative results, fixed by taking the absolute value.",
+      "distractors": [
+        {
+          "answer": "Clockwise ordering causes the formula to subtract areas instead of adding them, producing negative results due to sign errors",
+          "explanation": "The formula does not switch between addition and subtraction; the sign arises from the cross product orientation."
+        },
+        {
+          "answer": "Clockwise ordering is mathematically invalid for the Shoelace formula, so the negative result indicates the input must be rejected",
+          "explanation": "Clockwise ordering is valid; the absolute value step handles both orientations correctly."
+        },
+        {
+          "answer": "Clockwise ordering produces a negative perimeter value that is then incorrectly interpreted as a negative area by the formula",
+          "explanation": "The Shoelace formula does not calculate perimeter; the negative sign relates to area orientation, not perimeter."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student claims that testing an algorithm with five inputs is sufficient to prove it is correct. Which one of the following best evaluates this claim?",
+      "correct": "The claim is incorrect because testing can only reveal the presence of bugs, not prove their absence, regardless of the number of test cases used",
+      "correctExplanation": "Dijkstra's principle: testing shows the presence of bugs, not their absence. Only formal verification can prove correctness.",
+      "distractors": [
+        {
+          "answer": "The claim is correct if the five inputs include at least one edge case and one typical case from the algorithm's expected domain, in this geometric context",
+          "explanation": "Even with edge cases, five tests cannot cover all possible inputs; finite testing never proves universal correctness."
+        },
+        {
+          "answer": "The claim is correct because five inputs provide a statistically significant sample size for any algorithm with a finite input domain",
+          "explanation": "Statistical sampling cannot prove correctness; even a large sample leaves untested inputs that may reveal bugs."
+        },
+        {
+          "answer": "The claim is incorrect because exactly ten inputs are needed as the minimum standard for reliable algorithm verification in practice",
+          "explanation": "There is no fixed minimum number of test cases that proves correctness; the issue is fundamental, not about quantity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "Compare the use of compass-and-straightedge construction with coordinate geometry for finding the midpoint of a segment. Which one of the following analyses is most accurate?",
+      "correct": "Compass-and-straightedge gives an exact geometric result without numbers, while coordinate geometry computes the midpoint numerically using an averaging formula",
+      "correctExplanation": "Both methods are valid but differ in approach: geometric construction avoids measurement, while coordinate geometry uses arithmetic.",
+      "distractors": [
+        {
+          "answer": "Compass-and-straightedge is always faster because it requires fewer steps than calculating the average of two coordinate pairs",
+          "explanation": "Speed depends on context; coordinate calculation can be faster with known coordinates, while construction needs physical tools."
+        },
+        {
+          "answer": "Coordinate geometry is always more accurate because numerical values eliminate the imprecision inherent in all physical drawing instruments, in this geometric context",
+          "explanation": "Theoretical compass constructions are exact; physical imprecision affects both methods equally in practice."
+        },
+        {
+          "answer": "The two methods produce different midpoints because geometric and algebraic approaches define the midpoint using incompatible definitions",
+          "explanation": "Both methods define the midpoint identically as the point equidistant from both endpoints; results are the same."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student modifies a triangle classification algorithm to check for right angles before checking validity. Analyse the consequence of this design choice.",
+      "correct": "The algorithm may incorrectly classify invalid side lengths as right-angled, since Pythagorean relationships can hold for non-triangle triples",
+      "correctExplanation": "For example, (1, 2, √5) satisfies 1² + 2² = 5 but 1 + 2 = 3 > √5 ≈ 2.24 — this is valid. But (0, 3, 3) satisfies 0² + 3² = 9 = 3² but is degenerate.",
+      "distractors": [
+        {
+          "answer": "The algorithm becomes more efficient because checking the Pythagorean condition first eliminates the need for triangle inequality checks",
+          "explanation": "Efficiency is not improved; both checks are needed, and skipping validity can produce incorrect classifications."
+        },
+        {
+          "answer": "The algorithm produces identical results because the Pythagorean theorem already implies that the triangle inequality must be satisfied",
+          "explanation": "The Pythagorean relationship can hold for degenerate cases; it does not guarantee triangle inequality satisfaction."
+        },
+        {
+          "answer": "The algorithm crashes because the Pythagorean theorem cannot be applied to side lengths that do not form a valid geometric triangle shape",
+          "explanation": "No crash occurs; the arithmetic works on any numbers, but the classification may be mathematically meaningless."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student's point-in-circle algorithm compares (x−h)² + (y−k)² to r instead of r². Analyse the effect of this error on the algorithm's output.",
+      "correct": "For r > 1, the algorithm incorrectly classifies some interior points as exterior because r < r², making the comparison boundary too restrictive",
+      "correctExplanation": "When r > 1, r² > r, so using r shrinks the effective boundary; points between distance r and √r would be misclassified.",
+      "distractors": [
+        {
+          "answer": "The error has no effect because squaring and square-rooting cancel out, making the comparison equivalent to the correct version always",
+          "explanation": "The comparison (x−h)² + (y−k)² vs r is not equivalent to distance vs r; the squared form requires comparison to r²."
+        },
+        {
+          "answer": "The algorithm always reports every point as inside the circle regardless of its position because the left side is always larger squared, in this geometric context",
+          "explanation": "This is only true for points far from the centre; points near the boundary can fall on either side of the incorrect threshold."
+        },
+        {
+          "answer": "The error causes the algorithm to compare distance to the diameter instead of the radius, doubling the size of the acceptance region",
+          "explanation": "The error compares squared distance to r (not 2r); the relationship to diameter is not relevant here."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Analyse why an algorithm using the distance formula d = √((x₂−x₁)² + (y₂−y₁)²) might compare d² to r² instead of d to r for circle containment. Which one of the following gives the strongest justification?",
+      "correct": "Comparing squared values avoids computing the square root, which is computationally more expensive and can introduce rounding errors in decimal arithmetic",
+      "correctExplanation": "Since d < r if and only if d² < r², the squared comparison is mathematically equivalent and computationally cheaper.",
+      "distractors": [
+        {
+          "answer": "Comparing squared values produces a more accurate result because squaring eliminates the possibility of negative distance values entirely, in this geometric context",
+          "explanation": "Distance is always non-negative regardless of squaring; the benefit is computational efficiency, not sign correction."
+        },
+        {
+          "answer": "Comparing squared values is only valid for circles centred at the origin where the formula simplifies",
+          "explanation": "The equivalence d < r ⟺ d² < r² holds for any centre, not just the origin."
+        },
+        {
+          "answer": "Comparing squared values gives a different mathematical result that is preferred for computational geometry because it rounds differently",
+          "explanation": "The results are mathematically identical; d < r if and only if d² < r², so there is no rounding difference in the comparison."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student applies the Shoelace formula to vertices (0,0), (2,0), (1,1), (2,2), (0,2) and gets a negative area. Another student reorders the same points and gets a positive area. Which one of the following best explains the discrepancy?",
+      "correct": "The first ordering traverses the polygon clockwise while the second traverses it anticlockwise, producing opposite signs that the absolute value resolves",
+      "correctExplanation": "The Shoelace formula produces signed areas; the sign depends on traversal direction, and taking the absolute value gives the correct area.",
+      "distractors": [
+        {
+          "answer": "The first student listed a self-intersecting polygon by scrambling the vertex order, invalidating the Shoelace formula's assumptions entirely",
+          "explanation": "Self-intersection is possible with some orderings, but the question states the same points are reordered, not scrambled randomly."
+        },
+        {
+          "answer": "The negative result means the first student made an arithmetic error in the cross products, since the Shoelace formula never gives negatives",
+          "explanation": "The Shoelace formula does produce negative values for clockwise traversal; the absolute value step corrects this."
+        },
+        {
+          "answer": "The two students measured different polygons because changing vertex order changes the shape formed by connecting consecutive listed points",
+          "explanation": "Changing the traversal direction (CW vs CCW) does not change the polygon shape, only the sign of the computed area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Analyse the claim: 'An algorithm to find the incentre is identical to one that finds the circumcentre, except the final step connects to sides instead of vertices.' Which one of the following evaluations is correct?",
+      "correct": "The claim is incorrect because the two algorithms use fundamentally different constructions: angle bisectors for the incentre and perpendicular bisectors for the circumcentre",
+      "correctExplanation": "The incentre and circumcentre constructions differ from their first step, not just the final connection.",
+      "distractors": [
+        {
+          "answer": "The claim is correct because both centres are found by bisecting elements of the triangle and differ only in how the result is interpreted",
+          "explanation": "While both involve bisection, they bisect different elements (angles vs sides); the entire procedure differs, not just interpretation."
+        },
+        {
+          "answer": "The claim is correct because the incentre and circumcentre always coincide for equilateral triangles, proving the algorithms are interchangeable",
+          "explanation": "Coincidence in a special case does not prove the algorithms are identical; they differ structurally for all other triangles."
+        },
+        {
+          "answer": "The claim is partially correct because both algorithms bisect the same elements but use different compass radii at the intersection step only",
+          "explanation": "The algorithms bisect different elements entirely: angles for incentre, sides for circumcentre. The difference is fundamental."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student claims that an algorithm constructing perpendicular bisectors for all three sides of a triangle is inefficient because two bisectors suffice to locate the circumcentre. Evaluate this claim.",
+      "correct": "The claim is partially correct: two bisectors do locate the circumcentre, but the third serves as a verification check and improves robustness against construction error",
+      "correctExplanation": "Two perpendicular bisectors intersect at one point (the circumcentre); the third confirms accuracy but is not strictly necessary.",
+      "distractors": [
+        {
+          "answer": "The claim is incorrect because all three perpendicular bisectors are mathematically required for the intersection point to be uniquely determined",
+          "explanation": "Two non-parallel lines determine a unique intersection point; the third bisector is redundant for location but useful for checking."
+        },
+        {
+          "answer": "The claim is correct and the third bisector should be removed because it adds computational cost with no benefit to the final result at all",
+          "explanation": "While technically redundant for locating the point, the third bisector provides error checking, which has practical value."
+        },
+        {
+          "answer": "The claim is incorrect because removing any bisector changes the location of the circumcentre since all three contribute to the averaged position",
+          "explanation": "The circumcentre is a single intersection point, not an average; any two bisectors produce the same point as all three."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Analyse why an algorithm to construct a regular hexagon inscribed in a circle uses six consecutive arcs with radius equal to the circle's radius. Which one of the following provides the geometric justification?",
+      "correct": "Each side of the regular hexagon equals the radius because the central angle of 60° creates equilateral triangles between the centre and consecutive vertices",
+      "correctExplanation": "A regular hexagon divides the circle into six 60° sectors; each sector forms an equilateral triangle with side length equal to the radius.",
+      "distractors": [
+        {
+          "answer": "The arcs divide the circumference into six equal parts because the compass measures exactly one-sixth of the total circumference each time",
+          "explanation": "The compass does not measure arc length; it marks off the radius, and the equality follows from the equilateral triangle property."
+        },
+        {
+          "answer": "Six arcs are used because a hexagon has six sides and each arc length corresponds to one side length regardless of the radius chosen",
+          "explanation": "The arc radius must specifically equal the circle's radius; an arbitrary radius would not produce a regular hexagon."
+        },
+        {
+          "answer": "The construction works because the radius of any circle is always exactly one-sixth of its circumference, giving equal arc spacing automatically",
+          "explanation": "The circumference is 2πr, and r ≠ 2πr/6 in general; the construction relies on the 60° angle, not a circumference fraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student writes two algorithms for the same task: one uses recursion and the other uses iteration. Both produce correct results. Which one of the following analyses of their relationship is most appropriate?",
+      "correct": "Recursive and iterative solutions are computationally equivalent in power, but may differ in clarity, memory usage and ease of implementation for different problems",
+      "correctExplanation": "Any recursive algorithm can be converted to iterative and vice versa; the choice depends on practical factors like readability and resource usage.",
+      "distractors": [
+        {
+          "answer": "The recursive algorithm is always superior because recursion naturally mirrors the hierarchical structure of geometric constructions",
+          "explanation": "Recursion is not always superior; it can use more memory (stack depth) and be harder to debug for some geometric tasks."
+        },
+        {
+          "answer": "The iterative algorithm is always superior because loops are faster than function calls in every programming language without any exception",
+          "explanation": "While iteration is often faster, the difference is language-dependent and may be negligible; clarity matters too."
+        },
+        {
+          "answer": "The two algorithms must produce different results for large inputs because recursion and iteration handle edge cases in fundamentally different ways, in this geometric context",
+          "explanation": "Both approaches can handle edge cases identically; the choice of control structure does not inherently change correctness."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Testing can reveal the {{blank:1}} of bugs but cannot {{blank:2}} their absence in an algorithm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "presence",
+          "correctExplanation": "Testing shows bugs exist when test cases fail, but cannot check all possible inputs.",
+          "distractors": [
+            {
+              "answer": "cause",
+              "explanation": "Testing can sometimes identify causes, but 'presence' is the key concept from Dijkstra's principle.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "number",
+              "explanation": "Testing does not count bugs; it demonstrates their existence through failed test cases.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "prove",
+          "correctExplanation": "Formal verification, not testing, is required to prove an algorithm is free of bugs.",
+          "distractors": [
+            {
+              "answer": "detect",
+              "explanation": "Testing can detect bugs; the limitation is in proving they do not exist.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "predict",
+              "explanation": "Prediction is not the relevant concept; the distinction is between detection and proof.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The circumcentre is equidistant from all three {{blank:1}} while the incentre is equidistant from all three {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertices",
+          "correctExplanation": "The circumcentre lies on perpendicular bisectors and is equidistant from all three vertices.",
+          "distractors": [
+            {
+              "answer": "sides",
+              "explanation": "Equidistance from sides defines the incentre, not the circumcentre.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "angles",
+              "explanation": "Equidistance from angles is not a standard geometric property of any triangle centre.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sides",
+          "correctExplanation": "The incentre lies on angle bisectors and is equidistant from all three sides.",
+          "distractors": [
+            {
+              "answer": "vertices",
+              "explanation": "Equidistance from vertices defines the circumcentre, not the incentre.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "medians",
+              "explanation": "Medians are line segments, not elements from which a point can be equidistant in this context.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "An algorithm that uses a fixed compass radius fails for segments {{blank:1}} than the chosen value because the arcs do not {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "shorter",
+          "correctExplanation": "If the segment is shorter than expected, arcs drawn from endpoints may not reach far enough to cross.",
+          "distractors": [
+            {
+              "answer": "longer",
+              "explanation": "Longer segments are more likely to produce intersecting arcs with a given radius.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "wider",
+              "explanation": "Segments have length, not width; 'shorter' is the correct geometric term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "intersect",
+          "correctExplanation": "Non-intersecting arcs mean no construction points can be identified.",
+          "distractors": [
+            {
+              "answer": "converge",
+              "explanation": "Convergence is a calculus concept; arcs either intersect or they do not.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "align",
+              "explanation": "Alignment is not the relevant property; arcs must cross to create construction points.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Comparing d² to r² avoids computing a {{blank:1}} root, which improves computational {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "square",
+          "correctExplanation": "The distance formula involves a square root that can be avoided by comparing squared quantities.",
+          "distractors": [
+            {
+              "answer": "cube",
+              "explanation": "Cube roots are not involved in the standard distance formula.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "fourth",
+              "explanation": "Fourth roots are not involved in the standard distance formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "efficiency",
+          "correctExplanation": "Avoiding the square root operation reduces computation time and potential rounding errors.",
+          "distractors": [
+            {
+              "answer": "accuracy",
+              "explanation": "While rounding is reduced, the primary benefit is efficiency rather than mathematical accuracy.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "complexity",
+              "explanation": "Complexity refers to how resource usage scales with input size; the benefit here is constant-factor speed improvement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The Shoelace formula produces a {{blank:1}} area whose sign depends on whether vertices are listed in {{blank:2}} or anticlockwise order.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "signed",
+          "correctExplanation": "The cross-product sum can be positive or negative depending on traversal direction.",
+          "distractors": [
+            {
+              "answer": "unsigned",
+              "explanation": "The raw formula output is signed; the absolute value gives the unsigned area.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "approximate",
+              "explanation": "The Shoelace formula gives exact results, not approximations.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "clockwise",
+          "correctExplanation": "Clockwise traversal produces a negative signed area in the standard formula.",
+          "distractors": [
+            {
+              "answer": "alphabetical",
+              "explanation": "Vertex naming order does not determine the sign; spatial traversal direction does.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random ordering may not trace the polygon boundary and can give meaningless results.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "An equilateral triangle has all sides {{blank:1}} and each interior angle measures {{blank:2}} degrees.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equal",
+          "correctExplanation": "By definition, all three sides of an equilateral triangle are congruent.",
+          "distractors": [
+            {
+              "answer": "parallel",
+              "explanation": "Sides of a triangle are not parallel; parallel sides define parallelograms.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "perpendicular",
+              "explanation": "Perpendicular sides define right angles, not the equal-side property of equilateral triangles.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sixty",
+          "correctExplanation": "180° ÷ 3 = 60°; each angle in an equilateral triangle measures exactly 60 degrees.",
+          "distractors": [
+            {
+              "answer": "ninety",
+              "explanation": "90° per angle would sum to 270°, exceeding the 180° triangle angle sum.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "forty-five",
+              "explanation": "45° per angle would sum to only 135°, falling short of 180°.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A recursive algorithm calls {{blank:1}} with a smaller input until a {{blank:2}} case is reached.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "itself",
+          "correctExplanation": "Recursion is defined by a function invoking itself with a reduced problem size.",
+          "distractors": [
+            {
+              "answer": "another function",
+              "explanation": "Calling another function is composition, not recursion.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "the main program",
+              "explanation": "Recursion calls the same function, not the main program.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "base",
+          "correctExplanation": "The base case provides the termination condition that stops the recursive calls.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Termination is deterministic, not random; the base case is a defined stopping condition.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "error",
+              "explanation": "Reaching an error is not the intended termination mechanism; the base case handles normal termination.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The incentre algorithm constructs angle {{blank:1}} and their intersection lies {{blank:2}} the triangle for all triangle types.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "bisectors",
+          "correctExplanation": "Angle bisectors divide each interior angle into two equal parts.",
+          "distractors": [
+            {
+              "answer": "altitudes",
+              "explanation": "Altitudes are perpendicular to sides, not bisectors of angles.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "medians",
+              "explanation": "Medians connect vertices to midpoints, not bisect angles.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inside",
+          "correctExplanation": "The incentre always lies inside the triangle, unlike the circumcentre or orthocentre.",
+          "distractors": [
+            {
+              "answer": "outside",
+              "explanation": "The incentre is always interior; it is the circumcentre that can lie outside for obtuse triangles.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "on a side of",
+              "explanation": "The incentre lies at the intersection of bisectors, which is an interior point, not on a side.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A regular hexagon inscribed in a circle has sides equal to the {{blank:1}} because each central angle is {{blank:2}} degrees.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "radius",
+          "correctExplanation": "The 60° central angle creates equilateral triangles with sides equal to the radius.",
+          "distractors": [
+            {
+              "answer": "diameter",
+              "explanation": "The diameter is twice the radius; hexagon sides equal the radius, not the diameter.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "circumference",
+              "explanation": "The circumference is 2πr, which is much larger than one side of the inscribed hexagon.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sixty",
+          "correctExplanation": "360° ÷ 6 = 60°; each sector of a regular hexagon subtends 60° at the centre.",
+          "distractors": [
+            {
+              "answer": "ninety",
+              "explanation": "90° would divide the circle into four parts, producing a square, not a hexagon.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "thirty",
+              "explanation": "30° would divide the circle into twelve parts, producing a dodecagon, not a hexagon.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "When a ≤ b ≤ c, the {{blank:1}} triangle inequality a + b > c is the only one that needs checking because the other two are {{blank:2}} satisfied.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "critical",
+          "correctExplanation": "This is the binding constraint; the other two hold automatically when sides are sorted.",
+          "distractors": [
+            {
+              "answer": "first",
+              "explanation": "The numbering is arbitrary; 'critical' describes its mathematical role as the binding constraint.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "weakest",
+              "explanation": "It is the most restrictive (hardest to satisfy), not the weakest.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "automatically",
+          "correctExplanation": "When a ≤ b ≤ c, a + c ≥ a + a > 0 and b + c ≥ b + b > 0, and both exceed the smaller values.",
+          "distractors": [
+            {
+              "answer": "never",
+              "explanation": "The other two inequalities are always satisfied when a ≤ b ≤ c; 'never' is the opposite.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sometimes",
+              "explanation": "They are always satisfied, not sometimes; the sorting guarantees this.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "An algorithm's {{blank:1}} measures how its resource usage grows as the {{blank:2}} size increases.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "complexity",
+          "correctExplanation": "Algorithmic complexity quantifies resource usage as a function of input size.",
+          "distractors": [
+            {
+              "answer": "accuracy",
+              "explanation": "Accuracy measures correctness, not resource scaling.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "difficulty",
+              "explanation": "Difficulty is subjective; complexity is a formal measure of resource usage.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "input",
+          "correctExplanation": "Complexity is typically expressed as a function of the input size, such as the number of vertices.",
+          "distractors": [
+            {
+              "answer": "output",
+              "explanation": "While output size matters, complexity is conventionally measured against input size.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "step",
+              "explanation": "Step size is not a standard parameter; complexity measures growth with respect to input size.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "Formal {{blank:1}} can prove an algorithm correct for all inputs, unlike {{blank:2}} which checks only a finite number of cases.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "verification",
+          "correctExplanation": "Formal verification uses mathematical proof to establish correctness for all possible inputs.",
+          "distractors": [
+            {
+              "answer": "optimisation",
+              "explanation": "Optimisation improves efficiency, not correctness across all inputs.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "documentation",
+              "explanation": "Documentation describes the algorithm but does not prove it correct.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "testing",
+          "correctExplanation": "Testing can only cover a finite number of inputs and cannot guarantee correctness for all cases.",
+          "distractors": [
+            {
+              "answer": "debugging",
+              "explanation": "Debugging fixes known errors; testing is the process that reveals them through finite case checking.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "compiling",
+              "explanation": "Compiling translates code but does not verify logical correctness.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}
