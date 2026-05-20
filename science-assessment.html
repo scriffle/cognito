@@ -633,54 +633,70 @@ function buildBloomQueue(strands, level, bloomLevel) {
   return queue;
 }
 
-// Pre-build the full question pool for all bloom levels and both level bands
-function buildFullPool(strands) {
-  const pool = [];
+// Count maximum available questions for given strands
+function countMaxQuestions(strands) {
+  let total = 0;
+  const DEFAULT_COUNTS = { 2: 3, 3: 2, 4: 2, 5: 2 };
   for (const level of [8, 10]) {
     for (const bl of BLOOMS_ORDER) {
       const key = 'toLevel' + bl;
-      const counts = { 2: 3, 3: 2, 4: 2, 5: 2 };
       for (const s of strands) {
         const code = STRAND_CDS[s][level];
         if (!code || !questionData[code]) continue;
-        const selected = selectQuestions(code, key, counts[bl]);
-        selected.forEach(q => {
-          pool.push({ strand: s, level, bloomLevel: bl, code, question: q });
-        });
+        const available = (questionData[code][key] || []).length;
+        total += Math.min(available, DEFAULT_COUNTS[bl]);
       }
     }
+  }
+  return total;
+}
+
+// Build pool additively to hit target with even parity across strands/levels/blooms
+function buildPoolToTarget(strands, target) {
+  const slots = [];
+  for (const level of [8, 10]) {
+    for (const bl of BLOOMS_ORDER) {
+      for (const s of strands) {
+        const code = STRAND_CDS[s][level];
+        if (!code || !questionData[code]) continue;
+        const available = (questionData[code]['toLevel' + bl] || []).length;
+        if (available > 0) slots.push({ strand: s, level, bloomLevel: bl, code, available });
+      }
+    }
+  }
+  if (slots.length === 0) return [];
+
+  const alloc = slots.map(() => 0);
+  let total = 0;
+
+  // Round-robin: add 1 question to each slot until we hit target
+  while (total < target) {
+    let added = false;
+    for (let i = 0; i < slots.length && total < target; i++) {
+      if (alloc[i] < slots[i].available) {
+        alloc[i]++;
+        total++;
+        added = true;
+      }
+    }
+    if (!added) break;
+  }
+
+  // Now select the questions
+  const pool = [];
+  for (let i = 0; i < slots.length; i++) {
+    if (alloc[i] === 0) continue;
+    const { strand, level, bloomLevel, code } = slots[i];
+    const selected = selectQuestions(code, 'toLevel' + bloomLevel, alloc[i]);
+    selected.forEach(q => {
+      pool.push({ strand, level, bloomLevel, code, question: q });
+    });
   }
   return pool;
 }
 
-// Trim pool to target size with even parity across strands, levels, blooms
-function trimPool(pool, target) {
-  if (pool.length <= target) return [...pool];
-  const trimmed = [...pool];
-  while (trimmed.length > target) {
-    const counts = {};
-    trimmed.forEach(q => {
-      const key = q.strand + '|' + q.level + '|' + q.bloomLevel;
-      counts[key] = (counts[key] || 0) + 1;
-    });
-    let maxKey = null, maxCount = 0;
-    for (const [key, count] of Object.entries(counts)) {
-      if (count > maxCount) { maxCount = count; maxKey = key; }
-    }
-    if (maxCount <= 1) break;
-    const candidates = [];
-    trimmed.forEach((q, i) => {
-      const key = q.strand + '|' + q.level + '|' + q.bloomLevel;
-      if (key === maxKey) candidates.push(i);
-    });
-    const removeIdx = candidates[Math.floor(Math.random() * candidates.length)];
-    trimmed.splice(removeIdx, 1);
-  }
-  return trimmed;
-}
-
 // Configure view state
-let configurePool = null;
+let configureMaxQuestions = 0;
 let configureName = '';
 let configureScope = '';
 let configureStrands = [];
@@ -707,41 +723,26 @@ document.getElementById('startBtn').addEventListener('click', async function() {
   configureName = name;
   configureScope = scope;
   configureStrands = strands;
-  configurePool = buildFullPool(strands);
+  configureMaxQuestions = countMaxQuestions(strands);
 
-  renderConfigureView(configurePool.length);
+  renderConfigureView();
   showView('viewConfigure');
   this.disabled = false;
   this.textContent = 'Begin Assessment';
 });
 
-function renderConfigureView(total) {
-  // Breakdown by strand
-  const byStrand = {};
-  configurePool.forEach(q => {
-    byStrand[q.strand] = (byStrand[q.strand] || 0) + 1;
-  });
+function renderConfigureView() {
+  const total = configureMaxQuestions;
   let html = '';
-  for (const s of configureStrands) {
-    html += '<div class="configure-stat"><span class="label">' + esc(s) + '</span><span class="value">' + (byStrand[s] || 0) + '</span></div>';
-  }
-  const l8 = configurePool.filter(q => q.level === 8).length;
-  const l10 = configurePool.filter(q => q.level === 10).length;
-  html += '<div class="configure-stat"><span class="label">Levels 7-8</span><span class="value">' + l8 + '</span></div>';
-  html += '<div class="configure-stat"><span class="label">Levels 9-10</span><span class="value">' + l10 + '</span></div>';
-  html += '<div class="configure-stat" style="border-top:2px solid var(--border);padding-top:12px;margin-top:4px"><span class="label" style="font-weight:700;color:var(--text)">Total</span><span class="value" style="font-size:18px">' + configurePool.length + '</span></div>';
+  html += '<div class="configure-stat" style="border-top:2px solid var(--border);padding-top:12px;margin-top:4px"><span class="label" style="font-weight:700;color:var(--text)">Maximum available</span><span class="value" style="font-size:18px">' + total + '</span></div>';
   document.getElementById('configureBreakdown').innerHTML = html;
 
-  const groups = new Set();
-  configurePool.forEach(q => groups.add(q.strand + '|' + q.level + '|' + q.bloomLevel));
-  const minQuestions = Math.min(groups.size, configurePool.length);
-
   const slider = document.getElementById('trimSlider');
-  slider.max = configurePool.length;
-  slider.min = minQuestions;
-  slider.value = configurePool.length;
-  document.getElementById('trimValue').textContent = configurePool.length;
-  updateTrimTime(configurePool.length);
+  slider.max = total;
+  slider.min = Math.max(configureStrands.length, 1);
+  slider.value = total;
+  document.getElementById('trimValue').textContent = total;
+  updateTrimTime(total);
 }
 
 function updateTrimTime(n) {
@@ -761,11 +762,9 @@ document.getElementById('configureBack').addEventListener('click', () => {
 // Step 2: Configure -> Start test
 document.getElementById('configureStart').addEventListener('click', function() {
   const target = parseInt(document.getElementById('trimSlider').value);
-  const finalPool = trimPool(configurePool, target);
+  const finalPool = buildPoolToTarget(configureStrands, target);
 
-  // Build the gated queue from the trimmed pool — start with Level 8 Bloom's 2
   const l8b2 = finalPool.filter(q => q.level === 8 && q.bloomLevel === 2);
-  // Sort to interleave strands
   const interleaved = interleaveByStrand(l8b2);
 
   state = {
