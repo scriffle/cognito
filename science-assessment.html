@@ -652,7 +652,9 @@ function countMaxQuestions(strands) {
 }
 
 // Build pool additively to hit target with even parity across strands/levels/blooms
+// Ensures each slot gets enough questions to satisfy gating thresholds
 function buildPoolToTarget(strands, target) {
+  const REQUIRED = { 2: 3, 3: 2, 4: 2, 5: 2 };
   const slots = [];
   for (const level of [8, 10]) {
     for (const bl of BLOOMS_ORDER) {
@@ -660,26 +662,54 @@ function buildPoolToTarget(strands, target) {
         const code = STRAND_CDS[s][level];
         if (!code || !questionData[code]) continue;
         const available = (questionData[code]['toLevel' + bl] || []).length;
-        if (available > 0) slots.push({ strand: s, level, bloomLevel: bl, code, available });
+        if (available > 0) slots.push({ strand: s, level, bloomLevel: bl, code, available, required: REQUIRED[bl] });
       }
     }
   }
   if (slots.length === 0) return [];
 
-  const alloc = slots.map(() => 0);
-  let total = 0;
+  // Step 1: give each slot its minimum required allocation (capped by available)
+  const alloc = slots.map(s => Math.min(s.required, s.available));
+  let total = alloc.reduce((a, b) => a + b, 0);
 
-  // Round-robin: add 1 question to each slot until we hit target
-  while (total < target) {
-    let added = false;
-    for (let i = 0; i < slots.length && total < target; i++) {
-      if (alloc[i] < slots[i].available) {
-        alloc[i]++;
-        total++;
-        added = true;
+  if (total > target) {
+    // Target is below minimum for full gating — scale down proportionally
+    // but keep at least 1 per slot, prioritising Level 8 Bloom's 2
+    const l8b2 = slots.map((s, i) => s.level === 8 && s.bloomLevel === 2 ? i : -1).filter(i => i >= 0);
+    alloc.fill(0);
+    total = 0;
+    // First ensure Level 8 Bloom's 2 slots get their required count
+    for (const i of l8b2) {
+      const give = Math.min(slots[i].required, slots[i].available, target - total);
+      alloc[i] = give;
+      total += give;
+    }
+    // Then distribute remaining budget round-robin to other slots
+    let added = true;
+    while (total < target && added) {
+      added = false;
+      for (let i = 0; i < slots.length && total < target; i++) {
+        if (l8b2.includes(i)) continue;
+        if (alloc[i] < Math.min(slots[i].required, slots[i].available)) {
+          alloc[i]++;
+          total++;
+          added = true;
+        }
       }
     }
-    if (!added) break;
+  } else if (total < target) {
+    // Step 2: distribute remaining budget round-robin beyond minimums
+    let added = true;
+    while (total < target && added) {
+      added = false;
+      for (let i = 0; i < slots.length && total < target; i++) {
+        if (alloc[i] < slots[i].available) {
+          alloc[i]++;
+          total++;
+          added = true;
+        }
+      }
+    }
   }
 
   // Now select the questions
@@ -739,7 +769,7 @@ function renderConfigureView() {
 
   const slider = document.getElementById('trimSlider');
   slider.max = total;
-  slider.min = Math.max(configureStrands.length, 1);
+  slider.min = Math.max(configureStrands.length * 3, 1);
   slider.value = total;
   document.getElementById('trimValue').textContent = total;
   updateTrimTime(total);
