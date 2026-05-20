@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Science Assessment</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #242836;
+  --border: #2e3347;
+  --text: #e4e6f0;
+  --text2: #9298b4;
+  --accent: #6c8cff;
+  --accent2: #4a6adf;
+  --green: #4ade80;
+  --red: #f87171;
+  --orange: #fb923c;
+  --yellow: #fbbf24;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --radius: 10px;
+  --transition: 0.15s ease;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; border-bottom: 1px solid var(--border);
+  background: var(--surface); position: sticky; top: 0; z-index: 50;
+}
+.header-title { font-size: 16px; font-weight: 600; flex: 1; }
+.header-subtitle { font-size: 12px; color: var(--text2); }
+.header-right { display: flex; gap: 8px; align-items: center; }
+.theme-toggle {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text2);
+  cursor: pointer; padding: 6px 10px; border-radius: 6px; font-size: 14px;
+  min-width: 44px; min-height: 44px; transition: all var(--transition);
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--text); }
+
+/* Main */
+main { max-width: 860px; margin: 0 auto; padding: 24px 20px; }
+.view { display: none; }
+.view.active { display: block; animation: fadeIn 0.4s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Setup View */
+.setup-center {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; min-height: 70vh; gap: 28px;
+}
+.setup-center h2 { font-size: 28px; font-weight: 700; text-align: center; }
+.setup-center .desc { color: var(--text2); text-align: center; max-width: 520px; font-size: 15px; }
+.setup-form { display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: 480px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 14px; font-weight: 600; color: var(--text2); }
+.form-group input[type="text"] {
+  padding: 12px 16px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); color: var(--text); font-size: 16px;
+  transition: border-color var(--transition);
+}
+.form-group input[type="text"]:focus { border-color: var(--accent); outline: none; }
+.scope-options { display: flex; flex-direction: column; gap: 8px; }
+.scope-option {
+  display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px;
+  background: var(--surface); border: 2px solid var(--border); border-radius: var(--radius);
+  cursor: pointer; transition: all var(--transition);
+}
+.scope-option:hover { border-color: var(--accent); }
+.scope-option.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
+.scope-option input[type="radio"] { margin-top: 3px; accent-color: var(--accent); }
+.scope-label { font-weight: 600; font-size: 15px; }
+.scope-desc { font-size: 13px; color: var(--text2); margin-top: 2px; }
+.scope-estimate { font-size: 12px; color: var(--teal); margin-top: 4px; font-weight: 600; }
+
+.start-btn {
+  padding: 14px 32px; background: var(--accent); color: #fff; border: none;
+  border-radius: var(--radius); font-size: 16px; font-weight: 600; cursor: pointer;
+  transition: all var(--transition); align-self: center;
+}
+.start-btn:hover { background: var(--accent2); transform: translateY(-1px); }
+.start-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+/* Test View */
+.test-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 0; margin-bottom: 20px; border-bottom: 1px solid var(--border);
+}
+.test-meta { display: flex; flex-direction: column; gap: 2px; }
+.test-strand { font-size: 14px; font-weight: 600; color: var(--accent); }
+.test-level { font-size: 12px; color: var(--text2); }
+.test-progress { font-size: 13px; color: var(--text2); text-align: right; }
+.test-progress strong { color: var(--text); }
+
+.progress-track {
+  height: 6px; background: var(--surface2); border-radius: 3px;
+  overflow: hidden; margin-bottom: 24px;
+}
+.progress-track-fill {
+  height: 100%; background: var(--accent); border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.question-container {
+  opacity: 1; transition: opacity 0.35s ease;
+}
+.question-container.fading { opacity: 0; }
+
+.question-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 16px; padding: 32px; margin-bottom: 20px;
+}
+.bloom-badge {
+  display: inline-block; padding: 4px 12px; border-radius: 20px;
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+.bloom-2 { background: color-mix(in srgb, var(--teal) 15%, transparent); color: var(--teal); }
+.bloom-3 { background: color-mix(in srgb, var(--accent) 15%, transparent); color: var(--accent); }
+.bloom-4 { background: color-mix(in srgb, var(--purple) 15%, transparent); color: var(--purple); }
+.bloom-5 { background: color-mix(in srgb, var(--orange) 15%, transparent); color: var(--orange); }
+
+.question-text {
+  font-size: 20px; font-weight: 500; line-height: 1.5; margin-bottom: 24px;
+}
+
+/* TF Options */
+.tf-options { display: flex; gap: 12px; }
+.tf-btn {
+  flex: 1; padding: 16px 24px; background: var(--surface2); border: 2px solid var(--border);
+  border-radius: var(--radius); font-size: 18px; font-weight: 600; cursor: pointer;
+  transition: all var(--transition); color: var(--text); text-align: center;
+  min-height: 60px;
+}
+.tf-btn:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, var(--surface2)); }
+.tf-btn.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--surface2)); }
+
+/* MC Options */
+.mc-options { display: flex; flex-direction: column; gap: 10px; }
+.mc-option {
+  display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px;
+  background: var(--surface2); border: 2px solid var(--border); border-radius: var(--radius);
+  cursor: pointer; transition: all var(--transition); min-height: 56px;
+}
+.mc-option:hover { border-color: var(--accent); }
+.mc-option.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--surface2)); }
+.mc-letter {
+  display: flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%; background: var(--surface);
+  border: 1px solid var(--border); font-size: 14px; font-weight: 700;
+  color: var(--text2); flex-shrink: 0; transition: all var(--transition);
+}
+.mc-option.selected .mc-letter { background: var(--accent); color: #fff; border-color: var(--accent); }
+.mc-text { font-size: 16px; padding-top: 4px; flex: 1; }
+
+/* Cloze */
+.cloze-stem { font-size: 18px; line-height: 1.8; margin-bottom: 20px; }
+.cloze-blank {
+  display: inline-block; min-width: 120px; padding: 4px 12px;
+  border-bottom: 2px solid var(--border); color: var(--accent);
+  font-weight: 600; text-align: center; transition: all var(--transition);
+  cursor: default; margin: 0 2px;
+}
+.cloze-blank.filled { border-color: var(--accent); }
+.cloze-group { margin-bottom: 16px; }
+.cloze-group-label { font-size: 13px; color: var(--text2); margin-bottom: 8px; font-weight: 600; }
+.cloze-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.cloze-chip {
+  padding: 8px 16px; background: var(--surface2); border: 2px solid var(--border);
+  border-radius: 20px; font-size: 14px; cursor: pointer; transition: all var(--transition);
+}
+.cloze-chip:hover { border-color: var(--accent); }
+.cloze-chip.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--surface2)); }
+
+/* Confirm Button */
+.confirm-area {
+  display: flex; justify-content: center; margin-top: 24px; gap: 12px;
+  align-items: center;
+}
+.confirm-btn {
+  padding: 14px 40px; background: var(--accent); color: #fff; border: none;
+  border-radius: var(--radius); font-size: 16px; font-weight: 600; cursor: pointer;
+  transition: all var(--transition); opacity: 0; pointer-events: none;
+}
+.confirm-btn.visible { opacity: 1; pointer-events: auto; }
+.confirm-btn:hover { background: var(--accent2); }
+.skip-btn {
+  padding: 10px 20px; background: transparent; color: var(--text2); border: 1px solid var(--border);
+  border-radius: var(--radius); font-size: 13px; cursor: pointer; transition: all var(--transition);
+}
+.skip-btn:hover { border-color: var(--text2); color: var(--text); }
+
+/* Response Recorded Toast */
+.recorded-toast {
+  position: fixed; top: 72px; left: 50%; transform: translateX(-50%);
+  background: var(--surface); border: 2px solid var(--accent);
+  padding: 14px 36px; border-radius: 12px; font-size: 16px; font-weight: 600;
+  color: var(--accent); opacity: 0; pointer-events: none; z-index: 100;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  transition: opacity 0.25s ease;
+}
+.recorded-toast.show { opacity: 1; }
+
+/* Gate Message */
+.gate-message {
+  position: fixed; top: 72px; left: 50%; transform: translateX(-50%);
+  background: var(--surface); border: 2px solid var(--border);
+  padding: 28px 40px; border-radius: 16px; text-align: center; z-index: 100;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4); opacity: 0; pointer-events: none;
+  transition: opacity 0.3s ease; max-width: 480px;
+}
+.gate-message.show { opacity: 1; }
+.gate-message h3 { font-size: 20px; margin-bottom: 8px; }
+.gate-message p { font-size: 15px; color: var(--text2); }
+
+/* Complete View */
+.complete-center {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; min-height: 60vh; gap: 24px; text-align: center;
+}
+.complete-center h2 { font-size: 32px; font-weight: 700; }
+.complete-center p { font-size: 16px; color: var(--text2); max-width: 400px; }
+.results-btn {
+  padding: 14px 32px; background: var(--accent); color: #fff; border: none;
+  border-radius: var(--radius); font-size: 16px; font-weight: 600; cursor: pointer;
+  transition: all var(--transition);
+}
+.results-btn:hover { background: var(--accent2); }
+
+/* Code Entry */
+.code-entry {
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+}
+.code-entry h3 { font-size: 18px; font-weight: 600; }
+.code-input {
+  padding: 14px 24px; background: var(--surface); border: 2px solid var(--border);
+  border-radius: var(--radius); color: var(--text); font-size: 24px; text-align: center;
+  width: 200px; letter-spacing: 8px; font-weight: 700;
+}
+.code-input:focus { border-color: var(--accent); outline: none; }
+.code-submit {
+  padding: 10px 28px; background: var(--accent); color: #fff; border: none;
+  border-radius: var(--radius); font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.code-error { color: var(--red); font-size: 13px; display: none; }
+
+/* Results View */
+.results-header {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 28px; margin-bottom: 24px;
+}
+.results-header h2 { font-size: 24px; margin-bottom: 12px; }
+.results-meta { display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; color: var(--text2); }
+.results-meta strong { color: var(--text); }
+
+.results-section { margin-bottom: 32px; }
+.results-section h3 { font-size: 18px; font-weight: 600; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+
+.strand-table { width: 100%; border-collapse: collapse; }
+.strand-table th, .strand-table td {
+  padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px;
+}
+.strand-table th { font-weight: 600; color: var(--text2); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.strand-table td { vertical-align: top; }
+
+.heatmap { display: grid; grid-template-columns: auto repeat(4, 1fr); gap: 4px; margin-top: 12px; }
+.heatmap-label { font-size: 12px; color: var(--text2); padding: 6px 10px; text-align: right; display: flex; align-items: center; justify-content: flex-end; }
+.heatmap-header { font-size: 11px; font-weight: 700; color: var(--text2); text-align: center; padding: 6px 4px; text-transform: uppercase; }
+.heatmap-cell {
+  padding: 8px 4px; border-radius: 6px; text-align: center; font-size: 12px;
+  font-weight: 600;
+}
+.heatmap-cell.pass { background: color-mix(in srgb, var(--green) 20%, var(--surface)); color: var(--green); }
+.heatmap-cell.fail { background: color-mix(in srgb, var(--red) 15%, var(--surface)); color: var(--red); }
+.heatmap-cell.not-reached { background: var(--surface2); color: var(--text2); }
+.heatmap-cell.skipped { background: var(--surface2); color: var(--text2); font-style: italic; }
+
+.level-divider {
+  grid-column: 1 / -1; padding: 10px 0 4px; font-size: 13px;
+  font-weight: 700; color: var(--accent); border-top: 2px solid var(--border);
+  margin-top: 8px;
+}
+
+/* Configure View */
+.configure-center {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; min-height: 60vh; gap: 24px;
+}
+.configure-center h2 { font-size: 24px; font-weight: 700; text-align: center; }
+.configure-center .desc { color: var(--text2); text-align: center; max-width: 520px; font-size: 14px; }
+.configure-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 28px 32px; width: 100%; max-width: 520px;
+}
+.configure-card h3 { font-size: 16px; margin-bottom: 16px; }
+.configure-stat {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px;
+}
+.configure-stat:last-child { border-bottom: none; }
+.configure-stat .label { color: var(--text2); }
+.configure-stat .value { font-weight: 600; }
+.trim-control {
+  display: flex; flex-direction: column; gap: 10px; margin-top: 20px;
+  padding-top: 20px; border-top: 1px solid var(--border);
+}
+.trim-control label { font-size: 14px; font-weight: 600; }
+.trim-row {
+  display: flex; align-items: center; gap: 16px;
+}
+.trim-slider {
+  flex: 1; accent-color: var(--accent); height: 6px;
+}
+.trim-value {
+  font-size: 20px; font-weight: 700; color: var(--accent); min-width: 48px;
+  text-align: center;
+}
+.trim-time {
+  font-size: 13px; color: var(--teal); font-weight: 600; text-align: center;
+}
+.configure-actions {
+  display: flex; gap: 12px; justify-content: center; margin-top: 8px;
+}
+.configure-back {
+  padding: 12px 28px; background: transparent; color: var(--text2);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  font-size: 14px; cursor: pointer; transition: all var(--transition);
+}
+.configure-back:hover { border-color: var(--text2); color: var(--text); }
+.configure-start {
+  padding: 12px 32px; background: var(--accent); color: #fff; border: none;
+  border-radius: var(--radius); font-size: 15px; font-weight: 600; cursor: pointer;
+  transition: all var(--transition);
+}
+.configure-start:hover { background: var(--accent2); }
+
+/* Print */
+@media print {
+  .app-header, .theme-toggle, .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+  .view { display: none !important; }
+  .view.active { display: block !important; }
+  .results-header, .question-card { border-color: #ccc; box-shadow: none; }
+  .heatmap-cell.pass { background: #d4edda; color: #155724; }
+  .heatmap-cell.fail { background: #f8d7da; color: #721c24; }
+  .heatmap-cell.not-reached { background: #e9ecef; color: #6c757d; }
+  .strand-table th, .strand-table td { border-color: #ccc; }
+}
+</style>
+</head>
+<body>
+<header class="app-header">
+  <div>
+    <div class="header-title">VC2 Science Assessment</div>
+    <div class="header-subtitle" id="headerSubtitle"></div>
+  </div>
+  <div class="header-right">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">&#9681;</button>
+  </div>
+</header>
+
+<div class="recorded-toast" id="recordedToast">Response Recorded</div>
+<div class="gate-message" id="gateMessage"><h3 id="gateTitle"></h3><p id="gateText"></p></div>
+
+<main>
+  <!-- SETUP VIEW -->
+  <section class="view active" id="viewSetup">
+    <div class="setup-center">
+      <h2>Science Level Assessment</h2>
+      <p class="desc">This assessment will present a series of science questions across different topics and difficulty levels. Answer each question to the best of your ability.</p>
+      <form class="setup-form" id="setupForm" onsubmit="return false;">
+        <div class="form-group">
+          <label for="studentName">Student Name</label>
+          <input type="text" id="studentName" placeholder="Enter student name" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <label>Assessment Scope</label>
+          <div class="scope-options" id="scopeOptions">
+            <label class="scope-option selected" data-scope="key">
+              <input type="radio" name="scope" value="key" checked>
+              <div>
+                <div class="scope-label">Key Strands</div>
+                <div class="scope-desc">Biological, Chemical, Earth &amp; Space, Physical Sciences plus Planning, Evaluating, and Science as Human Endeavour</div>
+                <div class="scope-estimate">~50-80 questions &middot; approx. 25-30 minutes</div>
+              </div>
+            </label>
+            <label class="scope-option" data-scope="full">
+              <input type="radio" name="scope" value="full">
+              <div>
+                <div class="scope-label">Full Coverage</div>
+                <div class="scope-desc">All 11 science strands including all Inquiry sub-strands and Communicating</div>
+                <div class="scope-estimate">~70-120 questions &middot; approx. 30-40 minutes</div>
+              </div>
+            </label>
+            <label class="scope-option" data-scope="understanding">
+              <input type="radio" name="scope" value="understanding">
+              <div>
+                <div class="scope-label">Understanding Only</div>
+                <div class="scope-desc">Biological, Chemical, Earth &amp; Space, and Physical Sciences only</div>
+                <div class="scope-estimate">~30-50 questions &middot; approx. 15-20 minutes</div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <button class="start-btn" id="startBtn" type="button">Begin Assessment</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONFIGURE VIEW -->
+  <section class="view" id="viewConfigure">
+    <div class="configure-center">
+      <h2>Configure Assessment</h2>
+      <p class="desc">Review the question selection below. Use the slider to trim the total if you need a shorter session — questions will be removed evenly across strands and levels.</p>
+      <div class="configure-card">
+        <h3>Question Breakdown</h3>
+        <div id="configureBreakdown"></div>
+        <div class="trim-control">
+          <label>Adjust total questions</label>
+          <div class="trim-row">
+            <input type="range" class="trim-slider" id="trimSlider" min="4" max="100" value="100">
+            <span class="trim-value" id="trimValue">100</span>
+          </div>
+          <div class="trim-time" id="trimTime">approx. 30 minutes</div>
+        </div>
+      </div>
+      <div class="configure-actions">
+        <button class="configure-back" id="configureBack">Back</button>
+        <button class="configure-start" id="configureStart">Start Assessment</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEST VIEW -->
+  <section class="view" id="viewTest">
+    <div class="test-header">
+      <div class="test-meta">
+        <div class="test-strand" id="testStrand"></div>
+        <div class="test-level" id="testLevel"></div>
+      </div>
+      <div class="test-progress">
+        Question <strong id="testCurrent">1</strong> of ~<strong id="testTotal">0</strong>
+      </div>
+    </div>
+    <div class="progress-track">
+      <div class="progress-track-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <div class="question-container" id="questionContainer"></div>
+    <div class="confirm-area">
+      <button class="skip-btn no-print" id="skipBtn">Skip</button>
+      <button class="confirm-btn no-print" id="confirmBtn">Confirm</button>
+    </div>
+  </section>
+
+  <!-- COMPLETE VIEW -->
+  <section class="view" id="viewComplete">
+    <div class="complete-center">
+      <h2>Assessment Complete</h2>
+      <p>Thank you for completing the Science assessment. Your responses have been recorded.</p>
+      <div class="code-entry" id="codeEntry">
+        <h3>Teacher Access</h3>
+        <input type="password" class="code-input" id="codeInput" maxlength="4" placeholder="----" inputmode="numeric" autocomplete="off">
+        <button class="code-submit" id="codeSubmit">View Results</button>
+        <div class="code-error" id="codeError">Incorrect code. Please check with your teacher.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS VIEW -->
+  <section class="view" id="viewResults"></section>
+</main>
+
+<script>
+(function() {
+'use strict';
+
+const BLOOMS_LABELS = { 2: 'Remember', 3: 'Apply', 4: 'Analyse', 5: 'Evaluate' };
+const BLOOMS_ORDER = [2, 3, 4, 5];
+const GATE_THRESHOLDS = { 2: [2, 3], 3: [2, 2], 4: [1, 2] };
+const TEACHER_CODE = '3128';
+
+const STRAND_CDS = {
+  'Biological sciences':                  { 8: 'VC2S8U01', 10: 'VC2S10U01' },
+  'Chemical sciences':                    { 8: 'VC2S8U05', 10: 'VC2S10U06' },
+  'Earth and space sciences':             { 8: 'VC2S8U09', 10: 'VC2S10U10' },
+  'Physical sciences':                    { 8: 'VC2S8U13', 10: 'VC2S10U14' },
+  'Nature and development of science':    { 8: 'VC2S8H01', 10: 'VC2S10H01' },
+  'Use and influence of science':         { 8: 'VC2S8H03', 10: 'VC2S10H03' },
+  'Questioning and predicting':           { 8: 'VC2S8I01', 10: 'VC2S10I01' },
+  'Planning and conducting':              { 8: 'VC2S8I02', 10: 'VC2S10I02' },
+  'Processing, modelling and analysing':  { 8: 'VC2S8I04', 10: 'VC2S10I04' },
+  'Evaluating':                           { 8: 'VC2S8I06', 10: 'VC2S10I06' },
+  'Communicating':                        { 8: 'VC2S8I08', 10: 'VC2S10I08' }
+};
+
+const SCOPE_STRANDS = {
+  full: Object.keys(STRAND_CDS),
+  key: ['Biological sciences','Chemical sciences','Earth and space sciences','Physical sciences',
+        'Planning and conducting','Evaluating','Nature and development of science'],
+  understanding: ['Biological sciences','Chemical sciences','Earth and space sciences','Physical sciences']
+};
+
+let fileIndex = {};
+let questionData = {};
+let state = null;
+let heldKeys = new Set();
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function showView(id) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+// Theme
+const themeBtn = document.getElementById('themeToggle');
+function getTheme() { return document.documentElement.getAttribute('data-theme') || 'system'; }
+function cycleTheme() {
+  const order = ['system','dark','light'];
+  const cur = getTheme();
+  const next = order[(order.indexOf(cur) + 1) % order.length];
+  if (next === 'system') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('sa-theme', next);
+}
+themeBtn.addEventListener('click', cycleTheme);
+const savedTheme = localStorage.getItem('sa-theme');
+if (savedTheme && savedTheme !== 'system') document.documentElement.setAttribute('data-theme', savedTheme);
+
+// Scope radio styling
+document.querySelectorAll('.scope-option').forEach(opt => {
+  opt.querySelector('input').addEventListener('change', () => {
+    document.querySelectorAll('.scope-option').forEach(o => o.classList.remove('selected'));
+    opt.classList.add('selected');
+  });
+});
+
+// Load data
+async function loadIndex() {
+  const resp = await fetch('files-index.json');
+  const data = await resp.json();
+  if (Array.isArray(data)) {
+    data.forEach(f => { if (f.code) fileIndex[f.code] = f.path || f.filePath; });
+  } else {
+    Object.assign(fileIndex, data);
+  }
+}
+
+async function loadQuestionFile(code) {
+  if (questionData[code]) return questionData[code];
+  const path = fileIndex[code];
+  if (!path) { console.warn('No path for', code); return null; }
+  const resp = await fetch('questions/' + path);
+  if (!resp.ok) return null;
+  const d = await resp.json();
+  questionData[code] = d;
+  return d;
+}
+
+// Build question queue for a level band
+function selectQuestions(code, bloomKey, count) {
+  const d = questionData[code];
+  if (!d || !d[bloomKey]) return [];
+  const pool = d[bloomKey];
+  const types = ['mc', 'tf', 'cloze'];
+  const byType = {};
+  pool.forEach(q => { (byType[q.type] = byType[q.type] || []).push(q); });
+
+  let selected = [];
+  for (const t of types) {
+    if (byType[t] && byType[t].length && selected.length < count) {
+      selected.push(shuffle(byType[t])[0]);
+    }
+  }
+  // fill remaining from shuffled pool, avoiding duplicates
+  if (selected.length < count) {
+    const remaining = shuffle(pool).filter(q => !selected.includes(q));
+    selected = selected.concat(remaining.slice(0, count - selected.length));
+  }
+  return selected.slice(0, count);
+}
+
+function buildBloomQueue(strands, level, bloomLevel) {
+  const key = 'toLevel' + bloomLevel;
+  const counts = { 2: 3, 3: 2, 4: 2, 5: 2 };
+  const queue = [];
+  const numQ = counts[bloomLevel];
+  // Interleave strands
+  const strandQueues = {};
+  strands.forEach(s => {
+    const code = STRAND_CDS[s][level];
+    if (code && questionData[code]) {
+      strandQueues[s] = selectQuestions(code, key, numQ);
+    }
+  });
+  // Round-robin interleave
+  let maxLen = Math.max(...Object.values(strandQueues).map(q => q.length), 0);
+  for (let i = 0; i < maxLen; i++) {
+    for (const s of strands) {
+      if (strandQueues[s] && strandQueues[s][i]) {
+        queue.push({
+          strand: s,
+          level: level,
+          bloomLevel: bloomLevel,
+          code: STRAND_CDS[s][level],
+          question: strandQueues[s][i]
+        });
+      }
+    }
+  }
+  return queue;
+}
+
+// Pre-build the full question pool for all bloom levels and both level bands
+function buildFullPool(strands) {
+  const pool = [];
+  for (const level of [8, 10]) {
+    for (const bl of BLOOMS_ORDER) {
+      const key = 'toLevel' + bl;
+      const counts = { 2: 3, 3: 2, 4: 2, 5: 2 };
+      for (const s of strands) {
+        const code = STRAND_CDS[s][level];
+        if (!code || !questionData[code]) continue;
+        const selected = selectQuestions(code, key, counts[bl]);
+        selected.forEach(q => {
+          pool.push({ strand: s, level, bloomLevel: bl, code, question: q });
+        });
+      }
+    }
+  }
+  return pool;
+}
+
+// Trim pool to target size with even parity across strands, levels, blooms
+function trimPool(pool, target) {
+  if (pool.length <= target) return [...pool];
+  const trimmed = [...pool];
+  while (trimmed.length > target) {
+    // Count per strand
+    const counts = {};
+    trimmed.forEach(q => {
+      const key = q.strand + '|' + q.level + '|' + q.bloomLevel;
+      counts[key] = (counts[key] || 0) + 1;
+    });
+    // Find the group with the most questions
+    let maxKey = null, maxCount = 0;
+    for (const [key, count] of Object.entries(counts)) {
+      if (count > maxCount) { maxCount = count; maxKey = key; }
+    }
+    // Remove a random question from that group
+    const candidates = [];
+    trimmed.forEach((q, i) => {
+      const key = q.strand + '|' + q.level + '|' + q.bloomLevel;
+      if (key === maxKey) candidates.push(i);
+    });
+    const removeIdx = candidates[Math.floor(Math.random() * candidates.length)];
+    trimmed.splice(removeIdx, 1);
+  }
+  return trimmed;
+}
+
+// Configure view state
+let configurePool = null;
+let configureName = '';
+let configureScope = '';
+let configureStrands = [];
+
+// Step 1: Setup -> Configure
+document.getElementById('startBtn').addEventListener('click', async function() {
+  const name = document.getElementById('studentName').value.trim();
+  if (!name) { document.getElementById('studentName').focus(); return; }
+  const scope = document.querySelector('input[name="scope"]:checked').value;
+  const strands = SCOPE_STRANDS[scope];
+
+  this.disabled = true;
+  this.textContent = 'Loading questions...';
+  document.getElementById('headerSubtitle').textContent = name;
+
+  await loadIndex();
+  const codes = [];
+  for (const s of strands) {
+    if (STRAND_CDS[s][8]) codes.push(STRAND_CDS[s][8]);
+    if (STRAND_CDS[s][10]) codes.push(STRAND_CDS[s][10]);
+  }
+  await Promise.all(codes.map(c => loadQuestionFile(c)));
+
+  configureName = name;
+  configureScope = scope;
+  configureStrands = strands;
+  configurePool = buildFullPool(strands);
+
+  renderConfigureView(configurePool.length);
+  showView('viewConfigure');
+  this.disabled = false;
+  this.textContent = 'Begin Assessment';
+});
+
+function renderConfigureView(total) {
+  // Breakdown by strand
+  const byStrand = {};
+  configurePool.forEach(q => {
+    byStrand[q.strand] = (byStrand[q.strand] || 0) + 1;
+  });
+  let html = '';
+  for (const s of configureStrands) {
+    html += '<div class="configure-stat"><span class="label">' + esc(s) + '</span><span class="value">' + (byStrand[s] || 0) + '</span></div>';
+  }
+  const l8 = configurePool.filter(q => q.level === 8).length;
+  const l10 = configurePool.filter(q => q.level === 10).length;
+  html += '<div class="configure-stat"><span class="label">Levels 7-8</span><span class="value">' + l8 + '</span></div>';
+  html += '<div class="configure-stat"><span class="label">Levels 9-10</span><span class="value">' + l10 + '</span></div>';
+  html += '<div class="configure-stat" style="border-top:2px solid var(--border);padding-top:12px;margin-top:4px"><span class="label" style="font-weight:700;color:var(--text)">Total</span><span class="value" style="font-size:18px">' + configurePool.length + '</span></div>';
+  document.getElementById('configureBreakdown').innerHTML = html;
+
+  const slider = document.getElementById('trimSlider');
+  slider.max = configurePool.length;
+  slider.min = Math.min(configureStrands.length, configurePool.length);
+  slider.value = configurePool.length;
+  document.getElementById('trimValue').textContent = configurePool.length;
+  updateTrimTime(configurePool.length);
+}
+
+function updateTrimTime(n) {
+  const mins = Math.round(n * 25 / 60);
+  document.getElementById('trimTime').textContent = 'approx. ' + mins + ' minutes';
+}
+
+document.getElementById('trimSlider').addEventListener('input', function() {
+  document.getElementById('trimValue').textContent = this.value;
+  updateTrimTime(parseInt(this.value));
+});
+
+document.getElementById('configureBack').addEventListener('click', () => {
+  showView('viewSetup');
+});
+
+// Step 2: Configure -> Start test
+document.getElementById('configureStart').addEventListener('click', function() {
+  const target = parseInt(document.getElementById('trimSlider').value);
+  const finalPool = trimPool(configurePool, target);
+
+  // Build the gated queue from the trimmed pool — start with Level 8 Bloom's 2
+  const l8b2 = finalPool.filter(q => q.level === 8 && q.bloomLevel === 2);
+  // Sort to interleave strands
+  const interleaved = interleaveByStrand(l8b2);
+
+  state = {
+    name: configureName,
+    scope: configureScope,
+    strands: configureStrands,
+    fullPool: finalPool,
+    startTime: Date.now(),
+    currentIndex: 0,
+    currentLevel: 8,
+    currentBloom: 2,
+    queue: interleaved,
+    responses: [],
+    strandResults: {},
+    selectedAnswer: null,
+    transitioning: false,
+    finished: false,
+    estimatedTotal: finalPool.length
+  };
+
+  for (const s of configureStrands) {
+    state.strandResults[s] = {
+      8: { 2: { correct: 0, total: 0 }, 3: { correct: 0, total: 0 }, 4: { correct: 0, total: 0 }, 5: { correct: 0, total: 0 }, highestBloom: 0, gatedAt: null },
+      10: { 2: { correct: 0, total: 0 }, 3: { correct: 0, total: 0 }, 4: { correct: 0, total: 0 }, 5: { correct: 0, total: 0 }, highestBloom: 0, gatedAt: null }
+    };
+  }
+
+  document.getElementById('testTotal').textContent = state.estimatedTotal;
+  showView('viewTest');
+  renderQuestion();
+});
+
+function interleaveByStrand(questions) {
+  const byStrand = {};
+  questions.forEach(q => { (byStrand[q.strand] = byStrand[q.strand] || []).push(q); });
+  const result = [];
+  const strandKeys = Object.keys(byStrand);
+  const maxLen = Math.max(...strandKeys.map(k => byStrand[k].length), 0);
+  for (let i = 0; i < maxLen; i++) {
+    for (const s of strandKeys) {
+      if (byStrand[s][i]) result.push(byStrand[s][i]);
+    }
+  }
+  return result;
+}
+
+function getNextQueue(strands, level, bloomLevel) {
+  if (state.fullPool) {
+    const filtered = state.fullPool.filter(q =>
+      strands.includes(q.strand) && q.level === level && q.bloomLevel === bloomLevel
+    );
+    return interleaveByStrand(filtered);
+  }
+  return interleaveByStrand(buildBloomQueue(strands, level, bloomLevel));
+}
+
+function isCorrect(item, answer) {
+  const q = item.question;
+  if (q.type === 'tf') return answer === q.correct;
+  if (q.type === 'mc') return answer === q.correct;
+  if (q.type === 'cloze') {
+    // answer is object { blankId: selectedAnswer }
+    if (!q.blanks) return false;
+    return q.blanks.every(b => answer[b.id] === b.correct);
+  }
+  return false;
+}
+
+function renderQuestion() {
+  if (state.currentIndex >= state.queue.length) {
+    advancePhase();
+    return;
+  }
+
+  const item = state.queue[state.currentIndex];
+  const q = item.question;
+  state.selectedAnswer = null;
+  state.clozeSelections = {};
+
+  document.getElementById('testStrand').textContent = item.strand;
+  document.getElementById('testLevel').textContent = (item.level === 8 ? 'Levels 7-8' : 'Levels 9-10') + ' — ' + BLOOMS_LABELS[item.bloomLevel];
+  document.getElementById('testCurrent').textContent = state.responses.length + 1;
+  const pct = Math.round((state.responses.length / state.estimatedTotal) * 100);
+  document.getElementById('progressFill').style.width = Math.min(pct, 100) + '%';
+
+  const container = document.getElementById('questionContainer');
+  const confirmBtn = document.getElementById('confirmBtn');
+  confirmBtn.classList.remove('visible');
+
+  let html = '<div class="question-card">';
+  html += '<span class="bloom-badge bloom-' + item.bloomLevel + '">' + BLOOMS_LABELS[item.bloomLevel] + '</span>';
+
+  if (q.type === 'tf') {
+    html += '<div class="question-text">' + esc(q.question) + '</div>';
+    html += '<div class="tf-options">';
+    html += '<button class="tf-btn" data-answer="True">True</button>';
+    html += '<button class="tf-btn" data-answer="False">False</button>';
+    html += '</div>';
+  } else if (q.type === 'mc') {
+    html += '<div class="question-text">' + esc(q.question) + '</div>';
+    html += '<div class="mc-options">';
+    const options = shuffle([q.correct, ...q.distractors.map(d => d.answer)]);
+    const letters = 'ABCDEFGH';
+    options.forEach((opt, i) => {
+      html += '<div class="mc-option" data-answer="' + esc(opt) + '">';
+      html += '<span class="mc-letter">' + letters[i] + '</span>';
+      html += '<span class="mc-text">' + esc(opt) + '</span>';
+      html += '</div>';
+    });
+    html += '</div>';
+  } else if (q.type === 'cloze') {
+    let sentence = q.sentence || q.stem || q.question || '';
+    // Replace {{blank:ID}} placeholders with inline blank spans
+    sentence = sentence.replace(/\{\{blank:(\w+)\}\}/g, (_, id) => {
+      return '<span class="cloze-blank" data-blank-id="' + esc(id) + '">&mdash;</span>';
+    });
+    html += '<div class="cloze-stem">' + sentence + '</div>';
+
+    // Render chip groups for each blank beneath the sentence
+    if (q.blanks) {
+      q.blanks.forEach((blank, idx) => {
+        const allOptions = shuffle([blank.correct, ...(blank.distractors || []).map(d => typeof d === 'string' ? d : d.answer || d)]);
+        html += '<div class="cloze-group" data-blank-id="' + esc(blank.id) + '">';
+        html += '<div class="cloze-group-label">Blank ' + (idx + 1) + '</div>';
+        html += '<div class="cloze-chips">';
+        allOptions.forEach(opt => {
+          const optStr = typeof opt === 'string' ? opt : String(opt);
+          html += '<span class="cloze-chip" data-blank-id="' + esc(blank.id) + '" data-value="' + esc(optStr) + '">' + esc(optStr) + '</span>';
+        });
+        html += '</div></div>';
+      });
+    }
+  }
+
+  html += '</div>';
+  container.innerHTML = html;
+
+  // Attach event listeners
+  if (q.type === 'tf') {
+    container.querySelectorAll('.tf-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        container.querySelectorAll('.tf-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        state.selectedAnswer = btn.dataset.answer;
+        confirmBtn.classList.add('visible');
+      });
+    });
+  } else if (q.type === 'mc') {
+    container.querySelectorAll('.mc-option').forEach(opt => {
+      opt.addEventListener('click', () => {
+        container.querySelectorAll('.mc-option').forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        state.selectedAnswer = opt.dataset.answer;
+        confirmBtn.classList.add('visible');
+      });
+    });
+  } else if (q.type === 'cloze') {
+    state.clozeSelections = {};
+    const blanks = q.blanks || [];
+    container.querySelectorAll('.cloze-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const blankId = chip.dataset.blankId;
+        // Deselect others in same group
+        container.querySelectorAll('.cloze-chip[data-blank-id="' + blankId + '"]').forEach(c => c.classList.remove('selected'));
+        chip.classList.add('selected');
+        state.clozeSelections[blankId] = chip.dataset.value;
+        // Update blank display
+        const blankEl = container.querySelector('.cloze-blank[data-blank-id="' + blankId + '"]');
+        if (blankEl) { blankEl.textContent = chip.dataset.value; blankEl.classList.add('filled'); }
+        // Check if all blanks filled
+        if (blanks.length > 0 && blanks.every(b => state.clozeSelections[b.id])) {
+          state.selectedAnswer = { ...state.clozeSelections };
+          confirmBtn.classList.add('visible');
+        }
+      });
+    });
+  }
+}
+
+// Confirm answer
+document.getElementById('confirmBtn').addEventListener('click', () => confirmAnswer(state.selectedAnswer));
+document.getElementById('skipBtn').addEventListener('click', () => confirmAnswer(null));
+
+function confirmAnswer(answer) {
+  if (state.finished || state.transitioning) return;
+  state.transitioning = true;
+  const item = state.queue[state.currentIndex];
+  const correct = answer !== null ? isCorrect(item, answer) : false;
+
+  state.responses.push({
+    strand: item.strand,
+    level: item.level,
+    bloomLevel: item.bloomLevel,
+    code: item.code,
+    questionText: item.question.question || item.question.sentence || item.question.stem || '',
+    questionType: item.question.type,
+    answer: answer,
+    correctAnswer: item.question.type === 'cloze'
+      ? (item.question.blanks || []).map(b => b.correct).join(', ')
+      : item.question.correct,
+    correct: correct,
+    skipped: answer === null,
+    timestamp: Date.now()
+  });
+
+  // Update strand results
+  const sr = state.strandResults[item.strand][item.level][item.bloomLevel];
+  sr.total++;
+  if (correct) sr.correct++;
+
+  // Show toast, then fade and advance
+  const toast = document.getElementById('recordedToast');
+  toast.classList.add('show');
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    const container = document.getElementById('questionContainer');
+    container.classList.add('fading');
+
+    setTimeout(() => {
+      state.currentIndex++;
+      state.transitioning = false;
+      container.classList.remove('fading');
+      renderQuestion();
+    }, 350);
+  }, 800);
+}
+
+function advancePhase() {
+  const { strands, currentLevel, currentBloom } = state;
+
+  // Check gates for current bloom level (if not terminal bloom 5)
+  if (currentBloom < 5) {
+    const threshold = GATE_THRESHOLDS[currentBloom];
+    const advancingStrands = [];
+    for (const s of strands) {
+      const sr = state.strandResults[s][currentLevel][currentBloom];
+      if (sr.total > 0 && sr.correct >= threshold[0]) {
+        advancingStrands.push(s);
+        state.strandResults[s][currentLevel].highestBloom = currentBloom;
+      } else if (sr.total > 0) {
+        state.strandResults[s][currentLevel].gatedAt = currentBloom;
+        state.strandResults[s][currentLevel].highestBloom = currentBloom;
+      }
+    }
+
+    if (advancingStrands.length > 0) {
+      const nextBloom = currentBloom + 1;
+      state.currentBloom = nextBloom;
+      const nextQueue = getNextQueue(advancingStrands, currentLevel, nextBloom);
+      if (nextQueue.length > 0) {
+        state.queue = nextQueue;
+        state.currentIndex = 0;
+        showGateMessage(
+          'Moving to ' + BLOOMS_LABELS[nextBloom],
+          advancingStrands.length + ' of ' + strands.length + ' strands advancing'
+        );
+        return;
+      }
+    }
+  } else {
+    // Mark bloom 5 results
+    for (const s of strands) {
+      const sr = state.strandResults[s][currentLevel][5];
+      if (sr.total > 0) state.strandResults[s][currentLevel].highestBloom = 5;
+    }
+  }
+
+  // Current bloom done — check if we advance to Level 10
+  if (currentLevel === 8) {
+    const passed = strands.filter(s => {
+      const sr = state.strandResults[s][8];
+      return sr.highestBloom >= 2 && (sr[2].correct >= GATE_THRESHOLDS[2][0]);
+    }).length;
+
+    if (passed >= Math.ceil(strands.length / 2)) {
+      state.currentLevel = 10;
+      state.currentBloom = 2;
+      const activeStrands = strands.filter(s => STRAND_CDS[s][10] && questionData[STRAND_CDS[s][10]]);
+      const nextQueue = getNextQueue(activeStrands, 10, 2);
+      if (nextQueue.length > 0) {
+        state.queue = nextQueue;
+        state.currentIndex = 0;
+        showGateMessage('Advancing to Levels 9-10', 'Strong performance at Levels 7-8');
+        return;
+      }
+    }
+  }
+
+  // Finish
+  state.finished = true;
+  state.endTime = Date.now();
+  showView('viewComplete');
+}
+
+function showGateMessage(title, text) {
+  const el = document.getElementById('gateMessage');
+  document.getElementById('gateTitle').textContent = title;
+  document.getElementById('gateText').textContent = text;
+  el.classList.add('show');
+  setTimeout(() => {
+    el.classList.remove('show');
+    setTimeout(() => renderQuestion(), 300);
+  }, 2000);
+}
+
+// Code entry
+document.getElementById('codeSubmit').addEventListener('click', checkCode);
+document.getElementById('codeInput').addEventListener('keydown', e => { if (e.key === 'Enter') checkCode(); });
+
+function checkCode() {
+  const input = document.getElementById('codeInput');
+  if (input.value === TEACHER_CODE) {
+    document.getElementById('codeError').style.display = 'none';
+    renderResults();
+    showView('viewResults');
+  } else {
+    document.getElementById('codeError').style.display = 'block';
+    input.value = '';
+    input.focus();
+  }
+}
+
+// Results
+function renderResults() {
+  const el = document.getElementById('viewResults');
+  const duration = Math.round((state.endTime - state.startTime) / 60000);
+  const totalCorrect = state.responses.filter(r => r.correct).length;
+  const totalQ = state.responses.length;
+  const totalSkipped = state.responses.filter(r => r.skipped).length;
+
+  let html = '<div class="results-header">';
+  html += '<h2>Assessment Results</h2>';
+  html += '<div class="results-meta">';
+  html += '<span>Student: <strong>' + esc(state.name) + '</strong></span>';
+  html += '<span>Date: <strong>' + new Date().toLocaleDateString() + '</strong></span>';
+  html += '<span>Duration: <strong>' + duration + ' min</strong></span>';
+  html += '<span>Score: <strong>' + totalCorrect + '/' + totalQ + ' (' + Math.round(totalCorrect/totalQ*100) + '%)</strong></span>';
+  if (totalSkipped) html += '<span>Skipped: <strong>' + totalSkipped + '</strong></span>';
+  html += '</div></div>';
+
+  // Heatmap
+  html += '<div class="results-section">';
+  html += '<h3>Strand &times; Bloom\'s Level Heatmap</h3>';
+  html += '<div class="heatmap">';
+  // Header row
+  html += '<div class="heatmap-label"></div>';
+  for (const bl of BLOOMS_ORDER) {
+    html += '<div class="heatmap-header">' + BLOOMS_LABELS[bl] + '</div>';
+  }
+  // Level 8
+  html += '<div class="level-divider">Levels 7-8</div>';
+  for (const s of state.strands) {
+    html += '<div class="heatmap-label">' + esc(s) + '</div>';
+    for (const bl of BLOOMS_ORDER) {
+      const sr = state.strandResults[s][8][bl];
+      if (sr.total === 0) {
+        html += '<div class="heatmap-cell not-reached">&mdash;</div>';
+      } else {
+        const passed = bl < 5 ? (GATE_THRESHOLDS[bl] ? sr.correct >= GATE_THRESHOLDS[bl][0] : sr.correct > 0) : true;
+        html += '<div class="heatmap-cell ' + (passed ? 'pass' : 'fail') + '">' + sr.correct + '/' + sr.total + '</div>';
+      }
+    }
+  }
+  // Level 10 (if attempted)
+  const anyL10 = state.strands.some(s => {
+    return BLOOMS_ORDER.some(bl => state.strandResults[s][10][bl].total > 0);
+  });
+  if (anyL10) {
+    html += '<div class="level-divider">Levels 9-10</div>';
+    for (const s of state.strands) {
+      html += '<div class="heatmap-label">' + esc(s) + '</div>';
+      for (const bl of BLOOMS_ORDER) {
+        const sr = state.strandResults[s][10][bl];
+        if (sr.total === 0) {
+          html += '<div class="heatmap-cell not-reached">&mdash;</div>';
+        } else {
+          const passed = bl < 5 ? (GATE_THRESHOLDS[bl] ? sr.correct >= GATE_THRESHOLDS[bl][0] : sr.correct > 0) : true;
+          html += '<div class="heatmap-cell ' + (passed ? 'pass' : 'fail') + '">' + sr.correct + '/' + sr.total + '</div>';
+        }
+      }
+    }
+  }
+  html += '</div></div>';
+
+  // Summary table
+  html += '<div class="results-section">';
+  html += '<h3>Strand Summary</h3>';
+  html += '<table class="strand-table"><thead><tr>';
+  html += '<th>Strand</th><th>Level 7-8 Highest</th><th>Level 7-8 Score</th>';
+  if (anyL10) html += '<th>Level 9-10 Highest</th><th>Level 9-10 Score</th>';
+  html += '</tr></thead><tbody>';
+
+  for (const s of state.strands) {
+    html += '<tr><td>' + esc(s) + '</td>';
+    // Level 8
+    const sr8 = state.strandResults[s][8];
+    const l8Bloom = sr8.highestBloom;
+    const l8Correct = BLOOMS_ORDER.reduce((sum, bl) => sum + sr8[bl].correct, 0);
+    const l8Total = BLOOMS_ORDER.reduce((sum, bl) => sum + sr8[bl].total, 0);
+    html += '<td>' + (l8Bloom ? BLOOMS_LABELS[l8Bloom] : '—') + '</td>';
+    html += '<td>' + (l8Total ? l8Correct + '/' + l8Total : '—') + '</td>';
+    if (anyL10) {
+      const sr10 = state.strandResults[s][10];
+      const l10Bloom = sr10.highestBloom;
+      const l10Correct = BLOOMS_ORDER.reduce((sum, bl) => sum + sr10[bl].correct, 0);
+      const l10Total = BLOOMS_ORDER.reduce((sum, bl) => sum + sr10[bl].total, 0);
+      html += '<td>' + (l10Bloom ? BLOOMS_LABELS[l10Bloom] : '—') + '</td>';
+      html += '<td>' + (l10Total ? l10Correct + '/' + l10Total : '—') + '</td>';
+    }
+    html += '</tr>';
+  }
+  html += '</tbody></table></div>';
+
+  // Detailed responses (collapsible)
+  html += '<div class="results-section">';
+  html += '<h3>Detailed Responses</h3>';
+  html += '<details><summary style="cursor:pointer;color:var(--accent);font-size:14px;margin-bottom:12px;">Show all ' + state.responses.length + ' responses</summary>';
+  html += '<table class="strand-table"><thead><tr>';
+  html += '<th>#</th><th>Strand</th><th>Level</th><th>Bloom\'s</th><th>Type</th><th>Question</th><th>Student Answer</th><th>Correct Answer</th><th>Result</th>';
+  html += '</tr></thead><tbody>';
+
+  state.responses.forEach((r, i) => {
+    const answerStr = r.skipped ? '<em>Skipped</em>' :
+      (typeof r.answer === 'object' ? Object.values(r.answer).join(', ') : esc(String(r.answer)));
+    html += '<tr>';
+    html += '<td>' + (i + 1) + '</td>';
+    html += '<td style="font-size:12px">' + esc(r.strand) + '</td>';
+    html += '<td>' + (r.level === 8 ? '7-8' : '9-10') + '</td>';
+    html += '<td>' + BLOOMS_LABELS[r.bloomLevel] + '</td>';
+    html += '<td>' + r.questionType.toUpperCase() + '</td>';
+    html += '<td style="font-size:12px;max-width:250px">' + esc(r.questionText.substring(0, 80)) + (r.questionText.length > 80 ? '...' : '') + '</td>';
+    html += '<td style="font-size:12px">' + answerStr + '</td>';
+    html += '<td style="font-size:12px">' + esc(String(r.correctAnswer)) + '</td>';
+    html += '<td style="font-weight:600;color:' + (r.skipped ? 'var(--text2)' : r.correct ? 'var(--green)' : 'var(--red)') + '">' +
+      (r.skipped ? 'Skip' : r.correct ? 'Correct' : 'Incorrect') + '</td>';
+    html += '</tr>';
+  });
+
+  html += '</tbody></table></details></div>';
+
+  // Print button
+  html += '<div style="text-align:center;margin:32px 0" class="no-print">';
+  html += '<button onclick="window.print()" style="padding:12px 32px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:600;cursor:pointer;">Print Results</button>';
+  html += '</div>';
+
+  el.innerHTML = html;
+}
+
+// Testing shortcuts: QWE = correct answer, ASD = incorrect answer
+document.addEventListener('keydown', e => {
+  heldKeys.add(e.key.toLowerCase());
+  checkShortcut();
+});
+document.addEventListener('keyup', e => {
+  heldKeys.delete(e.key.toLowerCase());
+});
+window.addEventListener('blur', () => heldKeys.clear());
+
+function checkShortcut() {
+  if (!state || state.finished) return;
+
+  if (heldKeys.has('1') && heldKeys.has('2') && heldKeys.has('3')) {
+    heldKeys.clear();
+    state.finished = true;
+    state.endTime = Date.now();
+    showView('viewComplete');
+    return;
+  }
+
+  if (state.currentIndex >= state.queue.length) return;
+
+  if (heldKeys.has('q') && heldKeys.has('w') && heldKeys.has('e')) {
+    heldKeys.clear();
+    autoAnswer(true);
+  } else if (heldKeys.has('a') && heldKeys.has('s') && heldKeys.has('d')) {
+    heldKeys.clear();
+    autoAnswer(false);
+  }
+}
+
+function autoAnswer(selectCorrect) {
+  const item = state.queue[state.currentIndex];
+  const q = item.question;
+  let answer;
+
+  if (q.type === 'tf') {
+    answer = selectCorrect ? q.correct : (q.correct === 'True' ? 'False' : 'True');
+  } else if (q.type === 'mc') {
+    if (selectCorrect) {
+      answer = q.correct;
+    } else {
+      answer = q.distractors[0]?.answer || q.correct;
+    }
+  } else if (q.type === 'cloze') {
+    const ans = {};
+    (q.blanks || []).forEach(b => {
+      if (selectCorrect) {
+        ans[b.id] = b.correct;
+      } else {
+        const distractors = (b.distractors || []).map(d => typeof d === 'string' ? d : d.answer || d);
+        ans[b.id] = distractors[0] || b.correct;
+      }
+    });
+    answer = ans;
+  }
+
+  // Visually select the answer
+  const container = document.getElementById('questionContainer');
+  if (q.type === 'tf') {
+    container.querySelectorAll('.tf-btn').forEach(b => {
+      b.classList.toggle('selected', b.dataset.answer === answer);
+    });
+  } else if (q.type === 'mc') {
+    container.querySelectorAll('.mc-option').forEach(o => {
+      o.classList.toggle('selected', o.dataset.answer === answer);
+    });
+  }
+
+  state.selectedAnswer = answer;
+  setTimeout(() => confirmAnswer(answer), 150);
+}
+
+})();
+</script>
+</body>
+</html>
