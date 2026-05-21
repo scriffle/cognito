@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Diagnostic Heatmap</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #242836;
+  --border: #2e3347;
+  --text: #e4e6f0;
+  --text2: #9298b4;
+  --accent: #6c8cff;
+  --accent2: #4a6adf;
+  --green: #4ade80;
+  --red: #f87171;
+  --orange: #fb923c;
+  --yellow: #fbbf24;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --radius: 10px;
+  --transition: 0.15s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.5;
+  min-height: 100vh; min-height: 100dvh;
+}
+
+.skip-link {
+  position: absolute; top: -40px; left: 0; background: var(--accent);
+  color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px;
+  border-radius: 0 0 8px 0; text-decoration: none;
+}
+.skip-link:focus { top: 0; }
+
+/* Header */
+.app-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; border-bottom: 1px solid var(--border);
+  background: var(--surface); position: sticky; top: 0; z-index: 50;
+  flex-wrap: wrap;
+}
+.header-title { font-size: 16px; font-weight: 600; flex: 1; min-width: 200px; }
+.header-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.theme-toggle, .export-btn, .snapshot-btn, .nav-btn {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text2);
+  cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px;
+  font-weight: 600; min-height: 44px; transition: all var(--transition);
+}
+.theme-toggle:hover, .export-btn:hover, .snapshot-btn:hover, .nav-btn:hover {
+  border-color: var(--accent); color: var(--text);
+}
+.nav-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Main */
+main { max-width: 1400px; margin: 0 auto; padding: 20px; }
+
+/* Disclaimer */
+.disclaimer {
+  background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.25);
+  border-radius: var(--radius); padding: 12px 16px; margin-bottom: 20px;
+  font-size: 13px; color: var(--yellow); line-height: 1.6;
+}
+.disclaimer strong { color: var(--yellow); }
+
+/* No data */
+.no-data {
+  text-align: center; padding: 80px 20px; color: var(--text2);
+}
+.no-data h2 { font-size: 22px; margin-bottom: 12px; color: var(--text); }
+.no-data p { font-size: 14px; max-width: 500px; margin: 0 auto 16px; }
+.no-data a { color: var(--accent); }
+
+/* Filter bar */
+.filter-bar {
+  display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center;
+}
+.filter-bar label { font-size: 12px; color: var(--text2); font-weight: 600; }
+.filter-bar select {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  padding: 8px 12px; border-radius: 6px; font-size: 13px; min-height: 40px;
+  cursor: pointer;
+}
+.filter-bar select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* Overview cards */
+.overview-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px; margin-bottom: 24px;
+}
+.overview-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px; cursor: pointer; transition: all var(--transition);
+}
+.overview-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.overview-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.overview-card .oc-label { font-size: 12px; color: var(--text2); margin-bottom: 4px; }
+.overview-card .oc-value { font-size: 24px; font-weight: 700; }
+.overview-card .oc-sub { font-size: 11px; color: var(--text2); margin-top: 4px; }
+.oc-value.green { color: var(--green); }
+.oc-value.accent { color: var(--accent); }
+.oc-value.yellow { color: var(--yellow); }
+.oc-value.red { color: var(--red); }
+.oc-value.purple { color: var(--purple); }
+
+/* Heatmap */
+.heatmap-section { margin-bottom: 32px; }
+.heatmap-section h3 {
+  font-size: 15px; font-weight: 700; margin-bottom: 12px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+.heatmap-table {
+  width: 100%; border-collapse: separate; border-spacing: 3px;
+  font-size: 12px;
+}
+.heatmap-table th {
+  padding: 8px 10px; text-align: center; font-weight: 700;
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+  color: var(--text2); background: var(--surface);
+}
+.heatmap-table th:first-child { text-align: left; min-width: 200px; }
+.heatmap-table td { padding: 0; }
+.heatmap-table td:first-child {
+  padding: 8px 10px; background: var(--surface); font-size: 12px;
+  border-radius: 4px; vertical-align: middle; max-width: 300px;
+}
+.cd-label { display: flex; flex-direction: column; gap: 2px; }
+.cd-label .cd-code-lbl {
+  font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px;
+  color: var(--accent); font-weight: 600;
+}
+.cd-label .cd-text-lbl {
+  font-size: 11px; color: var(--text2); line-height: 1.4;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.heatmap-cell {
+  width: 100%; height: 42px; border-radius: 4px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; transition: all var(--transition);
+  border: 2px solid transparent; min-width: 60px;
+}
+.heatmap-cell:hover { transform: scale(1.05); z-index: 2; position: relative; }
+.heatmap-cell:focus-visible { outline: 2px solid var(--text); outline-offset: 1px; }
+
+.cell-mastered { background: rgba(74, 222, 128, 0.2); color: var(--green); border-color: rgba(74, 222, 128, 0.3); }
+.cell-emerging { background: rgba(251, 191, 36, 0.15); color: var(--yellow); border-color: rgba(251, 191, 36, 0.25); }
+.cell-not-reached { background: rgba(248, 113, 113, 0.1); color: var(--red); border-color: rgba(248, 113, 113, 0.15); }
+.cell-gated { background: var(--surface2); color: var(--text2); border-color: var(--border); }
+.cell-unavailable { background: var(--surface); color: var(--text2); border-color: var(--border); opacity: 0.4; cursor: default; }
+.cell-unavailable:hover { transform: none; }
+
+/* EMAB badge in row */
+.emab-badge {
+  font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 5px;
+  text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; display: inline-block;
+}
+.emab-above-standard { background: rgba(167, 139, 250, 0.15); color: var(--purple); }
+.emab-meeting-confirmed { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+.emab-meeting { background: rgba(108, 140, 255, 0.15); color: var(--accent); }
+.emab-approaching { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+.emab-beginning { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+
+/* Pattern alerts */
+.pattern-alerts { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+.pattern-alert {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 18px; display: flex; gap: 12px; align-items: flex-start;
+}
+.pattern-alert .pa-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+.pattern-alert .pa-title { font-size: 13px; font-weight: 700; margin-bottom: 2px; }
+.pattern-alert .pa-body { font-size: 12px; color: var(--text2); line-height: 1.5; }
+.pattern-alert.asymmetric { border-left: 3px solid var(--purple); }
+.pattern-alert.delayed { border-left: 3px solid var(--red); }
+.pattern-alert.reasoning { border-left: 3px solid var(--orange); }
+.pattern-alert.advanced { border-left: 3px solid var(--green); }
+
+/* Detail panel */
+.detail-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100;
+  display: none; align-items: center; justify-content: center; padding: 20px;
+}
+.detail-overlay.open { display: flex; }
+.detail-panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  max-width: 600px; width: 100%; max-height: 80vh; overflow-y: auto; padding: 24px;
+}
+.detail-panel h3 { font-size: 16px; margin-bottom: 4px; }
+.detail-panel .dp-code {
+  font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px;
+  color: var(--accent); margin-bottom: 12px;
+}
+.detail-panel .dp-section { margin-bottom: 16px; }
+.detail-panel .dp-label { font-size: 11px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.dp-answer-list { list-style: none; }
+.dp-answer-list li {
+  padding: 8px 12px; border-radius: 6px; margin-bottom: 4px; font-size: 12px;
+  display: flex; gap: 8px; align-items: center;
+}
+.dp-answer-list li.correct { background: rgba(74, 222, 128, 0.08); }
+.dp-answer-list li.incorrect { background: rgba(248, 113, 113, 0.08); }
+.dp-answer-list .dp-icon { font-size: 14px; }
+.dp-answer-list .dp-bloom { font-size: 10px; color: var(--teal); text-transform: uppercase; font-weight: 600; }
+.dp-close {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+  padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 13px;
+  margin-top: 12px; min-height: 44px;
+}
+.dp-close:hover { border-color: var(--accent); }
+
+/* Snapshot comparison */
+.snapshot-bar {
+  display: flex; gap: 10px; margin-bottom: 16px; align-items: center;
+  flex-wrap: wrap;
+}
+.snapshot-bar .sb-label { font-size: 12px; color: var(--text2); font-weight: 600; }
+.snapshot-list { display: flex; gap: 6px; flex-wrap: wrap; }
+.snapshot-chip {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 20px;
+  padding: 6px 14px; font-size: 11px; cursor: pointer; transition: all var(--transition);
+}
+.snapshot-chip:hover { border-color: var(--accent); }
+.snapshot-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.snapshot-chip .snap-delete {
+  margin-left: 6px; opacity: 0.5; cursor: pointer;
+}
+.snapshot-chip .snap-delete:hover { opacity: 1; }
+
+/* Comparison indicator */
+.cell-improved { box-shadow: inset 0 0 0 2px var(--green); }
+.cell-declined { box-shadow: inset 0 0 0 2px var(--red); }
+.cell-new { box-shadow: inset 0 0 0 2px var(--accent); }
+
+/* Toast */
+.toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 200; display: flex; flex-direction: column; gap: 8px; }
+.toast {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; font-size: 13px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: toastIn 0.2s ease;
+}
+@keyframes toastIn { from { opacity: 0; transform: translateY(10px); } }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heatmap-table { font-size: 11px; }
+  .heatmap-table th:first-child { min-width: 120px; }
+  .heatmap-cell { min-width: 44px; height: 36px; font-size: 10px; }
+  .overview-grid { grid-template-columns: repeat(2, 1fr); }
+  .app-header { padding: 10px 14px; }
+  .header-title { font-size: 14px; }
+}
+@media (max-width: 480px) {
+  .overview-grid { grid-template-columns: 1fr; }
+  main { padding: 12px; }
+  .heatmap-table { display: block; overflow-x: auto; }
+}
+
+/* Print */
+@media print {
+  .app-header, .filter-bar, .snapshot-bar, .export-btn, .theme-toggle,
+  .snapshot-btn, .detail-overlay, .toast-container { display: none !important; }
+  body { background: #fff; color: #000; }
+  .heatmap-cell { border: 1px solid #ccc; }
+  .cell-mastered { background: #c6f6d5 !important; color: #22543d !important; }
+  .cell-emerging { background: #fefcbf !important; color: #744210 !important; }
+  .cell-not-reached { background: #fed7d7 !important; color: #742a2a !important; }
+  .cell-gated { background: #edf2f7 !important; color: #4a5568 !important; }
+  .disclaimer { border-color: #d69e2e; background: #fffff0; color: #744210; }
+  .pattern-alert { border-color: #ccc; }
+  main { max-width: 100%; }
+  @page { margin: 1.5cm; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="app-header" role="banner">
+  <h1 class="header-title">VC2 Diagnostic Heatmap</h1>
+  <div class="header-right">
+    <button class="snapshot-btn" onclick="takeSnapshot()" aria-label="Save snapshot">&#128247; Snapshot</button>
+    <button class="export-btn" onclick="exportPNG()" aria-label="Export as image">&#128190; Export</button>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">&#9681;</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="disclaimer" role="note">
+    <strong>This is one source of evidence.</strong> The heatmap below shows diagnostic performance on selected-response items only. It does not capture extended writing, creative work, or generative thinking. Any profile patterns flagged below are suggestions for discussion with a teacher, coordinator, or specialist &mdash; not diagnoses or placements.
+  </div>
+
+  <div id="no-data" class="no-data" style="display:none;">
+    <h2>No diagnostic data yet</h2>
+    <p>Complete some quizzes in the <a href="knowledge-check.html">VC2 Knowledge Check</a> to see your heatmap here.</p>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <div class="filter-bar" id="filter-bar">
+      <label for="filter-level">Level:</label>
+      <select id="filter-level" onchange="applyFilters()">
+        <option value="all">All Levels</option>
+      </select>
+      <label for="filter-area">Subject:</label>
+      <select id="filter-area" onchange="applyFilters()">
+        <option value="all">All Subjects</option>
+      </select>
+      <label for="filter-state">Status:</label>
+      <select id="filter-state" onchange="applyFilters()">
+        <option value="all">All</option>
+        <option value="above-standard">Above Standard</option>
+        <option value="meeting-confirmed">Meeting Confirmed</option>
+        <option value="meeting">Meeting</option>
+        <option value="approaching">Approaching</option>
+        <option value="beginning">Beginning</option>
+      </select>
+    </div>
+
+    <div id="snapshot-bar" class="snapshot-bar" style="display:none;"></div>
+
+    <div id="overview-cards" class="overview-grid"></div>
+
+    <div id="pattern-alerts" class="pattern-alerts"></div>
+
+    <div id="heatmap-container"></div>
+  </div>
+</main>
+
+<div class="detail-overlay" id="detail-overlay" role="dialog" aria-modal="true" aria-label="Question details">
+  <div class="detail-panel" id="detail-panel"></div>
+</div>
+
+<div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+<script>
+'use strict';
+(function() {
+
+const STORAGE_KEY = 'vc2-knowledge-check';
+const SNAPSHOT_KEY = 'vc2-heatmap-snapshots';
+const BLOOM_KEYS = ['toLevel2', 'toLevel3', 'toLevel4', 'toLevel5'];
+const BLOOM_LABELS = { toLevel2: 'Remember', toLevel3: 'Understand', toLevel4: 'Apply', toLevel5: 'Analyse' };
+const EMAB_LABELS = {
+  'above-standard': 'Above Expected Standard',
+  'meeting-confirmed': 'Meeting Confirmed',
+  meeting: 'Meeting',
+  approaching: 'Approaching',
+  beginning: 'Beginning'
+};
+const EMAB_ORDER = ['beginning', 'approaching', 'meeting', 'meeting-confirmed', 'above-standard'];
+
+let unitsData = null;
+let appState = null;
+let snapshots = [];
+let compareSnapshot = null;
+let currentTheme = 'system';
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+// ========== PERSISTENCE ==========
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.version === 1) appState = parsed;
+    }
+  } catch(e) { /* ignore */ }
+}
+
+function loadSnapshots() {
+  try {
+    const raw = localStorage.getItem(SNAPSHOT_KEY);
+    if (raw) snapshots = JSON.parse(raw);
+  } catch(e) { snapshots = []; }
+}
+
+function saveSnapshots() {
+  try { localStorage.setItem(SNAPSHOT_KEY, JSON.stringify(snapshots)); } catch(e) { /* ignore */ }
+}
+
+// ========== THEME ==========
+function applyTheme() {
+  if (currentTheme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  else if (currentTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  else document.documentElement.removeAttribute('data-theme');
+}
+
+window.toggleTheme = function() {
+  const cycle = { system: 'dark', dark: 'light', light: 'system' };
+  currentTheme = cycle[currentTheme] || 'system';
+  applyTheme();
+  localStorage.setItem('vc2-heatmap-theme', currentTheme);
+  toast('Theme: ' + ({ system: 'System', dark: 'Dark', light: 'Light' }[currentTheme]));
+};
+
+// ========== DATA LOADING ==========
+async function loadData() {
+  try {
+    const r = await fetch('units_of_work.json', { cache: 'no-store' });
+    if (!r.ok) throw new Error('Failed to load units_of_work.json');
+    unitsData = await r.json();
+  } catch(e) {
+    toast('Could not load curriculum data: ' + e.message);
+  }
+}
+
+// ========== ANALYSIS ==========
+function getResultsMap() {
+  if (!appState || !appState.results) return {};
+  return appState.results;
+}
+
+function getAllAssessedCDs() {
+  const results = getResultsMap();
+  const cds = [];
+  if (!unitsData) return cds;
+
+  for (const [areaCode, area] of Object.entries(unitsData.areas || {})) {
+    for (const [levelKey, levelData] of Object.entries(area.levels || {})) {
+      for (const unit of (levelData.units || [])) {
+        for (const cd of (unit.contentDescriptions || [])) {
+          const result = results[cd.code];
+          if (result) {
+            cds.push({
+              code: cd.code,
+              description: cd.description,
+              strand: cd.strandLabel || cd.strand || '',
+              strandCode: cd.strand || '',
+              area: area.label,
+              areaCode,
+              level: levelKey,
+              unit: unit.title,
+              state: result.state,
+              lastAttempt: result.lastAttempt,
+              attempts: result.attempts || []
+            });
+          }
+        }
+      }
+    }
+  }
+  return cds;
+}
+
+function detectPatterns(cds) {
+  const patterns = [];
+  if (cds.length < 3) return patterns;
+
+  const stateValues = { beginning: 0, approaching: 1, meeting: 2, 'meeting-confirmed': 3, 'above-standard': 4 };
+  const byArea = {};
+  for (const cd of cds) {
+    if (!byArea[cd.area]) byArea[cd.area] = [];
+    byArea[cd.area].push(cd);
+  }
+
+  // Check for asymmetric profiles (advanced in some areas, delayed in others)
+  const areaAverages = {};
+  for (const [area, areaCDs] of Object.entries(byArea)) {
+    const avg = areaCDs.reduce((s, c) => s + (stateValues[c.state] || 0), 0) / areaCDs.length;
+    areaAverages[area] = avg;
+  }
+  const avgValues = Object.values(areaAverages);
+  if (avgValues.length >= 2) {
+    const maxAvg = Math.max(...avgValues);
+    const minAvg = Math.min(...avgValues);
+    if (maxAvg - minAvg >= 2) {
+      const strongAreas = Object.entries(areaAverages).filter(([,v]) => v >= maxAvg - 0.5).map(([a]) => a);
+      const weakAreas = Object.entries(areaAverages).filter(([,v]) => v <= minAvg + 0.5).map(([a]) => a);
+      patterns.push({
+        type: 'asymmetric',
+        title: 'Asymmetric Profile Detected',
+        body: `This profile shows markedly different performance across subjects. Strong performance in ${strongAreas.join(', ')} contrasts with lower performance in ${weakAreas.join(', ')}. This pattern warrants discussion with a teacher or specialist to explore whether it reflects genuine unevenness, different levels of engagement, or an asynchronous development profile.`
+      });
+    }
+  }
+
+  // Check for broadly delayed profile
+  const beginningCount = cds.filter(c => c.state === 'beginning').length;
+  const approachingCount = cds.filter(c => c.state === 'approaching').length;
+  if ((beginningCount + approachingCount) / cds.length > 0.7 && cds.length >= 5) {
+    patterns.push({
+      type: 'delayed',
+      title: 'Broadly Delayed Profile',
+      body: `Performance is at Beginning or Approaching level across ${Math.round((beginningCount + approachingCount) / cds.length * 100)}% of assessed content descriptors. This pattern may indicate foundational gaps in literacy or numeracy, environmental factors, or the need for specialist assessment. Consider whether a literacy or numeracy screening is appropriate before content-specific intervention.`
+    });
+  }
+
+  // Check for higher-order reasoning gap
+  for (const [area, areaCDs] of Object.entries(byArea)) {
+    if (areaCDs.length < 3) continue;
+    const meetingOrBelow = areaCDs.filter(c => c.state === 'meeting' || c.state === 'approaching');
+    const aboveMeeting = areaCDs.filter(c => c.state === 'meeting-confirmed' || c.state === 'above-standard');
+    if (meetingOrBelow.length >= 3 && aboveMeeting.length === 0 && areaCDs.every(c => c.state !== 'beginning')) {
+      patterns.push({
+        type: 'reasoning',
+        title: `Higher-Order Gap in ${area}`,
+        body: `All assessed CDs in ${area} reach Meeting level but none progress to Meeting Confirmed or Above Standard. This suggests the student can recall and apply content but may need explicit instruction in analytical and evaluative reasoning, rather than reteaching of content.`
+      });
+    }
+  }
+
+  // Check for advanced profile
+  const advancedCount = cds.filter(c => c.state === 'above-standard' || c.state === 'meeting-confirmed').length;
+  if (advancedCount / cds.length > 0.7 && cds.length >= 5) {
+    patterns.push({
+      type: 'advanced',
+      title: 'Consistently Advanced Profile',
+      body: `Performance is at Meeting Confirmed or Above Standard across ${Math.round(advancedCount / cds.length * 100)}% of assessed content descriptors. This profile is consistent with a student who may benefit from curriculum compacting, acceleration, or enrichment. This is one source of evidence — discuss with a teacher, coordinator, or gifted education specialist.`
+    });
+  }
+
+  return patterns;
+}
+
+function getBloomBreakdown(attempts) {
+  if (!attempts || attempts.length === 0) return null;
+  const latest = attempts[attempts.length - 1];
+  if (!latest.answers) return null;
+
+  const breakdown = {};
+  for (const key of BLOOM_KEYS) {
+    const levelAnswers = latest.answers.filter(a => a.bloomKey === key);
+    if (levelAnswers.length > 0) {
+      breakdown[key] = {
+        total: levelAnswers.length,
+        correct: levelAnswers.filter(a => a.correct).length,
+        answers: levelAnswers
+      };
+    }
+  }
+  return breakdown;
+}
+
+function bloomCellStatus(breakdown, bloomKey) {
+  if (!breakdown || !breakdown[bloomKey]) return 'gated';
+  const b = breakdown[bloomKey];
+  const pct = b.correct / b.total;
+  if (pct >= 0.75) return 'mastered';
+  if (pct >= 0.5) return 'emerging';
+  return 'not-reached';
+}
+
+function bloomCellLabel(breakdown, bloomKey) {
+  if (!breakdown || !breakdown[bloomKey]) return '—';
+  const b = breakdown[bloomKey];
+  return b.correct + '/' + b.total;
+}
+
+// ========== RENDERING ==========
+function render() {
+  loadState();
+  const cds = getAllAssessedCDs();
+
+  if (cds.length === 0) {
+    document.getElementById('no-data').style.display = '';
+    document.getElementById('dashboard').style.display = 'none';
+    return;
+  }
+
+  document.getElementById('no-data').style.display = 'none';
+  document.getElementById('dashboard').style.display = '';
+
+  populateFilters(cds);
+  const filtered = applyFilterLogic(cds);
+  renderOverview(filtered, cds);
+  renderPatterns(filtered);
+  renderHeatmap(filtered);
+  renderSnapshotBar();
+}
+
+function populateFilters(cds) {
+  const levelSelect = document.getElementById('filter-level');
+  const areaSelect = document.getElementById('filter-area');
+  const currentLevel = levelSelect.value;
+  const currentArea = areaSelect.value;
+
+  const levels = [...new Set(cds.map(c => c.level))].sort();
+  const areas = [...new Set(cds.map(c => c.area))].sort();
+
+  levelSelect.innerHTML = '<option value="all">All Levels</option>';
+  for (const l of levels) {
+    levelSelect.innerHTML += `<option value="${l}" ${l === currentLevel ? 'selected' : ''}>Level ${l}</option>`;
+  }
+
+  areaSelect.innerHTML = '<option value="all">All Subjects</option>';
+  for (const a of areas) {
+    areaSelect.innerHTML += `<option value="${esc(a)}" ${a === currentArea ? 'selected' : ''}>${esc(a)}</option>`;
+  }
+}
+
+function applyFilterLogic(cds) {
+  const level = document.getElementById('filter-level').value;
+  const area = document.getElementById('filter-area').value;
+  const state = document.getElementById('filter-state').value;
+
+  return cds.filter(c => {
+    if (level !== 'all' && c.level !== level) return false;
+    if (area !== 'all' && c.area !== area) return false;
+    if (state !== 'all' && c.state !== state) return false;
+    return true;
+  });
+}
+
+window.applyFilters = function() { render(); };
+
+function renderOverview(filtered, allCDs) {
+  const el = document.getElementById('overview-cards');
+  const total = filtered.length;
+  const stateCounts = {};
+  for (const cd of filtered) stateCounts[cd.state] = (stateCounts[cd.state] || 0) + 1;
+
+  const cards = [
+    { label: 'Total Assessed', value: total, cls: 'accent', sub: `of ${allCDs.length} total` },
+    { label: 'Above Standard', value: stateCounts['above-standard'] || 0, cls: 'purple', sub: total ? Math.round((stateCounts['above-standard'] || 0) / total * 100) + '%' : '' },
+    { label: 'Meeting Confirmed', value: stateCounts['meeting-confirmed'] || 0, cls: 'green', sub: total ? Math.round((stateCounts['meeting-confirmed'] || 0) / total * 100) + '%' : '' },
+    { label: 'Meeting', value: stateCounts['meeting'] || 0, cls: 'accent', sub: total ? Math.round((stateCounts['meeting'] || 0) / total * 100) + '%' : '' },
+    { label: 'Approaching', value: stateCounts['approaching'] || 0, cls: 'yellow', sub: total ? Math.round((stateCounts['approaching'] || 0) / total * 100) + '%' : '' },
+    { label: 'Beginning', value: stateCounts['beginning'] || 0, cls: 'red', sub: total ? Math.round((stateCounts['beginning'] || 0) / total * 100) + '%' : '' },
+  ];
+
+  el.innerHTML = cards.map(c => `
+    <div class="overview-card" tabindex="0" role="group" aria-label="${c.label}: ${c.value}">
+      <div class="oc-label">${c.label}</div>
+      <div class="oc-value ${c.cls}">${c.value}</div>
+      <div class="oc-sub">${c.sub}</div>
+    </div>
+  `).join('');
+}
+
+function renderPatterns(cds) {
+  const el = document.getElementById('pattern-alerts');
+  const patterns = detectPatterns(cds);
+  if (patterns.length === 0) { el.innerHTML = ''; return; }
+
+  const icons = { asymmetric: '&#128200;', delayed: '&#9888;&#65039;', reasoning: '&#128161;', advanced: '&#11088;' };
+  el.innerHTML = patterns.map(p => `
+    <div class="pattern-alert ${p.type}" role="alert">
+      <div class="pa-icon">${icons[p.type] || ''}</div>
+      <div>
+        <div class="pa-title">${esc(p.title)}</div>
+        <div class="pa-body">${esc(p.body)}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderHeatmap(cds) {
+  const container = document.getElementById('heatmap-container');
+  container.innerHTML = '';
+
+  const byArea = {};
+  for (const cd of cds) {
+    const key = cd.area + ' — Level ' + cd.level;
+    if (!byArea[key]) byArea[key] = { area: cd.area, level: cd.level, cds: [] };
+    byArea[key].cds.push(cd);
+  }
+
+  for (const [sectionKey, section] of Object.entries(byArea)) {
+    const div = document.createElement('div');
+    div.className = 'heatmap-section';
+
+    const h3 = document.createElement('h3');
+    h3.textContent = sectionKey;
+    div.appendChild(h3);
+
+    const table = document.createElement('table');
+    table.className = 'heatmap-table';
+    table.setAttribute('role', 'grid');
+    table.setAttribute('aria-label', 'Diagnostic heatmap for ' + sectionKey);
+
+    const thead = document.createElement('thead');
+    thead.innerHTML = `<tr>
+      <th scope="col">Content Descriptor</th>
+      <th scope="col">Remember</th>
+      <th scope="col">Understand</th>
+      <th scope="col">Apply</th>
+      <th scope="col">Analyse</th>
+      <th scope="col">Overall</th>
+    </tr>`;
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+
+    // Group by strand
+    const byStrand = {};
+    for (const cd of section.cds) {
+      const sk = cd.strand || 'General';
+      if (!byStrand[sk]) byStrand[sk] = [];
+      byStrand[sk].push(cd);
+    }
+
+    for (const [strand, strandCDs] of Object.entries(byStrand)) {
+      for (const cd of strandCDs) {
+        const results = getResultsMap();
+        const result = results[cd.code];
+        const breakdown = result ? getBloomBreakdown(result.attempts) : null;
+
+        const tr = document.createElement('tr');
+
+        // CD name cell
+        const tdName = document.createElement('td');
+        tdName.innerHTML = `<div class="cd-label">
+          <span class="cd-code-lbl">${esc(cd.code)}</span>
+          <span class="cd-text-lbl" title="${esc(cd.description)}">${esc(cd.description)}</span>
+        </div>`;
+        tr.appendChild(tdName);
+
+        // Bloom's cells
+        for (const key of BLOOM_KEYS) {
+          const td = document.createElement('td');
+          const status = bloomCellStatus(breakdown, key);
+          const label = bloomCellLabel(breakdown, key);
+          const compClass = getComparisonClass(cd.code, key);
+
+          const cell = document.createElement('button');
+          cell.className = `heatmap-cell cell-${status} ${compClass}`;
+          cell.textContent = label;
+          cell.setAttribute('aria-label', `${BLOOM_LABELS[key]}: ${label} (${status.replace('-', ' ')})`);
+          cell.setAttribute('tabindex', '0');
+
+          if (status !== 'gated') {
+            cell.addEventListener('click', () => showDetail(cd, breakdown, key));
+          }
+
+          td.appendChild(cell);
+          tr.appendChild(td);
+        }
+
+        // EMAB overall cell
+        const tdEmab = document.createElement('td');
+        const emabClass = cd.state ? 'emab-' + cd.state : '';
+        tdEmab.innerHTML = `<span class="emab-badge ${emabClass}">${EMAB_LABELS[cd.state] || 'Unknown'}</span>`;
+        tr.appendChild(tdEmab);
+
+        tbody.appendChild(tr);
+      }
+    }
+
+    table.appendChild(tbody);
+    div.appendChild(table);
+    container.appendChild(div);
+  }
+}
+
+function getComparisonClass(code, bloomKey) {
+  if (!compareSnapshot) return '';
+  const snapResults = compareSnapshot.results || {};
+  const currentResults = getResultsMap();
+  const current = currentResults[code];
+  const snap = snapResults[code];
+
+  if (!snap && current) return 'cell-new';
+  if (!snap || !current) return '';
+
+  const currentBreakdown = getBloomBreakdown(current.attempts);
+  const snapBreakdown = getBloomBreakdown(snap.attempts);
+  const currentStatus = bloomCellStatus(currentBreakdown, bloomKey);
+  const snapStatus = bloomCellStatus(snapBreakdown, bloomKey);
+
+  const order = { 'gated': 0, 'not-reached': 1, 'emerging': 2, 'mastered': 3 };
+  if ((order[currentStatus] || 0) > (order[snapStatus] || 0)) return 'cell-improved';
+  if ((order[currentStatus] || 0) < (order[snapStatus] || 0)) return 'cell-declined';
+  return '';
+}
+
+// ========== DETAIL PANEL ==========
+function showDetail(cd, breakdown, focusKey) {
+  const panel = document.getElementById('detail-panel');
+  const overlay = document.getElementById('detail-overlay');
+
+  let html = `<h3>${esc(cd.description)}</h3>
+    <div class="dp-code">${esc(cd.code)} &middot; ${esc(cd.area)} &middot; Level ${esc(cd.level)}</div>
+    <div class="dp-section">
+      <div class="dp-label">Overall Rating</div>
+      <span class="emab-badge emab-${cd.state}">${EMAB_LABELS[cd.state] || ''}</span>
+    </div>`;
+
+  if (breakdown) {
+    for (const key of BLOOM_KEYS) {
+      if (!breakdown[key]) continue;
+      const b = breakdown[key];
+      html += `<div class="dp-section">
+        <div class="dp-label">${BLOOM_LABELS[key]} &mdash; ${b.correct}/${b.total} correct</div>
+        <ul class="dp-answer-list">`;
+      for (const a of b.answers) {
+        const cls = a.correct ? 'correct' : 'incorrect';
+        const icon = a.correct ? '&#10003;' : '&#10007;';
+        const typeLabel = (a.type || '').toUpperCase();
+        html += `<li class="${cls}">
+          <span class="dp-icon">${icon}</span>
+          <span class="dp-bloom">${typeLabel}</span>
+          <span>${esc(a.questionText || '')}</span>
+        </li>`;
+      }
+      html += '</ul></div>';
+    }
+  }
+
+  const results = getResultsMap();
+  const result = results[cd.code];
+  if (result && result.attempts && result.attempts.length > 1) {
+    html += `<div class="dp-section">
+      <div class="dp-label">Attempt History (${result.attempts.length} attempts)</div>
+      <ul class="dp-answer-list">`;
+    for (let i = 0; i < result.attempts.length; i++) {
+      const a = result.attempts[i];
+      const date = new Date(a.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
+      html += `<li><span class="emab-badge emab-${a.state}">${EMAB_LABELS[a.state] || ''}</span> <span style="margin-left:8px;font-size:11px;color:var(--text2)">${date}</span></li>`;
+    }
+    html += '</ul></div>';
+  }
+
+  html += '<button class="dp-close" onclick="closeDetail()">Close</button>';
+  panel.innerHTML = html;
+  overlay.classList.add('open');
+  panel.querySelector('.dp-close').focus();
+
+  overlay.addEventListener('click', function handler(e) {
+    if (e.target === overlay) { closeDetail(); overlay.removeEventListener('click', handler); }
+  });
+  document.addEventListener('keydown', function handler(e) {
+    if (e.key === 'Escape') { closeDetail(); document.removeEventListener('keydown', handler); }
+  });
+}
+
+window.closeDetail = function() {
+  document.getElementById('detail-overlay').classList.remove('open');
+};
+
+// ========== SNAPSHOTS ==========
+window.takeSnapshot = function() {
+  loadState();
+  if (!appState || !appState.results || Object.keys(appState.results).length === 0) {
+    toast('No data to snapshot');
+    return;
+  }
+
+  const name = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
+  const snapshot = {
+    id: Date.now(),
+    name,
+    date: new Date().toISOString(),
+    results: JSON.parse(JSON.stringify(appState.results))
+  };
+  snapshots.push(snapshot);
+  saveSnapshots();
+  renderSnapshotBar();
+  toast('Snapshot saved: ' + name);
+};
+
+function renderSnapshotBar() {
+  const bar = document.getElementById('snapshot-bar');
+  if (snapshots.length === 0) { bar.style.display = 'none'; return; }
+  bar.style.display = '';
+
+  let html = '<span class="sb-label">Compare with:</span><div class="snapshot-list">';
+  html += `<span class="snapshot-chip ${!compareSnapshot ? 'active' : ''}" onclick="clearComparison()" tabindex="0">Current only</span>`;
+  for (const s of snapshots) {
+    const active = compareSnapshot && compareSnapshot.id === s.id ? 'active' : '';
+    html += `<span class="snapshot-chip ${active}" onclick="selectSnapshot(${s.id})" tabindex="0">
+      ${esc(s.name)}
+      <span class="snap-delete" onclick="event.stopPropagation(); deleteSnapshot(${s.id})" title="Delete snapshot" aria-label="Delete snapshot ${esc(s.name)}">&times;</span>
+    </span>`;
+  }
+  html += '</div>';
+  bar.innerHTML = html;
+}
+
+window.selectSnapshot = function(id) {
+  compareSnapshot = snapshots.find(s => s.id === id) || null;
+  render();
+};
+
+window.clearComparison = function() {
+  compareSnapshot = null;
+  render();
+};
+
+window.deleteSnapshot = function(id) {
+  snapshots = snapshots.filter(s => s.id !== id);
+  if (compareSnapshot && compareSnapshot.id === id) compareSnapshot = null;
+  saveSnapshots();
+  render();
+};
+
+// ========== EXPORT ==========
+window.exportPNG = function() {
+  const container = document.getElementById('heatmap-container');
+  if (!container.children.length) { toast('No heatmap to export'); return; }
+
+  // Use canvas-based export
+  const printWin = window.open('', '_blank');
+  if (!printWin) { toast('Pop-up blocked — allow pop-ups to export'); return; }
+
+  printWin.document.write(`<!DOCTYPE html><html><head><title>VC2 Heatmap Export</title>
+    <style>
+      body { font-family: -apple-system, sans-serif; padding: 24px; background: #fff; color: #1a1d27; }
+      h1 { font-size: 18px; margin-bottom: 8px; }
+      .export-date { font-size: 12px; color: #666; margin-bottom: 16px; }
+      .disclaimer { background: #fffff0; border: 1px solid #d69e2e; border-radius: 8px; padding: 12px; font-size: 12px; color: #744210; margin-bottom: 16px; }
+      table { width: 100%; border-collapse: separate; border-spacing: 2px; font-size: 11px; margin-bottom: 24px; }
+      th { padding: 6px 8px; text-align: center; font-size: 10px; text-transform: uppercase; background: #f7f7f7; }
+      th:first-child { text-align: left; }
+      td:first-child { padding: 6px 8px; font-size: 11px; }
+      .cell { padding: 6px; text-align: center; font-weight: 700; font-size: 11px; border-radius: 3px; }
+      .cell-mastered { background: #c6f6d5; color: #22543d; }
+      .cell-emerging { background: #fefcbf; color: #744210; }
+      .cell-not-reached { background: #fed7d7; color: #742a2a; }
+      .cell-gated { background: #edf2f7; color: #718096; }
+      .badge { font-size: 9px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+      .badge-above-standard { background: #e9d5ff; color: #6b21a8; }
+      .badge-meeting-confirmed { background: #d1fae5; color: #065f46; }
+      .badge-meeting { background: #dbeafe; color: #1e40af; }
+      .badge-approaching { background: #fef3c7; color: #92400e; }
+      .badge-beginning { background: #fee2e2; color: #991b1b; }
+      h3 { font-size: 14px; margin: 16px 0 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }
+    </style></head><body>`);
+
+  printWin.document.write('<h1>VC2 Diagnostic Heatmap</h1>');
+  printWin.document.write('<div class="export-date">Exported: ' + new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' }) + '</div>');
+  printWin.document.write('<div class="disclaimer"><strong>This is one source of evidence.</strong> The heatmap shows diagnostic performance on selected-response items only. Profile patterns are suggestions for discussion, not diagnoses or placements.</div>');
+
+  // Rebuild heatmap for print
+  loadState();
+  const cds = getAllAssessedCDs();
+  const filtered = applyFilterLogic(cds);
+
+  const byArea = {};
+  for (const cd of filtered) {
+    const key = cd.area + ' — Level ' + cd.level;
+    if (!byArea[key]) byArea[key] = [];
+    byArea[key].push(cd);
+  }
+
+  for (const [sectionKey, sectionCDs] of Object.entries(byArea)) {
+    printWin.document.write('<h3>' + esc(sectionKey) + '</h3>');
+    printWin.document.write('<table><thead><tr><th>Content Descriptor</th><th>Remember</th><th>Understand</th><th>Apply</th><th>Analyse</th><th>Overall</th></tr></thead><tbody>');
+
+    for (const cd of sectionCDs) {
+      const results = getResultsMap();
+      const result = results[cd.code];
+      const breakdown = result ? getBloomBreakdown(result.attempts) : null;
+
+      printWin.document.write('<tr>');
+      printWin.document.write('<td><strong>' + esc(cd.code) + '</strong><br><small>' + esc(cd.description).substring(0, 80) + '</small></td>');
+
+      for (const key of BLOOM_KEYS) {
+        const status = bloomCellStatus(breakdown, key);
+        const label = bloomCellLabel(breakdown, key);
+        printWin.document.write('<td><div class="cell cell-' + status + '">' + label + '</div></td>');
+      }
+
+      printWin.document.write('<td><span class="badge badge-' + cd.state + '">' + (EMAB_LABELS[cd.state] || '') + '</span></td>');
+      printWin.document.write('</tr>');
+    }
+    printWin.document.write('</tbody></table>');
+  }
+
+  printWin.document.write('</body></html>');
+  printWin.document.close();
+  setTimeout(() => printWin.print(), 500);
+};
+
+// ========== TOAST ==========
+function toast(msg) {
+  const container = document.getElementById('toast-container');
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  container.appendChild(t);
+  setTimeout(() => { t.style.opacity = '0'; setTimeout(() => t.remove(), 200); }, 3000);
+}
+
+// ========== INIT ==========
+async function init() {
+  const savedTheme = localStorage.getItem('vc2-heatmap-theme');
+  if (savedTheme) currentTheme = savedTheme;
+  applyTheme();
+
+  loadSnapshots();
+  await loadData();
+  render();
+
+  // Re-render when returning from knowledge-check
+  window.addEventListener('focus', () => render());
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) render(); });
+}
+
+init();
+
+})();
+</script>
+</body>
+</html>

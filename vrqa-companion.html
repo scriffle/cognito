@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VRQA Learning Plan Companion</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #242836;
+  --border: #2e3347;
+  --text: #e4e6f0;
+  --text2: #9298b4;
+  --accent: #6c8cff;
+  --accent2: #4a6adf;
+  --green: #4ade80;
+  --red: #f87171;
+  --orange: #fb923c;
+  --yellow: #fbbf24;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --radius: 10px;
+  --transition: 0.15s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.5;
+  min-height: 100vh; min-height: 100dvh;
+}
+
+.skip-link {
+  position: absolute; top: -40px; left: 0; background: var(--accent);
+  color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px;
+  border-radius: 0 0 8px 0; text-decoration: none;
+}
+.skip-link:focus { top: 0; }
+
+/* Header */
+.app-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; border-bottom: 1px solid var(--border);
+  background: var(--surface); position: sticky; top: 0; z-index: 50;
+  flex-wrap: wrap;
+}
+.header-title { font-size: 16px; font-weight: 600; flex: 1; min-width: 200px; }
+.header-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.btn {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text2);
+  cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px;
+  font-weight: 600; min-height: 44px; transition: all var(--transition);
+}
+.btn:hover { border-color: var(--accent); color: var(--text); }
+.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-primary:hover { background: var(--accent2); }
+
+main { max-width: 900px; margin: 0 auto; padding: 24px 20px; }
+
+/* Info banners */
+.info-banner {
+  border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px;
+  font-size: 13px; line-height: 1.6;
+}
+.info-banner.disclaimer {
+  background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.25); color: var(--yellow);
+}
+.info-banner.info {
+  background: rgba(108, 140, 255, 0.08); border: 1px solid rgba(108, 140, 255, 0.2); color: var(--accent);
+}
+.info-banner.warning {
+  background: rgba(248, 113, 113, 0.08); border: 1px solid rgba(248, 113, 113, 0.2); color: var(--red);
+}
+.info-banner strong { font-weight: 700; }
+
+/* Student info */
+.student-info {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px; margin-bottom: 24px;
+}
+.student-info h2 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+.form-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.form-group { flex: 1; min-width: 200px; }
+.form-group label {
+  display: block; font-size: 11px; font-weight: 700; color: var(--text2);
+  text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;
+}
+.form-group input, .form-group select {
+  width: 100%; padding: 10px 12px; background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 6px; color: var(--text); font-size: 13px; min-height: 42px;
+}
+.form-group input:focus, .form-group select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* No data */
+.no-data {
+  text-align: center; padding: 60px 20px; color: var(--text2);
+}
+.no-data h2 { font-size: 22px; margin-bottom: 12px; color: var(--text); }
+.no-data p { font-size: 14px; max-width: 500px; margin: 0 auto 16px; }
+.no-data a { color: var(--accent); }
+
+/* Learning area cards */
+.area-section {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  margin-bottom: 16px; overflow: hidden;
+}
+.area-header {
+  padding: 16px 20px; display: flex; align-items: center; gap: 12px;
+  cursor: pointer; user-select: none; transition: background var(--transition);
+}
+.area-header:hover { background: var(--surface2); }
+.area-header:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.area-chevron { font-size: 12px; color: var(--text2); transition: transform 0.2s; min-width: 16px; }
+.area-header.open .area-chevron { transform: rotate(90deg); }
+.area-title { font-size: 15px; font-weight: 700; flex: 1; }
+.area-summary {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+}
+.area-chip {
+  font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px;
+  text-transform: uppercase; letter-spacing: 0.3px;
+}
+.chip-assessed { background: rgba(108, 140, 255, 0.12); color: var(--accent); }
+.chip-gap { background: rgba(248, 113, 113, 0.12); color: var(--red); }
+.chip-strong { background: rgba(74, 222, 128, 0.12); color: var(--green); }
+
+.area-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.area-body.open { max-height: 5000px; }
+.area-body-inner { padding: 0 20px 20px; }
+
+/* Working edge table */
+.edge-table {
+  width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 16px;
+}
+.edge-table th {
+  text-align: left; padding: 8px 10px; font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--text2); border-bottom: 1px solid var(--border);
+}
+.edge-table td {
+  padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top;
+}
+.edge-table .et-code {
+  font-family: 'SF Mono', 'Fira Code', monospace; font-size: 11px;
+  color: var(--accent); font-weight: 600; white-space: nowrap;
+}
+.edge-table .et-desc { font-size: 12px; color: var(--text); line-height: 1.4; }
+.edge-table .et-strand { font-size: 10px; color: var(--purple); }
+.emab-sm {
+  font-size: 9px; font-weight: 700; padding: 3px 7px; border-radius: 4px;
+  text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; display: inline-block;
+}
+.emab-sm.above-standard { background: rgba(167, 139, 250, 0.15); color: var(--purple); }
+.emab-sm.meeting-confirmed { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+.emab-sm.meeting { background: rgba(108, 140, 255, 0.15); color: var(--accent); }
+.emab-sm.approaching { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+.emab-sm.beginning { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+
+/* Activity textarea */
+.activity-group { margin-top: 12px; }
+.activity-group label {
+  display: block; font-size: 11px; font-weight: 700; color: var(--text2);
+  text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;
+}
+.activity-textarea {
+  width: 100%; min-height: 80px; padding: 10px 12px; background: var(--surface2);
+  border: 1px solid var(--border); border-radius: 6px; color: var(--text);
+  font-size: 13px; font-family: inherit; line-height: 1.5; resize: vertical;
+}
+.activity-textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.activity-textarea::placeholder { color: var(--text2); }
+
+/* Term selector */
+.term-row {
+  display: flex; gap: 8px; align-items: center; margin-bottom: 20px; flex-wrap: wrap;
+}
+.term-row label { font-size: 12px; color: var(--text2); font-weight: 600; }
+.term-row select {
+  padding: 8px 12px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; color: var(--text); font-size: 13px; min-height: 40px; cursor: pointer;
+}
+
+/* Toast */
+.toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 200; display: flex; flex-direction: column; gap: 8px; }
+.toast {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; font-size: 13px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: toastIn 0.2s ease;
+}
+@keyframes toastIn { from { opacity: 0; transform: translateY(10px); } }
+
+/* Print */
+@media print {
+  .app-header, .theme-toggle, .toast-container, .btn:not(.no-print) { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  main { max-width: 100%; padding: 0; }
+  .info-banner.disclaimer { border-color: #d69e2e; background: #fffff0; color: #744210; }
+  .info-banner.warning { border-color: #e53e3e; background: #fff5f5; color: #742a2a; }
+  .info-banner.info { border-color: #3182ce; background: #ebf8ff; color: #2a4365; }
+  .area-section { border-color: #e2e8f0; break-inside: avoid; }
+  .area-body { max-height: none !important; }
+  .area-chevron { display: none; }
+  .activity-textarea { border-color: #e2e8f0; min-height: 60px; }
+  .emab-sm.above-standard { background: #e9d5ff; color: #6b21a8; }
+  .emab-sm.meeting-confirmed { background: #d1fae5; color: #065f46; }
+  .emab-sm.meeting { background: #dbeafe; color: #1e40af; }
+  .emab-sm.approaching { background: #fef3c7; color: #92400e; }
+  .emab-sm.beginning { background: #fee2e2; color: #991b1b; }
+  .student-info { border-color: #e2e8f0; }
+  .edge-table th, .edge-table td { border-color: #e2e8f0; }
+  @page { margin: 1.5cm; }
+  h1.print-title { display: block !important; font-size: 18pt; margin-bottom: 8px; }
+  .print-date { display: block !important; font-size: 10pt; color: #666; margin-bottom: 16px; }
+}
+h1.print-title, .print-date { display: none; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  main { padding: 16px 12px; }
+  .form-row { flex-direction: column; }
+  .form-group { min-width: 0; }
+  .area-header { padding: 12px 14px; }
+  .area-body-inner { padding: 0 14px 14px; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="app-header" role="banner">
+  <h1 class="header-title">VRQA Learning Plan Companion</h1>
+  <div class="header-right">
+    <button class="btn" onclick="savePlan()">&#128190; Save Plan</button>
+    <button class="btn btn-primary" onclick="printPlan()">&#128424; Print / PDF</button>
+    <button class="btn" onclick="toggleTheme()" aria-label="Toggle theme" style="font-size:14px;">&#9681;</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <h1 class="print-title">VRQA Learning Plan Companion</h1>
+  <div class="print-date"></div>
+
+  <div class="info-banner disclaimer" role="note">
+    <strong>Supplementary evidence only.</strong> VRQA reviews evidence of instruction, not test scores. This heatmap summary is supplementary evidence for your learning plan &mdash; it complements but does not substitute for evidence of your actual program, work samples, and learning journals.
+  </div>
+
+  <div class="student-info">
+    <h2>Student &amp; Registration Details</h2>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="student-name">Student Name</label>
+        <input type="text" id="student-name" placeholder="Enter student name" oninput="autoSavePlan()">
+      </div>
+      <div class="form-group">
+        <label for="student-dob">Date of Birth / Age</label>
+        <input type="text" id="student-dob" placeholder="e.g. 12 years" oninput="autoSavePlan()">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="plan-term">Planning Period</label>
+        <input type="text" id="plan-term" placeholder="e.g. Term 3, 2026" oninput="autoSavePlan()">
+      </div>
+      <div class="form-group">
+        <label for="vrqa-reg">VRQA Registration Number (optional)</label>
+        <input type="text" id="vrqa-reg" placeholder="If applicable" oninput="autoSavePlan()">
+      </div>
+    </div>
+  </div>
+
+  <div id="no-data" class="no-data" style="display:none;">
+    <h2>No diagnostic data yet</h2>
+    <p>Complete some quizzes in the <a href="knowledge-check.html">VC2 Knowledge Check</a> to populate your learning plan.</p>
+    <p style="margin-top:12px;font-size:12px;color:var(--text2);">You can still fill in the activity fields below manually.</p>
+  </div>
+
+  <div id="areas-container"></div>
+</main>
+
+<div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+<script>
+'use strict';
+(function() {
+
+const KC_STORAGE_KEY = 'vc2-knowledge-check';
+const PLAN_STORAGE_KEY = 'vc2-vrqa-plan';
+
+const VRQA_AREAS = [
+  { key: 'english', label: 'English', areaCodes: ['E'], icon: '&#128214;' },
+  { key: 'mathematics', label: 'Mathematics', areaCodes: ['M'], icon: '&#128290;' },
+  { key: 'science', label: 'Science', areaCodes: ['S'], icon: '&#128300;' },
+  { key: 'humanities', label: 'Humanities (Studies of Society and Environment)', areaCodes: ['HH', 'HG', 'HC', 'HE', 'CI', 'CE', 'CP'], icon: '&#127758;' },
+  { key: 'arts', label: 'The Arts', areaCodes: ['ADA', 'ADR', 'AMA', 'AMU', 'AVA', 'AVC'], icon: '&#127912;' },
+  { key: 'hpe', label: 'Health and Physical Education', areaCodes: ['HP'], icon: '&#127939;' },
+  { key: 'technologies', label: 'Technologies', areaCodes: ['TDE', 'TDI'], icon: '&#9881;&#65039;' },
+  { key: 'languages', label: 'Languages Other Than English', areaCodes: [], icon: '&#127760;' }
+];
+
+const EMAB_LABELS = {
+  'above-standard': 'Above Expected Standard',
+  'meeting-confirmed': 'Meeting Confirmed',
+  meeting: 'Meeting',
+  approaching: 'Approaching',
+  beginning: 'Beginning'
+};
+const EMAB_ORDER = { beginning: 0, approaching: 1, meeting: 2, 'meeting-confirmed': 3, 'above-standard': 4 };
+
+let unitsData = null;
+let kcResults = {};
+let planData = {};
+let currentTheme = 'system';
+let autoSaveTimer = null;
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+// ========== THEME ==========
+function applyTheme() {
+  if (currentTheme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  else if (currentTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  else document.documentElement.removeAttribute('data-theme');
+}
+window.toggleTheme = function() {
+  const cycle = { system: 'dark', dark: 'light', light: 'system' };
+  currentTheme = cycle[currentTheme] || 'system';
+  applyTheme();
+  localStorage.setItem('vc2-vrqa-theme', currentTheme);
+};
+
+// ========== DATA ==========
+function loadKCResults() {
+  try {
+    const raw = localStorage.getItem(KC_STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.results) kcResults = parsed.results;
+    }
+  } catch(e) { /* ignore */ }
+}
+
+function loadPlanData() {
+  try {
+    const raw = localStorage.getItem(PLAN_STORAGE_KEY);
+    if (raw) planData = JSON.parse(raw);
+  } catch(e) { planData = {}; }
+}
+
+window.savePlan = function() {
+  collectFormData();
+  try {
+    localStorage.setItem(PLAN_STORAGE_KEY, JSON.stringify(planData));
+    toast('Plan saved');
+  } catch(e) { toast('Could not save plan'); }
+};
+
+window.autoSavePlan = function() {
+  clearTimeout(autoSaveTimer);
+  autoSaveTimer = setTimeout(() => {
+    collectFormData();
+    try { localStorage.setItem(PLAN_STORAGE_KEY, JSON.stringify(planData)); } catch(e) {}
+  }, 1000);
+};
+
+function collectFormData() {
+  planData.studentName = document.getElementById('student-name')?.value || '';
+  planData.studentDob = document.getElementById('student-dob')?.value || '';
+  planData.planTerm = document.getElementById('plan-term')?.value || '';
+  planData.vrqaReg = document.getElementById('vrqa-reg')?.value || '';
+
+  if (!planData.activities) planData.activities = {};
+  for (const area of VRQA_AREAS) {
+    const textarea = document.getElementById('activity-' + area.key);
+    if (textarea) planData.activities[area.key] = textarea.value;
+  }
+}
+
+function restoreFormData() {
+  if (planData.studentName) document.getElementById('student-name').value = planData.studentName;
+  if (planData.studentDob) document.getElementById('student-dob').value = planData.studentDob;
+  if (planData.planTerm) document.getElementById('plan-term').value = planData.planTerm;
+  if (planData.vrqaReg) document.getElementById('vrqa-reg').value = planData.vrqaReg;
+}
+
+async function loadUnits() {
+  try {
+    const r = await fetch('units_of_work.json', { cache: 'no-store' });
+    if (r.ok) unitsData = await r.json();
+  } catch(e) { /* ignore */ }
+}
+
+// ========== ANALYSIS ==========
+function getCDsForArea(areaCodes) {
+  const cds = [];
+  if (!unitsData) return cds;
+
+  for (const [areaCode, area] of Object.entries(unitsData.areas || {})) {
+    if (!areaCodes.includes(areaCode)) continue;
+    for (const [levelKey, levelData] of Object.entries(area.levels || {})) {
+      for (const unit of (levelData.units || [])) {
+        for (const cd of (unit.contentDescriptions || [])) {
+          const result = kcResults[cd.code];
+          cds.push({
+            code: cd.code,
+            description: cd.description,
+            strand: cd.strandLabel || cd.strand || '',
+            area: area.label,
+            areaCode,
+            level: levelKey,
+            state: result ? result.state : null,
+            lastAttempt: result ? result.lastAttempt : null
+          });
+        }
+      }
+    }
+  }
+  return cds;
+}
+
+function getWorkingEdge(assessedCDs) {
+  if (assessedCDs.length === 0) return [];
+
+  // Working edge = CDs at the boundary between mastered and not-yet-mastered
+  // Specifically: the highest level where the student is at 'meeting' or below,
+  // or the CDs at 'approaching' or 'beginning' in areas where others are stronger
+  const sorted = [...assessedCDs].sort((a, b) => (EMAB_ORDER[a.state] || 0) - (EMAB_ORDER[b.state] || 0));
+
+  // Return CDs at meeting level (the working frontier) plus approaching/beginning
+  return sorted.filter(cd =>
+    cd.state === 'meeting' || cd.state === 'approaching' || cd.state === 'beginning'
+  );
+}
+
+function getAreaSummary(cds) {
+  const assessed = cds.filter(c => c.state);
+  const total = cds.length;
+  if (assessed.length === 0) return { assessed: 0, total, avgLevel: null, highest: null, lowest: null };
+
+  const avg = assessed.reduce((s, c) => s + (EMAB_ORDER[c.state] || 0), 0) / assessed.length;
+  const states = assessed.map(c => c.state);
+  const highest = states.reduce((h, s) => (EMAB_ORDER[s] || 0) > (EMAB_ORDER[h] || 0) ? s : h);
+  const lowest = states.reduce((l, s) => (EMAB_ORDER[s] || 0) < (EMAB_ORDER[l] || 0) ? s : l);
+
+  return { assessed: assessed.length, total, avgLevel: avg, highest, lowest };
+}
+
+// ========== RENDER ==========
+function render() {
+  const container = document.getElementById('areas-container');
+  container.innerHTML = '';
+
+  const hasAnyResults = Object.keys(kcResults).length > 0;
+  document.getElementById('no-data').style.display = hasAnyResults ? 'none' : '';
+
+  for (const vrqaArea of VRQA_AREAS) {
+    const isLanguages = vrqaArea.key === 'languages';
+    const cds = isLanguages ? [] : getCDsForArea(vrqaArea.areaCodes);
+    const assessed = cds.filter(c => c.state);
+    const summary = getAreaSummary(cds);
+    const workingEdge = getWorkingEdge(assessed);
+
+    const section = document.createElement('div');
+    section.className = 'area-section';
+
+    // Summary chips
+    let chipsHtml = '';
+    if (isLanguages) {
+      chipsHtml = '<span class="area-chip chip-gap">Not covered</span>';
+    } else if (assessed.length > 0) {
+      chipsHtml = `<span class="area-chip chip-assessed">${assessed.length} assessed</span>`;
+      const strong = assessed.filter(c => c.state === 'meeting-confirmed' || c.state === 'above-standard').length;
+      const weak = assessed.filter(c => c.state === 'beginning' || c.state === 'approaching').length;
+      if (strong > 0) chipsHtml += `<span class="area-chip chip-strong">${strong} strong</span>`;
+      if (weak > 0) chipsHtml += `<span class="area-chip chip-gap">${weak} gaps</span>`;
+    } else {
+      chipsHtml = '<span class="area-chip" style="background:var(--surface2);color:var(--text2)">Not yet assessed</span>';
+    }
+
+    // Header
+    const header = document.createElement('div');
+    header.className = 'area-header';
+    header.setAttribute('role', 'button');
+    header.setAttribute('tabindex', '0');
+    header.setAttribute('aria-expanded', 'false');
+    header.innerHTML = `
+      <span class="area-chevron">&#9654;</span>
+      <span class="area-title">${vrqaArea.icon} ${esc(vrqaArea.label)}</span>
+      <div class="area-summary">${chipsHtml}</div>`;
+
+    header.addEventListener('click', () => toggleArea(header));
+    header.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleArea(header); } });
+    section.appendChild(header);
+
+    // Body
+    const body = document.createElement('div');
+    body.className = 'area-body';
+    const inner = document.createElement('div');
+    inner.className = 'area-body-inner';
+
+    if (isLanguages) {
+      inner.innerHTML = `
+        <div class="info-banner warning">
+          <strong>Languages Other Than English is not covered</strong> by the current question bank.
+          You will need to address this learning area through another resource, partial school enrolment,
+          or an exemption application to VRQA. Include evidence of your approach in your learning plan.
+        </div>`;
+    } else if (assessed.length > 0) {
+      // Working edge table
+      let tableHtml = '<table class="edge-table"><thead><tr><th>Code</th><th>Content Descriptor</th><th>Strand</th><th>Level</th><th>Status</th></tr></thead><tbody>';
+      for (const cd of assessed.sort((a, b) => (EMAB_ORDER[a.state] || 0) - (EMAB_ORDER[b.state] || 0))) {
+        tableHtml += `<tr>
+          <td class="et-code">${esc(cd.code)}</td>
+          <td class="et-desc">${esc(cd.description)}</td>
+          <td class="et-strand">${esc(cd.strand)}</td>
+          <td>${esc(cd.level)}</td>
+          <td><span class="emab-sm ${cd.state}">${EMAB_LABELS[cd.state] || ''}</span></td>
+        </tr>`;
+      }
+      tableHtml += '</tbody></table>';
+      inner.innerHTML = tableHtml;
+
+      // Working edge summary
+      if (workingEdge.length > 0) {
+        const edgeNote = document.createElement('div');
+        edgeNote.className = 'info-banner info';
+        edgeNote.innerHTML = `<strong>Working edge:</strong> ${workingEdge.length} content descriptor${workingEdge.length > 1 ? 's' : ''} at or below Meeting level &mdash; these are the areas where focused instruction will have the most impact next term.`;
+        inner.insertBefore(edgeNote, inner.firstChild);
+      }
+    } else if (!isLanguages) {
+      inner.innerHTML = '<p style="color:var(--text2);font-size:13px;padding:8px 0;">No diagnostic data for this area yet. Complete quizzes in the <a href="knowledge-check.html" style="color:var(--accent)">Knowledge Check</a> to see results here.</p>';
+    }
+
+    // Activity textarea
+    const actGroup = document.createElement('div');
+    actGroup.className = 'activity-group';
+    const actLabel = document.createElement('label');
+    actLabel.setAttribute('for', 'activity-' + vrqaArea.key);
+    actLabel.textContent = 'Planned activities for next term';
+    const actTA = document.createElement('textarea');
+    actTA.className = 'activity-textarea';
+    actTA.id = 'activity-' + vrqaArea.key;
+    actTA.placeholder = isLanguages
+      ? 'Describe how you will address Languages (e.g. Duolingo, community classes, partial enrolment, exemption application)...'
+      : 'Describe planned instruction, activities, resources, and evidence you will collect for this learning area...';
+    actTA.addEventListener('input', () => window.autoSavePlan());
+    if (planData.activities && planData.activities[vrqaArea.key]) {
+      actTA.value = planData.activities[vrqaArea.key];
+    }
+    actGroup.appendChild(actLabel);
+    actGroup.appendChild(actTA);
+    inner.appendChild(actGroup);
+
+    body.appendChild(inner);
+    section.appendChild(body);
+    container.appendChild(section);
+  }
+}
+
+function toggleArea(header) {
+  const isOpen = header.classList.toggle('open');
+  header.setAttribute('aria-expanded', isOpen);
+  const body = header.nextElementSibling;
+  body.classList.toggle('open');
+}
+
+// ========== PRINT ==========
+window.printPlan = function() {
+  collectFormData();
+  // Set print date
+  document.querySelector('.print-date').textContent =
+    'Generated: ' + new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  // Open all sections for print
+  document.querySelectorAll('.area-header').forEach(h => {
+    h.classList.add('open');
+    h.setAttribute('aria-expanded', 'true');
+    h.nextElementSibling.classList.add('open');
+  });
+
+  setTimeout(() => window.print(), 100);
+};
+
+// ========== TOAST ==========
+function toast(msg) {
+  const container = document.getElementById('toast-container');
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  container.appendChild(t);
+  setTimeout(() => { t.style.opacity = '0'; setTimeout(() => t.remove(), 200); }, 3000);
+}
+
+// ========== INIT ==========
+async function init() {
+  const savedTheme = localStorage.getItem('vc2-vrqa-theme');
+  if (savedTheme) currentTheme = savedTheme;
+  applyTheme();
+
+  loadKCResults();
+  loadPlanData();
+  await loadUnits();
+  restoreFormData();
+  render();
+}
+
+init();
+
+})();
+</script>
+</body>
+</html>
