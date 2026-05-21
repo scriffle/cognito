@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Multi-Student Dashboard</title>
+<style>
+:root {
+  --bg: #0f1117; --surface: #1a1d27; --surface2: #242836; --border: #2e3347;
+  --text: #e4e6f0; --text2: #9298b4; --accent: #6c8cff; --accent2: #4a6adf;
+  --green: #4ade80; --red: #f87171; --orange: #fb923c; --yellow: #fbbf24;
+  --purple: #a78bfa; --teal: #2dd4bf; --radius: 10px; --transition: 0.15s ease;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; min-height: 100dvh; }
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px; border-radius: 0 0 8px 0; text-decoration: none; }
+.skip-link:focus { top: 0; }
+
+.app-header { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 50; flex-wrap: wrap; }
+.header-title { font-size: 16px; font-weight: 600; flex: 1; min-width: 200px; }
+.header-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.btn { background: var(--surface2); border: 1px solid var(--border); color: var(--text2); cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; min-height: 44px; transition: all var(--transition); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.btn:hover { border-color: var(--accent); color: var(--text); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent2); border-color: var(--accent2); color: #fff; }
+.btn-danger { color: var(--red); }
+.btn-danger:hover { border-color: var(--red); }
+
+main { max-width: 1300px; margin: 0 auto; padding: 24px 20px; }
+
+.disclaimer { background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.25); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; font-size: 13px; color: var(--yellow); line-height: 1.6; }
+.disclaimer strong { font-weight: 700; }
+
+.privacy-note { background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.25); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; font-size: 13px; color: var(--green); line-height: 1.6; }
+
+.empty-state { text-align: center; padding: 60px 20px; color: var(--text2); }
+.empty-state h2 { font-size: 22px; margin-bottom: 12px; color: var(--text); }
+.empty-state p { font-size: 14px; max-width: 500px; margin: 0 auto 16px; }
+
+/* Tabs */
+.tab-bar { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 0; }
+.tab-btn { background: none; border: none; color: var(--text2); cursor: pointer; padding: 10px 16px; font-size: 13px; font-weight: 600; border-bottom: 2px solid transparent; transition: all var(--transition); min-height: 44px; }
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Student list */
+.student-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 28px; }
+.student-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px; cursor: pointer; transition: all var(--transition); position: relative; }
+.student-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.student-card.selected { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(108,140,255,0.2); }
+.sc-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.sc-meta { font-size: 11px; color: var(--text2); margin-bottom: 12px; }
+.sc-stats { display: flex; gap: 12px; flex-wrap: wrap; }
+.sc-stat { text-align: center; }
+.sc-stat .num { font-size: 18px; font-weight: 800; }
+.sc-stat .label { font-size: 9px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.3px; }
+.sc-tier { position: absolute; top: 12px; right: 12px; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; }
+.sc-tier.tier1 { background: rgba(74,222,128,0.15); color: var(--green); }
+.sc-tier.tier2 { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.sc-tier.tier3 { background: rgba(248,113,113,0.15); color: var(--red); }
+.sc-actions { display: flex; gap: 6px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+.sc-actions .btn { min-height: 32px; font-size: 11px; padding: 4px 10px; }
+
+/* Import/Add panel */
+.action-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; }
+.action-panel h3 { font-size: 14px; font-weight: 700; margin-bottom: 12px; }
+.form-row { display: flex; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; align-items: end; }
+.form-group { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 200px; }
+.form-group label { font-size: 11px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: 0.3px; }
+.form-group input, .form-group select { background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 6px; font-size: 13px; min-height: 44px; }
+.form-group input:focus, .form-group select:focus { outline: none; border-color: var(--accent); }
+.drop-zone { border: 2px dashed var(--border); border-radius: var(--radius); padding: 30px; text-align: center; color: var(--text2); font-size: 13px; transition: all var(--transition); cursor: pointer; }
+.drop-zone:hover, .drop-zone.dragover { border-color: var(--accent); color: var(--text); background: rgba(108,140,255,0.05); }
+.drop-zone input { display: none; }
+
+/* Class heatmap */
+.class-heatmap { margin-bottom: 28px; }
+.class-heatmap h2 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.class-heatmap .subtitle { font-size: 12px; color: var(--text2); margin-bottom: 16px; }
+
+.heatmap-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.heatmap-table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); min-width: 500px; }
+.heatmap-table th, .heatmap-table td { padding: 8px 10px; text-align: center; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); font-size: 11px; }
+.heatmap-table th { background: var(--surface2); font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text2); position: sticky; top: 60px; z-index: 10; }
+.heatmap-table td:first-child { text-align: left; font-weight: 600; font-size: 12px; white-space: nowrap; }
+.heatmap-table tr:last-child td { border-bottom: none; }
+
+.heat-cell { width: 100%; height: 28px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; min-width: 40px; }
+.heat-cell.h-strong { background: rgba(74,222,128,0.7); }
+.heat-cell.h-developing { background: rgba(251,191,36,0.5); color: var(--text); }
+.heat-cell.h-weak { background: rgba(248,113,113,0.6); }
+.heat-cell.h-none { background: var(--surface2); color: var(--text2); border: 1px dashed var(--border); }
+
+.legend { display: flex; gap: 16px; margin-top: 10px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text2); }
+.legend-swatch { width: 14px; height: 14px; border-radius: 3px; }
+
+/* Grouping view */
+.grouping-section { margin-bottom: 28px; }
+.grouping-section h2 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.grouping-section .subtitle { font-size: 12px; color: var(--text2); margin-bottom: 16px; }
+
+.group-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 12px; }
+.group-card .gc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.group-card .gc-title { font-size: 14px; font-weight: 700; }
+.group-card .gc-badge { font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 4px; text-transform: uppercase; }
+.group-card .gc-badge.tier1 { background: rgba(74,222,128,0.15); color: var(--green); }
+.group-card .gc-badge.tier2 { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.group-card .gc-badge.tier3 { background: rgba(248,113,113,0.15); color: var(--red); }
+.group-card .gc-badge.asymmetric { background: rgba(167,139,250,0.15); color: var(--purple); }
+.group-card .gc-students { display: flex; gap: 8px; flex-wrap: wrap; }
+.group-student { font-size: 12px; padding: 4px 10px; background: var(--surface2); border-radius: 4px; color: var(--text); }
+.group-card .gc-desc { font-size: 12px; color: var(--text2); margin-bottom: 8px; line-height: 1.5; }
+.group-card .gc-gaps { font-size: 11px; color: var(--text2); margin-top: 8px; }
+
+/* Filter bar */
+.filter-bar { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+.filter-bar select { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 6px 12px; border-radius: 6px; font-size: 12px; min-height: 36px; }
+
+/* Modal */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; display: none; align-items: center; justify-content: center; padding: 20px; }
+.modal-overlay.open { display: flex; }
+.modal { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; max-width: 500px; width: 100%; max-height: 80vh; overflow-y: auto; }
+.modal h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+.modal .btn { margin-top: 12px; }
+
+@media print {
+  body { background: #fff; color: #000; }
+  .app-header { position: static; border-bottom: 2px solid #000; }
+  .btn, .tab-bar, .action-panel, .sc-actions, .filter-bar { display: none; }
+  .student-card, .group-card { break-inside: avoid; }
+}
+@media (max-width: 600px) {
+  .student-grid { grid-template-columns: 1fr; }
+  .form-row { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="app-header">
+  <div class="header-title">VC2 Multi-Student Dashboard</div>
+  <div class="header-right">
+    <button class="btn" id="exportAllBtn">⬇ Export All</button>
+    <button class="btn" id="printBtn">🖨 Print</button>
+    <button class="btn" id="themeBtn">◐ Theme</button>
+    <a class="btn" href="heatmap-dashboard.html">Heatmap</a>
+    <a class="btn" href="knowledge-check.html">Quiz</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="disclaimer">
+    <strong>One source of evidence.</strong> Diagnostic data represents performance on structured items only. Class-level patterns should inform teaching decisions alongside professional judgement, not replace it.
+  </div>
+  <div class="privacy-note">
+    <strong>Privacy.</strong> All student data stays in your browser's localStorage. Nothing is transmitted to any server. Export is explicit and under your control.
+  </div>
+  <div id="content"></div>
+</main>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+</div>
+
+<script>
+const STORAGE_KEY = 'vc2-knowledge-check';
+const CLASS_STORAGE_KEY = 'vc2-class-dashboard';
+const EMAB_ORDER = ['beginning','approaching','meeting','meeting-confirmed','above-standard'];
+const BLOOM_KEYS = ['toLevel2','toLevel3','toLevel4','toLevel5'];
+
+const SUBJECT_AREAS = {
+  E: 'English', M: 'Mathematics', S: 'Science',
+  HH: 'History', HE: 'Economics & Business', HG: 'Geography', HP: 'Health & PE',
+  ADA: 'Dance', ADR: 'Drama', AMA: 'Media Arts', AMU: 'Music',
+  AVA: 'Visual Arts', AVC: 'Visual Communication Design',
+  TDE: 'Design & Technologies', TDI: 'Digital Technologies'
+};
+
+let unitsData = null;
+let students = [];
+let activeTab = 'students';
+
+function loadStudents() {
+  const raw = localStorage.getItem(CLASS_STORAGE_KEY);
+  if (raw) {
+    try { students = JSON.parse(raw); } catch(e) { students = []; }
+  }
+}
+
+function saveStudents() {
+  localStorage.setItem(CLASS_STORAGE_KEY, JSON.stringify(students));
+}
+
+function emabScore(state) {
+  const idx = EMAB_ORDER.indexOf(state);
+  return idx >= 0 ? idx : -1;
+}
+
+function emabLabel(state) {
+  if (!state) return 'N/A';
+  return state.replace(/-/g,' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function getAreaForCode(code) {
+  const m = code.match(/^VC2([A-Z]+)\d/);
+  return m ? m[1] : null;
+}
+
+function analyseStudent(student) {
+  const results = student.results || {};
+  const codes = Object.keys(results);
+  const assessed = codes.filter(c => results[c] && results[c].state);
+  let scoreSum = 0;
+  const areaCounts = {};
+  const areaScores = {};
+
+  for (const code of assessed) {
+    const s = emabScore(results[code].state);
+    scoreSum += s;
+    const area = getAreaForCode(code);
+    if (area && SUBJECT_AREAS[area]) {
+      if (!areaCounts[area]) { areaCounts[area] = 0; areaScores[area] = 0; }
+      areaCounts[area]++;
+      areaScores[area] += s;
+    }
+  }
+
+  const avgScore = assessed.length > 0 ? scoreSum / assessed.length : -1;
+  const strong = assessed.filter(c => emabScore(results[c].state) >= 3).length;
+  const gaps = assessed.filter(c => emabScore(results[c].state) <= 1).length;
+
+  // Tier classification
+  let tier = 1;
+  if (avgScore >= 0 && avgScore < 1.5 && assessed.length >= 3) tier = 3;
+  else if (gaps > 0 && gaps <= assessed.length * 0.4) tier = 2;
+
+  // Check for asymmetric profile
+  const areaAvgs = {};
+  let asymmetric = false;
+  for (const area of Object.keys(areaCounts)) {
+    areaAvgs[area] = areaScores[area] / areaCounts[area];
+  }
+  const avgs = Object.values(areaAvgs);
+  if (avgs.length >= 2) {
+    const max = Math.max(...avgs);
+    const min = Math.min(...avgs);
+    if (max - min >= 2.5) asymmetric = true;
+  }
+
+  // Gap areas
+  const gapAreas = [];
+  for (const [area, avg] of Object.entries(areaAvgs)) {
+    if (avg < 1.5) gapAreas.push(SUBJECT_AREAS[area]);
+  }
+
+  return { assessed: assessed.length, total: codes.length, avgScore, strong, gaps, tier, asymmetric, areaAvgs, gapAreas };
+}
+
+async function init() {
+  loadStudents();
+  try {
+    const resp = await fetch('units_of_work.json');
+    unitsData = await resp.json();
+  } catch(e) {}
+
+  // Auto-import current user's data as a profile if no students exist
+  const currentData = localStorage.getItem(STORAGE_KEY);
+  if (currentData && students.length === 0) {
+    const parsed = JSON.parse(currentData);
+    if (parsed.results && Object.keys(parsed.results).length > 0) {
+      students.push({
+        id: generateId(),
+        name: 'Current Student',
+        dateAdded: new Date().toISOString(),
+        results: parsed.results
+      });
+      saveStudents();
+    }
+  }
+
+  render();
+}
+
+function generateId() {
+  return Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
+}
+
+function render() {
+  const container = document.getElementById('content');
+  container.innerHTML = '';
+
+  // Tab bar
+  const tabBar = document.createElement('div');
+  tabBar.className = 'tab-bar';
+  tabBar.setAttribute('role', 'tablist');
+  const tabs = [
+    { id: 'students', label: 'Students' },
+    { id: 'heatmap', label: 'Class Heatmap' },
+    { id: 'grouping', label: 'Grouping' }
+  ];
+  for (const tab of tabs) {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn' + (activeTab === tab.id ? ' active' : '');
+    btn.textContent = tab.label;
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', activeTab === tab.id ? 'true' : 'false');
+    btn.addEventListener('click', () => { activeTab = tab.id; render(); });
+    tabBar.appendChild(btn);
+  }
+  container.appendChild(tabBar);
+
+  if (activeTab === 'students') renderStudentsTab(container);
+  else if (activeTab === 'heatmap') renderHeatmapTab(container);
+  else if (activeTab === 'grouping') renderGroupingTab(container);
+}
+
+function renderStudentsTab(container) {
+  // Import/Add panel
+  const panel = document.createElement('div');
+  panel.className = 'action-panel';
+  panel.innerHTML = `
+    <h3>Add Students</h3>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter name">
+      </div>
+      <button class="btn btn-primary" id="addCurrentBtn" style="margin-bottom:0;">Add from Current Quiz Data</button>
+    </div>
+    <div class="drop-zone" id="dropZone">
+      <p>Drop JSON profile(s) here or click to import</p>
+      <input type="file" id="fileInput" accept=".json" multiple>
+    </div>
+  `;
+  container.appendChild(panel);
+
+  // Wire up add button
+  panel.querySelector('#addCurrentBtn').addEventListener('click', () => {
+    const name = panel.querySelector('#studentName').value.trim() || 'Student ' + (students.length + 1);
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) { alert('No quiz data found in localStorage.'); return; }
+    const parsed = JSON.parse(raw);
+    if (!parsed.results || Object.keys(parsed.results).length === 0) {
+      alert('No quiz results found. Complete some quizzes first.');
+      return;
+    }
+    students.push({
+      id: generateId(),
+      name: name,
+      dateAdded: new Date().toISOString(),
+      results: parsed.results
+    });
+    saveStudents();
+    panel.querySelector('#studentName').value = '';
+    render();
+  });
+
+  // Wire up file import
+  const dropZone = panel.querySelector('#dropZone');
+  const fileInput = panel.querySelector('#fileInput');
+  dropZone.addEventListener('click', () => fileInput.click());
+  dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+  dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+  dropZone.addEventListener('drop', e => {
+    e.preventDefault();
+    dropZone.classList.remove('dragover');
+    handleFiles(e.dataTransfer.files);
+  });
+  fileInput.addEventListener('change', e => handleFiles(e.target.files));
+
+  // Student grid
+  if (students.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'empty-state';
+    empty.innerHTML = '<h2>No Students</h2><p>Add students using the panel above. You can import from current quiz data or from exported JSON profiles.</p>';
+    container.appendChild(empty);
+    return;
+  }
+
+  const grid = document.createElement('div');
+  grid.className = 'student-grid';
+
+  for (const student of students) {
+    const analysis = analyseStudent(student);
+    const card = document.createElement('div');
+    card.className = 'student-card';
+
+    const tierClass = analysis.tier === 1 ? 'tier1' : analysis.tier === 2 ? 'tier2' : 'tier3';
+    const tierLabel = analysis.tier === 1 ? 'Tier 1' : analysis.tier === 2 ? 'Tier 2' : 'Tier 3';
+
+    card.innerHTML = `
+      <span class="sc-tier ${tierClass}">${tierLabel}${analysis.asymmetric ? ' · Asymmetric' : ''}</span>
+      <div class="sc-name">${escapeHtml(student.name)}</div>
+      <div class="sc-meta">Added ${new Date(student.dateAdded).toLocaleDateString()}</div>
+      <div class="sc-stats">
+        <div class="sc-stat"><div class="num" style="color:var(--accent)">${analysis.assessed}</div><div class="label">Assessed</div></div>
+        <div class="sc-stat"><div class="num" style="color:var(--green)">${analysis.strong}</div><div class="label">Strong</div></div>
+        <div class="sc-stat"><div class="num" style="color:var(--red)">${analysis.gaps}</div><div class="label">Gaps</div></div>
+      </div>
+      <div class="sc-actions">
+        <button class="btn" data-action="export" data-id="${student.id}">Export</button>
+        <button class="btn" data-action="rename" data-id="${student.id}">Rename</button>
+        <button class="btn btn-danger" data-action="remove" data-id="${student.id}">Remove</button>
+      </div>
+    `;
+
+    card.querySelectorAll('[data-action]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const action = btn.dataset.action;
+        const id = btn.dataset.id;
+        if (action === 'export') exportStudent(id);
+        else if (action === 'rename') renameStudent(id);
+        else if (action === 'remove') removeStudent(id);
+      });
+    });
+
+    grid.appendChild(card);
+  }
+
+  container.appendChild(grid);
+}
+
+function renderHeatmapTab(container) {
+  if (students.length === 0) {
+    container.innerHTML += '<div class="empty-state"><h2>No Students</h2><p>Add students in the Students tab first.</p></div>';
+    return;
+  }
+
+  // Filter bar
+  const filterBar = document.createElement('div');
+  filterBar.className = 'filter-bar';
+  filterBar.innerHTML = `
+    <label style="font-size:12px;font-weight:600;color:var(--text2);">Filter by area:</label>
+    <select id="areaFilter">
+      <option value="all">All Areas</option>
+      ${Object.entries(SUBJECT_AREAS).map(([k,v]) => `<option value="${k}">${v}</option>`).join('')}
+    </select>
+  `;
+  container.appendChild(filterBar);
+
+  const section = document.createElement('div');
+  section.className = 'class-heatmap';
+  section.innerHTML = `<h2>Class-Level Heatmap</h2><p class="subtitle">Average performance per content descriptor across all students. Identifies class-wide strengths and gaps.</p>`;
+
+  // Collect all CDs across students
+  const allCodes = new Set();
+  for (const s of students) {
+    for (const code of Object.keys(s.results || {})) {
+      if (s.results[code].state) allCodes.add(code);
+    }
+  }
+
+  const areaFilter = 'all';
+  const cdsByArea = {};
+  for (const code of allCodes) {
+    const area = getAreaForCode(code);
+    if (!area || !SUBJECT_AREAS[area]) continue;
+    if (!cdsByArea[area]) cdsByArea[area] = [];
+    cdsByArea[area].push(code);
+  }
+
+  // Build table
+  const wrap = document.createElement('div');
+  wrap.className = 'heatmap-wrap';
+  const table = document.createElement('table');
+  table.className = 'heatmap-table';
+
+  let headerCells = '<th>Content Descriptor</th>';
+  for (const s of students) {
+    headerCells += `<th title="${escapeHtml(s.name)}">${escapeHtml(s.name.substring(0, 10))}</th>`;
+  }
+  headerCells += '<th>Class Avg</th>';
+  table.innerHTML = `<thead><tr>${headerCells}</tr></thead>`;
+
+  const tbody = document.createElement('tbody');
+
+  for (const [area, codes] of Object.entries(cdsByArea).sort((a,b) => a[0].localeCompare(b[0]))) {
+    // Area header row
+    const areaRow = document.createElement('tr');
+    areaRow.innerHTML = `<td colspan="${students.length + 2}" style="background:var(--surface2);font-weight:700;font-size:12px;color:var(--accent);padding:10px;">${SUBJECT_AREAS[area]}</td>`;
+    tbody.appendChild(areaRow);
+
+    for (const code of codes.sort()) {
+      const tr = document.createElement('tr');
+      let cells = `<td style="font-family:monospace;font-size:10px;color:var(--accent);">${code}</td>`;
+      let scoreSum = 0, scoreCount = 0;
+
+      for (const s of students) {
+        const r = (s.results || {})[code];
+        if (r && r.state) {
+          const score = emabScore(r.state);
+          scoreSum += score;
+          scoreCount++;
+          const cat = score >= 3 ? 'h-strong' : score >= 1.5 ? 'h-developing' : 'h-weak';
+          cells += `<td><div class="heat-cell ${cat}" title="${escapeHtml(s.name)}: ${emabLabel(r.state)}">${emabLabel(r.state).substring(0, 3)}</div></td>`;
+        } else {
+          cells += `<td><div class="heat-cell h-none">—</div></td>`;
+        }
+      }
+
+      // Class average
+      if (scoreCount > 0) {
+        const avg = scoreSum / scoreCount;
+        const cat = avg >= 3 ? 'h-strong' : avg >= 1.5 ? 'h-developing' : 'h-weak';
+        cells += `<td><div class="heat-cell ${cat}">${avg.toFixed(1)}</div></td>`;
+      } else {
+        cells += `<td><div class="heat-cell h-none">—</div></td>`;
+      }
+
+      tr.innerHTML = cells;
+      tbody.appendChild(tr);
+    }
+  }
+
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+  section.appendChild(wrap);
+
+  // Legend
+  const legend = document.createElement('div');
+  legend.className = 'legend';
+  legend.innerHTML = `
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(74,222,128,0.7)"></div> Strong (Meeting Confirmed+)</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(251,191,36,0.5)"></div> Developing (Approaching–Meeting)</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:rgba(248,113,113,0.6)"></div> Weak (Beginning)</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--surface2);border:1px dashed var(--border)"></div> Not Assessed</div>
+  `;
+  section.appendChild(legend);
+
+  container.appendChild(section);
+
+  // Wire up filter
+  container.querySelector('#areaFilter').addEventListener('change', e => {
+    // Re-render with filter applied
+    const selectedArea = e.target.value;
+    const rows = tbody.querySelectorAll('tr');
+    let currentArea = null;
+    for (const row of rows) {
+      const firstCell = row.querySelector('td');
+      if (!firstCell) continue;
+      if (firstCell.colSpan > 1) {
+        currentArea = firstCell.textContent;
+        const areaCode = Object.entries(SUBJECT_AREAS).find(([k,v]) => v === currentArea)?.[0];
+        row.style.display = (selectedArea === 'all' || selectedArea === areaCode) ? '' : 'none';
+      } else {
+        const code = firstCell.textContent;
+        const areaCode = getAreaForCode(code);
+        row.style.display = (selectedArea === 'all' || selectedArea === areaCode) ? '' : 'none';
+      }
+    }
+  });
+}
+
+function renderGroupingTab(container) {
+  if (students.length < 2) {
+    container.innerHTML += '<div class="empty-state"><h2>Need More Students</h2><p>Add at least 2 students to see grouping suggestions.</p></div>';
+    return;
+  }
+
+  const section = document.createElement('div');
+  section.className = 'grouping-section';
+  section.innerHTML = `<h2>Suggested Groupings</h2><p class="subtitle">Students with similar profiles grouped for potential Tier 2 targeted instruction or enrichment.</p>`;
+
+  const analyses = students.map(s => ({ student: s, analysis: analyseStudent(s) }));
+
+  // Group by tier
+  const tiers = { 1: [], 2: [], 3: [] };
+  for (const a of analyses) {
+    tiers[a.analysis.tier].push(a);
+  }
+
+  for (const [tier, group] of Object.entries(tiers)) {
+    if (group.length === 0) continue;
+    const tierLabels = { 1: 'Tier 1 — Universal', 2: 'Tier 2 — Targeted Support', 3: 'Tier 3 — Intensive Support' };
+    const card = document.createElement('div');
+    card.className = 'group-card';
+
+    const commonGaps = findCommonGaps(group);
+    const gapText = commonGaps.length > 0 ? `Common gap areas: ${commonGaps.join(', ')}` : 'No common gaps identified';
+
+    card.innerHTML = `
+      <div class="gc-header">
+        <span class="gc-title">${tierLabels[tier]}</span>
+        <span class="gc-badge tier${tier}">${group.length} student${group.length > 1 ? 's' : ''}</span>
+      </div>
+      <div class="gc-desc">${tier === '1' ? 'Students performing at or above expected levels across most assessed areas.' : tier === '2' ? 'Students with specific gaps that could benefit from targeted 6-8 week micro-cycle intervention.' : 'Students showing broad gaps — recommend specialist assessment before intervention planning.'}</div>
+      <div class="gc-students">${group.map(a => `<span class="group-student">${escapeHtml(a.student.name)}</span>`).join('')}</div>
+      <div class="gc-gaps">${gapText}</div>
+    `;
+    section.appendChild(card);
+  }
+
+  // Asymmetric profiles
+  const asymmetric = analyses.filter(a => a.analysis.asymmetric);
+  if (asymmetric.length > 0) {
+    const card = document.createElement('div');
+    card.className = 'group-card';
+    card.innerHTML = `
+      <div class="gc-header">
+        <span class="gc-title">Asymmetric Profiles</span>
+        <span class="gc-badge asymmetric">${asymmetric.length} student${asymmetric.length > 1 ? 's' : ''}</span>
+      </div>
+      <div class="gc-desc">Students showing significant variation between subject areas. These profiles may indicate twice-exceptional (2e) characteristics or domain-specific strengths worth investigating.</div>
+      <div class="gc-students">${asymmetric.map(a => `<span class="group-student">${escapeHtml(a.student.name)}</span>`).join('')}</div>
+    `;
+    section.appendChild(card);
+  }
+
+  // Similar gap profiles for Tier 2 grouping
+  if (tiers[2].length >= 2) {
+    const gapGroups = findSimilarGapProfiles(tiers[2]);
+    if (gapGroups.length > 0) {
+      const subSection = document.createElement('div');
+      subSection.style.marginTop = '20px';
+      subSection.innerHTML = '<h3 style="font-size:14px;font-weight:700;margin-bottom:12px;">Tier 2 Sub-Groups (Similar Gap Profiles)</h3>';
+
+      for (const group of gapGroups) {
+        const card = document.createElement('div');
+        card.className = 'group-card';
+        card.innerHTML = `
+          <div class="gc-header">
+            <span class="gc-title">Gap cluster: ${group.sharedGaps.join(', ')}</span>
+            <span class="gc-badge tier2">${group.students.length} students</span>
+          </div>
+          <div class="gc-desc">These students share similar gap profiles and could benefit from the same targeted intervention group.</div>
+          <div class="gc-students">${group.students.map(s => `<span class="group-student">${escapeHtml(s)}</span>`).join('')}</div>
+        `;
+        subSection.appendChild(card);
+      }
+      section.appendChild(subSection);
+    }
+  }
+
+  container.appendChild(section);
+}
+
+function findCommonGaps(group) {
+  if (group.length === 0) return [];
+  const gapSets = group.map(a => new Set(a.analysis.gapAreas));
+  const first = gapSets[0];
+  const common = [];
+  for (const gap of first) {
+    if (gapSets.every(s => s.has(gap))) common.push(gap);
+  }
+  return common;
+}
+
+function findSimilarGapProfiles(tier2Group) {
+  const groups = [];
+  const used = new Set();
+
+  for (let i = 0; i < tier2Group.length; i++) {
+    if (used.has(i)) continue;
+    const a = tier2Group[i];
+    const gapsA = new Set(a.analysis.gapAreas);
+    if (gapsA.size === 0) continue;
+
+    const cluster = [a.student.name];
+    const shared = new Set(gapsA);
+    used.add(i);
+
+    for (let j = i + 1; j < tier2Group.length; j++) {
+      if (used.has(j)) continue;
+      const b = tier2Group[j];
+      const gapsB = new Set(b.analysis.gapAreas);
+      const overlap = [...gapsA].filter(g => gapsB.has(g));
+      if (overlap.length >= 1) {
+        cluster.push(b.student.name);
+        for (const g of shared) { if (!gapsB.has(g)) shared.delete(g); }
+        used.add(j);
+      }
+    }
+
+    if (cluster.length >= 2 && shared.size > 0) {
+      groups.push({ students: cluster, sharedGaps: [...shared] });
+    }
+  }
+
+  return groups;
+}
+
+function handleFiles(files) {
+  for (const file of files) {
+    const reader = new FileReader();
+    reader.onload = e => {
+      try {
+        const data = JSON.parse(e.target.result);
+        if (Array.isArray(data)) {
+          for (const item of data) importProfile(item);
+        } else {
+          importProfile(data);
+        }
+        saveStudents();
+        render();
+      } catch(err) {
+        alert('Invalid JSON file: ' + err.message);
+      }
+    };
+    reader.readAsText(file);
+  }
+}
+
+function importProfile(data) {
+  // Accept either raw results or wrapped profile
+  let results = data.results || data;
+  let name = data.name || 'Imported Student ' + (students.length + 1);
+
+  // Validate it looks like KC results
+  const firstKey = Object.keys(results)[0];
+  if (!firstKey || !firstKey.match(/^VC2/)) {
+    // Try unwrapping vc2-knowledge-check format
+    if (results.results) results = results.results;
+    else { alert('Could not find valid VC2 results in imported file.'); return; }
+  }
+
+  students.push({
+    id: generateId(),
+    name: name,
+    dateAdded: new Date().toISOString(),
+    results: results
+  });
+}
+
+function exportStudent(id) {
+  const student = students.find(s => s.id === id);
+  if (!student) return;
+  const blob = new Blob([JSON.stringify({ name: student.name, dateExported: new Date().toISOString(), results: student.results }, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `vc2-profile-${student.name.replace(/\s+/g,'-').toLowerCase()}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function renameStudent(id) {
+  const student = students.find(s => s.id === id);
+  if (!student) return;
+  const modal = document.getElementById('modal');
+  modal.innerHTML = `
+    <h2>Rename Student</h2>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" id="renameInput" value="${escapeHtml(student.name)}">
+    </div>
+    <div style="display:flex;gap:8px;">
+      <button class="btn btn-primary" id="renameSave">Save</button>
+      <button class="btn" id="renameCancel">Cancel</button>
+    </div>
+  `;
+  document.getElementById('modalOverlay').classList.add('open');
+  const input = modal.querySelector('#renameInput');
+  input.focus();
+  input.select();
+  modal.querySelector('#renameSave').addEventListener('click', () => {
+    student.name = input.value.trim() || student.name;
+    saveStudents();
+    closeModal();
+    render();
+  });
+  modal.querySelector('#renameCancel').addEventListener('click', closeModal);
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') modal.querySelector('#renameSave').click(); });
+}
+
+function removeStudent(id) {
+  const student = students.find(s => s.id === id);
+  if (!student) return;
+  if (!confirm(`Remove "${student.name}" from the dashboard? This does not delete any quiz data.`)) return;
+  students = students.filter(s => s.id !== id);
+  saveStudents();
+  render();
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+}
+
+document.getElementById('modalOverlay').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeModal();
+});
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// Export all students
+document.getElementById('exportAllBtn').addEventListener('click', () => {
+  if (students.length === 0) { alert('No students to export.'); return; }
+  const data = students.map(s => ({ name: s.name, dateExported: new Date().toISOString(), results: s.results }));
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'vc2-class-profiles.json';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+// Theme
+document.getElementById('themeBtn').addEventListener('click', () => {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : current === 'light' ? '' : 'dark';
+  if (next) html.setAttribute('data-theme', next);
+  else html.removeAttribute('data-theme');
+});
+
+document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+});
+
+init();
+</script>
+</body>
+</html>

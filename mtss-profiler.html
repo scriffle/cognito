@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 MTSS Tier Profiler</title>
+<style>
+:root {
+  --bg: #0f1117; --surface: #1a1d27; --surface2: #242836; --border: #2e3347;
+  --text: #e4e6f0; --text2: #9298b4; --accent: #6c8cff; --accent2: #4a6adf;
+  --green: #4ade80; --red: #f87171; --orange: #fb923c; --yellow: #fbbf24;
+  --purple: #a78bfa; --teal: #2dd4bf; --radius: 10px; --transition: 0.15s ease;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; min-height: 100dvh; }
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px; border-radius: 0 0 8px 0; text-decoration: none; }
+.skip-link:focus { top: 0; }
+
+.app-header { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 50; flex-wrap: wrap; }
+.header-title { font-size: 16px; font-weight: 600; flex: 1; min-width: 200px; }
+.header-right { display: flex; gap: 8px; align-items: center; }
+.btn { background: var(--surface2); border: 1px solid var(--border); color: var(--text2); cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; min-height: 44px; transition: all var(--transition); }
+.btn:hover { border-color: var(--accent); color: var(--text); }
+
+main { max-width: 1100px; margin: 0 auto; padding: 24px 20px; }
+
+.disclaimer { background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.25); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; font-size: 13px; color: var(--yellow); line-height: 1.6; }
+.disclaimer strong { font-weight: 700; }
+
+.no-data { text-align: center; padding: 60px 20px; color: var(--text2); }
+.no-data h2 { font-size: 22px; margin-bottom: 12px; color: var(--text); }
+.no-data p { font-size: 14px; max-width: 500px; margin: 0 auto 16px; }
+.no-data a { color: var(--accent); }
+
+/* Tier overview */
+.tier-overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+.tier-card { background: var(--surface); border: 2px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
+.tier-card.active { border-color: var(--accent); }
+.tier-card .tc-num { font-size: 36px; font-weight: 800; margin-bottom: 4px; }
+.tier-card .tc-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.tier-card .tc-desc { font-size: 11px; color: var(--text2); line-height: 1.5; }
+.tier1 .tc-num { color: var(--green); }
+.tier1.active { border-color: var(--green); }
+.tier2 .tc-num { color: var(--yellow); }
+.tier2.active { border-color: var(--yellow); }
+.tier3 .tc-num { color: var(--red); }
+.tier3.active { border-color: var(--red); }
+
+/* Profile summary */
+.profile-summary { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 24px; }
+.profile-summary h2 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+.ps-badge { display: inline-block; font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+.ps-badge.tier1 { background: rgba(74,222,128,0.15); color: var(--green); }
+.ps-badge.tier2 { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.ps-badge.tier3 { background: rgba(248,113,113,0.15); color: var(--red); }
+.ps-body { font-size: 13px; color: var(--text2); line-height: 1.7; }
+
+/* Gap analysis */
+.gap-section { margin-bottom: 28px; }
+.gap-section h3 { font-size: 15px; font-weight: 700; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+
+.gap-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 10px; }
+.gap-card .gc-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+.gap-card .gc-code { font-family: 'SF Mono','Fira Code',monospace; font-size: 12px; color: var(--accent); font-weight: 600; }
+.gap-card .gc-area { font-size: 11px; color: var(--text2); }
+.gap-card .gc-desc { font-size: 13px; line-height: 1.5; margin-bottom: 8px; }
+.gap-card .gc-analysis { font-size: 12px; color: var(--text2); line-height: 1.5; padding: 10px 14px; background: var(--surface2); border-radius: 6px; }
+.emab-sm { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; display: inline-block; }
+.emab-sm.beginning { background: rgba(248,113,113,0.15); color: var(--red); }
+.emab-sm.approaching { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.emab-sm.meeting { background: rgba(108,140,255,0.15); color: var(--accent); }
+.emab-sm.meeting-confirmed { background: rgba(74,222,128,0.15); color: var(--green); }
+.emab-sm.above-standard { background: rgba(167,139,250,0.15); color: var(--purple); }
+
+/* Gap type badges */
+.gap-type { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+.gap-type.content { background: rgba(248,113,113,0.12); color: var(--red); }
+.gap-type.reasoning { background: rgba(251,146,60,0.12); color: var(--orange); }
+.gap-type.literacy-flag { background: rgba(167,139,250,0.12); color: var(--purple); }
+
+/* Micro-cycle planner */
+.micro-cycle { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 24px; }
+.micro-cycle h3 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+.mc-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.mc-table th { text-align: left; padding: 8px 10px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text2); border-bottom: 1px solid var(--border); }
+.mc-table td { padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.mc-table .mc-code { font-family: 'SF Mono','Fira Code',monospace; font-size: 11px; color: var(--accent); font-weight: 600; }
+.mc-table .mc-target { font-size: 11px; }
+.mc-table .mc-duration { font-size: 11px; color: var(--text2); }
+
+/* Alerts */
+.alert-box { border-radius: var(--radius); padding: 14px 18px; margin-bottom: 16px; font-size: 13px; line-height: 1.6; }
+.alert-box.info { background: rgba(108,140,255,0.08); border: 1px solid rgba(108,140,255,0.2); color: var(--accent); }
+.alert-box.warning { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); color: var(--red); }
+.alert-box strong { font-weight: 700; }
+
+/* Filter */
+.filter-bar { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+.filter-bar label { font-size: 12px; color: var(--text2); font-weight: 600; }
+.filter-bar select { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 6px; font-size: 13px; min-height: 40px; cursor: pointer; }
+
+/* Toast */
+.toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 200; display: flex; flex-direction: column; gap: 8px; }
+.toast { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; font-size: 13px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); animation: toastIn 0.2s ease; }
+@keyframes toastIn { from { opacity: 0; transform: translateY(10px); } }
+
+@media (max-width: 768px) {
+  .tier-overview { grid-template-columns: 1fr; }
+  main { padding: 16px 12px; }
+}
+@media print {
+  .app-header, .filter-bar, .toast-container { display: none !important; }
+  body { background: #fff; color: #000; }
+  .tier-card { border-color: #ccc; }
+  .disclaimer { background: #fffff0; border-color: #d69e2e; color: #744210; }
+  @page { margin: 1.5cm; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="app-header" role="banner">
+  <h1 class="header-title">VC2 MTSS Tier Profiler</h1>
+  <div class="header-right">
+    <button class="btn" onclick="window.print()" aria-label="Print">&#128424; Print</button>
+    <button class="btn" onclick="toggleTheme()" aria-label="Toggle theme" style="font-size:14px;">&#9681;</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="disclaimer" role="note">
+    <strong>Identification is not sufficient.</strong> MTSS tier suggestions below are based on diagnostic item performance only. Tier placement requires teacher judgement. Tier 3 referral always requires specialist assessment. The Victorian Auditor-General noted that intervention without sound pedagogy can give a false sense of action.
+  </div>
+
+  <div id="no-data" class="no-data" style="display:none;">
+    <h2>No diagnostic data yet</h2>
+    <p>Complete quizzes in the <a href="knowledge-check.html">VC2 Knowledge Check</a> to generate a tier profile.</p>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <div class="filter-bar">
+      <label for="filter-area">Subject:</label>
+      <select id="filter-area" onchange="render()"><option value="all">All Subjects</option></select>
+    </div>
+
+    <div id="tier-overview" class="tier-overview"></div>
+    <div id="profile-summary"></div>
+    <div id="alerts"></div>
+    <div id="gap-analysis"></div>
+    <div id="micro-cycle"></div>
+  </div>
+</main>
+
+<div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+<script>
+'use strict';
+(function() {
+
+const KC_KEY = 'vc2-knowledge-check';
+const BLOOM_KEYS = ['toLevel2','toLevel3','toLevel4','toLevel5'];
+const BLOOM_LABELS = { toLevel2:'Remember', toLevel3:'Understand', toLevel4:'Apply', toLevel5:'Analyse' };
+const EMAB_LABELS = { 'above-standard':'Above Expected Standard', 'meeting-confirmed':'Meeting Confirmed', meeting:'Meeting', approaching:'Approaching', beginning:'Beginning' };
+const EMAB_ORDER = { beginning:0, approaching:1, meeting:2, 'meeting-confirmed':3, 'above-standard':4 };
+
+let unitsData = null, kcState = null, currentTheme = 'system';
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function applyTheme() {
+  if (currentTheme === 'light') document.documentElement.setAttribute('data-theme','light');
+  else if (currentTheme === 'dark') document.documentElement.setAttribute('data-theme','dark');
+  else document.documentElement.removeAttribute('data-theme');
+}
+window.toggleTheme = function() {
+  const c = { system:'dark', dark:'light', light:'system' };
+  currentTheme = c[currentTheme]||'system'; applyTheme();
+  localStorage.setItem('vc2-mtss-theme', currentTheme);
+};
+
+function loadKC() {
+  try { const r = localStorage.getItem(KC_KEY); if (r) { const p = JSON.parse(r); if (p && p.version===1) kcState = p; } } catch(e) {}
+}
+
+async function loadUnits() {
+  try { const r = await fetch('units_of_work.json',{cache:'no-store'}); if (r.ok) unitsData = await r.json(); } catch(e) {}
+}
+
+function getAllAssessed() {
+  const results = kcState?.results || {};
+  const cds = [];
+  if (!unitsData) return cds;
+  for (const [ac, area] of Object.entries(unitsData.areas||{})) {
+    for (const [lk, ld] of Object.entries(area.levels||{})) {
+      for (const u of (ld.units||[])) {
+        for (const cd of (u.contentDescriptions||[])) {
+          const r = results[cd.code];
+          if (r) {
+            const breakdown = getBloomBreakdown(r.attempts);
+            cds.push({ code: cd.code, description: cd.description, strand: cd.strandLabel||cd.strand||'', area: area.label, areaCode: ac, level: lk, state: r.state, breakdown });
+          }
+        }
+      }
+    }
+  }
+  return cds;
+}
+
+function getBloomBreakdown(attempts) {
+  if (!attempts||!attempts.length) return null;
+  const latest = attempts[attempts.length-1];
+  if (!latest.answers) return null;
+  const b = {};
+  for (const k of BLOOM_KEYS) {
+    const la = latest.answers.filter(a=>a.bloomKey===k);
+    if (la.length) b[k] = { total: la.length, correct: la.filter(a=>a.correct).length };
+  }
+  return b;
+}
+
+function classifyTier(cd) {
+  const s = cd.state;
+  if (s === 'above-standard' || s === 'meeting-confirmed') return 1;
+  if (s === 'meeting') return 1;
+  if (s === 'approaching') return 2;
+  if (s === 'beginning') return 2;
+  return 1;
+}
+
+function classifyGapType(cd) {
+  if (cd.state === 'beginning') return 'content';
+  if (cd.state === 'approaching') {
+    // Check if Remember was passed but Understand failed
+    if (cd.breakdown) {
+      const rem = cd.breakdown.toLevel2;
+      if (rem && rem.correct/rem.total >= 0.75) return 'reasoning';
+    }
+    return 'content';
+  }
+  if (cd.state === 'meeting') {
+    // Passed through Apply but not Analyse
+    if (cd.breakdown) {
+      const ana = cd.breakdown.toLevel5;
+      if (ana && ana.correct/ana.total < 0.75) return 'reasoning';
+    }
+  }
+  return null;
+}
+
+function detectOverallProfile(cds) {
+  if (cds.length < 3) return { tier: 1, type: 'insufficient', desc: 'Not enough data to determine a profile. Assess more content descriptors for a reliable tier suggestion.' };
+
+  const beginCount = cds.filter(c=>c.state==='beginning').length;
+  const approachCount = cds.filter(c=>c.state==='approaching').length;
+  const lowCount = beginCount + approachCount;
+  const lowPct = lowCount / cds.length;
+
+  // Tier 3 indicator: broadly delayed
+  if (lowPct > 0.7 && cds.length >= 5) {
+    return { tier: 3, type: 'broadly-delayed',
+      desc: `Performance is at Beginning or Approaching level across ${Math.round(lowPct*100)}% of assessed CDs. This pattern may indicate foundational gaps in literacy or numeracy, environmental factors, or the need for specialist assessment. This profile is consistent with Tier 3 — specialist assessment is recommended before designing intervention.` };
+  }
+
+  // Check for cross-area low performance suggesting literacy substrate
+  const areas = {};
+  for (const cd of cds) { if (!areas[cd.area]) areas[cd.area] = []; areas[cd.area].push(cd); }
+  const areasWithLow = Object.values(areas).filter(arr => arr.filter(c=>c.state==='beginning').length / arr.length > 0.5).length;
+  if (areasWithLow >= 3) {
+    return { tier: 3, type: 'literacy-flag',
+      desc: `Low performance spans ${areasWithLow} subject areas. Persistent low performance across multiple areas is a candidate signal for a literacy or numeracy screening rather than content-specific intervention. Discuss with a learning support specialist.` };
+  }
+
+  // Tier 2: specific gaps
+  if (lowPct > 0.2) {
+    const gapAreas = [...new Set(cds.filter(c=>c.state==='beginning'||c.state==='approaching').map(c=>c.area))];
+    return { tier: 2, type: 'specific-gaps',
+      desc: `${lowCount} content descriptor${lowCount>1?'s':''} at Beginning or Approaching level, concentrated in ${gapAreas.join(', ')}. This is consistent with Tier 2 — targeted small-group or individual support on specific strands, with 6–8 week micro-cycles and re-assessment.` };
+  }
+
+  // Check for reasoning gap pattern
+  const meetingOnly = cds.filter(c=>c.state==='meeting');
+  if (meetingOnly.length >= 3 && cds.filter(c=>c.state==='meeting-confirmed'||c.state==='above-standard').length === 0) {
+    return { tier: 2, type: 'reasoning-gap',
+      desc: `All assessed CDs reach Meeting level but none progress beyond. This suggests a reasoning gap rather than a content gap — the student can recall and apply but may need explicit instruction in analytical and evaluative thinking.` };
+  }
+
+  return { tier: 1, type: 'on-track',
+    desc: `Performance is predominantly at Meeting level or above. This profile is consistent with Tier 1 universal instruction. Continue monitoring and differentiate within the classroom.` };
+}
+
+function render() {
+  loadKC();
+  let cds = getAllAssessed();
+  const area = document.getElementById('filter-area').value;
+  if (area !== 'all') cds = cds.filter(c=>c.area===area);
+
+  if (cds.length === 0) {
+    document.getElementById('no-data').style.display = '';
+    document.getElementById('dashboard').style.display = 'none';
+    return;
+  }
+  document.getElementById('no-data').style.display = 'none';
+  document.getElementById('dashboard').style.display = '';
+
+  // Populate filter
+  const allCDs = getAllAssessed();
+  const areas = [...new Set(allCDs.map(c=>c.area))].sort();
+  const sel = document.getElementById('filter-area');
+  const cur = sel.value;
+  sel.innerHTML = '<option value="all">All Subjects</option>' + areas.map(a=>`<option value="${esc(a)}" ${a===cur?'selected':''}>${esc(a)}</option>`).join('');
+
+  const profile = detectOverallProfile(cds);
+
+  // Tier counts
+  const t1 = cds.filter(c=>classifyTier(c)===1).length;
+  const t2 = cds.filter(c=>classifyTier(c)===2).length;
+  const t3 = profile.tier === 3 ? cds.length : 0;
+
+  // Tier overview cards
+  document.getElementById('tier-overview').innerHTML = `
+    <div class="tier-card tier1 ${profile.tier===1?'active':''}">
+      <div class="tc-num">${t1}</div>
+      <div class="tc-label">Tier 1 — Universal</div>
+      <div class="tc-desc">CDs at Meeting or above. Quality first instruction; monitor within class.</div>
+    </div>
+    <div class="tier-card tier2 ${profile.tier===2?'active':''}">
+      <div class="tc-num">${t2}</div>
+      <div class="tc-label">Tier 2 — Targeted</div>
+      <div class="tc-desc">CDs at Approaching or Beginning with isolated gaps. 6–8 week micro-cycle support.</div>
+    </div>
+    <div class="tier-card tier3 ${profile.tier===3?'active':''}">
+      <div class="tc-num">${profile.tier===3?cds.length:'—'}</div>
+      <div class="tc-label">Tier 3 — Intensive</div>
+      <div class="tc-desc">Broad delays suggesting specialist assessment. Never assigned algorithmically.</div>
+    </div>`;
+
+  // Profile summary
+  const tierClass = profile.tier===1?'tier1':profile.tier===2?'tier2':'tier3';
+  const tierLabel = profile.tier===1?'Tier 1 — Universal':profile.tier===2?'Tier 2 — Targeted':'Tier 3 Indicator — Specialist Assessment Recommended';
+  document.getElementById('profile-summary').innerHTML = `
+    <div class="profile-summary">
+      <h2>Overall Profile</h2>
+      <span class="ps-badge ${tierClass}">${tierLabel}</span>
+      <div class="ps-body">${esc(profile.desc)}</div>
+    </div>`;
+
+  // Alerts
+  let alertsHtml = '';
+  if (profile.type === 'literacy-flag') {
+    alertsHtml += `<div class="alert-box warning"><strong>Literacy/numeracy screening recommended.</strong> Low performance across multiple subject areas may reflect a decoding or comprehension issue rather than content-specific gaps. A student with reading difficulties may score below their conceptual understanding on text-heavy items.</div>`;
+  }
+  if (profile.tier === 3) {
+    alertsHtml += `<div class="alert-box warning"><strong>This profile is consistent with Tier 3 — discuss with a specialist.</strong> Tier 3 referral requires teacher judgement and frequently a specialist assessment. The diagnostic cannot determine the cause of broad delays.</div>`;
+  }
+  document.getElementById('alerts').innerHTML = alertsHtml;
+
+  // Gap analysis — only show CDs with gaps
+  const gaps = cds.filter(c=>c.state==='beginning'||c.state==='approaching'||
+    (c.state==='meeting'&&classifyGapType(c)==='reasoning'));
+  let gapHtml = '';
+  if (gaps.length > 0) {
+    gapHtml = '<div class="gap-section"><h3>Gap Analysis</h3>';
+    for (const cd of gaps.sort((a,b)=>(EMAB_ORDER[a.state]||0)-(EMAB_ORDER[b.state]||0))) {
+      const gapType = classifyGapType(cd);
+      const gapLabel = gapType==='content'?'Content Gap':gapType==='reasoning'?'Reasoning Gap':'';
+      const gapClass = gapType==='content'?'content':gapType==='reasoning'?'reasoning':'';
+
+      let analysis = '';
+      if (gapType === 'content') {
+        analysis = 'Foundational content not yet secured. Intervention: explicit instruction, worked examples, retrieval practice on this strand.';
+      } else if (gapType === 'reasoning') {
+        analysis = 'Content recall is adequate but higher-order thinking is not yet demonstrated. Intervention: explicit reasoning instruction, comprehension monitoring, with this content as the vehicle.';
+      }
+
+      // Bloom's detail
+      let bloomDetail = '';
+      if (cd.breakdown) {
+        bloomDetail = BLOOM_KEYS.filter(k=>cd.breakdown[k]).map(k=>{
+          const b = cd.breakdown[k];
+          return `${BLOOM_LABELS[k]}: ${b.correct}/${b.total}`;
+        }).join(' · ');
+      }
+
+      gapHtml += `<div class="gap-card">
+        <div class="gc-header">
+          <span class="gc-code">${esc(cd.code)}</span>
+          <span class="emab-sm ${cd.state}">${EMAB_LABELS[cd.state]||''}</span>
+          ${gapLabel?`<span class="gap-type ${gapClass}">${gapLabel}</span>`:''}
+          <span class="gc-area">${esc(cd.area)} · Level ${esc(cd.level)}</span>
+        </div>
+        <div class="gc-desc">${esc(cd.description)}</div>
+        ${bloomDetail?`<div style="font-size:11px;color:var(--text2);margin-bottom:8px;">${esc(bloomDetail)}</div>`:''}
+        ${analysis?`<div class="gc-analysis">${esc(analysis)}</div>`:''}
+      </div>`;
+    }
+    gapHtml += '</div>';
+  }
+  document.getElementById('gap-analysis').innerHTML = gapHtml;
+
+  // Micro-cycle planner
+  const tier2Gaps = gaps.filter(c=>c.state==='beginning'||c.state==='approaching');
+  let mcHtml = '';
+  if (tier2Gaps.length > 0) {
+    mcHtml = `<div class="micro-cycle">
+      <h3>Suggested Micro-Cycle Targets (6–8 weeks)</h3>
+      <div class="alert-box info" style="margin-bottom:14px;"><strong>Re-test after each cycle.</strong> MTSS best practice: target narrow strands, intervene for 6–8 weeks, re-assess the specific strand, and exit from Tier 2 when mastery returns.</div>
+      <table class="mc-table"><thead><tr><th>Code</th><th>Strand</th><th>Current</th><th>Target</th><th>Gap Type</th><th>Duration</th></tr></thead><tbody>`;
+    for (const cd of tier2Gaps) {
+      const target = cd.state==='beginning'?'Approaching':'Meeting';
+      const gt = classifyGapType(cd);
+      const gtLabel = gt==='content'?'Content':gt==='reasoning'?'Reasoning':'Mixed';
+      mcHtml += `<tr>
+        <td class="mc-code">${esc(cd.code)}</td>
+        <td>${esc(cd.strand)}</td>
+        <td><span class="emab-sm ${cd.state}">${EMAB_LABELS[cd.state]||''}</span></td>
+        <td class="mc-target">${target}</td>
+        <td><span class="gap-type ${gt||''}">${gtLabel}</span></td>
+        <td class="mc-duration">6–8 weeks</td>
+      </tr>`;
+    }
+    mcHtml += '</tbody></table></div>';
+  }
+  document.getElementById('micro-cycle').innerHTML = mcHtml;
+}
+
+function toast(msg) {
+  const c = document.getElementById('toast-container');
+  const t = document.createElement('div'); t.className='toast'; t.textContent=msg;
+  c.appendChild(t); setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),200);},3000);
+}
+
+async function init() {
+  const st = localStorage.getItem('vc2-mtss-theme');
+  if (st) currentTheme = st; applyTheme();
+  await loadUnits(); render();
+  window.addEventListener('focus', render);
+}
+init();
+})();
+</script>
+</body>
+</html>

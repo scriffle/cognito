@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Capability Triangulation View</title>
+<style>
+:root {
+  --bg: #0f1117; --surface: #1a1d27; --surface2: #242836; --border: #2e3347;
+  --text: #e4e6f0; --text2: #9298b4; --accent: #6c8cff; --accent2: #4a6adf;
+  --green: #4ade80; --red: #f87171; --orange: #fb923c; --yellow: #fbbf24;
+  --purple: #a78bfa; --teal: #2dd4bf; --radius: 10px; --transition: 0.15s ease;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; min-height: 100dvh; }
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px; border-radius: 0 0 8px 0; text-decoration: none; }
+.skip-link:focus { top: 0; }
+
+.app-header { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 50; flex-wrap: wrap; }
+.header-title { font-size: 16px; font-weight: 600; flex: 1; min-width: 200px; }
+.header-right { display: flex; gap: 8px; align-items: center; }
+.btn { background: var(--surface2); border: 1px solid var(--border); color: var(--text2); cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; min-height: 44px; transition: all var(--transition); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.btn:hover { border-color: var(--accent); color: var(--text); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 24px 20px; }
+
+.disclaimer { background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.25); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; font-size: 13px; color: var(--yellow); line-height: 1.6; }
+.disclaimer strong { font-weight: 700; }
+
+.no-data { text-align: center; padding: 60px 20px; color: var(--text2); }
+.no-data h2 { font-size: 22px; margin-bottom: 12px; color: var(--text); }
+.no-data p { font-size: 14px; max-width: 500px; margin: 0 auto 16px; }
+.no-data a { color: var(--accent); }
+
+.coverage-banner { background: rgba(167,139,250,0.08); border: 1px solid rgba(167,139,250,0.25); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; font-size: 13px; color: var(--purple); line-height: 1.6; }
+
+/* Level selector */
+.level-bar { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.level-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text2); cursor: pointer; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; min-height: 44px; transition: all var(--transition); }
+.level-btn:hover { border-color: var(--accent); color: var(--text); }
+.level-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* Capability overview grid */
+.cap-overview { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-bottom: 28px; }
+.cap-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.cap-card .cc-icon { font-size: 28px; margin-bottom: 8px; }
+.cap-card .cc-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+.cap-card .cc-strands { font-size: 11px; color: var(--text2); margin-bottom: 12px; }
+.cap-card .cc-stats { display: flex; gap: 12px; flex-wrap: wrap; }
+.cap-stat { text-align: center; }
+.cap-stat .cs-num { font-size: 22px; font-weight: 800; }
+.cap-stat .cs-label { font-size: 10px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.3px; }
+.cap-stat.assessed .cs-num { color: var(--accent); }
+.cap-stat.strong .cs-num { color: var(--green); }
+.cap-stat.gap .cs-num { color: var(--red); }
+.cap-stat.none .cs-num { color: var(--text2); }
+.cc-coverage { margin-top: 10px; font-size: 11px; color: var(--orange); padding: 6px 10px; background: rgba(251,146,60,0.08); border-radius: 6px; }
+
+/* Triangulation matrix */
+.tri-section { margin-bottom: 32px; }
+.tri-section h2 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.tri-section .tri-subtitle { font-size: 12px; color: var(--text2); margin-bottom: 16px; }
+
+.tri-table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+.tri-table th, .tri-table td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; }
+.tri-table th { background: var(--surface2); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text2); position: sticky; top: 60px; z-index: 10; }
+.tri-table tr:last-child td { border-bottom: none; }
+.tri-table tr:hover td { background: var(--surface2); }
+
+.emab-sm { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; display: inline-block; }
+.emab-sm.above-standard { background: rgba(74,222,128,0.15); color: var(--green); }
+.emab-sm.meeting-confirmed { background: rgba(74,222,128,0.10); color: var(--green); }
+.emab-sm.meeting { background: rgba(108,140,255,0.15); color: var(--accent); }
+.emab-sm.approaching { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.emab-sm.beginning { background: rgba(248,113,113,0.15); color: var(--red); }
+.emab-sm.not-assessed { background: var(--surface2); color: var(--text2); }
+
+/* Hypotheses */
+.hyp-section { margin-bottom: 28px; }
+.hyp-section h2 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.hyp-section .hyp-subtitle { font-size: 12px; color: var(--text2); margin-bottom: 16px; }
+
+.hyp-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; margin-bottom: 12px; }
+.hyp-card .hc-type { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; padding: 4px 10px; border-radius: 4px; display: inline-block; }
+.hyp-card .hc-type.reasoning { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.hyp-card .hc-type.surface { background: rgba(248,113,113,0.15); color: var(--red); }
+.hyp-card .hc-type.perspective { background: rgba(167,139,250,0.15); color: var(--purple); }
+.hyp-card .hc-type.strength { background: rgba(74,222,128,0.15); color: var(--green); }
+.hyp-card .hc-title { font-size: 14px; font-weight: 700; margin: 10px 0 6px; }
+.hyp-card .hc-evidence { font-size: 13px; color: var(--text2); line-height: 1.6; margin-bottom: 8px; }
+.hyp-card .hc-recommendation { font-size: 12px; color: var(--teal); padding: 10px 14px; background: rgba(45,212,191,0.06); border-radius: 6px; line-height: 1.5; }
+.hyp-card .hc-areas { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.area-chip { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: var(--surface2); color: var(--text2); }
+
+/* Subject-capability matrix */
+.matrix-wrap { overflow-x: auto; margin-bottom: 28px; -webkit-overflow-scrolling: touch; }
+.matrix-table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); min-width: 600px; }
+.matrix-table th, .matrix-table td { padding: 10px 12px; text-align: center; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); font-size: 12px; }
+.matrix-table th { background: var(--surface2); font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text2); }
+.matrix-table th:first-child, .matrix-table td:first-child { text-align: left; font-weight: 600; }
+.matrix-table tr:last-child td { border-bottom: none; }
+.matrix-cell { width: 24px; height: 24px; border-radius: 4px; margin: 0 auto; }
+.matrix-cell.strong { background: var(--green); }
+.matrix-cell.developing { background: var(--yellow); }
+.matrix-cell.weak { background: var(--red); }
+.matrix-cell.none { background: var(--surface2); border: 1px dashed var(--border); }
+
+.matrix-legend { display: flex; gap: 16px; margin-top: 10px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text2); }
+.legend-swatch { width: 14px; height: 14px; border-radius: 3px; }
+
+/* Print */
+@media print {
+  body { background: #fff; color: #000; }
+  .app-header { position: static; border-bottom: 2px solid #000; }
+  .btn, .level-bar { display: none; }
+  .cap-card, .hyp-card, .tri-table, .matrix-table { break-inside: avoid; }
+  .disclaimer { border-color: #b8860b; color: #856404; }
+}
+@media (max-width: 600px) {
+  .cap-overview { grid-template-columns: 1fr; }
+  .tri-table th, .tri-table td { padding: 8px 10px; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="app-header">
+  <div class="header-title">VC2 Capability Triangulation</div>
+  <div class="header-right">
+    <button class="btn" id="printBtn" aria-label="Print">🖨 Print</button>
+    <button class="btn" id="themeBtn" aria-label="Toggle theme">◐ Theme</button>
+    <a class="btn" href="heatmap-dashboard.html">Heatmap</a>
+    <a class="btn" href="knowledge-check.html">Quiz</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="disclaimer">
+    <strong>One source of evidence.</strong> Capability assessment via multiple-choice and cloze items has inherent limitations. Ethical, Intercultural, and Personal/Social capabilities are poorly measured by these formats. Use this view to generate hypotheses for further investigation, not as definitive assessment.
+  </div>
+  <div id="content"></div>
+</main>
+
+<script>
+const STORAGE_KEY = 'vc2-knowledge-check';
+const BLOOM_KEYS = ['toLevel2','toLevel3','toLevel4','toLevel5'];
+const BLOOM_LABELS = { toLevel2:'Remember', toLevel3:'Understand', toLevel4:'Apply', toLevel5:'Analyse' };
+const EMAB_ORDER = ['beginning','approaching','meeting','meeting-confirmed','above-standard'];
+
+const CAPABILITY_AREAS = {
+  CC: { label: 'Critical & Creative Thinking', icon: '🧠', shortLabel: 'CCT' },
+  CE: { label: 'Ethical Capability', icon: '⚖️', shortLabel: 'Ethical' },
+  CI: { label: 'Intercultural Capability', icon: '🌏', shortLabel: 'Intercultural' },
+  CP: { label: 'Personal & Social Capability', icon: '🤝', shortLabel: 'Personal/Social' }
+};
+
+const SUBJECT_AREAS = {
+  E: 'English', M: 'Mathematics', S: 'Science',
+  HH: 'History', HE: 'Economics & Business', HG: 'Geography', HP: 'Health & PE',
+  ADA: 'Dance', ADR: 'Drama', AMA: 'Media Arts', AMU: 'Music',
+  AVA: 'Visual Arts', AVC: 'Visual Communication Design',
+  TDE: 'Design & Technologies', TDI: 'Digital Technologies'
+};
+
+const CAPABILITY_INSTRUMENT_LIMITATIONS = {
+  CC: 'Reasoning and metacognition strands can be partially assessed via structured items, though open-ended tasks would provide richer evidence.',
+  CE: 'Ethical reasoning involves value judgements and perspective-taking that MC/cloze items capture poorly. Treat results as indicative only.',
+  CI: 'Intercultural understanding requires lived experience and empathic engagement. Item-based assessment captures knowledge, not competence.',
+  CP: 'Personal and social capabilities are dispositional. Item-based assessment may reflect knowledge of strategies rather than actual application.'
+};
+
+let unitsData = null;
+let kcResults = null;
+let selectedLevel = null;
+
+async function init() {
+  const raw = localStorage.getItem(STORAGE_KEY);
+  if (!raw) { showNoData(); return; }
+  const parsed = JSON.parse(raw);
+  kcResults = parsed.results || {};
+  if (Object.keys(kcResults).length === 0) { showNoData(); return; }
+
+  try {
+    const resp = await fetch('units_of_work.json');
+    unitsData = await resp.json();
+  } catch(e) {
+    document.getElementById('content').innerHTML = '<div class="no-data"><h2>Data Error</h2><p>Could not load units_of_work.json.</p></div>';
+    return;
+  }
+
+  const levels = detectLevels();
+  if (levels.length === 0) { showNoData(); return; }
+  selectedLevel = levels[0];
+  render(levels);
+}
+
+function showNoData() {
+  document.getElementById('content').innerHTML = `
+    <div class="no-data">
+      <h2>No Assessment Data</h2>
+      <p>Complete some quizzes in the <a href="knowledge-check.html">Knowledge Check</a> to populate this view.</p>
+    </div>`;
+}
+
+function detectLevels() {
+  const lvSet = new Set();
+  for (const code of Object.keys(kcResults)) {
+    const m = code.match(/\d+/);
+    if (m) lvSet.add(m[0]);
+  }
+  return Array.from(lvSet).sort((a,b) => Number(a) - Number(b));
+}
+
+function getAreaForCode(code) {
+  const m = code.match(/^VC2([A-Z]+)\d/);
+  if (!m) return null;
+  return m[1];
+}
+
+function getCDsForArea(areaCode, level) {
+  const area = unitsData.areas[areaCode];
+  if (!area) return [];
+  const lvData = area.levels[String(level)];
+  if (!lvData) return [];
+  const cds = [];
+  for (const unit of (lvData.units || [])) {
+    for (const cd of (unit.contentDescriptions || [])) {
+      cds.push({ ...cd, unitTitle: unit.title });
+    }
+  }
+  return cds;
+}
+
+function emabScore(state) {
+  const idx = EMAB_ORDER.indexOf(state);
+  return idx >= 0 ? idx : -1;
+}
+
+function emabLabel(state) {
+  if (!state) return 'Not Assessed';
+  return state.replace(/-/g,' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function emabClass(state) {
+  return state || 'not-assessed';
+}
+
+function getSubjectSummary(areaCode, level) {
+  const cds = getCDsForArea(areaCode, level);
+  let assessed = 0, total = cds.length, scoreSum = 0;
+  const bloomCounts = { toLevel2: 0, toLevel3: 0, toLevel4: 0, toLevel5: 0 };
+  for (const cd of cds) {
+    const r = kcResults[cd.code];
+    if (r && r.state) {
+      assessed++;
+      scoreSum += emabScore(r.state);
+      if (r.attempts && r.attempts.length > 0) {
+        const last = r.attempts[r.attempts.length - 1];
+        for (const ans of (last.answers || [])) {
+          if (ans.correct && ans.bloomKey) bloomCounts[ans.bloomKey]++;
+        }
+      }
+    }
+  }
+  const avgScore = assessed > 0 ? scoreSum / assessed : -1;
+  const highestBloom = bloomCounts.toLevel5 > 0 ? 'Analyse' :
+                       bloomCounts.toLevel4 > 0 ? 'Apply' :
+                       bloomCounts.toLevel3 > 0 ? 'Understand' :
+                       bloomCounts.toLevel2 > 0 ? 'Remember' : 'None';
+  return { assessed, total, avgScore, highestBloom, bloomCounts };
+}
+
+function getCapabilitySummary(capCode, level) {
+  const cds = getCDsForArea(capCode, level);
+  let assessed = 0, total = cds.length, scoreSum = 0;
+  for (const cd of cds) {
+    const r = kcResults[cd.code];
+    if (r && r.state) {
+      assessed++;
+      scoreSum += emabScore(r.state);
+    }
+  }
+  const avgScore = assessed > 0 ? scoreSum / assessed : -1;
+  return { assessed, total, avgScore, cds };
+}
+
+function strengthCategory(avgScore) {
+  if (avgScore < 0) return 'none';
+  if (avgScore >= 3) return 'strong';
+  if (avgScore >= 1.5) return 'developing';
+  return 'weak';
+}
+
+function strengthLabel(avgScore) {
+  if (avgScore < 0) return 'Not Assessed';
+  if (avgScore >= 3) return 'Strong';
+  if (avgScore >= 1.5) return 'Developing';
+  return 'Weak';
+}
+
+function generateHypotheses(level) {
+  const hypotheses = [];
+  const subjectSummaries = {};
+  for (const [code, name] of Object.entries(SUBJECT_AREAS)) {
+    subjectSummaries[code] = { ...getSubjectSummary(code, level), name };
+  }
+  const capSummaries = {};
+  for (const code of Object.keys(CAPABILITY_AREAS)) {
+    capSummaries[code] = getCapabilitySummary(code, level);
+  }
+
+  const ccSummary = capSummaries['CC'];
+  const ceSummary = capSummaries['CE'];
+  const ciSummary = capSummaries['CI'];
+
+  // Hypothesis 1: Weak Analyse across subjects + weak CCT Reasoning = reasoning gap
+  const weakAnalyseSubjects = [];
+  for (const [code, s] of Object.entries(subjectSummaries)) {
+    if (s.assessed > 0 && s.highestBloom !== 'Analyse' && s.highestBloom !== 'None' && s.assessed >= 2) {
+      weakAnalyseSubjects.push({ code, name: s.name, highest: s.highestBloom });
+    }
+  }
+  if (weakAnalyseSubjects.length >= 2 && ccSummary.assessed > 0 && strengthCategory(ccSummary.avgScore) === 'weak') {
+    hypotheses.push({
+      type: 'reasoning', typeLabel: 'Reasoning Gap Hypothesis',
+      title: 'Subject gaps may reflect reasoning development, not content knowledge',
+      evidence: `${weakAnalyseSubjects.map(s => s.name).join(', ')} all show limited performance at Analyse level, paired with weak CCT performance. This pattern suggests the student may understand content but struggle with higher-order reasoning across domains.`,
+      recommendation: 'Consider targeted reasoning skill development (argument analysis, evidence evaluation) rather than content reteaching. CCT-focused activities may transfer across subjects.',
+      areas: weakAnalyseSubjects.map(s => s.name).concat(['CCT'])
+    });
+  }
+
+  // Hypothesis 2: Strong Evaluate in subject + weak CCT = surface recall
+  const strongSubjectsWeakCCT = [];
+  for (const [code, s] of Object.entries(subjectSummaries)) {
+    if (s.avgScore >= 3 && ccSummary.assessed > 0 && strengthCategory(ccSummary.avgScore) !== 'strong') {
+      strongSubjectsWeakCCT.push({ code, name: s.name });
+    }
+  }
+  if (strongSubjectsWeakCCT.length >= 1 && ccSummary.assessed > 0) {
+    hypotheses.push({
+      type: 'surface', typeLabel: 'Surface Mastery Hypothesis',
+      title: 'Strong subject performance may mask shallow understanding',
+      evidence: `${strongSubjectsWeakCCT.map(s => s.name).join(', ')} show strong EMAB ratings, but CCT performance is ${strengthLabel(ccSummary.avgScore).toLowerCase()}. This could indicate well-rehearsed content knowledge without proportionate critical thinking depth.`,
+      recommendation: 'Verify with open-ended tasks requiring novel application. If confirmed, enrichment should focus on transfer and creative extension rather than content acceleration.',
+      areas: strongSubjectsWeakCCT.map(s => s.name).concat(['CCT'])
+    });
+  }
+
+  // Hypothesis 3: Strong reasoning + weak Ethical/Intercultural = technical without perspective
+  const anyStrongSubject = Object.values(subjectSummaries).some(s => s.avgScore >= 3);
+  if (anyStrongSubject && (
+    (ceSummary.assessed > 0 && strengthCategory(ceSummary.avgScore) === 'weak') ||
+    (ciSummary.assessed > 0 && strengthCategory(ciSummary.avgScore) === 'weak')
+  )) {
+    const weakCaps = [];
+    if (ceSummary.assessed > 0 && strengthCategory(ceSummary.avgScore) === 'weak') weakCaps.push('Ethical');
+    if (ciSummary.assessed > 0 && strengthCategory(ciSummary.avgScore) === 'weak') weakCaps.push('Intercultural');
+    hypotheses.push({
+      type: 'perspective', typeLabel: 'Perspective-Taking Gap',
+      title: 'Technical competence without proportionate perspective-taking',
+      evidence: `Strong subject performance is paired with weak ${weakCaps.join(' and ')} capability results. This may indicate strong analytical skills without commensurate ethical or cultural reasoning.`,
+      recommendation: `Embed ${weakCaps.join(' and ').toLowerCase()} perspectives into existing strong subjects rather than treating them as separate domains. Note: MC/cloze items are weak instruments for these capabilities — verify with discussion-based or portfolio evidence.`,
+      areas: weakCaps
+    });
+  }
+
+  // Hypothesis 4: Consistent strength across subjects AND capabilities
+  const allAssessedSubjects = Object.entries(subjectSummaries).filter(([,s]) => s.assessed > 0);
+  const allStrong = allAssessedSubjects.length >= 3 && allAssessedSubjects.every(([,s]) => s.avgScore >= 3);
+  const capsAssessed = Object.values(capSummaries).filter(s => s.assessed > 0);
+  const allCapsStrong = capsAssessed.length >= 2 && capsAssessed.every(s => strengthCategory(s.avgScore) === 'strong');
+  if (allStrong && allCapsStrong) {
+    hypotheses.push({
+      type: 'strength', typeLabel: 'Consistent Advanced Profile',
+      title: 'Triangulated strength across content and capabilities',
+      evidence: 'Strong performance is consistent across both subject areas and capability domains. This triangulated pattern strengthens the case for genuine advanced understanding rather than domain-specific strength.',
+      recommendation: 'This profile is consistent with readiness for acceleration or enrichment. See the Acceleration Evidence Pack for structured next steps.',
+      areas: ['All assessed areas']
+    });
+  }
+
+  // If no capability data, add a coverage note
+  if (capsAssessed.length === 0 && allAssessedSubjects.length > 0) {
+    hypotheses.push({
+      type: 'reasoning', typeLabel: 'Insufficient Capability Data',
+      title: 'Capability questions not yet completed',
+      evidence: 'Subject area assessments are available, but no capability area questions have been completed. Triangulation requires data from both subject and capability domains.',
+      recommendation: 'Complete capability area quizzes (Critical & Creative Thinking, Ethical, Intercultural, Personal & Social) to enable triangulation analysis.',
+      areas: ['CC', 'CE', 'CI', 'CP']
+    });
+  }
+
+  return hypotheses;
+}
+
+function render(levels) {
+  const container = document.getElementById('content');
+
+  // Level selector
+  const levelBar = document.createElement('div');
+  levelBar.className = 'level-bar';
+  levelBar.setAttribute('role', 'tablist');
+  levelBar.setAttribute('aria-label', 'Select level');
+  for (const lv of levels) {
+    const btn = document.createElement('button');
+    btn.className = 'level-btn' + (lv === selectedLevel ? ' active' : '');
+    btn.textContent = `Level ${lv}`;
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', lv === selectedLevel ? 'true' : 'false');
+    btn.addEventListener('click', () => {
+      selectedLevel = lv;
+      render(levels);
+    });
+    levelBar.appendChild(btn);
+  }
+
+  container.innerHTML = '';
+  container.appendChild(levelBar);
+
+  renderCapabilityOverview(container);
+  renderSubjectCapabilityMatrix(container);
+  renderHypotheses(container);
+  renderDetailedTriangulation(container);
+}
+
+function renderCapabilityOverview(container) {
+  const section = document.createElement('div');
+  section.className = 'cap-overview';
+
+  for (const [code, meta] of Object.entries(CAPABILITY_AREAS)) {
+    const summary = getCapabilitySummary(code, selectedLevel);
+    const area = unitsData.areas[code];
+    const strands = area ? Object.values(area.strandLabels || {}).join(', ') : '';
+
+    const card = document.createElement('div');
+    card.className = 'cap-card';
+
+    const strongCount = summary.cds.filter(cd => {
+      const r = kcResults[cd.code];
+      return r && emabScore(r.state) >= 3;
+    }).length;
+    const gapCount = summary.cds.filter(cd => {
+      const r = kcResults[cd.code];
+      return r && r.state && emabScore(r.state) < 2;
+    }).length;
+
+    card.innerHTML = `
+      <div class="cc-icon">${meta.icon}</div>
+      <div class="cc-name">${meta.label}</div>
+      <div class="cc-strands">${strands || 'No strand data'}</div>
+      <div class="cc-stats">
+        <div class="cap-stat ${summary.assessed > 0 ? 'assessed' : 'none'}"><div class="cs-num">${summary.assessed}</div><div class="cs-label">Assessed</div></div>
+        <div class="cap-stat ${strongCount > 0 ? 'strong' : 'none'}"><div class="cs-num">${strongCount}</div><div class="cs-label">Strong</div></div>
+        <div class="cap-stat ${gapCount > 0 ? 'gap' : 'none'}"><div class="cs-num">${gapCount}</div><div class="cs-label">Gaps</div></div>
+        <div class="cap-stat none"><div class="cs-num">${summary.total}</div><div class="cs-label">Total CDs</div></div>
+      </div>
+      ${summary.assessed === 0 ? `<div class="cc-coverage">No questions completed yet for this capability at Level ${selectedLevel}.</div>` : ''}
+    `;
+    section.appendChild(card);
+  }
+
+  container.appendChild(section);
+
+  // Coverage banner if capability data is sparse
+  const totalCapAssessed = Object.keys(CAPABILITY_AREAS).reduce((sum, code) => sum + getCapabilitySummary(code, selectedLevel).assessed, 0);
+  const totalCapCDs = Object.keys(CAPABILITY_AREAS).reduce((sum, code) => sum + getCapabilitySummary(code, selectedLevel).total, 0);
+  if (totalCapAssessed < totalCapCDs * 0.3) {
+    const banner = document.createElement('div');
+    banner.className = 'coverage-banner';
+    banner.innerHTML = `<strong>Limited capability data.</strong> Only ${totalCapAssessed} of ${totalCapCDs} capability CDs have been assessed at this level. Triangulation hypotheses will become more reliable as more capability questions are completed. ${CAPABILITY_INSTRUMENT_LIMITATIONS.CE}`;
+    container.appendChild(banner);
+  }
+}
+
+function renderSubjectCapabilityMatrix(container) {
+  const section = document.createElement('div');
+  section.className = 'tri-section';
+  section.innerHTML = `<h2>Subject × Capability Matrix</h2><p class="tri-subtitle">Rows are subject areas, columns are capabilities. Cell colour shows average performance.</p>`;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'matrix-wrap';
+
+  const table = document.createElement('table');
+  table.className = 'matrix-table';
+  table.setAttribute('role', 'grid');
+
+  // Header
+  const thead = document.createElement('thead');
+  let headerRow = '<th>Subject Area</th><th>EMAB</th><th>Highest Bloom\'s</th>';
+  for (const [code, meta] of Object.entries(CAPABILITY_AREAS)) {
+    headerRow += `<th title="${meta.label}">${meta.shortLabel}</th>`;
+  }
+  thead.innerHTML = `<tr>${headerRow}</tr>`;
+  table.appendChild(thead);
+
+  const tbody = document.createElement('tbody');
+  const assessedSubjects = [];
+  for (const [code, name] of Object.entries(SUBJECT_AREAS)) {
+    const s = getSubjectSummary(code, selectedLevel);
+    if (s.assessed === 0) continue;
+    assessedSubjects.push({ code, name, summary: s });
+  }
+
+  assessedSubjects.sort((a,b) => b.summary.avgScore - a.summary.avgScore);
+
+  for (const { code, name, summary } of assessedSubjects) {
+    const tr = document.createElement('tr');
+    const avgState = summary.avgScore >= 3.5 ? 'above-standard' :
+                     summary.avgScore >= 2.5 ? 'meeting-confirmed' :
+                     summary.avgScore >= 1.5 ? 'meeting' :
+                     summary.avgScore >= 0.5 ? 'approaching' : 'beginning';
+    let cells = `<td>${name}</td>`;
+    cells += `<td><span class="emab-sm ${avgState}">${emabLabel(avgState)}</span></td>`;
+    cells += `<td>${summary.highestBloom}</td>`;
+
+    for (const capCode of Object.keys(CAPABILITY_AREAS)) {
+      const capSummary = getCapabilitySummary(capCode, selectedLevel);
+      const cat = strengthCategory(capSummary.avgScore);
+      cells += `<td><div class="matrix-cell ${cat}" title="${CAPABILITY_AREAS[capCode].label}: ${strengthLabel(capSummary.avgScore)}"></div></td>`;
+    }
+    tr.innerHTML = cells;
+    tbody.appendChild(tr);
+  }
+
+  if (assessedSubjects.length === 0) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td colspan="${3 + Object.keys(CAPABILITY_AREAS).length}" style="text-align:center;color:var(--text2);padding:20px;">No assessed subjects at Level ${selectedLevel}</td>`;
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+  section.appendChild(wrap);
+
+  // Legend
+  const legend = document.createElement('div');
+  legend.className = 'matrix-legend';
+  legend.innerHTML = `
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--green)"></div> Strong</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--yellow)"></div> Developing</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--red)"></div> Weak</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--surface2);border:1px dashed var(--border)"></div> Not Assessed</div>
+  `;
+  section.appendChild(legend);
+  container.appendChild(section);
+}
+
+function renderHypotheses(container) {
+  const hypotheses = generateHypotheses(selectedLevel);
+  if (hypotheses.length === 0) return;
+
+  const section = document.createElement('div');
+  section.className = 'hyp-section';
+  section.innerHTML = `<h2>Reframing Hypotheses</h2><p class="hyp-subtitle">These are generated patterns — not diagnoses. Each hypothesis should be investigated with additional evidence sources.</p>`;
+
+  for (const hyp of hypotheses) {
+    const card = document.createElement('div');
+    card.className = 'hyp-card';
+    card.innerHTML = `
+      <span class="hc-type ${hyp.type}">${hyp.typeLabel}</span>
+      <div class="hc-title">${hyp.title}</div>
+      <div class="hc-areas">${hyp.areas.map(a => `<span class="area-chip">${a}</span>`).join('')}</div>
+      <div class="hc-evidence">${hyp.evidence}</div>
+      <div class="hc-recommendation">${hyp.recommendation}</div>
+    `;
+    section.appendChild(card);
+  }
+
+  container.appendChild(section);
+}
+
+function renderDetailedTriangulation(container) {
+  const section = document.createElement('div');
+  section.className = 'tri-section';
+  section.innerHTML = `<h2>Detailed Capability Breakdown</h2><p class="tri-subtitle">Content descriptors for each capability area at Level ${selectedLevel}, with current assessment status.</p>`;
+
+  for (const [capCode, meta] of Object.entries(CAPABILITY_AREAS)) {
+    const cds = getCDsForArea(capCode, selectedLevel);
+    if (cds.length === 0) continue;
+
+    const capSection = document.createElement('div');
+    capSection.style.marginBottom = '20px';
+
+    const h3 = document.createElement('h3');
+    h3.style.cssText = 'font-size:14px;font-weight:700;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border);';
+    h3.textContent = `${meta.icon} ${meta.label}`;
+    capSection.appendChild(h3);
+
+    const limitation = document.createElement('div');
+    limitation.style.cssText = 'font-size:11px;color:var(--text2);margin-bottom:10px;padding:8px 12px;background:var(--surface2);border-radius:6px;line-height:1.5;';
+    limitation.textContent = CAPABILITY_INSTRUMENT_LIMITATIONS[capCode];
+    capSection.appendChild(limitation);
+
+    const table = document.createElement('table');
+    table.className = 'tri-table';
+    table.innerHTML = `<thead><tr><th>Code</th><th>Strand</th><th>Description</th><th>Status</th></tr></thead>`;
+
+    const tbody = document.createElement('tbody');
+    for (const cd of cds) {
+      const r = kcResults[cd.code];
+      const state = r ? r.state : null;
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td style="font-family:monospace;font-size:11px;color:var(--accent);white-space:nowrap;">${cd.code}</td>
+        <td style="font-size:12px;white-space:nowrap;">${cd.strandLabel || cd.strand}</td>
+        <td style="font-size:12px;">${cd.description}</td>
+        <td><span class="emab-sm ${emabClass(state)}">${emabLabel(state)}</span></td>
+      `;
+      tbody.appendChild(tr);
+    }
+    table.appendChild(tbody);
+    capSection.appendChild(table);
+    section.appendChild(capSection);
+  }
+
+  container.appendChild(section);
+}
+
+// Theme toggle
+document.getElementById('themeBtn').addEventListener('click', () => {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : current === 'light' ? '' : 'dark';
+  if (next) html.setAttribute('data-theme', next);
+  else html.removeAttribute('data-theme');
+});
+
+document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+init();
+</script>
+</body>
+</html>

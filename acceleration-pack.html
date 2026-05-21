@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Acceleration Evidence Pack</title>
+<style>
+:root {
+  --bg: #0f1117; --surface: #1a1d27; --surface2: #242836; --border: #2e3347;
+  --text: #e4e6f0; --text2: #9298b4; --accent: #6c8cff; --accent2: #4a6adf;
+  --green: #4ade80; --red: #f87171; --orange: #fb923c; --yellow: #fbbf24;
+  --purple: #a78bfa; --teal: #2dd4bf; --radius: 10px; --transition: 0.15s ease;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; min-height: 100dvh; }
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px; border-radius: 0 0 8px 0; text-decoration: none; }
+.skip-link:focus { top: 0; }
+.app-header { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 50; flex-wrap: wrap; }
+.header-title { font-size: 16px; font-weight: 600; flex: 1; min-width: 200px; }
+.header-right { display: flex; gap: 8px; align-items: center; }
+.btn { background: var(--surface2); border: 1px solid var(--border); color: var(--text2); cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; min-height: 44px; transition: all var(--transition); }
+.btn:hover { border-color: var(--accent); color: var(--text); }
+.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-primary:hover { background: var(--accent2); }
+
+main { max-width: 900px; margin: 0 auto; padding: 24px 20px; }
+
+.info-banner { border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; font-size: 13px; line-height: 1.6; }
+.info-banner.disclaimer { background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.25); color: var(--yellow); }
+.info-banner.info { background: rgba(108,140,255,0.08); border: 1px solid rgba(108,140,255,0.2); color: var(--accent); }
+.info-banner.research { background: rgba(45,212,191,0.08); border: 1px solid rgba(45,212,191,0.25); color: var(--teal); }
+.info-banner strong { font-weight: 700; }
+
+.no-data { text-align: center; padding: 60px 20px; color: var(--text2); }
+.no-data h2 { font-size: 22px; margin-bottom: 12px; color: var(--text); }
+.no-data p { font-size: 14px; max-width: 500px; margin: 0 auto 16px; }
+.no-data a { color: var(--accent); }
+
+/* Evidence section */
+.evidence-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; overflow: hidden; }
+.es-header { padding: 16px 20px; display: flex; align-items: center; gap: 12px; cursor: pointer; user-select: none; }
+.es-header:hover { background: var(--surface2); }
+.es-header:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.es-chevron { font-size: 12px; color: var(--text2); transition: transform 0.2s; }
+.es-header.open .es-chevron { transform: rotate(90deg); }
+.es-num { width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+.es-title { font-size: 14px; font-weight: 700; flex: 1; }
+.es-status { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+.es-status.complete { background: rgba(74,222,128,0.15); color: var(--green); }
+.es-status.action { background: rgba(251,191,36,0.15); color: var(--yellow); }
+
+.es-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.es-body.open { max-height: 5000px; }
+.es-body-inner { padding: 0 20px 20px; }
+
+/* Heatmap summary within evidence pack */
+.ep-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 12px; }
+.ep-table th { text-align: left; padding: 8px 10px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text2); border-bottom: 1px solid var(--border); }
+.ep-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.ep-table .ep-code { font-family: 'SF Mono','Fira Code',monospace; font-size: 11px; color: var(--accent); font-weight: 600; }
+.emab-sm { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; display: inline-block; }
+.emab-sm.above-standard { background: rgba(167,139,250,0.15); color: var(--purple); }
+.emab-sm.meeting-confirmed { background: rgba(74,222,128,0.15); color: var(--green); }
+.emab-sm.meeting { background: rgba(108,140,255,0.15); color: var(--accent); }
+.emab-sm.approaching { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.emab-sm.beginning { background: rgba(248,113,113,0.15); color: var(--red); }
+
+/* Checklist */
+.checklist { list-style: none; }
+.checklist li { padding: 10px 14px; margin-bottom: 6px; background: var(--surface2); border-radius: 6px; font-size: 13px; display: flex; gap: 10px; align-items: flex-start; line-height: 1.5; }
+.checklist .cl-check { flex-shrink: 0; width: 20px; height: 20px; border: 2px solid var(--border); border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; transition: all var(--transition); margin-top: 2px; }
+.checklist .cl-check.checked { background: var(--green); border-color: var(--green); color: #fff; }
+
+/* Policy reference */
+.policy-card { background: var(--surface2); border-radius: 8px; padding: 14px 18px; margin-bottom: 10px; }
+.policy-card .pc-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+.policy-card .pc-body { font-size: 12px; color: var(--text2); line-height: 1.6; }
+
+/* Student info */
+.student-form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; }
+.student-form h2 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+.form-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.form-group { flex: 1; min-width: 200px; }
+.form-group label { display: block; font-size: 11px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.form-group input, .form-group select {
+  width: 100%; padding: 10px 12px; background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 6px; color: var(--text); font-size: 13px; min-height: 42px;
+}
+.form-group input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* Toast */
+.toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 200; display: flex; flex-direction: column; gap: 8px; }
+.toast { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; font-size: 13px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); animation: toastIn 0.2s ease; }
+@keyframes toastIn { from { opacity: 0; transform: translateY(10px); } }
+
+@media (max-width: 768px) { main { padding: 16px 12px; } .form-row { flex-direction: column; } .form-group { min-width: 0; } }
+@media print {
+  .app-header, .toast-container, .cl-check, .student-form { display: none !important; }
+  body { background: #fff; color: #000; }
+  .es-body { max-height: none !important; }
+  .es-chevron { display: none; }
+  .info-banner { break-inside: avoid; }
+  @page { margin: 1.5cm; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="app-header" role="banner">
+  <h1 class="header-title">VC2 Acceleration Evidence Pack</h1>
+  <div class="header-right">
+    <button class="btn btn-primary" onclick="printPack()">&#128424; Print Evidence Pack</button>
+    <button class="btn" onclick="toggleTheme()" aria-label="Toggle theme" style="font-size:14px;">&#9681;</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="info-banner disclaimer" role="note">
+    <strong>This is a structured evidence base for a conversation, not a placement decision.</strong> The diagnostic identifies students who can sustain Apply and Analyse on higher-level content. It does not certify a student as "gifted" or "ready for VCE acceleration." Any acceleration decision must include teacher judgement, work samples, and ideally a specialist assessment.
+  </div>
+
+  <div id="no-data" class="no-data" style="display:none;">
+    <h2>No diagnostic data yet</h2>
+    <p>Complete quizzes in the <a href="knowledge-check.html">VC2 Knowledge Check</a> to build your evidence pack.</p>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <div class="student-form">
+      <h2>Student Details</h2>
+      <div class="form-row">
+        <div class="form-group"><label for="s-name">Student Name</label><input type="text" id="s-name" placeholder="Enter name"></div>
+        <div class="form-group"><label for="s-age">Age / Year Level</label><input type="text" id="s-age" placeholder="e.g. 13 years / Year 8"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="s-school">School / Setting</label><input type="text" id="s-school" placeholder="e.g. Home-educated / School name"></div>
+        <div class="form-group"><label for="s-type">Acceleration Type Sought</label>
+          <select id="s-type">
+            <option value="">Select...</option>
+            <option value="subject">Subject acceleration (work at a higher level in one subject)</option>
+            <option value="grade">Whole-grade acceleration (skip a year level)</option>
+            <option value="vce">VCE early entry</option>
+            <option value="vhap">VHAP nomination</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="evidence-sections"></div>
+  </div>
+</main>
+
+<div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+<script>
+'use strict';
+(function() {
+
+const KC_KEY = 'vc2-knowledge-check';
+const BLOOM_KEYS = ['toLevel2','toLevel3','toLevel4','toLevel5'];
+const BLOOM_LABELS = { toLevel2:'Remember', toLevel3:'Understand', toLevel4:'Apply', toLevel5:'Analyse' };
+const EMAB_LABELS = { 'above-standard':'Above Expected Standard', 'meeting-confirmed':'Meeting Confirmed', meeting:'Meeting', approaching:'Approaching', beginning:'Beginning' };
+const ADVANCED_STATES = ['above-standard', 'meeting-confirmed'];
+
+let unitsData = null, kcState = null, currentTheme = 'system', checkedItems = {};
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function applyTheme() {
+  if (currentTheme==='light') document.documentElement.setAttribute('data-theme','light');
+  else if (currentTheme==='dark') document.documentElement.setAttribute('data-theme','dark');
+  else document.documentElement.removeAttribute('data-theme');
+}
+window.toggleTheme = function() {
+  const c = { system:'dark', dark:'light', light:'system' };
+  currentTheme = c[currentTheme]||'system'; applyTheme();
+  localStorage.setItem('vc2-accel-theme', currentTheme);
+};
+
+function loadKC() {
+  try { const r = localStorage.getItem(KC_KEY); if (r) { const p = JSON.parse(r); if (p&&p.version===1) kcState = p; } } catch(e) {}
+}
+
+async function loadUnits() {
+  try { const r = await fetch('units_of_work.json',{cache:'no-store'}); if (r.ok) unitsData = await r.json(); } catch(e) {}
+}
+
+function getAdvancedCDs() {
+  const results = kcState?.results || {};
+  const cds = [];
+  if (!unitsData) return cds;
+  for (const [ac, area] of Object.entries(unitsData.areas||{})) {
+    for (const [lk, ld] of Object.entries(area.levels||{})) {
+      for (const u of (ld.units||[])) {
+        for (const cd of (u.contentDescriptions||[])) {
+          const r = results[cd.code];
+          if (r && ADVANCED_STATES.includes(r.state)) {
+            cds.push({ code: cd.code, description: cd.description, strand: cd.strandLabel||cd.strand||'',
+              area: area.label, level: lk, state: r.state,
+              attempts: r.attempts, breakdown: getBloomBreakdown(r.attempts) });
+          }
+        }
+      }
+    }
+  }
+  return cds;
+}
+
+function getAllAssessed() {
+  const results = kcState?.results || {};
+  const cds = [];
+  if (!unitsData) return cds;
+  for (const [ac, area] of Object.entries(unitsData.areas||{})) {
+    for (const [lk, ld] of Object.entries(area.levels||{})) {
+      for (const u of (ld.units||[])) {
+        for (const cd of (u.contentDescriptions||[])) {
+          const r = results[cd.code];
+          if (r) cds.push({ code: cd.code, area: area.label, level: lk, state: r.state });
+        }
+      }
+    }
+  }
+  return cds;
+}
+
+function getBloomBreakdown(attempts) {
+  if (!attempts||!attempts.length) return null;
+  const latest = attempts[attempts.length-1];
+  if (!latest.answers) return null;
+  const b = {};
+  for (const k of BLOOM_KEYS) {
+    const la = latest.answers.filter(a=>a.bloomKey===k);
+    if (la.length) b[k] = { total: la.length, correct: la.filter(a=>a.correct).length };
+  }
+  return b;
+}
+
+function toggleSection(header) {
+  header.classList.toggle('open');
+  header.setAttribute('aria-expanded', header.classList.contains('open'));
+  header.nextElementSibling.classList.toggle('open');
+}
+
+function render() {
+  loadKC();
+  const allAssessed = getAllAssessed();
+  const advanced = getAdvancedCDs();
+
+  if (allAssessed.length === 0) {
+    document.getElementById('no-data').style.display = '';
+    document.getElementById('dashboard').style.display = 'none';
+    return;
+  }
+  document.getElementById('no-data').style.display = 'none';
+  document.getElementById('dashboard').style.display = '';
+
+  const advancedPct = Math.round(advanced.length / allAssessed.length * 100);
+  const advancedAreas = [...new Set(advanced.map(c=>c.area))];
+  const hasAsymmetry = advanced.length > 0 && advanced.length < allAssessed.length * 0.9;
+
+  let html = '';
+
+  // Section 1: Diagnostic Heatmap Summary
+  const s1Status = advanced.length > 0 ? 'complete' : 'action';
+  html += buildSection(1, 'Diagnostic Evidence', s1Status, () => {
+    let inner = `<div class="info-banner info"><strong>${advanced.length} content descriptor${advanced.length!==1?'s':''}</strong> at Meeting Confirmed or Above Standard (${advancedPct}% of ${allAssessed.length} assessed). ${advancedAreas.length > 0 ? 'Strong areas: ' + advancedAreas.join(', ') + '.' : ''}</div>`;
+
+    if (advanced.length > 0) {
+      inner += '<table class="ep-table"><thead><tr><th>Code</th><th>Content Descriptor</th><th>Subject</th><th>Level</th><th>Status</th></tr></thead><tbody>';
+      for (const cd of advanced.sort((a,b)=>a.area.localeCompare(b.area)||a.level.localeCompare(b.level))) {
+        inner += `<tr><td class="ep-code">${esc(cd.code)}</td><td style="font-size:12px;">${esc(cd.description)}</td><td>${esc(cd.area)}</td><td>${esc(cd.level)}</td><td><span class="emab-sm ${cd.state}">${EMAB_LABELS[cd.state]||''}</span></td></tr>`;
+      }
+      inner += '</tbody></table>';
+    }
+
+    if (hasAsymmetry) {
+      inner += `<div class="info-banner info"><strong>Note: Asymmetric profile.</strong> Strong performance in ${advancedAreas.join(', ')} with lower performance in other areas. Subject acceleration may be more appropriate than whole-grade acceleration for this profile.</div>`;
+    }
+    return inner;
+  });
+
+  // Section 2: Supporting Evidence Checklist
+  html += buildSection(2, 'Supporting Evidence Checklist', 'action', () => {
+    const items = [
+      { id: 'ws', text: 'Work samples demonstrating generative, extended thinking the diagnostic cannot assess (creative writing, research projects, experimental design)' },
+      { id: 'tj', text: 'Teacher or tutor judgement on the student\'s readiness for accelerated content, including social-emotional maturity' },
+      { id: 'port', text: 'Portfolio of work across multiple contexts showing sustained high performance, not just test results' },
+      { id: 'psych', text: 'Cognitive assessment by a psychologist (essential for whole-grade acceleration; recommended for VCE early entry)' },
+      { id: 'ias', text: 'Iowa Acceleration Scale (IAS) completed — the most widely-used structured instrument for whole-grade decisions' },
+      { id: 'parent', text: 'Parent/guardian statement on the student\'s motivation, social readiness, and acceleration preference' }
+    ];
+    let inner = '<ul class="checklist">';
+    for (const item of items) {
+      const checked = checkedItems[item.id] || false;
+      inner += `<li><div class="cl-check ${checked?'checked':''}" onclick="toggleCheck('${item.id}', this)" tabindex="0" role="checkbox" aria-checked="${checked}">${checked?'&#10003;':''}</div><span>${esc(item.text)}</span></li>`;
+    }
+    inner += '</ul>';
+    inner += '<div class="info-banner info" style="margin-top:12px;"><strong>A defensible evidence pack</strong> should include at minimum: (i) the diagnostic heatmap, (ii) work samples, (iii) teacher/tutor judgement, and (iv) for grade-skipping, a psychologist\'s cognitive assessment.</div>';
+    return inner;
+  });
+
+  // Section 3: Policy References
+  html += buildSection(3, 'Victorian Policy References', 'complete', () => {
+    let inner = '';
+    inner += `<div class="policy-card"><div class="pc-title">VCAA VCE Entry</div><div class="pc-body">The VCE Administrative Handbook states: "There are no prerequisites for entry into Units 1, 2 and 3. VCE students may enter studies at Units 1, 2 or 3 levels." VCAA does not set a minimum age. Acceleration decisions sit with the school principal in practice.</div></div>`;
+
+    inner += `<div class="policy-card"><div class="pc-title">Virtual School Victoria (VSV) Pathway for Homeschoolers</div><div class="pc-body">Home-educated students registered with VRQA for at least 12 months may enrol directly into Year 10 or VCE through Virtual School Victoria, contingent on full-time enrolment and de-registration from VRQA. This is the most direct pathway for homeschooled students seeking VCE acceleration.</div></div>`;
+
+    inner += `<div class="policy-card"><div class="pc-title">DET Student Excellence Program</div><div class="pc-body">Each funded government school must appoint a High Ability Practice Leader (HAPL). The Victorian High-Ability Program (VHAP) provides 10-week online English/Mathematics extension for Years 5–8 government school students via VSV. Note: VHAP is restricted to government school students; home-educated students are not eligible.</div></div>`;
+
+    inner += `<div class="policy-card"><div class="pc-title">Centre for Higher Education Studies (CHES)</div><div class="pc-body">For senior secondary students seeking university-level study, CHES provides access to first-year university subjects that count toward VCE. Available to both school and home-educated students meeting eligibility criteria.</div></div>`;
+
+    inner += `<div class="policy-card"><div class="pc-title">Iowa Acceleration Scale (IAS)</div><div class="pc-body">The IAS (3rd edition, Assouline et al., 2009) is the most widely-used structured instrument for whole-grade acceleration decisions internationally. It assesses academic ability, school factors, developmental factors, and interpersonal skills. The platform recommends it as a structured input alongside this diagnostic evidence — it is not a substitute.</div></div>`;
+
+    return inner;
+  });
+
+  // Section 4: Research Context
+  html += buildSection(4, 'Research Evidence on Acceleration', 'complete', () => {
+    return `<div class="info-banner research"><strong>A Nation Empowered (2015)</strong> synthesises more than 50 years of evidence and concludes that academic acceleration is among the best-evidenced interventions for high-ability students, with positive academic and small-to-moderate positive social-emotional effects.</div>
+    <div class="info-banner research"><strong>NAGC position statement:</strong> "Educational acceleration is one of the cornerstones of exemplary gifted education practices, with more research supporting this intervention than any other in the literature on gifted individuals."</div>
+    <div class="info-banner research"><strong>Miraca Gross (Australian longitudinal study):</strong> Exceptionally gifted children who were accelerated reported significantly higher life satisfaction and academic outcomes than those who were not.</div>
+    <div class="info-banner disclaimer" style="margin-top:12px;"><strong>Framing note:</strong> This diagnostic identifies students who can sustain Apply and Analyse on higher-level content. The defensible framing is "structured evidence base for a conversation" — never "gifted certification" or "VCE ready."</div>`;
+  });
+
+  document.getElementById('evidence-sections').innerHTML = html;
+
+  // Attach toggle listeners
+  document.querySelectorAll('.es-header').forEach(h => {
+    h.addEventListener('click', () => toggleSection(h));
+    h.addEventListener('keydown', e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); toggleSection(h); } });
+  });
+}
+
+function buildSection(num, title, status, contentFn) {
+  const statusLabel = status === 'complete' ? 'Available' : 'Action needed';
+  return `<div class="evidence-section">
+    <div class="es-header open" role="button" tabindex="0" aria-expanded="true">
+      <span class="es-chevron">&#9654;</span>
+      <span class="es-num">${num}</span>
+      <span class="es-title">${esc(title)}</span>
+      <span class="es-status ${status}">${statusLabel}</span>
+    </div>
+    <div class="es-body open"><div class="es-body-inner">${contentFn()}</div></div>
+  </div>`;
+}
+
+window.toggleCheck = function(id, el) {
+  checkedItems[id] = !checkedItems[id];
+  el.classList.toggle('checked');
+  el.setAttribute('aria-checked', checkedItems[id]);
+  el.innerHTML = checkedItems[id] ? '&#10003;' : '';
+};
+
+window.printPack = function() {
+  document.querySelectorAll('.es-header').forEach(h => {
+    h.classList.add('open'); h.setAttribute('aria-expanded','true');
+    h.nextElementSibling.classList.add('open');
+  });
+  setTimeout(() => window.print(), 100);
+};
+
+function toast(msg) {
+  const c = document.getElementById('toast-container');
+  const t = document.createElement('div'); t.className='toast'; t.textContent=msg;
+  c.appendChild(t); setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),200);},3000);
+}
+
+async function init() {
+  const st = localStorage.getItem('vc2-accel-theme');
+  if (st) currentTheme = st; applyTheme();
+  await loadUnits(); render();
+  window.addEventListener('focus', render);
+}
+init();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Curriculum Compactor</title>
+<style>
+:root {
+  --bg: #0f1117; --surface: #1a1d27; --surface2: #242836; --border: #2e3347;
+  --text: #e4e6f0; --text2: #9298b4; --accent: #6c8cff; --accent2: #4a6adf;
+  --green: #4ade80; --red: #f87171; --orange: #fb923c; --yellow: #fbbf24;
+  --purple: #a78bfa; --teal: #2dd4bf; --radius: 10px; --transition: 0.15s ease;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; min-height: 100dvh; }
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px; border-radius: 0 0 8px 0; text-decoration: none; }
+.skip-link:focus { top: 0; }
+
+.app-header { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 50; flex-wrap: wrap; }
+.header-title { font-size: 16px; font-weight: 600; flex: 1; min-width: 200px; }
+.header-right { display: flex; gap: 8px; align-items: center; }
+.btn { background: var(--surface2); border: 1px solid var(--border); color: var(--text2); cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; min-height: 44px; transition: all var(--transition); }
+.btn:hover { border-color: var(--accent); color: var(--text); }
+
+main { max-width: 1100px; margin: 0 auto; padding: 24px 20px; }
+
+.info-banner { border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; font-size: 13px; line-height: 1.6; }
+.info-banner.research { background: rgba(45,212,191,0.08); border: 1px solid rgba(45,212,191,0.25); color: var(--teal); }
+.info-banner.disclaimer { background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.25); color: var(--yellow); }
+.info-banner strong { font-weight: 700; }
+
+.no-data { text-align: center; padding: 60px 20px; color: var(--text2); }
+.no-data h2 { font-size: 22px; margin-bottom: 12px; color: var(--text); }
+.no-data p { font-size: 14px; max-width: 500px; margin: 0 auto 16px; }
+.no-data a { color: var(--accent); }
+
+/* Filter */
+.filter-bar { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+.filter-bar label { font-size: 12px; color: var(--text2); font-weight: 600; }
+.filter-bar select { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 6px; font-size: 13px; min-height: 40px; cursor: pointer; }
+
+/* Summary cards */
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.summary-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
+.summary-card .sc-label { font-size: 12px; color: var(--text2); margin-bottom: 4px; }
+.summary-card .sc-value { font-size: 28px; font-weight: 800; }
+.summary-card .sc-sub { font-size: 11px; color: var(--text2); margin-top: 4px; }
+.sc-value.green { color: var(--green); }
+.sc-value.accent { color: var(--accent); }
+.sc-value.yellow { color: var(--yellow); }
+.sc-value.teal { color: var(--teal); }
+
+/* Compacting bar */
+.compact-bar { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.compact-bar .cb-label { font-size: 13px; font-weight: 700; }
+.compact-bar .cb-bar { flex: 1; min-width: 200px; height: 12px; background: var(--surface2); border-radius: 6px; overflow: hidden; }
+.compact-bar .cb-fill { height: 100%; border-radius: 6px; background: linear-gradient(90deg, var(--green), var(--teal)); transition: width 0.3s; }
+.compact-bar .cb-pct { font-size: 20px; font-weight: 800; color: var(--green); min-width: 60px; text-align: right; }
+.compact-bar .cb-note { font-size: 11px; color: var(--text2); width: 100%; }
+
+/* Unit sections */
+.unit-section { margin-bottom: 24px; }
+.unit-section h3 { font-size: 15px; font-weight: 700; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
+.unit-pct { font-size: 12px; font-weight: 600; color: var(--teal); }
+
+.cd-row { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px 18px; margin-bottom: 8px; display: flex; gap: 14px; align-items: flex-start; transition: all var(--transition); }
+.cd-row.mastered { border-left: 3px solid var(--green); }
+.cd-row.not-mastered { border-left: 3px solid var(--yellow); opacity: 0.7; }
+.cd-row.unassessed { border-left: 3px solid var(--border); opacity: 0.5; }
+
+.cd-row .cr-check { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; margin-top: 2px; }
+.cd-row.mastered .cr-check { background: rgba(74,222,128,0.15); color: var(--green); }
+.cd-row.not-mastered .cr-check { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.cd-row.unassessed .cr-check { background: var(--surface2); color: var(--text2); }
+
+.cd-row .cr-body { flex: 1; min-width: 0; }
+.cd-row .cr-code { font-family: 'SF Mono','Fira Code',monospace; font-size: 11px; color: var(--accent); font-weight: 600; }
+.cd-row .cr-desc { font-size: 12px; line-height: 1.5; margin-top: 2px; }
+.cd-row .cr-meta { font-size: 10px; color: var(--text2); margin-top: 4px; display: flex; gap: 8px; flex-wrap: wrap; }
+
+.emab-sm { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; display: inline-block; }
+.emab-sm.above-standard { background: rgba(167,139,250,0.15); color: var(--purple); }
+.emab-sm.meeting-confirmed { background: rgba(74,222,128,0.15); color: var(--green); }
+.emab-sm.meeting { background: rgba(108,140,255,0.15); color: var(--accent); }
+.emab-sm.approaching { background: rgba(251,191,36,0.15); color: var(--yellow); }
+.emab-sm.beginning { background: rgba(248,113,113,0.15); color: var(--red); }
+
+/* Enrichment suggestions */
+.enrichment { background: var(--surface2); border-radius: 6px; padding: 12px 14px; margin-top: 10px; font-size: 12px; color: var(--text2); line-height: 1.5; }
+.enrichment strong { color: var(--teal); }
+
+/* Override toggle */
+.override-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+.override-toggle { appearance: none; width: 36px; height: 20px; background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; cursor: pointer; position: relative; transition: all var(--transition); }
+.override-toggle:checked { background: var(--green); border-color: var(--green); }
+.override-toggle::after { content: ''; position: absolute; width: 14px; height: 14px; border-radius: 50%; background: var(--text); top: 2px; left: 2px; transition: transform 0.2s; }
+.override-toggle:checked::after { transform: translateX(16px); }
+.override-label { font-size: 11px; color: var(--text2); }
+
+/* Toast */
+.toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 200; display: flex; flex-direction: column; gap: 8px; }
+.toast { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; font-size: 13px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); animation: toastIn 0.2s ease; }
+@keyframes toastIn { from { opacity: 0; transform: translateY(10px); } }
+
+@media (max-width: 768px) {
+  .summary-grid { grid-template-columns: repeat(2, 1fr); }
+  main { padding: 16px 12px; }
+  .compact-bar { flex-direction: column; align-items: flex-start; }
+}
+@media print {
+  .app-header, .filter-bar, .toast-container, .override-row { display: none !important; }
+  body { background: #fff; color: #000; }
+  .cd-row.mastered { border-left-color: #38a169; }
+  .info-banner.research { background: #e6fffa; border-color: #38b2ac; color: #234e52; }
+  @page { margin: 1.5cm; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="app-header" role="banner">
+  <h1 class="header-title">VC2 Curriculum Compactor</h1>
+  <div class="header-right">
+    <button class="btn" onclick="window.print()">&#128424; Print</button>
+    <button class="btn" onclick="toggleTheme()" aria-label="Toggle theme" style="font-size:14px;">&#9681;</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="info-banner research" role="note">
+    <strong>Research basis (Reis &amp; Renzulli).</strong> Curriculum compacting eliminates content a student has already mastered to free time for enrichment or acceleration. The NRC/GT study found 40–50% of material could be compacted for targeted students, and compacted students in science scored significantly higher on post-tests than non-compacted peers.
+  </div>
+  <div class="info-banner disclaimer" role="note">
+    <strong>Pre-assessment, not certification.</strong> The compactor view identifies CDs where diagnostic performance suggests mastery. Teacher or parent review is essential — a strong selected-response score does not guarantee deep understanding. Use the override toggle to include or exclude CDs from the compacting plan.
+  </div>
+
+  <div id="no-data" class="no-data" style="display:none;">
+    <h2>No diagnostic data yet</h2>
+    <p>Complete quizzes in the <a href="knowledge-check.html">VC2 Knowledge Check</a> to identify mastered content for compacting.</p>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <div class="filter-bar">
+      <label for="filter-area">Subject:</label>
+      <select id="filter-area" onchange="render()"><option value="all">All Subjects</option></select>
+      <label for="filter-level">Level:</label>
+      <select id="filter-level" onchange="render()"><option value="all">All Levels</option></select>
+    </div>
+
+    <div id="summary-cards" class="summary-grid"></div>
+    <div id="compact-bar-container"></div>
+    <div id="units-container"></div>
+  </div>
+</main>
+
+<div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+<script>
+'use strict';
+(function() {
+
+const KC_KEY = 'vc2-knowledge-check';
+const OVERRIDE_KEY = 'vc2-compactor-overrides';
+const EMAB_LABELS = { 'above-standard':'Above Expected Standard', 'meeting-confirmed':'Meeting Confirmed', meeting:'Meeting', approaching:'Approaching', beginning:'Beginning' };
+const MASTERY_STATES = ['above-standard', 'meeting-confirmed'];
+
+let unitsData = null, kcState = null, overrides = {}, currentTheme = 'system';
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function applyTheme() {
+  if (currentTheme==='light') document.documentElement.setAttribute('data-theme','light');
+  else if (currentTheme==='dark') document.documentElement.setAttribute('data-theme','dark');
+  else document.documentElement.removeAttribute('data-theme');
+}
+window.toggleTheme = function() {
+  const c = { system:'dark', dark:'light', light:'system' };
+  currentTheme = c[currentTheme]||'system'; applyTheme();
+  localStorage.setItem('vc2-compactor-theme', currentTheme);
+};
+
+function loadKC() {
+  try { const r = localStorage.getItem(KC_KEY); if (r) { const p = JSON.parse(r); if (p&&p.version===1) kcState = p; } } catch(e) {}
+}
+function loadOverrides() {
+  try { const r = localStorage.getItem(OVERRIDE_KEY); if (r) overrides = JSON.parse(r); } catch(e) { overrides = {}; }
+}
+function saveOverrides() {
+  try { localStorage.setItem(OVERRIDE_KEY, JSON.stringify(overrides)); } catch(e) {}
+}
+
+async function loadUnits() {
+  try { const r = await fetch('units_of_work.json',{cache:'no-store'}); if (r.ok) unitsData = await r.json(); } catch(e) {}
+}
+
+function isMastered(code) {
+  if (overrides[code] !== undefined) return overrides[code];
+  const results = kcState?.results || {};
+  const r = results[code];
+  return r && MASTERY_STATES.includes(r.state);
+}
+
+function getState(code) {
+  const results = kcState?.results || {};
+  const r = results[code];
+  return r ? r.state : null;
+}
+
+function getAllCDs() {
+  const cds = [];
+  if (!unitsData) return cds;
+  for (const [ac, area] of Object.entries(unitsData.areas||{})) {
+    for (const [lk, ld] of Object.entries(area.levels||{})) {
+      for (const u of (ld.units||[])) {
+        for (const cd of (u.contentDescriptions||[])) {
+          cds.push({ code: cd.code, description: cd.description, strand: cd.strandLabel||cd.strand||'',
+            area: area.label, areaCode: ac, level: lk, unit: u.title,
+            hasContent: cd.hasContent, hasQuestions: cd.hasQuestions });
+        }
+      }
+    }
+  }
+  return cds;
+}
+
+function render() {
+  loadKC(); loadOverrides();
+  const results = kcState?.results || {};
+  let allCDs = getAllCDs();
+  const assessedCodes = new Set(Object.keys(results));
+
+  // Filters
+  const areaVal = document.getElementById('filter-area').value;
+  const levelVal = document.getElementById('filter-level').value;
+
+  const areas = [...new Set(allCDs.map(c=>c.area))].sort();
+  const levels = [...new Set(allCDs.map(c=>c.level))].sort();
+
+  const aSel = document.getElementById('filter-area');
+  const lSel = document.getElementById('filter-level');
+  const curA = aSel.value, curL = lSel.value;
+  aSel.innerHTML = '<option value="all">All Subjects</option>' + areas.map(a=>`<option value="${esc(a)}" ${a===curA?'selected':''}>${esc(a)}</option>`).join('');
+  lSel.innerHTML = '<option value="all">All Levels</option>' + levels.map(l=>`<option value="${l}" ${l===curL?'selected':''}>${esc('Level '+l)}</option>`).join('');
+
+  let filtered = allCDs;
+  if (areaVal !== 'all') filtered = filtered.filter(c=>c.area===areaVal);
+  if (levelVal !== 'all') filtered = filtered.filter(c=>c.level===levelVal);
+
+  // Only show CDs that have been assessed or have questions
+  const relevant = filtered.filter(c => assessedCodes.has(c.code) || c.hasQuestions);
+
+  if (relevant.length === 0) {
+    document.getElementById('no-data').style.display = '';
+    document.getElementById('dashboard').style.display = 'none';
+    return;
+  }
+  document.getElementById('no-data').style.display = 'none';
+  document.getElementById('dashboard').style.display = '';
+
+  const assessed = relevant.filter(c => assessedCodes.has(c.code));
+  const mastered = assessed.filter(c => isMastered(c.code));
+  const notMastered = assessed.filter(c => !isMastered(c.code));
+  const unassessed = relevant.filter(c => !assessedCodes.has(c.code));
+
+  const compactPct = assessed.length > 0 ? Math.round(mastered.length / assessed.length * 100) : 0;
+
+  // Summary cards
+  document.getElementById('summary-cards').innerHTML = `
+    <div class="summary-card"><div class="sc-label">Assessed</div><div class="sc-value accent">${assessed.length}</div><div class="sc-sub">of ${relevant.length} content descriptors</div></div>
+    <div class="summary-card"><div class="sc-label">Mastered (Compactable)</div><div class="sc-value green">${mastered.length}</div><div class="sc-sub">At Analyse/Evaluate level</div></div>
+    <div class="summary-card"><div class="sc-label">Still Developing</div><div class="sc-value yellow">${notMastered.length}</div><div class="sc-sub">Needs instruction</div></div>
+    <div class="summary-card"><div class="sc-label">Compacting Rate</div><div class="sc-value teal">${compactPct}%</div><div class="sc-sub">Research benchmark: 40–50%</div></div>`;
+
+  // Compacting bar
+  document.getElementById('compact-bar-container').innerHTML = `
+    <div class="compact-bar">
+      <span class="cb-label">Compacting</span>
+      <div class="cb-bar"><div class="cb-fill" style="width:${compactPct}%"></div></div>
+      <span class="cb-pct">${compactPct}%</span>
+      <span class="cb-note">${mastered.length} of ${assessed.length} assessed CDs can be compacted. ${compactPct >= 40 && compactPct <= 50 ? 'This aligns with the Reis & Renzulli benchmark.' : compactPct > 50 ? 'Above the typical 40–50% benchmark.' : 'Below the typical 40–50% benchmark — more content may need instruction.'}</span>
+    </div>`;
+
+  // Group by unit
+  const byUnit = {};
+  for (const cd of relevant) {
+    const key = cd.area + ' · Level ' + cd.level + ' · ' + cd.unit;
+    if (!byUnit[key]) byUnit[key] = { area: cd.area, level: cd.level, unit: cd.unit, cds: [] };
+    byUnit[key].cds.push(cd);
+  }
+
+  let unitsHtml = '';
+  for (const [key, section] of Object.entries(byUnit)) {
+    const sectionMastered = section.cds.filter(c => assessedCodes.has(c.code) && isMastered(c.code)).length;
+    const sectionAssessed = section.cds.filter(c => assessedCodes.has(c.code)).length;
+    const sectionPct = sectionAssessed > 0 ? Math.round(sectionMastered / sectionAssessed * 100) : 0;
+
+    unitsHtml += `<div class="unit-section"><h3>${esc(key)} <span class="unit-pct">${sectionPct}% compactable</span></h3>`;
+
+    for (const cd of section.cds) {
+      const state = getState(cd.code);
+      const mastered = state && isMastered(cd.code);
+      const assessed = assessedCodes.has(cd.code);
+      const rowClass = mastered ? 'mastered' : assessed ? 'not-mastered' : 'unassessed';
+      const checkIcon = mastered ? '&#10003;' : assessed ? '&#9679;' : '—';
+      const isOverridden = overrides[cd.code] !== undefined;
+
+      let enrichmentHtml = '';
+      if (mastered) {
+        enrichmentHtml = `<div class="enrichment"><strong>Enrichment options:</strong> Explore the next level's content for this strand, apply knowledge to an extended investigation or creative project, or pursue cross-curricular connections with related CDs.</div>`;
+      }
+
+      unitsHtml += `<div class="cd-row ${rowClass}">
+        <div class="cr-check">${checkIcon}</div>
+        <div class="cr-body">
+          <div class="cr-code">${esc(cd.code)} ${state ? `<span class="emab-sm ${state}">${EMAB_LABELS[state]||''}</span>` : ''}</div>
+          <div class="cr-desc">${esc(cd.description)}</div>
+          <div class="cr-meta"><span>${esc(cd.strand)}</span></div>
+          ${assessed ? `<div class="override-row">
+            <input type="checkbox" class="override-toggle" id="ov-${cd.code}" ${mastered?'checked':''} onchange="toggleOverride('${cd.code}', this.checked)">
+            <label class="override-label" for="ov-${cd.code}">${mastered ? 'Included in compacting' : 'Add to compacting (override)'} ${isOverridden ? '(overridden)' : ''}</label>
+          </div>` : ''}
+          ${enrichmentHtml}
+        </div>
+      </div>`;
+    }
+    unitsHtml += '</div>';
+  }
+  document.getElementById('units-container').innerHTML = unitsHtml;
+}
+
+window.toggleOverride = function(code, checked) {
+  const results = kcState?.results || {};
+  const r = results[code];
+  const naturalMastery = r && MASTERY_STATES.includes(r.state);
+  if (checked === naturalMastery) {
+    delete overrides[code];
+  } else {
+    overrides[code] = checked;
+  }
+  saveOverrides();
+  render();
+};
+
+function toast(msg) {
+  const c = document.getElementById('toast-container');
+  const t = document.createElement('div'); t.className='toast'; t.textContent=msg;
+  c.appendChild(t); setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),200);},3000);
+}
+
+async function init() {
+  const st = localStorage.getItem('vc2-compactor-theme');
+  if (st) currentTheme = st; applyTheme();
+  await loadUnits(); render();
+  window.addEventListener('focus', render);
+}
+init();
+})();
+</script>
+</body>
+</html>
