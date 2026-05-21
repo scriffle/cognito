@@ -582,6 +582,11 @@ main { max-width: 1200px; margin: 0 auto; padding: 20px; }
       </div>
       <div id="continue-area"></div>
       <div id="progress-summary" class="progress-summary"></div>
+      <div class="progress-actions" id="progress-actions" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:4px;">
+        <button class="continue-link" id="exportProgressBtn" title="Export your quiz progress as a JSON file">⬇ Export Progress</button>
+        <button class="continue-link" id="importProgressBtn" title="Import quiz progress from a JSON file">⬆ Import Progress</button>
+        <input type="file" id="importFileInput" accept=".json" style="display:none">
+      </div>
     </div>
   </div>
 
@@ -1974,6 +1979,62 @@ function init() {
   // Save on unload
   window.addEventListener('beforeunload', saveState);
   document.addEventListener('visibilitychange', () => { if (document.hidden) saveState(); });
+
+  // Event: export progress
+  document.getElementById('exportProgressBtn').addEventListener('click', () => {
+    if (!appState.results || Object.keys(appState.results).length === 0) {
+      alert('No quiz progress to export. Complete some quizzes first.');
+      return;
+    }
+    const exportData = {
+      name: 'Exported Progress',
+      dateExported: new Date().toISOString(),
+      source: 'vc2-knowledge-check',
+      results: appState.results
+    };
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'vc2-progress-' + new Date().toISOString().slice(0,10) + '.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // Event: import progress
+  document.getElementById('importProgressBtn').addEventListener('click', () => {
+    document.getElementById('importFileInput').click();
+  });
+  document.getElementById('importFileInput').addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      try {
+        const data = JSON.parse(ev.target.result);
+        let results = data.results || data;
+        const firstKey = Object.keys(results)[0];
+        if (!firstKey || !firstKey.match(/^VC2/)) {
+          if (results.results) results = results.results;
+          else { alert('Could not find valid VC2 results in this file.'); return; }
+        }
+        const count = Object.keys(results).length;
+        const hasExisting = Object.keys(appState.results).length > 0;
+        const msg = hasExisting
+          ? 'Import ' + count + ' content descriptor results?\n\nThis will REPLACE all your current quiz progress.'
+          : 'Import ' + count + ' content descriptor results?';
+        if (!confirm(msg)) return;
+        appState.results = results;
+        saveState();
+        alert('Imported ' + count + ' results successfully.\n\nYour progress has been updated.');
+        navigate('level-select');
+      } catch(err) {
+        alert('Invalid JSON file: ' + err.message);
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  });
 
   // Load data
   loadData();
