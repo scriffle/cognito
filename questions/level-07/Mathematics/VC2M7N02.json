@@ -1,0 +1,2624 @@
+{
+  "_meta": {
+    "code": "VC2M7N02",
+    "level": 7,
+    "area": "Mathematics",
+    "ageBand": "11-12",
+    "keyKnowledge": "We are learning to write numbers in expanded notation using powers of 10, and as products of prime factors.",
+    "generatedAt": null,
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to write numbers in expanded notation using powers of 10, and as products of prime factors.",
+    "y": [
+      "Powers of 10 give us a compact way to express very large or very small numbers — essential for science.",
+      "Prime factorisation reveals the building blocks of any number and connects to finding HCF and LCM.",
+      "These representations deepen our understanding of how the number system is structured."
+    ],
+    "eg": [
+      "Writing 4500 in expanded form: 4 × 10³ + 5 × 10².",
+      "Expressing 360 as a product of primes: 2³ × 3² × 5.",
+      "Using index notation: 10⁴ = 10,000.",
+      "Finding the HCF of 24 and 36 using prime factorisation.",
+      "Writing 0.003 using powers of 10: 3 × 10⁻³.",
+      "Using prime factor trees to decompose composite numbers."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "10³ means 10 + 10 + 10.",
+      "correct": "False",
+      "correctExplanation": "10³ means 10 × 10 × 10 = 1000, not 10 + 10 + 10 = 30. The exponent indicates repeated multiplication.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses exponentiation (repeated multiplication) with repeated addition."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The expanded form of 300 is 3 × 10³.",
+      "correct": "False",
+      "correctExplanation": "300 = 3 × 100 = 3 × 10², not 3 × 10³ (which equals 3000).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses 10² with 10³."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A prime number has exactly two factors: 1 and itself.",
+      "correct": "True",
+      "correctExplanation": "By definition, a prime has no factors other than 1 and itself.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Confuses primes with composite numbers."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The number 1 is a prime number.",
+      "correct": "False",
+      "correctExplanation": "1 has only one factor, but primes must have exactly two distinct factors.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Incorrectly applies the prime definition to 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "10⁰ equals 0.",
+      "correct": "False",
+      "correctExplanation": "Any non-zero number raised to the power 0 equals 1. So 10⁰ = 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses the exponent 0 with multiplying by 0."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The number 7 is a prime number.",
+      "correct": "True",
+      "correctExplanation": "7 has exactly two factors: 1 and 7.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Fails to check factors correctly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Every even number greater than 2 is composite.",
+      "correct": "True",
+      "correctExplanation": "Even numbers greater than 2 are divisible by 1, 2, and themselves — at least 3 factors.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Ignores that 2 is the only even prime."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The prime factorisation of 12 is 2 × 6.",
+      "correct": "False",
+      "correctExplanation": "6 is not prime (6 = 2 × 3). The correct factorisation is 2² × 3.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Stops factorising before reaching all prime factors."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "10⁴ equals 10 000.",
+      "correct": "True",
+      "correctExplanation": "10⁴ = 10 × 10 × 10 × 10 = 10 000.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Miscounts the number of zeros."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The number 9 is a prime number.",
+      "correct": "False",
+      "correctExplanation": "9 = 3 × 3, so it has factors other than 1 and itself.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Mistakes 9 for prime because it is odd."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "In 5 × 10², the 10² represents 100.",
+      "correct": "True",
+      "correctExplanation": "10² = 10 × 10 = 100, so 5 × 10² = 500.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misinterprets the power of 10."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The prime factorisation of 20 is 2 × 10.",
+      "correct": "False",
+      "correctExplanation": "10 is not prime (10 = 2 × 5). The correct factorisation is 2² × 5.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Stops factorising at 10, which is composite."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is 10² equal to?",
+      "correct": "100, because 10² means 10 × 10 which equals 100",
+      "correctExplanation": "10² = 10 × 10 = 100.",
+      "distractors": [
+        {
+          "answer": "20, because 10 × 2 = 20 uses the exponent as a multiplier",
+          "explanation": "Confuses exponentiation with multiplication by the exponent."
+        },
+        {
+          "answer": "1000, because 10² adds two extra zeros to the base 10",
+          "explanation": "Adding zeros corresponds to ×100, but 10² = 100, not 1000."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which of these is a prime number?",
+      "correct": "13, because its only factors are 1 and 13",
+      "correctExplanation": "13 has exactly two factors.",
+      "distractors": [
+        {
+          "answer": "15, because it is an odd number greater than 2 in the list",
+          "explanation": "15 = 3 × 5, so it is composite despite being odd."
+        },
+        {
+          "answer": "9, because it cannot be divided by 2 without a remainder",
+          "explanation": "9 = 3 × 3, so it is composite despite being odd."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What does the expanded form 4 × 10³ + 5 × 10² represent?",
+      "correct": "4500, since 4 × 1000 + 5 × 100 = 4500",
+      "correctExplanation": "4 × 10³ = 4000, 5 × 10² = 500, total 4500.",
+      "distractors": [
+        {
+          "answer": "450, since 4 × 100 + 5 × 10 = 450 using lower powers",
+          "explanation": "Uses 10² and 10¹ instead of 10³ and 10²."
+        },
+        {
+          "answer": "45 000, since 4 × 10 000 + 5 × 1000 = 45 000 overall",
+          "explanation": "Uses powers one step too high."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What is the prime factorisation of 18?",
+      "correct": "2 × 3², since 18 = 2 × 9 and 9 = 3²",
+      "correctExplanation": "18 = 2 × 3 × 3 = 2 × 3².",
+      "distractors": [
+        {
+          "answer": "2 × 9, since 2 × 9 = 18 and that gives two factors directly",
+          "explanation": "9 is not prime; factorisation must continue."
+        },
+        {
+          "answer": "3 × 6, since 3 × 6 = 18 and both are single-digit factors",
+          "explanation": "6 is not prime; it should be broken down to 2 × 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "How is 7000 written using powers of 10?",
+      "correct": "7 × 10³, since 10³ = 1000 and 7 × 1000 = 7000",
+      "correctExplanation": "10³ = 1000, so 7 × 10³ = 7000.",
+      "distractors": [
+        {
+          "answer": "7 × 10⁴, since the exponent counts all four digits in 7000",
+          "explanation": "The exponent counts zeros (3), not total digits (4)."
+        },
+        {
+          "answer": "70 × 10², since 70 × 100 = 7000 is an equivalent expression",
+          "explanation": "While correct arithmetically, standard form uses a single digit coefficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which number is NOT prime?",
+      "correct": "21, because 21 = 3 × 7 has more than two factors",
+      "correctExplanation": "21 has factors 1, 3, 7, 21.",
+      "distractors": [
+        {
+          "answer": "23, because 23 ends in 3 and that means it is divisible",
+          "explanation": "23 is prime; ending in 3 does not indicate divisibility."
+        },
+        {
+          "answer": "29, because 29 is close to 30, which is a composite number",
+          "explanation": "Proximity to a composite number is irrelevant; 29 is prime."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What is 2⁵ equal to?",
+      "correct": "32, since 2 × 2 × 2 × 2 × 2 = 32",
+      "correctExplanation": "2⁵ means five 2s multiplied: 32.",
+      "distractors": [
+        {
+          "answer": "10, since 2 × 5 = 10 multiplies the base by the exponent",
+          "explanation": "Multiplies base by exponent instead of repeated multiplication."
+        },
+        {
+          "answer": "25, since swapping base and exponent gives 5² = 25 instead",
+          "explanation": "2⁵ ≠ 5²; the order of base and exponent matters."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What is the value of 6 × 10¹?",
+      "correct": "60, since 10¹ = 10 and 6 × 10 = 60",
+      "correctExplanation": "10¹ = 10, so 6 × 10 = 60.",
+      "distractors": [
+        {
+          "answer": "6, since 10¹ = 1 and multiplying by 1 gives 6 as the answer",
+          "explanation": "Confuses 10¹ with 10⁰; 10¹ = 10."
+        },
+        {
+          "answer": "600, since 10¹ = 100 and 6 × 100 = 600 for this expression",
+          "explanation": "Confuses 10¹ with 10²; 10¹ = 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which is the correct prime factorisation of 36?",
+      "correct": "2² × 3², since 4 × 9 = 36 and both break into prime squares",
+      "correctExplanation": "36 = 4 × 9 = 2² × 3².",
+      "distractors": [
+        {
+          "answer": "4 × 9, since 4 × 9 = 36 already gives a complete factorisation, in this case",
+          "explanation": "4 and 9 are not prime; they need further splitting."
+        },
+        {
+          "answer": "6², since 6 × 6 = 36 uses a single repeated factor for this",
+          "explanation": "6 is not prime; 6 = 2 × 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What does 10⁵ equal?",
+      "correct": "100 000, since 10⁵ means five 10s multiplied together",
+      "correctExplanation": "10⁵ = 100 000.",
+      "distractors": [
+        {
+          "answer": "50, since 10 × 5 = 50 multiplies the base by the exponent directly",
+          "explanation": "Multiplies base by exponent instead of using repeated multiplication."
+        },
+        {
+          "answer": "10 000, since 10⁵ means the digit 1 followed by four zeros only",
+          "explanation": "10⁵ has five zeros (100 000), not four."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which number has exactly two distinct prime factors?",
+      "correct": "15, since 15 = 3 × 5 and both 3 and 5 are prime numbers",
+      "correctExplanation": "15 has prime factorisation 3 × 5.",
+      "distractors": [
+        {
+          "answer": "8, since 8 = 2 × 4 uses two factors in its multiplication, in this case",
+          "explanation": "4 is not prime; 8 = 2³ has only one prime factor."
+        },
+        {
+          "answer": "16, since 16 = 4 × 4 uses two identical factors in multiplication",
+          "explanation": "4 is not prime; 16 = 2⁴ has only one prime factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What is the prime factorisation of 50?",
+      "correct": "2 × 5², since 50 = 2 × 25 and 25 = 5 × 5",
+      "correctExplanation": "50 = 2 × 5².",
+      "distractors": [
+        {
+          "answer": "5 × 10, since 5 × 10 = 50 gives a two-factor breakdown directly, in this case",
+          "explanation": "10 is not prime; it must be factored into 2 × 5."
+        },
+        {
+          "answer": "2 × 25, since both 2 and 25 are direct factors of 50 here",
+          "explanation": "25 is not prime; it equals 5 × 5."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "10³ means 10 multiplied by itself {{blank:1}} times, giving {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The exponent 3 tells us to multiply 10 three times.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Confuses exponent value with the base.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "Uses the base as the exponent count.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1000",
+          "correctExplanation": "10 × 10 × 10 = 1000.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "Adds 10 three times (10+10+10) instead of multiplying.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "100",
+              "explanation": "Only multiplies 10 twice (10×10).",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The smallest prime number is {{blank:1}} and the smallest composite number is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "2 has exactly two factors: 1 and 2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1 has only one factor; primes need exactly two.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is prime but not the smallest prime.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "4 = 2 × 2 has three factors: 1, 2, 4.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is composite but 4 is smaller.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is prime, not composite.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The expanded form of 5030 is 5 × 10³ + 3 × 10.",
+      "correct": "True",
+      "correctExplanation": "5030 = 5000 + 30 = 5 × 10³ + 3 × 10¹.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misinterprets the place values in expanded notation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "All odd numbers are prime.",
+      "correct": "False",
+      "correctExplanation": "Many odd numbers are composite: 9 (3×3), 15 (3×5), 25 (5×5).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Overlooks composite odd numbers like 9 and 15."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Every number greater than 1 has a unique prime factorisation, including 1.",
+      "correct": "False",
+      "correctExplanation": "The theorem applies to integers greater than 1. The number 1 has no prime factors.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Incorrectly extends the theorem to 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "10² × 10³ = 10⁶.",
+      "correct": "False",
+      "correctExplanation": "When multiplying same-base powers, add exponents: 10² × 10³ = 10⁵, not 10⁶.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Multiplies exponents (2×3=6) instead of adding (2+3=5)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The number 51 is prime because it is odd and ends in 1.",
+      "correct": "False",
+      "correctExplanation": "51 = 3 × 17, so it is composite. Ending in 1 does not guarantee primality.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Assumes odd numbers ending in 1 must be prime."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Writing a number as a product of primes helps find the HCF.",
+      "correct": "True",
+      "correctExplanation": "Comparing prime factorisations reveals shared factors for the HCF.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Does not connect prime factorisation to HCF."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "Any whole number can be written in expanded notation using powers of 10.",
+      "correct": "True",
+      "correctExplanation": "Every whole number's place values correspond to powers of 10.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Assumes expanded notation only works for certain numbers."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The prime factorisation of 100 is 10².",
+      "correct": "False",
+      "correctExplanation": "10 is not prime. The correct factorisation is 2² × 5².",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Treats 10 as a prime factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A student writes 2750 as 2 × 10³ + 7 × 10² + 5 × 10. Is this correct?",
+      "correct": "Yes, since 2000 + 700 + 50 = 2750 matches the original number",
+      "correctExplanation": "2 × 1000 + 7 × 100 + 5 × 10 = 2750.",
+      "distractors": [
+        {
+          "answer": "No, because 5 should be written as 5 × 10² not 5 × 10",
+          "explanation": "5 × 10² = 500, which gives 3200 not 2750."
+        },
+        {
+          "answer": "No, because expanded form must include a term for every power",
+          "explanation": "Zero-valued terms may be omitted in expanded form."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Why is 2 the only even prime number?",
+      "correct": "Every other even number is divisible by 2, giving a third factor",
+      "correctExplanation": "Even numbers > 2 have at least 3 factors: 1, 2, and the number.",
+      "distractors": [
+        {
+          "answer": "Because even numbers cannot produce odd products when multiplied together",
+          "explanation": "This describes parity of products, not the definition of prime."
+        },
+        {
+          "answer": "Because 2 is the smallest number that divides other numbers evenly, in this case",
+          "explanation": "Being a small divisor does not explain why 2 alone is even and prime."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "What is the prime factorisation of 60?",
+      "correct": "2² × 3 × 5, since 60 = 4 × 15 = 4 × 3 × 5",
+      "correctExplanation": "60 = 2 × 2 × 3 × 5 = 2² × 3 × 5.",
+      "distractors": [
+        {
+          "answer": "2 × 3 × 10, since 2 × 30 = 60 and 30 breaks into 3 × 10",
+          "explanation": "10 is not prime; it must be factored into 2 × 5."
+        },
+        {
+          "answer": "4 × 15, since 4 × 15 = 60 is a complete factorisation already",
+          "explanation": "4 and 15 are not prime and need further factorisation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "How is 30 400 written in expanded notation using powers of 10?",
+      "correct": "3 × 10⁴ + 4 × 10², since 30 000 + 400 = 30 400",
+      "correctExplanation": "3 × 10 000 + 4 × 100 = 30 400.",
+      "distractors": [
+        {
+          "answer": "3 × 10³ + 4 × 10², since 3000 + 400 = 3400 for the number",
+          "explanation": "Uses 10³ instead of 10⁴, giving 3400 not 30 400."
+        },
+        {
+          "answer": "34 × 10³, since 34 × 1000 = 34 000 approximates the value given",
+          "explanation": "34 000 ≠ 30 400, and this is not proper expanded notation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A factor tree splits 48 into 6 × 8. What comes next?",
+      "correct": "Split both: 6 = 2 × 3 and 8 = 2³ to reach all prime factors",
+      "correctExplanation": "Neither 6 nor 8 is prime, so both must be broken down.",
+      "distractors": [
+        {
+          "answer": "Stop, because 6 and 8 are small enough to be treated as factors",
+          "explanation": "Size does not matter; factorisation continues until all factors are prime."
+        },
+        {
+          "answer": "Only split 8, since 6 is nearly prime and close enough already",
+          "explanation": "6 = 2 × 3 is composite and must also be split."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which expression is equivalent to 5 × 10³?",
+      "correct": "5000, because 10³ = 1000 and 5 × 1000 = 5000",
+      "correctExplanation": "10³ = 1000, so 5 × 10³ = 5000.",
+      "distractors": [
+        {
+          "answer": "500, because 10³ actually equals 100 and 5 × 100 = 500",
+          "explanation": "10³ = 1000, not 100; that would be 10²."
+        },
+        {
+          "answer": "15 000, because 5 × 3 = 15 with three zeros added after it",
+          "explanation": "The exponent is not multiplied by the coefficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Student A writes 72 = 2³ × 3². Student B writes 72 = 2³ × 9. Who is correct?",
+      "correct": "Student A, because 3² = 9 and 9 is not itself a prime number",
+      "correctExplanation": "Prime factorisation requires all factors to be prime. 9 = 3².",
+      "distractors": [
+        {
+          "answer": "Student B, because 9 is a single-digit odd factor of 72 already, in this case",
+          "explanation": "Being single-digit and odd does not make 9 prime."
+        },
+        {
+          "answer": "Both, since 3² and 9 represent the same value in the factorisation",
+          "explanation": "While equal in value, factorisation must use only prime bases."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Why is the expanded form of 205 written as 2 × 10² + 5 × 10⁰?",
+      "correct": "Because the tens digit is 0, so no 10¹ term is needed here",
+      "correctExplanation": "205 = 200 + 5. The zero in tens place means the 10¹ term is omitted.",
+      "distractors": [
+        {
+          "answer": "Because 10⁰ = 0, and adding zero does not change the total at all",
+          "explanation": "10⁰ = 1, not 0. The term 5 × 1 = 5."
+        },
+        {
+          "answer": "Because expanded form only uses the first and last digits of numbers",
+          "explanation": "Expanded form represents every non-zero place value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "What is the HCF of 12 and 18 using prime factorisation?",
+      "correct": "6, since shared factors at lowest powers give 2¹ × 3¹ = 6",
+      "correctExplanation": "12 = 2² × 3, 18 = 2 × 3². Common factors: 2 × 3 = 6.",
+      "distractors": [
+        {
+          "answer": "36, since multiplying all prime factors of both numbers gives 36",
+          "explanation": "Multiplying all factors gives the LCM, not HCF."
+        },
+        {
+          "answer": "3, since 3 is the only prime factor appearing in both numbers, in this case",
+          "explanation": "2 also appears in both; HCF includes all shared primes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A number has prime factorisation 2 × 3 × 7. What is the number?",
+      "correct": "42, since 2 × 3 = 6 and 6 × 7 = 42 overall",
+      "correctExplanation": "2 × 3 × 7 = 42.",
+      "distractors": [
+        {
+          "answer": "237, since the digits 2, 3, and 7 combine to make the number",
+          "explanation": "Prime factors are multiplied, not concatenated as digits."
+        },
+        {
+          "answer": "12, since 2 + 3 + 7 = 12 adds the prime factors together here",
+          "explanation": "Prime factors are multiplied, not added."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "How many distinct prime factors does 24 have?",
+      "correct": "Two primes: 2 and 3, since 24 = 2³ × 3 in prime form",
+      "correctExplanation": "24 uses only the primes 2 and 3.",
+      "distractors": [
+        {
+          "answer": "Four primes, since 24 = 2 × 2 × 2 × 3 lists four total factors",
+          "explanation": "Counts repeated factors; distinct primes are only 2 and 3."
+        },
+        {
+          "answer": "Three primes: 2, 3, and 4, since 24 = 2 × 4 × 3 altogether",
+          "explanation": "4 is not prime; only 2 and 3 are prime factors of 24."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Why must factorisation continue until every factor is prime?",
+      "correct": "Composite factors can be split further, so stopping early is incomplete",
+      "correctExplanation": "Only when all factors are prime is the factorisation complete and unique.",
+      "distractors": [
+        {
+          "answer": "Stopping at single-digit factors is fine since they are small enough already",
+          "explanation": "Single-digit composites like 4, 6, 8, 9 still need factorising."
+        },
+        {
+          "answer": "The process only needs to continue until all factors become odd numbers",
+          "explanation": "Odd composites like 9 and 15 also need factorisation."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The expanded form of 4070 is {{blank:1}} × 10³ + 7 × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "The thousands digit is 4, so 4 × 10³ = 4000.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 is the tens digit, not thousands.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "40",
+              "explanation": "40 × 10³ = 40 000, too large.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "The 7 is in the tens place: 7 × 10¹ = 70.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "7 × 100 = 700, wrong place value.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "7 × 1 = 7, wrong place value.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The prime factorisation of 28 is 2{{blank:1}} × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "²",
+          "correctExplanation": "28 = 4 × 7 = 2² × 7, so the exponent on 2 is 2.",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "2³ = 8, and 8 × 7 = 56 ≠ 28.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "⁴",
+              "explanation": "2⁴ = 16, and 16 × 7 = 112 ≠ 28.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "28 ÷ 4 = 7, which is prime.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "14 = 2 × 7 is not prime.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 = 2² is not prime.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "When multiplying powers with the same base, {{blank:1}} the exponents: 10² × 10³ = 10{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "add",
+          "correctExplanation": "The rule is aⁿ × aᵐ = aⁿ⁺ᵐ.",
+          "distractors": [
+            {
+              "answer": "multiply",
+              "explanation": "Multiplying exponents applies to power-of-a-power, not products.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "subtract",
+              "explanation": "Subtracting applies to division of same-base powers.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "⁵",
+          "correctExplanation": "2 + 3 = 5.",
+          "distractors": [
+            {
+              "answer": "⁶",
+              "explanation": "2 × 3 = 6 — wrong operation on exponents.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "²³",
+              "explanation": "Concatenating exponents is not a valid operation.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The number 45 = {{blank:1}} × 5, where the missing factor in index notation is 3{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "9",
+          "correctExplanation": "45 ÷ 5 = 9.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 × 5 = 25, not 45.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "15",
+              "explanation": "15 × 5 = 75, not 45.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "²",
+          "correctExplanation": "9 = 3², so the exponent is 2.",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "3³ = 27, not 9.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¹",
+              "explanation": "3¹ = 3, not 9.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "In 6200, the digit 6 is in the {{blank:1}} place, representing 6 × 10{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "thousands",
+          "correctExplanation": "6 is in the thousands column: 6 × 1000 = 6000.",
+          "distractors": [
+            {
+              "answer": "hundreds",
+              "explanation": "The hundreds digit is 2, not 6.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tens",
+              "explanation": "The tens digit is 0.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "³",
+          "correctExplanation": "10³ = 1000.",
+          "distractors": [
+            {
+              "answer": "²",
+              "explanation": "10² = 100 — wrong place value.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "⁴",
+              "explanation": "10⁴ = 10 000 — too large.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The HCF of 8 and 12 is {{blank:1}} because the shared prime factors are 2{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "8 = 2³, 12 = 2² × 3. Common: 2² = 4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is a common factor but not the highest.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 is not a factor of 12.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "²",
+          "correctExplanation": "The lowest power of 2 appearing in both is 2².",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "2³ = 8, but 8 is not a factor of 12.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¹",
+              "explanation": "2¹ = 2, which is not the HCF.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The number 10 100 can be written as 1.01 × 10⁴.",
+      "correct": "True",
+      "correctExplanation": "1.01 × 10⁴ = 1.01 × 10 000 = 10 100.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Miscalculates the product of decimal and power of 10."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "To find the LCM, multiply the HCF by both numbers.",
+      "correct": "False",
+      "correctExplanation": "The correct formula is LCM(a,b) = (a × b) ÷ HCF(a,b).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Misapplies the HCF-LCM relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A student writes 3600 as 36 × 10². Another writes 3.6 × 10³. Which is standard form?",
+      "correct": "3.6 × 10³, because the coefficient must be between 1 and 10",
+      "correctExplanation": "Standard form requires coefficient ≥ 1 and < 10.",
+      "distractors": [
+        {
+          "answer": "36 × 10², because the coefficient should match the leading digits here",
+          "explanation": "36 is not between 1 and 10, so this is not standard form."
+        },
+        {
+          "answer": "Both are standard form since both equal 3600 when fully calculated",
+          "explanation": "Standard form has a specific format requirement beyond correct value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Find the LCM of 8 and 12 using prime factorisation.",
+      "correct": "24, using highest powers: 2³ × 3 = 24 from the two factorisations",
+      "correctExplanation": "8 = 2³, 12 = 2² × 3. LCM = 2³ × 3 = 24.",
+      "distractors": [
+        {
+          "answer": "96, by multiplying 8 × 12 = 96 to combine all factors into one",
+          "explanation": "That gives a common multiple but not the least."
+        },
+        {
+          "answer": "4, since the shared factor 2² = 4 is the answer to this problem",
+          "explanation": "4 is the HCF, not the LCM."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Express 0.005 using a power of 10.",
+      "correct": "5 × 10⁻³, since 10⁻³ = 0.001 and 5 × 0.001 = 0.005",
+      "correctExplanation": "Moving decimal 3 places right gives 5, so power is −3.",
+      "distractors": [
+        {
+          "answer": "5 × 10⁻², since there are two zeros after the decimal point here",
+          "explanation": "The total shift is 3 places, not 2."
+        },
+        {
+          "answer": "0.5 × 10⁻², since halving gives a number closer to the original value",
+          "explanation": "Not standard form: coefficient should be ≥ 1 and < 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A rectangle has area 2³ × 3 × 5 cm². One side is 2 × 3 cm. What is the other?",
+      "correct": "20 cm, since dividing gives 2² × 5 = 20 after cancelling shared factors",
+      "correctExplanation": "120 ÷ 6 = 20.",
+      "distractors": [
+        {
+          "answer": "10 cm, since 120 ÷ 12 = 10 using a rough estimate for the side",
+          "explanation": "The known side is 2 × 3 = 6, not 12."
+        },
+        {
+          "answer": "60 cm, since removing one factor of 2 from the area gives 60 here",
+          "explanation": "Must divide by both 2 and 3, not just one factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Which is larger: 3⁴ or 4³?",
+      "correct": "3⁴ = 81, since 4³ = 64 and 81 > 64",
+      "correctExplanation": "3⁴ = 81 and 4³ = 64.",
+      "distractors": [
+        {
+          "answer": "4³ = 64, since a bigger base always gives a bigger result overall",
+          "explanation": "A bigger base does not always win when the exponent differs."
+        },
+        {
+          "answer": "They are equal since 3 + 4 = 4 + 3 = 7 in both expressions",
+          "explanation": "Exponentiation is not related to base+exponent sums."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Two numbers have HCF 6 and LCM 60. If one is 12, what is the other?",
+      "correct": "30, since a × b = HCF × LCM gives 12 × b = 360, so b = 30",
+      "correctExplanation": "Using HCF × LCM = a × b: 6 × 60 = 360, and 360 ÷ 12 = 30.",
+      "distractors": [
+        {
+          "answer": "20, since 60 ÷ 3 = 20 and 3 is a factor of 12 in this problem, in this case",
+          "explanation": "This division is arbitrary."
+        },
+        {
+          "answer": "10, since 60 ÷ 6 = 10 divides the LCM by the HCF directly here",
+          "explanation": "LCM ÷ HCF gives a ratio, not the second number."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A school has 120 red and 84 blue pens for equal kits. Maximum pens per kit?",
+      "correct": "12, since HCF(120, 84) = 12 using prime factorisation of both",
+      "correctExplanation": "120 = 2³×3×5, 84 = 2²×3×7. HCF = 2²×3 = 12.",
+      "distractors": [
+        {
+          "answer": "6, since both 120 and 84 are divisible by 6 for equal groups",
+          "explanation": "6 divides both but 12 is a larger common factor."
+        },
+        {
+          "answer": "24, since 120 ÷ 5 = 24 pens per kit for the red pen count",
+          "explanation": "84 ÷ 24 is not whole, so 24 is not a common factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Write 45 000 in standard form.",
+      "correct": "4.5 × 10⁴, moving the decimal four places to the left",
+      "correctExplanation": "45 000 = 4.5 × 10 000 = 4.5 × 10⁴.",
+      "distractors": [
+        {
+          "answer": "45 × 10³, since 45 thousand means 45 groups of one thousand",
+          "explanation": "45 is not between 1 and 10, so this is not standard form."
+        },
+        {
+          "answer": "4.5 × 10⁵, since there are five digits total in the number 45 000",
+          "explanation": "Digit count does not determine the exponent; the shift is 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Simplify 2⁴ × 2³ using index laws.",
+      "correct": "2⁷ = 128, since same base means add exponents: 4 + 3 = 7",
+      "correctExplanation": "When multiplying same-base powers, add exponents.",
+      "distractors": [
+        {
+          "answer": "2¹² = 4096, since multiplying the exponents gives 4 × 3 = 12",
+          "explanation": "Exponents are added, not multiplied, for same-base products."
+        },
+        {
+          "answer": "4⁷ = 16 384, since both bases are powers of 2 and should combine",
+          "explanation": "The base stays as 2, not doubled to 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Express 360 as a product of primes using index notation.",
+      "correct": "2³ × 3² × 5, since 360 = 8 × 9 × 5 broken into primes",
+      "correctExplanation": "360 = 2³ × 3² × 5.",
+      "distractors": [
+        {
+          "answer": "2² × 3 × 5 × 6, since 4 × 3 × 5 × 6 = 360 as a breakdown",
+          "explanation": "6 is not prime."
+        },
+        {
+          "answer": "2 × 3 × 4 × 5 × 6, listing all small factors of 360 in order",
+          "explanation": "4 and 6 are not prime, and the product exceeds 360."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A number is 7 × 10⁴ + 2 × 10² + 9 × 10⁰. What is it?",
+      "correct": "70 209, since 70 000 + 200 + 9 = 70 209 with zero gaps",
+      "correctExplanation": "7 × 10 000 + 0 + 2 × 100 + 0 + 9 = 70 209.",
+      "distractors": [
+        {
+          "answer": "729, since the digits 7, 2, and 9 form that number directly",
+          "explanation": "Ignores the powers of 10 determining place value."
+        },
+        {
+          "answer": "7209, since the powers 4, 2, and 0 indicate four total digits",
+          "explanation": "10⁴ gives a 5-digit number, not 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Express 2 × 10⁴ + 3 × 10² + 7 as an ordinary number.",
+      "correct": "20 307, since 20 000 + 300 + 7 with zero gaps",
+      "correctExplanation": "2 × 10 000 + 3 × 100 + 7 = 20 307.",
+      "distractors": [
+        {
+          "answer": "2037, since powers indicate positions and zeros are omitted entirely",
+          "explanation": "Ignores that 10⁴ gives ten-thousands, making it a 5-digit number."
+        },
+        {
+          "answer": "237, since only the coefficients 2, 3, and 7 form the number directly",
+          "explanation": "The powers of 10 determine place values, not just digit order."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "The LCM of 6 and 8 is {{blank:1}} because the highest powers are 2³ × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "24",
+          "correctExplanation": "LCM = 2³ × 3 = 24.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "6 × 8 = 48 is a common multiple but not the least.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 is a common factor, not the LCM.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "6 = 2 × 3, so 3 appears at power 1.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 is 2³, not a prime factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is not prime; it equals 2 × 3.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "3.2 × 10³ = {{blank:1}} because the decimal moves {{blank:2}} places right.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3200",
+          "correctExplanation": "3.2 × 1000 = 3200.",
+          "distractors": [
+            {
+              "answer": "32",
+              "explanation": "Only moves 1 place instead of 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "320",
+              "explanation": "Only moves 2 places instead of 3.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The exponent 3 tells how many places to shift.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 places would give 320.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 places would give 32 000.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "90 = 2 × 3{{blank:1}} × {{blank:2}} as a product of prime factors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "²",
+          "correctExplanation": "90 = 2 × 9 × 5 = 2 × 3² × 5.",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "2 × 3³ × 5 = 270, not 90.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¹",
+              "explanation": "2 × 3 × 5 = 30, not 90.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "90 ÷ 18 = 5, which is prime.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10 is not prime.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "9 is not prime (9 = 3²).",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "2⁵ ÷ 2² = 2{{blank:1}} because we {{blank:2}} the exponents.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "³",
+          "correctExplanation": "5 − 2 = 3.",
+          "distractors": [
+            {
+              "answer": "⁷",
+              "explanation": "That would be adding exponents, which applies to multiplication.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¹⁰",
+              "explanation": "That would be multiplying exponents.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "subtract",
+          "correctExplanation": "Division means subtract exponents for same bases.",
+          "distractors": [
+            {
+              "answer": "add",
+              "explanation": "Adding applies to multiplication of same-base powers.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "multiply",
+              "explanation": "Multiplying applies to power-of-a-power.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The HCF of 36 and 48 is {{blank:1}}. In prime form, 36 = 2² × 3² and 48 = 2{{blank:2}} × 3.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "HCF = 2² × 3 = 12.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 = 2 × 3 is a common factor but not the highest.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "24",
+              "explanation": "24 does not divide 36 evenly.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "⁴",
+          "correctExplanation": "48 = 16 × 3 = 2⁴ × 3.",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "2³ = 8, and 8 × 3 = 24 ≠ 48.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "²",
+              "explanation": "2² × 3 = 12, not 48.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "In standard form, 0.0042 = 4.2 × 10{{blank:1}}, shifting the decimal {{blank:2}} places.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "⁻³",
+          "correctExplanation": "Moving right 3 places: 0.0042 → 4.2.",
+          "distractors": [
+            {
+              "answer": "⁻²",
+              "explanation": "That gives 0.042.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "⁻⁴",
+              "explanation": "That gives 0.00042.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Count: 0.0042 → 0.042 → 0.42 → 4.2 (three shifts).",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Two shifts gives 0.42.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "Four shifts gives 42.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "The number with prime factorisation 2 × 5² is {{blank:1}} because 5² = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "2 × 25 = 50.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "2 × 10 = 20, but 10 ≠ 5².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "52",
+              "explanation": "Concatenating 5 and 2 is not multiplication.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "25",
+          "correctExplanation": "5 × 5 = 25.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "5 × 2 = 10 confuses squaring with multiplying by 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "125",
+              "explanation": "5³ = 125, not 5².",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "8.1 × 10⁴ = {{blank:1}} because we move the decimal {{blank:2}} places right.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "81 000",
+          "correctExplanation": "8.1 × 10 000 = 81 000.",
+          "distractors": [
+            {
+              "answer": "8100",
+              "explanation": "That is 8.1 × 10³.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "810 000",
+              "explanation": "That is 8.1 × 10⁵.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "The exponent 4 tells how many places to shift.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 places gives 8100.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 places gives 810 000.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "(2³)² = 2{{blank:1}} because we {{blank:2}} the exponents 3 and 2.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "⁶",
+          "correctExplanation": "3 × 2 = 6.",
+          "distractors": [
+            {
+              "answer": "⁵",
+              "explanation": "3 + 2 = 5 — that's the rule for multiplication, not power of a power.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "⁹",
+              "explanation": "3² = 9 — squares the exponent instead.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiply",
+          "correctExplanation": "Power-of-a-power means multiply exponents.",
+          "distractors": [
+            {
+              "answer": "add",
+              "explanation": "Adding applies to multiplication of same-base powers.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "divide",
+              "explanation": "Division of exponents has no application here.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The LCM of 4 and 10 is {{blank:1}}. In primes: 4 = 2², 10 = {{blank:2}} × 5.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20",
+          "correctExplanation": "LCM = 2² × 5 = 20.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "4 × 10 = 40 is a common multiple but not the least.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the HCF, not LCM.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "10 = 2 × 5.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 × 5 = 25 ≠ 10.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the number itself, not its factorisation.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "5⁰ = {{blank:1}} because any non-zero number to the power {{blank:2}} equals 1.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "5⁰ = 1 by definition.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Confuses the exponent 0 with the result being 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "5¹ = 5, not 5⁰.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "The zero exponent gives 1.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Any number to the power 1 gives itself, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1",
+              "explanation": "Negative exponents give reciprocals.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "90 300 in expanded form is 9 × 10⁴ + {{blank:1}} × 10{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The hundreds digit is 3: 3 × 100 = 300.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "9 is already used for the ten-thousands.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "30 is not a single digit.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "²",
+          "correctExplanation": "10² = 100 (hundreds place).",
+          "distractors": [
+            {
+              "answer": "³",
+              "explanation": "10³ = 1000 — wrong place value.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¹",
+              "explanation": "10¹ = 10 — wrong place value.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims 2⁴ × 3² = 6⁶ because 2 × 3 = 6 and 4 + 2 = 6. Evaluate.",
+      "correct": "Incorrect: different bases cannot combine; 2⁴ × 3² = 16 × 9 = 144",
+      "correctExplanation": "Index laws for adding exponents only apply when bases are the same.",
+      "distractors": [
+        {
+          "answer": "Correct, because multiplying bases and adding exponents follows index laws for products",
+          "explanation": "Index laws for adding exponents require identical bases."
+        },
+        {
+          "answer": "Incorrect only because exponents should be multiplied: 2⁴ × 3² = 6⁸ instead, in this case",
+          "explanation": "Neither adding nor multiplying exponents works for different bases."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Why does a perfect square have only even exponents in its prime factorisation?",
+      "correct": "Squaring doubles each exponent, so all primes appear an even number of times",
+      "correctExplanation": "If n = p^a × q^b, then n² = p^(2a) × q^(2b).",
+      "distractors": [
+        {
+          "answer": "Because perfect squares are always even, and even means even exponents throughout",
+          "explanation": "Odd perfect squares exist (e.g. 9 = 3²)."
+        },
+        {
+          "answer": "Because only even exponents allow division by 2 without any remainder at all",
+          "explanation": "Divisibility by 2 is unrelated to exponent parity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Is 2⁴ × 3² × 5 a perfect square? Explain.",
+      "correct": "No, the exponent on 5 is odd; perfect squares need all even exponents",
+      "correctExplanation": "Every prime factor must appear an even number of times.",
+      "distractors": [
+        {
+          "answer": "Yes, multiplying gives 720 which has a whole number as its square root",
+          "explanation": "√720 ≈ 26.8, not a whole number."
+        },
+        {
+          "answer": "Yes, because most exponents are even, which is close enough overall",
+          "explanation": "ALL exponents must be even, not just most."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student simplifies (10³)² as 10⁵. What is correct and what went wrong?",
+      "correct": "Answer is 10⁶; the student added exponents instead of multiplying them",
+      "correctExplanation": "(10³)² uses multiply: 3 × 2 = 6.",
+      "distractors": [
+        {
+          "answer": "Answer is 10⁹; the student should have cubed the exponent to get 3³",
+          "explanation": "The rule multiplies exponents, not cubes them."
+        },
+        {
+          "answer": "Answer is 10⁵; the student correctly applied the power rule for this base",
+          "explanation": "Power of a power multiplies exponents: 3 × 2 = 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Find the LCM of 2³ × 5 and 2 × 5² using prime factorisation.",
+      "correct": "Take highest powers: 2³ × 5² = 200 is the LCM for these numbers",
+      "correctExplanation": "LCM uses the maximum exponent for each prime.",
+      "distractors": [
+        {
+          "answer": "Multiply both: (2³ × 5)(2 × 5²) = 2⁴ × 5³ = 2000 as the LCM",
+          "explanation": "This is a common multiple but not the least one."
+        },
+        {
+          "answer": "Take lowest powers: 2¹ × 5¹ = 10 is the LCM for these numbers",
+          "explanation": "Lowest powers give the HCF, not the LCM."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "Why does the Fundamental Theorem of Arithmetic exclude 1?",
+      "correct": "1 has no prime factors; including it allows infinitely many factorisations",
+      "correctExplanation": "If 1 counted, n = 1×n = 1×1×n breaks uniqueness.",
+      "distractors": [
+        {
+          "answer": "Because 1 is already prime and needs no further factorisation by definition",
+          "explanation": "1 is not prime; it has only one factor."
+        },
+        {
+          "answer": "Because 1 is too small to be broken into factors using a factor tree",
+          "explanation": "The exclusion is about uniqueness, not tree construction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student writes 0.00036 as 3.6 × 10⁻³. Identify the error.",
+      "correct": "The power should be −4; the decimal moves 4 places to reach 3.6",
+      "correctExplanation": "0.00036 = 3.6 × 10⁻⁴.",
+      "distractors": [
+        {
+          "answer": "The power should be −5, since there are five digits after the decimal point",
+          "explanation": "The exponent counts the shift, not total decimal digits."
+        },
+        {
+          "answer": "The answer is correct; 3.6 × 10⁻³ = 0.0036 rounds to 0.00036 approximately",
+          "explanation": "3.6 × 10⁻³ = 0.0036, not 0.00036."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "How does prime factorisation help find the total number of factors?",
+      "correct": "Add 1 to each exponent and multiply the results: (a+1)(b+1) gives the count",
+      "correctExplanation": "For p^a × q^b, each factor chooses 0 to a copies of p and 0 to b of q.",
+      "distractors": [
+        {
+          "answer": "Multiply all exponents together to get the total factor count for the number",
+          "explanation": "Must add 1 to each exponent first before multiplying."
+        },
+        {
+          "answer": "Add all exponents together since each one represents one unique factor of it",
+          "explanation": "Exponents count prime repetitions, not distinct factors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Is 10⁶ ÷ 10² = 10³ correct? Justify.",
+      "correct": "No; 10⁶ ÷ 10² = 10⁴ because subtracting exponents gives 6 − 2 = 4",
+      "correctExplanation": "Division of same-base powers subtracts exponents.",
+      "distractors": [
+        {
+          "answer": "Yes, because 10⁶ has three pairs of 10² and 6 ÷ 2 = 3 gives the answer",
+          "explanation": "Uses division of exponents instead of subtraction."
+        },
+        {
+          "answer": "No; the answer is 10⁸ because dividing powers means adding exponents together",
+          "explanation": "Addition applies to multiplication, not division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A composite number has exactly 3 factors. What can you conclude?",
+      "correct": "It must be the square of a prime, like 4, 9, or 25, having factors 1, p, p²",
+      "correctExplanation": "If n = p², factors are 1, p, p².",
+      "distractors": [
+        {
+          "answer": "It must be the product of two different primes like 6 or 15 in that case, in this case",
+          "explanation": "Products of two primes have 4 factors."
+        },
+        {
+          "answer": "It must be prime since primes have the fewest factors of any whole number",
+          "explanation": "Primes have 2 factors, not 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Compare 2¹⁰ and 10³. Which is larger?",
+      "correct": "2¹⁰ = 1024 is larger, exceeding 10³ = 1000 by exactly 24",
+      "correctExplanation": "2¹⁰ = 1024, 10³ = 1000.",
+      "distractors": [
+        {
+          "answer": "10³ = 1000 is larger because 10 is a much bigger base than 2 here",
+          "explanation": "A bigger base doesn't always win; the exponent matters."
+        },
+        {
+          "answer": "They are equal because 2¹⁰ = 20 and 10³ = 30 using base × exponent",
+          "explanation": "Exponents mean repeated multiplication, not base × exponent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "If a number ends in 0, must its prime factorisation include both 2 and 5?",
+      "correct": "Yes: ending in 0 means divisible by 10 = 2 × 5, so both primes appear",
+      "correctExplanation": "Multiples of 10 require factors of both 2 and 5.",
+      "distractors": [
+        {
+          "answer": "No, because 10 itself is a prime factor that replaces the need for 2 and 5",
+          "explanation": "10 is not prime; it equals 2 × 5."
+        },
+        {
+          "answer": "Yes but only for numbers under 100; larger numbers may differ from this rule",
+          "explanation": "The rule applies regardless of size."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Why is 2 × 3 × 5 × 7 + 1 = 211 not divisible by 2, 3, 5, or 7?",
+      "correct": "Adding 1 to a multiple of those primes leaves remainder 1 for each divisor",
+      "correctExplanation": "210 is divisible by each; 211 = 210 + 1 leaves remainder 1.",
+      "distractors": [
+        {
+          "answer": "Because 211 is odd, and odd numbers cannot be divided by any small prime at all",
+          "explanation": "Odd numbers can be divisible by 3, 5, or 7."
+        },
+        {
+          "answer": "Because adding 1 always makes a product prime, giving it no small prime factors",
+          "explanation": "211 is prime here, but this reasoning does not hold generally."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "If n = 2² × 3 × p (p prime) has 12 factors, what is p?",
+      "correct": "Any prime works since (2+1)(1+1)(1+1) = 12 regardless of which prime p is",
+      "correctExplanation": "Factor count = (3)(2)(2) = 12 for any prime p.",
+      "distractors": [
+        {
+          "answer": "Only p = 5, because 2² × 3 × 5 = 60 and 60 has exactly 12 factors",
+          "explanation": "While correct for p=5, any prime gives 12 factors."
+        },
+        {
+          "answer": "Only p = 7, since that specific value makes the factor count equal to 12",
+          "explanation": "Any prime p works; the count depends on exponents only."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The number of factors of 2³ × 5² is (3+1) × (2+1) = {{blank:1}}, using the {{blank:2}} rule.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "(3+1)(2+1) = 4 × 3 = 12.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "3 × 2 = 6 — forgot to add 1 to each exponent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "3 + 2 + 5 is not the correct method.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "factor counting",
+          "correctExplanation": "Each exponent is increased by 1, then all are multiplied.",
+          "distractors": [
+            {
+              "answer": "prime addition",
+              "explanation": "Factors are counted by multiplication, not addition.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exponent squaring",
+              "explanation": "Squaring exponents is not part of this rule.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "To make 2³ × 3 × 5 a perfect square, multiply by {{blank:1}} × 3 × {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "2³ → 2⁴ needs one more 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "2³ × 4 = 2⁵, still odd exponent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "2³ × 8 = 2⁶, too much.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "5¹ → 5² needs one more 5.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "5 × 25 = 5³, odd exponent again.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is not prime.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "10⁻² = {{blank:1}} because negative exponents give {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.01",
+          "correctExplanation": "10⁻² = 1/100 = 0.01.",
+          "distractors": [
+            {
+              "answer": "−100",
+              "explanation": "Negative exponent doesn't make the result negative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "100",
+              "explanation": "That is 10², not 10⁻².",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "reciprocals",
+          "correctExplanation": "10⁻ⁿ = 1/10ⁿ.",
+          "distractors": [
+            {
+              "answer": "negative numbers",
+              "explanation": "Negative exponents give fractions, not negative numbers.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "10⁻² ≠ 0.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "(2 × 3)⁴ = 2⁴ × {{blank:1}} because the power distributes over {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3⁴",
+          "correctExplanation": "Each factor gets raised to the power 4.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 needs the exponent 4 applied.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "12",
+              "explanation": "(2×3)⁴ ≠ 2⁴ × 12.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiplication",
+          "correctExplanation": "The distributive property of exponents over multiplication.",
+          "distractors": [
+            {
+              "answer": "addition",
+              "explanation": "Powers do not distribute over addition.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "division",
+              "explanation": "This example uses multiplication.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "If n = 2 × 3² × 7, the total factors are (1+1)({{blank:1}}+1)(1+1) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The exponent on 3 is 2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the base, not the exponent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "3¹ would give only 3 in the product, not 9.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "(2)(3)(2) = 12.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Adds instead of multiplying: 2+3+2=7, not the method.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "Incorrect multiplication.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "The LCM of 2³ × 5 and 2 × 5² uses the {{blank:1}} power of each prime, giving {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "highest",
+          "correctExplanation": "LCM takes the maximum exponent for each prime.",
+          "distractors": [
+            {
+              "answer": "lowest",
+              "explanation": "Lowest powers give the HCF.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "average",
+              "explanation": "Averaging exponents is not a valid method.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "200",
+          "correctExplanation": "2³ × 5² = 8 × 25 = 200.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "2³ × 5 = 40 uses only one number's factors.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "2 × 5 = 10 is the HCF.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "2⁸ ÷ 2⁵ = 2{{blank:1}} because dividing same-base powers means {{blank:2}} exponents.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "³",
+          "correctExplanation": "8 − 5 = 3.",
+          "distractors": [
+            {
+              "answer": "⁴⁰",
+              "explanation": "Multiplying exponents gives the wrong answer.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¹³",
+              "explanation": "Adding exponents applies to multiplication.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "subtracting",
+          "correctExplanation": "aⁿ ÷ aᵐ = aⁿ⁻ᵐ.",
+          "distractors": [
+            {
+              "answer": "adding",
+              "explanation": "Adding applies to aⁿ × aᵐ.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "multiplying",
+              "explanation": "Multiplying applies to (aⁿ)ᵐ.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "1000 = {{blank:1}}³ × 5{{blank:2}} as a product of prime factors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "1000 = 8 × 125 = 2³ × 5³.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10 is not prime.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "5³ × 5³ = 15 625 ≠ 1000.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "³",
+          "correctExplanation": "125 = 5³.",
+          "distractors": [
+            {
+              "answer": "²",
+              "explanation": "5² = 25, and 8 × 25 = 200 ≠ 1000.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "⁴",
+              "explanation": "5⁴ = 625, and 8 × 625 ≠ 1000.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "If HCF = 2 × 3 and LCM = 2² × 3 × 5, then a × b = HCF × LCM = {{blank:1}} because a × b always equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "360",
+          "correctExplanation": "6 × 60 = 360.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "Incorrect multiplication.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "72",
+              "explanation": "Multiplied wrong values.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "HCF × LCM",
+          "correctExplanation": "This is a fundamental property of HCF and LCM.",
+          "distractors": [
+            {
+              "answer": "HCF + LCM",
+              "explanation": "Addition does not give the product.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "HCF − LCM",
+              "explanation": "Subtraction is not relevant here.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "3⁴ ÷ 3⁴ = 3{{blank:1}} = {{blank:2}} by the zero exponent rule.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "⁰",
+          "correctExplanation": "4 − 4 = 0.",
+          "distractors": [
+            {
+              "answer": "⁴",
+              "explanation": "3⁴ ÷ 3⁴ simplifies, not stays the same.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "⁸",
+              "explanation": "Adding exponents is for multiplication.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Any non-zero number to the power 0 is 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "3⁰ = 1, not 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3¹ = 3, but the exponent is 0.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A perfect cube has all exponents in its prime factorisation divisible by {{blank:1}}. For example, 8 = 2{{blank:2}} is a perfect cube.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "n³ has all exponents as multiples of 3.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Exponents divisible by 2 gives perfect squares.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "No standard classification for 4.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "³",
+          "correctExplanation": "8 = 2³, and 3 is divisible by 3.",
+          "distractors": [
+            {
+              "answer": "²",
+              "explanation": "2² = 4, not 8.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "⁴",
+              "explanation": "2⁴ = 16, not 8.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The smallest perfect square above 100 with 3 as a prime factor is {{blank:1}} = {{blank:2}}².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "144",
+          "correctExplanation": "144 = 12² = 2⁴ × 3², has 3 as a factor, is > 100.",
+          "distractors": [
+            {
+              "answer": "121",
+              "explanation": "121 = 11², no factor of 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "225",
+              "explanation": "225 = 15² works but 144 is smaller.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "12² = 144.",
+          "distractors": [
+            {
+              "answer": "11",
+              "explanation": "11² = 121, no factor of 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "15",
+              "explanation": "15² = 225, larger than 144.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

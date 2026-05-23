@@ -11,7 +11,21 @@
       "tf_rules": "1.0",
       "cloze_spec": "2.1",
       "addendum": "1.2"
-    }
+    },
+    "cleanupLog": [
+      {
+        "date": "2026-05-20T09:45:31Z",
+        "change": "Stripped trailing \" in\"/\" in maths\"/\" in maths and\" suffixes from 4 MC answer field(s) (convergent)."
+      },
+      {
+        "date": "2026-05-21T04:36:15Z",
+        "change": "Convergent strip of extended-junk suffixes from 1 MC answer field(s)."
+      },
+      {
+        "date": "2026-05-21T04:37:21Z",
+        "change": "Pass 3: stripped partial-fragment suffixes (\"across\", \"across many\", \"over\", \"and\", etc.) from 1 MC field(s)."
+      }
+    ]
   },
   "toLevel2": [
     {
@@ -60,7 +74,7 @@
       "type": "tf",
       "variant": 4,
       "bloomsLevel": 2,
-      "question": "A supply chain vulnerability arises when a compromised third-party component \u2014 library, service or update \u2014 affects the security of systems that depend on it.",
+      "question": "A supply chain vulnerability arises when a compromised third-party component — library, service or update — affects the security of systems that depend on it.",
       "correct": "True",
       "correctExplanation": "Supply chain vulnerabilities flow from dependencies; compromise of an upstream component affects downstream systems.",
       "distractors": [
@@ -146,7 +160,7 @@
       "bloomsLevel": 2,
       "question": "All cyber threats originate from external attackers, and no internal user, contractor or insider of an organisation could ever contribute to a security incident in any way.",
       "correct": "False",
-      "correctExplanation": "Insider threats \u2014 malicious or accidental \u2014 are a documented category alongside external attacks; both matter in threat modelling.",
+      "correctExplanation": "Insider threats — malicious or accidental — are a documented category alongside external attacks; both matter in threat modelling.",
       "distractors": [
         {
           "answer": "True",
@@ -172,7 +186,7 @@
       "type": "tf",
       "variant": 12,
       "bloomsLevel": 2,
-      "question": "An air-gapped computer \u2014 one fully disconnected from any network \u2014 has no cybersecurity risks, because complete network isolation removes every possible attack vector across its lifetime.",
+      "question": "An air-gapped computer — one fully disconnected from any network — has no cybersecurity risks, because complete network isolation removes every possible attack vector across its lifetime.",
       "correct": "False",
       "correctExplanation": "Air-gapped systems retain risks from physical access, removable media and supply-chain delivery; isolation does not remove all vectors.",
       "distractors": [
@@ -187,7 +201,7 @@
       "variant": 13,
       "bloomsLevel": 2,
       "question": "Which one of the following best describes a threat model?",
-      "correct": "A structured analysis that identifies assets, threats, vulnerabilities and possible mitigations for a specific system in its operating context in",
+      "correct": "A structured analysis that identifies assets, threats, vulnerabilities and possible mitigations for a specific system in its operating context",
       "correctExplanation": "Threat modelling is a structured analysis across assets, threats, vulnerabilities and mitigations.",
       "distractors": [
         {
@@ -231,7 +245,7 @@
       "variant": 15,
       "bloomsLevel": 2,
       "question": "Which one of the following best describes a phishing attack?",
-      "correct": "A deceptive message that impersonates a trusted source to trick the recipient into disclosing information or taking harmful action in",
+      "correct": "A deceptive message that impersonates a trusted source to trick the recipient into disclosing information or taking harmful action",
       "correctExplanation": "Phishing uses deception of trust to obtain information or action.",
       "distractors": [
         {
@@ -275,7 +289,7 @@
       "variant": 17,
       "bloomsLevel": 2,
       "question": "Which one of the following best describes multi-factor authentication?",
-      "correct": "A login approach requiring two or more distinct proofs \u2014 something you know, something you have, something you are \u2014 to verify identity",
+      "correct": "A login approach requiring two or more distinct proofs — something you know, something you have, something you are — to verify identity",
       "correctExplanation": "MFA combines multiple factors from distinct categories.",
       "distractors": [
         {
@@ -297,19 +311,19 @@
       "variant": 18,
       "bloomsLevel": 2,
       "question": "Which one of the following best describes the CIA triad?",
-      "correct": "Confidentiality, Integrity and Availability \u2014 three common objectives used to frame information security goals in maths and everyday calculations across",
+      "correct": "Confidentiality, Integrity and Availability — three common objectives used to frame information security goals",
       "correctExplanation": "The CIA triad names Confidentiality, Integrity and Availability.",
       "distractors": [
         {
-          "answer": "Classification, Inspection and Authorisation \u2014 three stages that every cyber incident must pass through before the security team can respond to the event in any organisation",
+          "answer": "Classification, Inspection and Authorisation — three stages that every cyber incident must pass through before the security team can respond to the event in any organisation",
           "explanation": "These are not the CIA triad and do not represent a standard framework."
         },
         {
-          "answer": "Cryptography, Infrastructure and Authentication \u2014 three technologies required by all cybersecurity implementations across every contemporary system at any scale of operation in practice",
+          "answer": "Cryptography, Infrastructure and Authentication — three technologies required by all cybersecurity implementations across every contemporary system at any scale of operation in practice",
           "explanation": "These are not the CIA triad."
         },
         {
-          "answer": "Containment, Investigation and Analysis \u2014 three responses that every incident response team performs in sequence regardless of the incident encountered at any point in practice",
+          "answer": "Containment, Investigation and Analysis — three responses that every incident response team performs in sequence regardless of the incident encountered at any point in practice",
           "explanation": "These are not the CIA triad; they relate loosely to incident response phases."
         }
       ]
@@ -319,7 +333,7 @@
       "variant": 19,
       "bloomsLevel": 2,
       "question": "Which one of the following best describes social engineering?",
-      "correct": "Manipulation of people through deception, urgency or authority to obtain information or action that compromises security in maths and everyday",
+      "correct": "Manipulation of people through deception, urgency or authority to obtain information or action that compromises security",
       "correctExplanation": "Social engineering targets human decision-making to compromise security.",
       "distractors": [
         {
@@ -363,7 +377,7 @@
       "variant": 21,
       "bloomsLevel": 2,
       "question": "Which one of the following best describes an insider threat?",
-      "correct": "A threat originating from a person with legitimate access \u2014 employee, contractor, partner \u2014 who may cause harm through malicious action or accidental error",
+      "correct": "A threat originating from a person with legitimate access — employee, contractor, partner — who may cause harm through malicious action or accidental error",
       "correctExplanation": "Insider threats originate from people with legitimate access, whether malicious or accidental.",
       "distractors": [
         {
@@ -385,7 +399,7 @@
       "variant": 22,
       "bloomsLevel": 2,
       "question": "Which one of the following best describes patching in the context of cybersecurity?",
-      "correct": "Applying vendor-released updates that address known vulnerabilities to reduce exposure to exploits of those disclosed flaws across running systems in",
+      "correct": "Applying vendor-released updates that address known vulnerabilities to reduce exposure to exploits of those disclosed flaws across running systems",
       "correctExplanation": "Patching applies vendor updates that address known vulnerabilities.",
       "distractors": [
         {
@@ -493,7 +507,7 @@
       "type": "cloze",
       "variant": 26,
       "bloomsLevel": 2,
-      "sentence": "The three common objectives of information security \u2014 Confidentiality, Integrity and {{blank:1}} \u2014 form the CIA triad; a software vulnerability where untrusted input alters a database query's structure is SQL {{blank:2}}.",
+      "sentence": "The three common objectives of information security — Confidentiality, Integrity and {{blank:1}} — form the CIA triad; a software vulnerability where untrusted input alters a database query's structure is SQL {{blank:2}}.",
       "blanks": [
         {
           "id": "1",
@@ -554,7 +568,7 @@
       "bloomsLevel": 3,
       "question": "Social engineering and technical exploitation never appear in the same cyber incident, because attackers use only one category of vector across any single incident observed in practice.",
       "correct": "False",
-      "correctExplanation": "Real incidents frequently chain social engineering with technical exploitation \u2014 phishing leading to credential theft and subsequent technical exploitation is a documented pattern.",
+      "correctExplanation": "Real incidents frequently chain social engineering with technical exploitation — phishing leading to credential theft and subsequent technical exploitation is a documented pattern.",
       "distractors": [
         {
           "answer": "True",
@@ -673,7 +687,7 @@
       "variant": 10,
       "bloomsLevel": 3,
       "question": "Which one of the following best explains why social engineering combines with technical exploitation in real incidents?",
-      "correct": "Human factors often open initial access \u2014 credentials, installation of malware \u2014 which then enables technical exploitation inside the environment in subsequent stages of the attack",
+      "correct": "Human factors often open initial access — credentials, installation of malware — which then enables technical exploitation inside the environment in subsequent stages of the attack",
       "correctExplanation": "Initial access through people enables downstream technical stages of attacks.",
       "distractors": [
         {
@@ -695,7 +709,7 @@
       "variant": 11,
       "bloomsLevel": 3,
       "question": "Which one of the following best explains why supply chain attacks can have wide impact?",
-      "correct": "A single upstream compromise propagates through trusted update channels to many downstream organisations that depend on the compromised component in",
+      "correct": "A single upstream compromise propagates through trusted update channels to many downstream organisations that depend on the compromised component",
       "correctExplanation": "Trust and dependency scale the impact of upstream compromise across many downstream users.",
       "distractors": [
         {
@@ -761,7 +775,7 @@
       "variant": 14,
       "bloomsLevel": 3,
       "question": "Which one of the following best explains why user education alone is not sufficient against phishing?",
-      "correct": "Well-crafted phishing under time pressure can deceive trained users, so technical controls \u2014 MFA, email filtering, link checking \u2014 complement education rather than being replaced by it",
+      "correct": "Well-crafted phishing under time pressure can deceive trained users, so technical controls — MFA, email filtering, link checking — complement education rather than being replaced by it",
       "correctExplanation": "Technical controls complement education; neither alone is sufficient against modern phishing.",
       "distractors": [
         {
@@ -2139,7 +2153,7 @@
       "variant": 8,
       "bloomsLevel": 5,
       "question": "Evaluate the argument that 'cybersecurity is purely a technical discipline and human factors are irrelevant'.",
-      "correct": "The argument ignores documented human factors \u2014 social engineering, user error, insider threat, culture of reporting \u2014 that substantially affect cybersecurity outcomes alongside technical controls",
+      "correct": "The argument ignores documented human factors — social engineering, user error, insider threat, culture of reporting — that substantially affect cybersecurity outcomes alongside technical controls",
       "correctExplanation": "Human factors substantially affect cybersecurity outcomes alongside technical controls.",
       "distractors": [
         {
@@ -2218,7 +2232,7 @@
         },
         {
           "answer": "The claim is fully correct because user behaviour is unaffected by password-rotation policy regardless of the policy's frequency or complexity requirements across any contemporary case in any sector",
-          "explanation": "User behaviour \u2014 reuse, writing down, simple increments \u2014 is substantially affected by rotation policy."
+          "explanation": "User behaviour — reuse, writing down, simple increments — is substantially affected by rotation policy."
         }
       ]
     },

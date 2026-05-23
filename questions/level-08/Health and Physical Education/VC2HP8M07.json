@@ -11,19 +11,41 @@
       "tf_rules": "1.0",
       "cloze_spec": "2.1",
       "addendum": "1.2"
-    }
+    },
+    "cleanupLog": [
+      {
+        "date": "2026-05-20T09:45:31Z",
+        "change": "Stripped trailing \" in\"/\" in maths\"/\" in maths and\" suffixes from 75 MC answer field(s) (convergent)."
+      },
+      {
+        "date": "2026-05-21T04:36:15Z",
+        "change": "Convergent strip of extended-junk suffixes from 154 MC answer field(s)."
+      },
+      {
+        "date": "2026-05-21T04:37:20Z",
+        "change": "Pass 3: stripped partial-fragment suffixes (\"across\", \"across many\", \"over\", \"and\", etc.) from 58 MC field(s)."
+      },
+      {
+        "date": "2026-05-21T04:39:38Z",
+        "change": "Pass 4: stripped junk suffixes anchored on \"in maths\"/\"everyday calculations\" from 6 field(s). Regex tightened to avoid affecting legitimate \"across many X\" / \"over many years X\" content."
+      },
+      {
+        "date": "2026-05-21T04:40:40Z",
+        "change": "Pass 5: stripped dangling \"across many\" / \"across many regions/societies\" / \"over many years\" from 2 field(s)."
+      }
+    ]
   },
   "_source": {
     "w": "We are learning to design and justify a physical activity plan that includes strategies for being more active and spending less time sitting.",
     "y": [
       "Personalised planning puts us in control of our own health and fitness.",
       "Justifying our plan develops evidence-based reasoning skills.",
-      "These planning skills transfer to many areas of life \u2014 study, career, personal goals."
+      "These planning skills transfer to many areas of life — study, career, personal goals."
     ],
     "eg": [
       "Designing a weekly physical activity plan tailored to our interests, abilities, and schedule.",
       "Justifying our choice of activities using knowledge of fitness components and health guidelines.",
-      "Including strategies for reducing sedentary time \u2014 active transport, standing breaks, screen time limits.",
+      "Including strategies for reducing sedentary time — active transport, standing breaks, screen time limits.",
       "Setting SMART goals for our physical activity plan.",
       "Implementing the plan for two weeks and evaluating its effectiveness.",
       "Adjusting our plan based on what we learned during implementation."
@@ -203,21 +225,21 @@
       "variant": 13,
       "bloomsLevel": 2,
       "question": "What is a physical activity plan?",
-      "correct": "A plan that sets out what activity you will do and when across a week in maths and everyday calculations across many problem types",
+      "correct": "A plan that sets out what activity you will do and when across a week",
       "correctExplanation": "An activity plan sets out what and when.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations across many",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations across many",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations across many",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -228,21 +250,21 @@
       "variant": 14,
       "bloomsLevel": 2,
       "question": "Why do goals make a plan stronger?",
-      "correct": "Goals make the plan more focused and easier to track over time in maths and everyday calculations across many problem types",
+      "correct": "Goals make the plan more focused and easier to track over time",
       "correctExplanation": "Goals focus a plan.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -253,21 +275,21 @@
       "variant": 15,
       "bloomsLevel": 2,
       "question": "What are SMART goals?",
-      "correct": "Specific, Measurable, Achievable, Relevant, and Time-bound goals for clear planning in maths and everyday calculations across many problem types",
+      "correct": "Specific, Measurable, Achievable, Relevant, and Time-bound goals for clear planning",
       "correctExplanation": "SMART goals have five features.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -278,21 +300,21 @@
       "variant": 16,
       "bloomsLevel": 2,
       "question": "What is sedentary time?",
-      "correct": "Time spent sitting or lying down while awake, like screen time in maths and everyday calculations across many problem types",
+      "correct": "Time spent sitting or lying down while awake, like screen time",
       "correctExplanation": "Sedentary time is sitting or lying down.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -303,21 +325,21 @@
       "variant": 17,
       "bloomsLevel": 2,
       "question": "Why is reducing sedentary time part of a healthy plan?",
-      "correct": "Less sitting time supports better physical and mental health for teens in maths and everyday calculations across many problem types",
+      "correct": "Less sitting time supports better physical and mental health for teens",
       "correctExplanation": "Reducing sedentary time is healthy.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -328,21 +350,21 @@
       "variant": 18,
       "bloomsLevel": 2,
       "question": "What is active transport?",
-      "correct": "Walking, cycling, scooting, or skating instead of using motor vehicles in maths and everyday calculations across many problem types",
+      "correct": "Walking, cycling, scooting, or skating instead of using motor vehicles",
       "correctExplanation": "Active transport adds activity.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -353,21 +375,21 @@
       "variant": 19,
       "bloomsLevel": 2,
       "question": "How can activity be tracked?",
-      "correct": "Through a phone, smartwatch, or simple paper log of activities and time in maths and everyday calculations across many problem types",
+      "correct": "Through a phone, smartwatch, or simple paper log of activities and time",
       "correctExplanation": "Tracking measures progress.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -378,21 +400,21 @@
       "variant": 20,
       "bloomsLevel": 2,
       "question": "How much daily activity do Australian guidelines recommend for teens?",
-      "correct": "60 minutes of moderate to vigorous activity each day for ages 5-17 in maths and everyday calculations across many problem types",
+      "correct": "60 minutes of moderate to vigorous activity each day for ages 5-17",
       "correctExplanation": "60 minutes daily for teens.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -403,21 +425,21 @@
       "variant": 21,
       "bloomsLevel": 2,
       "question": "Why is strength activity in a plan?",
-      "correct": "Strength activity supports muscle and bone health for teens at least 3 days a week in maths and everyday calculations across many problem types",
+      "correct": "Strength activity supports muscle and bone health for teens at least 3 days a week",
       "correctExplanation": "Strength activity supports muscles.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations across many",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations across many",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations across many",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -428,21 +450,21 @@
       "variant": 22,
       "bloomsLevel": 2,
       "question": "Why does variety in a plan matter?",
-      "correct": "Variety supports motivation and develops different fitness areas across the week in maths and everyday calculations across many problem types",
+      "correct": "Variety supports motivation and develops different fitness areas across the week",
       "correctExplanation": "Variety supports motivation.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -453,21 +475,21 @@
       "variant": 23,
       "bloomsLevel": 2,
       "question": "Why is rest and recovery part of a plan?",
-      "correct": "Rest lets the body adapt to activity and reduces injury risk in maths and everyday calculations across many problem types",
+      "correct": "Rest lets the body adapt to activity and reduces injury risk",
       "correctExplanation": "Rest is part of a plan.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -478,21 +500,21 @@
       "variant": 24,
       "bloomsLevel": 2,
       "question": "Why are realistic plans more likely to be followed?",
-      "correct": "Plans that match your time, equipment, and skill are easier to keep going in maths and everyday calculations across many problem types",
+      "correct": "Plans that match your time, equipment, and skill are easier to keep going",
       "correctExplanation": "Realistic plans are followed.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -703,21 +725,21 @@
       "variant": 9,
       "bloomsLevel": 3,
       "question": "Why does a plan with set times beat 'I'll exercise more'?",
-      "correct": "Set times in a plan are followed more than vague intentions in maths and everyday calculations across many problem types",
+      "correct": "Set times in a plan are followed more than vague intentions",
       "correctExplanation": "Set times beat vague intentions.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -728,21 +750,21 @@
       "variant": 10,
       "bloomsLevel": 3,
       "question": "Why are SMART goals more useful than vague goals?",
-      "correct": "Specific, measurable, achievable, relevant, time-bound goals are easier to track and meet in maths and everyday calculations across many problem types",
+      "correct": "Specific, measurable, achievable, relevant, time-bound goals are easier to track and meet",
       "correctExplanation": "SMART goals are easier to meet.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -753,21 +775,21 @@
       "variant": 11,
       "bloomsLevel": 3,
       "question": "Why does reducing sedentary time matter as well as adding activity?",
-      "correct": "Long sitting time has health effects even for people who do daily activity in maths and everyday calculations across many problem types",
+      "correct": "Long sitting time has health effects even for people who do daily activity",
       "correctExplanation": "Sitting time matters even with activity.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -778,21 +800,21 @@
       "variant": 12,
       "bloomsLevel": 3,
       "question": "Why is active transport such a useful strategy?",
-      "correct": "It adds incidental activity to the day without needing extra dedicated time in maths and everyday calculations across many problem types",
+      "correct": "It adds incidental activity to the day without needing extra dedicated time",
       "correctExplanation": "Active transport adds incidental activity.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -803,21 +825,21 @@
       "variant": 13,
       "bloomsLevel": 3,
       "question": "Why does tracking help with activity plans?",
-      "correct": "It measures progress and gives feedback that builds motivation over time in maths and everyday calculations across many problem types",
+      "correct": "It measures progress and gives feedback that builds motivation over time",
       "correctExplanation": "Tracking builds motivation.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -828,21 +850,21 @@
       "variant": 14,
       "bloomsLevel": 3,
       "question": "Why are 60 minutes of daily activity recommended for teens?",
-      "correct": "Teen years are key for building lifelong health and fitness habits in maths and everyday calculations across many problem types",
+      "correct": "Teen years are key for building lifelong health and fitness habits",
       "correctExplanation": "60 minutes builds lifelong habits.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -853,21 +875,21 @@
       "variant": 15,
       "bloomsLevel": 3,
       "question": "Why does strength activity belong in a teen plan?",
-      "correct": "It supports muscle and bone health and is recommended at least 3 days a week in maths and everyday calculations across many problem types",
+      "correct": "It supports muscle and bone health and is recommended at least 3 days a week",
       "correctExplanation": "Strength supports bone and muscle.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations across many",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations across many",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations across many",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -878,21 +900,21 @@
       "variant": 16,
       "bloomsLevel": 3,
       "question": "Why does variety reduce drop-out from activity plans?",
-      "correct": "Variety prevents boredom and works different fitness areas across the week in maths and everyday calculations across many problem types",
+      "correct": "Variety prevents boredom and works different fitness areas across the week",
       "correctExplanation": "Variety reduces drop-out.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -903,21 +925,21 @@
       "variant": 17,
       "bloomsLevel": 3,
       "question": "Why is rest planned alongside hard sessions?",
-      "correct": "Without rest, the body cannot adapt and risks overtraining and injury in maths and everyday calculations across many problem types",
+      "correct": "Without rest, the body cannot adapt and risks overtraining and injury",
       "correctExplanation": "Rest prevents overtraining.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -928,21 +950,21 @@
       "variant": 18,
       "bloomsLevel": 3,
       "question": "Why are realistic plans more sustainable?",
-      "correct": "Plans that match your time, equipment, and skill are easier to keep going in maths and everyday calculations across many problem types",
+      "correct": "Plans that match your time, equipment, and skill are easier to keep going",
       "correctExplanation": "Realistic plans are sustainable.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -953,21 +975,21 @@
       "variant": 19,
       "bloomsLevel": 3,
       "question": "How can First Nations games like Marngrook be part of an activity plan?",
-      "correct": "They build cardio, agility, and team skills while connecting to culture in maths and everyday calculations across many problem types",
+      "correct": "They build cardio, agility, and team skills while connecting to culture",
       "correctExplanation": "First Nations games build skills and culture.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -978,21 +1000,21 @@
       "variant": 20,
       "bloomsLevel": 3,
       "question": "Why is justifying a plan part of designing it?",
-      "correct": "Reasons for the choices show that the plan is built on health knowledge in maths and everyday calculations across many problem types",
+      "correct": "Reasons for the choices show that the plan is built on health knowledge",
       "correctExplanation": "Justifying shows knowledge.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1291,21 +1313,21 @@
       "variant": 3,
       "bloomsLevel": 4,
       "question": "Which best explains designing and justifying an activity plan?",
-      "correct": "A justified activity plan uses goals, variety, and strategies to be more active and less sedentary in maths and everyday calculations across many problem types",
+      "correct": "A justified activity plan uses goals, variety, and strategies to be more active and less sedentary",
       "correctExplanation": "Justified plans use goals and strategies.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations across many problem",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations across many problem",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations across many problem",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1316,21 +1338,21 @@
       "variant": 4,
       "bloomsLevel": 4,
       "question": "Why does a plan with set times beat vague intentions?",
-      "correct": "Set times in a plan are followed more than vague intentions in maths and everyday calculations across many problem types",
+      "correct": "Set times in a plan are followed more than vague intentions",
       "correctExplanation": "Set times beat vague intentions.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1341,21 +1363,21 @@
       "variant": 5,
       "bloomsLevel": 4,
       "question": "Why are SMART goals more useful?",
-      "correct": "Specific, measurable, achievable, relevant, time-bound goals are easier to track and meet in maths and everyday calculations across many problem types",
+      "correct": "Specific, measurable, achievable, relevant, time-bound goals are easier to track and meet",
       "correctExplanation": "SMART goals are easier to meet.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1366,21 +1388,21 @@
       "variant": 6,
       "bloomsLevel": 4,
       "question": "Why does reducing sedentary time matter alongside activity?",
-      "correct": "Long sitting time has health effects even for people who do daily activity in maths and everyday calculations across many problem types",
+      "correct": "Long sitting time has health effects even for people who do daily activity",
       "correctExplanation": "Sitting time matters even with activity.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1391,21 +1413,21 @@
       "variant": 7,
       "bloomsLevel": 4,
       "question": "Why is active transport such a useful strategy?",
-      "correct": "It adds incidental activity to the day without needing extra dedicated time in maths and everyday calculations across many problem types",
+      "correct": "It adds incidental activity to the day without needing extra dedicated time",
       "correctExplanation": "Active transport adds incidental activity.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1416,21 +1438,21 @@
       "variant": 8,
       "bloomsLevel": 4,
       "question": "Why does tracking help?",
-      "correct": "It measures progress and gives feedback that builds motivation over time in maths and everyday calculations across many problem types",
+      "correct": "It measures progress and gives feedback that builds motivation over time",
       "correctExplanation": "Tracking builds motivation.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1441,21 +1463,21 @@
       "variant": 9,
       "bloomsLevel": 4,
       "question": "Why is 60 minutes daily recommended for teens?",
-      "correct": "Teen years are key for building lifelong health and fitness habits in maths and everyday calculations across many problem types",
+      "correct": "Teen years are key for building lifelong health and fitness habits",
       "correctExplanation": "60 minutes builds lifelong habits.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1466,21 +1488,21 @@
       "variant": 10,
       "bloomsLevel": 4,
       "question": "Why does strength activity belong in a teen plan?",
-      "correct": "It supports muscle and bone health and is recommended at least 3 days a week in maths and everyday calculations across many problem types",
+      "correct": "It supports muscle and bone health and is recommended at least 3 days a week",
       "correctExplanation": "Strength supports bone and muscle.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations across many",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations across many",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday calculations across many",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1491,21 +1513,21 @@
       "variant": 11,
       "bloomsLevel": 4,
       "question": "Why does variety reduce drop-out?",
-      "correct": "Variety prevents boredom and works different fitness areas across the week in maths and everyday calculations across many problem types",
+      "correct": "Variety prevents boredom and works different fitness areas across the week",
       "correctExplanation": "Variety reduces drop-out.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1516,21 +1538,21 @@
       "variant": 12,
       "bloomsLevel": 4,
       "question": "Why is rest planned alongside hard sessions?",
-      "correct": "Without rest, the body cannot adapt and risks overtraining and injury in maths and everyday calculations across many problem types",
+      "correct": "Without rest, the body cannot adapt and risks overtraining and injury",
       "correctExplanation": "Rest prevents overtraining.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1541,21 +1563,21 @@
       "variant": 13,
       "bloomsLevel": 4,
       "question": "Why are realistic plans more sustainable?",
-      "correct": "Plans that match your time, equipment, and skill are easier to keep going in maths and everyday calculations across many problem types",
+      "correct": "Plans that match your time, equipment, and skill are easier to keep going",
       "correctExplanation": "Realistic plans are sustainable.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -1566,21 +1588,21 @@
       "variant": 14,
       "bloomsLevel": 4,
       "question": "Why is justifying a plan part of designing it?",
-      "correct": "Reasons for the choices show that the plan is built on health knowledge in maths and everyday calculations across many problem types",
+      "correct": "Reasons for the choices show that the plan is built on health knowledge",
       "correctExplanation": "Justifying shows knowledge.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2109,21 +2131,21 @@
       "variant": 1,
       "bloomsLevel": 5,
       "question": "Evaluate: how is an activity plan designed and justified?",
-      "correct": "A justified activity plan uses goals, variety, and strategies to be more active and less sedentary in maths and everyday calculations across many problem types",
+      "correct": "A justified activity plan uses goals, variety, and strategies to be more active and less sedentary",
       "correctExplanation": "Justified plans use goals and strategies.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations across many problem",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations across many problem",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations across many problem",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2134,21 +2156,21 @@
       "variant": 2,
       "bloomsLevel": 5,
       "question": "Justify: why do set times in a plan work?",
-      "correct": "Set times in a plan are followed more than vague intentions in maths and everyday calculations across many problem types",
+      "correct": "Set times in a plan are followed more than vague intentions",
       "correctExplanation": "Set times beat vague intentions.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2159,21 +2181,21 @@
       "variant": 3,
       "bloomsLevel": 5,
       "question": "Assess: when do SMART goals most help?",
-      "correct": "When you need a clear, trackable target to know whether you are on course in maths and everyday calculations across many problem types",
+      "correct": "When you need a clear, trackable target to know whether you are on course",
       "correctExplanation": "SMART goals are trackable.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations across",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations across",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations across",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2184,21 +2206,21 @@
       "variant": 4,
       "bloomsLevel": 5,
       "question": "Critique: a risk of focusing only on adding activity is what?",
-      "correct": "Long sitting time still has health effects even with daily activity in maths and everyday calculations across many problem types",
+      "correct": "Long sitting time still has health effects even with daily activity",
       "correctExplanation": "Sitting time matters even with activity.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2209,21 +2231,21 @@
       "variant": 5,
       "bloomsLevel": 5,
       "question": "Evaluate: how does active transport add to a plan?",
-      "correct": "It adds incidental activity to the day without needing extra dedicated time in maths and everyday calculations across many problem types",
+      "correct": "It adds incidental activity to the day without needing extra dedicated time",
       "correctExplanation": "Active transport adds incidental activity.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2234,21 +2256,21 @@
       "variant": 6,
       "bloomsLevel": 5,
       "question": "Justify: why does tracking build motivation?",
-      "correct": "It measures progress and gives feedback that builds motivation over time in maths and everyday calculations across many problem types",
+      "correct": "It measures progress and gives feedback that builds motivation over time",
       "correctExplanation": "Tracking builds motivation.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2259,21 +2281,21 @@
       "variant": 7,
       "bloomsLevel": 5,
       "question": "Assess: when does 60 minutes daily most matter?",
-      "correct": "When teen years build lifelong health and fitness habits in maths and everyday calculations across many problem types",
+      "correct": "When teen years build lifelong health and fitness habits",
       "correctExplanation": "Teen activity builds lifelong habits.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2284,21 +2306,21 @@
       "variant": 8,
       "bloomsLevel": 5,
       "question": "Critique: a risk of skipping strength activity is what?",
-      "correct": "It can leave bone and muscle health less supported in teen years in maths and everyday calculations across many problem types",
+      "correct": "It can leave bone and muscle health less supported in teen years",
       "correctExplanation": "Skipping strength leaves gaps.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2309,21 +2331,21 @@
       "variant": 9,
       "bloomsLevel": 5,
       "question": "Evaluate: how does variety improve a plan?",
-      "correct": "Variety prevents boredom and works different fitness areas across the week in maths and everyday calculations across many problem types",
+      "correct": "Variety prevents boredom and works different fitness areas across the week",
       "correctExplanation": "Variety reduces drop-out.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2334,21 +2356,21 @@
       "variant": 10,
       "bloomsLevel": 5,
       "question": "Justify: why is rest planned alongside hard sessions?",
-      "correct": "Without rest, the body cannot adapt and risks overtraining and injury in maths and everyday calculations across many problem types",
+      "correct": "Without rest, the body cannot adapt and risks overtraining and injury",
       "correctExplanation": "Rest prevents overtraining.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2359,21 +2381,21 @@
       "variant": 11,
       "bloomsLevel": 5,
       "question": "Assess: when are plans most sustainable?",
-      "correct": "When they match your time, equipment, and skill so you can keep going in maths and everyday calculations across many problem types",
+      "correct": "When they match your time, equipment, and skill so you can keep going",
       "correctExplanation": "Realistic plans are sustainable.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2384,21 +2406,21 @@
       "variant": 12,
       "bloomsLevel": 5,
       "question": "Critique: a risk of copying someone else's plan is what?",
-      "correct": "It may not match your time, equipment, skill, or goals in maths and everyday calculations across many problem types",
+      "correct": "It may not match your time, equipment, skill, or goals",
       "correctExplanation": "Copying may not match your situation.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2409,21 +2431,21 @@
       "variant": 13,
       "bloomsLevel": 5,
       "question": "Evaluate: how can First Nations games strengthen a plan?",
-      "correct": "They build cardio, agility, and team skills while connecting to culture in maths and everyday calculations across many problem types",
+      "correct": "They build cardio, agility, and team skills while connecting to culture",
       "correctExplanation": "First Nations games build skills and culture.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always relies on random outcomes across many regions over many years across many societies in maths and",
+          "answer": "A strategy that always relies on random outcomes",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }
@@ -2434,21 +2456,21 @@
       "variant": 14,
       "bloomsLevel": 5,
       "question": "Justify: why is justifying a plan part of designing it?",
-      "correct": "Reasons for the choices show that the plan is built on health knowledge in maths and everyday calculations across many problem types",
+      "correct": "Reasons for the choices show that the plan is built on health knowledge",
       "correctExplanation": "Justifying shows knowledge.",
       "distractors": [
         {
-          "answer": "A strategy that has no link to activity planning across many regions over many years across many in maths and everyday calculations",
+          "answer": "A strategy that has no link to activity planning",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every elected role across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every elected role",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         },
         {
-          "answer": "A strategy that always avoids every shared rule across many regions over many years across many societies in maths and everyday calculations",
+          "answer": "A strategy that always avoids every shared rule",
           "explanation": "This option does not fit the topic.",
           "misconceptionSource": "inferred"
         }

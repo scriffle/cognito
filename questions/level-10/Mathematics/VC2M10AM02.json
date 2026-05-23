@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10AM02",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to explore how the average rate of change approaches a limiting value as intervals become smaller.",
+    "generatedAt": "2026-05-19T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to explore how the average rate of change approaches a limiting value as intervals become smaller.",
+    "y": [
+      "This concept is the gateway to calculus — it introduces the idea that instantaneous rate of change (derivative) is the limit of average rates as the interval shrinks to zero.",
+      "Understanding rates of change helps us analyse real-world phenomena like speed, acceleration, growth rates and marginal costs.",
+      "This foundational idea prepares us for VCE Mathematical Methods and Specialist Mathematics."
+    ],
+    "eg": [
+      "Calculating the average rate of change of f(x) = x² between x = 1 and x = 3: (9–1)/(3–1) = 4.",
+      "Comparing average rates of change over increasingly smaller intervals approaching x = 2 and observing convergence.",
+      "Interpreting the average rate of change as the gradient of a secant line and the limit as the gradient of the tangent.",
+      "Using technology to zoom in on a curve and observe that it appears linear at high magnification.",
+      "Connecting average rate of change to real contexts: 'The average speed over 2 hours versus the instantaneous speed at a moment.'",
+      "Exploring how the gradient of the secant line approaches the gradient of the tangent line as the interval decreases."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The average rate of change of f(x) over [a, b] equals f(a) − f(b) divided by b − a.",
+      "correct": "False",
+      "correctExplanation": "The numerator should be f(b) − f(a), not f(a) − f(b). Reversing the order negates the result.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The correct formula uses f(b)−f(a) in the numerator, not f(a)−f(b)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The average rate of change of f(x) = x² between x = 1 and x = 3 is 2.",
+      "correct": "False",
+      "correctExplanation": "Average rate = (f(3)−f(1))/(3−1) = (9−1)/2 = 4, not 2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The correct calculation gives 8/2 = 4."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A secant line passes through exactly one point on a curve.",
+      "correct": "False",
+      "correctExplanation": "A secant line passes through two points on a curve. A tangent touches at one point.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Secant lines intersect the curve at two distinct points."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "As the interval width decreases, the average rate of change generally approaches the instantaneous rate of change.",
+      "correct": "True",
+      "correctExplanation": "The limiting value of the average rate of change as the interval shrinks to zero is the instantaneous rate.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This convergence is the fundamental idea behind derivatives."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The average rate of change of a function is always equal to the instantaneous rate at the midpoint.",
+      "correct": "False",
+      "correctExplanation": "This is only guaranteed for linear functions. For nonlinear functions, the average rate may not equal the instantaneous rate at the midpoint.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The MVT guarantees equality at some point in the interval, but not necessarily the midpoint."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The average rate of change is always equal to the instantaneous rate of change.",
+      "correct": "False",
+      "correctExplanation": "The average rate of change equals the instantaneous rate only for linear functions. For curved functions, they differ.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Only linear functions have constant rate of change throughout."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The formula for average rate of change is (f(b) − f(a))/(b − a).",
+      "correct": "True",
+      "correctExplanation": "This formula computes the change in output divided by the change in input, giving the secant gradient.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The formula represents rise over run between two function values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The average rate of change can be negative if the function decreases over the interval.",
+      "correct": "True",
+      "correctExplanation": "When f(b) < f(a), the numerator f(b)−f(a) is negative, giving a negative rate.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A negative rate indicates the function is decreasing on average."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "A tangent line to a curve intersects the curve at exactly two points.",
+      "correct": "False",
+      "correctExplanation": "A tangent line touches the curve at one point (locally). A secant passes through two points.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Tangent lines make contact at a single point of tangency."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "For a linear function f(x) = mx + c, the average rate of change over any interval is m.",
+      "correct": "True",
+      "correctExplanation": "For linear functions, (f(b)−f(a))/(b−a) = (mb+c−ma−c)/(b−a) = m(b−a)/(b−a) = m.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Linear functions have constant gradient m regardless of the interval."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The difference quotient (f(a+h)−f(a))/h gives the gradient of a tangent line.",
+      "correct": "False",
+      "correctExplanation": "The difference quotient gives the gradient of a secant line. The tangent gradient is the limit as h→0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Without taking the limit, the difference quotient represents a secant, not a tangent."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The units of average rate of change are determined by dividing output units by input units.",
+      "correct": "True",
+      "correctExplanation": "Rate of change has units of (output units)/(input units), such as metres per second.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Dividing the change in output by the change in input determines the rate units."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is the average rate of change of f(x) = x² from x = 2 to x = 4?",
+      "correct": "6, from (16 − 4)/(4 − 2) = 6",
+      "correctExplanation": "(f(4)−f(2))/(4−2) = (16−4)/2 = 12/2 = 6.",
+      "distractors": [
+        {
+          "answer": "8, from (16−4)/(4−2) with incorrect subtraction",
+          "explanation": "16−4 = 12, and 12/2 = 6, not 8."
+        },
+        {
+          "answer": "12, using only the numerator without dividing by the interval",
+          "explanation": "The average rate requires division by (b−a) = 2."
+        },
+        {
+          "answer": "4, using only the endpoint f(4)/4 = 16/4 instead of the formula",
+          "explanation": "The formula is (f(b)−f(a))/(b−a), not f(b)/b."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "What does a secant line represent on a graph?",
+      "correct": "A line passing through two points on the curve",
+      "correctExplanation": "A secant line connects two points on a curve, and its gradient gives the average rate of change.",
+      "distractors": [
+        {
+          "answer": "A line touching the curve at exactly one point only",
+          "explanation": "That describes a tangent line, not a secant."
+        },
+        {
+          "answer": "A horizontal line through the maximum of the curve",
+          "explanation": "Horizontal lines are not necessarily secants."
+        },
+        {
+          "answer": "The x-axis, which the curve may or may not cross",
+          "explanation": "The x-axis is a specific line, not a secant through two curve points."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What is the difference quotient for f(x) at x = a?",
+      "correct": "(f(a + h) − f(a))/h",
+      "correctExplanation": "The difference quotient measures the average rate of change over an interval of width h starting at a.",
+      "distractors": [
+        {
+          "answer": "f(a + h) − f(a), without the denominator h in the expression",
+          "explanation": "This gives the change in f, not the rate of change."
+        },
+        {
+          "answer": "(f(a) − f(h))/(a − h), subtracting h from f and a",
+          "explanation": "The difference quotient uses a+h, not a−h."
+        },
+        {
+          "answer": "f(a)/h, dividing the function value by the interval width",
+          "explanation": "The formula requires the change in f, not f(a) alone."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What happens to the secant line as the second point moves closer to the first?",
+      "correct": "It approaches the tangent line at the first point",
+      "correctExplanation": "As the interval shrinks, the secant rotates toward the tangent position.",
+      "distractors": [
+        {
+          "answer": "It becomes a horizontal line at the function value",
+          "explanation": "The secant approaches the tangent, not a horizontal line."
+        },
+        {
+          "answer": "It disappears because two identical points define no line",
+          "explanation": "In the limit, the secant becomes the tangent, not undefined."
+        },
+        {
+          "answer": "It becomes vertical as the two points merge together",
+          "explanation": "The secant approaches the tangent gradient, not a vertical line."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "The average rate of change of f(x) = 3x + 2 from x = 1 to x = 5 is:",
+      "correct": "3, the constant gradient of the linear function",
+      "correctExplanation": "(f(5)−f(1))/(5−1) = (17−5)/4 = 12/4 = 3.",
+      "distractors": [
+        {
+          "answer": "5, computed from f(5)/5 = 17/5 instead of using the formula",
+          "explanation": "The rate is (f(b)−f(a))/(b−a), not f(b)/b."
+        },
+        {
+          "answer": "12, using only the change in f without dividing by the interval",
+          "explanation": "12 is the numerator; dividing by 4 gives 3."
+        },
+        {
+          "answer": "2, using the y-intercept as the rate of change for the line",
+          "explanation": "The rate of change equals the gradient m = 3, not the y-intercept."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which line has gradient equal to the instantaneous rate of change at a point?",
+      "correct": "The tangent line at that point on the curve",
+      "correctExplanation": "The tangent line gradient equals the derivative, which is the instantaneous rate of change.",
+      "distractors": [
+        {
+          "answer": "The secant line through that point and any other point",
+          "explanation": "The secant gives the average rate, not instantaneous."
+        },
+        {
+          "answer": "The x-axis, where the rate is always zero",
+          "explanation": "The x-axis has zero gradient, not the instantaneous rate."
+        },
+        {
+          "answer": "The vertical line through the point on the curve",
+          "explanation": "Vertical lines have undefined gradient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "For f(x) = x³, what is the average rate of change from x = 1 to x = 2?",
+      "correct": "7, from (8 − 1)/(2 − 1) = 7",
+      "correctExplanation": "(f(2)−f(1))/(2−1) = (8−1)/1 = 7.",
+      "distractors": [
+        {
+          "answer": "3, using 3x² at x = 1 as the instantaneous rate instead",
+          "explanation": "3(1)² = 3 is the derivative at x = 1, not the average rate."
+        },
+        {
+          "answer": "8, using only f(2) = 8 without subtracting f(1)",
+          "explanation": "The average rate requires (f(2)−f(1))/(2−1) = 7."
+        },
+        {
+          "answer": "4.5, averaging f(1) and f(2) instead of computing the rate",
+          "explanation": "(1+8)/2 = 4.5 is the average of the outputs, not the rate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What are the units of average rate of change if distance is in metres and time is in seconds?",
+      "correct": "Metres per second (m/s)",
+      "correctExplanation": "Rate of change divides change in output (metres) by change in input (seconds).",
+      "distractors": [
+        {
+          "answer": "Metres squared per second (m²/s) for the rate calculation",
+          "explanation": "Rate units are output/input = m/s, not m²/s."
+        },
+        {
+          "answer": "Seconds per metre (s/m), inverting the standard rate units",
+          "explanation": "Rate of change uses output over input, not input over output."
+        },
+        {
+          "answer": "Metres times seconds (m·s), multiplying both quantities together",
+          "explanation": "Rate of change is a ratio, not a product of units."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What does a zero average rate of change over an interval mean?",
+      "correct": "The function has the same value at both endpoints of the interval",
+      "correctExplanation": "If f(a) = f(b), then (f(b)−f(a))/(b−a) = 0.",
+      "distractors": [
+        {
+          "answer": "The function is always zero throughout the entire interval",
+          "explanation": "f(a) = f(b) does not require f(x) = 0 for all x."
+        },
+        {
+          "answer": "The function has no turning points in the interval",
+          "explanation": "A zero average rate does not prevent turning points."
+        },
+        {
+          "answer": "The function is undefined at both endpoints of the interval here here",
+          "explanation": "Zero rate means equal endpoint values, not undefined values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What is the average rate of change of f(x) = 5 from x = 0 to x = 10?",
+      "correct": "0, because a constant function has no change in output",
+      "correctExplanation": "(5−5)/(10−0) = 0/10 = 0.",
+      "distractors": [
+        {
+          "answer": "5, using the function value as the rate of change directly",
+          "explanation": "The rate is (f(b)−f(a))/(b−a) = 0, not the function value."
+        },
+        {
+          "answer": "0.5, dividing 5 by 10 instead of computing the rate correctly",
+          "explanation": "The numerator is f(10)−f(0) = 0, not f(10) = 5."
+        },
+        {
+          "answer": "10, using the interval width as the rate of change value",
+          "explanation": "The rate of change is 0; the interval width is the denominator."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "In the difference quotient (f(a+h)−f(a))/h, what does h represent?",
+      "correct": "The width of the interval from a to a + h",
+      "correctExplanation": "h is the horizontal distance between the two points used to compute the secant gradient.",
+      "distractors": [
+        {
+          "answer": "The height of the function at x = a on the graph",
+          "explanation": "h is the interval width, not the function value."
+        },
+        {
+          "answer": "The gradient of the tangent line at x = a directly",
+          "explanation": "h is a parameter in the formula, not the gradient."
+        },
+        {
+          "answer": "The y-intercept of the secant line between the two points",
+          "explanation": "h measures the input interval, not a y-intercept."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which statement about rate of change is correct?",
+      "correct": "Average rate of change is computed over an interval",
+      "correctExplanation": "The average rate uses two points, while instantaneous rate uses a limit at one point.",
+      "distractors": [
+        {
+          "answer": "Instantaneous rate is computed over a wide interval",
+          "explanation": "Instantaneous rate is at a single point via a limit."
+        },
+        {
+          "answer": "Average rate requires calculus to compute its value",
+          "explanation": "Average rate uses basic algebra: (f(b)−f(a))/(b−a)."
+        },
+        {
+          "answer": "Both rates are always equal for every function type",
+          "explanation": "They are equal only for linear functions."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The average rate of change of f between x = a and x = b is (f(b) − f(a))/({{blank:1}} − a). This equals the gradient of the {{blank:2}} line through those points.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "b",
+          "correctExplanation": "The denominator is the change in x: b − a.",
+          "distractors": [
+            {
+              "answer": "f(b)",
+              "explanation": "The denominator uses x-values, not function values.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "h",
+              "explanation": "h is used in the difference quotient form, not this form.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "secant",
+          "correctExplanation": "The line through two points on a curve is called a secant.",
+          "distractors": [
+            {
+              "answer": "tangent",
+              "explanation": "A tangent touches at one point; a secant passes through two.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "normal",
+              "explanation": "A normal is perpendicular to the tangent, not through two curve points.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "As the interval width h approaches {{blank:1}}, the difference quotient approaches the {{blank:2}} rate of change.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "Taking h→0 shrinks the interval to a single point.",
+          "distractors": [
+            {
+              "answer": "infinity",
+              "explanation": "Making h large gives average rate over a wide interval.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "one",
+              "explanation": "h→1 gives a specific average rate, not the limiting value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "instantaneous",
+          "correctExplanation": "The limit of the average rate as h→0 gives the instantaneous rate.",
+          "distractors": [
+            {
+              "answer": "average",
+              "explanation": "The average rate is the starting point, not the limit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "maximum",
+              "explanation": "The limit gives the exact rate at a point, not necessarily the maximum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "For f(x) = x², the average rate of change from x = 2 to x = 2.1 is closer to 4 than the average rate from x = 2 to x = 3.",
+      "correct": "True",
+      "correctExplanation": "From 2 to 2.1: (4.41−4)/0.1 = 4.1. From 2 to 3: (9−4)/1 = 5. 4.1 is closer to 4 (the derivative at x=2) than 5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Smaller intervals give average rates closer to the instantaneous rate of 2(2) = 4."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "If f(x) = x³, the average rate over [1, 3] equals the instantaneous rate at x = 2.",
+      "correct": "False",
+      "correctExplanation": "Average rate = (27−1)/(3−1) = 13. Instantaneous rate f'(2) = 3(4) = 12. They are not equal.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "For x³ over [1,3], average rate is 13 and f'(2) = 12; they differ."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "If the average rate of change over every interval is constant, the function must be quadratic.",
+      "correct": "False",
+      "correctExplanation": "A constant average rate of change over every interval means the function is linear, not quadratic.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Only linear functions have the same rate of change over all intervals."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The instantaneous rate of change of f(x) = x² at x = 3 is 9.",
+      "correct": "False",
+      "correctExplanation": "The derivative of x² is 2x. At x = 3: f'(3) = 6, not 9. The value 9 is f(3), not f'(3).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "f(3) = 9 is the function value; f'(3) = 6 is the instantaneous rate."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "A function with a positive average rate of change over [a, b] must be increasing at every point in [a, b].",
+      "correct": "False",
+      "correctExplanation": "A positive average rate means f(b) > f(a), but the function can decrease within [a, b] and still have f(b) > f(a).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The function need only have a net increase, not increase at every point."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "For f(x) = 1/x, the average rate of change from x = 1 to x = 2 is −0.5.",
+      "correct": "True",
+      "correctExplanation": "(f(2)−f(1))/(2−1) = (0.5−1)/1 = −0.5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The function decreases from 1 to 0.5 over this interval, giving a negative rate."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The difference quotient (f(a+h)−f(a))/h becomes the derivative only when h is set equal to 1.",
+      "correct": "False",
+      "correctExplanation": "The derivative is the limit of the difference quotient as h→0, not when h = 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Setting h = 1 gives a specific average rate, not the instantaneous rate."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The average rate of change of f(x) = x² from x = −1 to x = 1 is zero.",
+      "correct": "True",
+      "correctExplanation": "(f(1)−f(−1))/(1−(−1)) = (1−1)/2 = 0. The function has the same value at both endpoints.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "f(−1) = f(1) = 1, so the change in output is zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "The average rate of change of f(x) = x² from x = 2 to x = 2 + h is:",
+      "correct": "4 + h, from ((2+h)² − 4)/h",
+      "correctExplanation": "((2+h)²−4)/h = (4+4h+h²−4)/h = (4h+h²)/h = 4+h.",
+      "distractors": [
+        {
+          "answer": "4, ignoring the h term in the simplified result",
+          "explanation": "The average rate is 4+h, which equals 4 only when h = 0."
+        },
+        {
+          "answer": "2h + 4, reversing the order of terms incorrectly",
+          "explanation": "The correct expansion gives 4+h, not 2h+4."
+        },
+        {
+          "answer": "h², keeping only the squared term from the expansion",
+          "explanation": "h² is one term of (2+h)²−4; the full result is 4h+h²."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "As h→0, the average rate of change of f(x) = x² at x = 3 approaches:",
+      "correct": "6, the instantaneous rate f'(3) = 2(3)",
+      "correctExplanation": "The difference quotient gives 6+h, which approaches 6 as h→0.",
+      "distractors": [
+        {
+          "answer": "9, the function value f(3) = 3² rather than the derivative",
+          "explanation": "9 is f(3), not f'(3); the derivative is 2(3) = 6."
+        },
+        {
+          "answer": "3, half the instantaneous rate at that point",
+          "explanation": "The derivative is 2x = 6 at x = 3, not 3."
+        },
+        {
+          "answer": "0, because the interval width approaches zero in the limit",
+          "explanation": "h→0 does not make the rate zero; it makes it approach f'(3) = 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "For f(x) = x³, the average rate of change from x = 1 to x = 1 + h simplifies to:",
+      "correct": "3 + 3h + h², from ((1+h)³−1)/h",
+      "correctExplanation": "(1+3h+3h²+h³−1)/h = (3h+3h²+h³)/h = 3+3h+h².",
+      "distractors": [
+        {
+          "answer": "1 + h, using a linear approximation for the cube",
+          "explanation": "x³ expands to 1+3h+3h²+h³, giving 3+3h+h² after division."
+        },
+        {
+          "answer": "3h², keeping only the middle term of the expansion",
+          "explanation": "All terms contribute: 3+3h+h², not just 3h²."
+        },
+        {
+          "answer": "h³, using only the highest-degree term from the expansion",
+          "explanation": "After dividing by h, h³/h = h², which is only part of the result."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "The average rate of change of f(x) = √x from x = 4 to x = 9 is:",
+      "correct": "0.2, from (3 − 2)/(9 − 4) = 1/5",
+      "correctExplanation": "(√9−√4)/(9−4) = (3−2)/5 = 1/5 = 0.2.",
+      "distractors": [
+        {
+          "answer": "0.5, computing (9−4)/(√9−√4) with numerator and denominator swapped",
+          "explanation": "The formula is (f(b)−f(a))/(b−a), not the reciprocal."
+        },
+        {
+          "answer": "1, from (3−2)/(3−2) = 1 using only the function values",
+          "explanation": "The denominator must be 9−4 = 5, not 3−2 = 1."
+        },
+        {
+          "answer": "5, using only the denominator 9−4 as the rate directly",
+          "explanation": "5 is the interval width, not the rate of change."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why does the average rate of change of f(x) = x² from x = 2 to x = 2.01 give a better estimate of f'(2) than from x = 2 to x = 5?",
+      "correct": "Smaller intervals produce averages closer to the instantaneous rate",
+      "correctExplanation": "As the interval narrows, the secant approaches the tangent, giving a better approximation.",
+      "distractors": [
+        {
+          "answer": "Larger intervals always overestimate the true derivative",
+          "explanation": "Larger intervals may overestimate or underestimate depending on concavity."
+        },
+        {
+          "answer": "The formula changes when the interval is smaller in size",
+          "explanation": "The formula (f(b)−f(a))/(b−a) is the same regardless of interval size."
+        },
+        {
+          "answer": "Smaller intervals use more decimal places in the calculation here here",
+          "explanation": "Precision of the estimate comes from the interval size, not decimal places."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A car travels 100 km in 2 hours. What does the average rate of change of distance with respect to time represent?",
+      "correct": "The average speed of 50 km/h over the journey",
+      "correctExplanation": "Average rate = Δdistance/Δtime = 100/2 = 50 km/h.",
+      "distractors": [
+        {
+          "answer": "The maximum speed reached during the two-hour journey",
+          "explanation": "Average speed is the total distance divided by total time, not the maximum."
+        },
+        {
+          "answer": "The acceleration of the car over the two-hour period",
+          "explanation": "Acceleration is the rate of change of speed, not distance."
+        },
+        {
+          "answer": "The total distance divided by the final speed of the car",
+          "explanation": "Average speed uses total distance/total time, not distance/final speed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "For f(x) = x² + 3x, the difference quotient (f(a+h)−f(a))/h simplifies to:",
+      "correct": "2a + 3 + h",
+      "correctExplanation": "f(a+h) = (a+h)²+3(a+h) = a²+2ah+h²+3a+3h. f(a) = a²+3a. Difference: 2ah+h²+3h. Divide by h: 2a+h+3.",
+      "distractors": [
+        {
+          "answer": "2a + 3, omitting the h term from the simplification",
+          "explanation": "The h term remains until the limit is taken; the quotient is 2a+3+h."
+        },
+        {
+          "answer": "a² + 3a + h, keeping the original function terms",
+          "explanation": "The difference quotient simplifies the squared terms."
+        },
+        {
+          "answer": "2ah + 3h, without dividing by h in the final step",
+          "explanation": "After subtracting f(a), the numerator is 2ah+h²+3h; dividing by h gives 2a+h+3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "The average rate of change of f(x) = 2^x from x = 0 to x = 3 is:",
+      "correct": "7/3, from (8 − 1)/3",
+      "correctExplanation": "(2³−2⁰)/(3−0) = (8−1)/3 = 7/3 ≈ 2.33.",
+      "distractors": [
+        {
+          "answer": "8/3, using f(3) = 8 without subtracting f(0) = 1",
+          "explanation": "The numerator must be f(3)−f(0) = 8−1 = 7."
+        },
+        {
+          "answer": "3, from (8−1)/(3−1) with the wrong denominator used",
+          "explanation": "The denominator is 3−0 = 3, giving 7/3."
+        },
+        {
+          "answer": "1/3, dividing f(0) by the interval width of 3",
+          "explanation": "The formula uses f(b)−f(a) = 7, not f(a) = 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "If the average rate of change of f over [1, 5] is 3, what is f(5) − f(1)?",
+      "correct": "12, from 3 × (5 − 1) = 12",
+      "correctExplanation": "Average rate = (f(5)−f(1))/(5−1) = 3, so f(5)−f(1) = 3 × 4 = 12.",
+      "distractors": [
+        {
+          "answer": "3, assuming the average rate equals the change in f directly",
+          "explanation": "The change in f is rate × interval width = 3 × 4 = 12."
+        },
+        {
+          "answer": "15, from 3 × 5 using the right endpoint only",
+          "explanation": "The interval width is 5−1 = 4, not 5."
+        },
+        {
+          "answer": "4, using only the interval width 5 − 1 as the answer",
+          "explanation": "4 is the interval width; the change in f is 3 × 4 = 12."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "The average rate of change of a quadratic function over [a, b] equals the instantaneous rate at which x-value?",
+      "correct": "The midpoint (a + b)/2, by the Mean Value Theorem",
+      "correctExplanation": "For a quadratic, the average rate over [a,b] equals the derivative at x = (a+b)/2.",
+      "distractors": [
+        {
+          "answer": "The left endpoint x = a of the interval only",
+          "explanation": "The instantaneous rate at a does not generally equal the average rate."
+        },
+        {
+          "answer": "The right endpoint x = b of the interval only",
+          "explanation": "The instantaneous rate at b does not generally equal the average rate."
+        },
+        {
+          "answer": "No such point exists for quadratic functions in general",
+          "explanation": "For quadratics, the midpoint always gives the matching instantaneous rate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "What does a negative average rate of change indicate about a function?",
+      "correct": "The function decreases on average over the interval",
+      "correctExplanation": "A negative rate means f(b) < f(a), so the output decreases overall.",
+      "distractors": [
+        {
+          "answer": "The function is always negative throughout the interval",
+          "explanation": "Negative rate means the output decreases, not that f(x) < 0."
+        },
+        {
+          "answer": "The function has no x-intercepts in the interval",
+          "explanation": "x-intercepts are unrelated to the sign of the average rate."
+        },
+        {
+          "answer": "The interval width b − a is negative in the calculation",
+          "explanation": "b > a is assumed; the negative rate comes from f(b) < f(a)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "The average rate of change of f(x) = |x| from x = −3 to x = 3 is:",
+      "correct": "0, because f(−3) = f(3) = 3",
+      "correctExplanation": "(|3|−|−3|)/(3−(−3)) = (3−3)/6 = 0.",
+      "distractors": [
+        {
+          "answer": "1, from the slope of the right branch of the V-shape",
+          "explanation": "The right branch has slope 1, but the average over [−3,3] is 0."
+        },
+        {
+          "answer": "−1, from the slope of the left branch of the V-shape",
+          "explanation": "The left branch has slope −1, but the average over [−3,3] is 0."
+        },
+        {
+          "answer": "6, from the interval width 3 − (−3) = 6 alone",
+          "explanation": "6 is the denominator; the numerator is 0, giving rate = 0."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "For f(x) = x², the difference quotient from x = a is ((a+h)² − a²)/h = (2ah + h²)/h = {{blank:1}}. As h→0, this approaches {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2a + h",
+          "correctExplanation": "Dividing 2ah+h² by h gives 2a+h.",
+          "distractors": [
+            {
+              "answer": "2a",
+              "explanation": "2a is the limit, not the quotient before taking h→0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a + h",
+              "explanation": "The coefficient of a is 2, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2a",
+          "correctExplanation": "As h→0, 2a+h→2a, which is the derivative of x² at x=a.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The limit is 2a, not 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a",
+              "explanation": "The derivative of x² is 2x, giving 2a at x = a.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The secant line through (a, f(a)) and (b, f(b)) has gradient equal to the {{blank:1}} rate of change. As b→a, this gradient approaches the {{blank:2}} rate of change.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "average",
+          "correctExplanation": "The secant gradient equals the average rate of change.",
+          "distractors": [
+            {
+              "answer": "instantaneous",
+              "explanation": "The instantaneous rate is the limit, not the secant gradient.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "maximum",
+              "explanation": "The secant gradient is the average, not the maximum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "instantaneous",
+          "correctExplanation": "The limit of the secant gradient is the derivative.",
+          "distractors": [
+            {
+              "answer": "average",
+              "explanation": "The average rate is the starting point, not the limit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The limit is the derivative value, which is generally not zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "For f(x) = x³, the average rate from x = 1 to x = 1+h is (3h + 3h² + h³)/h = {{blank:1}}. The limit as h→0 is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3 + 3h + h²",
+          "correctExplanation": "Dividing each term by h gives 3+3h+h².",
+          "distractors": [
+            {
+              "answer": "3h + h²",
+              "explanation": "Only two of the three terms are included.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "h²",
+              "explanation": "This is only the last term after division.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "As h→0, 3+3h+h²→3, which is f'(1) = 3(1)² = 3.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "f(1) = 1, but f'(1) = 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "The limit is 3, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "A car travels 150 km in 3 hours. The average speed is {{blank:1}} km/h. This is the average rate of change of {{blank:2}} with respect to time.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "150/3 = 50 km/h.",
+          "distractors": [
+            {
+              "answer": "450",
+              "explanation": "450 = 150 × 3, multiplying instead of dividing.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "75",
+              "explanation": "75 = 150/2, using wrong denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "distance",
+          "correctExplanation": "Average speed is the rate of change of distance over time.",
+          "distractors": [
+            {
+              "answer": "speed",
+              "explanation": "Speed is the quantity being measured, not the changing variable.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "acceleration",
+              "explanation": "Acceleration is the rate of change of speed, not distance.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "For f(x) = √x, the average rate from x = 4 to x = 9 is (√9 − √4)/(9 − 4) = {{blank:1}}/{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "√9 − √4 = 3 − 2 = 1.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 is 9−4, the denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is √9, not the difference √9−√4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "9 − 4 = 5.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1 is the numerator √9−√4, not the denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is √9, not the interval width.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "If the average rate of change of f over [2, 6] is 5, then f(6) − f(2) = 5 × {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "The interval width is 6 − 2 = 4.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is the right endpoint, not the interval width.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the left endpoint, not the interval width.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "20",
+          "correctExplanation": "5 × 4 = 20.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10 = 5 × 2, using the left endpoint.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "30 = 5 × 6, using the right endpoint.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The average rate of change of f(x) = x² from x = 3 to x = 3.001 is approximately 6.001, which is close to the derivative f'(3) = 6.",
+      "correct": "True",
+      "correctExplanation": "((3.001)²−9)/0.001 = (9.006001−9)/0.001 = 0.006001/0.001 = 6.001. f'(3) = 6.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Small intervals produce average rates very close to the derivative."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The average rate of change of f(x) = x² + 1 from x = a to x = a + h is 2a + h + 1.",
+      "correct": "False",
+      "correctExplanation": "f(a+h)−f(a) = (a+h)²+1−a²−1 = 2ah+h². Dividing by h: 2a+h. The +1 cancels out.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The constant term cancels in the subtraction, so the rate is 2a+h, not 2a+h+1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Estimate f'(2) for f(x) = x³ using h = 0.01.",
+      "correct": "12.0601, from (2.01³ − 8)/0.01",
+      "correctExplanation": "2.01³ = 8.120601. (8.120601−8)/0.01 = 0.120601/0.01 = 12.0601. f'(2) = 12.",
+      "distractors": [
+        {
+          "answer": "8.0601, subtracting only f(2) = 8 from the wrong numerator",
+          "explanation": "2.01³ = 8.120601, giving (8.120601−8)/0.01 = 12.0601."
+        },
+        {
+          "answer": "12, using the exact derivative without the approximation",
+          "explanation": "12 is f'(2) exactly; the difference quotient gives 12.0601."
+        },
+        {
+          "answer": "6.01, using 2x instead of 3x² for the derivative formula",
+          "explanation": "The derivative of x³ is 3x², not 2x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "The height of a ball is h(t) = 20t − 5t². What is the average speed from t = 1 to t = 3?",
+      "correct": "0 m/s, from (h(3)−h(1))/(3−1) = (15−15)/2",
+      "correctExplanation": "h(1) = 20−5 = 15. h(3) = 60−45 = 15. (15−15)/2 = 0.",
+      "distractors": [
+        {
+          "answer": "10 m/s, using the initial velocity h'(0) = 20 instead",
+          "explanation": "The average rate requires (h(3)−h(1))/(3−1) = 0."
+        },
+        {
+          "answer": "15 m/s, using only h(1) = 15 as the average speed",
+          "explanation": "15 is the height, not the speed; the average speed is 0."
+        },
+        {
+          "answer": "−10 m/s, using the derivative h'(2) = 20−20 = 0 at the midpoint",
+          "explanation": "The derivative at t=2 is 0, and the average rate is also 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "For f(x) = 1/x, what is the average rate of change from x = 2 to x = 2 + h?",
+      "correct": "−1/(2(2+h)), from (1/(2+h) − 1/2)/h",
+      "correctExplanation": "(1/(2+h)−1/2)/h = (2−(2+h))/(2(2+h)h) = −h/(2(2+h)h) = −1/(2(2+h)).",
+      "distractors": [
+        {
+          "answer": "−1/4, using only the limit as h→0 instead",
+          "explanation": "−1/4 is the derivative f'(2); the average rate is −1/(2(2+h))."
+        },
+        {
+          "answer": "1/(2+h), omitting the negative sign from the calculation",
+          "explanation": "The function decreases, so the rate is negative."
+        },
+        {
+          "answer": "−h/2, simplifying incorrectly by dropping the (2+h) term",
+          "explanation": "The denominator is 2(2+h), not just 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A population grows from 1000 to 1500 in 10 years. What is the average rate of change?",
+      "correct": "50 people per year",
+      "correctExplanation": "(1500−1000)/10 = 500/10 = 50.",
+      "distractors": [
+        {
+          "answer": "150 people per year, dividing 1500 by 10 directly",
+          "explanation": "The formula uses the change 1500−1000 = 500, not 1500."
+        },
+        {
+          "answer": "500 people per year, using only the change without dividing",
+          "explanation": "The change is 500, but dividing by 10 years gives 50."
+        },
+        {
+          "answer": "100 people per year, averaging the two population values",
+          "explanation": "The average population is 1250, but the rate is Δpop/Δtime = 50."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "For f(x) = x² − 4x, the difference quotient simplifies to 2a − 4 + h. What is f'(3)?",
+      "correct": "2, from the limit as h→0 giving 2(3)−4 = 2",
+      "correctExplanation": "As h→0, 2a−4+h → 2a−4. At a = 3: 2(3)−4 = 2.",
+      "distractors": [
+        {
+          "answer": "5, using 2a−4+h at a=3, h=1 instead of h=0",
+          "explanation": "The derivative requires h→0, giving 2(3)−4 = 2."
+        },
+        {
+          "answer": "−1, from f(3) = 9−12 = −3 divided by 3",
+          "explanation": "f(3)/3 = −1 is not the derivative; f'(3) = 2."
+        },
+        {
+          "answer": "0, assuming the derivative is zero at x = 3",
+          "explanation": "f'(x) = 2x−4 = 0 at x = 2, not x = 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Compute the average rate of change of f(x) = sin(x) from x = 0 to x = π/2 (use sin(0) = 0, sin(π/2) = 1).",
+      "correct": "2/π, from (1−0)/(π/2−0)",
+      "correctExplanation": "Average rate = (1−0)/(π/2) = 1/(π/2) = 2/π ≈ 0.637.",
+      "distractors": [
+        {
+          "answer": "1, using only the change in f(x)",
+          "explanation": "The numerator is 1, but dividing by π/2 gives 2/π."
+        },
+        {
+          "answer": "π/2, using the interval width as the rate",
+          "explanation": "π/2 is the denominator, not the rate."
+        },
+        {
+          "answer": "0, since sin(0) = 0 at the start",
+          "explanation": "The rate is (f(b)−f(a))/(b−a) = 1/(π/2) = 2/π, not zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A student computes the average rate of change of f(x) = x² at x = 1 for h = 1, 0.1, 0.01, 0.001. Which sequence results?",
+      "correct": "3, 2.1, 2.01, 2.001 — approaching the limit 2",
+      "correctExplanation": "2+h gives: 2+1=3, 2+0.1=2.1, 2+0.01=2.01, 2+0.001=2.001.",
+      "distractors": [
+        {
+          "answer": "2, 2, 2, 2 — constant at the derivative value for all h",
+          "explanation": "The average rate is 2+h, not exactly 2 for nonzero h."
+        },
+        {
+          "answer": "4, 2.2, 2.02, 2.002 — starting from 4 and decreasing",
+          "explanation": "At h=1: 2+1=3, not 4."
+        },
+        {
+          "answer": "1, 1.1, 1.01, 1.001 — approaching 1 from above",
+          "explanation": "The formula gives 2+h, not 1+h."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "For f(x) = 3x² + 2, what is the difference quotient?",
+      "correct": "6a + 3h, from (3(a+h)² + 2 − 3a² − 2)/h",
+      "correctExplanation": "3(a+h)²+2−3a²−2 = 3(2ah+h²) = 6ah+3h². Divide by h: 6a+3h.",
+      "distractors": [
+        {
+          "answer": "6a + 2, including the constant term in the result",
+          "explanation": "The constant +2 cancels in the subtraction."
+        },
+        {
+          "answer": "3a + h, using the wrong coefficient in the expansion",
+          "explanation": "The coefficient of a is 6, from 3 × 2a = 6a."
+        },
+        {
+          "answer": "6a, omitting the h term from the quotient result",
+          "explanation": "6a is the derivative (limit), not the quotient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "The temperature T(t) = 20 + 3t − 0.5t² at t = 2 and t = 6. What is the average rate of temperature change?",
+      "correct": "−1°C per hour, from (T(6)−T(2))/4",
+      "correctExplanation": "T(2)=20+6−2=24. T(6)=20+18−18=20. (20−24)/4=−4/4=−1.",
+      "distractors": [
+        {
+          "answer": "1°C per hour, reversing the sign of the calculation",
+          "explanation": "T(6)−T(2) = 20−24 = −4, giving −1, not +1."
+        },
+        {
+          "answer": "−4°C per hour, omitting the division by 4 in the formula",
+          "explanation": "−4 is the change in T; dividing by 4 gives −1."
+        },
+        {
+          "answer": "0°C per hour, averaging T(2) and T(6) instead of computing rate",
+          "explanation": "The average of 24 and 20 is 22, but the rate is −1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "For what value of a does the average rate of change of f(x) = x² from x = a to x = a + 2 equal 10?",
+      "correct": "a = 4, from solving 2a + 2 = 10",
+      "correctExplanation": "Average rate = 2a + h = 2a + 2. Setting 2a+2 = 10: a = 4.",
+      "distractors": [
+        {
+          "answer": "a = 5, from solving 2a = 10 without the h term",
+          "explanation": "The average rate is 2a+2, not 2a; solving gives a = 4."
+        },
+        {
+          "answer": "a = 3, from solving a + 2 = 5 with the wrong equation",
+          "explanation": "The equation is 2a+2 = 10, giving a = 4."
+        },
+        {
+          "answer": "a = 8, from solving a + 2 = 10 directly for a",
+          "explanation": "a+2 = 10 gives a = 8, but the correct equation is 2a+2 = 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "The graph of f(x) = x² has a tangent at x = 1 with gradient 2. A secant through x = 1 and x = 1.5 has gradient:",
+      "correct": "2.5, from (2.25 − 1)/(1.5 − 1)",
+      "correctExplanation": "(f(1.5)−f(1))/0.5 = (2.25−1)/0.5 = 1.25/0.5 = 2.5.",
+      "distractors": [
+        {
+          "answer": "2, equal to the tangent gradient at x = 1",
+          "explanation": "The secant gradient is 2.5, not 2; they differ by h = 0.5."
+        },
+        {
+          "answer": "1.25, using only the numerator f(1.5)−f(1) directly",
+          "explanation": "1.25 is the change in f; dividing by 0.5 gives 2.5."
+        },
+        {
+          "answer": "3, from adding the tangent gradient and the secant",
+          "explanation": "The secant gradient is computed from the formula, not by adding."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A function has average rate of change 0 over [−2, 2] and average rate 4 over [0, 2]. What can be concluded?",
+      "correct": "f(−2) = f(2), but f increases on [0, 2] with net change 8",
+      "correctExplanation": "Zero rate over [−2,2]: f(2)=f(−2). Rate 4 over [0,2]: f(2)−f(0)=8.",
+      "distractors": [
+        {
+          "answer": "The function is constant on [−2, 2] with no variation at all",
+          "explanation": "A zero average rate does not imply constant; the function may vary."
+        },
+        {
+          "answer": "f(0) = f(2) because the average rate is 4 exactly",
+          "explanation": "Rate 4 means f(2)−f(0) = 8, so f(0) ≠ f(2) unless f(0) is adjusted."
+        },
+        {
+          "answer": "The function is linear with gradient 0 throughout the interval",
+          "explanation": "Different rates on subintervals show the function is not linear."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "For f(x) = x² at x = 2, the average rates for h = 1, 0.1, 0.01 are {{blank:1}}, 4.1, 4.01. These approach the derivative f'(2) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "2+h at h=1: 2(2)+1 = 5.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "2+1 = 3 uses the wrong formula; it should be 2a+h = 4+1 = 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 is the limit; at h=1 the rate is 5.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "f'(x) = 2x, so f'(2) = 4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the x-value, not the derivative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "f(2) = 4, f'(2) = 4, not 8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "For f(x) = 1/x, the average rate from x = 2 to x = 2+h is −1/(2(2+h)). As h→0, this approaches {{blank:1}}, which equals −1/{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−1/4",
+          "correctExplanation": "Substituting h=0: −1/(2(2)) = −1/4.",
+          "distractors": [
+            {
+              "answer": "−1/2",
+              "explanation": "−1/(2·2) = −1/4, not −1/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "The limit is −1/4, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "−1/(2×2) = −1/4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The denominator is 2×2 = 4, not 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "The specific value is 4, from 2×2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A ball at height h(t) = 20t − 5t² has average speed from t = 1 to t = 3 of (h(3) − h(1))/{{blank:1}} = {{blank:2}} m/s.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The interval width is 3−1 = 2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the right endpoint, not the interval width.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "1 is the left endpoint, not the interval width.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "h(1) = 15, h(3) = 15, so (15−15)/2 = 0.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "15 is the height, not the speed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "The average speed is 0, not 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "For f(x) = 3x² + 2, the difference quotient is 6a + {{blank:1}}h. Setting a = 2 and h→0 gives f'(2) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The coefficient of h is 3, from 3h²/h = 3h.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is the coefficient of a, not h.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "The constant +2 cancels; the h coefficient is 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "f'(x) = 6x, so f'(2) = 12.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "6(2) = 12, not 8.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "14",
+              "explanation": "6(2)+2 = 14 incorrectly adds the constant.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The average rate of change of f(x) = x² from x = a to x = a+2 is 2a + {{blank:1}}. Setting this equal to 10 gives a = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The interval width h = 2, so the rate is 2a+h = 2a+2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "h = 2, not 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "The h term is 2, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "2a+2 = 10 → 2a = 8 → a = 4.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "2a = 10 gives a = 5, but the equation is 2a+2 = 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "2(3)+2 = 8 ≠ 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "The temperature T(t) = 20+3t−0.5t² gives T(2) = {{blank:1}} and T(6) = 20. The average rate from t = 2 to t = 6 is {{blank:2}}°C/h.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "24",
+          "correctExplanation": "T(2) = 20+6−2 = 24.",
+          "distractors": [
+            {
+              "answer": "26",
+              "explanation": "20+6 = 26 omits the −0.5(4) = −2 term.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "22",
+              "explanation": "20+3(2)−0.5(4) = 24, not 22.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−1",
+          "correctExplanation": "(20−24)/4 = −4/4 = −1.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The temperature drops, so the rate is negative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−4",
+              "explanation": "−4 is the change; dividing by 4 gives −1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "For f(x) = x² + 3x, the difference quotient is 2a + 3 + h. The derivative f'(a) is the limit: {{blank:1}}. At a = 5, f'(5) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2a + 3",
+          "correctExplanation": "As h→0, 2a+3+h → 2a+3.",
+          "distractors": [
+            {
+              "answer": "2a + h",
+              "explanation": "The constant +3 remains in the limit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "Only the derivative of 3x is 3; the full derivative is 2a+3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "13",
+          "correctExplanation": "f'(5) = 2(5)+3 = 13.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "2(5) = 10 omits the +3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "28",
+              "explanation": "f(5) = 25+15 = 40, not the derivative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "For sin(x), the average rate from 0 to π/2 is (1−0)/(π/2) = {{blank:1}}/π. This approximates the rate near x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "1/(π/2) = 2/π.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1 is the numerator; 2/π is the full result.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "π",
+              "explanation": "The result is 2/π, not π/π.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "π/4",
+          "correctExplanation": "The average rate equals the instantaneous rate at the midpoint π/4.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The rate at x = 0 is cos(0) = 1, not 2/π.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "π/2",
+              "explanation": "The rate at x = π/2 is cos(π/2) = 0, not 2/π.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A secant through x = 1 and x = 1.5 on f(x) = x² has gradient ({{blank:1}} − 1)/0.5 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2.25",
+          "correctExplanation": "f(1.5) = 1.5² = 2.25.",
+          "distractors": [
+            {
+              "answer": "1.5",
+              "explanation": "1.5 is the x-value, not f(1.5).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "f(1.5) = 2.25, not 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2.5",
+          "correctExplanation": "(2.25−1)/0.5 = 1.25/0.5 = 2.5.",
+          "distractors": [
+            {
+              "answer": "1.25",
+              "explanation": "1.25 is the numerator, not the gradient.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the tangent gradient f'(1), not the secant.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "For f(x) = x² at x = 3, using h = 0.001: f(3.001) = {{blank:1}} and the average rate is approximately {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "9.006001",
+          "correctExplanation": "3.001² = 9.006001.",
+          "distractors": [
+            {
+              "answer": "9.001",
+              "explanation": "9.001 is 9+0.001, not 3.001².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "9.03",
+              "explanation": "9.03 is 9+0.03, not 3.001².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6.001",
+          "correctExplanation": "(9.006001−9)/0.001 = 6.001.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is the exact derivative; the quotient is 6.001.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "9 is f(3), not the rate of change.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "A population grows from 1000 to 1500 over {{blank:1}} years, giving an average rate of {{blank:2}} people per year.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "The interval is 10 years.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The interval is stated as 10 years, not 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "15",
+              "explanation": "The total population is 1500, not the time.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "50",
+          "correctExplanation": "(1500−1000)/10 = 500/10 = 50.",
+          "distractors": [
+            {
+              "answer": "500",
+              "explanation": "500 is the total change, not the annual rate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "150",
+              "explanation": "150 = 1500/10, dividing endpoint by time.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "For f(x) = x² − 4x, f'(x) = 2x − 4. The function has zero derivative at x = {{blank:1}}, and f'(3) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "2x−4 = 0 gives x = 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "2(4)−4 = 4 ≠ 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "2(0)−4 = −4 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "f'(3) = 2(3)−4 = 2.",
+          "distractors": [
+            {
+              "answer": "−3",
+              "explanation": "f(3) = 9−12 = −3, but f'(3) = 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "2(3)−4 = 2, not 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "The average rate of change of f(x) = x² over [a, a+h] is 2a+h. For what interval does the average rate equal exactly f'(a+1)?",
+      "correct": "h = 2, because 2a+2 = 2(a+1) = f'(a+1)",
+      "correctExplanation": "f'(a+1) = 2(a+1) = 2a+2. Setting 2a+h = 2a+2 gives h = 2.",
+      "distractors": [
+        {
+          "answer": "h = 1, because f'(a+1) means one unit ahead of a",
+          "explanation": "2a+1 ≠ 2a+2; h must be 2."
+        },
+        {
+          "answer": "h = a, matching the interval width to the starting point",
+          "explanation": "2a+a = 3a ≠ 2a+2 in general."
+        },
+        {
+          "answer": "h = 0, in the limiting case where average equals instantaneous",
+          "explanation": "h→0 gives f'(a) = 2a, not f'(a+1) = 2a+2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "For f(x) = x³, the average rate over [1, 1+h] is 3+3h+h². For what h does this average rate equal 7?",
+      "correct": "h = 1 or h = −4, from h² + 3h − 4 = 0",
+      "correctExplanation": "3+3h+h² = 7 → h²+3h−4 = 0 → (h+4)(h−1) = 0.",
+      "distractors": [
+        {
+          "answer": "h = 2, from 3+3(2)+4 = 13, which does not equal 7",
+          "explanation": "At h = 2: 3+6+4 = 13 ≠ 7."
+        },
+        {
+          "answer": "h = 4/3, from 3h = 4 ignoring the h² term",
+          "explanation": "The equation is quadratic; ignoring h² gives the wrong solution."
+        },
+        {
+          "answer": "h = 1 only, discarding the negative solution as invalid",
+          "explanation": "h = −4 is also valid; it means an interval [1, −3]."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A function f has f(2) = 10 and f'(2) = 3. Estimate f(2.1) using the tangent line approximation.",
+      "correct": "10.3, from f(2) + f'(2)(0.1) = 10 + 0.3",
+      "correctExplanation": "Linear approximation: f(a+h) ≈ f(a) + f'(a)·h = 10 + 3(0.1) = 10.3.",
+      "distractors": [
+        {
+          "answer": "13, from f(2) + f'(2) = 10 + 3 without multiplying by h",
+          "explanation": "The increment is f'(2)×h = 3×0.1 = 0.3, not 3."
+        },
+        {
+          "answer": "10.03, from 10 + 0.1/3 with incorrect division operation",
+          "explanation": "The calculation is 10 + 3(0.1) = 10.3, not 10 + 0.1/3."
+        },
+        {
+          "answer": "30, from f(2) × f'(2) = 10 × 3 as the estimate",
+          "explanation": "Linear approximation adds, not multiplies: f(a) + f'(a)·h."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "For f(x) = √x, the difference quotient from x = 4 is (√(4+h)−2)/h. After rationalising, this becomes:",
+      "correct": "1/(√(4+h) + 2), by multiplying by (√(4+h)+2)/(√(4+h)+2)",
+      "correctExplanation": "Multiplying: (4+h−4)/(h(√(4+h)+2)) = h/(h(√(4+h)+2)) = 1/(√(4+h)+2).",
+      "distractors": [
+        {
+          "answer": "1/(√(4+h) − 2), using the conjugate with a minus sign",
+          "explanation": "Rationalisation uses the conjugate sum, not difference."
+        },
+        {
+          "answer": "(√(4+h) + 2)/h, inverting the fraction incorrectly",
+          "explanation": "After rationalising, the h cancels from numerator and denominator."
+        },
+        {
+          "answer": "h/(√(4+h) + 2), keeping h in the numerator after cancellation",
+          "explanation": "The h in the numerator cancels with the h in the denominator."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "The average rate of change of f(x) = x² over [a−h, a+h] is:",
+      "correct": "2a, the same as the derivative f'(a) for any h",
+      "correctExplanation": "f(a+h)−f(a−h) = (a+h)²−(a−h)² = 4ah. Divide by 2h: 4ah/(2h) = 2a.",
+      "distractors": [
+        {
+          "answer": "2a + h, the same as the one-sided difference quotient",
+          "explanation": "The symmetric quotient gives exactly 2a, not 2a+h."
+        },
+        {
+          "answer": "2a − h, adjusting for the backward direction of the interval",
+          "explanation": "The symmetric quotient simplifies to 2a, with no h term."
+        },
+        {
+          "answer": "4a, doubling the derivative because the interval is twice as wide",
+          "explanation": "The interval width is 2h, and 4ah/(2h) = 2a, not 4a."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "For f(x) = 1/x, the derivative at x = a is f'(a) = −1/a². This is verified by showing the difference quotient −1/(a(a+h)) approaches −1/a² as h→0. What is the average rate from x = 1 to x = 4?",
+      "correct": "−1/4, from (1/4 − 1)/(4 − 1) = (−3/4)/3",
+      "correctExplanation": "(1/4−1)/(4−1) = (−3/4)/3 = −3/12 = −1/4.",
+      "distractors": [
+        {
+          "answer": "−3/4, using only the numerator without dividing by 3",
+          "explanation": "−3/4 is the numerator; dividing by 3 gives −1/4."
+        },
+        {
+          "answer": "−1, subtracting the function values without the denominator",
+          "explanation": "1/4−1 = −3/4, and dividing by 3 gives −1/4, not −1."
+        },
+        {
+          "answer": "3/4, reversing the subtraction order in the numerator",
+          "explanation": "The rate is negative because 1/4 < 1; it equals −1/4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "For what value of c does f(x) = x² + cx have zero average rate of change over [0, 4]?",
+      "correct": "c = −4, from solving (16+4c)/4 = 0",
+      "correctExplanation": "f(4)−f(0) = 16+4c. Rate = (16+4c)/4 = 4+c. Setting 4+c = 0: c = −4.",
+      "distractors": [
+        {
+          "answer": "c = 0, assuming the constant term eliminates the rate",
+          "explanation": "f(x)=x² has average rate 4 over [0,4], not 0."
+        },
+        {
+          "answer": "c = −2, from solving 2+c = 0 using the derivative at x = 1",
+          "explanation": "The average rate is 4+c, not 2+c."
+        },
+        {
+          "answer": "c = 4, from solving 16+4c = 4 instead of setting rate to zero",
+          "explanation": "Setting the rate to zero: 4+c = 0 gives c = −4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "The average rate of change of f(x) = ln(x) from x = 1 to x = e is:",
+      "correct": "1/(e−1), from (ln(e)−ln(1))/(e−1) = 1/(e−1)",
+      "correctExplanation": "(1−0)/(e−1) = 1/(e−1) ≈ 0.582.",
+      "distractors": [
+        {
+          "answer": "1/e, dividing by e instead of (e−1) in the denominator",
+          "explanation": "The interval width is e−1, not e."
+        },
+        {
+          "answer": "1, using only ln(e) = 1 as the rate",
+          "explanation": "The numerator is 1, but dividing by e−1 gives 1/(e−1)."
+        },
+        {
+          "answer": "e−1, using the interval width as the rate instead",
+          "explanation": "e−1 is the denominator, not the rate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "For f(x) = x² − 2x, the average rate from x = a to x = a+h is 2a−2+h. At what point x = a does the tangent have gradient 0?",
+      "correct": "a = 1, from setting 2a − 2 = 0",
+      "correctExplanation": "The derivative is 2a−2 (limit as h→0). Setting 2a−2 = 0: a = 1.",
+      "distractors": [
+        {
+          "answer": "a = 0, from setting 2a = 0 without the −2 term",
+          "explanation": "The derivative is 2a−2, not 2a; the zero is at a = 1."
+        },
+        {
+          "answer": "a = 2, from solving a − 2 = 0 incorrectly",
+          "explanation": "2a−2 = 0 gives a = 1, not a = 2."
+        },
+        {
+          "answer": "a = −1, from solving 2a + 2 = 0 with the wrong sign",
+          "explanation": "The derivative is 2a−2, not 2a+2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Two functions f(x) = x² and g(x) = 2x have equal average rates of change over [0, a] when:",
+      "correct": "a = 2, from setting a = 2 since both give rate a and 2",
+      "correctExplanation": "f rate = a²/a = a. g rate = 2a/a = 2. Equal when a = 2.",
+      "distractors": [
+        {
+          "answer": "a = 1, from f'(1) = 2 = g'(1) matching the derivatives",
+          "explanation": "The derivatives match at x = 1, but the average rates match at a = 2."
+        },
+        {
+          "answer": "a = 4, from solving a² = 2a giving a(a−2) = 0, choosing a = 4",
+          "explanation": "a(a−2) = 0 gives a = 0 or a = 2, not a = 4."
+        },
+        {
+          "answer": "All values of a, since both functions are monotonic",
+          "explanation": "The average rates are a and 2 respectively; they match only at a = 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "The symmetric difference quotient (f(a+h)−f(a−h))/(2h) for f(x) = x³ at a = 1 gives:",
+      "correct": "3 + h², from ((1+h)³−(1−h)³)/(2h)",
+      "correctExplanation": "(1+h)³−(1−h)³ = 6h+2h³. Divide by 2h: 3+h². As h→0, this gives 3 = f'(1).",
+      "distractors": [
+        {
+          "answer": "3 + 3h + h², the one-sided difference quotient result",
+          "explanation": "The symmetric quotient simplifies differently: 6h+2h³ divided by 2h gives 3+h²."
+        },
+        {
+          "answer": "6 + 2h², doubling the correct result by computing incorrectly",
+          "explanation": "(6h+2h³)/(2h) = 3+h², not 6+2h²."
+        },
+        {
+          "answer": "3, exactly equal to the derivative for all h values",
+          "explanation": "The result is 3+h², which equals 3 only when h = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A function f satisfies f(5)−f(1) = 12. If the average rate is constant at 3 over [1, 5], what is f(3)?",
+      "correct": "f(3) = f(1) + 6, since the rate is constant and 3×(3−1) = 6",
+      "correctExplanation": "Constant rate 3 means f(x) = f(1) + 3(x−1). At x = 3: f(3) = f(1)+6.",
+      "distractors": [
+        {
+          "answer": "f(3) = 6, assuming f(1) = 0 without justification in the problem",
+          "explanation": "The answer depends on f(1); f(3) = f(1)+6."
+        },
+        {
+          "answer": "f(3) = 9, from 3 × 3 = 9 using the rate times the x-value",
+          "explanation": "f(3) = f(1)+3(3−1) = f(1)+6, not 3×3."
+        },
+        {
+          "answer": "f(3) = 12, equal to the total change f(5)−f(1) for the interval",
+          "explanation": "12 is the total change over [1,5]; over [1,3] the change is 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "For f(x) = x² + bx, the average rate from x = 0 to x = 2 is 2 + b. If this equals the derivative at x = 0, what is b?",
+      "correct": "No value of b works, because 2 + b = b simplifies to 2 = 0",
+      "correctExplanation": "The average rate is 2+b and f'(0) = b. Setting equal: 2+b = b → 2 = 0, a contradiction.",
+      "distractors": [
+        {
+          "answer": "b = 2, from solving 2 + b = 2b giving b = 2",
+          "explanation": "2+b = b gives 2 = 0, not 2 = b."
+        },
+        {
+          "answer": "b = 0, from solving 2 + 0 = 0 which is incorrect here here",
+          "explanation": "2+0 = 2 ≠ 0 = f'(0) when b = 0."
+        },
+        {
+          "answer": "b = −1, from solving 2 + b = b + 1 incorrectly",
+          "explanation": "The equation is 2+b = b, which has no solution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "The average rate of f(x) = e^x from x = 0 to x = 1 is (e−1)/1 = e−1 ≈ 1.718. At what x₀ ∈ (0,1) does f'(x₀) = e−1?",
+      "correct": "x₀ = ln(e−1) ≈ 0.541, from solving e^x₀ = e−1",
+      "correctExplanation": "f'(x) = e^x. Set e^x₀ = e−1: x₀ = ln(e−1) ≈ ln(1.718) ≈ 0.541.",
+      "distractors": [
+        {
+          "answer": "x₀ = 0.5, the midpoint of the interval [0, 1] always",
+          "explanation": "The MVT point is ln(e−1) ≈ 0.541, not exactly 0.5."
+        },
+        {
+          "answer": "x₀ = 1/e ≈ 0.368, from inverting e to find the point",
+          "explanation": "f'(1/e) = e^(1/e) ≈ 1.445 ≠ e−1."
+        },
+        {
+          "answer": "x₀ = e−2 ≈ 0.718, subtracting 2 from e for the x-value",
+          "explanation": "f'(e−2) = e^(e−2) ≈ 2.07 ≠ e−1."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The symmetric difference quotient for f(x) = x² at x = a is (f(a+h)−f(a−h))/(2h) = {{blank:1}}, which equals the derivative for {{blank:2}} h.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2a",
+          "correctExplanation": "((a+h)²−(a−h)²)/(2h) = 4ah/(2h) = 2a.",
+          "distractors": [
+            {
+              "answer": "2a+h",
+              "explanation": "2a+h is the one-sided quotient, not symmetric.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4a",
+              "explanation": "4ah/(2h) = 2a, not 4a.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "all",
+          "correctExplanation": "The symmetric quotient gives exactly 2a regardless of h.",
+          "distractors": [
+            {
+              "answer": "no",
+              "explanation": "It does equal 2a for all h, which matches f'(a).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "small",
+              "explanation": "It equals 2a for all h, not just small h.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "For f(x) = √x at x = 4, rationalising gives the quotient 1/(√(4+h) + {{blank:1}}). As h→0 this approaches 1/{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The conjugate of √(4+h)−2 is √(4+h)+2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The constant from √4 = 2, not 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "h",
+              "explanation": "The conjugate adds 2, not h.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "1/(√4+2) = 1/(2+2) = 1/4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "√4+2 = 4, so the denominator is 4, not 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√4",
+              "explanation": "√4 = 2, and 2+2 = 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "For f(x) = x³ at a = 1, h²+3h−4 = 0 when h = {{blank:1}} or h = {{blank:2}}. These are intervals where the average rate equals 7.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "(h+4)(h−1) = 0 gives h = 1.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "h²+3(2)−4 = 4+6−4 = 6 ≠ 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "h²+3(3)−4 = 9+9−4 = 14 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−4",
+          "correctExplanation": "(h+4)(h−1) = 0 gives h = −4.",
+          "distractors": [
+            {
+              "answer": "−3",
+              "explanation": "(−3)²+3(−3)−4 = 9−9−4 = −4 ≠ 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "(4)²+3(4)−4 = 16+12−4 = 24 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Using tangent approximation: f(2.1) ≈ f(2) + f'(2) × {{blank:1}}. If f(2) = 10 and f'(2) = 3, then f(2.1) ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.1",
+          "correctExplanation": "h = 2.1−2 = 0.1.",
+          "distractors": [
+            {
+              "answer": "2.1",
+              "explanation": "2.1 is the x-value, not the increment.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "The increment is 0.1, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10.3",
+          "correctExplanation": "10 + 3(0.1) = 10 + 0.3 = 10.3.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "13 = 10+3, using h = 1 instead of 0.1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10.03",
+              "explanation": "10.03 = 10+0.03, using 0.01 instead of 0.1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "For f(x) = x²+cx over [0,4], the average rate is (16+4c)/4 = 4+c. Setting this to zero gives c = {{blank:1}}, making f(x) = x² − {{blank:2}}x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−4",
+          "correctExplanation": "4+c = 0 gives c = −4.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4+4 = 8 ≠ 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−2",
+              "explanation": "4+(−2) = 2 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "With c = −4, f(x) = x²−4x.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "c = −4, not −2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "c = −4, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "For f(x) = e^x over [0,1], the MVT point x₀ satisfies e^(x₀) = e−1, giving x₀ = ln({{blank:1}}) ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "e−1",
+          "correctExplanation": "e^(x₀) = e−1, so x₀ = ln(e−1).",
+          "distractors": [
+            {
+              "answer": "e",
+              "explanation": "ln(e) = 1, but f'(1) = e ≈ 2.718 ≠ e−1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "ln(1) = 0, but f'(0) = 1 ≠ e−1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.541",
+          "correctExplanation": "ln(e−1) ≈ ln(1.718) ≈ 0.541.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "0.5 is the midpoint, not ln(e−1).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.368",
+              "explanation": "0.368 ≈ 1/e, not ln(e−1).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "For f(x) = x²−2x, the derivative is 2x−2. The tangent has zero gradient at x = {{blank:1}}, and the function value there is f(1) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "2x−2 = 0 gives x = 1.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2(2)−2 = 2 ≠ 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "2(0)−2 = −2 ≠ 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−1",
+          "correctExplanation": "f(1) = 1−2 = −1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "f(1) = 1−2 = −1, not 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "f(1) = 1−2 = −1, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The average rate of f(x) = x² and g(x) = 2x over [0, a] are {{blank:1}} and 2 respectively. These are equal when a = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "a",
+          "correctExplanation": "f average = a²/a = a.",
+          "distractors": [
+            {
+              "answer": "a²",
+              "explanation": "a² is f(a), not the average rate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2a",
+              "explanation": "2a is f'(a), not the average rate over [0,a].",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Setting a = 2: both rates equal 2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "At a = 1: f rate = 1 ≠ 2 = g rate.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "At a = 4: f rate = 4 ≠ 2 = g rate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "For f(x) = ln(x), the average rate from 1 to e is 1/(e−1). Since f'(x) = 1/x, the MVT gives 1/x₀ = 1/(e−1), so x₀ = {{blank:1}} ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "e−1",
+          "correctExplanation": "1/x₀ = 1/(e−1) gives x₀ = e−1.",
+          "distractors": [
+            {
+              "answer": "e",
+              "explanation": "1/e ≈ 0.368 ≠ 1/(e−1) ≈ 0.582.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "1/1 = 1 ≠ 1/(e−1).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.718",
+          "correctExplanation": "e−1 ≈ 2.718−1 = 1.718.",
+          "distractors": [
+            {
+              "answer": "2.718",
+              "explanation": "2.718 is e, not e−1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.582",
+              "explanation": "0.582 is 1/(e−1), not e−1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A constant rate of 3 over [1, 5] means f(x) = f(1) + 3(x−1). At x = 3, the change from f(1) is 3 × {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "x−1 = 3−1 = 2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the x-value, not the interval from 1 to 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "4 is the full interval [1,5] width.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "3 × 2 = 6.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "3 × 3 = 9 uses x, not x−1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 is the total change over [1,5], not [1,3].",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "The symmetric quotient for f(x) = x³ at a = 1 is ((1+h)³−(1−h)³)/(2h) = (6h+2h³)/(2h) = {{blank:1}}+{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "6h/(2h) = 3.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6h/(2h) = 3, not 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "The first term is 3, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "h²",
+          "correctExplanation": "2h³/(2h) = h².",
+          "distractors": [
+            {
+              "answer": "h",
+              "explanation": "2h³/(2h) = h², not h.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3h",
+              "explanation": "The h term cancels differently; 2h³/(2h) = h².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "For f(x) = x²+bx, the average rate over [0,2] is 2+b and f'(0) = b. Setting equal: 2+b = b gives {{blank:1}} = 0, which has {{blank:2}} solution.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "2+b = b → 2 = 0, so the equation reduces to 2 = 0.",
+          "distractors": [
+            {
+              "answer": "b",
+              "explanation": "b cancels, leaving 2 = 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "The equation simplifies to 2 = 0, not 0 = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "no",
+          "correctExplanation": "2 = 0 is a contradiction, so no value of b works.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "2 = 0 is false for all b, giving no solution.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "every",
+              "explanation": "The equation has no solution, not infinitely many.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

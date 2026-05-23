@@ -16,6 +16,18 @@
       {
         "date": "2026-05-20T06:08:14Z",
         "change": "Stripped trailing \" in\"/\" in maths\"/\" in maths and\" from 82 MC answer field(s)."
+      },
+      {
+        "date": "2026-05-21T04:36:15Z",
+        "change": "Convergent strip of extended-junk suffixes from 20 MC answer field(s)."
+      },
+      {
+        "date": "2026-05-21T04:37:21Z",
+        "change": "Pass 3: stripped partial-fragment suffixes (\"across\", \"across many\", \"over\", \"and\", etc.) from 1 MC field(s)."
+      },
+      {
+        "date": "2026-05-21T04:39:39Z",
+        "change": "Pass 4: stripped junk suffixes anchored on \"in maths\"/\"everyday calculations\" from 1 field(s). Regex tightened to avoid affecting legitimate \"across many X\" / \"over many years X\" content."
       }
     ]
   },
@@ -271,7 +283,7 @@
           "explanation": "Misconception confusing balanced and unbalanced forces. Constant speed requires balanced forces, not unbalanced ones."
         },
         {
-          "answer": "The object vibrates without changing position in maths and everyday",
+          "answer": "The object vibrates without changing position",
           "explanation": "Misconception that unbalanced forces cause oscillation rather than acceleration in one direction."
         }
       ]
@@ -877,11 +889,11 @@
       "variant": 19,
       "bloomsLevel": 3,
       "question": "Which one of the following is the best example of balanced forces in action?",
-      "correct": "A ship floating motionless on calm water in maths and everyday calculations",
+      "correct": "A ship floating motionless on calm water",
       "correctExplanation": "The upward buoyancy force on the ship equals the downward gravitational force. The balanced forces result in no acceleration and the ship remains stationary.",
       "distractors": [
         {
-          "answer": "A rocket accelerating during launch from the ground in maths and everyday",
+          "answer": "A rocket accelerating during launch from the ground",
           "explanation": "Misconception confusing acceleration with balanced forces. A launching rocket has greater thrust than weight, producing unbalanced forces."
         },
         {
@@ -1257,15 +1269,15 @@
       "correctExplanation": "Near Earth's surface, all objects experience the same gravitational acceleration. With relatively small air resistance, both balls fall at nearly the same rate.",
       "distractors": [
         {
-          "answer": "The basketball has more mass, so gravity pulls it down more quickly in maths and everyday",
+          "answer": "The basketball has more mass, so gravity pulls it down more quickly",
           "explanation": "Misconception that heavier objects fall faster. Greater mass increases weight but also increases inertia, keeping gravitational acceleration constant."
         },
         {
-          "answer": "Both balls experience identical air resistance during the fall in maths and everyday calculations across many",
+          "answer": "Both balls experience identical air resistance during the fall",
           "explanation": "Misconception that air resistance must be equal for simultaneous landing. The key factor is that air resistance is small relative to weight for both."
         },
         {
-          "answer": "The tennis ball is lighter, so it accelerates faster than the basketball in maths and everyday",
+          "answer": "The tennis ball is lighter, so it accelerates faster than the basketball",
           "explanation": "Misconception that lighter objects fall faster. Without significant air resistance, mass does not affect the rate of falling."
         }
       ]
@@ -1279,7 +1291,7 @@
       "correctExplanation": "To accelerate upward, the floor must push up with a force greater than gravity. The scale measures this larger normal force, giving a higher reading.",
       "distractors": [
         {
-          "answer": "Gravity increases when the lift moves upward, making Lila heavier in maths and everyday",
+          "answer": "Gravity increases when the lift moves upward, making Lila heavier",
           "explanation": "Misconception that gravity changes inside a lift. Gravity remains constant; the apparent weight changes due to the acceleration."
         },
         {
@@ -1323,7 +1335,7 @@
       "correctExplanation": "From F = ma, greater mass with similar friction force results in smaller deceleration. The truck's greater inertia means it needs more distance to stop.",
       "distractors": [
         {
-          "answer": "The truck's brakes are weaker than the car's brakes in maths and everyday",
+          "answer": "The truck's brakes are weaker than the car's brakes",
           "explanation": "Misconception attributing the difference to brake quality alone. The question states the same road, and the key factor is mass, not brake design."
         },
         {
@@ -1367,7 +1379,7 @@
       "correctExplanation": "With identical masses and the same friction, doubling the applied force doubles the net force. Since a = F/m, box B has twice the acceleration.",
       "distractors": [
         {
-          "answer": "Both boxes accelerate at the same rate in maths and everyday",
+          "answer": "Both boxes accelerate at the same rate",
           "explanation": "Misconception that identical objects always accelerate equally regardless of applied force. Different net forces produce different accelerations."
         },
         {
@@ -2003,7 +2015,7 @@
           "explanation": "Misconception about air resistance direction. At the highest point, the ball has zero velocity so air resistance is effectively zero."
         },
         {
-          "answer": "The claim is correct because the throwing force balances gravity at the peak in maths and everyday",
+          "answer": "The claim is correct because the throwing force balances gravity at the peak",
           "explanation": "Misconception of impetus — the belief that the throwing force persists after release. Once the ball leaves the hand, no upward throwing force acts on it."
         }
       ]
@@ -2021,7 +2033,7 @@
           "explanation": "Misconception that motion requires an unbalanced force. Constant velocity is maintained by balanced forces, not excess force."
         },
         {
-          "answer": "Both students are correct because the forces alternate between balanced and unbalanced in maths and everyday",
+          "answer": "Both students are correct because the forces alternate between balanced and unbalanced",
           "explanation": "Misconception that forces fluctuate during constant-speed motion. At constant speed, forces remain continuously balanced."
         },
         {
@@ -2043,11 +2055,11 @@
           "explanation": "Misconception that friction dominates during acceleration. If friction were larger, the car would decelerate, not accelerate."
         },
         {
-          "answer": "The diagram is correct because equal forces produce acceleration in the forward direction in maths and everyday",
+          "answer": "The diagram is correct because equal forces produce acceleration in the forward direction",
           "explanation": "Misconception that equal forces can produce acceleration. Equal and opposite forces produce zero net force and zero acceleration."
         },
         {
-          "answer": "Both arrows should point forward because both forces contribute to the car's motion in maths and everyday",
+          "answer": "Both arrows should point forward because both forces contribute to the car's motion",
           "explanation": "Misconception that friction acts in the direction of motion. For a car moving forward, road friction on the wheels acts forward but air resistance acts backward."
         }
       ]
@@ -2087,11 +2099,11 @@
           "explanation": "Misconception that only parachute size matters. Both weight and drag determine terminal velocity."
         },
         {
-          "answer": "The claim is incorrect because gravity accelerates all objects equally regardless of their mass in maths and everyday",
+          "answer": "The claim is incorrect because gravity accelerates all objects equally regardless of their mass",
           "explanation": "Misconception applying vacuum conditions to air. While gravitational acceleration is constant, terminal velocity depends on the balance between weight and drag."
         },
         {
-          "answer": "The claim is correct because heavier objects experience less air resistance during the fall in maths and everyday",
+          "answer": "The claim is correct because heavier objects experience less air resistance during the fall",
           "explanation": "Misconception about air resistance. Heavier objects do not experience less air resistance; they simply need more of it to reach equilibrium."
         }
       ]
@@ -2175,7 +2187,7 @@
           "explanation": "Misconception that mass does not affect acceleration. Doubling mass reduces acceleration when force is constant."
         },
         {
-          "answer": "The 4 kg trolley accelerates at 6 m/s squared because more mass creates more acceleration in maths and everyday",
+          "answer": "The 4 kg trolley accelerates at 6 m/s squared because more mass creates more acceleration",
           "explanation": "Misconception that mass and acceleration are directly proportional. They are inversely proportional at constant force."
         },
         {
@@ -2197,7 +2209,7 @@
           "explanation": "Misconception applying the balanced-forces rule for straight-line motion to circular motion. Changing direction requires an unbalanced inward force."
         },
         {
-          "answer": "The claim is incorrect because the satellite's engines provide a continuous forward thrust in maths and everyday",
+          "answer": "The claim is incorrect because the satellite's engines provide a continuous forward thrust",
           "explanation": "Misconception that satellites require engine thrust to orbit. Satellites orbit due to gravity alone, not engine power."
         },
         {
@@ -2237,15 +2249,15 @@
       "correctExplanation": "Larger surface area generates more air resistance at any given speed. Since both carry the same weight, Parachute A reaches the balancing drag force at a lower speed.",
       "distractors": [
         {
-          "answer": "Parachute A reaches terminal velocity at a higher speed because larger area catches more wind in maths and everyday",
+          "answer": "Parachute A reaches terminal velocity at a higher speed because larger area catches more wind",
           "explanation": "Misconception reversing the effect of area on terminal velocity. More drag at lower speeds means balance is reached sooner."
         },
         {
-          "answer": "Both parachutes reach terminal velocity at the same speed because they carry equal mass in maths and everyday calculations",
+          "answer": "Both parachutes reach terminal velocity at the same speed because they carry equal mass",
           "explanation": "Misconception that only mass determines terminal velocity. Both mass (weight) and drag characteristics determine terminal velocity."
         },
         {
-          "answer": "Neither parachute reaches terminal velocity because parachutes prevent free fall entirely in maths and everyday calculations across many problem",
+          "answer": "Neither parachute reaches terminal velocity because parachutes prevent free fall entirely",
           "explanation": "Misconception that parachutes eliminate falling. Parachutes reduce terminal velocity but objects still fall at a constant speed."
         }
       ]
@@ -2259,7 +2271,7 @@
       "correctExplanation": "From F = ma, if braking force stays similar but mass increases, the deceleration decreases. Reduced deceleration means more time and distance to stop.",
       "distractors": [
         {
-          "answer": "The heavy cargo pushes the car forward with an additional driving force in maths and everyday",
+          "answer": "The heavy cargo pushes the car forward with an additional driving force",
           "explanation": "Misconception that cargo provides a forward force. Cargo adds mass and inertia but does not generate a forward force on a level road."
         },
         {
@@ -2285,7 +2297,7 @@
           "explanation": "Misconception that gravity requires free fall to act. Gravity acts on all objects with mass regardless of whether they are supported."
         },
         {
-          "answer": "The argument is flawed because the table blocks gravity from reaching the book entirely in maths and everyday calculations",
+          "answer": "The argument is flawed because the table blocks gravity from reaching the book entirely",
           "explanation": "Misconception that surfaces block gravitational force. Gravity passes through all materials; the table provides a separate upward force."
         },
         {

@@ -1,0 +1,2624 @@
+{
+  "_meta": {
+    "code": "VC2M7P01",
+    "level": 7,
+    "area": "Mathematics",
+    "ageBand": "11-12",
+    "keyKnowledge": "We are learning to identify sample spaces for experiments, assign probabilities and predict how many times an outcome might occur.",
+    "generatedAt": "2026-05-23T06:58:49Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to identify sample spaces for experiments, assign probabilities and predict how many times an outcome might occur.",
+    "y": [
+      "A sample space lists every possible outcome — this systematic approach prevents us from missing possibilities or double-counting.",
+      "Assigning probabilities allows us to make informed predictions about future events based on mathematical reasoning.",
+      "These skills are foundational for statistics, risk assessment and decision-making under uncertainty."
+    ],
+    "eg": [
+      "Listing the sample space for rolling two dice and finding the probability of getting a sum of 7.",
+      "Assigning probabilities to each outcome of a spinner with unequal sections.",
+      "Predicting: 'If we roll a dice 120 times, about how many times will we get a 3?'",
+      "Calculating the probability of drawing a red card from a standard deck.",
+      "Using the sample space to calculate P(even number) when rolling a dice.",
+      "Comparing theoretical prediction with experimental results after conducting trials."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A sample space is the set of all possible outcomes of an experiment.",
+      "correct": "True",
+      "correctExplanation": "The sample space lists every outcome that could occur.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A sample space only includes the most likely outcomes."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The probability of any event can be greater than 1.",
+      "correct": "False",
+      "correctExplanation": "Probabilities are always between 0 and 1 inclusive. They can never exceed 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Probabilities range from 0 to 1 and cannot exceed 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "If an event is impossible, its probability is 1.",
+      "correct": "False",
+      "correctExplanation": "An impossible event has a probability of 0, not 1. A probability of 1 means the event is certain.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Impossible events have probability 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A fair six-sided die has 6 outcomes in its sample space.",
+      "correct": "True",
+      "correctExplanation": "The outcomes are 1, 2, 3, 4, 5 and 6.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A die has only 3 outcomes."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "When flipping a fair coin, heads is more likely than tails.",
+      "correct": "False",
+      "correctExplanation": "A fair coin gives heads and tails equal probability of 1/2 each.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Both outcomes have equal probability on a fair coin."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The probability of rolling a 7 on a standard six-sided die is 1 out of 6.",
+      "correct": "False",
+      "correctExplanation": "A standard die has numbers 1 to 6 only, so rolling a 7 is impossible with probability 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "7 is one of the outcomes on a die."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Probability can be expressed as a fraction, decimal or percentage.",
+      "correct": "True",
+      "correctExplanation": "For example, 1/2 can also be written as 0.5 or 50 percent.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Probability can only be a fraction."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "An event with a probability of 0.5 is certain to happen.",
+      "correct": "False",
+      "correctExplanation": "A probability of 0.5 means the event has an even chance, not certainty. Certainty is 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "0.5 means the event will definitely happen."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Tossing two coins gives a sample space of 4 outcomes.",
+      "correct": "True",
+      "correctExplanation": "The outcomes are HH, HT, TH and TT, giving 4 in total.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Two coins only have 3 outcomes."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "You cannot use counting to find probabilities.",
+      "correct": "False",
+      "correctExplanation": "When outcomes are equally likely, counting favourable and total outcomes gives the probability.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Counting is a valid method when outcomes are equally likely."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A spinner with 5 equal sections numbered 1 to 5 has a probability of 1/4 of landing on 3.",
+      "correct": "False",
+      "correctExplanation": "With 5 equal sections, each has probability 1/5, not 1/4.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "1 out of 4 is the correct probability."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The probabilities of all outcomes in a sample space must add up to 1.",
+      "correct": "True",
+      "correctExplanation": "The total probability across all possible outcomes is always 1.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Probabilities do not need to add to any particular number."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is the probability of rolling an even number on a fair six-sided die?",
+      "correct": "1/2",
+      "correctExplanation": "Even numbers are 2, 4 and 6: that is 3 out of 6 which equals 1/2.",
+      "distractors": [
+        {
+          "answer": "1/3",
+          "explanation": "There are 3 even numbers but 6 total, not 3 total."
+        },
+        {
+          "answer": "1/6",
+          "explanation": "This is the probability of one specific number."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "A bag has 3 red and 5 blue marbles. What is the probability of drawing a red marble?",
+      "correct": "3/8",
+      "correctExplanation": "3 red out of 8 total gives 3/8.",
+      "distractors": [
+        {
+          "answer": "3/5",
+          "explanation": "This divides red by blue, not by total."
+        },
+        {
+          "answer": "5/8",
+          "explanation": "This is the probability of blue."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "How many outcomes are in the sample space for flipping a coin and rolling a die?",
+      "correct": "12",
+      "correctExplanation": "2 coin outcomes times 6 die outcomes equals 12.",
+      "distractors": [
+        {
+          "answer": "8",
+          "explanation": "This adds 2 and 6."
+        },
+        {
+          "answer": "6",
+          "explanation": "This only counts the die."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What is the probability of picking a vowel from the letters A, B, C, D, E?",
+      "correct": "2/5",
+      "correctExplanation": "Vowels are A and E: 2 out of 5.",
+      "distractors": [
+        {
+          "answer": "1/5",
+          "explanation": "This counts only one vowel."
+        },
+        {
+          "answer": "3/5",
+          "explanation": "This counts consonants instead."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "A spinner has 4 equal sections: red, blue, green, yellow. What is the probability of landing on green?",
+      "correct": "1/4",
+      "correctExplanation": "One section out of 4 equals 1/4.",
+      "distractors": [
+        {
+          "answer": "1/3",
+          "explanation": "There are 4 sections, not 3."
+        },
+        {
+          "answer": "1/2",
+          "explanation": "There is 1 green out of 4, not 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "If the probability of rain is 0.3, what is the probability of no rain?",
+      "correct": "0.7",
+      "correctExplanation": "Complementary probabilities add to 1, so 1 minus 0.3 equals 0.7.",
+      "distractors": [
+        {
+          "answer": "0.3",
+          "explanation": "This is the probability of rain, not no rain."
+        },
+        {
+          "answer": "1.3",
+          "explanation": "Probabilities cannot exceed 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "A deck has 4 suits. What is the probability of drawing a heart from a full deck of 52?",
+      "correct": "1/4",
+      "correctExplanation": "13 hearts out of 52 equals 13/52 which simplifies to 1/4.",
+      "distractors": [
+        {
+          "answer": "1/13",
+          "explanation": "This is one card out of 13, not the suit."
+        },
+        {
+          "answer": "1/52",
+          "explanation": "This is the probability of one specific card."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What does a probability of 0 mean?",
+      "correct": "The event is impossible",
+      "correctExplanation": "A probability of 0 means the event cannot occur.",
+      "distractors": [
+        {
+          "answer": "The event is unlikely",
+          "explanation": "Unlikely events have small probabilities, not 0."
+        },
+        {
+          "answer": "The event is certain",
+          "explanation": "Certain events have probability 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is the probability of rolling a number less than 5 on a fair die?",
+      "correct": "2/3",
+      "correctExplanation": "Numbers less than 5 are 1, 2, 3, 4: that is 4 out of 6 which equals 2/3.",
+      "distractors": [
+        {
+          "answer": "4/5",
+          "explanation": "There are 6 outcomes, not 5."
+        },
+        {
+          "answer": "1/2",
+          "explanation": "Only 3 numbers, not 4, would give 1/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "A bag has 10 balls: 4 red, 3 blue, 3 green. What is the probability of not drawing red?",
+      "correct": "3/5",
+      "correctExplanation": "Not red means blue or green: 6 out of 10 equals 3/5.",
+      "distractors": [
+        {
+          "answer": "2/5",
+          "explanation": "This is the probability of red."
+        },
+        {
+          "answer": "7/10",
+          "explanation": "This counts 7, but only 6 are not red."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "How many outcomes does tossing three coins produce?",
+      "correct": "8",
+      "correctExplanation": "2 times 2 times 2 equals 8 outcomes.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "This adds 2 three times."
+        },
+        {
+          "answer": "3",
+          "explanation": "This counts only the number of coins."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A number from 1 to 10 is chosen at random. What is the probability it is odd?",
+      "correct": "1/2",
+      "correctExplanation": "Odd numbers 1, 3, 5, 7, 9 give 5 out of 10 which is 1/2.",
+      "distractors": [
+        {
+          "answer": "1/5",
+          "explanation": "There are 5 odd numbers but out of 10, not 5."
+        },
+        {
+          "answer": "5/10",
+          "explanation": "This is correct but 1/2 is the simplified form."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A fair die has {{blank:1}} equally likely outcomes, so the probability of rolling a 4 is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "A standard die has faces numbered 1 to 6.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "A die has 6 faces, not 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "A standard die does not have 8 faces.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/6",
+          "correctExplanation": "One outcome out of 6 equals 1/6.",
+          "distractors": [
+            {
+              "answer": "1/4",
+              "explanation": "There are 6 outcomes, not 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4/6",
+              "explanation": "Only 1 face shows 4, not 4 faces.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "If a bag has 2 red and 3 blue marbles, the total is {{blank:1}} and the probability of red is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "2 plus 3 equals 5 marbles.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "Incorrect count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "This counts only one colour.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2/5",
+          "correctExplanation": "2 red out of 5 total equals 2/5.",
+          "distractors": [
+            {
+              "answer": "2/3",
+              "explanation": "This divides red by blue.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3/5",
+              "explanation": "This is the probability of blue.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The complement of an event A is everything in the sample space that is not A.",
+      "correct": "True",
+      "correctExplanation": "The complement includes all outcomes not in the event.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The complement includes outcomes in A."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "If you flip a coin 10 times and get 7 heads, the probability of heads is 7/10.",
+      "correct": "False",
+      "correctExplanation": "The theoretical probability of heads is still 1/2 for a fair coin. 7/10 is the experimental result.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "7 out of 10 is the true probability."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "In a sample space with equally likely outcomes, all events are equally probable.",
+      "correct": "False",
+      "correctExplanation": "Events can contain different numbers of outcomes, so they have different probabilities.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "All events always have the same chance."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "If you roll a die 60 times, each number will appear exactly 10 times.",
+      "correct": "False",
+      "correctExplanation": "10 is the expected count, but actual results vary due to randomness. Exactly 10 each is unlikely.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Random variation means exact expected counts rarely occur."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Two events are mutually exclusive if they cannot both occur at the same time.",
+      "correct": "True",
+      "correctExplanation": "Mutually exclusive events have no shared outcomes.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Mutually exclusive events can happen together."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The probability of rolling a 3 or a 5 on a die is 1/3.",
+      "correct": "True",
+      "correctExplanation": "Two favourable outcomes out of 6 total equals 2/6 which is 1/3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The probability is 2/5."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A two-way table can only be used for experiments with exactly two outcomes.",
+      "correct": "False",
+      "correctExplanation": "Two-way tables organise outcomes for two combined events, each of which can have multiple outcomes.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Two-way tables only work with 2 outcomes."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "If a bag has 6 red and 4 blue balls, picking blue is more likely than red.",
+      "correct": "False",
+      "correctExplanation": "Red has 6 out of 10 (0.6) and blue has 4 out of 10 (0.4), so red is more likely.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "4 out of 10 is higher than 6 out of 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A coin is flipped and a die rolled. What is the probability of getting heads and a 6?",
+      "correct": "1/12",
+      "correctExplanation": "1/2 times 1/6 equals 1/12.",
+      "distractors": [
+        {
+          "answer": "1/8",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "answer": "2/12",
+          "explanation": "This doubles the correct probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "In 100 trials, an event occurred 35 times. What is the experimental probability?",
+      "correct": "0.35",
+      "correctExplanation": "35 divided by 100 equals 0.35.",
+      "distractors": [
+        {
+          "answer": "35",
+          "explanation": "This is the count, not the probability."
+        },
+        {
+          "answer": "0.65",
+          "explanation": "This is the complement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A spinner has sections of 90, 120, and 150 degrees. What is the probability of the 120 degree section?",
+      "correct": "1/3",
+      "correctExplanation": "120 out of 360 degrees equals 1/3.",
+      "distractors": [
+        {
+          "answer": "120/360",
+          "explanation": "Correct but not simplified."
+        },
+        {
+          "answer": "1/4",
+          "explanation": "Incorrect fraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "If P(A) equals 0.4, what is P(not A)?",
+      "correct": "0.6",
+      "correctExplanation": "1 minus 0.4 equals 0.6.",
+      "distractors": [
+        {
+          "answer": "0.4",
+          "explanation": "This is P(A), not P(not A)."
+        },
+        {
+          "answer": "1.4",
+          "explanation": "Probabilities cannot exceed 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A die is rolled 30 times. How many times would you expect to roll a number greater than 4?",
+      "correct": "10",
+      "correctExplanation": "Numbers greater than 4 are 5 and 6: probability 2/6 or 1/3. Expected: 30/3 equals 10.",
+      "distractors": [
+        {
+          "answer": "15",
+          "explanation": "This assumes half the outcomes."
+        },
+        {
+          "answer": "5",
+          "explanation": "This calculates 1/6 of 30."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Two dice are rolled. How many outcomes are in the sample space?",
+      "correct": "36",
+      "correctExplanation": "6 times 6 equals 36 outcomes.",
+      "distractors": [
+        {
+          "answer": "12",
+          "explanation": "This adds 6 and 6."
+        },
+        {
+          "answer": "6",
+          "explanation": "This counts only one die."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "A card is drawn from a standard 52-card deck. What is the probability it is a king?",
+      "correct": "1/13",
+      "correctExplanation": "4 kings out of 52 equals 4/52 which is 1/13.",
+      "distractors": [
+        {
+          "answer": "1/4",
+          "explanation": "This divides by suits, not by rank."
+        },
+        {
+          "answer": "4/13",
+          "explanation": "Incorrect fraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "If you draw a marble, record the colour and replace it, this is called sampling with what?",
+      "correct": "Replacement",
+      "correctExplanation": "Putting the marble back is sampling with replacement.",
+      "distractors": [
+        {
+          "answer": "Removal",
+          "explanation": "Removal means not replacing."
+        },
+        {
+          "answer": "Repetition",
+          "explanation": "The correct term is replacement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A bag has 5 red, 3 blue and 2 green. What is the probability of drawing red or green?",
+      "correct": "7/10",
+      "correctExplanation": "5 plus 2 is 7 out of 10.",
+      "distractors": [
+        {
+          "answer": "5/10",
+          "explanation": "This counts only red."
+        },
+        {
+          "answer": "2/10",
+          "explanation": "This counts only green."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "When rolling a die 120 times, how many times would you expect an odd number?",
+      "correct": "60",
+      "correctExplanation": "Probability of odd is 3/6 or 1/2. Expected: 120 times 1/2 equals 60.",
+      "distractors": [
+        {
+          "answer": "40",
+          "explanation": "This uses 1/3 instead of 1/2."
+        },
+        {
+          "answer": "20",
+          "explanation": "This uses 1/6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "A tree diagram for flipping two coins has how many branches at the end?",
+      "correct": "4",
+      "correctExplanation": "Each flip has 2 branches: 2 times 2 equals 4 end branches.",
+      "distractors": [
+        {
+          "answer": "2",
+          "explanation": "This counts only one flip."
+        },
+        {
+          "answer": "8",
+          "explanation": "This would be three coins."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "If events A and B are mutually exclusive with P(A) equals 0.3 and P(B) equals 0.5, what is P(A or B)?",
+      "correct": "0.8",
+      "correctExplanation": "For mutually exclusive events, add: 0.3 plus 0.5 equals 0.8.",
+      "distractors": [
+        {
+          "answer": "0.15",
+          "explanation": "This multiplies the probabilities."
+        },
+        {
+          "answer": "0.2",
+          "explanation": "Incorrect calculation."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A die is rolled 60 times. The expected count for rolling a 2 is {{blank:1}} and for rolling an even number is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "Probability is 1/6. 60 times 1/6 equals 10.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "This uses the die faces, not the expected count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "Probability is 3/6 or 1/2. 60 times 1/2 equals 30.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "This uses 1/3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "This is the expected count for one number.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "A spinner has sections of 90, 180 and 90 degrees. The probability of the largest section is {{blank:1}} and the smallest sections each have probability {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/2",
+          "correctExplanation": "180 out of 360 equals 1/2.",
+          "distractors": [
+            {
+              "answer": "1/3",
+              "explanation": "This divides by the number of sections.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "90/180",
+              "explanation": "Incorrect fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/4",
+          "correctExplanation": "90 out of 360 equals 1/4.",
+          "distractors": [
+            {
+              "answer": "1/2",
+              "explanation": "The smaller sections are 90 degrees, not 180.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/3",
+              "explanation": "Incorrect fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A coin and die together give {{blank:1}} outcomes. The probability of tails and an even number is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "2 times 6 equals 12 outcomes.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This is 2 plus 6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "This only counts the die.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/4",
+          "correctExplanation": "Tails: 1/2. Even: 3/6 or 1/2. Together: 1/2 times 1/2 equals 1/4.",
+          "distractors": [
+            {
+              "answer": "1/12",
+              "explanation": "This is one specific coin-die pair.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/2",
+              "explanation": "This is only the coin probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "If P(rain) equals 0.35, then P(no rain) equals {{blank:1}} and out of 200 days you would expect rain on about {{blank:2}} days.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.65",
+          "correctExplanation": "1 minus 0.35 equals 0.65.",
+          "distractors": [
+            {
+              "answer": "0.35",
+              "explanation": "This is P(rain), not P(no rain).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.35",
+              "explanation": "Probabilities cannot exceed 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "70",
+          "correctExplanation": "0.35 times 200 equals 70.",
+          "distractors": [
+            {
+              "answer": "35",
+              "explanation": "This uses the percentage as a count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "This assumes rain half the time.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A bag has 4 red and 6 blue marbles. P(red) equals {{blank:1}} and if you draw 50 times with replacement, you expect about {{blank:2}} reds.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2/5",
+          "correctExplanation": "4 out of 10 equals 2/5.",
+          "distractors": [
+            {
+              "answer": "4/6",
+              "explanation": "This divides by blue, not total.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/4",
+              "explanation": "Incorrect fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "20",
+          "correctExplanation": "2/5 times 50 equals 20.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "This is the count in the bag.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "This assumes 1/2 probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Two events are mutually exclusive. If P(A) is 0.25 and P(B) is 0.4, then P(A or B) is {{blank:1}} and P(neither) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.65",
+          "correctExplanation": "0.25 plus 0.4 equals 0.65.",
+          "distractors": [
+            {
+              "answer": "0.10",
+              "explanation": "This multiplies the probabilities.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.15",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.35",
+          "correctExplanation": "1 minus 0.65 equals 0.35.",
+          "distractors": [
+            {
+              "answer": "0.65",
+              "explanation": "This is P(A or B), not P(neither).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.75",
+              "explanation": "Incorrect complement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "To find the expected number of times an event occurs, multiply its probability by the number of trials.",
+      "correct": "True",
+      "correctExplanation": "Expected frequency equals probability times the number of trials.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "You add probability and trials."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "If you flip a fair coin 100 times, you will get exactly 50 heads.",
+      "correct": "False",
+      "correctExplanation": "50 is the expected value, but actual results will vary due to randomness.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A fair coin always gives exactly 50 heads in 100 flips."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A bag has 3 red, 4 blue and 5 green marbles. You draw one. What is P(not green)?",
+      "correct": "7/12",
+      "correctExplanation": "Not green: 3 plus 4 equals 7. P(not green): 7/12.",
+      "distractors": [
+        {
+          "answer": "5/12",
+          "explanation": "This is P(green)."
+        },
+        {
+          "answer": "1/3",
+          "explanation": "Incorrect calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Two dice are rolled. What is the probability the sum is 7?",
+      "correct": "1/6",
+      "correctExplanation": "There are 6 combinations summing to 7 out of 36 total.",
+      "distractors": [
+        {
+          "answer": "7/36",
+          "explanation": "This uses 7 as the favourable count."
+        },
+        {
+          "answer": "1/7",
+          "explanation": "Incorrect fraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A weather model says 70 percent chance of sun each day. Over 20 days, how many sunny days are expected?",
+      "correct": "14",
+      "correctExplanation": "0.70 times 20 equals 14.",
+      "distractors": [
+        {
+          "answer": "7",
+          "explanation": "This divides 70 by 10."
+        },
+        {
+          "answer": "20",
+          "explanation": "Not every day will be sunny."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A spinner has 3 equal red, 2 equal blue and 1 green section. What is P(red or blue)?",
+      "correct": "5/6",
+      "correctExplanation": "Red: 3/6. Blue: 2/6. Together: 5/6.",
+      "distractors": [
+        {
+          "answer": "3/6",
+          "explanation": "This only counts red."
+        },
+        {
+          "answer": "1/2",
+          "explanation": "Incorrect addition."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "In a tree diagram for 3 coin flips, what is the probability of exactly 2 heads?",
+      "correct": "3/8",
+      "correctExplanation": "Combinations HHT, HTH, THH: 3 out of 8 outcomes.",
+      "distractors": [
+        {
+          "answer": "1/4",
+          "explanation": "Incorrect count of favourable outcomes."
+        },
+        {
+          "answer": "1/2",
+          "explanation": "This confuses with single flip probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A card is drawn from a 52-card deck. What is the probability it is red or a king?",
+      "correct": "7/13",
+      "correctExplanation": "26 red plus 2 black kings equals 28. P is 28/52 which is 7/13.",
+      "distractors": [
+        {
+          "answer": "1/2",
+          "explanation": "This only counts red cards."
+        },
+        {
+          "answer": "15/26",
+          "explanation": "Incorrect calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A factory produces items with a 2 percent defect rate. In a batch of 500, how many defects are expected?",
+      "correct": "10",
+      "correctExplanation": "0.02 times 500 equals 10.",
+      "distractors": [
+        {
+          "answer": "100",
+          "explanation": "This uses 20 percent instead of 2."
+        },
+        {
+          "answer": "2",
+          "explanation": "This is the percentage, not the count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Two independent events have probabilities 1/3 and 1/4. What is the probability both occur?",
+      "correct": "1/12",
+      "correctExplanation": "1/3 times 1/4 equals 1/12.",
+      "distractors": [
+        {
+          "answer": "7/12",
+          "explanation": "This adds the probabilities."
+        },
+        {
+          "answer": "2/7",
+          "explanation": "Incorrect calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A two-way table shows 30 students: 18 play sport and 20 like music. If 12 do both, how many do neither?",
+      "correct": "4",
+      "correctExplanation": "Neither: 30 minus (18 plus 20 minus 12) equals 30 minus 26 equals 4.",
+      "distractors": [
+        {
+          "answer": "0",
+          "explanation": "Assuming everyone does at least one."
+        },
+        {
+          "answer": "10",
+          "explanation": "Incorrect subtraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Which is more likely: rolling at least one 6 in 4 rolls, or not rolling any 6?",
+      "correct": "Rolling at least one 6",
+      "correctExplanation": "P(no 6 in 4 rolls): (5/6)^4 is about 0.48, so at least one 6 is about 0.52.",
+      "distractors": [
+        {
+          "answer": "Not rolling any 6",
+          "explanation": "This has probability about 0.48."
+        },
+        {
+          "answer": "They are equally likely",
+          "explanation": "0.52 and 0.48 are not equal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A test has 5 true/false questions answered randomly. How many outcomes are in the sample space?",
+      "correct": "32",
+      "correctExplanation": "2 to the power of 5 equals 32.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "This is 2 times 5."
+        },
+        {
+          "answer": "25",
+          "explanation": "This is 5 squared."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Events A and B are independent. P(A) is 0.6 and P(B) is 0.5. What is P(A and B)?",
+      "correct": "0.30",
+      "correctExplanation": "0.6 times 0.5 equals 0.30 for independent events.",
+      "distractors": [
+        {
+          "answer": "1.1",
+          "explanation": "Probabilities cannot exceed 1."
+        },
+        {
+          "answer": "0.55",
+          "explanation": "This averages the probabilities."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "A die is rolled and a coin flipped. P(6 and heads) is {{blank:1}} and the sample space has {{blank:2}} outcomes.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/12",
+          "correctExplanation": "1/6 times 1/2 equals 1/12.",
+          "distractors": [
+            {
+              "answer": "1/8",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/6",
+              "explanation": "This only uses the die probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "6 times 2 equals 12.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This is 6 plus 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "This only counts die outcomes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Out of 200 trials, event A occurred 48 times. The experimental probability is {{blank:1}} and in 500 trials you would expect about {{blank:2}} occurrences.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.24",
+          "correctExplanation": "48 divided by 200 equals 0.24.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "This is the count, not probability.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.48",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "120",
+          "correctExplanation": "0.24 times 500 equals 120.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "This uses the original count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "240",
+              "explanation": "This doubles the probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A bag has 5 red and 3 blue marbles. P(blue) is {{blank:1}}. After removing 2 red marbles without replacement, P(blue) becomes {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3/8",
+          "correctExplanation": "3 out of 8 equals 3/8.",
+          "distractors": [
+            {
+              "answer": "3/5",
+              "explanation": "This divides by blue count not total.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5/8",
+              "explanation": "This is P(red).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/2",
+          "correctExplanation": "Now 3 red and 3 blue out of 6: 3/6 equals 1/2.",
+          "distractors": [
+            {
+              "answer": "3/8",
+              "explanation": "The bag has changed.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3/6",
+              "explanation": "This is correct but not simplified.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "For three coin flips, P(all heads) is {{blank:1}} and P(at least one tail) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/8",
+          "correctExplanation": "(1/2)^3 equals 1/8.",
+          "distractors": [
+            {
+              "answer": "1/3",
+              "explanation": "This divides by 3, not 2^3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3/8",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7/8",
+          "correctExplanation": "1 minus 1/8 equals 7/8.",
+          "distractors": [
+            {
+              "answer": "3/8",
+              "explanation": "This counts specific outcomes incorrectly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/2",
+              "explanation": "Incorrect complement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A spinner has sections of 120, 60, 90 and 90 degrees. The probability of the 120 degree section is {{blank:1}} and the 60 degree section is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/3",
+          "correctExplanation": "120/360 equals 1/3.",
+          "distractors": [
+            {
+              "answer": "120/360",
+              "explanation": "Not simplified.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/4",
+              "explanation": "This uses the number of sections.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/6",
+          "correctExplanation": "60/360 equals 1/6.",
+          "distractors": [
+            {
+              "answer": "60/360",
+              "explanation": "Not simplified.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/4",
+              "explanation": "Incorrect fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Two dice are rolled. There are {{blank:1}} ways to get a sum of 8 and the probability is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "Pairs: (2,6), (3,5), (4,4), (5,3), (6,2) give 5 ways.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This is the sum, not the count of ways.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Missing one combination.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5/36",
+          "correctExplanation": "5 out of 36 total outcomes.",
+          "distractors": [
+            {
+              "answer": "5/12",
+              "explanation": "Incorrect denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/6",
+              "explanation": "This would mean 6 ways.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Events A and B are mutually exclusive with P(A) equal to 1/5 and P(B) equal to 2/5. P(A or B) is {{blank:1}} and P(neither) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3/5",
+          "correctExplanation": "1/5 plus 2/5 equals 3/5 for mutually exclusive events.",
+          "distractors": [
+            {
+              "answer": "2/25",
+              "explanation": "This multiplies the probabilities.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/5",
+              "explanation": "Incorrect addition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2/5",
+          "correctExplanation": "1 minus 3/5 equals 2/5.",
+          "distractors": [
+            {
+              "answer": "3/5",
+              "explanation": "This is P(A or B), not P(neither).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/5",
+              "explanation": "Incorrect complement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A factory makes 1000 items daily with 3 percent defect rate. Expected defects are {{blank:1}} and the probability a random item is not defective is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "0.03 times 1000 equals 30.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "This is the percentage, not the count.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "300",
+              "explanation": "This uses 30 percent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.97",
+          "correctExplanation": "1 minus 0.03 equals 0.97.",
+          "distractors": [
+            {
+              "answer": "0.03",
+              "explanation": "This is the defect probability.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.30",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A card drawn from a 52-card deck: P(heart) is {{blank:1}} and P(heart or diamond) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/4",
+          "correctExplanation": "13 hearts out of 52 equals 1/4.",
+          "distractors": [
+            {
+              "answer": "1/13",
+              "explanation": "This is one card probability.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "13/52",
+              "explanation": "Correct but not simplified.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/2",
+          "correctExplanation": "26 red cards out of 52 equals 1/2.",
+          "distractors": [
+            {
+              "answer": "1/4",
+              "explanation": "This is only one suit.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2/4",
+              "explanation": "This equals 1/2 but is not simplified.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "In 80 spins of a fair 4-section spinner, each section is expected {{blank:1}} times. If section A came up 25 times, its experimental probability is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20",
+          "correctExplanation": "80 divided by 4 equals 20 expected per section.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "This divides by 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "This is the total spins.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5/16",
+          "correctExplanation": "25 divided by 80 equals 5/16.",
+          "distractors": [
+            {
+              "answer": "25/100",
+              "explanation": "Incorrect denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/4",
+              "explanation": "This is the theoretical probability, not experimental.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Rolling two dice: P(double) is {{blank:1}} because there are {{blank:2}} doubles out of 36 outcomes.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/6",
+          "correctExplanation": "6 doubles out of 36 equals 1/6.",
+          "distractors": [
+            {
+              "answer": "1/3",
+              "explanation": "Incorrect fraction.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6/12",
+              "explanation": "Wrong denominator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "Doubles: (1,1), (2,2), (3,3), (4,4), (5,5), (6,6).",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This counts too many.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "This misses half the doubles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A tree diagram for choosing from 3 hats then 4 scarves has {{blank:1}} end branches and the probability of any specific combination is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "3 times 4 equals 12 end branches.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "This adds 3 and 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "34",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/12",
+          "correctExplanation": "1 out of 12 equally likely outcomes.",
+          "distractors": [
+            {
+              "answer": "1/7",
+              "explanation": "Incorrect denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/4",
+              "explanation": "This only uses the scarves.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "Why might experimental probability differ from theoretical probability?",
+      "correct": "Random variation in small samples",
+      "correctExplanation": "Small numbers of trials produce variable results that may not match theory.",
+      "distractors": [
+        {
+          "answer": "The theory is always wrong",
+          "explanation": "Theory is based on sound mathematics."
+        },
+        {
+          "answer": "Experiments are more accurate",
+          "explanation": "Experiments estimate probability and can vary."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A game is fair if all players have an equal chance of winning. Is a game fair if Player A wins on 1 to 4 and Player B on 5 to 6 on a die?",
+      "correct": "Not fair because A wins more often",
+      "correctExplanation": "A has 4/6 chance and B has 2/6, so it is not fair.",
+      "distractors": [
+        {
+          "answer": "Fair because the die is fair",
+          "explanation": "A fair die does not make the game fair if outcomes are unequal."
+        },
+        {
+          "answer": "Fair because both can win",
+          "explanation": "Having a chance does not mean equal chance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Two dice are rolled. What is the most probable sum?",
+      "correct": "7",
+      "correctExplanation": "There are 6 ways to make 7, more than any other sum.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "6 has only 5 ways."
+        },
+        {
+          "answer": "12",
+          "explanation": "12 has only 1 way."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A bag has 4 red and 6 blue. You draw 2 without replacement. What is P(both red)?",
+      "correct": "2/15",
+      "correctExplanation": "4/10 times 3/9 equals 12/90 which simplifies to 2/15.",
+      "distractors": [
+        {
+          "answer": "4/25",
+          "explanation": "This assumes replacement."
+        },
+        {
+          "answer": "16/100",
+          "explanation": "This squares 4/10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Which method best determines the probability of a drawing pin landing point up?",
+      "correct": "Conduct many trials and record results",
+      "correctExplanation": "The shape is irregular, so theoretical calculation is not possible.",
+      "distractors": [
+        {
+          "answer": "Calculate using geometry alone",
+          "explanation": "The shape makes theoretical calculation unreliable."
+        },
+        {
+          "answer": "Flip it once and use that result",
+          "explanation": "One trial gives unreliable probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "If P(A) equals 0.7 and P(B) equals 0.5 and the events are independent, what is P(A and B)?",
+      "correct": "0.35",
+      "correctExplanation": "0.7 times 0.5 equals 0.35 for independent events.",
+      "distractors": [
+        {
+          "answer": "1.2",
+          "explanation": "Probabilities cannot exceed 1."
+        },
+        {
+          "answer": "0.6",
+          "explanation": "This averages the probabilities."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A school survey finds 40 percent play basketball and 25 percent play both basketball and tennis. What is P(tennis given basketball)?",
+      "correct": "0.625",
+      "correctExplanation": "P(T given B) equals P(both)/P(B) equals 0.25/0.40 equals 0.625.",
+      "distractors": [
+        {
+          "answer": "0.25",
+          "explanation": "This is P(both), not conditional."
+        },
+        {
+          "answer": "0.65",
+          "explanation": "Incorrect division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Why is it important to list the full sample space before assigning probabilities?",
+      "correct": "To ensure no outcomes are missed",
+      "correctExplanation": "Missing outcomes leads to incorrect probability calculations.",
+      "distractors": [
+        {
+          "answer": "It is only needed for large experiments",
+          "explanation": "All experiments benefit from clear sample spaces."
+        },
+        {
+          "answer": "It makes the maths harder",
+          "explanation": "Sample spaces simplify the problem."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A spinner is divided into sections of 45, 90, 135 and 90 degrees. Which section has the highest probability?",
+      "correct": "The 135 degree section",
+      "correctExplanation": "135/360 is the largest fraction.",
+      "distractors": [
+        {
+          "answer": "The two 90 degree sections",
+          "explanation": "Each 90 degree section has probability 1/4."
+        },
+        {
+          "answer": "The 45 degree section",
+          "explanation": "45/360 is the smallest fraction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "You roll a die 300 times and get sixty-two 3s. Is this consistent with a fair die?",
+      "correct": "Roughly consistent since 50 is expected",
+      "correctExplanation": "62 is close enough to 50 for random variation.",
+      "distractors": [
+        {
+          "answer": "No, because it should be exactly 50",
+          "explanation": "Exact results are rare with random processes."
+        },
+        {
+          "answer": "Yes, because 62 is even",
+          "explanation": "Being even is irrelevant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A password has 2 digits each from 0 to 9. How many possible passwords exist?",
+      "correct": "100",
+      "correctExplanation": "10 times 10 equals 100.",
+      "distractors": [
+        {
+          "answer": "20",
+          "explanation": "This adds 10 and 10."
+        },
+        {
+          "answer": "90",
+          "explanation": "This subtracts 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "What is the difference between theoretical and experimental probability?",
+      "correct": "Theoretical uses logic while experimental uses trials",
+      "correctExplanation": "Theoretical is calculated from the sample space; experimental from actual data.",
+      "distractors": [
+        {
+          "answer": "They always give the same result",
+          "explanation": "They often differ, especially with few trials."
+        },
+        {
+          "answer": "Experimental is always more accurate",
+          "explanation": "It depends on the number of trials."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Events A and B are not mutually exclusive. P(A) is 0.5, P(B) is 0.4, P(A and B) is 0.2. What is P(A or B)?",
+      "correct": "0.7",
+      "correctExplanation": "0.5 plus 0.4 minus 0.2 equals 0.7.",
+      "distractors": [
+        {
+          "answer": "0.9",
+          "explanation": "This adds without subtracting the overlap."
+        },
+        {
+          "answer": "0.1",
+          "explanation": "Incorrect calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A lottery has 1 in 1000 chance of winning. If 5000 tickets are sold, how many winners are expected?",
+      "correct": "5",
+      "correctExplanation": "5000 times 1/1000 equals 5 expected winners.",
+      "distractors": [
+        {
+          "answer": "1",
+          "explanation": "This assumes only one can win."
+        },
+        {
+          "answer": "50",
+          "explanation": "This uses 1 in 100 instead."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A biased coin has P(heads) equal to 0.6. In 200 flips, expected heads is {{blank:1}} and P(tails) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "120",
+          "correctExplanation": "0.6 times 200 equals 120.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "This uses 0.3 instead of 0.6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "200",
+              "explanation": "This assumes all heads.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.4",
+          "correctExplanation": "1 minus 0.6 equals 0.4.",
+          "distractors": [
+            {
+              "answer": "0.6",
+              "explanation": "This is P(heads).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "The coin is not fair.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Two dice are rolled. There are {{blank:1}} ways to get a sum of 10 and the probability is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "Pairs: (4,6), (5,5), (6,4).",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Overcounting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "This uses the sum as the count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/12",
+          "correctExplanation": "3/36 simplifies to 1/12.",
+          "distractors": [
+            {
+              "answer": "3/36",
+              "explanation": "Not simplified.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/6",
+              "explanation": "Incorrect simplification.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A bag has 5 red, 3 blue. P(red then blue without replacement) is {{blank:1}} which simplifies to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "15/56",
+          "correctExplanation": "5/8 times 3/7 equals 15/56.",
+          "distractors": [
+            {
+              "answer": "15/64",
+              "explanation": "This assumes replacement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3/40",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "15/56",
+          "correctExplanation": "15 and 56 share no common factors, so it is already simplified.",
+          "distractors": [
+            {
+              "answer": "5/19",
+              "explanation": "Incorrect simplification.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3/8",
+              "explanation": "This is only P(blue).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "A fair spinner has sections of 120 and 240 degrees. P(smaller section) is {{blank:1}} and expected frequency in 90 spins is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/3",
+          "correctExplanation": "120/360 equals 1/3.",
+          "distractors": [
+            {
+              "answer": "120/360",
+              "explanation": "Not simplified.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/2",
+              "explanation": "Incorrect fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "1/3 times 90 equals 30.",
+          "distractors": [
+            {
+              "answer": "120",
+              "explanation": "This uses degrees as frequency.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "45",
+              "explanation": "This assumes 1/2 probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "Choosing 1 of 3 paths then 1 of 4 doors gives {{blank:1}} routes. The probability of a specific route is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "3 times 4 equals 12.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "This adds 3 and 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "34",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/12",
+          "correctExplanation": "1 out of 12 equally likely routes.",
+          "distractors": [
+            {
+              "answer": "1/7",
+              "explanation": "Incorrect denominator.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/4",
+              "explanation": "This only uses doors.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A game uses two spinners: one with 3 sections, one with 5. The sample space has {{blank:1}} outcomes. P(section 1 on both) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "15",
+          "correctExplanation": "3 times 5 equals 15.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This adds 3 and 5.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "This multiplies by 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/15",
+          "correctExplanation": "1/3 times 1/5 equals 1/15.",
+          "distractors": [
+            {
+              "answer": "2/15",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/8",
+              "explanation": "This uses the sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "P(A) is 0.3, P(B) is 0.5 and events are independent. P(A and B) is {{blank:1}} and P(A or B) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.15",
+          "correctExplanation": "0.3 times 0.5 equals 0.15.",
+          "distractors": [
+            {
+              "answer": "0.8",
+              "explanation": "This adds the probabilities.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.2",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.65",
+          "correctExplanation": "0.3 plus 0.5 minus 0.15 equals 0.65.",
+          "distractors": [
+            {
+              "answer": "0.8",
+              "explanation": "This adds without subtracting overlap.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.35",
+              "explanation": "Incorrect calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A deck of 52 cards: P(ace) is {{blank:1}} and P(ace or king) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/13",
+          "correctExplanation": "4 aces out of 52 equals 1/13.",
+          "distractors": [
+            {
+              "answer": "4/52",
+              "explanation": "Correct but not simplified.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/4",
+              "explanation": "Incorrect fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2/13",
+          "correctExplanation": "8 cards (4 aces plus 4 kings) out of 52 equals 2/13.",
+          "distractors": [
+            {
+              "answer": "1/13",
+              "explanation": "This only counts aces.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8/52",
+              "explanation": "Correct but not simplified.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A die is rolled 180 times. Expected count of multiples of 3 is {{blank:1}} because P(multiple of 3) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "Multiples of 3 on a die: 3 and 6. P is 2/6 or 1/3. 180 times 1/3 is 60.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "This uses 1/6.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "90",
+              "explanation": "This uses 1/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/3",
+          "correctExplanation": "2 out of 6 outcomes equals 1/3.",
+          "distractors": [
+            {
+              "answer": "2/6",
+              "explanation": "Not simplified.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/6",
+              "explanation": "This counts only one multiple.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "In a class of 30, P(glasses) is 0.4 and P(left-handed) is 0.2. If independent, expected students with both is {{blank:1}} because P(both) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2.4",
+          "correctExplanation": "0.08 times 30 equals 2.4 or about 2.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "This uses 0.2 times 30.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "This uses 0.4 times 30.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.08",
+          "correctExplanation": "0.4 times 0.2 equals 0.08.",
+          "distractors": [
+            {
+              "answer": "0.6",
+              "explanation": "This adds the probabilities.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.2",
+              "explanation": "This is only P(left-handed).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Three coins are flipped. P(exactly 1 head) is {{blank:1}} because there are {{blank:2}} ways out of 8.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3/8",
+          "correctExplanation": "HTT, THT, TTH: 3 outcomes.",
+          "distractors": [
+            {
+              "answer": "1/8",
+              "explanation": "This is P(all heads).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/3",
+              "explanation": "Incorrect fraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Three arrangements give exactly 1 head.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Only one way if position does not matter.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Overcounting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A bag has 10 marbles. P(red) is 3/10. After adding 5 more red marbles, the new total is {{blank:1}} and P(red) is now {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "15",
+          "correctExplanation": "10 plus 5 equals 15.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "This subtracts instead.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "The total changes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8/15",
+          "correctExplanation": "Original 3 red plus 5 new red equals 8. P(red) is 8/15.",
+          "distractors": [
+            {
+              "answer": "3/15",
+              "explanation": "This does not add the new reds.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5/15",
+              "explanation": "This only counts the new reds.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

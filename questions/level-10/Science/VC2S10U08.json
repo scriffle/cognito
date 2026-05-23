@@ -16,6 +16,18 @@
       {
         "date": "2026-05-20T06:08:15Z",
         "change": "Stripped trailing \" in\"/\" in maths\"/\" in maths and\" from 40 MC answer field(s)."
+      },
+      {
+        "date": "2026-05-21T04:36:16Z",
+        "change": "Convergent strip of extended-junk suffixes from 1 MC answer field(s)."
+      },
+      {
+        "date": "2026-05-21T04:37:21Z",
+        "change": "Pass 3: stripped partial-fragment suffixes (\"across\", \"across many\", \"over\", \"and\", etc.) from 1 MC field(s)."
+      },
+      {
+        "date": "2026-05-21T04:39:39Z",
+        "change": "Pass 4: stripped junk suffixes anchored on \"in maths\"/\"everyday calculations\" from 1 field(s). Regex tightened to avoid affecting legitimate \"across many X\" / \"over many years X\" content."
       }
     ]
   },
@@ -899,7 +911,7 @@
       "variant": 20,
       "bloomsLevel": 3,
       "question": "Which one of the following correctly explains why a chemical equation must have the same types of atoms on both sides?",
-      "correct": "Chemical reactions rearrange existing atoms; they cannot convert one element into another in maths and everyday calculations across many problem",
+      "correct": "Chemical reactions rearrange existing atoms; they cannot convert one element into another",
       "correctExplanation": "In chemical reactions, only the bonds between atoms change. The atoms themselves remain unchanged, so the same elements must appear on both sides.",
       "distractors": [
         {
@@ -1363,7 +1375,7 @@
       "variant": 10,
       "bloomsLevel": 4,
       "question": "Jake measures the mass of a flask containing hydrochloric acid and a test tube of sodium hydrogen carbonate. The total initial mass is 85.0 g. He tips the powder into the acid inside the sealed flask and observes effervescence. Which one of the following is the total mass after the reaction?",
-      "correct": "85.0 g in maths and everyday calculations across",
+      "correct": "85.0 g",
       "correctExplanation": "In a sealed system, the total mass is conserved regardless of the gas produced. The CO₂ remains trapped in the flask.",
       "distractors": [
         {
@@ -2123,7 +2135,7 @@
       "variant": 7,
       "bloomsLevel": 5,
       "question": "Industrial chemists producing ammonia (N₂ + 3H₂ → 2NH₃) find that 28 kg of nitrogen yields only 30 kg of ammonia instead of the expected 34 kg. Which one of the following is the most likely explanation?",
-      "correct": "The reaction did not go to completion, leaving some unreacted nitrogen and hydrogen in maths and everyday",
+      "correct": "The reaction did not go to completion, leaving some unreacted nitrogen and hydrogen",
       "correctExplanation": "In practice, reversible reactions like the Haber process do not go to 100% completion. Unreacted material accounts for the lower-than-expected yield.",
       "distractors": [
         {

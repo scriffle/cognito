@@ -1,0 +1,2624 @@
+{
+  "_meta": {
+    "code": "VC2M7N04",
+    "level": 7,
+    "area": "Mathematics",
+    "ageBand": "11-12",
+    "keyKnowledge": "We are learning to round decimals appropriately and use estimation to check if our calculations are reasonable.",
+    "generatedAt": null,
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to round decimals appropriately and use estimation to check if our calculations are reasonable.",
+    "y": [
+      "Rounding and estimation are essential checking tools — they help us catch errors before they become problems.",
+      "Knowing when and how to round depends on context — money requires different precision than science.",
+      "These skills build mathematical judgement and practical numeracy."
+    ],
+    "eg": [
+      "Rounding 3.4567 to 2 decimal places: 3.46.",
+      "Estimating 4.8 × 7.2 ≈ 5 × 7 = 35, then checking our exact answer is close.",
+      "Rounding a measurement to an appropriate level of precision for the task.",
+      "Checking: '2345 ÷ 7 should be about 2100 ÷ 7 = 300. Our answer of 335 is reasonable.'",
+      "Deciding whether to round up or down in a real-world context (e.g., rounding up the number of buses needed).",
+      "Using estimation to verify calculator results."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "3.456 rounded to 2 decimal places is 3.46.",
+      "correct": "True",
+      "correctExplanation": "The third decimal digit is 6 (≥5), so the second decimal rounds up: 3.46.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Misapplies rounding rules."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "When rounding 7.35 to 1 decimal place, the result is 7.3.",
+      "correct": "False",
+      "correctExplanation": "The second decimal digit is 5, which rounds up: 7.35 → 7.4.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Rounds down at 5 instead of up."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Rounding always makes a number larger.",
+      "correct": "False",
+      "correctExplanation": "Rounding can increase or decrease a number depending on the digit examined.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Only considers rounding up cases."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "12.049 rounded to 1 decimal place is 12.1.",
+      "correct": "False",
+      "correctExplanation": "The second decimal is 4 (<5), so round down: 12.049 → 12.0, not 12.1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Incorrectly rounds up when the digit is less than 5."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "To round to the nearest whole number, look at the tenths digit.",
+      "correct": "True",
+      "correctExplanation": "The tenths digit determines whether the ones digit rounds up or stays.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Looks at the wrong digit when rounding."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "0.999 rounded to 1 decimal place is 0.9.",
+      "correct": "False",
+      "correctExplanation": "The second decimal is 9 (≥5), so 0.999 rounds to 1.0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Fails to carry the rounding through."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "4.5 rounded to the nearest whole number is 5.",
+      "correct": "True",
+      "correctExplanation": "The digit after the ones place is 5, so round up to 5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Rounds down at exactly 5."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "Estimation means finding the exact answer.",
+      "correct": "False",
+      "correctExplanation": "Estimation gives an approximate answer, not the exact value.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses estimation with exact calculation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "2.345 rounded to 2 decimal places is 2.34.",
+      "correct": "False",
+      "correctExplanation": "The third decimal is 5, so round up: 2.345 → 2.35.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Rounds down at 5 instead of up."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "6.82 rounded to 1 decimal place is 6.8.",
+      "correct": "True",
+      "correctExplanation": "The second decimal is 2 (<5), so round down: 6.8.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Incorrectly rounds up."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Rounding 15.95 to 1 decimal place gives 16.0.",
+      "correct": "True",
+      "correctExplanation": "The second decimal is 5, rounding the 9 up to 10, which carries over: 16.0.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Fails to carry the rounding correctly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "An estimate of 3.9 × 5.1 would be about 24.",
+      "correct": "False",
+      "correctExplanation": "3.9 ≈ 4 and 5.1 ≈ 5, so 4 × 5 = 20, not 24.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Miscalculates the rounded product."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is 5.678 rounded to 1 decimal place?",
+      "correct": "5.7, because the second decimal digit 7 is 5 or above",
+      "correctExplanation": "The 7 in the hundredths place rounds the tenths up.",
+      "distractors": [
+        {
+          "answer": "5.6, because rounding removes digits without changing the first decimal place",
+          "explanation": "The hundredths digit 7 ≥ 5 means round up."
+        },
+        {
+          "answer": "5.68, because rounding to 1 place keeps two digits after the decimal point",
+          "explanation": "1 decimal place means one digit after the point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which is the best estimate of 9.8 × 3.2?",
+      "correct": "30, since 10 × 3 = 30 is a quick reasonable estimate here",
+      "correctExplanation": "Round 9.8 to 10 and 3.2 to 3.",
+      "distractors": [
+        {
+          "answer": "32, since 9.8 rounds to 10 and 3.2 stays as 3.2 for this estimate",
+          "explanation": "Both numbers should be rounded for a quick estimate."
+        },
+        {
+          "answer": "27, since 9 × 3 = 27 by rounding both numbers down for estimation",
+          "explanation": "9.8 is closer to 10 than 9."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Round 0.845 to 2 decimal places.",
+      "correct": "0.85, because the third decimal digit 5 rounds the hundredths up",
+      "correctExplanation": "The 5 in thousandths rounds the 4 up to 5.",
+      "distractors": [
+        {
+          "answer": "0.84, because the third digit is exactly 5 so rounding down is correct here",
+          "explanation": "The convention is to round up at 5."
+        },
+        {
+          "answer": "0.8, because rounding removes all digits after the first decimal place entirely",
+          "explanation": "2 decimal places keeps two digits after the point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "A student estimates 48 × 12 as 50 × 10 = 500. Is this reasonable?",
+      "correct": "Yes, the exact answer is 576 and 500 is a close enough estimate",
+      "correctExplanation": "48 ≈ 50 and 12 ≈ 10. The estimate 500 is near 576.",
+      "distractors": [
+        {
+          "answer": "No, because both numbers were rounded in opposite directions here",
+          "explanation": "Rounding to nearby values is standard estimation practice."
+        },
+        {
+          "answer": "No, because the estimate should be exact or the estimation is not useful",
+          "explanation": "Estimation is approximate by nature."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What is 3.995 rounded to 2 decimal places?",
+      "correct": "4.00, because the 5 rounds the 9 up, which carries through the number",
+      "correctExplanation": "3.995 → 3.99 + carry → 4.00.",
+      "distractors": [
+        {
+          "answer": "3.99, because the hundredths digit 9 stays since the third digit is 5",
+          "explanation": "A digit of 5 rounds up, not stays."
+        },
+        {
+          "answer": "3.9, because rounding removes extra digits and keeps only one decimal place",
+          "explanation": "2 decimal places means two digits after the point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Round 12.345 to the nearest whole number.",
+      "correct": "12, because the tenths digit 3 is less than 5 so round down",
+      "correctExplanation": "The tenths digit is 3 (<5), so the ones stay as 12.",
+      "distractors": [
+        {
+          "answer": "13, because the digits 4 and 5 after the tenths place pull the number up",
+          "explanation": "Only the tenths digit matters for rounding to whole numbers."
+        },
+        {
+          "answer": "12.3, because rounding to the nearest whole number keeps one decimal digit",
+          "explanation": "Whole number rounding removes all decimal digits."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Estimate 7.3 + 4.8 by rounding each to the nearest whole number.",
+      "correct": "12, since 7 + 5 = 12 rounds each number to the nearest whole",
+      "correctExplanation": "7.3 ≈ 7, 4.8 ≈ 5. Sum = 12.",
+      "distractors": [
+        {
+          "answer": "11, since 7 + 4 = 11 rounds both numbers down for this estimate",
+          "explanation": "4.8 rounds to 5, not 4."
+        },
+        {
+          "answer": "12.1, since rounding each to one decimal place gives a better estimate here",
+          "explanation": "Rounding to whole numbers is a simpler estimation approach."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What is 9.9499 rounded to 1 decimal place?",
+      "correct": "9.9, because the hundredths digit 4 is less than 5 so round down",
+      "correctExplanation": "The digit after the tenths is 4 (<5).",
+      "distractors": [
+        {
+          "answer": "10.0, because 9.9499 is very close to 10 and should round up to it",
+          "explanation": "Only the immediate next digit (4) determines rounding, not closeness to 10."
+        },
+        {
+          "answer": "9.95, because rounding to 1 decimal place keeps two digits after the point",
+          "explanation": "1 decimal place means one digit after the point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "A calculator shows 14.2857142... for 100 ÷ 7. Round to 2 decimal places.",
+      "correct": "14.29, because the third decimal digit 5 rounds the hundredths up",
+      "correctExplanation": "14.285... → 14.29.",
+      "distractors": [
+        {
+          "answer": "14.28, because the digit 5 can be rounded either way in this situation",
+          "explanation": "Convention: 5 rounds up."
+        },
+        {
+          "answer": "14.3, because rounding to 2 decimal places is the same as 1 place here",
+          "explanation": "2 decimal places keeps two digits after the point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which estimate is best for 198 ÷ 4?",
+      "correct": "50, since 200 ÷ 4 = 50 uses a rounded dividend for quick calculation",
+      "correctExplanation": "198 ≈ 200. 200 ÷ 4 = 50.",
+      "distractors": [
+        {
+          "answer": "40, since 200 ÷ 5 = 40 rounds both numbers for a faster estimate here",
+          "explanation": "4 does not round to 5."
+        },
+        {
+          "answer": "49, since 198 ÷ 4 = 49.5 exactly and estimates should be near exact values",
+          "explanation": "49.5 is exact, not an estimate. 50 is a valid estimate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Round 0.0055 to 3 decimal places.",
+      "correct": "0.006, because the fourth decimal digit 5 rounds the thousandths up",
+      "correctExplanation": "0.005 + carry = 0.006.",
+      "distractors": [
+        {
+          "answer": "0.005, because the fourth digit 5 means keep the thousandths as they are",
+          "explanation": "Convention: 5 rounds up."
+        },
+        {
+          "answer": "0.01, because rounding removes all the small decimal digits at once here",
+          "explanation": "3 decimal places keeps three digits after the point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A student says 4.8 × 7.2 ≈ 5 × 7 = 35. Check the exact answer.",
+      "correct": "34.56, confirming that 35 is a reasonable and close estimate for this product",
+      "correctExplanation": "4.8 × 7.2 = 34.56. The estimate 35 is close.",
+      "distractors": [
+        {
+          "answer": "35.00, proving the estimate and exact answer are always exactly equal here",
+          "explanation": "Estimates are approximate, not exact."
+        },
+        {
+          "answer": "33.6, suggesting the estimate of 35 is too far off to be useful for checking",
+          "explanation": "34.56 ≈ 35, which is close enough for an estimate."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "When rounding to the nearest whole number, look at the {{blank:1}} digit. If it is 5 or more, round {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "tenths",
+          "correctExplanation": "The tenths digit is immediately after the decimal point.",
+          "distractors": [
+            {
+              "answer": "hundredths",
+              "explanation": "Hundredths is two places after the point.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "ones",
+              "explanation": "The ones digit is the one being rounded.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "up",
+          "correctExplanation": "5 or above means increase the ones digit by 1.",
+          "distractors": [
+            {
+              "answer": "down",
+              "explanation": "Down applies when the digit is less than 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sideways",
+              "explanation": "Not a valid rounding direction.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "4.8 × 7.2 is estimated by rounding to {{blank:1}} × 7 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "4.8 rounds to 5.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4 is too far from 4.8.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "48",
+              "explanation": "Removes decimal but doesn't round properly.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "35",
+          "correctExplanation": "5 × 7 = 35.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "5 + 7 = 12 (addition not multiplication).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "57",
+              "explanation": "Concatenates 5 and 7.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "Rounding 2.55 to 1 decimal place gives 2.5 because the digit is exactly 5.",
+      "correct": "False",
+      "correctExplanation": "When the digit is 5, the convention is to round up: 2.55 → 2.6.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Applies 'round down at 5' rule incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Estimating before calculating helps identify errors in the final answer.",
+      "correct": "True",
+      "correctExplanation": "An estimate provides a benchmark to check if the exact answer is reasonable.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks estimation is unnecessary if exact calculation follows."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Rounding 4.999 to 2 decimal places gives 4.99.",
+      "correct": "False",
+      "correctExplanation": "The third decimal 9 ≥ 5, so the hundredths round up: 4.999 → 5.00.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Fails to carry the rounding through to 5.00."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "When estimating a division, only the dividend should be rounded.",
+      "correct": "False",
+      "correctExplanation": "Both dividend and divisor can be rounded to make the estimation easier.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Restricts rounding to only one number."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Rounding 0.450 to 1 decimal place gives 0.4.",
+      "correct": "False",
+      "correctExplanation": "The hundredths digit is 5, so round up: 0.450 → 0.5.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Ignores the 5 and rounds down."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "An estimate of 297 ÷ 6 as 300 ÷ 6 = 50 is reasonable.",
+      "correct": "True",
+      "correctExplanation": "297 ≈ 300. 300 ÷ 6 = 50, and the exact answer is 49.5.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks the rounded dividend changes the estimate too much."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The number of decimal places needed depends on the context of the problem.",
+      "correct": "True",
+      "correctExplanation": "Measurement precision, financial calculations, and scientific data all require different levels.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Believes rounding rules are universal regardless of context."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Rounding to more decimal places always gives a more accurate result.",
+      "correct": "False",
+      "correctExplanation": "Rounding to more places keeps more precision but doesn't improve accuracy if the original data is imprecise.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confuses precision with accuracy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A student rounds 6.749 to 1 decimal place as 6.8. Is this correct?",
+      "correct": "No; the hundredths digit is 4, so 6.749 rounds to 6.7 at 1 decimal place",
+      "correctExplanation": "Only the hundredths digit (4) matters, not the thousandths (9).",
+      "distractors": [
+        {
+          "answer": "Yes, because the 9 in thousandths rounds the 4 up to 5, which then rounds up",
+          "explanation": "Each rounding step is independent; do not chain digit by digit."
+        },
+        {
+          "answer": "No; the answer should be 6.75 because rounding keeps two digits after the point",
+          "explanation": "1 decimal place keeps only one digit."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Estimate 5.2 × 8.7 and check if the exact answer 45.24 is reasonable.",
+      "correct": "5 × 9 = 45; the exact answer 45.24 is very close, so it is reasonable",
+      "correctExplanation": "5.2 ≈ 5, 8.7 ≈ 9. 5 × 9 = 45 ≈ 45.24.",
+      "distractors": [
+        {
+          "answer": "5 × 8 = 40; the exact answer 45.24 is too far from 40 to be reasonable",
+          "explanation": "8.7 rounds to 9, not 8. The estimate 45 is closer."
+        },
+        {
+          "answer": "6 × 9 = 54; the exact answer 45.24 should be closer to 54 to be reasonable",
+          "explanation": "5.2 rounds to 5, not 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A shop needs 47 bus seats for a school trip. Each bus holds 15. How many buses are needed?",
+      "correct": "4 buses, because 47 ÷ 15 = 3.13 and rounding up ensures all students fit",
+      "correctExplanation": "3 buses hold 45 seats (not enough). 4 buses hold 60 (enough).",
+      "distractors": [
+        {
+          "answer": "3 buses, because 47 ÷ 15 = 3.13 rounds down to 3 for the bus count",
+          "explanation": "Rounding down would leave students without seats."
+        },
+        {
+          "answer": "3.13 buses, because the exact division answer should be used for booking here",
+          "explanation": "You cannot book a fraction of a bus."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Round 2.3451 to 3 decimal places.",
+      "correct": "2.345, because the fourth decimal digit 1 is less than 5 so round down",
+      "correctExplanation": "The digit after the third decimal is 1 (<5).",
+      "distractors": [
+        {
+          "answer": "2.346, because the digits after the third place sum to more than 5 combined",
+          "explanation": "Only the immediately next digit determines rounding."
+        },
+        {
+          "answer": "2.35, because rounding to 3 places is similar to rounding to 2 places here",
+          "explanation": "3 decimal places keeps three digits after the point."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why does estimating 2345 ÷ 7 as 2100 ÷ 7 = 300 help check an answer of 335?",
+      "correct": "300 and 335 are close, confirming the exact answer is in the right range",
+      "correctExplanation": "The estimate validates the magnitude of the exact answer.",
+      "distractors": [
+        {
+          "answer": "The estimate should equal the exact answer; 300 ≠ 335 means an error occurred",
+          "explanation": "Estimates are approximate; exact match is not expected."
+        },
+        {
+          "answer": "300 is too far from 335 so the exact calculation must contain a major error",
+          "explanation": "300 and 335 differ by about 10%, which is reasonable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A student says 0.6 + 0.7 = 0.13 on a calculator. Use estimation to check.",
+      "correct": "Estimate: 1 + 1 = 2 approximately; 0.13 is far too small so there is an error",
+      "correctExplanation": "0.6 ≈ 1, 0.7 ≈ 1. The answer should be near 1.3, not 0.13.",
+      "distractors": [
+        {
+          "answer": "The estimate 0 + 1 = 1 shows 0.13 is close enough to be correct here",
+          "explanation": "0.6 rounds to 1, not 0; and 0.13 is far from 1.3."
+        },
+        {
+          "answer": "Estimation cannot help here because decimal addition is too precise for estimates",
+          "explanation": "Estimation catches order-of-magnitude errors effectively."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "When measuring a room length as 4.73 m, what precision is appropriate for flooring?",
+      "correct": "4.7 m, since flooring is measured to the nearest 0.1 m in typical practice",
+      "correctExplanation": "Flooring measurements typically use one decimal place.",
+      "distractors": [
+        {
+          "answer": "4.730 m, since more decimal places give a more accurate flooring measurement always",
+          "explanation": "Extra zeros beyond measurement precision are meaningless."
+        },
+        {
+          "answer": "5 m, since whole numbers are always used for practical building measurements here",
+          "explanation": "Whole metres are too imprecise for room dimensions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "What is the difference between rounding 8.65 to 1 decimal place using 'round half up' vs truncation?",
+      "correct": "Round half up gives 8.7; truncation gives 8.6 by dropping the 5 entirely",
+      "correctExplanation": "Rounding up at 5 vs simply removing digits.",
+      "distractors": [
+        {
+          "answer": "Both give 8.7 because truncation and rounding always produce the same result here",
+          "explanation": "Truncation drops without rounding up."
+        },
+        {
+          "answer": "Both give 8.6 because the digit 5 is not large enough to change the tenths digit",
+          "explanation": "Round half up convention increases the tenths at 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Estimate 398 × 21.",
+      "correct": "8000, since 400 × 20 = 8000 uses rounded values for a quick estimate",
+      "correctExplanation": "398 ≈ 400, 21 ≈ 20. 400 × 20 = 8000.",
+      "distractors": [
+        {
+          "answer": "8400, since 400 × 21 = 8400 rounds only one number for better accuracy here",
+          "explanation": "Rounding both gives a quicker estimate; 8000 is close to exact 8358."
+        },
+        {
+          "answer": "4000, since 400 × 10 = 4000 simplifies the multiplication further for speed",
+          "explanation": "21 rounds to 20, not 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A recipe calls for 2.7 cups. Rounded to the nearest half cup, how much is needed?",
+      "correct": "2.5 cups, because 2.7 is between 2.5 and 3.0 and is closer to 2.5",
+      "correctExplanation": "2.7 − 2.5 = 0.2, 3.0 − 2.7 = 0.3. Closer to 2.5.",
+      "distractors": [
+        {
+          "answer": "3.0 cups, because rounding always goes up when cooking to ensure enough ingredients",
+          "explanation": "Standard rounding is to the nearest value, not always up."
+        },
+        {
+          "answer": "2.0 cups, because rounding to the nearest half cup means going to the nearest whole",
+          "explanation": "The nearest half cup is 2.5, not 2.0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Round 99.95 to 1 decimal place.",
+      "correct": "100.0, because the hundredths digit 5 rounds the tenths 9 up, carrying through",
+      "correctExplanation": "99.95 → 99.9 + carry → 100.0.",
+      "distractors": [
+        {
+          "answer": "99.9, because the 5 at the end is not enough to push past the 9 in tenths",
+          "explanation": "5 ≥ 5 means round up; the carry propagates."
+        },
+        {
+          "answer": "99.10, because the 9 in tenths resets to 1 after rounding up from the 5",
+          "explanation": "The carry makes 99.9 → 100.0, not 99.10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which is the best estimate for 0.49 × 0.52?",
+      "correct": "0.25, since 0.5 × 0.5 = 0.25 rounds both to the nearest half",
+      "correctExplanation": "0.49 ≈ 0.5, 0.52 ≈ 0.5.",
+      "distractors": [
+        {
+          "answer": "0.2, since 0.4 × 0.5 = 0.20 rounds the first number down for this estimate",
+          "explanation": "0.49 is closer to 0.5 than 0.4."
+        },
+        {
+          "answer": "2.5, since 5 × 5 = 25 and moving the decimal gives 2.5 as the estimate",
+          "explanation": "Removes decimals incorrectly; 0.5 × 0.5 = 0.25."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "To round 6.749 to 1 decimal place, look at the {{blank:1}} digit. Since it is {{blank:2}}, round down to 6.7.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "hundredths",
+          "correctExplanation": "The hundredths digit determines rounding for 1 decimal place.",
+          "distractors": [
+            {
+              "answer": "tenths",
+              "explanation": "Tenths is the digit being rounded, not the one examined.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "thousandths",
+              "explanation": "Thousandths affects 2-place rounding.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "The hundredths digit is 4.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 is in the tenths place.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "9 is in the thousandths place.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Estimating 297 ÷ 6: round 297 to {{blank:1}} and divide by 6 to get {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "300",
+          "correctExplanation": "297 ≈ 300 for easy division.",
+          "distractors": [
+            {
+              "answer": "290",
+              "explanation": "290 ÷ 6 is not clean.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "250",
+              "explanation": "250 is too far from 297.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "50",
+          "correctExplanation": "300 ÷ 6 = 50.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "300 ÷ 10 = 30, wrong divisor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "297",
+              "explanation": "That's the original number, not the estimate.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "47 students need buses holding 15 each. Since 47 ÷ 15 = 3.13, round {{blank:1}} to {{blank:2}} buses.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "up",
+          "correctExplanation": "Rounding down would leave students without seats.",
+          "distractors": [
+            {
+              "answer": "down",
+              "explanation": "Rounding down gives 3 buses (45 seats), not enough.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "to nearest",
+              "explanation": "3 is closer but insufficient.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "4 buses × 15 = 60 seats, enough for all.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 × 15 = 45 < 47.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 buses is more than needed.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "0.6 + 0.7 should be about {{blank:1}}, not 0.13. The student likely forgot the {{blank:2}} digit.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.3",
+          "correctExplanation": "0.6 + 0.7 = 1.3.",
+          "distractors": [
+            {
+              "answer": "0.13",
+              "explanation": "0.13 is the error itself.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "13",
+              "explanation": "Missing the decimal point entirely.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "The answer is 1.3; the 1 in the ones place was dropped.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "No zero is missing.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "The 3 is present in 0.13.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A room is 4.73 m long. For flooring, round to {{blank:1}} decimal place(s): {{blank:2}} m.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Flooring uses nearest 0.1 m.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Whole metres are too rough.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 decimal places is unnecessary precision.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4.7",
+          "correctExplanation": "4.73 rounds to 4.7 (3 < 5).",
+          "distractors": [
+            {
+              "answer": "4.8",
+              "explanation": "4.73 would need the second digit ≥ 5 to round up.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5.0",
+              "explanation": "5 m is too imprecise.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Estimating 5.2 × 8.7: round to {{blank:1}} × 9 = {{blank:2}} to check the answer.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "5.2 ≈ 5.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "5.2 is closer to 5 than 6.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "52",
+              "explanation": "Removes the decimal point incorrectly.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "45",
+          "correctExplanation": "5 × 9 = 45.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "5 + 9 = 14 (addition error).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "59",
+              "explanation": "5 and 9 concatenated.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "In a science experiment, reporting a mass as 3.4521 g when the scale reads to 0.1 g is misleading.",
+      "correct": "True",
+      "correctExplanation": "Reporting more decimal places than the measuring tool's precision implies false accuracy.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Thinks more decimal places always means better data."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "When checking 456 × 78 = 35 568, estimating as 500 × 80 = 40 000 proves the answer is wrong.",
+      "correct": "False",
+      "correctExplanation": "The estimate 40 000 and exact answer 35 568 are in the same range. Estimation confirms reasonableness, not exact equality.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Expects estimates to match exact answers precisely."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A student calculates 23.4 × 5.6 = 1310.4. Use estimation to check.",
+      "correct": "Estimate 23 × 6 = 138; the answer 1310.4 is about 10× too large, indicating an error",
+      "correctExplanation": "23.4 ≈ 23, 5.6 ≈ 6. 23 × 6 = 138, not 1310.",
+      "distractors": [
+        {
+          "answer": "Estimate 24 × 6 = 144; the answer 1310.4 is close since 1310 ≈ 1300 here",
+          "explanation": "1310 is not close to 144; the student likely misplaced the decimal."
+        },
+        {
+          "answer": "Estimation cannot detect this error because multiplication is too complex for estimation",
+          "explanation": "Estimation effectively catches order-of-magnitude errors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Round 2.3451 to each: nearest whole, 1 dp, 2 dp. Give all three answers.",
+      "correct": "2, then 2.3, then 2.35 — rounding at different levels of precision",
+      "correctExplanation": "Whole: 2. 1 dp: 2.3. 2 dp: 2.35.",
+      "distractors": [
+        {
+          "answer": "2, then 2.4, then 2.35 — the tenths digit changes depending on later digits",
+          "explanation": "Later digits do not affect earlier rounding. 1 dp: 4<5, so 2.3."
+        },
+        {
+          "answer": "3, then 2.3, then 2.34 — rounding at the whole number level gives 3 here",
+          "explanation": "2.3451 has tenths digit 3 (<5), so rounds to 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A builder needs 7.3 m of timber sold in 1 m lengths. How many lengths are needed?",
+      "correct": "8, because 7.3 rounds up to 8 since 7 lengths would be too short",
+      "correctExplanation": "7 m < 7.3 m needed. Must buy 8.",
+      "distractors": [
+        {
+          "answer": "7, because 7.3 rounds down to 7 when rounding to the nearest whole number",
+          "explanation": "Standard rounding gives 7, but practical context requires rounding up."
+        },
+        {
+          "answer": "7.3, because exact lengths can be purchased from any timber supplier always",
+          "explanation": "Timber is sold in whole-metre lengths."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Estimate 0.0489 × 201 and state the answer to 1 significant figure.",
+      "correct": "10, since 0.05 × 200 = 10 rounds both values for a quick estimate",
+      "correctExplanation": "0.0489 ≈ 0.05, 201 ≈ 200.",
+      "distractors": [
+        {
+          "answer": "1, since 0.05 × 20 = 1 after rounding 201 down to 20 for easier calculation",
+          "explanation": "201 rounds to 200, not 20."
+        },
+        {
+          "answer": "100, since 0.5 × 200 = 100 by rounding 0.0489 to one decimal place only",
+          "explanation": "0.0489 ≈ 0.05, not 0.5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A student says rounding 8.45 to 1 dp gives 8.4. Another says 8.5. Whose approach is standard?",
+      "correct": "8.5, because 'round half up' is the standard convention in schools for the digit 5",
+      "correctExplanation": "At exactly 5, round up is the standard school convention.",
+      "distractors": [
+        {
+          "answer": "8.4, because 'round half to even' (banker's rounding) is always the correct method",
+          "explanation": "Schools teach round-half-up; banker's rounding is for statistics."
+        },
+        {
+          "answer": "Either is acceptable since both 8.4 and 8.5 are valid rounded answers always here",
+          "explanation": "The standard convention gives one definite answer."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Check: is 567 ÷ 9 = 63 reasonable?",
+      "correct": "Yes; 540 ÷ 9 = 60 gives a close estimate, confirming 63 is in the right range",
+      "correctExplanation": "567 ≈ 540. 540 ÷ 9 = 60. 63 ≈ 60.",
+      "distractors": [
+        {
+          "answer": "No; 600 ÷ 9 = 66.7 is a better estimate and 63 is too far below that value",
+          "explanation": "63 is between 60 and 66.7; both estimates confirm reasonableness."
+        },
+        {
+          "answer": "Cannot tell without performing the exact division on a calculator or by hand",
+          "explanation": "Estimation provides enough information to judge reasonableness."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A survey reports that 67.8% of students walk to school. What precision is appropriate for the report?",
+      "correct": "68%, since rounding to the nearest whole percent suits a school survey report",
+      "correctExplanation": "Survey data typically uses whole percentages.",
+      "distractors": [
+        {
+          "answer": "67.80%, adding a trailing zero to show the measurement is precise to hundredths",
+          "explanation": "Adding zeros implies precision that the survey may not have."
+        },
+        {
+          "answer": "70%, rounding to the nearest ten percent gives a cleaner number for the report",
+          "explanation": "Nearest 10% loses too much information for a survey result."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Estimate √50 without a calculator.",
+      "correct": "About 7, since 7² = 49 is very close to 50 and 8² = 64 is too far",
+      "correctExplanation": "√49 = 7, √64 = 8. 50 is closest to 49.",
+      "distractors": [
+        {
+          "answer": "About 25, since the square root is half the number for all positive values overall",
+          "explanation": "Square root is not the same as halving."
+        },
+        {
+          "answer": "About 5, since 5 × 10 = 50 and the square root uses factors of 10",
+          "explanation": "5² = 25, not 50."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A student writes 3.0 instead of 3 when rounding 2.98 to 1 dp. Are they equivalent?",
+      "correct": "Yes; 3.0 and 3 have the same value, though 3.0 shows 1-decimal-place precision",
+      "correctExplanation": "Mathematically 3.0 = 3, but 3.0 indicates precision to one decimal place.",
+      "distractors": [
+        {
+          "answer": "No; 3.0 is larger than 3 because the decimal point adds extra value to it",
+          "explanation": "3.0 = 3; the trailing zero adds no extra value."
+        },
+        {
+          "answer": "No; 3.0 means three-tenths (0.3) whereas 3 means three whole units here",
+          "explanation": "3.0 means three and zero tenths, which equals 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Estimate the total cost of 3 items: $4.95, $12.30, $8.79.",
+      "correct": "$26, since $5 + $12 + $9 = $26 rounds each price to the nearest dollar",
+      "correctExplanation": "4.95≈5, 12.30≈12, 8.79≈9. Total≈26.",
+      "distractors": [
+        {
+          "answer": "$25, since $5 + $12 + $8 = $25 rounds two items up and one down for this total",
+          "explanation": "$8.79 rounds to $9, not $8."
+        },
+        {
+          "answer": "$30, since $5 + $15 + $10 = $30 rounds to the nearest $5 for a quick estimate",
+          "explanation": "Rounding to nearest $5 is too imprecise."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Why might a scientist report a measurement as 4.50 g instead of 4.5 g?",
+      "correct": "The trailing zero shows the measurement is precise to the hundredths place specifically",
+      "correctExplanation": "4.50 g indicates the scale reads to 0.01 g.",
+      "distractors": [
+        {
+          "answer": "The zero is meaningless; 4.50 and 4.5 are always identical in every context here",
+          "explanation": "In science, trailing zeros indicate measurement precision."
+        },
+        {
+          "answer": "The scientist made a typographical error since trailing zeros are never written",
+          "explanation": "Trailing zeros carry meaning in scientific measurement contexts."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A calculator shows 0.33333... for 1 ÷ 3. A student rounds to 0.33 and calculates 0.33 × 3 = 0.99. Explain.",
+      "correct": "Rounding ⅓ to 0.33 introduces error; the lost 0.003... per third accumulates",
+      "correctExplanation": "0.33 × 3 = 0.99, not 1, due to truncation error.",
+      "distractors": [
+        {
+          "answer": "The calculator is wrong because 1 ÷ 3 should give a terminating decimal always",
+          "explanation": "⅓ is a repeating decimal; it never terminates."
+        },
+        {
+          "answer": "0.99 = 1 so there is no error in the calculation or the rounding at all",
+          "explanation": "0.99 ≠ 1 (though 0.999... = 1, 0.99 is finite)."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "23.4 × 5.6 ≈ {{blank:1}} × 6 = {{blank:2}}, so an answer of 1310 is too large.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "23",
+          "correctExplanation": "23.4 ≈ 23.",
+          "distractors": [
+            {
+              "answer": "24",
+              "explanation": "24 × 6 = 144, also acceptable.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "20",
+              "explanation": "20 × 6 = 120, less precise.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "138",
+          "correctExplanation": "23 × 6 = 138.",
+          "distractors": [
+            {
+              "answer": "144",
+              "explanation": "24 × 6 = 144.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1380",
+              "explanation": "Off by a factor of 10.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A builder needs 7.3 m of timber in 1 m lengths. Round {{blank:1}} to get {{blank:2}} lengths.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "up",
+          "correctExplanation": "Must have enough timber; rounding down gives too little.",
+          "distractors": [
+            {
+              "answer": "down",
+              "explanation": "7 m is not enough.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "to nearest",
+              "explanation": "7 is nearest but insufficient.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "8 × 1 = 8 m ≥ 7.3 m.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 < 7.3, not enough.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is more than needed.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "0.0489 × 201 ≈ {{blank:1}} × 200 = {{blank:2}} to 1 significant figure.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.05",
+          "correctExplanation": "0.0489 ≈ 0.05.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "0.5 is 10× too large.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.04",
+              "explanation": "0.04 × 200 = 8, less precise.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "0.05 × 200 = 10.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "0.05 × 20 = 1, wrong divisor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "100",
+              "explanation": "0.5 × 200 = 100.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "567 ÷ 9 ≈ {{blank:1}} ÷ 9 = {{blank:2}}, confirming that 63 is reasonable.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "540",
+          "correctExplanation": "567 ≈ 540 for clean division.",
+          "distractors": [
+            {
+              "answer": "500",
+              "explanation": "500 ÷ 9 ≈ 55.6, not clean.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "600",
+              "explanation": "600 ÷ 9 = 66.7, also reasonable but less precise.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "60",
+          "correctExplanation": "540 ÷ 9 = 60.",
+          "distractors": [
+            {
+              "answer": "63",
+              "explanation": "63 is exact, not an estimate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "54",
+              "explanation": "540 ÷ 10 = 54, wrong divisor.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "To estimate √50, note that {{blank:1}}² = 49 and 8² = {{blank:2}}, so √50 ≈ 7.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "7 × 7 = 49.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5² = 25, too small.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "6² = 36, not adjacent to 50.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "64",
+          "correctExplanation": "8 × 8 = 64.",
+          "distractors": [
+            {
+              "answer": "56",
+              "explanation": "Not a perfect square.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "80",
+              "explanation": "8 × 10 = 80, not 8².",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Items cost $4.95, $12.30, $8.79. Estimate: $5 + ${{blank:1}} + $9 = ${{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "$12.30 rounds to $12.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "$12.30 rounds down, not up.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "$10 is too far from $12.30.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "26",
+          "correctExplanation": "5 + 12 + 9 = 26.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "5 + 12 + 8 = 25 (wrong rounding of $8.79).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "Too high.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A scale reads to 0.1 g. Reporting 3.4521 g uses {{blank:1}} decimal places, but only {{blank:2}} is appropriate.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "3.4521 has 4 decimal places.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Count of decimal digits is 4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is not the count.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "The scale precision is 0.1 g, so 1 decimal place.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Whole grams would lose measured precision.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 places exceeds the scale's accuracy.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Rounding 99.95 to 1 dp: the {{blank:1}} rounds the 9, causing a carry to give {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "The hundredths digit 5 triggers rounding up.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "9 is the tenths digit being rounded, not the trigger.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "0 would mean round down.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "100.0",
+          "correctExplanation": "99.9 + 0.1 = 100.0 after carry.",
+          "distractors": [
+            {
+              "answer": "99.10",
+              "explanation": "Incorrect carry result.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "99.9",
+              "explanation": "Fails to round up.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Rounding 8.45 to 1 dp gives {{blank:1}} using the '{{blank:2}} half up' convention.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8.5",
+          "correctExplanation": "5 at the boundary rounds up.",
+          "distractors": [
+            {
+              "answer": "8.4",
+              "explanation": "Round-half-down is not the school convention.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "Rounding to nearest whole, not 1 dp.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "round",
+          "correctExplanation": "The convention is called 'round half up'.",
+          "distractors": [
+            {
+              "answer": "drop",
+              "explanation": "'Drop' is truncation, not rounding.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "keep",
+              "explanation": "'Keep' is not a rounding convention.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "0.33 × 3 = {{blank:1}}, not 1, because 0.33 is a {{blank:2}} of ⅓.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.99",
+          "correctExplanation": "0.33 × 3 = 0.99.",
+          "distractors": [
+            {
+              "answer": "1.00",
+              "explanation": "That would require 0.333... × 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.9",
+              "explanation": "0.3 × 3 = 0.9, different truncation.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "truncation",
+          "correctExplanation": "0.33 cuts off the repeating digits.",
+          "distractors": [
+            {
+              "answer": "rounding",
+              "explanation": "0.33 is truncated, not rounded (rounded would be 0.33).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "multiple",
+              "explanation": "0.33 is not a multiple of ⅓.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "67.8% in a survey rounds to {{blank:1}}% for a report. This uses {{blank:2}} significant figures.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "68",
+          "correctExplanation": "67.8 rounds to 68 (8≥5).",
+          "distractors": [
+            {
+              "answer": "67",
+              "explanation": "Rounds down incorrectly.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "70",
+              "explanation": "Loses too much information.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "68 has two significant figures.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "68 has two digits, both significant.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "67.8 has 3 sig figs, but 68 has 2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "4.50 g vs 4.5 g: the trailing {{blank:1}} shows precision to the {{blank:2}} place.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "The 0 indicates measured precision.",
+          "distractors": [
+            {
+              "answer": "five",
+              "explanation": "5 is in the tenths.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "decimal",
+              "explanation": "The decimal point is separate from trailing zeros.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "hundredths",
+          "correctExplanation": "4.50 means measured to 0.01 g.",
+          "distractors": [
+            {
+              "answer": "tenths",
+              "explanation": "4.5 shows tenths; 4.50 shows hundredths.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "thousandths",
+              "explanation": "4.500 would show thousandths.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student rounds 2.4499 to 1 dp and gets 2.5, saying each 9 cascades the rounding. Evaluate.",
+      "correct": "Incorrect; only the hundredths digit (4) matters, giving 2.4 not 2.5",
+      "correctExplanation": "For 1 dp, look at hundredths: 4 < 5, so 2.4.",
+      "distractors": [
+        {
+          "answer": "Correct, because the 9s chain together, rounding the 4 up through cascading carry",
+          "explanation": "Rounding examines only the next digit, not all subsequent digits."
+        },
+        {
+          "answer": "Correct, since 2.4499 is close to 2.45 which rounds to 2.5 at 1 decimal place",
+          "explanation": "Rounding is applied once at the specified place, not in stages."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Explain why rounding 0.5 to the nearest whole number using 'round half to even' gives 0, not 1.",
+      "correct": "Banker's rounding sends 0.5 to the nearest even number, which is 0 here",
+      "correctExplanation": "0 is even, 1 is odd. Round-half-to-even chooses 0.",
+      "distractors": [
+        {
+          "answer": "It gives 1 because all rounding methods round 0.5 upward to the nearest whole number",
+          "explanation": "Round-half-to-even differs from round-half-up at exactly 0.5."
+        },
+        {
+          "answer": "It gives 0 because 0.5 is too small to round up under any rounding convention used",
+          "explanation": "Round-half-up does give 1; only banker's rounding gives 0 here."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A recipe serves 4 but needs to serve 7. It uses 2.5 cups of flour. Estimate flour needed.",
+      "correct": "About 4.4 cups, since 2.5 × 7/4 = 2.5 × 1.75 ≈ 2.5 × 2 = 5 then adjust down",
+      "correctExplanation": "Exact: 2.5 × 1.75 = 4.375 ≈ 4.4 cups.",
+      "distractors": [
+        {
+          "answer": "About 7 cups, since each of the 7 people needs 1 cup as a basic estimate here",
+          "explanation": "The ratio 7/4 = 1.75, not 7 cups total."
+        },
+        {
+          "answer": "About 2.5 cups, since the same recipe works for any number of people without change",
+          "explanation": "More servings require more ingredients proportionally."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Why do financial calculations use 2 decimal places rather than rounding to whole dollars?",
+      "correct": "Currency is divided into 100 cents; 2 decimal places match this precision level",
+      "correctExplanation": "Dollars and cents require hundredths.",
+      "distractors": [
+        {
+          "answer": "Banks use more than 2 places, so 2 places loses important financial information always",
+          "explanation": "While banks track fractions of cents internally, reporting uses 2 dp."
+        },
+        {
+          "answer": "Whole dollars are sufficient since cents are too small to matter in most transactions",
+          "explanation": "Cents matter; $9.99 vs $10.00 differs by 1 cent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Estimate 3.14 × 8² for the area of a circle with radius 8 cm.",
+      "correct": "About 200, since 3 × 64 = 192 ≈ 200 gives a quick reasonable estimate here",
+      "correctExplanation": "π ≈ 3, 8² = 64. 3 × 64 = 192 ≈ 200.",
+      "distractors": [
+        {
+          "answer": "About 25, since 3 × 8 = 24 ≈ 25 ignoring the squaring for faster estimation",
+          "explanation": "Must square the radius before multiplying by π."
+        },
+        {
+          "answer": "About 2500, since 3.14 × 64 = 200.96 and adding a zero corrects for π somehow",
+          "explanation": "200 is the correct magnitude; 2500 is far too large."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A student estimates 1.98 × 3.02 as 2 × 3 = 6. The exact answer is 5.9796. Discuss accuracy.",
+      "correct": "The estimate 6 differs by only 0.02, showing rounding balanced the over and under",
+      "correctExplanation": "1.98 is under 2, 3.02 is over 3; the errors partially cancel.",
+      "distractors": [
+        {
+          "answer": "The estimate is poor because 6 ≠ 5.9796 and estimates should match exactly always",
+          "explanation": "Estimates are approximate by nature; 0.02 difference is excellent."
+        },
+        {
+          "answer": "The estimate accidentally worked here but rounding both numbers is usually unreliable",
+          "explanation": "Rounding to nearby values is a standard and reliable estimation technique."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "When is it appropriate to round up regardless of the digit, in practical contexts?",
+      "correct": "When rounding down would give an insufficient result, like seats or containers needed",
+      "correctExplanation": "Practical contexts where shortfall causes problems require rounding up.",
+      "distractors": [
+        {
+          "answer": "Always, because rounding up is safer than rounding down in every real-world situation",
+          "explanation": "Rounding up always wastes resources; context determines the correct choice."
+        },
+        {
+          "answer": "Never, because mathematical rounding rules must always be followed regardless of context",
+          "explanation": "Practical contexts sometimes override mathematical conventions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A measurement is 12.345 ± 0.01. What is the appropriate number of decimal places to report?",
+      "correct": "2 decimal places (12.35), matching the precision of the uncertainty given",
+      "correctExplanation": "The uncertainty ±0.01 indicates hundredths precision.",
+      "distractors": [
+        {
+          "answer": "3 decimal places (12.345), since the measured value has 3 decimal digits already here",
+          "explanation": "The uncertainty limits meaningful precision to 2 places."
+        },
+        {
+          "answer": "0 decimal places (12), since rounding to whole numbers avoids false precision entirely",
+          "explanation": "Rounding to 12 loses meaningful measured precision."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Explain why 0.1 + 0.2 = 0.30000000000000004 on some calculators.",
+      "correct": "Binary floating point cannot represent 0.1 and 0.2 exactly, causing tiny rounding errors",
+      "correctExplanation": "0.1 in binary is a repeating fraction.",
+      "distractors": [
+        {
+          "answer": "The calculator is broken and needs to be replaced with a more accurate model instead",
+          "explanation": "This is a fundamental limitation of binary, not a defect."
+        },
+        {
+          "answer": "Decimal addition is imprecise by nature and always produces small errors in practice",
+          "explanation": "Decimal arithmetic is exact; the issue is binary representation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A scientist measures pH as 7.0. Why is the trailing zero important?",
+      "correct": "It shows the measurement is precise to 0.1 units, not just the nearest whole number",
+      "correctExplanation": "7.0 indicates one decimal place precision; 7 suggests less precision.",
+      "distractors": [
+        {
+          "answer": "The zero is meaningless since 7.0 and 7 are mathematically identical values always",
+          "explanation": "In science, trailing zeros convey measurement precision information."
+        },
+        {
+          "answer": "The zero indicates the instrument was calibrated to zero before the measurement began",
+          "explanation": "Trailing zeros indicate precision, not calibration status."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Estimate the percentage: 47 out of 193 students passed. Is 24% reasonable?",
+      "correct": "Yes; 47/193 ≈ 50/200 = 25%, which is close to the reported 24% value",
+      "correctExplanation": "47 ≈ 50, 193 ≈ 200. 50/200 = 25% ≈ 24%.",
+      "distractors": [
+        {
+          "answer": "No; 47/193 ≈ 50/190 = 26% so 24% is too far from the estimate given here",
+          "explanation": "26% and 24% are both reasonable estimates; 2% difference is small."
+        },
+        {
+          "answer": "Cannot estimate percentages without a calculator to perform the exact division first",
+          "explanation": "Rounding numerator and denominator gives a quick estimate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Compare errors from rounding 4.6 × 3.4 using 5 × 3 vs 4.6 × 3.",
+      "correct": "5 × 3 = 15 overestimates then underestimates, partially cancelling the errors",
+      "correctExplanation": "Exact: 15.64. 5×3=15 (error 0.64) vs 4.6×3=13.8 (error 1.84). Balanced rounding is closer.",
+      "distractors": [
+        {
+          "answer": "4.6 × 3 = 13.8 is better since it keeps one value exact for greater precision",
+          "explanation": "Keeping one exact doesn't always reduce error; balanced rounding can cancel."
+        },
+        {
+          "answer": "Both estimates are equally accurate since rounding any number introduces the same error",
+          "explanation": "Errors depend on which values are rounded and by how much."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A poll reports 51.3% support with margin of error ±3%. Should the result be reported as 51%?",
+      "correct": "51% is appropriate since the margin of error makes the tenths digit meaningless",
+      "correctExplanation": "±3% means the true value could be 48.3% to 54.3%; 0.3% precision is illusory.",
+      "distractors": [
+        {
+          "answer": "51.3% should be kept because rounding loses the precision shown in the poll data",
+          "explanation": "The margin of error already exceeds 0.3%, making it meaningless."
+        },
+        {
+          "answer": "50% is better since rounding to the nearest 10% avoids all false precision entirely",
+          "explanation": "Nearest 10% loses too much information from a ±3% margin."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "Why does rounding intermediate steps in a long calculation produce a different answer than rounding only the final result?",
+      "correct": "Each rounding introduces error that accumulates through subsequent calculation steps",
+      "correctExplanation": "Rounding error propagates and compounds.",
+      "distractors": [
+        {
+          "answer": "Rounding at any stage gives the same result because rounding errors always cancel out",
+          "explanation": "Errors can accumulate rather than cancel."
+        },
+        {
+          "answer": "Only the final rounding matters since intermediate values are not part of the answer",
+          "explanation": "Intermediate rounding affects the final result."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Rounding 2.4499 to 1 dp: the {{blank:1}} digit is 4, so the answer is {{blank:2}} not 2.5.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "hundredths",
+          "correctExplanation": "Look at the digit after the rounding position.",
+          "distractors": [
+            {
+              "answer": "thousandths",
+              "explanation": "Thousandths is too far from the rounding position.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tenths",
+              "explanation": "Tenths is the position being rounded.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2.4",
+          "correctExplanation": "4 < 5, so round down.",
+          "distractors": [
+            {
+              "answer": "2.5",
+              "explanation": "Would require the hundredths digit to be ≥ 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2.45",
+              "explanation": "That's rounding to 2 dp, not 1 dp.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "'Round half to even' sends 2.5 to {{blank:1}} because 2 is {{blank:2}}, not 3.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "2 is even, so round down to 2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is odd; round-half-to-even would go to 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2.5",
+              "explanation": "Must round to a whole number.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "even",
+          "correctExplanation": "2 is even; 3 is odd. Banker's rounding chooses even.",
+          "distractors": [
+            {
+              "answer": "odd",
+              "explanation": "2 is even, not odd.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "smaller",
+              "explanation": "The rule is about even/odd, not size.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "Scaling a recipe from 4 to 7 servings: multiply by {{blank:1}}/4 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "7 servings needed.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4/4 = 1, no scaling.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3/4 reduces the recipe.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.75",
+          "correctExplanation": "7 ÷ 4 = 1.75.",
+          "distractors": [
+            {
+              "answer": "0.75",
+              "explanation": "3/4 = 0.75, that's reducing.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 would double the recipe.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Currency uses {{blank:1}} decimal places because a dollar has {{blank:2}} cents.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Cents are hundredths of a dollar.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1 dp gives only dimes, missing cents.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 dp exceeds cent precision.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "100",
+          "correctExplanation": "$1 = 100 cents.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10 cents = 1 dime, not a dollar.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1000",
+              "explanation": "1000 would be mills, rarely used.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "Area of circle with r = 8: π × 8² ≈ 3 × {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "64",
+          "correctExplanation": "8² = 64.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "8 × 2 = 16, not 8².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 is the radius, not its square.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "192",
+          "correctExplanation": "3 × 64 = 192.",
+          "distractors": [
+            {
+              "answer": "24",
+              "explanation": "3 × 8 = 24, forgot to square.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "256",
+              "explanation": "4 × 64 = 256, used 4 not 3.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "1.98 × 3.02 ≈ 2 × 3 = 6. The errors {{blank:1}} because one is rounded up and the other {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "partially cancel",
+          "correctExplanation": "Over-rounding one offsets under-rounding the other.",
+          "distractors": [
+            {
+              "answer": "add up",
+              "explanation": "The errors are in opposite directions, so they partially cancel.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "double",
+              "explanation": "Errors don't double when they're in opposite directions.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "down",
+          "correctExplanation": "3.02 rounds down to 3, while 1.98 rounds up to 2.",
+          "distractors": [
+            {
+              "answer": "up",
+              "explanation": "1.98 rounds up, not 3.02.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "stays",
+              "explanation": "3.02 does change when rounded to 3.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Binary cannot represent 0.1 exactly, causing {{blank:1}} point errors like 0.1 + 0.2 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "floating",
+          "correctExplanation": "Binary floating-point representation causes this.",
+          "distractors": [
+            {
+              "answer": "decimal",
+              "explanation": "Decimal arithmetic is exact.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "rounding",
+              "explanation": "It's a representation issue, not rounding.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.30000000000000004",
+          "correctExplanation": "The tiny error appears in the last digits.",
+          "distractors": [
+            {
+              "answer": "0.3",
+              "explanation": "That would be exact, but binary cannot achieve it.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.29",
+              "explanation": "The error goes slightly over, not under.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "pH 7.0 has the trailing zero to show precision to {{blank:1}} decimal place(s), meaning the instrument measures to ±{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "7.0 shows one decimal place.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "0 decimal places would just be 7.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "7.00 would show 2 decimal places.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.05",
+          "correctExplanation": "Measurement to nearest 0.1 means ±0.05 uncertainty.",
+          "distractors": [
+            {
+              "answer": "0.1",
+              "explanation": "±0.1 is the full unit, not half.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "±0.5 would be nearest whole number precision.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "47/193 ≈ 50/{{blank:1}} = {{blank:2}}%, confirming 24% is reasonable.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "200",
+          "correctExplanation": "193 ≈ 200.",
+          "distractors": [
+            {
+              "answer": "190",
+              "explanation": "50/190 ≈ 26.3%, also reasonable but less clean.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "100",
+              "explanation": "50/100 = 50%, wrong denominator.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "25",
+          "correctExplanation": "50/200 = 0.25 = 25%.",
+          "distractors": [
+            {
+              "answer": "24",
+              "explanation": "24% is the reported value, not the estimate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "50",
+              "explanation": "50/200 = 25%, not 50%.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "With margin of error ±3%, reporting 51.3% should be rounded to {{blank:1}}% since the {{blank:2}} digit is not meaningful.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "51",
+          "correctExplanation": "The margin of error (3%) exceeds the 0.3% decimal component.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "50% loses a full percentage point of information.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "51.3",
+              "explanation": "Keeping the decimal implies false precision.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tenths",
+          "correctExplanation": "The 0.3 is smaller than the ±3% uncertainty.",
+          "distractors": [
+            {
+              "answer": "ones",
+              "explanation": "The ones digit is meaningful.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "hundredths",
+              "explanation": "There is no hundredths digit in 51.3%.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Rounding intermediate steps introduces {{blank:1}} error. It is better to round only the {{blank:2}} answer.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "accumulated",
+          "correctExplanation": "Each rounding step adds a small error that builds up.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Intermediate rounding does introduce error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative",
+              "explanation": "The error can be positive or negative.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "final",
+          "correctExplanation": "Rounding once at the end minimises total error.",
+          "distractors": [
+            {
+              "answer": "first",
+              "explanation": "Rounding the first value only still propagates error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "intermediate",
+              "explanation": "Rounding intermediates is what causes the problem.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "5 × 3 estimates 4.6 × 3.4 as {{blank:1}}, with balanced rounding {{blank:2}} cancelling errors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "15",
+          "correctExplanation": "5 × 3 = 15.",
+          "distractors": [
+            {
+              "answer": "17",
+              "explanation": "5 × 3.4 = 17, only one number rounded.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "14",
+              "explanation": "4 × 3.5 = 14, different rounding.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "partially",
+          "correctExplanation": "Over-estimate on one factor offsets under-estimate on the other.",
+          "distractors": [
+            {
+              "answer": "fully",
+              "explanation": "Errors don't fully cancel; 15 ≠ 15.64.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "not",
+              "explanation": "The errors do partially cancel.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

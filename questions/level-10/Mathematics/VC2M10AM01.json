@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10AM01",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to solve problems involving the surface area and volume of pyramids, cones, spheres and composite objects.",
+    "generatedAt": "2026-05-19T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to solve problems involving the surface area and volume of pyramids, cones, spheres and composite objects.",
+    "y": [
+      "Extending volume and surface area calculations to curved and pointed shapes completes our toolkit for working with all common 3D objects.",
+      "These formulas are essential for engineering, architecture, manufacturing and any design work involving 3D objects.",
+      "Understanding these relationships develops our spatial reasoning and our ability to work with π in applied contexts."
+    ],
+    "eg": [
+      "Calculating the volume of a cone: V = ⅓πr²h.",
+      "Finding the surface area of a sphere: SA = 4πr².",
+      "Solving: 'How much ice cream can a cone with radius 3 cm and height 12 cm hold?'",
+      "Calculating the volume of a composite object: a hemisphere on top of a cylinder.",
+      "Finding the surface area of a pyramid with a square base.",
+      "Comparing the volumes of a cone, sphere and cylinder with the same radius and height."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The volume of a cone is V = πr²h.",
+      "correct": "False",
+      "correctExplanation": "The cone volume is V = ⅓πr²h, not πr²h. The formula πr²h gives the cylinder volume.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "πr²h is the cylinder volume; the cone includes the ⅓ factor."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The surface area of a sphere is SA = 2πr².",
+      "correct": "False",
+      "correctExplanation": "The surface area of a sphere is SA = 4πr², not 2πr².",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The correct formula has coefficient 4, not 2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The volume of a sphere is V = (4/3)πr².",
+      "correct": "False",
+      "correctExplanation": "The sphere volume is V = (4/3)πr³, using r cubed, not r squared.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Volume is a cubic measure, requiring r³ not r²."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The volume of a pyramid is V = πr²h, the same formula as for a cylinder.",
+      "correct": "False",
+      "correctExplanation": "A pyramid has volume V = ⅓Ah where A is the base area. The formula πr²h applies to cylinders, not pyramids.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Pyramids use ⅓ of the base area times height, and the base is typically polygonal, not circular."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The slant height of a cone is used when calculating the curved surface area.",
+      "correct": "True",
+      "correctExplanation": "The curved surface area of a cone is πrl, where l is the slant height.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The slant height l, not the vertical height h, is used for the lateral surface."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "A hemisphere has half the volume of a sphere with the same radius.",
+      "correct": "True",
+      "correctExplanation": "V_hemisphere = ½ × (4/3)πr³ = (2/3)πr³, which is half the sphere volume.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Cutting a sphere in half produces two hemispheres, each with half the total volume."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The total surface area of a closed cone includes the circular base plus the curved surface.",
+      "correct": "True",
+      "correctExplanation": "Total SA = πr² (base) + πrl (curved surface) = πr(r + l).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A closed cone has both a flat circular base and a curved lateral surface."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The volume of a rectangular pyramid equals the base area multiplied by the height.",
+      "correct": "False",
+      "correctExplanation": "The volume of a pyramid is ⅓ times the base area times the height, not the full product.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Omitting the factor ⅓ gives the volume of a prism, not a pyramid."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The curved surface area of a cone is πrl, where r is the radius and l is the slant height.",
+      "correct": "True",
+      "correctExplanation": "The formula for the lateral (curved) surface area of a cone is πrl.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This formula gives the area of the sector formed when the cone is unrolled."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Doubling the radius of a sphere doubles its surface area.",
+      "correct": "False",
+      "correctExplanation": "SA = 4πr². Replacing r with 2r gives 4π(2r)² = 16πr² = 4 × original. The SA quadruples, not doubles.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Surface area scales with r², so doubling r multiplies SA by 4, not 2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The volume of a cone with radius 3 cm and height 4 cm is 36π cm³.",
+      "correct": "False",
+      "correctExplanation": "V = ⅓π(3)²(4) = ⅓π(36) = 12π cm³, not 36π cm³.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Forgetting the ⅓ factor gives 36π, which is the cylinder volume."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "A composite solid made of a cone on top of a cylinder has volume equal to the sum of each individual volume.",
+      "correct": "True",
+      "correctExplanation": "The total volume of a composite solid is the sum of the volumes of its component shapes.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Volumes are additive when shapes do not overlap."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which formula gives the volume of a sphere with radius r?",
+      "correct": "V = (4/3)πr³",
+      "correctExplanation": "The standard sphere volume formula is (4/3)πr³.",
+      "distractors": [
+        {
+          "answer": "V = (4/3)πr²",
+          "explanation": "This uses r² instead of r³; volume requires the cube of the radius."
+        },
+        {
+          "answer": "V = 4πr³",
+          "explanation": "This is missing the denominator 3 in the fraction."
+        },
+        {
+          "answer": "V = (2/3)πr³",
+          "explanation": "This gives the volume of a hemisphere, not a full sphere."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "What is the surface area of a sphere with radius 5 cm?",
+      "correct": "100π cm²",
+      "correctExplanation": "SA = 4π(5)² = 4π(25) = 100π cm².",
+      "distractors": [
+        {
+          "answer": "25π cm²",
+          "explanation": "This uses πr² (circle area), not 4πr² for the sphere."
+        },
+        {
+          "answer": "50π cm²",
+          "explanation": "This uses 2πr², which is half the correct formula."
+        },
+        {
+          "answer": "200π cm²",
+          "explanation": "This doubles the correct answer; 4π(25) = 100π, not 200π."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What is the volume of a cone with radius 6 cm and height 10 cm?",
+      "correct": "120π cm³",
+      "correctExplanation": "V = ⅓π(6)²(10) = ⅓π(360) = 120π cm³.",
+      "distractors": [
+        {
+          "answer": "360π cm³",
+          "explanation": "This omits the ⅓ factor and gives the cylinder volume instead."
+        },
+        {
+          "answer": "60π cm³",
+          "explanation": "This uses ⅓π(6)(10)², confusing the formula's variables."
+        },
+        {
+          "answer": "36π cm³",
+          "explanation": "This uses only πr², omitting the height entirely from the calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "The slant height of a cone with radius 3 cm and vertical height 4 cm is:",
+      "correct": "5 cm, found using l = √(r² + h²)",
+      "correctExplanation": "l = √(3² + 4²) = √(9 + 16) = √25 = 5 cm.",
+      "distractors": [
+        {
+          "answer": "7 cm, found by adding the radius and height directly together",
+          "explanation": "Slant height uses Pythagoras, not simple addition of r and h."
+        },
+        {
+          "answer": "4 cm, equal to the vertical height of the cone itself",
+          "explanation": "The slant height is always greater than the vertical height."
+        },
+        {
+          "answer": "12 cm, found by multiplying the radius and height for the cone",
+          "explanation": "Slant height is found using Pythagoras, not multiplication."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which formula gives the volume of a pyramid with base area A and height h?",
+      "correct": "V = ⅓Ah",
+      "correctExplanation": "The volume of any pyramid is one-third the base area times the perpendicular height.",
+      "distractors": [
+        {
+          "answer": "V = Ah, the base area multiplied by",
+          "explanation": "V = Ah gives the volume of a prism, not a pyramid."
+        },
+        {
+          "answer": "V = ½Ah, half the base area times the height",
+          "explanation": "The factor is ⅓, not ½; ½Ah is used for triangular cross-sections."
+        },
+        {
+          "answer": "V = ⅓πr²h, using π and the radius of",
+          "explanation": "This gives the cone volume; pyramids have polygonal bases, not circular."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "What is the volume of a hemisphere with radius 6 cm?",
+      "correct": "144π cm³",
+      "correctExplanation": "V = ⅔π(6)³ = ⅔π(216) = 144π cm³.",
+      "distractors": [
+        {
+          "answer": "288π cm³",
+          "explanation": "This is the full sphere volume (4/3)π(216), not half."
+        },
+        {
+          "answer": "72π cm³",
+          "explanation": "This uses ⅓πr³ instead of ⅔πr³ for the hemisphere."
+        },
+        {
+          "answer": "36π cm³",
+          "explanation": "This uses only πr² × h with incorrect dimensions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "The total surface area of a closed cone with radius r and slant height l is:",
+      "correct": "πr² + πrl, combining the base area and curved surface area",
+      "correctExplanation": "Total SA = base (πr²) + lateral surface (πrl).",
+      "distractors": [
+        {
+          "answer": "2πrl, doubling the lateral surface for both sides of the cone",
+          "explanation": "A cone has only one lateral surface; the other face is the circular base."
+        },
+        {
+          "answer": "πr² + 2πrh, using the height instead of slant height for the surface",
+          "explanation": "The curved surface uses slant height l, not vertical height h."
+        },
+        {
+          "answer": "4πr², the same formula as a sphere with equal radius value",
+          "explanation": "4πr² is for a sphere; a cone uses πr² + πrl."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "A square pyramid has base side length 10 cm and height 12 cm. What is the base area?",
+      "correct": "100 cm², since the base is a square with area s²",
+      "correctExplanation": "Base area = 10² = 100 cm².",
+      "distractors": [
+        {
+          "answer": "120 cm², multiplying the base side by the height of the pyramid",
+          "explanation": "The base area is s² = 100, not s × h = 120."
+        },
+        {
+          "answer": "50 cm², using half the square's area for the triangular shape",
+          "explanation": "The base of a square pyramid is a full square, not a triangle."
+        },
+        {
+          "answer": "40 cm², adding all four sides of the square base together",
+          "explanation": "40 cm is the perimeter, not the area of the base."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Doubling the radius of a sphere multiplies its volume by what factor?",
+      "correct": "8, because volume scales with r³ and 2³ = 8",
+      "correctExplanation": "V = (4/3)πr³. Replacing r with 2r: (4/3)π(2r)³ = 8 × (4/3)πr³.",
+      "distractors": [
+        {
+          "answer": "4, because volume scales with r² and 2² = 4 for the sphere",
+          "explanation": "Volume scales with r³, not r²; SA scales with r²."
+        },
+        {
+          "answer": "2, because doubling the radius doubles all linear measurements equally",
+          "explanation": "Volume is a cubic measure, so it scales as 2³ = 8."
+        },
+        {
+          "answer": "6, because 2 × 3 = 6 from the exponent in the volume formula",
+          "explanation": "The scaling factor is 2³ = 8, not 2 × 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What is the curved surface area of a cone with radius 7 cm and slant height 10 cm?",
+      "correct": "70π cm²",
+      "correctExplanation": "Curved SA = πrl = π(7)(10) = 70π cm².",
+      "distractors": [
+        {
+          "answer": "140π cm²",
+          "explanation": "This doubles the formula; curved SA is πrl, not 2πrl."
+        },
+        {
+          "answer": "49π cm²",
+          "explanation": "This uses πr², the base area, not the curved surface."
+        },
+        {
+          "answer": "70 cm²",
+          "explanation": "This omits the π factor from the formula πrl."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which shape has the formula V = ⅓πr²h for its volume?",
+      "correct": "A cone with circular base radius r and height h",
+      "correctExplanation": "The cone is the only standard shape with volume ⅓πr²h.",
+      "distractors": [
+        {
+          "answer": "A cylinder with circular base radius r and height h overall",
+          "explanation": "A cylinder has volume πr²h without the ⅓ factor."
+        },
+        {
+          "answer": "A sphere with radius r, where h represents the diameter",
+          "explanation": "The sphere volume is (4/3)πr³, which does not use height."
+        },
+        {
+          "answer": "A hemisphere with radius r, halving the full sphere volume",
+          "explanation": "A hemisphere has volume ⅔πr³, not ⅓πr²h."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What information is needed to calculate the total surface area of a closed cylinder?",
+      "correct": "The radius r and the height h of the cylinder",
+      "correctExplanation": "Total SA = 2πr² + 2πrh, requiring both r and h.",
+      "distractors": [
+        {
+          "answer": "Only the radius r, since all surfaces depend on r alone",
+          "explanation": "The curved surface area 2πrh requires the height h as well."
+        },
+        {
+          "answer": "The radius r and the slant height l of the cylinder",
+          "explanation": "Cylinders have vertical sides, not slant surfaces; height h is used."
+        },
+        {
+          "answer": "Only the height h, as the radius can be derived from it",
+          "explanation": "The radius and height are independent measurements."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The volume of a cone is V = {{blank:1}}πr²h, and the volume of a sphere is V = (4/3)π{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "⅓",
+          "correctExplanation": "The cone volume is one-third of the corresponding cylinder volume.",
+          "distractors": [
+            {
+              "answer": "½",
+              "explanation": "The factor is ⅓, not ½.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "Using 1 gives the cylinder volume πr²h, not the cone.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "r³",
+          "correctExplanation": "The sphere volume formula uses the cube of the radius.",
+          "distractors": [
+            {
+              "answer": "r²",
+              "explanation": "r² gives area dimensions, not volume; the cube r³ is needed.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "r",
+              "explanation": "r alone gives a linear dimension, not volume.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The surface area of a sphere is SA = {{blank:1}}πr², and the curved surface area of a cone is CSA = π{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "The sphere surface area formula has coefficient 4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The coefficient is 4, not 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "The coefficient is 4, not 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "rl",
+          "correctExplanation": "The curved surface area of a cone uses the radius and slant height.",
+          "distractors": [
+            {
+              "answer": "rh",
+              "explanation": "The curved surface uses slant height l, not vertical height h.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "r²",
+              "explanation": "πr² gives the base area, not the curved surface.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A cone and a cylinder with the same base radius and height have the same volume.",
+      "correct": "False",
+      "correctExplanation": "The cone volume is ⅓πr²h, exactly one-third of the cylinder volume πr²h.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The cone occupies exactly one-third of the cylinder with equal base and height."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The surface area of a hemisphere includes both the curved surface and the flat circular face.",
+      "correct": "True",
+      "correctExplanation": "Total SA of a hemisphere = 2πr² (curved) + πr² (base) = 3πr².",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A closed hemisphere has both a dome-shaped surface and a flat circular base."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Tripling the radius of a cone while keeping the height constant triples the volume.",
+      "correct": "False",
+      "correctExplanation": "V = ⅓πr²h. Replacing r with 3r gives ⅓π(3r)²h = 9 × ⅓πr²h. The volume is multiplied by 9, not 3.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Volume depends on r², so tripling r multiplies volume by 3² = 9, not 3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "A square pyramid with base side 6 cm and height 8 cm has volume 288 cm³.",
+      "correct": "False",
+      "correctExplanation": "V = ⅓(6²)(8) = ⅓(36)(8) = ⅓(288) = 96 cm³, not 288 cm³.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Forgetting the ⅓ factor gives 288, which is the prism volume."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "For a cone, the slant height is always greater than the vertical height.",
+      "correct": "True",
+      "correctExplanation": "By Pythagoras, l = √(r²+h²) > h since r > 0.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The slant height is the hypotenuse of the right triangle formed by r, h, and l."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "A sphere with diameter 10 cm has volume 500π/3 cm³.",
+      "correct": "True",
+      "correctExplanation": "Radius = 5. V = (4/3)π(5)³ = (4/3)(125π) = 500π/3 cm³.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Using radius 5 (half the diameter) in the formula gives 500π/3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "When a hemisphere is placed on top of a cylinder with the same radius, the total surface area includes two circular bases.",
+      "correct": "False",
+      "correctExplanation": "The junction between the hemisphere and cylinder removes one circular face. The total external SA has only the bottom circular base, not two.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "One circular face is internal (hidden at the junction), leaving only the bottom base visible."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Halving the height of a cone while keeping the radius constant quarters its volume.",
+      "correct": "False",
+      "correctExplanation": "V = ⅓πr²h. Replacing h with h/2 gives V/2. Halving h halves V, not quarters it.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Volume is directly proportional to h, so halving h halves V."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A cone has radius 3 cm and height 4 cm. What is its slant height?",
+      "correct": "5 cm, from l = √(9 + 16) = √25",
+      "correctExplanation": "l = √(r² + h²) = √(9+16) = √25 = 5.",
+      "distractors": [
+        {
+          "answer": "7 cm, from adding the radius and height directly together",
+          "explanation": "Slant height uses Pythagoras, not r + h."
+        },
+        {
+          "answer": "12 cm, from multiplying r and h for the hypotenuse calculation",
+          "explanation": "Pythagoras uses √(r²+h²), not r × h."
+        },
+        {
+          "answer": "3.5 cm, from averaging the radius and height values",
+          "explanation": "The slant height is not the average of r and h."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A hemisphere with radius 9 cm has what volume?",
+      "correct": "486π cm³, from V = ⅔π(9)³",
+      "correctExplanation": "V = ⅔π(729) = 486π cm³.",
+      "distractors": [
+        {
+          "answer": "972π cm³, using the full sphere formula without halving the result",
+          "explanation": "972π is the full sphere volume; the hemisphere is half that."
+        },
+        {
+          "answer": "243π cm³, using ⅓πr³ instead of ⅔πr³ for the hemisphere",
+          "explanation": "The hemisphere formula is ⅔πr³, not ⅓πr³."
+        },
+        {
+          "answer": "162π cm³, using ⅔πr² instead of ⅔πr³ for the calculation",
+          "explanation": "Volume requires r³, not r²."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A square pyramid has base side 8 cm and height 6 cm. What is the volume?",
+      "correct": "128 cm³, from V = ⅓(64)(6)",
+      "correctExplanation": "V = ⅓(8²)(6) = ⅓(384) = 128 cm³.",
+      "distractors": [
+        {
+          "answer": "384 cm³, omitting the ⅓ factor in the pyramid volume formula",
+          "explanation": "384 is the prism volume; the pyramid uses ⅓ of that."
+        },
+        {
+          "answer": "192 cm³, using ½ instead of ⅓ in the formula",
+          "explanation": "The correct factor is ⅓, not ½."
+        },
+        {
+          "answer": "48 cm³, using ⅓(base perimeter)(height) instead of base area",
+          "explanation": "Volume uses base area (s²), not base perimeter (4s)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A composite solid consists of a cylinder (r = 4 cm, h = 10 cm) with a hemisphere on top. What is the total volume?",
+      "correct": "160π + 128π/3 cm³",
+      "correctExplanation": "Cylinder: π(16)(10) = 160π. Hemisphere: ⅔π(64) = 128π/3. Total = 160π + 128π/3.",
+      "distractors": [
+        {
+          "answer": "160π + 256π/3 cm³, using the full sphere volume instead",
+          "explanation": "The hemisphere is ⅔πr³, not the full sphere (4/3)πr³."
+        },
+        {
+          "answer": "160π + 64π cm³, using πr³ for the",
+          "explanation": "The hemisphere volume is ⅔πr³ = 128π/3, not πr³ = 64π."
+        },
+        {
+          "answer": "All three have equal volume when dimensions match",
+          "explanation": "The composite solid includes both the cylinder and hemisphere volumes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "The volume of a cone is 48π cm³ and the radius is 4 cm. What is the height?",
+      "correct": "9 cm, solving ⅓π(16)h = 48π",
+      "correctExplanation": "⅓(16)h = 48, so 16h/3 = 48, h = 9.",
+      "distractors": [
+        {
+          "answer": "12 cm, solving π(16)h = 48π without the ⅓ factor for the cone",
+          "explanation": "Omitting ⅓ gives h = 3; the correct formula includes ⅓."
+        },
+        {
+          "answer": "3 cm, dividing 48 by 16 without considering the ⅓ in the formula",
+          "explanation": "48/16 = 3, but V = ⅓πr²h means h = 3V/(πr²) = 9."
+        },
+        {
+          "answer": "36 cm, multiplying 48 by ¾ and then by the radius value",
+          "explanation": "This calculation has no mathematical basis for finding the height."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A sphere has surface area 144π cm². What is its radius?",
+      "correct": "6 cm, from solving 4πr² = 144π",
+      "correctExplanation": "4r² = 144, r² = 36, r = 6.",
+      "distractors": [
+        {
+          "answer": "12 cm, from solving πr² = 144π for the radius",
+          "explanation": "Using πr² gives r = 12, but the sphere SA formula is 4πr²."
+        },
+        {
+          "answer": "36 cm, taking the square root of 144 only without dividing by 4",
+          "explanation": "r² = 144/4 = 36, so r = 6, not r = 36."
+        },
+        {
+          "answer": "3 cm, from solving 4πr² = 36π instead of 144π",
+          "explanation": "The given SA is 144π, not 36π; r = 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Comparing a cone, hemisphere, and cylinder all with radius r and height r, which has the smallest volume?",
+      "correct": "The cone, with V = ⅓πr³, which is smallest among the three shapes",
+      "correctExplanation": "Cone: ⅓πr³. Hemisphere: ⅔πr³. Cylinder: πr³. The cone has the smallest volume.",
+      "distractors": [
+        {
+          "answer": "The hemisphere, with V = ⅔πr³, as the curved shape holds less",
+          "explanation": "⅔πr³ > ⅓πr³, so the hemisphere holds more than the cone."
+        },
+        {
+          "answer": "The cylinder, because it has flat top and bottom faces reducing capacity",
+          "explanation": "The cylinder πr³ is the largest; flat faces do not reduce volume."
+        },
+        {
+          "answer": "All three have equal volume when radius and height match each other",
+          "explanation": "The volumes are ⅓πr³, ⅔πr³, and πr³, all different."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A cone has total surface area πr(r + l). If r = 5 cm and l = 13 cm, what is the total SA?",
+      "correct": "90π cm²",
+      "correctExplanation": "SA = π(5)(5 + 13) = π(5)(18) = 90π cm².",
+      "distractors": [
+        {
+          "answer": "65π cm²",
+          "explanation": "This computes only the curved part πrl = π(5)(13) = 65π."
+        },
+        {
+          "answer": "25π cm²",
+          "explanation": "This computes only the base area πr² = 25π."
+        },
+        {
+          "answer": "180π cm²",
+          "explanation": "This doubles the correct answer; π(5)(18) = 90π, not 180π."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "How does the volume of a sphere change if the radius is halved?",
+      "correct": "It becomes one-eighth of the original, since (½)³ = ⅛",
+      "correctExplanation": "V ∝ r³, so halving r gives (r/2)³ = r³/8, one-eighth the original.",
+      "distractors": [
+        {
+          "answer": "It becomes one-quarter, since (½)² = ¼ applies to volume calculations",
+          "explanation": "Volume scales with r³, not r²; one-quarter is the SA scaling."
+        },
+        {
+          "answer": "It becomes one-half, since all dimensions are halved equally in the formula",
+          "explanation": "Volume is a cubic measure; halving r gives ⅛, not ½."
+        },
+        {
+          "answer": "It becomes one-sixth, computed from dividing the exponent 3 by ½",
+          "explanation": "The scaling factor is (½)³ = ⅛, not 1/6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A triangular pyramid has a base that is an equilateral triangle with side 6 cm and area 9√3 cm². If the height is 10 cm, what is the volume?",
+      "correct": "30√3 cm³, from V = ⅓(9√3)(10)",
+      "correctExplanation": "V = ⅓ × 9√3 × 10 = 30√3 cm³.",
+      "distractors": [
+        {
+          "answer": "90√3 cm³, omitting the ⅓ factor in the volume calculation",
+          "explanation": "The pyramid volume formula requires the ⅓ factor."
+        },
+        {
+          "answer": "45√3 cm³, using ½ instead of ⅓ for the pyramid volume",
+          "explanation": "The correct factor is ⅓, not ½."
+        },
+        {
+          "answer": "15√3 cm³, using ⅓ of the base area only without the height",
+          "explanation": "Volume requires both ⅓ of the base area and multiplication by the height."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "What is the total surface area of a closed hemisphere with radius 5 cm?",
+      "correct": "75π cm², from 2πr² + πr² = 3πr²",
+      "correctExplanation": "Curved: 2π(25) = 50π. Base: π(25) = 25π. Total: 75π cm².",
+      "distractors": [
+        {
+          "answer": "50π cm², including only the curved surface of the hemisphere",
+          "explanation": "A closed hemisphere also includes the flat circular base."
+        },
+        {
+          "answer": "100π cm², using the full sphere SA formula 4πr² by mistake",
+          "explanation": "The hemisphere curved surface is 2πr², and the base adds πr²."
+        },
+        {
+          "answer": "25π cm², including only the circular base of the hemisphere",
+          "explanation": "The base alone is 25π; the curved surface adds 50π more."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A cone has the same volume as a cylinder with radius 6 cm and height 5 cm. If the cone also has radius 6 cm, what is its height?",
+      "correct": "15 cm, because the cone height must be three times the cylinder height",
+      "correctExplanation": "V_cyl = π(36)(5) = 180π. V_cone = ⅓π(36)h = 180π → h = 15.",
+      "distractors": [
+        {
+          "answer": "5 cm, equal to the cylinder height since the radii are the same",
+          "explanation": "The cone needs three times the height for equal volume."
+        },
+        {
+          "answer": "10 cm, doubling the cylinder height for the cone calculation",
+          "explanation": "The factor is 3, not 2; h_cone = 3 × h_cyl."
+        },
+        {
+          "answer": "45 cm, multiplying the cylinder height by 9 to account for the ⅓ here here",
+          "explanation": "The factor is 3, not 9; ⅓π(36)(15) = 180π."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The volume of a cone is V = ⅓πr²h. A cone with r = 3 and h = 12 has volume {{blank:1}}π cm³. This is exactly {{blank:2}} of the cylinder with the same dimensions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "36",
+          "correctExplanation": "V = ⅓π(9)(12) = ⅓(108π) = 36π.",
+          "distractors": [
+            {
+              "answer": "108",
+              "explanation": "108π is the cylinder volume; the cone is ⅓ of that.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "54",
+              "explanation": "54π is ½ of the cylinder volume, not ⅓.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "⅓",
+          "correctExplanation": "A cone is always ⅓ the volume of the corresponding cylinder.",
+          "distractors": [
+            {
+              "answer": "½",
+              "explanation": "The ratio is ⅓, not ½.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¼",
+              "explanation": "The ratio is ⅓, not ¼.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The slant height of a cone is found using l = √(r² + h²). With r = 5 and h = 12, the slant height is {{blank:1}} cm, and the curved surface area is {{blank:2}}π cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "13",
+          "correctExplanation": "l = √(25 + 144) = √169 = 13.",
+          "distractors": [
+            {
+              "answer": "17",
+              "explanation": "√(25+144) = √169 = 13, not 17.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "60",
+              "explanation": "60 is r × h, not the slant height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "65",
+          "correctExplanation": "CSA = πrl = π(5)(13) = 65π.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "πrl = π(5)(13) = 65π, not 60π.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "25π is the base area πr², not the curved surface.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A sphere with radius 3 cm has surface area {{blank:1}}π cm² and volume {{blank:2}}π cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "36",
+          "correctExplanation": "SA = 4π(9) = 36π.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "9π is πr², the area of a great circle, not the sphere SA.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "27",
+              "explanation": "27π has no standard geometric formula for a sphere.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "36",
+          "correctExplanation": "V = (4/3)π(27) = 36π.",
+          "distractors": [
+            {
+              "answer": "108",
+              "explanation": "108π uses 4πr³ instead of (4/3)πr³.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "27",
+              "explanation": "27π uses πr³ without the 4/3 factor.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Doubling the radius of a sphere multiplies the surface area by {{blank:1}} and the volume by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "SA ∝ r², so (2r)² = 4r² gives a factor of 4.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "SA scales with r², not r; the factor is 2² = 4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 is the volume scaling factor, not surface area.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "V ∝ r³, so (2r)³ = 8r³ gives a factor of 8.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4 is the surface area scaling factor, not volume.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "The volume scaling factor is 2³ = 8, not 6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A square pyramid has base side s and height h. The base area is {{blank:1}} and the volume is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "s²",
+          "correctExplanation": "The base is a square with area s × s = s².",
+          "distractors": [
+            {
+              "answer": "4s",
+              "explanation": "4s is the perimeter, not the area of the square base.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "½s²",
+              "explanation": "½s² is the area of a triangle, not a square.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "⅓s²h",
+          "correctExplanation": "Pyramid volume = ⅓ × base area × height = ⅓s²h.",
+          "distractors": [
+            {
+              "answer": "s²h",
+              "explanation": "This is the volume of a rectangular prism, not a pyramid.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "½s²h",
+              "explanation": "The factor is ⅓, not ½.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A composite solid of a cylinder (r, h₁) topped with a cone (r, h₂) has total volume πr²h₁ + {{blank:1}}. The shared circular face is {{blank:2}} in the total surface area.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "⅓πr²h₂",
+          "correctExplanation": "The cone volume is ⅓πr²h₂.",
+          "distractors": [
+            {
+              "answer": "πr²h₂",
+              "explanation": "This is a cylinder volume, not a cone.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "½πr²h₂",
+              "explanation": "The cone factor is ⅓, not ½.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "not included",
+          "correctExplanation": "The internal circular face at the junction is not part of the external surface.",
+          "distractors": [
+            {
+              "answer": "included twice",
+              "explanation": "Internal faces are hidden and counted zero times.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "included once",
+              "explanation": "The shared face is internal and not part of the external SA.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A cone with radius 5 cm and height 12 cm holds more than 300 cm³ of liquid.",
+      "correct": "True",
+      "correctExplanation": "V = ⅓π(25)(12) = 100π ≈ 314.2 cm³, which exceeds 300 cm³.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "100π ≈ 314.2, so the cone holds slightly more than 300 cm³."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "A sphere that fits exactly inside a cube of side 10 cm has surface area 400π cm².",
+      "correct": "False",
+      "correctExplanation": "The sphere has diameter 10, so radius = 5. SA = 4π(25) = 100π cm², not 400π cm².",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Using r = 5 (half the cube side), the SA is 100π."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "An ice cream cone has radius 3 cm and height 12 cm. What volume of ice cream fills the cone?",
+      "correct": "36π cm³",
+      "correctExplanation": "V = ⅓π(9)(12) = 36π ≈ 113.1 cm³.",
+      "distractors": [
+        {
+          "answer": "108π cm³, full cylinder",
+          "explanation": "108π is the cylinder volume; the cone is ⅓ of that."
+        },
+        {
+          "answer": "18π cm³, halving the height",
+          "explanation": "The height is 12, not 6; h is not halved."
+        },
+        {
+          "answer": "12π cm³, using ⅓πrh",
+          "explanation": "The formula requires r², not r."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A composite solid is a hemisphere (r = 6 cm) on top of a cylinder (r = 6 cm, h = 10 cm). What is the total volume?",
+      "correct": "360π + 144π = 504π cm³",
+      "correctExplanation": "Cylinder: π(36)(10) = 360π. Hemisphere: ⅔π(216) = 144π. Total: 504π.",
+      "distractors": [
+        {
+          "answer": "360π + 288π = 648π cm³, using full sphere",
+          "explanation": "288π is the full sphere; the hemisphere is ⅔πr³ = 144π."
+        },
+        {
+          "answer": "360π cm³ only, forgetting to include the hemisphere on top",
+          "explanation": "The total volume includes both the cylinder and hemisphere."
+        },
+        {
+          "answer": "360π + 72π = 432π cm³, using ⅓πr³ instead of ⅔πr³",
+          "explanation": "The hemisphere formula is ⅔πr³, not ⅓πr³."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A sphere has volume 288π cm³. What is the radius?",
+      "correct": "6 cm, from (4/3)πr³ = 288π giving r³ = 216",
+      "correctExplanation": "(4/3)r³ = 288, r³ = 216, r = 6.",
+      "distractors": [
+        {
+          "answer": "8 cm, from incorrectly solving πr³ = 288π",
+          "explanation": "The formula has factor 4/3, so r³ = 288 × 3/4 = 216."
+        },
+        {
+          "answer": "12 cm, from solving (4/3)πr² = 288π for the radius",
+          "explanation": "The volume formula uses r³, not r²; 12 comes from r² = 144."
+        },
+        {
+          "answer": "3 cm, from halving the diameter that corresponds to the volume",
+          "explanation": "r³ = 216 gives r = 6, not r = 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A square pyramid has base side 10 cm and height 15 cm. What is the volume?",
+      "correct": "500 cm³",
+      "correctExplanation": "V = ⅓(100)(15) = ⅓(1500) = 500 cm³.",
+      "distractors": [
+        {
+          "answer": "1500 cm³, omitting the ⅓ factor",
+          "explanation": "1500 is the prism volume; the pyramid uses ⅓."
+        },
+        {
+          "answer": "750 cm³, using ½ instead of ⅓",
+          "explanation": "The correct factor is ⅓, not ½."
+        },
+        {
+          "answer": "150 cm³, using perimeter not area",
+          "explanation": "The base area is 10² = 100, not 4 × 10 = 40."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A closed cone has radius 4 cm and slant height 9 cm. What is the total surface area?",
+      "correct": "52π cm², from πr² + πrl = 16π + 36π",
+      "correctExplanation": "Base: π(16) = 16π. Curved: π(4)(9) = 36π. Total: 52π cm².",
+      "distractors": [
+        {
+          "answer": "36π cm², including only the curved surface area of the cone",
+          "explanation": "The total SA includes the circular base as well."
+        },
+        {
+          "answer": "72π cm², doubling the curved surface area for the calculation",
+          "explanation": "The curved surface is πrl = 36π; doubling is incorrect."
+        },
+        {
+          "answer": "16π cm², including only the base area of the circular cone",
+          "explanation": "The base alone is 16π; the curved surface adds 36π."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A hemispherical bowl has inner radius 10 cm. How much water (in cm³) can it hold?",
+      "correct": "2000π/3 cm³",
+      "correctExplanation": "V = ⅔π(10)³ = ⅔π(1000) = 2000π/3 ≈ 2094 cm³.",
+      "distractors": [
+        {
+          "answer": "4000π/3 cm³, using the full sphere volume instead of half",
+          "explanation": "The bowl is a hemisphere, so use ⅔πr³, not (4/3)πr³."
+        },
+        {
+          "answer": "1000π/3 cm³, using ⅓πr³ instead of ⅔πr³ for the hemisphere",
+          "explanation": "The hemisphere formula is ⅔πr³, not ⅓πr³."
+        },
+        {
+          "answer": "100π cm³, using πr² × h with an assumed",
+          "explanation": "The hemisphere volume formula does not use a separate height variable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A grain silo consists of a cylinder (r = 3 m, h = 8 m) with a conical roof (r = 3 m, h = 4 m). What is the total volume?",
+      "correct": "72π + 12π = 84π m³",
+      "correctExplanation": "Cylinder: π(9)(8) = 72π. Cone: ⅓π(9)(4) = 12π. Total: 84π.",
+      "distractors": [
+        {
+          "answer": "72π + 36π = 108π m³, omitting the ⅓ in the cone volume",
+          "explanation": "The cone volume is ⅓π(9)(4) = 12π, not 36π."
+        },
+        {
+          "answer": "72π m³ only, excluding the conical roof from the total",
+          "explanation": "The silo includes both the cylindrical body and the conical roof."
+        },
+        {
+          "answer": "72π + 18π = 90π m³, using ½ for the cone factor",
+          "explanation": "The cone factor is ⅓, not ½."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "The surface area of a sphere must equal 256π cm². What is the diameter?",
+      "correct": "16 cm, because r = 8 from 4πr² = 256π, so d = 16",
+      "correctExplanation": "4r² = 256, r² = 64, r = 8, d = 2r = 16.",
+      "distractors": [
+        {
+          "answer": "8 cm, giving the radius as the diameter by mistake",
+          "explanation": "8 cm is the radius; the diameter is twice that."
+        },
+        {
+          "answer": "32 cm, doubling the surface area coefficient before solving for r",
+          "explanation": "4r² = 256 gives r = 8 and d = 16, not 32."
+        },
+        {
+          "answer": "64 cm, taking the square root of only 256 without dividing by 4",
+          "explanation": "r² = 256/4 = 64, so r = 8, not r = 64."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A cone is filled with water to half its height. What fraction of the total volume is filled?",
+      "correct": "⅛, because at half height the radius is also halved, giving (½)²(½) = ⅛",
+      "correctExplanation": "At height h/2, the radius scales to r/2. V_small = ⅓π(r/2)²(h/2) = ⅓πr²h/8 = V/8.",
+      "distractors": [
+        {
+          "answer": "½, because the water fills half the height of the cone exactly",
+          "explanation": "The cone narrows toward the apex, so half height gives much less than half volume."
+        },
+        {
+          "answer": "¼, because only the height is halved while the radius stays constant here",
+          "explanation": "In a cone, the radius at any height is proportional to the height."
+        },
+        {
+          "answer": "1/6, from multiplying ⅓ by ½ for the two halving operations",
+          "explanation": "The volume scales as (h/H)³ = (½)³ = ⅛, not ⅓ × ½."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A sphere fits inside a cylinder of radius 5 cm and height 10 cm. What percentage of the cylinder is occupied by the sphere?",
+      "correct": "66.7%, because V_sphere/V_cylinder = (4/3)πr³/(πr²·2r) = 2/3",
+      "correctExplanation": "V_sphere = (4/3)π(125) = 500π/3. V_cyl = π(25)(10) = 250π. Ratio = (500π/3)/(250π) = 2/3 ≈ 66.7%.",
+      "distractors": [
+        {
+          "answer": "50%, because the sphere touches the top and bottom but not all sides",
+          "explanation": "The ratio is 2/3, not ½; the sphere fills more than half."
+        },
+        {
+          "answer": "75%, because the sphere fills most of the cylinder's interior space",
+          "explanation": "The ratio is exactly 2/3 ≈ 66.7%, not 75%."
+        },
+        {
+          "answer": "33.3%, using ⅓ as the ratio instead of ⅔ for the comparison",
+          "explanation": "⅓ is the cone-to-cylinder ratio; the sphere-to-cylinder ratio is ⅔."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A rectangular pyramid has base 8 cm × 6 cm and height 9 cm. What is the volume?",
+      "correct": "144 cm³",
+      "correctExplanation": "V = ⅓(48)(9) = ⅓(432) = 144 cm³.",
+      "distractors": [
+        {
+          "answer": "432 cm³, calculating base area × height without",
+          "explanation": "432 is the prism volume; the pyramid uses ⅓."
+        },
+        {
+          "answer": "216 cm³, using ½ instead of ⅓ for",
+          "explanation": "The correct factor is ⅓, not ½."
+        },
+        {
+          "answer": "72 cm³, using ⅓ of the base perimeter instead",
+          "explanation": "Volume uses base area (48 cm²), not perimeter (28 cm)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A toy is a cone (r = 3 cm, h = 8 cm) glued to a hemisphere (r = 3 cm). What is the total surface area?",
+      "correct": "3π√73 + 18π cm²",
+      "correctExplanation": "Cone slant: √(9+64)=√73. Cone CSA = 3π√73. Hemisphere curved = 18π. Junction hidden.",
+      "distractors": [
+        {
+          "answer": "3π√73 + 18π + 9π cm², adding the shared circular face as well",
+          "explanation": "The circular junction is internal and not included in external SA."
+        },
+        {
+          "answer": "9π√73 + 18π cm², tripling the cone curved surface in error",
+          "explanation": "The cone CSA is πrl = 3π√73, not 9π√73."
+        },
+        {
+          "answer": "3π√73 + 36π cm², using the full sphere SA instead of hemisphere",
+          "explanation": "The hemisphere curved SA is 2πr² = 18π, not 4πr² = 36π."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "A cone with r = 6 cm and h = 8 cm has slant height l = {{blank:1}} cm and curved surface area {{blank:2}}π cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "l = √(36+64) = √100 = 10.",
+          "distractors": [
+            {
+              "answer": "14",
+              "explanation": "14 is 6+8, not √(36+64).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "48",
+              "explanation": "48 is 6×8, not the slant height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "60",
+          "correctExplanation": "CSA = πrl = π(6)(10) = 60π.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "36π is the base area πr², not the curved surface.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "80",
+              "explanation": "80 is not πrl with r=6, l=10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A sphere with radius 4 cm has volume {{blank:1}}π/3 cm³. Its surface area is {{blank:2}}π cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "256",
+          "correctExplanation": "V = (4/3)π(64) = 256π/3.",
+          "distractors": [
+            {
+              "answer": "64",
+              "explanation": "64π/3 uses r² instead of r³.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "192",
+              "explanation": "192 is 3×64, not (4/3)×64.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "64",
+          "correctExplanation": "SA = 4π(16) = 64π.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "16π is πr², not 4πr².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "32",
+              "explanation": "32π uses 2πr², not 4πr².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A square pyramid with base side 12 cm and height 10 cm has base area {{blank:1}} cm² and volume {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "144",
+          "correctExplanation": "Base area = 12² = 144.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "48 = 4×12 is the perimeter, not the area.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "120",
+              "explanation": "120 = 12×10 confuses base side with height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "480",
+          "correctExplanation": "V = ⅓(144)(10) = 480.",
+          "distractors": [
+            {
+              "answer": "1440",
+              "explanation": "1440 omits the ⅓ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "720",
+              "explanation": "720 uses ½ instead of ⅓.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "For a cone filled to half its height, the water radius is {{blank:1}} the full radius, and the water volume is {{blank:2}} the total cone volume.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "half",
+          "correctExplanation": "Similar triangles: at height h/2, the radius is r/2.",
+          "distractors": [
+            {
+              "answer": "equal to",
+              "explanation": "The radius decreases proportionally with height in a cone.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¼ of",
+              "explanation": "The radius scales linearly with height, not quadratically.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "⅛ of",
+          "correctExplanation": "V = ⅓π(r/2)²(h/2) = V_total/8.",
+          "distractors": [
+            {
+              "answer": "½ of",
+              "explanation": "Half the height does not mean half the volume in a cone.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "¼ of",
+              "explanation": "Volume scales as (h_ratio)³ = (½)³ = ⅛, not ¼.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A cylinder (r = 5, h = 10) has a hemisphere (r = 5) on top. The total volume is {{blank:1}}π + {{blank:2}}π/3 cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "250",
+          "correctExplanation": "Cylinder: π(25)(10) = 250π.",
+          "distractors": [
+            {
+              "answer": "125",
+              "explanation": "125π uses πr²(h/2), halving the height.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "50π uses πr²(2), not πr²(10).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "250",
+          "correctExplanation": "Hemisphere: ⅔π(125) = 250π/3.",
+          "distractors": [
+            {
+              "answer": "500",
+              "explanation": "500π/3 is the full sphere, not hemisphere.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "125",
+              "explanation": "125π/3 uses ⅓πr³ instead of ⅔πr³.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A sphere fits perfectly inside a cylinder. The ratio of the sphere volume to the cylinder volume is {{blank:1}}/3, which equals approximately {{blank:2}}%.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "V_sphere/V_cyl = (4/3)πr³/(2πr³) = 2/3.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The ratio is 2/3, not 1/3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4/3 is the sphere volume coefficient, not the ratio.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "66.7",
+          "correctExplanation": "2/3 ≈ 0.667 = 66.7%.",
+          "distractors": [
+            {
+              "answer": "33.3",
+              "explanation": "33.3% is 1/3, the cone-to-cylinder ratio.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "75",
+              "explanation": "75% is 3/4, not 2/3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A hemispherical bowl of radius 8 cm can hold {{blank:1}}π/3 cm³ of water. This is equivalent to approximately {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1024",
+          "correctExplanation": "V = ⅔π(512) = 1024π/3.",
+          "distractors": [
+            {
+              "answer": "2048",
+              "explanation": "2048π/3 is the full sphere volume, not hemisphere.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "512",
+              "explanation": "512π/3 uses ⅓πr³ instead of ⅔πr³.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1072",
+          "correctExplanation": "1024π/3 ≈ 1072 cm³.",
+          "distractors": [
+            {
+              "answer": "2145",
+              "explanation": "This is the full sphere volume approximation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "536",
+              "explanation": "This is ⅓πr³ ≈ 536, the wrong hemisphere formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A grain silo has a cylindrical body (r = 4 m, h = 6 m) and conical roof (r = 4 m, h = 3 m). Total volume = {{blank:1}}π + {{blank:2}}π m³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "96",
+          "correctExplanation": "Cylinder: π(16)(6) = 96π.",
+          "distractors": [
+            {
+              "answer": "72",
+              "explanation": "72π uses π(16)(4.5) which is incorrect.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "48",
+              "explanation": "48π uses π(16)(3), confusing cylinder and cone heights.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "16",
+          "correctExplanation": "Cone: ⅓π(16)(3) = 16π.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "48π omits the ⅓ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "24",
+              "explanation": "24π uses ½ instead of ⅓.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "The total surface area of a closed hemisphere with r = 7 cm is {{blank:1}}πr² = {{blank:2}}π cm².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "Total SA = 2πr² (curved) + πr² (base) = 3πr².",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2πr² is only the curved surface, missing the base.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4πr² is the full sphere surface area.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "147",
+          "correctExplanation": "3π(49) = 147π.",
+          "distractors": [
+            {
+              "answer": "98",
+              "explanation": "2π(49) = 98π omits the base.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "196",
+              "explanation": "4π(49) = 196π is the full sphere SA.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A cone (r = 3, h = 4) joined to a hemisphere (r = 3) has total volume ⅓π(9)(4) + ⅔π(27) = {{blank:1}}π + {{blank:2}}π cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "Cone: ⅓π(9)(4) = 12π.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "36π omits the ⅓ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "9π confuses radius with r² in the formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "18",
+          "correctExplanation": "Hemisphere: ⅔π(27) = 18π.",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "36π is the full sphere volume (4/3)(27)π.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "9π uses ⅓πr³ instead of ⅔πr³.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "To find the height of a cone given V = 150π and r = 5, use h = 3V/(πr²) = 3(150π)/(π·{{blank:1}}) = {{blank:2}} cm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "25",
+          "correctExplanation": "r² = 5² = 25.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The formula uses r², not r.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is 2r, not r².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "18",
+          "correctExplanation": "h = 3(150)/25 = 450/25 = 18.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "30 = 150/5, using r instead of r².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 = 150/25, omitting the factor of 3.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A rectangular pyramid with base 10 × 8 cm and height 12 cm has volume ⅓({{blank:1}})(12) = {{blank:2}} cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "80",
+          "correctExplanation": "Base area = 10 × 8 = 80 cm².",
+          "distractors": [
+            {
+              "answer": "36",
+              "explanation": "36 is the perimeter, not the area.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "18",
+              "explanation": "18 is (10+8), not the product.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "320",
+          "correctExplanation": "V = ⅓(80)(12) = ⅓(960) = 320.",
+          "distractors": [
+            {
+              "answer": "960",
+              "explanation": "960 omits the ⅓ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "480",
+              "explanation": "480 uses ½ instead of ⅓.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A manufacturer wants to minimise material for a closed cylinder holding 1000 cm³. Which relationship between r and h minimises surface area?",
+      "correct": "h = 2r, making the height equal to the diameter of the cylinder",
+      "correctExplanation": "For fixed V = πr²h: SA = 2πr² + 2πrh. Substituting h = V/(πr²) and differentiating gives h = 2r at the minimum.",
+      "distractors": [
+        {
+          "answer": "h = r, making the height equal to the radius of the cylinder",
+          "explanation": "h = r does not minimise SA; calculus shows h = 2r is optimal."
+        },
+        {
+          "answer": "h = πr, linking the height to π times the radius",
+          "explanation": "h = πr has no special optimisation significance."
+        },
+        {
+          "answer": "h = r/2, making the height half the radius for minimal surface here",
+          "explanation": "h = r/2 gives a squat cylinder with more surface area than optimal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A cone and sphere have the same radius r. If their volumes are equal, what is the cone height in terms of r?",
+      "correct": "h = 4r, since ⅓πr²h = (4/3)πr³ gives h = 4r",
+      "correctExplanation": "Setting ⅓πr²h = (4/3)πr³: h = 4r.",
+      "distractors": [
+        {
+          "answer": "h = 3r, derived from matching the cone to three times a hemisphere",
+          "explanation": "⅓πr²(3r) = πr³ ≠ (4/3)πr³; the volumes do not match."
+        },
+        {
+          "answer": "h = 2r, the height equalling the diameter of the sphere",
+          "explanation": "⅓πr²(2r) = ⅔πr³ ≠ (4/3)πr³; this gives half the sphere volume."
+        },
+        {
+          "answer": "h = r, keeping the height equal to the radius for simplicity",
+          "explanation": "⅓πr²(r) = ⅓πr³ ≠ (4/3)πr³; this is one-quarter of the sphere volume."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A sphere is inscribed in a cone with radius R and height H. Express the sphere radius r in terms of R and H.",
+      "correct": "r = RH/(R + √(R²+H²)), derived from the inradius formula",
+      "correctExplanation": "Cross-section: isosceles triangle base 2R, height H. Inradius = area/semi-perimeter = RH/(R + √(R²+H²)).",
+      "distractors": [
+        {
+          "answer": "r = R/2, half the base radius regardless of the cone's height",
+          "explanation": "The inscribed sphere radius depends on both R and H, not just R."
+        },
+        {
+          "answer": "r = H/3, one-third of the cone height for any inscribed sphere",
+          "explanation": "The sphere radius depends on both the radius and height of the cone."
+        },
+        {
+          "answer": "r = RH/(R + H), using the harmonic mean of R and H directly",
+          "explanation": "The correct denominator uses R + l where l = √(R²+H²), not R + H."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Water flows into an inverted cone at 10 cm³/s. The cone has radius 5 cm and height 10 cm. When the water depth is 4 cm, at what rate is the depth rising?",
+      "correct": "5/(2π) cm/s, approximately 0.80 cm/s from the related rates calculation",
+      "correctExplanation": "V = πh³/12, dV/dt = πh²/4 · dh/dt. At h=4: dh/dt = 10/(4π) = 5/(2π).",
+      "distractors": [
+        {
+          "answer": "10/(π) cm/s, using the full base radius 5 instead of the ratio r = h/2 here",
+          "explanation": "At h = 4, the water surface radius is 2, not 5."
+        },
+        {
+          "answer": "10/(16π) cm/s, using πr²dh/dt with r = 4 instead of r = h/2",
+          "explanation": "r = h/2 = 2 at h = 4, so πr² = 4π, giving 10/4π = 5/2π."
+        },
+        {
+          "answer": "10/π cm/s, dividing the flow rate by π times the height directly",
+          "explanation": "The calculation requires the related rates formula, not simple division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A solid metal cone (r = 6 cm, h = 12 cm) is melted and recast as a sphere. What is the radius of the sphere?",
+      "correct": "3∛4 cm, approximately 4.76 cm from solving (4/3)πr³ = 144π",
+      "correctExplanation": "V_cone = 144π. r³ = 144 × ¾ = 108. r = ∛108 = 3∛4.",
+      "distractors": [
+        {
+          "answer": "6 cm, keeping the same radius as the original cone used",
+          "explanation": "(4/3)π(216) = 288π ≠ 144π; the radius must be smaller."
+        },
+        {
+          "answer": "4 cm, from taking the cube root of 64 as an approximation",
+          "explanation": "r³ = 108, not 64; ∛108 ≈ 4.76."
+        },
+        {
+          "answer": "12 cm, using the cone height as the sphere radius directly",
+          "explanation": "The volume determines the new radius; r³ = 108 gives r ≈ 4.76."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A tent is a cone with base diameter 4 m and slant height 3 m. What area of canvas (curved surface only) is needed?",
+      "correct": "6π m², from CSA = π(2)(3)",
+      "correctExplanation": "r = 2, l = 3. CSA = πrl = π(2)(3) = 6π m².",
+      "distractors": [
+        {
+          "answer": "12π m², using the diameter instead of radius in the formula",
+          "explanation": "The formula uses radius r = 2, not diameter d = 4."
+        },
+        {
+          "answer": "9π m², confusing slant height squared with the product rl",
+          "explanation": "CSA = πrl = 6π, not πl² = 9π."
+        },
+        {
+          "answer": "6 m², omitting π from the curved surface area formula entirely",
+          "explanation": "The formula is πrl = 6π, which includes the factor π."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A hemispherical dome of radius 8 m is to be painted. If paint covers 10 m² per litre, how many litres are needed?",
+      "correct": "Approximately 41 litres, from 2π(64)/10 = 128π/10 ≈ 40.2 rounded up",
+      "correctExplanation": "Curved SA = 128π ≈ 402.1 m². 402.1/10 ≈ 40.2, rounded up to 41.",
+      "distractors": [
+        {
+          "answer": "Approximately 20 litres, using πr² instead of 2πr² for the dome",
+          "explanation": "πr² = 64π ≈ 201 m² gives 20 litres, but the dome is 2πr²."
+        },
+        {
+          "answer": "Approximately 80 litres, using the full sphere SA 4πr² for the dome",
+          "explanation": "The dome is a hemisphere with curved SA 2πr², not a full sphere."
+        },
+        {
+          "answer": "Approximately 26 litres, dividing 256π by 10 using πr² doubled incorrectly",
+          "explanation": "The curved SA is 2πr² = 128π ≈ 402, not 256π."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A composite solid is a cylinder (r = 3, h = 7) with cones (r = 3, h = 4) at both ends. What is the total volume?",
+      "correct": "87π cm³, from 63π + 2(12π)",
+      "correctExplanation": "Cylinder: 63π. Each cone: 12π. Two cones: 24π. Total: 63π + 24π = 87π.",
+      "distractors": [
+        {
+          "answer": "63π + 48π = 111π cm³, omitting the ⅓ factor in",
+          "explanation": "Each cone volume is ⅓π(9)(4) = 12π, not 36π."
+        },
+        {
+          "answer": "63π + 12π = 75π cm³, counting only one cone instead of two",
+          "explanation": "There are cones at both ends, so both must be included."
+        },
+        {
+          "answer": "63π cm³ only, excluding both conical ends from the total",
+          "explanation": "The total includes the cylindrical body and both conical ends."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A sphere and cylinder have the same surface area. If the sphere has radius R, what is the cylinder's height when it also has radius R?",
+      "correct": "h = R, from solving 2πR² + 2πRh = 4πR²",
+      "correctExplanation": "2πRh = 4πR² − 2πR² = 2πR², so h = R.",
+      "distractors": [
+        {
+          "answer": "h = 2R, equalling the diameter of the sphere for matching areas",
+          "explanation": "2πR(2R) = 4πR², but total SA includes bases: 2πR² + 4πR² = 6πR² ≠ 4πR²."
+        },
+        {
+          "answer": "h = R/2, halving the radius for the cylinder height value",
+          "explanation": "2πR(R/2) = πR²; total SA = 3πR² ≠ 4πR²."
+        },
+        {
+          "answer": "h = πR, including π in the height relationship for the cylinder",
+          "explanation": "This has no basis; h = R is the correct result."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A frustum is formed by cutting a cone (R = 9, H = 12) at height 4 from the base. What is the frustum's volume?",
+      "correct": "228π cm³, from V_big − V_small = 324π − 96π",
+      "correctExplanation": "Big cone: ⅓π(81)(12)=324π. Small cone (r=6, h=8): ⅓π(36)(8)=96π. Frustum: 228π.",
+      "distractors": [
+        {
+          "answer": "324π cm³, using only the big cone volume without subtracting the top",
+          "explanation": "The frustum excludes the small top cone."
+        },
+        {
+          "answer": "96π cm³, giving only the volume of the removed small cone",
+          "explanation": "The frustum is the larger piece, 324π − 96π = 228π."
+        },
+        {
+          "answer": "162π cm³, halving the big cone volume for the frustum",
+          "explanation": "The frustum is not half the cone; it depends on where the cut is made."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A ball bearing (sphere, r = 0.5 cm) is dropped into a cylindrical cup of water (r = 3 cm). By how much does the water level rise?",
+      "correct": "1/54 cm, from (4/3)π(0.5)³ ÷ (π·9)",
+      "correctExplanation": "V = (4/3)π(1/8) = π/6. Rise = (π/6)/(9π) = 1/54 cm.",
+      "distractors": [
+        {
+          "answer": "1/6 cm, dividing the sphere volume by π only",
+          "explanation": "The rise equals V_sphere/(πR²) = (π/6)/(9π) = 1/54."
+        },
+        {
+          "answer": "1/18 cm, using r² = 0.25 instead of (4/3)r³ for",
+          "explanation": "V = (4/3)π(0.125) = π/6; using r² gives the wrong volume."
+        },
+        {
+          "answer": "1/9 cm, dividing the sphere radius by the cup radius directly",
+          "explanation": "The rise depends on volume displacement, not radius ratio."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Two cones share a base (r = 5) and have heights 6 and 10 on opposite sides, forming a bicone. What is the total volume?",
+      "correct": "400π/3 cm³, summing ⅓π(25)(6) + ⅓π(25)(10)",
+      "correctExplanation": "V₁ = 50π, V₂ = 250π/3. Total = 150π/3 + 250π/3 = 400π/3.",
+      "distractors": [
+        {
+          "answer": "⅓π(25)(16) = 400π/3 cm³, treating the bicone as a single cone of height 16",
+          "explanation": "This happens to give the same answer but is conceptually wrong; the shape is two cones, not one."
+        },
+        {
+          "answer": "250π cm³, using π(25)(10) as the total for the combined shape",
+          "explanation": "Each cone needs the ⅓ factor, and both heights must be included separately."
+        },
+        {
+          "answer": "100π cm³, adding the two cone volumes as 50π + 50π without correction",
+          "explanation": "The second cone has height 10: ⅓π(25)(10) = 250π/3, not 50π."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A metal pipe is a cylinder with outer radius 5 cm, inner radius 3 cm, and length 20 cm. What is the volume of metal?",
+      "correct": "320π cm³, from π(25−9)(20) = π(16)(20)",
+      "correctExplanation": "V = π(R²−r²)h = π(25−9)(20) = 320π cm³.",
+      "distractors": [
+        {
+          "answer": "500π cm³, using only the outer radius π(25)(20)",
+          "explanation": "This is the total cylinder volume; the hollow core must be subtracted."
+        },
+        {
+          "answer": "180π cm³, using only the inner radius π(9)(20) for the hollow",
+          "explanation": "180π is the hollow volume; the metal is the difference."
+        },
+        {
+          "answer": "160π cm³, using π(R−r)²(h) = π(4)(20) with incorrect area formula",
+          "explanation": "The annular area is π(R²−r²), not π(R−r)²."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A tank is a cylinder (r = 2 m, h = 5 m) with hemispherical ends (r = 2 m). What is the total external surface area?",
+      "correct": "36π m², from 4πr² + 2πrh = 16π + 20π",
+      "correctExplanation": "Two hemispheres = sphere SA 16π. Cylinder curved = 20π. Total: 36π.",
+      "distractors": [
+        {
+          "answer": "16π + 20π + 8π = 44π m², adding circular bases that are already covered",
+          "explanation": "The hemispherical caps replace the flat ends; no separate base areas."
+        },
+        {
+          "answer": "16π m², counting only the two hemispherical caps without the cylinder",
+          "explanation": "The cylindrical body contributes 20π to the total SA."
+        },
+        {
+          "answer": "20π + 8π = 28π m², omitting the hemisphere surfaces from the total",
+          "explanation": "The hemispheres contribute 16π (equivalent to one full sphere)."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A cone (r=6, h=12) melted into a sphere: V_cone = {{blank:1}}π. Solving (4/3)πr³ = this gives r = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "144",
+          "correctExplanation": "V = ⅓π(36)(12) = 144π.",
+          "distractors": [
+            {
+              "answer": "432",
+              "explanation": "432π omits the ⅓ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "72",
+              "explanation": "72π uses ⅓π(36)(6) with wrong height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3∛4",
+          "correctExplanation": "r³ = 108 = 27×4, so r = 3∛4 ≈ 4.76.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "(4/3)π(216) = 288π ≠ 144π.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "∛144",
+              "explanation": "r³ = 144×¾ = 108, not 144.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "For a cylinder with fixed volume V, the SA is minimised when h = {{blank:1}}r. This means the height equals the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Calculus optimisation gives h = 2r at the SA minimum.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "h = r does not minimise the surface area.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "π",
+              "explanation": "h = πr has no optimisation significance.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "diameter",
+          "correctExplanation": "h = 2r means the height equals the diameter of the base.",
+          "distractors": [
+            {
+              "answer": "radius",
+              "explanation": "h = 2r is the diameter, not the radius.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "circumference",
+              "explanation": "The circumference is 2πr, much larger than h = 2r.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A frustum cut from a cone (R=9, H=12) at height 4 from the base has small-end radius {{blank:1}} and volume {{blank:2}}π cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "At height 8 from apex: r = 9×(8/12) = 6.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "r = 9×(4/12) = 3 uses distance from base, not apex.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4.5",
+              "explanation": "4.5 = 9/2, not the similar-triangles result.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "228",
+          "correctExplanation": "V_big − V_small = 324π − 96π = 228π.",
+          "distractors": [
+            {
+              "answer": "324",
+              "explanation": "324π is the entire cone volume.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "96",
+              "explanation": "96π is the removed top cone.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "A ball (r=0.5 cm) in a cup (R=3 cm) raises the water level by V_sphere/(π{{blank:1}}²) = {{blank:2}} cm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The cup radius R = 3 determines the cross-sectional area πR².",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "0.5 is the ball radius, not the cup radius.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is the cup diameter, not radius.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/54",
+          "correctExplanation": "V = π/6. Rise = (π/6)/(9π) = 1/54 cm.",
+          "distractors": [
+            {
+              "answer": "1/6",
+              "explanation": "1/6 divides by π only, not by πR².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/18",
+              "explanation": "1/18 uses wrong sphere volume formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A metal pipe (R=5, r=3, h=20) has cross-sectional area π(R²−r²) = {{blank:1}}π cm² and metal volume {{blank:2}}π cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "16",
+          "correctExplanation": "π(25−9) = 16π.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "π(5−3)² = 4π uses (R−r)², not R²−r².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "34",
+              "explanation": "34π adds R² and r² instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "320",
+          "correctExplanation": "16π × 20 = 320π.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "80π uses 4π × 20 from the wrong area formula.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "500",
+              "explanation": "500π uses only the outer volume π(25)(20).",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A cone and sphere with equal radius r have equal volumes when the cone height is h = {{blank:1}}r. This height is {{blank:2}} times the diameter.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "⅓πr²h = (4/3)πr³ gives h = 4r.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "⅓πr²(2r) = ⅔πr³ ≠ (4/3)πr³.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "⅓πr²(3r) = πr³ ≠ (4/3)πr³.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "h = 4r = 2 × 2r = 2 × diameter.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4r = 2 diameters, not 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "4r = 2d, not 1d.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "An inverted cone (r=5, h=10) receives water at 10 cm³/s. At depth 4 cm, the water radius is {{blank:1}} cm and the depth rises at {{blank:2}}/(2π) cm/s.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Similar triangles: r/h = 5/10 = ½, so at h=4, r = 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "r = h/2, so r = 4/2 = 2, not 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 is the full cone radius, not the water surface radius at h=4.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "dV/dt = πh²/4 · dh/dt → 10 = 4π · dh/dt → dh/dt = 5/(2π).",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10/(4π) = 5/(2π), so the numerator is 5, not 10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "The calculation gives 10/(4π) = 5/(2π), numerator 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A tank is a cylinder (r=2, h=5) with hemispherical ends. The two hemispheres combine to form a full {{blank:1}} with SA = {{blank:2}}π m².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sphere",
+          "correctExplanation": "Two hemispheres of the same radius combine to form a complete sphere.",
+          "distractors": [
+            {
+              "answer": "cylinder",
+              "explanation": "Two hemispheres form a sphere, not a cylinder.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "cone",
+              "explanation": "Two hemispheres form a sphere, not a cone.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "16",
+          "correctExplanation": "SA = 4π(4) = 16π.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8π uses 2πr², which is one hemisphere only.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "32",
+              "explanation": "32π doubles the correct sphere SA.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A sphere inscribed in a cone (R, H) has radius r = RH/(R + {{blank:1}}), where l is the {{blank:2}} of the cone.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "l",
+          "correctExplanation": "The formula uses the slant height l = √(R²+H²) in the denominator.",
+          "distractors": [
+            {
+              "answer": "H",
+              "explanation": "R + H is the harmonic mean denominator, not the correct inradius formula.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "R",
+              "explanation": "R + R = 2R has no basis in the inradius formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "slant height",
+          "correctExplanation": "l = √(R²+H²) is the slant height of the cone.",
+          "distractors": [
+            {
+              "answer": "vertical height",
+              "explanation": "The vertical height is H, not l.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diameter",
+              "explanation": "The diameter is 2R; l is the slant height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A composite solid of a cylinder (r=3, h=7) with cones (r=3, h=4) at both ends has total volume 63π + {{blank:1}}π = {{blank:2}}π cm³.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "24",
+          "correctExplanation": "Two cones: 2 × ⅓π(9)(4) = 24π.",
+          "distractors": [
+            {
+              "answer": "48",
+              "explanation": "48π omits the ⅓ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "12",
+              "explanation": "12π counts only one cone.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "87",
+          "correctExplanation": "63π + 24π = 87π.",
+          "distractors": [
+            {
+              "answer": "111",
+              "explanation": "111 = 63+48, omitting ⅓ for the cones.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "75",
+              "explanation": "75 = 63+12, counting only one cone.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A hemispherical dome (r=8 m) has curved SA = 2π({{blank:1}}) = {{blank:2}}π m². Paint covering 10 m²/L requires approximately 41 litres.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "64",
+          "correctExplanation": "r² = 8² = 64.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "16 is 2r, not r².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 is r, not r².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "128",
+          "correctExplanation": "2π(64) = 128π.",
+          "distractors": [
+            {
+              "answer": "64",
+              "explanation": "64π uses πr², not 2πr².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "256",
+              "explanation": "256π uses 4πr², the full sphere SA.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A sphere occupies {{blank:1}}/3 of the volume of its circumscribed cylinder. As a percentage, this is approximately {{blank:2}}%.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "V_sphere/V_cyl = (4/3)πr³/(2πr³) = 2/3.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1/3 is the cone-to-cylinder ratio.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4/3 is the sphere volume coefficient, not the ratio.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "66.7",
+          "correctExplanation": "2/3 ≈ 0.667 = 66.7%.",
+          "distractors": [
+            {
+              "answer": "33.3",
+              "explanation": "33.3% = 1/3, which is the cone ratio.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "75",
+              "explanation": "75% = 3/4, not 2/3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

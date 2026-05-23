@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10AA10",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to experiment with functions and relations using digital tools, making conjectures and verifying them.",
+    "generatedAt": "2026-05-19T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to experiment with functions and relations using digital tools, making conjectures and verifying them.",
+    "y": [
+      "Technology allows us to explore mathematical relationships dynamically, observing patterns and developing conjectures before proving them formally.",
+      "The experimental-conjecture-verification cycle mirrors authentic mathematical research practice.",
+      "Digital exploration builds mathematical intuition that deepens our understanding of functions and their behaviour."
+    ],
+    "eg": [
+      "Using Desmos to explore families of functions and observe how parameters affect graph shapes.",
+      "Making a conjecture about the number of intersection points of two function types and verifying it.",
+      "Using a CAS calculator to investigate properties of trigonometric functions.",
+      "Exploring: 'For what values of k does y = x² + k have no x-intercepts?' and verifying algebraically.",
+      "Investigating inverse functions by reflecting graphs in y = x using technology.",
+      "Using technology to explore the relationship between a function and its derivative graphically."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A graphing tool such as Desmos allows exploration of how parameter changes affect a function's graph in real time.",
+      "correct": "True",
+      "correctExplanation": "Graphing tools update graphs dynamically as parameters are adjusted, enabling real-time exploration.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Graphing tools do show real-time updates, which is their key advantage for mathematical investigation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "A slider in Desmos controls only the y-intercept of a function, not the gradient or curvature.",
+      "correct": "False",
+      "correctExplanation": "Sliders can control any parameter in a function, including gradient, curvature, translations, and stretches.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sliders are not limited to y-intercept; they link to whatever parameter is assigned."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Reflecting a graph in the line y = x using technology produces the graph of the inverse relation.",
+      "correct": "True",
+      "correctExplanation": "The reflection of y = f(x) in y = x gives x = f(y), which is the inverse relation.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Reflection in y = x is the standard geometric method for obtaining an inverse."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A conjecture in mathematics is a statement that has already been formally proven.",
+      "correct": "False",
+      "correctExplanation": "A conjecture is an unproven statement proposed based on observation; it becomes a theorem once proven.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A conjecture requires proof before it is accepted as a theorem."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Changing the value of a in y = ax² stretches the parabola vertically without moving its vertex.",
+      "correct": "True",
+      "correctExplanation": "The parameter a controls vertical stretch and reflection but does not shift the vertex from the origin in y = ax².",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "In y = ax², the vertex remains at (0, 0) regardless of the value of a."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Digital tools can only display polynomial functions, not exponential or trigonometric functions.",
+      "correct": "False",
+      "correctExplanation": "Modern graphing tools display polynomial, exponential, trigonometric, logarithmic, and many other function types.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Graphing software is not restricted to polynomials; it handles a wide range of function types."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The discriminant Δ = b² − 4ac determines the number of x-intercepts of a quadratic function.",
+      "correct": "True",
+      "correctExplanation": "When Δ > 0 there are two x-intercepts, Δ = 0 gives one, and Δ < 0 gives none.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The discriminant directly indicates how many times the parabola crosses the x-axis."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "Testing a single example is sufficient to prove a mathematical conjecture is always true.",
+      "correct": "False",
+      "correctExplanation": "A single example can support a conjecture but cannot prove it for all cases; a counterexample disproves it.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Proof requires demonstrating truth for all cases, not just one example."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The graph of y = f(x) + k is a horizontal translation of y = f(x) by k units.",
+      "correct": "False",
+      "correctExplanation": "Adding k to f(x) produces a vertical translation, not horizontal. Horizontal translation uses f(x − k).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "f(x)+k shifts vertically; f(x−k) shifts horizontally."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Using technology to test multiple values of k in y = x² + k can help form a conjecture about x-intercepts.",
+      "correct": "True",
+      "correctExplanation": "Systematically varying k and observing when the parabola crosses the x-axis supports conjecture formation.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Varying parameters and observing patterns is the core of experimental mathematics with technology."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A conjecture formed from observing a pattern in a digital tool replaces the need for algebraic verification.",
+      "correct": "False",
+      "correctExplanation": "A conjecture is an observation that must still be verified algebraically or logically to confirm it is always true.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Digital exploration supports conjecture formation, but formal verification remains essential."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Two functions graphed on the same set of axes intersect wherever their outputs are not equal.",
+      "correct": "False",
+      "correctExplanation": "Two functions intersect where their outputs are equal, that is, where f(x) = g(x).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Intersection points occur when both functions give the same y-value at the same x-value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What does a slider in a graphing tool allow a user to do?",
+      "correct": "Vary a parameter continuously to observe its effect on the graph",
+      "correctExplanation": "Sliders dynamically adjust parameters, showing real-time changes to the function's graph.",
+      "distractors": [
+        {
+          "answer": "Solve equations algebraically by entering coefficients one at a time",
+          "explanation": "Sliders adjust parameters visually, not solve equations algebraically."
+        },
+        {
+          "answer": "Delete sections of the graph that fall below the x-axis",
+          "explanation": "Sliders do not remove parts of graphs; they adjust parameter values."
+        },
+        {
+          "answer": "Change the colour of the function's graph without altering the equation",
+          "explanation": "Sliders affect the equation's parameters, not just display properties."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which transformation is represented by replacing f(x) with f(x − 3)?",
+      "correct": "A horizontal translation 3 units to the right",
+      "correctExplanation": "Replacing x with (x−3) shifts the graph 3 units right because each output occurs 3 units later.",
+      "distractors": [
+        {
+          "answer": "A horizontal translation 3 units to the left for the graph",
+          "explanation": "f(x−3) shifts right, not left; f(x+3) would shift left."
+        },
+        {
+          "answer": "A vertical translation 3 units upward on the y-axis",
+          "explanation": "Vertical translation uses f(x) + 3, not f(x − 3)."
+        },
+        {
+          "answer": "A reflection in the x-axis followed by a shift of 3",
+          "explanation": "Reflection uses −f(x), not a horizontal input substitution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What is the purpose of making a conjecture in mathematical investigation?",
+      "correct": "To propose a general statement based on observed patterns for later verification",
+      "correctExplanation": "A conjecture is an educated guess drawn from patterns, intended to be tested and proven or disproven.",
+      "distractors": [
+        {
+          "answer": "To prove a theorem without needing any further evidence at all here here here here",
+          "explanation": "A conjecture is not a proof; it requires verification."
+        },
+        {
+          "answer": "To memorise formulas that apply to specific numerical examples",
+          "explanation": "Conjectures are general statements about patterns, not formula memorisation."
+        },
+        {
+          "answer": "To simplify a complex equation into a linear form for graphing",
+          "explanation": "Conjectures concern general mathematical truths, not equation simplification."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "In y = a·sin(x), what effect does increasing |a| have on the graph?",
+      "correct": "The amplitude increases, stretching the graph vertically from the x-axis",
+      "correctExplanation": "The parameter a controls the amplitude of the sine function.",
+      "distractors": [
+        {
+          "answer": "The period decreases, compressing the graph along the horizontal axis",
+          "explanation": "The period is controlled by the coefficient of x, not by a."
+        },
+        {
+          "answer": "The graph shifts upward by a units along the y-axis",
+          "explanation": "Changing amplitude is not the same as vertical translation."
+        },
+        {
+          "answer": "The graph reflects in the y-axis, reversing its direction horizontally here",
+          "explanation": "Reflection in the y-axis uses sin(−x), not a change in amplitude."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which digital tool feature is most useful for identifying intersection points of two functions?",
+      "correct": "Plotting both functions on the same axes and reading coordinates at crossings",
+      "correctExplanation": "Graphing both functions reveals intersection points where the curves cross.",
+      "distractors": [
+        {
+          "answer": "Entering one function's equation into a spreadsheet cell to auto-solve here here",
+          "explanation": "Spreadsheets do not natively graph intersections of functions."
+        },
+        {
+          "answer": "Zooming out until the entire coordinate plane is visible at once",
+          "explanation": "Zooming out may lose detail needed to identify exact intersection coordinates."
+        },
+        {
+          "answer": "Changing the background colour of the graph to highlight differences",
+          "explanation": "Background colour does not help identify mathematical intersection points."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "What does Δ < 0 indicate about the graph of a quadratic y = ax² + bx + c?",
+      "correct": "The parabola does not cross the x-axis and has no real x-intercepts",
+      "correctExplanation": "A negative discriminant means the quadratic has no real roots, so the graph stays above or below the axis.",
+      "distractors": [
+        {
+          "answer": "The parabola has exactly one x-intercept, touching the axis once here",
+          "explanation": "One x-intercept occurs when Δ = 0, not Δ < 0."
+        },
+        {
+          "answer": "The parabola opens downward instead of upward for this function",
+          "explanation": "The direction of opening depends on the sign of a, not the discriminant."
+        },
+        {
+          "answer": "The vertex of the parabola lies on the x-axis at the origin",
+          "explanation": "The vertex position depends on b and c, not on the discriminant alone."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "How is the inverse of a function represented graphically using technology?",
+      "correct": "By reflecting the original graph in the line y = x",
+      "correctExplanation": "The inverse function swaps x and y coordinates, which is geometrically a reflection in y = x.",
+      "distractors": [
+        {
+          "answer": "By rotating the graph 90 degrees clockwise around the origin",
+          "explanation": "Rotation by 90° does not produce the inverse; reflection in y = x does."
+        },
+        {
+          "answer": "By translating the graph so it passes through the origin exactly",
+          "explanation": "Translation does not create an inverse; it shifts the entire graph."
+        },
+        {
+          "answer": "By reflecting the original graph in the x-axis to flip vertically",
+          "explanation": "Reflection in the x-axis gives −f(x), not the inverse relation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What happens to the graph of y = 2^x when it is replaced by y = 2^(x−1)?",
+      "correct": "The graph shifts 1 unit to the right along the horizontal axis",
+      "correctExplanation": "Replacing x with (x−1) produces a horizontal shift of 1 unit to the right.",
+      "distractors": [
+        {
+          "answer": "The graph shifts 1 unit upward along the vertical axis",
+          "explanation": "An upward shift would be y = 2^x + 1, not y = 2^(x−1)."
+        },
+        {
+          "answer": "The graph is stretched vertically by a factor of 2 from the axis",
+          "explanation": "Vertical stretch uses a multiplier outside the exponent, not inside."
+        },
+        {
+          "answer": "The graph reflects in the y-axis, reversing its growth direction",
+          "explanation": "Reflection in the y-axis uses y = 2^(−x), not a shift inside the exponent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which statement best describes the experimental-conjecture-verification cycle?",
+      "correct": "Observe patterns, propose a general rule, then prove or disprove the rule",
+      "correctExplanation": "The cycle involves observation leading to conjecture, followed by formal verification.",
+      "distractors": [
+        {
+          "answer": "Memorise a formula, apply it to ten examples, then accept it as proven here",
+          "explanation": "Memorising and applying is not the same as investigating and verifying."
+        },
+        {
+          "answer": "Graph a function once, assume it is always true, then move on",
+          "explanation": "A single observation is insufficient; verification is required."
+        },
+        {
+          "answer": "Use technology to generate a proof automatically without human input",
+          "explanation": "Technology supports exploration but does not replace human reasoning in proofs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What effect does changing h in y = (x − h)² have on the parabola?",
+      "correct": "It shifts the vertex horizontally to the point (h, 0)",
+      "correctExplanation": "The parameter h controls the horizontal position of the vertex in vertex form.",
+      "distractors": [
+        {
+          "answer": "It changes the width of the parabola, making it narrower or wider",
+          "explanation": "Width is controlled by the coefficient of the squared term, not h."
+        },
+        {
+          "answer": "It reflects the parabola in the line x = h vertically",
+          "explanation": "Changing h translates the graph; it does not create a reflection."
+        },
+        {
+          "answer": "It rotates the parabola 90 degrees about the vertex point",
+          "explanation": "Quadratic graphs do not rotate; h produces horizontal translation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "When using a CAS calculator to explore trigonometric functions, what can be investigated?",
+      "correct": "Period, amplitude, phase shift, and vertical translation of the graph",
+      "correctExplanation": "CAS tools allow systematic exploration of all transformation parameters.",
+      "distractors": [
+        {
+          "answer": "Only the gradient of tangent lines at specific integer points here here",
+          "explanation": "CAS tools explore all function properties, not just tangent gradients."
+        },
+        {
+          "answer": "Whether the function passes through the origin exclusively",
+          "explanation": "Origin behaviour is just one aspect; CAS explores many properties."
+        },
+        {
+          "answer": "The exact decimal expansion of π to a million digits only",
+          "explanation": "CAS calculators explore function behaviour, not just compute constants."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A student varies k in y = x² + k and observes the graph. What changes?",
+      "correct": "The vertical position of the parabola shifts up or down with k",
+      "correctExplanation": "Adding k translates the parabola vertically without changing its shape.",
+      "distractors": [
+        {
+          "answer": "The parabola becomes wider or narrower depending on the size of k",
+          "explanation": "Width depends on the coefficient of x², not the constant k."
+        },
+        {
+          "answer": "The axis of symmetry moves left or right as k changes value",
+          "explanation": "The axis of symmetry x = 0 is unchanged by vertical translation."
+        },
+        {
+          "answer": "The parabola rotates clockwise as k increases above zero",
+          "explanation": "Parabolas do not rotate; k produces vertical translation only."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A {{blank:1}} is an unproven statement proposed after observing a pattern, and it must be {{blank:2}} before it is accepted as a theorem.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "conjecture",
+          "correctExplanation": "A conjecture is a proposed statement based on observed patterns.",
+          "distractors": [
+            {
+              "answer": "theorem",
+              "explanation": "A theorem is already proven; a conjecture is not yet proven.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "formula",
+              "explanation": "A formula is a mathematical relationship, not an unproven proposal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "verified",
+          "correctExplanation": "Verification through proof is required before a conjecture becomes a theorem.",
+          "distractors": [
+            {
+              "answer": "graphed",
+              "explanation": "Graphing may support a conjecture but does not constitute formal proof.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "memorised",
+              "explanation": "Memorising a conjecture does not confirm its truth.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "In the function y = a·f(x − h) + k, the parameter h controls {{blank:1}} translation and k controls {{blank:2}} translation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "horizontal",
+          "correctExplanation": "The parameter h shifts the graph left or right along the x-axis.",
+          "distractors": [
+            {
+              "answer": "vertical",
+              "explanation": "Vertical translation is controlled by k, not h.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "Diagonal is not a standard transformation parameter.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "vertical",
+          "correctExplanation": "The parameter k shifts the graph up or down along the y-axis.",
+          "distractors": [
+            {
+              "answer": "horizontal",
+              "explanation": "Horizontal translation is controlled by h, not k.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "rotational",
+              "explanation": "Rotation is not produced by additive constants in this form.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "If a student observes that y = x² + k has no x-intercepts for k = 1, 2, 3, this proves that y = x² + k has no x-intercepts for all positive k.",
+      "correct": "False",
+      "correctExplanation": "Three examples do not constitute a proof. Although the conjecture is correct, it requires algebraic verification that x² + k > 0 for all x when k > 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "While the conjecture is true, a formal proof showing x² ≥ 0 and k > 0 implies x² + k > 0 is required."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The graph of y = f(−x) is obtained by reflecting y = f(x) in the y-axis.",
+      "correct": "True",
+      "correctExplanation": "Replacing x with −x reflects every point across the y-axis, mapping (a, b) to (−a, b).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Reflection in the y-axis negates the x-coordinate of every point."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Varying the parameter b in y = x² + bx + 1 using a slider changes only the y-intercept of the parabola.",
+      "correct": "False",
+      "correctExplanation": "Changing b shifts the vertex horizontally and vertically but keeps the y-intercept at (0, 1). The vertex moves along y = −b²/4 + 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The parameter b affects vertex position, not y-intercept, since f(0) = 1 regardless of b."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "A single counterexample is sufficient to disprove a conjecture.",
+      "correct": "True",
+      "correctExplanation": "One counterexample demonstrates that a general statement is not always true, disproving the conjecture.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Disproving requires showing one case where the conjecture fails."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Graphing y = 2^x on a digital tool shows that the function has a maximum value it approaches as x increases.",
+      "correct": "False",
+      "correctExplanation": "The exponential y = 2^x grows without bound as x increases. It has no maximum; it has a horizontal asymptote y = 0 as x → −∞.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Exponential growth is unbounded above; the asymptote y = 0 is a lower bound, not an upper bound."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "If f(x) = x³ is graphed and reflected in y = x, the resulting graph represents x = y³, which defines y = x^(1/3).",
+      "correct": "True",
+      "correctExplanation": "Reflecting y = x³ in y = x swaps x and y, giving x = y³, so y = ∛x = x^(1/3).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The reflection procedure correctly produces the inverse function y = x^(1/3)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A digital tool confirms that y = sin(x) has period π because the pattern repeats every π units on screen.",
+      "correct": "False",
+      "correctExplanation": "The period of y = sin(x) is 2π, not π. The function completes a full cycle every 2π units.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A careful reading of the graph shows repetition at 2π intervals, not π."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Exploring y = |x − a| on a graphing tool shows that a controls the height of the vertex above the x-axis.",
+      "correct": "False",
+      "correctExplanation": "The parameter a controls horizontal position of the vertex; the vertex is always at (a, 0) on the x-axis.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Changing a moves the vertex along the x-axis, not above it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A student graphs y = x² + k for k = −4, −1, 0, 2, 5. What conjecture is best supported?",
+      "correct": "The parabola has x-intercepts only when k ≤ 0",
+      "correctExplanation": "For y = x² + k, x-intercepts exist when x² = −k, requiring k ≤ 0.",
+      "distractors": [
+        {
+          "answer": "The parabola has x-intercepts for all values of k tested",
+          "explanation": "When k > 0, x² + k > 0 for all x, so no x-intercepts exist."
+        },
+        {
+          "answer": "The number of x-intercepts increases as k increases above zero",
+          "explanation": "Increasing k above 0 moves the parabola further from the x-axis."
+        },
+        {
+          "answer": "The parabola changes from concave up to concave down as k varies",
+          "explanation": "The sign of the leading coefficient (positive) determines concavity, not k."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Using a slider for a in y = ax², a student observes that larger |a| values produce narrower parabolas. How is this verified algebraically?",
+      "correct": "Larger |a| means each x-value produces a larger |y|, compressing the graph horizontally in appearance",
+      "correctExplanation": "When |a| increases, f(x) = ax² grows faster, making the parabola appear narrower.",
+      "distractors": [
+        {
+          "answer": "The vertex moves closer to the origin as |a| increases from zero",
+          "explanation": "The vertex of y = ax² is always at the origin regardless of a."
+        },
+        {
+          "answer": "The axis of symmetry rotates when |a| changes from its current value",
+          "explanation": "The axis of symmetry x = 0 is unchanged by the value of a."
+        },
+        {
+          "answer": "The discriminant increases with |a|, producing more x-intercepts overall here here here here here here",
+          "explanation": "y = ax² has only one x-intercept at the origin for all nonzero a."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A student conjectures: 'y = 2^x and y = x² never intersect for x > 5.' Which approach best tests this?",
+      "correct": "Graph both functions and observe whether 2^x grows faster than x² beyond x = 5",
+      "correctExplanation": "Technology shows 2^x eventually dominates x², but testing the conjecture requires observing the graphs beyond x = 5.",
+      "distractors": [
+        {
+          "answer": "Substitute x = 6 into both equations and check if the results differ here here",
+          "explanation": "A single test point supports but does not prove the conjecture."
+        },
+        {
+          "answer": "Calculate the derivative of both functions at x = 5 only",
+          "explanation": "The derivative at one point does not determine long-term intersection behaviour."
+        },
+        {
+          "answer": "Check whether 2^5 > 5² and conclude the conjecture is always true",
+          "explanation": "One comparison does not establish the result for all x > 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "When exploring y = sin(bx) for various b values, what relationship is observed between b and the period?",
+      "correct": "The period equals 2π/b, so increasing b decreases the period of the function",
+      "correctExplanation": "The period formula for y = sin(bx) is 2π/|b|, showing an inverse relationship.",
+      "distractors": [
+        {
+          "answer": "The period equals 2πb, so increasing b increases the period proportionally here",
+          "explanation": "This confuses direct and inverse proportionality; the period is 2π/b, not 2πb."
+        },
+        {
+          "answer": "The period remains 2π regardless of the value of b used",
+          "explanation": "The period of sin(x) is 2π, but sin(bx) has period 2π/b."
+        },
+        {
+          "answer": "The period equals b/2π, so the period increases for larger values of b",
+          "explanation": "This inverts the correct formula; period = 2π/b, not b/2π."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A student reflects y = 2x + 1 in y = x using technology. What is the equation of the resulting graph?",
+      "correct": "y = (x − 1)/2, the inverse function obtained by swapping x and y",
+      "correctExplanation": "Swapping x and y in y = 2x + 1 gives x = 2y + 1, so y = (x−1)/2.",
+      "distractors": [
+        {
+          "answer": "y = −2x − 1, reflecting the gradient and y-intercept simultaneously",
+          "explanation": "This describes reflection in the x-axis, not in y = x."
+        },
+        {
+          "answer": "y = 2x − 1, changing only the sign of the y-intercept in the equation",
+          "explanation": "Changing the y-intercept sign is not the same as finding the inverse."
+        },
+        {
+          "answer": "y = x/2 + 1, halving the gradient while keeping the y-intercept unchanged",
+          "explanation": "The inverse of y = 2x + 1 changes both gradient and intercept."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A student uses technology to test whether (a + b)² = a² + b² for various values. What is found?",
+      "correct": "The equation is false in general because (a+b)² = a² + 2ab + b²",
+      "correctExplanation": "Expanding (a+b)² always includes the cross term 2ab, which equals zero only when a or b is zero.",
+      "distractors": [
+        {
+          "answer": "The equation is true for all positive integers tested on the device",
+          "explanation": "Testing with a=1, b=1 gives 4 ≠ 2, disproving the claim."
+        },
+        {
+          "answer": "The equation is true whenever a equals b in the tested values",
+          "explanation": "When a = b: (2a)² = 4a² but a²+a² = 2a²; these differ."
+        },
+        {
+          "answer": "The equation holds for real numbers and fails only for complex values",
+          "explanation": "The identity fails for all real a, b where ab ≠ 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Exploring y = x³ − 3x on a graphing tool reveals local maximum and minimum points. What conjecture follows?",
+      "correct": "A cubic function with nonzero leading coefficient can have at most two turning points",
+      "correctExplanation": "A cubic has degree 3, so its derivative is quadratic with at most 2 real roots, giving at most 2 turning points.",
+      "distractors": [
+        {
+          "answer": "A cubic function always has exactly three turning points overall",
+          "explanation": "A cubic has at most 2 turning points, as its derivative is quadratic."
+        },
+        {
+          "answer": "Cubic functions have no turning points because they are always increasing here here here",
+          "explanation": "y = x³ is always increasing, but y = x³−3x has two turning points."
+        },
+        {
+          "answer": "The number of turning points equals the degree of the polynomial exactly",
+          "explanation": "The maximum number of turning points is one less than the degree."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A student graphs y = 1/x and y = x on the same axes. What is observed about their intersections?",
+      "correct": "They intersect at (1, 1) and (−1, −1), where 1/x = x gives x² = 1",
+      "correctExplanation": "Setting 1/x = x gives x² = 1, so x = ±1.",
+      "distractors": [
+        {
+          "answer": "They intersect only at (1, 1) because x must be positive for 1/x here",
+          "explanation": "1/x is defined for all nonzero x, including negative values."
+        },
+        {
+          "answer": "They do not intersect because one is curved and one is linear",
+          "explanation": "Curved and linear graphs can and do intersect."
+        },
+        {
+          "answer": "They intersect at the origin where both functions equal zero",
+          "explanation": "y = 1/x is undefined at x = 0, so there is no intersection there."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "What does a graphing tool reveal about y = x² and y = 2^x for large positive x?",
+      "correct": "The exponential 2^x eventually grows faster and exceeds x² for sufficiently large x",
+      "correctExplanation": "Exponential growth eventually overtakes polynomial growth for all sufficiently large x.",
+      "distractors": [
+        {
+          "answer": "The quadratic x² always remains larger than 2^x for all positive x values here here",
+          "explanation": "At x = 10, 2^10 = 1024 > 100 = 10², so the exponential overtakes."
+        },
+        {
+          "answer": "Both functions grow at the same rate and remain equal past x = 4",
+          "explanation": "The two functions have different growth rates; 2^x accelerates faster."
+        },
+        {
+          "answer": "The functions alternate between which is larger as x increases above 5",
+          "explanation": "Once 2^x exceeds x², it stays larger for all subsequent x values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A student varies c in y = x² + c using a slider. For what values of c does the parabola have two x-intercepts?",
+      "correct": "For c < 0, because solving x² + c = 0 gives x = ±√(−c) when c is negative",
+      "correctExplanation": "Setting y = 0: x² = −c, which has two real solutions only when −c > 0, i.e., c < 0.",
+      "distractors": [
+        {
+          "answer": "For c > 0, because positive c ensures the parabola crosses the positive x-axis",
+          "explanation": "When c > 0, x² + c > 0 for all x, so there are no x-intercepts."
+        },
+        {
+          "answer": "For c = 0 only, because the vertex must be exactly on the x-axis at that point for this case",
+          "explanation": "c = 0 gives one x-intercept at the origin, not two distinct ones."
+        },
+        {
+          "answer": "For all values of c, because every parabola crosses the x-axis twice",
+          "explanation": "Parabolas entirely above or below the x-axis have no x-intercepts."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "When investigating y = log₂(x) using technology, what key feature is observed?",
+      "correct": "The graph has a vertical asymptote at x = 0 and passes through (1, 0)",
+      "correctExplanation": "log₂(1) = 0, and as x → 0⁺, log₂(x) → −∞, creating an asymptote.",
+      "distractors": [
+        {
+          "answer": "The graph has a horizontal asymptote at y = 0 with no x-intercept for this pair",
+          "explanation": "Logarithmic functions have vertical asymptotes, not horizontal ones."
+        },
+        {
+          "answer": "The graph is defined for all real x including negative values",
+          "explanation": "Logarithmic functions are defined only for positive x values."
+        },
+        {
+          "answer": "The graph is a straight line with gradient 1/ln(2) through the origin",
+          "explanation": "y = log₂(x) is a curve, not a line, and it does not pass through the origin."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A student conjectures that every quadratic has at least one x-intercept. How is this disproven?",
+      "correct": "By graphing y = x² + 1, which has Δ = −4 < 0 and lies",
+      "correctExplanation": "y = x² + 1 ≥ 1 for all x, so it never crosses the x-axis. One counterexample disproves the conjecture.",
+      "distractors": [
+        {
+          "answer": "By showing that y = x² − 4 has two x-intercepts at ±2 as expected",
+          "explanation": "An example that supports the conjecture does not address its validity."
+        },
+        {
+          "answer": "By proving that all quadratics have vertex on the x-axis always",
+          "explanation": "Most quadratics have vertices off the x-axis; this claim is false."
+        },
+        {
+          "answer": "By demonstrating that the discriminant is always non-negative for quadratics",
+          "explanation": "The discriminant can be negative, as in y = x² + 1 where Δ = −4."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "Reflecting the graph of y = f(x) in the line y = x produces the {{blank:1}} relation, where the roles of x and y are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "inverse",
+          "correctExplanation": "Reflection in y = x swaps x and y coordinates, producing the inverse.",
+          "distractors": [
+            {
+              "answer": "reciprocal",
+              "explanation": "The reciprocal is 1/f(x), not the reflection in y = x.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative",
+              "explanation": "The negative is −f(x), which is reflection in the x-axis.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "swapped",
+          "correctExplanation": "In the inverse relation, x and y exchange roles from the original function.",
+          "distractors": [
+            {
+              "answer": "doubled",
+              "explanation": "Swapping variables does not double their values.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "negated",
+              "explanation": "The variables are exchanged, not negated.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "When exploring y = sin(bx), increasing the value of b {{blank:1}} the period because the period formula is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "decreases",
+          "correctExplanation": "A larger b compresses the graph horizontally, reducing the period.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "Larger b gives shorter period (2π/b), not longer.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "eliminates",
+              "explanation": "The period is always defined for sinusoidal functions with nonzero b.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2π/b",
+          "correctExplanation": "The period of y = sin(bx) is 2π divided by the absolute value of b.",
+          "distractors": [
+            {
+              "answer": "2πb",
+              "explanation": "This would mean larger b gives longer period, which is incorrect.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "π/b",
+              "explanation": "The base period of sine is 2π, not π.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A counterexample is a single case that {{blank:1}} a conjecture, whereas multiple examples can only {{blank:2}} a conjecture.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "disproves",
+          "correctExplanation": "One case where the conjecture fails is sufficient to show it is false.",
+          "distractors": [
+            {
+              "answer": "proves",
+              "explanation": "A single case cannot prove a general conjecture.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "restates",
+              "explanation": "A counterexample contradicts, not restates, the conjecture.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "support",
+          "correctExplanation": "Multiple examples provide evidence but not formal proof.",
+          "distractors": [
+            {
+              "answer": "prove",
+              "explanation": "No number of examples constitutes a proof of a general statement.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "invalidate",
+              "explanation": "Multiple supporting examples strengthen, not invalidate, a conjecture.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "For the quadratic y = x² + bx + c, the discriminant Δ = b² − 4c determines the number of {{blank:1}}. When Δ > 0, there are {{blank:2}} x-intercepts.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x-intercepts",
+          "correctExplanation": "The discriminant indicates how many times the parabola crosses the x-axis.",
+          "distractors": [
+            {
+              "answer": "turning points",
+              "explanation": "The discriminant determines roots, not turning points.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "asymptotes",
+              "explanation": "Quadratic functions do not have asymptotes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "two",
+          "correctExplanation": "A positive discriminant gives two distinct real roots.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Zero x-intercepts occur when Δ < 0, not Δ > 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "three",
+              "explanation": "A quadratic equation has at most two solutions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Graphing y = 2^x shows it has a horizontal asymptote at y = {{blank:1}} and passes through the point (0, {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "As x → −∞, 2^x → 0 but never reaches it.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "y = 1 is the y-intercept value, not the asymptote.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "y = 2 is the value at x = 1, not the asymptote.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "2^0 = 1, so the graph passes through (0, 1).",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "2^0 = 1, not 0; the function is never zero.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2^0 = 1, not 2; that would be the value at x = 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Using a slider for h in y = (x − h)², the vertex moves along the {{blank:1}}-axis, and when h = 3 the vertex is at ({{blank:2}}, 0).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x",
+          "correctExplanation": "Changing h translates the vertex horizontally along the x-axis.",
+          "distractors": [
+            {
+              "answer": "y",
+              "explanation": "The parameter h controls horizontal position, not vertical.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "z",
+              "explanation": "There is no z-axis in two-dimensional function graphing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "When h = 3, the vertex is at (3, 0).",
+          "distractors": [
+            {
+              "answer": "−3",
+              "explanation": "The vertex is at (h, 0) = (3, 0), not (−3, 0).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "The vertex x-coordinate equals h = 3, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A student graphs y = x² − 4x + k for k = 0, 2, 4, 6 and conjectures that the parabola always has two x-intercepts. Testing k = 5 would disprove this conjecture.",
+      "correct": "True",
+      "correctExplanation": "For k = 5: Δ = 16 − 20 = −4 < 0, so no x-intercepts. This counterexample disproves the conjecture.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "When Δ < 0, the parabola lies entirely above the x-axis."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Exploring y = a·2^x using a slider reveals that changing a from positive to negative reflects the graph in the y-axis.",
+      "correct": "False",
+      "correctExplanation": "Changing the sign of a reflects the graph in the x-axis, not the y-axis. Reflection in the y-axis would require y = a·2^(−x).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Negating the coefficient reflects outputs (y-values), which is reflection in the x-axis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A student explores y = x² + bx + 1 for b = −4, −2, 0, 2, 4. What conjecture about x-intercepts is supported?",
+      "correct": "The parabola has x-intercepts when |b| ≥ 2",
+      "correctExplanation": "Δ = b² − 4(1)(1) = b²−4. For Δ ≥ 0, b² ≥ 4, so |b| ≥ 2.",
+      "distractors": [
+        {
+          "answer": "The parabola always has x-intercepts regardless of the value of b",
+          "explanation": "At b = 0, Δ = −4 < 0, so no x-intercepts exist."
+        },
+        {
+          "answer": "The parabola has x-intercepts only when b is positive and above 4",
+          "explanation": "Negative b values also give x-intercepts when |b| ≥ 2."
+        },
+        {
+          "answer": "The number of x-intercepts increases with b beyond the initial pair",
+          "explanation": "A quadratic has at most two x-intercepts for any value of b."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Using technology, a student finds that y = x³ − 3x has a local maximum at (−1, 2) and local minimum at (1, −2). What conjecture about symmetry is supported?",
+      "correct": "The function has rotational symmetry of order 2 about the origin",
+      "correctExplanation": "f(−x) = −f(x) confirms the function is odd, giving 180° rotational symmetry about the origin.",
+      "distractors": [
+        {
+          "answer": "The function has reflective symmetry in the y-axis as an even function",
+          "explanation": "f(−x) = −x³+3x = −f(x) ≠ f(x), so it is odd, not even."
+        },
+        {
+          "answer": "The function has no symmetry because the turning points are distinct",
+          "explanation": "The turning points (−1, 2) and (1, −2) are symmetric about the origin."
+        },
+        {
+          "answer": "The function is periodic with period 2 repeating every 2 units",
+          "explanation": "Cubic functions are not periodic; they extend to ±∞."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A student uses a graphing tool to find where y = x² and y = 2x intersect. The tool shows x = 2 and x = 4. What algebraic verification confirms this?",
+      "correct": "Setting x² = 2x gives x² − 2x = 0, but this yields x = 0 and x = 2, not x = 4",
+      "correctExplanation": "x² = 2x → x(x−2) = 0 → x = 0 or x = 2. The tool may have shown y = 2^x, not y = 2x.",
+      "distractors": [
+        {
+          "answer": "x = 2 and x = 4 are correct, confirmed by substituting into both equations",
+          "explanation": "At x = 4: x² = 16 and 2x = 8; these are unequal."
+        },
+        {
+          "answer": "The intersections at x = 2 and x = 4 exist only when using exponential y = 2^x",
+          "explanation": "y = 2^x intersects y = x² at x = 2 (4 = 4) but also near x ≈ −0.77."
+        },
+        {
+          "answer": "Both x = 2 and x = 4 satisfy x² = 2x because 4 = 2·2 and 16 = 2·4",
+          "explanation": "16 ≠ 8, so x = 4 does not satisfy x² = 2x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A student graphs y = x² and its reflection in y = x. Why does the reflected graph fail the vertical line test?",
+      "correct": "Because y = x² is not one-to-one, so its inverse is not a function without domain restriction",
+      "correctExplanation": "The reflection x = y² gives y = ±√x, which assigns two y-values to each positive x.",
+      "distractors": [
+        {
+          "answer": "Because the reflection is plotted incorrectly on the digital tool used",
+          "explanation": "The reflection is correct; the issue is mathematical, not a tool error."
+        },
+        {
+          "answer": "Because all reflections in y = x produce relations that fail the vertical line test for these values",
+          "explanation": "One-to-one functions produce inverses that pass the vertical line test."
+        },
+        {
+          "answer": "Because y = x² has no inverse under any circumstances whatsoever",
+          "explanation": "Restricting the domain to x ≥ 0 gives an inverse y = √x."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Using Desmos, a student investigates when y = mx + 1 is tangent to y = x². What condition on m is found?",
+      "correct": "Setting x² = mx + 1 gives Δ = m² + 4 > 0, so the line always intersects the parabola",
+      "correctExplanation": "x² − mx − 1 = 0 has Δ = m² + 4, which is positive for all real m.",
+      "distractors": [
+        {
+          "answer": "The line is tangent when m = 2, giving a single intersection point with the parabola",
+          "explanation": "At m = 2: Δ = 4 + 4 = 8 > 0, so there are two intersections, not one."
+        },
+        {
+          "answer": "The line is tangent when m = 0, reducing to the horizontal line y = 1",
+          "explanation": "At m = 0: x² = 1, giving x = ±1, which is two intersections."
+        },
+        {
+          "answer": "The line is tangent for all values of m because it always touches the parabola once",
+          "explanation": "Δ = m² + 4 > 0 means two intersections, never tangency."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A student explores f(x) = x³ − 6x² + 11x − 6 using a CAS and factors it as (x−1)(x−2)(x−3). What verified conjecture about the roots follows?",
+      "correct": "The roots are x = 1, 2, 3, which are consecutive integers summing to 6",
+      "correctExplanation": "The factored form shows roots at 1, 2, 3. By Vieta's: sum = 6 = coefficient of x² (positive, since leading is 1 and coefficient is −6).",
+      "distractors": [
+        {
+          "answer": "The roots are x = −1, −2, −3, as the negative of each factor value",
+          "explanation": "Setting each factor to zero: (x−1)=0 gives x=1, not x=−1."
+        },
+        {
+          "answer": "There is only one root at x = 6, equal to the constant term in the equation",
+          "explanation": "The factored form clearly shows three distinct linear factors."
+        },
+        {
+          "answer": "The roots are x = 1, 4, 9, which are the squares of the first three natural numbers",
+          "explanation": "The factors (x−1)(x−2)(x−3) give roots 1, 2, 3 not 1, 4, 9."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Investigating y = |x − 2| + |x + 2| on a graphing tool, what does the graph look like for −2 ≤ x ≤ 2?",
+      "correct": "A horizontal line segment at y = 4 between x = −2 and x = 2",
+      "correctExplanation": "For |x| ≤ 2: |x−2| = 2−x and |x+2| = x+2, so the sum is 4. Outside this interval the graph is V-shaped.",
+      "distractors": [
+        {
+          "answer": "A V-shape with vertex at the origin and equal slopes of 2 on each side as shown by algebra",
+          "explanation": "Within [−2, 2] the function is constant at 4, not V-shaped."
+        },
+        {
+          "answer": "A parabola opening upward with vertex at (0, 4) on the y-axis",
+          "explanation": "The function is piecewise linear, not quadratic."
+        },
+        {
+          "answer": "A straight line with gradient 1 passing through (0, 2) on the y-axis",
+          "explanation": "The function equals 4 on [−2, 2], not a sloped line through (0, 2)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A student uses technology to verify that y = log₂(x) and y = 2^x are inverses. What graphical evidence confirms this?",
+      "correct": "Both graphs are reflections of each other in the line y = x on the display",
+      "correctExplanation": "Inverse functions are reflections in y = x by definition.",
+      "distractors": [
+        {
+          "answer": "Both graphs are parallel lines separated by a vertical distance of 2 here here",
+          "explanation": "These are curves, not parallel lines."
+        },
+        {
+          "answer": "Both graphs pass through the origin at exactly the same angle",
+          "explanation": "y = 2^x passes through (0, 1), not (0, 0); y = log₂(x) passes through (1, 0)."
+        },
+        {
+          "answer": "Both graphs have the same shape and overlap completely on the axes",
+          "explanation": "Inverse functions are distinct unless f is its own inverse."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A student conjectures that for y = x^n, the graph passes through (1, 1) and (−1, (−1)^n) for all positive integers n. How is this verified?",
+      "correct": "Substituting x = 1 gives 1^n = 1 and x = −1 gives (−1)^n, confirming the conjecture algebraically",
+      "correctExplanation": "1^n = 1 for all n, and (−1)^n alternates between 1 and −1 based on parity of n.",
+      "distractors": [
+        {
+          "answer": "The conjecture holds only for even n because odd powers are undefined at x = −1",
+          "explanation": "(−1)^n is defined for all positive integers n, giving ±1."
+        },
+        {
+          "answer": "Testing n = 1, 2, 3 is sufficient to prove the conjecture for all positive integers here here here",
+          "explanation": "Three examples support the conjecture but algebra confirms it universally."
+        },
+        {
+          "answer": "The conjecture fails at n = 1 because y = x does not pass through (1, 1) at all",
+          "explanation": "y = x at x = 1 gives y = 1, so (1, 1) is on the graph."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Exploring y = (x − a)(x − b) for fixed a = 1, a student varies b from −3 to 5. What is always true about the x-intercepts?",
+      "correct": "One intercept is always at x = 1 and the other moves with b",
+      "correctExplanation": "The factor (x−1) gives a fixed root at x = 1; (x−b) gives a root at x = b.",
+      "distractors": [
+        {
+          "answer": "Both intercepts move symmetrically about x = 1 as b varies from −3 to 5",
+          "explanation": "Only the root at x = b moves; x = 1 stays fixed."
+        },
+        {
+          "answer": "The product always has the same x-intercepts regardless of b",
+          "explanation": "Changing b moves the second x-intercept to x = b."
+        },
+        {
+          "answer": "The parabola has no x-intercepts when b equals 1 in the expression",
+          "explanation": "When b = 1, the parabola touches the x-axis at x = 1 (repeated root)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Using technology to graph y = x⁴ − 4x² + 3, a student finds x-intercepts. What factorisation explains the intercepts?",
+      "correct": "The expression factors as (x²−1)(x²−3), giving x = ±1 and x = ±√3",
+      "correctExplanation": "Let u = x²: u²−4u+3 = (u−1)(u−3) = (x²−1)(x²−3).",
+      "distractors": [
+        {
+          "answer": "The expression factors as (x−1)(x−3)(x+1)(x+3) giving x = ±1 and ±3",
+          "explanation": "(x²−3) factors as (x−√3)(x+√3), not (x−3)(x+3)."
+        },
+        {
+          "answer": "The expression has only two x-intercepts at x = 1 and x = 3",
+          "explanation": "The factors give four x-intercepts including negative values ±1 and ±√3."
+        },
+        {
+          "answer": "The expression cannot be factorised and has no rational x-intercepts at all",
+          "explanation": "Substitution u = x² reveals a factorable quadratic in u."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A student investigates how the graph of y = 1/(x − h) changes as h varies. What is observed about the vertical asymptote?",
+      "correct": "The vertical asymptote moves to x = h, sliding left or right with h",
+      "correctExplanation": "The function y = 1/(x−h) is undefined at x = h, producing a vertical asymptote there.",
+      "distractors": [
+        {
+          "answer": "The vertical asymptote stays at x = 0 regardless of the value of h",
+          "explanation": "x = 0 is the asymptote only when h = 0; otherwise it shifts to x = h."
+        },
+        {
+          "answer": "A second vertical asymptote appears at x = −h when h is nonzero",
+          "explanation": "y = 1/(x−h) has exactly one vertical asymptote at x = h."
+        },
+        {
+          "answer": "The vertical asymptote disappears entirely when h is greater than zero",
+          "explanation": "The asymptote exists at x = h for all real values of h."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "For y = x² + bx + 1, the discriminant is Δ = b² − {{blank:1}}. The parabola has no x-intercepts when |b| < {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Δ = b² − 4(1)(1) = b² − 4.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The formula is b² − 4ac with a=1, c=1, so 4ac = 4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "b",
+              "explanation": "The discriminant is b² − 4, not b² − b.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "No x-intercepts when Δ < 0: b² − 4 < 0, so |b| < 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "b² < 4 gives |b| < 2, not |b| < 4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "b² < 4 means |b| < 2, not |b| < 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Graphing y = 2^x and y = x² on the same axes shows that for large x, the {{blank:1}} function grows faster. At x = 10, 2^10 = {{blank:2}} while 10² = 100.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exponential",
+          "correctExplanation": "Exponential functions eventually outgrow any polynomial.",
+          "distractors": [
+            {
+              "answer": "quadratic",
+              "explanation": "Quadratic growth is polynomial and slower than exponential for large x.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "linear",
+              "explanation": "Linear growth is even slower than quadratic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1024",
+          "correctExplanation": "2^10 = 1024.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "100 is 10², not 2^10.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20",
+              "explanation": "20 is 2×10, not 2^10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Reflecting y = 3x − 2 in y = x gives the inverse. Swapping x and y: x = 3y − 2, so y = (x + {{blank:1}})/{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Rearranging x = 3y − 2: x + 2 = 3y.",
+          "distractors": [
+            {
+              "answer": "−2",
+              "explanation": "Adding 2 to both sides gives x + 2, not x − 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "The constant is 2, not 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Dividing both sides by 3 gives y = (x+2)/3.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The coefficient of y is 3, so divide by 3, not 2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−3",
+              "explanation": "Division by 3 is positive.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Exploring y = a·sin(x) + d using sliders, the parameter a controls the {{blank:1}} and the parameter d controls the vertical {{blank:2}} of the graph.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "amplitude",
+          "correctExplanation": "The coefficient a determines how far the graph stretches from the midline.",
+          "distractors": [
+            {
+              "answer": "period",
+              "explanation": "The period is controlled by the coefficient of x, not a.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "frequency",
+              "explanation": "Frequency is the reciprocal of period, controlled by the x-coefficient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "translation",
+          "correctExplanation": "Adding d shifts the entire graph up or down by d units.",
+          "distractors": [
+            {
+              "answer": "stretch",
+              "explanation": "Vertical stretch is controlled by a, not d.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "reflection",
+              "explanation": "Reflection occurs when the sign of a changes, not d.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The function y = |x − 2| + |x + 2| equals {{blank:1}} for all x in [−2, 2], because in this interval |x−2| simplifies to 2−x and |x+2| simplifies to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "For −2 ≤ x ≤ 2: (2−x) + (x+2) = 4.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The sum of the absolute values is 4, not 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2x",
+              "explanation": "The x terms cancel, giving a constant of 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x + 2",
+          "correctExplanation": "When x ≥ −2, the expression inside is non-negative, so |x+2| = x+2.",
+          "distractors": [
+            {
+              "answer": "2 − x",
+              "explanation": "This would apply if x + 2 were negative, but x ≥ −2 ensures x+2 ≥ 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−x − 2",
+              "explanation": "This is −(x+2), which is the form when x < −2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A student tests (a+b)² = a²+b² with a = 3, b = 4 and finds (3+4)² = {{blank:1}} while 3²+4² = {{blank:2}}, disproving the conjecture.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "49",
+          "correctExplanation": "(3+4)² = 7² = 49.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "25 is 5², not 7².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 is 3×4, not (3+4)².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "25",
+          "correctExplanation": "3²+4² = 9+16 = 25.",
+          "distractors": [
+            {
+              "answer": "49",
+              "explanation": "49 is (3+4)², not 3²+4².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "7",
+              "explanation": "7 is 3+4, not 3²+4².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Investigating y = x^n for odd n on a graphing tool shows the graph has {{blank:1}} symmetry about the origin, because f(−x) = {{blank:2}} for odd functions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "rotational",
+          "correctExplanation": "Odd functions have 180° rotational symmetry about the origin.",
+          "distractors": [
+            {
+              "answer": "reflective",
+              "explanation": "Reflective symmetry in the y-axis belongs to even functions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "translational",
+              "explanation": "Translational symmetry means repeating, which is periodicity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−f(x)",
+          "correctExplanation": "For odd n, (−x)^n = −(x^n) = −f(x).",
+          "distractors": [
+            {
+              "answer": "f(x)",
+              "explanation": "f(−x) = f(x) is the condition for even functions, not odd.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "f(−x) = 0 is not generally true for power functions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "For y = (x−a)(x−b), the axis of symmetry is x = (a+b)/{{blank:1}}, and when a = 1 and b = 5 the axis is x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The axis of symmetry is the average of the two roots: x = (a+b)/2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Dividing by 1 gives x = a+b, not the midpoint.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Dividing by 4 has no basis in the symmetry formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "(1+5)/2 = 3.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is 1+5, not (1+5)/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2.5",
+              "explanation": "2.5 is (0+5)/2; the roots are 1 and 5, giving (1+5)/2 = 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Graphing y = 1/(x−h) for h = 3 shows a vertical asymptote at x = {{blank:1}} and a horizontal asymptote at y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The function is undefined when x−3 = 0, i.e., x = 3.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "x = 0 is the asymptote only when h = 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−3",
+              "explanation": "The asymptote is at x = h = 3, not x = −h = −3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "As x → ±∞, 1/(x−3) → 0.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The horizontal asymptote is y = 0, not y = h.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "The horizontal asymptote of 1/(x−h) is y = 0, not y = 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A student uses technology to find that y = x⁴ − 4x² + 3 has {{blank:1}} x-intercepts. This is confirmed by factoring as (x²−1)(x²−3), giving x = ±1 and x = ±{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "four",
+          "correctExplanation": "The four intercepts are x = ±1 and x = ±√3.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "There are four intercepts, not two.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "six",
+              "explanation": "A degree-4 polynomial has at most 4 real roots.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√3",
+          "correctExplanation": "x²−3 = 0 gives x = ±√3.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "x² = 3 gives x = ±√3, not ±3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "x² = 3 gives x = ±√3 ≈ ±1.73, not ±2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Exploring y = x³ − 3x on a CAS reveals turning points at x = −1 (local {{blank:1}}) and x = 1 (local {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "maximum",
+          "correctExplanation": "f(−1) = −1+3 = 2, which is larger than nearby values.",
+          "distractors": [
+            {
+              "answer": "minimum",
+              "explanation": "f(−1) = 2 is a peak, not a trough.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "inflection",
+              "explanation": "An inflection point is where concavity changes, not a turning point.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "minimum",
+          "correctExplanation": "f(1) = 1−3 = −2, which is smaller than nearby values.",
+          "distractors": [
+            {
+              "answer": "maximum",
+              "explanation": "f(1) = −2 is a trough, not a peak.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "inflection",
+              "explanation": "The inflection point is at x = 0, between the turning points.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "The graph of y = x² is not one-to-one because it fails the {{blank:1}} line test. Restricting the domain to x ≥ 0 produces the inverse y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "horizontal",
+          "correctExplanation": "The horizontal line test checks if each y-value maps to exactly one x-value.",
+          "distractors": [
+            {
+              "answer": "vertical",
+              "explanation": "The vertical line test checks if a relation is a function, not one-to-one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "There is no standard diagonal line test for functions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√x",
+          "correctExplanation": "Reflecting y = x² (x ≥ 0) in y = x gives y = √x.",
+          "distractors": [
+            {
+              "answer": "x²",
+              "explanation": "x² is the original function, not its inverse.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1/x",
+              "explanation": "The reciprocal is not the inverse of the squaring function.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student conjectures that all cubic functions of the form y = x³ + bx have exactly one real root. For which values of b is this true?",
+      "correct": "Only when b > 0, because x(x²+b)=0 has just x=0 as real root when b > 0",
+      "correctExplanation": "x³+bx = x(x²+b) = 0. When b > 0, x²+b > 0, so only x = 0 is real. When b ≤ 0, x²+b = 0 has solutions.",
+      "distractors": [
+        {
+          "answer": "For all real values of b, since cubics always cross the x-axis once here",
+          "explanation": "When b < 0, x(x²+b) = 0 has three real roots."
+        },
+        {
+          "answer": "Only when b = 0, as x³ = 0 gives the single root x = 0",
+          "explanation": "b > 0 also gives exactly one root; the conjecture is too restrictive."
+        },
+        {
+          "answer": "Never, because cubic functions always have three real roots exactly",
+          "explanation": "x³+x = 0 has only one real root x = 0 when b = 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A student graphs y = x² and y = kx − 1 for various k > 0 and counts intersection points. For which k does the system have exactly one solution?",
+      "correct": "When k = 2, because x²−kx+1=0 has Δ = k²−4 = 0, giving one repeated root",
+      "correctExplanation": "x² = kx − 1 → x² − kx + 1 = 0. Δ = k² − 4. At k = 2, Δ = 0, so one repeated root.",
+      "distractors": [
+        {
+          "answer": "When k = 1, because the line y = x − 1 is tangent to y = x² at one point",
+          "explanation": "At k = 1: Δ = 1−4 = −3 < 0, so no intersections at all."
+        },
+        {
+          "answer": "When k = 4, because the line has the same gradient as the parabola at the tangent",
+          "explanation": "At k = 4: Δ = 16−4 = 12 > 0, so two distinct intersections."
+        },
+        {
+          "answer": "For all k > 0 the system always has exactly one intersection point",
+          "explanation": "Δ = k²−4 varies: negative for k < 2, zero at k = 2, positive for k > 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Exploring y = sin(x) + cos(x) on a graphing tool, a student conjectures this can be written as R·sin(x + φ). What are R and φ?",
+      "correct": "R = √2 and φ = π/4, since sin(x)+cos(x) = √2·sin(x+π/4)",
+      "correctExplanation": "Using the identity: a·sin(x)+b·cos(x) = √(a²+b²)·sin(x+arctan(b/a)). Here R = √2, φ = π/4.",
+      "distractors": [
+        {
+          "answer": "R = 2 and φ = π/2, since the maximum value is 2 for the combined function",
+          "explanation": "The maximum is √2 ≈ 1.41, not 2. R = √(1²+1²) = √2."
+        },
+        {
+          "answer": "R = 1 and φ = π/4, keeping the amplitude as 1 with only a phase shift",
+          "explanation": "sin(x)+cos(x) has maximum √2, so R must be √2, not 1."
+        },
+        {
+          "answer": "R = √2 and φ = π/2, since cosine leads sine by π/2 radians",
+          "explanation": "φ = π/4 because arctan(1/1) = π/4, not π/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student investigates y = x^n − x for integer n ≥ 2 and conjectures that x = 0 and x = 1 are always roots. Is this verified?",
+      "correct": "Yes, because f(0) = 0 − 0 = 0 and f(1) = 1 − 1 = 0 for all",
+      "correctExplanation": "Substituting x = 0 and x = 1 confirms both are roots regardless of the value of n.",
+      "distractors": [
+        {
+          "answer": "No, because x = 1 is a root only when n is even for the given expression based on these values",
+          "explanation": "1^n = 1 for all n, so f(1) = 1 − 1 = 0 always."
+        },
+        {
+          "answer": "Yes, but only for n ≤ 5 because higher-degree polynomials behave unpredictably",
+          "explanation": "The algebra holds for all integer n ≥ 2 without exception."
+        },
+        {
+          "answer": "No, because x = 0 gives 0^n − 0 which is undefined when n is large",
+          "explanation": "0^n = 0 for all positive integers n, making f(0) = 0 always defined."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student graphs y = x² + 1/x for x > 0 and conjectures a minimum exists. Using calculus reasoning on the graph, where approximately does the minimum occur?",
+      "correct": "Near x = 1/∛2, because setting the derivative 2x − 1/x² to zero gives x³ = 1/2",
+      "correctExplanation": "y' = 2x − x⁻² = 0 → 2x = 1/x² → x³ = 1/2, so x = (1/2)^(1/3) = 1/∛2.",
+      "distractors": [
+        {
+          "answer": "At x = 1, because that is where x² and 1/x are equal in value from the given system",
+          "explanation": "At x = 1: y' = 2−1 = 1 ≠ 0, so x = 1 is not a critical point."
+        },
+        {
+          "answer": "At x = 0.5, because the graph appears to bottom out at that point visually",
+          "explanation": "At x = 0.5: y' = 1−4 = −3 ≠ 0, so this is not the minimum."
+        },
+        {
+          "answer": "No minimum exists because the function increases for all positive x values",
+          "explanation": "The graph shows a clear trough; y → ∞ as x → 0⁺ and as x → ∞."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "Exploring y = 2^x − x² on technology, a student finds three x-intercepts. Between which consecutive integers does the largest root lie?",
+      "correct": "The largest root is exactly at x = 4, where 2⁴ = 16 = 4²",
+      "correctExplanation": "At x = 4, both 2^x and x² equal 16, confirming x = 4 as an exact intersection.",
+      "distractors": [
+        {
+          "answer": "Between x = 5 and x = 6, because 2^x overtakes x² in that range",
+          "explanation": "At x = 5: 2⁵ = 32 > 25 = 5², so 2^x > x² past x = 4."
+        },
+        {
+          "answer": "Between x = 3 and x = 4, because 2^x is still less than x² at x = 4",
+          "explanation": "At x = 4: 2⁴ = 16 = 4², so x = 4 is an exact root."
+        },
+        {
+          "answer": "Between x = 6 and x = 7, as the exponential only catches up at that range",
+          "explanation": "2^x exceeds x² for all x > 4, so no further roots exist."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student explores f(x) = x/(x²+1) and conjectures it is always between −0.5 and 0.5. How is this verified?",
+      "correct": "By showing x/(x²+1) ≤ 1/2 because x²+1 ≥ 2|x| by AM-GM, so |x/(x²+1)| ≤ 1/2",
+      "correctExplanation": "AM-GM gives x²+1 ≥ 2|x|, so |f(x)| = |x|/(x²+1) ≤ |x|/(2|x|) = 1/2.",
+      "distractors": [
+        {
+          "answer": "By testing x = 0, 1, −1, 2, −2 and observing all outputs are between −0.5 and 0.5",
+          "explanation": "Testing values supports the conjecture but does not prove it for all x."
+        },
+        {
+          "answer": "By noting the function is undefined at x = 0, making the bound trivially true",
+          "explanation": "f(0) = 0/1 = 0, which is well-defined and within the bound."
+        },
+        {
+          "answer": "By computing f(x) = 1/(x+1/x) and noting x+1/x has minimum value 1",
+          "explanation": "x+1/x has minimum 2 for x > 0 and maximum −2 for x < 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Using technology, a student finds that y = x³ − 3x + 1 has three real roots. Between which pairs of consecutive integers do they lie?",
+      "correct": "Between (−2,−1), (0,1), and (1,2) based on sign changes of the function",
+      "correctExplanation": "f(−2)=−1, f(−1)=3, f(0)=1, f(1)=−1, f(2)=3. Sign changes at each pair.",
+      "distractors": [
+        {
+          "answer": "Between (−3,−2), (−1,0), and (2,3) based on approximate graph reading here",
+          "explanation": "f(−1)=3 and f(0)=1 have the same sign, so no root lies between −1 and 0."
+        },
+        {
+          "answer": "Between (−1,0), (0,1), and (1,2) since all roots are between −1 and 2",
+          "explanation": "f(−1)=3 > 0 and f(0)=1 > 0, so no sign change between −1 and 0."
+        },
+        {
+          "answer": "All three roots lie between 0 and 1 because the constant term is 1",
+          "explanation": "The constant term does not determine the location of all roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student uses a slider to explore when y = x² + bx + b has a repeated root. What condition on b is discovered?",
+      "correct": "The repeated root occurs at b = 0 or b = 4, because Δ = b²−4b =",
+      "correctExplanation": "Δ = b² − 4(1)(b) = b² − 4b = b(b−4). Setting Δ = 0 gives b = 0 or b = 4.",
+      "distractors": [
+        {
+          "answer": "The repeated root occurs only at b = 2, the midpoint of 0 and 4",
+          "explanation": "At b = 2: Δ = 4−8 = −4 < 0, so no real roots at all."
+        },
+        {
+          "answer": "Repeated roots occur for all b ≥ 0 since the discriminant is never negative",
+          "explanation": "At b = 1: Δ = 1−4 = −3 < 0, so no real roots."
+        },
+        {
+          "answer": "There are no repeated roots because b appears in both coefficient and constant",
+          "explanation": "Δ = b(b−4) = 0 at b = 0 and b = 4, giving repeated roots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A student conjectures that for y = a^x (a > 0, a ≠ 1), the tangent at x = 0 has gradient ln(a). How is this verified graphically?",
+      "correct": "By comparing the tangent line slope at (0, 1) across different bases",
+      "correctExplanation": "The derivative of a^x is a^x·ln(a). At x = 0: gradient = 1·ln(a) = ln(a).",
+      "distractors": [
+        {
+          "answer": "By showing the gradient at x = 0 is always 1 for exponential functions",
+          "explanation": "The gradient at x = 0 is ln(a), which equals 1 only when a = e."
+        },
+        {
+          "answer": "By proving that all exponential curves are parallel at x = 0",
+          "explanation": "Different bases give different gradients ln(a) at x = 0."
+        },
+        {
+          "answer": "By demonstrating the gradient equals a at x = 0 for any base a > 0",
+          "explanation": "The gradient is ln(a), not a. For a = 2, ln(2) ≈ 0.693 ≠ 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Exploring y = x² − 2kx + k² − 4 for various k, a student conjectures the vertex always lies on a specific horizontal line. What is the y-coordinate of the vertex?",
+      "correct": "The vertex y-coordinate is always −4, because y = (x−k)² − 4 has vertex at",
+      "correctExplanation": "Completing the square: x²−2kx+k²−4 = (x−k)²−4. Vertex is (k, −4).",
+      "distractors": [
+        {
+          "answer": "The vertex y-coordinate equals k² − 4, varying with k across the parabolas",
+          "explanation": "The square term (x−k)² is zero at the vertex, leaving just −4."
+        },
+        {
+          "answer": "The vertex y-coordinate is always 0 because the parabola touches the x-axis",
+          "explanation": "(x−k)² = 0 at x = k, giving y = −4, not 0."
+        },
+        {
+          "answer": "The vertex y-coordinate is −k², always negative for nonzero k values",
+          "explanation": "The completed square gives −4, independent of k."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Using technology, a student finds that y = x⁴ − 8x² + 16 has only two distinct x-intercepts despite being degree 4. What explains this?",
+      "correct": "The polynomial factors as (x²−4)² = (x−2)²(x+2)², giving repeated roots at ±2",
+      "correctExplanation": "x⁴−8x²+16 = (x²−4)² means both roots have multiplicity 2, yielding only two distinct x-values.",
+      "distractors": [
+        {
+          "answer": "The polynomial has four simple roots at x = −4, −2, 2, 4",
+          "explanation": "(x²−4)² has roots only at x = ±2, each with multiplicity 2."
+        },
+        {
+          "answer": "Two roots are complex and not visible on the real graph display",
+          "explanation": "All roots of (x²−4)² are real: x = ±2 with multiplicity 2."
+        },
+        {
+          "answer": "The graph only shows intersections for positive x-values on the screen here here",
+          "explanation": "Both x = 2 and x = −2 are visible on a standard graphing display."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A student explores y = |f(x)| for f(x) = x² − 4. What transformation is observed compared to the original graph?",
+      "correct": "Portions of x²−4 that were below the x-axis are reflected upward to become positive",
+      "correctExplanation": "Taking the absolute value reflects all negative y-values across the x-axis.",
+      "distractors": [
+        {
+          "answer": "The entire graph shifts upward by 4 units along the y-axis",
+          "explanation": "Shifting up would be f(x)+4, not |f(x)|."
+        },
+        {
+          "answer": "The graph is reflected in the y-axis, making it symmetric about x = 0",
+          "explanation": "x²−4 is already symmetric about x = 0; |f(x)| reflects below the x-axis up."
+        },
+        {
+          "answer": "Only the positive portion of the graph is displayed, removing the rest entirely here",
+          "explanation": "|f(x)| reflects negative portions upward rather than removing them."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student investigates y = x^n for large n and conjectures about the shape. What is observed as n increases through even values?",
+      "correct": "The graph becomes flatter near the origin and steeper near x = ±1, approaching a rectangular shape",
+      "correctExplanation": "As n → ∞ for even n, x^n → 0 for |x| < 1 and x^n → ∞ for |x| > 1.",
+      "distractors": [
+        {
+          "answer": "The graph becomes a horizontal line at y = 1 for all x values",
+          "explanation": "x^n equals 1 only at x = ±1 for even n; it varies elsewhere."
+        },
+        {
+          "answer": "The graph becomes narrower like y = x² with each increase in the exponent",
+          "explanation": "Higher even powers flatten near 0 and steepen near ±1, becoming more rectangular."
+        },
+        {
+          "answer": "The graph oscillates between positive and negative values more rapidly",
+          "explanation": "Even powers are always non-negative; no oscillation occurs."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "For y = x³ + bx, the number of real roots depends on b. When b > 0, x(x²+b) = 0 has {{blank:1}} real root(s), and when b < 0 it has {{blank:2}} real root(s).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "one",
+          "correctExplanation": "When b > 0, x²+b > 0, so only x = 0 satisfies the equation.",
+          "distractors": [
+            {
+              "answer": "three",
+              "explanation": "x²+b = 0 has no real solutions when b > 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "x = 0 is always a solution of x(x²+b) = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "three",
+          "correctExplanation": "When b < 0, x² = −b has solutions x = ±√(−b), plus x = 0.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "When b < 0, x² = −b yields two additional real roots.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "two",
+              "explanation": "There are three roots: 0, √(−b), and −√(−b).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The AM-GM inequality states x² + 1 ≥ {{blank:1}}|x|, which proves |x/(x²+1)| ≤ {{blank:2}} for all real x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "AM-GM: (x²+1)/2 ≥ √(x²·1) = |x|, so x²+1 ≥ 2|x|.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "x²+1 ≥ |x| is weaker than the AM-GM result.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x",
+              "explanation": "The bound involves the constant 2, not the variable x.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/2",
+          "correctExplanation": "From x²+1 ≥ 2|x|: |x|/(x²+1) ≤ |x|/(2|x|) = 1/2.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The bound is 1/2, not 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "The bound is the reciprocal: 1/2, not 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "For y = x² + bx + b, the discriminant is Δ = b² − {{blank:1}}b. Setting Δ = 0 gives b = 0 or b = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Δ = b² − 4(1)(b) = b² − 4b.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The formula uses 4ac with a = 1 and c = b, giving 4b.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "b",
+              "explanation": "This would give b² − b², which is always 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "b²−4b = b(b−4) = 0 gives b = 0 or b = 4.",
+          "distractors": [
+            {
+              "answer": "−4",
+              "explanation": "b(b−4) = 0 gives b = 4, not b = −4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "b(b−4) = 0 has no solution at b = 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The polynomial x⁴ − 8x² + 16 factors as (x² − {{blank:1}})², giving repeated roots at x = ±{{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "x⁴−8x²+16 = (x²−4)², since (x²−4)² = x⁴−8x²+16.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "(x²−2)² = x⁴−4x²+4, which does not match.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "(x²−8)² = x⁴−16x²+64, which does not match.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "x²−4 = (x−2)(x+2), so roots are at x = ±2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "x²−4 = 0 gives x = ±2, not ±4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√2",
+              "explanation": "x²−4 = 0 gives x = ±2, not ±√2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "Completing the square of y = x² − 2kx + k² − 4 gives y = (x − k)² − {{blank:1}}, so the vertex is always at y = {{blank:2}} regardless of k.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "x²−2kx+k² = (x−k)², so the full expression is (x−k)²−4.",
+          "distractors": [
+            {
+              "answer": "k",
+              "explanation": "The k² term is absorbed into the perfect square, leaving −4.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "k²",
+              "explanation": "(x−k)² already contains the k² term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−4",
+          "correctExplanation": "The vertex occurs when (x−k)² = 0, giving y = −4.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The vertex y-value is −4, not 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "k²−4",
+              "explanation": "At the vertex, (x−k)² = 0, so only −4 remains.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Evaluating f(x) = x³ − 3x + 1 at x = −2 gives {{blank:1}} and at x = −1 gives {{blank:2}}, so a root lies between −2 and −1.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−1",
+          "correctExplanation": "f(−2) = −8+6+1 = −1.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "(−2)³ = −8, not +8; f(−2) = −8+6+1 = −1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−5",
+              "explanation": "−8+6+1 = −1, not −5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "f(−1) = −1+3+1 = 3.",
+          "distractors": [
+            {
+              "answer": "−1",
+              "explanation": "(−1)³ = −1, −3(−1) = 3, so f(−1) = −1+3+1 = 3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "−1+3+1 = 3, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "The derivative of a^x is a^x·ln(a). At x = 0, the gradient of y = a^x is {{blank:1}}, which equals 1 when a = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "ln(a)",
+          "correctExplanation": "a⁰·ln(a) = 1·ln(a) = ln(a).",
+          "distractors": [
+            {
+              "answer": "a",
+              "explanation": "The gradient is ln(a), not a itself.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "The gradient is 1 only when a = e; otherwise it equals ln(a).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "e",
+          "correctExplanation": "ln(e) = 1, so the gradient at x = 0 is 1 when a = e.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "ln(2) ≈ 0.693, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "ln(10) ≈ 2.303, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Taking |f(x)| for f(x) = x² − 4 reflects the portion where x² − 4 < 0 (between x = {{blank:1}} and x = {{blank:2}}) upward across the x-axis.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−2",
+          "correctExplanation": "x²−4 < 0 when −2 < x < 2; the interval starts at x = −2.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The negative portion begins at x = −2, not x = 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "−4",
+              "explanation": "x²−4 = 0 at x = ±2, not x = ±4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "x²−4 < 0 when −2 < x < 2; the interval ends at x = 2.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "The zero of x²−4 is at x = 2, not x = 4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "x²−4 at x = 1 is −3 < 0, but the interval extends to x = 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "For y = x² and y = kx − 1, substitution gives x² − kx + 1 = 0. The discriminant is k² − {{blank:1}}, so tangency occurs at k = {{blank:2}} (for k > 0).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Δ = k² − 4(1)(1) = k² − 4.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The formula gives 4ac = 4(1)(1) = 4, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "k",
+              "explanation": "The discriminant is k²−4, not k²−k.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Δ = 0 when k² = 4, so k = 2 for k > 0.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "k² = 4 gives k = 2, not k = 4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "k² = 4 gives k = 2, not k = 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "As n increases through even values, x^n for |x| < 1 approaches {{blank:1}} and for |x| > 1 approaches {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "For |x| < 1, repeated multiplication makes x^n progressively smaller.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "x^n → 0, not 1, for |x| < 1 as n → ∞.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "x",
+              "explanation": "x^n → 0 for |x| < 1, not the value x itself.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "infinity",
+          "correctExplanation": "For |x| > 1, x^n grows without bound as n increases.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "x^n → ∞ for |x| > 1, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "x²",
+              "explanation": "The limit is ∞, not x².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "sin(x) + cos(x) can be written as √2·sin(x + π/{{blank:1}}), confirming the maximum value is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "arctan(1/1) = π/4, giving the phase shift.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "π/2 would give √2·sin(x+π/2) = √2·cos(x), not sin(x)+cos(x).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "π/3 does not produce the correct combination of sin and cos.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√2",
+          "correctExplanation": "The amplitude R = √(1²+1²) = √2.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "R = √2 ≈ 1.414, not 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "The combined function has amplitude √2, greater than 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "For 2^x = x², the solutions include x = {{blank:1}} and x = {{blank:2}}, verified by substitution into both sides.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "2² = 4 = 2², confirming x = 2 is a solution.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "2³ = 8 ≠ 9 = 3².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "2¹ = 2 ≠ 1 = 1².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "2⁴ = 16 = 4², confirming x = 4 is a solution.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "2⁸ = 256 ≠ 64 = 8².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "5",
+              "explanation": "2⁵ = 32 ≠ 25 = 5².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}
