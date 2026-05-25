@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10ST01",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to use quartiles, interquartile range and boxplots to compare data distributions.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to use quartiles, interquartile range and boxplots to compare data distributions.",
+    "y": [
+      "Boxplots provide a powerful visual summary of a dataset's centre, spread and skewness using five key values.",
+      "The interquartile range is resistant to outliers, making it a more reliable measure of spread than range for many datasets.",
+      "These tools are used throughout science, medicine, business and social research to compare distributions."
+    ],
+    "eg": [
+      "Constructing a boxplot from a dataset and identifying the median, quartiles and any outliers.",
+      "Comparing two boxplots side by side and discussing differences in centre, spread and skewness.",
+      "Calculating the IQR and using it to identify outliers (values beyond 1.5 \u00d7 IQR from the quartiles).",
+      "Interpreting: 'The median score for Year 10 is higher than Year 9, but Year 9 has a wider IQR.'",
+      "Drawing parallel boxplots to compare the distributions of test scores for three different classes.",
+      "Discussing when boxplots are more informative than histograms and vice versa."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The median is the most frequently occurring value when data is arranged in order.",
+      "correct": "False",
+      "correctExplanation": "The median is the middle value, not the most frequent. The most frequently occurring value is the mode.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The median is the middle value in an ordered data set, not the most frequent."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The interquartile range is calculated as Q1 minus Q3.",
+      "correct": "False",
+      "correctExplanation": "IQR = Q3 \u2212 Q1, not Q1 \u2212 Q3. Subtracting in the wrong order gives a negative value.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Subtracting Q3 from Q1 gives the spread of the middle 50%."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A boxplot displays the five-number summary of a data set.",
+      "correct": "True",
+      "correctExplanation": "A boxplot shows the minimum, Q1, median, Q3, and maximum (or outlier boundaries).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A boxplot only shows the mean and standard deviation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The IQR measures the spread of the entire data set.",
+      "correct": "False",
+      "correctExplanation": "The IQR measures the spread of only the middle 50% of data, from Q1 to Q3.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "IQR captures all data values from minimum to maximum."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "In a boxplot, the box contains exactly 50% of the data.",
+      "correct": "True",
+      "correctExplanation": "The box spans from Q1 to Q3, which by definition contains the middle 50% of data.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The box contains 25% of the data, with the rest in the whiskers."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "A wider box in a boxplot means more data values than a narrower box.",
+      "correct": "False",
+      "correctExplanation": "A wider box indicates greater spread in the middle 50%, not more data. Both boxes contain 50% of their data.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "More data is contained in wider boxes because they cover more values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Q1 is the median of the lower half of the data.",
+      "correct": "True",
+      "correctExplanation": "Q1 (first quartile) is found by taking the median of all values below the overall median.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Q1 is the smallest value in the data set."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A data point is always classified as an outlier if it is the largest value.",
+      "correct": "False",
+      "correctExplanation": "The largest value is only an outlier if it exceeds Q3 + 1.5 \u00d7 IQR. Being the largest does not automatically make it an outlier.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The maximum value in any data set is always an outlier."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The five-number summary consists of the minimum, Q1, median, Q3 and maximum.",
+      "correct": "True",
+      "correctExplanation": "These five values summarise the centre, spread, and range of a data set.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The five-number summary includes the mean instead of the median."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A positively skewed distribution has its tail extending to the left.",
+      "correct": "False",
+      "correctExplanation": "Positively skewed distributions have their tail extending to the right (toward higher values).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The tail of a positive skew points toward lower values on the left."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Parallel boxplots allow direct comparison of two or more data sets.",
+      "correct": "True",
+      "correctExplanation": "Parallel boxplots share the same scale, enabling visual comparison of centre, spread, and outliers.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Parallel boxplots must be read independently and cannot be compared."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "A histogram and a boxplot display exactly the same information about a data set.",
+      "correct": "False",
+      "correctExplanation": "Histograms show frequency distribution shape in detail, while boxplots summarise the five-number summary. Each reveals different aspects.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Both displays contain identical information presented differently."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What does IQR stand for?",
+      "correct": "Interquartile range",
+      "correctExplanation": "IQR is the interquartile range, measuring the spread of the middle 50%.",
+      "distractors": [
+        {
+          "answer": "Internal quartile ratio",
+          "explanation": "IQR is a range, not a ratio."
+        },
+        {
+          "answer": "Inter-quantile range",
+          "explanation": "The correct term uses 'quartile', not 'quantile'."
+        },
+        {
+          "answer": "Inclusive quartile region",
+          "explanation": "This is not the correct expansion."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "How is the IQR calculated?",
+      "correct": "Q3 minus Q1",
+      "correctExplanation": "IQR = Q3 \u2212 Q1, giving the spread of the middle half of the data.",
+      "distractors": [
+        {
+          "answer": "Q1 minus Q3",
+          "explanation": "This gives a negative value."
+        },
+        {
+          "answer": "Maximum minus minimum",
+          "explanation": "This calculates the range, not IQR."
+        },
+        {
+          "answer": "Mean minus median",
+          "explanation": "This is not related to the IQR."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "In a boxplot, what does the line inside the box represent?",
+      "correct": "The median",
+      "correctExplanation": "The line inside the box marks the median (Q2) of the data set.",
+      "distractors": [
+        {
+          "answer": "The mean",
+          "explanation": "The mean is not typically marked in a standard boxplot."
+        },
+        {
+          "answer": "The mode",
+          "explanation": "The mode is not shown in a boxplot."
+        },
+        {
+          "answer": "Q1",
+          "explanation": "Q1 is the left edge of the box, not the interior line."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which values make up the five-number summary?",
+      "correct": "Minimum, Q1, median, Q3, maximum",
+      "correctExplanation": "These five statistics summarise the distribution's centre and spread.",
+      "distractors": [
+        {
+          "answer": "Mean, median, mode, range, IQR",
+          "explanation": "This mixes summary statistics incorrectly."
+        },
+        {
+          "answer": "Q1, Q2, Q3, Q4, Q5",
+          "explanation": "There are only three quartiles, not five."
+        },
+        {
+          "answer": "Min, mean, median, mode, max",
+          "explanation": "The mean and mode are not part of the five-number summary."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What percentage of data falls between Q1 and Q3?",
+      "correct": "50%",
+      "correctExplanation": "By definition, Q1 and Q3 mark the boundaries of the middle 50% of data.",
+      "distractors": [
+        {
+          "answer": "25%",
+          "explanation": "25% falls between Q1 and the median, or median and Q3."
+        },
+        {
+          "answer": "75%",
+          "explanation": "75% of data falls below Q3, not between Q1 and Q3."
+        },
+        {
+          "answer": "100%",
+          "explanation": "All data falls between the minimum and maximum, not Q1 and Q3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "A positively skewed distribution has the tail extending in which direction?",
+      "correct": "To the right",
+      "correctExplanation": "Positive skew means a long tail toward higher (right-side) values.",
+      "distractors": [
+        {
+          "answer": "To the left",
+          "explanation": "Left tail indicates negative skew."
+        },
+        {
+          "answer": "Equally both directions",
+          "explanation": "Equal spread indicates symmetry, not skew."
+        },
+        {
+          "answer": "No tail at all",
+          "explanation": "All distributions have some tail shape."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which measure of spread is resistant to outliers?",
+      "correct": "IQR",
+      "correctExplanation": "IQR only uses Q1 and Q3, which are not affected by extreme values.",
+      "distractors": [
+        {
+          "answer": "Range",
+          "explanation": "Range uses min and max, which are highly sensitive to outliers."
+        },
+        {
+          "answer": "Standard",
+          "explanation": "Standard deviation is influenced by all values including outliers."
+        },
+        {
+          "answer": "Mean",
+          "explanation": "Mean is a measure of centre, not spread, and is affected by outliers."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "In a boxplot, whiskers extend from the box to which values?",
+      "correct": "The minimum and",
+      "correctExplanation": "Whiskers reach to the smallest and largest non-outlier data points.",
+      "distractors": [
+        {
+          "answer": "Q1 and Q3",
+          "explanation": "Q1 and Q3 are the edges of the box, not the whiskers."
+        },
+        {
+          "answer": "The mean",
+          "explanation": "The mean is not shown by whiskers."
+        },
+        {
+          "answer": "Outliers only",
+          "explanation": "Outliers are shown separately as individual points."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What shape does a symmetric distribution have?",
+      "correct": "A mirror image on both sides",
+      "correctExplanation": "Symmetric distributions have equal spread on either side of the median.",
+      "distractors": [
+        {
+          "answer": "A tail on the right side only",
+          "explanation": "A right tail indicates positive skew."
+        },
+        {
+          "answer": "All values clustered at one end",
+          "explanation": "Clustering at one end creates skew."
+        },
+        {
+          "answer": "No recognisable pattern",
+          "explanation": "Symmetric is a specific, recognisable shape."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "The outlier rule uses which multiplier of the IQR?",
+      "correct": "1.5",
+      "correctExplanation": "Outliers are defined as values beyond Q1 \u2212 1.5\u00d7IQR or Q3 + 1.5\u00d7IQR.",
+      "distractors": [
+        {
+          "answer": "1.0",
+          "explanation": "The standard multiplier is 1.5, not 1.0."
+        },
+        {
+          "answer": "2.0",
+          "explanation": "2.0 is sometimes used for extreme outliers, not standard outliers."
+        },
+        {
+          "answer": "0.5",
+          "explanation": "0.5 is too small and would flag too many values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Which display shows the frequency of data values in intervals?",
+      "correct": "Histogram",
+      "correctExplanation": "Histograms use bars to show the frequency of values within specified intervals.",
+      "distractors": [
+        {
+          "answer": "Boxplot",
+          "explanation": "Boxplots show the five-number summary, not frequency by interval."
+        },
+        {
+          "answer": "Dot plot",
+          "explanation": "Dot plots show individual values, not grouped intervals."
+        },
+        {
+          "answer": "Stem-and-leaf plot",
+          "explanation": "Stem-and-leaf plots show individual values, not intervals."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What does a negatively skewed distribution look like?",
+      "correct": "The tail extends to the left",
+      "correctExplanation": "Negative skew means a long tail toward lower (left-side) values.",
+      "distractors": [
+        {
+          "answer": "The tail extends to the right",
+          "explanation": "A right tail is positive skew."
+        },
+        {
+          "answer": "The data is perfectly symmetric",
+          "explanation": "Symmetry means no skew in either direction."
+        },
+        {
+          "answer": "All values are equal",
+          "explanation": "Equal values would show no spread at all."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The IQR is calculated as {{blank:1}} minus Q1 and measures the spread of the middle {{blank:2}}% of the data.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "Q3",
+          "correctExplanation": "IQR = Q3 \u2212 Q1.",
+          "distractors": [
+            {
+              "answer": "Q2",
+              "explanation": "Q2 is the median, not the upper boundary of IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "maximum",
+              "explanation": "Using the maximum gives the upper range, not IQR.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "50",
+          "correctExplanation": "The IQR captures the middle half of the data.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "25% is the range from Q1 to the median only.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "75",
+              "explanation": "75% is the range from minimum to Q3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "A boxplot displays the {{blank:1}}-number summary: minimum, Q1, median, Q3 and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "five",
+          "correctExplanation": "The five-number summary has five components.",
+          "distractors": [
+            {
+              "answer": "three",
+              "explanation": "Three values would omit Q1 and Q3.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "four",
+              "explanation": "Four values would omit one component.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "maximum",
+          "correctExplanation": "The maximum (or last non-outlier value) is shown at the end of the upper whisker.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is not part of the five-number summary.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "The mode is not part of the five-number summary.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "For skewed data, the mean is a better measure of centre than the median.",
+      "correct": "False",
+      "correctExplanation": "For skewed data, the median is better because it resists the pull of extreme values. The mean is dragged toward the tail.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The mean is pulled by outliers in skewed data, making the median more representative."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "If the mean is greater than the median, the distribution is negatively skewed.",
+      "correct": "False",
+      "correctExplanation": "When the mean exceeds the median, the distribution is positively skewed. The mean is pulled toward the long right tail.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A mean greater than the median always indicates negative skew."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Two data sets with the same median must have the same IQR.",
+      "correct": "False",
+      "correctExplanation": "The median measures centre while IQR measures spread. Two sets can share a median but differ greatly in spread.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Identical medians guarantee identical spreads."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "A data value of 100 in a set with Q1 = 20 and Q3 = 40 is an outlier.",
+      "correct": "True",
+      "correctExplanation": "IQR = 40 \u2212 20 = 20. Upper fence = Q3 + 1.5\u00d7IQR = 40 + 30 = 70. Since 100 > 70, it is an outlier.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "100 is within normal range because it is close to the data."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "In a boxplot, a longer whisker on the right side indicates positive skew.",
+      "correct": "True",
+      "correctExplanation": "A longer right whisker shows that data extends further toward higher values, indicating positive skew.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Whisker length has no relationship to skewness."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The IQR is affected by outliers because it uses extreme values.",
+      "correct": "False",
+      "correctExplanation": "The IQR uses only Q1 and Q3, which are resistant to outliers. Extreme values affect the range, not IQR.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Q1 and Q3 shift dramatically when outliers are present."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A dot plot shows every individual data value in the set.",
+      "correct": "True",
+      "correctExplanation": "Each dot represents one data value, making all individual values visible.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Dot plots only show summary statistics, not individual values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "A data set with no outliers must have a symmetric distribution.",
+      "correct": "False",
+      "correctExplanation": "A distribution can be skewed without having outliers. Outlier status depends on the 1.5\u00d7IQR rule, not on symmetry.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The absence of outliers guarantees the data is symmetric."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Data set: 5, 8, 12, 15, 18, 22, 25, 30, 35. What is Q1?",
+      "correct": "10",
+      "correctExplanation": "Lower half is 5, 8, 12, 15. Q1 = median of lower half = (8+12)/2 = 10.",
+      "distractors": [
+        {
+          "answer": "8",
+          "explanation": "8 is a data value but not the median of the lower half."
+        },
+        {
+          "answer": "12",
+          "explanation": "12 is the upper value of the lower pair."
+        },
+        {
+          "answer": "5",
+          "explanation": "5 is the minimum, not Q1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "If Q1 = 15 and Q3 = 35, what are the outlier boundaries?",
+      "correct": "Lower: \u221215, Upper: 65",
+      "correctExplanation": "IQR = 20. Lower = 15 \u2212 30 = \u221215. Upper = 35 + 30 = 65.",
+      "distractors": [
+        {
+          "answer": "Lower: 0, Upper: 50",
+          "explanation": "This uses 1.0 \u00d7 IQR instead of 1.5."
+        },
+        {
+          "answer": "Lower: 15, Upper: 35",
+          "explanation": "These are Q1 and Q3, not outlier boundaries."
+        },
+        {
+          "answer": "Lower: \u22125, Upper: 55",
+          "explanation": "This uses 1.0 \u00d7 IQR."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Two classes: A has median 72 and IQR 18; B has median 70 and IQR 8. Which statement is correct?",
+      "correct": "Class B is more consistent in performance",
+      "correctExplanation": "A smaller IQR indicates less variation in the middle 50%, meaning greater consistency.",
+      "distractors": [
+        {
+          "answer": "Class A performs more consistently",
+          "explanation": "Class A has a larger IQR, indicating more variation."
+        },
+        {
+          "answer": "Both classes have equal consistency",
+          "explanation": "Different IQRs mean different levels of consistency."
+        },
+        {
+          "answer": "Consistency cannot be compared using IQR",
+          "explanation": "IQR directly measures data spread and consistency."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A histogram shows most data clustered on the left with a long tail to the right. This distribution is described as what?",
+      "correct": "Positively skewed",
+      "correctExplanation": "A right tail indicates positive skew, with most data concentrated at lower values.",
+      "distractors": [
+        {
+          "answer": "Negatively skewed",
+          "explanation": "A left tail indicates negative skew."
+        },
+        {
+          "answer": "Symmetric",
+          "explanation": "Symmetric distributions have equal spread on both sides."
+        },
+        {
+          "answer": "Uniform",
+          "explanation": "Uniform distributions have roughly equal frequencies across all intervals."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which measure is most affected by an extreme outlier?",
+      "correct": "The mean",
+      "correctExplanation": "The mean includes every value in its calculation, so one extreme value can shift it significantly.",
+      "distractors": [
+        {
+          "answer": "The median",
+          "explanation": "The median is resistant to outliers."
+        },
+        {
+          "answer": "The IQR",
+          "explanation": "IQR uses Q1 and Q3, which resist outliers."
+        },
+        {
+          "answer": "The mode",
+          "explanation": "The mode depends on frequency, not magnitude."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "In a boxplot, data points plotted individually beyond the whiskers represent what?",
+      "correct": "Outliers",
+      "correctExplanation": "Individual points beyond the whiskers are data values that exceed 1.5 \u00d7 IQR from the quartiles.",
+      "distractors": [
+        {
+          "answer": "The median",
+          "explanation": "The median is shown as a line inside the box."
+        },
+        {
+          "answer": "Normal data values",
+          "explanation": "Normal values fall within the whiskers."
+        },
+        {
+          "answer": "Missing data",
+          "explanation": "Missing data is not displayed in boxplots."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Data: 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30. What is the IQR?",
+      "correct": "12",
+      "correctExplanation": "Q1 = 14, Q3 = 26. IQR = 26 \u2212 14 = 12.",
+      "distractors": [
+        {
+          "answer": "20",
+          "explanation": "This is the median, not the IQR."
+        },
+        {
+          "answer": "10",
+          "explanation": "This is the difference between adjacent values."
+        },
+        {
+          "answer": "8",
+          "explanation": "This uses incorrect quartile values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "When comparing two boxplots, which feature indicates a higher typical value?",
+      "correct": "A higher median",
+      "correctExplanation": "The median line shows the central tendency; a higher position means a higher typical value.",
+      "distractors": [
+        {
+          "answer": "A wider box",
+          "explanation": "A wider box shows more spread, not a higher centre."
+        },
+        {
+          "answer": "Longer whiskers",
+          "explanation": "Longer whiskers show greater range, not higher centre."
+        },
+        {
+          "answer": "More outliers",
+          "explanation": "Outliers indicate extreme values, not the typical value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Melbourne house prices have a mean of $1.2M and a median of $850K. What does this suggest?",
+      "correct": "The distribution is positively skewed",
+      "correctExplanation": "Mean > median indicates a right skew, pulled up by expensive properties.",
+      "distractors": [
+        {
+          "answer": "The distribution is negatively skewed",
+          "explanation": "Negative skew has mean < median."
+        },
+        {
+          "answer": "The distribution is symmetric",
+          "explanation": "Symmetric distributions have equal mean and median."
+        },
+        {
+          "answer": "The data contains no outliers",
+          "explanation": "The gap between mean and median suggests outliers or skew."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which data display best shows the shape of a distribution in detail?",
+      "correct": "Histogram",
+      "correctExplanation": "Histograms display frequency across intervals, revealing distribution shape in detail.",
+      "distractors": [
+        {
+          "answer": "Boxplot",
+          "explanation": "Boxplots summarise data but do not show detailed shape."
+        },
+        {
+          "answer": "Pie chart",
+          "explanation": "Pie charts show proportions of categories, not distributions."
+        },
+        {
+          "answer": "Bar chart",
+          "explanation": "Bar charts are for categorical data, not continuous distributions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "A data set has Q1 = 40, median = 50, Q3 = 55. Is this distribution likely skewed?",
+      "correct": "Yes, negatively skewed",
+      "correctExplanation": "The median is closer to Q3 than Q1, indicating more spread in the lower half \u2014 negative skew.",
+      "distractors": [
+        {
+          "answer": "Yes, positively skewed",
+          "explanation": "Positive skew would have the median closer to Q1."
+        },
+        {
+          "answer": "No, it is symmetric",
+          "explanation": "Symmetric data has the median centred between Q1 and Q3."
+        },
+        {
+          "answer": "Cannot determine from quartiles",
+          "explanation": "Quartile positions reveal skewness information."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "What advantage does a dot plot have over a boxplot?",
+      "correct": "It shows every individual data value",
+      "correctExplanation": "Dot plots display each value, allowing identification of clusters, gaps, and exact distributions.",
+      "distractors": [
+        {
+          "answer": "It shows the five-number summary",
+          "explanation": "The five-number summary is shown by boxplots."
+        },
+        {
+          "answer": "It is easier to compare multiple sets",
+          "explanation": "Parallel boxplots are easier for multiple comparisons."
+        },
+        {
+          "answer": "It works better with large data sets",
+          "explanation": "Dot plots become crowded with large data sets."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A data value is classified as an outlier if it is below Q1 \u2212 {{blank:1}} \u00d7 IQR or above Q3 + {{blank:2}} \u00d7 IQR.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.5",
+          "correctExplanation": "The standard outlier multiplier is 1.5 times the IQR.",
+          "distractors": [
+            {
+              "answer": "1.0",
+              "explanation": "1.0 is too small and would flag too many values as outliers.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2.0",
+              "explanation": "2.0 is sometimes used for extreme outliers, not standard ones.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.5",
+          "correctExplanation": "The same multiplier of 1.5 applies to both the upper and lower fences.",
+          "distractors": [
+            {
+              "answer": "2.5",
+              "explanation": "2.5 would set too generous a boundary.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.0",
+              "explanation": "1.0 is not the standard multiplier for outlier detection.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "When the mean is greater than the median, the distribution is {{blank:1}} skewed because extreme {{blank:2}} values pull the mean upward.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positively",
+          "correctExplanation": "The mean is dragged toward the right tail by high values.",
+          "distractors": [
+            {
+              "answer": "negatively",
+              "explanation": "Negative skew has the mean less than the median.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "not",
+              "explanation": "A difference between mean and median indicates skew, not symmetry.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "high",
+          "correctExplanation": "Large values in the right tail pull the mean above the median.",
+          "distractors": [
+            {
+              "answer": "low",
+              "explanation": "Low values pull the mean below the median, creating negative skew.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "middle",
+              "explanation": "Middle values do not create the mean-median gap.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "In a parallel boxplot comparison, a data set with a higher median has a higher {{blank:1}}, while a data set with a smaller IQR shows more {{blank:2}} in its values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "centre",
+          "correctExplanation": "The median represents the centre or typical value of a distribution.",
+          "distractors": [
+            {
+              "answer": "spread",
+              "explanation": "Spread is measured by IQR, not the median.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "range",
+              "explanation": "Range measures total spread, not centre.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "consistency",
+          "correctExplanation": "A smaller IQR means the middle 50% of data is more tightly clustered.",
+          "distractors": [
+            {
+              "answer": "variability",
+              "explanation": "Smaller IQR means less variability, not more.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "outliers",
+              "explanation": "Fewer outliers can occur with any IQR value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The five-number summary uses the {{blank:1}} as the measure of centre and the {{blank:2}} as the measure of spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "median",
+          "correctExplanation": "The median is the central value in the five-number summary.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is not part of the five-number summary.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "The mode is not part of the five-number summary.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "IQR",
+          "correctExplanation": "IQR = Q3 \u2212 Q1 measures the spread of the middle 50%.",
+          "distractors": [
+            {
+              "answer": "range",
+              "explanation": "Range uses min and max; IQR is the standard spread measure from the five-number summary.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "standard deviation",
+              "explanation": "Standard deviation pairs with the mean, not the five-number summary.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A symmetric distribution has the median positioned {{blank:1}} between Q1 and Q3. The mean and median are approximately {{blank:2}} in symmetric data.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "centrally",
+          "correctExplanation": "In a symmetric distribution, the median is equidistant from Q1 and Q3.",
+          "distractors": [
+            {
+              "answer": "closer to Q1",
+              "explanation": "This indicates negative skew.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "closer to Q3",
+              "explanation": "This indicates positive skew.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "equal",
+          "correctExplanation": "In symmetric distributions, the mean and median coincide.",
+          "distractors": [
+            {
+              "answer": "different",
+              "explanation": "A large difference indicates skew, not symmetry.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unrelated",
+              "explanation": "Mean and median are directly related in symmetric distributions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A histogram with bars decreasing in height from left to right indicates {{blank:1}} skew, meaning most data is concentrated at {{blank:2}} values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "negative",
+          "correctExplanation": "The bulk of data on the right with a tail to the left is negative skew.",
+          "distractors": [
+            {
+              "answer": "positive",
+              "explanation": "Positive skew has the tail to the right, not the left.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "no",
+              "explanation": "Decreasing bar height shows a clear directional pattern.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "higher",
+          "correctExplanation": "Most data clustered at higher values creates a left tail (negative skew).",
+          "distractors": [
+            {
+              "answer": "lower",
+              "explanation": "Lower value concentration with a right tail is positive skew.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "middle",
+              "explanation": "Middle concentration creates a symmetric distribution.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Adding a single extreme value to a data set always changes the median significantly.",
+      "correct": "False",
+      "correctExplanation": "The median is resistant to outliers. Adding one extreme value shifts the median by at most one position in the ordered list.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "One extreme value dramatically changes the middle value."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The standard deviation is always larger than the IQR for any data set.",
+      "correct": "False",
+      "correctExplanation": "Standard deviation and IQR measure spread differently. Depending on the distribution, either could be larger.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Standard deviation always exceeds IQR because it uses all data values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Data set A: median 85, IQR 12. Data set B: median 80, IQR 25. Which set has more variability in its middle 50%?",
+      "correct": "Data set B",
+      "correctExplanation": "B has a larger IQR (25 vs 12), indicating more spread in the middle half of its data.",
+      "distractors": [
+        {
+          "answer": "Data set A",
+          "explanation": "A has a smaller IQR, meaning less variability."
+        },
+        {
+          "answer": "They are equally variable",
+          "explanation": "Different IQRs indicate different variability."
+        },
+        {
+          "answer": "Cannot be determined",
+          "explanation": "IQR directly measures middle-50% variability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Exam scores: Q1 = 55, median = 70, Q3 = 78. Is the score of 15 an outlier?",
+      "correct": "Yes, it is below the lower fence of 20.5",
+      "correctExplanation": "IQR = 23. Lower fence = 55 \u2212 1.5\u00d723 = 55 \u2212 34.5 = 20.5. Since 15 < 20.5, it is an outlier.",
+      "distractors": [
+        {
+          "answer": "No, it is within normal bounds",
+          "explanation": "15 is below the lower fence of 20.5."
+        },
+        {
+          "answer": "Yes, because it is the lowest score",
+          "explanation": "Being lowest does not automatically make it an outlier."
+        },
+        {
+          "answer": "Cannot determine without the full data set",
+          "explanation": "The quartile values are sufficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Two boxplots show Class A with median 65 and IQR 20, and Class B with median 65 and IQR 10. What conclusion can be drawn?",
+      "correct": "Both classes have the same typical perform",
+      "correctExplanation": "Equal medians indicate the same centre; smaller IQR in B indicates more consistent performance.",
+      "distractors": [
+        {
+          "answer": "Class A performs better overall",
+          "explanation": "A has the same median as B."
+        },
+        {
+          "answer": "Class B has higher scores",
+          "explanation": "The medians are equal."
+        },
+        {
+          "answer": "No meaningful comparison is possible",
+          "explanation": "Both centre and spread can be compared."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A data set has mean 45 and median 52. What does this suggest about the distribution shape?",
+      "correct": "Negatively skewed",
+      "correctExplanation": "Mean < median indicates the mean is pulled down by low values, creating a left (negative) skew.",
+      "distractors": [
+        {
+          "answer": "Positively skewed",
+          "explanation": "Positive skew has mean > median."
+        },
+        {
+          "answer": "Symmetric",
+          "explanation": "Symmetric data has approximately equal mean and median."
+        },
+        {
+          "answer": "Bimodal",
+          "explanation": "Bimodality is not indicated by the mean-median relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "In a back-to-back stem-and-leaf plot comparing two groups, what advantage does it have over parallel boxplots?",
+      "correct": "It shows individual data values for both groups",
+      "correctExplanation": "Stem-and-leaf plots preserve every data value while allowing side-by-side comparison.",
+      "distractors": [
+        {
+          "answer": "It shows the five-number summary",
+          "explanation": "The five-number summary is read more easily from boxplots."
+        },
+        {
+          "answer": "It works better for large data sets",
+          "explanation": "Large data sets make stem-and-leaf plots unwieldy."
+        },
+        {
+          "answer": "It shows the mean of each group",
+          "explanation": "Neither display directly shows the mean."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Data: 2, 5, 7, 8, 10, 12, 14, 16, 18, 90. Which summary statistics are most affected by the value 90?",
+      "correct": "Mean and range",
+      "correctExplanation": "The mean includes 90 in its calculation, and the range uses 90 as the maximum. Both shift dramatically.",
+      "distractors": [
+        {
+          "answer": "Median and IQR",
+          "explanation": "Median and IQR are resistant to the outlier 90."
+        },
+        {
+          "answer": "Mode and median",
+          "explanation": "Neither is greatly affected by a single extreme value."
+        },
+        {
+          "answer": "Q1 and Q3",
+          "explanation": "Q1 and Q3 are resistant to outliers."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A negatively skewed boxplot has which visual characteristic?",
+      "correct": "A longer left whisker than the right",
+      "correctExplanation": "The left whisker extends further, showing data spread toward lower values.",
+      "distractors": [
+        {
+          "answer": "A longer right whisker",
+          "explanation": "A longer right whisker indicates positive skew."
+        },
+        {
+          "answer": "The box is centred between whiskers",
+          "explanation": "Centred boxes suggest symmetry."
+        },
+        {
+          "answer": "No whiskers at all",
+          "explanation": "All boxplots have whiskers unless all data is within the box."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Why is the median preferred over the mean when reporting typical house prices?",
+      "correct": "House prices are positively skewed with",
+      "correctExplanation": "Expensive properties pull the mean up, making the median a better representation of typical prices.",
+      "distractors": [
+        {
+          "answer": "House prices are always symmetric",
+          "explanation": "House prices are typically right-skewed."
+        },
+        {
+          "answer": "The mean is harder to calculate",
+          "explanation": "Calculation difficulty is not the reason."
+        },
+        {
+          "answer": "The median gives a higher value",
+          "explanation": "The median is usually lower than the mean for skewed data."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A data set has IQR = 20, Q1 = 30, Q3 = 50. A value of 82 is observed. Is it an outlier?",
+      "correct": "Yes, it exceeds Q3 + 1.5 \u00d7",
+      "correctExplanation": "Upper fence = 50 + 1.5 \u00d7 20 = 80. Since 82 > 80, it is classified as an outlier.",
+      "distractors": [
+        {
+          "answer": "No, it is within bounds",
+          "explanation": "82 exceeds the upper fence of 80."
+        },
+        {
+          "answer": "Yes, because it is above Q3",
+          "explanation": "Being above Q3 alone does not make it an outlier."
+        },
+        {
+          "answer": "Cannot determine without more data",
+          "explanation": "Q1, Q3 and IQR are sufficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Which pair of statistics gives the most complete description of a distribution?",
+      "correct": "Median and IQR",
+      "correctExplanation": "Together they describe both centre and spread, and both resist outliers.",
+      "distractors": [
+        {
+          "answer": "Mean and mode",
+          "explanation": "These give two centre measures but no spread."
+        },
+        {
+          "answer": "Range and maximum",
+          "explanation": "These focus on extremes, not typical values."
+        },
+        {
+          "answer": "Mode and minimum",
+          "explanation": "These do not measure spread or typical centre."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Melbourne rainfall data shows a right-skewed distribution. Which statement follows?",
+      "correct": "Most months have lower rainfall with occasi",
+      "correctExplanation": "Right skew means the majority of data is at lower values with a tail of high values.",
+      "distractors": [
+        {
+          "answer": "Rainfall is evenly distributed",
+          "explanation": "Even distribution means symmetry, not skew."
+        },
+        {
+          "answer": "Most months are very wet",
+          "explanation": "Most months have lower rainfall in a right-skewed distribution."
+        },
+        {
+          "answer": "The mean rainfall is below the median",
+          "explanation": "In right skew, the mean exceeds the median."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "When comparing two parallel boxplots, one box is entirely above the other. What does this indicate?",
+      "correct": "The higher boxplot's data is generall",
+      "correctExplanation": "If one box is above the other, nearly all of that data set exceeds the other's typical values.",
+      "distractors": [
+        {
+          "answer": "The lower box has more data",
+          "explanation": "Box position shows value, not quantity."
+        },
+        {
+          "answer": "The two data sets are identical",
+          "explanation": "Non-overlapping boxes indicate different distributions."
+        },
+        {
+          "answer": "No comparison can be made",
+          "explanation": "Non-overlapping boxes clearly show one set exceeds the other."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "When interpreting data distributions, always describe the {{blank:1}}, spread, shape, and {{blank:2}} in the context of the variable measured.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "centre",
+          "correctExplanation": "Centre (median or mean) describes the typical value.",
+          "distractors": [
+            {
+              "answer": "frequency",
+              "explanation": "Frequency is shown in histograms but is not a distribution description component.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "count",
+              "explanation": "Count is the sample size, not a distribution characteristic.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "outliers",
+          "correctExplanation": "Outliers are extreme values that warrant comment in any distribution description.",
+          "distractors": [
+            {
+              "answer": "mode",
+              "explanation": "Mode is a measure of centre, not one of the four description categories.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "axes",
+              "explanation": "Axes are graph features, not distribution characteristics.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "The IQR is more {{blank:1}} than the range because it ignores {{blank:2}} values in the data.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "robust",
+          "correctExplanation": "Robustness means the measure resists the influence of outliers.",
+          "distractors": [
+            {
+              "answer": "accurate",
+              "explanation": "Both IQR and range are accurate for what they measure; robustness is the distinction.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "variable",
+              "explanation": "IQR is less variable, not more.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "extreme",
+          "correctExplanation": "IQR only uses Q1 and Q3, ignoring the minimum and maximum.",
+          "distractors": [
+            {
+              "answer": "middle",
+              "explanation": "IQR focuses on the middle 50%; it ignores the extremes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "typical",
+              "explanation": "Typical values are captured by IQR, not ignored.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "In comparing distributions, a data set with a smaller IQR is more {{blank:1}}, while a data set with a higher median has a higher {{blank:2}} value.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "consistent",
+          "correctExplanation": "Less spread in the middle 50% means data values are more similar to each other.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "Smaller IQR means less variability.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "skewed",
+              "explanation": "IQR size does not directly indicate skewness.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "typical",
+          "correctExplanation": "The median represents the typical or central value.",
+          "distractors": [
+            {
+              "answer": "maximum",
+              "explanation": "The maximum is an extreme, not the typical value.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "spread",
+              "explanation": "A higher median indicates a higher centre, not more spread.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A distribution where Q3 \u2212 median is much larger than median \u2212 Q1 is {{blank:1}} skewed, with the data spread further toward {{blank:2}} values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positively",
+          "correctExplanation": "Greater spread above the median indicates a right tail (positive skew).",
+          "distractors": [
+            {
+              "answer": "negatively",
+              "explanation": "Negative skew has greater spread below the median.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "not",
+              "explanation": "Unequal distances from the median to Q1 and Q3 indicate skew.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "higher",
+          "correctExplanation": "The longer upper half shows data extends further toward high values.",
+          "distractors": [
+            {
+              "answer": "lower",
+              "explanation": "Lower values correspond to the shorter lower-quartile distance.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "central",
+              "explanation": "Central values are near the median, not at the tail.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Adding a constant to every value in a data set changes the {{blank:1}} but does not change the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "median",
+          "correctExplanation": "Shifting all values shifts the centre by the same amount.",
+          "distractors": [
+            {
+              "answer": "IQR",
+              "explanation": "Adding a constant to all values does not change the spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "range",
+              "explanation": "Range is also unchanged because both min and max shift equally.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "IQR",
+          "correctExplanation": "IQR measures the difference between Q3 and Q1; adding a constant to both does not change their difference.",
+          "distractors": [
+            {
+              "answer": "median",
+              "explanation": "The median does shift by the added constant.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mean",
+              "explanation": "The mean also shifts by the added constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "When the mean of a data set equals $120,000 but the median is only $85,000, the distribution is {{blank:1}} skewed and the {{blank:2}} better represents the typical value.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positively",
+          "correctExplanation": "Mean > median is pulled up by high values, indicating positive (right) skew.",
+          "distractors": [
+            {
+              "answer": "negatively",
+              "explanation": "Negative skew has mean < median.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "not",
+              "explanation": "The large gap between mean and median confirms skew.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "median",
+          "correctExplanation": "The median resists the influence of extreme high values.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is inflated by extreme values and is less representative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "The mode may not exist or may not represent the centre well.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Parallel boxplots must share the same {{blank:1}} to enable valid comparison. They allow quick visual comparison of {{blank:2}} and spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "scale",
+          "correctExplanation": "A common scale ensures that box positions and sizes are directly comparable.",
+          "distractors": [
+            {
+              "answer": "colour",
+              "explanation": "Colour is aesthetic, not essential for valid comparison.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "shape",
+              "explanation": "Boxplots have a standard shape; it is the scale that must match.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "centre",
+          "correctExplanation": "The median position shows which data set has higher typical values.",
+          "distractors": [
+            {
+              "answer": "frequency",
+              "explanation": "Boxplots do not display frequency.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "Boxplots do not display the mode.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A histogram with two distinct peaks is called {{blank:1}}, which may indicate that the data comes from {{blank:2}} different groups.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "bimodal",
+          "correctExplanation": "Two peaks (modes) in a histogram are described as bimodal.",
+          "distractors": [
+            {
+              "answer": "skewed",
+              "explanation": "Skew refers to tail direction, not peak count.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "uniform",
+              "explanation": "Uniform distributions have roughly equal frequency across all intervals.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "two",
+          "correctExplanation": "Two peaks often suggest the data is a mixture of two subpopulations.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "A single group typically produces one peak.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "many",
+              "explanation": "Two peaks suggest two groups, not many.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Multiplying every data value by a constant k multiplies both the median and the IQR by {{blank:1}}, but the {{blank:2}} of the distribution is unchanged.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "k",
+          "correctExplanation": "Linear scaling multiplies all positional statistics by the same factor.",
+          "distractors": [
+            {
+              "answer": "k\u00b2",
+              "explanation": "Squaring applies to variance, not to median or IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "Multiplying by k changes the statistics unless k = 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "shape",
+          "correctExplanation": "Scaling preserves the relative distribution shape (skewness, modality).",
+          "distractors": [
+            {
+              "answer": "centre",
+              "explanation": "The centre (median) is multiplied by k.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "spread",
+              "explanation": "The spread (IQR) is also multiplied by k.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "To determine whether a value is an outlier, first calculate the IQR = Q3 \u2212 Q1, then find the lower fence = Q1 \u2212 {{blank:1}} and the upper fence = Q3 + {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.5 \u00d7 IQR",
+          "correctExplanation": "The lower fence extends 1.5 IQRs below Q1.",
+          "distractors": [
+            {
+              "answer": "IQR",
+              "explanation": "Using just IQR without the 1.5 multiplier sets bounds too tight.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2 \u00d7 IQR",
+              "explanation": "2 \u00d7 IQR is used for extreme outliers, not standard.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.5 \u00d7 IQR",
+          "correctExplanation": "The upper fence extends 1.5 IQRs above Q3.",
+          "distractors": [
+            {
+              "answer": "IQR",
+              "explanation": "The multiplier 1.5 must be included.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "Q1",
+              "explanation": "Q1 is used for the lower fence, not the upper.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Dot plots are most useful for {{blank:1}} data sets because they show every individual value, while boxplots are better for {{blank:2}} data sets because they summarise key statistics.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "small",
+          "correctExplanation": "Small data sets allow each dot to be seen clearly.",
+          "distractors": [
+            {
+              "answer": "large",
+              "explanation": "Large data sets make dot plots overcrowded.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "categorical",
+              "explanation": "Dot plots are for numerical, not categorical data.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "large",
+          "correctExplanation": "Boxplots efficiently summarise the distribution without showing every point.",
+          "distractors": [
+            {
+              "answer": "small",
+              "explanation": "Small data sets can use either display.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "categorical",
+              "explanation": "Boxplots are for numerical data.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "The shape of a distribution should be checked before choosing between mean and median. Use the {{blank:1}} for symmetric data and the {{blank:2}} for skewed data.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "mean",
+          "correctExplanation": "The mean is appropriate when data is symmetric with no outliers.",
+          "distractors": [
+            {
+              "answer": "median",
+              "explanation": "The median works for any shape, but the mean is preferred for symmetric data.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "mode",
+              "explanation": "The mode is rarely the best measure of centre.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "median",
+          "correctExplanation": "The median resists outliers and skew, making it better for skewed distributions.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is pulled by outliers in skewed data.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "range",
+              "explanation": "Range is a spread measure, not a centre measure.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "Two data sets have the same five-number summary but different histograms. How is this possible?",
+      "correct": "Different distributions can share the same",
+      "correctExplanation": "The five-number summary captures only five points; different frequency patterns between these points produce different histograms.",
+      "distractors": [
+        {
+          "answer": "Identical summaries must produce identica",
+          "explanation": "The summary does not capture all distributional detail."
+        },
+        {
+          "answer": "One histogram must be incorrect",
+          "explanation": "Both can be correct with different internal distributions."
+        },
+        {
+          "answer": "This is impossible",
+          "explanation": "Many distributions can share the same five-number summary."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A researcher removes outliers from a positively skewed data set. What happens to the mean relative to the median?",
+      "correct": "The mean decreases and moves closer",
+      "correctExplanation": "Removing high outliers reduces the mean more than the median, closing the gap between them.",
+      "distractors": [
+        {
+          "answer": "The mean increases",
+          "explanation": "Removing extreme high values cannot increase the mean."
+        },
+        {
+          "answer": "The median shifts more than",
+          "explanation": "The median is resistant; the mean shifts more."
+        },
+        {
+          "answer": "Both remain unchanged",
+          "explanation": "Removing outliers does affect the mean."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Melbourne summer temperatures have mean 25\u00b0C, median 24\u00b0C, and IQR 5\u00b0C. Winter has mean 13\u00b0C, median 13\u00b0C, and IQR 3\u00b0C. Which season is more variable?",
+      "correct": "Summer, because it has a larger IQR",
+      "correctExplanation": "IQR of 5\u00b0C vs 3\u00b0C indicates summer has more spread in its middle 50% of temperatures.",
+      "distractors": [
+        {
+          "answer": "Winter, because it has a lower mean",
+          "explanation": "Lower mean does not imply more variability."
+        },
+        {
+          "answer": "They are equally variable",
+          "explanation": "Different IQRs indicate different variability."
+        },
+        {
+          "answer": "Cannot compare different seasons",
+          "explanation": "IQR provides a valid basis for comparison."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "If a constant is added to every value in a data set, which statistics change?",
+      "correct": "Mean and median change; IQR",
+      "correctExplanation": "Adding a constant shifts all values equally, moving the centre but not affecting spread.",
+      "distractors": [
+        {
+          "answer": "All statistics change",
+          "explanation": "Spread measures are differences and are unaffected by a constant shift."
+        },
+        {
+          "answer": "No statistics change",
+          "explanation": "Centre measures do shift by the added constant."
+        },
+        {
+          "answer": "Only the range changes",
+          "explanation": "The range stays the same; the centre changes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A company's salary distribution has Q1 = $55K, Q3 = $85K. Is an employee earning $160K an outlier?",
+      "correct": "Yes, $160K exceeds the upper fence of $130K",
+      "correctExplanation": "IQR = $30K. Upper fence = $85K + 1.5 \u00d7 $30K = $130K. Since $160K > $130K, it is an outlier.",
+      "distractors": [
+        {
+          "answer": "No, $160K is within normal bounds",
+          "explanation": "$160K exceeds the upper fence of $130K."
+        },
+        {
+          "answer": "Yes, because it is above Q3",
+          "explanation": "Being above Q3 alone does not define an outlier."
+        },
+        {
+          "answer": "Cannot determine without the full data",
+          "explanation": "Q1 and Q3 are sufficient for the outlier test."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "Why might two boxplots with the same IQR represent very different distributions?",
+      "correct": "IQR only measures the middle 50%, ignoring",
+      "correctExplanation": "Two sets can have identical IQR but different whisker lengths, outlier counts, and overall shapes.",
+      "distractors": [
+        {
+          "answer": "IQR captures all distributional information",
+          "explanation": "IQR measures only middle spread."
+        },
+        {
+          "answer": "Identical IQR means identical distributions",
+          "explanation": "IQR alone does not determine the distribution."
+        },
+        {
+          "answer": "Boxplots with the same IQR are interchangeable",
+          "explanation": "Other features like median position and whiskers differ."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A researcher compares test scores of three schools using parallel boxplots. School C has the smallest IQR but several outliers. What does this indicate?",
+      "correct": "Most students perform consistently b",
+      "correctExplanation": "Small IQR shows tight clustering, while outliers indicate a few students far from the typical range.",
+      "distractors": [
+        {
+          "answer": "School C performs the worst",
+          "explanation": "IQR and outliers do not determine overall rank."
+        },
+        {
+          "answer": "The data is unreliable",
+          "explanation": "Outliers are real data, not errors."
+        },
+        {
+          "answer": "School C has the most students",
+          "explanation": "Boxplots show distribution, not sample size."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "In a data set where every value is multiplied by 2, how do the median and IQR change?",
+      "correct": "Both are multiplied by 2",
+      "correctExplanation": "Scaling by a factor multiplies all positional statistics (including median and quartiles) by that factor.",
+      "distractors": [
+        {
+          "answer": "Only the median doubles",
+          "explanation": "IQR also doubles because Q1 and Q3 both double."
+        },
+        {
+          "answer": "Only the IQR doubles",
+          "explanation": "The median also doubles."
+        },
+        {
+          "answer": "Neither changes",
+          "explanation": "Multiplying by 2 changes all values and their statistics."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A symmetric distribution with small IQR and no outliers is best described by which combination of statistics?",
+      "correct": "Mean and standard deviation",
+      "correctExplanation": "For symmetric data without outliers, the mean and standard deviation provide the most informative summary.",
+      "distractors": [
+        {
+          "answer": "Median and IQR only",
+          "explanation": "These are preferred for skewed data, not symmetric."
+        },
+        {
+          "answer": "Mode and range",
+          "explanation": "Mode and range miss important information about centre and spread."
+        },
+        {
+          "answer": "Maximum and minimum",
+          "explanation": "These extremes do not describe the distribution's centre."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "VCE scores are standardised to have a mean of approximately 30 and standard deviation of 7. If the distribution is approximately normal, about what percentage of scores fall between 23 and 37?",
+      "correct": "Approxi",
+      "correctExplanation": "23 and 37 are one standard deviation from the mean. In a normal distribution, about 68% falls within one SD.",
+      "distractors": [
+        {
+          "answer": "50%",
+          "explanation": "50% falls between Q1 and Q3, not within one SD."
+        },
+        {
+          "answer": "95%",
+          "explanation": "95% falls within two standard deviations."
+        },
+        {
+          "answer": "34%",
+          "explanation": "34% falls between the mean and one SD above."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A data set has 100 values with Q1 = 40, median = 50, Q3 = 60. Approximately how many values lie between 40 and 60?",
+      "correct": "50",
+      "correctExplanation": "The IQR contains the middle 50% of data. With 100 values, approximately 50 fall between Q1 and Q3.",
+      "distractors": [
+        {
+          "answer": "25",
+          "explanation": "25 values fall in each quartile, so 50 between Q1 and Q3."
+        },
+        {
+          "answer": "75",
+          "explanation": "75 values fall below Q3, not between Q1 and Q3."
+        },
+        {
+          "answer": "100",
+          "explanation": "100 is the total; only 50 are in the interquartile range."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "When comparing rainfall in two cities using boxplots, City A has a higher median but City B has a larger IQR. Which city has more predictable rainfall?",
+      "correct": "City A, because it has a smaller IQR",
+      "correctExplanation": "Smaller IQR means the middle 50% of rainfall values are more tightly clustered, indicating greater predictability.",
+      "distractors": [
+        {
+          "answer": "City B, because it has more variety",
+          "explanation": "More variety means less predictability."
+        },
+        {
+          "answer": "City A, because it rains more",
+          "explanation": "Higher median shows more rain, not more predictability."
+        },
+        {
+          "answer": "Neither can be compared",
+          "explanation": "IQR directly measures predictability through spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A bimodal histogram of student ages at a university most likely indicates what?",
+      "correct": "The data includes both undergraduat",
+      "correctExplanation": "Two age peaks suggest two distinct subgroups (younger undergrads and older postgrads) in the data.",
+      "distractors": [
+        {
+          "answer": "The data contains errors",
+          "explanation": "Bimodality is a real distributional feature."
+        },
+        {
+          "answer": "All students are the same age",
+          "explanation": "Bimodality shows two different typical ages."
+        },
+        {
+          "answer": "The sample is too small",
+          "explanation": "Bimodality is a shape feature, not a sample size issue."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "Which combination of statistics is most useful when comparing two distributions that may have different shapes?",
+      "correct": "Median and IQR for both sets",
+      "correctExplanation": "Median and IQR are robust to different shapes and outliers, making them ideal for general comparison.",
+      "distractors": [
+        {
+          "answer": "Mean and range for both sets",
+          "explanation": "Mean and range are sensitive to outliers and shape differences."
+        },
+        {
+          "answer": "Mean for one and median for the other",
+          "explanation": "Using different statistics prevents valid comparison."
+        },
+        {
+          "answer": "Only the range for both sets",
+          "explanation": "Range alone misses centre information."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The coefficient of variation (CV) allows comparison of spread across data sets with different {{blank:1}} by expressing standard deviation as a percentage of the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "units or scales",
+          "correctExplanation": "CV standardises spread relative to the mean, enabling cross-unit comparison.",
+          "distractors": [
+            {
+              "answer": "shapes",
+              "explanation": "CV addresses scale differences, not shape differences.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sizes",
+              "explanation": "CV adjusts for scale, not sample size.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "mean",
+          "correctExplanation": "CV = (standard deviation / mean) \u00d7 100%.",
+          "distractors": [
+            {
+              "answer": "median",
+              "explanation": "CV uses the mean, not the median.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "range",
+              "explanation": "Range is not the denominator in CV.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "In a normal distribution, approximately {{blank:1}}% of data falls within one standard deviation of the mean and approximately 95% within {{blank:2}} standard deviations.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "68",
+          "correctExplanation": "The empirical rule states that about 68% of data is within one SD of the mean.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "50% falls between Q1 and Q3, not within one SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "95",
+              "explanation": "95% falls within two standard deviations, not one.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "two",
+          "correctExplanation": "The 68-95-99.7 rule places 95% within two SDs.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "One SD contains about 68%.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "three",
+              "explanation": "Three SDs contain about 99.7%.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "When data is transformed by subtracting the mean and dividing by the standard deviation, the result has mean {{blank:1}} and standard deviation {{blank:2}}. This is called standardisation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Subtracting the mean centres the data at zero.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Dividing by SD gives SD = 1; the mean becomes 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "the original mean",
+              "explanation": "Subtracting the mean shifts the centre to zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Dividing by the standard deviation scales the spread to 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "A standard deviation of 0 would mean no variation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "the original SD",
+              "explanation": "Dividing by SD normalises it to 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The effect of removing an outlier on the mean depends on the {{blank:1}} of the outlier from the mean and the {{blank:2}} of the data set.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "distance",
+          "correctExplanation": "A more extreme outlier shifts the mean more when removed.",
+          "distractors": [
+            {
+              "answer": "direction",
+              "explanation": "Both high and low outliers affect the mean, but distance determines magnitude.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "frequency",
+              "explanation": "A single outlier's effect depends on its distance, not how common it is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "size",
+          "correctExplanation": "In a small data set, removing one value has a larger effect on the mean.",
+          "distractors": [
+            {
+              "answer": "shape",
+              "explanation": "Shape affects interpretation but not the arithmetic impact of removing a value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "spread",
+              "explanation": "Spread describes the data, but sample size determines how much one value affects the mean.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "Box plots can reveal {{blank:1}} through unequal whisker lengths and {{blank:2}} through individual points beyond the fences.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "skewness",
+          "correctExplanation": "Asymmetric whiskers indicate the distribution is skewed.",
+          "distractors": [
+            {
+              "answer": "modality",
+              "explanation": "Boxplots cannot show the number of modes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sample size",
+              "explanation": "Boxplots do not display sample size.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "outliers",
+          "correctExplanation": "Points plotted individually beyond the whiskers are potential outliers.",
+          "distractors": [
+            {
+              "answer": "clusters",
+              "explanation": "Boxplots do not show clusters within the data.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "gaps",
+              "explanation": "Gaps between values are visible in dot plots, not boxplots.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "The {{blank:1}} is preferred for comparing variability when distributions have different centres, while the {{blank:2}} provides an absolute measure of spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "coefficient of variation",
+          "correctExplanation": "CV adjusts for different centres by dividing SD by the mean.",
+          "distractors": [
+            {
+              "answer": "IQR",
+              "explanation": "IQR is an absolute measure and does not adjust for centre differences.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "range",
+              "explanation": "Range does not adjust for differences in centre.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "standard deviation",
+          "correctExplanation": "SD measures absolute spread in the original units.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "Mean is a centre measure, not a spread measure.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "median",
+              "explanation": "Median is a centre measure.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A data set with 200 values has Q1 at position {{blank:1}} and Q3 at position {{blank:2}} when values are arranged in ascending order.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50.5",
+          "correctExplanation": "Q1 is the median of the lower 100 values, at position (50+51)/2 = 50.5.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "25 would be Q1 for a much smaller data set.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "50 is close but the exact position is between 50th and 51st values.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "150.5",
+          "correctExplanation": "Q3 is the median of the upper 100 values, at position (150+151)/2 = 150.5.",
+          "distractors": [
+            {
+              "answer": "75",
+              "explanation": "75 would be Q3 for a much smaller data set.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "150",
+              "explanation": "150 is close but the exact position is between the 150th and 151st values.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Reporting statistics without {{blank:1}} is meaningless. Saying 'the IQR is 15' has no value unless we know {{blank:2}} is being measured.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "context",
+          "correctExplanation": "Statistics must be interpreted in terms of the variable and situation being studied.",
+          "distractors": [
+            {
+              "answer": "graphs",
+              "explanation": "Context means real-world meaning, not visual display.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "formulas",
+              "explanation": "The formula is the calculation method, not the contextual meaning.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "what",
+          "correctExplanation": "The variable being measured gives meaning to the statistical values.",
+          "distractors": [
+            {
+              "answer": "how",
+              "explanation": "How it is measured is methodology, not context.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "when",
+              "explanation": "When it was measured is one aspect but does not substitute for variable identification.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "The resistance of a statistic refers to how much it is affected by {{blank:1}} values. The median is {{blank:2}} while the mean is not.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "extreme",
+          "correctExplanation": "Resistant statistics are minimally affected by outliers or extreme values.",
+          "distractors": [
+            {
+              "answer": "typical",
+              "explanation": "Typical values affect all statistics similarly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "missing",
+              "explanation": "Missing values are a data quality issue, not about resistance.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "resistant",
+          "correctExplanation": "The median's position changes very little when extreme values are added or removed.",
+          "distractors": [
+            {
+              "answer": "sensitive",
+              "explanation": "Sensitive means easily affected; the median is the opposite.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unreliable",
+              "explanation": "The median is very reliable for skewed data.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "When reporting on Aboriginal community data, statistical summaries should be interpreted with {{blank:1}} to the community context, avoiding conclusions that {{blank:2}} cultural factors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sensitivity",
+          "correctExplanation": "Data about communities must be interpreted respectfully and in proper context.",
+          "distractors": [
+            {
+              "answer": "indifference",
+              "explanation": "Data interpretation requires engagement with context, not detachment.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "certainty",
+              "explanation": "Statistics should be presented with appropriate uncertainty, not false certainty.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "ignore",
+          "correctExplanation": "Meaningful interpretation must account for cultural, historical, and social contexts.",
+          "distractors": [
+            {
+              "answer": "emphasise",
+              "explanation": "Overemphasising factors without evidence is also problematic.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "quantify",
+              "explanation": "Not all cultural factors can or should be quantified.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Z-scores indicate how many {{blank:1}} a data point is from the mean. A z-score of \u22122 means the value is two standard deviations {{blank:2}} the mean.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "standard deviations",
+          "correctExplanation": "Z-scores measure distance from the mean in units of standard deviation.",
+          "distractors": [
+            {
+              "answer": "quartiles",
+              "explanation": "Quartiles divide data into four parts; z-scores use standard deviations.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "percentiles",
+              "explanation": "Percentiles indicate rank position, not distance from the mean.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "below",
+          "correctExplanation": "A negative z-score means the value is below the mean.",
+          "distractors": [
+            {
+              "answer": "above",
+              "explanation": "Positive z-scores are above the mean.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal to",
+              "explanation": "A z-score of 0 means equal to the mean.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The empirical rule applies to {{blank:1}} distributions and states that approximately 99.7% of data falls within {{blank:2}} standard deviations of the mean.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "normal",
+          "correctExplanation": "The 68-95-99.7 rule specifically applies to normal (bell-shaped) distributions.",
+          "distractors": [
+            {
+              "answer": "skewed",
+              "explanation": "The empirical rule does not apply well to skewed distributions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "uniform",
+              "explanation": "Uniform distributions have different percentage rules.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "three",
+          "correctExplanation": "The third tier of the empirical rule: 99.7% within three SDs.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Two SDs contain approximately 95%.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "one",
+              "explanation": "One SD contains approximately 68%.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10AN03",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to define logarithms, apply log laws and investigate logarithmic scales.",
+    "generatedAt": "2026-05-23T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The expression log base 10 of 1000 equals 3.",
+      "correct": "True",
+      "correctExplanation": "10^3 = 1000, so log base 10 of 1000 = 3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This follows directly from 10^3 = 1000."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The logarithm of a product equals the product of the logarithms.",
+      "correct": "False",
+      "correctExplanation": "The product rule states log(ab) = log(a) + log(b), a sum, not a product.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Log of a product is the sum of the logs, not the product."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The value of log base 10 of 1 is 1.",
+      "correct": "False",
+      "correctExplanation": "10^0 = 1, so log base 10 of 1 = 0, not 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "log(1) = 0, not 1, since 10^0 = 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The expression log base 2 of 16 equals 8.",
+      "correct": "False",
+      "correctExplanation": "2^4 = 16, so log base 2 of 16 = 4, not 8.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Log base 2 of 16 = 4 since 2^4 = 16."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The log of a quotient equals the difference of the logs.",
+      "correct": "True",
+      "correctExplanation": "log(a/b) = log(a) minus log(b) is the quotient rule for logarithms.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the standard quotient rule for logarithms."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The expression log base 10 of 0 is defined and equals negative infinity.",
+      "correct": "False",
+      "correctExplanation": "log base 10 of 0 is undefined. No power of 10 equals 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Logarithm of 0 is undefined, not negative infinity."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The expression log(a^n) equals n times log(a).",
+      "correct": "True",
+      "correctExplanation": "The power rule states log(a^n) = n log(a).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the power rule for logarithms."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The Richter scale is a linear scale for measuring earthquake magnitude.",
+      "correct": "False",
+      "correctExplanation": "The Richter scale is logarithmic. Each whole number increase represents a tenfold increase in measured amplitude.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The Richter scale is logarithmic, not linear."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "If log base b of x equals y, then b^y = x.",
+      "correct": "True",
+      "correctExplanation": "This is the definition of a logarithm: log_b(x) = y means b^y = x.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The definition of logarithm converts between log and exponential form."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The expression log base 10 of a negative number is a real number.",
+      "correct": "False",
+      "correctExplanation": "Logarithms of negative numbers are not defined in the real number system.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Logarithms require positive arguments in real numbers."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The natural logarithm ln(x) uses base e, where e is approximately 2.718.",
+      "correct": "True",
+      "correctExplanation": "The natural logarithm ln is defined with base e, an irrational constant approximately equal to 2.718.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "ln(x) = log base e of x, where e ≈ 2.718."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The expression log(a + b) equals log(a) + log(b).",
+      "correct": "False",
+      "correctExplanation": "There is no log law for the log of a sum. log(a) + log(b) = log(ab), not log(a+b).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Log does not distribute over addition; log(a)+log(b) = log(ab)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is log base 10 of 10000?",
+      "correct": "4, because 10^4 = 10000",
+      "correctExplanation": "10^4 = 10000, so log base 10 of 10000 = 4.",
+      "distractors": [
+        {
+          "answer": "5, counting the total number of digits",
+          "explanation": "The number of digits is 5, but log = 4."
+        },
+        {
+          "answer": "1000, dividing 10000 by 10",
+          "explanation": "Logarithm is not division by the base."
+        },
+        {
+          "answer": "40, multiplying 10 by 4",
+          "explanation": "Logarithm asks for the exponent, not a product."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which log law states that log(ab) = log(a) + log(b)?",
+      "correct": "the product rule for logarithms",
+      "correctExplanation": "The product rule converts multiplication inside the log to addition outside.",
+      "distractors": [
+        {
+          "answer": "the power rule for logarithms",
+          "explanation": "The power rule handles log(a^n) = n log(a)."
+        },
+        {
+          "answer": "the quotient rule for logarithms",
+          "explanation": "The quotient rule handles log(a/b) = log(a) minus log(b)."
+        },
+        {
+          "answer": "the change of base formula for logs",
+          "explanation": "Change of base converts between different log bases."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What is log base 2 of 32?",
+      "correct": "5, because 2^5 = 32",
+      "correctExplanation": "2^5 = 32, so log base 2 of 32 = 5.",
+      "distractors": [
+        {
+          "answer": "6, adding 1 to the exponent incorrectly",
+          "explanation": "2^5 = 32, so the answer is 5."
+        },
+        {
+          "answer": "16, halving 32 instead of finding the exponent",
+          "explanation": "The logarithm asks for the exponent, not half the number."
+        },
+        {
+          "answer": "4, using 2^4 = 16 instead of 32",
+          "explanation": "2^4 = 16, but 2^5 = 32, so log base 2 of 32 = 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What is the value of log base 5 of 1?",
+      "correct": "0, because any base raised to 0 equals 1",
+      "correctExplanation": "5^0 = 1, so log base 5 of 1 = 0.",
+      "distractors": [
+        {
+          "answer": "1, confusing log of 1 with log of the base",
+          "explanation": "log_b(b) = 1, but log_b(1) = 0."
+        },
+        {
+          "answer": "5, using the base as the answer",
+          "explanation": "The base is 5, but the log value is 0."
+        },
+        {
+          "answer": "undefined, because 1 is not a power of 5",
+          "explanation": "1 = 5^0, so the log is defined and equals 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Using the power rule, what is log(x^3)?",
+      "correct": "3 log(x)",
+      "correctExplanation": "The power rule: log(a^n) = n log(a). So log(x^3) = 3 log(x).",
+      "distractors": [
+        {
+          "answer": "log(3x), multiplying x by 3 inside",
+          "explanation": "The power rule moves the exponent outside, not as a multiplier."
+        },
+        {
+          "answer": "(log x)^3, cubing the entire logarithm",
+          "explanation": "The exponent becomes a coefficient, not a power of the log."
+        },
+        {
+          "answer": "log(x) + 3, adding the exponent to",
+          "explanation": "The exponent multiplies the log, not adds to it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "On the Richter scale, how much more powerful is a magnitude 7 earthquake than magnitude 5?",
+      "correct": "100 times",
+      "correctExplanation": "Each whole number step is 10 times more amplitude. Two steps: 10^2 = 100 times.",
+      "distractors": [
+        {
+          "answer": "2 times, subtracting the magnitudes",
+          "explanation": "The scale is logarithmic, not linear."
+        },
+        {
+          "answer": "12 times, adding the magnitudes together",
+          "explanation": "Earthquake magnitudes are logarithmic; differences multiply."
+        },
+        {
+          "answer": "10 times, using only one step",
+          "explanation": "Two steps means 10^2 = 100 times, not 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What is log base 3 of 81?",
+      "correct": "4, because 3^4 = 81",
+      "correctExplanation": "3^4 = 81, so log base 3 of 81 = 4.",
+      "distractors": [
+        {
+          "answer": "3, using 3^3 = 27 instead of 81",
+          "explanation": "3^3 = 27, but 3^4 = 81, so the answer is 4."
+        },
+        {
+          "answer": "27, dividing 81 by 3",
+          "explanation": "Logarithm asks for the exponent, not the quotient."
+        },
+        {
+          "answer": "9, taking the square root of 81",
+          "explanation": "Square root is a different operation from logarithm."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which expression represents the change of base formula?",
+      "correct": "log_b(x) = log(x) / log(b)",
+      "correctExplanation": "The change of base formula allows conversion using any base.",
+      "distractors": [
+        {
+          "answer": "log_b(x) = log(x) times log(b), multiplying the logs",
+          "explanation": "The formula uses division, not multiplication."
+        },
+        {
+          "answer": "log_b(x) = log(x) minus log(b), subtracting the logs",
+          "explanation": "Subtraction gives log(x/b), not a base change."
+        },
+        {
+          "answer": "log_b(x) = b times log(x), multiplying by the base",
+          "explanation": "The base appears inside a log, not as a multiplier."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is log base 10 of 0.01?",
+      "correct": "minus 2, because 10^(minus 2) = 0.01",
+      "correctExplanation": "10^(-2) = 1/100 = 0.01, so log(0.01) = -2.",
+      "distractors": [
+        {
+          "answer": "minus 1, using 10^(-1) = 0.1 instead",
+          "explanation": "10^(-1) = 0.1, not 0.01."
+        },
+        {
+          "answer": "2, ignoring the negative exponent sign",
+          "explanation": "The exponent is negative: 10^(-2) = 0.01."
+        },
+        {
+          "answer": "0.01, confusing the number with its log",
+          "explanation": "The log is the exponent, not the number itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What is pH in chemistry?",
+      "correct": "negative log base 10 of hydrogen ion concentration",
+      "correctExplanation": "pH = -log[H+], using a logarithmic scale to measure acidity.",
+      "distractors": [
+        {
+          "answer": "the concentration of hydrogen ions multiplied by 10",
+          "explanation": "pH uses a log, not multiplication."
+        },
+        {
+          "answer": "the square root of the hydrogen ion count",
+          "explanation": "pH uses logarithm, not square root."
+        },
+        {
+          "answer": "the ratio of acid to base in a solution directly",
+          "explanation": "pH is specifically the negative log of [H+]."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Express log base 10 of 100 using the definition.",
+      "correct": "2, because 10 raised to 2 gives 100",
+      "correctExplanation": "10^2 = 100, so by definition log base 10 of 100 = 2.",
+      "distractors": [
+        {
+          "answer": "10, dividing 100 by the base value",
+          "explanation": "Logarithm finds the exponent, not a quotient."
+        },
+        {
+          "answer": "50, halving 100 for the log calculation",
+          "explanation": "Logarithm is not related to halving."
+        },
+        {
+          "answer": "100, since log of a number is that number",
+          "explanation": "The log gives the exponent, not the number itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Using the quotient rule, simplify log(a) minus log(b).",
+      "correct": "log(a/b)",
+      "correctExplanation": "The quotient rule: log(a) - log(b) = log(a/b).",
+      "distractors": [
+        {
+          "answer": "log(a minus b), subtracting inside the log",
+          "explanation": "Subtraction of logs gives log of a quotient, not a difference."
+        },
+        {
+          "answer": "log(a) / log(b), dividing the logarithms",
+          "explanation": "The quotient rule produces log(a/b), not a division of logs."
+        },
+        {
+          "answer": "log(ab), multiplying inside the log instead",
+          "explanation": "Subtraction of logs gives a quotient, not a product."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "If log base b of x equals y, then b raised to the power {{blank:1}} equals {{blank:2}}. This is the definition of a logarithm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "y",
+          "correctExplanation": "The logarithm gives the exponent: b^y = x.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "x is the argument, not the exponent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "b",
+              "explanation": "b is the base, not the exponent.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "b^y = x restates the logarithmic equation in exponential form.",
+          "distractors": [
+            {
+              "answer": "y",
+              "explanation": "y is the exponent, not the result of b^y.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "b",
+              "explanation": "b is the base of the exponential expression.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The product rule for logarithms states: log(ab) = log(a) {{blank:1}} log(b). The quotient rule states: log(a/b) = log(a) {{blank:2}} log(b).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "+",
+          "correctExplanation": "Multiplication inside the log becomes addition outside.",
+          "distractors": [
+            {
+              "answer": "times",
+              "explanation": "The operation is addition, not multiplication.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "minus",
+              "explanation": "Subtraction applies to the quotient rule, not the product rule.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "minus",
+          "correctExplanation": "Division inside the log becomes subtraction outside.",
+          "distractors": [
+            {
+              "answer": "+",
+              "explanation": "Addition applies to the product rule, not the quotient rule.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "divided by",
+              "explanation": "The operation is subtraction, not division.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "Logarithms are the inverse operation of multiplication.",
+      "correct": "False",
+      "correctExplanation": "Logarithms are the inverse of exponentiation, not multiplication.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Logarithms undo exponentiation, not multiplication."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The expression log(a/b) equals log(a) divided by log(b).",
+      "correct": "False",
+      "correctExplanation": "log(a/b) = log(a) minus log(b), not log(a)/log(b). Division of logs is the change of base formula.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The quotient rule subtracts logs; dividing logs is a different operation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "On a logarithmic scale, equal distances represent equal ratios.",
+      "correct": "True",
+      "correctExplanation": "Logarithmic scales convert multiplication to addition, so equal spacing represents equal multiplicative factors.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Equal spacing on a log scale means equal ratios of the underlying values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The expression log(0) is defined and equals 1.",
+      "correct": "False",
+      "correctExplanation": "log(0) is undefined because no finite exponent of a positive base gives 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Logarithm of 0 is undefined."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "If log(x) = log(y), then x must equal y.",
+      "correct": "True",
+      "correctExplanation": "The logarithm function is one-to-one for positive arguments, so log(x) = log(y) implies x = y.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Logarithms are strictly increasing and injective."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The change of base formula states log_a(x) = log(x) times log(a).",
+      "correct": "False",
+      "correctExplanation": "The correct formula is log_a(x) = log(x) / log(a), using division, not multiplication.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Change of base uses division: log_a(x) = log(x)/log(a)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A pH decrease of 1 unit means the hydrogen ion concentration increases by a factor of 10.",
+      "correct": "True",
+      "correctExplanation": "pH = -log[H+]. Decreasing pH by 1 means [H+] is multiplied by 10.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Each pH unit represents a tenfold change in [H+]."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The expression log(a^0) equals a for all positive a.",
+      "correct": "False",
+      "correctExplanation": "a^0 = 1, so log(a^0) = log(1) = 0, not a.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "log(a^0) = log(1) = 0 for any base."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Why is the Richter scale logarithmic rather than linear?",
+      "correct": "earthquake energy spans many orders of magnitude",
+      "correctExplanation": "A linear scale could not practically display the vast range from minor tremors to catastrophic events.",
+      "distractors": [
+        {
+          "answer": "linear scales are too difficult to read accurately",
+          "explanation": "Readability is not the reason; range is."
+        },
+        {
+          "answer": "logarithms were invented specifically for seismology",
+          "explanation": "Logarithms predate seismology by centuries."
+        },
+        {
+          "answer": "the Richter scale was designed to match human perception",
+          "explanation": "It was designed to handle the enormous range of earthquake sizes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Explain why log(1) = 0 for any valid base.",
+      "correct": "any positive base raised to 0 equals 1",
+      "correctExplanation": "b^0 = 1 for all b > 0 and b ≠ 1. So log_b(1) = 0.",
+      "distractors": [
+        {
+          "answer": "log(1) is undefined because 1 is too small",
+          "explanation": "log(1) is well-defined and equals 0."
+        },
+        {
+          "answer": "the log function starts at zero on the y-axis",
+          "explanation": "The y-intercept of y = log(x) is at x = 1."
+        },
+        {
+          "answer": "zero is the default output for any log input",
+          "explanation": "Only log(1) = 0; other inputs give different values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "How does log base 2 relate to computer science?",
+      "correct": "binary systems use base 2, making log base 2 natural for bit calculations",
+      "correctExplanation": "Computers operate in binary (base 2), so log base 2 measures information in bits.",
+      "distractors": [
+        {
+          "answer": "base 2 is faster to compute than base 10",
+          "explanation": "Computational speed does not depend on log base."
+        },
+        {
+          "answer": "log base 2 only works with even numbers and binary here in this",
+          "explanation": "Log base 2 works with all positive numbers."
+        },
+        {
+          "answer": "all computer algorithms require exactly log base 2 steps",
+          "explanation": "Many algorithms are O(log n), but the base varies."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "What does the power rule log(a^n) = n log(a) allow us to do?",
+      "correct": "move an exponent",
+      "correctExplanation": "The power rule converts exponents to multipliers, useful for solving exponential equations.",
+      "distractors": [
+        {
+          "answer": "eliminate the logarithm from both sides of an equation",
+          "explanation": "The power rule transforms; it does not eliminate logs."
+        },
+        {
+          "answer": "convert multiplication into exponentiation inside the log",
+          "explanation": "The power rule handles exponents, not multiplication."
+        },
+        {
+          "answer": "change the base of the logarithm to any",
+          "explanation": "Changing base uses the change of base formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why is log of a negative number undefined in the real system?",
+      "correct": "no real power of a positive base gives a negative result",
+      "correctExplanation": "For b > 0 and b ≠ 1, b^y > 0 for all real y, so log_b(negative) has no solution.",
+      "distractors": [
+        {
+          "answer": "negative numbers are too small for the log function",
+          "explanation": "Size is not the issue; it is the sign that matters."
+        },
+        {
+          "answer": "logarithms only accept whole number inputs as arguments",
+          "explanation": "Logarithms accept all positive real numbers."
+        },
+        {
+          "answer": "the log function has a vertical asymptote at negative x overall",
+          "explanation": "The asymptote is at x = 0, not at negative values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Explain why log base 10 of 0.001 equals minus 3.",
+      "correct": "10^(minus 3) = 0.001, so the log is minus 3",
+      "correctExplanation": "10^(-3) = 1/1000 = 0.001.",
+      "distractors": [
+        {
+          "answer": "0.001 has three decimal places, giving minus 3",
+          "explanation": "Decimal places can coincide but the reason is 10^(-3)."
+        },
+        {
+          "answer": "the log of small numbers is always minus their digit count",
+          "explanation": "This only holds for negative powers of 10."
+        },
+        {
+          "answer": "minus 3 is 0.001 multiplied by minus 1000",
+          "explanation": "The log is the exponent, not an arithmetic result."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "What is the relationship between log and exponential functions graphically?",
+      "correct": "they are reflections of each other in the line y = x",
+      "correctExplanation": "Since log and exponentiation are inverses, their graphs are mirror images across y = x.",
+      "distractors": [
+        {
+          "answer": "they are parallel lines with different y-intercepts",
+          "explanation": "Neither function produces a straight line."
+        },
+        {
+          "answer": "the log graph is the exponential graph shifted down instead here as given",
+          "explanation": "Reflection across y = x is not the same as a vertical shift."
+        },
+        {
+          "answer": "they intersect at every integer value on both axes",
+          "explanation": "They intersect at specific points, not every integer."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Using log laws, simplify log(8) + log(125).",
+      "correct": "3",
+      "correctExplanation": "Product rule: log(8) + log(125) = log(1000) = 3.",
+      "distractors": [
+        {
+          "answer": "133, adding 8 and 125 then taking log",
+          "explanation": "The product rule multiplies: 8 times 125 = 1000."
+        },
+        {
+          "answer": "log(133), adding the numbers inside one log",
+          "explanation": "The product rule gives log(8 times 125) = log(1000)."
+        },
+        {
+          "answer": "1000, computing 8 times 125 without the log",
+          "explanation": "The log of 1000 is 3, not 1000 itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Why do decibels use a logarithmic scale?",
+      "correct": "sound intensity varies over a vast range",
+      "correctExplanation": "Sound intensity spans about 12 orders of magnitude from threshold to pain level.",
+      "distractors": [
+        {
+          "answer": "human ears perceive sound in discrete linear steps",
+          "explanation": "Hearing perception is roughly logarithmic, matching the scale."
+        },
+        {
+          "answer": "decibels were invented before linear measurement tools existed",
+          "explanation": "Linear tools existed; the log scale suits the data range."
+        },
+        {
+          "answer": "logarithmic scales are more accurate for all measurements",
+          "explanation": "Log scales suit data with large ranges, not all measurements."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "What does log base b of b equal, for any valid base b?",
+      "correct": "1, because b^1 = b",
+      "correctExplanation": "b raised to the power 1 equals b, so log_b(b) = 1.",
+      "distractors": [
+        {
+          "answer": "b, because the log of any number is that number",
+          "explanation": "The log gives the exponent, not the number."
+        },
+        {
+          "answer": "0, because log always returns zero for the base",
+          "explanation": "log_b(1) = 0, not log_b(b)."
+        },
+        {
+          "answer": "10, because all logarithms default to base 10",
+          "explanation": "The base depends on the specific logarithm used."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "How is the pH scale related to logarithms?",
+      "correct": "pH = negative log base 10 of the hydrogen ion concentration",
+      "correctExplanation": "pH = -log[H+] converts tiny concentrations into a manageable scale.",
+      "distractors": [
+        {
+          "answer": "pH = log base 10 of the solution volume as given",
+          "explanation": "pH depends on [H+], not volume."
+        },
+        {
+          "answer": "pH equals the hydrogen ion count divided by 10",
+          "explanation": "pH uses a logarithm, not division by 10."
+        },
+        {
+          "answer": "pH is the square of the hydrogen ion concentration here here",
+          "explanation": "pH involves a log, not squaring."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Explain the change of base formula log_a(x) = log(x)/log(a).",
+      "correct": "it converts any log to a ratio of common",
+      "correctExplanation": "This allows calculation of log_a(x) using any available log function.",
+      "distractors": [
+        {
+          "answer": "it multiplies two logs to produce a new base",
+          "explanation": "The formula divides, not multiplies."
+        },
+        {
+          "answer": "it only works when a and x are both powers of 10",
+          "explanation": "The formula works for all valid bases and arguments."
+        },
+        {
+          "answer": "it reverses the base and argument of the logarithm",
+          "explanation": "The formula converts to a different base, not reverses."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The product rule states log(ab) = log(a) + log(b). This works because exponents {{blank:1}} when bases are multiplied, and logarithms convert multiplication to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "add",
+          "correctExplanation": "When multiplying like bases, exponents add: b^m times b^n = b^(m+n).",
+          "distractors": [
+            {
+              "answer": "multiply",
+              "explanation": "Exponents add for products, multiply for powers of powers.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "subtract",
+              "explanation": "Subtraction applies to division, not multiplication.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "addition",
+          "correctExplanation": "The log function transforms multiplication into addition.",
+          "distractors": [
+            {
+              "answer": "multiplication",
+              "explanation": "Logs convert multiplication to addition, not back to multiplication.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "division",
+              "explanation": "The quotient rule handles division; products give addition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "On a logarithmic scale, the values 1, 10, 100 and 1000 are {{blank:1}} spaced, because their logarithms are 0, 1, 2 and {{blank:2}} respectively.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equally",
+          "correctExplanation": "Each value is 10 times the previous, and log differences are all 1.",
+          "distractors": [
+            {
+              "answer": "unequally",
+              "explanation": "On a log scale, equal ratios give equal spacing.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "randomly",
+              "explanation": "The spacing follows a precise pattern based on logarithms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "log(1000) = log(10^3) = 3.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "log(10000) = 4, but log(1000) = 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1000",
+              "explanation": "1000 is the number, not its logarithm.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "To solve 10^x = 250, take log base 10 of both sides: x = log(250). This is approximately {{blank:1}}, because 10^2 = 100 and 10^3 = 1000, so x is between {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2.40",
+          "correctExplanation": "log(250) ≈ 2.398, which rounds to 2.40.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "25 is 250/10, not log(250).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "log(250) < 3 since 250 < 1000.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2 and 3",
+          "correctExplanation": "100 < 250 < 1000, so log(250) is between 2 and 3.",
+          "distractors": [
+            {
+              "answer": "1 and 2",
+              "explanation": "log(250) > 2 since 250 > 100.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "250 and 1000",
+              "explanation": "These are the numbers, not the log values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The power rule log(a^n) = n log(a) is useful for solving exponential equations because it moves the {{blank:1}} from the exponent position to become a {{blank:2}} of the logarithm.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "unknown",
+          "correctExplanation": "In equations like 2^x = 16, the unknown x is in the exponent.",
+          "distractors": [
+            {
+              "answer": "base",
+              "explanation": "The base is known; it is the exponent that we solve for.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "logarithm",
+              "explanation": "The logarithm is the tool, not the quantity being moved.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "coefficient",
+          "correctExplanation": "log(2^x) = x log(2), where x is now a coefficient.",
+          "distractors": [
+            {
+              "answer": "exponent",
+              "explanation": "The variable moves out of the exponent to become a coefficient.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "base",
+              "explanation": "The variable becomes a multiplier, not a new base.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A pH of 3 is {{blank:1}} times more acidic than a pH of 5, because each pH unit represents a {{blank:2}} change in hydrogen ion concentration.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "100",
+          "correctExplanation": "2 pH units = 10^2 = 100 times difference.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the difference in pH units, not the concentration factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is one pH unit; two units give 10^2 = 100.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tenfold",
+          "correctExplanation": "Each pH unit represents a factor of 10 in [H+].",
+          "distractors": [
+            {
+              "answer": "twofold",
+              "explanation": "Each unit is a tenfold change, not twofold.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "hundredfold",
+              "explanation": "100-fold is two pH units, not one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The change of base formula log_a(x) = log(x)/log(a) works because if a^y = x, then y = {{blank:1}}/log(a), which equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "log(x)",
+          "correctExplanation": "Taking log of both sides of a^y = x: y log(a) = log(x), so y = log(x)/log(a).",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "x is the argument, not part of the formula.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "log(a)",
+              "explanation": "log(a) is in the denominator, not the numerator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "log_a(x)",
+          "correctExplanation": "y = log_a(x) by definition, and this equals log(x)/log(a).",
+          "distractors": [
+            {
+              "answer": "a^x",
+              "explanation": "a^x is exponentiation, not the log.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "x/a",
+              "explanation": "x/a is arithmetic division, not a log relationship.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The equation log(x) + log(x+3) = 1 can be solved by writing log(x(x+3)) = 1.",
+      "correct": "True",
+      "correctExplanation": "The product rule combines: log(x) + log(x+3) = log(x(x+3)) = 1, giving x(x+3) = 10.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Product rule gives log(x(x+3)) = 1, leading to x^2+3x-10=0."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The expression log(x^2) always equals 2 log(x) for all real x.",
+      "correct": "False",
+      "correctExplanation": "log(x^2) = 2 log|x| for x ≠ 0. When x is negative, log(x) is undefined, but log(x^2) is defined. So they are not always equal.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "For negative x, log(x) is undefined but log(x^2) is defined, so equality fails."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Solve 2^x = 10 for x, correct to two decimal places.",
+      "correct": "3.32",
+      "correctExplanation": "x = log(10)/log(2) = 1/0.3010 ≈ 3.32.",
+      "distractors": [
+        {
+          "answer": "5, rounding up from 2^5",
+          "explanation": "2^3.32 ≈ 10, not 2^5 = 32."
+        },
+        {
+          "answer": "1, since log(10) = 1",
+          "explanation": "x = log(10)/log(2), not just log(10)."
+        },
+        {
+          "answer": "10, using the argument as ",
+          "explanation": "The answer is the exponent, not the argument."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Simplify log(50) + log(2) minus log(10).",
+      "correct": "1",
+      "correctExplanation": "log(50) + log(2) = log(100). log(100) - log(10) = log(10) = 1.",
+      "distractors": [
+        {
+          "answer": "log(42), performing arithmetic on th",
+          "explanation": "Log laws use multiplication and division, not addition and subtraction."
+        },
+        {
+          "answer": "2, computing log(100) = 2",
+          "explanation": "The minus log(10) must be applied: log(100/10) = log(10) = 1."
+        },
+        {
+          "answer": "0, subtracting log(10) from log(10)",
+          "explanation": "log(50) + log(2) = log(100) = 2, not log(10)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Solve log base 3 of (2x minus 1) = 2.",
+      "correct": "5",
+      "correctExplanation": "3^2 = 9, so 2x - 1 = 9, giving x = 5.",
+      "distractors": [
+        {
+          "answer": "4, from 3^2 = 9 but",
+          "explanation": "2x - 1 = 9 gives 2x = 10, so x = 5."
+        },
+        {
+          "answer": "8, adding 3 and 2 then mu",
+          "explanation": "The solution requires converting to exponential form first."
+        },
+        {
+          "answer": "3, using the base as t",
+          "explanation": "The base is 3, but solving gives x = 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A solution has pH 4. What is its hydrogen ion concentration?",
+      "correct": "10^(minus 4) mol/L",
+      "correctExplanation": "pH = -log[H+] = 4, so [H+] = 10^(-4) mol/L.",
+      "distractors": [
+        {
+          "answer": "4 mol/L, using the pH value as concentration",
+          "explanation": "pH is the negative log, not the concentration itself."
+        },
+        {
+          "answer": "0.4 mol/L, dividing the pH by 10",
+          "explanation": "The relationship is logarithmic, not linear."
+        },
+        {
+          "answer": "10^4 mol/L, forgetting the negative sign in pH",
+          "explanation": "pH = -log[H+], so [H+] = 10^(-pH) = 10^(-4)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Express 3 log(2) + log(5) as a single logarithm.",
+      "correct": "log(40)",
+      "correctExplanation": "log(2^3) + log(5) = log(8) + log(5) = log(40).",
+      "distractors": [
+        {
+          "answer": "log(11), adding 2^3 = 8 and 5",
+          "explanation": "Log laws use multiplication: 8 times 5 = 40."
+        },
+        {
+          "answer": "log(30), computing 3 times 2 times",
+          "explanation": "3 log(2) = log(2^3) = log(8), not log(6)."
+        },
+        {
+          "answer": "log(10), adding log(2) + log(5) without ",
+          "explanation": "The power rule applies first: 3 log(2) = log(8)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "How many times more intense is a magnitude 6.0 earthquake than magnitude 4.5?",
+      "correct": "about 31.6 times",
+      "correctExplanation": "Difference = 1.5 magnitudes. 10^1.5 ≈ 31.6.",
+      "distractors": [
+        {
+          "answer": "1.5 times, using the difference in magnitudes directly",
+          "explanation": "The scale is logarithmic; 1.5 units = 10^1.5 ≈ 31.6 times."
+        },
+        {
+          "answer": "15 times, multiplying 1.5 by 10 for the scale",
+          "explanation": "Each unit is a tenfold increase; 10^1.5 ≈ 31.6."
+        },
+        {
+          "answer": "10 times, rounding 1.5 units to 1 full unit",
+          "explanation": "10^1.5 ≈ 31.6, not 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Solve log(x) + log(x minus 3) = 1 for positive x.",
+      "correct": "5",
+      "correctExplanation": "Product rule: log(x(x-3)) = 1, so x(x-3) = 10. x^2-3x-10 = 0, (x-5)(x+2) = 0. x = 5 (reject x = -2).",
+      "distractors": [
+        {
+          "answer": "minus 2, from the quadratic ",
+          "explanation": "x must be positive for log(x) to be defined; x = 5."
+        },
+        {
+          "answer": "10, using 10^1 = 10",
+          "explanation": "x(x-3) = 10 must be solved as a quadratic."
+        },
+        {
+          "answer": "3, making log(x minus 3) equal",
+          "explanation": "x = 3 gives log(0), which is undefined."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Convert log base 5 of 20 to natural logarithms.",
+      "correct": "ln(20)/ln(5)",
+      "correctExplanation": "log_5(20) = ln(20)/ln(5) ≈ 2.9957/1.6094 ≈ 1.86.",
+      "distractors": [
+        {
+          "answer": "ln(20) minus ln(5), using the quotient rule",
+          "explanation": "ln(20/5) = ln(4), which is log_e(4), not log_5(20)."
+        },
+        {
+          "answer": "ln(20) times ln(5), multiplying the natural logs",
+          "explanation": "The formula uses division, not multiplication."
+        },
+        {
+          "answer": "20/5 = 4, dividing the argument",
+          "explanation": "Change of base uses log ratios, not arithmetic division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Simplify 2 log(3) minus log(9) + log(4).",
+      "correct": "log(4), since 2 log(3) = log(9) and log(9) minus log(9) = 0",
+      "correctExplanation": "2 log(3) = log(9). log(9) - log(9) = 0. 0 + log(4) = log(4).",
+      "distractors": [
+        {
+          "answer": "log(minus 2), subtracting 9 from 3 then adding 4 in total overall",
+          "explanation": "Log laws operate on products and quotients, not sums."
+        },
+        {
+          "answer": "log(36), adding all coefficients inside the log",
+          "explanation": "The subtraction cancels the log(9) terms, leaving log(4)."
+        },
+        {
+          "answer": "0, assuming all terms cancel each other completely",
+          "explanation": "log(4) remains after the log(9) terms cancel."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A sound is measured at 80 dB. If intensity doubles, what is the new dB level?",
+      "correct": "about 83 dB, since 10 log(2) is approximately 3",
+      "correctExplanation": "Doubling intensity adds 10 log(2) ≈ 3 dB.",
+      "distractors": [
+        {
+          "answer": "160 dB, doubling the decibel reading directly",
+          "explanation": "Decibels are logarithmic; doubling adds about 3 dB."
+        },
+        {
+          "answer": "90 dB, adding 10 for a tenfold increase",
+          "explanation": "Doubling is not tenfold; 10 log(2) ≈ 3, not 10."
+        },
+        {
+          "answer": "81 dB, adding 1 for each doubling of intensity here",
+          "explanation": "The correct addition is about 3 dB, not 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Solve 5^(2x minus 1) = 125.",
+      "correct": "2",
+      "correctExplanation": "5^3 = 125. So 2x - 1 = 3, giving 2x = 4, x = 2.",
+      "distractors": [
+        {
+          "answer": "3, using the exponent 3 from 5^3 = 125",
+          "explanation": "The exponent equals 2x-1, not x: 2x-1 = 3, x = 2."
+        },
+        {
+          "answer": "62.5, dividing 125 by 2 to solve for x",
+          "explanation": "The equation is exponential, not linear."
+        },
+        {
+          "answer": "1, setting 2x minus 1 = 1 instead",
+          "explanation": "5^1 = 5, not 125. The correct exponent is 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Express log(root x) in terms of log(x).",
+      "correct": "(1/2) log(x)",
+      "correctExplanation": "root x = x^(1/2), so log(x^(1/2)) = (1/2) log(x).",
+      "distractors": [
+        {
+          "answer": "2 log(x), doubling the log for the root",
+          "explanation": "The root gives exponent 1/2, not 2."
+        },
+        {
+          "answer": "log(x) minus log(2), subtracting for the half",
+          "explanation": "The power rule applies, not subtraction of log(2)."
+        },
+        {
+          "answer": "log(x/2), dividing x by 2 inside the log",
+          "explanation": "Root x = x^(1/2), which gives (1/2) log(x)."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "To solve 3^x = 20, take log of both sides: x log(3) = log(20), so x = log(20)/log(3) which is approximately {{blank:1}}. This uses the {{blank:2}} implicitly.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2.73",
+          "correctExplanation": "log(20)/log(3) = 1.3010/0.4771 ≈ 2.727.",
+          "distractors": [
+            {
+              "answer": "6.67",
+              "explanation": "6.67 = 20/3, which is arithmetic division, not log division.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "20",
+              "explanation": "20 is the argument; the answer is the exponent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "change of base formula",
+          "correctExplanation": "log(20)/log(3) = log_3(20), which is the change of base formula.",
+          "distractors": [
+            {
+              "answer": "product rule",
+              "explanation": "The product rule combines logs of products.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "quotient rule",
+              "explanation": "The quotient rule handles log(a/b).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Simplify log(x^3 y^2): apply the power rule to get {{blank:1}} log(x) + {{blank:2}} log(y).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "log(x^3) = 3 log(x) by the power rule.",
+          "distractors": [
+            {
+              "answer": "x^3",
+              "explanation": "x^3 stays inside the log; 3 comes outside as a coefficient.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1/3",
+              "explanation": "1/3 applies to cube root, not cube.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "log(y^2) = 2 log(y) by the power rule.",
+          "distractors": [
+            {
+              "answer": "y^2",
+              "explanation": "y^2 stays inside; 2 is the coefficient.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1/2",
+              "explanation": "1/2 applies to square root, not square.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "The equation log(x) + log(x+2) = log(15) simplifies to log(x(x+2)) = log(15). So x(x+2) = 15, giving x^2 + 2x minus 15 = 0. The positive solution is x = {{blank:1}}, rejecting x = {{blank:2}} because log requires positive arguments.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "(x-3)(x+5) = 0, so x = 3 or x = -5. Only x = 3 is valid.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The factors are (x-3)(x+5), giving x = 3 or -5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "15",
+              "explanation": "15 is the product, not the solution.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "minus 5",
+          "correctExplanation": "x = -5 is rejected because log(-5) is undefined.",
+          "distractors": [
+            {
+              "answer": "minus 3",
+              "explanation": "The quadratic gives x = -5, not -3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "x = 0 is not a solution of this quadratic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A pH change from 7 to 4 means hydrogen ion concentration has increased by a factor of {{blank:1}}, because each pH unit represents a {{blank:2}} change.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1000",
+          "correctExplanation": "3 pH units = 10^3 = 1000 times increase.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the number of pH units, not the concentration factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "The scale is logarithmic (powers of 10), not linear.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tenfold",
+          "correctExplanation": "Each pH unit = factor of 10 in [H+].",
+          "distractors": [
+            {
+              "answer": "twofold",
+              "explanation": "Each unit is 10 times, not 2 times.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "threefold",
+              "explanation": "Each unit is 10 times, not 3 times.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "To write 2 log(5) + log(3) as a single logarithm, first apply the power rule: 2 log(5) = log({{blank:1}}). Then use the product rule to get log({{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "25",
+          "correctExplanation": "2 log(5) = log(5^2) = log(25).",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "2 times 5 = 10, but the power rule gives 5^2 = 25.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "The coefficient 2 becomes an exponent, not stays as is.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "75",
+          "correctExplanation": "log(25) + log(3) = log(25 times 3) = log(75).",
+          "distractors": [
+            {
+              "answer": "28",
+              "explanation": "25 + 3 = 28, but logs multiply arguments.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "125",
+              "explanation": "25 times 5 = 125, but we multiply by 3: 25 times 3 = 75.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Solving 4^(x+1) = 64: rewrite as 4^(x+1) = 4^({{blank:1}}), so x + 1 = 3 and x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "4^3 = 64.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "4^2 = 16, not 64.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "64",
+              "explanation": "64 is the value, not the exponent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "x + 1 = 3, so x = 2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "x = 3 would give 4^4 = 256.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "x + 1 = 3 means x = 2, not 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Express log(root(x^3/y)) as a single simplified expression: first write root(x^3/y) = (x^3/y)^(1/2). Then log gives (1/2)(3 log(x) minus {{blank:1}}), which equals (3/2) log(x) minus {{blank:2}} log(y).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "log(y)",
+          "correctExplanation": "log(x^3/y) = log(x^3) - log(y) = 3log(x) - log(y).",
+          "distractors": [
+            {
+              "answer": "log(x)",
+              "explanation": "The y is in the denominator, giving minus log(y).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "y",
+              "explanation": "y goes inside a log, not as a standalone term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/2",
+          "correctExplanation": "The outer exponent 1/2 multiplies everything: (1/2)(minus log(y)) = minus (1/2) log(y).",
+          "distractors": [
+            {
+              "answer": "3/2",
+              "explanation": "3/2 applies to log(x), not log(y).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The coefficient is 1/2, not 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "If an earthquake measures 5.5 on the Richter scale and another measures 3.5, the first is {{blank:1}} times more intense, since 10^({{blank:2}}) = 100.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "100",
+          "correctExplanation": "Difference = 2.0 magnitudes. 10^2 = 100.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the difference in magnitudes, not the intensity factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "55",
+              "explanation": "55 is the magnitude times 10, not the intensity ratio.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "5.5 minus 3.5 = 2.0.",
+          "distractors": [
+            {
+              "answer": "5.5",
+              "explanation": "The full magnitude is not the exponent; the difference is.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1.5",
+              "explanation": "5.5 minus 3.5 = 2.0, not 1.5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Solving log_2(x) + log_2(x minus 6) = 4: product rule gives log_2(x(x minus 6)) = 4, so x(x minus 6) = {{blank:1}}. The positive solution is x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "16",
+          "correctExplanation": "2^4 = 16.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "4 is the log value; 2^4 = 16 is the antilog.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "2^3 = 8, but 2^4 = 16.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "x^2-6x-16 = 0, (x-8)(x+2)=0. x = 8 (reject x = -2).",
+          "distractors": [
+            {
+              "answer": "minus 2",
+              "explanation": "x = -2 is rejected because log_2(-2) is undefined.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "x^2-6x-16 = 0 factors as (x-8)(x+2), giving x=8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The decibel formula is dB = 10 log(I/I_0). If intensity I is 1000 times I_0, then dB = 10 log({{blank:1}}) = 10 times {{blank:2}} = 30 dB.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1000",
+          "correctExplanation": "I/I_0 = 1000.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "I is 1000 times I_0, not 10 times.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "30 is the final dB value, not the intensity ratio.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "log(1000) = 3.",
+          "distractors": [
+            {
+              "answer": "1000",
+              "explanation": "1000 is the argument; log(1000) = 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "log(1000) = 3, not 10.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "To evaluate log_8(32), use change of base: log(32)/log(8) = log(2^5)/log(2^3) = {{blank:1}} log(2) / (3 log(2)) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "log(2^5) = 5 log(2).",
+          "distractors": [
+            {
+              "answer": "32",
+              "explanation": "32 is 2^5; the power rule gives 5 log(2).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "log(2^5) = 5 log(2), not 2 log(2).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5/3",
+          "correctExplanation": "5 log(2) / (3 log(2)) = 5/3.",
+          "distractors": [
+            {
+              "answer": "3/5",
+              "explanation": "The numerator is 5 and denominator is 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "15",
+              "explanation": "log(2) cancels; 5/3 remains, not 5 times 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Condensing log(x) + 3 log(y) minus 2 log(z): first apply power rule to get log(x) + log(y^3) minus log(z^2). Then combine: log({{blank:1}} / {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x y^3",
+          "correctExplanation": "log(x) + log(y^3) = log(x y^3) by the product rule.",
+          "distractors": [
+            {
+              "answer": "x + y^3",
+              "explanation": "Arguments multiply, not add, under the product rule.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3xy",
+              "explanation": "The coefficient 3 is an exponent on y, not a multiplier.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "z^2",
+          "correctExplanation": "Subtraction gives division: minus log(z^2) puts z^2 in the denominator.",
+          "distractors": [
+            {
+              "answer": "z",
+              "explanation": "The coefficient 2 makes it z^2, not z.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2z",
+              "explanation": "The 2 is an exponent: z^2, not 2z.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "Analyse why log laws mirror index laws.",
+      "correct": "logarithms are defined as inverses of exponentiation, so their properties reflect exponent rules",
+      "correctExplanation": "Since log_b(x) undoes b^x, the log product rule comes from the index product rule b^m b^n = b^(m+n).",
+      "distractors": [
+        {
+          "answer": "log laws were created independently by different mathematicians",
+          "explanation": "The laws are consequences of the inverse relationship, not independent."
+        },
+        {
+          "answer": "both sets of laws happen to have similar notation only",
+          "explanation": "The similarity is structural, not just notational."
+        },
+        {
+          "answer": "log laws only apply to base 10, matching decimal index rules as stated here",
+          "explanation": "Log laws apply to all valid bases, not just base 10."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Determine whether log(x + y) can be simplified using log laws.",
+      "correct": "no, there is no log law for the logarithm of a sum",
+      "correctExplanation": "Log laws handle products, quotients and powers, but not sums.",
+      "distractors": [
+        {
+          "answer": "yes, it equals log(x) + log(y) by the product rule",
+          "explanation": "The product rule gives log(xy), not log(x+y)."
+        },
+        {
+          "answer": "yes, it equals log(x) times log(y) by multiplication",
+          "explanation": "No such rule exists for logarithms."
+        },
+        {
+          "answer": "yes, factor out log to get log times (x + y) in context",
+          "explanation": "log is a function, not a factor that can be distributed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Prove that log_a(b) times log_b(a) = 1.",
+      "correct": "change of base gives log_a(b) = 1/log_b(a), so their product is 1",
+      "correctExplanation": "log_a(b) = log(b)/log(a) and log_b(a) = log(a)/log(b). Product = 1.",
+      "distractors": [
+        {
+          "answer": "the product equals log(1) = 0, not 1",
+          "explanation": "The product of the two expressions is 1 by change of base."
+        },
+        {
+          "answer": "this identity only holds when a = b for all bases for",
+          "explanation": "It holds for all valid bases a and b."
+        },
+        {
+          "answer": "the proof requires advanced calculus beyond log laws",
+          "explanation": "The change of base formula is sufficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Compare linear and logarithmic scales for displaying population data spanning 100 to 10 billion.",
+      "correct": "a log scale compresses the range, showing relative growth across all magnitudes",
+      "correctExplanation": "8 orders of magnitude (10^2 to 10^10) would require a log scale to display meaningfully.",
+      "distractors": [
+        {
+          "answer": "a linear scale works equally well for this data range",
+          "explanation": "100 and 10 billion differ by 10^8; linear would hide small values."
+        },
+        {
+          "answer": "neither scale can display such a wide range of values",
+          "explanation": "Logarithmic scales are designed for exactly this purpose."
+        },
+        {
+          "answer": "only a log scale with base 2 would work for populations for this",
+          "explanation": "Any log base can display the range; base 10 is commonly used."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Solve log_2(x) minus log_2(x minus 2) = 3 and verify the solution.",
+      "correct": "x = 16/7, from x/(x minus 2) = 8 giving 7x = 16",
+      "correctExplanation": "log_2(x/(x-2)) = 3, so x/(x-2) = 8. x = 8x-16, 7x = 16, x = 16/7.",
+      "distractors": [
+        {
+          "answer": "x = 10, from adding 2 to the base raised to 3 here",
+          "explanation": "The quotient rule and exponential conversion give x = 16/7."
+        },
+        {
+          "answer": "x = 6, solving x minus 2 = 4 from 2^2 = 4",
+          "explanation": "The exponent is 3, giving x/(x-2) = 8."
+        },
+        {
+          "answer": "x = 2, making the second log term equal zero",
+          "explanation": "x = 2 gives log_2(0), which is undefined."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "Analyse why pH uses negative log rather than just log.",
+      "correct": "[H+] values are small positive numbers, so log gives negative values; negating makes",
+      "correctExplanation": "[H+] ranges from about 10^(-14) to 10^0. Without the negative, the scale values would be negative.",
+      "distractors": [
+        {
+          "answer": "negative log makes pH increase with increasing acidity",
+          "explanation": "pH actually decreases with increasing acidity."
+        },
+        {
+          "answer": "the negative sign is a historical convention with no meaning in this form instead",
+          "explanation": "The negative sign serves a clear practical purpose."
+        },
+        {
+          "answer": "negative log produces integers, which are easier to use",
+          "explanation": "pH values are not always integers."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Evaluate log_4(8) without a calculator.",
+      "correct": "3/2",
+      "correctExplanation": "8 = 2^3, 4 = 2^2. log_4(8) = log(2^3)/log(2^2) = 3/2.",
+      "distractors": [
+        {
+          "answer": "2, because 4^2 = 16 is close to 8",
+          "explanation": "4^(3/2) = 8 exactly; the answer is 3/2."
+        },
+        {
+          "answer": "1.5, which is a decimal not a fraction",
+          "explanation": "3/2 = 1.5; both forms are correct, but 3/2 is exact."
+        },
+        {
+          "answer": "8/4 = 2, dividing the argument by the base",
+          "explanation": "Logarithm is not arithmetic division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Determine whether log_2(5) is rational or irrational.",
+      "correct": "irrational",
+      "correctExplanation": "If log_2(5) = p/q, then 2^p = 5^q. No powers of 2 equal powers of 5.",
+      "distractors": [
+        {
+          "answer": "rational, because it can be computed on a calculator",
+          "explanation": "Calculators give approximations; computability does not imply rationality."
+        },
+        {
+          "answer": "rational, equalling 5/2 by dividing argument by base",
+          "explanation": "Log is not division; log_2(5) ≈ 2.32, not 2.5."
+        },
+        {
+          "answer": "undefined, because 5 is not a power of 2",
+          "explanation": "log_2(5) is defined; it is irrational, not undefined."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Analyse the equation log(x^2 minus 1) = log(x minus 1) + log(x + 1). Is it an identity?",
+      "correct": "yes",
+      "correctExplanation": "The product rule gives log((x-1)(x+1)) = log(x^2-1), valid for |x| > 1.",
+      "distractors": [
+        {
+          "answer": "no, the left side has one term",
+          "explanation": "The product rule shows they are equal when both sides are defined."
+        },
+        {
+          "answer": "only when x = 0, making both sides",
+          "explanation": "x = 0 gives log(-1), which is undefined."
+        },
+        {
+          "answer": "yes, for all real values of x without",
+          "explanation": "Both sides require x > 1 for all arguments to be positive."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Why is log base 1 of any number undefined?",
+      "correct": "1 raised to any power",
+      "correctExplanation": "1^y = 1 for all y. So log_1(x) would require 1^y = x, impossible for x ≠ 1.",
+      "distractors": [
+        {
+          "answer": "base 1 is too small for meaningful logarithm calculations",
+          "explanation": "The issue is that 1^y = 1 always, not that 1 is too small."
+        },
+        {
+          "answer": "logarithms require the base to be exactly 10 or e",
+          "explanation": "Any positive base except 0 and 1 is valid."
+        },
+        {
+          "answer": "the definition excludes 1 for no mathematical reason at all",
+          "explanation": "The exclusion is necessary because 1^y = 1 for all y."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Solve 2^x = 3^(x minus 1) for x.",
+      "correct": "x = log(3)/(log(3) minus log(2))",
+      "correctExplanation": "x log(2) = x log(3) - log(3). x(log(2)-log(3)) = -log(3). x = log(3)/(log(3)-log(2)).",
+      "distractors": [
+        {
+          "answer": "x = 3/2, by dividing the bases directly",
+          "explanation": "The bases cannot simply be divided to solve."
+        },
+        {
+          "answer": "x = 1, making both sides equal 2 and 3",
+          "explanation": "2^1 = 2 and 3^0 = 1; they are not equal."
+        },
+        {
+          "answer": "no solution, because 2 and 3 never give equal powers",
+          "explanation": "The equation has a real solution at approximately x ≈ 2.71."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Analyse why log(a^(log(b))) = log(b^(log(a))).",
+      "correct": "both equal log(a) times log(b)",
+      "correctExplanation": "log(a^(log(b))) = log(b) log(a) and log(b^(log(a))) = log(a) log(b). They are equal.",
+      "distractors": [
+        {
+          "answer": "the expressions are not equal in general for any values",
+          "explanation": "The power rule shows both simplify to the same product."
+        },
+        {
+          "answer": "equality holds only when a = b as a special case",
+          "explanation": "It holds for all positive a and b."
+        },
+        {
+          "answer": "the proof requires the natural logarithm, not common log",
+          "explanation": "The identity holds for any log base."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Determine the number of digits in 2^100.",
+      "correct": "31 digits, since log(2^100) = 100 log(2) ≈ 30.1",
+      "correctExplanation": "Number of digits = floor(log(n)) + 1. 100(0.3010) = 30.10, so 31 digits.",
+      "distractors": [
+        {
+          "answer": "100 digits, using the exponent as the digit count",
+          "explanation": "The exponent gives the log, not the digit count."
+        },
+        {
+          "answer": "10 digits, dividing 100 by 10 for base 10",
+          "explanation": "Digit count uses floor(100 log(2)) + 1, not 100/10."
+        },
+        {
+          "answer": "20 digits, using log(2) ≈ 0.2 and multiplying by 100",
+          "explanation": "log(2) ≈ 0.3010, giving 30.10, so 31 digits."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "Analyse why the graph of y = log(x) is concave down.",
+      "correct": "the rate of increase slows as x grows",
+      "correctExplanation": "As x increases, the same additive increase in y requires a larger multiplicative factor in x.",
+      "distractors": [
+        {
+          "answer": "all logarithmic functions are straight lines with constant slope",
+          "explanation": "Log functions are curves, not lines."
+        },
+        {
+          "answer": "the graph curves upward because larger x gives larger y",
+          "explanation": "Larger x gives larger y, but the rate of increase slows."
+        },
+        {
+          "answer": "concavity depends on the base and is sometimes concave up",
+          "explanation": "For bases greater than 1, log is always concave down."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "To prove log_a(b) times log_b(a) = 1, apply change of base: log_a(b) = log(b)/log(a). Then log_b(a) = log(a)/{{blank:1}}. The product is log(b) times log(a) / (log(a) times log(b)) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "log(b)",
+          "correctExplanation": "log_b(a) = log(a)/log(b) by the change of base formula.",
+          "distractors": [
+            {
+              "answer": "log(a)",
+              "explanation": "log_b(a) = log(a)/log(b), not log(a)/log(a).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a",
+              "explanation": "The formula uses log(b), not the number b.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "The log terms cancel completely, giving 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The terms multiply to 1, not add to 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "log(ab)",
+              "explanation": "The product is 1, not log(ab).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The number of digits in a positive integer n is given by {{blank:1}}(log(n)) + 1. For n = 10^6, this gives {{blank:2}} + 1 = 7 digits.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "floor",
+          "correctExplanation": "The floor function rounds down to the nearest integer.",
+          "distractors": [
+            {
+              "answer": "ceiling",
+              "explanation": "Ceiling rounds up, which would overcount digits.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "log",
+              "explanation": "We take the floor of the log, not log of log.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "log(10^6) = 6, and floor(6) = 6.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "floor(log(10^6)) = floor(6) = 6, not 7.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "log(10^6) = 6, not 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "Solving 3^(2x+1) = 7: take log of both sides to get (2x+1) log(3) = log(7). Then x = (log(7)/log(3) minus {{blank:1}}) / 2, which is approximately {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "2x + 1 = log(7)/log(3), so 2x = log(7)/log(3) - 1.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Subtracting 3 would be incorrect; the constant is 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "log(3)",
+              "explanation": "The 1 is a constant from the original exponent 2x+1.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.39",
+          "correctExplanation": "log(7)/log(3) ≈ 1.771/0.477 ≈ 3.71. (3.71-1)/2 ≈ 1.36. Wait, let me recalculate: log7/log3 = 0.8451/0.4771 = 1.771. (1.771-1)/2 = 0.386 ≈ 0.39.",
+          "distractors": [
+            {
+              "answer": "1.77",
+              "explanation": "1.77 = log_3(7), not the final answer for x.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3.5",
+              "explanation": "3.5 would be (7-1)/2 from the original numbers, not logs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The Richter scale magnitude M = log(A/A_0), where A is the measured amplitude. An earthquake with A = 10^5 A_0 has magnitude {{blank:1}}. One with A = 10^7 A_0 is {{blank:2}} times more intense.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "log(10^5 A_0 / A_0) = log(10^5) = 5.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "log(10^5) = 5, not 10.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "100000",
+              "explanation": "100000 is the amplitude ratio, not the magnitude.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "100",
+          "correctExplanation": "Difference = 7-5 = 2 magnitudes. 10^2 = 100 times more intense.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the magnitude difference, not the intensity ratio.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "70",
+              "explanation": "The scale is logarithmic; 10^2 = 100, not 7 times 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "To show that log_2(5) is irrational, assume log_2(5) = p/q. Then 2^(p/q) = 5, so 2^p = {{blank:1}}. Since 2^p is always even and 5^q is always odd, this is a {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5^q",
+          "correctExplanation": "Raising both sides to the power q: 2^p = 5^q.",
+          "distractors": [
+            {
+              "answer": "5p",
+              "explanation": "The exponent q applies to 5, giving 5^q.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "2^p = 5^q, not 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "contradiction",
+          "correctExplanation": "An even number cannot equal an odd number, so the assumption fails.",
+          "distractors": [
+            {
+              "answer": "proof",
+              "explanation": "The contradiction proves the assumption was wrong.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "coincidence",
+              "explanation": "It is a logical contradiction, not a coincidence.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Condensing 2 log(x) minus log(x+1) plus log(x minus 1): first, 2 log(x) = log(x^2). Then log(x^2) + log(x minus 1) = log(x^2(x minus 1)). Finally, minus log(x+1) gives log(x^2(x minus 1) / {{blank:1}}), which equals log({{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "(x + 1)",
+          "correctExplanation": "Subtraction of log(x+1) puts (x+1) in the denominator.",
+          "distractors": [
+            {
+              "answer": "x minus 1",
+              "explanation": "(x-1) is in the numerator, not denominator.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "x^2",
+              "explanation": "x^2 is in the numerator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x^2(x minus 1)/(x + 1)",
+          "correctExplanation": "All terms combined give this single logarithmic expression.",
+          "distractors": [
+            {
+              "answer": "x^2 minus 1",
+              "explanation": "x^2-1 = (x-1)(x+1), which is not the same as x^2(x-1)/(x+1).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "x^3",
+              "explanation": "The expression has three distinct factors, not just x^3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "The equation log_3(x) = 2 minus log_3(x minus 2) rearranges to log_3(x) + log_3(x minus 2) = 2. Product rule gives log_3(x(x minus 2)) = 2, so x(x minus 2) = {{blank:1}}. The valid solution is x = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "9",
+          "correctExplanation": "3^2 = 9.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "2^2 = 4, but the base is 3: 3^2 = 9.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "3 times 2 = 6, but the operation is 3^2 = 9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "one plus root 10",
+          "correctExplanation": "x^2-2x-9=0. x = (2 ± root(4+36))/2 = (2 ± root40)/2 = 1 ± root10. Take positive root.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "x^2-2x-9=0 does not have x=3 as a solution.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "minus 1 plus root 10",
+              "explanation": "Both ± roots exist; take the positive one: 1+root10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The identity a^(log_a(x)) = x holds because log_a(x) is defined as the exponent that produces {{blank:1}} when applied to base {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x",
+          "correctExplanation": "log_a(x) = y means a^y = x, so a^(log_a(x)) = x.",
+          "distractors": [
+            {
+              "answer": "a",
+              "explanation": "The result of a^y is x, not a.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "a^0 = 1, but a^(log_a(x)) = x.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "a",
+          "correctExplanation": "The base of the logarithm and the base of the exponentiation are the same.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "x is the argument, not the base.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "The base is a, which can be any valid base.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "To solve 5^(x+2) = 7^(x-1), take log: (x+2) log(5) = (x-1) log(7). Expanding: x log(5) + 2 log(5) = x log(7) minus log(7). Collecting x terms: x(log(5) minus log(7)) = minus log(7) minus {{blank:1}}. So x = (minus log(7) minus 2 log(5)) / (log(5) minus log(7)), which is approximately {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2 log(5)",
+          "correctExplanation": "Moving 2 log(5) to the right side gives minus 2 log(5).",
+          "distractors": [
+            {
+              "answer": "log(7)",
+              "explanation": "log(7) is already on the right side.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "log(5)",
+              "explanation": "The coefficient 2 must be included: 2 log(5).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "15.36",
+          "correctExplanation": "(-0.845-1.398)/(-0.146) ≈ 15.36.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The solution involves log ratios, not simple values.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "minus 2",
+              "explanation": "The computation gives approximately 15.36.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A star with apparent magnitude m_1 minus m_2 = 5 is {{blank:1}} times fainter, because the magnitude system uses a logarithmic scale where 5 magnitudes equals a factor of {{blank:2}} in brightness.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "100",
+          "correctExplanation": "5 magnitudes = 100 times brightness difference.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 is the magnitude difference, not the brightness factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "Each magnitude is about 2.512 times; 2.512^5 = 100.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "100",
+          "correctExplanation": "The magnitude system was defined so that 5 magnitudes equals exactly 100 times in brightness.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "The factor per 5 magnitudes is 100, not 10.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "5 is the number of magnitudes, not the brightness ratio.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "The equation log(x^y) = y log(x) can be proved by letting log(x) = m, so x = 10^m. Then x^y = (10^m)^y = 10^({{blank:1}}), and log(10^(my)) = {{blank:2}} = y log(x).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "my",
+          "correctExplanation": "(10^m)^y = 10^(my) by the power rule for exponents.",
+          "distractors": [
+            {
+              "answer": "m+y",
+              "explanation": "Exponents multiply for a power of a power, not add.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "m/y",
+              "explanation": "The exponents are multiplied, not divided.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "my",
+          "correctExplanation": "log(10^(my)) = my by the definition of log base 10.",
+          "distractors": [
+            {
+              "answer": "10^(my)",
+              "explanation": "The log extracts the exponent: log(10^k) = k.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "m^y",
+              "explanation": "The exponents multiply: m times y, not m to the power y.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "To analyse whether log(x) + log(y) = log(x + y), set x = 10 and y = 10. The left side gives log(10) + log(10) = {{blank:1}}, but the right side gives log(20) which is approximately {{blank:2}}. They are not equal, disproving the identity.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "log(10) + log(10) = 1 + 1 = 2.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "log(10) = 1, and 1+1 = 2, not 100.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "log(10) = 1, and the sum is 1+1 = 2.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.30",
+          "correctExplanation": "log(20) = log(2 times 10) = log(2) + 1 ≈ 0.301 + 1 = 1.301.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "log(20) ≈ 1.30, not 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "20",
+              "explanation": "20 is the argument, not its logarithm.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10AST03",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to investigate bivariate data using digital tools, fit a straight line, make predictions and assess the strength of association.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to investigate bivariate data using digital tools, fit a straight line, make predictions and assess the strength of association.",
+    "y": [
+      "Bivariate analysis allows us to explore relationships between two variables — a fundamental capability in data science and research.",
+      "Lines of best fit and correlation measures quantify the strength and direction of linear relationships.",
+      "These skills are applied in economics, health research, environmental science and any field that studies how one variable influences another."
+    ],
+    "eg": [
+      "Creating a scatterplot of height versus arm span and fitting a line of best fit using technology.",
+      "Calculating the correlation coefficient (r) and interpreting its value: 'r = 0.85 indicates a strong positive linear relationship.'",
+      "Using the line of best fit to make predictions (interpolation) and discussing the reliability of predictions beyond the data range (extrapolation).",
+      "Identifying non-linear patterns in a scatterplot and explaining why a linear model is inappropriate.",
+      "Distinguishing between correlation and causation with real examples.",
+      "Evaluating the residuals to assess how well the linear model fits the data."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A scatterplot displays the relationship between two numerical variables.",
+      "correct": "True",
+      "correctExplanation": "Scatterplots plot paired (x, y) data to show the association between two variables.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Scatterplots do not display two-variable relationships."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The correlation coefficient r can exceed 1 for very strong positive relationships.",
+      "correct": "False",
+      "correctExplanation": "The correlation coefficient always satisfies −1 ≤ r ≤ 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "r is bounded between −1 and 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "In a scatterplot, the explanatory variable is plotted on the y-axis.",
+      "correct": "False",
+      "correctExplanation": "The explanatory (independent) variable is plotted on the x-axis; the response on the y-axis.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The explanatory variable goes on the x-axis."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A negative correlation means that as one variable increases, the other tends to decrease.",
+      "correct": "True",
+      "correctExplanation": "Negative correlation indicates an inverse relationship between the variables.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Negative correlation does not mean an inverse relationship."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The line of best fit passes through every data point on a scatterplot.",
+      "correct": "False",
+      "correctExplanation": "The line of best fit minimises the overall distances to all points but rarely passes through every one.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The line of best fit approximates the trend, not exact points."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "A correlation of r = 0 means there is no linear association between the variables.",
+      "correct": "True",
+      "correctExplanation": "r = 0 indicates no linear relationship, though a non-linear relationship may still exist.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "r = 0 does not mean no linear association."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Correlation always implies causation between two variables.",
+      "correct": "False",
+      "correctExplanation": "Correlation shows association, not causation; confounding variables may explain the link.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Correlation does not imply causation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The slope of the line of best fit represents the predicted change in y per unit change in x.",
+      "correct": "True",
+      "correctExplanation": "Slope b gives the rate of change: for each 1-unit increase in x, y changes by b units.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The slope does not represent the rate of change."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "A correlation of r = −0.9 indicates a weak negative association.",
+      "correct": "False",
+      "correctExplanation": "|r| = 0.9 is close to 1, indicating a strong negative association.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "r = −0.9 is a strong negative correlation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The y-intercept of the line of best fit is the predicted value of y when x = 0.",
+      "correct": "True",
+      "correctExplanation": "The intercept a in ŷ = a + bx gives the predicted y when the explanatory variable is zero.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The y-intercept does not predict y at x = 0."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A scatterplot can only show positive associations between variables.",
+      "correct": "False",
+      "correctExplanation": "Scatterplots can reveal positive, negative, or no association, as well as non-linear patterns.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Scatterplots can show any type of association."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The correlation coefficient r measures only the strength of linear association.",
+      "correct": "False",
+      "correctExplanation": "r measures both the strength and direction (positive or negative) of linear association.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "r measures both strength and direction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "In a scatterplot, the explanatory variable is placed on the:",
+      "correct": "x-axis",
+      "correctExplanation": "The explanatory (independent) variable is conventionally on the horizontal axis.",
+      "distractors": [
+        {
+          "answer": "y-axis",
+          "explanation": "The response variable goes on the y-axis."
+        },
+        {
+          "answer": "title",
+          "explanation": "The title describes the graph, not a variable placement."
+        },
+        {
+          "answer": "legend",
+          "explanation": "The legend identifies data series, not variable axes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "A correlation coefficient of r = 0.85 indicates:",
+      "correct": "a strong positive linear association",
+      "correctExplanation": "|r| > 0.8 is classified as strong, and positive r means both variables increase together.",
+      "distractors": [
+        {
+          "answer": "a weak positive association",
+          "explanation": "0.85 is strong, not weak."
+        },
+        {
+          "answer": "a strong negative association",
+          "explanation": "r is positive, not negative."
+        },
+        {
+          "answer": "no linear association at all",
+          "explanation": "r = 0.85 is far from zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "The line of best fit has the equation ŷ = 3 + 2x. The slope is:",
+      "correct": "2",
+      "correctExplanation": "In ŷ = a + bx, the slope b = 2.",
+      "distractors": [
+        {
+          "answer": "3",
+          "explanation": "3 is the y-intercept, not the slope."
+        },
+        {
+          "answer": "5",
+          "explanation": "This adds 3 + 2 incorrectly."
+        },
+        {
+          "answer": "6",
+          "explanation": "This multiplies 3 × 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which value of r indicates the strongest linear association?",
+      "correct": "r = −0.95",
+      "correctExplanation": "|−0.95| = 0.95 is the closest to 1 in absolute value.",
+      "distractors": [
+        {
+          "answer": "r = 0.60",
+          "explanation": "|0.60| = 0.60 is weaker than 0.95."
+        },
+        {
+          "answer": "r = 0.80",
+          "explanation": "|0.80| is weaker than 0.95."
+        },
+        {
+          "answer": "r = −0.40",
+          "explanation": "|0.40| is the weakest."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "The y-intercept of ŷ = 5 + 3x is:",
+      "correct": "5",
+      "correctExplanation": "The y-intercept is the constant term when x = 0.",
+      "distractors": [
+        {
+          "answer": "3",
+          "explanation": "This is the slope, not the intercept."
+        },
+        {
+          "answer": "8",
+          "explanation": "This adds slope and intercept."
+        },
+        {
+          "answer": "15",
+          "explanation": "This multiplies 5 × 3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "'Correlation does not imply causation' means:",
+      "correct": "an observed association may not be",
+      "correctExplanation": "Other factors (confounders) may explain the observed link.",
+      "distractors": [
+        {
+          "answer": "strong correlations are always causal",
+          "explanation": "Strong r does not guarantee causation."
+        },
+        {
+          "answer": "correlation and causation are identical",
+          "explanation": "They are distinct concepts."
+        },
+        {
+          "answer": "causation cannot exist between variables",
+          "explanation": "Causation can exist but must be proven separately."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "A scatterplot showing points rising from left to right indicates:",
+      "correct": "a positive association",
+      "correctExplanation": "As x increases, y also increases, showing positive association.",
+      "distractors": [
+        {
+          "answer": "a negative association",
+          "explanation": "Decreasing points show negative association."
+        },
+        {
+          "answer": "no association",
+          "explanation": "A clear trend exists."
+        },
+        {
+          "answer": "a non-linear pattern",
+          "explanation": "A rising trend is linear if approximately straight."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "The correlation coefficient r ranges from:",
+      "correct": "−1 to 1",
+      "correctExplanation": "r is bounded between −1 (perfect negative) and 1 (perfect positive).",
+      "distractors": [
+        {
+          "answer": "0 to 1",
+          "explanation": "This omits negative correlations."
+        },
+        {
+          "answer": "−∞ to ∞",
+          "explanation": "r is bounded, not unbounded."
+        },
+        {
+          "answer": "0 to 100",
+          "explanation": "r is not a percentage."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "In the equation ŷ = a + bx, the variable ŷ represents:",
+      "correct": "the predicted response variable",
+      "correctExplanation": "ŷ is the estimated value of the response based on x.",
+      "distractors": [
+        {
+          "answer": "the explanatory variable",
+          "explanation": "x is the explanatory variable."
+        },
+        {
+          "answer": "the correlation coefficient",
+          "explanation": "r measures association strength."
+        },
+        {
+          "answer": "the residual",
+          "explanation": "Residual = y − ŷ, not ŷ itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "A moderate linear association has an |r| value between:",
+      "correct": "0.5 and 0.8",
+      "correctExplanation": "Moderate association falls between weak (<0.5) and strong (>0.8).",
+      "distractors": [
+        {
+          "answer": "0 and 0.3",
+          "explanation": "This range is weak."
+        },
+        {
+          "answer": "0.8 and 1.0",
+          "explanation": "This range is strong."
+        },
+        {
+          "answer": "1.0 and 2.0",
+          "explanation": "r cannot exceed 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "A confounding variable is:",
+      "correct": "a hidden variable that affects both x and y",
+      "correctExplanation": "Confounders create a spurious association between the measured variables.",
+      "distractors": [
+        {
+          "answer": "the response variable in a scatterplot",
+          "explanation": "The response is plotted on the y-axis."
+        },
+        {
+          "answer": "the slope of the line of best fit",
+          "explanation": "Slope measures rate of change."
+        },
+        {
+          "answer": "the same as the correlation coefficient",
+          "explanation": "r measures association, not confounding."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which scatterplot pattern suggests no linear association?",
+      "correct": "points scattered randomly with no trend",
+      "correctExplanation": "Random scatter indicates r ≈ 0.",
+      "distractors": [
+        {
+          "answer": "points forming a clear upward line",
+          "explanation": "This shows positive linear association."
+        },
+        {
+          "answer": "points forming a clear downward line",
+          "explanation": "This shows negative linear association."
+        },
+        {
+          "answer": "points forming a tight cluster on the line",
+          "explanation": "A tight cluster on a line shows strong association."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The correlation coefficient r measures the {{blank:1}} and {{blank:2}} of a linear association between two variables.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "strength",
+          "correctExplanation": "r indicates how tightly points cluster around the line.",
+          "distractors": [
+            {
+              "answer": "slope",
+              "explanation": "Slope is measured by b, not r.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "intercept",
+              "explanation": "Intercept is the value a, not r.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "direction",
+          "correctExplanation": "r is positive for increasing trends and negative for decreasing trends.",
+          "distractors": [
+            {
+              "answer": "curvature",
+              "explanation": "r measures linear association, not curvature.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "spread",
+              "explanation": "Spread is measured by SD, not r.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "In the equation ŷ = a + bx, the slope b represents the predicted change in {{blank:1}} for each unit increase in {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "y",
+          "correctExplanation": "The slope gives the change in the response variable.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "x is the independent variable, not the predicted output.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "r",
+              "explanation": "r is the correlation coefficient, not a variable in the equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "One unit increase in the explanatory variable produces a change of b in y.",
+          "distractors": [
+            {
+              "answer": "y",
+              "explanation": "y is the response, not the input variable.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a",
+              "explanation": "a is the intercept, not a variable being changed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A strong correlation between ice cream sales and drowning rates proves that ice cream causes drowning.",
+      "correct": "False",
+      "correctExplanation": "Both variables are influenced by hot weather (a confounding variable); correlation does not prove causation.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Confounding variables explain the association."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "If r = −0.92, the relationship is strong but the variables move in opposite directions.",
+      "correct": "True",
+      "correctExplanation": "|r| = 0.92 indicates strong association, and the negative sign means an inverse relationship.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "r = −0.92 is a strong inverse association."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "A line of best fit with a negative slope always has r > 0.",
+      "correct": "False",
+      "correctExplanation": "A negative slope produces a negative r value, indicating a negative association.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Negative slope corresponds to negative r."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Extrapolation beyond the data range is less reliable than interpolation within it.",
+      "correct": "True",
+      "correctExplanation": "Predictions outside the observed data range assume the trend continues, which may not hold.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Extrapolation is less reliable than interpolation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "A non-linear pattern in a scatterplot means r will always be zero.",
+      "correct": "False",
+      "correctExplanation": "r measures linear association; a strong non-linear pattern can produce a small but non-zero r.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Non-linear patterns can produce non-zero r values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The line of best fit minimises the sum of squared vertical distances from points to the line.",
+      "correct": "True",
+      "correctExplanation": "The least-squares method minimises Σ(yᵢ − ŷᵢ)², the sum of squared residuals.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The least-squares method minimises squared residuals."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "Two variables with r = 0.3 have a strong linear association.",
+      "correct": "False",
+      "correctExplanation": "|r| = 0.3 falls in the weak category (below 0.5).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "r = 0.3 is a weak association."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The slope of the line of best fit has no practical interpretation.",
+      "correct": "False",
+      "correctExplanation": "The slope represents the predicted change in the response variable per unit change in the explanatory variable.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Slope has direct practical meaning."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A scatterplot shows hours studied vs exam score with r = 0.88. This means:",
+      "correct": "more study is strongly associated with higher",
+      "correctExplanation": "r = 0.88 indicates a strong positive linear association.",
+      "distractors": [
+        {
+          "answer": "study causes higher scores",
+          "explanation": "Correlation does not establish causation."
+        },
+        {
+          "answer": "the association is weak and negative",
+          "explanation": "r = 0.88 is strong and positive."
+        },
+        {
+          "answer": "every extra hour adds exactly 0.88 marks",
+          "explanation": "r is not a rate of change; that is the slope."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "The line of best fit ŷ = 20 + 1.5x (hours studied, score %). The slope means:",
+      "correct": "each extra hour predicts a 1.5% higher score",
+      "correctExplanation": "The slope gives the predicted change in y for each unit increase in x.",
+      "distractors": [
+        {
+          "answer": "the minimum score is 1.5",
+          "explanation": "1.5 is the rate of change, not a minimum."
+        },
+        {
+          "answer": "20 hours of study guarantees a perfect score",
+          "explanation": "20 is the intercept, not a guarantee."
+        },
+        {
+          "answer": "the correlation is 1.5",
+          "explanation": "r is bounded between −1 and 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Why is extrapolation risky?",
+      "correct": "the trend may not continue beyond the",
+      "correctExplanation": "The relationship may change outside the observed x-values.",
+      "distractors": [
+        {
+          "answer": "interpolation is always inaccurate",
+          "explanation": "Interpolation within the data range is more reliable."
+        },
+        {
+          "answer": "the line of best fit becomes curved",
+          "explanation": "The line remains straight; it is the data that may diverge."
+        },
+        {
+          "answer": "r changes when predicting outside the range",
+          "explanation": "r is fixed for the given data."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A residual is defined as:",
+      "correct": "the actual y minus the predicted ŷ",
+      "correctExplanation": "Residual = yᵢ − ŷᵢ, the vertical distance from point to line.",
+      "distractors": [
+        {
+          "answer": "the predicted ŷ minus the mean",
+          "explanation": "This is not the definition of a residual."
+        },
+        {
+          "answer": "the correlation coefficient squared",
+          "explanation": "This is r², not a residual."
+        },
+        {
+          "answer": "the slope of the line of best fit",
+          "explanation": "Slope is b, not a residual."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A researcher finds r = 0.75 between exercise frequency and sleep quality. A valid conclusion is:",
+      "correct": "moderate positive association exists between",
+      "correctExplanation": "|r| = 0.75 is moderate, and positive indicates both increase together.",
+      "distractors": [
+        {
+          "answer": "exercise definitely causes better sleep",
+          "explanation": "Correlation does not prove causation."
+        },
+        {
+          "answer": "the association is negative and weak",
+          "explanation": "r = 0.75 is positive and moderate."
+        },
+        {
+          "answer": "sleep quality causes more exercise",
+          "explanation": "Direction of causation cannot be determined from r."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "The y-intercept of ŷ = 15 − 2x, where x = hours of TV and y = test score, means:",
+      "correct": "a student watching 0 hours of TV",
+      "correctExplanation": "When x = 0, ŷ = 15.",
+      "distractors": [
+        {
+          "answer": "each hour of TV adds 15 marks",
+          "explanation": "15 is the intercept, not the slope."
+        },
+        {
+          "answer": "the maximum possible score is 15",
+          "explanation": "The model predicts 15 at x = 0 but this is not a maximum."
+        },
+        {
+          "answer": "the correlation is 15",
+          "explanation": "r cannot equal 15."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "If adding a third variable to the analysis removes the correlation between x and y, the third variable is likely a:",
+      "correct": "confounding variable",
+      "correctExplanation": "A confounder drives both x and y, creating a spurious correlation.",
+      "distractors": [
+        {
+          "answer": "response variable",
+          "explanation": "The response is already y."
+        },
+        {
+          "answer": "correlation coefficient",
+          "explanation": "r is a statistic, not a variable."
+        },
+        {
+          "answer": "residual",
+          "explanation": "A residual is a measure of fit, not a variable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "r² = 0.64 for a data set. This means:",
+      "correct": "64% of the variation in y",
+      "correctExplanation": "r² represents the proportion of variance in y accounted for by the linear model.",
+      "distractors": [
+        {
+          "answer": "the correlation is 0.64",
+          "explanation": "r = √0.64 = 0.8, not 0.64."
+        },
+        {
+          "answer": "64% of points are on the line",
+          "explanation": "r² describes variance explained, not point count."
+        },
+        {
+          "answer": "the slope is 0.64",
+          "explanation": "The slope is a different quantity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A scatterplot shows a clear U-shaped pattern. The most appropriate r value is:",
+      "correct": "close to 0",
+      "correctExplanation": "r measures linear association; a U-shape is non-linear and produces r near 0.",
+      "distractors": [
+        {
+          "answer": "close to 1",
+          "explanation": "A U-shape is not a positive linear trend."
+        },
+        {
+          "answer": "close to −1",
+          "explanation": "A U-shape is not a negative linear trend."
+        },
+        {
+          "answer": "exactly −0.5",
+          "explanation": "r near 0 is expected for symmetric non-linear patterns."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which data set has the strongest association?",
+      "correct": "r = −0.93",
+      "correctExplanation": "|−0.93| = 0.93, which is the closest to 1.",
+      "distractors": [
+        {
+          "answer": "r = 0.72",
+          "explanation": "|0.72| < 0.93."
+        },
+        {
+          "answer": "r = 0.50",
+          "explanation": "|0.50| < 0.93."
+        },
+        {
+          "answer": "r = −0.10",
+          "explanation": "|0.10| is very weak."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "The sign of the slope b and the sign of r are always:",
+      "correct": "the same",
+      "correctExplanation": "Both b and r reflect the direction of the linear association.",
+      "distractors": [
+        {
+          "answer": "opposite",
+          "explanation": "Slope and r always agree in sign."
+        },
+        {
+          "answer": "unrelated",
+          "explanation": "They are directly related."
+        },
+        {
+          "answer": "both positive",
+          "explanation": "They can both be negative."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A prediction made within the range of observed x-values is called:",
+      "correct": "interpolation",
+      "correctExplanation": "Predicting within the data range is interpolation.",
+      "distractors": [
+        {
+          "answer": "extrapolation",
+          "explanation": "Extrapolation predicts beyond the observed range."
+        },
+        {
+          "answer": "correlation",
+          "explanation": "Correlation measures association, not prediction type."
+        },
+        {
+          "answer": "regression",
+          "explanation": "Regression is the method, not the type of prediction."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "Extrapolation is less reliable than interpolation because the {{blank:1}} may not continue beyond the {{blank:2}} range.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trend",
+          "correctExplanation": "The observed linear pattern may change outside the data range.",
+          "distractors": [
+            {
+              "answer": "correlation",
+              "explanation": "Correlation is a fixed value for the data set.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "intercept",
+              "explanation": "The intercept does not change with prediction range.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "observed data",
+          "correctExplanation": "Predictions outside the collected data are less trustworthy.",
+          "distractors": [
+            {
+              "answer": "y-axis",
+              "explanation": "The y-axis is not a range of observed values.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "model",
+              "explanation": "The model exists everywhere; the data range is what matters.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "A residual is the difference between the {{blank:1}} value of y and the {{blank:2}} value ŷ from the line of best fit.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "actual",
+          "correctExplanation": "The residual uses the real observed data point.",
+          "distractors": [
+            {
+              "answer": "predicted",
+              "explanation": "The predicted value is ŷ, which is subtracted.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "average",
+              "explanation": "The mean is not used in residual calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "predicted",
+          "correctExplanation": "ŷ is the value given by the regression equation.",
+          "distractors": [
+            {
+              "answer": "actual",
+              "explanation": "The actual value is y, not what is subtracted.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "maximum",
+              "explanation": "The maximum is not involved in residual calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "r² represents the proportion of {{blank:1}} in y that is explained by the linear relationship with {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "variation",
+          "correctExplanation": "r² measures explained variation in the response variable.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is a single value, not variation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "correlation",
+              "explanation": "r² is derived from r, but measures variation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "The explanatory variable x drives the linear model.",
+          "distractors": [
+            {
+              "answer": "r",
+              "explanation": "r is the measure itself, not a variable.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "ŷ",
+              "explanation": "ŷ is the output of the model.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Correlation does not imply causation because {{blank:1}} variables may explain the observed {{blank:2}} between x and y.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "confounding",
+          "correctExplanation": "Confounders affect both variables, creating a spurious link.",
+          "distractors": [
+            {
+              "answer": "response",
+              "explanation": "Response variables are the output, not hidden causes.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "independent",
+              "explanation": "Independent variables are the explanatory inputs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "association",
+          "correctExplanation": "The observed link may be driven by a third variable.",
+          "distractors": [
+            {
+              "answer": "slope",
+              "explanation": "Slope is a property of the line, not the spurious link.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "intercept",
+              "explanation": "The intercept is a model parameter.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "A scatterplot with points tightly clustered around a downward-sloping line has a correlation coefficient close to {{blank:1}}, indicating a {{blank:2}} negative association.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−1",
+          "correctExplanation": "Tight clustering around a negative line means r is close to −1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "r = 0 would indicate no linear association.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "r = 1 indicates a positive trend.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "strong",
+          "correctExplanation": "Tight clustering means the association is strong.",
+          "distractors": [
+            {
+              "answer": "weak",
+              "explanation": "Tight clustering indicates strong, not weak, association.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "moderate",
+              "explanation": "Very tight clustering is strong, not merely moderate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The least-squares line minimises the sum of {{blank:1}} residuals, ensuring the best fit for the {{blank:2}} data.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "squared",
+          "correctExplanation": "Squaring prevents positive and negative residuals from cancelling out.",
+          "distractors": [
+            {
+              "answer": "absolute",
+              "explanation": "Absolute values are used in a different method.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "raw",
+              "explanation": "Raw residuals sum to zero and are not minimised.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "observed",
+          "correctExplanation": "The line fits the actual data points collected.",
+          "distractors": [
+            {
+              "answer": "predicted",
+              "explanation": "Predicted values come from the line itself.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "theoretical",
+              "explanation": "The fit is to observed data, not theory.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Using the equation ŷ = 10 + 2x with x = 5 gives a predicted y of 20.",
+      "correct": "True",
+      "correctExplanation": "ŷ = 10 + 2(5) = 10 + 10 = 20.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The calculation gives 20."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "A data set with r = 0.45 has a strong positive linear association.",
+      "correct": "False",
+      "correctExplanation": "|r| = 0.45 is below 0.5, placing it in the weak category.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "r = 0.45 is a weak association."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "The line of best fit is ŷ = 5 + 3x. The predicted y when x = 8 is:",
+      "correct": "29",
+      "correctExplanation": "ŷ = 5 + 3(8) = 5 + 24 = 29.",
+      "distractors": [
+        {
+          "answer": "24",
+          "explanation": "This omits the intercept."
+        },
+        {
+          "answer": "40",
+          "explanation": "This uses an incorrect formula."
+        },
+        {
+          "answer": "13",
+          "explanation": "This adds 5 + 8."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A study finds r = 0.91 between hours of sunlight and plant height. A valid interpretation is:",
+      "correct": "strong positive association between sunlight a",
+      "correctExplanation": "|r| = 0.91 indicates strong linear association.",
+      "distractors": [
+        {
+          "answer": "sunlight definitely causes taller plants",
+          "explanation": "Correlation does not prove causation."
+        },
+        {
+          "answer": "the association is weak and negative",
+          "explanation": "r = 0.91 is strong and positive."
+        },
+        {
+          "answer": "91% of plants grew taller",
+          "explanation": "r is not a percentage of plants."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "ŷ = 100 − 4x models the relationship between hours of TV (x) and test score (y). Predict the score for x = 10.",
+      "correct": "60",
+      "correctExplanation": "ŷ = 100 − 4(10) = 100 − 40 = 60.",
+      "distractors": [
+        {
+          "answer": "140",
+          "explanation": "This adds instead of subtracting."
+        },
+        {
+          "answer": "40",
+          "explanation": "This calculates 4 × 10 only."
+        },
+        {
+          "answer": "96",
+          "explanation": "This subtracts 4 only once."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A scatterplot of temperature vs ice cream sales has r = 0.82. A newspaper headline states 'Hot weather causes ice cream sales to soar.' This headline is:",
+      "correct": "misleading because correlation does not pr",
+      "correctExplanation": "The headline implies causation from a correlational finding.",
+      "distractors": [
+        {
+          "answer": "accurate based on the strong r value",
+          "explanation": "Strong r shows association, not causation."
+        },
+        {
+          "answer": "incorrect because r should be negative",
+          "explanation": "Higher temperature and more sales give positive r."
+        },
+        {
+          "answer": "valid since r > 0.8",
+          "explanation": "Strong r does not validate causal claims."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "The residual for a point at (5, 22) on the line ŷ = 3 + 4x is:",
+      "correct": "−1",
+      "correctExplanation": "ŷ = 3 + 4(5) = 23. Residual = 22 − 23 = −1.",
+      "distractors": [
+        {
+          "answer": "1",
+          "explanation": "This reverses the subtraction."
+        },
+        {
+          "answer": "23",
+          "explanation": "This is the predicted value, not the residual."
+        },
+        {
+          "answer": "22",
+          "explanation": "This is the actual value, not the residual."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A researcher uses ŷ = 50 + 2x (valid for x = 10 to 40) to predict y at x = 100. This prediction is:",
+      "correct": "unreliable due to extrapolation",
+      "correctExplanation": "x = 100 is far beyond the observed range of 10 to 40.",
+      "distractors": [
+        {
+          "answer": "perfectly reliable since the equation exists",
+          "explanation": "The equation is valid only within the data range."
+        },
+        {
+          "answer": "more accurate than interpolation",
+          "explanation": "Extrapolation is less accurate."
+        },
+        {
+          "answer": "impossible to calculate",
+          "explanation": "The calculation can be done but the result is unreliable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "For ŷ = 200 − 5x, the slope −5 means:",
+      "correct": "y decreases by 5 for each 1-unit",
+      "correctExplanation": "The negative slope indicates a decrease of 5 units in y per unit increase in x.",
+      "distractors": [
+        {
+          "answer": "y increases by 5 for each unit increase",
+          "explanation": "The slope is negative, indicating decrease."
+        },
+        {
+          "answer": "x decreases by 5 as y increases",
+          "explanation": "The slope describes change in y, not x."
+        },
+        {
+          "answer": "the correlation is −5",
+          "explanation": "r is bounded between −1 and 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Data: age (x) vs reaction time (y). r = −0.76. ŷ = 250 + 3x. The predicted reaction time for age 30 is:",
+      "correct": "340 ms",
+      "correctExplanation": "ŷ = 250 + 3(30) = 250 + 90 = 340.",
+      "distractors": [
+        {
+          "answer": "253 ms",
+          "explanation": "This adds only 3 once."
+        },
+        {
+          "answer": "280 ms",
+          "explanation": "This uses an incorrect multiplier."
+        },
+        {
+          "answer": "90 ms",
+          "explanation": "This calculates 3 × 30 only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A data set has r = 0.50. What percentage of the variation in y is explained by x?",
+      "correct": "25%",
+      "correctExplanation": "r² = 0.50² = 0.25 = 25%.",
+      "distractors": [
+        {
+          "answer": "50%",
+          "explanation": "This confuses r with r²."
+        },
+        {
+          "answer": "75%",
+          "explanation": "This uses 1 − r² (unexplained variation)."
+        },
+        {
+          "answer": "100%",
+          "explanation": "Only r = ±1 gives 100%."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "ŷ = 12 + 0.8x models height (cm) vs arm span (cm). For a student with arm span 160 cm:",
+      "correct": "ŷ = 140 cm",
+      "correctExplanation": "ŷ = 12 + 0.8(160) = 12 + 128 = 140.",
+      "distractors": [
+        {
+          "answer": "ŷ = 128 cm",
+          "explanation": "This omits the intercept."
+        },
+        {
+          "answer": "ŷ = 172 cm",
+          "explanation": "This adds 12 + 160."
+        },
+        {
+          "answer": "ŷ = 160 cm",
+          "explanation": "This uses x directly as the prediction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Two variables have r = 0 but show a strong parabolic pattern. This illustrates that r only detects:",
+      "correct": "linear association",
+      "correctExplanation": "r measures linear association; non-linear patterns produce r ≈ 0.",
+      "distractors": [
+        {
+          "answer": "all types of association",
+          "explanation": "r misses non-linear patterns."
+        },
+        {
+          "answer": "causation",
+          "explanation": "r never measures causation."
+        },
+        {
+          "answer": "quadratic trends perfectly",
+          "explanation": "r fails to detect quadratic trends."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A data set has 5 points: (1,3), (2,5), (3,7), (4,9), (5,11). The correlation is:",
+      "correct": "r = 1",
+      "correctExplanation": "The points lie perfectly on the line y = 1 + 2x, so r = 1.",
+      "distractors": [
+        {
+          "answer": "r = 0.5",
+          "explanation": "The perfect linear pattern gives r = 1."
+        },
+        {
+          "answer": "r = −1",
+          "explanation": "The slope is positive, not negative."
+        },
+        {
+          "answer": "r = 0",
+          "explanation": "There is a clear linear trend."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "For ŷ = 8 + 1.5x, when x = 10, the predicted y is {{blank:1}}. The slope of {{blank:2}} means y increases by 1.5 per unit increase in x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "23",
+          "correctExplanation": "ŷ = 8 + 1.5(10) = 8 + 15 = 23.",
+          "distractors": [
+            {
+              "answer": "9.5",
+              "explanation": "This adds 8 + 1.5 without multiplying by x.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "15",
+              "explanation": "This calculates 1.5 × 10 but omits the intercept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.5",
+          "correctExplanation": "The coefficient of x is the slope.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 is the y-intercept.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the x-value used for prediction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A data set has r = 0.90. This means r² = {{blank:1}}, so {{blank:2}}% of the variation in y is explained by the model.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.81",
+          "correctExplanation": "r² = 0.90² = 0.81.",
+          "distractors": [
+            {
+              "answer": "0.90",
+              "explanation": "This confuses r with r².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.45",
+              "explanation": "This halves r instead of squaring.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "81",
+          "correctExplanation": "0.81 = 81%.",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "This uses r, not r².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "19",
+              "explanation": "This is 100% − 81%, the unexplained variation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "The residual at point (4, 18) on the line ŷ = 2 + 3x is {{blank:1}}, because the predicted value is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Predicted ŷ = 2 + 3(4) = 14. Residual = 18 − 14 = 4.",
+          "distractors": [
+            {
+              "answer": "−4",
+              "explanation": "This reverses the subtraction.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "18",
+              "explanation": "This is the actual y, not the residual.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "14",
+          "correctExplanation": "ŷ = 2 + 3(4) = 14.",
+          "distractors": [
+            {
+              "answer": "18",
+              "explanation": "This is the actual value, not predicted.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "12",
+              "explanation": "This calculates 3 × 4 without the intercept.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A scatterplot of advertising spend (x) vs revenue (y) has r = 0.85. This is a {{blank:1}} positive association, but {{blank:2}} between advertising and revenue is not proven.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "strong",
+          "correctExplanation": "|r| = 0.85 exceeds 0.8, placing it in the strong category.",
+          "distractors": [
+            {
+              "answer": "weak",
+              "explanation": "0.85 is strong, not weak.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "moderate",
+              "explanation": "0.85 exceeds the moderate threshold of 0.8.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "causation",
+          "correctExplanation": "Correlation shows association, not cause-and-effect.",
+          "distractors": [
+            {
+              "answer": "correlation",
+              "explanation": "Correlation is what has been found.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "association",
+              "explanation": "Association has been demonstrated.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Using ŷ = 50 − 2x with x = 20 gives {{blank:1}}. The negative slope means y {{blank:2}} as x increases.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "ŷ = 50 − 2(20) = 50 − 40 = 10.",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "This adds instead of subtracting.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "−10",
+              "explanation": "50 − 40 = 10, not −10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "decreases",
+          "correctExplanation": "A negative slope indicates y falls as x rises.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "Negative slope means decrease.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "stays constant",
+              "explanation": "A non-zero slope means y changes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A prediction at x = 25 using a model valid for 10 ≤ x ≤ 30 is {{blank:1}} because x = 25 is within the {{blank:2}} range.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "interpolation",
+          "correctExplanation": "Predicting within the data range is interpolation.",
+          "distractors": [
+            {
+              "answer": "extrapolation",
+              "explanation": "Extrapolation is predicting outside the range.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "correlation",
+              "explanation": "Correlation is a measure of association.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "observed data",
+          "correctExplanation": "x = 25 falls between 10 and 30.",
+          "distractors": [
+            {
+              "answer": "predicted",
+              "explanation": "Predicted values are outputs, not a range.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "theoretical",
+              "explanation": "The range is empirical, not theoretical.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "ŷ = 30 + 0.5x predicts exam scores from study hours. The y-intercept {{blank:1}} means a student who studies 0 hours is predicted to score {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "When x = 0, ŷ = 30.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "This is the slope, not the intercept.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "The intercept is 30, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "ŷ = 30 + 0.5(0) = 30.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "This is the rate of change.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "The prediction at x = 0 is 30.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "For the equation ŷ = 100 − 3x, the predicted y at x = 15 is {{blank:1}} and the slope indicates y decreases by {{blank:2}} for each additional unit of x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "55",
+          "correctExplanation": "ŷ = 100 − 3(15) = 100 − 45 = 55.",
+          "distractors": [
+            {
+              "answer": "145",
+              "explanation": "This adds instead of subtracting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "45",
+              "explanation": "This is 3 × 15, not the full prediction.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The slope is −3, so y decreases by 3 per unit of x.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "100 is the intercept.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "15",
+              "explanation": "15 is the x-value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A correlation of r = −0.85 gives r² = {{blank:1}}, meaning {{blank:2}}% of variation in y is explained by the linear model.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.7225",
+          "correctExplanation": "r² = (−0.85)² = 0.7225.",
+          "distractors": [
+            {
+              "answer": "−0.7225",
+              "explanation": "r² is always positive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.85",
+              "explanation": "This confuses r with r².",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "72.25",
+          "correctExplanation": "0.7225 = 72.25%.",
+          "distractors": [
+            {
+              "answer": "85",
+              "explanation": "This uses r, not r².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−72.25",
+              "explanation": "Percentages of explained variation are positive.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A positive residual means the actual y is {{blank:1}} the predicted ŷ, so the line {{blank:2}} the y-value at that point.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "above",
+          "correctExplanation": "Residual = y − ŷ > 0 means y > ŷ.",
+          "distractors": [
+            {
+              "answer": "below",
+              "explanation": "A positive residual means y is above ŷ.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal to",
+              "explanation": "Equal values give residual = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "underestimates",
+          "correctExplanation": "The line predicts a lower value than observed.",
+          "distractors": [
+            {
+              "answer": "overestimates",
+              "explanation": "Overestimation gives negative residuals.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equals",
+              "explanation": "Equal prediction gives residual = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "r = 0 for a data set with a clear curved pattern means that {{blank:1}} association is absent but a {{blank:2}} relationship exists.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "linear",
+          "correctExplanation": "r only measures linear association.",
+          "distractors": [
+            {
+              "answer": "non-linear",
+              "explanation": "Non-linear association is present, not absent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "strong",
+              "explanation": "Strength is not zero; it is the linearity that is absent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "non-linear",
+          "correctExplanation": "The curved pattern indicates a non-linear relationship.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "r = 0 rules out a linear relationship.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "A clear pattern is not random.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A line ŷ = 15 + 2.5x has slope {{blank:1}} and predicts y = {{blank:2}} when x = 6.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2.5",
+          "correctExplanation": "The coefficient of x is the slope.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "15 is the y-intercept.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 is the x-value for prediction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "ŷ = 15 + 2.5(6) = 15 + 15 = 30.",
+          "distractors": [
+            {
+              "answer": "17.5",
+              "explanation": "This adds 15 + 2.5 without multiplying.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "15",
+              "explanation": "This omits the slope term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A scatterplot shows a strong linear trend for most points, but one outlier is far from the line. Removing it would most likely:",
+      "correct": "increase |r| and improve the fit",
+      "correctExplanation": "The outlier weakens the linear pattern; removing it strengthens r.",
+      "distractors": [
+        {
+          "answer": "decrease |r| significantly",
+          "explanation": "Removing an outlier typically strengthens the linear fit."
+        },
+        {
+          "answer": "have no effect on r",
+          "explanation": "Outliers do affect the correlation coefficient."
+        },
+        {
+          "answer": "reverse the sign of r",
+          "explanation": "One outlier rarely reverses the overall trend."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Two researchers study the same data. Researcher A reports r = 0.8; Researcher B fits a quadratic curve with R² = 0.95. This suggests:",
+      "correct": "the relationship is better describ",
+      "correctExplanation": "The quadratic model explains more variance, indicating non-linearity.",
+      "distractors": [
+        {
+          "answer": "the linear model is better",
+          "explanation": "The linear R² = 0.64 < 0.95."
+        },
+        {
+          "answer": "both models are equally good",
+          "explanation": "R² values differ significantly."
+        },
+        {
+          "answer": "the data has no pattern",
+          "explanation": "Both models show a strong pattern."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A study finds r = 0.70 between shoe size and reading ability in children aged 5–15. The most likely explanation is:",
+      "correct": "age is a confounding variable",
+      "correctExplanation": "Both shoe size and reading improve with age, creating a spurious correlation.",
+      "distractors": [
+        {
+          "answer": "large feet cause better reading",
+          "explanation": "This is biologically implausible."
+        },
+        {
+          "answer": "the correlation is an error",
+          "explanation": "r = 0.70 is a genuine calculated value."
+        },
+        {
+          "answer": "reading causes feet to grow",
+          "explanation": "This reverses any plausible logic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Two regression lines are fitted to two data sets. Line A: ŷ = 10 + 3x (r = 0.95). Line B: ŷ = 50 + 3x (r = 0.40). Which gives more reliable predictions?",
+      "correct": "Line A",
+      "correctExplanation": "r = 0.95 indicates a much stronger fit than r = 0.40.",
+      "distractors": [
+        {
+          "answer": "Line B",
+          "explanation": "r = 0.40 is a weak fit."
+        },
+        {
+          "answer": "Both are equally",
+          "explanation": "The r values differ significantly."
+        },
+        {
+          "answer": "Neither is reliable",
+          "explanation": "Line A with r = 0.95 is highly reliable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A model ŷ = 200 − 5x is valid for 0 ≤ x ≤ 30. At x = 50, the model predicts ŷ = −50. This negative value:",
+      "correct": "shows extrapolation has produced a meaningless result",
+      "correctExplanation": "Negative scores are impossible; the model does not hold beyond x = 30.",
+      "distractors": [
+        {
+          "answer": "is a valid prediction since the formula works",
+          "explanation": "Mathematical validity does not imply real-world validity."
+        },
+        {
+          "answer": "means the student scored −50",
+          "explanation": "Negative scores are impossible."
+        },
+        {
+          "answer": "indicates a strong negative correlation",
+          "explanation": "The negative value is a prediction error, not a correlation measure."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "If both x and y are standardised (converted to z-scores), the slope of the regression line equals:",
+      "correct": "r",
+      "correctExplanation": "For standardised variables, the slope b equals the correlation coefficient.",
+      "distractors": [
+        {
+          "answer": "1",
+          "explanation": "The slope equals r, which is not always 1."
+        },
+        {
+          "answer": "0",
+          "explanation": "The slope is 0 only when r = 0."
+        },
+        {
+          "answer": "r²",
+          "explanation": "The slope equals r, not r²."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A researcher finds r = 0.60 for 20 data points and r = 0.60 for 200 data points. The larger sample provides:",
+      "correct": "more confidence in the association",
+      "correctExplanation": "Larger samples give more precise estimates and smaller standard errors.",
+      "distractors": [
+        {
+          "answer": "exactly the same confidence",
+          "explanation": "Sample size affects the reliability of r."
+        },
+        {
+          "answer": "less confidence since more noise exists",
+          "explanation": "More data reduces noise, not increases it."
+        },
+        {
+          "answer": "a higher r value",
+          "explanation": "r is the same; confidence in it increases."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A residual plot shows residuals randomly scattered around zero. This suggests:",
+      "correct": "the linear model is appropriate",
+      "correctExplanation": "Random residuals indicate no systematic pattern was missed.",
+      "distractors": [
+        {
+          "answer": "the model is a poor fit",
+          "explanation": "Random scatter indicates a good fit."
+        },
+        {
+          "answer": "a quadratic model is needed",
+          "explanation": "A pattern in residuals would suggest a quadratic."
+        },
+        {
+          "answer": "r is exactly 1",
+          "explanation": "Random residuals mean r < 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Two variables have r = 0.85 in one study and r = 0.30 in another. The most likely reason is:",
+      "correct": "different populations or conditions w",
+      "correctExplanation": "Context, sample composition and confounders can all affect r.",
+      "distractors": [
+        {
+          "answer": "one study made an error",
+          "explanation": "Both values can be correct in different contexts."
+        },
+        {
+          "answer": "r is unreliable in all studies",
+          "explanation": "r is reliable when used appropriately."
+        },
+        {
+          "answer": "the sample sizes were identical",
+          "explanation": "Sample size does not determine the value of r."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A line of best fit ŷ = 20 + 4x has r = 0.92. If the x and y axes are swapped, the new regression line will have a slope:",
+      "correct": "less than 4",
+      "correctExplanation": "Swapping axes changes the regression line; the new slope = r²/b_original × scaling factor, typically less than the original slope.",
+      "distractors": [
+        {
+          "answer": "equal to 4",
+          "explanation": "Swapping axes changes the regression equation."
+        },
+        {
+          "answer": "equal to 1/4 = 0.25",
+          "explanation": "This is the reciprocal, not the new regression slope."
+        },
+        {
+          "answer": "greater than 4",
+          "explanation": "The new slope is typically less than the original."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A journalist reports 'Students who eat breakfast score 15% higher on tests (r = 0.65).' A critical reader should note:",
+      "correct": "the 15% difference may be due to confounders like",
+      "correctExplanation": "Socioeconomic status affects both breakfast habits and test performance.",
+      "distractors": [
+        {
+          "answer": "the finding proves breakfast causes better scores",
+          "explanation": "Correlation does not establish causation."
+        },
+        {
+          "answer": "r = 0.65 is too weak to draw any conclusion",
+          "explanation": "r = 0.65 is moderate and worth noting."
+        },
+        {
+          "answer": "the finding is certainly wrong",
+          "explanation": "The finding may be valid but the causal claim is unsupported."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "For two data sets with identical lines of best fit but different r values, the data set with higher |r| has:",
+      "correct": "points more tightly clus",
+      "correctExplanation": "Higher |r| means less scatter around the regression line.",
+      "distractors": [
+        {
+          "answer": "a steeper slope",
+          "explanation": "The slopes are identical by assumption."
+        },
+        {
+          "answer": "more data points",
+          "explanation": "More points do not guarantee higher |r|."
+        },
+        {
+          "answer": "a larger intercept",
+          "explanation": "The intercepts are identical."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A data set shows r = 0.95. After adding 5 outliers far from the trend, r drops to 0.40. This illustrates that r is:",
+      "correct": "sensitive to outliers",
+      "correctExplanation": "Outliers increase scatter, reducing the linear fit.",
+      "distractors": [
+        {
+          "answer": "resistant to outliers",
+          "explanation": "r is not resistant; it changed dramatically."
+        },
+        {
+          "answer": "unaffected by additional data",
+          "explanation": "Adding data did change r."
+        },
+        {
+          "answer": "only valid for large samples",
+          "explanation": "r is valid for any sample size."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A positive slope with r = 0.10 suggests:",
+      "correct": "a very weak positive linear trend",
+      "correctExplanation": "|r| = 0.10 indicates minimal linear association.",
+      "distractors": [
+        {
+          "answer": "a strong positive relationship",
+          "explanation": "r = 0.10 is very weak."
+        },
+        {
+          "answer": "no relationship at all",
+          "explanation": "r = 0.10 is non-zero, so a slight trend exists."
+        },
+        {
+          "answer": "the slope should be negative",
+          "explanation": "Positive r means positive slope."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The coefficient of determination r² = 0.81 means {{blank:1}}% of variation is explained and {{blank:2}}% is unexplained.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "81",
+          "correctExplanation": "r² = 0.81 means 81% is explained.",
+          "distractors": [
+            {
+              "answer": "19",
+              "explanation": "This is the unexplained portion.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "This confuses r = 0.9 with r².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "19",
+          "correctExplanation": "100% − 81% = 19% unexplained.",
+          "distractors": [
+            {
+              "answer": "81",
+              "explanation": "This is the explained portion.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "This is not 100% − 81%.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "An outlier far from the trend line {{blank:1}} the value of |r| and makes the linear model {{blank:2}} reliable.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "decreases",
+          "correctExplanation": "The outlier adds scatter, weakening the linear pattern.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "Outliers weaken, not strengthen, the linear fit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "does not affect",
+              "explanation": "Outliers do affect r.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "less",
+          "correctExplanation": "More scatter means poorer fit and less reliable predictions.",
+          "distractors": [
+            {
+              "answer": "more",
+              "explanation": "Outliers reduce, not improve, reliability.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equally",
+              "explanation": "The model is less reliable with outliers.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A residual plot with a clear curved pattern suggests the data needs a {{blank:1}} model instead of a {{blank:2}} model.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "non-linear",
+          "correctExplanation": "A curved residual pattern indicates the linear model is inadequate.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "The linear model is what is being replaced.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "simpler",
+              "explanation": "A non-linear model is typically more complex.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "linear",
+          "correctExplanation": "The linear model produces systematic residuals.",
+          "distractors": [
+            {
+              "answer": "quadratic",
+              "explanation": "Quadratic is a potential non-linear replacement.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "complex",
+              "explanation": "The current model is already the simpler linear one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Two researchers report r = 0.7 for the same variables but in different populations. This is expected because {{blank:1}} can vary across {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "the strength of association",
+          "correctExplanation": "Different populations may have different variability and relationships.",
+          "distractors": [
+            {
+              "answer": "the formula for r",
+              "explanation": "The formula is standard and does not change.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "the definition of correlation",
+              "explanation": "The definition is constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "populations",
+          "correctExplanation": "Different groups may show different association strengths.",
+          "distractors": [
+            {
+              "answer": "formulas",
+              "explanation": "The formula does not change.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "variables",
+              "explanation": "The same variables are being studied.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "For standardised data, the regression line passes through the point ({{blank:1}}, {{blank:2}}) and has slope equal to r.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "When both variables are standardised, the mean of x-scores is 0.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The mean z-score is 0, not 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "x̄",
+              "explanation": "For standardised data, x̄ = 0.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "The mean of standardised y-scores is also 0.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The mean z-score is 0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "r",
+              "explanation": "r is the slope, not the intercept.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Swapping x and y in a regression changes the slope because the line minimises {{blank:1}} distances, not perpendicular distances, and these differ depending on which axis is the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertical",
+          "correctExplanation": "Least-squares minimises vertical distances (residuals in y).",
+          "distractors": [
+            {
+              "answer": "horizontal",
+              "explanation": "Horizontal distances relate to predicting x from y.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "Perpendicular/diagonal regression is a different technique.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "response",
+          "correctExplanation": "The response variable determines the direction of minimisation.",
+          "distractors": [
+            {
+              "answer": "explanatory",
+              "explanation": "The explanatory variable is on the other axis.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "independent",
+              "explanation": "Independent variables are explanatory, which is the other axis.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A lurking variable is one that is not included in the analysis but affects {{blank:1}} variables, potentially creating a {{blank:2}} correlation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "both",
+          "correctExplanation": "A lurking variable influences both x and y.",
+          "distractors": [
+            {
+              "answer": "neither",
+              "explanation": "If it affected neither, it would not be lurking.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "only one",
+              "explanation": "Affecting only one variable would not create spurious correlation.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "spurious",
+          "correctExplanation": "The correlation appears meaningful but is driven by the lurking variable.",
+          "distractors": [
+            {
+              "answer": "genuine",
+              "explanation": "Genuine implies real causation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero",
+              "explanation": "A lurking variable creates non-zero correlation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Increasing sample size does not change the value of r but increases the {{blank:1}} that the observed r reflects a real {{blank:2}} association.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "confidence",
+          "correctExplanation": "Larger samples provide more reliable estimates of population parameters.",
+          "distractors": [
+            {
+              "answer": "value",
+              "explanation": "The value of r is not inherently increased by n.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "variance",
+              "explanation": "Larger samples reduce variance of estimates.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "population",
+          "correctExplanation": "The sample r estimates the true population correlation.",
+          "distractors": [
+            {
+              "answer": "sample",
+              "explanation": "The sample is what is observed; the inference is about the population.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "The goal is to detect real association, not random.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A regression line with slope 0 means there is no {{blank:1}} relationship between x and y, and the best prediction for any x is the {{blank:2}} of y.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "linear",
+          "correctExplanation": "A slope of 0 indicates no linear trend.",
+          "distractors": [
+            {
+              "answer": "non-linear",
+              "explanation": "A slope of 0 does not address non-linearity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "statistical",
+              "explanation": "Statistical relationships can still be non-linear.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "mean",
+          "correctExplanation": "When the slope is 0, ŷ = ȳ for all x values.",
+          "distractors": [
+            {
+              "answer": "median",
+              "explanation": "The regression prediction uses the mean, not median.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "The mode is not used in regression prediction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A strong r value combined with a residual plot showing a pattern indicates {{blank:1}} in the linear model that a {{blank:2}} model might capture.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "systematic error",
+          "correctExplanation": "A pattern in residuals reveals the linear model misses systematic variation.",
+          "distractors": [
+            {
+              "answer": "random error",
+              "explanation": "Random error produces no pattern.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "perfect fit",
+              "explanation": "A pattern in residuals indicates imperfect fit.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "non-linear",
+          "correctExplanation": "A curved residual pattern suggests a non-linear model would fit better.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "The linear model is already being used.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "simpler",
+              "explanation": "Non-linear models are typically more complex.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "The distinction between correlation and causation is critical in research because acting on a {{blank:1}} correlation may lead to {{blank:2}} interventions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "spurious",
+          "correctExplanation": "A spurious correlation is driven by confounders, not a real causal link.",
+          "distractors": [
+            {
+              "answer": "strong",
+              "explanation": "Even strong correlations may be spurious.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "weak",
+              "explanation": "The issue is spuriousness, not weakness.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "ineffective",
+          "correctExplanation": "If the correlation is not causal, intervening on x will not change y.",
+          "distractors": [
+            {
+              "answer": "successful",
+              "explanation": "Spurious correlations lead to failed interventions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "expensive",
+              "explanation": "Cost is secondary to effectiveness.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "r = −1 means every point lies exactly on a {{blank:1}}-sloping line, and the model explains {{blank:2}}% of the variation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "downward",
+          "correctExplanation": "r = −1 indicates a perfect negative linear relationship.",
+          "distractors": [
+            {
+              "answer": "upward",
+              "explanation": "Upward corresponds to r = +1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "horizontal",
+              "explanation": "A horizontal line gives r = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "100",
+          "correctExplanation": "r² = (−1)² = 1 = 100%.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "r = −1 gives r² = 1, not 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−100",
+              "explanation": "Percentages of explained variation are positive.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

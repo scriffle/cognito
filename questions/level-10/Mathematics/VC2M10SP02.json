@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10SP02",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to interpret network diagrams that represent real-world relationships and describe their features.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to interpret network diagrams that represent real-world relationships and describe their features.",
+    "y": [
+      "Network (graph) theory provides tools for analysing connections and pathways \u2014 it is one of the most widely applied branches of modern mathematics.",
+      "Understanding networks helps us model and optimise transportation, social connections, communication systems and resource distribution.",
+      "These concepts connect mathematics to computer science, logistics, urban planning and epidemiology."
+    ],
+    "eg": [
+      "Interpreting a network diagram showing flight routes between cities and identifying the shortest path.",
+      "Describing networks using mathematical language: nodes/vertices, edges, degree, connected graphs.",
+      "Determining whether an Euler path or circuit exists in a given network.",
+      "Modelling a social network and identifying the most connected individuals (highest degree nodes).",
+      "Using a network diagram to model and optimise a delivery route.",
+      "Identifying whether a network is planar (can be drawn without crossing edges)."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A vertex in a network represents a connection or edge between nodes.",
+      "correct": "False",
+      "correctExplanation": "A vertex represents a node or connection point. Edges represent the connections between vertices.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Vertices are nodes; edges are the connections between them."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The degree of a vertex is the number of vertices in the network.",
+      "correct": "False",
+      "correctExplanation": "The degree of a vertex is the number of edges connected to it, not the total number of vertices.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Degree counts all vertices in the network."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "An edge in a network represents a connection between two vertices.",
+      "correct": "True",
+      "correctExplanation": "Edges (arcs, links) connect pairs of vertices and represent relationships.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "An edge is another name for a vertex in a network."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The sum of all vertex degrees in a network equals the number of edges.",
+      "correct": "False",
+      "correctExplanation": "The sum of degrees equals twice the number of edges, because each edge contributes to the degree of two vertices.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Each edge adds one to the degree sum, so they are equal."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "A connected network has a path between every pair of vertices.",
+      "correct": "True",
+      "correctExplanation": "Connectedness means any vertex can be reached from any other vertex through some sequence of edges.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A connected network only requires some vertices to be reachable."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Two network diagrams that look different must represent different networks.",
+      "correct": "False",
+      "correctExplanation": "Networks are defined by their connections, not their visual layout. Different diagrams can represent identical networks.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The appearance of the diagram determines which network it represents."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "A tree is a connected network that contains no circuits.",
+      "correct": "True",
+      "correctExplanation": "A tree is defined as a connected graph with no cycles, having exactly n\u22121 edges for n vertices.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Trees can contain circuits as long as they are connected."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "A loop at a vertex contributes 1 to that vertex's degree.",
+      "correct": "False",
+      "correctExplanation": "A loop contributes 2 to the degree because it connects the vertex to itself, touching the vertex twice.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A loop counts as a single connection, adding 1 to the degree."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "In a directed network, edges have a specific direction from one vertex to another.",
+      "correct": "True",
+      "correctExplanation": "Directed edges (arcs) indicate one-way connections, such as one-way streets.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "All network edges are bidirectional regardless of any labels."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A vertex with degree 0 is connected to every other vertex in the network.",
+      "correct": "False",
+      "correctExplanation": "A vertex with degree 0 has no edges and is isolated, meaning it is connected to no other vertices.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Degree 0 indicates a vertex that connects to all others."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A weighted network assigns numerical values to its edges.",
+      "correct": "True",
+      "correctExplanation": "Weights represent quantities like distance, cost, or time associated with each connection.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Weights are assigned to vertices, not edges."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "A network with 5 vertices that is a tree must have exactly 5 edges.",
+      "correct": "False",
+      "correctExplanation": "A tree with n vertices has exactly n\u22121 edges. With 5 vertices, a tree has 4 edges.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Trees always have the same number of edges as vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What does the degree of a vertex measure?",
+      "correct": "The number of edges connected to that vertex",
+      "correctExplanation": "Degree counts how many edges meet at a particular vertex.",
+      "distractors": [
+        {
+          "answer": "The number of vertices in the network",
+          "explanation": "This is the order of the network, not degree."
+        },
+        {
+          "answer": "The weight of the vertex",
+          "explanation": "Weights are assigned to edges, not vertex degree."
+        },
+        {
+          "answer": "The distance to the nearest vertex",
+          "explanation": "Distance is a path property, not degree."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "A network has vertices with degrees 2, 3, 3, 4. How many edges does it have?",
+      "correct": "6",
+      "correctExplanation": "Sum of degrees = 2+3+3+4 = 12. Edges = 12/2 = 6.",
+      "distractors": [
+        {
+          "answer": "12",
+          "explanation": "12 is the degree sum, not the number of edges."
+        },
+        {
+          "answer": "4",
+          "explanation": "4 is the number of vertices, not edges."
+        },
+        {
+          "answer": "8",
+          "explanation": "This does not follow from the degree sum formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which term describes a network where every vertex can be reached from every other?",
+      "correct": "Connected",
+      "correctExplanation": "A connected network has a path between every pair of vertices.",
+      "distractors": [
+        {
+          "answer": "Complete",
+          "explanation": "Complete means every vertex is directly connected to every other."
+        },
+        {
+          "answer": "Weighted",
+          "explanation": "Weighted means edges have numerical values."
+        },
+        {
+          "answer": "Directed",
+          "explanation": "Directed means edges have specific directions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "A tree with 8 vertices has how many edges?",
+      "correct": "7",
+      "correctExplanation": "A tree with n vertices always has n\u22121 edges. 8\u22121 = 7.",
+      "distractors": [
+        {
+          "answer": "8",
+          "explanation": "A tree has one fewer edge than vertices."
+        },
+        {
+          "answer": "9",
+          "explanation": "This adds one instead of subtracting."
+        },
+        {
+          "answer": "6",
+          "explanation": "This subtracts 2 from the vertex count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What is the relationship between the sum of degrees and the number of edges?",
+      "correct": "Sum of degrees equals twice the number of edges",
+      "correctExplanation": "Each edge connects two vertices, contributing 1 to each vertex's degree.",
+      "distractors": [
+        {
+          "answer": "Sum of degrees equals the number of edges",
+          "explanation": "Each edge adds 2 to the total degree, not 1."
+        },
+        {
+          "answer": "Sum of degrees equals half the number of edges",
+          "explanation": "This inverts the correct relationship."
+        },
+        {
+          "answer": "They are unrelated",
+          "explanation": "There is a direct mathematical relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "In a network diagram, what do edges represent?",
+      "correct": "Connections between vertices",
+      "correctExplanation": "Edges are the lines or links showing relationships between nodes.",
+      "distractors": [
+        {
+          "answer": "The locations of nodes",
+          "explanation": "Locations are represented by vertices, not edges."
+        },
+        {
+          "answer": "The weight of each vertex",
+          "explanation": "Weights apply to edges, and vertices are separate."
+        },
+        {
+          "answer": "The number of paths available",
+          "explanation": "Paths are sequences of edges, not individual edges."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "A vertex with degree 1 in a network is called what?",
+      "correct": "A leaf",
+      "correctExplanation": "A vertex connected by only one edge is called a leaf or pendant vertex.",
+      "distractors": [
+        {
+          "answer": "A hub",
+          "explanation": "A hub typically has many connections, not just one."
+        },
+        {
+          "answer": "A bridge",
+          "explanation": "A bridge is an edge, not a vertex."
+        },
+        {
+          "answer": "An isolate",
+          "explanation": "An isolated vertex has degree 0, not 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which real-world structure can be modelled as a network?",
+      "correct": "A train system with",
+      "correctExplanation": "Stations are vertices and routes are edges in the network model.",
+      "distractors": [
+        {
+          "answer": "A single straight road",
+          "explanation": "A straight road is too simple to model as a network."
+        },
+        {
+          "answer": "A mathematical equation",
+          "explanation": "Equations are algebraic, not network structures."
+        },
+        {
+          "answer": "A histogram of data",
+          "explanation": "Histograms display data distributions, not connections."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is a circuit in a network?",
+      "correct": "A path that starts and ends at",
+      "correctExplanation": "A circuit (cycle) is a closed path that returns to its starting vertex.",
+      "distractors": [
+        {
+          "answer": "An edge that connects a vertex to itself",
+          "explanation": "This is a loop, not a circuit."
+        },
+        {
+          "answer": "A vertex with the highest degree",
+          "explanation": "High degree describes a hub vertex."
+        },
+        {
+          "answer": "A network with no connections",
+          "explanation": "A network with no connections is disconnected."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "If a network has 4 vertices and 6 edges, what is the sum of all vertex degrees?",
+      "correct": "12",
+      "correctExplanation": "Sum of degrees = 2 \u00d7 edges = 2 \u00d7 6 = 12.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "This is the number of edges, not the degree sum."
+        },
+        {
+          "answer": "4",
+          "explanation": "This is the number of vertices."
+        },
+        {
+          "answer": "10",
+          "explanation": "This adds vertices and edges instead of using the formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "What is a bridge in a network?",
+      "correct": "An edge whose removal disconnects the network",
+      "correctExplanation": "A bridge is a critical edge that, if removed, splits the network into disconnected parts.",
+      "distractors": [
+        {
+          "answer": "A vertex connecting two subnetworks",
+          "explanation": "This describes a cut vertex, not a bridge."
+        },
+        {
+          "answer": "An edge with the highest weight",
+          "explanation": "Weight does not determine bridge status."
+        },
+        {
+          "answer": "A path between two distant vertices",
+          "explanation": "A path is a sequence of edges, not a bridge."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A loop in a network connects a vertex to which vertex?",
+      "correct": "Itself",
+      "correctExplanation": "A loop is an edge that starts and ends at the same vertex.",
+      "distractors": [
+        {
+          "answer": "The nearest vertex",
+          "explanation": "The nearest vertex is a different vertex, not a loop target."
+        },
+        {
+          "answer": "All other vertices",
+          "explanation": "Connecting to all vertices is a complete graph property."
+        },
+        {
+          "answer": "No vertex",
+          "explanation": "A loop does connect to a vertex \u2014 the same one."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "In a network, the sum of all vertex degrees equals {{blank:1}} times the number of edges. A tree with n vertices has exactly {{blank:2}} edges.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Each edge contributes to the degree of two vertices, doubling the edge count.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Each edge adds to two degrees, not one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "n is the vertex count, not the degree multiplier.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n \u2212 1",
+          "correctExplanation": "Trees are minimally connected: exactly one fewer edge than vertices.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "n edges would create at least one circuit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n + 1",
+              "explanation": "Extra edges beyond n\u22121 create circuits.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "A connected network has a {{blank:1}} between every pair of vertices. An edge whose removal disconnects a network is called a {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "path",
+          "correctExplanation": "Connectivity means a sequence of edges links any two vertices.",
+          "distractors": [
+            {
+              "answer": "loop",
+              "explanation": "A loop connects a vertex to itself, not to other vertices.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "weight",
+              "explanation": "Weights are numerical values on edges, not connectivity features.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "bridge",
+          "correctExplanation": "A bridge is a critical edge for maintaining connectivity.",
+          "distractors": [
+            {
+              "answer": "loop",
+              "explanation": "A loop is a self-connection, not a connectivity-critical edge.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "leaf",
+              "explanation": "A leaf is a degree-1 vertex, not a critical edge.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A connected network with n vertices must have at least n edges.",
+      "correct": "False",
+      "correctExplanation": "A connected network needs at least n\u22121 edges (a tree). n edges would create at least one circuit.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The minimum is n\u22121 edges (a spanning tree), not n."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "In a complete graph with n vertices, every vertex has degree n.",
+      "correct": "False",
+      "correctExplanation": "In a complete graph, each vertex connects to every other vertex, so each has degree n\u22121, not n.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Every vertex in a complete graph connects to all n vertices including itself."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Removing a bridge from a connected network always creates exactly two disconnected components.",
+      "correct": "True",
+      "correctExplanation": "A bridge is an edge whose removal splits the network into exactly two separate connected parts.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Removing a bridge can create three or more components."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "A network can have an odd number of vertices where every vertex has odd degree.",
+      "correct": "False",
+      "correctExplanation": "The handshaking lemma states that the sum of all degrees is even. If all vertices have odd degree, the number of vertices must be even.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Any combination of odd and even degrees is possible regardless of vertex count."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "A graph is planar if it can be drawn on a flat surface with no edges crossing.",
+      "correct": "True",
+      "correctExplanation": "Planar graphs can be embedded in a plane without edge intersections.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "All graphs are planar because edges can always be rearranged."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "In a disconnected network, every vertex can still be reached from every other vertex via some path.",
+      "correct": "False",
+      "correctExplanation": "A disconnected network has at least two vertices with no path between them.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Even in disconnected networks, indirect paths always exist between all vertices."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "An Euler circuit exists in a connected network if and only if every vertex has even degree.",
+      "correct": "True",
+      "correctExplanation": "Euler's theorem states that a connected graph has an Euler circuit precisely when all vertices have even degree.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Euler circuits only require most vertices to have even degree."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "A complete graph with 4 vertices has 8 edges.",
+      "correct": "False",
+      "correctExplanation": "A complete graph with n vertices has n(n\u22121)/2 edges. For n=4: 4\u00d73/2 = 6 edges, not 8.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "K4 has 4\u00d74/2 = 8 edges."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A complete graph K5 has how many edges?",
+      "correct": "10",
+      "correctExplanation": "K5 has 5(5\u22121)/2 = 10 edges. Every vertex connects to every other.",
+      "distractors": [
+        {
+          "answer": "5",
+          "explanation": "This is the number of vertices, not edges."
+        },
+        {
+          "answer": "20",
+          "explanation": "This doubles the correct answer."
+        },
+        {
+          "answer": "15",
+          "explanation": "This uses an incorrect formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A network has 6 vertices. What is the minimum number of edges for it to be connected?",
+      "correct": "5",
+      "correctExplanation": "A tree is the minimum connected structure: n\u22121 = 6\u22121 = 5 edges.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "6 edges is more than the minimum needed."
+        },
+        {
+          "answer": "4",
+          "explanation": "4 edges cannot connect 6 vertices."
+        },
+        {
+          "answer": "3",
+          "explanation": "3 edges is far too few for 6 vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which condition must a connected graph satisfy to have an Euler path (not circuit)?",
+      "correct": "Exactly two vertices with odd degree",
+      "correctExplanation": "An Euler path requires exactly two odd-degree vertices (start and end points).",
+      "distractors": [
+        {
+          "answer": "All vertices with even degree",
+          "explanation": "This gives an Euler circuit, not just a path."
+        },
+        {
+          "answer": "Exactly one vertex with odd degree",
+          "explanation": "The handshaking lemma prevents exactly one odd vertex."
+        },
+        {
+          "answer": "No vertices with odd degree",
+          "explanation": "This is equivalent to all even, giving a circuit."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "What is the maximum number of edges in a simple graph with 5 vertices?",
+      "correct": "10",
+      "correctExplanation": "Maximum edges = n(n\u22121)/2 = 5\u00d74/2 = 10, achieved by the complete graph K5.",
+      "distractors": [
+        {
+          "answer": "5",
+          "explanation": "This is the number of vertices."
+        },
+        {
+          "answer": "20",
+          "explanation": "This overcounts by not dividing by 2."
+        },
+        {
+          "answer": "25",
+          "explanation": "This squares the number of vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A network has vertices A(3), B(2), C(4), D(1), E(2), where the number in brackets is the degree. How many edges does this network have?",
+      "correct": "6",
+      "correctExplanation": "Sum of degrees = 3+2+4+1+2 = 12. Edges = 12/2 = 6.",
+      "distractors": [
+        {
+          "answer": "12",
+          "explanation": "This is the degree sum, not edge count."
+        },
+        {
+          "answer": "5",
+          "explanation": "This is the number of vertices."
+        },
+        {
+          "answer": "7",
+          "explanation": "This adds one to the correct count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Which of the following is a property of every tree?",
+      "correct": "There is exactly one path between any",
+      "correctExplanation": "Trees have no circuits, guaranteeing a unique path between any pair.",
+      "distractors": [
+        {
+          "answer": "Every vertex has the same degree",
+          "explanation": "Trees can have vertices of different degrees."
+        },
+        {
+          "answer": "It contains at least one circuit",
+          "explanation": "Trees are defined by having no circuits."
+        },
+        {
+          "answer": "Every vertex has degree 2",
+          "explanation": "Leaf vertices in trees have degree 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "A directed graph has 5 vertices. What is the maximum number of directed edges without loops?",
+      "correct": "20",
+      "correctExplanation": "Each ordered pair of distinct vertices can have one directed edge: 5\u00d74 = 20.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "This counts undirected edges, not directed."
+        },
+        {
+          "answer": "25",
+          "explanation": "This includes loops, which are excluded."
+        },
+        {
+          "answer": "5",
+          "explanation": "This is the number of vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "In a weighted network, what does the weight on an edge typically represent?",
+      "correct": "A cost, distance, or time for that connection",
+      "correctExplanation": "Weights quantify the effort, distance, or cost of traversing an edge.",
+      "distractors": [
+        {
+          "answer": "The degree of the connected vertices",
+          "explanation": "Degree and weight are independent properties."
+        },
+        {
+          "answer": "The number of paths through that edge",
+          "explanation": "Path count is a global property, not an edge weight."
+        },
+        {
+          "answer": "Whether the edge is directed or not",
+          "explanation": "Direction and weight are separate concepts."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A graph has 4 vertices, each with degree 3. Is this possible?",
+      "correct": "Yes, it is the complete graph K4",
+      "correctExplanation": "K4 has 4 vertices each connected to the other 3, giving degree 3 for all.",
+      "distractors": [
+        {
+          "answer": "No, the degree sum would be odd",
+          "explanation": "The degree sum is 12, which is even."
+        },
+        {
+          "answer": "No, degree cannot exceed 2",
+          "explanation": "Degree can be any non-negative integer."
+        },
+        {
+          "answer": "Yes, but only with loops",
+          "explanation": "K4 achieves this without any loops."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which type of network best models a one-way street system?",
+      "correct": "A directed graph",
+      "correctExplanation": "Directed edges represent one-way connections, matching one-way streets.",
+      "distractors": [
+        {
+          "answer": "An undirected graph",
+          "explanation": "Undirected edges imply two-way travel."
+        },
+        {
+          "answer": "A tree",
+          "explanation": "Trees cannot model street networks with circuits."
+        },
+        {
+          "answer": "A weighted graph",
+          "explanation": "Weights alone do not indicate direction."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "How many leaf vertices does a path graph with 5 vertices have?",
+      "correct": "2",
+      "correctExplanation": "A path graph has exactly 2 endpoints (leaf vertices) with degree 1.",
+      "distractors": [
+        {
+          "answer": "5",
+          "explanation": "This counts all vertices, not just leaves."
+        },
+        {
+          "answer": "0",
+          "explanation": "A path graph always has two endpoints."
+        },
+        {
+          "answer": "1",
+          "explanation": "Both ends of the path are leaf vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "What is the degree of vertex A if A has edges to B, C, D and a loop to itself?",
+      "correct": "5",
+      "correctExplanation": "Edges to B, C, D contribute 3 to the degree. The loop contributes 2. Total = 5.",
+      "distractors": [
+        {
+          "answer": "4",
+          "explanation": "This counts the loop as 1 instead of 2."
+        },
+        {
+          "answer": "3",
+          "explanation": "This ignores the loop entirely."
+        },
+        {
+          "answer": "6",
+          "explanation": "This overcounts the loop contribution."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "An Euler circuit visits every {{blank:1}} exactly once and returns to the start. It exists when all vertices have {{blank:2}} degree.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "edge",
+          "correctExplanation": "An Euler circuit traverses each edge exactly once.",
+          "distractors": [
+            {
+              "answer": "vertex",
+              "explanation": "Visiting each vertex once describes a Hamiltonian circuit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "path",
+              "explanation": "A path is a sequence of edges, not what is visited once.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "even",
+          "correctExplanation": "Euler's theorem requires all vertices to have even degree for a circuit to exist.",
+          "distractors": [
+            {
+              "answer": "odd",
+              "explanation": "Odd degree allows an Euler path (two odd vertices), not a circuit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal",
+              "explanation": "Equal degree is not required; only that all degrees are even.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "A complete graph with n vertices has {{blank:1}} edges and every vertex has degree {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n(n\u22121)/2",
+          "correctExplanation": "Each pair of distinct vertices shares one edge: C(n,2) = n(n\u22121)/2.",
+          "distractors": [
+            {
+              "answer": "n\u00b2",
+              "explanation": "n\u00b2 overcounts by including self-connections and double-counting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "n",
+              "explanation": "n edges would give a very sparse graph, not a complete one.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n \u2212 1",
+          "correctExplanation": "Each vertex connects to all other n\u22121 vertices.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "A vertex cannot connect to itself in a simple graph.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "Only path or cycle graphs have all vertices with degree 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A bridge is an edge whose removal {{blank:1}} the network. A cut vertex is a vertex whose removal {{blank:2}} the network.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "disconnects",
+          "correctExplanation": "Removing a bridge splits a connected network into separate parts.",
+          "distractors": [
+            {
+              "answer": "strengthens",
+              "explanation": "Removing an edge cannot add connectivity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "completes",
+              "explanation": "Removing elements reduces connections, not completes them.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "disconnects",
+          "correctExplanation": "A cut vertex is critical for maintaining connectivity, similar to a bridge.",
+          "distractors": [
+            {
+              "answer": "isolates",
+              "explanation": "'Isolates' is imprecise; the vertex's removal disconnects the graph.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "connects",
+              "explanation": "Removing a vertex reduces connections, not adds them.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "In a directed graph, the in-degree of a vertex counts edges {{blank:1}} that vertex, while the out-degree counts edges {{blank:2}} that vertex.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "arriving at",
+          "correctExplanation": "In-degree measures how many directed edges point toward the vertex.",
+          "distractors": [
+            {
+              "answer": "leaving",
+              "explanation": "Edges leaving a vertex contribute to out-degree.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "bypassing",
+              "explanation": "Bypassing edges do not touch the vertex.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "leaving",
+          "correctExplanation": "Out-degree measures how many directed edges start from the vertex.",
+          "distractors": [
+            {
+              "answer": "arriving at",
+              "explanation": "Arriving edges contribute to in-degree.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "adjacent to",
+              "explanation": "Adjacent is an undirected concept that does not distinguish direction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The handshaking lemma states that the sum of all vertex degrees equals {{blank:1}} times the number of edges, so the number of vertices with {{blank:2}} degree must be even.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Each edge contributes 1 to the degree of each endpoint, totalling 2 per edge.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Each edge touches two vertices, contributing 2 to the degree sum.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "n is the vertex count, unrelated to the degree-edge relationship.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "odd",
+          "correctExplanation": "If the total must be even, the number of odd-degree vertices must also be even.",
+          "distractors": [
+            {
+              "answer": "even",
+              "explanation": "Even-degree vertices already contribute even amounts, so their count is unrestricted.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Vertices with degree zero are isolated; this is not what the lemma constrains.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A spanning tree of a connected graph uses all {{blank:1}} but only {{blank:2}} edges, forming a tree.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertices",
+          "correctExplanation": "A spanning tree must include every vertex of the original graph.",
+          "distractors": [
+            {
+              "answer": "edges",
+              "explanation": "A spanning tree uses only n\u22121 edges, not all edges.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "circuits",
+              "explanation": "A tree by definition has no circuits.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n \u2212 1",
+          "correctExplanation": "A tree with n vertices has exactly n\u22121 edges.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "n edges would create at least one circuit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n + 1",
+              "explanation": "Extra edges create circuits, disqualifying it as a tree.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A planar graph with 6 vertices can have at most 12 edges.",
+      "correct": "True",
+      "correctExplanation": "By Euler's formula for planar graphs: edges \u2264 3\u00d7vertices \u2212 6 = 3\u00d76 \u2212 6 = 12.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Planar graphs have no limit on the number of edges."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "A graph with 5 vertices and 3 edges must be connected.",
+      "correct": "False",
+      "correctExplanation": "A tree with 5 vertices needs 4 edges for connectivity. With only 3 edges, the graph must have at least 2 components.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "3 edges is enough to connect 5 vertices in a chain."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Euler's formula for connected planar graphs states V \u2212 E + F = 2. A graph has 8 vertices and 12 edges. How many faces does it have?",
+      "correct": "6",
+      "correctExplanation": "F = 2 \u2212 V + E = 2 \u2212 8 + 12 = 6.",
+      "distractors": [
+        {
+          "answer": "4",
+          "explanation": "This uses an incorrect version of the formula."
+        },
+        {
+          "answer": "8",
+          "explanation": "This equals the number of vertices."
+        },
+        {
+          "answer": "2",
+          "explanation": "2 is the Euler characteristic, not the face count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A network of 10 towns needs the minimum number of roads so every town is reachable. How many roads are needed?",
+      "correct": "9",
+      "correctExplanation": "A spanning tree connects all n vertices with n\u22121 = 9 edges.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "10 edges is one more than the minimum."
+        },
+        {
+          "answer": "45",
+          "explanation": "This is the complete graph K10."
+        },
+        {
+          "answer": "8",
+          "explanation": "8 edges cannot connect 10 vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A graph has vertices with degrees 3, 3, 3, 3, 3. Can this graph exist?",
+      "correct": "No, the degree sum is odd",
+      "correctExplanation": "Sum = 3\u00d75 = 15, which is odd. The handshaking lemma requires an even degree sum.",
+      "distractors": [
+        {
+          "answer": "Yes, with 7 edges",
+          "explanation": "An odd degree sum means no valid graph exists."
+        },
+        {
+          "answer": "Yes, with 8 edges",
+          "explanation": "15/2 is not an integer, so no edge count works."
+        },
+        {
+          "answer": "Yes, it is a complete graph",
+          "explanation": "K5 has degree 4, not 3, at each vertex."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Which algorithm finds the shortest path between two vertices in a weighted graph?",
+      "correct": "Dijkstra's algorithm",
+      "correctExplanation": "Dijkstra's algorithm efficiently finds the shortest path from a source to all other vertices in a weighted graph.",
+      "distractors": [
+        {
+          "answer": "Kruskal's algorithm",
+          "explanation": "Kruskal's finds the minimum spanning tree, not shortest path."
+        },
+        {
+          "answer": "Euler's method",
+          "explanation": "Euler's method solves differential equations, not graph paths."
+        },
+        {
+          "answer": "Depth-first search",
+          "explanation": "DFS explores reachability but does not guarantee shortest paths."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A minimum spanning tree of a weighted graph with 7 vertices has how many edges?",
+      "correct": "6",
+      "correctExplanation": "Any spanning tree of n vertices has n\u22121 edges. 7\u22121 = 6.",
+      "distractors": [
+        {
+          "answer": "7",
+          "explanation": "A tree has one fewer edge than vertices."
+        },
+        {
+          "answer": "8",
+          "explanation": "This exceeds the tree edge count."
+        },
+        {
+          "answer": "5",
+          "explanation": "This has too few edges to span 7 vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "If a connected graph has 10 vertices and 15 edges, how many edges must be removed to form a spanning tree?",
+      "correct": "6",
+      "correctExplanation": "A spanning tree has n\u22121 = 9 edges. Remove 15\u22129 = 6 edges.",
+      "distractors": [
+        {
+          "answer": "5",
+          "explanation": "This subtracts vertices from edges."
+        },
+        {
+          "answer": "9",
+          "explanation": "This is the number of tree edges, not removed edges."
+        },
+        {
+          "answer": "10",
+          "explanation": "This is the number of vertices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "In a network model of a social media platform, what do vertices and edges represent?",
+      "correct": "Users and friendships or conn",
+      "correctExplanation": "Each user is a vertex and each connection (friendship, follow) is an edge.",
+      "distractors": [
+        {
+          "answer": "Posts and comments",
+          "explanation": "Posts are content, not structural elements of the network."
+        },
+        {
+          "answer": "Websites and hyperlinks",
+          "explanation": "This models the web, not social media users."
+        },
+        {
+          "answer": "Messages and timestamps",
+          "explanation": "These are data attributes, not network elements."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A bipartite graph has vertices split into two groups with edges only between groups. K3,3 has how many edges?",
+      "correct": "9",
+      "correctExplanation": "K3,3 connects each of 3 vertices to each of 3 others: 3\u00d73 = 9 edges.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "This adds 3+3 instead of multiplying."
+        },
+        {
+          "answer": "3",
+          "explanation": "This counts only one group."
+        },
+        {
+          "answer": "12",
+          "explanation": "This overcounts edges."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A graph has a Hamiltonian path. What does this mean?",
+      "correct": "A path visits every vertex exactly once",
+      "correctExplanation": "A Hamiltonian path passes through each vertex precisely once.",
+      "distractors": [
+        {
+          "answer": "A path visits every edge once",
+          "explanation": "Visiting every edge describes an Euler path."
+        },
+        {
+          "answer": "A path returns to its starting vertex",
+          "explanation": "This describes a circuit, not necessarily Hamiltonian."
+        },
+        {
+          "answer": "A path uses the shortest route",
+          "explanation": "Shortest paths are unrelated to Hamiltonian paths."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "In a network representing airline routes, removing a hub airport vertex would likely do what?",
+      "correct": "Disconnect parts of the network",
+      "correctExplanation": "A hub has many connections; its removal can isolate regions that only connect through it.",
+      "distractors": [
+        {
+          "answer": "Improve network efficiency",
+          "explanation": "Removing a hub reduces connectivity and access."
+        },
+        {
+          "answer": "Have no noticeable effect",
+          "explanation": "Hub removal significantly impacts a network."
+        },
+        {
+          "answer": "Add more routes",
+          "explanation": "Removing a vertex removes routes, not adds them."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Kruskal's algorithm is used to find what in a weighted graph?",
+      "correct": "The minimum spanning tree",
+      "correctExplanation": "Kruskal's algorithm selects edges in order of weight to build a spanning tree of minimum total weight.",
+      "distractors": [
+        {
+          "answer": "The shortest path between",
+          "explanation": "Shortest paths use Dijkstra's or similar algorithms."
+        },
+        {
+          "answer": "An Euler circuit",
+          "explanation": "Euler circuits depend on vertex degrees, not edge weights."
+        },
+        {
+          "answer": "The maximum flow",
+          "explanation": "Maximum flow uses Ford-Fulkerson or similar algorithms."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A graph with 6 vertices has 9 edges. How many circuits does it contain at minimum?",
+      "correct": "4",
+      "correctExplanation": "A spanning tree needs 5 edges. Extra edges: 9\u22125 = 4. Each extra edge creates at least one circuit.",
+      "distractors": [
+        {
+          "answer": "3",
+          "explanation": "This underestimates the circuit count."
+        },
+        {
+          "answer": "9",
+          "explanation": "This equals the number of edges."
+        },
+        {
+          "answer": "1",
+          "explanation": "Four extra edges create at least 4 independent circuits."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Euler's formula for connected planar graphs states V \u2212 E + F = {{blank:1}}, where V is vertices, E is edges, and F is {{blank:2}} including the outer face.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "The Euler characteristic for connected planar graphs is always 2.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The Euler characteristic is 2, not 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "The formula gives 2, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "faces",
+          "correctExplanation": "Faces are the regions bounded by edges, including the unbounded outer region.",
+          "distractors": [
+            {
+              "answer": "vertices",
+              "explanation": "V already counts vertices; F counts faces.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "edges",
+              "explanation": "E already counts edges; F counts faces.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A spanning tree includes all {{blank:1}} of the original graph but uses only {{blank:2}} edges to maintain connectivity without circuits.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertices",
+          "correctExplanation": "Every vertex must be included in a spanning tree.",
+          "distractors": [
+            {
+              "answer": "edges",
+              "explanation": "A spanning tree uses only a subset of edges.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "circuits",
+              "explanation": "Spanning trees contain no circuits.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n \u2212 1",
+          "correctExplanation": "A tree with n vertices always has exactly n\u22121 edges.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "n edges would create at least one circuit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n/2",
+              "explanation": "Half the vertices would leave the tree disconnected.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Dijkstra's algorithm finds the {{blank:1}} path from a source vertex to all other vertices in a graph with {{blank:2}} edge weights.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "shortest",
+          "correctExplanation": "Dijkstra's algorithm computes minimum-cost paths from a single source.",
+          "distractors": [
+            {
+              "answer": "longest",
+              "explanation": "Longest path is a different (NP-hard) problem.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Dijkstra's produces deterministic shortest paths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "non-negative",
+          "correctExplanation": "Dijkstra's algorithm requires all edge weights to be non-negative.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "Negative weights require Bellman-Ford, not Dijkstra's.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal",
+              "explanation": "Equal weights are a special case; Dijkstra's works generally with non-negatives.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "In a bipartite graph, vertices are divided into two sets with edges only between {{blank:1}} sets. A complete bipartite graph Km,n has {{blank:2}} edges.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "different",
+          "correctExplanation": "Bipartite graphs only allow edges connecting vertices in different sets.",
+          "distractors": [
+            {
+              "answer": "the same",
+              "explanation": "Edges within the same set violate the bipartite property.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "overlapping",
+              "explanation": "The two sets in a bipartite graph are disjoint.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "m \u00d7 n",
+          "correctExplanation": "Each vertex in one set connects to every vertex in the other: m \u00d7 n edges.",
+          "distractors": [
+            {
+              "answer": "m + n",
+              "explanation": "This adds the set sizes rather than multiplying.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "m \u00d7 n / 2",
+              "explanation": "Each edge is counted once, not twice.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The chromatic number of a graph is the minimum number of {{blank:1}} needed so that no two adjacent vertices share the same {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "colours",
+          "correctExplanation": "Graph colouring assigns colours to vertices with adjacency constraints.",
+          "distractors": [
+            {
+              "answer": "edges",
+              "explanation": "Edge colouring is different from vertex colouring.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "vertices",
+              "explanation": "We colour vertices, but the number needed is of colours.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "colour",
+          "correctExplanation": "Adjacent vertices must receive different colours.",
+          "distractors": [
+            {
+              "answer": "degree",
+              "explanation": "Degree is a property of individual vertices, not a colouring constraint.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "edge",
+              "explanation": "Adjacent vertices share an edge, but it is their colour that must differ.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A Hamiltonian path visits every {{blank:1}} exactly once, while an Euler path visits every {{blank:2}} exactly once.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertex",
+          "correctExplanation": "Hamiltonian paths are defined by visiting each vertex once.",
+          "distractors": [
+            {
+              "answer": "edge",
+              "explanation": "Visiting each edge once defines an Euler path.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "face",
+              "explanation": "Faces are regions, not elements of a path.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "edge",
+          "correctExplanation": "Euler paths traverse each edge exactly once.",
+          "distractors": [
+            {
+              "answer": "vertex",
+              "explanation": "Visiting each vertex once defines a Hamiltonian path.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "circuit",
+              "explanation": "Circuits are structures within graphs, not elements visited by paths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Kruskal's algorithm builds a minimum spanning tree by selecting edges in order of {{blank:1}} weight, skipping any edge that would create a {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "increasing",
+          "correctExplanation": "Edges are sorted from lightest to heaviest and added greedily.",
+          "distractors": [
+            {
+              "answer": "decreasing",
+              "explanation": "Starting with heaviest edges would not produce a minimum tree.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random selection does not guarantee a minimum spanning tree.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "circuit",
+          "correctExplanation": "Adding an edge that creates a cycle would violate the tree property.",
+          "distractors": [
+            {
+              "answer": "bridge",
+              "explanation": "A bridge is a connectivity feature, not what is avoided.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "leaf",
+              "explanation": "Leaf vertices are acceptable in a spanning tree.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A network with n vertices and more than n\u22121 edges must contain at least one {{blank:1}}. The number of independent circuits equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "circuit",
+          "correctExplanation": "Extra edges beyond n\u22121 in a connected graph create circuits.",
+          "distractors": [
+            {
+              "answer": "bridge",
+              "explanation": "Bridges are critical edges, not a consequence of extra edges.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "leaf",
+              "explanation": "Leaves are degree-1 vertices unrelated to edge surplus.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "E \u2212 V + 1",
+          "correctExplanation": "The circuit rank (cyclomatic number) is E \u2212 V + 1 for a connected graph.",
+          "distractors": [
+            {
+              "answer": "E \u2212 V",
+              "explanation": "This omits the +1 term.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "V \u2212 E",
+              "explanation": "This gives a negative value when circuits exist.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "The adjacency matrix of a graph with n vertices is an n \u00d7 n matrix where entry (i,j) is {{blank:1}} if there is an edge between vertex i and vertex j, and {{blank:2}} otherwise.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "A 1 indicates the presence of an edge between the two vertices.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "0 indicates no edge, not the presence of one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "the weight",
+              "explanation": "Weighted adjacency matrices use weights, but the basic version uses 1.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "A 0 indicates no edge exists between the two vertices.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1 indicates an edge, not its absence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "\u22121",
+              "explanation": "Negative values are not used in standard adjacency matrices.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "In a network model of Melbourne's train system, stations are {{blank:1}} and tracks between stations are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertices",
+          "correctExplanation": "Stations are the nodes (connection points) in the network.",
+          "distractors": [
+            {
+              "answer": "edges",
+              "explanation": "Edges represent connections, not locations.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "weights",
+              "explanation": "Weights are values on edges, not the stations themselves.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "edges",
+          "correctExplanation": "Train tracks connecting stations are the edges (links) of the network.",
+          "distractors": [
+            {
+              "answer": "vertices",
+              "explanation": "Vertices represent stations, not the tracks.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "faces",
+              "explanation": "Faces are regions in a planar graph, not connections.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "A cut vertex is a vertex whose removal {{blank:1}} a connected graph. Identifying cut vertices helps find {{blank:2}} in network infrastructure.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "disconnects",
+          "correctExplanation": "Removing a cut vertex separates the graph into disconnected components.",
+          "distractors": [
+            {
+              "answer": "connects",
+              "explanation": "Removing a vertex cannot add connections.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "strengthens",
+              "explanation": "Removal weakens, not strengthens, a network.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "vulnerabilities",
+          "correctExplanation": "Cut vertices are single points of failure in networks.",
+          "distractors": [
+            {
+              "answer": "shortcuts",
+              "explanation": "Cut vertices indicate weakness, not efficiency gains.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "redundancies",
+              "explanation": "Redundancies protect against failures; cut vertices indicate their absence.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "The degree sequence of a graph lists vertex degrees in {{blank:1}} order. A valid degree sequence must have an {{blank:2}} sum.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "non-increasing",
+          "correctExplanation": "By convention, degrees are listed from largest to smallest.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "The sequence follows a specific ordering convention.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "alphabetical",
+              "explanation": "Degrees are numbers, not arranged alphabetically.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "even",
+          "correctExplanation": "The handshaking lemma requires the sum of all degrees to be even.",
+          "distractors": [
+            {
+              "answer": "odd",
+              "explanation": "An odd sum would violate the handshaking lemma.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "prime",
+              "explanation": "The sum need not be prime; it must be even.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A connected planar graph has 10 vertices and 15 edges. How many faces does it have?",
+      "correct": "7",
+      "correctExplanation": "Euler's formula: F = 2 \u2212 V + E = 2 \u2212 10 + 15 = 7.",
+      "distractors": [
+        {
+          "answer": "5",
+          "explanation": "This uses an incorrect formula."
+        },
+        {
+          "answer": "10",
+          "explanation": "This equals the vertex count."
+        },
+        {
+          "answer": "3",
+          "explanation": "This significantly underestimates."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "K3,3 is a bipartite graph. Is it planar?",
+      "correct": "No, K3,3 is non-planar by Kuratowski's theorem",
+      "correctExplanation": "Kuratowski's theorem states that K5 and K3,3 are the fundamental non-planar graphs.",
+      "distractors": [
+        {
+          "answer": "Yes, it can be drawn without crossings",
+          "explanation": "K3,3 cannot be drawn in a plane without edge crossings."
+        },
+        {
+          "answer": "Yes, because it is bipartite",
+          "explanation": "Being bipartite does not guarantee planarity."
+        },
+        {
+          "answer": "Only if edges are curved",
+          "explanation": "Curved edges still count as crossings in planarity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A connected graph has 8 vertices, all with even degree. What can be concluded?",
+      "correct": "An Euler circuit exists in the",
+      "correctExplanation": "A connected graph where all vertices have even degree always has an Euler circuit.",
+      "distractors": [
+        {
+          "answer": "A Hamiltonian path exists",
+          "explanation": "Hamiltonian paths are not guaranteed by even degrees."
+        },
+        {
+          "answer": "The graph is a tree",
+          "explanation": "Trees have leaf vertices with odd degree."
+        },
+        {
+          "answer": "The graph is bipartite",
+          "explanation": "Even degrees do not guarantee bipartiteness."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "In a weighted graph with 6 vertices and unique edge weights, how many minimum spanning trees exist?",
+      "correct": "Exactly one",
+      "correctExplanation": "When all edge weights are distinct, the minimum spanning tree is unique.",
+      "distractors": [
+        {
+          "answer": "Multiple",
+          "explanation": "Uniqueness is guaranteed by distinct weights."
+        },
+        {
+          "answer": "Zero",
+          "explanation": "Every connected weighted graph has at least one MST."
+        },
+        {
+          "answer": "Cannot be de",
+          "explanation": "Distinct weights guarantee a unique MST."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A graph has 12 vertices. If no vertex has degree less than 6, must the graph be connected?",
+      "correct": "Yes, by the handshaking argument",
+      "correctExplanation": "If every vertex has degree \u2265 n/2 (here 6 \u2265 12/2), Dirac's theorem guarantees connectivity (and a Hamiltonian cycle).",
+      "distractors": [
+        {
+          "answer": "No, it could be disconnected",
+          "explanation": "Minimum degree \u2265 n/2 guarantees connectivity."
+        },
+        {
+          "answer": "Only if it is planar",
+          "explanation": "The connectivity result holds regardless of planarity."
+        },
+        {
+          "answer": "Only if n is even",
+          "explanation": "The theorem applies for any n with min degree \u2265 n/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "What is the time complexity of Dijkstra's algorithm using a binary heap?",
+      "correct": "O((V + E)",
+      "correctExplanation": "Each vertex extraction and edge relaxation involves heap operations of O(log V).",
+      "distractors": [
+        {
+          "answer": "O(V\u00b2)",
+          "explanation": "This is the complexity without a heap."
+        },
+        {
+          "answer": "O(E log E)",
+          "explanation": "This is closer to Kruskal's complexity."
+        },
+        {
+          "answer": "O(V \u00d7 E)",
+          "explanation": "This overestimates the actual complexity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A network has 20 vertices. The minimum number of edges for a connected graph and the maximum for a tree are respectively what?",
+      "correct": "Both are 19",
+      "correctExplanation": "Minimum connected = n\u22121 = 19 (a tree). Maximum tree = n\u22121 = 19 (also a tree). They are the same.",
+      "distractors": [
+        {
+          "answer": "19 and 20",
+          "explanation": "A tree cannot have n edges."
+        },
+        {
+          "answer": "18 and 19",
+          "explanation": "18 edges cannot connect 20 vertices."
+        },
+        {
+          "answer": "20 and 19",
+          "explanation": "20 is more than the minimum needed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "In the Petersen graph (10 vertices, 15 edges, 3-regular), how many independent circuits exist?",
+      "correct": "6",
+      "correctExplanation": "Circuit rank = E \u2212 V + 1 = 15 \u2212 10 + 1 = 6.",
+      "distractors": [
+        {
+          "answer": "5",
+          "explanation": "This omits the +1 term."
+        },
+        {
+          "answer": "10",
+          "explanation": "This equals the vertex count."
+        },
+        {
+          "answer": "15",
+          "explanation": "This equals the edge count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A graph is 3-colourable. What is the maximum clique size it can contain?",
+      "correct": "3",
+      "correctExplanation": "A clique of size k requires k colours. A 3-colourable graph can have cliques of size at most 3.",
+      "distractors": [
+        {
+          "answer": "2",
+          "explanation": "3-colourable graphs can contain triangles (3-cliques)."
+        },
+        {
+          "answer": "4",
+          "explanation": "A 4-clique would require 4 colours."
+        },
+        {
+          "answer": "Cannot",
+          "explanation": "The chromatic number directly bounds the clique size."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "In a network flow problem, what does the max-flow min-cut theorem state?",
+      "correct": "Maximum flow equals the minimum cut c",
+      "correctExplanation": "The theorem states that the maximum flow through a network equals the capacity of the minimum cut.",
+      "distractors": [
+        {
+          "answer": "Flow always exceeds the cut",
+          "explanation": "Flow is bounded by the minimum cut."
+        },
+        {
+          "answer": "Minimum flow equals maximum cut",
+          "explanation": "The theorem relates max-flow to min-cut, not the reverse."
+        },
+        {
+          "answer": "Cuts have no relation to flow",
+          "explanation": "The theorem establishes a fundamental relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A network models 8 computers. For fault tolerance, at least 2 paths between every pair are needed. What is the minimum number of edges?",
+      "correct": "8",
+      "correctExplanation": "A 2-edge-connected graph needs at least n edges (a cycle through all vertices: 8 edges for 8 vertices).",
+      "distractors": [
+        {
+          "answer": "7",
+          "explanation": "7 edges form a tree with single paths only."
+        },
+        {
+          "answer": "16",
+          "explanation": "This provides more redundancy than the minimum required."
+        },
+        {
+          "answer": "12",
+          "explanation": "This exceeds the minimum for 2-connectivity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A strongly connected directed graph means what?",
+      "correct": "A directed path exists between every ordered",
+      "correctExplanation": "Every vertex is reachable from every other vertex following edge directions.",
+      "distractors": [
+        {
+          "answer": "Every vertex has equal in-degree and out-degree",
+          "explanation": "Equal degrees are not required for strong connectivity."
+        },
+        {
+          "answer": "The graph has no directed cycles",
+          "explanation": "Strongly connected graphs must have directed cycles."
+        },
+        {
+          "answer": "Removing any edge disconnects the graph",
+          "explanation": "This describes a bridge, not strong connectivity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "The four colour theorem states that every planar graph can be coloured with at most how many colours?",
+      "correct": "4",
+      "correctExplanation": "The four colour theorem proves that 4 colours suffice for any planar graph vertex colouring.",
+      "distractors": [
+        {
+          "answer": "3",
+          "explanation": "Some planar graphs require 4 colours."
+        },
+        {
+          "answer": "5",
+          "explanation": "4 is sufficient; 5 is more than needed."
+        },
+        {
+          "answer": "2",
+          "explanation": "Odd cycles in planar graphs need more than 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "In a weighted directed acyclic graph (DAG), which approach finds the shortest path most efficiently?",
+      "correct": "Topological sort followed",
+      "correctExplanation": "Processing vertices in topological order allows single-pass relaxation in O(V+E) time.",
+      "distractors": [
+        {
+          "answer": "Dijkstra's algorithm",
+          "explanation": "Dijkstra works but is slower than the topological approach for DAGs."
+        },
+        {
+          "answer": "Breadth-first search",
+          "explanation": "BFS does not account for edge weights."
+        },
+        {
+          "answer": "Brute-force all paths",
+          "explanation": "This is exponentially slower."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The circuit rank of a connected graph is E \u2212 V + {{blank:1}} and represents the number of {{blank:2}} circuits.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "For a connected graph, circuit rank = E \u2212 V + 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Omitting the +1 undercounts circuits.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the Euler characteristic, not the circuit rank constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "independent",
+          "correctExplanation": "Independent circuits form a basis; all other circuits are combinations of these.",
+          "distractors": [
+            {
+              "answer": "dependent",
+              "explanation": "Dependent circuits can be expressed through independent ones.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "total",
+              "explanation": "The total circuit count may exceed the circuit rank.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Kuratowski's theorem states that a graph is non-planar if and only if it contains a subdivision of {{blank:1}} or {{blank:2}} as a subgraph.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "K5",
+          "correctExplanation": "The complete graph on 5 vertices is one of the two fundamental non-planar graphs.",
+          "distractors": [
+            {
+              "answer": "K4",
+              "explanation": "K4 is planar and not an obstruction.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "K6",
+              "explanation": "K5 is the smaller obstruction; K6 contains K5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "K3,3",
+          "correctExplanation": "The complete bipartite graph K3,3 is the other fundamental non-planar graph.",
+          "distractors": [
+            {
+              "answer": "K2,3",
+              "explanation": "K2,3 is planar and not an obstruction.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "K4,4",
+              "explanation": "K3,3 is the smaller obstruction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A minimum spanning tree minimises the total {{blank:1}} of edges while maintaining {{blank:2}} across all vertices.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "weight",
+          "correctExplanation": "The MST has the smallest possible total edge weight.",
+          "distractors": [
+            {
+              "answer": "number",
+              "explanation": "Minimum edges gives a spanning tree, but MST minimises weight.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "length",
+              "explanation": "While length can be a weight, the general term is weight.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "connectivity",
+          "correctExplanation": "The spanning tree must connect all vertices.",
+          "distractors": [
+            {
+              "answer": "planarity",
+              "explanation": "Planarity is a drawing property, not a spanning tree requirement.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "symmetry",
+              "explanation": "Symmetry is a visual property, not a connectivity requirement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "In network analysis, betweenness centrality measures how often a vertex lies on {{blank:1}} between other pairs, identifying {{blank:2}} in the network.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "shortest paths",
+          "correctExplanation": "Betweenness counts how many shortest paths pass through a vertex.",
+          "distractors": [
+            {
+              "answer": "longest paths",
+              "explanation": "Betweenness uses shortest paths, not longest.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "circuits",
+              "explanation": "Circuits are cycles; betweenness uses shortest paths.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "influential nodes",
+          "correctExplanation": "High betweenness vertices control information flow between groups.",
+          "distractors": [
+            {
+              "answer": "isolated nodes",
+              "explanation": "Isolated nodes have zero betweenness.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "leaf nodes",
+              "explanation": "Leaf nodes typically have low betweenness.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The max-flow min-cut theorem states that the maximum {{blank:1}} in a network equals the capacity of the minimum {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "flow",
+          "correctExplanation": "The theorem determines the maximum amount that can flow through the network.",
+          "distractors": [
+            {
+              "answer": "path",
+              "explanation": "A path is a route, not a quantity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "weight",
+              "explanation": "Weight is an edge property; flow is what the theorem maximises.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cut",
+          "correctExplanation": "A cut separates source from sink; its capacity limits the flow.",
+          "distractors": [
+            {
+              "answer": "edge",
+              "explanation": "A cut may contain multiple edges; a single edge is not necessarily the bottleneck.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "path",
+              "explanation": "The minimum cut is a set of edges, not a single path.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A graph is {{blank:1}} if every pair of vertices is connected by an edge. The complete graph Kn has {{blank:2}} edges.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "complete",
+          "correctExplanation": "A complete graph has every possible edge between its vertices.",
+          "distractors": [
+            {
+              "answer": "connected",
+              "explanation": "Connected only requires paths, not direct edges, between all pairs.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "regular",
+              "explanation": "Regular means all vertices have equal degree, not all edges present.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n(n\u22121)/2",
+          "correctExplanation": "Each pair of vertices contributes one edge: C(n,2) = n(n\u22121)/2.",
+          "distractors": [
+            {
+              "answer": "n\u00b2",
+              "explanation": "This overcounts by including self-loops and double-counting.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2n",
+              "explanation": "This significantly underestimates for large n.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Prim's algorithm builds a minimum spanning tree by starting from one vertex and repeatedly adding the {{blank:1}} edge that connects a tree vertex to a {{blank:2}} vertex.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "lightest",
+          "correctExplanation": "Prim's greedily selects the minimum-weight edge crossing the cut.",
+          "distractors": [
+            {
+              "answer": "heaviest",
+              "explanation": "Selecting the heaviest edge would not produce a minimum spanning tree.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "shortest",
+              "explanation": "While shortest can apply to distance, lightest is the general term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "non-tree",
+          "correctExplanation": "The new edge must connect to a vertex not yet in the growing tree.",
+          "distractors": [
+            {
+              "answer": "tree",
+              "explanation": "Adding an edge between two tree vertices creates a circuit.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "isolated",
+              "explanation": "Non-tree vertices may not be isolated; they are simply not yet in the MST.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Euler's formula V \u2212 E + F = 2 applies to {{blank:1}} planar graphs. For disconnected graphs with c components, the formula becomes V \u2212 E + F = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "connected",
+          "correctExplanation": "The standard formula requires the graph to be connected.",
+          "distractors": [
+            {
+              "answer": "complete",
+              "explanation": "Completeness is not required; only connectivity and planarity.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "regular",
+              "explanation": "Regularity is not required for Euler's formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1 + c",
+          "correctExplanation": "Each additional component adds 1 to the Euler characteristic.",
+          "distractors": [
+            {
+              "answer": "2c",
+              "explanation": "The formula is 1+c, not 2c.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The constant 2 only applies to connected graphs.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A graph is Hamiltonian if it contains a cycle visiting every {{blank:1}} exactly once. Dirac's theorem guarantees this when every vertex has degree at least {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertex",
+          "correctExplanation": "A Hamiltonian cycle visits every vertex exactly once.",
+          "distractors": [
+            {
+              "answer": "edge",
+              "explanation": "Visiting every edge once describes an Euler cycle.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "face",
+              "explanation": "Faces are regions in planar graphs, not path elements.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n/2",
+          "correctExplanation": "Dirac's theorem requires minimum degree \u2265 n/2 for a Hamiltonian cycle.",
+          "distractors": [
+            {
+              "answer": "n\u22121",
+              "explanation": "Degree n\u22121 is the complete graph; Dirac's threshold is lower.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "Degree 2 is too low; many such graphs lack Hamiltonian cycles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "In network resilience analysis, vertex connectivity is the minimum number of {{blank:1}} whose removal disconnects the graph, measuring the network's {{blank:2}} against targeted attacks.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "vertices",
+          "correctExplanation": "Vertex connectivity counts critical vertices that maintain connectivity.",
+          "distractors": [
+            {
+              "answer": "edges",
+              "explanation": "Edge connectivity counts edges, which is a related but different measure.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "paths",
+              "explanation": "Paths are routes, not elements removed in connectivity analysis.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "robustness",
+          "correctExplanation": "Higher vertex connectivity means the network resists more targeted failures.",
+          "distractors": [
+            {
+              "answer": "weakness",
+              "explanation": "Vertex connectivity measures strength, not weakness.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "speed",
+              "explanation": "Speed of the network is unrelated to vertex connectivity.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "An adjacency matrix for an undirected graph is always {{blank:1}} because edge (i,j) implies edge (j,i). The sum of row i gives the {{blank:2}} of vertex i.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "symmetric",
+          "correctExplanation": "Undirected edges create matching entries at (i,j) and (j,i).",
+          "distractors": [
+            {
+              "answer": "diagonal",
+              "explanation": "The matrix is symmetric, not diagonal.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "triangular",
+              "explanation": "Symmetry means it is not purely upper or lower triangular.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "degree",
+          "correctExplanation": "The row sum counts all edges incident to vertex i.",
+          "distractors": [
+            {
+              "answer": "weight",
+              "explanation": "Row sums give degree in unweighted graphs, not weight.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "distance",
+              "explanation": "Distance is a path property, not a row sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The chromatic polynomial P(G,k) counts the number of valid {{blank:1}} of graph G using at most k colours. The chromatic number is the smallest k where P(G,k) is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "colourings",
+          "correctExplanation": "P(G,k) counts distinct proper vertex colourings using at most k colours.",
+          "distractors": [
+            {
+              "answer": "edges",
+              "explanation": "The chromatic polynomial concerns vertex colouring, not edges.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "paths",
+              "explanation": "Paths are unrelated to chromatic polynomials.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "The smallest k with P(G,k) > 0 is the chromatic number.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "P(G,k) = 0 means no valid colouring exists with k colours.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "maximum",
+              "explanation": "We seek the first positive value, not the maximum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

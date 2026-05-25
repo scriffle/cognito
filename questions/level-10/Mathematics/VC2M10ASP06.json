@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10ASP06",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to design, test and refine algorithms for spatial problems, and communicate and justify our approaches.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to design, test and refine algorithms for spatial problems, and communicate and justify our approaches.",
+    "y": [
+      "Designing algorithms for geometric and spatial problems brings together mathematical precision and computational thinking.",
+      "Communicating and justifying our algorithmic approach develops both our mathematical reasoning and our ability to explain complex ideas.",
+      "These skills are directly applicable to computational geometry, robotics, CAD systems and geographic information systems."
+    ],
+    "eg": [
+      "Designing an algorithm to determine whether a point lies inside a given polygon.",
+      "Writing pseudocode to calculate the shortest path between two nodes in a network.",
+      "Creating an algorithm that applies a sequence of transformations to a set of coordinates.",
+      "Testing and refining an algorithm for calculating the area of any polygon from its vertices.",
+      "Communicating our algorithm using both flowcharts and written justification.",
+      "Comparing the efficiency of brute-force versus optimised algorithms for a spatial problem."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "An algorithm is a single calculation step used to solve a problem.",
+      "correct": "False",
+      "correctExplanation": "An algorithm is a finite sequence of well-defined steps, not a single step.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "An algorithm consists of multiple ordered steps."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The shoelace formula calculates the perimeter of a polygon.",
+      "correct": "False",
+      "correctExplanation": "The shoelace formula calculates the area, not the perimeter, of a polygon from its vertex coordinates.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The shoelace formula gives area, not perimeter."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A spatial algorithm solves a geometric problem using a finite sequence of steps.",
+      "correct": "True",
+      "correctExplanation": "By definition, a spatial algorithm is a step-by-step procedure for solving geometric problems.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Spatial algorithms are not finite sequences of steps."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "In the point-in-polygon test, an even number of boundary crossings means the point is inside.",
+      "correct": "False",
+      "correctExplanation": "An even number of crossings means the point is outside; an odd number means inside.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Even crossings indicate outside, odd crossings indicate inside."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Testing an algorithm with edge cases helps identify failures that typical inputs might miss.",
+      "correct": "True",
+      "correctExplanation": "Edge cases test boundary conditions that reveal weaknesses in the algorithm's logic.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Edge cases are not necessary for thorough testing."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Dijkstra's algorithm finds the longest path between two nodes in a network.",
+      "correct": "False",
+      "correctExplanation": "Dijkstra's algorithm finds the shortest path, not the longest path.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Dijkstra's algorithm is designed for shortest paths."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The word 'algorithm' derives from the name of the mathematician al-Khwarizmi.",
+      "correct": "True",
+      "correctExplanation": "The term comes from the Latinised name of the 9th-century Persian mathematician Muhammad ibn Musa al-Khwarizmi.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The word does not derive from al-Khwarizmi."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The shoelace formula requires the polygon vertices to be listed in random order.",
+      "correct": "False",
+      "correctExplanation": "The vertices must be listed in sequential order (either clockwise or anticlockwise) around the polygon.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Vertices must be in order around the polygon."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Refining an algorithm means modifying it after testing reveals errors or inefficiencies.",
+      "correct": "True",
+      "correctExplanation": "Refinement is the process of improving an algorithm based on test results and identified issues.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Refinement is not related to testing results."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A degenerate case in testing refers to a typical everyday input for an algorithm.",
+      "correct": "False",
+      "correctExplanation": "A degenerate case is an extreme or special input, such as collinear points or a zero-area polygon.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Degenerate cases are extreme or boundary inputs."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "An algorithm must produce a correct result for every valid input to be considered reliable.",
+      "correct": "True",
+      "correctExplanation": "Reliability requires consistent correct outputs for all valid inputs within the algorithm's scope.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "An algorithm need not handle all valid inputs."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Pseudocode must follow the exact syntax of a specific programming language.",
+      "correct": "False",
+      "correctExplanation": "Pseudocode is an informal, human-readable description that does not follow any specific language syntax.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Pseudocode is informal and language-independent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What does the shoelace formula calculate for a polygon?",
+      "correct": "the area",
+      "correctExplanation": "The shoelace formula uses vertex coordinates to compute the enclosed area.",
+      "distractors": [
+        {
+          "answer": "the perimeter",
+          "explanation": "Perimeter requires summing edge lengths, not the shoelace method."
+        },
+        {
+          "answer": "the number of sides",
+          "explanation": "The number of sides is simply a count, not a calculation."
+        },
+        {
+          "answer": "the diagonal length",
+          "explanation": "Diagonal length is found using distance formulas."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "In the point-in-polygon ray casting test, a point is inside if the ray crosses the boundary:",
+      "correct": "an odd number of times",
+      "correctExplanation": "Odd crossings mean the ray entered without exiting, so the point is inside.",
+      "distractors": [
+        {
+          "answer": "an even number of times",
+          "explanation": "Even crossings mean the point is outside."
+        },
+        {
+          "answer": "exactly once",
+          "explanation": "One crossing indicates inside, but so do 3, 5, etc."
+        },
+        {
+          "answer": "zero times",
+          "explanation": "Zero crossings means the point is outside."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What does Dijkstra's algorithm find?",
+      "correct": "the shortest path between nodes",
+      "correctExplanation": "Dijkstra's algorithm determines the shortest path in a weighted graph.",
+      "distractors": [
+        {
+          "answer": "the longest path between nodes",
+          "explanation": "Dijkstra's finds shortest, not longest paths."
+        },
+        {
+          "answer": "every possible path in a network",
+          "explanation": "It finds only the optimal path, not all paths."
+        },
+        {
+          "answer": "the most expensive path available",
+          "explanation": "It minimises cost, not maximises it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which of the following is a boundary (edge) case for a polygon area algorithm?",
+      "correct": "three collinear points",
+      "correctExplanation": "Collinear points form a degenerate polygon with zero area, testing robustness.",
+      "distractors": [
+        {
+          "answer": "a regular hexagon",
+          "explanation": "A regular hexagon is a typical case, not a boundary case."
+        },
+        {
+          "answer": "a large rectangle",
+          "explanation": "A large rectangle is a standard input."
+        },
+        {
+          "answer": "a square with integer vertices",
+          "explanation": "This is a typical, non-degenerate case."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Pseudocode is best described as:",
+      "correct": "an informal step-by-step description o",
+      "correctExplanation": "Pseudocode communicates logic in plain language without strict syntax rules.",
+      "distractors": [
+        {
+          "answer": "a formal programming language",
+          "explanation": "Pseudocode is informal and not a programming language."
+        },
+        {
+          "answer": "a diagram showing data flow",
+          "explanation": "This describes a flowchart, not pseudocode."
+        },
+        {
+          "answer": "a compiled computer program",
+          "explanation": "Pseudocode cannot be compiled or executed directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "In the shoelace formula, Area = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|, the absolute value ensures:",
+      "correct": "the result is always positive",
+      "correctExplanation": "The absolute value handles both clockwise and anticlockwise vertex orderings.",
+      "distractors": [
+        {
+          "answer": "the formula works for 3D shapes",
+          "explanation": "The shoelace formula applies only to 2D polygons."
+        },
+        {
+          "answer": "only integer areas are produced",
+          "explanation": "The formula can produce non-integer areas."
+        },
+        {
+          "answer": "negative areas are valid outputs",
+          "explanation": "Negative areas have no physical meaning."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What is the purpose of testing an algorithm?",
+      "correct": "to verify it produces correct output for va",
+      "correctExplanation": "Testing checks that the algorithm behaves as intended across different cases.",
+      "distractors": [
+        {
+          "answer": "to write the algorithm faster",
+          "explanation": "Testing occurs after writing, not during."
+        },
+        {
+          "answer": "to make it run on a specific computer",
+          "explanation": "Testing is about correctness, not hardware."
+        },
+        {
+          "answer": "to translate it into pseudocode",
+          "explanation": "Pseudocode is written before testing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "In Dijkstra's algorithm, the initial distance assigned to non-source nodes is:",
+      "correct": "infinity",
+      "correctExplanation": "All non-source nodes start at infinity because their shortest path is unknown.",
+      "distractors": [
+        {
+          "answer": "zero",
+          "explanation": "Only the source node starts at zero."
+        },
+        {
+          "answer": "one",
+          "explanation": "Distances start at infinity, not one."
+        },
+        {
+          "answer": "the edge",
+          "explanation": "Edge weights are used to update distances during the algorithm."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which step is NOT part of designing a spatial algorithm?",
+      "correct": "choosing a colour scheme for the output",
+      "correctExplanation": "Colour schemes are presentation choices, not algorithmic steps.",
+      "distractors": [
+        {
+          "answer": "defining the input data format",
+          "explanation": "Input format is part of algorithm design."
+        },
+        {
+          "answer": "specifying the sequence of operations",
+          "explanation": "Step ordering is essential in algorithm design."
+        },
+        {
+          "answer": "identifying the expected output",
+          "explanation": "Defining outputs is part of algorithm design."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "The convex hull of a set of points is:",
+      "correct": "the smallest convex polygon enclosing all points",
+      "correctExplanation": "The convex hull is the tightest convex boundary around the point set.",
+      "distractors": [
+        {
+          "answer": "the largest polygon enclosing all points",
+          "explanation": "The convex hull is the smallest, not largest convex polygon."
+        },
+        {
+          "answer": "a circle through all the points",
+          "explanation": "A circle is not a polygon and is not the convex hull."
+        },
+        {
+          "answer": "the line connecting the two farthest points",
+          "explanation": "This is a diameter, not the convex hull."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Refining an algorithm typically occurs:",
+      "correct": "after testing reveals problems",
+      "correctExplanation": "Refinement is driven by issues found during testing.",
+      "distractors": [
+        {
+          "answer": "before the algorithm is designed",
+          "explanation": "Refinement follows design and testing."
+        },
+        {
+          "answer": "only once in the algorithm's lifetime",
+          "explanation": "Algorithms may be refined multiple times."
+        },
+        {
+          "answer": "when the input data is deleted",
+          "explanation": "Data deletion is unrelated to refinement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A finite sequence of well-defined steps for solving a class of problems is called:",
+      "correct": "an algorithm",
+      "correctExplanation": "This is the standard definition of an algorithm.",
+      "distractors": [
+        {
+          "answer": "a hypothesis",
+          "explanation": "A hypothesis is a proposed explanation, not a procedure."
+        },
+        {
+          "answer": "a variable",
+          "explanation": "A variable stores data, not procedures."
+        },
+        {
+          "answer": "an equation",
+          "explanation": "An equation states equality, not a procedure."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The shoelace formula calculates the {{blank:1}} of a polygon using the coordinates of its {{blank:2}} listed in order.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "area",
+          "correctExplanation": "The shoelace formula computes enclosed area from vertex coordinates.",
+          "distractors": [
+            {
+              "answer": "perimeter",
+              "explanation": "Perimeter requires summing side lengths, not the shoelace formula.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "volume",
+              "explanation": "Volume applies to 3D shapes, not 2D polygons.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "vertices",
+          "correctExplanation": "The formula requires the polygon's corner points listed sequentially.",
+          "distractors": [
+            {
+              "answer": "edges",
+              "explanation": "Edges are line segments, not input to the shoelace formula.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "diagonals",
+              "explanation": "Diagonals are not used in the shoelace formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "In the point-in-polygon test, a ray is cast from the point and the number of {{blank:1}} crossings is counted; an odd count means the point is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "boundary",
+          "correctExplanation": "The ray crosses the polygon's edges to determine inside/outside status.",
+          "distractors": [
+            {
+              "answer": "diagonal",
+              "explanation": "Diagonals are internal lines, not boundary edges.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "vertex",
+              "explanation": "Vertex crossings are a special case, not the general method.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inside",
+          "correctExplanation": "An odd number of crossings means the ray entered without fully exiting.",
+          "distractors": [
+            {
+              "answer": "outside",
+              "explanation": "Odd crossings indicate inside, not outside.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "on the boundary",
+              "explanation": "The boundary case requires separate handling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The shoelace formula gives a negative area when vertices are listed anticlockwise.",
+      "correct": "False",
+      "correctExplanation": "The absolute value in the formula ensures the area is always positive regardless of vertex order.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The absolute value makes vertex order irrelevant to the sign."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Dijkstra's algorithm works correctly with negative edge weights.",
+      "correct": "False",
+      "correctExplanation": "Dijkstra's algorithm requires non-negative edge weights; negative weights can produce incorrect results.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Negative weights violate the algorithm's assumptions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "A point on the boundary of a polygon is an edge case for the ray casting algorithm.",
+      "correct": "True",
+      "correctExplanation": "Points on the boundary can give ambiguous crossing counts, making this a well-known edge case.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Boundary points are not considered edge cases."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "An algorithm that works for squares automatically works for all quadrilaterals.",
+      "correct": "False",
+      "correctExplanation": "Squares are a special case; concave or irregular quadrilaterals may cause the algorithm to fail.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Different quadrilateral types may require different handling."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The shoelace formula can be applied to any simple (non-self-intersecting) polygon.",
+      "correct": "True",
+      "correctExplanation": "The formula works for all simple polygons, whether convex or concave, as long as edges do not cross.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Self-intersecting polygons are excluded, but all simple polygons are valid."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Testing with only one input is sufficient to confirm an algorithm is correct.",
+      "correct": "False",
+      "correctExplanation": "A single test case cannot cover all possible inputs, edge cases and boundary conditions.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Multiple diverse test cases are needed for thorough validation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The convex hull algorithm is unnecessary when all points already form a convex polygon.",
+      "correct": "False",
+      "correctExplanation": "Even if points appear convex, the algorithm confirms this and identifies the correct vertex order.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The algorithm verifies convexity and determines the hull boundary."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Refining an algorithm may involve adding steps to handle previously undetected edge cases.",
+      "correct": "True",
+      "correctExplanation": "Discovering new edge cases often requires inserting additional logic to handle them correctly.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Refinement does not involve adding steps for edge cases."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Why does the point-in-polygon test fail for points exactly on the boundary?",
+      "correct": "The crossing count is ambiguous at the boundary",
+      "correctExplanation": "A ray passing through a vertex or along an edge creates an unclear crossing count.",
+      "distractors": [
+        {
+          "answer": "The algorithm cannot process boundary coordinates",
+          "explanation": "The algorithm can process any coordinates; the issue is the count."
+        },
+        {
+          "answer": "Boundary points have no coordinates",
+          "explanation": "All points have coordinates; this is not the issue."
+        },
+        {
+          "answer": "The polygon has no boundary",
+          "explanation": "Every polygon has a well-defined boundary."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "The shoelace formula applied to vertices (0,0), (4,0), (4,3) gives an area of:",
+      "correct": "6",
+      "correctExplanation": "½|0×0 − 4×0 + 4×3 − 4×0 + 4×0 − 0×3| = ½|12| = 6.",
+      "distractors": [
+        {
+          "answer": "12",
+          "explanation": "This omits the ½ factor."
+        },
+        {
+          "answer": "7",
+          "explanation": "This adds side lengths instead of using the formula."
+        },
+        {
+          "answer": "3.5",
+          "explanation": "This uses an incorrect calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "In Dijkstra's algorithm, when is a node marked as visited?",
+      "correct": "when it has the smallest tentative distance",
+      "correctExplanation": "The node with the minimum tentative distance is selected and marked as visited.",
+      "distractors": [
+        {
+          "answer": "when any neighbour has been updated",
+          "explanation": "Neighbour updates do not trigger marking a node as visited."
+        },
+        {
+          "answer": "when it is first discovered",
+          "explanation": "Nodes are discovered but not marked visited until they have minimum distance."
+        },
+        {
+          "answer": "after all nodes have been processed",
+          "explanation": "Nodes are marked visited one at a time during processing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which is the best edge case for testing a polygon area algorithm?",
+      "correct": "a polygon where three consecutive",
+      "correctExplanation": "Collinear vertices create a degenerate edge that tests the algorithm's robustness.",
+      "distractors": [
+        {
+          "answer": "a regular pentagon",
+          "explanation": "A regular pentagon is a standard test case, not an edge case."
+        },
+        {
+          "answer": "a polygon with positive integer c",
+          "explanation": "Integer coordinates are typical inputs."
+        },
+        {
+          "answer": "a convex quadrilateral",
+          "explanation": "A convex quadrilateral is a standard shape."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why must vertices be listed in sequential order for the shoelace formula?",
+      "correct": "The formula connects consecutive vertices to",
+      "correctExplanation": "The cross-product terms rely on adjacent vertex pairs tracing the boundary.",
+      "distractors": [
+        {
+          "answer": "Random order gives larger areas",
+          "explanation": "Random order gives incorrect, not larger, areas."
+        },
+        {
+          "answer": "The formula sorts them automatically",
+          "explanation": "The formula does not sort vertices; they must be pre-ordered."
+        },
+        {
+          "answer": "Order only matters for concave polygons",
+          "explanation": "Order is required for all polygons, convex or concave."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "What does Dijkstra's algorithm initialise the source node's distance to?",
+      "correct": "zero",
+      "correctExplanation": "The source is the starting point, so its distance from itself is zero.",
+      "distractors": [
+        {
+          "answer": "infinity",
+          "explanation": "Infinity is assigned to all non-source nodes."
+        },
+        {
+          "answer": "one",
+          "explanation": "The source distance is zero, not one."
+        },
+        {
+          "answer": "the",
+          "explanation": "Edge weights are not used for initialisation of the source."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Refining an algorithm after testing is analogous to:",
+      "correct": "editing a draft essay after receiving feedback",
+      "correctExplanation": "Both involve reviewing, identifying flaws and improving based on evidence.",
+      "distractors": [
+        {
+          "answer": "writing a new essay from scratch",
+          "explanation": "Refinement improves existing work rather than starting over."
+        },
+        {
+          "answer": "memorising the original without changes",
+          "explanation": "Refinement requires modification, not memorisation."
+        },
+        {
+          "answer": "deleting the algorithm and retesting",
+          "explanation": "Deletion removes the work rather than improving it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "The convex hull of points includes only those that lie on the:",
+      "correct": "outer boundary of the enclosing convex polygon",
+      "correctExplanation": "Interior points are excluded; only boundary vertices form the hull.",
+      "distractors": [
+        {
+          "answer": "straight line connecting all points in this",
+          "explanation": "The convex hull is a polygon, not a straight line."
+        },
+        {
+          "answer": "interior of the point set",
+          "explanation": "Interior points are excluded from the hull."
+        },
+        {
+          "answer": "circle passing through all points",
+          "explanation": "The convex hull is a polygon, not a circle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A spatial algorithm designed for convex polygons is tested on a concave polygon and fails. The best next step is to:",
+      "correct": "refine the algorithm to handle concave polyg",
+      "correctExplanation": "Expanding the algorithm's scope addresses the identified failure.",
+      "distractors": [
+        {
+          "answer": "declare the algorithm complete",
+          "explanation": "Ignoring failures leaves the algorithm unreliable."
+        },
+        {
+          "answer": "remove the failing test case",
+          "explanation": "Removing tests hides errors rather than fixing them."
+        },
+        {
+          "answer": "convert all inputs to convex shapes in",
+          "explanation": "Altering inputs avoids the problem instead of solving it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which data structure does Dijkstra's algorithm commonly use to select the next node?",
+      "correct": "a priority queue",
+      "correctExplanation": "A priority queue efficiently retrieves the node with the smallest tentative distance.",
+      "distractors": [
+        {
+          "answer": "a stack",
+          "explanation": "A stack retrieves last-in-first-out, which is not suitable for shortest paths."
+        },
+        {
+          "answer": "a linked list",
+          "explanation": "Searching a linked list is less efficient than a priority queue."
+        },
+        {
+          "answer": "a hash table",
+          "explanation": "Hash tables do not maintain order by distance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "The shoelace formula gives zero area when all vertices are:",
+      "correct": "collinear",
+      "correctExplanation": "Collinear points form a degenerate polygon with no enclosed area.",
+      "distractors": [
+        {
+          "answer": "on a circle",
+          "explanation": "Points on a circle still enclose a non-zero area."
+        },
+        {
+          "answer": "at integer coordinates",
+          "explanation": "Integer coordinates can produce non-zero areas."
+        },
+        {
+          "answer": "evenly spaced",
+          "explanation": "Evenly spaced points along a polygon still enclose area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Why is it important to test algorithms with both typical and degenerate cases?",
+      "correct": "Typical cases verify normal function; degenerate cases test",
+      "correctExplanation": "Both types are needed for comprehensive validation.",
+      "distractors": [
+        {
+          "answer": "Only typical cases matter in practice",
+          "explanation": "Degenerate cases occur in real-world data and must be handled."
+        },
+        {
+          "answer": "Degenerate cases are always impossible in real data in",
+          "explanation": "Real data frequently contains boundary and degenerate cases."
+        },
+        {
+          "answer": "Testing is optional for correct algorithms",
+          "explanation": "All algorithms require testing to verify correctness."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "Dijkstra's algorithm starts by setting the source distance to {{blank:1}} and all other nodes to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero",
+          "correctExplanation": "The source is the starting point with no distance to itself.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "The source distance is zero, not one.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "infinity",
+              "explanation": "Infinity is for non-source nodes.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "infinity",
+          "correctExplanation": "Unknown distances start at infinity to be updated during the algorithm.",
+          "distractors": [
+            {
+              "answer": "zero",
+              "explanation": "Zero is the source distance, not the default for other nodes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "one",
+              "explanation": "One is not used as an initial distance.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The shoelace formula gives the area of a polygon as ½|Σ(xᵢyᵢ₊₁ − {{blank:1}})|, where the vertices are listed in {{blank:2}} order.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "xᵢ₊₁yᵢ",
+          "correctExplanation": "The formula subtracts cross-products of consecutive coordinate pairs.",
+          "distractors": [
+            {
+              "answer": "xᵢyᵢ",
+              "explanation": "This uses the same index for both coordinates, giving zero.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "xᵢ₊₁yᵢ₊₁",
+              "explanation": "This uses the same next index, which is incorrect.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sequential",
+          "correctExplanation": "Vertices must follow the polygon boundary in order (clockwise or anticlockwise).",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Random order gives an incorrect area.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "alphabetical",
+              "explanation": "Coordinate labels are not ordered alphabetically.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "In the point-in-polygon test, casting a ray and counting {{blank:1}} boundary crossings determines the point is {{blank:2}} the polygon.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "an odd number of",
+          "correctExplanation": "Odd crossings mean the ray entered without fully exiting the boundary.",
+          "distractors": [
+            {
+              "answer": "an even number of",
+              "explanation": "Even crossings indicate the point is outside.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exactly two",
+              "explanation": "Two crossings is even, meaning outside.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inside",
+          "correctExplanation": "The odd crossing rule establishes that the point lies within the polygon.",
+          "distractors": [
+            {
+              "answer": "outside",
+              "explanation": "Odd crossings indicate inside, not outside.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "on the boundary of",
+              "explanation": "The boundary case is handled separately.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "A degenerate test case for a polygon algorithm might involve {{blank:1}}, which tests whether the algorithm handles {{blank:2}} inputs.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "collinear points",
+          "correctExplanation": "Collinear points create a zero-area polygon, a classic degenerate case.",
+          "distractors": [
+            {
+              "answer": "a regular hexagon",
+              "explanation": "A regular hexagon is a standard test case.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "a large square",
+              "explanation": "A large square is a typical, non-degenerate input.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "boundary or extreme",
+          "correctExplanation": "Degenerate cases probe the algorithm's behaviour at limits.",
+          "distractors": [
+            {
+              "answer": "typical or normal",
+              "explanation": "Normal inputs are standard cases, not degenerate ones.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random inputs are used for general testing, not degenerate cases.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The convex hull is the {{blank:1}} convex polygon that encloses all points, and only {{blank:2}} points lie on its boundary.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "smallest",
+          "correctExplanation": "The convex hull is the tightest convex boundary around the point set.",
+          "distractors": [
+            {
+              "answer": "largest",
+              "explanation": "The hull is the smallest, not largest, enclosing polygon.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "most irregular",
+              "explanation": "The hull is always convex and well-defined.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "outer",
+          "correctExplanation": "Only points on the outer boundary are hull vertices; interior points are excluded.",
+          "distractors": [
+            {
+              "answer": "all",
+              "explanation": "Interior points are not on the hull.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "inner",
+              "explanation": "Inner points are excluded from the hull.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Refining an algorithm involves {{blank:1}} steps to fix errors found during {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "modifying or adding",
+          "correctExplanation": "Refinement updates existing logic or introduces new steps to handle discovered issues.",
+          "distractors": [
+            {
+              "answer": "removing all",
+              "explanation": "Removing all steps destroys the algorithm.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "ignoring",
+              "explanation": "Ignoring errors leaves the algorithm unreliable.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "testing",
+          "correctExplanation": "Testing reveals the errors that drive refinement.",
+          "distractors": [
+            {
+              "answer": "design",
+              "explanation": "Errors are found during testing, not during initial design.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "presentation",
+              "explanation": "Presentation is about communication, not error detection.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Applying the shoelace formula to vertices (0,0), (3,0), (3,4), (0,4) gives an area of 24.",
+      "correct": "False",
+      "correctExplanation": "½|0×0−3×0 + 3×4−3×0 + 3×4−0×4 + 0×0−0×4| = ½|12+12| = 12. The area is 12, not 24.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The shoelace formula gives 12, which equals 3×4 as expected for a rectangle."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "A point at (2, 2) is inside the triangle with vertices (0,0), (4,0), (2,4).",
+      "correct": "True",
+      "correctExplanation": "Ray casting from (2,2) confirms the point is enclosed by the triangle.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Testing confirms (2,2) is inside the triangle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Using the shoelace formula, find the area of the triangle with vertices (1,1), (5,1), (3,5).",
+      "correct": "8",
+      "correctExplanation": "½|1×1−5×1 + 5×5−3×1 + 3×1−1×5| = ½|−4+22−2| = ½|16| = 8.",
+      "distractors": [
+        {
+          "answer": "16",
+          "explanation": "This omits the ½ factor."
+        },
+        {
+          "answer": "12",
+          "explanation": "This uses base × height = 4 × 4/2 incorrectly."
+        },
+        {
+          "answer": "10",
+          "explanation": "This uses an incorrect calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A ray from point P passes through a pentagon's boundary 3 times. P is:",
+      "correct": "inside the pentagon",
+      "correctExplanation": "Odd number of crossings (3) means inside.",
+      "distractors": [
+        {
+          "answer": "outside the pentagon",
+          "explanation": "Three crossings is odd, indicating inside."
+        },
+        {
+          "answer": "on the boundary",
+          "explanation": "Boundary points require separate handling."
+        },
+        {
+          "answer": "at a vertex",
+          "explanation": "Vertex position is a special case, not what 3 crossings indicates."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "In a network with nodes A, B, C, D where AB=3, AC=5, BC=1, CD=2, Dijkstra's algorithm finds the shortest path from A to D is:",
+      "correct": "A→B→C→D = 6",
+      "correctExplanation": "A→B (3) + B→C (1) + C→D (2) = 6, shorter than A→C→D = 7.",
+      "distractors": [
+        {
+          "answer": "A→C→D = 7",
+          "explanation": "This path costs 7, which is longer than 6."
+        },
+        {
+          "answer": "A→B→C = 4",
+          "explanation": "This does not reach D."
+        },
+        {
+          "answer": "A→D = 10",
+          "explanation": "There may not be a direct edge A→D."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "The shoelace formula is applied to a quadrilateral with vertices (0,0), (6,0), (6,4), (0,4). The area is:",
+      "correct": "24",
+      "correctExplanation": "½|0+24+24+0−(0+0+0+0)| = ½|48| = 24. Or simply 6×4 = 24.",
+      "distractors": [
+        {
+          "answer": "48",
+          "explanation": "This omits the ½ factor."
+        },
+        {
+          "answer": "20",
+          "explanation": "This uses perimeter: 2(6+4) = 20."
+        },
+        {
+          "answer": "10",
+          "explanation": "This uses an incorrect formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A student tests a polygon area algorithm on a triangle and gets the correct result. The algorithm is:",
+      "correct": "not yet fully validated",
+      "correctExplanation": "One test case is insufficient; further testing with different polygons and edge cases is needed.",
+      "distractors": [
+        {
+          "answer": "proven correct for all polygons",
+          "explanation": "A single test does not prove general correctness."
+        },
+        {
+          "answer": "guaranteed to work for quadrilaterals",
+          "explanation": "Testing on triangles does not guarantee quadrilateral accuracy."
+        },
+        {
+          "answer": "ready for public release",
+          "explanation": "More testing is required before release."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A Dijkstra implementation returns a path cost of 15 from A to E. When edge BC is reduced from 6 to 2, the new shortest path cost could be:",
+      "correct": "11 or less, if",
+      "correctExplanation": "Reducing a weight on the shortest path reduces the total cost by up to the weight difference.",
+      "distractors": [
+        {
+          "answer": "exactly 15 still",
+          "explanation": "If BC is on the path, the cost decreases."
+        },
+        {
+          "answer": "exactly 11",
+          "explanation": "The cost could be 11 or less, depending on alternative paths."
+        },
+        {
+          "answer": "more than 15",
+          "explanation": "Reducing a weight cannot increase the shortest path."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "The shoelace formula applied to (0,0), (2,0), (2,3), (0,3) gives area 6. Adding vertex (1,4) between (2,3) and (0,3) changes the area to:",
+      "correct": "7",
+      "correctExplanation": "The new pentagon adds a triangle of area 1 on top (base 2, height 1, area = 1).",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "The extra vertex adds area above the original rectangle."
+        },
+        {
+          "answer": "8",
+          "explanation": "The extra triangle has area 1, not 2."
+        },
+        {
+          "answer": "10",
+          "explanation": "This overestimates the additional area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Which test would best reveal whether a point-in-polygon algorithm handles concavity?",
+      "correct": "A point in the concave notch of a C-shaped polygon",
+      "correctExplanation": "A concave notch tests whether the ray crossing count handles re-entrant boundaries.",
+      "distractors": [
+        {
+          "answer": "A point at the centre of a square",
+          "explanation": "A square is convex and does not test concavity."
+        },
+        {
+          "answer": "A point far outside a triangle",
+          "explanation": "Points far outside do not test concavity handling."
+        },
+        {
+          "answer": "A point on a vertex of a regular pentagon",
+          "explanation": "This tests vertex handling, not concavity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "After testing, an algorithm fails for a zero-area polygon (collinear points). The best refinement is to:",
+      "correct": "add a check for collinear vertices and return zero area",
+      "correctExplanation": "Explicitly handling the degenerate case prevents errors.",
+      "distractors": [
+        {
+          "answer": "remove collinear inputs from the data set",
+          "explanation": "Removing valid inputs does not fix the algorithm."
+        },
+        {
+          "answer": "ignore the error and proceed",
+          "explanation": "Ignoring errors leaves the algorithm unreliable."
+        },
+        {
+          "answer": "increase the number of vertices required to five",
+          "explanation": "Restricting inputs does not address the underlying issue."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A shortest-path algorithm returns A→C→E with cost 9. An alternative path A→B→D→E has cost 10. After edge CD (cost 3) is added, the shortest path becomes:",
+      "correct": "possibly A→C→D→E if that total",
+      "correctExplanation": "The new edge may create a shorter route through C→D→E.",
+      "distractors": [
+        {
+          "answer": "still A→C→E at cost 9",
+          "explanation": "The new edge may provide a shorter path."
+        },
+        {
+          "answer": "always A→B→D→E at cost 10",
+          "explanation": "This path was already longer and may remain so."
+        },
+        {
+          "answer": "exactly 3",
+          "explanation": "The cost of one edge alone is not the path cost."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "The shoelace formula for a triangle with vertices (0,0), (a,0), (0,b) gives:",
+      "correct": "½ab",
+      "correctExplanation": "½|0−0 + ab−0 + 0−0| = ½ab.",
+      "distractors": [
+        {
+          "answer": "ab",
+          "explanation": "This omits the ½ factor."
+        },
+        {
+          "answer": "2ab",
+          "explanation": "This doubles instead of halving."
+        },
+        {
+          "answer": "½(a+b)",
+          "explanation": "This uses the sum, not the product."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A student's polygon algorithm gives negative areas for clockwise vertex orders. The best fix is to:",
+      "correct": "take the absolute value of the result",
+      "correctExplanation": "The absolute value ensures positive area regardless of vertex ordering direction.",
+      "distractors": [
+        {
+          "answer": "reverse all vertex orders to anticlockwise",
+          "explanation": "This fixes one direction but breaks the other."
+        },
+        {
+          "answer": "multiply by −1 for all inputs",
+          "explanation": "This makes anticlockwise inputs negative."
+        },
+        {
+          "answer": "require users to input only anticlockwise orders",
+          "explanation": "This restricts usability instead of fixing the algorithm."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "The shoelace formula applied to (0,0), (3,0), (3,2), (0,2) gives area {{blank:1}}, confirming the rectangle with base 3 and height {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "½|0+6+6+0| = ½|12| = 6. Or simply 3 × 2 = 6.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This omits the ½ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "This adds 3 + 2 instead of multiplying.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "The height of the rectangle is the y-dimension.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "This confuses base and height.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "This is the area, not the height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "In Dijkstra's algorithm for a network with 5 nodes, the algorithm visits at most {{blank:1}} nodes and terminates when {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "Every node is visited exactly once.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "The number of visits equals the number of nodes, not double.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "25",
+              "explanation": "This squares the node count unnecessarily.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "all nodes are visited",
+          "correctExplanation": "The algorithm terminates when every reachable node has been permanently labelled.",
+          "distractors": [
+            {
+              "answer": "the first path is found",
+              "explanation": "The algorithm continues until all nodes are processed.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "no edges remain",
+              "explanation": "Edges are not removed during the algorithm.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Testing a point-in-polygon algorithm should include a point {{blank:1}} the polygon, a point {{blank:2}} the polygon, and a point on the boundary.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "inside",
+          "correctExplanation": "Inside points should return true (inside).",
+          "distractors": [
+            {
+              "answer": "above",
+              "explanation": "Above is not a standard test category for polygons.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "behind",
+              "explanation": "Behind is not meaningful in 2D polygon context.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "outside",
+          "correctExplanation": "Outside points should return false (outside).",
+          "distractors": [
+            {
+              "answer": "below",
+              "explanation": "Below is not a standard test category.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "adjacent to",
+              "explanation": "Adjacent is not a well-defined test category.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "The shoelace formula for triangle (0,0), (6,0), (3,4) gives ½|{{blank:1}}| = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "24",
+          "correctExplanation": "0×0−6×0 + 6×4−3×0 + 3×0−0×4 = 0 + 24 + 0 = 24.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This miscomputes the cross-products.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "48",
+              "explanation": "This doubles the correct sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "½ × 24 = 12.",
+          "distractors": [
+            {
+              "answer": "24",
+              "explanation": "This omits the ½ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "This uses an incorrect halving.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "An algorithm that fails for a concave polygon should be refined by adding a check for {{blank:1}} vertices, where the interior angle exceeds {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "reflex",
+          "correctExplanation": "A reflex vertex has an interior angle greater than 180°, indicating concavity.",
+          "distractors": [
+            {
+              "answer": "acute",
+              "explanation": "Acute vertices do not indicate concavity.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "right-angle",
+              "explanation": "Right angles are exactly 90° and do not indicate concavity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "180°",
+          "correctExplanation": "A reflex angle exceeds 180°, distinguishing concave from convex polygons.",
+          "distractors": [
+            {
+              "answer": "90°",
+              "explanation": "90° is a right angle, not the threshold for reflex angles.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "360°",
+              "explanation": "360° is a full rotation, not a vertex angle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Dijkstra's algorithm applied to a 4-node network A→B (2), A→C (5), B→C (1), C→D (3) finds the shortest path from A to D is {{blank:1}} with cost {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "A→B→C→D",
+          "correctExplanation": "A→B (2) + B→C (1) + C→D (3) = 6, shorter than A→C→D (5+3=8).",
+          "distractors": [
+            {
+              "answer": "A→C→D",
+              "explanation": "This costs 8, which is longer than 6.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "A→D",
+              "explanation": "There is no direct edge from A to D.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "2 + 1 + 3 = 6.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This is the cost of A→C→D.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "This is only the cost of A→C.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A convex hull algorithm applied to points (0,0), (4,0), (2,2), (4,4), (0,4) produces a hull with {{blank:1}} vertices because the point (2,2) is {{blank:2}} the hull.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "The four corner points form the hull; (2,2) is interior.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "This includes the interior point (2,2).",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "3",
+              "explanation": "This excludes a boundary point.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inside",
+          "correctExplanation": "The point (2,2) lies inside the convex polygon formed by the four corners.",
+          "distractors": [
+            {
+              "answer": "on the boundary of",
+              "explanation": "The point (2,2) is strictly interior.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "a vertex of",
+              "explanation": "This point is not on the hull.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "The shoelace formula for a pentagon with vertices (0,0), (4,0), (5,3), (2,5), (−1,3) gives ½|{{blank:1}}| = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "40",
+          "correctExplanation": "Compute: 0−0 + 12−0 + 25−6 + 6+5 + 0−0 = 0+12+19+11−2 = 40. (Check with careful calculation.)",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "This underestimates the cross-product sum.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "This doubles the correct sum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "20",
+          "correctExplanation": "½ × 40 = 20.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "This omits the ½ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "This uses ¼ instead of ½.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "When an algorithm produces incorrect output for a test case, the process of {{blank:1}} involves tracing through the steps to find the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "debugging",
+          "correctExplanation": "Debugging is the systematic process of finding and fixing errors.",
+          "distractors": [
+            {
+              "answer": "designing",
+              "explanation": "Design occurs before testing, not after errors are found.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "compiling",
+              "explanation": "Compiling is for code, not algorithm logic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "error",
+          "correctExplanation": "The goal of debugging is to locate the specific step where the logic fails.",
+          "distractors": [
+            {
+              "answer": "input",
+              "explanation": "The input is known; the error is in the algorithm's logic.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "output",
+              "explanation": "The incorrect output is already known; the source must be found.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A ray from point (3,3) through the boundary of a triangle (0,0), (6,0), (3,6) crosses the boundary {{blank:1}} time(s), confirming the point is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "The ray crosses one edge of the triangle, giving an odd count.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Two crossings would indicate the point is outside.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "Zero crossings would mean the point is outside.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inside",
+          "correctExplanation": "One crossing (odd) means the point is inside.",
+          "distractors": [
+            {
+              "answer": "outside",
+              "explanation": "Odd crossings mean inside, not outside.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "on the boundary",
+              "explanation": "One crossing through an edge means inside, not on the boundary.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "An algorithm for finding the shortest path is tested with a graph containing a cycle. If the result is correct, this confirms the algorithm handles {{blank:1}}; if incorrect, the algorithm needs {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cyclic graphs",
+          "correctExplanation": "Cycles are a common feature of graphs that algorithms must handle.",
+          "distractors": [
+            {
+              "answer": "linear graphs",
+              "explanation": "Linear graphs have no cycles.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "empty graphs",
+              "explanation": "An empty graph has no edges to form a path.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "refinement",
+          "correctExplanation": "Refinement addresses the failure by modifying the algorithm's logic.",
+          "distractors": [
+            {
+              "answer": "deletion",
+              "explanation": "Deleting the algorithm does not fix it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "more data",
+              "explanation": "More data does not fix a logical error.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "The shoelace formula applied to (0,0), (5,0), (5,5), (0,5) gives {{blank:1}}, which matches the area of a square with side {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "25",
+          "correctExplanation": "½|0+25+25+0| = ½|50| = 25.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "This omits the ½ factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "20",
+              "explanation": "This uses perimeter instead of area.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "The square has vertices at distance 5 apart.",
+          "distractors": [
+            {
+              "answer": "25",
+              "explanation": "25 is the area, not the side length.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the perimeter divided by some factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student's point-in-polygon algorithm counts boundary crossings but fails for a star-shaped polygon. The most likely cause is:",
+      "correct": "the algorithm does not handle self-intersecti",
+      "correctExplanation": "Star polygons have self-intersecting edges that cause multiple ambiguous crossings.",
+      "distractors": [
+        {
+          "answer": "the polygon has too many vertices",
+          "explanation": "Vertex count does not cause the algorithm to fail."
+        },
+        {
+          "answer": "the ray was cast in the wrong direction",
+          "explanation": "Ray direction does not affect correctness for simple polygons."
+        },
+        {
+          "answer": "the algorithm uses the wrong data type",
+          "explanation": "Data types are unlikely to cause this specific failure."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "The shoelace formula and the triangle decomposition method both calculate polygon area. Which is generally more efficient?",
+      "correct": "the shoelace formula",
+      "correctExplanation": "The shoelace formula requires a single pass through vertices, while decomposition requires identifying triangles.",
+      "distractors": [
+        {
+          "answer": "triangle decomposition",
+          "explanation": "Decomposition requires extra steps to form triangles."
+        },
+        {
+          "answer": "both have identical efficiency",
+          "explanation": "The shoelace formula has fewer computational steps."
+        },
+        {
+          "answer": "neither can compute area accurately",
+          "explanation": "Both methods are mathematically exact."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "An algorithm is designed for shortest paths in planar graphs. When tested on a non-planar graph (K₅), it produces an incorrect result. This suggests the algorithm:",
+      "correct": "relies on properties unique to planar graphs",
+      "correctExplanation": "Non-planar graphs lack properties like face-based traversal that planar algorithms may depend on.",
+      "distractors": [
+        {
+          "answer": "is fundamentally broken",
+          "explanation": "It works for planar graphs; the limitation is its scope."
+        },
+        {
+          "answer": "needs more test cases on planar graphs",
+          "explanation": "The issue is with non-planar graphs, not insufficient planar tests."
+        },
+        {
+          "answer": "should ignore non-planar inputs",
+          "explanation": "Restricting inputs avoids the problem without fixing it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Two algorithms both correctly compute polygon area. Algorithm A uses O(n) time; Algorithm B uses O(n²) time. For a 1000-vertex polygon, A is preferred because:",
+      "correct": "it scales linearly and handles large inputs faster",
+      "correctExplanation": "O(n) grows proportionally with input size, while O(n²) grows quadratically.",
+      "distractors": [
+        {
+          "answer": "it gives more accurate results",
+          "explanation": "Both give the same mathematically exact result."
+        },
+        {
+          "answer": "O(n²) is faster for large inputs",
+          "explanation": "O(n²) is slower for large inputs."
+        },
+        {
+          "answer": "algorithm complexity does not matter for practical use",
+          "explanation": "Complexity directly affects run time for large inputs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A convex hull algorithm is tested with all points on a circle. The expected hull has:",
+      "correct": "all points as hull vertices",
+      "correctExplanation": "When all points lie on a circle, none are interior, so all are hull vertices.",
+      "distractors": [
+        {
+          "answer": "only the two farthest points",
+          "explanation": "A hull with only two points would be a line segment, not a polygon."
+        },
+        {
+          "answer": "half the points on the hull",
+          "explanation": "All points on a circle are on the convex boundary."
+        },
+        {
+          "answer": "one central point as the hull",
+          "explanation": "A single point cannot form a hull polygon."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "Dijkstra's algorithm is modified to stop as soon as the destination node is visited. This modification:",
+      "correct": "is correct and improves efficiency",
+      "correctExplanation": "Once the destination is visited, its shortest path is confirmed and further processing is unnecessary.",
+      "distractors": [
+        {
+          "answer": "produces incorrect results",
+          "explanation": "The destination's shortest path is guaranteed when it is visited."
+        },
+        {
+          "answer": "has no effect on performance",
+          "explanation": "Stopping early saves processing of remaining nodes."
+        },
+        {
+          "answer": "only works for undirected graphs",
+          "explanation": "The early-stop optimisation applies to both directed and undirected graphs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A polygon area algorithm gives area 0 for a valid triangle. The most likely bug is:",
+      "correct": "the first and last vertices are identical, creating",
+      "correctExplanation": "Duplicating the first vertex as the last can cause the formula to cancel out.",
+      "distractors": [
+        {
+          "answer": "the algorithm rounds to integers",
+          "explanation": "Rounding would reduce precision but not give exactly zero for a valid triangle."
+        },
+        {
+          "answer": "the triangle is too large for the algorithm",
+          "explanation": "Size does not cause a zero-area result."
+        },
+        {
+          "answer": "the vertices are in the wrong hemisphere",
+          "explanation": "The shoelace formula works in any coordinate region."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "An algorithm for finding the shortest path between two points on a grid is tested. It always moves right or down. This algorithm fails when:",
+      "correct": "the shortest path requires moving left or up",
+      "correctExplanation": "Restricting movement to right/down prevents finding paths that require backtracking.",
+      "distractors": [
+        {
+          "answer": "the grid has more than 100 cells",
+          "explanation": "Grid size does not cause failure if the movement rule is valid."
+        },
+        {
+          "answer": "both points are in the same row",
+          "explanation": "Same-row points can be reached by moving right."
+        },
+        {
+          "answer": "the start is in the top-left corner",
+          "explanation": "This is the ideal starting position for right/down movement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "The shoelace formula is applied twice to the same polygon: once clockwise and once anticlockwise. The results:",
+      "correct": "are equal in magnitude",
+      "correctExplanation": "The absolute value ensures both orderings give the same positive area.",
+      "distractors": [
+        {
+          "answer": "differ by a factor of 2",
+          "explanation": "The magnitude is identical regardless of direction."
+        },
+        {
+          "answer": "are both negative",
+          "explanation": "The absolute value makes both results positive."
+        },
+        {
+          "answer": "depend on the number of vertices",
+          "explanation": "Vertex count does not affect the direction-independence."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "An algorithm designed for 2D spatial problems is extended to 3D. The most likely challenge is:",
+      "correct": "operations like ray casting need an extra dimension",
+      "correctExplanation": "3D ray casting and polygon containment require volumetric logic, not planar logic.",
+      "distractors": [
+        {
+          "answer": "3D coordinates use three numbers instead of two",
+          "explanation": "Storing extra coordinates is trivial; the logic is the challenge."
+        },
+        {
+          "answer": "3D problems are always unsolvable",
+          "explanation": "3D problems are solvable with appropriate algorithms."
+        },
+        {
+          "answer": "2D algorithms automatically work in 3D",
+          "explanation": "2D algorithms generally do not extend directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A shortest-path algorithm is tested on a graph with multiple paths of equal minimum cost. The algorithm returns one of them. This behaviour is:",
+      "correct": "acceptable, as any shortest path is a valid result",
+      "correctExplanation": "When multiple shortest paths exist, returning any one is correct.",
+      "distractors": [
+        {
+          "answer": "incorrect, as all shortest paths must be returned",
+          "explanation": "Returning one shortest path satisfies the algorithm's specification."
+        },
+        {
+          "answer": "a sign of a bug",
+          "explanation": "Returning one valid shortest path is not a bug."
+        },
+        {
+          "answer": "only valid for directed graphs",
+          "explanation": "This applies to both directed and undirected graphs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A polygon with a hole (e.g. a donut shape) is input to the shoelace formula. The result is:",
+      "correct": "incorrect, as the formula assume",
+      "correctExplanation": "The shoelace formula works for simple (non-self-intersecting) polygons only.",
+      "distractors": [
+        {
+          "answer": "the area including the hole",
+          "explanation": "The formula cannot distinguish between outer and inner boundaries."
+        },
+        {
+          "answer": "the area of the hole only",
+          "explanation": "The formula does not isolate the hole."
+        },
+        {
+          "answer": "always zero",
+          "explanation": "The result is not zero but is geometrically meaningless for polygons with holes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A convex hull algorithm processes n points. Adding one point outside the current hull requires:",
+      "correct": "updating the hull to include the new point",
+      "correctExplanation": "An exterior point extends the hull boundary, requiring recalculation of affected edges.",
+      "distractors": [
+        {
+          "answer": "rebuilding the entire hull from scratch",
+          "explanation": "Only the affected portion of the hull needs updating."
+        },
+        {
+          "answer": "no change to the hull",
+          "explanation": "An exterior point must be added to the hull."
+        },
+        {
+          "answer": "removing an existing hull vertex",
+          "explanation": "Existing vertices may or may not be removed depending on geometry."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student claims their algorithm is correct because it passes 100 test cases. The weakness of this claim is:",
+      "correct": "100 tests may not cover all edge",
+      "correctExplanation": "Passing tests shows the algorithm works for those cases but does not prove universal correctness.",
+      "distractors": [
+        {
+          "answer": "100 tests is always sufficient",
+          "explanation": "No fixed number of tests guarantees correctness."
+        },
+        {
+          "answer": "testing is irrelevant to correctness",
+          "explanation": "Testing provides evidence of correctness, but not proof."
+        },
+        {
+          "answer": "only 10 tests are ever needed",
+          "explanation": "The required number of tests depends on the problem's complexity."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The time complexity of the shoelace formula is {{blank:1}} because it processes each vertex {{blank:2}} in a single pass.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "O(n)",
+          "correctExplanation": "The formula iterates through n vertices once.",
+          "distractors": [
+            {
+              "answer": "O(n²)",
+              "explanation": "No nested loops are required.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "O(1)",
+              "explanation": "The formula depends on the number of vertices.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "exactly once",
+          "correctExplanation": "Each vertex contributes to one term in the sum.",
+          "distractors": [
+            {
+              "answer": "multiple times",
+              "explanation": "Each vertex is used only once.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "zero times",
+              "explanation": "Every vertex must be processed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Dijkstra's algorithm fails with negative edge weights because a visited node's distance might be {{blank:1}} by a later path through a {{blank:2}} edge.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "reduced",
+          "correctExplanation": "A negative edge could lower the total cost after the node is already finalised.",
+          "distractors": [
+            {
+              "answer": "increased",
+              "explanation": "Negative edges reduce, not increase, path costs.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unchanged",
+              "explanation": "Negative edges can change previously computed distances.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "negative-weight",
+          "correctExplanation": "Negative weights allow later paths to undercut the supposedly shortest path.",
+          "distractors": [
+            {
+              "answer": "positive-weight",
+              "explanation": "Positive weights cannot reduce a path cost.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero-weight",
+              "explanation": "Zero-weight edges do not reduce costs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The point-in-polygon algorithm has a known limitation for points on the {{blank:1}}, which can be resolved by adding a separate {{blank:2}} check.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "boundary",
+          "correctExplanation": "Points on the boundary cause ambiguous crossing counts.",
+          "distractors": [
+            {
+              "answer": "interior",
+              "explanation": "Interior points are correctly handled by the standard algorithm.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exterior",
+              "explanation": "Exterior points are correctly identified.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "boundary proximity",
+          "correctExplanation": "A proximity or collinearity check detects boundary points before applying the ray test.",
+          "distractors": [
+            {
+              "answer": "area",
+              "explanation": "Area calculation does not determine boundary membership.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "vertex count",
+              "explanation": "Vertex count does not resolve boundary ambiguity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "An algorithm that works for convex polygons but fails for concave ones lacks {{blank:1}} to handle vertices with interior angles exceeding {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "logic",
+          "correctExplanation": "The algorithm needs additional conditional logic for concave cases.",
+          "distractors": [
+            {
+              "answer": "data",
+              "explanation": "The issue is logic, not data.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "vertices",
+              "explanation": "The vertices are present; the logic is missing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "180°",
+          "correctExplanation": "Reflex angles (>180°) define concavity.",
+          "distractors": [
+            {
+              "answer": "90°",
+              "explanation": "90° is a right angle, not the concavity threshold.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "360°",
+              "explanation": "360° is a full rotation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The shoelace formula extended to 3D requires projecting the polygon onto a {{blank:1}} and applying a correction based on the polygon's {{blank:2}} vector.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "coordinate plane",
+          "correctExplanation": "The 3D polygon is projected onto xy, xz or yz before applying the 2D formula.",
+          "distractors": [
+            {
+              "answer": "sphere",
+              "explanation": "The shoelace formula does not project onto spheres.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "line",
+              "explanation": "Projecting onto a line loses area information.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "normal",
+          "correctExplanation": "The normal vector determines the projection plane and the correction factor.",
+          "distractors": [
+            {
+              "answer": "tangent",
+              "explanation": "The tangent vector lies in the plane, not perpendicular to it.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "A diagonal does not define the polygon's orientation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Testing an algorithm with {{blank:1}} cases verifies normal operation, while {{blank:2}} cases test behaviour at extremes.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "typical",
+          "correctExplanation": "Typical cases represent standard, expected inputs.",
+          "distractors": [
+            {
+              "answer": "degenerate",
+              "explanation": "Degenerate cases are extreme, not typical.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random cases are useful but not the standard term for normal testing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "edge",
+          "correctExplanation": "Edge cases test boundary conditions and extreme inputs.",
+          "distractors": [
+            {
+              "answer": "typical",
+              "explanation": "Typical cases test normal operation, not extremes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "simple",
+              "explanation": "Simple cases do not specifically target extremes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "When comparing two algorithms for the same spatial problem, {{blank:1}} measures how run time grows with input size, while {{blank:2}} measures how close results are to exact values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "time complexity",
+          "correctExplanation": "Time complexity describes the growth rate of computation with input size.",
+          "distractors": [
+            {
+              "answer": "accuracy",
+              "explanation": "Accuracy measures result quality, not speed.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "pseudocode length",
+              "explanation": "Code length does not measure computational growth.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "accuracy",
+          "correctExplanation": "Accuracy measures the closeness of computed results to true values.",
+          "distractors": [
+            {
+              "answer": "time complexity",
+              "explanation": "Time complexity measures speed, not result quality.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "vertex count",
+              "explanation": "Vertex count is an input property, not a quality measure.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A greedy algorithm like Dijkstra's makes {{blank:1}} optimal choices at each step, which guarantees a globally optimal result for {{blank:2}} graphs.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "locally",
+          "correctExplanation": "Greedy algorithms choose the best option at each step without reconsidering.",
+          "distractors": [
+            {
+              "answer": "globally",
+              "explanation": "Greedy algorithms do not consider all future possibilities at each step.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "randomly",
+              "explanation": "Greedy algorithms are deterministic, not random.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "non-negative weight",
+          "correctExplanation": "Dijkstra's greedy approach is correct only when all edge weights are non-negative.",
+          "distractors": [
+            {
+              "answer": "all",
+              "explanation": "Negative weights can cause Dijkstra's to fail.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unweighted",
+              "explanation": "Dijkstra's works on weighted graphs; BFS is used for unweighted.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "An iterative refinement cycle for a spatial algorithm follows the steps: design, {{blank:1}}, analyse results, then {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "test",
+          "correctExplanation": "Testing produces results for analysis.",
+          "distractors": [
+            {
+              "answer": "deploy",
+              "explanation": "Deployment occurs after refinement, not during the cycle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "delete",
+              "explanation": "Deleting the algorithm ends the cycle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "refine",
+          "correctExplanation": "Refinement modifies the algorithm based on analysis.",
+          "distractors": [
+            {
+              "answer": "publish",
+              "explanation": "Publishing is a final step, not part of the iterative cycle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "restart from scratch",
+              "explanation": "Refinement improves the existing algorithm.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "The convex hull problem has optimal time complexity of {{blank:1}} using algorithms like Graham scan, where n is the number of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "O(n log n)",
+          "correctExplanation": "Sorting-based hull algorithms achieve O(n log n).",
+          "distractors": [
+            {
+              "answer": "O(n²)",
+              "explanation": "Naive algorithms are O(n²) but the optimal is O(n log n).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "O(n)",
+              "explanation": "O(n) is possible only if points are pre-sorted.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "input points",
+          "correctExplanation": "The complexity depends on the total number of points to process.",
+          "distractors": [
+            {
+              "answer": "hull vertices",
+              "explanation": "The complexity is measured against total input, not just hull points.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "edges",
+              "explanation": "The number of edges is not the primary input measure.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A robust point-in-polygon implementation handles three cases: point {{blank:1}}, point {{blank:2}}, and point on the boundary.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "inside",
+          "correctExplanation": "Inside points have odd crossing counts.",
+          "distractors": [
+            {
+              "answer": "above",
+              "explanation": "Above is not a standard classification.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "collinear",
+              "explanation": "Collinear is a property of points relative to edges, not a containment category.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "outside",
+          "correctExplanation": "Outside points have even crossing counts.",
+          "distractors": [
+            {
+              "answer": "below",
+              "explanation": "Below is not a standard classification.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "adjacent",
+              "explanation": "Adjacent is not a containment classification.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The shoelace formula treats the polygon as a series of {{blank:1}} formed with the origin, and the signed areas sum to the polygon's {{blank:2}} area.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "triangles",
+          "correctExplanation": "Each consecutive pair of vertices forms a triangle with the origin whose signed area contributes to the total.",
+          "distractors": [
+            {
+              "answer": "rectangles",
+              "explanation": "The formula uses triangular decomposition, not rectangular.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "circles",
+              "explanation": "Circles are not formed in the shoelace decomposition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "total",
+          "correctExplanation": "The signed areas of all triangles sum to give the polygon's total enclosed area.",
+          "distractors": [
+            {
+              "answer": "average",
+              "explanation": "The areas are summed, not averaged.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "minimum",
+              "explanation": "The total area is a sum, not a minimum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

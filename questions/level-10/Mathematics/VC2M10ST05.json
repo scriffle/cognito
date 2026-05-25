@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10ST05",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to plan and conduct bivariate statistical investigations, including time-series analysis.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to plan and conduct bivariate statistical investigations, including time-series analysis.",
+    "y": [
+      "Bivariate investigations allow us to explore how two variables are related \u2014 the foundation of predictive modelling and data science.",
+      "Time-series analysis reveals trends, seasonality and long-term patterns in data collected over time.",
+      "These investigative skills prepare us for research in science, economics, environmental monitoring and social science."
+    ],
+    "eg": [
+      "Investigating: 'Is there a relationship between daily temperature and electricity consumption in Melbourne?'",
+      "Collecting bivariate data, constructing a scatterplot and fitting a line of best fit.",
+      "Analysing a time series: graphing monthly rainfall data over 5 years and identifying seasonal patterns and trends.",
+      "Using a moving average to smooth a time series and reveal the underlying trend.",
+      "Drawing evidence-based conclusions about the strength and direction of the relationship.",
+      "Evaluating the limitations of our investigation and suggesting improvements for future research."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A statistical investigation begins with collecting data before formulating a research question.",
+      "correct": "False",
+      "correctExplanation": "The investigation cycle starts with a clear question that guides data collection. Collecting without a question leads to unfocused, unusable data.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A clear research question must come before data collection."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "In a time-series graph, the response variable is plotted on the x-axis.",
+      "correct": "False",
+      "correctExplanation": "In a time-series graph, time goes on the x-axis and the response variable goes on the y-axis.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Time is the independent variable on the x-axis; the response variable is on the y-axis."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Bivariate data involves measuring three variables on each subject.",
+      "correct": "False",
+      "correctExplanation": "Bivariate data involves exactly two variables measured on each subject. Three variables would be trivariate or multivariate.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Bivariate means three measurements per subject."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Data points in a time-series graph should be connected with lines.",
+      "correct": "True",
+      "correctExplanation": "Connecting points shows the progression over time and helps reveal trends and patterns.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Time-series points should never be connected."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "A trend in a time-series graph describes the short-term fluctuations in the data.",
+      "correct": "False",
+      "correctExplanation": "A trend describes the long-term overall direction of the data (upward, downward, or stable). Short-term fluctuations are variation.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Trends capture brief day-to-day changes in the data."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Seasonal variation refers to patterns that repeat at regular intervals.",
+      "correct": "True",
+      "correctExplanation": "Seasonal variation shows a repeating cycle, such as annual temperature patterns or monthly sales cycles.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Seasonal variation occurs randomly with no predictable pattern."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "A scatterplot is the appropriate display for bivariate numerical data.",
+      "correct": "True",
+      "correctExplanation": "Scatterplots show the relationship between two numerical variables, with each point representing one data pair.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Scatterplots are only used for categorical data."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The conclusion of a statistical investigation should state that the data proves the hypothesis.",
+      "correct": "False",
+      "correctExplanation": "Statistical investigations provide evidence, not proof. Conclusions should use cautious language such as 'suggests' or 'indicates'.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Investigations always prove or disprove hypotheses definitively."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "A time-series graph with an upward trend means every single data point is higher than the previous one.",
+      "correct": "False",
+      "correctExplanation": "An upward trend describes the overall long-term direction. Individual points can dip below the previous value while the general pattern still rises.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Every point must exceed the previous point for an upward trend to exist."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Planning data collection before gathering data is an important step.",
+      "correct": "True",
+      "correctExplanation": "Planning ensures the right variables are measured, the sample is appropriate, and the method is suitable for the research question.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Planning is unnecessary because any data can answer any question."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A time-series graph uses bars instead of connected points to display data.",
+      "correct": "False",
+      "correctExplanation": "Time-series graphs use connected points (line graphs) to show progression over time. Bar charts are for categorical comparisons.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Bars are the standard format for time-series displays."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Every statistical investigation should acknowledge its limitations.",
+      "correct": "True",
+      "correctExplanation": "Acknowledging limitations (sample size, confounders, methodology) strengthens the report by showing awareness of potential weaknesses.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Mentioning limitations weakens the credibility of an investigation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is bivariate data?",
+      "correct": "Data that measures two variables on",
+      "correctExplanation": "Bivariate means two variables, measured together on the same individuals or items.",
+      "distractors": [
+        {
+          "answer": "Data from two different samples",
+          "explanation": "Bivariate refers to variables, not samples."
+        },
+        {
+          "answer": "Data with two possible outcomes",
+          "explanation": "Two outcomes describes binary data, not bivariate."
+        },
+        {
+          "answer": "Data collected over two time periods",
+          "explanation": "Two time periods is not the definition of bivariate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "What is the first step in a statistical investigation?",
+      "correct": "Formulate a research",
+      "correctExplanation": "A clear question guides all subsequent steps: planning, collecting, analysing, and reporting.",
+      "distractors": [
+        {
+          "answer": "Collect data immediately",
+          "explanation": "Collecting without a question leads to unfocused data."
+        },
+        {
+          "answer": "Draw conclusions",
+          "explanation": "Conclusions come after analysis, not before."
+        },
+        {
+          "answer": "Create a graph",
+          "explanation": "Graphs are created after data is collected."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "In a time-series graph, what does a trend describe?",
+      "correct": "The long-term direction of the data",
+      "correctExplanation": "A trend shows whether data is generally increasing, decreasing, or remaining stable over time.",
+      "distractors": [
+        {
+          "answer": "A single data point",
+          "explanation": "A trend describes an overall pattern, not one point."
+        },
+        {
+          "answer": "The highest value in the data",
+          "explanation": "The maximum is one value, not the trend."
+        },
+        {
+          "answer": "Daily fluctuations only",
+          "explanation": "Daily fluctuations are short-term variation, not the trend."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What type of graph is used for time-series data?",
+      "correct": "A line graph",
+      "correctExplanation": "Time-series data is displayed with points connected by lines to show progression over time.",
+      "distractors": [
+        {
+          "answer": "A pie chart",
+          "explanation": "Pie charts show proportions, not time-based data."
+        },
+        {
+          "answer": "A scatterplot with",
+          "explanation": "Scatterplots show bivariate relationships but do not connect points."
+        },
+        {
+          "answer": "A bar chart",
+          "explanation": "Bar charts compare categories, not time progression."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What is seasonal variation in a time series?",
+      "correct": "A repeating pattern over regular ti",
+      "correctExplanation": "Seasonal patterns recur predictably, such as higher retail sales each December.",
+      "distractors": [
+        {
+          "answer": "A one-off spike in the data",
+          "explanation": "A single spike is irregular variation."
+        },
+        {
+          "answer": "A long-term upward trend",
+          "explanation": "A trend is a separate component from seasonal variation."
+        },
+        {
+          "answer": "Random noise in the data",
+          "explanation": "Random noise is irregular variation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Which variable goes on the x-axis in a time-series graph?",
+      "correct": "Time",
+      "correctExplanation": "Time is the independent variable in a time series and is plotted horizontally.",
+      "distractors": [
+        {
+          "answer": "The response variable",
+          "explanation": "The response goes on the y-axis."
+        },
+        {
+          "answer": "Frequency",
+          "explanation": "Frequency is used in histograms, not time-series graphs."
+        },
+        {
+          "answer": "The dependent variable",
+          "explanation": "The dependent variable is plotted on the y-axis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What does 'evaluate' mean in the investigation cycle?",
+      "correct": "Assess whether the",
+      "correctExplanation": "Evaluation involves reflecting on the results, methodology, and limitations.",
+      "distractors": [
+        {
+          "answer": "Collect more data",
+          "explanation": "Collection is a separate step from evaluation."
+        },
+        {
+          "answer": "Draw a graph",
+          "explanation": "Graphing is part of display, not evaluation."
+        },
+        {
+          "answer": "Delete the data",
+          "explanation": "Deleting data is not part of the investigation process."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What language should be used when stating conclusions from a statistical investigation?",
+      "correct": "Cautious language such as 'suggests'",
+      "correctExplanation": "Statistical evidence does not prove; it provides support. Cautious language reflects this uncertainty.",
+      "distractors": [
+        {
+          "answer": "Definitive language such as 'proves'",
+          "explanation": "Statistical data rarely proves anything definitively."
+        },
+        {
+          "answer": "No language is needed",
+          "explanation": "Written conclusions are essential for communication."
+        },
+        {
+          "answer": "Mathematical symbols only",
+          "explanation": "Words are needed to interpret results in context."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is irregular variation in a time series?",
+      "correct": "Unpredictable fluctuations caused by unexp",
+      "correctExplanation": "Irregular variation includes one-off events like natural disasters or pandemics that disrupt normal patterns.",
+      "distractors": [
+        {
+          "answer": "The overall upward or downward direction",
+          "explanation": "This describes the trend, not irregular variation."
+        },
+        {
+          "answer": "A repeating annual cycle",
+          "explanation": "Repeating cycles are seasonal variation."
+        },
+        {
+          "answer": "The average of all data points",
+          "explanation": "The average is a summary statistic, not a type of variation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Why is it important to plan before collecting data?",
+      "correct": "To ensure the data collected",
+      "correctExplanation": "Planning defines variables, sample, and method so that useful data is gathered.",
+      "distractors": [
+        {
+          "answer": "To make the report longer",
+          "explanation": "Report length is not the purpose of planning."
+        },
+        {
+          "answer": "To avoid using technology",
+          "explanation": "Technology is often used in data collection."
+        },
+        {
+          "answer": "To guarantee a specific result",
+          "explanation": "Planning ensures quality, not a predetermined outcome."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "What does the investigation cycle include after data analysis?",
+      "correct": "Evaluation and reporting",
+      "correctExplanation": "After analysing the data, the investigator evaluates the findings and writes a report with conclusions and limitations.",
+      "distractors": [
+        {
+          "answer": "More data collection",
+          "explanation": "Additional collection may occur but is not the standard next step."
+        },
+        {
+          "answer": "Deleting the data",
+          "explanation": "Data should be preserved, not deleted."
+        },
+        {
+          "answer": "Starting a new investigation",
+          "explanation": "A new investigation follows after the current one is complete."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What type of display is appropriate for comparing two numerical variables?",
+      "correct": "Scatterplot",
+      "correctExplanation": "Scatterplots display paired numerical data to show the relationship between two variables.",
+      "distractors": [
+        {
+          "answer": "Pie chart",
+          "explanation": "Pie charts show proportions of a whole, not variable relationships."
+        },
+        {
+          "answer": "Histogram",
+          "explanation": "Histograms show the distribution of one variable."
+        },
+        {
+          "answer": "Two-way table",
+          "explanation": "Two-way tables are for categorical variables."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The investigation cycle follows the steps: question, plan, collect, display, {{blank:1}}, evaluate, and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "analyse",
+          "correctExplanation": "After displaying data, the next step is to analyse patterns and trends.",
+          "distractors": [
+            {
+              "answer": "delete",
+              "explanation": "Deleting data is not part of the investigation cycle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "guess",
+              "explanation": "Analysis is systematic, not guesswork.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "report",
+          "correctExplanation": "The final step is reporting findings, conclusions, and limitations.",
+          "distractors": [
+            {
+              "answer": "forget",
+              "explanation": "Forgetting is not a step in the investigation process.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "restart",
+              "explanation": "Restarting may follow, but reporting is the cycle's conclusion.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "A time-series graph plots {{blank:1}} on the x-axis and the measured variable on the {{blank:2}} axis, with points connected by lines.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "time",
+          "correctExplanation": "Time is the independent variable in a time-series graph.",
+          "distractors": [
+            {
+              "answer": "frequency",
+              "explanation": "Frequency is used in histograms, not time-series graphs.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "categories",
+              "explanation": "Categories belong in bar charts, not time-series graphs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "y",
+          "correctExplanation": "The response variable is plotted vertically on the y-axis.",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "The x-axis is used for time.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "z",
+              "explanation": "Standard time-series graphs are two-dimensional.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A research question for a bivariate investigation does not need to identify specific variables.",
+      "correct": "False",
+      "correctExplanation": "A clear research question must name both variables and the population to guide the entire investigation effectively.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The question must specify both variables for a focused investigation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "A downward trend in a time series means every data point is lower than the one before it.",
+      "correct": "False",
+      "correctExplanation": "A downward trend shows the overall long-term direction is decreasing. Individual points may still rise temporarily.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Every point must decrease for a downward trend to exist."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Seasonal variation in Melbourne rainfall follows an annual cycle with higher winter rainfall.",
+      "correct": "True",
+      "correctExplanation": "Melbourne typically receives more rain in winter months, creating a predictable annual seasonal pattern.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Melbourne rainfall has no seasonal pattern."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "An upward trend in a time series proves that the variable will continue to increase.",
+      "correct": "False",
+      "correctExplanation": "Past trends do not guarantee future behaviour. External factors can change the trajectory at any time.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Upward trends always continue indefinitely."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "When reporting statistical findings, limitations should be acknowledged.",
+      "correct": "True",
+      "correctExplanation": "Mentioning limitations (sample size, methodology, confounders) shows awareness of potential weaknesses and strengthens the report.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Limitations should be hidden to make the report more convincing."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "A scatterplot of altitude versus temperature is a time-series graph because altitude changes over time.",
+      "correct": "False",
+      "correctExplanation": "This is a bivariate scatterplot, not a time series. Altitude is not time \u2014 it is a spatial variable. Time series require time as the x-axis variable.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Any graph with a changing x-variable is a time series."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The strength of association in a scatterplot can be described as strong, moderate, or weak.",
+      "correct": "True",
+      "correctExplanation": "Strength describes how tightly the points cluster around a trend line or curve.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Association strength cannot be categorised in any way."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "A statistical investigation can prove that one variable causes another to change.",
+      "correct": "False",
+      "correctExplanation": "Observational investigations can show association but not causation. Only controlled experiments can establish cause and effect.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Investigations always prove causal relationships."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Which research question is best suited for a bivariate investigation?",
+      "correct": "Is there a relationship between exe",
+      "correctExplanation": "This question identifies two numerical variables (exercise hours and heart rate) and a specific population.",
+      "distractors": [
+        {
+          "answer": "How many students exercise?",
+          "explanation": "This involves only one variable."
+        },
+        {
+          "answer": "Do students like sport?",
+          "explanation": "This is a categorical question, not bivariate numerical."
+        },
+        {
+          "answer": "What is the average height?",
+          "explanation": "This involves one variable, not two."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Melbourne dam levels are recorded monthly over 10 years. The graph shows a repeating annual pattern of low levels in summer and high levels in winter. What is this pattern called?",
+      "correct": "Seasonal variation",
+      "correctExplanation": "The repeating annual cycle of dam levels corresponds to seasonal rainfall patterns.",
+      "distractors": [
+        {
+          "answer": "Trend",
+          "explanation": "A trend is the long-term direction, not a repeating cycle."
+        },
+        {
+          "answer": "Irregular variation",
+          "explanation": "Irregular variation is unpredictable, not cyclical."
+        },
+        {
+          "answer": "Random noise",
+          "explanation": "The pattern is predictable and cyclical, not random."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A time-series graph of school enrolments shows an overall increase over 20 years with dips each December. What describes the December dips?",
+      "correct": "Seasonal variation",
+      "correctExplanation": "Annual dips at year-end are a predictable repeating pattern tied to the school calendar.",
+      "distractors": [
+        {
+          "answer": "Trend",
+          "explanation": "The trend is the overall increase, not the annual dips."
+        },
+        {
+          "answer": "Outliers",
+          "explanation": "Regular annual patterns are not outliers."
+        },
+        {
+          "answer": "Data errors",
+          "explanation": "Consistent annual patterns are not errors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "What type of display should be used for bivariate numerical data?",
+      "correct": "Scatterplot",
+      "correctExplanation": "Scatterplots show the relationship between two numerical variables as points on a coordinate plane.",
+      "distractors": [
+        {
+          "answer": "Bar chart",
+          "explanation": "Bar charts compare categories, not numerical relationships."
+        },
+        {
+          "answer": "Pie chart",
+          "explanation": "Pie charts show proportions of a whole."
+        },
+        {
+          "answer": "Stem-and-leaf plot",
+          "explanation": "Stem-and-leaf plots display one variable's distribution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A student records daily screen time and hours of sleep for 30 days. What are the two variables?",
+      "correct": "Screen time and hours of sleep",
+      "correctExplanation": "These are the two numerical variables measured on the same days, forming bivariate data.",
+      "distractors": [
+        {
+          "answer": "30 days and screen time",
+          "explanation": "Days is the sample size, not a variable being compared."
+        },
+        {
+          "answer": "Sleep quality and grades",
+          "explanation": "These variables were not mentioned in the study."
+        },
+        {
+          "answer": "Morning and evening data",
+          "explanation": "Time of day was not described as a variable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "When writing the conclusion of a statistical investigation, which phrase is most appropriate?",
+      "correct": "The data suggests a positive association between",
+      "correctExplanation": "Cautious language acknowledges that observational data cannot prove causation.",
+      "distractors": [
+        {
+          "answer": "The data proves the hypothesis",
+          "explanation": "Statistical data provides evidence, not proof."
+        },
+        {
+          "answer": "The variables definitely cause each other",
+          "explanation": "Causation cannot be established from observation alone."
+        },
+        {
+          "answer": "There is nothing more to learn",
+          "explanation": "Investigations often raise further questions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "A time-series graph of monthly temperatures in Melbourne shows a clear upward trend over 50 years alongside annual seasonal cycles. What are the two components?",
+      "correct": "Trend and seasonal variation",
+      "correctExplanation": "The long-term warming is the trend; the annual hot-cold cycle is seasonal variation.",
+      "distractors": [
+        {
+          "answer": "Two seasonal patterns",
+          "explanation": "There is one seasonal pattern and one trend."
+        },
+        {
+          "answer": "Irregular variation only",
+          "explanation": "The patterns are systematic, not irregular."
+        },
+        {
+          "answer": "Random noise and outliers",
+          "explanation": "The described patterns are predictable, not random."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Why should a report include the method of data collection?",
+      "correct": "So readers can assess the reliability",
+      "correctExplanation": "Methodology transparency allows others to evaluate potential biases and limitations.",
+      "distractors": [
+        {
+          "answer": "To make the report longer",
+          "explanation": "Length is not the purpose of methodological detail."
+        },
+        {
+          "answer": "To impress the reader",
+          "explanation": "Transparency serves reliability, not impressiveness."
+        },
+        {
+          "answer": "It is only required for published papers",
+          "explanation": "All reports benefit from methodological detail."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A student measures height and foot length for 25 classmates. Which graph should they use?",
+      "correct": "Scatterplot",
+      "correctExplanation": "Two numerical variables measured on the same subjects are displayed using a scatterplot.",
+      "distractors": [
+        {
+          "answer": "Time-series graph",
+          "explanation": "Height and foot length are not measured over time."
+        },
+        {
+          "answer": "Histogram",
+          "explanation": "Histograms display the distribution of one variable."
+        },
+        {
+          "answer": "Pie chart",
+          "explanation": "Pie charts show proportions of categories."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "What is the purpose of the evaluation step in a statistical investigation?",
+      "correct": "To reflect on whether the findings",
+      "correctExplanation": "Evaluation considers the validity of results, methodology, and potential improvements.",
+      "distractors": [
+        {
+          "answer": "To collect more data",
+          "explanation": "Data collection is a separate earlier step."
+        },
+        {
+          "answer": "To choose a graph type",
+          "explanation": "Graph selection happens during the display step."
+        },
+        {
+          "answer": "To delete incorrect results",
+          "explanation": "Results should be reported honestly, not deleted."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "BOM records of Melbourne rainfall over 100 years show periods of drought followed by wet years. What type of time-series component does this represent?",
+      "correct": "Irregular variation on a",
+      "correctExplanation": "Multi-year drought and wet periods are longer-term fluctuations that do not follow a strict seasonal pattern.",
+      "distractors": [
+        {
+          "answer": "Seasonal variation",
+          "explanation": "Seasonal patterns are annual, not multi-year."
+        },
+        {
+          "answer": "A consistent upward trend",
+          "explanation": "Alternating wet and dry periods are not a one-directional trend."
+        },
+        {
+          "answer": "Data collection errors",
+          "explanation": "Climate fluctuations are real phenomena, not errors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A student investigates whether taller students have larger hand spans. What should they report alongside their findings?",
+      "correct": "Limitations such as sample size and",
+      "correctExplanation": "Acknowledging limitations shows scientific rigour and helps readers interpret the findings.",
+      "distractors": [
+        {
+          "answer": "Only the positive results",
+          "explanation": "All results should be reported, not just positive ones."
+        },
+        {
+          "answer": "The names of participants",
+          "explanation": "Names should be kept confidential."
+        },
+        {
+          "answer": "A guarantee that the results are correct",
+          "explanation": "No investigation can guarantee its results."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A time-series graph has three components: {{blank:1}} (long-term direction), seasonal variation (repeating cycle), and {{blank:2}} variation (unpredictable fluctuations).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trend",
+          "correctExplanation": "The trend shows whether data is generally increasing, decreasing, or stable.",
+          "distractors": [
+            {
+              "answer": "seasonal",
+              "explanation": "Seasonal variation is the repeating cycle component.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random fluctuations are called irregular variation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "irregular",
+          "correctExplanation": "Irregular variation is caused by unexpected events that disrupt normal patterns.",
+          "distractors": [
+            {
+              "answer": "regular",
+              "explanation": "Regular patterns are seasonal, not irregular.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "trend",
+              "explanation": "Trend is the long-term direction, not unpredictable fluctuations.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "When reporting findings, use cautious language such as 'the data {{blank:1}}' rather than 'the data {{blank:2}}' to reflect the limitations of observational data.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "suggests",
+          "correctExplanation": "Cautious language acknowledges uncertainty in observational findings.",
+          "distractors": [
+            {
+              "answer": "proves",
+              "explanation": "Proof requires experimental evidence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "demands",
+              "explanation": "Data does not demand; researchers interpret.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "proves",
+          "correctExplanation": "Observational data provides evidence, not proof.",
+          "distractors": [
+            {
+              "answer": "suggests",
+              "explanation": "Suggests is the cautious alternative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "shows",
+              "explanation": "Shows is less cautious but more acceptable than proves.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A bivariate investigation measures {{blank:1}} variables on each subject. The explanatory variable goes on the x-axis and the {{blank:2}} variable on the y-axis.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "two",
+          "correctExplanation": "Bivariate means two variables measured together.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "One variable is univariate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "three",
+              "explanation": "Three variables would be multivariate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "response",
+          "correctExplanation": "The response (dependent) variable goes on the vertical axis.",
+          "distractors": [
+            {
+              "answer": "explanatory",
+              "explanation": "The explanatory variable goes on the x-axis.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "control",
+              "explanation": "Control variables are held constant, not plotted.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Melbourne's monthly temperature data shows higher values in January and lower values in July. This repeating annual pattern is called {{blank:1}} variation, while the overall warming over decades is the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "seasonal",
+          "correctExplanation": "The annual hot-cold cycle is a predictable seasonal pattern.",
+          "distractors": [
+            {
+              "answer": "irregular",
+              "explanation": "Irregular variation is unpredictable, not cyclical.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "The pattern is systematic, not random.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trend",
+          "correctExplanation": "The long-term overall direction of the data is called the trend.",
+          "distractors": [
+            {
+              "answer": "seasonal variation",
+              "explanation": "Seasonal variation is the annual cycle, not the long-term direction.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "outlier",
+              "explanation": "An outlier is a single unusual point, not a long-term pattern.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The investigation cycle ends with a {{blank:1}} that presents findings, conclusions, and {{blank:2}} of the study.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "report",
+          "correctExplanation": "The report communicates all aspects of the investigation.",
+          "distractors": [
+            {
+              "answer": "graph",
+              "explanation": "Graphs are part of the display step, not the final product.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "hypothesis",
+              "explanation": "A hypothesis is stated at the beginning, not the end.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "limitations",
+          "correctExplanation": "Acknowledging limitations shows scientific honesty and rigour.",
+          "distractors": [
+            {
+              "answer": "perfections",
+              "explanation": "No study is perfect; limitations should be stated.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "guarantees",
+              "explanation": "Statistical investigations provide evidence, not guarantees.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "A scatterplot of altitude versus temperature shows bivariate data but is not a {{blank:1}} graph because altitude is not {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "time-series",
+          "correctExplanation": "Time-series graphs require time as the independent variable.",
+          "distractors": [
+            {
+              "answer": "scatter",
+              "explanation": "It is a scatterplot; the distinction is from time series.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "bar",
+              "explanation": "Bar charts are for categorical data.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "time",
+          "correctExplanation": "Altitude is a spatial measurement, not a temporal one.",
+          "distractors": [
+            {
+              "answer": "numerical",
+              "explanation": "Altitude is numerical; the issue is that it is not time.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "categorical",
+              "explanation": "Altitude is numerical, not categorical.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A strong association between two variables in a bivariate investigation proves that one variable causes changes in the other.",
+      "correct": "False",
+      "correctExplanation": "Association does not prove causation. Confounding variables, reverse causation, or coincidence may explain the observed pattern.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Strong associations always indicate causal relationships."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Acknowledging limitations in a statistical report weakens the overall credibility of the findings.",
+      "correct": "False",
+      "correctExplanation": "Acknowledging limitations shows intellectual honesty and scientific rigour, which strengthens rather than weakens the report.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Mentioning weaknesses always makes a report less credible."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A student investigates 'Is there a relationship between daily screen time and sleep quality for Year 10 students?' They survey 30 classmates. Identify one limitation.",
+      "correct": "The sample is from one school and",
+      "correctExplanation": "A convenience sample from one school limits generalisability to the broader population.",
+      "distractors": [
+        {
+          "answer": "30 students is too many",
+          "explanation": "30 is a reasonable sample size for a school investigation."
+        },
+        {
+          "answer": "Screen time cannot be measured",
+          "explanation": "Screen time can be measured or self-reported."
+        },
+        {
+          "answer": "The question is too specific",
+          "explanation": "Specific questions are better for focused investigations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Melbourne's average temperature time series shows an upward trend of approximately 1\u00b0C over 50 years with annual cycles. How should the trend be interpreted?",
+      "correct": "The overall pattern suggests warm",
+      "correctExplanation": "The long-term upward trend aligns with broader climate change evidence, though urban heat island effects should be noted.",
+      "distractors": [
+        {
+          "answer": "Melbourne is getting colder",
+          "explanation": "The data shows an upward trend, not cooling."
+        },
+        {
+          "answer": "Temperature does not change",
+          "explanation": "A 1\u00b0C increase over 50 years is measurable change."
+        },
+        {
+          "answer": "The data is unreliable",
+          "explanation": "BOM data is systematically collected and reliable."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A time-series graph of daily COVID cases in Melbourne during 2020 shows a sharp spike in July-August. What type of variation is this spike?",
+      "correct": "Irregular variation caus",
+      "correctExplanation": "The second wave outbreak was an unpredictable event that disrupted the normal pattern.",
+      "distractors": [
+        {
+          "answer": "Seasonal variation",
+          "explanation": "COVID outbreaks did not follow a predictable seasonal pattern in 2020."
+        },
+        {
+          "answer": "A long-term trend",
+          "explanation": "A single spike is not a long-term trend."
+        },
+        {
+          "answer": "A data error",
+          "explanation": "The spike reflected real case numbers during the second wave."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A student plots exercise frequency versus resting heart rate and finds a moderate negative association. What does this mean?",
+      "correct": "Students who exercise more tend to have",
+      "correctExplanation": "A negative association means as exercise frequency increases, resting heart rate tends to decrease.",
+      "distractors": [
+        {
+          "answer": "Exercise increases heart rate",
+          "explanation": "Resting heart rate tends to decrease with more exercise."
+        },
+        {
+          "answer": "There is no relationship",
+          "explanation": "A moderate association indicates a relationship exists."
+        },
+        {
+          "answer": "All frequent exercisers have low heart rates",
+          "explanation": "Moderate means there is scatter around the trend."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "When planning a bivariate investigation, why is it important to define the variables clearly?",
+      "correct": "Clear definitions ensure consistent measure",
+      "correctExplanation": "Without clear operational definitions, different interpretations lead to inconsistent data.",
+      "distractors": [
+        {
+          "answer": "Variables do not need defining",
+          "explanation": "Undefined variables produce ambiguous results."
+        },
+        {
+          "answer": "Definitions make the report longer",
+          "explanation": "Length is not the purpose of clear definitions."
+        },
+        {
+          "answer": "Only one variable needs defining",
+          "explanation": "Both variables must be clearly defined."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A time-series graph of dam levels shows a long-term downward trend over 20 years. What limitation should be noted when drawing conclusions?",
+      "correct": "The trend may not continue if",
+      "correctExplanation": "Past trends do not guarantee future behaviour. Climate variability and intervention can alter trajectories.",
+      "distractors": [
+        {
+          "answer": "The data is definitely wrong",
+          "explanation": "Systematic records from water authorities are reliable."
+        },
+        {
+          "answer": "Dam levels always fall",
+          "explanation": "Levels respond to rainfall and can rise again."
+        },
+        {
+          "answer": "No limitations exist for time-series data",
+          "explanation": "All statistical analyses have limitations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A student finds a positive association between study hours and marks. Their friend argues this proves studying causes better marks. How should the student respond?",
+      "correct": "The data shows association, not causation \u2014",
+      "correctExplanation": "Motivated students may both study more and perform better. Causation requires controlled experiments.",
+      "distractors": [
+        {
+          "answer": "Their friend is correct",
+          "explanation": "Observational data cannot prove causation."
+        },
+        {
+          "answer": "The data must be wrong",
+          "explanation": "The association is a valid finding."
+        },
+        {
+          "answer": "Association and causation are the same",
+          "explanation": "They are fundamentally different concepts."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "What should a statistical report include in its methodology section?",
+      "correct": "Variables measured, sample sel",
+      "correctExplanation": "These details allow readers to assess reliability, potential bias, and whether the method suits the question.",
+      "distractors": [
+        {
+          "answer": "Only the final results",
+          "explanation": "Results alone are insufficient without methodological context."
+        },
+        {
+          "answer": "The researcher's opinion",
+          "explanation": "Personal opinions do not belong in methodology."
+        },
+        {
+          "answer": "A list of all",
+          "explanation": "Raw data is in an appendix, not the methodology section."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A researcher compares weekly ice cream sales and weekly drowning rates over a year. Both increase in summer. What should the researcher conclude?",
+      "correct": "There is association but a confounding",
+      "correctExplanation": "Hot weather drives both swimming (and drownings) and ice cream purchases independently.",
+      "distractors": [
+        {
+          "answer": "Ice cream causes drowning",
+          "explanation": "This incorrectly assumes causation from correlation."
+        },
+        {
+          "answer": "The data is coincidental",
+          "explanation": "The consistent pattern is systematic, not coincidence."
+        },
+        {
+          "answer": "Drowning causes ice cream sales",
+          "explanation": "This reverses any logical connection."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "ABS population data for Victoria over 30 years shows steady growth with a dip during 2020-2021. What explains the dip?",
+      "correct": "COVID-related border closures r",
+      "correctExplanation": "International and interstate border restrictions during the pandemic temporarily reduced population growth.",
+      "distractors": [
+        {
+          "answer": "People stopped being born",
+          "explanation": "Birth rates did not drop to zero."
+        },
+        {
+          "answer": "The census was wrong",
+          "explanation": "The ABS census is carefully conducted."
+        },
+        {
+          "answer": "Victoria became smaller",
+          "explanation": "The geographic area did not change."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Aboriginal seasonal ecological knowledge represents what type of data understanding?",
+      "correct": "Long-term time-series observation of environme",
+      "correctExplanation": "Thousands of years of systematic observation of seasonal patterns constitutes sophisticated time-series understanding.",
+      "distractors": [
+        {
+          "answer": "Random unscientific guessing",
+          "explanation": "Traditional knowledge is systematic and evidence-based."
+        },
+        {
+          "answer": "Only modern Western science is valid",
+          "explanation": "Multiple knowledge systems have value."
+        },
+        {
+          "answer": "Knowledge that has no connection to data",
+          "explanation": "Ecological knowledge is deeply data-informed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A time-series graph shows monthly retail sales with peaks every December. If the analyst wants to see the underlying trend, what should they do?",
+      "correct": "Smooth the data using a moving",
+      "correctExplanation": "A moving average (e.g., 12-month) averages out seasonal cycles, revealing the underlying trend.",
+      "distractors": [
+        {
+          "answer": "Delete the December data",
+          "explanation": "Removing data loses information."
+        },
+        {
+          "answer": "Only plot January values",
+          "explanation": "Using one month per year loses most of the data."
+        },
+        {
+          "answer": "Ignore the seasonal pattern",
+          "explanation": "Ignoring it may lead to misinterpreting the trend."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "A well-designed investigation begins with a clear {{blank:1}} and ends with a report that includes findings, conclusions, and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "question",
+          "correctExplanation": "The research question guides all subsequent steps of the investigation.",
+          "distractors": [
+            {
+              "answer": "answer",
+              "explanation": "Answers come at the end, not the beginning.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "graph",
+              "explanation": "Graphs are created during the display step.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "limitations",
+          "correctExplanation": "Acknowledging limitations shows scientific honesty and rigour.",
+          "distractors": [
+            {
+              "answer": "guarantees",
+              "explanation": "Investigations cannot guarantee their findings.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "proofs",
+              "explanation": "Statistical investigations provide evidence, not proof.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A time series can be decomposed into three components: {{blank:1}}, seasonal variation, and {{blank:2}} variation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trend",
+          "correctExplanation": "The trend captures the long-term direction of the data.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is a summary statistic, not a time-series component.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "median",
+              "explanation": "The median is a measure of centre, not a decomposition component.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "irregular",
+          "correctExplanation": "Irregular variation captures unpredictable fluctuations from unexpected events.",
+          "distractors": [
+            {
+              "answer": "regular",
+              "explanation": "Regular patterns are captured by seasonal variation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "constant",
+              "explanation": "Constant implies no variation at all.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "When two numerical variables are measured on the same subjects, the data is called {{blank:1}}. The relationship is displayed using a {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "bivariate",
+          "correctExplanation": "Bivariate means two variables measured together.",
+          "distractors": [
+            {
+              "answer": "univariate",
+              "explanation": "Univariate involves only one variable.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "multivariate",
+              "explanation": "Multivariate involves three or more variables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "scatterplot",
+          "correctExplanation": "Scatterplots display the relationship between two numerical variables.",
+          "distractors": [
+            {
+              "answer": "histogram",
+              "explanation": "Histograms show the distribution of one variable.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "pie chart",
+              "explanation": "Pie charts show proportions of categories.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A moving average smooths a time series by averaging data points over a fixed {{blank:1}}, reducing the effect of {{blank:2}} variation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "window",
+          "correctExplanation": "The window (e.g., 12 months) determines how many points are averaged.",
+          "distractors": [
+            {
+              "answer": "graph",
+              "explanation": "A graph displays data; a window defines the averaging range.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "axis",
+              "explanation": "Axes are graph features, not averaging parameters.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "seasonal",
+          "correctExplanation": "Averaging over a full cycle (e.g., 12 months) removes seasonal patterns.",
+          "distractors": [
+            {
+              "answer": "trend",
+              "explanation": "The moving average preserves the trend while removing seasonality.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "all",
+              "explanation": "Some variation remains even after smoothing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The conclusion of a statistical investigation should state whether the data {{blank:1}} the research question and identify any {{blank:2}} variables that may have influenced the results.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "answers",
+          "correctExplanation": "The conclusion connects findings back to the original question.",
+          "distractors": [
+            {
+              "answer": "ignores",
+              "explanation": "The conclusion should address the question, not ignore it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "changes",
+              "explanation": "The question remains constant; the conclusion responds to it.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "confounding",
+          "correctExplanation": "Confounding variables may offer alternative explanations for the observed association.",
+          "distractors": [
+            {
+              "answer": "response",
+              "explanation": "The response variable is already identified.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "independent",
+              "explanation": "Independent variables are already part of the study design.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Ethical research with Aboriginal communities requires their {{blank:1}} in study design and respects the principle of data {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "participation",
+          "correctExplanation": "Community involvement ensures research is respectful and relevant.",
+          "distractors": [
+            {
+              "answer": "exclusion",
+              "explanation": "Excluding communities from research about them is unethical.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "ignorance",
+              "explanation": "Ignoring community perspectives violates ethical principles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sovereignty",
+          "correctExplanation": "Data sovereignty means communities control data about themselves.",
+          "distractors": [
+            {
+              "answer": "destruction",
+              "explanation": "Destroying data is not the principle being described.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "secrecy",
+              "explanation": "The principle is about control, not hiding data.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A time-series graph of BOM rainfall data shows both {{blank:1}} variation (annual wet-dry cycle) and a long-term {{blank:2}} that may indicate climate change.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "seasonal",
+          "correctExplanation": "The annual cycle of wet and dry periods is seasonal variation.",
+          "distractors": [
+            {
+              "answer": "irregular",
+              "explanation": "Irregular variation is unpredictable, not cyclical.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "The annual pattern is systematic, not random.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trend",
+          "correctExplanation": "A long-term directional change in rainfall levels constitutes a trend.",
+          "distractors": [
+            {
+              "answer": "cycle",
+              "explanation": "A cycle repeats; a trend is directional.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "error",
+              "explanation": "Long-term patterns in reliable data are not errors.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "An investigation that finds association between exercise and mood should state that the data {{blank:1}} a relationship but cannot {{blank:2}} causation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "suggests",
+          "correctExplanation": "Cautious language reflects the limitations of observational data.",
+          "distractors": [
+            {
+              "answer": "proves",
+              "explanation": "Observational data cannot prove relationships.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "denies",
+              "explanation": "The data found an association, not denied one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "prove",
+          "correctExplanation": "Only controlled experiments can establish cause and effect.",
+          "distractors": [
+            {
+              "answer": "show",
+              "explanation": "The data does show association; it cannot prove causation.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "find",
+              "explanation": "The data found association; the issue is proving causation.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A scatterplot showing a strong positive linear association means that as the explanatory variable increases, the {{blank:1}} variable also tends to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "response",
+          "correctExplanation": "The response (dependent) variable is on the y-axis.",
+          "distractors": [
+            {
+              "answer": "explanatory",
+              "explanation": "The explanatory variable is the one being changed.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "control",
+              "explanation": "Control variables are held constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "increase",
+          "correctExplanation": "In a positive association, both variables move in the same direction.",
+          "distractors": [
+            {
+              "answer": "decrease",
+              "explanation": "Decrease would indicate a negative association.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "stay the same",
+              "explanation": "If it stayed the same, there would be no association.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "When evaluating the results of a bivariate investigation, consider whether the sample is {{blank:1}} and whether {{blank:2}} variables could explain the association.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "representative",
+          "correctExplanation": "A representative sample ensures findings can be generalised.",
+          "distractors": [
+            {
+              "answer": "large",
+              "explanation": "Size alone does not guarantee representativeness.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "convenient",
+              "explanation": "Convenience samples are typically not representative.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "confounding",
+          "correctExplanation": "Confounding variables offer alternative explanations for observed associations.",
+          "distractors": [
+            {
+              "answer": "response",
+              "explanation": "The response variable is already part of the investigation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "missing",
+              "explanation": "Missing variables is a related but different concern.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "In a time-series investigation, the data should be checked for {{blank:1}} (long-term direction), {{blank:2}} (repeating cycles), and irregular variation before drawing conclusions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trend",
+          "correctExplanation": "Identifying the overall direction is the first step in time-series analysis.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is a summary statistic, not a time-series component.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "outliers",
+              "explanation": "Outliers are individual points, not a decomposition component.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "seasonal variation",
+          "correctExplanation": "Repeating patterns at regular intervals are seasonal variation.",
+          "distractors": [
+            {
+              "answer": "random noise",
+              "explanation": "Random noise is irregular variation, not seasonal.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "trend reversal",
+              "explanation": "Trend reversal is a change in trend direction, not a decomposition component.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A well-structured report presents: the research {{blank:1}}, methodology, findings with appropriate displays, conclusions, and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "question",
+          "correctExplanation": "The question frames the entire investigation.",
+          "distractors": [
+            {
+              "answer": "answer",
+              "explanation": "Answers are part of conclusions, not the opening.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "data",
+              "explanation": "Data is part of findings, not the report structure opener.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "limitations",
+          "correctExplanation": "Stating limitations demonstrates scientific integrity.",
+          "distractors": [
+            {
+              "answer": "proofs",
+              "explanation": "Statistical investigations do not provide proofs.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "opinions",
+              "explanation": "Objective findings, not opinions, belong in reports.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student investigates screen time and sleep. They find a moderate negative association in their sample of 30 classmates. How should they report this?",
+      "correct": "The data suggests more screen time is",
+      "correctExplanation": "Cautious language, sample limitations, and avoiding causal claims are essential in responsible reporting.",
+      "distractors": [
+        {
+          "answer": "Screen time definitely causes poor sleep",
+          "explanation": "Causation cannot be established from observational data."
+        },
+        {
+          "answer": "The finding is meaningless",
+          "explanation": "A moderate association from 30 subjects is worth reporting cautiously."
+        },
+        {
+          "answer": "The result proves the hypothesis",
+          "explanation": "Statistical investigations provide evidence, not proof."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A researcher analyses Melbourne temperature data over 100 years and finds a 1.2\u00b0C upward trend. They note the urban heat island effect as a limitation. Why is this important?",
+      "correct": "Urban development may contribute to ",
+      "correctExplanation": "Weather stations surrounded by expanding urban areas may record warmer temperatures due to concrete and asphalt, not just climate change.",
+      "distractors": [
+        {
+          "answer": "It is not important",
+          "explanation": "Acknowledging confounders is a key part of rigorous research."
+        },
+        {
+          "answer": "It proves the data is wrong",
+          "explanation": "The data is accurate; the interpretation needs context."
+        },
+        {
+          "answer": "Urban areas are always cooler",
+          "explanation": "Urban areas tend to be warmer due to the heat island effect."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Two students investigate the same bivariate relationship. Student A uses 15 participants; Student B uses 150. Who is likely to find more reliable results?",
+      "correct": "Student B, because larger samples",
+      "correctExplanation": "Larger samples provide more stable estimates of the true relationship.",
+      "distractors": [
+        {
+          "answer": "Student A, smaller is more focused",
+          "explanation": "Smaller samples have more random variation."
+        },
+        {
+          "answer": "Both are equally reliable",
+          "explanation": "Sample size directly affects reliability."
+        },
+        {
+          "answer": "Neither is reliable",
+          "explanation": "150 subjects can provide reasonably reliable results."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A time-series graph of Victorian employment shows a sharp drop in April 2020 followed by recovery. How should this be described in a report?",
+      "correct": "Irregular variation caused by",
+      "correctExplanation": "The pandemic was an unpredictable event that caused a temporary deviation from the longer-term employment pattern.",
+      "distractors": [
+        {
+          "answer": "A permanent trend change",
+          "explanation": "Employment recovered, suggesting a temporary disruption."
+        },
+        {
+          "answer": "Seasonal variation",
+          "explanation": "COVID lockdowns were a one-off event, not a seasonal pattern."
+        },
+        {
+          "answer": "A data collection error",
+          "explanation": "The drop reflected real employment changes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student plots daily rainfall versus crop yield for 50 farms. The scatterplot shows a positive association up to 50mm, then yield decreases. What model fits this data?",
+      "correct": "A non-linear model, as the",
+      "correctExplanation": "The data follows a curve (increasing then decreasing), which a straight line cannot capture.",
+      "distractors": [
+        {
+          "answer": "A positive linear model",
+          "explanation": "The relationship changes direction, so a straight line is inappropriate."
+        },
+        {
+          "answer": "A negative linear model",
+          "explanation": "There is a positive section as well as a negative section."
+        },
+        {
+          "answer": "No model is needed",
+          "explanation": "A model helps quantify and predict the relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "When conducting ethical research with Aboriginal communities, what should guide the investigation design?",
+      "correct": "Community participation in all stages, from question",
+      "correctExplanation": "Ethical research respects data sovereignty by involving communities throughout the process.",
+      "distractors": [
+        {
+          "answer": "Researchers should work independently",
+          "explanation": "Independent research about communities violates data sovereignty principles."
+        },
+        {
+          "answer": "Only Western methods should be used",
+          "explanation": "Indigenous methodologies should also be valued."
+        },
+        {
+          "answer": "Communities should not see the results",
+          "explanation": "Communities have the right to access and control findings about them."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A time-series analysis of dam levels shows a 20-year downward trend. A water authority predicts levels will reach zero in 5 years. What is problematic about this prediction?",
+      "correct": "It extrapolates a trend that may",
+      "correctExplanation": "Rainfall changes, policy interventions, and desalination can alter the trajectory. Linear extrapolation is unreliable.",
+      "distractors": [
+        {
+          "answer": "The prediction is accurate",
+          "explanation": "Extrapolating trends is inherently uncertain."
+        },
+        {
+          "answer": "Dam levels cannot be measured",
+          "explanation": "Dam levels are precisely measured."
+        },
+        {
+          "answer": "20 years of data is insufficient",
+          "explanation": "20 years is generally adequate for trend identification."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A student compares two bivariate investigations: one with a clear question and planned methodology, the other with data collected opportunistically. Which produces more trustworthy results?",
+      "correct": "The planned investigation",
+      "correctExplanation": "Planning ensures appropriate variables, sample, and method, leading to more valid and reliable findings.",
+      "distractors": [
+        {
+          "answer": "The opportunistic one",
+          "explanation": "Opportunistic data may not suit the research question."
+        },
+        {
+          "answer": "Both are equally valid",
+          "explanation": "Planning improves the quality and relevance of data."
+        },
+        {
+          "answer": "Neither is trustworthy",
+          "explanation": "Planned investigations with adequate samples can be trustworthy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A report on Victorian housing prices over 30 years shows exponential growth. What additional context would strengthen the report?",
+      "correct": "Adjusting prices for inflation to show",
+      "correctExplanation": "Inflation accounts for a portion of price increases. Real (inflation-adjusted) figures give a truer picture of purchasing power changes.",
+      "distractors": [
+        {
+          "answer": "Adding more colours to the graph",
+          "explanation": "Aesthetics do not strengthen analytical rigour."
+        },
+        {
+          "answer": "Including international data only",
+          "explanation": "Local context is most relevant for Victorian prices."
+        },
+        {
+          "answer": "Removing outlier suburbs",
+          "explanation": "All suburbs contribute to the overall picture."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A bivariate investigation of exercise and academic performance controls for sleep, diet, and socioeconomic status. What can the researcher say about the remaining association?",
+      "correct": "The association is more likely to be",
+      "correctExplanation": "Controlling for confounders strengthens the argument but observational studies cannot establish causation.",
+      "distractors": [
+        {
+          "answer": "Causation is now proven",
+          "explanation": "Observational studies cannot prove causation regardless of controls."
+        },
+        {
+          "answer": "The controls are unnecessary",
+          "explanation": "Controlling for confounders is essential for valid analysis."
+        },
+        {
+          "answer": "The association must be coincidence",
+          "explanation": "Controlling for confounders makes coincidence less likely."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student notices that a time-series graph in a media article starts the y-axis at 95% rather than 0%. What should they conclude?",
+      "correct": "The graph may exaggerate small changes by",
+      "correctExplanation": "Starting at 95% stretches small differences across the full visual space, making them appear dramatic.",
+      "distractors": [
+        {
+          "answer": "The graph is standard and accurate",
+          "explanation": "Truncated axes are a known source of visual distortion."
+        },
+        {
+          "answer": "The data must be incorrect",
+          "explanation": "The data may be accurate but the display is misleading."
+        },
+        {
+          "answer": "Starting at 95% is better than 0%",
+          "explanation": "Starting at 0% gives a fairer visual representation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "In a bivariate investigation, a student finds that their scatterplot shows a weak association. How should they interpret this?",
+      "correct": "A weak association is a valid finding",
+      "correctExplanation": "Negative or weak results are valuable. Reporting them prevents publication bias and contributes to knowledge.",
+      "distractors": [
+        {
+          "answer": "The investigation failed",
+          "explanation": "Finding no strong association is still a meaningful result."
+        },
+        {
+          "answer": "They should change their data",
+          "explanation": "Altering data is unethical."
+        },
+        {
+          "answer": "They should not report the finding",
+          "explanation": "All findings, including weak ones, should be reported."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "How does Aboriginal seasonal ecological knowledge relate to time-series data analysis?",
+      "correct": "It represents millennia of systematic environmen",
+      "correctExplanation": "Indigenous knowledge systems have tracked seasonal and long-term environmental patterns for thousands of years.",
+      "distractors": [
+        {
+          "answer": "It is unrelated to data analysis",
+          "explanation": "Ecological knowledge is fundamentally data-informed."
+        },
+        {
+          "answer": "It only applies to modern science",
+          "explanation": "Aboriginal knowledge predates modern science by millennia."
+        },
+        {
+          "answer": "It cannot be compared to Western methods",
+          "explanation": "Both systems involve systematic observation of patterns over time."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A student's investigation finds a strong negative association between study breaks and error rate on tasks. What should the report's conclusion state?",
+      "correct": "More frequent breaks are associated w",
+      "correctExplanation": "The finding is reported cautiously with acknowledgement that motivation, task difficulty, and fatigue may confound the result.",
+      "distractors": [
+        {
+          "answer": "Breaks definitely reduce errors",
+          "explanation": "Causation cannot be claimed from observational data."
+        },
+        {
+          "answer": "The data is too strong to",
+          "explanation": "All investigations have limitations regardless of effect size."
+        },
+        {
+          "answer": "Confounders are not relevant",
+          "explanation": "Confounders are always relevant in observational studies."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "A time-series graph of BOM data can be decomposed to reveal the {{blank:1}} (long-term direction), seasonal patterns, and {{blank:2}} events that disrupt normal patterns.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trend",
+          "correctExplanation": "The trend captures the overall direction over the full time period.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is a single summary value, not a decomposition component.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "The mode is not used in time-series decomposition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "irregular",
+          "correctExplanation": "Irregular events (droughts, floods, pandemics) cause unexpected fluctuations.",
+          "distractors": [
+            {
+              "answer": "regular",
+              "explanation": "Regular patterns are seasonal, not irregular.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "predictable",
+              "explanation": "Irregular events are by definition unpredictable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Controlling for {{blank:1}} variables in a bivariate investigation strengthens the argument for a genuine association but still cannot {{blank:2}} causation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "confounding",
+          "correctExplanation": "Removing the influence of third variables isolates the relationship of interest.",
+          "distractors": [
+            {
+              "answer": "response",
+              "explanation": "The response variable is being measured, not controlled.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "independent",
+              "explanation": "The independent variable is being studied, not controlled for.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "prove",
+          "correctExplanation": "Only controlled experiments with random assignment can prove causation.",
+          "distractors": [
+            {
+              "answer": "show",
+              "explanation": "The data can show association; proving causation is the limitation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "find",
+              "explanation": "Findings are valid; proof of causation is what is lacking.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "A moving average over {{blank:1}} months is commonly used to smooth annual seasonal variation from monthly time-series data, revealing the underlying {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "12",
+          "correctExplanation": "A 12-month window covers one complete annual cycle, averaging out seasonal effects.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Three months does not cover a full annual cycle.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "A 1-month window provides no smoothing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "trend",
+          "correctExplanation": "Removing seasonal effects reveals the long-term directional pattern.",
+          "distractors": [
+            {
+              "answer": "seasonal variation",
+              "explanation": "The purpose of smoothing is to remove seasonal variation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "outliers",
+              "explanation": "Outliers are individual points, not what the moving average reveals.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The quality of a statistical investigation depends on the clarity of the {{blank:1}}, the representativeness of the {{blank:2}}, and the appropriateness of the analysis.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "question",
+          "correctExplanation": "A clear, focused question guides all subsequent steps.",
+          "distractors": [
+            {
+              "answer": "graph",
+              "explanation": "Graphs are one component, not the foundation of quality.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "title",
+              "explanation": "The title describes the investigation; the question drives it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sample",
+          "correctExplanation": "A representative sample ensures findings generalise to the population.",
+          "distractors": [
+            {
+              "answer": "graph",
+              "explanation": "Graphs display data; the sample determines data quality.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "report",
+              "explanation": "The report communicates findings; the sample determines their validity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "When reporting a negative result (no association found), the finding should still be {{blank:1}} because it contributes to knowledge and prevents {{blank:2}} bias.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "reported",
+          "correctExplanation": "All findings, including negative ones, add to the body of evidence.",
+          "distractors": [
+            {
+              "answer": "hidden",
+              "explanation": "Hiding negative results creates publication bias.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "changed",
+              "explanation": "Altering results is unethical.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "publication",
+          "correctExplanation": "Publication bias occurs when only positive findings are reported.",
+          "distractors": [
+            {
+              "answer": "confirmation",
+              "explanation": "Confirmation bias is related but different from publication bias.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "selection",
+              "explanation": "Selection bias affects sampling, not reporting.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A bivariate investigation should describe the association using three aspects: {{blank:1}} (positive or negative), strength, and {{blank:2}} (linear or non-linear).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "direction",
+          "correctExplanation": "Direction indicates whether the variables move together or in opposition.",
+          "distractors": [
+            {
+              "answer": "size",
+              "explanation": "Size is not the standard term for this aspect of association.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "colour",
+              "explanation": "Colour is a visual property, not an aspect of association.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "form",
+          "correctExplanation": "Form describes whether the pattern is straight or curved.",
+          "distractors": [
+            {
+              "answer": "frequency",
+              "explanation": "Frequency describes how often something occurs, not association shape.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "spread",
+              "explanation": "Spread describes distributions, not scatterplot patterns.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Aboriginal communities' {{blank:1}} ecological knowledge represents sophisticated time-series understanding maintained for {{blank:2}} of years through oral tradition.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "seasonal",
+          "correctExplanation": "Aboriginal knowledge systems track seasonal and environmental cycles over long periods.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "The knowledge is systematic, not random.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "modern",
+              "explanation": "This knowledge predates modern science.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "thousands",
+          "correctExplanation": "Indigenous Australians have observed environmental patterns for over 60,000 years.",
+          "distractors": [
+            {
+              "answer": "hundreds",
+              "explanation": "The timescale is much longer than hundreds of years.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tens",
+              "explanation": "Tens of years vastly underestimates the duration.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "Extrapolating a trend beyond the observed time period is {{blank:1}} because the pattern may {{blank:2}} due to unforeseen events or changes.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "unreliable",
+          "correctExplanation": "Predictions beyond data range are subject to high uncertainty.",
+          "distractors": [
+            {
+              "answer": "accurate",
+              "explanation": "Extrapolation is inherently uncertain.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "precise",
+              "explanation": "Extrapolation lacks precision outside the data range.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "change",
+          "correctExplanation": "External factors can alter or reverse trends at any time.",
+          "distractors": [
+            {
+              "answer": "continue",
+              "explanation": "Assuming continuation is the error being identified.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "disappear",
+              "explanation": "Change is the broader and more accurate concern.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A well-designed time-series investigation collects data at {{blank:1}} intervals over a {{blank:2}} period to capture trends and seasonal patterns.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "regular",
+          "correctExplanation": "Consistent intervals (daily, weekly, monthly) enable fair comparison across time.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "Random intervals make it difficult to identify patterns.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unequal",
+              "explanation": "Unequal intervals distort the time-series display.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sufficient",
+          "correctExplanation": "The time period must be long enough to capture at least several cycles of seasonal variation.",
+          "distractors": [
+            {
+              "answer": "short",
+              "explanation": "Short periods may miss seasonal patterns and trends.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "infinite",
+              "explanation": "Infinite data collection is impossible.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "The investigation cycle is iterative: findings from one study often generate new {{blank:1}} that lead to further {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "questions",
+          "correctExplanation": "Research findings frequently raise new questions for future investigation.",
+          "distractors": [
+            {
+              "answer": "data",
+              "explanation": "Data is generated within a study, not as a result of findings.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "graphs",
+              "explanation": "Graphs display findings; questions drive new research.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "investigations",
+          "correctExplanation": "New questions lead to new cycles of plan, collect, analyse, and report.",
+          "distractors": [
+            {
+              "answer": "graphs",
+              "explanation": "Graphs are part of investigations, not the broader outcome.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "deletions",
+              "explanation": "Deleting findings is unethical and not part of the cycle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "When comparing two bivariate investigations, the one with a larger and more {{blank:1}} sample, clearer question, and more rigorous methodology is likely to produce more {{blank:2}} results.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "representative",
+          "correctExplanation": "Representativeness ensures findings apply to the broader population.",
+          "distractors": [
+            {
+              "answer": "convenient",
+              "explanation": "Convenience samples are typically biased.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "biased",
+              "explanation": "Biased samples produce unreliable results.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "reliable",
+          "correctExplanation": "Rigorous methodology and good sampling lead to trustworthy findings.",
+          "distractors": [
+            {
+              "answer": "dramatic",
+              "explanation": "Reliability and drama are different qualities.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "biased",
+              "explanation": "Better methodology reduces bias.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A comprehensive report on a bivariate investigation should include the research question, {{blank:1}}, displays with interpretation, conclusions, and {{blank:2}} for future research.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "methodology",
+          "correctExplanation": "Describing the method allows readers to evaluate reliability.",
+          "distractors": [
+            {
+              "answer": "opinions",
+              "explanation": "Opinions do not belong in objective methodology.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "predictions",
+              "explanation": "Predictions may follow but methodology is the essential component.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "recommendations",
+          "correctExplanation": "Suggesting future research directions adds value to the investigation.",
+          "distractors": [
+            {
+              "answer": "guarantees",
+              "explanation": "No investigation can guarantee outcomes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "complaints",
+              "explanation": "Complaints are not part of research reporting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

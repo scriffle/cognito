@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10ST03",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to construct two-way tables and analyse possible relationships between categorical variables.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to construct two-way tables and analyse possible relationships between categorical variables.",
+    "y": [
+      "Two-way tables organise data from two categorical variables, allowing us to investigate whether they are associated.",
+      "Analysing relationships between categorical variables develops our ability to detect patterns and make evidence-based conclusions.",
+      "These skills are applied in market research, medical research, social science and quality control."
+    ],
+    "eg": [
+      "Constructing a two-way table showing gender and preferred sport, and calculating row and column percentages.",
+      "Analysing whether there appears to be an association between two variables by comparing percentages.",
+      "Using relative frequencies to determine if two categorical variables are independent.",
+      "Discussing: 'Is there an association between handedness and eye dominance in our class?'",
+      "Identifying misleading conclusions that can arise from ignoring confounding variables.",
+      "Comparing conditional proportions from a two-way table to evaluate a possible association."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A two-way table displays data for two numerical variables at the same time.",
+      "correct": "False",
+      "correctExplanation": "Two-way tables are designed for categorical variables, not numerical ones. Numerical variables require scatterplots or other displays.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Two-way tables cross-tabulate two categorical variables, not numerical ones."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The numbers inside the cells of a two-way table represent percentages.",
+      "correct": "False",
+      "correctExplanation": "The cells contain frequency counts (raw numbers). Percentages are calculated from the counts and row or column totals.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Cell values are always percentages, never raw counts."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Row totals in a two-way table show the total count for each category of the row variable.",
+      "correct": "True",
+      "correctExplanation": "Row totals sum all cells across a row, giving the total for that row category.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Row totals show the percentage of each row category."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "To compare groups fairly in a two-way table, raw counts should be used instead of percentages.",
+      "correct": "False",
+      "correctExplanation": "When groups have different sizes, raw counts are misleading. Row or column percentages allow fair comparison.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Raw counts are always sufficient for comparing groups."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "A two-way table can show whether there is an association between two categorical variables.",
+      "correct": "True",
+      "correctExplanation": "By comparing proportions across rows or columns, we can identify whether the variables are associated.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Two-way tables cannot reveal associations between variables."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The grand total in a two-way table is found in the bottom-right corner.",
+      "correct": "True",
+      "correctExplanation": "The grand total is the sum of all row totals (or all column totals) and appears at the intersection of the margin row and column.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The grand total appears in the top-left corner."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "If row percentages are similar across all rows, there is a strong association.",
+      "correct": "False",
+      "correctExplanation": "Similar percentages across rows indicate no association. Different percentages suggest an association between the variables.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Identical proportions across rows prove a strong link."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "Column totals in a two-way table show the total count for each category of the column variable.",
+      "correct": "True",
+      "correctExplanation": "Column totals sum all cells down a column, giving the total for that column category.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Column totals show the mean of values in each column."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "A two-way table can be used with numerical variables like height and weight.",
+      "correct": "False",
+      "correctExplanation": "Two-way tables are designed for categorical variables. Numerical variables require scatterplots or other displays.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Any pair of variables can be placed in a two-way table."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Row percentages in a two-way table are calculated by dividing each cell by the grand total.",
+      "correct": "False",
+      "correctExplanation": "Row percentages are calculated by dividing each cell by the row total, not the grand total. Using the grand total gives overall proportions.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Dividing by the grand total gives the correct row percentage."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "An association found in a two-way table proves that one variable causes the other.",
+      "correct": "False",
+      "correctExplanation": "Association does not prove causation. Confounding variables or coincidence may explain the observed pattern.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Associations in tables always indicate causal relationships."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Each cell in a two-way table represents the count for one combination of categories.",
+      "correct": "True",
+      "correctExplanation": "Cells sit at the intersection of a row category and a column category, showing how many observations fall in that combination.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Each cell represents the average value for that category pair."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What type of variables are displayed in a two-way table?",
+      "correct": "Categorical variables",
+      "correctExplanation": "Two-way tables cross-tabulate two categorical (qualitative) variables.",
+      "distractors": [
+        {
+          "answer": "Numerical variables",
+          "explanation": "Numerical variables are displayed using scatterplots or histograms."
+        },
+        {
+          "answer": "Continuous variables",
+          "explanation": "Continuous variables require different displays."
+        },
+        {
+          "answer": "Ordinal variables only",
+          "explanation": "Two-way tables work with all categorical variables, not just ordinal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "What do the numbers inside the cells of a two-way table represent?",
+      "correct": "Frequency",
+      "correctExplanation": "Each cell shows how many observations fall into that particular combination of categories.",
+      "distractors": [
+        {
+          "answer": "Percentages",
+          "explanation": "Percentages are calculated from counts but are not the raw cell values."
+        },
+        {
+          "answer": "Averages",
+          "explanation": "Averages are not shown in two-way tables."
+        },
+        {
+          "answer": "Probabilities",
+          "explanation": "Probabilities are calculated from counts, not stored directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Where is the grand total located in a two-way table?",
+      "correct": "Bottom-right corner",
+      "correctExplanation": "The grand total is at the intersection of the row totals column and column totals row.",
+      "distractors": [
+        {
+          "answer": "Top-left corner",
+          "explanation": "The top-left is typically a category label."
+        },
+        {
+          "answer": "Centre of the table",
+          "explanation": "The centre contains category combination counts."
+        },
+        {
+          "answer": "First row",
+          "explanation": "The first row contains category counts, not the grand total."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Why are percentages used instead of raw counts when comparing groups?",
+      "correct": "Groups may have different sizes",
+      "correctExplanation": "When group sizes differ, raw counts are misleading. Percentages standardise for fair comparison.",
+      "distractors": [
+        {
+          "answer": "Percentages are always larger",
+          "explanation": "Percentages are proportions, not always larger than counts."
+        },
+        {
+          "answer": "Counts are too difficult to calculate",
+          "explanation": "Counts are simpler than percentages."
+        },
+        {
+          "answer": "Percentages remove all bias",
+          "explanation": "Percentages address size differences but do not remove all bias."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What does it mean if row percentages are very similar across all rows?",
+      "correct": "There is no association between",
+      "correctExplanation": "Similar proportions across rows suggest the row variable does not influence the column variable distribution.",
+      "distractors": [
+        {
+          "answer": "There is a strong association",
+          "explanation": "Similar percentages indicate no association."
+        },
+        {
+          "answer": "The data is incorrect",
+          "explanation": "Similar percentages are a valid finding."
+        },
+        {
+          "answer": "The sample is too small",
+          "explanation": "Sample size is a separate concern from association."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "How is a row percentage calculated?",
+      "correct": "Cell count divided by the row total,",
+      "correctExplanation": "This gives the proportion of the row that falls in each column category.",
+      "distractors": [
+        {
+          "answer": "Cell count divided by the grand total",
+          "explanation": "This gives the overall proportion, not the row percentage."
+        },
+        {
+          "answer": "Row total divided by the cell count",
+          "explanation": "This inverts the calculation."
+        },
+        {
+          "answer": "Column total divided by the row total",
+          "explanation": "This does not calculate a row percentage."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What does 'association' mean in the context of two-way tables?",
+      "correct": "The distribution of one variable differs",
+      "correctExplanation": "An association exists when the proportions vary between groups.",
+      "distractors": [
+        {
+          "answer": "Both variables have the same values",
+          "explanation": "Association is about proportions, not identical values."
+        },
+        {
+          "answer": "The variables are numerically related",
+          "explanation": "Two-way tables deal with categorical, not numerical relationships."
+        },
+        {
+          "answer": "One variable causes the other",
+          "explanation": "Association does not imply causation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which of the following is an example of two categorical variables?",
+      "correct": "Gender and preferred",
+      "correctExplanation": "Both gender and preferred sport are categorical (qualitative) variables.",
+      "distractors": [
+        {
+          "answer": "Height and weight",
+          "explanation": "Both are numerical variables."
+        },
+        {
+          "answer": "Age and income",
+          "explanation": "Both are numerical variables."
+        },
+        {
+          "answer": "Temperature and rainfall",
+          "explanation": "Both are numerical variables."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What are the row and column totals in a two-way table called?",
+      "correct": "Marginal totals",
+      "correctExplanation": "The totals along the margins (edges) of the table are called marginal totals or marginals.",
+      "distractors": [
+        {
+          "answer": "Grand totals",
+          "explanation": "The grand total is the overall sum, not the row or column sums."
+        },
+        {
+          "answer": "Cell frequencies",
+          "explanation": "Cell frequencies are the interior counts."
+        },
+        {
+          "answer": "Category labels",
+          "explanation": "Labels identify categories, not totals."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "In a two-way table, what does the margin of the table show?",
+      "correct": "The totals for each row",
+      "correctExplanation": "Margins display the sums across rows and down columns.",
+      "distractors": [
+        {
+          "answer": "The individual cell counts",
+          "explanation": "Cell counts are in the interior, not the margins."
+        },
+        {
+          "answer": "The percentage for each cell",
+          "explanation": "Percentages are calculated separately, not shown in margins."
+        },
+        {
+          "answer": "The mean of each variable",
+          "explanation": "Means are not shown in two-way tables."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "If 30 of 50 males prefer basketball and 20 of 40 females prefer basketball, what are the row percentages?",
+      "correct": "Males 60%, Females 50%",
+      "correctExplanation": "30/50 = 60% for males, 20/40 = 50% for females.",
+      "distractors": [
+        {
+          "answer": "Males 50%, Females 60%",
+          "explanation": "These values are swapped."
+        },
+        {
+          "answer": "Males 30%, Females 20%",
+          "explanation": "These are raw counts, not percentages."
+        },
+        {
+          "answer": "Males 67%, Females 33%",
+          "explanation": "These divide by the total basketball count, not row totals."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What should always be considered before concluding an association is meaningful?",
+      "correct": "Whether the sample size is",
+      "correctExplanation": "Small samples can show apparent associations due to random chance.",
+      "distractors": [
+        {
+          "answer": "Whether the numbers are even",
+          "explanation": "Even numbers are not relevant to association."
+        },
+        {
+          "answer": "Whether the table is square",
+          "explanation": "Table shape does not affect association conclusions."
+        },
+        {
+          "answer": "Whether the counts are positive",
+          "explanation": "Counts are always non-negative in frequency tables."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "A two-way table displays data for two {{blank:1}} variables, with frequency counts in the {{blank:2}} of the table.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "categorical",
+          "correctExplanation": "Two-way tables are designed for qualitative (categorical) variables.",
+          "distractors": [
+            {
+              "answer": "numerical",
+              "explanation": "Numerical variables use scatterplots, not two-way tables.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "continuous",
+              "explanation": "Continuous variables require different displays.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cells",
+          "correctExplanation": "The interior positions where rows and columns intersect contain the counts.",
+          "distractors": [
+            {
+              "answer": "margins",
+              "explanation": "Margins contain the row and column totals.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "title",
+              "explanation": "The title labels the table, not the data.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "Row percentages are calculated by dividing the cell count by the {{blank:1}} total and multiplying by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "row",
+          "correctExplanation": "Row percentages use the row total as the denominator.",
+          "distractors": [
+            {
+              "answer": "column",
+              "explanation": "Column totals are used for column percentages.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "grand",
+              "explanation": "The grand total gives overall proportions, not row percentages.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "100",
+          "correctExplanation": "Multiplying by 100 converts a proportion to a percentage.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Multiplying by 10 does not give a percentage.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "Multiplying by 50 does not convert to a percentage.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "If 70% of dog owners exercise daily and 68% of non-owners exercise daily, there is a strong association between pet ownership and exercise.",
+      "correct": "False",
+      "correctExplanation": "A 2 percentage point difference (70% vs 68%) is very small and does not indicate a strong association. It may be due to random variation.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Such a small difference does not indicate a strong association."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "An association between two variables in a two-way table proves that one variable causes the other.",
+      "correct": "False",
+      "correctExplanation": "Association shows a pattern but does not establish causation. Confounding variables or chance may explain the link.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Whenever two variables are associated, one must cause the other."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Column percentages are calculated by dividing each cell by the column total.",
+      "correct": "True",
+      "correctExplanation": "Column percentages standardise within each column, allowing comparison across columns.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Column percentages use the row total as the denominator."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "A two-way table with equal row percentages across all rows shows a strong association.",
+      "correct": "False",
+      "correctExplanation": "Equal row percentages indicate no association. The variable distributions are the same across groups.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Identical proportions across rows indicate the strongest association."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "When group sizes differ, row percentages give a fairer comparison than raw counts.",
+      "correct": "True",
+      "correctExplanation": "Percentages account for different group sizes, allowing meaningful comparison between groups.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Raw counts are always fairer than percentages."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "A small difference in row percentages always indicates a meaningful association.",
+      "correct": "False",
+      "correctExplanation": "Small differences may be due to random variation, especially in small samples. Statistical significance testing or larger samples are needed.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Any difference in percentages proves a genuine association."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The grand total equals the sum of all row totals, which also equals the sum of all column totals.",
+      "correct": "True",
+      "correctExplanation": "Both the row totals and column totals sum to the same grand total because they count all observations.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Row totals and column totals always sum to different values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Two-way tables can display data for three or more variables simultaneously.",
+      "correct": "False",
+      "correctExplanation": "Two-way tables are designed for exactly two categorical variables. Three or more variables require multi-way tables or other methods.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Two-way tables can handle any number of variables at once."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A survey of 100 students asks about gender and sport preference. 35 of 50 males prefer football; 20 of 50 females prefer football. What does this suggest?",
+      "correct": "Males are more likely to",
+      "correctExplanation": "70% of males vs 40% of females prefer football, suggesting an association between gender and sport preference.",
+      "distractors": [
+        {
+          "answer": "Females prefer football more",
+          "explanation": "40% is less than 70%."
+        },
+        {
+          "answer": "No association exists",
+          "explanation": "A 30 percentage point difference suggests association."
+        },
+        {
+          "answer": "The sample is too small",
+          "explanation": "100 students is adequate for identifying patterns."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "In a two-way table, 60 of 80 Year 9 students pass and 70 of 100 Year 10 students pass. What are the row percentages?",
+      "correct": "Year 9: 75%, Year 10: 70%",
+      "correctExplanation": "60/80 = 75% for Year 9, 70/100 = 70% for Year 10.",
+      "distractors": [
+        {
+          "answer": "Year 9: 60%, Year 10: 70%",
+          "explanation": "60% uses the wrong denominator for Year 9."
+        },
+        {
+          "answer": "Year 9: 80%, Year 10: 100%",
+          "explanation": "These are the row totals, not percentages."
+        },
+        {
+          "answer": "Year 9: 70%, Year 10: 75%",
+          "explanation": "These values are swapped."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Why should raw counts not be compared directly when group sizes differ?",
+      "correct": "Larger groups naturally produce larger counts",
+      "correctExplanation": "A group with more people will have higher counts regardless of association, making raw comparisons misleading.",
+      "distractors": [
+        {
+          "answer": "Raw counts are always inaccurate",
+          "explanation": "Counts are accurate but can be misleading for comparison."
+        },
+        {
+          "answer": "Percentages are easier to calculate",
+          "explanation": "Ease of calculation is not the reason."
+        },
+        {
+          "answer": "Counts cannot be placed in tables",
+          "explanation": "Counts are the basis of two-way tables."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "80% of pet owners exercise regularly versus 50% of non-pet owners. A student concludes pets cause people to exercise. What is wrong with this conclusion?",
+      "correct": "Association does not prove causation",
+      "correctExplanation": "Active people may be more likely to get pets. Confounding variables may explain the association.",
+      "distractors": [
+        {
+          "answer": "The percentages are too close",
+          "explanation": "A 30 percentage point gap is substantial."
+        },
+        {
+          "answer": "The sample must be biased",
+          "explanation": "Bias is possible but not the main issue here."
+        },
+        {
+          "answer": "Pets cannot influence behaviour",
+          "explanation": "Pets may influence behaviour, but the table alone does not prove it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A two-way table has 3 row categories and 4 column categories. How many interior cells does it have?",
+      "correct": "12",
+      "correctExplanation": "3 rows \u00d7 4 columns = 12 cells for data, excluding the marginal totals.",
+      "distractors": [
+        {
+          "answer": "7",
+          "explanation": "7 is the sum of rows and columns, not the product."
+        },
+        {
+          "answer": "24",
+          "explanation": "24 would be for a 6 \u00d7 4 or 4 \u00d7 6 table."
+        },
+        {
+          "answer": "15",
+          "explanation": "15 includes the marginal cells."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "What is the purpose of marginal totals in a two-way table?",
+      "correct": "They show the total for each",
+      "correctExplanation": "Marginals summarise one variable at a time, ignoring the other.",
+      "distractors": [
+        {
+          "answer": "They show the association between variables",
+          "explanation": "Association is found by comparing proportions, not from totals."
+        },
+        {
+          "answer": "They replace the cell counts",
+          "explanation": "Marginals supplement, not replace, cell counts."
+        },
+        {
+          "answer": "They are optional and not needed",
+          "explanation": "Marginals are essential for calculating percentages."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "In a survey, 65% of urban residents and 62% of rural residents prefer public transport. What conclusion is appropriate?",
+      "correct": "The proportions are similar, suggesting little",
+      "correctExplanation": "A 3 percentage point difference is small and may be due to chance rather than a genuine association.",
+      "distractors": [
+        {
+          "answer": "Urban residents clearly prefer public transport more",
+          "explanation": "A 3% difference is too small to be conclusive."
+        },
+        {
+          "answer": "Location causes transport preference",
+          "explanation": "Even a real difference would not prove causation."
+        },
+        {
+          "answer": "The data is unreliable",
+          "explanation": "Small differences are valid findings, not errors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Which calculation gives the overall percentage of students who prefer music?",
+      "correct": "Total music students divided by the grand total, ti",
+      "correctExplanation": "The overall percentage uses the total music count from the column margin and divides by the grand total.",
+      "distractors": [
+        {
+          "answer": "Music row total divided by music column total",
+          "explanation": "This calculation is meaningless."
+        },
+        {
+          "answer": "Grand total divided by music count",
+          "explanation": "This inverts the correct calculation."
+        },
+        {
+          "answer": "Music count divided by the number of rows",
+          "explanation": "Number of rows is not relevant to this calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A researcher finds association between suburb and voting preference. What should they consider before drawing conclusions?",
+      "correct": "Whether confounding variables like income or age",
+      "correctExplanation": "Demographic factors may drive both suburb choice and voting preference, creating a confounded association.",
+      "distractors": [
+        {
+          "answer": "Whether the table is large enough",
+          "explanation": "Table size matters, but confounders are more important."
+        },
+        {
+          "answer": "Whether the data is in alphabetical order",
+          "explanation": "Order of categories does not affect analysis."
+        },
+        {
+          "answer": "Whether to use a scatterplot instead",
+          "explanation": "Scatterplots are for numerical variables."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "What does it mean when we say two variables are 'not associated'?",
+      "correct": "The distribution of one variable is the",
+      "correctExplanation": "No association means knowing one variable gives no information about the other.",
+      "distractors": [
+        {
+          "answer": "Both variables have the same categories",
+          "explanation": "Having the same categories is about table structure, not association."
+        },
+        {
+          "answer": "The cell counts are all equal",
+          "explanation": "Equal counts can occur with or without association."
+        },
+        {
+          "answer": "The variables are identical",
+          "explanation": "Identical variables always show perfect association."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "How many observations are in a two-way table with row totals of 45, 55 and column totals of 40, 60?",
+      "correct": "100",
+      "correctExplanation": "The grand total is 45 + 55 = 100 (or equivalently 40 + 60 = 100).",
+      "distractors": [
+        {
+          "answer": "200",
+          "explanation": "200 double-counts by adding both row and column totals."
+        },
+        {
+          "answer": "90",
+          "explanation": "This calculation is incorrect."
+        },
+        {
+          "answer": "4",
+          "explanation": "4 is the number of cells, not observations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which type of percentage should be used to compare how different year levels travel to school?",
+      "correct": "Row percentages (if year level",
+      "correctExplanation": "Row percentages standardise within each year level, enabling fair comparison of transport mode distribution.",
+      "distractors": [
+        {
+          "answer": "Column percentages only",
+          "explanation": "Column percentages compare within transport mode, not across year levels."
+        },
+        {
+          "answer": "Grand total percentages",
+          "explanation": "Grand total percentages do not allow group-specific comparison."
+        },
+        {
+          "answer": "No percentages are needed",
+          "explanation": "Percentages are essential when group sizes differ."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "If row percentages are similar across all rows, there is {{blank:1}} association. If they differ substantially, an {{blank:2}} exists between the variables.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "no",
+          "correctExplanation": "Similar proportions mean the distribution does not change across groups.",
+          "distractors": [
+            {
+              "answer": "strong",
+              "explanation": "Similar proportions indicate no association, not a strong one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "perfect",
+              "explanation": "Perfect association would have maximally different proportions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "association",
+          "correctExplanation": "Different proportions across groups suggest the variables are related.",
+          "distractors": [
+            {
+              "answer": "error",
+              "explanation": "Different proportions are a finding, not an error.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "causation",
+              "explanation": "Association does not automatically mean causation.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Association in a two-way table does not prove {{blank:1}}. A third variable called a {{blank:2}} variable may explain the observed pattern.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "causation",
+          "correctExplanation": "Only controlled experiments can establish cause and effect.",
+          "distractors": [
+            {
+              "answer": "correlation",
+              "explanation": "Correlation is a numerical measure; causation is the inappropriate inference.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "association",
+              "explanation": "Association is what was found; causation is the unsupported claim.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "confounding",
+          "correctExplanation": "Confounding variables influence both measured variables.",
+          "distractors": [
+            {
+              "answer": "response",
+              "explanation": "The response variable is already in the table.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "dependent",
+              "explanation": "Dependent variables are measured outcomes, not hidden influences.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "When group sizes differ, comparing raw {{blank:1}} is misleading. Instead, calculate row {{blank:2}} for fair comparison.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "counts",
+          "correctExplanation": "Raw frequency counts do not account for different group sizes.",
+          "distractors": [
+            {
+              "answer": "percentages",
+              "explanation": "Percentages already account for group size differences.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "means",
+              "explanation": "Means are not used in two-way tables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "percentages",
+          "correctExplanation": "Row percentages standardise within each group for valid comparison.",
+          "distractors": [
+            {
+              "answer": "totals",
+              "explanation": "Row totals show group size but not distribution across categories.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "counts",
+              "explanation": "Raw counts are the problem; converting to percentages is the solution.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "A two-way table has row totals of 60 and 40. The {{blank:1}} total is 100. To find a row percentage, divide the cell count by the {{blank:2}} total.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "grand",
+          "correctExplanation": "The grand total is the sum of all observations: 60 + 40 = 100.",
+          "distractors": [
+            {
+              "answer": "row",
+              "explanation": "60 and 40 are individual row totals, not the grand total.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "column",
+              "explanation": "Column totals sum down columns, not across rows.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "row",
+          "correctExplanation": "Row percentages use the row total as the denominator.",
+          "distractors": [
+            {
+              "answer": "grand",
+              "explanation": "Using the grand total gives overall proportions, not row percentages.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "column",
+              "explanation": "Using the column total gives column percentages.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Small samples can show apparent associations due to {{blank:1}} variation. Larger samples give more {{blank:2}} results.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "random",
+          "correctExplanation": "In small samples, random fluctuations can create misleading patterns.",
+          "distractors": [
+            {
+              "answer": "systematic",
+              "explanation": "Systematic variation suggests a genuine pattern.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Small samples have more variation, not less.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "reliable",
+          "correctExplanation": "Larger samples reduce the effect of random variation.",
+          "distractors": [
+            {
+              "answer": "biased",
+              "explanation": "Larger samples do not guarantee lack of bias.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "extreme",
+              "explanation": "Larger samples tend to show more stable, less extreme results.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "To determine whether gender is associated with subject preference, compare the {{blank:1}} percentages for each gender. If they are {{blank:2}}, no association exists.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "row",
+          "correctExplanation": "Row percentages show the distribution across subjects for each gender.",
+          "distractors": [
+            {
+              "answer": "column",
+              "explanation": "Column percentages compare within each subject, not across genders.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "grand",
+              "explanation": "Grand total percentages do not enable group comparison.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "similar",
+          "correctExplanation": "Similar proportions across groups indicate the variables are not associated.",
+          "distractors": [
+            {
+              "answer": "different",
+              "explanation": "Different proportions would indicate an association.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Percentages of zero would mean no students chose that subject.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A large difference in row percentages always proves a meaningful association between variables.",
+      "correct": "False",
+      "correctExplanation": "A large difference can occur by chance in small samples. Statistical significance testing is needed to confirm whether the association is meaningful.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Any difference in row percentages proves a genuine link."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Reversing which variable is placed in rows versus columns changes whether an association exists.",
+      "correct": "False",
+      "correctExplanation": "The presence or absence of association is a property of the data, not the table layout. Swapping rows and columns changes the display but not the conclusion.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The association depends on which variable is in rows versus columns."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A school surveys 200 students on year level (9 or 10) and lunch preference (canteen or BYO). Year 9: 55/100 canteen. Year 10: 35/100 canteen. Describe the association.",
+      "correct": "Year 9 students are more likely to",
+      "correctExplanation": "55% vs 35% shows Year 9 has a higher proportion choosing canteen. There is an association between year level and lunch preference.",
+      "distractors": [
+        {
+          "answer": "No association exists",
+          "explanation": "A 20 percentage point difference suggests association."
+        },
+        {
+          "answer": "Year 10 prefers the canteen more",
+          "explanation": "35% is less than 55%."
+        },
+        {
+          "answer": "Both groups equally prefer the canteen",
+          "explanation": "55% and 35% are not equal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A researcher finds that 80% of Melbourne residents support recycling bins versus 65% of regional residents. The sample is 20 Melbourne and 20 regional. Should the researcher conclude there is a strong association?",
+      "correct": "No, the sample sizes are too small",
+      "correctExplanation": "With only 20 in each group, the 15 percentage point difference could easily be due to random variation.",
+      "distractors": [
+        {
+          "answer": "Yes, the difference is 15%",
+          "explanation": "15% could occur by chance in small samples."
+        },
+        {
+          "answer": "Yes, Melbourne always recycles more",
+          "explanation": "This generalises without sufficient evidence."
+        },
+        {
+          "answer": "No, because recycling is not categorical",
+          "explanation": "Recycling preference is categorical."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "In a two-way table, 70% of exercisers report good sleep versus 45% of non-exercisers. A headline says 'Exercise improves sleep.' What is the flaw?",
+      "correct": "The conclusion claims causation from an",
+      "correctExplanation": "The two-way table shows association, not causation. People who exercise may differ in other ways that affect sleep.",
+      "distractors": [
+        {
+          "answer": "The percentages are wrong",
+          "explanation": "The percentages are correctly stated."
+        },
+        {
+          "answer": "The sample must be biased",
+          "explanation": "Bias is possible but not the main issue."
+        },
+        {
+          "answer": "Sleep is not a categorical variable",
+          "explanation": "Sleep quality can be categorised as good or poor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A two-way table of transport mode and suburb shows that 80% of inner-city residents walk while 20% of outer-suburb residents walk. What confounding variable might explain this?",
+      "correct": "Distance to workplace",
+      "correctExplanation": "Inner-city residents live closer to amenities, making walking practical regardless of personal preference.",
+      "distractors": [
+        {
+          "answer": "Age of residents",
+          "explanation": "Age could be relevant but distance is the more direct confounder."
+        },
+        {
+          "answer": "Weather conditions",
+          "explanation": "Weather affects both groups equally."
+        },
+        {
+          "answer": "Number of roads",
+          "explanation": "Road count is less directly relevant than distance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A researcher collects data on handedness and favourite subject. Row percentages are: left-handed 32% maths, 68% English; right-handed 30% maths, 70% English. What does this suggest?",
+      "correct": "No meaningful association between handedness",
+      "correctExplanation": "The proportions are very similar (32% vs 30%), suggesting handedness does not influence subject preference.",
+      "distractors": [
+        {
+          "answer": "Left-handers clearly prefer maths more",
+          "explanation": "A 2 percentage point difference is negligible."
+        },
+        {
+          "answer": "Strong association exists",
+          "explanation": "Near-identical proportions indicate no association."
+        },
+        {
+          "answer": "The data must be incorrect",
+          "explanation": "Similar proportions are a valid finding."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Why might a two-way table with 5 people per group produce unreliable conclusions?",
+      "correct": "Small samples are subject to high rand",
+      "correctExplanation": "With only 5 per group, one person switching categories changes proportions by 20%, creating apparent associations by chance.",
+      "distractors": [
+        {
+          "answer": "Small tables are always accurate",
+          "explanation": "Small samples increase the role of chance."
+        },
+        {
+          "answer": "Five is enough for any analysis",
+          "explanation": "Statistical reliability requires larger samples."
+        },
+        {
+          "answer": "The table structure is wrong",
+          "explanation": "Table structure is not the issue; sample size is."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A council surveys residents about a new park. North: 70/100 support. South: 60/100 support. East: 68/100 support. Which pair of regions shows the strongest difference?",
+      "correct": "North and South",
+      "correctExplanation": "North (70%) and South (60%) have the largest difference of 10 percentage points.",
+      "distractors": [
+        {
+          "answer": "South and East",
+          "explanation": "South and East differ by only 8 percentage points."
+        },
+        {
+          "answer": "North and East",
+          "explanation": "North and East differ by only 2 percentage points."
+        },
+        {
+          "answer": "All are equally different",
+          "explanation": "The differences are 10, 2, and 8 percentage points."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "When constructing a two-way table, which variable should go in the rows?",
+      "correct": "Either variable can be the row variable",
+      "correctExplanation": "The choice of rows versus columns is a matter of convention or convenience. The analysis works either way.",
+      "distractors": [
+        {
+          "answer": "Only the explanatory variable",
+          "explanation": "This applies to scatterplots, not necessarily two-way tables."
+        },
+        {
+          "answer": "The variable with fewer categories",
+          "explanation": "Category count does not determine placement."
+        },
+        {
+          "answer": "The variable with larger counts",
+          "explanation": "Count size does not determine placement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A two-way table of gender and career choice shows different row percentages. Before concluding association, what should be checked?",
+      "correct": "Whether the sample was representative of the",
+      "correctExplanation": "A biased sample (e.g., surveying only one school) could create an apparent association that does not exist in the broader population.",
+      "distractors": [
+        {
+          "answer": "Whether the counts add up correctly",
+          "explanation": "Arithmetic accuracy is basic, not the main concern."
+        },
+        {
+          "answer": "Whether the table has equal row totals",
+          "explanation": "Unequal totals are expected and handled by percentages."
+        },
+        {
+          "answer": "Whether the categories are alphabetical",
+          "explanation": "Category order does not affect analysis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "ABS Census data cross-tabulates education level and employment status for Victorian regions. Why is this useful?",
+      "correct": "It reveals whether education and employment are",
+      "correctExplanation": "Comparing row percentages across education levels shows whether higher education is associated with different employment outcomes.",
+      "distractors": [
+        {
+          "answer": "It proves education causes employment",
+          "explanation": "Census data shows association, not causation."
+        },
+        {
+          "answer": "It counts every person in Victoria",
+          "explanation": "The purpose is analytical, not just counting."
+        },
+        {
+          "answer": "It replaces the need for surveys",
+          "explanation": "Census data complements surveys, not replaces them."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Aboriginal communities have raised concerns about how two-way table data is used in research about them. What is a key principle they advocate?",
+      "correct": "Data sovereignty \u2014 communities should control their",
+      "correctExplanation": "Aboriginal data sovereignty means communities participate in how data is collected, analysed, and reported.",
+      "distractors": [
+        {
+          "answer": "Data should never be collected",
+          "explanation": "The concern is about control, not prohibition."
+        },
+        {
+          "answer": "Only governments should use the data",
+          "explanation": "Community control, not government monopoly, is the principle."
+        },
+        {
+          "answer": "Tables should not be used for Aboriginal data",
+          "explanation": "The tool is neutral; the concern is about governance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A study finds 90% of athletes eat breakfast versus 60% of non-athletes. Can we conclude that eating breakfast makes people athletic?",
+      "correct": "No, athletes may eat breakfast because of",
+      "correctExplanation": "The direction of influence is unclear. Athletic training routines may drive breakfast habits rather than breakfast causing athleticism.",
+      "distractors": [
+        {
+          "answer": "Yes, the evidence is clear",
+          "explanation": "Association does not prove causation or direction."
+        },
+        {
+          "answer": "Yes, because the difference is large",
+          "explanation": "Large differences still do not prove causation."
+        },
+        {
+          "answer": "No, because percentages are unreliable",
+          "explanation": "Percentages are valid; causation is the issue."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "When row percentages differ substantially across rows, this indicates an {{blank:1}} between the variables. However, this does not prove {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "association",
+          "correctExplanation": "Different proportions across groups show the variables are related.",
+          "distractors": [
+            {
+              "answer": "equation",
+              "explanation": "An equation is a mathematical relationship, not a statistical finding.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "error",
+              "explanation": "Different proportions are a finding, not a mistake.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "causation",
+          "correctExplanation": "Association shows a pattern; only experiments can prove cause and effect.",
+          "distractors": [
+            {
+              "answer": "association",
+              "explanation": "Association is what was found, not what needs proving.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "correlation",
+              "explanation": "Correlation is a specific numerical measure; causation is the incorrect inference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A sample of only 10 people per group may show apparent associations due to {{blank:1}} variation. Ideally, each group should contain at least {{blank:2}} observations.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "random",
+          "correctExplanation": "Small samples are highly susceptible to random fluctuations.",
+          "distractors": [
+            {
+              "answer": "systematic",
+              "explanation": "Systematic variation indicates a genuine pattern.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Small samples have more variation, not zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "A common guideline is that at least 30 observations per group provides reasonable reliability.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "Five per group is too small for reliable conclusions.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "100",
+              "explanation": "While more is better, 30 is a practical minimum.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "To investigate whether year level is associated with transport mode, place year level in {{blank:1}} and transport mode in {{blank:2}}, then compare row percentages.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "rows",
+          "correctExplanation": "The variable being compared (year level) is typically placed in rows.",
+          "distractors": [
+            {
+              "answer": "cells",
+              "explanation": "Cells contain frequency counts, not variable categories.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "margins",
+              "explanation": "Margins contain totals, not variable categories.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "columns",
+          "correctExplanation": "The variable whose distribution is compared goes in columns.",
+          "distractors": [
+            {
+              "answer": "rows",
+              "explanation": "Having both variables in rows would not create a two-way table.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "titles",
+              "explanation": "Titles label the table, not the variable categories.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A confounding variable influences {{blank:1}} measured variables simultaneously, creating the appearance of an association that may not reflect a {{blank:2}} relationship.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "both",
+          "correctExplanation": "Confounding variables are linked to both the row and column variables.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "Affecting only one variable would not create a spurious association.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "neither",
+              "explanation": "If it affected neither, it would not be a confounder.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "direct",
+          "correctExplanation": "The two measured variables may not be directly linked; the confounder creates the appearance.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "The association is systematic, not random.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "statistical",
+              "explanation": "The association is statistical but may not be direct.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "In a two-way table with 3 rows and 2 columns, there are {{blank:1}} interior cells and {{blank:2}} marginal totals (excluding the grand total).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "3 rows \u00d7 2 columns = 6 interior cells.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 is the sum of rows and columns, not the product.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 does not match any row-column combination.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "3 row totals + 2 column totals = 5 marginal totals.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is the number of interior cells.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is only the number of row totals.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "If 45 of 60 urban students and 30 of 60 rural students prefer team sports, the row percentages are {{blank:1}}% urban and {{blank:2}}% rural.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "75",
+          "correctExplanation": "45/60 \u00d7 100 = 75%.",
+          "distractors": [
+            {
+              "answer": "45",
+              "explanation": "45 is the raw count, not the percentage.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "50",
+              "explanation": "50% would be 30/60.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "50",
+          "correctExplanation": "30/60 \u00d7 100 = 50%.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "30 is the raw count, not the percentage.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "60",
+              "explanation": "60 is the row total, not the percentage.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Research about Aboriginal communities should involve the community in data {{blank:1}} and interpretation, respecting the principle of data {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "collection",
+          "correctExplanation": "Community involvement from the start ensures respectful and accurate data gathering.",
+          "distractors": [
+            {
+              "answer": "deletion",
+              "explanation": "Deleting data is not the principle being described.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "fabrication",
+              "explanation": "Fabricating data is unethical.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sovereignty",
+          "correctExplanation": "Data sovereignty means communities have the right to control data about themselves.",
+          "distractors": [
+            {
+              "answer": "ownership",
+              "explanation": "While related, sovereignty is the broader principle encompassing governance and control.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "anonymity",
+              "explanation": "Anonymity is one aspect of ethics, not the overarching principle.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Column percentages are calculated by dividing each cell by the {{blank:1}} total. They are useful when comparing the composition of each {{blank:2}} category.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "column",
+          "correctExplanation": "Column percentages use the column total as the denominator.",
+          "distractors": [
+            {
+              "answer": "row",
+              "explanation": "Row totals are used for row percentages.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "grand",
+              "explanation": "The grand total gives overall proportions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "column",
+          "correctExplanation": "Column percentages show how each column category is distributed across rows.",
+          "distractors": [
+            {
+              "answer": "row",
+              "explanation": "Row composition is shown by row percentages.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "cell",
+              "explanation": "Individual cells are not categories.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A two-way table showing VicHealth data on exercise and health outcomes can reveal {{blank:1}} but researchers must avoid claiming {{blank:2}} without experimental evidence.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "associations",
+          "correctExplanation": "Observational data can identify patterns between variables.",
+          "distractors": [
+            {
+              "answer": "causes",
+              "explanation": "Causation cannot be determined from observational tables alone.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "proofs",
+              "explanation": "Observational data provides evidence, not proof.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "causation",
+          "correctExplanation": "Experimental design is needed to establish cause and effect.",
+          "distractors": [
+            {
+              "answer": "associations",
+              "explanation": "Associations are appropriately identified from two-way tables.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "data",
+              "explanation": "Data is collected and reported; causation is the inappropriate claim.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "When reporting findings from a two-way table, state the {{blank:1}} for each group, describe any difference, and note that the finding shows association, not {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "percentages",
+          "correctExplanation": "Row or column percentages enable fair comparison between groups.",
+          "distractors": [
+            {
+              "answer": "counts",
+              "explanation": "Raw counts are misleading when group sizes differ.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "modes",
+              "explanation": "Mode is not typically reported from two-way tables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "causation",
+          "correctExplanation": "Two-way tables reveal associations but cannot establish causal relationships.",
+          "distractors": [
+            {
+              "answer": "association",
+              "explanation": "Association is what was found; causation is the inappropriate claim.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "evidence",
+              "explanation": "The table does provide evidence of association.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "If male and female students have row percentages of 62% and 58% for preferring science, the difference is {{blank:1}} and likely suggests {{blank:2}} association.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "small",
+          "correctExplanation": "A 4 percentage point difference is relatively minor.",
+          "distractors": [
+            {
+              "answer": "large",
+              "explanation": "4 percentage points is not a substantial difference.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The difference is 4%, not zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "no meaningful",
+          "correctExplanation": "Such a small difference could easily occur by chance in moderate sample sizes.",
+          "distractors": [
+            {
+              "answer": "a strong",
+              "explanation": "A 4 percentage point difference does not indicate strong association.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a causal",
+              "explanation": "Causation cannot be determined from association.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "The {{blank:1}} totals in a two-way table show the overall distribution of each variable separately, ignoring the other variable. These are found along the {{blank:2}} of the table.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "marginal",
+          "correctExplanation": "Marginal totals summarise each variable independently.",
+          "distractors": [
+            {
+              "answer": "cell",
+              "explanation": "Cell values show combined category counts.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "interior",
+              "explanation": "Interior cells show joint frequencies.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "edges",
+          "correctExplanation": "Marginal totals are placed at the end of each row and bottom of each column.",
+          "distractors": [
+            {
+              "answer": "centre",
+              "explanation": "The centre contains joint frequency counts.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "top",
+              "explanation": "The top has column headers, not all marginal totals.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A two-way table shows that 85% of students from high-income families attend university versus 40% from low-income families. A politician says income level determines university attendance. Evaluate this claim.",
+      "correct": "The claim overstates causation from",
+      "correctExplanation": "While there is a strong association, other factors (parental education, school quality, aspirations) also influence university attendance.",
+      "distractors": [
+        {
+          "answer": "The claim is fully supported",
+          "explanation": "Association alone cannot prove income determines attendance."
+        },
+        {
+          "answer": "The data is unreliable",
+          "explanation": "The data may be valid; the interpretation is the problem."
+        },
+        {
+          "answer": "No association exists",
+          "explanation": "An 85% vs 40% difference clearly shows association."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A researcher finds association between suburb and health outcomes. When they control for income level, the association disappears. What does this suggest?",
+      "correct": "Income was a confounding variable",
+      "correctExplanation": "Income influenced both suburb choice and health outcomes, creating a spurious association between them.",
+      "distractors": [
+        {
+          "answer": "Suburb does cause health differences",
+          "explanation": "If controlling for income removes the association, suburb is not the driver."
+        },
+        {
+          "answer": "The original analysis was wrong",
+          "explanation": "The original analysis correctly identified association; refinement revealed confounding."
+        },
+        {
+          "answer": "Health and income are unrelated",
+          "explanation": "Income clearly influences health in this analysis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Two tables show association between diet and energy levels. Table A has 500 participants; Table B has 25. Both show a 15 percentage point difference. Which result is more reliable?",
+      "correct": "Table A, because larger samples are less",
+      "correctExplanation": "500 participants provides much more stability than 25, making the 15% difference more trustworthy.",
+      "distractors": [
+        {
+          "answer": "Table B, because it is more focused",
+          "explanation": "Smaller does not mean more focused or reliable."
+        },
+        {
+          "answer": "Both are equally reliable",
+          "explanation": "Sample size directly affects reliability."
+        },
+        {
+          "answer": "Neither is reliable without experiments",
+          "explanation": "Observational data can be reliable for identifying associations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A newspaper reports: '70% of successful entrepreneurs did not finish university.' What critical question should be asked?",
+      "correct": "What percentage of all people who",
+      "correctExplanation": "The statistic only looks at entrepreneurs, not the broader population. Most non-graduates may not be entrepreneurs.",
+      "distractors": [
+        {
+          "answer": "Is 70% a majority?",
+          "explanation": "Whether 70% is a majority is obvious and not the critical question."
+        },
+        {
+          "answer": "Were they from Australia?",
+          "explanation": "Geographic origin is less critical than the base rate question."
+        },
+        {
+          "answer": "How many were surveyed?",
+          "explanation": "Sample size matters but the base rate question is more fundamental."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A two-way table of gender and career shows different proportions. When age is included as a third variable, the association reverses for each age group. What phenomenon is this?",
+      "correct": "Simpson's paradox",
+      "correctExplanation": "Simpson's paradox occurs when a trend present in aggregated data reverses when the data is split into subgroups.",
+      "distractors": [
+        {
+          "answer": "Confounding bias",
+          "explanation": "While confounding is involved, the specific reversal phenomenon is Simpson's paradox."
+        },
+        {
+          "answer": "Sampling error",
+          "explanation": "The reversal is a real phenomenon, not an error."
+        },
+        {
+          "answer": "Correlation fallacy",
+          "explanation": "This is a specific paradox, not a general fallacy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "ABS Census data shows 60% of Indigenous Victorians have completed Year 12, compared to 78% of non-Indigenous Victorians. Why must this finding be interpreted with caution?",
+      "correct": "Historical systemic factors influence ed",
+      "correctExplanation": "Colonisation, systemic discrimination, and socioeconomic disadvantage are confounding variables that must contextualise the comparison.",
+      "distractors": [
+        {
+          "answer": "The data is inaccurate",
+          "explanation": "Census data is generally reliable."
+        },
+        {
+          "answer": "The percentages are too close",
+          "explanation": "An 18 percentage point gap is substantial."
+        },
+        {
+          "answer": "Year 12 completion is not important",
+          "explanation": "Education completion is a significant outcome measure."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A study finds that coffee drinkers have lower rates of depression. Coffee companies use this to market coffee as a mood enhancer. What is problematic?",
+      "correct": "The association may be driven by social",
+      "correctExplanation": "Social interaction, routine, and lifestyle factors may confound the relationship between coffee drinking and mood.",
+      "distractors": [
+        {
+          "answer": "The study proves coffee prevents depression",
+          "explanation": "Observational studies cannot prove causation."
+        },
+        {
+          "answer": "Depression and coffee are unrelated",
+          "explanation": "An association was found; causation is the issue."
+        },
+        {
+          "answer": "The sample was too large",
+          "explanation": "Larger samples generally improve reliability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A researcher creates separate two-way tables for males and females. In both groups, treatment A is more effective. When combined, treatment B appears more effective. What should the researcher report?",
+      "correct": "The subgroup results, noting Sim",
+      "correctExplanation": "The subgroup analysis is more accurate. The combined result is misleading due to unequal group sizes across treatments.",
+      "distractors": [
+        {
+          "answer": "Only the combined result",
+          "explanation": "The combined result hides the true pattern."
+        },
+        {
+          "answer": "Only the male results",
+          "explanation": "Both subgroups should be reported."
+        },
+        {
+          "answer": "Neither result is valid",
+          "explanation": "The subgroup results are valid and should be reported."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student collects data on pet ownership and happiness from 15 classmates. 80% of pet owners are happy versus 60% of non-owners. How should they report this?",
+      "correct": "Note the apparent association but ",
+      "correctExplanation": "With only 15 people, the difference could easily be due to chance. The finding is suggestive but not conclusive.",
+      "distractors": [
+        {
+          "answer": "Claim a strong causal link",
+          "explanation": "Small samples and observational data cannot support causal claims."
+        },
+        {
+          "answer": "Ignore the difference",
+          "explanation": "The difference is worth noting, with appropriate caveats."
+        },
+        {
+          "answer": "Conclude pets do not matter",
+          "explanation": "The data suggests a possible association, not the absence of one."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "When constructing a two-way table for a statistical investigation, which step should come first?",
+      "correct": "Formulate a clear",
+      "correctExplanation": "The investigation begins with a question that guides data collection and analysis.",
+      "distractors": [
+        {
+          "answer": "Collect data from all",
+          "explanation": "Data collection should follow a clear question and plan."
+        },
+        {
+          "answer": "Calculate percentages",
+          "explanation": "Percentages are calculated after data is organised, not first."
+        },
+        {
+          "answer": "Draw conclusions",
+          "explanation": "Conclusions come at the end, after analysis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Two researchers study the same data set. One uses row percentages and finds association; the other uses column percentages and finds no association. Is this possible?",
+      "correct": "No, both methods should reach the same",
+      "correctExplanation": "Row and column percentages are different views of the same data. If an association exists, it appears in both.",
+      "distractors": [
+        {
+          "answer": "Yes, row percentages are more accurate",
+          "explanation": "Neither method is inherently more accurate."
+        },
+        {
+          "answer": "Yes, column percentages detect different patterns",
+          "explanation": "Both detect the same underlying association."
+        },
+        {
+          "answer": "It depends on the sample size",
+          "explanation": "Sample size does not change whether row or column percentages agree."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A VicHealth report shows association between physical activity level and mental health status. What additional information strengthens the finding?",
+      "correct": "Large representative sample",
+      "correctExplanation": "A large, representative sample with statistical controls for age, income, and other factors makes the association more credible.",
+      "distractors": [
+        {
+          "answer": "Only a catchy headline",
+          "explanation": "Headlines do not strengthen statistical findings."
+        },
+        {
+          "answer": "Colourful graphs",
+          "explanation": "Aesthetics do not affect statistical validity."
+        },
+        {
+          "answer": "Celebrity endorsements",
+          "explanation": "Endorsements are not evidence."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A two-way table shows that students who eat breakfast score higher on tests. Before recommending breakfast, what analysis should be conducted?",
+      "correct": "Check for confounders like socioeconomic s",
+      "correctExplanation": "Students who eat breakfast may also come from more stable homes with better sleep routines \u2014 these confounders must be examined.",
+      "distractors": [
+        {
+          "answer": "No further analysis is needed",
+          "explanation": "Confounders should always be investigated."
+        },
+        {
+          "answer": "Repeat the study with fewer students",
+          "explanation": "Fewer students would not improve the analysis."
+        },
+        {
+          "answer": "Convert counts to raw data",
+          "explanation": "The data format is not the issue."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "How does data sovereignty apply when researchers use two-way tables to analyse Aboriginal community data?",
+      "correct": "Communities should participate in deciding how the",
+      "correctExplanation": "Data sovereignty ensures communities have agency over research that affects them.",
+      "distractors": [
+        {
+          "answer": "Researchers should avoid collecting any data",
+          "explanation": "The principle is about control, not prohibition."
+        },
+        {
+          "answer": "Only government can analyse the data",
+          "explanation": "Government monopoly is not data sovereignty."
+        },
+        {
+          "answer": "The data should never be published",
+          "explanation": "Publication may be appropriate with community consent."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Simpson's paradox occurs when an association present in {{blank:1}} groups reverses when the groups are {{blank:2}}, highlighting the importance of subgroup analysis.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "separate",
+          "correctExplanation": "The paradox appears when subgroup trends contradict the combined trend.",
+          "distractors": [
+            {
+              "answer": "combined",
+              "explanation": "The reversal occurs in combined data, not in separate groups.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "The groups are defined by a third variable, not random.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "combined",
+          "correctExplanation": "Aggregating unequal subgroups can reverse the apparent trend.",
+          "distractors": [
+            {
+              "answer": "separated",
+              "explanation": "Separation reveals the true pattern; combination hides it.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "removed",
+              "explanation": "Removing groups changes the analysis entirely.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "A critical analysis of a statistical claim examines the {{blank:1}} (how data was gathered), the {{blank:2}} used, and whether the conclusion follows logically.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "methodology",
+          "correctExplanation": "The method of data collection determines the reliability of the findings.",
+          "distractors": [
+            {
+              "answer": "headline",
+              "explanation": "Headlines are designed to attract attention, not describe methods.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "colour scheme",
+              "explanation": "Visual design does not affect statistical validity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "statistics",
+          "correctExplanation": "The choice of statistic (mean, median, percentage) affects the interpretation.",
+          "distractors": [
+            {
+              "answer": "fonts",
+              "explanation": "Typography does not affect data analysis.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "graphs only",
+              "explanation": "Statistics include numerical measures, not just visual displays.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "When a two-way table shows association between variables, one should investigate whether a {{blank:1}} variable explains the pattern before suggesting a {{blank:2}} relationship.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "confounding",
+          "correctExplanation": "Confounders create apparent associations between variables that are not directly related.",
+          "distractors": [
+            {
+              "answer": "categorical",
+              "explanation": "The variables are already categorical; confounding is the concern.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "The concern is about systematic, not random, influence.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "causal",
+          "correctExplanation": "Causation requires experimental evidence, not just observational association.",
+          "distractors": [
+            {
+              "answer": "statistical",
+              "explanation": "The statistical relationship is already established.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "weak",
+              "explanation": "The concern is about causation, not strength.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The {{blank:1}} of a sample determines whether findings can be generalised to the population. A convenience sample may produce {{blank:2}} results.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "representativeness",
+          "correctExplanation": "A sample must reflect the population's characteristics for valid generalisation.",
+          "distractors": [
+            {
+              "answer": "size",
+              "explanation": "Size matters, but representativeness is more fundamental.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "colour",
+              "explanation": "Colour is not a property of statistical samples.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "biased",
+          "correctExplanation": "Convenience samples often over-represent certain groups, creating bias.",
+          "distractors": [
+            {
+              "answer": "perfect",
+              "explanation": "Convenience samples are typically biased, not perfect.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Convenience samples are the opposite of random.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "An investigation using two-way tables should report findings using language such as 'the data {{blank:1}}' rather than 'the data {{blank:2}}', to reflect the limitations of observational data.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "suggests",
+          "correctExplanation": "Cautious language acknowledges that observational data cannot prove causation.",
+          "distractors": [
+            {
+              "answer": "proves",
+              "explanation": "Observational data provides evidence, not proof.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "demands",
+              "explanation": "Data does not demand; researchers interpret.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "proves",
+          "correctExplanation": "Proof requires experimental evidence and rigorous methodology.",
+          "distractors": [
+            {
+              "answer": "suggests",
+              "explanation": "Suggests is appropriately cautious language.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "indicates",
+              "explanation": "Indicates is also acceptable but less cautious than suggests.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "To evaluate a media claim about health and lifestyle, ask: Is the sample {{blank:1}}? Is the statistic {{blank:2}}? Does the conclusion follow from the evidence?",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "representative",
+          "correctExplanation": "A representative sample ensures findings apply to the broader population.",
+          "distractors": [
+            {
+              "answer": "large",
+              "explanation": "Size alone does not guarantee representativeness.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "convenient",
+              "explanation": "Convenience samples are typically biased.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "appropriate",
+          "correctExplanation": "The right statistic (mean vs median, counts vs percentages) must be chosen for the data type.",
+          "distractors": [
+            {
+              "answer": "impressive",
+              "explanation": "Statistical impressiveness is not a criterion for validity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "large",
+              "explanation": "The magnitude of a statistic does not determine its appropriateness.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Aboriginal data {{blank:1}} asserts that Indigenous communities have the right to govern data about themselves, including how it is {{blank:2}} and reported.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sovereignty",
+          "correctExplanation": "Data sovereignty is the principle that communities control their own data.",
+          "distractors": [
+            {
+              "answer": "collection",
+              "explanation": "Collection is one aspect; sovereignty is the overarching principle.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "analysis",
+              "explanation": "Analysis is a component, not the governing principle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "collected and analysed",
+          "correctExplanation": "Community involvement in all stages ensures ethical and accurate research.",
+          "distractors": [
+            {
+              "answer": "ignored",
+              "explanation": "Ignoring community input violates data sovereignty.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "hidden",
+              "explanation": "Hiding data is not a principle of data sovereignty.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "When comparing multiple groups in a two-way table, the difference in row percentages indicates the {{blank:1}} of the association, while the {{blank:2}} of the percentages indicates its direction.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "strength",
+          "correctExplanation": "Larger differences in row percentages indicate a stronger association.",
+          "distractors": [
+            {
+              "answer": "cause",
+              "explanation": "Two-way tables show association, not causation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "validity",
+              "explanation": "Validity concerns the methodology, not the size of the difference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "pattern",
+          "correctExplanation": "The pattern of which groups have higher or lower percentages shows the direction of the association.",
+          "distractors": [
+            {
+              "answer": "colour",
+              "explanation": "Colour is a visual element, not a statistical property.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "size",
+              "explanation": "Size relates to strength; pattern relates to direction.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A well-designed statistical investigation follows the cycle: formulate a {{blank:1}}, collect data, organise in a table, analyse percentages, and report findings with {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "question",
+          "correctExplanation": "Every investigation begins with a clear research question.",
+          "distractors": [
+            {
+              "answer": "hypothesis",
+              "explanation": "While hypotheses are related, two-way table investigations start with questions about association.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "conclusion",
+              "explanation": "Conclusions come at the end, not the beginning.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "limitations",
+          "correctExplanation": "Acknowledging limitations (sample size, confounders, association vs causation) strengthens the report.",
+          "distractors": [
+            {
+              "answer": "certainty",
+              "explanation": "Statistical reports should express uncertainty, not certainty.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "proofs",
+              "explanation": "Observational data provides evidence, not proof.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "In a two-way table with unequal group sizes, the group with {{blank:1}} observations has percentages that are more sensitive to individual changes, making apparent associations less {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "fewer",
+          "correctExplanation": "Smaller groups have percentages that shift more with each observation.",
+          "distractors": [
+            {
+              "answer": "more",
+              "explanation": "Larger groups have more stable percentages.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal",
+              "explanation": "Equal groups would have equal sensitivity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "reliable",
+          "correctExplanation": "Small-group percentages are less stable and less trustworthy.",
+          "distractors": [
+            {
+              "answer": "visible",
+              "explanation": "Differences are more visible in small groups, but less reliable.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "interesting",
+              "explanation": "Reliability is the statistical concern, not interest.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "To test whether an apparent association is genuine, researchers can use a chi-squared test, which compares {{blank:1}} frequencies to {{blank:2}} frequencies.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "observed",
+          "correctExplanation": "Observed frequencies are the actual counts in the two-way table.",
+          "distractors": [
+            {
+              "answer": "expected",
+              "explanation": "Expected frequencies are what would occur if there were no association.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random frequencies are not a category in chi-squared testing.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "expected",
+          "correctExplanation": "Expected frequencies assume no association between the variables.",
+          "distractors": [
+            {
+              "answer": "observed",
+              "explanation": "Observed frequencies come from the data, not from assumptions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "maximum",
+              "explanation": "Maximum frequencies are not used in chi-squared calculations.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "When evaluating research findings about Victorian communities, critical readers should check whether the {{blank:1}} is representative and whether alternative {{blank:2}} for the findings have been considered.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sample",
+          "correctExplanation": "A representative sample ensures the findings apply to the broader community.",
+          "distractors": [
+            {
+              "answer": "headline",
+              "explanation": "Headlines are designed for attention, not representativeness.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "graph",
+              "explanation": "Graphs display data; the sample determines validity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "explanations",
+          "correctExplanation": "Alternative explanations (confounders, bias) should always be considered.",
+          "distractors": [
+            {
+              "answer": "data sets",
+              "explanation": "Alternative data sets are a separate concern.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "tables",
+              "explanation": "Tables are displays, not explanations for findings.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

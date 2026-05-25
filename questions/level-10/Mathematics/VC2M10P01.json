@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10P01",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to investigate conditional probability using language like 'if...then', 'given' and 'knowing that'.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to investigate conditional probability using language like 'if...then', 'given' and 'knowing that'.",
+    "y": [
+      "Conditional probability captures how knowing one piece of information changes the likelihood of another \u2014 it is central to medical diagnosis, risk assessment and everyday reasoning.",
+      "Understanding conditional probability helps us avoid common reasoning errors, such as confusing P(A|B) with P(B|A).",
+      "These concepts are foundational for Bayesian statistics, machine learning and informed decision-making."
+    ],
+    "eg": [
+      "Calculating: 'Given that a card drawn is red, what is the probability it is a heart?' P(heart|red) = 13/26 = \u00bd.",
+      "Using a two-way table to find conditional probabilities: P(male|left-handed).",
+      "Distinguishing: 'The probability of having a disease given a positive test' from 'the probability of a positive test given the disease.'",
+      "Applying Bayes' reasoning: 'If a test is 99% accurate and the disease prevalence is 1%, what is the probability of actually having the disease given a positive test?'",
+      "Using tree diagrams to calculate conditional probabilities in two-stage experiments.",
+      "Interpreting conditional probability in context: 'The probability of a late train increases given that it is raining.'"
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "P(A|B) represents the joint probability of events A and B occurring together.",
+      "correct": "False",
+      "correctExplanation": "P(A|B) is the conditional probability of A given B, not the joint probability P(A\u2229B). It restricts the sample space to B.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "P(A|B) conditions on B and is calculated as P(A\u2229B)/P(B), which differs from the joint probability."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The vertical bar '|' in probability notation means 'given that'.",
+      "correct": "True",
+      "correctExplanation": "The vertical bar separates the event of interest from the conditioning event.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The bar means 'or', indicating either event can occur."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "P(A|B) always equals P(B|A) for any two events.",
+      "correct": "False",
+      "correctExplanation": "P(A|B) and P(B|A) are generally different. P(A|B) = P(A\u2229B)/P(B) while P(B|A) = P(A\u2229B)/P(A), and P(A) need not equal P(B).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Since both use P(A\u2229B), the two conditional probabilities must be equal."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The phrase 'knowing that' in a probability question signals a conditional probability.",
+      "correct": "True",
+      "correctExplanation": "'Knowing that' restricts the sample space to only those outcomes where the known condition holds.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "'Knowing that' refers to prior knowledge unrelated to the probability calculation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The formula for conditional probability is P(A|B) = P(A) + P(B).",
+      "correct": "False",
+      "correctExplanation": "The correct formula is P(A|B) = P(A\u2229B)/P(B). Addition is used for mutually exclusive unions, not conditional probability.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Adding probabilities gives the conditional result because we combine both events."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "When we condition on event B, the sample space remains the full original set of outcomes.",
+      "correct": "False",
+      "correctExplanation": "Conditioning on B restricts the sample space to only those outcomes where B occurs, not the full set.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Conditioning always reduces the sample space to the subset where the given event has occurred."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The word 'of' in 'the probability of passing, of those who studied' indicates conditional probability.",
+      "correct": "True",
+      "correctExplanation": "'Of those who studied' restricts the sample space to students who studied, making this P(passing|studied).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The word 'of' indicates multiplication, not a conditional restriction."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "P(A|B) can be calculated without knowing P(B).",
+      "correct": "False",
+      "correctExplanation": "The formula P(A|B) = P(A\u2229B)/P(B) requires P(B). Without it, the conditional probability cannot be determined.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "P(A|B) depends only on P(A\u2229B), so P(B) is not needed."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "If P(A\u2229B) = 0.12 and P(B) = 0.4, then P(A|B) = 0.3.",
+      "correct": "True",
+      "correctExplanation": "P(A|B) = P(A\u2229B)/P(B) = 0.12/0.4 = 0.3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "P(A|B) should equal 0.12 \u00d7 0.4 = 0.048, not a division."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "In a two-way table, conditional probability is found by dividing the joint frequency by the total frequency of the entire table.",
+      "correct": "False",
+      "correctExplanation": "Conditional probability divides the joint frequency by the row or column total for the given condition, not the grand total.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The grand total is always the correct denominator for any probability calculation from a table."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "'If a student plays sport, what is the probability they also play music?' is an example of conditional probability.",
+      "correct": "True",
+      "correctExplanation": "The phrase 'if a student plays sport' conditions on sport participation, making this P(music|sport).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is a joint probability question because it involves two events together."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "P(A|B) = P(A) \u00d7 P(B) is the correct formula for conditional probability.",
+      "correct": "False",
+      "correctExplanation": "P(A) \u00d7 P(B) gives the joint probability only when A and B are independent. The conditional formula is P(A|B) = P(A\u2229B)/P(B).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Multiplying the individual probabilities always gives the conditional probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which formula correctly defines conditional probability P(A|B)?",
+      "correct": "P(A\u2229B) divided by P(B)",
+      "correctExplanation": "Conditional probability divides the joint probability by the probability of the given event.",
+      "distractors": [
+        {
+          "answer": "P(A) multiplied by P(B)",
+          "explanation": "This gives joint probability for independent events, not conditional probability."
+        },
+        {
+          "answer": "P(A) divided by P(B)",
+          "explanation": "This divides marginal probabilities, ignoring the intersection."
+        },
+        {
+          "answer": "P(A\u2229B) divided by P(A)",
+          "explanation": "This calculates P(B|A), not P(A|B)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "In the statement 'Given that it is raining, what is the probability of a traffic delay?', which event is being conditioned on?",
+      "correct": "Raining",
+      "correctExplanation": "'Given that it is raining' establishes rain as the condition that restricts the sample space.",
+      "distractors": [
+        {
+          "answer": "Traffic delay",
+          "explanation": "Traffic delay is the event whose probability we seek, not the condition."
+        },
+        {
+          "answer": "Both raining",
+          "explanation": "Only one event is the condition; the other is the event of interest."
+        },
+        {
+          "answer": "Neither event",
+          "explanation": "The word 'given' explicitly identifies a conditioning event."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "If P(A\u2229B) = 0.15 and P(B) = 0.5, what is P(A|B)?",
+      "correct": "0.3",
+      "correctExplanation": "P(A|B) = 0.15/0.5 = 0.3.",
+      "distractors": [
+        {
+          "answer": "0.075",
+          "explanation": "This multiplies rather than divides."
+        },
+        {
+          "answer": "0.65",
+          "explanation": "This adds the two values rather than dividing."
+        },
+        {
+          "answer": "0.5",
+          "explanation": "This confuses P(A|B) with P(B)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "Which phrase signals a conditional probability question?",
+      "correct": "Given that",
+      "correctExplanation": "'Given that' explicitly restricts the sample space to a subset of outcomes.",
+      "distractors": [
+        {
+          "answer": "The total of",
+          "explanation": "This phrase relates to summing, not conditioning."
+        },
+        {
+          "answer": "Combined with",
+          "explanation": "This suggests a union or joint event, not conditioning."
+        },
+        {
+          "answer": "Instead of",
+          "explanation": "This compares alternatives and does not signal conditioning."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "A two-way table shows 20 students play sport and music, out of 50 who play sport. What is P(music|sport)?",
+      "correct": "0.4",
+      "correctExplanation": "P(music|sport) = 20/50 = 0.4. The denominator is the sport total, not the whole table.",
+      "distractors": [
+        {
+          "answer": "0.2",
+          "explanation": "This divides by the grand total instead of the sport column total."
+        },
+        {
+          "answer": "0.5",
+          "explanation": "This confuses the denominator with another column total."
+        },
+        {
+          "answer": "20",
+          "explanation": "This gives the count, not the probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "What does the vertical bar '|' mean in P(A|B)?",
+      "correct": "Given that B has occurred",
+      "correctExplanation": "The bar separates the event of interest A from the conditioning event B.",
+      "distractors": [
+        {
+          "answer": "A or B occurs",
+          "explanation": "The bar does not represent the union of events."
+        },
+        {
+          "answer": "A and B both occur",
+          "explanation": "The bar does not mean intersection."
+        },
+        {
+          "answer": "A divided by B",
+          "explanation": "The bar is notation for conditioning, not arithmetic division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "If P(A|B) = 0.6 and P(B) = 0.5, what is P(A\u2229B)?",
+      "correct": "0.3",
+      "correctExplanation": "Rearranging P(A|B) = P(A\u2229B)/P(B) gives P(A\u2229B) = 0.6 \u00d7 0.5 = 0.3.",
+      "distractors": [
+        {
+          "answer": "1.1",
+          "explanation": "This adds the values rather than multiplying."
+        },
+        {
+          "answer": "0.1",
+          "explanation": "This subtracts rather than multiplying."
+        },
+        {
+          "answer": "1.2",
+          "explanation": "This divides P(A|B) by P(B) instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "P(B|A) is calculated by dividing P(A\u2229B) by which value?",
+      "correct": "P(A)",
+      "correctExplanation": "P(B|A) = P(A\u2229B)/P(A). The denominator is always the probability of the given event.",
+      "distractors": [
+        {
+          "answer": "P(B)",
+          "explanation": "P(B) is the denominator for P(A|B), not P(B|A)."
+        },
+        {
+          "answer": "P(A\u2229B)",
+          "explanation": "Dividing by itself would always give 1."
+        },
+        {
+          "answer": "P(A)",
+          "explanation": "The sum of marginals is not used in the conditional formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "Which of the following is NOT a phrase that signals conditional probability?",
+      "correct": "The total probability of",
+      "correctExplanation": "This phrase relates to total probability, not conditioning on a specific event.",
+      "distractors": [
+        {
+          "answer": "Of those who",
+          "explanation": "'Of those who' restricts to a subgroup, signalling conditioning."
+        },
+        {
+          "answer": "If we know that",
+          "explanation": "'If we know that' sets a condition for the calculation."
+        },
+        {
+          "answer": "Among students who",
+          "explanation": "'Among students who' restricts the sample space."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "In a Venn diagram, P(A|B) is found by dividing the overlap region by which area?",
+      "correct": "The entire B circle",
+      "correctExplanation": "Conditioning on B restricts the sample space to B, so we divide the intersection by all of B.",
+      "distractors": [
+        {
+          "answer": "The entire A circle",
+          "explanation": "This would calculate P(B|A), not P(A|B)."
+        },
+        {
+          "answer": "The area outside both circles",
+          "explanation": "The complement region is irrelevant for conditioning."
+        },
+        {
+          "answer": "The total rectangle area",
+          "explanation": "This gives P(A\u2229B), the joint probability, not conditional."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "If 30 out of 100 students study maths and science, and 60 study maths, what is P(science|maths)?",
+      "correct": "0.5",
+      "correctExplanation": "P(science|maths) = 30/60 = 0.5. Only maths students form the denominator.",
+      "distractors": [
+        {
+          "answer": "0.3",
+          "explanation": "This uses the grand total 100 as the denominator."
+        },
+        {
+          "answer": "2.0",
+          "explanation": "This inverts the fraction, dividing 60 by 30."
+        },
+        {
+          "answer": "0.18",
+          "explanation": "This multiplies the values instead of dividing."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which statement correctly uses conditional probability language?",
+      "correct": "Knowing that the student passed, the probability of having",
+      "correctExplanation": "'Knowing that' restricts the sample space to students who passed.",
+      "distractors": [
+        {
+          "answer": "The probability of passing and studying is 0.8",
+          "explanation": "This describes a joint probability, not conditional."
+        },
+        {
+          "answer": "The probability of studying or passing is 0.8",
+          "explanation": "This describes a union probability."
+        },
+        {
+          "answer": "The probability is 0.8 for all students",
+          "explanation": "This is an unconditional statement about the whole population."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The formula for conditional probability is P(A|B) = P(A\u2229B) divided by {{blank:1}}. The vertical bar '|' is read as {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "P(B)",
+          "correctExplanation": "The denominator is the probability of the conditioning event B.",
+          "distractors": [
+            {
+              "answer": "P(A)",
+              "explanation": "P(A) would be the denominator for P(B|A), not P(A|B).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "P(A\u2229B)",
+              "explanation": "Using P(A\u2229B) as both numerator and denominator would give 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "given that",
+          "correctExplanation": "The bar separates the event of interest from the condition.",
+          "distractors": [
+            {
+              "answer": "and",
+              "explanation": "'And' represents intersection (\u2229), not conditioning.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "or",
+              "explanation": "'Or' represents union (\u222a), not conditioning.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "In the question 'Of those who play sport, what fraction also play music?', the sample space is restricted to {{blank:1}} and the event of interest is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sport players",
+          "correctExplanation": "The phrase 'of those who play sport' restricts the denominator to sport players only.",
+          "distractors": [
+            {
+              "answer": "all students",
+              "explanation": "Using all students ignores the conditional restriction.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "music players",
+              "explanation": "Music is the event we seek, not the conditioning group.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "playing music",
+          "correctExplanation": "We want to find how many of the sport players also play music.",
+          "distractors": [
+            {
+              "answer": "playing sport",
+              "explanation": "Sport is the given condition, not the event we are calculating.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "not playing sport",
+              "explanation": "This reverses both the condition and the event.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "If P(A|B) = 0.7 and P(B|A) = 0.7, then P(A) must equal P(B).",
+      "correct": "True",
+      "correctExplanation": "P(A|B) = P(A\u2229B)/P(B) and P(B|A) = P(A\u2229B)/P(A). If both equal 0.7, then P(A\u2229B)/P(B) = P(A\u2229B)/P(A), so P(A) = P(B).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Equal conditional probabilities have no implication for the marginal probabilities."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "In a two-way table, P(A|B) is found by dividing the joint cell count by the grand total of the table.",
+      "correct": "False",
+      "correctExplanation": "P(A|B) divides the joint cell by the column total for B, not the grand total. The grand total gives P(A\u2229B).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Using the grand total calculates the joint probability, not the conditional probability."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "A medical test with 99% sensitivity means that 99% of people who test positive actually have the disease.",
+      "correct": "False",
+      "correctExplanation": "Sensitivity is P(positive|disease). The statement describes P(disease|positive), which depends on disease prevalence and can be much lower.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sensitivity directly tells us how likely a positive result indicates true disease."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The base rate fallacy occurs when someone ignores the prior probability of an event when interpreting conditional probability.",
+      "correct": "True",
+      "correctExplanation": "Neglecting base rates leads to overestimating or underestimating posterior probabilities, especially with rare conditions.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The base rate fallacy only applies when probabilities are exactly equal."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "If P(A\u2229B) = 0.06, P(A) = 0.3 and P(B) = 0.2, then P(A|B) = P(B|A).",
+      "correct": "False",
+      "correctExplanation": "P(A|B) = 0.06/0.2 = 0.3 and P(B|A) = 0.06/0.3 = 0.2. These are different because P(A) \u2260 P(B).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Since both share the same numerator P(A\u2229B), the conditional probabilities must be equal."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "A tree diagram displays only unconditional probabilities and cannot represent conditional ones.",
+      "correct": "False",
+      "correctExplanation": "Tree diagrams represent conditional probabilities on each branch. The branch from B to A shows P(A|B).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Each branch of a tree diagram shows the conditional probability given the previous branch."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "If a disease affects 1 in 1000 people and a test is 95% accurate, P(disease|positive) is approximately 95%.",
+      "correct": "False",
+      "correctExplanation": "With low prevalence, false positives dominate. P(disease|positive) \u2248 0.001\u00d70.95/(0.001\u00d70.95 + 0.999\u00d70.05) \u2248 1.9%, far below 95%.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A 95% accurate test always gives 95% certainty regardless of disease prevalence."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Specificity of a test refers to P(negative|no disease), not P(no disease|negative).",
+      "correct": "True",
+      "correctExplanation": "Specificity measures how well the test identifies true negatives: P(negative result|person does not have disease).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Specificity is defined as P(no disease|negative), describing the predictive value of a negative result."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A bag contains 5 red and 3 blue marbles. One marble is drawn and is red. What is the probability the next marble drawn without replacement is also red?",
+      "correct": "4/7",
+      "correctExplanation": "After removing one red, 4 red and 3 blue remain, giving 7 total. P(red|first red) = 4/7.",
+      "distractors": [
+        {
+          "answer": "5/8",
+          "explanation": "This ignores that a red marble was already removed."
+        },
+        {
+          "answer": "5/7",
+          "explanation": "This uses the original red count with the reduced total."
+        },
+        {
+          "answer": "3/7",
+          "explanation": "This gives the probability of drawing blue, not red."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "In a class of 40, 25 study history and 20 study geography, with 10 studying both. What is P(geography|history)?",
+      "correct": "0.4",
+      "correctExplanation": "P(geography|history) = 10/25 = 0.4. Only history students form the denominator.",
+      "distractors": [
+        {
+          "answer": "0.5",
+          "explanation": "This divides 20 by 40, giving the unconditional P(geography)."
+        },
+        {
+          "answer": "0.25",
+          "explanation": "This divides 10 by 40, giving the joint probability."
+        },
+        {
+          "answer": "0.8",
+          "explanation": "This divides 20 by 25, confusing numerator and denominator."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A disease has 2% prevalence. A test has 90% sensitivity and 95% specificity. What is the approximate probability of disease given a positive test?",
+      "correct": "27%",
+      "correctExplanation": "P(D|+) = (0.02\u00d70.90)/((0.02\u00d70.90)+(0.98\u00d70.05)) = 0.018/0.067 \u2248 0.269 \u2248 27%.",
+      "distractors": [
+        {
+          "answer": "90%",
+          "explanation": "This confuses sensitivity P(+|D) with the posterior P(D|+)."
+        },
+        {
+          "answer": "2%",
+          "explanation": "This is the base rate, not the updated probability after a positive test."
+        },
+        {
+          "answer": "95%",
+          "explanation": "This confuses specificity with the positive predictive value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Which reasoning error involves confusing P(evidence|guilty) with P(guilty|evidence)?",
+      "correct": "The prosecutor's fallacy",
+      "correctExplanation": "The prosecutor's fallacy conflates the probability of evidence given guilt with the probability of guilt given evidence.",
+      "distractors": [
+        {
+          "answer": "The gambler's fallacy",
+          "explanation": "This involves believing past random events affect future ones."
+        },
+        {
+          "answer": "The conjunction fallacy",
+          "explanation": "This involves thinking a conjunction is more likely than a single event."
+        },
+        {
+          "answer": "The availability heuristic",
+          "explanation": "This involves judging probability by how easily examples come to mind."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "From a standard deck of 52 cards, one card is drawn and found to be a face card. What is P(king|face card)?",
+      "correct": "1/3",
+      "correctExplanation": "There are 12 face cards (4 kings, 4 queens, 4 jacks). P(king|face) = 4/12 = 1/3.",
+      "distractors": [
+        {
+          "answer": "1/13",
+          "explanation": "This uses 52 as the denominator instead of restricting to face cards."
+        },
+        {
+          "answer": "4/52",
+          "explanation": "This calculates P(king), not P(king|face card)."
+        },
+        {
+          "answer": "1/4",
+          "explanation": "This divides by 4 suits rather than 12 face cards."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "If P(A) = 0.5, P(B) = 0.4 and P(A\u2229B) = 0.2, what is P(A|B)?",
+      "correct": "0.5",
+      "correctExplanation": "P(A|B) = P(A\u2229B)/P(B) = 0.2/0.4 = 0.5.",
+      "distractors": [
+        {
+          "answer": "0.4",
+          "explanation": "This gives P(B), not the conditional probability."
+        },
+        {
+          "answer": "0.2",
+          "explanation": "This gives the joint probability P(A\u2229B)."
+        },
+        {
+          "answer": "0.8",
+          "explanation": "This adds P(A) and P(B) minus P(A\u2229B)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "In a factory, Machine A produces 60% of items with 5% defective, and Machine B produces 40% with 3% defective. What is P(Machine A|defective)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(A|def) = (0.60\u00d70.05)/((0.60\u00d70.05)+(0.40\u00d70.03)) = 0.030/0.042 \u2248 0.714.",
+      "distractors": [
+        {
+          "answer": "60%",
+          "explanation": "This is the prior probability of Machine A, ignoring defect rates."
+        },
+        {
+          "answer": "5%",
+          "explanation": "This is the defect rate for Machine A, not the posterior."
+        },
+        {
+          "answer": "50%",
+          "explanation": "This assumes equal likelihood from each machine given a defect."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A survey shows 80% of pet owners have dogs and 40% have cats. If 30% have both, what is P(cat|dog)?",
+      "correct": "0.375",
+      "correctExplanation": "P(cat|dog) = P(cat\u2229dog)/P(dog) = 0.30/0.80 = 0.375.",
+      "distractors": [
+        {
+          "answer": "0.75",
+          "explanation": "This divides P(cat\u2229dog) by P(cat) instead of P(dog)."
+        },
+        {
+          "answer": "0.40",
+          "explanation": "This gives the unconditional P(cat)."
+        },
+        {
+          "answer": "0.50",
+          "explanation": "This incorrectly halves P(dog)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A Venn diagram shows P(A) = 0.6, P(B) = 0.5 and P(A\u2229B) = 0.2. What is P(B|A)?",
+      "correct": "1/3",
+      "correctExplanation": "P(B|A) = P(A\u2229B)/P(A) = 0.2/0.6 = 1/3.",
+      "distractors": [
+        {
+          "answer": "0.4",
+          "explanation": "This divides P(A\u2229B) by P(B), calculating P(A|B) instead."
+        },
+        {
+          "answer": "0.5",
+          "explanation": "This gives P(B), not the conditional probability."
+        },
+        {
+          "answer": "0.3",
+          "explanation": "This subtracts rather than divides."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Which is the correct interpretation of P(positive test|no disease) = 0.05?",
+      "correct": "5% of healthy people receive a false positive result",
+      "correctExplanation": "This is the false positive rate: among those without disease, 5% test positive.",
+      "distractors": [
+        {
+          "answer": "5% of positive results are from healthy people",
+          "explanation": "This describes P(no disease|positive), not P(positive|no disease)."
+        },
+        {
+          "answer": "The test is 5% accurate",
+          "explanation": "Accuracy involves both sensitivity and specificity together."
+        },
+        {
+          "answer": "5% of all people test positive",
+          "explanation": "This would require knowing the disease prevalence."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "If P(rain) = 0.3, P(delay) = 0.2 and P(delay|rain) = 0.5, what is P(rain and delay)?",
+      "correct": "0.15",
+      "correctExplanation": "P(rain\u2229delay) = P(delay|rain) \u00d7 P(rain) = 0.5 \u00d7 0.3 = 0.15.",
+      "distractors": [
+        {
+          "answer": "0.50",
+          "explanation": "This is P(delay|rain) alone, not the joint probability."
+        },
+        {
+          "answer": "0.06",
+          "explanation": "This multiplies P(rain) \u00d7 P(delay), assuming independence."
+        },
+        {
+          "answer": "0.10",
+          "explanation": "This subtracts P(rain) \u2212 P(delay)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A drug test is 95% accurate for users and 90% accurate for non-users. If 3% of the population uses drugs, what is approximately P(user|positive)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(user|+) = (0.03\u00d70.95)/((0.03\u00d70.95)+(0.97\u00d70.10)) = 0.0285/0.1255 \u2248 0.227 \u2248 23%.",
+      "distractors": [
+        {
+          "answer": "95%",
+          "explanation": "This confuses sensitivity with the positive predictive value."
+        },
+        {
+          "answer": "3%",
+          "explanation": "This is the base rate, not the posterior probability."
+        },
+        {
+          "answer": "90%",
+          "explanation": "This is the specificity for non-users, not the predictive value."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A test has sensitivity 0.95 and specificity 0.90. Sensitivity measures P({{blank:1}}|disease) while specificity measures P(negative|{{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "Sensitivity is the probability of a positive test result given the person has the disease.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "A negative result given disease is the false negative rate, not sensitivity.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "disease",
+              "explanation": "This reverses the conditional \u2014 P(disease|positive) is the predictive value.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "no disease",
+          "correctExplanation": "Specificity is the probability of testing negative when the person is actually disease-free.",
+          "distractors": [
+            {
+              "answer": "disease",
+              "explanation": "P(negative|disease) is the false negative rate, not specificity.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "positive",
+              "explanation": "This mixes test results with conditions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The base rate fallacy occurs when someone ignores the {{blank:1}} of a condition and confuses P(A|B) with {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "prevalence",
+          "correctExplanation": "The prior probability or base rate of the condition must be considered when interpreting test results.",
+          "distractors": [
+            {
+              "answer": "accuracy",
+              "explanation": "Test accuracy is separate from the base rate of the condition in the population.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sensitivity",
+              "explanation": "Sensitivity is a test property, not the population rate of the condition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "P(B|A)",
+          "correctExplanation": "The base rate fallacy confuses the direction of the conditional probability.",
+          "distractors": [
+            {
+              "answer": "P(A\u2229B)",
+              "explanation": "The joint probability is different from both conditional forms.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "P(A)+P(B)",
+              "explanation": "Addition of probabilities is unrelated to the reversal error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "In a two-way table, P(A|B) is found by dividing the {{blank:1}} frequency by the {{blank:2}} for event B.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "joint",
+          "correctExplanation": "The joint cell contains the count of outcomes where both A and B occur.",
+          "distractors": [
+            {
+              "answer": "marginal",
+              "explanation": "The marginal frequency is a row or column total, not the intersection cell.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "total",
+              "explanation": "The grand total represents the entire sample, not the A\u2229B cell.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "column total",
+          "correctExplanation": "The column total for B gives the total number of outcomes where B occurs, forming the restricted sample space.",
+          "distractors": [
+            {
+              "answer": "grand total",
+              "explanation": "Using the grand total calculates P(A\u2229B), not P(A|B).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "row total",
+              "explanation": "The row total corresponds to event A, not the conditioning event B.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "For a disease with 1% prevalence and a test with 95% sensitivity, P(disease|positive) is much {{blank:1}} than 95% because most positive results are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "lower",
+          "correctExplanation": "When prevalence is low, the number of false positives greatly exceeds true positives.",
+          "distractors": [
+            {
+              "answer": "higher",
+              "explanation": "Low prevalence cannot increase the positive predictive value above the sensitivity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "equal to",
+              "explanation": "PPV equals sensitivity only when prevalence is 100%.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "false positives",
+          "correctExplanation": "With rare conditions, the larger healthy population generates more false positives than the small diseased group generates true positives.",
+          "distractors": [
+            {
+              "answer": "true positives",
+              "explanation": "True positives come from the small diseased group and are far fewer than false positives.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "true negatives",
+              "explanation": "True negatives test negative and are not among the positive results.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The multiplication rule states that P(A\u2229B) = P(A|B) \u00d7 {{blank:1}}, or equivalently P(B|A) \u00d7 {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "P(B)",
+          "correctExplanation": "Rearranging P(A|B) = P(A\u2229B)/P(B) gives P(A\u2229B) = P(A|B) \u00d7 P(B).",
+          "distractors": [
+            {
+              "answer": "P(A)",
+              "explanation": "P(A) pairs with P(B|A), not P(A|B).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "P(A\u2229B)",
+              "explanation": "Using P(A\u2229B) on both sides creates a circular definition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "P(A)",
+          "correctExplanation": "Rearranging P(B|A) = P(A\u2229B)/P(A) gives P(A\u2229B) = P(B|A) \u00d7 P(A).",
+          "distractors": [
+            {
+              "answer": "P(B)",
+              "explanation": "P(B) pairs with P(A|B), not P(B|A).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "P(A|B)",
+              "explanation": "This would give P(B|A) \u00d7 P(A|B), which is not equal to P(A\u2229B).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The prosecutor's fallacy confuses P({{blank:1}}|guilty) with P(guilty|{{blank:2}}), potentially leading to wrongful convictions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "evidence",
+          "correctExplanation": "The prosecutor presents P(evidence|guilty) \u2014 how likely the evidence would appear if the person were guilty.",
+          "distractors": [
+            {
+              "answer": "guilty",
+              "explanation": "This creates the tautology P(guilty|guilty).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "innocent",
+              "explanation": "The fallacy is about evidence probability, not innocence.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "evidence",
+          "correctExplanation": "The question the court needs answered is P(guilty|evidence), which is generally very different from P(evidence|guilty).",
+          "distractors": [
+            {
+              "answer": "innocent",
+              "explanation": "P(guilty|innocent) is not what the fallacy conflates.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "guilty",
+              "explanation": "P(guilty|guilty) is trivially 1 and not relevant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "If a medical test has 99% sensitivity and the disease prevalence is 0.1%, then P(disease|positive) exceeds 50%.",
+      "correct": "False",
+      "correctExplanation": "P(D|+) = (0.001\u00d70.99)/((0.001\u00d70.99)+(0.999\u00d70.01)) \u2248 0.0099/0.01989 \u2248 9.0%, well below 50%.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A 99% sensitive test should give at least 50% confidence in a positive diagnosis."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "To apply Bayes' theorem, we need both the prior probability and the likelihood to calculate the posterior probability.",
+      "correct": "True",
+      "correctExplanation": "Bayes' theorem combines prior P(H) with likelihood P(E|H) and evidence P(E) to find posterior P(H|E).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The prior probability alone is sufficient to calculate the posterior."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A facial recognition system is 99% accurate and 0.01% of people in a city are wanted. If someone is flagged, what is approximately P(wanted|flagged)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(W|F) = (0.0001\u00d70.99)/((0.0001\u00d70.99)+(0.9999\u00d70.01)) \u2248 0.000099/0.010098 \u2248 0.98%.",
+      "distractors": [
+        {
+          "answer": "99%",
+          "explanation": "This confuses the system accuracy with the posterior probability."
+        },
+        {
+          "answer": "50%",
+          "explanation": "This assumes equal chances without considering the very low base rate."
+        },
+        {
+          "answer": "0.01%",
+          "explanation": "This is the base rate, not updated by the positive flag."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "In a school, 70% of students eat breakfast. Of those, 80% arrive on time. Of those who skip breakfast, 50% arrive on time. What is P(ate breakfast|on time)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(B|T) = (0.7\u00d70.8)/((0.7\u00d70.8)+(0.3\u00d70.5)) = 0.56/0.71 \u2248 0.789.",
+      "distractors": [
+        {
+          "answer": "80%",
+          "explanation": "This is P(on time|breakfast), not P(breakfast|on time)."
+        },
+        {
+          "answer": "70%",
+          "explanation": "This is the prior P(breakfast) without updating."
+        },
+        {
+          "answer": "56%",
+          "explanation": "This is the joint P(breakfast and on time)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Two machines produce bolts. Machine X (60%, 4% defective) and Machine Y (40%, 6% defective). A defective bolt is found. What is P(Machine X|defective)?",
+      "correct": "0.50",
+      "correctExplanation": "P(X|def) = (0.60\u00d70.04)/((0.60\u00d70.04)+(0.40\u00d70.06)) = 0.024/0.048 = 0.50.",
+      "distractors": [
+        {
+          "answer": "0.60",
+          "explanation": "This is the prior probability of Machine X without updating."
+        },
+        {
+          "answer": "0.04",
+          "explanation": "This is the defect rate for Machine X, not the posterior."
+        },
+        {
+          "answer": "0.40",
+          "explanation": "This is the prior for Machine Y."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Using a tree diagram for two medical tests in sequence, the probability of both being positive given disease is found by which operation?",
+      "correct": "Multiplying along the branches",
+      "correctExplanation": "Tree diagrams use multiplication along branches to find joint probabilities for sequential events.",
+      "distractors": [
+        {
+          "answer": "Adding the branch probabilities",
+          "explanation": "Addition is used for alternative paths, not sequential events."
+        },
+        {
+          "answer": "Taking the average of branches",
+          "explanation": "Averaging has no role in tree diagram calculations."
+        },
+        {
+          "answer": "Subtracting one from the other",
+          "explanation": "Subtraction is not used for sequential branch probabilities."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A weather app predicts rain with 80% accuracy. It rains 30% of days. If rain is predicted, what is P(actual rain|predicted rain)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(R|PR) = (0.3\u00d70.8)/((0.3\u00d70.8)+(0.7\u00d70.2)) = 0.24/0.38 \u2248 0.632.",
+      "distractors": [
+        {
+          "answer": "80%",
+          "explanation": "This is the accuracy, not the posterior given a prediction."
+        },
+        {
+          "answer": "30%",
+          "explanation": "This is the base rate of rain without updating."
+        },
+        {
+          "answer": "24%",
+          "explanation": "This is the joint probability of rain and predicting rain."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "COVID rapid tests have 85% sensitivity and 99% specificity. In a population with 5% infection rate, what is approximately P(infected|positive)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(I|+) = (0.05\u00d70.85)/((0.05\u00d70.85)+(0.95\u00d70.01)) = 0.0425/0.0520 \u2248 0.817.",
+      "distractors": [
+        {
+          "answer": "85%",
+          "explanation": "This confuses sensitivity with positive predictive value."
+        },
+        {
+          "answer": "99%",
+          "explanation": "This is the specificity, not the PPV."
+        },
+        {
+          "answer": "5%",
+          "explanation": "This is the base rate without updating."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Simpson's paradox occurs when a trend present in subgroups reverses when the data is combined. Which factor causes this?",
+      "correct": "Unequal group sizes confounding the relationship",
+      "correctExplanation": "When subgroups have very different sizes, combining them can reverse apparent relationships due to the lurking variable.",
+      "distractors": [
+        {
+          "answer": "Calculation errors in the combined data",
+          "explanation": "The paradox is a real statistical phenomenon, not an arithmetic mistake."
+        },
+        {
+          "answer": "Random sampling variation",
+          "explanation": "Simpson's paradox is deterministic, not due to randomness."
+        },
+        {
+          "answer": "Rounding probabilities to fewer decimals",
+          "explanation": "Rounding affects precision but does not reverse trends."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A spam filter has P(spam|flagged) = 0.95 and P(not spam|not flagged) = 0.99. If 20% of emails are spam, what is P(flagged|spam)?",
+      "correct": "Cannot be",
+      "correctExplanation": "We need additional information such as P(flagged) or P(flagged|not spam) to calculate P(flagged|spam) using Bayes' theorem.",
+      "distractors": [
+        {
+          "answer": "0.95",
+          "explanation": "This confuses P(spam|flagged) with P(flagged|spam)."
+        },
+        {
+          "answer": "0.99",
+          "explanation": "This is the negative predictive complement, not the sensitivity."
+        },
+        {
+          "answer": "0.20",
+          "explanation": "This is the spam prevalence, not the sensitivity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A machine learning classifier has precision of 0.85 and recall of 0.90. What does the precision value represent?",
+      "correct": "P(true positive|predicted positive) is 0.85",
+      "correctExplanation": "Precision measures the fraction of predicted positives that are actually positive.",
+      "distractors": [
+        {
+          "answer": "P(predicted positive|true positive) is 0.85",
+          "explanation": "This describes recall, not precision."
+        },
+        {
+          "answer": "85% of all items are correctly classified",
+          "explanation": "This describes overall accuracy, not precision."
+        },
+        {
+          "answer": "The model makes errors 15% of the time",
+          "explanation": "Error rate considers all predictions, not just positive ones."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "In a Monty Hall scenario with 3 doors, you pick door 1 and the host opens door 3 (showing a goat). What is P(car behind door 2|door 3 opened)?",
+      "correct": "2/3",
+      "correctExplanation": "The host always reveals a goat. Switching wins whenever the initial pick was wrong, which happens 2/3 of the time.",
+      "distractors": [
+        {
+          "answer": "1/2",
+          "explanation": "This assumes equal probability after a door opens, ignoring the host's strategy."
+        },
+        {
+          "answer": "1/3",
+          "explanation": "This is the initial probability and does not update after new information."
+        },
+        {
+          "answer": "1/4",
+          "explanation": "There are only 3 doors, making 1/4 impossible."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A company tests employees for substance use. The test is 97% accurate for users and 95% accurate for non-users. If 4% of employees use substances, what is approximately P(user|positive)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(U|+) = (0.04\u00d70.97)/((0.04\u00d70.97)+(0.96\u00d70.05)) = 0.0388/0.0868 \u2248 0.447.",
+      "distractors": [
+        {
+          "answer": "97%",
+          "explanation": "This confuses the test sensitivity with predictive value."
+        },
+        {
+          "answer": "4%",
+          "explanation": "This is the base rate, not the posterior probability."
+        },
+        {
+          "answer": "95%",
+          "explanation": "This is the specificity for non-users."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A fire alarm system has a 2% false alarm rate and 98% detection rate. If the probability of a real fire at any time is 0.001, what is approximately P(fire|alarm)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(F|A) = (0.001\u00d70.98)/((0.001\u00d70.98)+(0.999\u00d70.02)) = 0.00098/0.02096 \u2248 0.047.",
+      "distractors": [
+        {
+          "answer": "98%",
+          "explanation": "This is the detection rate P(alarm|fire), not P(fire|alarm)."
+        },
+        {
+          "answer": "2%",
+          "explanation": "This is the false alarm rate, not the posterior."
+        },
+        {
+          "answer": "0.1%",
+          "explanation": "This is the base rate of fire, not updated by the alarm."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Bayes' theorem states that P(H|E) = P(E|H) \u00d7 P(H) divided by {{blank:1}}. Here P(H) is called the {{blank:2}} probability.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "P(E)",
+          "correctExplanation": "P(E) is the total probability of the evidence, found by summing over all hypotheses.",
+          "distractors": [
+            {
+              "answer": "P(H)",
+              "explanation": "Dividing by P(H) would cancel it from the formula.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "P(H|E)",
+              "explanation": "Using the posterior as denominator creates a circular definition.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "prior",
+          "correctExplanation": "The prior probability represents our belief in H before observing the evidence.",
+          "distractors": [
+            {
+              "answer": "posterior",
+              "explanation": "The posterior is P(H|E), the result of Bayes' theorem, not the input.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "likelihood",
+              "explanation": "The likelihood is P(E|H), a different component.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A test with 95% sensitivity and 90% specificity means that 95% of {{blank:1}} people test positive and 90% of {{blank:2}} people test negative.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "diseased",
+          "correctExplanation": "Sensitivity measures the true positive rate among those who actually have the disease.",
+          "distractors": [
+            {
+              "answer": "healthy",
+              "explanation": "Healthy people testing positive relates to the false positive rate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tested",
+              "explanation": "Not all tested people have the disease; sensitivity applies only to diseased people.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "healthy",
+          "correctExplanation": "Specificity measures the true negative rate among those without the disease.",
+          "distractors": [
+            {
+              "answer": "diseased",
+              "explanation": "Diseased people testing negative is the false negative rate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "positive",
+              "explanation": "Positive results include both true and false positives.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "In the Monty Hall problem, switching doors gives a {{blank:1}} probability of winning because the host's action provides {{blank:2}} about the unchosen doors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2/3",
+          "correctExplanation": "The initial pick has 1/3 chance, leaving 2/3 for the other doors. After one is revealed, all 2/3 transfers to the remaining door.",
+          "distractors": [
+            {
+              "answer": "1/2",
+              "explanation": "This assumes equal probability after a door opens, ignoring the host's constrained choice.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1/3",
+              "explanation": "This is the probability of winning by staying, not switching.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "new information",
+          "correctExplanation": "The host always opens a losing door, updating our knowledge of the remaining door.",
+          "distractors": [
+            {
+              "answer": "no information",
+              "explanation": "The host's choice is not random \u2014 it always reveals a goat, providing genuine information.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random noise",
+              "explanation": "The host's action is deterministic given their knowledge, not random.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "The positive predictive value (PPV) is P(disease|{{blank:1}}) and increases when the {{blank:2}} of the disease increases.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "PPV asks: given a positive test result, what is the probability of actually having the disease?",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "P(disease|negative) is the complement scenario, not PPV.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "disease",
+              "explanation": "P(disease|disease) is trivially 1 and not meaningful.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "prevalence",
+          "correctExplanation": "Higher prevalence means more true positives relative to false positives, increasing PPV.",
+          "distractors": [
+            {
+              "answer": "specificity",
+              "explanation": "Higher specificity reduces false positives but prevalence has the larger effect on PPV.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "sample size",
+              "explanation": "Sample size affects estimate precision but not the true PPV.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "In machine learning, precision is P(true positive|{{blank:1}}) and recall is P({{blank:2}}|true positive).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "predicted positive",
+          "correctExplanation": "Precision measures what fraction of items predicted positive are actually positive.",
+          "distractors": [
+            {
+              "answer": "actual positive",
+              "explanation": "This describes recall, not precision.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "total sample",
+              "explanation": "The total sample includes both positive and negative predictions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "predicted positive",
+          "correctExplanation": "Recall measures what fraction of actual positives are correctly predicted as positive.",
+          "distractors": [
+            {
+              "answer": "predicted negative",
+              "explanation": "Predicted negative given true positive would be the miss rate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "true negative",
+              "explanation": "True negatives are unrelated to recall.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Simpson's paradox shows that a trend in {{blank:1}} can reverse when groups are {{blank:2}}, due to a confounding variable.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "subgroups",
+          "correctExplanation": "The trend appears in each individual subgroup when analysed separately.",
+          "distractors": [
+            {
+              "answer": "combined data",
+              "explanation": "The reversal occurs in combined data; the trend holds in subgroups.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random samples",
+              "explanation": "Simpson's paradox is deterministic, not about random sampling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "combined",
+          "correctExplanation": "Aggregating data with unequal group sizes can reverse the observed relationship.",
+          "distractors": [
+            {
+              "answer": "separated",
+              "explanation": "Separating groups reveals the true trend; combining is what causes reversal.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "randomised",
+              "explanation": "Randomisation is a study design choice, not the cause of the paradox.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "To find P(disease|positive) using Bayes' theorem with prevalence 0.02, sensitivity 0.95 and specificity 0.90, the numerator is 0.02 \u00d7 {{blank:1}} and the denominator includes the false positive term 0.98 \u00d7 {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.95",
+          "correctExplanation": "The numerator is P(disease) \u00d7 P(positive|disease) = prevalence \u00d7 sensitivity.",
+          "distractors": [
+            {
+              "answer": "0.90",
+              "explanation": "0.90 is the specificity, not the sensitivity.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.02",
+              "explanation": "Squaring the prevalence has no meaning in Bayes' theorem.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.10",
+          "correctExplanation": "The false positive rate is 1 \u2212 specificity = 1 \u2212 0.90 = 0.10.",
+          "distractors": [
+            {
+              "answer": "0.05",
+              "explanation": "0.05 is 1 \u2212 sensitivity, which is the false negative rate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.90",
+              "explanation": "0.90 is the specificity itself, not the false positive rate.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A tree diagram for a two-stage medical scenario shows that the probability of a true positive is found by {{blank:1}} along the disease-then-positive branches, while P(positive) is found by {{blank:2}} the positive endpoints from all branches.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiplying",
+          "correctExplanation": "Joint probabilities on a tree are found by multiplying the probabilities along connected branches.",
+          "distractors": [
+            {
+              "answer": "adding",
+              "explanation": "Adding is used to combine alternative paths, not sequential branches.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "dividing",
+              "explanation": "Division is not used when reading along tree branches.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "adding",
+          "correctExplanation": "P(positive) sums the joint probabilities of all paths that lead to a positive result.",
+          "distractors": [
+            {
+              "answer": "multiplying",
+              "explanation": "Multiplying alternative paths is incorrect; they represent mutually exclusive outcomes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "subtracting",
+              "explanation": "Subtraction is not used to combine path probabilities.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "When applying conditional probability to forensic evidence, the probability of the evidence {{blank:1}} the suspect is guilty is generally much {{blank:2}} than the probability of guilt given the evidence.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "given",
+          "correctExplanation": "'Given' indicates we are conditioning on the suspect being guilty.",
+          "distractors": [
+            {
+              "answer": "and",
+              "explanation": "'And' represents joint probability, not conditional.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "or",
+              "explanation": "'Or' represents union, not conditioning.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "higher",
+          "correctExplanation": "P(evidence|guilty) is often very high (the evidence fits), but P(guilty|evidence) may be low when many innocent people could also match.",
+          "distractors": [
+            {
+              "answer": "lower",
+              "explanation": "The evidence typically fits well with guilt, making P(evidence|guilty) high, not low.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "equal to",
+              "explanation": "The two conditional probabilities are generally different unless special conditions hold.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "In COVID testing during a low-prevalence period, a positive rapid test with 80% sensitivity and 99% specificity gives P(infected|positive) of approximately {{blank:1}}%, demonstrating that even high specificity produces many false positives when prevalence is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "45",
+          "correctExplanation": "With 1% prevalence: P(I|+) = (0.01\u00d70.80)/((0.01\u00d70.80)+(0.99\u00d70.01)) \u2248 0.008/0.0179 \u2248 44.7%.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "This confuses sensitivity with PPV.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "99",
+              "explanation": "This confuses specificity with PPV.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "low",
+          "correctExplanation": "Low prevalence means many more healthy people than infected, so even a small false positive rate generates many false positives.",
+          "distractors": [
+            {
+              "answer": "high",
+              "explanation": "High prevalence actually improves PPV because true positives outnumber false positives.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unknown",
+              "explanation": "The prevalence is given as low in this scenario.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Sensitivity and specificity are properties of the {{blank:1}}, while positive and negative predictive values depend on both the test and the {{blank:2}} of the condition.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "test",
+          "correctExplanation": "Sensitivity and specificity describe the test's performance and do not change with prevalence.",
+          "distractors": [
+            {
+              "answer": "population",
+              "explanation": "Population characteristics affect predictive values, not sensitivity and specificity.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "disease",
+              "explanation": "The disease prevalence affects PPV/NPV but not sensitivity/specificity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "prevalence",
+          "correctExplanation": "PPV and NPV change as the base rate of the condition changes in the population.",
+          "distractors": [
+            {
+              "answer": "accuracy",
+              "explanation": "Accuracy is a different summary measure, not the factor that makes PPV vary.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "sample size",
+              "explanation": "Sample size affects estimate precision but not the true predictive values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "The false positive rate is 1 minus {{blank:1}}, while the false negative rate is 1 minus {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "specificity",
+          "correctExplanation": "Specificity = P(negative|no disease), so false positive rate = 1 \u2212 specificity.",
+          "distractors": [
+            {
+              "answer": "sensitivity",
+              "explanation": "1 \u2212 sensitivity gives the false negative rate, not false positive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "prevalence",
+              "explanation": "Prevalence is a population characteristic, not a test performance metric.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sensitivity",
+          "correctExplanation": "Sensitivity = P(positive|disease), so false negative rate = 1 \u2212 sensitivity.",
+          "distractors": [
+            {
+              "answer": "specificity",
+              "explanation": "1 \u2212 specificity gives the false positive rate, not false negative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "accuracy",
+              "explanation": "Accuracy combines both error types and is not the complement of either alone.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A rare genetic condition affects 1 in 10,000 people. A screening test has 99.9% sensitivity and 99% specificity. Among those who test positive, what is approximately P(condition|positive)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(C|+) = (0.0001\u00d70.999)/((0.0001\u00d70.999)+(0.9999\u00d70.01)) \u2248 0.0000999/0.01009 \u2248 0.99%.",
+      "distractors": [
+        {
+          "answer": "99.9%",
+          "explanation": "This confuses the sensitivity with the posterior probability."
+        },
+        {
+          "answer": "10%",
+          "explanation": "This significantly overestimates the positive predictive value."
+        },
+        {
+          "answer": "99%",
+          "explanation": "This confuses specificity with positive predictive value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Hospital A treats mostly severe cases (80%) with 90% survival, and mild cases (20%) with 99% survival. Hospital B treats severe (30%) with 85% survival, and mild (70%) with 98% survival. Which hospital has the higher overall survival rate?",
+      "correct": "Hospital B at 94.1%",
+      "correctExplanation": "A: 0.8\u00d70.90+0.2\u00d70.99=0.918. B: 0.3\u00d70.85+0.7\u00d70.98=0.941. B has higher overall rate despite lower rates in each category.",
+      "distractors": [
+        {
+          "answer": "Hospital A at 91.8%",
+          "explanation": "A has higher rates per category but lower overall due to treating more severe cases."
+        },
+        {
+          "answer": "Both are equal",
+          "explanation": "The different case mixes produce different overall rates."
+        },
+        {
+          "answer": "Cannot be determined",
+          "explanation": "All necessary information is provided."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Two tests are used sequentially. Test 1 has 95% sensitivity and 90% specificity. Test 2 (given positive on Test 1) has 90% sensitivity and 95% specificity. For a disease with 5% prevalence, what is approximately P(disease|both positive)?",
+      "correct": "Approxi",
+      "correctExplanation": "After Test 1: P(D|+1)\u224832.2%. Then P(D|+1,+2) = (0.322\u00d70.90)/((0.322\u00d70.90)+(0.678\u00d70.05)) \u2248 0.290/0.324 \u2248 89.5%.",
+      "distractors": [
+        {
+          "answer": "95%",
+          "explanation": "This confuses combined sensitivity with the posterior."
+        },
+        {
+          "answer": "32%",
+          "explanation": "This is the posterior after Test 1 only."
+        },
+        {
+          "answer": "50%",
+          "explanation": "This underestimates the compounding effect of two positive tests."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A prosecutor argues: 'The probability of this DNA evidence occurring by chance is 1 in a million, so the defendant is almost certainly guilty.' What is wrong with this reasoning?",
+      "correct": "It confuses P(evidence|innocent) with P(innoce",
+      "correctExplanation": "The prosecutor's fallacy equates the rarity of evidence with the probability of guilt, ignoring the prior probability.",
+      "distractors": [
+        {
+          "answer": "The DNA evidence is unreliable",
+          "explanation": "The argument is about reasoning, not evidence quality."
+        },
+        {
+          "answer": "The probability should be exactly zero",
+          "explanation": "No real-world probability is exactly zero."
+        },
+        {
+          "answer": "Nothing is wrong with this reasoning",
+          "explanation": "This is a well-documented logical fallacy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A machine learning model for fraud detection has precision 0.60 and recall 0.95. If 0.1% of transactions are fraudulent, what does the precision tell us?",
+      "correct": "60% of flagged transactions are truly f",
+      "correctExplanation": "Precision = P(fraud|flagged) = 0.60, meaning 40% of flags are false alarms.",
+      "distractors": [
+        {
+          "answer": "60% of all fraud is detected",
+          "explanation": "This describes recall, not precision."
+        },
+        {
+          "answer": "The model is 60% accurate overall",
+          "explanation": "Precision applies only to positive predictions, not all."
+        },
+        {
+          "answer": "0.1% of predictions are correct",
+          "explanation": "This confuses prevalence with prediction accuracy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "In a Bayesian analysis, how does doubling the prior probability of a hypothesis generally affect the posterior probability after observing the same evidence?",
+      "correct": "The posterior increases but",
+      "correctExplanation": "Bayes' theorem is nonlinear: doubling the prior increases the numerator but also changes the denominator P(E).",
+      "distractors": [
+        {
+          "answer": "The posterior exactly doubles",
+          "explanation": "The denominator P(E) also changes, preventing exact doubling."
+        },
+        {
+          "answer": "The posterior remains unchanged",
+          "explanation": "The prior directly influences the posterior."
+        },
+        {
+          "answer": "The posterior halves",
+          "explanation": "Increasing the prior increases the posterior, not decreases it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A diagnostic algorithm uses three independent tests sequentially. Each has sensitivity 0.80 and specificity 0.95. What is the combined specificity of requiring all three tests to be positive?",
+      "correct": "Approxima",
+      "correctExplanation": "Combined specificity = 1 \u2212 (1\u22120.95)\u00b3 = 1 \u2212 0.000125 = 0.999875 \u2248 99.99%. False positives must pass all three.",
+      "distractors": [
+        {
+          "answer": "85.7%",
+          "explanation": "This cubes the sensitivity instead of calculating combined specificity."
+        },
+        {
+          "answer": "95%",
+          "explanation": "This is the specificity of a single test."
+        },
+        {
+          "answer": "51.2%",
+          "explanation": "This cubes the sensitivity 0.80\u00b3, confusing sensitivity with specificity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A self-driving car system flags pedestrians with 99.99% accuracy. In a city where pedestrians appear in 0.01% of frames, what is approximately P(actual pedestrian|flagged)?",
+      "correct": "Approxim",
+      "correctExplanation": "P(P|F) = (0.0001\u00d70.9999)/((0.0001\u00d70.9999)+(0.9999\u00d70.0001)) \u2248 50%. Equal base rates of true and false positives.",
+      "distractors": [
+        {
+          "answer": "99.99%",
+          "explanation": "This confuses detection accuracy with predictive value."
+        },
+        {
+          "answer": "0.01%",
+          "explanation": "This is the base rate, not updated by the flag."
+        },
+        {
+          "answer": "99%",
+          "explanation": "This overestimates by ignoring the very low base rate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A study finds Treatment A has higher success in both men and women separately, but Treatment B has higher success overall. What additional information is needed to explain this?",
+      "correct": "The proportion of each gender rece",
+      "correctExplanation": "Simpson's paradox arises from unequal group compositions; knowing the gender distribution per treatment explains the reversal.",
+      "distractors": [
+        {
+          "answer": "The total number of patients",
+          "explanation": "Total count alone does not explain the reversal."
+        },
+        {
+          "answer": "The cost of each treatment",
+          "explanation": "Cost is irrelevant to explaining the statistical paradox."
+        },
+        {
+          "answer": "The ages of the patients",
+          "explanation": "Age is not the identified confounding variable here."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "If P(A|B) > P(A), what can be concluded about the relationship between A and B?",
+      "correct": "B occurring increases the lik",
+      "correctExplanation": "P(A|B) > P(A) means knowing B has occurred raises the probability of A above its unconditional level.",
+      "distractors": [
+        {
+          "answer": "A and B are independent",
+          "explanation": "Independence requires P(A|B) = P(A), which is violated here."
+        },
+        {
+          "answer": "A causes B",
+          "explanation": "Higher conditional probability shows association, not causation."
+        },
+        {
+          "answer": "P(B|A) must be less than P(B)",
+          "explanation": "P(B|A) > P(B) also holds when P(A|B) > P(A)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A spam filter is updated so its specificity improves from 95% to 99% while sensitivity stays at 90%. How does this affect the positive predictive value when 10% of emails are spam?",
+      "correct": "PPV increases significantly from about 67% to about 91%",
+      "correctExplanation": "Before: P(S|+) = (0.1\u00d70.9)/(0.1\u00d70.9+0.9\u00d70.05)=0.09/0.135\u224866.7%. After: 0.09/(0.09+0.9\u00d70.01)=0.09/0.099\u224890.9%.",
+      "distractors": [
+        {
+          "answer": "PPV decreases because specificity and PPV trade off",
+          "explanation": "Higher specificity reduces false positives, improving PPV."
+        },
+        {
+          "answer": "PPV is unchanged because sensitivity is constant",
+          "explanation": "PPV depends on both sensitivity and specificity."
+        },
+        {
+          "answer": "PPV exactly doubles",
+          "explanation": "The relationship is nonlinear; PPV does not double."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Three factories supply a product: Factory A (50%, 2% defective), Factory B (30%, 3% defective), and Factory C (20%, 5% defective). A defective item is found. What is P(Factory C|defective)?",
+      "correct": "Approxi",
+      "correctExplanation": "P(C|def) = (0.20\u00d70.05)/((0.50\u00d70.02)+(0.30\u00d70.03)+(0.20\u00d70.05)) = 0.010/0.029 \u2248 0.345.",
+      "distractors": [
+        {
+          "answer": "20%",
+          "explanation": "This is the prior probability of Factory C without updating."
+        },
+        {
+          "answer": "5%",
+          "explanation": "This is Factory C's defect rate, not the posterior."
+        },
+        {
+          "answer": "50%",
+          "explanation": "This is the prior for Factory A."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "When screening for a condition with 0.5% prevalence using a test with 98% sensitivity and 97% specificity, approximately how many false positives occur for every true positive?",
+      "correct": "Approximately 6 false positives per true positive",
+      "correctExplanation": "TP = 0.005\u00d70.98 = 0.0049. FP = 0.995\u00d70.03 = 0.02985. Ratio: 0.02985/0.0049 \u2248 6.1.",
+      "distractors": [
+        {
+          "answer": "About 1 false positive per true positive",
+          "explanation": "This underestimates by ignoring the low prevalence."
+        },
+        {
+          "answer": "About 50 false positives per true positive",
+          "explanation": "This overestimates; the specificity is fairly high."
+        },
+        {
+          "answer": "Zero false positives",
+          "explanation": "No real test has zero false positives."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A Bayesian network models P(alarm|burglary) = 0.95, P(alarm|earthquake) = 0.40, P(alarm|neither) = 0.01. Given P(burglary) = 0.001 and P(earthquake) = 0.002, what is approximately P(burglary|alarm)?",
+      "correct": "Approxim",
+      "correctExplanation": "P(B|A) \u2248 (0.001\u00d70.95)/((0.001\u00d70.95)+(0.002\u00d70.40)+(0.997\u00d70.01)) = 0.00095/0.01175 \u2248 0.081. Approximately 7-8%.",
+      "distractors": [
+        {
+          "answer": "95%",
+          "explanation": "This confuses P(alarm|burglary) with P(burglary|alarm)."
+        },
+        {
+          "answer": "0.1%",
+          "explanation": "This is the base rate of burglary without updating."
+        },
+        {
+          "answer": "50%",
+          "explanation": "This overestimates the posterior given the low prior."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "When a rare disease has prevalence 0.001 and a test has 99% sensitivity and 95% specificity, P(disease|positive) is approximately {{blank:1}}% because the {{blank:2}} greatly outnumber the true positives.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "P(D|+) = (0.001\u00d70.99)/((0.001\u00d70.99)+(0.999\u00d70.05)) = 0.00099/0.05094 \u2248 1.9%.",
+          "distractors": [
+            {
+              "answer": "99",
+              "explanation": "This confuses sensitivity with positive predictive value.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "50",
+              "explanation": "This significantly overestimates PPV with such low prevalence.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "false positives",
+          "correctExplanation": "With 99.9% of people being healthy, even a 5% false positive rate creates many more false positives than the tiny number of true positives.",
+          "distractors": [
+            {
+              "answer": "true negatives",
+              "explanation": "True negatives correctly test negative and are not part of the positive results.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "false negatives",
+              "explanation": "False negatives test negative and are not among the positive results.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Simpson's paradox can lead to incorrect policy decisions because aggregated data {{blank:1}} the true relationship within subgroups, and the confounding variable creates an {{blank:2}} between treatment and outcome.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "reverses",
+          "correctExplanation": "The aggregated trend goes in the opposite direction to the subgroup trends due to unequal group sizes.",
+          "distractors": [
+            {
+              "answer": "confirms",
+              "explanation": "If it confirmed, there would be no paradox.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "strengthens",
+              "explanation": "The paradox involves reversal, not strengthening.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "artificial association",
+          "correctExplanation": "The confounding variable creates a spurious link between treatment and outcome when data is combined.",
+          "distractors": [
+            {
+              "answer": "independence",
+              "explanation": "The paradox creates false dependence, not independence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "causation",
+              "explanation": "Association does not imply causation; the confound creates spurious association.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "In forensic statistics, presenting P(evidence|innocent) as if it were P(innocent|evidence) is called the {{blank:1}} and has contributed to {{blank:2}} in criminal justice.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "prosecutor's fallacy",
+          "correctExplanation": "This named fallacy involves transposing the conditional in a way that exaggerates the strength of evidence.",
+          "distractors": [
+            {
+              "answer": "gambler's fallacy",
+              "explanation": "The gambler's fallacy concerns the belief that past random events influence future ones.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "base rate neglect",
+              "explanation": "Base rate neglect is related but distinct from the specific transposition error.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "wrongful convictions",
+          "correctExplanation": "Courts have convicted innocent people based on this flawed probabilistic reasoning.",
+          "distractors": [
+            {
+              "answer": "acquittals",
+              "explanation": "The fallacy inflates perceived guilt, not innocence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "accurate verdicts",
+              "explanation": "The fallacy by definition leads to incorrect conclusions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "Sequential testing improves diagnostic accuracy because requiring multiple {{blank:1}} results dramatically reduces the {{blank:2}} rate while moderately reducing sensitivity.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive",
+          "correctExplanation": "Requiring all tests to be positive means a false positive must fool every test.",
+          "distractors": [
+            {
+              "answer": "negative",
+              "explanation": "Requiring negative results would be sequential exclusion, not confirmation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "independent",
+              "explanation": "Independence is a property of events, not a type of result.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "false positive",
+          "correctExplanation": "Each additional test with high specificity multiplicatively reduces the chance of a false positive.",
+          "distractors": [
+            {
+              "answer": "true positive",
+              "explanation": "True positives decrease only moderately with sequential testing.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "false negative",
+              "explanation": "False negatives actually increase with sequential positive requirements.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A precision-recall trade-off exists because increasing the threshold for positive predictions increases {{blank:1}} but decreases {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "precision",
+          "correctExplanation": "A higher threshold means fewer but more confident positive predictions, reducing false positives.",
+          "distractors": [
+            {
+              "answer": "recall",
+              "explanation": "Higher thresholds cause more positives to be missed, decreasing recall.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "false positives",
+              "explanation": "A higher threshold decreases false positives; precision increases.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "recall",
+          "correctExplanation": "More actual positives fall below the higher threshold and are missed.",
+          "distractors": [
+            {
+              "answer": "precision",
+              "explanation": "Precision improves with a stricter threshold.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "specificity",
+              "explanation": "Specificity also tends to improve with a higher threshold.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "In Bayesian updating, the posterior from one observation becomes the {{blank:1}} for the next observation, allowing probabilities to be refined as {{blank:2}} accumulates.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "prior",
+          "correctExplanation": "Sequential Bayesian updating chains posteriors into priors for each new piece of evidence.",
+          "distractors": [
+            {
+              "answer": "likelihood",
+              "explanation": "The likelihood comes from the new evidence, not the previous posterior.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "evidence",
+              "explanation": "The evidence is the new observation, not the previous result.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "evidence",
+          "correctExplanation": "Each new observation refines the probability estimate through iterative updating.",
+          "distractors": [
+            {
+              "answer": "uncertainty",
+              "explanation": "Evidence reduces uncertainty; it does not accumulate to cloud the picture.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "bias",
+              "explanation": "Bayesian updating reduces bias, not accumulates it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "The negative predictive value P(no disease|negative) is highest when the {{blank:1}} is low because most negative results come from the large {{blank:2}} population.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "prevalence",
+          "correctExplanation": "Low prevalence means most people are healthy, so negative results are overwhelmingly true negatives.",
+          "distractors": [
+            {
+              "answer": "sensitivity",
+              "explanation": "Sensitivity affects the false negative rate, but prevalence has the dominant effect on NPV.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "specificity",
+              "explanation": "Specificity affects false positives and PPV more directly than NPV.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "healthy",
+          "correctExplanation": "With low prevalence, the healthy population vastly outnumbers the diseased, making most negatives true negatives.",
+          "distractors": [
+            {
+              "answer": "diseased",
+              "explanation": "Low prevalence means fewer diseased people, not more.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tested",
+              "explanation": "The total tested population includes both healthy and diseased.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "When P(A|B) = P(A), events A and B are {{blank:1}}, meaning that knowing B has occurred provides {{blank:2}} about the likelihood of A.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "independent",
+          "correctExplanation": "Independence means the conditional probability equals the unconditional, so B provides no information about A.",
+          "distractors": [
+            {
+              "answer": "dependent",
+              "explanation": "Dependent events have different conditional and unconditional probabilities.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mutually exclusive",
+              "explanation": "Mutually exclusive events have P(A|B) = 0, not P(A|B) = P(A) in general.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "no information",
+          "correctExplanation": "If conditioning on B does not change P(A), then B tells us nothing new about A.",
+          "distractors": [
+            {
+              "answer": "complete information",
+              "explanation": "Complete information would mean P(A|B) = 0 or 1.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "partial information",
+              "explanation": "If P(A|B) = P(A), B gives zero information about A.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "In a diagnostic context, the likelihood ratio positive is calculated as sensitivity divided by {{blank:1}} and indicates how much a positive result {{blank:2}} the odds of disease.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "false positive rate",
+          "correctExplanation": "LR+ = sensitivity/(1\u2212specificity) = P(+|D)/P(+|\u00acD).",
+          "distractors": [
+            {
+              "answer": "specificity",
+              "explanation": "Dividing by specificity itself gives a different and less useful ratio.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "prevalence",
+              "explanation": "Prevalence is not part of the likelihood ratio calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "increases",
+          "correctExplanation": "A high LR+ means a positive result substantially increases the odds that the patient has the disease.",
+          "distractors": [
+            {
+              "answer": "decreases",
+              "explanation": "A positive result with high LR+ increases, not decreases, disease odds.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "eliminates",
+              "explanation": "No single test result can completely eliminate uncertainty.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "Screening programmes for rare conditions face the paradox that even with excellent test accuracy, most positive results are {{blank:1}} because the number of {{blank:2}} people tested vastly exceeds those with the condition.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "false positives",
+          "correctExplanation": "With rare conditions, the small false positive rate applied to the large healthy population exceeds the true positives.",
+          "distractors": [
+            {
+              "answer": "true positives",
+              "explanation": "True positives come from the small affected group and are relatively few.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "inconclusive",
+              "explanation": "Tests produce definite positive or negative results, not inconclusive ones in this model.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "healthy",
+          "correctExplanation": "The healthy population dominates when the condition is rare, producing more false positives than true positives.",
+          "distractors": [
+            {
+              "answer": "sick",
+              "explanation": "Sick people are rare, so they produce fewer total positives.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "untested",
+              "explanation": "Untested people are not part of the screening results.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "The area under the ROC curve (AUC) measures a classifier's ability to distinguish between {{blank:1}} across all possible thresholds, with a value of {{blank:2}} indicating random guessing.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "positive and negative cases",
+          "correctExplanation": "AUC quantifies how well the classifier separates the two classes across all decision thresholds.",
+          "distractors": [
+            {
+              "answer": "different thresholds",
+              "explanation": "Thresholds are the parameter being varied, not what is being distinguished.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "training and test data",
+              "explanation": "AUC measures class discrimination, not data split quality.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.5",
+          "correctExplanation": "A random classifier has equal probability of ranking a positive higher or lower than a negative, giving AUC = 0.5.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "AUC = 0 means perfect reverse classification, not random.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "AUC = 1 indicates perfect classification.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "Bayesian networks represent conditional dependencies as a {{blank:1}}, where each node's probability depends only on its {{blank:2}}, enabling efficient computation of complex conditional probabilities.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "directed acyclic graph",
+          "correctExplanation": "Bayesian networks use directed graphs without cycles to encode conditional dependencies.",
+          "distractors": [
+            {
+              "answer": "correlation matrix",
+              "explanation": "Correlation matrices show pairwise linear relationships, not conditional structures.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "truth table",
+              "explanation": "Truth tables enumerate all logical combinations and are not Bayesian network structures.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "parent nodes",
+          "correctExplanation": "The local Markov property means each variable is conditionally independent of non-descendants given its parents.",
+          "distractors": [
+            {
+              "answer": "child nodes",
+              "explanation": "Children depend on parents, not the reverse.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "all other nodes",
+              "explanation": "Full dependence would eliminate the computational advantage of the network.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

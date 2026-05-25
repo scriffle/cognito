@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10M02",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to interpret and use logarithmic scales in contexts involving very small or very large quantities.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to interpret and use logarithmic scales in contexts involving very small or very large quantities.",
+    "y": [
+      "Logarithmic scales compress vast ranges of values into manageable numbers, making it possible to visualise and compare data spanning many orders of magnitude.",
+      "Understanding logarithmic scales is essential for interpreting scientific data, earthquake magnitudes, sound levels and pH values.",
+      "These skills connect algebraic understanding of logarithms to practical applications in science and data analysis."
+    ],
+    "eg": [
+      "Interpreting the Richter scale: 'A magnitude 7 earthquake releases about 31.6 times more energy than magnitude 6.'",
+      "Reading and interpreting a logarithmic graph showing the growth of a population over time.",
+      "Understanding decibels: 'An increase of 10 dB represents a tenfold increase in sound intensity.'",
+      "Comparing very large astronomical distances on a logarithmic scale.",
+      "Using pH to compare acidity: 'pH 3 is 100 times more acidic than pH 5.'",
+      "Creating a logarithmic scale graph from raw data and explaining why it is more informative than a linear scale."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "A logarithmic scale spaces values equally for each unit of measurement.",
+      "correct": "False",
+      "correctExplanation": "A logarithmic scale spaces values equally for each order of magnitude (power of 10), not each unit.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Equal spacing per unit describes a linear scale, not a logarithmic scale."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "On the Richter scale, a magnitude 6 earthquake is twice as strong as magnitude 3.",
+      "correct": "False",
+      "correctExplanation": "Each unit on the Richter scale represents approximately 31.6 times more energy; three units means 31.6³ ≈ 31 623 times more.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The Richter scale is logarithmic, so differences are multiplicative, not additive."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The pH scale measures acidity on a linear scale from 0 to 14.",
+      "correct": "False",
+      "correctExplanation": "The pH scale is logarithmic; each unit represents a tenfold change in hydrogen ion concentration.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "pH is defined as −log₁₀[H⁺], making it logarithmic."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A decibel (dB) is a unit of measurement based on a linear scale.",
+      "correct": "False",
+      "correctExplanation": "Decibels use a logarithmic scale, not a linear scale.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The dB scale is logarithmic by definition."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "On a logarithmic scale, the distance between 10 and 100 is the same as the distance between 100 and 1000.",
+      "correct": "True",
+      "correctExplanation": "Both intervals represent one order of magnitude (a factor of 10).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Equal distances on a log scale represent equal multiplicative factors."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "A logarithmic graph converts exponential growth into a straight line.",
+      "correct": "True",
+      "correctExplanation": "Taking logarithms of exponential data linearises the relationship.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is a key property of logarithmic transformation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The value log₁₀(1000) equals 4.",
+      "correct": "False",
+      "correctExplanation": "log₁₀(1000) = 3 because 10³ = 1000.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The exponent needed to reach 1000 from base 10 is 3, not 4."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "On a logarithmic scale, zero cannot be represented.",
+      "correct": "True",
+      "correctExplanation": "log₁₀(0) is undefined; logarithmic scales can only represent positive values.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Zero has no logarithm, so it cannot appear on a log scale."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "An increase of 20 dB represents a hundredfold increase in sound intensity.",
+      "correct": "True",
+      "correctExplanation": "Each 10 dB represents a tenfold increase; 20 dB = 10 × 10 = 100 times.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The multiplicative property gives 10² = 100 for two 10 dB steps."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "A pH of 4 is a hundred times more acidic than a pH of 5.",
+      "correct": "False",
+      "correctExplanation": "Each pH unit is a tenfold difference; pH 4 is 10 times more acidic than pH 5, not 100 times.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "One pH unit corresponds to a factor of 10, so the difference is 10×, not 100×."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Logarithmic scales are useful for displaying data that spans many orders of magnitude.",
+      "correct": "True",
+      "correctExplanation": "Log scales compress large ranges, making it possible to visualise data spanning several powers of 10.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the primary purpose of logarithmic scales."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "On a log₁₀ scale, the value 10 000 is plotted at position 5.",
+      "correct": "False",
+      "correctExplanation": "log₁₀(10 000) = 4 because 10⁴ = 10 000.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The position is 4, not 5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What does log₁₀(100) equal?",
+      "correct": "2",
+      "correctExplanation": "10² = 100, so log₁₀(100) = 2.",
+      "distractors": [
+        {
+          "answer": "1",
+          "explanation": "10¹ = 10, not 100."
+        },
+        {
+          "answer": "3",
+          "explanation": "10³ = 1000, not 100."
+        },
+        {
+          "answer": "10",
+          "explanation": "10 is the base, not the logarithm."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "On the Richter scale, each whole number increase represents approximately what factor of energy increase?",
+      "correct": "31.6 times",
+      "correctExplanation": "Each magnitude unit corresponds to approximately 31.6 times more energy released.",
+      "distractors": [
+        {
+          "answer": "10 times",
+          "explanation": "10× applies to amplitude, not energy."
+        },
+        {
+          "answer": "2 times",
+          "explanation": "The scale is logarithmic, not linear."
+        },
+        {
+          "answer": "100 times",
+          "explanation": "100× is two magnitude units."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which scale is logarithmic?",
+      "correct": "The pH scale",
+      "correctExplanation": "pH = −log₁₀[H⁺], making it a logarithmic scale.",
+      "distractors": [
+        {
+          "answer": "The Celsius temperature scale",
+          "explanation": "Temperature scales are linear."
+        },
+        {
+          "answer": "The metric length scale",
+          "explanation": "Length is measured linearly."
+        },
+        {
+          "answer": "The percentage scale",
+          "explanation": "Percentages are linear."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What is log₁₀(1 000 000)?",
+      "correct": "6",
+      "correctExplanation": "10⁶ = 1 000 000, so the logarithm is 6.",
+      "distractors": [
+        {
+          "answer": "5",
+          "explanation": "10⁵ = 100 000, not 1 000 000."
+        },
+        {
+          "answer": "7",
+          "explanation": "10⁷ = 10 000 000."
+        },
+        {
+          "answer": "3",
+          "explanation": "10³ = 1000."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "An increase of 10 dB represents what change in sound intensity?",
+      "correct": "A tenfold increase",
+      "correctExplanation": "The decibel scale is logarithmic; 10 dB equals a factor of 10.",
+      "distractors": [
+        {
+          "answer": "A doubling",
+          "explanation": "Doubling is approximately 3 dB."
+        },
+        {
+          "answer": "A hundredfold increase",
+          "explanation": "100× is a 20 dB increase."
+        },
+        {
+          "answer": "No measurable change",
+          "explanation": "10 dB is a significant change."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "On a logarithmic scale, equal distances represent which type of change?",
+      "correct": "Equal multiplicative factors",
+      "correctExplanation": "Log scales map multiplication to addition of equal intervals.",
+      "distractors": [
+        {
+          "answer": "Equal additive amounts",
+          "explanation": "This describes a linear scale."
+        },
+        {
+          "answer": "Equal percentage decreases",
+          "explanation": "Percentages do not define log spacing."
+        },
+        {
+          "answer": "Random variation",
+          "explanation": "Log scale spacing is systematic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which value equals log₁₀(0.01)?",
+      "correct": "−2",
+      "correctExplanation": "10⁻² = 0.01, so log₁₀(0.01) = −2.",
+      "distractors": [
+        {
+          "answer": "2",
+          "explanation": "This ignores the negative exponent."
+        },
+        {
+          "answer": "−1",
+          "explanation": "10⁻¹ = 0.1, not 0.01."
+        },
+        {
+          "answer": "0.01",
+          "explanation": "The log of a number differs from the number itself."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Logarithmic scales are most useful when data spans:",
+      "correct": "Many orders of magnitude",
+      "correctExplanation": "Log scales compress large ranges into manageable displays.",
+      "distractors": [
+        {
+          "answer": "A narrow range of values",
+          "explanation": "Linear scales suit narrow ranges."
+        },
+        {
+          "answer": "Only negative values",
+          "explanation": "Log scales work with positive values."
+        },
+        {
+          "answer": "Exactly two categories",
+          "explanation": "Categories do not require log scales."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What does pH stand for in terms of hydrogen ion concentration?",
+      "correct": "The negative logarithm of [H⁺]",
+      "correctExplanation": "pH = −log₁₀[H⁺] by definition.",
+      "distractors": [
+        {
+          "answer": "The positive logarithm of [H⁺]",
+          "explanation": "The negative sign is essential."
+        },
+        {
+          "answer": "The square root of [H⁺]",
+          "explanation": "pH involves logarithms, not roots."
+        },
+        {
+          "answer": "The reciprocal of [H⁺]",
+          "explanation": "pH uses logarithms, not reciprocals."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "On a log₁₀ scale, where is the value 10 plotted?",
+      "correct": "At position 1",
+      "correctExplanation": "log₁₀(10) = 1.",
+      "distractors": [
+        {
+          "answer": "At position 10",
+          "explanation": "The log compresses the value."
+        },
+        {
+          "answer": "At position 0",
+          "explanation": "log₁₀(1) = 0, not log₁₀(10)."
+        },
+        {
+          "answer": "At position 2",
+          "explanation": "log₁₀(100) = 2, not log₁₀(10)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "A magnitude 8 earthquake releases how many times more energy than a magnitude 6?",
+      "correct": "About 1000 times",
+      "correctExplanation": "Each unit is ~31.6×; two units is 31.6² ≈ 1000.",
+      "distractors": [
+        {
+          "answer": "About 2 times",
+          "explanation": "The scale is logarithmic, not linear."
+        },
+        {
+          "answer": "About 100 times",
+          "explanation": "This underestimates the energy ratio."
+        },
+        {
+          "answer": "About 10 times",
+          "explanation": "One unit is ~31.6×, not 10×."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What is the value of log₁₀(1)?",
+      "correct": "0",
+      "correctExplanation": "10⁰ = 1, so log₁₀(1) = 0.",
+      "distractors": [
+        {
+          "answer": "1",
+          "explanation": "10¹ = 10, not 1."
+        },
+        {
+          "answer": "−1",
+          "explanation": "10⁻¹ = 0.1."
+        },
+        {
+          "answer": "10",
+          "explanation": "This confuses the base with the result."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "On a logarithmic scale, equal distances represent equal {{blank:1}} factors, and the value log₁₀(10 000) equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiplicative",
+          "correctExplanation": "Log scales convert multiplication into equal additive steps.",
+          "distractors": [
+            {
+              "answer": "additive",
+              "explanation": "Additive factors describe linear scales.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "subtractive",
+              "explanation": "Logarithms convert multiplication, not subtraction.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "10⁴ = 10 000, so the logarithm is 4.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "10⁵ = 100 000, not 10 000.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "3",
+              "explanation": "10³ = 1000, not 10 000.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The pH scale is {{blank:1}}, meaning each unit change represents a {{blank:2}} change in hydrogen ion concentration.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "logarithmic",
+          "correctExplanation": "pH = −log₁₀[H⁺], making it logarithmic.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "pH involves logarithms, not equal additive steps.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exponential",
+              "explanation": "The scale itself is logarithmic, not exponential.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tenfold",
+          "correctExplanation": "Each pH unit corresponds to a factor of 10 in [H⁺].",
+          "distractors": [
+            {
+              "answer": "twofold",
+              "explanation": "The factor is 10, not 2.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "hundredfold",
+              "explanation": "A hundredfold change spans two pH units.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A straight line on a log-log graph indicates a linear relationship between the variables.",
+      "correct": "False",
+      "correctExplanation": "A straight line on a log-log graph indicates a power relationship (y = axⁿ), not a linear one.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Linear relationships appear as straight lines on linear graphs, not log-log graphs."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "A substance with pH 2 is twice as acidic as a substance with pH 4.",
+      "correct": "False",
+      "correctExplanation": "pH 2 has [H⁺] = 10⁻²; pH 4 has [H⁺] = 10⁻⁴; the ratio is 10² = 100 times, not 2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Each pH unit is a tenfold change; two units means a hundredfold difference."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "On a semi-log graph, exponential growth appears as a straight line.",
+      "correct": "True",
+      "correctExplanation": "Taking log of y = ae^(bx) gives log y = log a + bx log e, which is linear in x.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Semi-log transformation linearises exponential relationships."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Doubling a value on a logarithmic scale always moves the point by the same fixed distance.",
+      "correct": "True",
+      "correctExplanation": "log(2x) − log(x) = log(2) ≈ 0.301, which is constant regardless of x.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Doubling always adds log(2) on a log scale."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The difference between pH 3 and pH 5 represents a 20-fold change in hydrogen ion concentration.",
+      "correct": "False",
+      "correctExplanation": "Two pH units represent 10² = 100 times the difference in [H⁺], not 20.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Each pH unit is a factor of 10, so two units is 100."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Negative values can be plotted on a standard logarithmic scale.",
+      "correct": "False",
+      "correctExplanation": "Logarithms are only defined for positive values; negative numbers cannot be plotted.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The domain of log functions is restricted to positive real numbers."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "If a sound measures 60 dB and another measures 80 dB, the second is 20 times more intense.",
+      "correct": "False",
+      "correctExplanation": "20 dB represents 10² = 100 times the intensity, not 20 times.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Each 10 dB is a tenfold increase, so 20 dB is 100×."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "A logarithmic graph is more appropriate than a linear graph when data values range from 1 to 1 000 000.",
+      "correct": "True",
+      "correctExplanation": "Six orders of magnitude would compress low values on a linear scale; a log scale reveals all values clearly.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Log scales effectively display data spanning many orders of magnitude."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Why does exponential growth appear as a curve on a linear graph but a straight line on a semi-log graph?",
+      "correct": "The log transformation linearises the exponential",
+      "correctExplanation": "Taking log of an exponential function produces a linear function.",
+      "distractors": [
+        {
+          "answer": "The semi-log graph stretches the data",
+          "explanation": "It transforms, not simply stretches."
+        },
+        {
+          "answer": "The data changes when graphed differently",
+          "explanation": "The data is unchanged; only the scale differs."
+        },
+        {
+          "answer": "Semi-log graphs distort the data",
+          "explanation": "They reveal the underlying linear relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A solution has pH 3 and another has pH 6. How many times greater is the hydrogen ion concentration of the first?",
+      "correct": "1000 times",
+      "correctExplanation": "Three pH units: 10³ = 1000 times.",
+      "distractors": [
+        {
+          "answer": "3 times",
+          "explanation": "pH differences are multiplicative, not additive."
+        },
+        {
+          "answer": "100 times",
+          "explanation": "This is only two pH units difference."
+        },
+        {
+          "answer": "30 times",
+          "explanation": "The factor is 10 per unit, not 10×3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Which type of data is best displayed using a logarithmic scale?",
+      "correct": "Earthquake magnitudes spanning 1 to 10 000",
+      "correctExplanation": "Data spanning several orders of magnitude benefits from log scales.",
+      "distractors": [
+        {
+          "answer": "Daily temperatures from 15°C to 35°C",
+          "explanation": "This narrow range suits a linear scale."
+        },
+        {
+          "answer": "Student test scores from 0 to 100",
+          "explanation": "Bounded linear data suits linear scales."
+        },
+        {
+          "answer": "Days of the week",
+          "explanation": "Categorical data does not use log scales."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "On a log₁₀ scale, how far apart are the values 100 and 10 000?",
+      "correct": "2 units",
+      "correctExplanation": "log₁₀(10 000) − log₁₀(100) = 4 − 2 = 2.",
+      "distractors": [
+        {
+          "answer": "100 units",
+          "explanation": "This is the arithmetic difference."
+        },
+        {
+          "answer": "4 units",
+          "explanation": "This is log₁₀(10 000), not the difference."
+        },
+        {
+          "answer": "1 unit",
+          "explanation": "The difference is 2 orders of magnitude."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "A sound at 90 dB is how many times more intense than one at 60 dB?",
+      "correct": "1000 times",
+      "correctExplanation": "30 dB = three 10 dB steps = 10³ = 1000.",
+      "distractors": [
+        {
+          "answer": "30 times",
+          "explanation": "The dB scale is logarithmic, not linear."
+        },
+        {
+          "answer": "3 times",
+          "explanation": "Each 10 dB is a tenfold increase."
+        },
+        {
+          "answer": "100 times",
+          "explanation": "This is 20 dB, not 30 dB."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "What advantage does a log scale have over a linear scale when comparing the sizes of bacteria and whales?",
+      "correct": "It compresses vast ranges into a readabl",
+      "correctExplanation": "Bacteria (~1 μm) and whales (~30 m) span about 7 orders of magnitude.",
+      "distractors": [
+        {
+          "answer": "It makes both appear the same size",
+          "explanation": "The scale preserves relative differences."
+        },
+        {
+          "answer": "It converts sizes to equal units",
+          "explanation": "Units remain the same; only spacing changes."
+        },
+        {
+          "answer": "It eliminates measurement error",
+          "explanation": "Log scales do not affect accuracy."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "If log₁₀(x) = 3.5, what is the approximate value of x?",
+      "correct": "About 3162",
+      "correctExplanation": "10³·⁵ = 10³ × 10⁰·⁵ = 1000 × √10 ≈ 3162.",
+      "distractors": [
+        {
+          "answer": "About 35",
+          "explanation": "This treats log linearly."
+        },
+        {
+          "answer": "About 350",
+          "explanation": "This underestimates the exponential."
+        },
+        {
+          "answer": "About 31 623",
+          "explanation": "This is 10⁴·⁵."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Why can a logarithmic scale not display the value zero?",
+      "correct": "Because log₁₀(0) is undefined",
+      "correctExplanation": "The logarithm approaches negative infinity as the input approaches zero.",
+      "distractors": [
+        {
+          "answer": "Because zero is not a number",
+          "explanation": "Zero is a valid number on linear scales."
+        },
+        {
+          "answer": "Because zero is too small to plot",
+          "explanation": "The issue is mathematical, not practical."
+        },
+        {
+          "answer": "Because log scales start at 1",
+          "explanation": "Log scales can start at any positive value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "On a semi-log graph, a steeper straight line indicates:",
+      "correct": "A faster rate of exponential g",
+      "correctExplanation": "The slope on a semi-log graph represents the growth rate constant.",
+      "distractors": [
+        {
+          "answer": "A slower rate of change",
+          "explanation": "Steeper slopes mean faster growth."
+        },
+        {
+          "answer": "A linear relationship",
+          "explanation": "Straight lines on semi-log graphs show exponential data."
+        },
+        {
+          "answer": "No meaningful difference",
+          "explanation": "The slope carries important information."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "The Richter scale reading increases from 4 to 7. The energy released increases by a factor of approximately:",
+      "correct": "31 623",
+      "correctExplanation": "Three units: 31.6³ ≈ 31 623.",
+      "distractors": [
+        {
+          "answer": "3",
+          "explanation": "This is the additive, not multiplicative, change."
+        },
+        {
+          "answer": "1000",
+          "explanation": "This uses 10³ instead of 31.6³."
+        },
+        {
+          "answer": "300",
+          "explanation": "This underestimates the energy ratio."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which statement correctly describes the relationship between a log scale and its linear equivalent?",
+      "correct": "Addition on a log scale equals multiplication on a",
+      "correctExplanation": "log(ab) = log(a) + log(b), so multiplicative changes become additive.",
+      "distractors": [
+        {
+          "answer": "Subtraction on a log scale equals addition on linear",
+          "explanation": "Subtraction on log = division on linear."
+        },
+        {
+          "answer": "They display the same data identically",
+          "explanation": "The visual representation differs significantly."
+        },
+        {
+          "answer": "Log scales reverse the order of values",
+          "explanation": "The order is preserved; only spacing changes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "A bacterial population doubles every hour. On a semi-log graph, this growth appears as:",
+      "correct": "A straight line with positive",
+      "correctExplanation": "Exponential growth (doubling) plots as a straight line on semi-log axes.",
+      "distractors": [
+        {
+          "answer": "A curve that levels off",
+          "explanation": "This describes logistic, not exponential, growth."
+        },
+        {
+          "answer": "A horizontal line",
+          "explanation": "Growth produces a positive slope."
+        },
+        {
+          "answer": "An oscillating pattern",
+          "explanation": "Steady doubling produces a straight line."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "On a semi-log graph, exponential growth appears as a {{blank:1}} because taking the logarithm of an exponential function produces a {{blank:2}} function.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "straight line",
+          "correctExplanation": "Log transformation linearises exponential relationships.",
+          "distractors": [
+            {
+              "answer": "curve",
+              "explanation": "The whole point of semi-log is to straighten exponentials.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "horizontal line",
+              "explanation": "Growth produces a positive slope.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "linear",
+          "correctExplanation": "log(ae^(bx)) = log(a) + bx·log(e), which is linear in x.",
+          "distractors": [
+            {
+              "answer": "quadratic",
+              "explanation": "The transformation produces linearity, not a parabola.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "exponential",
+              "explanation": "The logarithm removes the exponential character.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The pH scale measures acidity as −log₁₀[H⁺]. A pH of 3 has {{blank:1}} times the hydrogen ion concentration of pH 5, representing {{blank:2}} orders of magnitude.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "100",
+          "correctExplanation": "Two pH units: 10² = 100.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The difference is multiplicative, not additive.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "10",
+              "explanation": "One pH unit is 10×; two units is 100×.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Two pH units correspond to two powers of 10.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "This is the pH value, not the number of orders.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "3",
+              "explanation": "This is the other pH value.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "On a log-log graph, a power relationship y = axⁿ appears as a straight line with slope equal to {{blank:1}} and y-intercept equal to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n",
+          "correctExplanation": "log(y) = n·log(x) + log(a), so the slope is n.",
+          "distractors": [
+            {
+              "answer": "a",
+              "explanation": "a affects the intercept, not the slope.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "x",
+              "explanation": "x is the variable, not the slope.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "log(a)",
+          "correctExplanation": "The y-intercept of the linearised form is log(a).",
+          "distractors": [
+            {
+              "answer": "a",
+              "explanation": "The intercept is log(a), not a itself.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "n is the slope, not the intercept.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "A sound increase of 30 dB represents an intensity increase of {{blank:1}} times because each 10 dB step multiplies intensity by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1000",
+          "correctExplanation": "30 dB = three steps of 10 dB = 10³ = 1000.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "The dB scale is logarithmic, not linear.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "300",
+              "explanation": "The factor is 10 per step, giving 10³.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10",
+          "correctExplanation": "10 dB corresponds to a tenfold intensity increase.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Doubling is about 3 dB, not 10 dB.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "100",
+              "explanation": "100× is 20 dB, not 10 dB.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Logarithmic scales cannot display {{blank:1}} values because the logarithm function is only defined for {{blank:2}} numbers.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero or negative",
+          "correctExplanation": "log is undefined for zero and negative inputs.",
+          "distractors": [
+            {
+              "answer": "very large",
+              "explanation": "Log scales handle very large values well.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "decimal",
+              "explanation": "Decimals have valid logarithms.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "positive",
+          "correctExplanation": "The domain of log₁₀ is (0, ∞).",
+          "distractors": [
+            {
+              "answer": "whole",
+              "explanation": "Logarithms work for all positive numbers, not just whole.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "even",
+              "explanation": "Odd positive numbers also have logarithms.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Doubling a value on a log₁₀ scale adds approximately {{blank:1}} to the log position, because log₁₀(2) ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.301",
+          "correctExplanation": "log₁₀(2) ≈ 0.301, and log(2x) = log(x) + log(2).",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "log₁₀(2) is not 0.5; that would mean 10⁰·⁵ = 2.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "1",
+              "explanation": "Adding 1 on a log scale means multiplying by 10.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.301",
+          "correctExplanation": "log₁₀(2) = 0.30103.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "√10 ≈ 3.16, not 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.2",
+              "explanation": "10⁰·² ≈ 1.58, not 2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A solution with pH 2.5 has a hydrogen ion concentration of approximately 3.16 × 10⁻³ mol/L.",
+      "correct": "True",
+      "correctExplanation": "[H⁺] = 10⁻²·⁵ = 10⁻³ × 10⁰·⁵ ≈ 0.00316 = 3.16 × 10⁻³ mol/L.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The calculation correctly applies the pH definition."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "On a log₁₀ scale, the points representing 500 and 5000 are 2 units apart.",
+      "correct": "False",
+      "correctExplanation": "log₁₀(5000) − log₁₀(500) = log₁₀(10) = 1 unit, not 2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The ratio 5000/500 = 10, which is one order of magnitude."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A population grows from 100 to 100 000 over 8 years. On a semi-log graph, these points are how many log units apart?",
+      "correct": "3 units",
+      "correctExplanation": "log₁₀(100 000) − log₁₀(100) = 5 − 2 = 3.",
+      "distractors": [
+        {
+          "answer": "5 units",
+          "explanation": "This is log₁₀(100 000), not the difference."
+        },
+        {
+          "answer": "2 units",
+          "explanation": "This is log₁₀(100), not the difference."
+        },
+        {
+          "answer": "1000 units",
+          "explanation": "This is the arithmetic ratio."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A sound at 50 dB increases to 80 dB. By what factor has the intensity increased?",
+      "correct": "1000",
+      "correctExplanation": "30 dB increase = 10³ = 1000 times.",
+      "distractors": [
+        {
+          "answer": "30",
+          "explanation": "The dB scale is logarithmic, not linear."
+        },
+        {
+          "answer": "100",
+          "explanation": "This is 20 dB, not 30 dB."
+        },
+        {
+          "answer": "300",
+          "explanation": "The factor is 10 per 10 dB step."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A star has apparent brightness 10⁻⁸ W/m². On a log₁₀ scale, this plots at position:",
+      "correct": "−8",
+      "correctExplanation": "log₁₀(10⁻⁸) = −8.",
+      "distractors": [
+        {
+          "answer": "8",
+          "explanation": "The value is less than 1, so the log is negative."
+        },
+        {
+          "answer": "−4",
+          "explanation": "This does not match the exponent."
+        },
+        {
+          "answer": "0.00",
+          "explanation": "This is the raw value, not its log."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "If log₁₀(x) = 2.7, what is x to the nearest whole number?",
+      "correct": "501",
+      "correctExplanation": "10²·⁷ = 10² × 10⁰·⁷ ≈ 100 × 5.012 = 501.",
+      "distractors": [
+        {
+          "answer": "270",
+          "explanation": "This treats the log linearly."
+        },
+        {
+          "answer": "27",
+          "explanation": "This confuses log with division by 10."
+        },
+        {
+          "answer": "700",
+          "explanation": "This overestimates 10⁰·⁷."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A pH meter reads 4.3. What is the hydrogen ion concentration?",
+      "correct": "5.0 × 10⁻⁵ mol/L",
+      "correctExplanation": "[H⁺] = 10⁻⁴·³ ≈ 5.01 × 10⁻⁵.",
+      "distractors": [
+        {
+          "answer": "4.3 × 10⁻⁴ mol/L",
+          "explanation": "pH is not directly the exponent on [H⁺]."
+        },
+        {
+          "answer": "4.3 × 10⁻¹ mol/L",
+          "explanation": "This does not apply the pH formula."
+        },
+        {
+          "answer": "1.0 × 10⁻⁴ mol/L",
+          "explanation": "This rounds to a whole pH of 4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Two earthquakes register magnitudes 4.0 and 6.0. The stronger one released approximately how many times more energy?",
+      "correct": "About 1000 times",
+      "correctExplanation": "Two units: 31.6² ≈ 1000.",
+      "distractors": [
+        {
+          "answer": "About 100 times",
+          "explanation": "This uses 10× per unit."
+        },
+        {
+          "answer": "About 2 times",
+          "explanation": "The scale is logarithmic."
+        },
+        {
+          "answer": "About 60 times",
+          "explanation": "This is not the correct factor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Data points on a semi-log graph form a straight line with slope 0.5. What is the growth factor per unit of x?",
+      "correct": "10⁰·⁵",
+      "correctExplanation": "On a semi-log graph, slope = log₁₀(growth factor), so factor = 10⁰·⁵.",
+      "distractors": [
+        {
+          "answer": "0.5",
+          "explanation": "This is the log of the factor."
+        },
+        {
+          "answer": "5",
+          "explanation": "This overestimates the antilog."
+        },
+        {
+          "answer": "50",
+          "explanation": "This confuses slope with percentage."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A decibel meter reads 75 dB. The reference level is 10⁻¹² W/m². What is the sound intensity?",
+      "correct": "3.16 × 10⁻⁵ W/m²",
+      "correctExplanation": "I = 10⁻¹² × 10⁷·⁵ = 10⁻⁴·⁵ ≈ 3.16 × 10⁻⁵.",
+      "distractors": [
+        {
+          "answer": "7.5 × 10⁻¹² W/m²",
+          "explanation": "This adds dB to the reference linearly."
+        },
+        {
+          "answer": "10⁻⁷·⁵ W/m²",
+          "explanation": "This ignores the reference level."
+        },
+        {
+          "answer": "75 × 10⁻¹² W/m²",
+          "explanation": "dB cannot be multiplied directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A bacterial colony grows from 10³ to 10⁹ in 24 hours. The average number of log₁₀ units gained per hour is:",
+      "correct": "0.25",
+      "correctExplanation": "(9 − 3)/24 = 6/24 = 0.25 log units per hour.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "This is the total log change, not per hour."
+        },
+        {
+          "answer": "1000",
+          "explanation": "This is not related to the log calculation."
+        },
+        {
+          "answer": "4",
+          "explanation": "This miscalculates the time division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "On a logarithmic scale, 200 is plotted at approximately what position?",
+      "correct": "2.30",
+      "correctExplanation": "log₁₀(200) = log₁₀(2 × 100) = 2 + log₁₀(2) ≈ 2.301.",
+      "distractors": [
+        {
+          "answer": "2.00",
+          "explanation": "This is log₁₀(100), not 200."
+        },
+        {
+          "answer": "3.00",
+          "explanation": "This is log₁₀(1000)."
+        },
+        {
+          "answer": "200",
+          "explanation": "The log scale uses the logarithm, not the raw value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A graph uses a log₁₀ scale on both axes. The data forms a straight line with slope 2. What is the relationship?",
+      "correct": "y = ax²",
+      "correctExplanation": "Slope 2 on a log-log graph means y ∝ x², so y = ax².",
+      "distractors": [
+        {
+          "answer": "y = 2x",
+          "explanation": "A linear relationship has slope 1 on log-log."
+        },
+        {
+          "answer": "y = x + 2",
+          "explanation": "Addition does not produce straight lines on log-log."
+        },
+        {
+          "answer": "y = 10²x",
+          "explanation": "This confuses slope with coefficient."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "If pH drops from 7.0 to 5.0, the hydrogen ion concentration increases by a factor of:",
+      "correct": "100",
+      "correctExplanation": "Two pH units: 10² = 100.",
+      "distractors": [
+        {
+          "answer": "2",
+          "explanation": "pH changes are multiplicative."
+        },
+        {
+          "answer": "20",
+          "explanation": "The factor is 10 per unit, not 10 per pH value."
+        },
+        {
+          "answer": "1000",
+          "explanation": "This is three pH units."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "log₁₀(500) can be calculated as log₁₀(5 × 100) = log₁₀(5) + {{blank:1}} ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "log₁₀(100) = 2.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "The log of 100 is 2, not 100 itself.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "log₁₀(1000) = 3, not log₁₀(100).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2.699",
+          "correctExplanation": "log₁₀(5) ≈ 0.699; 0.699 + 2 = 2.699.",
+          "distractors": [
+            {
+              "answer": "2.5",
+              "explanation": "log₁₀(5) ≈ 0.699, not 0.5.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "5.2",
+              "explanation": "This reverses the calculation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "An earthquake of magnitude 7 releases {{blank:1}} times more energy than magnitude 5, because each unit represents approximately {{blank:2}} times more energy.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "about 1000",
+          "correctExplanation": "Two units: 31.6² ≈ 1000.",
+          "distractors": [
+            {
+              "answer": "about 100",
+              "explanation": "This uses 10× per unit instead of 31.6×.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "about 2",
+              "explanation": "The scale is logarithmic, not linear.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "31.6",
+          "correctExplanation": "Each magnitude unit corresponds to 10^1.5 ≈ 31.6 times energy.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10× applies to amplitude, not energy.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The Richter scale is logarithmic.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "A solution has pH 3.5, so [H⁺] = 10⁻³·⁵ ≈ {{blank:1}} mol/L. This is {{blank:2}} times more concentrated than pH 5.5.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3.16 × 10⁻⁴",
+          "correctExplanation": "[H⁺] = 10⁻³·⁵ = 10⁻⁴ × 10⁰·⁵ ≈ 3.16 × 10⁻⁴.",
+          "distractors": [
+            {
+              "answer": "3.5 × 10⁻³",
+              "explanation": "pH is not directly the mantissa.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "1.0 × 10⁻³",
+              "explanation": "This rounds to pH 3, not 3.5.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "100",
+          "correctExplanation": "Two pH units: 10² = 100.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "The difference is multiplicative, not additive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "20",
+              "explanation": "Each pH unit is a factor of 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "On a semi-log graph, a straight line with slope m means the data grows by a factor of {{blank:1}} per unit of x, and the y-intercept gives the {{blank:2}} of the initial value.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10^m",
+          "correctExplanation": "The slope on a semi-log graph is the log of the growth factor.",
+          "distractors": [
+            {
+              "answer": "m",
+              "explanation": "m is the log of the factor, not the factor itself.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2m",
+              "explanation": "The factor is 10^m, not 2m.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "logarithm",
+          "correctExplanation": "The y-intercept is log₁₀(initial value).",
+          "distractors": [
+            {
+              "answer": "square root",
+              "explanation": "Semi-log intercepts are logarithms.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "reciprocal",
+              "explanation": "The intercept is the log, not the reciprocal.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A sound of 40 dB has intensity 10⁻⁸ W/m². A sound of 70 dB has intensity {{blank:1}} W/m², which is {{blank:2}} times greater.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10⁻⁵",
+          "correctExplanation": "70 dB = 10⁻¹² × 10⁷ = 10⁻⁵. Wait — I = I₀ × 10^(dB/10) = 10⁻¹² × 10⁷ = 10⁻⁵.",
+          "distractors": [
+            {
+              "answer": "7 × 10⁻⁸",
+              "explanation": "This adds dB linearly to the intensity.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "10⁻⁷",
+              "explanation": "This uses the wrong exponent.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1000",
+          "correctExplanation": "30 dB difference = 10³ = 1000.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "The dB scale is logarithmic.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "Each 10 dB is a factor of 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "log₁₀(0.001) = {{blank:1}} because 10 raised to that power equals {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−3",
+          "correctExplanation": "10⁻³ = 0.001.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The value is less than 1, so the log is negative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−0.001",
+              "explanation": "The log of 0.001 is −3, not −0.001.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.001",
+          "correctExplanation": "10⁻³ = 1/1000 = 0.001.",
+          "distractors": [
+            {
+              "answer": "1000",
+              "explanation": "10³ = 1000; 10⁻³ = 0.001.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1000",
+              "explanation": "Negative exponents give fractions, not negative numbers.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A population grows from 500 to 50 000 in 10 days. The log₁₀ growth is {{blank:1}} units, giving a rate of {{blank:2}} log units per day.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "log₁₀(50 000) − log₁₀(500) = 4.699 − 2.699 = 2.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "This is the arithmetic ratio, not the log difference.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4.699",
+              "explanation": "This is log₁₀(50 000), not the difference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.2",
+          "correctExplanation": "2 log units / 10 days = 0.2.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "This is the total, not the daily rate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "This reverses the division.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "On a log-log graph, y = 5x³ has slope {{blank:1}} and y-intercept {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "log(y) = 3·log(x) + log(5), so the slope is 3.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 is the coefficient, not the slope.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "15",
+              "explanation": "This multiplies slope by coefficient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "log₁₀(5) ≈ 0.699",
+          "correctExplanation": "The y-intercept is log₁₀(5).",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "The intercept is the log, not the value.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 is the slope, not the intercept.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A magnitude 4.5 earthquake releases about {{blank:1}} times the energy of magnitude 4.0, because energy scales as 10^({{blank:2}} × magnitude difference).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5.6",
+          "correctExplanation": "Half a magnitude: 10^(1.5 × 0.5) = 10⁰·⁷⁵ ≈ 5.62.",
+          "distractors": [
+            {
+              "answer": "1.5",
+              "explanation": "This is the scaling exponent, not the factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4.5",
+              "explanation": "This confuses the magnitude with the factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.5",
+          "correctExplanation": "Energy scales as 10^(1.5 × ΔM) on the Richter scale.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "This would be 10× per unit, which applies to amplitude.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The energy exponent is 1.5, not 2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The distance from the Sun to Neptune is about 4.5 × 10⁹ km, plotted at position {{blank:1}} on a log₁₀ scale. The distance to Mercury (5.8 × 10⁷ km) plots at position {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "≈ 9.65",
+          "correctExplanation": "log₁₀(4.5 × 10⁹) = log₁₀(4.5) + 9 ≈ 0.653 + 9 = 9.653.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "This drops the mantissa.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "4.5",
+              "explanation": "This is the coefficient, not the log.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "≈ 7.76",
+          "correctExplanation": "log₁₀(5.8 × 10⁷) = log₁₀(5.8) + 7 ≈ 0.763 + 7 = 7.763.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "This drops the mantissa.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "58",
+              "explanation": "This confuses the value with its log.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "A Geiger counter detects radiation at 10⁴ counts/min near a source, dropping to 10¹ counts/min at distance. The log₁₀ difference is {{blank:1}} and the intensity dropped by a factor of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "log₁₀(10⁴) − log₁₀(10¹) = 4 − 1 = 3.",
+          "distractors": [
+            {
+              "answer": "9999",
+              "explanation": "This is the arithmetic difference.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "This is log₁₀(10⁴), not the difference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1000",
+          "correctExplanation": "10³ = 1000.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the log difference, not the factor.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "10000",
+              "explanation": "This is the original count, not the factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "If a graph uses log₁₀ on the y-axis and linear on the x-axis, it is called a {{blank:1}} graph. Data that forms a straight line on this graph follows a(n) {{blank:2}} model.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "semi-log",
+          "correctExplanation": "One log axis and one linear axis defines a semi-log graph.",
+          "distractors": [
+            {
+              "answer": "log-log",
+              "explanation": "Both axes must be logarithmic for a log-log graph.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "linear",
+              "explanation": "At least one axis is logarithmic.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "exponential",
+          "correctExplanation": "Exponential relationships linearise on semi-log graphs.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear relationships are already straight on linear graphs.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "power",
+              "explanation": "Power relationships linearise on log-log graphs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A researcher plots population data on both linear and semi-log graphs. On the semi-log graph the data forms a straight line but on the linear graph it curves upward. What does this indicate?",
+      "correct": "The population is growing exponen",
+      "correctExplanation": "Exponential growth appears linear on semi-log axes.",
+      "distractors": [
+        {
+          "answer": "The population is stable",
+          "explanation": "Stable populations show horizontal lines."
+        },
+        {
+          "answer": "The data contains errors",
+          "explanation": "Consistent patterns indicate valid data."
+        },
+        {
+          "answer": "The population is declining",
+          "explanation": "Upward curves indicate growth."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Two datasets are plotted on semi-log graphs. Dataset A has a steeper line than Dataset B. What can be concluded?",
+      "correct": "Dataset A has a higher growth rate",
+      "correctExplanation": "The slope on a semi-log graph represents the growth rate.",
+      "distractors": [
+        {
+          "answer": "Dataset B grows faster",
+          "explanation": "Steeper slope means faster growth."
+        },
+        {
+          "answer": "Both grow at the same rate",
+          "explanation": "Different slopes mean different rates."
+        },
+        {
+          "answer": "Neither is growing",
+          "explanation": "Positive slopes indicate growth."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A scientist argues that because pH 4 is 'only 2 units' from pH 6, the two solutions are similar in acidity. What is the flaw in this reasoning?",
+      "correct": "It treats a logarithmic scale as linear",
+      "correctExplanation": "Two pH units represent a 100× difference in [H⁺].",
+      "distractors": [
+        {
+          "answer": "There is no flaw; the reasoning is correct",
+          "explanation": "The reasoning ignores the log nature of pH."
+        },
+        {
+          "answer": "pH 4 is less acidic than pH 6",
+          "explanation": "Lower pH means more acidic."
+        },
+        {
+          "answer": "The pH scale only goes to 7",
+          "explanation": "The pH scale extends beyond 7."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Data plotted on a log-log graph forms a straight line with slope 0.5. The underlying relationship is most likely:",
+      "correct": "y = a√x",
+      "correctExplanation": "Slope 0.5 means y ∝ x⁰·⁵ = √x.",
+      "distractors": [
+        {
+          "answer": "y = ax²",
+          "explanation": "This would have slope 2."
+        },
+        {
+          "answer": "y = ax",
+          "explanation": "This would have slope 1."
+        },
+        {
+          "answer": "y = a/x",
+          "explanation": "This would have slope −1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "When comparing earthquake energy at magnitudes 3, 5 and 7, which statement is correct?",
+      "correct": "The energy ratios between consecutive pairs ar",
+      "correctExplanation": "Equal magnitude differences give equal log-energy differences.",
+      "distractors": [
+        {
+          "answer": "The energy increases linearly",
+          "explanation": "Energy increases exponentially per unit."
+        },
+        {
+          "answer": "Magnitude 7 releases twice the energy of",
+          "explanation": "The factor is about 1000×."
+        },
+        {
+          "answer": "The ratios depend on location",
+          "explanation": "Energy ratios depend on magnitude difference only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A semi-log graph shows two parallel straight lines. What can be concluded about the two datasets?",
+      "correct": "They have the same growth rate but",
+      "correctExplanation": "Parallel lines on semi-log have equal slopes (growth rates) but different intercepts.",
+      "distractors": [
+        {
+          "answer": "They have different growth rates",
+          "explanation": "Parallel lines have equal slopes."
+        },
+        {
+          "answer": "One dataset is a transformation of the other",
+          "explanation": "They differ only in starting value."
+        },
+        {
+          "answer": "The data is incorrectly plotted",
+          "explanation": "Parallel lines are a valid outcome."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student claims that a magnitude 9.0 earthquake releases 'about 5 times' more energy than a magnitude 8.0. Is this accurate?",
+      "correct": "No; it releases about 31.6 times more energy",
+      "correctExplanation": "Each magnitude unit corresponds to ~31.6× energy.",
+      "distractors": [
+        {
+          "answer": "Yes; the estimate is correct",
+          "explanation": "The actual factor is much larger."
+        },
+        {
+          "answer": "No; it releases exactly 10 times more",
+          "explanation": "10× applies to amplitude, not energy."
+        },
+        {
+          "answer": "No; it releases about 2 times more",
+          "explanation": "This greatly underestimates the ratio."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Why might a scientist choose a log-log graph over a semi-log graph for their data?",
+      "correct": "The data follows a power law",
+      "correctExplanation": "Power laws linearise on log-log; exponentials linearise on semi-log.",
+      "distractors": [
+        {
+          "answer": "Log-log is always more accurate",
+          "explanation": "The choice depends on the data type."
+        },
+        {
+          "answer": "Semi-log cannot display large values",
+          "explanation": "Both can display large ranges."
+        },
+        {
+          "answer": "Log-log uses fewer data points",
+          "explanation": "The number of points is independent of scale."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "If a linear regression on a semi-log graph has R² = 0.98, but a linear regression on a log-log graph has R² = 0.65, the data is best modelled as:",
+      "correct": "Exponential",
+      "correctExplanation": "Higher R² on semi-log indicates an exponential fit is superior.",
+      "distractors": [
+        {
+          "answer": "A",
+          "explanation": "The log-log fit is weaker."
+        },
+        {
+          "answer": "Linear",
+          "explanation": "Linear data would not fit well on either transformed graph."
+        },
+        {
+          "answer": "Quadratic",
+          "explanation": "Quadratic would not produce a straight line on semi-log."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A medical researcher notices that drug concentrations in the body, when plotted on a semi-log graph, show a straight line with negative slope. This indicates:",
+      "correct": "Exponential decay of the drug",
+      "correctExplanation": "A negative slope on semi-log indicates the quantity decreases exponentially.",
+      "distractors": [
+        {
+          "answer": "The drug is accumulating",
+          "explanation": "Negative slope shows decrease, not increase."
+        },
+        {
+          "answer": "Constant drug concentration",
+          "explanation": "A constant would be a horizontal line."
+        },
+        {
+          "answer": "Linear elimination",
+          "explanation": "Linear elimination would curve on semi-log."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A company's revenue data forms a straight line on a log-log plot when graphed against number of employees. The slope is 0.8. This suggests:",
+      "correct": "Diminishing returns per additional employee",
+      "correctExplanation": "Revenue ∝ employees⁰·⁸; each new employee adds less revenue than the previous.",
+      "distractors": [
+        {
+          "answer": "Constant returns per employee",
+          "explanation": "That would require slope = 1."
+        },
+        {
+          "answer": "Increasing returns per employee",
+          "explanation": "That would require slope > 1."
+        },
+        {
+          "answer": "Revenue is independent of employees",
+          "explanation": "That would require slope = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "When comparing decibel levels, a student states '120 dB is twice as loud as 60 dB.' Why is this incorrect?",
+      "correct": "60 dB represents a 10⁶",
+      "correctExplanation": "120 − 60 = 60 dB = 10⁶ = one million times more intense.",
+      "distractors": [
+        {
+          "answer": "The student is correct",
+          "explanation": "The dB scale is logarithmic."
+        },
+        {
+          "answer": "120 dB is impossible",
+          "explanation": "120 dB is possible but extremely loud."
+        },
+        {
+          "answer": "Loudness cannot be compared",
+          "explanation": "Decibels are designed for comparison."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A dataset is plotted on a semi-log graph. The line curves upward. This suggests the growth is:",
+      "correct": "Faster than exponential",
+      "correctExplanation": "Exponential growth is linear on semi-log; curving upward means even faster growth.",
+      "distractors": [
+        {
+          "answer": "Exactly exponential",
+          "explanation": "Exponential would be a straight line."
+        },
+        {
+          "answer": "Slower than exponential",
+          "explanation": "Slower growth would curve downward."
+        },
+        {
+          "answer": "Linear",
+          "explanation": "Linear growth curves downward on semi-log."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "An engineer uses a Bode plot (log frequency vs dB gain) to analyse a filter. A slope of −20 dB/decade means:",
+      "correct": "Gain drops by a factor of 10",
+      "correctExplanation": "−20 dB is a factor of 10⁻¹ = 0.1, or a tenfold reduction.",
+      "distractors": [
+        {
+          "answer": "Gain doubles per decade",
+          "explanation": "−20 dB is a decrease, not a doubling."
+        },
+        {
+          "answer": "Gain is constant at −20 dB",
+          "explanation": "The slope describes rate of change."
+        },
+        {
+          "answer": "Frequency decreases by 20 Hz",
+          "explanation": "Decades are multiplicative, not additive."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Exponential data linearises on a {{blank:1}} graph, while power law data linearises on a {{blank:2}} graph.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "semi-log",
+          "correctExplanation": "Taking log of y linearises y = ae^(bx) on semi-log axes.",
+          "distractors": [
+            {
+              "answer": "log-log",
+              "explanation": "Log-log linearises power laws, not exponentials.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "linear",
+              "explanation": "Exponential data curves on linear graphs.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "log-log",
+          "correctExplanation": "Taking log of both variables linearises y = axⁿ.",
+          "distractors": [
+            {
+              "answer": "semi-log",
+              "explanation": "Semi-log linearises exponentials, not power laws.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "linear",
+              "explanation": "Power laws curve on linear graphs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "If semi-log data curves upward, growth is {{blank:1}} than exponential. If it curves downward, growth is {{blank:2}} than exponential.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "faster",
+          "correctExplanation": "Exponential is linear on semi-log; curving up means accelerating beyond exponential.",
+          "distractors": [
+            {
+              "answer": "slower",
+              "explanation": "Slower growth would curve downward.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exactly",
+              "explanation": "Exactly exponential would be straight.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "slower",
+          "correctExplanation": "Decelerating growth curves downward on semi-log axes.",
+          "distractors": [
+            {
+              "answer": "faster",
+              "explanation": "Faster growth curves upward.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "identical",
+              "explanation": "Curvature indicates deviation from exponential.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The SA:V ratio of biological cells decreases with size, which is why organisms evolve {{blank:1}} cells rather than fewer large ones, and this relationship appears as a straight line with slope {{blank:2}} on a log-log graph of SA vs volume.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "many small",
+          "correctExplanation": "Small cells maintain favourable SA:V ratios for nutrient exchange.",
+          "distractors": [
+            {
+              "answer": "fewer large",
+              "explanation": "Large cells have poor SA:V ratios.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "identical",
+              "explanation": "Cell sizes vary based on functional needs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "⅔",
+          "correctExplanation": "SA ∝ r² ∝ V^(⅔), so the slope is ⅔.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "This would mean SA scales linearly with V.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "SA scales as V^(⅔), not V².",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "A drug with a half-life of 4 hours shows a semi-log plot with slope {{blank:1}} log₁₀ units per hour, and after 12 hours the concentration is {{blank:2}} of the original.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−0.075",
+          "correctExplanation": "log₁₀(0.5)/4 ≈ −0.301/4 ≈ −0.075.",
+          "distractors": [
+            {
+              "answer": "−0.5",
+              "explanation": "This confuses the half-life with the log slope.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "−4",
+              "explanation": "This uses the half-life as the slope.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "⅛",
+          "correctExplanation": "12 hours = 3 half-lives; (½)³ = ⅛.",
+          "distractors": [
+            {
+              "answer": "¼",
+              "explanation": "¼ is 2 half-lives, not 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "½",
+              "explanation": "½ is one half-life.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "On the Richter scale, the relationship between magnitude M and energy E is log₁₀(E) = 1.5M + c. This means that each unit increase in M multiplies E by {{blank:1}}, and a 2-unit increase multiplies E by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10^1.5 ≈ 31.6",
+          "correctExplanation": "The coefficient 1.5 means E is multiplied by 10^1.5 per unit.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "This would require a coefficient of 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1.5",
+              "explanation": "1.5 is the exponent, not the factor.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "10³ = 1000",
+          "correctExplanation": "Two units: 10^(1.5×2) = 10³ = 1000.",
+          "distractors": [
+            {
+              "answer": "63.2",
+              "explanation": "This is 31.6 × 2, treating it linearly.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "100",
+              "explanation": "This uses 10² instead of 10³.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Parallel lines on a semi-log graph indicate the same {{blank:1}} but different {{blank:2}}, because the lines have equal slopes but different intercepts.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "growth rate",
+          "correctExplanation": "The slope represents the rate of exponential change.",
+          "distractors": [
+            {
+              "answer": "initial value",
+              "explanation": "The initial value is the intercept, not the slope.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "data range",
+              "explanation": "The range does not determine parallelism.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "initial values",
+          "correctExplanation": "Different y-intercepts mean different starting quantities.",
+          "distractors": [
+            {
+              "answer": "growth rates",
+              "explanation": "Equal slopes mean equal growth rates.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "scales",
+              "explanation": "The scale is the same for parallel lines.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A log-log regression yields y = 2.5x^1.8. The exponent 1.8 means that a 10% increase in x causes approximately a {{blank:1}}% increase in y, showing {{blank:2}} returns.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "18",
+          "correctExplanation": "Elasticity: 1.8 × 10% = 18% increase.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "This ignores the exponent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1.8",
+              "explanation": "The percentage change is 1.8 × 10 = 18.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "increasing",
+          "correctExplanation": "Exponent > 1 means output grows faster than input.",
+          "distractors": [
+            {
+              "answer": "constant",
+              "explanation": "Constant returns would have exponent = 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diminishing",
+              "explanation": "Diminishing returns would have exponent < 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A Bode plot slope of −20 dB/decade means gain is {{blank:1}} by a factor of 10 for each tenfold increase in frequency, corresponding to a {{blank:2}} order filter.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "reduced",
+          "correctExplanation": "−20 dB means a reduction by factor 10.",
+          "distractors": [
+            {
+              "answer": "increased",
+              "explanation": "Negative slope indicates decrease.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unchanged",
+              "explanation": "The slope indicates a change in gain.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "first",
+          "correctExplanation": "−20 dB/decade corresponds to a first-order filter.",
+          "distractors": [
+            {
+              "answer": "second",
+              "explanation": "Second-order is −40 dB/decade.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "third",
+              "explanation": "Third-order is −60 dB/decade.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "When data curves on a semi-log plot but straightens on a log-log plot, the appropriate model is a {{blank:1}} function of the form y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "power",
+          "correctExplanation": "Power functions linearise on log-log graphs.",
+          "distractors": [
+            {
+              "answer": "exponential",
+              "explanation": "Exponential functions linearise on semi-log.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "linear",
+              "explanation": "Linear functions are straight on linear graphs.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "axⁿ",
+          "correctExplanation": "The power law form is y = axⁿ.",
+          "distractors": [
+            {
+              "answer": "ae^(bx)",
+              "explanation": "This is the exponential form.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mx + c",
+              "explanation": "This is the linear form.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "The Weber-Fechner law states that perceived sensation is proportional to the {{blank:1}} of stimulus intensity. This explains why decibel and pH scales are {{blank:2}} — they match human perception.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "logarithm",
+          "correctExplanation": "The law states sensation ∝ log(stimulus).",
+          "distractors": [
+            {
+              "answer": "square root",
+              "explanation": "The Weber-Fechner law uses logarithms.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "square",
+              "explanation": "Squaring would amplify, not compress, differences.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "logarithmic",
+          "correctExplanation": "Log scales align with how humans perceive proportional changes.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear scales do not match perception.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exponential",
+              "explanation": "The scales compress, not expand, values.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "A dataset with R² = 0.95 on semi-log and R² = 0.60 on log-log is best described as {{blank:1}}, while swapping those R² values would indicate a {{blank:2}} relationship.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exponential",
+          "correctExplanation": "Higher R² on semi-log confirms exponential fit.",
+          "distractors": [
+            {
+              "answer": "power law",
+              "explanation": "Power laws fit better on log-log.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "linear",
+              "explanation": "Linear data does not fit well on either.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "power law",
+          "correctExplanation": "Higher R² on log-log indicates a power relationship.",
+          "distractors": [
+            {
+              "answer": "exponential",
+              "explanation": "Exponential fits semi-log better.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "quadratic",
+              "explanation": "Quadratic does not linearise on either plot.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "In epidemiology, plotting cumulative cases on a semi-log graph helps identify whether spread is {{blank:1}} (straight line) or {{blank:2}} (curve flattening), informing public health responses.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exponential",
+          "correctExplanation": "Exponential spread is linear on semi-log.",
+          "distractors": [
+            {
+              "answer": "linear",
+              "explanation": "Linear spread would curve downward on semi-log.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "constant",
+              "explanation": "Constant cases would be horizontal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "slowing",
+          "correctExplanation": "A flattening curve indicates the growth rate is decreasing.",
+          "distractors": [
+            {
+              "answer": "accelerating",
+              "explanation": "Accelerating would curve upward.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "stable",
+              "explanation": "Stable would also be horizontal.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

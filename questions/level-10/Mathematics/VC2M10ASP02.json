@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10ASP02",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning the sine rule, cosine rule and area rule for any triangle and applying them to problems.",
+    "generatedAt": "2026-05-23T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning the sine rule, cosine rule and area rule for any triangle and applying them to problems.",
+    "y": [
+      "The sine rule, cosine rule and area rule extend trigonometry beyond right-angled triangles to any triangle — dramatically increasing the range of problems we can solve.",
+      "These tools are essential for surveying, navigation, engineering and any field requiring distance and angle calculations.",
+      "Understanding when to apply each rule develops our mathematical decision-making and problem-solving strategy."
+    ],
+    "eg": [
+      "Using the sine rule: a/sin(A) = b/sin(B) to find a missing side.",
+      "Applying the cosine rule: c² = a² + b² – 2ab·cos(C) to find a side when two sides and the included angle are known.",
+      "Using the area rule: Area = ½ab·sin(C) to find the area of a triangle without needing the height.",
+      "Solving a real problem: 'Two ships leave port at different angles. How far apart are they after 2 hours?'",
+      "Determining when to use the sine rule versus the cosine rule based on the given information.",
+      "Using the ambiguous case of the sine rule to identify when two solutions are possible."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The sine rule states a/sin A = b/sin B = c/sin C.",
+      "correct": "True",
+      "correctExplanation": "The sine rule relates each side of a triangle to the sine of its opposite angle.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The sine rule does relate sides to sines of opposite angles."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The cosine rule can only be used in right-angled triangles.",
+      "correct": "False",
+      "correctExplanation": "The cosine rule applies to any triangle. For right-angled triangles it simplifies to the Pythagorean theorem.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The cosine rule works for all triangles, not just right-angled ones."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The area of a triangle can be found using Area = (1/2)ab sin C.",
+      "correct": "True",
+      "correctExplanation": "The area rule uses two sides and the sine of the included angle.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The area rule uses two sides and the included angle's sine."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The cosine rule is used when two angles and a side are known.",
+      "correct": "False",
+      "correctExplanation": "The cosine rule requires either three sides or two sides and the included angle. Two angles and a side require the sine rule.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Two angles and a side require the sine rule, not the cosine rule."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "In the sine rule, each side is divided by the cosine of the opposite angle.",
+      "correct": "False",
+      "correctExplanation": "The sine rule divides each side by the sine of the opposite angle, not the cosine.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The sine rule uses sine, not cosine, of the opposite angle."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The cosine rule formula is c squared = a squared + b squared minus 2ab cos C.",
+      "correct": "True",
+      "correctExplanation": "This is the standard form of the cosine rule for finding a side.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The cosine rule formula is correctly stated."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The area rule gives the same result regardless of which two sides and included angle are used.",
+      "correct": "True",
+      "correctExplanation": "The area is a property of the triangle, so (1/2)ab sin C = (1/2)ac sin B = (1/2)bc sin A.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Any pair of sides with the included angle gives the same area."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The sine rule can produce two possible solutions when finding an angle.",
+      "correct": "True",
+      "correctExplanation": "The ambiguous case arises because sin θ = sin(180° − θ), giving two possible angles.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The sine rule can give two solutions in the ambiguous case."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The sine rule can be used to find the area of a triangle directly.",
+      "correct": "False",
+      "correctExplanation": "The sine rule finds sides and angles. The area rule (1/2)ab sin C is a separate formula for area.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The area rule, not the sine rule, calculates triangle area directly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "In the area formula, C must be the largest angle of the triangle.",
+      "correct": "False",
+      "correctExplanation": "C is the included angle between sides a and b; it can be any angle, not necessarily the largest.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "C is the angle between the two chosen sides, regardless of size."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The cosine rule requires all three angles to be known before it can be applied.",
+      "correct": "False",
+      "correctExplanation": "The cosine rule requires either three sides or two sides and the included angle. It does not require all three angles.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The cosine rule needs sides not all angles; angles alone are insufficient."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "When using the sine rule, the angle and side can be on the same side of the triangle.",
+      "correct": "False",
+      "correctExplanation": "The sine rule pairs each side with its opposite angle, not an angle on the same side.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The sine rule requires each side to be paired with the angle directly opposite it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "Which formula represents the sine rule?",
+      "correct": "a/sin A = b/sin B = c/sin C",
+      "correctExplanation": "The sine rule equates the ratio of each side to the sine of its opposite angle.",
+      "distractors": [
+        {
+          "answer": "a sin A = b sin B = c sin C overall",
+          "explanation": "The sine rule uses division, not multiplication."
+        },
+        {
+          "answer": "a + sin A = b + sin B = c + sin C",
+          "explanation": "The sine rule uses ratios, not sums."
+        },
+        {
+          "answer": "a cos A = b cos B = c cos C in total",
+          "explanation": "The cosine function is not used in the sine rule."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "When is the cosine rule most useful?",
+      "correct": "when two sides and the included angle are known",
+      "correctExplanation": "The cosine rule is used when the sine rule cannot be applied: SAS or SSS configurations.",
+      "distractors": [
+        {
+          "answer": "when two angles and one side are known here",
+          "explanation": "Two angles and a side is solved using the sine rule."
+        },
+        {
+          "answer": "when only one side of triangle is known here",
+          "explanation": "One side alone is insufficient for the cosine rule."
+        },
+        {
+          "answer": "when the triangle is right-angled at one vertex",
+          "explanation": "Right-angled triangles can use simpler trigonometric ratios."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What information is needed to use the area rule for a triangle?",
+      "correct": "two sides and the included angle",
+      "correctExplanation": "Area = (1/2)ab sin C requires two sides (a, b) and their included angle (C).",
+      "distractors": [
+        {
+          "answer": "three sides of the triangle in total",
+          "explanation": "Three sides use Heron's formula, not the area rule."
+        },
+        {
+          "answer": "one side and two angles of triangle",
+          "explanation": "One side and two angles do not directly give the area."
+        },
+        {
+          "answer": "the base and perpendicular height only",
+          "explanation": "Base and height use the simpler formula, not the area rule."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What does the cosine rule become when the included angle is 90 degrees?",
+      "correct": "the Pythagorean theorem for right triangles",
+      "correctExplanation": "When C = 90°, cos 90° = 0, so c² = a² + b², which is the Pythagorean theorem.",
+      "distractors": [
+        {
+          "answer": "the sine rule for all types of triangles",
+          "explanation": "The cosine rule simplifies to Pythagoras, not the sine rule."
+        },
+        {
+          "answer": "the area rule for right-angled triangles",
+          "explanation": "The area rule is a separate formula, not derived from the cosine rule at 90°."
+        },
+        {
+          "answer": "an identity that is always true for triangles",
+          "explanation": "The simplification is specific to right angles, not a general identity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "In the sine rule, what is paired with each side of the triangle?",
+      "correct": "the sine of its opposite angle",
+      "correctExplanation": "Each side a, b, c is divided by sin A, sin B, sin C respectively, where the angle is opposite the side.",
+      "distractors": [
+        {
+          "answer": "the cosine of its adjacent angle here",
+          "explanation": "The sine rule uses sine, not cosine, and the opposite angle."
+        },
+        {
+          "answer": "the tangent of its opposite angle here",
+          "explanation": "The sine rule uses sine, not tangent."
+        },
+        {
+          "answer": "the length of the adjacent side overall",
+          "explanation": "Sides are paired with angles, not other sides."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "What is the formula for the area of a triangle using two sides a and b and included angle C?",
+      "correct": "(1/2)ab sin C for the triangle area",
+      "correctExplanation": "The area rule multiplies half the product of two sides by the sine of the included angle.",
+      "distractors": [
+        {
+          "answer": "ab cos C for the triangle area in total",
+          "explanation": "The area formula uses sine, not cosine, and includes the factor 1/2."
+        },
+        {
+          "answer": "(1/2)ab cos C for the given triangle",
+          "explanation": "The area formula uses sine, not cosine, of the included angle."
+        },
+        {
+          "answer": "2ab sin C for the triangle area value",
+          "explanation": "The factor is 1/2, not 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which configuration of known information requires the sine rule?",
+      "correct": "two angles and one side of triangle",
+      "correctExplanation": "AAS or ASA configurations are solved using the sine rule.",
+      "distractors": [
+        {
+          "answer": "three sides of the triangle are known",
+          "explanation": "Three sides require the cosine rule, not the sine rule."
+        },
+        {
+          "answer": "two sides and the included angle here",
+          "explanation": "Two sides and the included angle require the cosine rule."
+        },
+        {
+          "answer": "only the three angles of the triangle",
+          "explanation": "Three angles alone cannot determine the triangle's size."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "In the cosine rule c² = a² + b² − 2ab cos C, what does C represent?",
+      "correct": "the angle between sides a and b",
+      "correctExplanation": "C is the included angle, the angle formed between sides a and b, opposite side c.",
+      "distractors": [
+        {
+          "answer": "the longest side of the given triangle",
+          "explanation": "C is an angle, not a side."
+        },
+        {
+          "answer": "the hypotenuse of the right triangle",
+          "explanation": "The cosine rule applies to all triangles, and C is an angle."
+        },
+        {
+          "answer": "any angle of the triangle at random",
+          "explanation": "C must be the specific angle between sides a and b."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is the ambiguous case of the sine rule?",
+      "correct": "when two possible triangles can exist",
+      "correctExplanation": "Given two sides and a non-included angle (SSA), the sine rule can yield two valid triangles.",
+      "distractors": [
+        {
+          "answer": "when no triangle can be formed at all",
+          "explanation": "The ambiguous case gives two triangles, not zero."
+        },
+        {
+          "answer": "when the triangle must be right-angled",
+          "explanation": "Right-angled triangles are a special case, not the ambiguous case."
+        },
+        {
+          "answer": "when all three sides are known values",
+          "explanation": "Three known sides use the cosine rule and have a unique solution."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "The cosine rule can be rearranged to find an angle. Which form gives cos C?",
+      "correct": "(a² + b² − c²) / (2ab) for angle C",
+      "correctExplanation": "Rearranging c² = a² + b² − 2ab cos C gives cos C = (a² + b² − c²) / (2ab).",
+      "distractors": [
+        {
+          "answer": "(c² − a² − b²) / (2ab) for angle C",
+          "explanation": "The numerator should be a² + b² − c², not c² − a² − b²."
+        },
+        {
+          "answer": "(a² + b² + c²) / (2ab) for this angle",
+          "explanation": "The formula subtracts c², not adds it."
+        },
+        {
+          "answer": "(a + b − c) / (2ab) for the given angle",
+          "explanation": "The formula uses squares of sides, not the sides directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "For which type of triangle does the area rule NOT simplify to (1/2) × base × height?",
+      "correct": "an obtuse triangle without a given height",
+      "correctExplanation": "In obtuse triangles, the height may fall outside, so the area rule avoids needing the height.",
+      "distractors": [
+        {
+          "answer": "a right-angled triangle with known sides",
+          "explanation": "Right-angled triangles easily use base × height."
+        },
+        {
+          "answer": "an equilateral triangle with side length",
+          "explanation": "Equilateral triangles have a simple height formula."
+        },
+        {
+          "answer": "an isosceles triangle with equal sides here",
+          "explanation": "Isosceles triangles can use base × height when height is accessible."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "How many ratios are equated in the full sine rule?",
+      "correct": "three ratios are equated in total",
+      "correctExplanation": "The sine rule equates a/sin A = b/sin B = c/sin C, which is three ratios.",
+      "distractors": [
+        {
+          "answer": "two ratios are equated for any triangle",
+          "explanation": "All three side-angle pairs are equated, not just two."
+        },
+        {
+          "answer": "four ratios for a complete description",
+          "explanation": "A triangle has three sides and three angles, giving three ratios."
+        },
+        {
+          "answer": "one ratio that applies to every triangle",
+          "explanation": "The sine rule equates three ratios, not just one."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The sine rule states that a/sin A = b/{{blank:1}} = c/sin C, relating each side to the {{blank:2}} of its opposite angle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sin B",
+          "correctExplanation": "Each side is divided by the sine of its opposite angle in the sine rule.",
+          "distractors": [
+            {
+              "answer": "cos B",
+              "explanation": "The sine rule uses sine, not cosine.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tan B",
+              "explanation": "The sine rule uses sine, not tangent.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sine",
+          "correctExplanation": "The sine function is used in the sine rule formula.",
+          "distractors": [
+            {
+              "answer": "cosine",
+              "explanation": "The cosine function is used in the cosine rule, not the sine rule.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tangent",
+              "explanation": "The tangent function is not part of the sine rule.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The area of a triangle equals (1/2)ab sin C, where a and b are two {{blank:1}} and C is the {{blank:2}} angle between them.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sides",
+          "correctExplanation": "The area rule requires two sides of the triangle.",
+          "distractors": [
+            {
+              "answer": "angles",
+              "explanation": "The formula uses two sides, not two angles.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diagonals",
+              "explanation": "Triangles do not have diagonals; the formula uses sides.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "included",
+          "correctExplanation": "The included angle is the angle formed between the two chosen sides.",
+          "distractors": [
+            {
+              "answer": "opposite",
+              "explanation": "The opposite angle is across from a side, not between two sides.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exterior",
+              "explanation": "The exterior angle is outside the triangle, not between two sides.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The sine rule is preferred over the cosine rule when two angles and a side are known.",
+      "correct": "True",
+      "correctExplanation": "With two angles known, the third angle can be found, and the sine rule directly gives the missing sides.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The sine rule is indeed the efficient choice for AAS/ASA configurations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The cosine rule can always be used instead of the sine rule.",
+      "correct": "False",
+      "correctExplanation": "The cosine rule cannot directly find a side when only two angles and one side are known without additional steps.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The sine rule is necessary for certain configurations the cosine rule cannot handle directly."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "In the ambiguous case, the sine rule always gives exactly two solutions.",
+      "correct": "False",
+      "correctExplanation": "The ambiguous case can give zero, one, or two solutions depending on the given measurements.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The ambiguous case can yield zero, one, or two solutions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The area rule gives a positive result only when angle C is between 0 and 180 degrees.",
+      "correct": "True",
+      "correctExplanation": "For 0° < C < 180°, sin C > 0, so the area is positive. At 0° or 180° the triangle degenerates.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Sine is positive in this range, giving a positive area."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "When using the cosine rule to find an angle, a negative value of cos C means the angle is acute.",
+      "correct": "False",
+      "correctExplanation": "A negative cosine indicates the angle is obtuse (between 90° and 180°).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Negative cosine corresponds to an obtuse angle, not acute."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "The sine rule can determine whether a triangle is acute, right-angled, or obtuse.",
+      "correct": "False",
+      "correctExplanation": "The sine rule finds sides and angles but does not directly classify the triangle type. The cosine rule is better for this.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Triangle classification by angle type is done via the cosine rule, not the sine rule."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The area of a triangle is maximised when the included angle is 90 degrees.",
+      "correct": "True",
+      "correctExplanation": "Area = (1/2)ab sin C is maximised when sin C = 1, which occurs at C = 90°.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Sin C is maximised at 90°, giving the maximum area for fixed sides."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "If all three sides of a triangle are known, the sine rule is the best choice for finding an angle.",
+      "correct": "False",
+      "correctExplanation": "With three sides known, the cosine rule (rearranged) is used to find angles directly.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Three sides require the cosine rule, not the sine rule."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Why does the sine rule sometimes give two possible angles?",
+      "correct": "because sin θ = sin(180° − θ) always",
+      "correctExplanation": "The sine function gives the same value for supplementary angles, creating ambiguity.",
+      "distractors": [
+        {
+          "answer": "because triangles can have two right angles",
+          "explanation": "A triangle cannot have two right angles."
+        },
+        {
+          "answer": "because the formula has a calculation error",
+          "explanation": "The formula is correct; the ambiguity is inherent in the sine function."
+        },
+        {
+          "answer": "because all angles must be acute in triangles",
+          "explanation": "Triangles can have obtuse angles; this does not cause the ambiguity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A triangle has sides 5 cm, 7 cm and 10 cm. Which rule should be used to find the largest angle?",
+      "correct": "the cosine rule with three known sides",
+      "correctExplanation": "With SSS, the cosine rule is rearranged: cos C = (a² + b² − c²)/(2ab) to find the angle.",
+      "distractors": [
+        {
+          "answer": "the sine rule with two known angles here",
+          "explanation": "No angles are known, so the sine rule cannot be applied."
+        },
+        {
+          "answer": "the area rule using base and height values",
+          "explanation": "The area rule finds area, not angles."
+        },
+        {
+          "answer": "the Pythagorean theorem for all triangles",
+          "explanation": "The Pythagorean theorem only works for right-angled triangles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "In the area formula (1/2)ab sin C, what happens to the area as angle C increases from 0° to 90°?",
+      "correct": "the area increases as sin C increases",
+      "correctExplanation": "Sin C increases from 0 to 1 as C goes from 0° to 90°, so the area increases.",
+      "distractors": [
+        {
+          "answer": "the area stays constant for all angle values",
+          "explanation": "The area depends on sin C, which changes with C."
+        },
+        {
+          "answer": "the area decreases as the angle gets larger",
+          "explanation": "Sin C increases from 0° to 90°, so the area increases."
+        },
+        {
+          "answer": "the area becomes zero at 90 degrees total",
+          "explanation": "At 90°, sin 90° = 1, giving maximum area, not zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "When does the cosine rule simplify to the Pythagorean theorem?",
+      "correct": "when the included angle equals 90 degrees",
+      "correctExplanation": "cos 90° = 0, so the −2ab cos C term vanishes, leaving c² = a² + b².",
+      "distractors": [
+        {
+          "answer": "when all three sides are equal in length",
+          "explanation": "Equal sides make an equilateral triangle but do not simplify to Pythagoras."
+        },
+        {
+          "answer": "when the triangle has no obtuse angles",
+          "explanation": "Acute triangles still have a non-zero cos C term."
+        },
+        {
+          "answer": "when two sides of the triangle are equal",
+          "explanation": "Isosceles triangles do not simplify to Pythagoras unless right-angled."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why is the cosine rule considered a generalisation of the Pythagorean theorem?",
+      "correct": "it works for any triangle, not just right ones",
+      "correctExplanation": "The Pythagorean theorem is the special case of the cosine rule when the angle is 90°.",
+      "distractors": [
+        {
+          "answer": "it uses the same formula without any changes",
+          "explanation": "The cosine rule adds the −2ab cos C term."
+        },
+        {
+          "answer": "it was discovered before the Pythagorean theorem",
+          "explanation": "Historical order does not define generalisation."
+        },
+        {
+          "answer": "it only applies to right-angled triangles here",
+          "explanation": "The cosine rule applies to all triangles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A student has two sides and the angle opposite one of them. Which rule applies?",
+      "correct": "the sine rule for this configuration",
+      "correctExplanation": "SSA (two sides and an opposite angle) is solved with the sine rule, possibly with two solutions.",
+      "distractors": [
+        {
+          "answer": "the cosine rule for this configuration here",
+          "explanation": "The cosine rule needs the included angle, not an opposite angle."
+        },
+        {
+          "answer": "neither rule works for this given data here",
+          "explanation": "The sine rule handles SSA, though ambiguity may arise."
+        },
+        {
+          "answer": "both rules give identical results always here",
+          "explanation": "Only the sine rule directly applies to this configuration."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "What is the maximum possible area of a triangle with sides 6 cm and 8 cm?",
+      "correct": "24 cm² when the included angle is 90°",
+      "correctExplanation": "Area = (1/2)(6)(8) sin C is maximised when sin C = 1 (C = 90°), giving 24 cm².",
+      "distractors": [
+        {
+          "answer": "48 cm² when the angle is 180 degrees here",
+          "explanation": "At 180° the triangle degenerates; sin 180° = 0."
+        },
+        {
+          "answer": "14 cm² when the angle is 30 degrees here",
+          "explanation": "At 30°, sin 30° = 0.5, giving 12 cm², not the maximum."
+        },
+        {
+          "answer": "0 cm² because no triangle can be formed",
+          "explanation": "A triangle can be formed for any included angle between 0° and 180°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "If cos C is negative when using the cosine rule to find angle C, what does this indicate?",
+      "correct": "angle C is obtuse, between 90° and 180°",
+      "correctExplanation": "Cosine is negative for angles between 90° and 180°, indicating an obtuse angle.",
+      "distractors": [
+        {
+          "answer": "angle C is acute, between 0° and 90° here",
+          "explanation": "Negative cosine means obtuse, not acute."
+        },
+        {
+          "answer": "the calculation contains an error somewhere",
+          "explanation": "Negative cosine is valid and indicates an obtuse angle."
+        },
+        {
+          "answer": "the triangle cannot exist with these sides",
+          "explanation": "A negative cosine is mathematically valid for obtuse triangles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "For the area rule, why must the angle used be the included angle between the two sides?",
+      "correct": "the formula derives from the height projection",
+      "correctExplanation": "The height of the triangle is b sin C when C is between sides a and b, giving area = (1/2)a(b sin C).",
+      "distractors": [
+        {
+          "answer": "any angle gives the correct area regardless",
+          "explanation": "Only the included angle gives the correct area with those two sides."
+        },
+        {
+          "answer": "the opposite angle is always 90 degrees here",
+          "explanation": "The opposite angle is generally not 90°."
+        },
+        {
+          "answer": "the included angle is always the largest angle",
+          "explanation": "The included angle can be any size; it need not be the largest."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "A triangle has a = 10, B = 30° and A = 45°. Using the sine rule, what is b?",
+      "correct": "b = 10 sin 30° / sin 45° which is about 7.07",
+      "correctExplanation": "By sine rule: b/sin 30° = 10/sin 45°, so b = 10(0.5/0.7071) ≈ 7.07.",
+      "distractors": [
+        {
+          "answer": "b = 10 sin 45° / sin 30° giving about 14.14",
+          "explanation": "The ratio is inverted; b uses sin 30° over sin 45°."
+        },
+        {
+          "answer": "b = 10 cos 30° / cos 45° giving a different value",
+          "explanation": "The sine rule uses sine, not cosine."
+        },
+        {
+          "answer": "b = 10 tan 30° / tan 45° for the result here",
+          "explanation": "The sine rule uses sine, not tangent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "When given SSS, which rule is used first and what does it find?",
+      "correct": "the cosine rule to find the largest angle",
+      "correctExplanation": "With three sides, the cosine rule finds the angle opposite the longest side first.",
+      "distractors": [
+        {
+          "answer": "the sine rule to find the smallest angle",
+          "explanation": "The sine rule needs at least one angle, which SSS does not provide."
+        },
+        {
+          "answer": "the area rule to find the triangle area",
+          "explanation": "The area rule needs an angle; Heron's formula handles SSS area."
+        },
+        {
+          "answer": "no rule can solve a triangle with SSS here",
+          "explanation": "The cosine rule solves SSS triangles directly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "In the ambiguous case (SSA), what determines whether zero, one, or two triangles exist?",
+      "correct": "the length of the given side opposite the angle",
+      "correctExplanation": "Comparing the opposite side to the height (a sin A) determines the number of valid triangles.",
+      "distractors": [
+        {
+          "answer": "the size of the included angle only here",
+          "explanation": "The given angle is opposite, not included, and the side length matters too."
+        },
+        {
+          "answer": "whether the triangle is equilateral or not",
+          "explanation": "Equilateral triangles are irrelevant to the ambiguous case."
+        },
+        {
+          "answer": "the number of known angles in the problem",
+          "explanation": "The ambiguous case involves SSA, where only one angle is known."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "When two sides and the {{blank:1}} angle are known, the {{blank:2}} rule is used to find the third side.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "included",
+          "correctExplanation": "The included angle is between the two known sides.",
+          "distractors": [
+            {
+              "answer": "opposite",
+              "explanation": "An opposite angle requires the sine rule, not the cosine rule.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exterior",
+              "explanation": "The exterior angle is outside the triangle; the interior included angle is needed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cosine",
+          "correctExplanation": "The cosine rule directly finds the third side from SAS.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine rule needs a side-angle pair, which SAS does not directly provide.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "area",
+              "explanation": "The area rule finds area, not side lengths.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The ambiguous case of the sine rule arises when given two {{blank:1}} and a non-included {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sides",
+          "correctExplanation": "SSA (two sides and a non-included angle) can give ambiguous results.",
+          "distractors": [
+            {
+              "answer": "angles",
+              "explanation": "Two angles and a side (AAS) give a unique solution.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diagonals",
+              "explanation": "Triangles do not have diagonals.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "angle",
+          "correctExplanation": "The non-included angle is opposite one of the known sides.",
+          "distractors": [
+            {
+              "answer": "side",
+              "explanation": "A non-included side does not create the ambiguous case.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "vertex",
+              "explanation": "A vertex is a point, not a measurement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The area rule Area = (1/2)ab sin C reaches its maximum when sin C = {{blank:1}}, which occurs at C = {{blank:2}} degrees.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "The maximum value of sine is 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Sin C = 0 gives zero area, which is the minimum.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "Sin C = 0.5 at 30° gives half the maximum area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "90",
+          "correctExplanation": "Sin 90° = 1, the maximum value of the sine function.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "Sin 180° = 0, giving zero area.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "Sin 45° ≈ 0.707, not the maximum.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The cosine rule rearranged to find an angle gives cos C = (a² + b² − {{blank:1}}) / ({{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "c²",
+          "correctExplanation": "The square of the side opposite the angle is subtracted.",
+          "distractors": [
+            {
+              "answer": "c",
+              "explanation": "The formula uses c squared, not c.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2ab",
+              "explanation": "2ab is the denominator, not subtracted in the numerator.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2ab",
+          "correctExplanation": "The denominator is twice the product of the other two sides.",
+          "distractors": [
+            {
+              "answer": "a² + b²",
+              "explanation": "a² + b² is part of the numerator, not the denominator.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "abc",
+              "explanation": "The denominator is 2ab, not the product of all three sides.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "If cos C is negative, angle C is {{blank:1}} because cosine is negative for angles between 90° and {{blank:2}} degrees.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "obtuse",
+          "correctExplanation": "An obtuse angle is between 90° and 180°.",
+          "distractors": [
+            {
+              "answer": "acute",
+              "explanation": "Acute angles have positive cosine values.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "reflex",
+              "explanation": "Reflex angles are between 180° and 360°; triangle angles cannot be reflex.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "180",
+          "correctExplanation": "Cosine is negative for angles between 90° and 180°.",
+          "distractors": [
+            {
+              "answer": "360",
+              "explanation": "360° is a full rotation; triangle angles are at most just under 180°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "270",
+              "explanation": "270° is beyond the range of triangle angles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "For SSS configuration, the {{blank:1}} rule is applied first because the {{blank:2}} rule requires at least one known angle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cosine",
+          "correctExplanation": "The cosine rule can find an angle from three sides.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine rule needs at least one known angle-side pair.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "area",
+              "explanation": "The area rule also needs an angle.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sine",
+          "correctExplanation": "The sine rule requires a/sin A, needing at least one angle.",
+          "distractors": [
+            {
+              "answer": "cosine",
+              "explanation": "The cosine rule works with three sides and no angles.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tangent",
+              "explanation": "There is no tangent rule for triangles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "A triangle has sides 3, 4 and 5. Using the cosine rule, the angle opposite the side of length 5 is 90 degrees.",
+      "correct": "True",
+      "correctExplanation": "cos C = (9 + 16 − 25)/(2 × 3 × 4) = 0/24 = 0, so C = 90°.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The cosine rule confirms that a 3-4-5 triangle is right-angled."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The area of a triangle with sides 6 and 10 and included angle 150° is 30 square units.",
+      "correct": "False",
+      "correctExplanation": "Area = (1/2)(6)(10) sin 150° = 30 × 0.5 = 15 square units, not 30.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sin 150° = 0.5, so the area is 15, not 30."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Find side c in a triangle where a = 8, b = 6 and C = 60° using the cosine rule.",
+      "correct": "c² = 64 + 36 − 48 = 52, so c ≈ 7.21",
+      "correctExplanation": "c² = 8² + 6² − 2(8)(6)cos 60° = 100 − 48 = 52, giving c ≈ 7.21.",
+      "distractors": [
+        {
+          "answer": "c² = 64 + 36 + 48 = 148, so c ≈ 12.17",
+          "explanation": "The cosine rule subtracts 2ab cos C, not adds it."
+        },
+        {
+          "answer": "c² = 64 − 36 − 48 = −20, no real answer",
+          "explanation": "Subtraction is wrong; a² + b² is addition."
+        },
+        {
+          "answer": "c = 8 + 6 − 2(8)(6) = −82, which is invalid",
+          "explanation": "The formula uses squares and cosine, not simple arithmetic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A triangle has a = 10, A = 50° and B = 70°. Find side b using the sine rule.",
+      "correct": "b = 10 sin 70° / sin 50° ≈ 12.26",
+      "correctExplanation": "b/sin 70° = 10/sin 50°, so b = 10(sin 70°/sin 50°) ≈ 12.26.",
+      "distractors": [
+        {
+          "answer": "b = 10 sin 50° / sin 70° ≈ 8.15 here",
+          "explanation": "The ratio should have sin 70° in the numerator for side b."
+        },
+        {
+          "answer": "b = 10 cos 70° / cos 50° ≈ 5.32 here",
+          "explanation": "The sine rule uses sine, not cosine."
+        },
+        {
+          "answer": "b = 10 tan 70° / tan 50° ≈ 23.06 here",
+          "explanation": "The sine rule uses sine, not tangent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Find the area of a triangle with sides 7 and 9 and included angle 120°.",
+      "correct": "Area = (1/2)(7)(9) sin 120° ≈ 27.28",
+      "correctExplanation": "Area = 0.5 × 7 × 9 × sin 120° = 31.5 × (√3/2) ≈ 27.28.",
+      "distractors": [
+        {
+          "answer": "Area = (1/2)(7)(9) cos 120° = −15.75 here",
+          "explanation": "The area formula uses sine, not cosine."
+        },
+        {
+          "answer": "Area = 7 × 9 × sin 120° = 54.56 overall",
+          "explanation": "The formula includes a factor of 1/2."
+        },
+        {
+          "answer": "Area = (1/2)(7)(9) sin 60° ≈ 27.28 exact",
+          "explanation": "Sin 120° = sin 60° numerically, but the reasoning should use the given angle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A triangle has sides a = 5, b = 7, c = 9. Find angle C using the cosine rule.",
+      "correct": "cos C = (25 + 49 − 81)/70 = −0.1, C ≈ 95.7°",
+      "correctExplanation": "cos C = (a² + b² − c²)/(2ab) = (74 − 81)/70 = −0.1, so C ≈ 95.7°.",
+      "distractors": [
+        {
+          "answer": "cos C = (81 − 25 − 49)/70 = 0.1, C ≈ 84.3°",
+          "explanation": "The numerator is a² + b² − c², not c² − a² − b²."
+        },
+        {
+          "answer": "cos C = (25 + 49 + 81)/70 = 2.21, undefined",
+          "explanation": "The formula subtracts c², not adds."
+        },
+        {
+          "answer": "cos C = 9/(2 × 5 × 7) = 0.129, C ≈ 82.6°",
+          "explanation": "The numerator must be a² + b² − c², not just c."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Two ships leave port. Ship A travels 12 km on a bearing of 040° and Ship B travels 15 km on a bearing of 100°. Find the distance between them.",
+      "correct": "use cosine rule with angle 60° between paths",
+      "correctExplanation": "The angle between bearings is 100° − 40° = 60°. Apply c² = 12² + 15² − 2(12)(15)cos 60°.",
+      "distractors": [
+        {
+          "answer": "add the two distances giving 27 km total",
+          "explanation": "Adding distances gives the total path, not the direct distance."
+        },
+        {
+          "answer": "subtract the distances giving 3 km apart",
+          "explanation": "Subtracting gives a wrong answer; the cosine rule is needed."
+        },
+        {
+          "answer": "use Pythagoras since it is a right angle",
+          "explanation": "The angle between paths is 60°, not 90°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "In triangle PQR, p = 11, q = 13, R = 45°. Find side r.",
+      "correct": "r² = 121 + 169 − 286 cos 45° ≈ 87.7",
+      "correctExplanation": "r² = 11² + 13² − 2(11)(13)cos 45° = 290 − 202.2 ≈ 87.7, so r ≈ 9.37.",
+      "distractors": [
+        {
+          "answer": "r² = 121 + 169 + 286 cos 45° ≈ 492.2",
+          "explanation": "The cosine rule subtracts the 2ab cos C term."
+        },
+        {
+          "answer": "r = 11 + 13 − 2(11)(13) = −262 invalid here",
+          "explanation": "The formula uses squared sides and cosine."
+        },
+        {
+          "answer": "r = sin 45° × 13/11 ≈ 0.836 which fails",
+          "explanation": "This confuses the sine rule with the cosine rule."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Find the area of triangle ABC where a = 5, b = 8 and C = 30°.",
+      "correct": "Area = (1/2)(5)(8)(0.5) = 10 square units",
+      "correctExplanation": "Area = 0.5 × 5 × 8 × sin 30° = 0.5 × 5 × 8 × 0.5 = 10.",
+      "distractors": [
+        {
+          "answer": "Area = 5 × 8 × sin 30° = 20 square units",
+          "explanation": "The formula includes a factor of 1/2."
+        },
+        {
+          "answer": "Area = (1/2)(5)(8) cos 30° ≈ 17.32 units",
+          "explanation": "The area formula uses sine, not cosine."
+        },
+        {
+          "answer": "Area = (1/2)(5 + 8) sin 30° = 3.25 total",
+          "explanation": "The formula multiplies the sides, not adds them."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A surveyor stands 50 m from a building. The angle of elevation to the top is 35°. Using the sine rule with a triangle that includes a 90° angle, find the building height.",
+      "correct": "h = 50 tan 35° ≈ 35.0 m for the height",
+      "correctExplanation": "In this right triangle, tan 35° = h/50, so h = 50 tan 35° ≈ 35.0 m.",
+      "distractors": [
+        {
+          "answer": "h = 50 sin 35° ≈ 28.7 m for the height",
+          "explanation": "Sin 35° gives the ratio to the hypotenuse, not the adjacent side."
+        },
+        {
+          "answer": "h = 50 cos 35° ≈ 40.96 m for the total",
+          "explanation": "Cos 35° relates the adjacent side to the hypotenuse."
+        },
+        {
+          "answer": "h = 50 / tan 35° ≈ 71.4 m for the answer",
+          "explanation": "Dividing by tan gives the wrong ratio; multiply instead."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Triangle ABC has A = 40°, B = 65° and c = 14. Find side a using the sine rule.",
+      "correct": "a = 14 sin 40° / sin 75° ≈ 9.31",
+      "correctExplanation": "C = 180° − 40° − 65° = 75°. By sine rule: a/sin 40° = 14/sin 75°, so a ≈ 9.31.",
+      "distractors": [
+        {
+          "answer": "a = 14 sin 75° / sin 40° ≈ 21.04 total",
+          "explanation": "The ratio is inverted; a uses sin A in the numerator."
+        },
+        {
+          "answer": "a = 14 sin 40° / sin 65° ≈ 9.93 overall",
+          "explanation": "The denominator should use sin C = sin 75°, not sin B."
+        },
+        {
+          "answer": "a = 14 cos 40° / cos 75° ≈ 41.44 given",
+          "explanation": "The sine rule uses sine, not cosine."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A triangle has a = 8, b = 5 and A = 110°. How many triangles are possible?",
+      "correct": "exactly one because A is obtuse and a > b",
+      "correctExplanation": "When the given angle is obtuse and the opposite side is the longest, exactly one triangle exists.",
+      "distractors": [
+        {
+          "answer": "two triangles from the ambiguous case here",
+          "explanation": "The ambiguous case gives two solutions only for acute given angles with specific conditions."
+        },
+        {
+          "answer": "no triangle can be formed with these values",
+          "explanation": "A triangle can be formed because a > b and A is obtuse."
+        },
+        {
+          "answer": "infinitely many triangles are possible here",
+          "explanation": "Fixed measurements determine a unique or finite number of triangles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A triangular field has sides 120 m, 150 m and 200 m. Find the area using the cosine rule and area formula.",
+      "correct": "find largest angle first, then use area rule",
+      "correctExplanation": "Use cosine rule to find angle opposite 200 m, then apply area = (1/2)(120)(150) sin C.",
+      "distractors": [
+        {
+          "answer": "multiply all three sides together for area",
+          "explanation": "Multiplying three sides does not give area."
+        },
+        {
+          "answer": "add the three sides and divide by two here",
+          "explanation": "Adding sides gives the semi-perimeter, not the area."
+        },
+        {
+          "answer": "use base times height but no height is given",
+          "explanation": "Without a height, the area rule with the cosine rule is needed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Two hikers start from the same point. Hiker A walks 3 km north, then 4 km east. What is the direct distance from start to finish?",
+      "correct": "5 km by the Pythagorean theorem directly",
+      "correctExplanation": "The path forms a right angle: d² = 3² + 4² = 25, so d = 5 km.",
+      "distractors": [
+        {
+          "answer": "7 km adding the two distances together here",
+          "explanation": "The direct distance is the hypotenuse, not the sum."
+        },
+        {
+          "answer": "1 km subtracting the two distances for total",
+          "explanation": "Subtraction does not apply in distance calculations."
+        },
+        {
+          "answer": "12 km multiplying the two distances together",
+          "explanation": "Multiplying distances does not give the direct distance."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Using the cosine rule with a = 5, b = 8, C = 60°: c² = 25 + 64 − {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "40",
+          "correctExplanation": "2ab cos C = 2(5)(8)(0.5) = 40.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "80 would be 2ab without the cos 60° factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "20",
+              "explanation": "20 confuses the formula; 2(5)(8)(0.5) = 40.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "49",
+          "correctExplanation": "89 − 40 = 49, so c = 7.",
+          "distractors": [
+            {
+              "answer": "129",
+              "explanation": "129 results from adding instead of subtracting.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "89",
+              "explanation": "89 is a² + b² before the subtraction step.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "The area of a triangle with sides 10 and 12 and included angle 30° is (1/2)(10)(12) sin 30° = {{blank:1}} × {{blank:2}} = 30 square units.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "(1/2)(10)(12) = 60.",
+          "distractors": [
+            {
+              "answer": "120",
+              "explanation": "120 omits the factor of 1/2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "22",
+              "explanation": "22 adds 10 + 12 instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.5",
+          "correctExplanation": "Sin 30° = 0.5.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Sin 30° = 0.5, not 1; sin 90° = 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.866",
+              "explanation": "0.866 is sin 60°, not sin 30°.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "Using the sine rule: b = a sin B / sin A. With a = 12, A = 40° and B = 70°, b = 12 × sin {{blank:1}}° / sin {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "70",
+          "correctExplanation": "B = 70° goes in the numerator because b is opposite B.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "40° is angle A; angle B goes in the numerator for side b.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "110",
+              "explanation": "110° is the third angle, not angle B.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "40",
+          "correctExplanation": "A = 40° goes in the denominator because a is opposite A.",
+          "distractors": [
+            {
+              "answer": "70",
+              "explanation": "70° is angle B; angle A is in the denominator.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "50",
+              "explanation": "50° is not an angle in this triangle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A triangle has sides 7, 8 and 13. Using the cosine rule: cos C = (49 + 64 − 169) / {{blank:1}} = {{blank:2}}/112.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "112",
+          "correctExplanation": "2ab = 2(7)(8) = 112.",
+          "distractors": [
+            {
+              "answer": "56",
+              "explanation": "56 = 7 × 8, which omits the factor of 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "15",
+              "explanation": "15 adds the sides instead of using the formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−56",
+          "correctExplanation": "49 + 64 − 169 = −56.",
+          "distractors": [
+            {
+              "answer": "56",
+              "explanation": "The numerator is negative: 113 − 169 = −56.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−6",
+              "explanation": "−6 results from an arithmetic error.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "Two forces of 5 N and 8 N act at an angle of 120° to each other. The resultant force is found using the {{blank:1}} rule, giving r² = 25 + 64 − 80 cos 120° = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cosine",
+          "correctExplanation": "The cosine rule finds the resultant of two forces at an angle.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine rule does not directly find the resultant force.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "area",
+              "explanation": "The area rule finds area, not force magnitudes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "129",
+          "correctExplanation": "cos 120° = −0.5, so −80(−0.5) = +40, giving 25 + 64 + 40 = 129.",
+          "distractors": [
+            {
+              "answer": "49",
+              "explanation": "49 results from subtracting 40 instead of adding (wrong cos sign).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "89",
+              "explanation": "89 omits the −2ab cos C term entirely.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A ship sails 15 km on bearing 060° then 20 km on bearing 150°. The angle between the legs is {{blank:1}}° and the direct distance uses the {{blank:2}} rule.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "90",
+          "correctExplanation": "The bearing change is 150° − 60° = 90°.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "60° is the first bearing, not the angle between the legs.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "150",
+              "explanation": "150° is the second bearing, not the angle between legs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cosine",
+          "correctExplanation": "With two sides and the included angle, the cosine rule gives the direct distance.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine rule needs an angle-side pair; the cosine rule suits SAS.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "area",
+              "explanation": "The area rule finds area, not distance.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "In the ambiguous case with a = 7, b = 10 and A = 30°, sin B = {{blank:1}} sin 30° / 7 = {{blank:2}}/7.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "By the sine rule: sin B/b = sin A/a, so sin B = b sin A / a = 10 sin 30° / 7.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 is side a; the numerator uses side b = 10.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "30 is the angle, not a side length.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "5",
+          "correctExplanation": "10 × sin 30° = 10 × 0.5 = 5.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10 is side b; sin 30° = 0.5, giving 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3.5",
+              "explanation": "3.5 = 7 × 0.5, using the wrong side.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A parallelogram has sides 6 and 10 with an acute angle of 50°. Its area equals {{blank:1}} × sin 50° = {{blank:2}} × 0.766 ≈ 45.96 square units.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "A parallelogram has two triangles: area = 2 × (1/2)(6)(10) sin 50° = 60 sin 50°.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "30 = (1/2)(6)(10) is the area of one triangle, not the parallelogram.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "16",
+              "explanation": "16 = 6 + 10 adds the sides instead of multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "60",
+          "correctExplanation": "60 is the coefficient of sin 50° in the parallelogram area formula.",
+          "distractors": [
+            {
+              "answer": "120",
+              "explanation": "120 would double-count the parallelogram area.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "30",
+              "explanation": "30 is half the parallelogram area.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "To find the height of a tree, a surveyor measures a baseline of 50 m and angles of {{blank:1}} from each end. The triangle formed is solved using the {{blank:2}} rule.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "elevation",
+          "correctExplanation": "Angles of elevation to the top of the tree are measured from each end of the baseline.",
+          "distractors": [
+            {
+              "answer": "depression",
+              "explanation": "Depression is measured looking down, not up to a tree.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "inclination",
+              "explanation": "Inclination is a general term; elevation is the standard surveying term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sine",
+          "correctExplanation": "With a known side and two angles, the sine rule finds the remaining sides.",
+          "distractors": [
+            {
+              "answer": "cosine",
+              "explanation": "The cosine rule needs two sides and an included angle, not two angles.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "area",
+              "explanation": "The area rule finds area, not side lengths.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "A pilot flies 200 km on bearing 030° then 150 km on bearing 120°. The included angle is {{blank:1}}° and the distance back is found with the {{blank:2}} rule.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "90",
+          "correctExplanation": "The included angle is 120° − 30° = 90°.",
+          "distractors": [
+            {
+              "answer": "150",
+              "explanation": "150° is the sum of the bearings, not the included angle.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "30",
+              "explanation": "30° is the first bearing, not the angle between legs.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cosine",
+          "correctExplanation": "With two sides and an included angle, the cosine rule applies.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine rule is not the first choice for SAS.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "area",
+              "explanation": "The area rule gives area, not distance.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "In triangle XYZ, x = 9, y = 11, Z = 100°. The area = (1/2)(9)(11) sin {{blank:1}}° = 49.5 × {{blank:2}} ≈ 48.74 square units.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "100",
+          "correctExplanation": "Z = 100° is the included angle between sides x and y.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "80° is the complement of 100° from 180°, not the included angle.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "90",
+              "explanation": "90° would give maximum area; the actual included angle is 100°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.985",
+          "correctExplanation": "Sin 100° ≈ 0.985.",
+          "distractors": [
+            {
+              "answer": "0.174",
+              "explanation": "0.174 = sin 10°, not sin 100°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−0.174",
+              "explanation": "Cosine of 100° is negative, but sin 100° is positive.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A triangle has a = 6, A = 45° and b = 8. The sine rule gives sin B = 8 sin 45° / {{blank:1}} ≈ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "By the sine rule: sin B = b sin A / a = 8 sin 45° / 6.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "8 is side b; the denominator uses side a = 6.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "45 is the angle, not a side length.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.943",
+          "correctExplanation": "8 × 0.7071 / 6 ≈ 0.943.",
+          "distractors": [
+            {
+              "answer": "1.333",
+              "explanation": "1.333 = 8/6, omitting the sin 45° factor.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "0.471",
+              "explanation": "0.471 = sin 45° × 6/9, using wrong values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student uses the sine rule to find angle B and gets sin B = 0.8. The student writes B = 53.1°. Why might this be incomplete?",
+      "correct": "B could also be 126.9° from the ambiguity",
+      "correctExplanation": "sin 53.1° = sin 126.9° = 0.8, so a second solution may exist.",
+      "distractors": [
+        {
+          "answer": "53.1 is the only valid angle for sin 0.8",
+          "explanation": "The sine function gives two angles in [0°, 180°] for the same value."
+        },
+        {
+          "answer": "the student should have used cosine instead",
+          "explanation": "The sine rule is appropriate for this problem."
+        },
+        {
+          "answer": "0.8 is too large a value for the sine here",
+          "explanation": "Sin values up to 1 are valid; 0.8 is within range."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A triangle has sides 3, 5 and 9. Can this triangle exist? Justify using the cosine rule.",
+      "correct": "no, because 3 + 5 < 9 violates the inequality",
+      "correctExplanation": "The triangle inequality requires each side to be less than the sum of the other two.",
+      "distractors": [
+        {
+          "answer": "yes, the cosine rule gives a valid angle here",
+          "explanation": "The triangle inequality is violated, so no triangle can be formed."
+        },
+        {
+          "answer": "no, because the cosine rule gives cos = 0 here",
+          "explanation": "The issue is the triangle inequality, not cos = 0."
+        },
+        {
+          "answer": "yes, all sets of three sides form a triangle",
+          "explanation": "Three sides must satisfy the triangle inequality."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Compare the cosine rule and the sine rule for solving a triangle with two sides and an included angle. Why is the cosine rule preferred?",
+      "correct": "the cosine rule directly finds the third side",
+      "correctExplanation": "SAS gives the cosine rule a direct path to the unknown side without ambiguity.",
+      "distractors": [
+        {
+          "answer": "the sine rule is actually preferred for SAS here",
+          "explanation": "The sine rule cannot directly solve SAS without additional steps."
+        },
+        {
+          "answer": "both rules give identical results for all cases",
+          "explanation": "The rules serve different configurations most efficiently."
+        },
+        {
+          "answer": "the cosine rule is easier to memorise overall",
+          "explanation": "Ease of memorisation is not the mathematical reason."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A student calculates the area of a triangle using (1/2)(5)(12) sin 90° = 30. Is this correct? Explain.",
+      "correct": "yes, sin 90° = 1 so the area is 30 exactly",
+      "correctExplanation": "Area = 0.5 × 5 × 12 × 1 = 30, which is correct.",
+      "distractors": [
+        {
+          "answer": "no, sin 90° = 0 so the area should be zero",
+          "explanation": "Sin 90° = 1, not 0; cos 90° = 0."
+        },
+        {
+          "answer": "no, the formula should use cosine not sine",
+          "explanation": "The area formula uses sine of the included angle."
+        },
+        {
+          "answer": "yes, but only if the triangle is equilateral",
+          "explanation": "The formula works for any triangle, not just equilateral."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "In a quadrilateral ABCD, a diagonal AC is drawn. Explain how to find the area of the quadrilateral using the area rule.",
+      "correct": "find the area of each triangle and add them",
+      "correctExplanation": "Diagonal AC splits the quadrilateral into triangles ABC and ACD; sum their areas.",
+      "distractors": [
+        {
+          "answer": "use the area rule once for the whole shape",
+          "explanation": "The area rule applies to triangles, so the shape must be split."
+        },
+        {
+          "answer": "multiply the diagonal by the perimeter here",
+          "explanation": "Diagonal times perimeter does not give area."
+        },
+        {
+          "answer": "the area rule cannot be used for quadrilaterals",
+          "explanation": "It can be used by dividing the quadrilateral into triangles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A triangle has a = 10, b = 7 and A = 30°. Determine whether the ambiguous case applies and how many triangles exist.",
+      "correct": "sin B = 0.35, giving one acute and one obtuse",
+      "correctExplanation": "sin B = 7 sin 30° / 10 = 0.35. B ≈ 20.5° or 159.5°. Check: 159.5° + 30° < 180°, so both valid.",
+      "distractors": [
+        {
+          "answer": "no ambiguity since A is given as acute here",
+          "explanation": "An acute given angle with SSA can still produce ambiguity."
+        },
+        {
+          "answer": "sin B > 1 so no triangle exists at all here",
+          "explanation": "sin B = 0.35, which is valid."
+        },
+        {
+          "answer": "exactly one triangle because a > b in this case",
+          "explanation": "a > b does not always prevent the ambiguous case."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A surveyor needs to find the width of a river. Standing at two points 100 m apart on one bank, angles to a tree on the opposite bank are 65° and 80°. Which approach is best?",
+      "correct": "form a triangle and use the sine rule",
+      "correctExplanation": "The baseline, two angles, and the sine rule give the distances to the tree, then the width.",
+      "distractors": [
+        {
+          "answer": "measure the river directly with a tape measure",
+          "explanation": "Direct measurement across a river is impractical."
+        },
+        {
+          "answer": "use the cosine rule with three known sides",
+          "explanation": "Only one side (baseline) and two angles are known."
+        },
+        {
+          "answer": "estimate the width visually from one bank here",
+          "explanation": "Visual estimation is imprecise for surveying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Explain why the cosine rule can detect whether a triangle is obtuse. What value of cos C indicates this?",
+      "correct": "cos C < 0 indicates angle C is obtuse",
+      "correctExplanation": "When a² + b² < c², cos C is negative, confirming the angle is obtuse.",
+      "distractors": [
+        {
+          "answer": "cos C = 0 always indicates an obtuse angle",
+          "explanation": "cos C = 0 indicates a right angle, not obtuse."
+        },
+        {
+          "answer": "cos C > 1 indicates an obtuse triangle here",
+          "explanation": "Cosine values are between −1 and 1; cos C > 1 is impossible."
+        },
+        {
+          "answer": "cos C > 0 indicates the triangle is obtuse",
+          "explanation": "Positive cosine indicates an acute angle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "A student applies the sine rule to find a side but gets a negative answer. What went wrong?",
+      "correct": "a calculation error, since sin values are positive",
+      "correctExplanation": "For 0° < θ < 180°, sin θ > 0, so all sine rule computations should yield positive results.",
+      "distractors": [
+        {
+          "answer": "negative sides are valid in some triangles here",
+          "explanation": "Side lengths are always positive in triangles."
+        },
+        {
+          "answer": "the sine rule sometimes gives negative results",
+          "explanation": "The sine rule with valid angles always gives positive results."
+        },
+        {
+          "answer": "the student used the wrong rule for the problem",
+          "explanation": "The sine rule may be correct; the arithmetic needs checking."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Two students solve the same triangle. One uses the sine rule first and gets two answers; the other uses the cosine rule first and gets one. Why the difference?",
+      "correct": "the cosine rule gives a unique angle always",
+      "correctExplanation": "Cosine is one-to-one on [0°, 180°], so it gives a unique angle, while sine gives two possibilities.",
+      "distractors": [
+        {
+          "answer": "the cosine rule is always more accurate overall",
+          "explanation": "Both rules are equally accurate when applied correctly."
+        },
+        {
+          "answer": "the sine rule answer must be wrong in this case",
+          "explanation": "Both approaches can be correct; the sine rule gives two valid options."
+        },
+        {
+          "answer": "the students must have different triangle data",
+          "explanation": "Same triangle, different approaches yield different solution paths."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A triangle has sides 8, 15 and 17. Verify whether it is right-angled using the cosine rule.",
+      "correct": "cos C = 0 confirms a right angle at C",
+      "correctExplanation": "cos C = (64 + 225 − 289)/240 = 0/240 = 0, so C = 90°.",
+      "distractors": [
+        {
+          "answer": "cos C = 1 confirms a right angle at vertex C",
+          "explanation": "cos C = 1 means C = 0°, not 90°."
+        },
+        {
+          "answer": "cos C = −1 confirms a right angle at C here",
+          "explanation": "cos C = −1 means C = 180°, not 90°."
+        },
+        {
+          "answer": "the cosine rule cannot verify right angles here",
+          "explanation": "The cosine rule can verify right angles when cos C = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A student wants to maximise the area of a triangle with fixed sides of 10 and 14. What included angle should be used?",
+      "correct": "90° because sin 90° = 1 is the maximum",
+      "correctExplanation": "Area = (1/2)(10)(14) sin C is maximised when sin C = 1, at C = 90°.",
+      "distractors": [
+        {
+          "answer": "180° because a larger angle gives more area",
+          "explanation": "Sin 180° = 0, giving zero area."
+        },
+        {
+          "answer": "60° because equilateral gives maximum area",
+          "explanation": "60° does not maximise sin C; 90° does."
+        },
+        {
+          "answer": "0° because the triangle is most stretched here",
+          "explanation": "Sin 0° = 0, giving zero area."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Derive the area rule from the basic formula Area = (1/2) × base × height. Which substitution is key?",
+      "correct": "h = b sin C for the perpendicular height",
+      "correctExplanation": "If the base is a and the height from the opposite vertex is h = b sin C, then Area = (1/2)a(b sin C).",
+      "distractors": [
+        {
+          "answer": "h = b cos C for the height of the triangle",
+          "explanation": "The height is the perpendicular component: b sin C, not b cos C."
+        },
+        {
+          "answer": "h = a + b for the total height of triangle",
+          "explanation": "Adding sides does not give the height."
+        },
+        {
+          "answer": "h = c for the hypotenuse as the height here",
+          "explanation": "The hypotenuse is not the perpendicular height."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A triangle has a = 20, b = 15 and A = 130°. A student claims two triangles exist. Evaluate this claim.",
+      "correct": "incorrect, since A is obtuse only one exists",
+      "correctExplanation": "When the given angle is obtuse and opposite the longer side, only one triangle is possible.",
+      "distractors": [
+        {
+          "answer": "correct, two triangles always exist for SSA",
+          "explanation": "The ambiguous case does not always produce two triangles."
+        },
+        {
+          "answer": "incorrect, no triangle can be formed at all",
+          "explanation": "A triangle exists because a > b and A is obtuse."
+        },
+        {
+          "answer": "correct, the ambiguous case guarantees two here",
+          "explanation": "An obtuse given angle eliminates the second possibility."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The sine rule gives ambiguous results because the sine function is {{blank:1}} on [0°, 180°], whereas cosine is {{blank:2}} on the same interval.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "not one-to-one",
+          "correctExplanation": "Sin θ = sin(180° − θ), so two angles share the same sine value.",
+          "distractors": [
+            {
+              "answer": "one-to-one",
+              "explanation": "Sine is not one-to-one on [0°, 180°]; two angles share each sine value.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "always zero",
+              "explanation": "Sine is zero only at 0° and 180°, not throughout the interval.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "one-to-one",
+          "correctExplanation": "Cosine decreases from 1 to −1 on [0°, 180°], making it one-to-one.",
+          "distractors": [
+            {
+              "answer": "not one-to-one",
+              "explanation": "Cosine is strictly decreasing on [0°, 180°], so it is one-to-one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "always negative",
+              "explanation": "Cosine is positive for angles less than 90°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The cosine rule generalises Pythagoras because when C = 90°, the term {{blank:1}} becomes {{blank:2}}, leaving c² = a² + b².",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−2ab cos C",
+          "correctExplanation": "This is the adjusting term in the cosine rule.",
+          "distractors": [
+            {
+              "answer": "a² + b²",
+              "explanation": "a² + b² remains; the −2ab cos C term is what vanishes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "c²",
+              "explanation": "c² is the left side of the equation, not the vanishing term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "cos 90° = 0, so −2ab(0) = 0.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "cos 90° = 0, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative one",
+              "explanation": "cos 90° = 0, not −1; cos 180° = −1.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "When all three sides are known (SSS), the cosine rule is used first because the sine rule requires at least one known {{blank:1}}. After finding one angle, the {{blank:2}} rule can find the remaining angles.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "angle",
+          "correctExplanation": "The sine rule needs a side-angle pair: a/sin A, requiring a known angle.",
+          "distractors": [
+            {
+              "answer": "side",
+              "explanation": "All three sides are already known; the missing information is an angle.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "Triangles do not have diagonals.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sine",
+          "correctExplanation": "Once one angle is known from the cosine rule, the sine rule finds the others.",
+          "distractors": [
+            {
+              "answer": "cosine",
+              "explanation": "The cosine rule works but the sine rule is simpler for the remaining angles.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "area",
+              "explanation": "The area rule finds area, not angles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The area rule h = b sin C shows that the height of a triangle depends on both the {{blank:1}} of the side and the {{blank:2}} of the included angle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "length",
+          "correctExplanation": "The height is proportional to the side length.",
+          "distractors": [
+            {
+              "answer": "direction",
+              "explanation": "Direction is not part of the height calculation in the area rule.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "square",
+              "explanation": "The formula uses the side directly, not its square.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sine",
+          "correctExplanation": "The sine of the angle gives the perpendicular component.",
+          "distractors": [
+            {
+              "answer": "cosine",
+              "explanation": "Cosine gives the horizontal component, not the perpendicular height.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tangent",
+              "explanation": "Tangent is not used in the area rule derivation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "In the ambiguous case with sides a and b and angle A opposite a, no triangle exists when a < {{blank:1}}, where h is the {{blank:2}} from B to side b.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "h",
+          "correctExplanation": "If side a is shorter than the height h = b sin A, it cannot reach the opposite side.",
+          "distractors": [
+            {
+              "answer": "b",
+              "explanation": "a < b does not necessarily prevent a triangle; a < h does.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "c",
+              "explanation": "c is the third side, which is not yet determined.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "height",
+          "correctExplanation": "The height h = b sin A is the perpendicular distance from vertex B.",
+          "distractors": [
+            {
+              "answer": "base",
+              "explanation": "The base is a side of the triangle, not the perpendicular distance.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "hypotenuse",
+              "explanation": "Hypotenuse applies to right triangles; height is the perpendicular.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A negative value of cos C from the cosine rule means c² > {{blank:1}}, indicating the triangle is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "a² + b²",
+          "correctExplanation": "When cos C < 0, the −2ab cos C term is positive, making c² > a² + b².",
+          "distractors": [
+            {
+              "answer": "c²",
+              "explanation": "c² > c² is a tautology; the comparison is with a² + b².",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2ab",
+              "explanation": "2ab is a product term, not the threshold for obtuse triangles.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "obtuse",
+          "correctExplanation": "c² > a² + b² means the angle opposite c exceeds 90°.",
+          "distractors": [
+            {
+              "answer": "acute",
+              "explanation": "Acute triangles have c² < a² + b².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "right-angled",
+              "explanation": "Right-angled triangles have c² = a² + b².",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "To verify a triangle is right-angled using the cosine rule, check that cos C = {{blank:1}} for the {{blank:2}} angle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "cos 90° = 0, confirming a right angle.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "cos 0° = 1, which indicates a degenerate triangle.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1",
+              "explanation": "cos 180° = −1, indicating a degenerate straight line.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "largest",
+          "correctExplanation": "The right angle is always the largest angle (90°) in a right triangle.",
+          "distractors": [
+            {
+              "answer": "smallest",
+              "explanation": "The right angle is the largest, not the smallest, angle.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "middle",
+              "explanation": "In a right triangle, 90° is the largest angle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The cosine rule can be seen as a correction to Pythagoras. When C < 90°, the correction term makes c² {{blank:1}} than a² + b², and when C > 90° it makes c² {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "smaller",
+          "correctExplanation": "For acute C, cos C > 0, so −2ab cos C < 0, reducing c².",
+          "distractors": [
+            {
+              "answer": "larger",
+              "explanation": "For acute angles, the correction reduces c², not increases it.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal to",
+              "explanation": "c² equals a² + b² only when C = 90° exactly.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "larger",
+          "correctExplanation": "For obtuse C, cos C < 0, so −2ab cos C > 0, increasing c².",
+          "distractors": [
+            {
+              "answer": "smaller",
+              "explanation": "For obtuse angles, the correction increases c².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "c² is never zero for a valid triangle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A surveyor uses the sine rule to find the distance across a valley. The key advantage is that only {{blank:1}} on one side needs to be measured, while the other distances are calculated from {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "a baseline",
+          "correctExplanation": "The baseline is the one directly measurable distance on accessible ground.",
+          "distractors": [
+            {
+              "answer": "the valley width",
+              "explanation": "The valley width is what is being calculated, not measured.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "an angle",
+              "explanation": "Angles alone cannot determine distances without a baseline.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "angles",
+          "correctExplanation": "Measuring angles to landmarks across the valley allows the sine rule to find distances.",
+          "distractors": [
+            {
+              "answer": "other baselines",
+              "explanation": "Only one baseline is needed; additional baselines are not required.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "GPS coordinates",
+              "explanation": "GPS is a separate method; the sine rule uses measured angles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "When a = b in the cosine rule, the formula simplifies to c² = 2a²(1 − {{blank:1}}), showing that c depends only on the side length and the {{blank:2}} angle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cos C",
+          "correctExplanation": "With a = b, c² = a² + a² − 2a² cos C = 2a²(1 − cos C).",
+          "distractors": [
+            {
+              "answer": "sin C",
+              "explanation": "The cosine rule uses cosine, not sine.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tan C",
+              "explanation": "Tangent is not part of the cosine rule.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "included",
+          "correctExplanation": "C is the angle between the two equal sides.",
+          "distractors": [
+            {
+              "answer": "opposite",
+              "explanation": "The included angle is between the sides, not opposite one.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "base",
+              "explanation": "Base angle is related but the formula uses the included angle C.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "In navigation, the {{blank:1}} rule is typically used when a pilot knows two legs and the angle between them, while the {{blank:2}} rule is used when angles to two landmarks from a known baseline are measured.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cosine",
+          "correctExplanation": "Two sides and an included angle (SAS) require the cosine rule.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine rule needs angle-side pairs, not two sides and an included angle.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "area",
+              "explanation": "The area rule gives area, not distances.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sine",
+          "correctExplanation": "A baseline and two angles (AAS) are solved using the sine rule.",
+          "distractors": [
+            {
+              "answer": "cosine",
+              "explanation": "The cosine rule needs two sides, not two angles.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tangent",
+              "explanation": "There is no tangent rule for solving triangles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The area of a triangle with three known sides can be found by first using the {{blank:1}} rule to find an angle, then applying the {{blank:2}} rule with two sides and that angle.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cosine",
+          "correctExplanation": "The cosine rule finds an angle from three sides.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine rule needs a known angle, which SSS does not provide.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "Heron",
+              "explanation": "Heron's formula finds area directly from three sides, but this question asks about a two-step approach.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "area",
+          "correctExplanation": "The area rule (1/2)ab sin C gives the area once the angle is known.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine rule finds sides or angles, not area.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "cosine",
+              "explanation": "The cosine rule finds sides or angles, not area.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

@@ -1,0 +1,2808 @@
+{
+  "_meta": {
+    "code": "VC2M10AP01",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning about counting principles and factorial notation for efficient counting in probability and combinatorics.",
+    "generatedAt": "2026-05-23T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The value of 0! is 0.",
+      "correct": "False",
+      "correctExplanation": "By definition, 0! = 1, not 0. This is necessary for formulas like C(n,0) = 1 to hold.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "0! is defined as 1, not 0."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The value of 0! is 0.",
+      "correct": "False",
+      "correctExplanation": "0! is defined as 1 by convention, not 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "0! = 1 by mathematical convention."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "The multiplication principle states that if there are m ways to do one task and n ways to do another, there are m + n ways to do both.",
+      "correct": "False",
+      "correctExplanation": "The multiplication principle gives m × n ways, not m + n. Addition is used for mutually exclusive choices.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The multiplication principle multiplies, not adds."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A permutation is an arrangement where order matters.",
+      "correct": "True",
+      "correctExplanation": "Permutations count ordered arrangements of objects.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "In permutations, order matters."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The number of ways to arrange 4 books on a shelf is 4! = 24.",
+      "correct": "True",
+      "correctExplanation": "4! = 4 × 3 × 2 × 1 = 24 arrangements.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "4! = 24 gives the number of arrangements."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "A combination is an arrangement where order matters.",
+      "correct": "False",
+      "correctExplanation": "A combination is a selection where order does not matter. Permutations are where order matters.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Combinations ignore order; permutations consider order."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "The expression n! means n multiplied by (n minus 1) multiplied by (n minus 2) and so on down to 1.",
+      "correct": "True",
+      "correctExplanation": "This is the definition of factorial: the product of all positive integers from 1 to n.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This defines factorial notation."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The addition principle applies when tasks are performed simultaneously.",
+      "correct": "False",
+      "correctExplanation": "The addition principle applies when tasks are mutually exclusive alternatives, not simultaneous tasks.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Addition is for exclusive choices; multiplication is for simultaneous tasks."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "The number of permutations of n objects taken r at a time is n! divided by (n minus r)!.",
+      "correct": "True",
+      "correctExplanation": "P(n,r) = n!/(n-r)! counts ordered selections of r from n.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the permutation formula."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The value of 1! equals 0.",
+      "correct": "False",
+      "correctExplanation": "1! = 1, not 0. The factorial of 1 is simply 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "1! = 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "With 3 shirt choices and 4 trouser choices, there are 7 outfit combinations.",
+      "correct": "False",
+      "correctExplanation": "The multiplication principle gives 3 × 4 = 12 outfits, not 3 + 4 = 7.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Multiply choices: 3 × 4 = 12, not add."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The expression C(n,r) equals n! divided by (r! times (n minus r)!).",
+      "correct": "True",
+      "correctExplanation": "This is the combination formula for choosing r items from n without regard to order.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "C(n,r) = n!/(r!(n-r)!) is the standard formula."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is 6!?",
+      "correct": "720, the product of integers from 1 to 6",
+      "correctExplanation": "6! = 6 × 5 × 4 × 3 × 2 × 1 = 720.",
+      "distractors": [
+        {
+          "answer": "36, from multiplying 6 by itself",
+          "explanation": "6 × 6 = 36, but factorial multiplies all integers down to 1."
+        },
+        {
+          "answer": "21, from adding 1 through 6 together here for this",
+          "explanation": "1+2+3+4+5+6 = 21 is a sum, not a factorial."
+        },
+        {
+          "answer": "6, leaving the number unchanged entirely",
+          "explanation": "Factorial multiplies consecutive integers from n down to 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "How many ways can 3 students be arranged in a line?",
+      "correct": "6",
+      "correctExplanation": "3! = 6 arrangements.",
+      "distractors": [
+        {
+          "answer": "3, placing one student in eac",
+          "explanation": "Each position has fewer remaining choices: 3 × 2 × 1 = 6."
+        },
+        {
+          "answer": "9, multiplying 3 by 3 for",
+          "explanation": "The second position has 2 choices, not 3."
+        },
+        {
+          "answer": "27, computing 3^3 for three posi",
+          "explanation": "Repetition is not allowed: each student appears once."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Using the multiplication principle, how many outcomes are there when rolling a die and flipping a coin?",
+      "correct": "12, from 6 die outcomes times 2 coin outcomes",
+      "correctExplanation": "6 × 2 = 12 total outcomes.",
+      "distractors": [
+        {
+          "answer": "8, from 6 plus 2 using addition instead",
+          "explanation": "The multiplication principle multiplies: 6 × 2 = 12."
+        },
+        {
+          "answer": "36, squaring the die outcomes for both events",
+          "explanation": "The coin has 2 outcomes, not 6."
+        },
+        {
+          "answer": "6, counting only the die outcomes for the result",
+          "explanation": "Both events contribute: 6 × 2 = 12."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What is C(5,2)?",
+      "correct": "10, from 5!/(2! × 3!) = 120/(2 × 6)",
+      "correctExplanation": "C(5,2) = 120/12 = 10.",
+      "distractors": [
+        {
+          "answer": "20, from 5 × 4 without dividing by 2!",
+          "explanation": "The combination formula requires division: 20/2 = 10."
+        },
+        {
+          "answer": "60, from 5!/2! without the (n-r)! term",
+          "explanation": "Both r! and (n-r)! must divide n!."
+        },
+        {
+          "answer": "5, choosing 2 from 5 by subtraction",
+          "explanation": "The formula gives C(5,2) = 10, not 5-2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What is P(4,2)?",
+      "correct": "12, from 4!/(4-2)! = 24/2",
+      "correctExplanation": "P(4,2) = 4!/2! = 24/2 = 12.",
+      "distractors": [
+        {
+          "answer": "6, computing 4!/4 instead of 4!/2!",
+          "explanation": "The divisor is (4-2)! = 2! = 2, not 4."
+        },
+        {
+          "answer": "8, multiplying 4 by 2 directly",
+          "explanation": "P(4,2) = 4 × 3 = 12, not 4 × 2."
+        },
+        {
+          "answer": "24, using 4! without dividing at all",
+          "explanation": "P(4,2) requires dividing by (4-2)! = 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "What distinguishes a permutation from a combination?",
+      "correct": "permutations consider order; combinations do not",
+      "correctExplanation": "In permutations, ABC differs from CBA. In combinations, they are the same.",
+      "distractors": [
+        {
+          "answer": "permutations are always larger than combinations numerically",
+          "explanation": "While often true, the key difference is order sensitivity."
+        },
+        {
+          "answer": "combinations use factorial but permutations do not",
+          "explanation": "Both use factorial notation in their formulas."
+        },
+        {
+          "answer": "permutations select items and combinations arrange them",
+          "explanation": "Permutations arrange; combinations select."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "A menu offers 5 entrees and 3 desserts. How many meal choices are there?",
+      "correct": "15, by multiplying 5 entrees by 3 desserts",
+      "correctExplanation": "5 × 3 = 15 different meals.",
+      "distractors": [
+        {
+          "answer": "8, adding 5 and 3 using addition principle",
+          "explanation": "The courses are chosen together, so multiply: 5 × 3 = 15."
+        },
+        {
+          "answer": "53, concatenating the numbers as digits",
+          "explanation": "The multiplication principle gives 5 × 3 = 15."
+        },
+        {
+          "answer": "2, choosing one from each category gives 2 items",
+          "explanation": "The total combinations are 5 × 3 = 15."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What is the value of 10!/(8! × 2!)?",
+      "correct": "45, which equals C(10,2)",
+      "correctExplanation": "10!/(8! × 2!) = (10 × 9)/2 = 45.",
+      "distractors": [
+        {
+          "answer": "5, dividing 10 by 2 as a simple fraction",
+          "explanation": "The calculation involves factorials, not simple division."
+        },
+        {
+          "answer": "90, computing 10 × 9 without the 2! divisor",
+          "explanation": "The 2! = 2 in the denominator must be included."
+        },
+        {
+          "answer": "40320, computing 8! and using that as the answer",
+          "explanation": "8! = 40320, but the formula gives 10!/(8! × 2!) = 45."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "How many 3-digit codes can be formed using digits 1 to 5 with repetition?",
+      "correct": "125, from 5 × 5 × 5",
+      "correctExplanation": "5^3 = 125 with repetition allowed.",
+      "distractors": [
+        {
+          "answer": "60, from 5 × 4 × 3 assuming no repetition",
+          "explanation": "With repetition, each position has 5 choices."
+        },
+        {
+          "answer": "15, from 5 × 3 using multiplication differently",
+          "explanation": "Each of the 3 positions has 5 options: 5^3 = 125."
+        },
+        {
+          "answer": "243, from 3^5 reversing base and exponent",
+          "explanation": "3 positions with 5 choices each: 5^3, not 3^5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What is C(6,6)?",
+      "correct": "1, since there is only one way to choose all items",
+      "correctExplanation": "C(6,6) = 6!/(6! × 0!) = 1.",
+      "distractors": [
+        {
+          "answer": "720, computing 6! without the division",
+          "explanation": "C(6,6) = 6!/6! = 1."
+        },
+        {
+          "answer": "0, because no items are left after choosing all overall overall",
+          "explanation": "There is exactly 1 way to select all items."
+        },
+        {
+          "answer": "6, using n as the answer for C(n,n)",
+          "explanation": "C(n,n) = 1 for all n."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "What is C(7,1)?",
+      "correct": "7, since choosing 1 from 7 gives 7 options",
+      "correctExplanation": "C(7,1) = 7!/1!6! = 7.",
+      "distractors": [
+        {
+          "answer": "1, confusing C(7,1) with C(7,7) entirely",
+          "explanation": "C(7,1) = 7; C(7,7) = 1."
+        },
+        {
+          "answer": "5040, computing 7! without division at all",
+          "explanation": "C(7,1) divides by 1! and 6!."
+        },
+        {
+          "answer": "42, computing 7 × 6 without full division instead",
+          "explanation": "C(7,1) = 7, not P(7,2) = 42."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What is the addition principle?",
+      "correct": "if tasks are mutually exclusive, total = sum of ways",
+      "correctExplanation": "When choosing either task A or task B (not both), add the counts.",
+      "distractors": [
+        {
+          "answer": "if tasks are combined, total = sum of ways as",
+          "explanation": "Combined tasks use the multiplication principle."
+        },
+        {
+          "answer": "any counting problem uses addition of all factors",
+          "explanation": "Multiplication is used for sequential independent tasks."
+        },
+        {
+          "answer": "addition replaces multiplication for large numbers",
+          "explanation": "The principles serve different purposes regardless of size."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The expression n! is read as 'n {{blank:1}}' and equals the product of all positive integers from 1 to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "factorial",
+          "correctExplanation": "n! is called n factorial.",
+          "distractors": [
+            {
+              "answer": "function",
+              "explanation": "The notation ! specifically denotes factorial.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "combination",
+              "explanation": "Factorial is a different concept from combinations.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n",
+          "correctExplanation": "n! = 1 × 2 × 3 × ... × n.",
+          "distractors": [
+            {
+              "answer": "n minus 1",
+              "explanation": "The product includes n itself: 1 × 2 × ... × n.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "infinity",
+              "explanation": "The product stops at n, not infinity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The multiplication principle states: if task A can be done in m ways and task B in n ways, both tasks together can be done in {{blank:1}} ways. For 4 shirts and 3 pants, there are {{blank:2}} outfits.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "m × n",
+          "correctExplanation": "Independent sequential tasks multiply their counts.",
+          "distractors": [
+            {
+              "answer": "m + n",
+              "explanation": "Addition applies to mutually exclusive alternatives.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "m minus n",
+              "explanation": "Subtraction has no role in the multiplication principle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "4 × 3 = 12.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "7 = 4 + 3, using addition instead of multiplication.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "1 of each gives 1 outfit, but 4 × 3 gives all possibilities.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The multiplication principle requires that all tasks be performed independently and simultaneously.",
+      "correct": "False",
+      "correctExplanation": "The multiplication principle requires tasks to be performed sequentially and independently, not simultaneously.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Tasks must be sequential, not simultaneous, for the multiplication principle."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "C(n,r) always equals C(n, n minus r).",
+      "correct": "True",
+      "correctExplanation": "C(n,r) = n!/(r!(n-r)!) = n!/((n-r)!r!) = C(n,n-r). The symmetry holds because choosing r to include is equivalent to choosing n-r to exclude.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This symmetry holds by the definition of combinations."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The multiplication principle applies only when events are dependent on each other.",
+      "correct": "False",
+      "correctExplanation": "The multiplication principle requires events to be independent. If events are dependent, conditional counting is needed.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The principle requires independent events."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The number of ways to arrange n objects in a circle is n!.",
+      "correct": "False",
+      "correctExplanation": "Circular arrangements have (n-1)! arrangements because rotations of the same arrangement are identical.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Circular permutations give (n-1)!, not n!."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "C(n,0) = 1 for all non-negative integers n.",
+      "correct": "True",
+      "correctExplanation": "C(n,0) = n!/(0! × n!) = 1. There is exactly one way to choose nothing.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Choosing 0 items can be done in exactly 1 way."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "If repetition is allowed, the number of r-selections from n objects is C(n,r).",
+      "correct": "False",
+      "correctExplanation": "C(n,r) counts selections without repetition. With repetition, the formula is C(n+r-1, r).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "With repetition, the formula changes to C(n+r-1, r)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The number of ways to arrange the letters in MISSISSIPPI is 11!.",
+      "correct": "False",
+      "correctExplanation": "MISSISSIPPI has repeated letters (4 S, 4 I, 2 P). The count is 11!/(4!4!2!) = 34650.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Repeated letters reduce the count: 11!/(4!4!2!)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Permutations and combinations both use factorial in their formulas.",
+      "correct": "True",
+      "correctExplanation": "P(n,r) = n!/(n-r)! and C(n,r) = n!/(r!(n-r)!) both involve factorial.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Both formulas are built on factorial operations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Why is C(n,r) = C(n, n minus r)?",
+      "correct": "choosing r to include equals choosing n minus r to exclude",
+      "correctExplanation": "Every selection of r items determines which n-r items are left out, and vice versa.",
+      "distractors": [
+        {
+          "answer": "the formula has a typo and they are not actually equal",
+          "explanation": "The equality holds by the definition of combinations."
+        },
+        {
+          "answer": "factorial cancellation makes all combinations equal numerically",
+          "explanation": "Not all values are equal; only C(n,r) and C(n,n-r) are equal."
+        },
+        {
+          "answer": "both expressions count the same arrangements in different order",
+          "explanation": "Combinations do not depend on order at all."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "How many ways can a committee of 3 be chosen from 10 people?",
+      "correct": "120, from C(10,3) = 10!/(3! × 7!)",
+      "correctExplanation": "C(10,3) = (10 × 9 × 8)/(3 × 2 × 1) = 720/6 = 120.",
+      "distractors": [
+        {
+          "answer": "720, from P(10,3) without dividing by 3!",
+          "explanation": "A committee has no order, so divide by 3! = 6."
+        },
+        {
+          "answer": "30, from 10 × 3 using direct multiplication",
+          "explanation": "The combination formula gives C(10,3) = 120."
+        },
+        {
+          "answer": "10, choosing 1 person for each of the 3 spots",
+          "explanation": "The full combination C(10,3) = 120."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Explain why permutations give a larger count than combinations for the same n and r.",
+      "correct": "permutations count each ordering of the same selection as distinct",
+      "correctExplanation": "Each combination of r items can be arranged in r! ways, so P(n,r) = r! × C(n,r).",
+      "distractors": [
+        {
+          "answer": "permutations use a larger formula that produces bigger numbers in total",
+          "explanation": "The larger count comes from treating order as significant."
+        },
+        {
+          "answer": "combinations discard invalid arrangements from the total count",
+          "explanation": "No arrangements are invalid; combinations group equivalent orderings."
+        },
+        {
+          "answer": "permutations include repetitions that combinations do not allow",
+          "explanation": "Neither standard formula allows repetition; the difference is order."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A password has 4 positions, each using digits 0-9. How many passwords are possible?",
+      "correct": "10000, from 10^4 with repetition allowed",
+      "correctExplanation": "Each position has 10 choices: 10 × 10 × 10 × 10 = 10000.",
+      "distractors": [
+        {
+          "answer": "40, from 10 × 4 multiplying digits by positions",
+          "explanation": "Each position independently has 10 choices: 10^4 = 10000."
+        },
+        {
+          "answer": "5040, from 10!/6! assuming no repetition",
+          "explanation": "Repetition is allowed, giving 10^4, not P(10,4)."
+        },
+        {
+          "answer": "210, from C(10,4) choosing 4 digits from 10",
+          "explanation": "Combinations ignore order and repetition; passwords consider both."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why is 0! defined as 1?",
+      "correct": "it makes the combination formula C(n,0) = 1 work correctly",
+      "correctExplanation": "If 0! were anything else, C(n,0) = n!/(0! × n!) would not equal 1.",
+      "distractors": [
+        {
+          "answer": "zero things can be arranged in zero ways, giving 0!",
+          "explanation": "The convention 0! = 1 ensures consistency in formulas."
+        },
+        {
+          "answer": "it is an arbitrary choice with no mathematical reason here",
+          "explanation": "The definition ensures C(n,0) = 1 and other formulas are consistent."
+        },
+        {
+          "answer": "0! was originally defined as 0 but later changed to 1",
+          "explanation": "0! = 1 follows from the recursive definition n! = n × (n-1)!."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "What is the difference between sampling with and without replacement?",
+      "correct": "with replacement, items can be reused; without, each item is used once",
+      "correctExplanation": "Replacement returns items to the pool; without replacement reduces available items.",
+      "distractors": [
+        {
+          "answer": "replacement means choosing items randomly from the full set as stated instead",
+          "explanation": "Random selection applies to both methods; the difference is reuse."
+        },
+        {
+          "answer": "without replacement gives more outcomes than with replacement",
+          "explanation": "Without replacement generally gives fewer outcomes."
+        },
+        {
+          "answer": "replacement is used only in statistics, not in combinatorics",
+          "explanation": "Both methods appear in combinatorics and probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "How many ways can the letters of CAT be arranged?",
+      "correct": "6, from 3! = 3 × 2 × 1",
+      "correctExplanation": "CAT, CTA, ACT, ATC, TCA, TAC = 6 arrangements.",
+      "distractors": [
+        {
+          "answer": "3, one arrangement for each letter position",
+          "explanation": "3! = 6 counts all orderings, not just 3."
+        },
+        {
+          "answer": "9, from 3^2 for the three letter positions",
+          "explanation": "Without repetition, the count is 3! = 6."
+        },
+        {
+          "answer": "27, from 3^3 allowing each letter in any spot",
+          "explanation": "Each letter is used once: 3 × 2 × 1 = 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Why does the multiplication principle require independent events?",
+      "correct": "each choice must not affect the available options for other choices",
+      "correctExplanation": "Independence ensures the count for each event does not change based on other outcomes.",
+      "distractors": [
+        {
+          "answer": "dependent events can never be counted using any principle in context",
+          "explanation": "Dependent events can be counted using conditional methods."
+        },
+        {
+          "answer": "independent events have fewer total outcomes than dependent ones",
+          "explanation": "Independence and outcome count are separate concepts."
+        },
+        {
+          "answer": "the principle works equally well for dependent events also",
+          "explanation": "Dependent events require adjusted counting, not simple multiplication."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "What is P(5,5)?",
+      "correct": "120, equal to 5!",
+      "correctExplanation": "P(5,5) = 5!/0! = 120/1 = 120.",
+      "distractors": [
+        {
+          "answer": "1, since choosing all items gives only one",
+          "explanation": "P(5,5) counts arrangements, not selections: 120."
+        },
+        {
+          "answer": "25, from 5 × 5 multiplying n by r",
+          "explanation": "P(5,5) = 5! = 120, not 5 × 5."
+        },
+        {
+          "answer": "5, using n as the direct answer for P(n,n)",
+          "explanation": "P(n,n) = n!, so P(5,5) = 120."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "In how many ways can a president, secretary and treasurer be chosen from 8 people?",
+      "correct": "336, from P(8,3) = 8 × 7 × 6",
+      "correctExplanation": "Order matters (different roles): 8 × 7 × 6 = 336.",
+      "distractors": [
+        {
+          "answer": "56, from C(8,3) ignoring the role assignments",
+          "explanation": "Roles create ordered positions, so permutations apply."
+        },
+        {
+          "answer": "24, from 8 × 3 multiplying people by roles",
+          "explanation": "Each role uses different available people: 8 × 7 × 6."
+        },
+        {
+          "answer": "512, from 8^3 allowing repeated selections",
+          "explanation": "Each person fills only one role: 8 × 7 × 6."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "What is C(10,10)?",
+      "correct": "1, the only way is to take all 10",
+      "correctExplanation": "C(10,10) = 10!/(10! × 0!) = 1.",
+      "distractors": [
+        {
+          "answer": "10, confusing C(10,10) with C(10,1) entirely",
+          "explanation": "C(10,10) = 1; C(10,1) = 10."
+        },
+        {
+          "answer": "0, thinking no items remain so no choice exists",
+          "explanation": "Choosing all items is 1 valid selection."
+        },
+        {
+          "answer": "3628800, computing 10! without any division",
+          "explanation": "C(10,10) = 10!/10! = 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Why is the addition principle used for mutually exclusive events?",
+      "correct": "if events cannot both occur, total outcomes are the sum",
+      "correctExplanation": "When one event excludes the other, there is no overlap to subtract.",
+      "distractors": [
+        {
+          "answer": "mutually exclusive events always have equal probabilities",
+          "explanation": "Equal probability is not related to the addition principle."
+        },
+        {
+          "answer": "the multiplication principle cannot handle two events",
+          "explanation": "Multiplication handles independent simultaneous events."
+        },
+        {
+          "answer": "all counting problems default to using addition first for this",
+          "explanation": "The choice depends on whether events are exclusive or sequential."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The number of permutations of n objects taken r at a time is P(n,r) = n! divided by {{blank:1}}. For example, P(6,2) = 6!/4! = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "(n minus r)!",
+          "correctExplanation": "P(n,r) = n!/(n-r)!.",
+          "distractors": [
+            {
+              "answer": "r!",
+              "explanation": "r! is in the combination formula, not the permutation formula.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n!",
+              "explanation": "Dividing by n! would give 1/(n-r)!, which is incorrect.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "P(6,2) = 6 × 5 = 30.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "15 = C(6,2), which divides by 2! as well.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "720",
+              "explanation": "720 = 6!, not P(6,2).",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "A combination C(n,r) differs from a permutation because combinations treat selections as {{blank:1}}, regardless of the order. C(n,r) = P(n,r) divided by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "unordered",
+          "correctExplanation": "Combinations count sets, not sequences.",
+          "distractors": [
+            {
+              "answer": "ordered",
+              "explanation": "Ordered selections are permutations, not combinations.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "repeated",
+              "explanation": "Repetition is a separate concept from ordering.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "r!",
+          "correctExplanation": "Each combination corresponds to r! permutations, so C(n,r) = P(n,r)/r!.",
+          "distractors": [
+            {
+              "answer": "n!",
+              "explanation": "Dividing by n! would give the wrong count.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "(n-r)!",
+              "explanation": "(n-r)! is already in the permutation formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "Circular permutations of n objects give {{blank:1}} arrangements, because we fix one object to remove equivalent {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "(n minus 1)!",
+          "correctExplanation": "Fixing one position removes the n rotational duplicates.",
+          "distractors": [
+            {
+              "answer": "n!",
+              "explanation": "n! overcounts by a factor of n due to rotational symmetry.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "n is the number of objects, not the arrangement count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "rotations",
+          "correctExplanation": "Rotations of the same arrangement are considered identical in a circle.",
+          "distractors": [
+            {
+              "answer": "reflections",
+              "explanation": "Reflections produce distinct arrangements in standard circular permutations.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "combinations",
+              "explanation": "Combinations involve selection, not circular arrangement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The number of ways to arrange the letters in a word with repeated letters is n! divided by the product of factorials of each {{blank:1}}. For AABB this gives 4!/(2! × 2!) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "letter frequency",
+          "correctExplanation": "Each repeated letter contributes its frequency factorial to the denominator.",
+          "distractors": [
+            {
+              "answer": "letter position",
+              "explanation": "Position is relevant for permutations, not the division factor.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "vowel count",
+              "explanation": "All repeated letters matter, not just vowels.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "4!/(2! × 2!) = 24/4 = 6.",
+          "distractors": [
+            {
+              "answer": "24",
+              "explanation": "24 = 4!, but the repeated letters reduce this to 6.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "4!/(2! × 2!) = 6, not 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The symmetry property C(n,r) = C(n, n minus r) means choosing r items to {{blank:1}} is equivalent to choosing n minus r items to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "include",
+          "correctExplanation": "Selecting r items defines which are included.",
+          "distractors": [
+            {
+              "answer": "exclude",
+              "explanation": "Including r is the complement of excluding r.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "count",
+              "explanation": "Counting is the result, not the action of selecting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "exclude",
+          "correctExplanation": "The items not chosen form the complement set.",
+          "distractors": [
+            {
+              "answer": "include",
+              "explanation": "Including n-r is the same as excluding r.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "arrange",
+              "explanation": "Combinations do not involve arrangement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "With repetition allowed, the number of ways to select r items from n types is C(n + r minus 1, {{blank:1}}). For choosing 3 scoops from 5 flavours, this is C({{blank:2}}, 3).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "r",
+          "correctExplanation": "The stars and bars formula gives C(n+r-1, r).",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "The formula uses r, not n, in the second position.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n minus 1",
+              "explanation": "n-1 is combined with r for the first argument.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "7",
+          "correctExplanation": "n + r - 1 = 5 + 3 - 1 = 7.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "5 + 3 = 8, but subtract 1: 5 + 3 - 1 = 7.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "15",
+              "explanation": "15 = 5 × 3, using multiplication instead of the formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The number of 4-letter arrangements from the word MATHS is P(5,4) = 120.",
+      "correct": "True",
+      "correctExplanation": "P(5,4) = 5!/1! = 120. All 5 letters are distinct, and we arrange 4 of them.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "5 × 4 × 3 × 2 = 120."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "A team of 5 chosen from 12 players has P(12,5) = 95040 possible selections.",
+      "correct": "False",
+      "correctExplanation": "A team is unordered, so C(12,5) = 792 is correct, not P(12,5).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Teams are unordered selections; use C(12,5) = 792."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "How many 3-digit even numbers can be formed from 1, 2, 3, 4, 5 without repetition?",
+      "correct": "24, with 2 choices for units and P(4,2) for the rest",
+      "correctExplanation": "Units digit must be 2 or 4 (2 choices). Then 4 × 3 = 12 for the other two. 2 × 12 = 24.",
+      "distractors": [
+        {
+          "answer": "60, from P(5,3) = 60 without the even constraint for this case",
+          "explanation": "The even constraint limits the units digit to 2 or 4."
+        },
+        {
+          "answer": "12, choosing 2 even then 2 more digits only",
+          "explanation": "The hundreds and tens each have full remaining choices."
+        },
+        {
+          "answer": "48, doubling 24 because digits can alternate positions",
+          "explanation": "The calculation already accounts for all valid positions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "A committee of 4 from 6 men and 5 women must have at least 2 women. How many ways?",
+      "correct": "215, from C(5,2)C(6,2) + C(5,3)C(6,1) + C(5,4)",
+      "correctExplanation": "2W2M: 10×15=150. 3W1M: 10×6=60. 4W: 5. Total=215.",
+      "distractors": [
+        {
+          "answer": "330, from C(11,4) without the gender constraint",
+          "explanation": "The constraint requires at least 2 women."
+        },
+        {
+          "answer": "150, counting only the 2-women case of the options",
+          "explanation": "Cases with 3 or 4 women must also be included."
+        },
+        {
+          "answer": "55, from C(11,2) choosing only the women positions",
+          "explanation": "The committee has 4 members chosen with constraints."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "How many ways can 7 people sit around a circular table?",
+      "correct": "720, from (7 minus 1)! = 6! = 720",
+      "correctExplanation": "Circular permutations: (n-1)! = 6! = 720.",
+      "distractors": [
+        {
+          "answer": "5040, from 7! counting all linear arrangements",
+          "explanation": "Circular arrangements divide by 7 for rotational equivalence."
+        },
+        {
+          "answer": "42, from 7 × 6 for the first two positions",
+          "explanation": "All positions must be filled: (7-1)! = 720."
+        },
+        {
+          "answer": "360, from 6!/2 accounting for reflections too",
+          "explanation": "Standard circular permutations do not remove reflections."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A licence plate has 3 letters followed by 3 digits. How many plates are possible?",
+      "correct": "17576000",
+      "correctExplanation": "26 × 26 × 26 × 10 × 10 × 10 = 17576 × 1000 = 17576000.",
+      "distractors": [
+        {
+          "answer": "78, from 26 × 3 for letters only",
+          "explanation": "Each of 3 letter positions has 26 choices: 26^3."
+        },
+        {
+          "answer": "36, from 26 + 10 adding letters",
+          "explanation": "The multiplication principle applies: 26^3 × 10^3."
+        },
+        {
+          "answer": "468000, from 26 × 25 × 24 ×",
+          "explanation": "Repetition is allowed on licence plates."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "How many handshakes occur at a party of 12 people?",
+      "correct": "66, from C(12,2) = 12 × 11 / 2",
+      "correctExplanation": "Each handshake involves an unordered pair: C(12,2) = 66.",
+      "distractors": [
+        {
+          "answer": "132, from 12 × 11 without dividing by 2",
+          "explanation": "Each handshake is counted once, so divide by 2."
+        },
+        {
+          "answer": "144, from 12 × 12 for all possible pairings",
+          "explanation": "A person cannot shake their own hand: 12 × 11/2 = 66."
+        },
+        {
+          "answer": "24, from 12 × 2 hands for each person",
+          "explanation": "The count is pairings, not individual hands."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "How many ways can 5 books be chosen from 8 and arranged on a shelf?",
+      "correct": "6720, from P(8,5)",
+      "correctExplanation": "Order matters for shelf arrangement: P(8,5) = 8!/3! = 6720.",
+      "distractors": [
+        {
+          "answer": "56, from C(8,5) ignoring shelf arrangement order",
+          "explanation": "Books on a shelf have order, so permutations apply."
+        },
+        {
+          "answer": "40320, from 8! arranging all 8 books on",
+          "explanation": "Only 5 of 8 books are chosen: P(8,5), not 8!."
+        },
+        {
+          "answer": "40, from 8 × 5 as a direct multiplication",
+          "explanation": "P(8,5) = 8 × 7 × 6 × 5 × 4 = 6720."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "In how many ways can the letters of BANANA be arranged?",
+      "correct": "60, from 6!/(3! × 2!) for repeated letters",
+      "correctExplanation": "6 letters with A×3, N×2: 720/(6×2) = 60.",
+      "distractors": [
+        {
+          "answer": "720, from 6! treating all letters as distinct",
+          "explanation": "Repeated letters must be divided out: 6!/(3!2!) = 60."
+        },
+        {
+          "answer": "120, from 6!/3! dividing only by the A count",
+          "explanation": "Both A (×3) and N (×2) repeat: divide by 3! and 2!."
+        },
+        {
+          "answer": "360, from 6!/2! dividing only by the N count",
+          "explanation": "Both repeated letters must be accounted for."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A PIN has 4 digits (0-9) and no digit repeats. How many PINs are possible?",
+      "correct": "5040, from 10 × 9 × 8 × 7 = P(10,4)",
+      "correctExplanation": "Without repetition: P(10,4) = 5040.",
+      "distractors": [
+        {
+          "answer": "10000, from 10^4 allowing repetition of digits",
+          "explanation": "No repetition means each digit is used at most once."
+        },
+        {
+          "answer": "210, from C(10,4) ignoring the digit order",
+          "explanation": "PIN order matters, so permutations apply."
+        },
+        {
+          "answer": "40, from 10 × 4 multiplying digits by positions in this form",
+          "explanation": "Each successive position has fewer available digits."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A test has 10 questions and a student must answer exactly 7. How many selections are possible?",
+      "correct": "120, from C(10,7) = C(10,3) = 120",
+      "correctExplanation": "C(10,7) = 10!/(7!3!) = 120.",
+      "distractors": [
+        {
+          "answer": "5040, from P(10,7) treating answer order as relevant",
+          "explanation": "The selection of questions is unordered."
+        },
+        {
+          "answer": "70, from C(10,5) choosing half the questions",
+          "explanation": "The student answers 7, not 5."
+        },
+        {
+          "answer": "30, from 10 × 3 multiplying questions by skipped ones",
+          "explanation": "C(10,7) = 120."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "How many diagonals does a convex polygon with 8 sides have?",
+      "correct": "20, from C(8,2) minus 8 sides = 28 minus 8",
+      "correctExplanation": "Total line segments = C(8,2) = 28. Subtract 8 sides: 28-8 = 20.",
+      "distractors": [
+        {
+          "answer": "28, from C(8,2) including the sides as well",
+          "explanation": "Sides are not diagonals; subtract 8."
+        },
+        {
+          "answer": "8, assuming one diagonal per vertex of the polygon in this case",
+          "explanation": "Each vertex connects to 5 non-adjacent vertices."
+        },
+        {
+          "answer": "56, from 8 × 7 without dividing by 2",
+          "explanation": "Each diagonal is shared by two vertices: C(8,2) - 8 = 20."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A 5-card hand from a standard 52-card deck: how many possible hands?",
+      "correct": "2598960",
+      "correctExplanation": "C(52,5) = 52!/(5!47!) = 2598960.",
+      "distractors": [
+        {
+          "answer": "311875200, from P(52,5",
+          "explanation": "Card order does not matter in a hand."
+        },
+        {
+          "answer": "260, from 52 ×",
+          "explanation": "The combination formula gives C(52,5) = 2598960."
+        },
+        {
+          "answer": "52, choosing one",
+          "explanation": "Five cards must be chosen simultaneously."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "How many different 3-topping pizzas from 8 toppings?",
+      "correct": "56, from C(8,3) = 8!/(3! × 5!)",
+      "correctExplanation": "C(8,3) = (8×7×6)/(3×2×1) = 56.",
+      "distractors": [
+        {
+          "answer": "336, from P(8,3) counting topping order",
+          "explanation": "Topping order does not matter on a pizza."
+        },
+        {
+          "answer": "24, from 8 × 3 using direct multiplication",
+          "explanation": "C(8,3) = 56, not 8 × 3."
+        },
+        {
+          "answer": "120, from C(10,3) using the wrong total",
+          "explanation": "There are 8 toppings, giving C(8,3) = 56."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "To find the number of ways to arrange 3 of 7 different books on a shelf, use P(7,3) = 7!/(7 minus 3)! = 7!/{{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4!",
+          "correctExplanation": "(7-3)! = 4! = 24.",
+          "distractors": [
+            {
+              "answer": "3!",
+              "explanation": "3! is used in the combination formula, not here.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "7!",
+              "explanation": "Dividing by 7! would give 1/(7-3)!.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "210",
+          "correctExplanation": "7!/4! = 7 × 6 × 5 = 210.",
+          "distractors": [
+            {
+              "answer": "35",
+              "explanation": "35 = C(7,3), which divides by 3! as well.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5040",
+              "explanation": "5040 = 7!, not P(7,3).",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A code uses 3 letters from A-Z with no repeats, followed by 2 digits from 0-9 with no repeats. The total number of codes is P(26,3) × P(10,2) = 15600 × {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "90",
+          "correctExplanation": "P(10,2) = 10 × 9 = 90.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "100 = 10^2, which allows repetition.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "45 = C(10,2), but digit order matters in a code.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1404000",
+          "correctExplanation": "15600 × 90 = 1404000.",
+          "distractors": [
+            {
+              "answer": "15690",
+              "explanation": "15600 + 90 = 15690 uses addition instead of multiplication.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1560",
+              "explanation": "Multiplying by 1 instead of 90.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "The number of arrangements of PEPPER is 6! divided by {{blank:1}} for the repeated letters, giving {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3! × 2!",
+          "correctExplanation": "P appears 3 times and E appears 2 times: divide by 3! × 2!.",
+          "distractors": [
+            {
+              "answer": "3!",
+              "explanation": "Both P (×3) and E (×2) repeats must be divided out.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 = 3!, but both 3! and 2! are needed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "60",
+          "correctExplanation": "720/(6 × 2) = 720/12 = 60.",
+          "distractors": [
+            {
+              "answer": "120",
+              "explanation": "120 = 6!/3!, missing the E repeat.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "360",
+              "explanation": "360 = 6!/2!, missing the P repeat.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "A team of 5 is chosen from 8 men and 6 women with exactly 3 men. The number of teams is C(8,3) × C(6,{{blank:1}}) = 56 × {{blank:2}} = 840.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "5 team members minus 3 men = 2 women needed.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 men are chosen; 2 women complete the team.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5",
+              "explanation": "Only 2 women are needed, not 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "15",
+          "correctExplanation": "C(6,2) = 6!/(2!4!) = 15.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "P(6,2) = 30, but order does not matter.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "C(6,1) = 6, but we need C(6,2) = 15.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "For a circular arrangement of 6 people, fix one person and arrange the remaining {{blank:1}} people, giving {{blank:2}} arrangements.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "6 minus 1 = 5 people to arrange after fixing one position.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "One person is fixed, leaving 5 to arrange.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "6 minus 2 = 4 is incorrect; only 1 is fixed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "120",
+          "correctExplanation": "5! = 120.",
+          "distractors": [
+            {
+              "answer": "720",
+              "explanation": "720 = 6!, which overcounts rotations.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "24",
+              "explanation": "24 = 4!, but 5 people remain.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Using the addition principle: a student can take bus (3 routes) or train (5 routes) to school. The total number of transport options is {{blank:1}}, because the choices are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "3 + 5 = 8 mutually exclusive options.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "15 = 3 × 5 uses multiplication, for independent simultaneous events.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 counts the transport types, not the total routes.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "mutually exclusive",
+          "correctExplanation": "The student takes either bus or train, not both.",
+          "distractors": [
+            {
+              "answer": "independent",
+              "explanation": "Independence applies to the multiplication principle.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "simultaneous",
+              "explanation": "The student uses one mode, not both at once.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "How many ways to select 4 cards of the same suit from a standard deck? Choose 1 suit from {{blank:1}} suits, then choose 4 cards from 13: C(13,4) = 715. Total = 4 × 715 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "A standard deck has 4 suits: hearts, diamonds, clubs, spades.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "13 is the number of cards per suit, not suits.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "52",
+              "explanation": "52 is the total deck size.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2860",
+          "correctExplanation": "4 × 715 = 2860.",
+          "distractors": [
+            {
+              "answer": "715",
+              "explanation": "715 is for one suit; multiply by 4 suits.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "52",
+              "explanation": "52 is the deck size, not the answer.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A multiple-choice test has 10 questions with 4 options each. The total number of ways to answer all questions is {{blank:1}}^10 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Each of 10 questions has 4 options.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "10 is the number of questions, not options per question.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "40",
+              "explanation": "40 = 10 × 4, but the choices are independent per question.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1048576",
+          "correctExplanation": "4^10 = 1048576.",
+          "distractors": [
+            {
+              "answer": "40",
+              "explanation": "40 = 10 × 4, not 4^10.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10000",
+              "explanation": "10^4 reverses base and exponent.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A relay team of 4 runners is chosen from 9 athletes, and running order matters. The count is P(9,4) = 9 × 8 × 7 × {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "The fourth runner is chosen from the remaining 6.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "After choosing 3 from 9, 6 remain, not 5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "9 is the starting pool, not the fourth choice.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3024",
+          "correctExplanation": "9 × 8 × 7 × 6 = 3024.",
+          "distractors": [
+            {
+              "answer": "504",
+              "explanation": "504 = 9 × 8 × 7, missing the fourth factor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "126",
+              "explanation": "126 = C(9,4), ignoring order.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The inclusion-exclusion principle for two sets states |A union B| = |A| + |B| minus |A intersect {{blank:1}}|. If |A| = 20, |B| = 15, |A intersect B| = 5, then |A union B| = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "B",
+          "correctExplanation": "The intersection of A and B removes the double-counted elements.",
+          "distractors": [
+            {
+              "answer": "A",
+              "explanation": "The intersection involves both sets: A intersect B.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "C",
+              "explanation": "There is no set C in the two-set formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "20 + 15 - 5 = 30.",
+          "distractors": [
+            {
+              "answer": "35",
+              "explanation": "35 = 20 + 15, without subtracting the overlap.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "40",
+              "explanation": "40 = 20 + 15 + 5, adding the overlap instead of subtracting.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "The number of subsets of a set with n elements is {{blank:1}}^n. A set with 4 elements has {{blank:2}} subsets including the empty set.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "Each element is either included or excluded, giving 2^n subsets.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "n is the number of elements; 2^n is the subset count.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n!",
+              "explanation": "Factorial counts arrangements, not subsets.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "16",
+          "correctExplanation": "2^4 = 16.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "2^3 = 8, but the set has 4 elements.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "24",
+              "explanation": "24 = 4!, which counts arrangements, not subsets.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "To count paths on a 4 × 3 grid from bottom-left to top-right using only right and up moves, the total steps are 7 (4 right + 3 up). Choose which 3 are up: C(7,{{blank:1}}) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "Choose 3 positions for up moves from 7 total moves.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Choosing 4 right moves gives the same answer by symmetry, but the blank asks for the up count.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "7",
+              "explanation": "C(7,7) = 1, which is incorrect.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "35",
+          "correctExplanation": "C(7,3) = 35.",
+          "distractors": [
+            {
+              "answer": "210",
+              "explanation": "210 = P(7,3), but order of moves is determined by positions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "21",
+              "explanation": "C(7,2) = 21, but we choose 3 up moves.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "Prove that C(n,r) + C(n,r+1) = C(n+1,r+1) using algebraic manipulation.",
+      "correct": "add the fractions using common denominator to get (n+1)!/((r+1)!(n-r)!)",
+      "correctExplanation": "n!/(r!(n-r)!) + n!/((r+1)!(n-r-1)!) with LCD gives (n+1)!/((r+1)!(n-r)!).",
+      "distractors": [
+        {
+          "answer": "the identity only holds for specific values of n and r",
+          "explanation": "It holds for all valid n and r by Pascal rule."
+        },
+        {
+          "answer": "subtract the fractions and simplify to verify equality",
+          "explanation": "The fractions are added, not subtracted."
+        },
+        {
+          "answer": "replace factorials with gamma functions for the proof",
+          "explanation": "Algebraic manipulation of factorials suffices."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "How many 5-digit numbers have digits in strictly increasing order?",
+      "correct": "C(9,5) = 126, choosing 5 digits from 1-9 determines the order",
+      "correctExplanation": "Each subset of 5 distinct digits from {1,...,9} gives exactly one increasing arrangement.",
+      "distractors": [
+        {
+          "answer": "P(9,5) = 15120, counting all orderings of 5 digits",
+          "explanation": "Only one ordering is strictly increasing per subset."
+        },
+        {
+          "answer": "C(10,5) = 252, including 0 as a leading digit",
+          "explanation": "0 cannot lead a 5-digit number."
+        },
+        {
+          "answer": "9^5 = 59049, allowing repetition of digits in the number here",
+          "explanation": "Strictly increasing requires distinct digits."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Analyse why the number of derangements of n objects is approximately n!/e.",
+      "correct": "inclusion-exclusion on fixed points gives the alternating sum that approaches n!/e",
+      "correctExplanation": "D(n) = n!(1 - 1/1! + 1/2! - ... ± 1/n!) and the series converges to e^(-1).",
+      "distractors": [
+        {
+          "answer": "derangements are always exactly n!/e for all n values",
+          "explanation": "n!/e is an approximation; the exact count uses the alternating sum."
+        },
+        {
+          "answer": "the formula n!/e comes from dividing total arrangements by e overall here",
+          "explanation": "The formula arises from inclusion-exclusion, not simple division."
+        },
+        {
+          "answer": "derangements are impossible for n less than 3 objects",
+          "explanation": "D(2) = 1 and D(1) = 0; derangements exist for n ≥ 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A committee of 5 from 12 people must include at least the chairperson. How many committees are possible?",
+      "correct": "C(11,4) = 330, choosing 4 more members from remaining 11",
+      "correctExplanation": "The chairperson is fixed. Choose 4 from the other 11: C(11,4) = 330.",
+      "distractors": [
+        {
+          "answer": "C(12,5) = 792, ignoring the chairperson constraint",
+          "explanation": "The chairperson must be included, leaving 4 spots from 11."
+        },
+        {
+          "answer": "C(11,5) = 462, choosing 5 from 11 after removing the chair",
+          "explanation": "The chairperson is on the committee; only 4 more are needed."
+        },
+        {
+          "answer": "P(11,4) = 7920, treating member order as significant",
+          "explanation": "Committee membership is unordered."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "How many ways can 8 people be divided into two groups of 4?",
+      "correct": "35, from C(8,4)/2 since the groups are unlabelled",
+      "correctExplanation": "C(8,4) = 70 counts ordered splits. Dividing by 2 gives 35 unordered.",
+      "distractors": [
+        {
+          "answer": "70, from C(8,4) without adjusting for unlabelled groups",
+          "explanation": "Unlabelled groups are interchangeable; divide by 2."
+        },
+        {
+          "answer": "1680, from P(8,4) arranging one group then the other",
+          "explanation": "Groups are unordered selections, not arrangements."
+        },
+        {
+          "answer": "4, from 8 divided by 2 for the group size directly",
+          "explanation": "The count is C(8,4)/2 = 35."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "Determine the number of surjections from a 4-element set to a 3-element set.",
+      "correct": "36, using inclusion-exclusion on the complement of surjections",
+      "correctExplanation": "Total = 3^4 = 81. Minus non-surjective: C(3,1)2^4 - C(3,2)1^4 = 48-3 = 45. 81-45 = 36.",
+      "distractors": [
+        {
+          "answer": "81, from 3^4 counting all functions without restriction here here",
+          "explanation": "Not all functions are surjective; some miss a codomain element."
+        },
+        {
+          "answer": "24, from 4! permutations of the domain elements",
+          "explanation": "4! counts bijections, but the codomain is smaller."
+        },
+        {
+          "answer": "12, from 4 × 3 mapping each element independently",
+          "explanation": "The count uses inclusion-exclusion, not simple multiplication."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Analyse the probability of a full house in 5-card poker.",
+      "correct": "C(13,1)C(4,3)C(12,1)C(4,2)",
+      "correctExplanation": "Choose rank for triple: C(13,1). Suits: C(4,3). Pair rank: C(12,1). Suits: C(4,2). Over C(52,5).",
+      "distractors": [
+        {
+          "answer": "C(13,2)C(4,3)C(4,2) divided by",
+          "explanation": "The triple and pair have different roles; order matters between them."
+        },
+        {
+          "answer": "13 × 4 ×",
+          "explanation": "Hands are unordered; use combinations, not independent draws."
+        },
+        {
+          "answer": "P(13,2) × C(4,3)",
+          "explanation": "Hands are combinations, not permutations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "How many binary strings of length 10 have exactly 4 ones?",
+      "correct": "210, from C(10,4) choosing positions for the ones",
+      "correctExplanation": "Choose 4 positions from 10 for the ones; zeros fill the rest. C(10,4) = 210.",
+      "distractors": [
+        {
+          "answer": "1024, from 2^10 counting all binary strings of that length",
+          "explanation": "2^10 counts all strings; C(10,4) counts those with exactly 4 ones."
+        },
+        {
+          "answer": "24, from P(4,4) arranging the four ones in sequence",
+          "explanation": "The ones are identical; choosing positions suffices."
+        },
+        {
+          "answer": "40, from 10 × 4 multiplying length by ones count",
+          "explanation": "C(10,4) = 210 is the correct count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Determine how many paths exist on a 5 × 5 grid from (0,0) to (5,5) going only right or up.",
+      "correct": "252, from C(10,5) choosing 5 right moves from 10 total",
+      "correctExplanation": "10 total moves: 5 right + 5 up. Choose which 5 are right: C(10,5) = 252.",
+      "distractors": [
+        {
+          "answer": "100, from 10 × 10 for the grid dimensions instead here",
+          "explanation": "The count is combinations, not grid area."
+        },
+        {
+          "answer": "3125, from 5^5 for each step having 5 options",
+          "explanation": "Each step is binary (right or up), not 5-way."
+        },
+        {
+          "answer": "120, from 5! for the 5 right moves arranged",
+          "explanation": "Both right and up moves are positioned: C(10,5) = 252."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Why does the formula for combinations with repetition use C(n+r-1, r)?",
+      "correct": "stars and bars converts the problem to placing r stars among n-1 dividers",
+      "correctExplanation": "r identical items (stars) separated by n-1 bars gives C(n+r-1, r) arrangements.",
+      "distractors": [
+        {
+          "answer": "the formula adjusts C(n,r) by adding r to n for repetition as",
+          "explanation": "The formula arises from stars and bars, not adjustment."
+        },
+        {
+          "answer": "repetition doubles the value of C(n,r) automatically",
+          "explanation": "C(n+r-1,r) is not 2 × C(n,r) in general."
+        },
+        {
+          "answer": "the n-1 accounts for removing duplicate selections each time",
+          "explanation": "n-1 is the number of dividers, not duplicates removed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Prove that the sum of C(n,0) + C(n,1) + ... + C(n,n) = 2^n.",
+      "correct": "expand (1+1)^n using the binomial theorem to get the sum",
+      "correctExplanation": "(1+x)^n = sum of C(n,k)x^k. Setting x=1 gives sum = 2^n.",
+      "distractors": [
+        {
+          "answer": "add all factorials from 0! to n! and simplify to 2^n",
+          "explanation": "Factorials do not sum to 2^n; binomial coefficients do."
+        },
+        {
+          "answer": "multiply C(n,0) by 2 repeatedly n times to get 2^n",
+          "explanation": "The proof uses the binomial theorem, not recursive doubling."
+        },
+        {
+          "answer": "the sum equals n × 2^(n-1) by counting each element once",
+          "explanation": "n × 2^(n-1) counts total element-subset memberships, not subset count."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "How many ways can 10 identical balls be placed into 4 distinct boxes?",
+      "correct": "C(13,3) = 286, using stars and bars with 10 stars and 3 bars",
+      "correctExplanation": "Stars and bars: C(10+4-1, 4-1) = C(13,3) = 286.",
+      "distractors": [
+        {
+          "answer": "C(10,4) = 210, choosing 4 positions from 10 balls",
+          "explanation": "The formula for identical objects in distinct boxes is C(n+k-1, k-1)."
+        },
+        {
+          "answer": "40, from 10 × 4 distributing equally to each box in total as given",
+          "explanation": "Balls can be distributed unevenly."
+        },
+        {
+          "answer": "10000, from 4^10 for distinct balls in distinct boxes",
+          "explanation": "The balls are identical, not distinct."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Analyse the multinomial coefficient 10!/(3!3!4!) and its counting interpretation.",
+      "correct": "it counts ways to divide 10 items into groups of 3, 3 and 4",
+      "correctExplanation": "The multinomial distributes 10 distinct items into specified group sizes.",
+      "distractors": [
+        {
+          "answer": "it equals C(10,3) because only the first group matters",
+          "explanation": "All three groups are determined simultaneously."
+        },
+        {
+          "answer": "it counts permutations of 10 items with no repeats at all as stated here",
+          "explanation": "The division by factorials accounts for group orderings."
+        },
+        {
+          "answer": "it applies only when all groups have the same size",
+          "explanation": "Multinomials work for any group sizes summing to n."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "Determine the number of ways to place 8 non-attacking rooks on an 8 × 8 chessboard.",
+      "correct": "8! = 40320, one rook per row and one per column",
+      "correctExplanation": "Each row gets one rook; the column choices are a permutation of 8 columns: 8! = 40320.",
+      "distractors": [
+        {
+          "answer": "C(64,8) = 4426165368, choosing any 8 squares freely",
+          "explanation": "Non-attacking requires one per row and column."
+        },
+        {
+          "answer": "8^8, placing each rook in any of 8 columns independently in context",
+          "explanation": "No two rooks can share a column; choices decrease."
+        },
+        {
+          "answer": "64 × 49, placing two rooks then multiplying remaining squares",
+          "explanation": "The constraint is one per row and column: 8!."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Pascal identity states C(n,r) + C(n,r+1) = C({{blank:1}},r+1). This means each entry in Pascal triangle is the sum of the two entries {{blank:2}} it.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n+1",
+          "correctExplanation": "The identity adds row n terms to get a row n+1 term.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "C(n,r)+C(n,r+1) = C(n+1,r+1), not C(n,r+1).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2n",
+              "explanation": "The result is row n+1, not row 2n.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "above",
+          "correctExplanation": "Each entry is the sum of the two entries directly above it in the triangle.",
+          "distractors": [
+            {
+              "answer": "below",
+              "explanation": "The entries above generate the one below.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "beside",
+              "explanation": "The summed entries are in the previous row, not the same row.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The pigeonhole principle states that if n items are placed into m containers and n > m, at least one container has at least {{blank:1}} items. With 13 people, at least {{blank:2}} share a birth month.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "If n > m, at least one container must hold more than one item.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "1 item per container is possible when n ≤ m, not when n > m.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "At least 2, not n, items share a container.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "13 people into 12 months: at least one month has at least 2.",
+          "distractors": [
+            {
+              "answer": "13",
+              "explanation": "13 is the total people, not the minimum sharing a month.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 is the number of months, not the sharing count.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The number of derangements D(n) satisfies the recurrence D(n) = (n-1)(D(n-1) + D(n-2)). With D(1) = 0 and D(2) = 1, D(3) = 2(D(2) + D(1)) = 2(1+0) = {{blank:1}}, and D(4) = 3(D(3)+D(2)) = 3(2+1) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "2",
+          "correctExplanation": "2 × (1+0) = 2.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The multiplier is n-1 = 2, not 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "2 × 1 = 2, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "9",
+          "correctExplanation": "3 × (2+1) = 3 × 3 = 9.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "3 × 2 = 6 ignores D(2) = 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 = 4 × 3, but D(4) = 3 × (D(3)+D(2)) = 9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The binomial theorem states (a+b)^n = sum from k=0 to n of C(n,k) a^(n-k) b^k. The third term of (x+2)^5 is C(5,2) x^3 × 2^2 = {{blank:1}} × x^3 × 4 = {{blank:2}} x^3.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "C(5,2) = 10.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "C(5,1) = 5, but the third term uses C(5,2).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "20",
+              "explanation": "C(5,2) = 10, not 20.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "40",
+          "correctExplanation": "10 × 4 = 40.",
+          "distractors": [
+            {
+              "answer": "80",
+              "explanation": "80 = 10 × 8, but 2^2 = 4, not 8.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "20",
+              "explanation": "10 × 2 = 20, but we need 10 × 2^2 = 40.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "To count surjections from a 3-element set to a 2-element set: total functions = 2^3 = {{blank:1}}. Non-surjections (missing one element) = C(2,1) × 1^3 = 2. Surjections = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8",
+          "correctExplanation": "2^3 = 8 total functions.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 = 3!, counting permutations, not functions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "9 = 3^2, not 2^3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "8 - 2 = 6 surjections.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the non-surjection count.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "8 - 2 = 6, not 4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "The number of binary strings of length n with exactly k ones is C(n,{{blank:1}}). For n = 8 and k = 3, this is C(8,3) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "k",
+          "correctExplanation": "Choose k positions from n for the ones.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "Choosing n positions would place ones everywhere.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n minus k",
+              "explanation": "Choosing positions for zeros gives C(n,n-k) = C(n,k) by symmetry.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "56",
+          "correctExplanation": "C(8,3) = (8×7×6)/(3×2×1) = 56.",
+          "distractors": [
+            {
+              "answer": "336",
+              "explanation": "336 = P(8,3), counting ordered selections.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "24",
+              "explanation": "24 = 4!, unrelated to C(8,3).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Stars and bars: distributing r identical objects into n distinct bins uses {{blank:1}} bars to create n regions. The total arrangements are C(r + n minus 1, {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n minus 1",
+          "correctExplanation": "n-1 bars create n regions.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "n bars create n+1 regions, which is too many.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "r",
+              "explanation": "r is the number of stars, not bars.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "r",
+          "correctExplanation": "Choose r positions for stars from r+n-1 total positions.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "The formula is C(r+n-1, r) or equivalently C(r+n-1, n-1).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n minus 1",
+              "explanation": "C(r+n-1, n-1) is equivalent but the blank asks for r.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The multinomial coefficient n!/(k_1! × k_2! × ... × k_m!) counts the ways to partition n distinct items into m groups of sizes k_1 through k_m. For 12!/(4!4!4!), this gives {{blank:1}} ways to split 12 people into 3 labelled groups of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "34650",
+          "correctExplanation": "12!/(4!4!4!) = 479001600/(24×24×24) = 34650.",
+          "distractors": [
+            {
+              "answer": "1320",
+              "explanation": "1320 = 12!/(4!8!), for two groups only.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "495",
+              "explanation": "495 = C(12,4), choosing only one group.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "Each group has 4 people.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the number of groups, not their size.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "12",
+              "explanation": "12 is the total people, not per group.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "The Vandermonde identity states C(m+n, r) = sum from k=0 to r of C(m,k) × C(n, r minus k). Setting m = n = r gives C(2n,n) = sum of C(n,k)^2, which for n = 3 gives C(6,3) = {{blank:1}} = 1 + 9 + 9 + {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20",
+          "correctExplanation": "C(6,3) = 20.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "C(6,1) = 6, not C(6,3).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "120",
+              "explanation": "120 = P(6,3) or 5!, not C(6,3).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "C(3,0)^2 = 1, C(3,1)^2 = 9, C(3,2)^2 = 9, C(3,3)^2 = 1. Sum = 20.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "C(3,3)^2 = 1, not 3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "9",
+              "explanation": "The last term is C(3,3)^2 = 1, not another 9.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "To count the number of lattice paths from (0,0) to (m,n) that do not cross above the diagonal, use the Catalan-like formula. For m = n, the nth Catalan number is C(2n,n)/({{blank:1}}). For n = 4, C_4 = C(8,4)/5 = 70/5 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n + 1",
+          "correctExplanation": "The nth Catalan number is C(2n,n)/(n+1).",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "Dividing by n gives a different sequence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "Dividing by 2 does not give the Catalan numbers.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "14",
+          "correctExplanation": "70/5 = 14.",
+          "distractors": [
+            {
+              "answer": "70",
+              "explanation": "70 = C(8,4) before dividing by n+1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "35",
+              "explanation": "35 = 70/2, but we divide by 5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "The principle of double counting: each edge of a complete graph K_n connects exactly 2 vertices. The sum of vertex degrees is 2 × C(n,2) = n(n minus 1). Each vertex has degree {{blank:1}}, so the sum is n × (n-1), confirming {{blank:2}} edges.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n minus 1",
+          "correctExplanation": "In K_n, each vertex connects to all other n-1 vertices.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "Each vertex connects to n-1 others, not n (no self-loops).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "2 is the vertices per edge, not the degree.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n(n minus 1)/2",
+          "correctExplanation": "C(n,2) = n(n-1)/2 edges.",
+          "distractors": [
+            {
+              "answer": "n(n minus 1)",
+              "explanation": "This counts each edge twice; divide by 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n^2",
+              "explanation": "n^2 overcounts; the answer is n(n-1)/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The number of ways to seat n couples around a circular table with no couple adjacent is a difficult counting problem. For n = 3 couples (6 people), circular arrangements total (6-1)! = {{blank:1}}, and the number with no couple adjacent is {{blank:2}} (found by inclusion-exclusion).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "120",
+          "correctExplanation": "5! = 120.",
+          "distractors": [
+            {
+              "answer": "720",
+              "explanation": "720 = 6!, for linear arrangements.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "24",
+              "explanation": "24 = 4!, not 5!.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "32",
+          "correctExplanation": "By inclusion-exclusion: 120 - 3×2!×4! + 3×2!^2×3! - 2!^3×2! = 120-144+72-16 = 32.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "60 = 120/2, not the inclusion-exclusion result.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "The answer is positive; arrangements do exist.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

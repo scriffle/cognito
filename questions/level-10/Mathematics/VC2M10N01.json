@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10N01",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to recognise how using approximate values in repeated calculations can cause errors to accumulate.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to recognise how using approximate values in repeated calculations can cause errors to accumulate.",
+    "y": [
+      "Understanding error accumulation is essential for maintaining the integrity of calculations in science, engineering and finance.",
+      "This knowledge helps us make informed decisions about when to round and when to maintain precision throughout a calculation.",
+      "Error propagation is a critical consideration in any field that relies on chains of calculations — from GPS technology to climate modelling."
+    ],
+    "eg": [
+      "Demonstrating how rounding to 2 decimal places at each step of a 10-step calculation can produce a significantly different final answer.",
+      "Calculating the final answer with and without intermediate rounding and comparing the results.",
+      "Discussing why banks use many decimal places for interest calculations to avoid cumulative rounding errors.",
+      "Investigating how error propagates through multiplication: if each measurement has 1% error, the product may have approximately 2% error.",
+      "Comparing the results of calculating (1.01)^100 with different levels of rounding at each step.",
+      "Discussing strategies for minimising accumulated error: rounding only at the final step, using exact values where possible."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "Rounding a number always reduces its value.",
+      "correct": "False",
+      "correctExplanation": "Rounding can increase or decrease a value depending on the digit being rounded.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Values can be rounded up or down."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Accumulated error occurs when rounding is applied at each step of a multi-step calculation.",
+      "correct": "True",
+      "correctExplanation": "Each rounding introduces a small error that can compound across steps.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Multi-step rounding causes errors to build up."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Using exact values throughout a calculation eliminates rounding error.",
+      "correct": "True",
+      "correctExplanation": "If no rounding occurs, no rounding error is introduced.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Exact values avoid the approximation that causes error."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "A single rounding error in one step has no effect on the final answer.",
+      "correct": "False",
+      "correctExplanation": "Even a small rounding error in one step can propagate through subsequent calculations.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Errors propagate through operations, potentially amplifying."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Absolute error is the difference between the exact value and the approximate value.",
+      "correct": "True",
+      "correctExplanation": "Absolute error = |exact − approximate|.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This is the standard definition of absolute error."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "Rounding to more decimal places always increases accumulated error.",
+      "correct": "False",
+      "correctExplanation": "More decimal places means less rounding at each step, reducing accumulated error.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Greater precision reduces the error introduced at each step."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Percentage error compares the error to the exact value as a proportion.",
+      "correct": "True",
+      "correctExplanation": "Percentage error = (|exact − approximate|/|exact|) × 100%.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This measures error relative to the true value."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "Truncation and rounding are the same process.",
+      "correct": "False",
+      "correctExplanation": "Truncation always removes digits without considering them, while rounding adjusts the last kept digit.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Truncation always rounds toward zero, which differs from standard rounding."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "In multiplication, the absolute errors of the factors are added to find the total error.",
+      "correct": "False",
+      "correctExplanation": "In multiplication, it is the relative (percentage) errors that approximately add, not the absolute errors.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Absolute error addition applies to addition/subtraction, not multiplication."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Significant figures indicate the precision of a measurement.",
+      "correct": "True",
+      "correctExplanation": "The number of significant figures shows how precisely a value is known.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "More significant figures indicate greater precision."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Accumulated error only matters in scientific calculations, not everyday life.",
+      "correct": "False",
+      "correctExplanation": "Accumulated error affects finance, construction, cooking and many everyday activities.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Any repeated calculation involving approximations can accumulate error."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "Rounding errors always cancel out over many calculations.",
+      "correct": "False",
+      "correctExplanation": "While some errors may cancel, there is no guarantee; errors can accumulate systematically.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Systematic bias in rounding can cause errors to compound rather than cancel."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "What is absolute error?",
+      "correct": "The difference between exact and approx",
+      "correctExplanation": "Absolute error = |exact − approximate|.",
+      "distractors": [
+        {
+          "answer": "The approximate value itself",
+          "explanation": "The approximate value is not the error."
+        },
+        {
+          "answer": "The exact value divided by 100",
+          "explanation": "This is not a standard error measure."
+        },
+        {
+          "answer": "The number of decimal places",
+          "explanation": "Decimal places relate to precision, not error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which strategy best minimises accumulated rounding error?",
+      "correct": "Round only at the final step",
+      "correctExplanation": "Delaying rounding preserves precision through intermediate calculations.",
+      "distractors": [
+        {
+          "answer": "Round at every step",
+          "explanation": "This maximises accumulated error."
+        },
+        {
+          "answer": "Use fewer decimal places",
+          "explanation": "Fewer decimals increases rounding error."
+        },
+        {
+          "answer": "Ignore rounding entirely",
+          "explanation": "Some rounding may be necessary for reporting."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What is percentage error?",
+      "correct": "(|exact − approx| /",
+      "correctExplanation": "This formula expresses error as a proportion of the true value.",
+      "distractors": [
+        {
+          "answer": "|exact − approx|",
+          "explanation": "This is the absolute error, not percentage."
+        },
+        {
+          "answer": "approx / exact",
+          "explanation": "This is a ratio, not an error percentage."
+        },
+        {
+          "answer": "exact − approx",
+          "explanation": "This omits the absolute value and division."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What type of error occurs when intermediate results are rounded?",
+      "correct": "Accumulated rounding error",
+      "correctExplanation": "Each rounding step introduces error that builds up.",
+      "distractors": [
+        {
+          "answer": "Systematic bias",
+          "explanation": "Bias is a specific pattern, not just accumulation."
+        },
+        {
+          "answer": "Random measurement error",
+          "explanation": "Measurement error is from instruments."
+        },
+        {
+          "answer": "Calculation mistake",
+          "explanation": "Rounding error is not a mistake."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "How many significant figures does 0.00340 have?",
+      "correct": "3",
+      "correctExplanation": "Leading zeros are not significant; 3, 4 and the trailing 0 are significant.",
+      "distractors": [
+        {
+          "answer": "5",
+          "explanation": "This counts all digits including leading zeros."
+        },
+        {
+          "answer": "2",
+          "explanation": "This ignores the trailing zero."
+        },
+        {
+          "answer": "6",
+          "explanation": "This counts all characters."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "What is the absolute error when 3.14 is used instead of π (3.14159...)?",
+      "correct": "About 0.002",
+      "correctExplanation": "|3.14159 − 3.14| ≈ 0.00159 ≈ 0.002.",
+      "distractors": [
+        {
+          "answer": "About 0.02",
+          "explanation": "This overestimates the error by a factor of 10."
+        },
+        {
+          "answer": "About 0.2",
+          "explanation": "This is 100 times too large."
+        },
+        {
+          "answer": "Zero",
+          "explanation": "π and 3.14 are not exactly equal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Truncation differs from rounding because truncation always:",
+      "correct": "Removes digits withou",
+      "correctExplanation": "Truncation cuts off digits regardless of their value.",
+      "distractors": [
+        {
+          "answer": "Rounds up",
+          "explanation": "Truncation does not round up."
+        },
+        {
+          "answer": "Increases the value",
+          "explanation": "Truncation can decrease or leave the value."
+        },
+        {
+          "answer": "Adds extra zeros",
+          "explanation": "Truncation removes, not adds."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which measurement has the most significant figures?",
+      "correct": "12.340",
+      "correctExplanation": "12.340 has 5 significant figures.",
+      "distractors": [
+        {
+          "answer": "1200",
+          "explanation": "1200 has 2 significant figures (ambiguous)."
+        },
+        {
+          "answer": "0.012",
+          "explanation": "0.012 has 2 significant figures."
+        },
+        {
+          "answer": "12.3",
+          "explanation": "12.3 has 3 significant figures."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "In which operation do absolute errors add directly?",
+      "correct": "Addition and subtraction",
+      "correctExplanation": "When adding or subtracting, the absolute error of the result is approximately the sum of the individual absolute errors.",
+      "distractors": [
+        {
+          "answer": "Multiplication only",
+          "explanation": "Multiplication combines relative errors."
+        },
+        {
+          "answer": "Division only",
+          "explanation": "Division also combines relative errors."
+        },
+        {
+          "answer": "Exponentiation",
+          "explanation": "Exponentiation amplifies relative errors."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "A calculator displays 2.718281828. This is an approximation of:",
+      "correct": "e (Euler's",
+      "correctExplanation": "e ≈ 2.71828182845... is an irrational number.",
+      "distractors": [
+        {
+          "answer": "π",
+          "explanation": "π ≈ 3.14159..."
+        },
+        {
+          "answer": "√2",
+          "explanation": "√2 ≈ 1.41421..."
+        },
+        {
+          "answer": "φ (golde",
+          "explanation": "φ ≈ 1.61803..."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "What happens to rounding error as the number of calculation steps increases?",
+      "correct": "It tends to accumulate",
+      "correctExplanation": "More steps mean more opportunities for rounding to introduce error.",
+      "distractors": [
+        {
+          "answer": "It always cancels out",
+          "explanation": "Cancellation is not guaranteed."
+        },
+        {
+          "answer": "It decreases to zero",
+          "explanation": "More steps typically increase total error."
+        },
+        {
+          "answer": "It stays exactly the same",
+          "explanation": "Error changes with each step."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Rounding 4.65 to one decimal place gives:",
+      "correct": "4.7",
+      "correctExplanation": "The digit 5 causes the preceding digit to round up.",
+      "distractors": [
+        {
+          "answer": "4.6",
+          "explanation": "The 5 in the hundredths place rounds up."
+        },
+        {
+          "answer": "5.0",
+          "explanation": "This rounds to the nearest whole number."
+        },
+        {
+          "answer": "4.65",
+          "explanation": "This is not rounded to one decimal place."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "Absolute error equals the difference between the {{blank:1}} value and the {{blank:2}} value.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exact",
+          "correctExplanation": "The exact value is the true reference.",
+          "distractors": [
+            {
+              "answer": "approximate",
+              "explanation": "The approximate value is what is being compared.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "rounded",
+              "explanation": "Rounded is a type of approximate value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "approximate",
+          "correctExplanation": "The approximate value is the one with error.",
+          "distractors": [
+            {
+              "answer": "exact",
+              "explanation": "The exact value is the reference, not the error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "estimated",
+              "explanation": "While related, the standard term is approximate.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "Accumulated error builds up when {{blank:1}} is applied at each step of a {{blank:2}} calculation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "rounding",
+          "correctExplanation": "Rounding at each step introduces small errors that accumulate.",
+          "distractors": [
+            {
+              "answer": "addition",
+              "explanation": "Addition is an operation, not a source of rounding error.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "estimation",
+              "explanation": "While related, rounding is the specific cause.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multi-step",
+          "correctExplanation": "Multiple calculation steps allow errors to compound.",
+          "distractors": [
+            {
+              "answer": "single-step",
+              "explanation": "A single step produces only one rounding error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mental",
+              "explanation": "Mental calculations can also accumulate error, but the key is multi-step.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "Rounding errors in multiplication tend to be larger than in addition for the same approximate values.",
+      "correct": "False",
+      "correctExplanation": "The size of the error depends on the values and the operation; multiplication combines relative errors, which may be smaller or larger than absolute errors in addition depending on context.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The comparison depends on the specific values involved."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "A measurement with a relative error of 1% used in a calculation five times will produce a result with approximately 5% relative error.",
+      "correct": "False",
+      "correctExplanation": "This is only approximately true for addition. For multiplication, relative errors approximately add, giving about 5%. But for repeated multiplication (powers), the error compounds. The statement oversimplifies.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Error propagation depends on the type of operation, not just repetition."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Using more decimal places in intermediate calculations always eliminates accumulated error completely.",
+      "correct": "False",
+      "correctExplanation": "More decimal places reduces but does not eliminate accumulated error; some rounding error remains.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Greater precision reduces error but cannot eliminate it entirely."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "If each step in a calculation has a rounding error of ±0.005, then after 10 steps the maximum possible error is ±0.05.",
+      "correct": "True",
+      "correctExplanation": "In the worst case, all errors could align in the same direction: 10 × 0.005 = 0.05.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Maximum error assumes all individual errors accumulate in the same direction."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Relative error is more useful than absolute error when comparing measurements of different magnitudes.",
+      "correct": "True",
+      "correctExplanation": "Relative error normalises by the size of the measurement, allowing fair comparison.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A 1 cm error on 10 cm is more significant than on 10 m."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Banks use many decimal places for interest calculations because rounding errors are negligible in finance.",
+      "correct": "False",
+      "correctExplanation": "Banks use many decimal places precisely because rounding errors are NOT negligible — they accumulate over millions of transactions.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The high volume of transactions makes even tiny errors significant."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "When subtracting two nearly equal numbers, the relative error of the result can be very large.",
+      "correct": "True",
+      "correctExplanation": "This is called catastrophic cancellation; the result is small but the absolute error remains, inflating the relative error.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Subtracting nearly equal values amplifies relative error."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Accumulated error always results in the final answer being too large.",
+      "correct": "False",
+      "correctExplanation": "Accumulated error can cause the answer to be too large, too small, or vary unpredictably.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Errors can be positive or negative, so the net effect varies."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Why is subtracting two nearly equal approximate numbers particularly problematic?",
+      "correct": "The relative error becomes very large",
+      "correctExplanation": "The difference is small but retains the absolute errors of both inputs.",
+      "distractors": [
+        {
+          "answer": "The answer becomes negative",
+          "explanation": "Subtraction can give any sign."
+        },
+        {
+          "answer": "Rounding errors cancel out",
+          "explanation": "They do not cancel in this case."
+        },
+        {
+          "answer": "The operation is undefined",
+          "explanation": "Subtraction is always defined for real numbers."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "A value is measured as 5.2 ± 0.1. What is the relative error?",
+      "correct": "About 1.9%",
+      "correctExplanation": "0.1/5.2 × 100 ≈ 1.92%.",
+      "distractors": [
+        {
+          "answer": "About 5.2%",
+          "explanation": "This is the value, not the error."
+        },
+        {
+          "answer": "About 0.1%",
+          "explanation": "This is the absolute error, not relative."
+        },
+        {
+          "answer": "About 10%",
+          "explanation": "This overestimates the relative error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "In a chain of 20 calculations, each rounded to 2 decimal places, the maximum accumulated error is:",
+      "correct": "±0.1",
+      "correctExplanation": "Each step: ±0.005; total: 20 × 0.005 = 0.1.",
+      "distractors": [
+        {
+          "answer": "±0.005",
+          "explanation": "This is the error per step, not the total."
+        },
+        {
+          "answer": "±1.0",
+          "explanation": "This overestimates by a factor of 10."
+        },
+        {
+          "answer": "±0.01",
+          "explanation": "This is two steps, not twenty."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Why do scientists report results with an appropriate number of significant figures?",
+      "correct": "To indicate the precision of mea",
+      "correctExplanation": "Significant figures communicate how precisely values are known.",
+      "distractors": [
+        {
+          "answer": "To make numbers shorter",
+          "explanation": "Brevity is not the primary purpose."
+        },
+        {
+          "answer": "To hide measurement errors",
+          "explanation": "Significant figures reveal, not hide, precision."
+        },
+        {
+          "answer": "To round to whole numbers",
+          "explanation": "Significant figures apply to all decimal places."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "If two measurements each have 2% relative error and are multiplied, the approximate relative error of the product is:",
+      "correct": "4%",
+      "correctExplanation": "In multiplication, relative errors approximately add: 2% + 2% = 4%.",
+      "distractors": [
+        {
+          "answer": "2%",
+          "explanation": "Both errors contribute to the product."
+        },
+        {
+          "answer": "0.04%",
+          "explanation": "This multiplies the percentages incorrectly."
+        },
+        {
+          "answer": "8%",
+          "explanation": "This doubles instead of adding."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Calculating (1.05)¹⁰ using exact arithmetic gives 1.62889... . Using 1.05 rounded to 1.0 gives 1.0. This demonstrates:",
+      "correct": "How rounding before exponentiation ampli",
+      "correctExplanation": "Rounding 1.05 to 1.0 eliminates the growth entirely.",
+      "distractors": [
+        {
+          "answer": "Rounding has no significant effect",
+          "explanation": "The error is from 1.63 to 1.0."
+        },
+        {
+          "answer": "Exponentiation reduces error",
+          "explanation": "Exponentiation amplifies it here."
+        },
+        {
+          "answer": "The calculation is incorrect",
+          "explanation": "The exact calculation is correct."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "What is catastrophic cancellation?",
+      "correct": "Large relative error from subtracting",
+      "correctExplanation": "The small result retains absolute errors from both operands.",
+      "distractors": [
+        {
+          "answer": "An error that destroys data",
+          "explanation": "It is a numerical error, not data loss."
+        },
+        {
+          "answer": "Division by zero",
+          "explanation": "Division by zero is undefined, not cancellation."
+        },
+        {
+          "answer": "Rounding to zero decimal places",
+          "explanation": "This is just rounding, not cancellation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "A GPS system performs thousands of calculations per second. Why is minimising rounding error crucial?",
+      "correct": "Small errors compound across many ca",
+      "correctExplanation": "Thousands of steps can amplify tiny individual errors.",
+      "distractors": [
+        {
+          "answer": "GPS uses exact values only",
+          "explanation": "GPS calculations involve approximations."
+        },
+        {
+          "answer": "Rounding improves GPS accuracy",
+          "explanation": "Rounding reduces accuracy."
+        },
+        {
+          "answer": "GPS does not use decimals",
+          "explanation": "GPS calculations require high precision."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Which is larger: 2% of 1000 or 5% of 100?",
+      "correct": "2% of 1000 = 20",
+      "correctExplanation": "2% × 1000 = 20; 5% × 100 = 5. So 20 > 5.",
+      "distractors": [
+        {
+          "answer": "5% of 100 = 5",
+          "explanation": "5 is less than 20."
+        },
+        {
+          "answer": "They are equal",
+          "explanation": "20 ≠ 5."
+        },
+        {
+          "answer": "Cannot be compared",
+          "explanation": "Both are numerical values and can be compared."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "When should intermediate rounding be avoided in a calculation?",
+      "correct": "When many steps follow and precision matters",
+      "correctExplanation": "More subsequent steps increase the risk of error accumulation.",
+      "distractors": [
+        {
+          "answer": "When the calculation is simple",
+          "explanation": "Simple calculations have fewer steps to compound error."
+        },
+        {
+          "answer": "When using a calculator",
+          "explanation": "Calculators still round internally."
+        },
+        {
+          "answer": "When the answer needs to be approximate",
+          "explanation": "Even approximate answers benefit from intermediate precision."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "If a measurement of 0.0050 m has an absolute error of 0.0001 m, the relative error is:",
+      "correct": "2%",
+      "correctExplanation": "0.0001/0.0050 × 100 = 2%.",
+      "distractors": [
+        {
+          "answer": "0.002%",
+          "explanation": "This divides by 100 instead of 0.0050."
+        },
+        {
+          "answer": "20%",
+          "explanation": "This overestimates by a factor of 10."
+        },
+        {
+          "answer": "0.1%",
+          "explanation": "This uses the wrong divisor."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Repeated squaring of a number close to 1 (like 1.001) demonstrates error accumulation because:",
+      "correct": "Each squaring amplifies the small differe",
+      "correctExplanation": "Squaring 1.001 gives 1.002001, then 1.004006..., each step growing the deviation.",
+      "distractors": [
+        {
+          "answer": "Squaring always reduces values",
+          "explanation": "Values above 1 increase when squared."
+        },
+        {
+          "answer": "The error cancels after each step",
+          "explanation": "The error compounds, not cancels."
+        },
+        {
+          "answer": "The number stays close to 1 forever",
+          "explanation": "Repeated squaring moves the value away from 1."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "Relative error is calculated as absolute error divided by the {{blank:1}} value, and is more useful for comparing errors across different {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "exact",
+          "correctExplanation": "Relative error = absolute error / exact value.",
+          "distractors": [
+            {
+              "answer": "approximate",
+              "explanation": "The denominator should be the exact value.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "rounded",
+              "explanation": "The reference is the exact value.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "magnitudes",
+          "correctExplanation": "Relative error normalises for the size of the measurement.",
+          "distractors": [
+            {
+              "answer": "calculations",
+              "explanation": "The key comparison is across different-sized values.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "instruments",
+              "explanation": "Magnitudes of the measured quantities matter.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "When multiplying two measurements, the relative errors approximately {{blank:1}}, meaning a product of two values each with 3% error has about {{blank:2}}% relative error.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "add",
+          "correctExplanation": "Relative errors in products are additive.",
+          "distractors": [
+            {
+              "answer": "multiply",
+              "explanation": "Relative errors add, not multiply.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "cancel",
+              "explanation": "Errors do not cancel in multiplication.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "3% + 3% = 6%.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "This squares instead of adding.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "Both errors contribute.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "Catastrophic cancellation occurs when subtracting two {{blank:1}} numbers, causing the {{blank:2}} error to become very large.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "nearly equal",
+          "correctExplanation": "The difference is small, amplifying the relative error.",
+          "distractors": [
+            {
+              "answer": "very different",
+              "explanation": "Large differences do not cause this problem.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative",
+              "explanation": "The sign does not determine cancellation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "relative",
+          "correctExplanation": "The absolute error stays similar but the result is small, inflating relative error.",
+          "distractors": [
+            {
+              "answer": "absolute",
+              "explanation": "Absolute error does not change; relative error inflates.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "rounding",
+              "explanation": "The specific issue is with relative error.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Banks use many decimal places because rounding errors across {{blank:1}} of transactions can result in {{blank:2}} financial discrepancies.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "millions",
+          "correctExplanation": "High transaction volumes amplify tiny rounding errors.",
+          "distractors": [
+            {
+              "answer": "dozens",
+              "explanation": "A few transactions would not show significant accumulation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "hundreds",
+              "explanation": "While possible, the key issue is the very large volume.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "significant",
+          "correctExplanation": "Even tiny errors per transaction add up to real money.",
+          "distractors": [
+            {
+              "answer": "negligible",
+              "explanation": "The errors are significant, not negligible.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "imaginary",
+              "explanation": "The financial impact is real.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "To minimise accumulated error, the best practice is to round only at the {{blank:1}} step and maintain full {{blank:2}} throughout intermediate calculations.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "final",
+          "correctExplanation": "Delaying rounding prevents intermediate error accumulation.",
+          "distractors": [
+            {
+              "answer": "first",
+              "explanation": "Rounding early maximises accumulated error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "middle",
+              "explanation": "Any intermediate rounding introduces avoidable error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "precision",
+          "correctExplanation": "Keeping all decimal places preserves accuracy.",
+          "distractors": [
+            {
+              "answer": "simplicity",
+              "explanation": "Simplifying intermediate steps can introduce error.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "rounding",
+              "explanation": "The goal is to avoid intermediate rounding.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The maximum accumulated error after n steps, each with error ±e, is {{blank:1}} in the worst case, assuming all errors align in the {{blank:2}} direction.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "±ne",
+          "correctExplanation": "If all errors have the same sign, they add to ne.",
+          "distractors": [
+            {
+              "answer": "±e",
+              "explanation": "This is the error per step, not the total.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "±e/n",
+              "explanation": "The total grows with n, not shrinks.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "same",
+          "correctExplanation": "Worst case is when all errors reinforce each other.",
+          "distractors": [
+            {
+              "answer": "opposite",
+              "explanation": "Opposite errors would cancel.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Random directions give a typical, not worst, case.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "Calculating 3.14 × 2.72 × 1.41 by rounding each factor to 1 decimal place first gives the same answer as using exact values.",
+      "correct": "False",
+      "correctExplanation": "3.1 × 2.7 × 1.4 = 11.718; exact = 3.14 × 2.72 × 1.41 ≈ 12.037. The results differ.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Intermediate rounding changes the final result."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "If a measurement of 25.0 cm has an absolute error of 0.5 cm, the relative error is 2%.",
+      "correct": "True",
+      "correctExplanation": "0.5/25.0 × 100 = 2%.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The calculation confirms a 2% relative error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A value of 7.35 is rounded to 7.4 at step 1, then multiplied by 3 at step 2. The exact answer is 7.35 × 3 = 22.05. What is the accumulated error?",
+      "correct": "0.15",
+      "correctExplanation": "Rounded: 7.4 × 3 = 22.2; error = |22.2 − 22.05| = 0.15.",
+      "distractors": [
+        {
+          "answer": "0.05",
+          "explanation": "This is the initial rounding error only."
+        },
+        {
+          "answer": "0.5",
+          "explanation": "This overestimates the error."
+        },
+        {
+          "answer": "0",
+          "explanation": "The rounding error propagates through multiplication."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Each of 5 measurements has a relative error of 1.5%. If they are multiplied together, the approximate relative error of the product is:",
+      "correct": "7.5%",
+      "correctExplanation": "Relative errors add in multiplication: 5 × 1.5% = 7.5%.",
+      "distractors": [
+        {
+          "answer": "1.5%",
+          "explanation": "This is only one measurement error."
+        },
+        {
+          "answer": "15%",
+          "explanation": "This doubles the correct answer."
+        },
+        {
+          "answer": "0.75%",
+          "explanation": "This divides instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "π is approximated as 3.14. In calculating 2πr with r = 10.0, what is the absolute error compared to using exact π?",
+      "correct": "About 0.032",
+      "correctExplanation": "Exact: 2 × 3.14159 × 10 = 62.832; approx: 2 × 3.14 × 10 = 62.8; error ≈ 0.032.",
+      "distractors": [
+        {
+          "answer": "About 0.002",
+          "explanation": "This is the error in π alone."
+        },
+        {
+          "answer": "About 0.32",
+          "explanation": "This overestimates by factor 10."
+        },
+        {
+          "answer": "About 3.2",
+          "explanation": "This is far too large."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A student calculates (1.02)⁵ by rounding to 1.0 first. The exact answer is about 1.104. The student gets:",
+      "correct": "1.000",
+      "correctExplanation": "(1.0)⁵ = 1.000; the growth is completely lost.",
+      "distractors": [
+        {
+          "answer": "1.104",
+          "explanation": "This is the exact answer, not the rounded one."
+        },
+        {
+          "answer": "1.10",
+          "explanation": "This is close to exact, not from 1.0⁵."
+        },
+        {
+          "answer": "1.02",
+          "explanation": "This is just the base, not the fifth power."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Two sides of a rectangle are measured as 12.3 ± 0.1 cm and 8.7 ± 0.1 cm. The maximum possible error in the calculated area is approximately:",
+      "correct": "2.1 cm²",
+      "correctExplanation": "Max area: 12.4 × 8.8 = 109.12; min area: 12.2 × 8.6 = 104.92; diff/2 ≈ 2.1.",
+      "distractors": [
+        {
+          "answer": "0.2 cm²",
+          "explanation": "This adds the absolute errors without considering multiplication."
+        },
+        {
+          "answer": "0.01 cm²",
+          "explanation": "This multiplies the absolute errors."
+        },
+        {
+          "answer": "20 cm²",
+          "explanation": "This overestimates significantly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Interest of 0.5% per month is applied to $10 000 for 12 months. Using compound interest with rounding to the nearest cent at each step versus exact calculation, the difference is:",
+      "correct": "A few cents",
+      "correctExplanation": "With small rates over 12 steps, the accumulated rounding error is minimal.",
+      "distractors": [
+        {
+          "answer": "Exactly zero",
+          "explanation": "Some rounding error occurs at each step."
+        },
+        {
+          "answer": "About $100",
+          "explanation": "This greatly overestimates the rounding effect."
+        },
+        {
+          "answer": "About $50",
+          "explanation": "The difference is much smaller than this."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "A chain of 10 additions, each rounded to 1 decimal place, has a maximum accumulated error of:",
+      "correct": "±0.5",
+      "correctExplanation": "Each step: ±0.05; total: 10 × 0.05 = 0.5.",
+      "distractors": [
+        {
+          "answer": "±0.05",
+          "explanation": "This is the error per step."
+        },
+        {
+          "answer": "±5.0",
+          "explanation": "This overestimates by factor 10."
+        },
+        {
+          "answer": "±0.005",
+          "explanation": "This underestimates by factor 100."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "√2 is approximated as 1.41. Calculating 1.41² gives 1.9881. What is the absolute error compared to 2?",
+      "correct": "0.0119",
+      "correctExplanation": "|2 − 1.9881| = 0.0119.",
+      "distractors": [
+        {
+          "answer": "0.41",
+          "explanation": "This is not the correct calculation."
+        },
+        {
+          "answer": "0.59",
+          "explanation": "This is √2 − 1, not the squared error."
+        },
+        {
+          "answer": "0.12",
+          "explanation": "This overestimates the error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A surveyor makes 8 distance measurements, each with ±0.02 m error, and adds them. The maximum total error is:",
+      "correct": "±0.16 m",
+      "correctExplanation": "8 × 0.02 = 0.16 m.",
+      "distractors": [
+        {
+          "answer": "±0.02 m",
+          "explanation": "This is one measurement error."
+        },
+        {
+          "answer": "±0.64 m",
+          "explanation": "This squares 8 instead of multiplying."
+        },
+        {
+          "answer": "±1.6 m",
+          "explanation": "This uses 0.2 instead of 0.02."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Converting 1 mile ≈ 1.609 km, a runner does 5 miles. If 1.61 is used instead, the error over 5 miles is:",
+      "correct": "0.005 km",
+      "correctExplanation": "|5 × 1.609 − 5 × 1.61| = |8.045 − 8.05| = 0.005.",
+      "distractors": [
+        {
+          "answer": "0.001 km",
+          "explanation": "This is the error per mile, not total."
+        },
+        {
+          "answer": "0.05 km",
+          "explanation": "This overestimates by factor 10."
+        },
+        {
+          "answer": "0.5 km",
+          "explanation": "This is far too large."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A recipe calls for 2.5 cups of flour, measured three times for triple batch. If each measurement has ±0.1 cup error, the maximum total error is:",
+      "correct": "±0.3 cups",
+      "correctExplanation": "3 × 0.1 = 0.3 cups.",
+      "distractors": [
+        {
+          "answer": "±0.1 cups",
+          "explanation": "This is one measurement error."
+        },
+        {
+          "answer": "±0.9 cups",
+          "explanation": "This overestimates."
+        },
+        {
+          "answer": "±7.5 cups",
+          "explanation": "This multiplies total flour by error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A spreadsheet multiplies column A (±1% each) by column B (±2% each) for 1000 rows. Each product has an approximate relative error of:",
+      "correct": "3%",
+      "correctExplanation": "Relative errors add: 1% + 2% = 3%.",
+      "distractors": [
+        {
+          "answer": "2%",
+          "explanation": "Both columns contribute error."
+        },
+        {
+          "answer": "0.02%",
+          "explanation": "This multiplies the percentages."
+        },
+        {
+          "answer": "1000%",
+          "explanation": "The error per row is 3%, not accumulated across rows."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "Rounding 4.738 to 1 decimal place gives {{blank:1}}, with an absolute error of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4.7",
+          "correctExplanation": "The hundredths digit 3 is less than 5, so round down.",
+          "distractors": [
+            {
+              "answer": "4.8",
+              "explanation": "Rounding up would require the hundredths digit to be 5 or more.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5.0",
+              "explanation": "This rounds to the nearest whole number.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.038",
+          "correctExplanation": "|4.738 − 4.7| = 0.038.",
+          "distractors": [
+            {
+              "answer": "0.062",
+              "explanation": "This would be the error if rounded to 4.8.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.3",
+              "explanation": "This overestimates the error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "A rectangle has sides 15.2 ± 0.1 and 9.8 ± 0.1 cm. The approximate area is {{blank:1}} cm² and the relative error is approximately {{blank:2}}%.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "148.96",
+          "correctExplanation": "15.2 × 9.8 = 148.96.",
+          "distractors": [
+            {
+              "answer": "25.0",
+              "explanation": "This adds the sides.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "150.0",
+              "explanation": "This rounds the area.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.7",
+          "correctExplanation": "Relative errors: 0.1/15.2 ≈ 0.66% and 0.1/9.8 ≈ 1.02%; total ≈ 1.68%.",
+          "distractors": [
+            {
+              "answer": "0.2",
+              "explanation": "This adds absolute errors only.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "This overestimates the relative error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "(1.03)⁸ calculated exactly is approximately {{blank:1}}. If 1.03 is rounded to 1.0 first, the result is {{blank:2}}, demonstrating significant error accumulation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.267",
+          "correctExplanation": "(1.03)⁸ ≈ 1.26677.",
+          "distractors": [
+            {
+              "answer": "1.24",
+              "explanation": "This underestimates the compound growth.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8.24",
+              "explanation": "This multiplies 1.03 by 8.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.000",
+          "correctExplanation": "(1.0)⁸ = 1, losing all growth.",
+          "distractors": [
+            {
+              "answer": "1.24",
+              "explanation": "This is not the result of 1.0⁸.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "8.0",
+              "explanation": "This multiplies 1.0 by 8.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Using π ≈ 3.14 to calculate the area of a circle with r = 5 gives {{blank:1}}, while the exact area is 25π ≈ {{blank:2}}, showing the effect of approximating π.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "78.5",
+          "correctExplanation": "3.14 × 25 = 78.5.",
+          "distractors": [
+            {
+              "answer": "15.7",
+              "explanation": "This is the circumference, not area.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "31.4",
+              "explanation": "This is 3.14 × 10, not 3.14 × 25.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "78.54",
+          "correctExplanation": "25 × 3.14159 ≈ 78.5398.",
+          "distractors": [
+            {
+              "answer": "78.5",
+              "explanation": "This uses the approximation, not exact.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "75.0",
+              "explanation": "This uses an incorrect value of π.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "A surveyor adds 6 distances, each ±0.03 m. The maximum accumulated error is {{blank:1}} m, and the probable error (using √n × e) is approximately {{blank:2}} m.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.18",
+          "correctExplanation": "6 × 0.03 = 0.18.",
+          "distractors": [
+            {
+              "answer": "0.03",
+              "explanation": "This is one measurement error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.36",
+              "explanation": "This doubles the correct total.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.073",
+          "correctExplanation": "√6 × 0.03 ≈ 2.449 × 0.03 ≈ 0.073.",
+          "distractors": [
+            {
+              "answer": "0.18",
+              "explanation": "This is the maximum, not the probable error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.005",
+              "explanation": "This underestimates the probable error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Converting 68°F to Celsius: C = (68 − 32) × 5/9 = 20°C exactly. If 5/9 is rounded to 0.56 first, the result is (36 × 0.56) = {{blank:1}}°C, giving an error of {{blank:2}}°C.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20.16",
+          "correctExplanation": "36 × 0.56 = 20.16.",
+          "distractors": [
+            {
+              "answer": "19.84",
+              "explanation": "This rounds 5/9 down to 0.55.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20.0",
+              "explanation": "This is the exact answer.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.16",
+          "correctExplanation": "|20.16 − 20| = 0.16.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "There is a rounding error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.56",
+              "explanation": "This is the rounded fraction, not the error.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "Two measurements of 4.56 and 4.52 are subtracted: 4.56 − 4.52 = {{blank:1}}. If each has error ±0.01, the relative error of the result is approximately {{blank:2}}%.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.04",
+          "correctExplanation": "4.56 − 4.52 = 0.04.",
+          "distractors": [
+            {
+              "answer": "9.08",
+              "explanation": "This adds instead of subtracting.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.04",
+              "explanation": "This is correct.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "50",
+          "correctExplanation": "Error ≈ 0.02; relative = 0.02/0.04 × 100 = 50%. This demonstrates catastrophic cancellation.",
+          "distractors": [
+            {
+              "answer": "0.4",
+              "explanation": "This uses the wrong denominator.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "This uses the individual relative error.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "A GPS makes 1000 calculations, each with ±0.001 m error. The maximum accumulated error is {{blank:1}} m, while the probable error is approximately {{blank:2}} m.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "1000 × 0.001 = 1 m.",
+          "distractors": [
+            {
+              "answer": "0.001",
+              "explanation": "This is one calculation error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1000",
+              "explanation": "This multiplies in the wrong units.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.032",
+          "correctExplanation": "√1000 × 0.001 ≈ 31.62 × 0.001 ≈ 0.032.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "This is the maximum, not probable error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "This halves the maximum error.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Compound interest: $1000 at 5% p.a. for 3 years = 1000(1.05)³ = {{blank:1}}. Rounding 1.05² = 1.1025 to 1.10 before the final step gives 1000 × 1.10 × 1.05 = {{blank:2}}, showing intermediate rounding error.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1157.63",
+          "correctExplanation": "1000 × 1.157625 = 1157.63.",
+          "distractors": [
+            {
+              "answer": "1150.00",
+              "explanation": "This uses simple interest.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1500.00",
+              "explanation": "This is 50% total interest.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1155.00",
+          "correctExplanation": "1000 × 1.10 × 1.05 = 1155.",
+          "distractors": [
+            {
+              "answer": "1157.63",
+              "explanation": "This is the exact answer.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1100.00",
+              "explanation": "This omits the final year.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "√8 ≈ 2.83 (2 dp). Squaring this gives {{blank:1}}, with an error of {{blank:2}} from the exact value of 8.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "8.0089",
+          "correctExplanation": "2.83² = 8.0089.",
+          "distractors": [
+            {
+              "answer": "8.0",
+              "explanation": "This assumes the approximation is exact.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5.66",
+              "explanation": "This doubles 2.83 instead of squaring.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.0089",
+          "correctExplanation": "|8.0089 − 8| = 0.0089.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The approximation introduces a small error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.17",
+              "explanation": "This is |√8 − 2.83|.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Three measurements with relative errors of 1%, 2% and 3% are multiplied. The approximate relative error of the product is {{blank:1}}%, which is the {{blank:2}} of the individual relative errors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "6",
+          "correctExplanation": "1 + 2 + 3 = 6%.",
+          "distractors": [
+            {
+              "answer": "6 (0.06)",
+              "explanation": "While 6% = 0.06, the answer should be in %.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1.5",
+              "explanation": "This averages instead of adding.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sum",
+          "correctExplanation": "Relative errors in multiplication approximately add.",
+          "distractors": [
+            {
+              "answer": "product",
+              "explanation": "Relative errors are added, not multiplied.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "average",
+              "explanation": "The total is the sum, not the average.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A map scale of 1:50 000 means 1 cm = {{blank:1}} m. If a map distance of 3.4 cm is measured with ±0.1 cm error, the real-world distance error is {{blank:2}} m.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "500",
+          "correctExplanation": "50 000 cm = 500 m.",
+          "distractors": [
+            {
+              "answer": "50 000",
+              "explanation": "This is in cm, not metres.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "50",
+              "explanation": "This divides by an extra factor of 10.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "50",
+          "correctExplanation": "0.1 cm × 500 m/cm = 50 m.",
+          "distractors": [
+            {
+              "answer": "0.1",
+              "explanation": "This is the map error, not real-world.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "500",
+              "explanation": "This multiplies the wrong values.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A climate model runs 10 million calculations per simulation. Each uses floating-point arithmetic with ~10⁻¹⁵ relative error. Why is accumulated error still a concern?",
+      "correct": "The sheer number of operations can",
+      "correctExplanation": "10⁷ × 10⁻¹⁵ gives ~10⁻⁸ worst-case, but chaotic systems amplify errors.",
+      "distractors": [
+        {
+          "answer": "Floating-point is exact",
+          "explanation": "Floating-point has limited precision."
+        },
+        {
+          "answer": "Climate models use integers",
+          "explanation": "Climate models use real numbers."
+        },
+        {
+          "answer": "10⁻¹⁵ is too large to matter",
+          "explanation": "It is small but compounds."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A financial system processes 50 million transactions daily, each rounded to the nearest cent. What is the potential maximum daily rounding error?",
+      "correct": "$250 000",
+      "correctExplanation": "50 000 000 × $0.005 = $250 000 maximum.",
+      "distractors": [
+        {
+          "answer": "$0.005",
+          "explanation": "This is one transaction error."
+        },
+        {
+          "answer": "$50 000",
+          "explanation": "This uses $0.001 per transaction."
+        },
+        {
+          "answer": "$0",
+          "explanation": "Rounding errors do not cancel perfectly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "An engineer must choose between measuring a bridge component once with ±1 mm precision or averaging 100 measurements each with ±5 mm. Which is more precise?",
+      "correct": "Averaging 100 measurements (±0.5 mm)",
+      "correctExplanation": "Standard error of mean = 5/√100 = 0.5 mm.",
+      "distractors": [
+        {
+          "answer": "Single measurement (±1 mm)",
+          "explanation": "0.5 mm < 1 mm precision."
+        },
+        {
+          "answer": "Both are equally precise",
+          "explanation": "The averaged result is more precise."
+        },
+        {
+          "answer": "Neither is sufficiently precise",
+          "explanation": "0.5 mm may be adequate for a bridge."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Catastrophic cancellation occurs when computing a − b where a = 1.000000 and b = 0.999999. The result 0.000001 has how many reliable significant figures?",
+      "correct": "1",
+      "correctExplanation": "Only the last digit is meaningful; the leading zeros are not significant.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "The original numbers had 6 significant figures, but the difference does not."
+        },
+        {
+          "answer": "7",
+          "explanation": "This counts all digits of the original numbers."
+        },
+        {
+          "answer": "0",
+          "explanation": "There is still one reliable digit."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A navigation system compounds bearing errors over a 1000 km journey. A consistent 0.1° error per leg over 50 legs would cause the final position to deviate by approximately:",
+      "correct": "Several kilometres from the inte",
+      "correctExplanation": "Small angular errors compound over distance: 0.1° × 50 = 5° total, causing km-scale deviation.",
+      "distractors": [
+        {
+          "answer": "Less than 1 metre",
+          "explanation": "Angular errors amplify over distance."
+        },
+        {
+          "answer": "Exactly 0.1°",
+          "explanation": "Errors accumulate across legs."
+        },
+        {
+          "answer": "The navigation would still be exact",
+          "explanation": "No measurement is perfectly exact."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A researcher argues that since rounding errors are equally likely to be positive or negative, they cancel out over many calculations. This reasoning is:",
+      "correct": "Flawed; while average error may be",
+      "correctExplanation": "Expected value of error is zero, but variance grows with the number of steps.",
+      "distractors": [
+        {
+          "answer": "Correct for all calculations",
+          "explanation": "Systematic rounding biases can occur."
+        },
+        {
+          "answer": "Only true for addition",
+          "explanation": "The reasoning is flawed in general."
+        },
+        {
+          "answer": "True when using exact values",
+          "explanation": "Exact values have no rounding error to cancel."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Two scientists calculate the same physical constant. Scientist A reports 6.674 × 10⁻¹¹ ± 0.001 × 10⁻¹¹. Scientist B reports 6.67 × 10⁻¹¹ ± 0.01 × 10⁻¹¹. Which result is more precise?",
+      "correct": "Scientist A (smaller uncertain",
+      "correctExplanation": "Scientist A has an uncertainty of 0.001 × 10⁻¹¹ versus 0.01 × 10⁻¹¹.",
+      "distractors": [
+        {
+          "answer": "Scientist B",
+          "explanation": "Scientist B has 10× larger uncertainty."
+        },
+        {
+          "answer": "Both are equally precise",
+          "explanation": "The uncertainties differ by a factor of 10."
+        },
+        {
+          "answer": "Cannot be determined",
+          "explanation": "The uncertainties clearly show A is more precise."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A computer simulation uses single-precision floating point (~7 significant digits). After 10⁶ iterations of adding 0.1, the result is significantly different from 100 000. Why?",
+      "correct": "0.1 cannot be exactly represented in binary",
+      "correctExplanation": "0.1 in binary is a repeating fraction, introducing error at every step.",
+      "distractors": [
+        {
+          "answer": "The computer made a calculation error",
+          "explanation": "The computer calculated correctly for its representation."
+        },
+        {
+          "answer": "10⁶ is too large for single precision",
+          "explanation": "10⁶ fits within single precision."
+        },
+        {
+          "answer": "Addition does not accumulate error",
+          "explanation": "Addition of inexact values does accumulate error."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "When designing a bridge, which measurement strategy best minimises accumulated error?",
+      "correct": "Use high-precision instruments and minimise calcu",
+      "correctExplanation": "Fewer steps and higher precision both reduce accumulated error.",
+      "distractors": [
+        {
+          "answer": "Use rough estimates and adjust later",
+          "explanation": "Rough estimates introduce larger errors."
+        },
+        {
+          "answer": "Round to whole numbers for simplicity",
+          "explanation": "Rounding increases accumulated error."
+        },
+        {
+          "answer": "Measure once and double the precision",
+          "explanation": "Measurement strategy matters more than doubling precision alone."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "In a Monte Carlo simulation, random rounding errors over millions of trials tend to:",
+      "correct": "Average out but still prod",
+      "correctExplanation": "The law of large numbers reduces bias, but variance remains proportional to the number of operations.",
+      "distractors": [
+        {
+          "answer": "Cancel out perfectly",
+          "explanation": "Perfect cancellation does not occur in practice."
+        },
+        {
+          "answer": "Grow exponentially",
+          "explanation": "Errors grow as √n, not exponentially."
+        },
+        {
+          "answer": "Have no effect on",
+          "explanation": "They contribute to result uncertainty."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student rounds π to 3.14 and uses it in 20 multiplications. The accumulated relative error is approximately:",
+      "correct": "20 ×",
+      "correctExplanation": "Relative error of 3.14 vs π is ~0.05%; in 20 multiplications: ~1.0%.",
+      "distractors": [
+        {
+          "answer": "0.05%",
+          "explanation": "This is the per-step error, not accumulated."
+        },
+        {
+          "answer": "20%",
+          "explanation": "This overestimates by factor 20."
+        },
+        {
+          "answer": "Exactly 0%",
+          "explanation": "π ≠ 3.14."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Comparing truncation to rounding: over many calculations, truncation introduces a systematic bias because it:",
+      "correct": "Always moves values toward zero",
+      "correctExplanation": "Truncation removes digits without rounding up, creating consistent underestimation for positive values.",
+      "distractors": [
+        {
+          "answer": "Randomly adjusts values",
+          "explanation": "Truncation is not random."
+        },
+        {
+          "answer": "Overestimates half the time",
+          "explanation": "Truncation always underestimates for positives."
+        },
+        {
+          "answer": "Has the same effect as rounding",
+          "explanation": "Rounding can go up or down; truncation always goes toward zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A physicist must compute (a² − b²) where a = 1.0001 and b = 0.9999. Which approach minimises error?",
+      "correct": "Use the identity (a+b)(a−b) = 2.",
+      "correctExplanation": "Factoring avoids subtracting nearly equal squared values.",
+      "distractors": [
+        {
+          "answer": "Compute a² then b² and subtract",
+          "explanation": "This risks catastrophic cancellation."
+        },
+        {
+          "answer": "Round a and b first",
+          "explanation": "Rounding makes the problem worse."
+        },
+        {
+          "answer": "Use b² − a² instead",
+          "explanation": "The sign change does not improve precision."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "In machine learning, training with 32-bit vs 64-bit floating point affects model quality because:",
+      "correct": "Lower precision accumulates more rounding error",
+      "correctExplanation": "Each training step introduces rounding error that propagates through weights.",
+      "distractors": [
+        {
+          "answer": "64-bit is always slower",
+          "explanation": "Speed is a trade-off, not the error issue."
+        },
+        {
+          "answer": "32-bit is always sufficient",
+          "explanation": "Some models require higher precision for accuracy."
+        },
+        {
+          "answer": "Floating-point precision does not affect training",
+          "explanation": "Precision directly affects gradient accuracy."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "Floating-point arithmetic represents 0.1 as an {{blank:1}} binary fraction, meaning that adding 0.1 ten times does not give exactly {{blank:2}} in a computer.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "infinite repeating",
+          "correctExplanation": "0.1 in binary is 0.000110011... repeating forever.",
+          "distractors": [
+            {
+              "answer": "exact",
+              "explanation": "0.1 cannot be exactly represented in binary.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "finite",
+              "explanation": "The binary representation repeats infinitely.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.0",
+          "correctExplanation": "The accumulated representation errors cause the sum to differ slightly from 1.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "Adding 0.1 ten times should give 1.0.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0.1",
+              "explanation": "0.1 × 10 = 1.0, not 0.1.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Truncation introduces a {{blank:1}} bias because it always moves positive values {{blank:2}}, unlike rounding which can go either way.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "systematic",
+          "correctExplanation": "Truncation consistently underestimates positive values.",
+          "distractors": [
+            {
+              "answer": "random",
+              "explanation": "The bias is consistent, not random.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negligible",
+              "explanation": "Over many calculations, the bias is significant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "downward",
+          "correctExplanation": "Removing trailing digits reduces the value of positive numbers.",
+          "distractors": [
+            {
+              "answer": "upward",
+              "explanation": "Truncation reduces, not increases, positive values.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sideways",
+              "explanation": "Values move in one direction on the number line.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "In catastrophic cancellation, the absolute error of the result stays {{blank:1}} but the result itself becomes {{blank:2}}, causing the relative error to explode.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "approximately the same",
+          "correctExplanation": "The absolute error is inherited from the operands.",
+          "distractors": [
+            {
+              "answer": "very large",
+              "explanation": "Absolute error does not increase significantly.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "The error is not eliminated.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "very small",
+          "correctExplanation": "The difference of nearly equal numbers is small.",
+          "distractors": [
+            {
+              "answer": "very large",
+              "explanation": "The result is small, not large.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "negative",
+              "explanation": "The result can be positive or negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "To avoid catastrophic cancellation when computing a² − b² for nearly equal a and b, use the algebraic identity {{blank:1}}, which separates the computation into a {{blank:2}} and a small difference.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "(a+b)(a−b)",
+          "correctExplanation": "This identity avoids subtracting nearly equal squared values.",
+          "distractors": [
+            {
+              "answer": "a²−b²",
+              "explanation": "This is the original form, not the improved one.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "(a−b)²",
+              "explanation": "This squares the difference, giving a different result.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "large sum",
+          "correctExplanation": "a + b is large and computed accurately; a − b is small but computed directly.",
+          "distractors": [
+            {
+              "answer": "large product",
+              "explanation": "The sum, not a product, is the key large term.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "large difference",
+              "explanation": "The difference is small, not large.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "In Monte Carlo simulation, random errors across n trials produce a standard deviation that grows as {{blank:1}}, meaning the relative error decreases as {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√n",
+          "correctExplanation": "Standard deviation of the sum grows as √n.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "Linear growth is the worst case, not typical.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n²",
+              "explanation": "Quadratic growth does not apply here.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/√n",
+          "correctExplanation": "Relative error = √n/n = 1/√n, which decreases.",
+          "distractors": [
+            {
+              "answer": "1/n",
+              "explanation": "This underestimates the rate of decrease.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "Relative error decreases, not increases.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Banks use {{blank:1}}-precision arithmetic for interest calculations because rounding errors across millions of transactions would otherwise result in {{blank:2}} financial discrepancies.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "high",
+          "correctExplanation": "More decimal places reduce per-transaction error.",
+          "distractors": [
+            {
+              "answer": "low",
+              "explanation": "Low precision would increase errors.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "single",
+              "explanation": "Single precision is insufficient for banking.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "significant",
+          "correctExplanation": "Even tiny per-transaction errors sum to large amounts.",
+          "distractors": [
+            {
+              "answer": "negligible",
+              "explanation": "The amounts become significant at scale.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "imaginary",
+              "explanation": "The financial impact is real.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "When a measurement error of ε is raised to the power n through repeated multiplication, the relative error is approximately {{blank:1}}, showing that exponentiation {{blank:2}} errors.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n × ε",
+          "correctExplanation": "Relative error in xⁿ is approximately n times the relative error in x.",
+          "distractors": [
+            {
+              "answer": "εⁿ",
+              "explanation": "This multiplies the error n times, not the relative error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "ε/n",
+              "explanation": "Exponentiation amplifies, not reduces, error.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "amplifies",
+          "correctExplanation": "Higher powers magnify the relative error.",
+          "distractors": [
+            {
+              "answer": "reduces",
+              "explanation": "Exponentiation increases error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "eliminates",
+              "explanation": "Error is amplified, not eliminated.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The condition number of a problem measures how sensitive the result is to {{blank:1}} in the input. A high condition number means the problem is {{blank:2}} conditioned.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "small changes",
+          "correctExplanation": "Condition number relates input perturbation to output change.",
+          "distractors": [
+            {
+              "answer": "large changes",
+              "explanation": "Condition number is about sensitivity to small changes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "the method used",
+              "explanation": "Condition is a property of the problem, not the method.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "ill",
+          "correctExplanation": "High condition number = ill-conditioned = sensitive to input errors.",
+          "distractors": [
+            {
+              "answer": "well",
+              "explanation": "Well-conditioned means low sensitivity.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "over",
+              "explanation": "The correct term is ill-conditioned.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "Comparing 32-bit and 64-bit floating point: 32-bit has about {{blank:1}} significant decimal digits while 64-bit has about {{blank:2}}, making 64-bit better for long calculation chains.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "7",
+          "correctExplanation": "Single-precision (32-bit) has ~7 significant digits.",
+          "distractors": [
+            {
+              "answer": "15",
+              "explanation": "This is 64-bit precision.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "This underestimates single precision.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "15",
+          "correctExplanation": "Double-precision (64-bit) has ~15 significant digits.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "This is 32-bit precision.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "This overestimates 64-bit precision.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "A strategy to reduce accumulated error in summation is to add values in order from {{blank:1}} to {{blank:2}}, because this preserves significant digits when small values are added.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "smallest",
+          "correctExplanation": "Adding small values first prevents them from being lost.",
+          "distractors": [
+            {
+              "answer": "largest",
+              "explanation": "Starting with large values can swamp small ones.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Order matters for numerical stability.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "largest",
+          "correctExplanation": "Large values are added last to preserve precision.",
+          "distractors": [
+            {
+              "answer": "smallest",
+              "explanation": "This reverses the optimal order.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Zero is not a meaningful endpoint.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Error propagation in division is similar to multiplication: relative errors approximately {{blank:1}}. If dividing a value with 2% error by one with 1% error, the result has about {{blank:2}}% relative error.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "add",
+          "correctExplanation": "Division, like multiplication, combines relative errors additively.",
+          "distractors": [
+            {
+              "answer": "subtract",
+              "explanation": "Relative errors add, not subtract.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "multiply",
+              "explanation": "Relative errors are added in division.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "2% + 1% = 3%.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "Both errors contribute.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The divisor's error also matters.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "In scientific computing, algorithms designed to minimise accumulated error are called {{blank:1}} stable algorithms. The Kahan summation algorithm reduces accumulated error from O(n) to O({{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "numerically",
+          "correctExplanation": "Numerical stability is the key property of error-resistant algorithms.",
+          "distractors": [
+            {
+              "answer": "computationally",
+              "explanation": "The term refers to numerical, not computational, stability.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "statistically",
+              "explanation": "The stability is about numerical error, not statistics.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "Kahan summation maintains O(1) error regardless of n.",
+          "distractors": [
+            {
+              "answer": "√n",
+              "explanation": "Kahan summation is better than random walk error.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n²",
+              "explanation": "This would be worse, not better.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

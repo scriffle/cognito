@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10ASP03",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to define sin(x), cos(x) and tan(x) using the unit circle and graph these trigonometric functions.",
+    "generatedAt": "2026-05-23T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to define sin(x), cos(x) and tan(x) using the unit circle and graph these trigonometric functions.",
+    "y": [
+      "The unit circle extends trigonometric ratios beyond acute angles to all angles, providing a complete definition for sin, cos and tan.",
+      "Graphing trigonometric functions reveals their periodic nature — essential for modelling waves, oscillations and cyclical phenomena.",
+      "These concepts are foundational for VCE Mathematics and physics, where trigonometric functions model everything from sound to electricity."
+    ],
+    "eg": [
+      "Using the unit circle to find exact values: sin(30°) = ½, cos(60°) = ½, tan(45°) = 1.",
+      "Graphing y = sin(x) and identifying its amplitude (1), period (360°) and key features.",
+      "Comparing the graphs of y = sin(x) and y = cos(x) and describing their phase relationship.",
+      "Extending to angles beyond 90°: sin(150°) = sin(30°) = ½.",
+      "Identifying the signs of sin, cos and tan in each quadrant using the ASTC rule.",
+      "Exploring how changing amplitude and period affects the graph: y = 2sin(3x)."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "On the unit circle, the x-coordinate of a point gives cos(θ).",
+      "correct": "True",
+      "correctExplanation": "By definition, for an angle θ on the unit circle, the coordinates are (cos θ, sin θ).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The x-coordinate is indeed cos(θ) on the unit circle."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The unit circle has a radius of 2.",
+      "correct": "False",
+      "correctExplanation": "The unit circle has a radius of 1, which is what makes it 'unit'.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The unit circle has radius 1, not 2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "sin(90°) = 1 on the unit circle.",
+      "correct": "True",
+      "correctExplanation": "At 90°, the point on the unit circle is (0, 1), so sin(90°) = 1.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The y-coordinate at 90° is 1, so sin(90°) = 1."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The period of y = sin(x) is 180 degrees.",
+      "correct": "False",
+      "correctExplanation": "The period of y = sin(x) is 360°. The function completes one full cycle every 360°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sin(x) has a period of 360°, not 180°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "tan(θ) is defined as sin(θ) divided by cos(θ).",
+      "correct": "True",
+      "correctExplanation": "By definition, tan(θ) = sin(θ)/cos(θ).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Tangent is defined as the ratio of sine to cosine."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The amplitude of y = cos(x) is 2.",
+      "correct": "False",
+      "correctExplanation": "The amplitude of y = cos(x) is 1, since the function oscillates between −1 and 1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Cosine has amplitude 1, not 2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "cos(0°) = 0 on the unit circle.",
+      "correct": "False",
+      "correctExplanation": "cos(0°) = 1, not 0. At 0°, the point on the unit circle is (1, 0).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The x-coordinate at 0° is 1, so cos(0°) = 1, not 0."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The graph of y = tan(x) has vertical asymptotes.",
+      "correct": "True",
+      "correctExplanation": "tan(x) is undefined where cos(x) = 0, creating vertical asymptotes at x = 90°, 270°, etc.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Tangent has vertical asymptotes where cosine is zero."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "In the second quadrant, sin(θ) is positive.",
+      "correct": "True",
+      "correctExplanation": "In the second quadrant (90° < θ < 180°), sine is positive and cosine is negative.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Sine is positive in quadrants 1 and 2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "cos(90°) = 1 on the unit circle.",
+      "correct": "False",
+      "correctExplanation": "cos(90°) = 0, not 1. At 90°, the point on the unit circle is (0, 1).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The x-coordinate at 90° is 0, so cos(90°) = 0."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "The graph of y = cos(x) passes through the origin.",
+      "correct": "False",
+      "correctExplanation": "cos(0°) = 1, so the graph of y = cos(x) passes through (0, 1), not the origin.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The cosine graph starts at (0, 1), not (0, 0)."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "tan(45°) = √2 on the unit circle.",
+      "correct": "False",
+      "correctExplanation": "tan(45°) = sin(45°)/cos(45°) = 1, not √2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "tan(45°) = 1 because sin(45°) = cos(45°)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "On the unit circle, what are the coordinates of the point at 0 degrees?",
+      "correct": "(1, 0) at the rightmost point",
+      "correctExplanation": "At 0°, the point lies on the positive x-axis at (1, 0).",
+      "distractors": [
+        {
+          "answer": "(0, 1) at the topmost point of circle",
+          "explanation": "That is the point at 90°, not 0°."
+        },
+        {
+          "answer": "(0, 0) at the centre of the circle here",
+          "explanation": "The centre is not on the unit circle."
+        },
+        {
+          "answer": "(−1, 0) at the leftmost point of circle",
+          "explanation": "That is the point at 180°, not 0°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "What is the exact value of sin(30°)?",
+      "correct": "1/2 from the unit circle values",
+      "correctExplanation": "sin(30°) = 1/2 is one of the standard exact values.",
+      "distractors": [
+        {
+          "answer": "√3/2 which is the cosine of 30 degrees",
+          "explanation": "√3/2 is cos(30°), not sin(30°)."
+        },
+        {
+          "answer": "√2/2 which is the sine of 45 degrees",
+          "explanation": "√2/2 is sin(45°), not sin(30°)."
+        },
+        {
+          "answer": "1 which is the sine of 90 degrees only",
+          "explanation": "1 is sin(90°), not sin(30°)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "What is the period of the function y = cos(x)?",
+      "correct": "360 degrees for one full cycle",
+      "correctExplanation": "Cosine completes one full oscillation every 360°.",
+      "distractors": [
+        {
+          "answer": "180 degrees for one full cycle here",
+          "explanation": "180° is the period of tangent, not cosine."
+        },
+        {
+          "answer": "90 degrees for one full cycle overall",
+          "explanation": "90° is a quarter of the cosine period."
+        },
+        {
+          "answer": "720 degrees for one full cycle total",
+          "explanation": "720° is two full periods, not one."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "In which quadrant are both sin(θ) and cos(θ) positive?",
+      "correct": "the first quadrant only for both",
+      "correctExplanation": "In quadrant 1 (0° < θ < 90°), both x and y coordinates are positive.",
+      "distractors": [
+        {
+          "answer": "the second quadrant for both values here",
+          "explanation": "In quadrant 2, cosine is negative."
+        },
+        {
+          "answer": "the third quadrant for both values here",
+          "explanation": "In quadrant 3, both sine and cosine are negative."
+        },
+        {
+          "answer": "the fourth quadrant for both of them",
+          "explanation": "In quadrant 4, sine is negative."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What is the exact value of cos(60°)?",
+      "correct": "1/2 from the standard exact values",
+      "correctExplanation": "cos(60°) = 1/2 is a standard exact value from the unit circle.",
+      "distractors": [
+        {
+          "answer": "√3/2 which is cosine of 30 degrees here",
+          "explanation": "√3/2 is cos(30°), not cos(60°)."
+        },
+        {
+          "answer": "√2/2 which is cosine of 45 degrees here",
+          "explanation": "√2/2 is cos(45°), not cos(60°)."
+        },
+        {
+          "answer": "0 which is cosine of 90 degrees only here",
+          "explanation": "0 is cos(90°), not cos(60°)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Where is tan(x) undefined?",
+      "correct": "where cos(x) = 0, at 90° and 270°",
+      "correctExplanation": "tan(x) = sin(x)/cos(x), so it is undefined when cos(x) = 0.",
+      "distractors": [
+        {
+          "answer": "where sin(x) = 0, at 0° and 180° here",
+          "explanation": "sin(x) = 0 makes tan(x) = 0, not undefined."
+        },
+        {
+          "answer": "where tan(x) = 1, at 45° and 225° here",
+          "explanation": "tan(x) = 1 is a defined value, not undefined."
+        },
+        {
+          "answer": "tan(x) is defined for all angle values",
+          "explanation": "Tan is undefined at 90°, 270°, etc."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "What is the amplitude of y = sin(x)?",
+      "correct": "1, the maximum distance from the midline",
+      "correctExplanation": "y = sin(x) oscillates between −1 and 1, giving amplitude 1.",
+      "distractors": [
+        {
+          "answer": "2, the total range of the function here",
+          "explanation": "2 is the total range; amplitude is half the range."
+        },
+        {
+          "answer": "0, since sin(0) = 0 at the starting point",
+          "explanation": "Amplitude is the maximum displacement, not the value at 0."
+        },
+        {
+          "answer": "360, the period of the sine function here",
+          "explanation": "360 is the period, not the amplitude."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "What are the coordinates of the point at 90° on the unit circle?",
+      "correct": "(0, 1) at the top of the circle",
+      "correctExplanation": "At 90°, the point is at the top of the unit circle with coordinates (0, 1).",
+      "distractors": [
+        {
+          "answer": "(1, 0) at the right of the circle here",
+          "explanation": "That is the point at 0°, not 90°."
+        },
+        {
+          "answer": "(0, −1) at the bottom of the circle",
+          "explanation": "That is the point at 270°, not 90°."
+        },
+        {
+          "answer": "(−1, 0) at the left side of the circle",
+          "explanation": "That is the point at 180°, not 90°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What is the exact value of sin(45°)?",
+      "correct": "√2/2 from the isosceles right triangle",
+      "correctExplanation": "The 45-45-90 triangle gives sin(45°) = 1/√2 = √2/2.",
+      "distractors": [
+        {
+          "answer": "1/2 which is the sine of 30 degrees here",
+          "explanation": "1/2 is sin(30°), not sin(45°)."
+        },
+        {
+          "answer": "√3/2 which is the sine of 60 degrees here",
+          "explanation": "√3/2 is sin(60°), not sin(45°)."
+        },
+        {
+          "answer": "1 which is the sine of 90 degrees only",
+          "explanation": "1 is sin(90°), not sin(45°)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "The graph of y = sin(x) has a maximum value of:",
+      "correct": "1, occurring at x = 90 degrees",
+      "correctExplanation": "sin(90°) = 1, which is the maximum value of the sine function.",
+      "distractors": [
+        {
+          "answer": "2, occurring at x = 180 degrees here",
+          "explanation": "sin(180°) = 0; the maximum of sin is 1."
+        },
+        {
+          "answer": "0, occurring at x = 0 degrees for sine",
+          "explanation": "0 is neither the maximum nor minimum of sin."
+        },
+        {
+          "answer": "−1, occurring at x = 270 degrees here",
+          "explanation": "−1 is the minimum, not the maximum."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "In the third quadrant, which trigonometric ratio is positive?",
+      "correct": "tangent, since both sin and cos are negative",
+      "correctExplanation": "In Q3, sin < 0 and cos < 0, so tan = sin/cos > 0.",
+      "distractors": [
+        {
+          "answer": "sine, since the y-coordinate is positive",
+          "explanation": "In Q3, the y-coordinate is negative, so sin < 0."
+        },
+        {
+          "answer": "cosine, since x-coordinate is positive here",
+          "explanation": "In Q3, the x-coordinate is negative, so cos < 0."
+        },
+        {
+          "answer": "all three ratios are positive in quadrant 3",
+          "explanation": "Only tangent is positive in Q3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "What is the value of sin(180°)?",
+      "correct": "0, since the point is at (−1, 0)",
+      "correctExplanation": "At 180°, the unit circle point is (−1, 0), so sin(180°) = 0.",
+      "distractors": [
+        {
+          "answer": "1, since 180° is a significant angle here",
+          "explanation": "sin(180°) = 0, not 1; sin(90°) = 1."
+        },
+        {
+          "answer": "−1, since 180° is in the third quadrant",
+          "explanation": "180° is on the boundary; sin(180°) = 0."
+        },
+        {
+          "answer": "0.5, being halfway around the full circle",
+          "explanation": "Being halfway does not make the sine 0.5."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "On the unit circle, the x-coordinate gives {{blank:1}} and the y-coordinate gives {{blank:2}} for any angle θ.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cos(θ)",
+          "correctExplanation": "The horizontal distance from the origin is the cosine of the angle.",
+          "distractors": [
+            {
+              "answer": "sin(θ)",
+              "explanation": "Sine is the y-coordinate, not the x-coordinate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tan(θ)",
+              "explanation": "Tangent is the ratio sin/cos, not a coordinate.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "sin(θ)",
+          "correctExplanation": "The vertical distance from the origin is the sine of the angle.",
+          "distractors": [
+            {
+              "answer": "cos(θ)",
+              "explanation": "Cosine is the x-coordinate, not the y-coordinate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tan(θ)",
+              "explanation": "Tangent is defined as sin/cos, not as a coordinate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The function y = sin(x) has an amplitude of {{blank:1}} and a period of {{blank:2}} degrees.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "The amplitude is the maximum distance from the midline, which is 1 for sin(x).",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "2 is the full range (from −1 to 1), not the amplitude.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "The amplitude is the maximum displacement, which is 1, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "360",
+          "correctExplanation": "One complete cycle of sin(x) occurs every 360°.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "180° is the period of tan(x), not sin(x).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "90° is a quarter of the sine period.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The graphs of y = sin(x) and y = cos(x) are identical except for a horizontal shift.",
+      "correct": "True",
+      "correctExplanation": "cos(x) = sin(x + 90°), so the cosine graph is the sine graph shifted 90° to the left.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The two graphs differ only by a phase shift of 90°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "sin(θ) and cos(θ) always have the same sign in every quadrant.",
+      "correct": "False",
+      "correctExplanation": "In quadrants 2 and 4, sine and cosine have opposite signs.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "They have the same sign only in quadrants 1 and 3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The tangent function has horizontal asymptotes at y = 1 and y = −1.",
+      "correct": "False",
+      "correctExplanation": "The tangent function has vertical asymptotes (where cos = 0) and no horizontal asymptotes; it ranges from −∞ to ∞.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Tangent has vertical asymptotes, not horizontal, and is unbounded."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "sin(θ) = cos(90° − θ) for all values of θ.",
+      "correct": "True",
+      "correctExplanation": "This is the complementary angle identity: sine and cosine are co-functions.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The co-function identity relates sine and cosine through complementary angles."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The graph of y = tan(x) passes through the origin.",
+      "correct": "True",
+      "correctExplanation": "tan(0°) = sin(0°)/cos(0°) = 0/1 = 0, so the graph passes through (0, 0).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Tangent equals zero at 0°, so the graph does pass through the origin."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "Increasing the amplitude of y = sin(x) changes its period.",
+      "correct": "False",
+      "correctExplanation": "Amplitude and period are independent properties. Changing the amplitude stretches the graph vertically but does not affect the period.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Amplitude and period are independent; changing one does not affect the other."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The range of y = tan(x) is from −1 to 1 inclusive.",
+      "correct": "False",
+      "correctExplanation": "The range of tan(x) is all real numbers (−∞, ∞), not [−1, 1]. That is the range of sin and cos.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Tangent is unbounded; its range is all real numbers."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "sin(−θ) = sin(θ) for all values of θ.",
+      "correct": "False",
+      "correctExplanation": "sin(−θ) = −sin(θ), not sin(θ). Sine is an odd function.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sine is odd: sin(−θ) = −sin(θ)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Why does the graph of y = tan(x) have vertical asymptotes?",
+      "correct": "because cos(x) = 0 at those angles",
+      "correctExplanation": "tan(x) = sin(x)/cos(x), so division by zero creates vertical asymptotes.",
+      "distractors": [
+        {
+          "answer": "because sin(x) = 0 at those angles here",
+          "explanation": "sin(x) = 0 makes tan(x) = 0, not undefined."
+        },
+        {
+          "answer": "because the unit circle is not continuous",
+          "explanation": "The unit circle is continuous; asymptotes come from cos = 0."
+        },
+        {
+          "answer": "because tangent cannot exceed the value 1",
+          "explanation": "Tangent is unbounded and can take any real value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "How is the graph of y = cos(x) related to y = sin(x)?",
+      "correct": "cos(x) equals sin(x + 90°) by phase shift",
+      "correctExplanation": "The cosine graph is the sine graph shifted 90° to the left.",
+      "distractors": [
+        {
+          "answer": "they are reflections in the x-axis of each",
+          "explanation": "Reflection in the x-axis gives −sin(x), not cos(x)."
+        },
+        {
+          "answer": "they have different periods for each cycle",
+          "explanation": "Both sin and cos have the same period of 360°."
+        },
+        {
+          "answer": "cos(x) equals sin(x) multiplied by 2 here",
+          "explanation": "Cosine and sine have the same amplitude; there is no factor of 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "In which quadrants is cos(θ) negative?",
+      "correct": "quadrants 2 and 3 where x is negative",
+      "correctExplanation": "The x-coordinate (cosine) is negative when the point is on the left side of the y-axis.",
+      "distractors": [
+        {
+          "answer": "quadrants 1 and 2 where y is positive here",
+          "explanation": "Cosine is positive in Q1 and negative in Q2."
+        },
+        {
+          "answer": "quadrants 3 and 4 where y is negative here",
+          "explanation": "Cosine is negative in Q3 but positive in Q4."
+        },
+        {
+          "answer": "quadrants 1 and 4 where x is positive here",
+          "explanation": "Those are where cosine is positive, not negative."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "What is the reference angle for 150°?",
+      "correct": "30 degrees from 180° minus 150°",
+      "correctExplanation": "The reference angle is the acute angle to the nearest x-axis: 180° − 150° = 30°.",
+      "distractors": [
+        {
+          "answer": "150 degrees as the angle itself overall",
+          "explanation": "The reference angle is the acute angle to the x-axis."
+        },
+        {
+          "answer": "60 degrees from 210° minus 150° here",
+          "explanation": "60° comes from a wrong subtraction."
+        },
+        {
+          "answer": "90 degrees from 240° minus 150° given",
+          "explanation": "This subtraction has no geometric basis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why is sin(150°) = sin(30°)?",
+      "correct": "they share the same reference angle value",
+      "correctExplanation": "150° has reference angle 30°, and sine is positive in both Q1 and Q2.",
+      "distractors": [
+        {
+          "answer": "sine is always the same for all angles here",
+          "explanation": "Sine varies with the angle; equality here is due to the reference angle."
+        },
+        {
+          "answer": "150° and 30° are complementary angles here",
+          "explanation": "Complementary angles sum to 90°; 150° + 30° = 180° (supplementary)."
+        },
+        {
+          "answer": "the unit circle repeats every 30 degrees",
+          "explanation": "The unit circle repeats every 360°, not 30°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "What is the effect of changing the coefficient A in y = A sin(x)?",
+      "correct": "it changes the amplitude of the graph",
+      "correctExplanation": "The coefficient A scales the graph vertically, changing the amplitude to |A|.",
+      "distractors": [
+        {
+          "answer": "it changes the period of the graph here",
+          "explanation": "The period depends on the coefficient of x, not A."
+        },
+        {
+          "answer": "it shifts the graph horizontally by A units",
+          "explanation": "A affects amplitude; horizontal shift uses a different form."
+        },
+        {
+          "answer": "it shifts the graph vertically by A units",
+          "explanation": "Vertical shift uses y = sin(x) + A, not A sin(x)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "Why is tan(90°) undefined?",
+      "correct": "because cos(90°) = 0 causes division by zero",
+      "correctExplanation": "tan(90°) = sin(90°)/cos(90°) = 1/0, which is undefined.",
+      "distractors": [
+        {
+          "answer": "because sin(90°) = 0 at that angle value",
+          "explanation": "sin(90°) = 1, not 0."
+        },
+        {
+          "answer": "because 90° is not on the unit circle here",
+          "explanation": "90° corresponds to the point (0, 1) on the unit circle."
+        },
+        {
+          "answer": "because tangent only works for acute angles",
+          "explanation": "Tangent works for all angles except where cos = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "The identity sin²(θ) + cos²(θ) = 1 follows from which geometric fact?",
+      "correct": "the Pythagorean theorem on the unit circle",
+      "correctExplanation": "On the unit circle, x² + y² = 1, and (x, y) = (cos θ, sin θ), giving the identity.",
+      "distractors": [
+        {
+          "answer": "the area of the unit circle equals pi here",
+          "explanation": "The area formula is unrelated to this identity."
+        },
+        {
+          "answer": "sine and cosine are complementary functions",
+          "explanation": "Co-function relationships do not prove this identity."
+        },
+        {
+          "answer": "the tangent function equals sin over cosine",
+          "explanation": "The tangent definition is separate from this identity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "How does the graph of y = sin(x) behave between 180° and 360°?",
+      "correct": "it takes negative values through the cycle",
+      "correctExplanation": "Between 180° and 360°, sin(x) is negative (below the x-axis).",
+      "distractors": [
+        {
+          "answer": "it takes positive values throughout this range",
+          "explanation": "Sin is negative in this range; it was positive from 0° to 180°."
+        },
+        {
+          "answer": "it remains constant at zero for this range",
+          "explanation": "Sin passes through zero at 180° and 360° but is negative in between."
+        },
+        {
+          "answer": "it reaches its maximum value of 1 in range",
+          "explanation": "The maximum of 1 occurs at 90°, not in this range."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "The exact value of cos(45°) is:",
+      "correct": "√2/2 from the isosceles right triangle",
+      "correctExplanation": "The 45-45-90 triangle gives cos(45°) = 1/√2 = √2/2.",
+      "distractors": [
+        {
+          "answer": "1/2 which is cosine of 60 degrees here",
+          "explanation": "1/2 is cos(60°), not cos(45°)."
+        },
+        {
+          "answer": "√3/2 which is cosine of 30 degrees here",
+          "explanation": "√3/2 is cos(30°), not cos(45°)."
+        },
+        {
+          "answer": "1 which is the cosine of 0 degrees only",
+          "explanation": "1 is cos(0°), not cos(45°)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "What is the period of y = tan(x)?",
+      "correct": "180 degrees for one complete cycle",
+      "correctExplanation": "The tangent function repeats every 180°, unlike sine and cosine which repeat every 360°.",
+      "distractors": [
+        {
+          "answer": "360 degrees for one complete cycle here",
+          "explanation": "360° is the period of sin and cos, not tan."
+        },
+        {
+          "answer": "90 degrees for one complete cycle overall",
+          "explanation": "90° is not the period of any standard trig function."
+        },
+        {
+          "answer": "720 degrees for one complete cycle total",
+          "explanation": "720° is far too long; tan repeats every 180°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "cos(−θ) equals which of the following?",
+      "correct": "cos(θ) because cosine is an even function",
+      "correctExplanation": "Cosine is symmetric about the y-axis: cos(−θ) = cos(θ).",
+      "distractors": [
+        {
+          "answer": "−cos(θ) because it changes sign for negatives",
+          "explanation": "Cosine is even, not odd; it does not change sign."
+        },
+        {
+          "answer": "sin(θ) because they are complementary values",
+          "explanation": "The co-function identity relates sin(90° − θ) to cos(θ), not cos(−θ)."
+        },
+        {
+          "answer": "−sin(θ) which is the negative sine value",
+          "explanation": "cos(−θ) ≠ −sin(θ); cosine is even."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The ASTC rule tells us which trigonometric ratios are positive in each quadrant: All in Q1, {{blank:1}} in Q2, Tangent in Q3, and {{blank:2}} in Q4.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "Sine",
+          "correctExplanation": "In Q2, sine is positive (y > 0) but cosine and tangent are negative.",
+          "distractors": [
+            {
+              "answer": "Cosine",
+              "explanation": "Cosine is negative in Q2 because x < 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "Tangent",
+              "explanation": "Tangent is negative in Q2 because sin > 0 but cos < 0.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "Cosine",
+          "correctExplanation": "In Q4, cosine is positive (x > 0) but sine and tangent are negative.",
+          "distractors": [
+            {
+              "answer": "Sine",
+              "explanation": "Sine is negative in Q4 because y < 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "Tangent",
+              "explanation": "Tangent is negative in Q4 because sin < 0 but cos > 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The graph of y = sin(x) has {{blank:1}} of 1 and crosses the x-axis at 0°, {{blank:2}}° and 360°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "amplitude",
+          "correctExplanation": "The amplitude is the maximum distance from the midline.",
+          "distractors": [
+            {
+              "answer": "period",
+              "explanation": "The period is 360°; amplitude is 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "frequency",
+              "explanation": "Frequency is the reciprocal of period, not the maximum height.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "180",
+          "correctExplanation": "sin(180°) = 0, so the graph crosses the x-axis at 180°.",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "sin(90°) = 1, a maximum, not a zero crossing.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "270",
+              "explanation": "sin(270°) = −1, a minimum, not a zero crossing.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "sin(θ) = cos(90° − θ) is called the {{blank:1}} identity because 90° − θ is the {{blank:2}} of θ.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "co-function",
+          "correctExplanation": "Sine and cosine are co-functions, related by complementary angles.",
+          "distractors": [
+            {
+              "answer": "Pythagorean",
+              "explanation": "The Pythagorean identity is sin² + cos² = 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "double angle",
+              "explanation": "The double angle formula involves 2θ, not 90° − θ.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "complement",
+          "correctExplanation": "Two angles are complementary when they sum to 90°.",
+          "distractors": [
+            {
+              "answer": "supplement",
+              "explanation": "Supplementary angles sum to 180°, not 90°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "reflex",
+              "explanation": "Reflex angles exceed 180°; this involves complementary angles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The reference angle for 240° is {{blank:1}}° because 240° is in the {{blank:2}} quadrant.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "240° − 180° = 60° is the reference angle.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "30° would be the reference for 210° or 330°.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "120",
+              "explanation": "120° is not an acute reference angle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "third",
+          "correctExplanation": "240° lies between 180° and 270°, which is the third quadrant.",
+          "distractors": [
+            {
+              "answer": "second",
+              "explanation": "The second quadrant is between 90° and 180°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "fourth",
+              "explanation": "The fourth quadrant is between 270° and 360°.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The identity sin²(θ) + cos²(θ) = {{blank:1}} follows from the equation of the {{blank:2}} x² + y² = 1.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Since (cos θ)² + (sin θ)² = x² + y² = 1 on the unit circle.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The sum of squares of sin and cos is 1, not 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The radius of the unit circle is 1, giving the sum as 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "unit circle",
+          "correctExplanation": "The unit circle has equation x² + y² = 1.",
+          "distractors": [
+            {
+              "answer": "equilateral triangle",
+              "explanation": "An equilateral triangle does not produce this identity.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "sine curve",
+              "explanation": "The sine curve is a graph; this identity comes from the unit circle.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Cosine is an {{blank:1}} function, meaning cos(−θ) = cos(θ), while sine is an {{blank:2}} function, meaning sin(−θ) = −sin(θ).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "even",
+          "correctExplanation": "Even functions satisfy f(−x) = f(x), and cosine has this symmetry.",
+          "distractors": [
+            {
+              "answer": "odd",
+              "explanation": "Odd functions satisfy f(−x) = −f(x); that describes sine.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "periodic",
+              "explanation": "Periodic means repeating; even describes the symmetry property.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "odd",
+          "correctExplanation": "Odd functions satisfy f(−x) = −f(x), and sine has this symmetry.",
+          "distractors": [
+            {
+              "answer": "even",
+              "explanation": "Even functions satisfy f(−x) = f(x); that describes cosine.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "inverse",
+              "explanation": "Inverse functions undo each other; odd describes the symmetry.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "sin(120°) = √3/2 because the reference angle is 60° and sine is positive in the second quadrant.",
+      "correct": "True",
+      "correctExplanation": "120° is in Q2 with reference angle 60°. sin(60°) = √3/2 and sine is positive in Q2.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The reference angle is 60° and sine is positive in Q2, giving √3/2."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "cos(300°) = −√3/2 because cosine is negative in the fourth quadrant.",
+      "correct": "False",
+      "correctExplanation": "Cosine is positive in Q4 (x > 0). cos(300°) = cos(60°) = 1/2, not −√3/2.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Cosine is positive in Q4; cos(300°) = 1/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Find the exact value of sin(210°).",
+      "correct": "−1/2 from reference angle 30° in Q3",
+      "correctExplanation": "210° is in Q3 with reference angle 30°. sin(30°) = 1/2 and sine is negative in Q3.",
+      "distractors": [
+        {
+          "answer": "1/2 ignoring the quadrant sign entirely",
+          "explanation": "In Q3, sine is negative, so the answer is −1/2."
+        },
+        {
+          "answer": "−√3/2 using the wrong reference angle",
+          "explanation": "The reference angle is 30° (not 60°), giving sin = 1/2."
+        },
+        {
+          "answer": "√3/2 with both sign and value incorrect",
+          "explanation": "Both the sign (negative in Q3) and reference angle (30°) matter."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Find the exact value of cos(135°).",
+      "correct": "−√2/2 from reference angle 45° in Q2",
+      "correctExplanation": "135° is in Q2 with reference angle 45°. cos(45°) = √2/2 and cosine is negative in Q2.",
+      "distractors": [
+        {
+          "answer": "√2/2 ignoring the quadrant sign here",
+          "explanation": "Cosine is negative in Q2."
+        },
+        {
+          "answer": "−1/2 using the wrong reference angle",
+          "explanation": "The reference angle is 45°, not 60°."
+        },
+        {
+          "answer": "1/2 with both errors in sign and value",
+          "explanation": "Reference angle 45° gives √2/2, and cosine is negative in Q2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Find tan(315°).",
+      "correct": "−1 from reference angle 45° in Q4",
+      "correctExplanation": "315° is in Q4, reference angle 45°. tan(45°) = 1, and tangent is negative in Q4.",
+      "distractors": [
+        {
+          "answer": "1 ignoring the negative sign in Q4 here",
+          "explanation": "Tangent is negative in Q4."
+        },
+        {
+          "answer": "0 because 315° is near the x-axis overall",
+          "explanation": "315° has reference angle 45°, so tan ≠ 0."
+        },
+        {
+          "answer": "√3 using the wrong reference angle here",
+          "explanation": "The reference angle is 45° (tan = 1), not 60° (tan = √3)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "The graph of y = 2 sin(x) has what amplitude?",
+      "correct": "2, stretching the graph vertically",
+      "correctExplanation": "The coefficient 2 scales the sine wave so it oscillates between −2 and 2.",
+      "distractors": [
+        {
+          "answer": "1, unchanged from the standard sine graph",
+          "explanation": "The coefficient 2 changes the amplitude from 1 to 2."
+        },
+        {
+          "answer": "4, doubling the amplitude twice overall",
+          "explanation": "The amplitude equals the absolute value of the coefficient, which is 2."
+        },
+        {
+          "answer": "0.5, dividing the standard amplitude by 2",
+          "explanation": "0.5 would result from y = 0.5 sin(x), not 2 sin(x)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A Ferris wheel has radius 10 m and centre at 12 m above ground. If height is modelled as h = 12 + 10 sin(θ), what is the maximum height?",
+      "correct": "22 m when sin(θ) = 1 at the top",
+      "correctExplanation": "Maximum: h = 12 + 10(1) = 22 m, when the rider is at the top of the wheel.",
+      "distractors": [
+        {
+          "answer": "12 m at the centre height of the wheel",
+          "explanation": "12 m is the centre, not the maximum."
+        },
+        {
+          "answer": "10 m equal to the radius of the wheel",
+          "explanation": "10 m is the radius; maximum height is centre + radius."
+        },
+        {
+          "answer": "2 m at the lowest point of the wheel",
+          "explanation": "2 m is the minimum height (12 − 10), not maximum."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "What is the period of y = sin(2x)?",
+      "correct": "180 degrees from 360° divided by 2",
+      "correctExplanation": "The period of y = sin(bx) is 360°/b. For b = 2: 360°/2 = 180°.",
+      "distractors": [
+        {
+          "answer": "360 degrees unchanged from standard sine",
+          "explanation": "The coefficient 2 halves the period to 180°."
+        },
+        {
+          "answer": "720 degrees doubling the standard period",
+          "explanation": "Doubling b halves the period, not doubles it."
+        },
+        {
+          "answer": "90 degrees from quartering the full period",
+          "explanation": "90° would be the period for y = sin(4x), not sin(2x)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Find the exact value of sin(330°).",
+      "correct": "−1/2 from reference angle 30° in Q4",
+      "correctExplanation": "330° is in Q4, reference angle 360° − 330° = 30°. sin(30°) = 1/2 and sine is negative in Q4.",
+      "distractors": [
+        {
+          "answer": "1/2 ignoring the negative sign in Q4",
+          "explanation": "Sine is negative in Q4, so the answer is −1/2."
+        },
+        {
+          "answer": "−√3/2 using the wrong reference angle",
+          "explanation": "The reference angle is 30° (sin = 1/2), not 60°."
+        },
+        {
+          "answer": "√3/2 with incorrect sign and value here",
+          "explanation": "Both the sign and reference angle are wrong."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Sketch the key features of y = cos(x) for 0° ≤ x ≤ 360°. Where does it first reach zero?",
+      "correct": "at x = 90 degrees for the first zero",
+      "correctExplanation": "cos(90°) = 0, which is the first zero crossing in the domain.",
+      "distractors": [
+        {
+          "answer": "at x = 0 degrees where the graph starts",
+          "explanation": "cos(0°) = 1, not 0; the graph starts at the maximum."
+        },
+        {
+          "answer": "at x = 180 degrees for the first zero",
+          "explanation": "cos(90°) = 0 occurs before cos(180°) = −1."
+        },
+        {
+          "answer": "at x = 45 degrees for the first zero here",
+          "explanation": "cos(45°) = √2/2 ≈ 0.707, not 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Using the unit circle, find cos(240°).",
+      "correct": "−1/2 from reference angle 60° in Q3",
+      "correctExplanation": "240° is in Q3, reference angle 240° − 180° = 60°. cos(60°) = 1/2, negative in Q3.",
+      "distractors": [
+        {
+          "answer": "1/2 ignoring the quadrant sign for cosine",
+          "explanation": "Cosine is negative in Q3."
+        },
+        {
+          "answer": "−√3/2 using the wrong exact value here",
+          "explanation": "The reference angle 60° gives cos = 1/2, not √3/2."
+        },
+        {
+          "answer": "√2/2 using reference angle 45° in error",
+          "explanation": "The reference angle is 60°, not 45°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Find tan(120°).",
+      "correct": "−√3 from reference angle 60° in Q2",
+      "correctExplanation": "120° is in Q2, reference 60°. tan(60°) = √3 and tangent is negative in Q2.",
+      "distractors": [
+        {
+          "answer": "√3 ignoring the negative sign in Q2 here",
+          "explanation": "Tangent is negative in Q2."
+        },
+        {
+          "answer": "−1 using reference angle 45° by mistake",
+          "explanation": "The reference angle is 60° (tan = √3), not 45° (tan = 1)."
+        },
+        {
+          "answer": "−1/√3 using the reciprocal value in error",
+          "explanation": "tan(60°) = √3, not 1/√3; 1/√3 is tan(30°)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "The graph of y = sin(x − 90°) is equivalent to which function?",
+      "correct": "y = −cos(x) by the phase shift identity",
+      "correctExplanation": "sin(x − 90°) = −cos(x) using the identity sin(θ − 90°) = −cos(θ).",
+      "distractors": [
+        {
+          "answer": "y = cos(x) without any sign change here",
+          "explanation": "sin(x − 90°) = −cos(x), not cos(x)."
+        },
+        {
+          "answer": "y = tan(x) from the ratio of sin to cos",
+          "explanation": "Phase-shifted sine does not equal tangent."
+        },
+        {
+          "answer": "y = sin(x) + 90 shifting vertically here",
+          "explanation": "The 90° affects the phase, not a vertical shift."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "At what angle does cos(θ) = −1 for 0° ≤ θ ≤ 360°?",
+      "correct": "180 degrees where the point is at (−1, 0)",
+      "correctExplanation": "At 180°, the unit circle point is (−1, 0), giving cos(180°) = −1.",
+      "distractors": [
+        {
+          "answer": "270 degrees at the bottom of the circle",
+          "explanation": "cos(270°) = 0, not −1."
+        },
+        {
+          "answer": "360 degrees at the right of the circle",
+          "explanation": "cos(360°) = 1, not −1."
+        },
+        {
+          "answer": "90 degrees at the top of the circle here",
+          "explanation": "cos(90°) = 0, not −1."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "sin(150°) has reference angle {{blank:1}}° and equals {{blank:2}} because sine is positive in Q2.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "180° − 150° = 30° is the reference angle.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "60° is the reference angle for 120° or 240°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "150",
+              "explanation": "150° itself is not the reference angle; it is the original angle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/2",
+          "correctExplanation": "sin(30°) = 1/2 and sine is positive in Q2.",
+          "distractors": [
+            {
+              "answer": "−1/2",
+              "explanation": "Sine is positive in Q2, so the value is positive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√3/2",
+              "explanation": "√3/2 is sin(60°), not sin(30°).",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "cos(225°) is in quadrant {{blank:1}} with reference angle 45°, giving cos(225°) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "225° lies between 180° and 270°, which is Q3.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Q2 is between 90° and 180°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "Q4 is between 270° and 360°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−√2/2",
+          "correctExplanation": "cos(45°) = √2/2 and cosine is negative in Q3.",
+          "distractors": [
+            {
+              "answer": "√2/2",
+              "explanation": "Cosine is negative in Q3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1/2",
+              "explanation": "−1/2 is cos(120°) or cos(240°), not cos(225°).",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "The graph of y = 3 sin(x) has amplitude {{blank:1}} and period {{blank:2}} degrees.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "3",
+          "correctExplanation": "The coefficient of sin(x) determines the amplitude.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The amplitude changes from 1 to 3 due to the coefficient.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "6",
+              "explanation": "6 would be twice the coefficient, not the amplitude.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "360",
+          "correctExplanation": "The period of sin(x) is unchanged by the amplitude coefficient.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "180° is the period of tan(x), not 3 sin(x).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1080",
+              "explanation": "The period is not multiplied by 3.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "tan(225°) has reference angle {{blank:1}}° in Q3, and tan(225°) = {{blank:2}} since tangent is positive in Q3.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "45",
+          "correctExplanation": "225° − 180° = 45° is the reference angle.",
+          "distractors": [
+            {
+              "answer": "135",
+              "explanation": "135° is not an acute reference angle.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "60",
+              "explanation": "60° is the reference angle for 240°, not 225°.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "tan(45°) = 1 and tangent is positive in Q3.",
+          "distractors": [
+            {
+              "answer": "−1",
+              "explanation": "Tangent is positive in Q3 (both sin and cos are negative).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√3",
+              "explanation": "√3 is tan(60°), not tan(45°).",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The period of y = sin(3x) is {{blank:1}}° because the period formula is {{blank:2}} divided by the coefficient of x.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "120",
+          "correctExplanation": "360° ÷ 3 = 120°.",
+          "distractors": [
+            {
+              "answer": "1080",
+              "explanation": "1080° = 360° × 3, which multiplies instead of divides.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "180",
+              "explanation": "180° = 360° ÷ 2, using the wrong coefficient.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "360",
+          "correctExplanation": "The standard period of sin(x) is 360°.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "180° is the period of tan(x), not sin(x).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "90° is not the base period of any standard trig function.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "Using the unit circle, sin(270°) = {{blank:1}} because the point at 270° is (0, {{blank:2}}).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−1",
+          "correctExplanation": "At 270°, the y-coordinate is −1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "0 is the x-coordinate at 270°, not the y-coordinate.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "1 is the y-coordinate at 90°, not 270°.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−1",
+          "correctExplanation": "The point at the bottom of the unit circle is (0, −1).",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "0 is the x-coordinate, not the y-coordinate at 270°.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "1 is the y-coordinate at the top (90°), not the bottom.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "The exact value of cos(330°) equals {{blank:1}} because the reference angle is {{blank:2}}° and cosine is positive in Q4.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√3/2",
+          "correctExplanation": "cos(30°) = √3/2 and cosine is positive in Q4.",
+          "distractors": [
+            {
+              "answer": "−√3/2",
+              "explanation": "Cosine is positive in Q4, so the value is positive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1/2",
+              "explanation": "1/2 is cos(60°), not cos(30°).",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "360° − 330° = 30° is the reference angle.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "60° is the reference for 300° or 240°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "45° is the reference for 315° or 225°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "For y = sin(x + 90°), the graph is shifted {{blank:1}}° to the {{blank:2}} compared to y = sin(x).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "90",
+          "correctExplanation": "The +90° inside the function shifts the graph 90° horizontally.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "180° would be the shift for sin(x + 180°).",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "45",
+              "explanation": "45° is not the phase shift in this expression.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "left",
+          "correctExplanation": "Adding to x shifts the graph to the left.",
+          "distractors": [
+            {
+              "answer": "right",
+              "explanation": "Adding shifts left; subtracting shifts right.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "up",
+              "explanation": "Phase shifts are horizontal, not vertical.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "sin(60°) = {{blank:1}} and cos(60°) = {{blank:2}} from the 30-60-90 triangle ratios.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√3/2",
+          "correctExplanation": "In a 30-60-90 triangle, the side opposite 60° gives sin(60°) = √3/2.",
+          "distractors": [
+            {
+              "answer": "1/2",
+              "explanation": "1/2 is sin(30°), not sin(60°).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√2/2",
+              "explanation": "√2/2 is sin(45°), not sin(60°).",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1/2",
+          "correctExplanation": "The side adjacent to 60° gives cos(60°) = 1/2.",
+          "distractors": [
+            {
+              "answer": "√3/2",
+              "explanation": "√3/2 is cos(30°), not cos(60°).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√2/2",
+              "explanation": "√2/2 is cos(45°), not cos(60°).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The graph of y = cos(x) has a {{blank:1}} at x = 0° with value {{blank:2}}, then decreases to −1 at 180°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "maximum",
+          "correctExplanation": "cos(0°) = 1 is the largest value of the cosine function.",
+          "distractors": [
+            {
+              "answer": "minimum",
+              "explanation": "The minimum of cosine is −1, occurring at 180°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "cos(0°) = 1, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "cos(0°) = 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "0 is cos(90°), not cos(0°).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1",
+              "explanation": "−1 is cos(180°), not cos(0°).",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "To find sin(315°), identify Q{{blank:1}} and reference angle {{blank:2}}°, giving sin(315°) = −√2/2.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "315° is between 270° and 360°, which is Q4.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Q3 is between 180° and 270°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "Q1 is between 0° and 90°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "45",
+          "correctExplanation": "360° − 315° = 45° is the reference angle.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "30° is the reference for 330° or 210°.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "60",
+              "explanation": "60° is the reference for 300° or 240°.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "A height model h = 5 + 3 sin(θ) has midline at h = {{blank:1}} and amplitude {{blank:2}}, reaching a maximum of 8.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "5",
+          "correctExplanation": "The constant 5 sets the midline of the sinusoidal function.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the amplitude, not the midline.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 is the maximum value (5 + 3), not the midline.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "The coefficient 3 determines the amplitude.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "5 is the midline, not the amplitude.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "8 is the maximum, not the amplitude.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student claims sin(210°) = 1/2. Evaluate this claim.",
+      "correct": "incorrect: sin is negative in Q3, giving −1/2",
+      "correctExplanation": "210° is in Q3 where sine is negative. The reference angle is 30°, so sin(210°) = −1/2.",
+      "distractors": [
+        {
+          "answer": "correct because sin(30°) = 1/2 applies here",
+          "explanation": "The reference angle gives the magnitude, but the sign depends on the quadrant."
+        },
+        {
+          "answer": "incorrect because sin(210°) = 0 exactly here",
+          "explanation": "sin(210°) = −1/2, not 0."
+        },
+        {
+          "answer": "correct because sine is positive everywhere",
+          "explanation": "Sine is negative in Q3 and Q4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Compare the graphs of y = sin(x) and y = sin(2x). How does doubling the coefficient of x affect the graph?",
+      "correct": "it halves the period from 360° to 180°",
+      "correctExplanation": "The period of y = sin(bx) is 360°/b. Doubling b halves the period.",
+      "distractors": [
+        {
+          "answer": "it doubles the period from 360° to 720°",
+          "explanation": "Doubling b halves, not doubles, the period."
+        },
+        {
+          "answer": "it doubles the amplitude from 1 to 2 here",
+          "explanation": "The coefficient of x affects the period, not the amplitude."
+        },
+        {
+          "answer": "it shifts the graph 180° to the right here",
+          "explanation": "Changing b compresses the graph, not shifts it."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Why does tan(x) have a period of 180° while sin(x) has a period of 360°?",
+      "correct": "tan repeats when sin and cos both change sign",
+      "correctExplanation": "After 180°, both sin and cos change sign, so their ratio (tan) returns to the same value.",
+      "distractors": [
+        {
+          "answer": "tan(x) is a faster function than sin(x) here",
+          "explanation": "Speed is not a mathematical property of functions."
+        },
+        {
+          "answer": "sin(x) has more turning points per cycle",
+          "explanation": "The number of turning points does not determine the period."
+        },
+        {
+          "answer": "tan(x) is defined at fewer angles than sin",
+          "explanation": "Definition gaps do not cause the shorter period."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Explain why sin²(θ) + cos²(θ) = 1 holds for all angles, including those outside the first quadrant.",
+      "correct": "the unit circle equation x² + y² = 1 applies everywhere",
+      "correctExplanation": "Every point on the unit circle satisfies x² + y² = 1, regardless of the quadrant.",
+      "distractors": [
+        {
+          "answer": "the identity only works in the first quadrant",
+          "explanation": "The identity holds for all angles, in every quadrant."
+        },
+        {
+          "answer": "negative values of sin or cos cancel each other",
+          "explanation": "Squaring makes all terms positive; there is no cancellation."
+        },
+        {
+          "answer": "the identity is an approximation, not exact here",
+          "explanation": "The identity is exact for all angles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A student graphs y = −sin(x). Describe the transformation from y = sin(x).",
+      "correct": "reflection in the x-axis of the graph",
+      "correctExplanation": "The negative sign reflects all y-values across the x-axis.",
+      "distractors": [
+        {
+          "answer": "reflection in the y-axis of the graph here",
+          "explanation": "Reflection in the y-axis gives sin(−x) = −sin(x), but the transformation is described as x-axis reflection."
+        },
+        {
+          "answer": "vertical shift of 1 unit downward overall",
+          "explanation": "A vertical shift adds a constant, not a negative sign."
+        },
+        {
+          "answer": "horizontal shift of 180° to the right here",
+          "explanation": "While −sin(x) = sin(x − 180°), the primary transformation is a reflection."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "For what angles in [0°, 360°] is sin(θ) > cos(θ)? Analyse using the unit circle.",
+      "correct": "from 45° to 225° where y exceeds x",
+      "correctExplanation": "sin(θ) = cos(θ) at 45° and 225°. Between these, sin > cos.",
+      "distractors": [
+        {
+          "answer": "from 0° to 180° where sine is positive here",
+          "explanation": "sin > cos is not just about sine being positive; cos can be larger."
+        },
+        {
+          "answer": "from 90° to 270° where cosine is negative",
+          "explanation": "This misses parts of the interval and includes extras."
+        },
+        {
+          "answer": "sin(θ) > cos(θ) for all angles everywhere",
+          "explanation": "At 0°, cos = 1 > sin = 0, so this is false."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Explain why cos(60°) = sin(30°) using the unit circle.",
+      "correct": "complementary angles: 60° + 30° = 90°",
+      "correctExplanation": "The co-function identity states sin(θ) = cos(90° − θ), so cos(60°) = sin(30°).",
+      "distractors": [
+        {
+          "answer": "they are both equal to √3/2 by coincidence",
+          "explanation": "cos(60°) = sin(30°) = 1/2, and the equality follows from the co-function identity."
+        },
+        {
+          "answer": "the unit circle is symmetric about the origin",
+          "explanation": "Origin symmetry relates sin(θ) and sin(θ + 180°), not this pair."
+        },
+        {
+          "answer": "both angles are in the first quadrant overall",
+          "explanation": "Being in Q1 does not explain why these specific values are equal."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A tidal model uses h = 3 sin(30t) + 5 where t is in hours. What is the period of the tide?",
+      "correct": "12 hours from 360° ÷ 30 = 12",
+      "correctExplanation": "The period is 360°/30 = 12 hours (one full tidal cycle).",
+      "distractors": [
+        {
+          "answer": "30 hours from the coefficient of t directly",
+          "explanation": "30 is the coefficient, not the period."
+        },
+        {
+          "answer": "360 hours using the standard period here",
+          "explanation": "360° is divided by the coefficient to get the period."
+        },
+        {
+          "answer": "5 hours from the vertical shift constant",
+          "explanation": "5 is the midline, not the period."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Why is tan(270°) undefined while sin(270°) = −1?",
+      "correct": "because cos(270°) = 0 causes division by zero",
+      "correctExplanation": "tan = sin/cos, and cos(270°) = 0 creates division by zero.",
+      "distractors": [
+        {
+          "answer": "because sin(270°) = 0 at that angle value",
+          "explanation": "sin(270°) = −1, not 0."
+        },
+        {
+          "answer": "because 270° is not on the unit circle here",
+          "explanation": "270° corresponds to the point (0, −1) on the unit circle."
+        },
+        {
+          "answer": "tan(270°) is actually defined and equals −1",
+          "explanation": "tan(270°) is undefined because cos(270°) = 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Analyse why the maximum value of sin(x) + cos(x) is √2, not 2.",
+      "correct": "the functions reach their maxima at different angles",
+      "correctExplanation": "sin peaks at 90° and cos at 0°; they cannot both be 1 simultaneously.",
+      "distractors": [
+        {
+          "answer": "√2 is an approximation of the true maximum 2",
+          "explanation": "√2 ≈ 1.414 is exact, not an approximation of 2."
+        },
+        {
+          "answer": "sin(x) + cos(x) is always less than 1 overall",
+          "explanation": "The sum can exceed 1; its maximum is √2 ≈ 1.414."
+        },
+        {
+          "answer": "the maximum is 2 when both functions equal 1",
+          "explanation": "sin and cos equal 1 at different angles, so both cannot be 1 together."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student writes sin(A + B) = sin A + sin B. Use a specific example to show this is false.",
+      "correct": "sin(30° + 60°) = 1, but sin 30° + sin 60° ≈ 1.37",
+      "correctExplanation": "sin(90°) = 1, but 0.5 + 0.866 = 1.366, proving the identity is false.",
+      "distractors": [
+        {
+          "answer": "the identity is true for all angles everywhere",
+          "explanation": "Substituting values shows the identity is false."
+        },
+        {
+          "answer": "sin(0° + 0°) = sin 0° + sin 0° proves it true",
+          "explanation": "0 = 0 + 0 is a special case; the identity fails for most angles."
+        },
+        {
+          "answer": "this only fails for angles greater than 180°",
+          "explanation": "It fails for many angle pairs, including acute ones."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "The graph of y = sin(x) is translated 90° left and reflected in the x-axis. What is the resulting function?",
+      "correct": "y = −cos(x) from both transformations",
+      "correctExplanation": "sin(x + 90°) = cos(x), then reflecting gives −cos(x).",
+      "distractors": [
+        {
+          "answer": "y = cos(x) without the reflection applied",
+          "explanation": "The reflection in the x-axis adds the negative sign."
+        },
+        {
+          "answer": "y = −sin(x) without the translation applied",
+          "explanation": "The translation changes sin to cos before the reflection."
+        },
+        {
+          "answer": "y = sin(−x) from reflecting in the y-axis",
+          "explanation": "The transformations are a translation and x-axis reflection, not y-axis."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Explain why cos(θ) = cos(360° − θ) using the unit circle.",
+      "correct": "both angles have the same x-coordinate value",
+      "correctExplanation": "θ and 360° − θ are reflections in the x-axis, sharing the same x-coordinate (cosine).",
+      "distractors": [
+        {
+          "answer": "they have the same y-coordinate on the circle",
+          "explanation": "They have opposite y-coordinates; the x-coordinates are equal."
+        },
+        {
+          "answer": "all angles separated by 360° have equal cosine",
+          "explanation": "360° − θ is not θ + 360°; the identity is about symmetry."
+        },
+        {
+          "answer": "cosine is always positive for all angle values",
+          "explanation": "Cosine is negative in Q2 and Q3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A temperature model is T = 20 + 8 cos(30t − 90) where t is months. What is the maximum temperature and when does it first occur?",
+      "correct": "28°C when cos = 1, at t = 3 months",
+      "correctExplanation": "cos(30t − 90) = 1 when 30t − 90 = 0, so t = 3. T = 20 + 8 = 28°C.",
+      "distractors": [
+        {
+          "answer": "20°C at t = 0 from the midline value here",
+          "explanation": "20°C is the midline; maximum is 28°C."
+        },
+        {
+          "answer": "28°C at t = 0 from the starting condition",
+          "explanation": "At t = 0, cos(−90) = 0, giving T = 20°C, not 28°C."
+        },
+        {
+          "answer": "12°C at t = 6 from the minimum point here",
+          "explanation": "12°C is the minimum (20 − 8), not the maximum."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "sin(θ) and sin(180° − θ) are equal because both angles have the same {{blank:1}} on the unit circle but may differ in their {{blank:2}}-coordinates.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "y-coordinate",
+          "correctExplanation": "Sine equals the y-coordinate, which is the same for θ and 180° − θ.",
+          "distractors": [
+            {
+              "answer": "x-coordinate",
+              "explanation": "The x-coordinates are opposite in sign for θ and 180° − θ.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "radius",
+              "explanation": "The radius is always 1 on the unit circle and does not distinguish angles.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "The x-coordinates (cosine values) have opposite signs for θ and 180° − θ.",
+          "distractors": [
+            {
+              "answer": "y",
+              "explanation": "The y-coordinates are equal, not different.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "r",
+              "explanation": "The radius is constant on the unit circle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The function y = A sin(Bx + C) + D has amplitude {{blank:1}}, period 360°/B, phase shift −C/B, and vertical shift {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "|A|",
+          "correctExplanation": "The absolute value of A determines the amplitude.",
+          "distractors": [
+            {
+              "answer": "A",
+              "explanation": "A could be negative; the amplitude is always positive.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "B",
+              "explanation": "B determines the period, not the amplitude.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "D",
+          "correctExplanation": "D shifts the entire graph vertically by D units.",
+          "distractors": [
+            {
+              "answer": "C",
+              "explanation": "C affects the horizontal phase shift, not the vertical shift.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "A",
+              "explanation": "A affects the amplitude, not the vertical position.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "The tangent function has period {{blank:1}}° because after this rotation, both sine and cosine {{blank:2}}, so their ratio is unchanged.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "180",
+          "correctExplanation": "tan(θ + 180°) = tan(θ) because sin and cos both negate after 180°.",
+          "distractors": [
+            {
+              "answer": "360",
+              "explanation": "360° is the period of sin and cos, not tan.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "90° is not a period; tan(90°) is undefined.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "change sign",
+          "correctExplanation": "After 180°, sin(θ + 180°) = −sin(θ) and cos(θ + 180°) = −cos(θ).",
+          "distractors": [
+            {
+              "answer": "stay the same",
+              "explanation": "After 180°, both change sign; they stay the same after 360°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "become zero",
+              "explanation": "Neither sin nor cos becomes zero after every 180° rotation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The maximum value of a sin(x) + b cos(x) is {{blank:1}} because the combined function can be written as R sin(x + φ) where R = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√(a² + b²)",
+          "correctExplanation": "The maximum of R sin(x + φ) is R, which equals √(a² + b²).",
+          "distractors": [
+            {
+              "answer": "a + b",
+              "explanation": "Simple addition does not account for the phase difference.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "|a| + |b|",
+              "explanation": "The sum of absolute values overestimates the maximum.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√(a² + b²)",
+          "correctExplanation": "R is the amplitude of the combined sinusoidal function.",
+          "distractors": [
+            {
+              "answer": "a + b",
+              "explanation": "The amplitude uses the Pythagorean combination, not simple addition.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "a × b",
+              "explanation": "Multiplication does not give the correct amplitude.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "Reflecting y = sin(x) in the {{blank:1}}-axis gives y = −sin(x), while reflecting in the {{blank:2}}-axis gives y = sin(−x) = −sin(x).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x",
+          "correctExplanation": "Reflecting in the x-axis negates the y-values: y → −y.",
+          "distractors": [
+            {
+              "answer": "y",
+              "explanation": "Reflecting in the y-axis replaces x with −x.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "origin",
+              "explanation": "Origin reflection negates both x and y.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "y",
+          "correctExplanation": "Reflecting in the y-axis replaces x with −x: sin(x) → sin(−x).",
+          "distractors": [
+            {
+              "answer": "x",
+              "explanation": "Reflecting in the x-axis negates y, not x.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "origin",
+              "explanation": "Origin reflection combines both reflections.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A Ferris wheel model h = 15 − 12 cos(6t) has midline {{blank:1}} m and period {{blank:2}}° in terms of t.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "15",
+          "correctExplanation": "The constant 15 sets the midline of the sinusoidal model.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "12 is the amplitude, not the midline.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "3 = 15 − 12 is the minimum height, not the midline.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "60",
+          "correctExplanation": "Period = 360°/6 = 60°.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "6 is the coefficient, not the period.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "360",
+              "explanation": "360° is the base period before dividing by the coefficient.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "cos(θ) = cos(−θ) illustrates that cosine is an {{blank:1}} function, which geometrically means the unit circle is symmetric about the {{blank:2}}-axis.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "even",
+          "correctExplanation": "Even functions satisfy f(−x) = f(x).",
+          "distractors": [
+            {
+              "answer": "odd",
+              "explanation": "Odd functions satisfy f(−x) = −f(x); that is sine.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "periodic",
+              "explanation": "Periodicity means repeating; even describes the symmetry type.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "x",
+          "correctExplanation": "Symmetry about the x-axis means points at θ and −θ have the same x-coordinate.",
+          "distractors": [
+            {
+              "answer": "y",
+              "explanation": "y-axis symmetry relates to different properties.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "origin",
+              "explanation": "Origin symmetry describes odd functions, not even ones.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "When graphing y = sin(x) and y = cos(x) together, they intersect at x = {{blank:1}}° and x = {{blank:2}}° in [0°, 360°].",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "45",
+          "correctExplanation": "sin(45°) = cos(45°) = √2/2.",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "sin(90°) = 1 ≠ cos(90°) = 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "sin(30°) = 1/2 ≠ cos(30°) = √3/2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "225",
+          "correctExplanation": "sin(225°) = cos(225°) = −√2/2.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "sin(180°) = 0 ≠ cos(180°) = −1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "270",
+              "explanation": "sin(270°) = −1 ≠ cos(270°) = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A sinusoidal function with period 90° has the form y = sin({{blank:1}}x) because 360° ÷ {{blank:2}} = 90°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Period = 360°/b, so 360°/4 = 90°.",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "y = sin(90x) would have period 4°, not 90°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "y = sin(2x) has period 180°, not 90°.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "4",
+          "correctExplanation": "360° ÷ 4 = 90°.",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "360° ÷ 90 = 4, which is the coefficient, not the divisor.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "360° ÷ 2 = 180°, not 90°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "sin(A + B) ≠ sin A + sin B in general. The correct expansion is sin A cos B + {{blank:1}} sin B, known as the {{blank:2}} formula.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cos A",
+          "correctExplanation": "The sine addition formula: sin(A + B) = sin A cos B + cos A sin B.",
+          "distractors": [
+            {
+              "answer": "sin A",
+              "explanation": "Using sin A again would give sin A(cos B + sin B), which is incorrect.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tan A",
+              "explanation": "Tangent is not part of the sine addition formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "compound angle",
+          "correctExplanation": "The compound angle (or angle addition) formula for sine.",
+          "distractors": [
+            {
+              "answer": "double angle",
+              "explanation": "The double angle formula is a special case where A = B.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "half angle",
+              "explanation": "The half angle formula involves A/2, not A + B.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "The graph of y = tan(x) increases through each period and has a {{blank:1}} at every multiple of 180°, while {{blank:2}} occur at odd multiples of 90°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "zero crossing",
+          "correctExplanation": "tan(0°) = 0, tan(180°) = 0, etc.",
+          "distractors": [
+            {
+              "answer": "maximum",
+              "explanation": "Tangent has no maximum; it increases to infinity.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "minimum",
+              "explanation": "Tangent has no minimum; it decreases from negative infinity.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "vertical asymptotes",
+          "correctExplanation": "Asymptotes occur where cos(x) = 0: at 90°, 270°, etc.",
+          "distractors": [
+            {
+              "answer": "horizontal asymptotes",
+              "explanation": "Tangent has no horizontal asymptotes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "turning points",
+              "explanation": "Tangent does not have turning points within each period.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "A temperature cycle modelled by T = 18 + 10 sin(30t − 90) reaches its maximum of {{blank:1}}°C at t = {{blank:2}} months.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "28",
+          "correctExplanation": "Maximum T = 18 + 10(1) = 28°C.",
+          "distractors": [
+            {
+              "answer": "18",
+              "explanation": "18°C is the midline, not the maximum.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "10 is the amplitude, not the maximum temperature.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6",
+          "correctExplanation": "sin(30t − 90) = 1 when 30t − 90 = 90, so t = 6.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "At t = 3, 30(3) − 90 = 0, giving sin 0 = 0.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "0",
+              "explanation": "At t = 0, 30(0) − 90 = −90, giving sin(−90) = −1.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

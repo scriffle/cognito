@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10P02",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to analyse multi-step chance experiments, assign probabilities and investigate the concept of independence.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to analyse multi-step chance experiments, assign probabilities and investigate the concept of independence.",
+    "y": [
+      "Understanding independence \u2014 that one event does not affect the probability of another \u2014 is crucial for correctly calculating compound probabilities.",
+      "Testing for independence using data helps us determine whether two events are genuinely related or just coincidentally associated.",
+      "These concepts are foundational for genetics, quality control, insurance and any field that analyses sequences of events."
+    ],
+    "eg": [
+      "Testing independence: if P(A) \u00d7 P(B) = P(A and B), the events are independent.",
+      "Using a tree diagram to analyse a three-step experiment and calculate the probability of a specific sequence of outcomes.",
+      "Investigating whether gender and subject choice are independent using two-way frequency tables.",
+      "Calculating: 'What is the probability of getting 3 heads in a row?' (independent events: \u00bd \u00d7 \u00bd \u00d7 \u00bd = \u215b).",
+      "Comparing dependent events (without replacement) and independent events (with replacement) for the same scenario.",
+      "Designing an experiment to test whether two real-world events are independent."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "In a multi-step chance experiment, each step is called an event rather than a stage or trial.",
+      "correct": "False",
+      "correctExplanation": "Each step is called a stage or trial. An event is a specific outcome or set of outcomes, which is different from a step in the experiment.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Steps are stages or trials; events refer to outcomes, not steps."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "When drawing marbles with replacement, the probability changes after each draw.",
+      "correct": "False",
+      "correctExplanation": "With replacement, the marble is returned, so the total and composition remain constant.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Replacing the marble restores the original conditions for the next draw."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A tree diagram displays all possible outcomes of a multi-step experiment.",
+      "correct": "True",
+      "correctExplanation": "Tree diagrams branch at each stage, showing every possible sequence of outcomes.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Tree diagrams only show the most likely outcomes, not all of them."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "Without replacement means the item is returned before the next selection.",
+      "correct": "False",
+      "correctExplanation": "Without replacement means the item is NOT returned, reducing the pool for subsequent draws.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Without replacement keeps all items available for the next draw."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Two events are independent if the occurrence of one has no effect on the probability of the other.",
+      "correct": "True",
+      "correctExplanation": "Independence means P(A|B) = P(A), so knowing B occurred does not change the probability of A.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Independent events must also be mutually exclusive."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The probability of getting heads on a fair coin is affected by the result of the previous flip.",
+      "correct": "False",
+      "correctExplanation": "Each coin flip is independent. The probability of heads is always 0.5 regardless of previous results.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Previous results influence future flips through the law of averages."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "In a tree diagram, probabilities along a branch are added to find the combined probability.",
+      "correct": "False",
+      "correctExplanation": "Probabilities along a branch are multiplied, not added. Addition is used for alternative paths.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Adding along branches gives the combined probability of sequential events."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "Drawing cards from a deck without replacement creates dependent events.",
+      "correct": "True",
+      "correctExplanation": "Removing a card changes the composition and total, affecting subsequent probabilities.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Card draws are always independent regardless of replacement."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "P(A and B) = P(A) \u00d7 P(B) is true when events A and B are independent.",
+      "correct": "True",
+      "correctExplanation": "The multiplication rule for independent events states that the joint probability equals the product of individual probabilities.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "This formula applies to all events, not just independent ones."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "When sampling without replacement from a bag of 10 items, the denominator stays at 10 for every draw.",
+      "correct": "False",
+      "correctExplanation": "Without replacement, the total decreases by 1 after each draw, so the denominator changes.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The denominator always reflects the original population size."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Flipping a coin and rolling a die simultaneously are independent events.",
+      "correct": "True",
+      "correctExplanation": "The outcome of the coin has no influence on the die result, and vice versa.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Since they happen at the same time, they must be dependent."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "In a two-step experiment with replacement, the sample space is smaller than without replacement.",
+      "correct": "False",
+      "correctExplanation": "With replacement, all original options remain available at each step, often creating the same or larger sample space. Without replacement removes options, but 'smaller' is misleading since both have the same number of branches in a complete tree.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Replacement reduces available options, making the sample space smaller."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "A bag has 4 red and 6 blue marbles. One marble is drawn and replaced. What is the probability of drawing red both times?",
+      "correct": "4/25",
+      "correctExplanation": "P(red, red) = 4/10 \u00d7 4/10 = 16/100 = 4/25. With replacement, probabilities stay constant.",
+      "distractors": [
+        {
+          "answer": "2/5",
+          "explanation": "This is the probability of one red draw, not two consecutive."
+        },
+        {
+          "answer": "4/10",
+          "explanation": "This is the probability for a single draw only."
+        },
+        {
+          "answer": "8/20",
+          "explanation": "This adds numerators instead of multiplying fractions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Which rule is used to find P(A and B) for independent events?",
+      "correct": "Multiply P(A) by P(B)",
+      "correctExplanation": "For independent events, P(A\u2229B) = P(A) \u00d7 P(B).",
+      "distractors": [
+        {
+          "answer": "Add P(A) and P(B)",
+          "explanation": "Addition finds P(A or B) for mutually exclusive events."
+        },
+        {
+          "answer": "Subtract P(B) from P(A)",
+          "explanation": "Subtraction is not part of the multiplication rule."
+        },
+        {
+          "answer": "Divide P(A) by P(B)",
+          "explanation": "Division calculates conditional probability, not joint."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "A coin is flipped three times. How many outcomes are in the sample space?",
+      "correct": "8",
+      "correctExplanation": "Each flip has 2 outcomes, so 2 \u00d7 2 \u00d7 2 = 8 total outcomes.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "This adds 2 + 2 + 2 instead of multiplying."
+        },
+        {
+          "answer": "3",
+          "explanation": "This counts the number of flips, not outcomes."
+        },
+        {
+          "answer": "12",
+          "explanation": "This multiplies incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What does 'with replacement' mean in a probability experiment?",
+      "correct": "The selected item is returned before the next draw",
+      "correctExplanation": "Replacing the item restores the original conditions for each subsequent draw.",
+      "distractors": [
+        {
+          "answer": "The item is discarded after selection",
+          "explanation": "Discarding describes without replacement."
+        },
+        {
+          "answer": "A new item is added to the set",
+          "explanation": "Replacement restores the original item, not a new one."
+        },
+        {
+          "answer": "The experiment is repeated identically",
+          "explanation": "Replacement refers to returning items, not repeating experiments."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "A bag contains 3 green and 2 yellow balls. One ball is drawn without replacement. What is the probability the second ball is green, given the first was green?",
+      "correct": "2/4",
+      "correctExplanation": "After removing one green, 2 green and 2 yellow remain from 4 balls. P = 2/4.",
+      "distractors": [
+        {
+          "answer": "3/5",
+          "explanation": "This uses the original counts, ignoring that a green was removed."
+        },
+        {
+          "answer": "3/4",
+          "explanation": "This keeps the original green count with the reduced total."
+        },
+        {
+          "answer": "1/5",
+          "explanation": "This significantly underestimates the probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "On a tree diagram, how are probabilities for a single path calculated?",
+      "correct": "Multiply the branch probabilities along the",
+      "correctExplanation": "Sequential probabilities are multiplied along connected branches to get joint probability.",
+      "distractors": [
+        {
+          "answer": "Add the branch probabilities",
+          "explanation": "Addition is for combining alternative paths."
+        },
+        {
+          "answer": "Take the average of the branches",
+          "explanation": "Averaging is not used in tree diagram calculations."
+        },
+        {
+          "answer": "Use only the final branch probability",
+          "explanation": "All branches along the path must be considered."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Which of the following pairs of events are independent?",
+      "correct": "Rolling a 4 on a die and",
+      "correctExplanation": "The die and coin are separate physical objects with no influence on each other.",
+      "distractors": [
+        {
+          "answer": "Drawing two cards without replacement",
+          "explanation": "Removing a card affects subsequent probabilities."
+        },
+        {
+          "answer": "Choosing a student then their sibling",
+          "explanation": "Family relationships create dependence."
+        },
+        {
+          "answer": "Rain today and flooding tomorrow",
+          "explanation": "Weather conditions are causally linked."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "A spinner has 3 equal sectors: red, blue, green. It is spun twice with results recorded. How many ordered outcomes are possible?",
+      "correct": "9",
+      "correctExplanation": "Each spin has 3 outcomes, so 3 \u00d7 3 = 9 ordered pairs.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "This counts unordered pairs or adds instead of multiplying."
+        },
+        {
+          "answer": "3",
+          "explanation": "This counts outcomes for one spin only."
+        },
+        {
+          "answer": "12",
+          "explanation": "This adds rather than multiplies the options."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "If events A and B are independent, which equation must hold?",
+      "correct": "P(A and B) = P(A) \u00d7 P(B)",
+      "correctExplanation": "Independence is defined by the product rule for joint probability.",
+      "distractors": [
+        {
+          "answer": "P(A and B) = P(A) + P(B)",
+          "explanation": "This is the addition rule for mutually exclusive events."
+        },
+        {
+          "answer": "P(A and B) = 0",
+          "explanation": "This defines mutually exclusive events, not independence."
+        },
+        {
+          "answer": "P(A or B) = P(A) \u00d7 P(B)",
+          "explanation": "The product rule applies to intersection, not union."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "What happens to the denominator when drawing without replacement?",
+      "correct": "It decreases by 1 after each draw",
+      "correctExplanation": "Each draw removes an item, reducing the total available for the next selection.",
+      "distractors": [
+        {
+          "answer": "It stays the same",
+          "explanation": "This describes drawing with replacement."
+        },
+        {
+          "answer": "It increases by 1",
+          "explanation": "Items are removed, not added."
+        },
+        {
+          "answer": "It resets to the original total",
+          "explanation": "Without replacement, items are not returned."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "P(HHH) when flipping a fair coin three times equals which value?",
+      "correct": "1/8",
+      "correctExplanation": "P(HHH) = 1/2 \u00d7 1/2 \u00d7 1/2 = 1/8. Each flip is independent with P(H) = 1/2.",
+      "distractors": [
+        {
+          "answer": "1/6",
+          "explanation": "This confuses coin flips with die rolls."
+        },
+        {
+          "answer": "3/8",
+          "explanation": "This is P(exactly 2 heads), not P(all heads)."
+        },
+        {
+          "answer": "1/2",
+          "explanation": "This is the probability for a single flip."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "A bag has 5 red and 5 blue marbles. Two are drawn without replacement. What is P(both red)?",
+      "correct": "2/9",
+      "correctExplanation": "P(both red) = 5/10 \u00d7 4/9 = 20/90 = 2/9.",
+      "distractors": [
+        {
+          "answer": "1/4",
+          "explanation": "This assumes P = 5/10 \u00d7 5/10 as if with replacement."
+        },
+        {
+          "answer": "5/10",
+          "explanation": "This gives the probability of one red draw only."
+        },
+        {
+          "answer": "1/2",
+          "explanation": "This incorrectly simplifies the calculation."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "When drawing with replacement, probabilities remain {{blank:1}} because the item is {{blank:2}} before the next draw.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "constant",
+          "correctExplanation": "Returning the item keeps the total and composition unchanged for every draw.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "Variable probabilities occur without replacement, not with.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Probabilities are not zero; items are still available.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "returned",
+          "correctExplanation": "With replacement, the drawn item goes back into the pool.",
+          "distractors": [
+            {
+              "answer": "discarded",
+              "explanation": "Discarding describes without replacement.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "counted",
+              "explanation": "Counting is not relevant to the replacement process.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "Two events are independent if P(A and B) equals P(A) {{blank:1}} P(B). In a tree diagram, branch probabilities are {{blank:2}} to find path probabilities.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiplied by",
+          "correctExplanation": "The independence test uses the product P(A) \u00d7 P(B).",
+          "distractors": [
+            {
+              "answer": "added to",
+              "explanation": "Addition is used for mutually exclusive union, not independence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "divided by",
+              "explanation": "Division calculates conditional probability, not joint.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "multiplied",
+          "correctExplanation": "Joint probabilities along a path are found by multiplying branch probabilities.",
+          "distractors": [
+            {
+              "answer": "added",
+              "explanation": "Adding is used for alternative paths, not sequential branches.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "averaged",
+              "explanation": "Averaging has no role in tree diagram probability calculations.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "If P(A) = 0.3, P(B) = 0.5 and P(A\u2229B) = 0.20, then A and B are independent.",
+      "correct": "False",
+      "correctExplanation": "P(A) \u00d7 P(B) = 0.3 \u00d7 0.5 = 0.15, but P(A\u2229B) = 0.20 \u2260 0.15, so A and B are not independent.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The product 0.15 does not equal 0.20, so the independence condition fails."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "In a three-step experiment, the total number of paths in the tree diagram equals the sum of outcomes at each step.",
+      "correct": "False",
+      "correctExplanation": "The total paths equal the product of outcomes at each step, not the sum. For 2, 3, 4 outcomes: 2 \u00d7 3 \u00d7 4 = 24, not 9.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Adding the outcomes at each step gives the total number of paths."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "When rolling two fair dice, the events 'first die shows 6' and 'second die shows 3' are independent.",
+      "correct": "True",
+      "correctExplanation": "The result of one die does not influence the other. P(6,3) = 1/6 \u00d7 1/6 = P(6) \u00d7 P(3).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Since both events involve dice, they are dependent on each other."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Drawing two marbles without replacement from a bag of 8 is equivalent to drawing with replacement from the same bag.",
+      "correct": "False",
+      "correctExplanation": "Without replacement changes the composition after each draw. P(second|first) differs from P(second) alone.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The probabilities are the same because the bag is large enough."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "P(at least one head in three coin flips) can be found using the complement rule as 1 minus P(no heads).",
+      "correct": "True",
+      "correctExplanation": "P(at least one) = 1 \u2212 P(TTT) = 1 \u2212 1/8 = 7/8. The complement approach avoids counting multiple cases.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The complement only works for two-step experiments, not three."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "If two events are mutually exclusive, they must also be independent.",
+      "correct": "False",
+      "correctExplanation": "Mutually exclusive events are dependent: if one occurs, the other cannot. P(A|B) = 0 \u2260 P(A) unless P(A) = 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Events that cannot occur together have no influence on each other."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "In sampling without replacement, removing one item from a group of 20 changes the denominator from 20 to 19 for the next draw.",
+      "correct": "True",
+      "correctExplanation": "Each removal reduces the available pool by one, so the denominator decreases accordingly.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The denominator stays at 20 because we refer to the original population."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "The probability of getting exactly 2 heads in 3 coin flips is 1/4.",
+      "correct": "False",
+      "correctExplanation": "P(exactly 2H) = 3 \u00d7 (1/2)\u00b3 = 3/8, not 1/4. There are 3 paths: HHT, HTH, THH.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "With 3 flips and 2 heads, the probability is 2/8 = 1/4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "A bag has 6 red and 4 blue marbles. Two are drawn without replacement. What is P(red then blue)?",
+      "correct": "24/90",
+      "correctExplanation": "P(red then blue) = 6/10 \u00d7 4/9 = 24/90.",
+      "distractors": [
+        {
+          "answer": "24/100",
+          "explanation": "This uses 10 for both denominators, ignoring the removal."
+        },
+        {
+          "answer": "10/90",
+          "explanation": "This incorrectly multiplies numerators."
+        },
+        {
+          "answer": "4/10",
+          "explanation": "This gives only the probability of the second draw."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "To test whether events A and B are independent, which comparison is made?",
+      "correct": "Check if P(A\u2229B) equals P(A) \u00d7 P(B)",
+      "correctExplanation": "Independence holds if and only if the joint probability equals the product of marginals.",
+      "distractors": [
+        {
+          "answer": "Check if P(A\u2229B) equals zero",
+          "explanation": "P(A\u2229B) = 0 defines mutually exclusive, not independence."
+        },
+        {
+          "answer": "Check if P(A) equals P(B)",
+          "explanation": "Equal marginals do not imply independence."
+        },
+        {
+          "answer": "Check if P(A\u222aB) equals one",
+          "explanation": "P(A\u222aB) = 1 means exhaustive, not independent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "A coin is biased with P(H) = 0.6. What is the probability of getting exactly 2 heads in 3 flips?",
+      "correct": "0.432",
+      "correctExplanation": "P(2H) = C(3,2) \u00d7 0.6\u00b2 \u00d7 0.4 = 3 \u00d7 0.36 \u00d7 0.4 = 0.432.",
+      "distractors": [
+        {
+          "answer": "0.36",
+          "explanation": "This is P(HH) for two flips, missing the third flip and combinations."
+        },
+        {
+          "answer": "0.216",
+          "explanation": "This is P(HHH) = 0.6\u00b3."
+        },
+        {
+          "answer": "0.648",
+          "explanation": "This is P(at least 1 head), not exactly 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "A raffle has 100 tickets. You hold 5. Three prizes are drawn without replacement. What is P(winning no prizes)?",
+      "correct": "Approxima",
+      "correctExplanation": "P(none) = 95/100 \u00d7 94/99 \u00d7 93/98 \u2248 0.8561.",
+      "distractors": [
+        {
+          "answer": "0.857",
+          "explanation": "This rounds differently but the method is the same\u2014both are acceptable approximations."
+        },
+        {
+          "answer": "0.950",
+          "explanation": "This only accounts for the first draw."
+        },
+        {
+          "answer": "0.729",
+          "explanation": "This cubes 0.9, assuming a constant probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Which statement is true about mutually exclusive events?",
+      "correct": "They cannot both occur simultaneously",
+      "correctExplanation": "Mutually exclusive means P(A\u2229B) = 0; both events cannot happen together.",
+      "distractors": [
+        {
+          "answer": "They are always independent",
+          "explanation": "Mutually exclusive events are dependent, not independent."
+        },
+        {
+          "answer": "Their probabilities add to one",
+          "explanation": "This is only true if they are also exhaustive."
+        },
+        {
+          "answer": "One event causes the other",
+          "explanation": "Mutual exclusivity is about co-occurrence, not causation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "A standard deck has 52 cards. Two cards are drawn without replacement. What is P(both are aces)?",
+      "correct": "1/221",
+      "correctExplanation": "P(both aces) = 4/52 \u00d7 3/51 = 12/2652 = 1/221.",
+      "distractors": [
+        {
+          "answer": "1/169",
+          "explanation": "This uses 4/52 \u00d7 4/52, assuming replacement."
+        },
+        {
+          "answer": "1/13",
+          "explanation": "This is P(first ace) only."
+        },
+        {
+          "answer": "2/52",
+          "explanation": "This adds instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "In a two-step experiment, how is P(at least one success) most efficiently calculated?",
+      "correct": "1 minus P(no successes)",
+      "correctExplanation": "The complement approach avoids listing all success paths individually.",
+      "distractors": [
+        {
+          "answer": "P(first success) plus P(second success)",
+          "explanation": "This double-counts the case where both succeed."
+        },
+        {
+          "answer": "P(first) times P(second)",
+          "explanation": "This gives P(both succeed), not at least one."
+        },
+        {
+          "answer": "P(success) divided by number of steps",
+          "explanation": "Division is not used for this calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "60% of students pass maths, 50% pass English, and 35% pass both. Are these events independent?",
+      "correct": "No, because 0.6 \u00d7 0.5 \u2260 0.35",
+      "correctExplanation": "P(M) \u00d7 P(E) = 0.30, but P(M\u2229E) = 0.35. Since these are not equal, the events are dependent.",
+      "distractors": [
+        {
+          "answer": "Yes, because both exceed 0.3",
+          "explanation": "Comparing to 0.3 is not the independence test."
+        },
+        {
+          "answer": "Yes, because they are different subjects",
+          "explanation": "Different subjects does not guarantee independence."
+        },
+        {
+          "answer": "Cannot be determined from this data",
+          "explanation": "All necessary values are provided for the test."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "A bag has 7 green and 3 orange balls. Two are drawn with replacement. What is P(both green)?",
+      "correct": "49/100",
+      "correctExplanation": "P(both green) = 7/10 \u00d7 7/10 = 49/100. With replacement, probabilities are constant.",
+      "distractors": [
+        {
+          "answer": "42/90",
+          "explanation": "This calculates without replacement instead."
+        },
+        {
+          "answer": "7/10",
+          "explanation": "This is P(green) for one draw."
+        },
+        {
+          "answer": "14/20",
+          "explanation": "This adds instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Three traffic lights operate independently, each green with probability 0.4. What is P(all three are green)?",
+      "correct": "0.064",
+      "correctExplanation": "P(all green) = 0.4\u00b3 = 0.064. Independence allows direct multiplication.",
+      "distractors": [
+        {
+          "answer": "1.2",
+          "explanation": "This adds 0.4 three times, which is invalid for joint probability."
+        },
+        {
+          "answer": "0.4",
+          "explanation": "This is the probability for a single light."
+        },
+        {
+          "answer": "0.12",
+          "explanation": "This multiplies 0.4 \u00d7 0.3, using an incorrect value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "A spinner has sections A (40%), B (35%), C (25%). It is spun twice independently. What is P(A then C)?",
+      "correct": "0.10",
+      "correctExplanation": "P(A then C) = 0.40 \u00d7 0.25 = 0.10. Independent spins allow multiplication.",
+      "distractors": [
+        {
+          "answer": "0.65",
+          "explanation": "This adds the probabilities instead of multiplying."
+        },
+        {
+          "answer": "0.40",
+          "explanation": "This only considers the first spin."
+        },
+        {
+          "answer": "0.15",
+          "explanation": "This multiplies using incorrect section values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "Which method correctly finds the number of ordered outcomes in a three-step experiment with 2, 3 and 4 options?",
+      "correct": "Multiply: 2 \u00d7 3 \u00d7 4 = 24",
+      "correctExplanation": "The counting principle multiplies the number of options at each stage.",
+      "distractors": [
+        {
+          "answer": "Add: 2 + 3 + 4 = 9",
+          "explanation": "Addition gives a total of options, not sequences."
+        },
+        {
+          "answer": "Average: (2+3+4)/3 = 3",
+          "explanation": "Averaging has no role in counting outcomes."
+        },
+        {
+          "answer": "Largest: max(2,3,4) = 4",
+          "explanation": "The largest stage does not determine total outcomes."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "To test independence, we check whether P(A\u2229B) equals P(A) \u00d7 P(B). If they are {{blank:1}}, the events are independent; if not, they are {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "equal",
+          "correctExplanation": "Equality of P(A\u2229B) and P(A)\u00d7P(B) is the definition of independence.",
+          "distractors": [
+            {
+              "answer": "unequal",
+              "explanation": "Inequality indicates dependence, not independence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "positive",
+              "explanation": "Positive values alone do not determine independence.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "dependent",
+          "correctExplanation": "When P(A\u2229B) \u2260 P(A)\u00d7P(B), one event affects the probability of the other.",
+          "distractors": [
+            {
+              "answer": "independent",
+              "explanation": "Inequality of these values means they are not independent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "impossible",
+              "explanation": "Dependence does not mean the events are impossible.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "When drawing without replacement, the denominator {{blank:1}} by one after each draw because the pool of items {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "decreases",
+          "correctExplanation": "Each draw removes an item, reducing the total available.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "Items are removed, not added, during sampling.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "stays the same",
+              "explanation": "This describes with replacement.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "shrinks",
+          "correctExplanation": "The removal of items makes the pool progressively smaller.",
+          "distractors": [
+            {
+              "answer": "grows",
+              "explanation": "No items are added during without-replacement sampling.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "resets",
+              "explanation": "The pool does not return to its original size.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "P(at least one six in two rolls) = 1 \u2212 P({{blank:1}}) = 1 \u2212 (5/6)\u00b2 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "no sixes",
+          "correctExplanation": "The complement of 'at least one six' is 'no sixes at all'.",
+          "distractors": [
+            {
+              "answer": "one six",
+              "explanation": "P(one six) is not the complement of at least one six.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "two sixes",
+              "explanation": "P(two sixes) is a subset, not the complement.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "11/36",
+          "correctExplanation": "1 \u2212 25/36 = 11/36 \u2248 0.306.",
+          "distractors": [
+            {
+              "answer": "1/36",
+              "explanation": "This is P(two sixes), not P(at least one six).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "25/36",
+              "explanation": "This is P(no sixes), the complement rather than the answer.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "For a biased coin with P(H) = 0.7, P(exactly 2 heads in 3 flips) = C(3,2) \u00d7 0.7\u00b2 \u00d7 {{blank:1}} = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.3",
+          "correctExplanation": "The probability of tails is 1 \u2212 0.7 = 0.3, needed for the single tail in the sequence.",
+          "distractors": [
+            {
+              "answer": "0.7",
+              "explanation": "Using 0.7 again would calculate P(3 heads), not exactly 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.49",
+              "explanation": "0.49 = 0.7\u00b2 and is already accounted for separately.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.441",
+          "correctExplanation": "3 \u00d7 0.49 \u00d7 0.3 = 3 \u00d7 0.147 = 0.441.",
+          "distractors": [
+            {
+              "answer": "0.343",
+              "explanation": "This is 0.7\u00b3 = P(all heads).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.147",
+              "explanation": "This is one path probability without the combination factor.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The counting principle states that if step 1 has m outcomes and step 2 has n outcomes, the total number of combined outcomes is m {{blank:1}} n. For 3 shirts and 4 pants, there are {{blank:2}} outfits.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiplied by",
+          "correctExplanation": "The counting principle uses multiplication to combine options at each stage.",
+          "distractors": [
+            {
+              "answer": "added to",
+              "explanation": "Addition gives the total options available, not combinations.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "divided by",
+              "explanation": "Division is not part of the counting principle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "3 \u00d7 4 = 12 possible outfits.",
+          "distractors": [
+            {
+              "answer": "7",
+              "explanation": "This adds 3 + 4 instead of multiplying.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "34",
+              "explanation": "This concatenates the digits rather than multiplying.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "Mutually exclusive events have P(A\u2229B) = {{blank:1}} and are always {{blank:2}} unless one event has probability zero.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Mutually exclusive events cannot occur together, so their intersection has probability zero.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "P(A\u2229B) = 1 would require both events to be certain.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "P(A)+P(B)",
+              "explanation": "The sum gives P(A\u222aB) for mutually exclusive events, not P(A\u2229B).",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "dependent",
+          "correctExplanation": "If one occurs, the other cannot, so P(A|B) = 0 \u2260 P(A), meaning they are dependent.",
+          "distractors": [
+            {
+              "answer": "independent",
+              "explanation": "Independence requires P(A|B) = P(A), but P(A|B) = 0 for mutually exclusive events.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "exhaustive",
+              "explanation": "Exhaustive means they cover the whole sample space, which is a separate property.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "If events A and B are independent, then events A and B-complement are also independent.",
+      "correct": "True",
+      "correctExplanation": "If P(A\u2229B) = P(A)P(B), then P(A\u2229B') = P(A) \u2212 P(A\u2229B) = P(A)(1\u2212P(B)) = P(A)P(B'), confirming independence.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Complementing one event always creates dependence."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "Increasing the sample size in sampling without replacement makes the draws approximately independent.",
+      "correct": "False",
+      "correctExplanation": "Without replacement, draws are always dependent regardless of sample size. However, when the population is much larger than the sample, the dependence becomes negligible.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Larger samples always make draws perfectly independent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "A factory produces items in batches. 5% of items are defective. A quality check tests 3 items independently. What is P(at least one defective)?",
+      "correct": "Approxima",
+      "correctExplanation": "P(at least 1) = 1 \u2212 P(none) = 1 \u2212 0.95\u00b3 = 1 \u2212 0.857375 \u2248 0.143.",
+      "distractors": [
+        {
+          "answer": "0.15",
+          "explanation": "This multiplies 0.05 \u00d7 3, which is an approximation."
+        },
+        {
+          "answer": "0.05",
+          "explanation": "This is the probability for a single item."
+        },
+        {
+          "answer": "0.857",
+          "explanation": "This is P(no defectives), the complement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Two students independently take a test. Student A passes with P = 0.8 and student B with P = 0.7. What is P(exactly one passes)?",
+      "correct": "0.38",
+      "correctExplanation": "P(exactly one) = P(A)P(B') + P(A')P(B) = 0.8\u00d70.3 + 0.2\u00d70.7 = 0.24 + 0.14 = 0.38.",
+      "distractors": [
+        {
+          "answer": "0.56",
+          "explanation": "This is P(A)\u00d7P(B) = P(both pass)."
+        },
+        {
+          "answer": "1.5",
+          "explanation": "This adds P(A) + P(B), which exceeds 1."
+        },
+        {
+          "answer": "0.06",
+          "explanation": "This is P(both fail) = 0.2 \u00d7 0.3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "In a two-way frequency table, 200 students are surveyed: 120 play sport, 90 play music, and 60 play both. Are sport and music independent?",
+      "correct": "No, P(S\u2229M) \u2260 P(S)\u00d7P(M)",
+      "correctExplanation": "P(S) = 0.6, P(M) = 0.45, P(S)\u00d7P(M) = 0.27. But P(S\u2229M) = 60/200 = 0.30 \u2260 0.27.",
+      "distractors": [
+        {
+          "answer": "Yes, because 60 is close to 54",
+          "explanation": "Close is not equal; the independence test requires exact equality."
+        },
+        {
+          "answer": "Yes, because they are unrelated activities",
+          "explanation": "Independence must be tested mathematically, not assumed."
+        },
+        {
+          "answer": "Cannot determine from this information",
+          "explanation": "All necessary information is provided."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "A basket has 8 apples and 4 oranges. Three fruits are drawn without replacement. What is P(all apples)?",
+      "correct": "56/220",
+      "correctExplanation": "P = 8/12 \u00d7 7/11 \u00d7 6/10 = 336/1320 = 56/220.",
+      "distractors": [
+        {
+          "answer": "512/1728",
+          "explanation": "This cubes 8/12 as if with replacement."
+        },
+        {
+          "answer": "8/12",
+          "explanation": "This only considers the first draw."
+        },
+        {
+          "answer": "24/1320",
+          "explanation": "This uses incorrect numerator values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Events A and B have P(A) = 0.4, P(B) = 0.5. If A and B are independent, what is P(A or B)?",
+      "correct": "0.7",
+      "correctExplanation": "P(A\u222aB) = P(A) + P(B) \u2212 P(A\u2229B) = 0.4 + 0.5 \u2212 0.2 = 0.7.",
+      "distractors": [
+        {
+          "answer": "0.9",
+          "explanation": "This adds without subtracting the intersection."
+        },
+        {
+          "answer": "0.2",
+          "explanation": "This is P(A\u2229B) for independent events."
+        },
+        {
+          "answer": "0.5",
+          "explanation": "This gives only P(B)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A game requires rolling a 6 on a fair die and flipping heads on a fair coin. What is the probability of winning?",
+      "correct": "1/12",
+      "correctExplanation": "P(6 and H) = 1/6 \u00d7 1/2 = 1/12. The events are independent.",
+      "distractors": [
+        {
+          "answer": "1/3",
+          "explanation": "This uses incorrect individual probabilities."
+        },
+        {
+          "answer": "2/6",
+          "explanation": "This adds 1/6 + 1/6 incorrectly."
+        },
+        {
+          "answer": "1/8",
+          "explanation": "This uses incorrect denominators."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "Socks in a drawer: 6 black, 4 white. Two are drawn without replacement. What is P(matching pair)?",
+      "correct": "7/15",
+      "correctExplanation": "P(BB)+P(WW) = (6/10\u00d75/9)+(4/10\u00d73/9) = 30/90+12/90 = 42/90 = 7/15.",
+      "distractors": [
+        {
+          "answer": "52/100",
+          "explanation": "This calculates with replacement."
+        },
+        {
+          "answer": "1/2",
+          "explanation": "This assumes equal probability of matching and not matching."
+        },
+        {
+          "answer": "10/90",
+          "explanation": "This uses incorrect combination counts."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "A security system has two independent alarms, each with 0.9 probability of detecting an intruder. What is P(at least one detects)?",
+      "correct": "0.99",
+      "correctExplanation": "P(at least one) = 1 \u2212 P(both miss) = 1 \u2212 0.1\u00b2 = 1 \u2212 0.01 = 0.99.",
+      "distractors": [
+        {
+          "answer": "0.81",
+          "explanation": "This is P(both detect), not at least one."
+        },
+        {
+          "answer": "1.8",
+          "explanation": "This adds probabilities, exceeding 1."
+        },
+        {
+          "answer": "0.90",
+          "explanation": "This is the probability for a single alarm."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "A multiple-choice test has 4 questions, each with 5 options. Guessing randomly and independently, what is P(all correct)?",
+      "correct": "1/625",
+      "correctExplanation": "P = (1/5)\u2074 = 1/625. Each guess is independent with P = 1/5.",
+      "distractors": [
+        {
+          "answer": "4/5",
+          "explanation": "This is P(at least one wrong) or another incorrect calculation."
+        },
+        {
+          "answer": "1/20",
+          "explanation": "This multiplies 4 \u00d7 1/5 instead of raising to a power."
+        },
+        {
+          "answer": "4/625",
+          "explanation": "This incorrectly multiplies 4/5\u2074."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "In genetics, if the probability of inheriting gene A is 0.5 and gene B is 0.5 independently, what is P(inheriting both)?",
+      "correct": "0.25",
+      "correctExplanation": "P(A\u2229B) = 0.5 \u00d7 0.5 = 0.25. Independent assortment allows multiplication.",
+      "distractors": [
+        {
+          "answer": "0.50",
+          "explanation": "This is the probability for one gene only."
+        },
+        {
+          "answer": "1.00",
+          "explanation": "This adds the probabilities."
+        },
+        {
+          "answer": "0.125",
+          "explanation": "This cubes 0.5, suggesting three genes."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Three friends independently each have a 60% chance of attending a party. What is P(none attend)?",
+      "correct": "0.064",
+      "correctExplanation": "P(none) = 0.4\u00b3 = 0.064. Each non-attendance is independent.",
+      "distractors": [
+        {
+          "answer": "0.216",
+          "explanation": "This is 0.6\u00b3 = P(all attend)."
+        },
+        {
+          "answer": "1.2",
+          "explanation": "This adds 0.4 three times."
+        },
+        {
+          "answer": "0.4",
+          "explanation": "This is for one friend only."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "A jar has 10 red, 8 blue and 2 green marbles. Two marbles are drawn without replacement. What is P(red then green)?",
+      "correct": "1/19",
+      "correctExplanation": "P(red then green) = 10/20 \u00d7 2/19 = 20/380 = 1/19.",
+      "distractors": [
+        {
+          "answer": "1/20",
+          "explanation": "This uses the original denominator for the second draw."
+        },
+        {
+          "answer": "20/400",
+          "explanation": "This calculates with replacement."
+        },
+        {
+          "answer": "12/20",
+          "explanation": "This adds numerators instead of multiplying fractions."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "P(at least one success in n independent trials) = 1 \u2212 P({{blank:1}})^n. This is called the {{blank:2}} rule.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "failure",
+          "correctExplanation": "The complement of at least one success is all failures.",
+          "distractors": [
+            {
+              "answer": "success",
+              "explanation": "Raising P(success) to n gives P(all successes), not the complement.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "trial",
+              "explanation": "P(trial) is not a standard probability term.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "complement",
+          "correctExplanation": "P(at least one) = 1 \u2212 P(none) is the complement approach.",
+          "distractors": [
+            {
+              "answer": "multiplication",
+              "explanation": "The multiplication rule gives joint probability, not the complement.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "addition",
+              "explanation": "The addition rule applies to unions of events.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "For without-replacement draws from n items, the probability of the second draw depends on the {{blank:1}} of the first draw, making the events {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "result",
+          "correctExplanation": "What is drawn first determines what remains for the second draw.",
+          "distractors": [
+            {
+              "answer": "timing",
+              "explanation": "When the draw occurs is irrelevant; only which item is drawn matters.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "order",
+              "explanation": "The order refers to which draw happens first, not what affects the second draw.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "dependent",
+          "correctExplanation": "Since the first draw changes probabilities for the second, the events are dependent.",
+          "distractors": [
+            {
+              "answer": "independent",
+              "explanation": "Changing probabilities means one event affects the other.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mutually exclusive",
+              "explanation": "Both draws can occur; they are not mutually exclusive.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "To find P(exactly k successes in n trials), we use the binomial formula: C(n,k) \u00d7 p^k \u00d7 {{blank:1}}^(n\u2212k), where C(n,k) counts the number of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "(1\u2212p)",
+          "correctExplanation": "The probability of failure on each remaining trial is 1 \u2212 p.",
+          "distractors": [
+            {
+              "answer": "p",
+              "explanation": "Using p again would calculate P(all successes in n trials).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "n is the number of trials, not a probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "arrangements",
+          "correctExplanation": "C(n,k) counts how many ways k successes can be arranged among n trials.",
+          "distractors": [
+            {
+              "answer": "probabilities",
+              "explanation": "C(n,k) is a count of combinations, not probabilities.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "trials",
+              "explanation": "n is the total trials; C(n,k) counts specific combinations.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "When the population is much {{blank:1}} than the sample, without-replacement probabilities approximate with-replacement probabilities, and the draws are approximately {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "larger",
+          "correctExplanation": "A large population means removing one item barely changes the proportions.",
+          "distractors": [
+            {
+              "answer": "smaller",
+              "explanation": "A smaller population makes the replacement effect more noticeable.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal to",
+              "explanation": "Equal sizes mean the sample is the entire population.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "independent",
+          "correctExplanation": "Negligible change in probabilities after each draw means approximate independence.",
+          "distractors": [
+            {
+              "answer": "dependent",
+              "explanation": "With large populations, the dependence becomes negligible.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "impossible",
+              "explanation": "The events are possible; only the dependence becomes negligible.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "In a conditional probability tree, the branches from a node must sum to {{blank:1}}, and the final leaf probabilities across all paths must sum to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Branches from each node represent all possible outcomes at that stage, which must total 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "Probabilities cannot all be zero if events are possible.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "the number of branches",
+              "explanation": "Branch count is not a probability sum.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "All leaf paths cover the entire sample space, so their joint probabilities sum to 1.",
+          "distractors": [
+            {
+              "answer": "the number of paths",
+              "explanation": "Leaf probabilities are fractions that sum to 1, not a count.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.5",
+              "explanation": "There is no reason for leaf probabilities to sum to 0.5.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "P(A\u222aB) = P(A) + P(B) \u2212 P(A\u2229B). For independent events, this simplifies to P(A) + P(B) \u2212 P(A) \u00d7 {{blank:1}}. For mutually exclusive events, P(A\u2229B) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "P(B)",
+          "correctExplanation": "For independent events, P(A\u2229B) = P(A)\u00d7P(B), which is subtracted to avoid double-counting.",
+          "distractors": [
+            {
+              "answer": "P(A)",
+              "explanation": "This would give P(A)\u00b2\u00d7P(B), which is incorrect.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "Subtracting P(A) gives a different formula.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "Mutually exclusive events cannot co-occur, so their intersection probability is zero.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "P(A\u2229B) = 1 would require both events to be certain.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "P(A)+P(B)",
+              "explanation": "This is P(A\u222aB) for mutually exclusive events, not P(A\u2229B).",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A quality control process tests 3 items independently, each with a 2% defect rate. P(no defectives) = {{blank:1}} and P(at least one defective) \u2248 {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.98\u00b3",
+          "correctExplanation": "Each item has P(good) = 0.98, and independence allows multiplication: 0.98 \u00d7 0.98 \u00d7 0.98.",
+          "distractors": [
+            {
+              "answer": "0.02\u00b3",
+              "explanation": "This gives P(all defective), not P(none defective).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3 \u00d7 0.98",
+              "explanation": "Multiplying by 3 is not the correct application of the multiplication rule.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.059",
+          "correctExplanation": "P(\u22651) = 1 \u2212 0.98\u00b3 = 1 \u2212 0.941192 \u2248 0.059.",
+          "distractors": [
+            {
+              "answer": "0.06",
+              "explanation": "This rounds too aggressively but is close\u2014the exact value is 0.0588.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "0.02",
+              "explanation": "This is the single-item defect rate, not the compound probability.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Events A and B are independent if and only if P(A|B) = {{blank:1}}. This means that knowing B has occurred provides {{blank:2}} about A.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "P(A)",
+          "correctExplanation": "Independence means the conditional probability equals the unconditional probability.",
+          "distractors": [
+            {
+              "answer": "P(B)",
+              "explanation": "P(A|B) = P(B) would be a coincidence, not a definition.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "P(A|B) = 0 describes mutually exclusive events.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "no information",
+          "correctExplanation": "If P(A|B) = P(A), then B does not affect A in any way.",
+          "distractors": [
+            {
+              "answer": "complete information",
+              "explanation": "Complete information would make P(A|B) either 0 or 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "some information",
+              "explanation": "If the conditional equals the unconditional, no information is gained.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "In a hypergeometric distribution, we draw {{blank:1}} replacement from a finite population, and the probability of success {{blank:2}} with each draw.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "without",
+          "correctExplanation": "The hypergeometric distribution models sampling without replacement.",
+          "distractors": [
+            {
+              "answer": "with",
+              "explanation": "Sampling with replacement follows a binomial distribution.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "before",
+              "explanation": "'Before replacement' is not standard statistical terminology.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "changes",
+          "correctExplanation": "Without replacement, the composition shifts after each draw, altering probabilities.",
+          "distractors": [
+            {
+              "answer": "remains constant",
+              "explanation": "Constant probabilities describe binomial (with replacement) sampling.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "doubles",
+              "explanation": "Probabilities adjust but do not double after each draw.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The probability of winning a lottery jackpot by matching all 6 numbers from 45 is 1/C(45,6) because each selection is {{blank:1}} replacement, and order {{blank:2}} matter.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "without",
+          "correctExplanation": "Lottery numbers are drawn without replacing them in the pool.",
+          "distractors": [
+            {
+              "answer": "with",
+              "explanation": "Lottery draws do not return numbers to the pool.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "before",
+              "explanation": "This is not standard terminology for lottery draws.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "does not",
+          "correctExplanation": "Lottery numbers are matched regardless of drawing order.",
+          "distractors": [
+            {
+              "answer": "does",
+              "explanation": "If order mattered, permutations would be used instead of combinations.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "might",
+              "explanation": "The lottery rules definitively specify that order is irrelevant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "For two independent events with P(A) = 0.3 and P(B) = 0.4, P(neither occurs) = P(A') \u00d7 P(B') = {{blank:1}} \u00d7 0.6 = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.7",
+          "correctExplanation": "P(A') = 1 \u2212 0.3 = 0.7.",
+          "distractors": [
+            {
+              "answer": "0.3",
+              "explanation": "0.3 is P(A), not P(A').",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0.6",
+              "explanation": "0.6 is P(B'), not P(A').",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.42",
+          "correctExplanation": "0.7 \u00d7 0.6 = 0.42 is the probability that neither event occurs.",
+          "distractors": [
+            {
+              "answer": "0.12",
+              "explanation": "0.12 = 0.3 \u00d7 0.4 is P(both occur).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1.3",
+              "explanation": "This adds rather than multiplies.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "When comparing with-replacement and without-replacement draws from 5 red and 5 blue balls, P(both red) with replacement is {{blank:1}} and without replacement is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/4",
+          "correctExplanation": "P = 5/10 \u00d7 5/10 = 25/100 = 1/4. The same proportions apply at each draw.",
+          "distractors": [
+            {
+              "answer": "2/9",
+              "explanation": "2/9 is the without-replacement answer.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1/2",
+              "explanation": "1/2 is P(red) for a single draw.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2/9",
+          "correctExplanation": "P = 5/10 \u00d7 4/9 = 20/90 = 2/9. The denominator and numerator change.",
+          "distractors": [
+            {
+              "answer": "1/4",
+              "explanation": "1/4 is the with-replacement answer.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "5/9",
+              "explanation": "This uses 5/9 for the second draw, keeping the numerator unchanged.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A medical device has three independent safety systems, each with 0.95 reliability. What is the probability that at least one system works?",
+      "correct": "0.999875",
+      "correctExplanation": "P(\u22651) = 1 \u2212 (0.05)\u00b3 = 1 \u2212 0.000125 = 0.999875.",
+      "distractors": [
+        {
+          "answer": "0.857",
+          "explanation": "This is 0.95\u00b3 = P(all work), not P(at least one)."
+        },
+        {
+          "answer": "0.95",
+          "explanation": "This is the reliability of a single system."
+        },
+        {
+          "answer": "0.15",
+          "explanation": "This sums failure probabilities instead of multiplying."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "A basketball player has a 70% free throw success rate. In a critical game, they shoot 5 free throws independently. What is P(exactly 4 successes)?",
+      "correct": "Approxima",
+      "correctExplanation": "P(4) = C(5,4) \u00d7 0.7\u2074 \u00d7 0.3 = 5 \u00d7 0.2401 \u00d7 0.3 = 0.36015.",
+      "distractors": [
+        {
+          "answer": "0.168",
+          "explanation": "This is P(exactly 5) = 0.7\u2075."
+        },
+        {
+          "answer": "0.240",
+          "explanation": "This omits the combination factor C(5,4)."
+        },
+        {
+          "answer": "0.700",
+          "explanation": "This is the single-shot probability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "An insurance company models car accidents as independent events with P = 0.02 per year per driver. For 100 independent drivers, what is the expected number of accident-free drivers?",
+      "correct": "Approx",
+      "correctExplanation": "E(accident-free) = 100 \u00d7 0.98 = 98. Each driver has P(no accident) = 0.98.",
+      "distractors": [
+        {
+          "answer": "2",
+          "explanation": "This is the expected number of accidents, not accident-free drivers."
+        },
+        {
+          "answer": "100",
+          "explanation": "This assumes no accidents at all."
+        },
+        {
+          "answer": "50",
+          "explanation": "This assumes a 50% accident rate."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "In a genetics experiment, the probability of a recessive trait appearing is 1/4 for each independently conceived offspring. For 3 offspring, what is P(at least one shows the trait)?",
+      "correct": "37/64",
+      "correctExplanation": "P(\u22651) = 1 \u2212 (3/4)\u00b3 = 1 \u2212 27/64 = 37/64.",
+      "distractors": [
+        {
+          "answer": "3/4",
+          "explanation": "This is P(dominant) for one offspring."
+        },
+        {
+          "answer": "1/64",
+          "explanation": "This is P(all recessive) = (1/4)\u00b3."
+        },
+        {
+          "answer": "27/64",
+          "explanation": "This is P(none recessive), the complement."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A network has 4 independent links in series, each with reliability 0.99. What is the system reliability?",
+      "correct": "Approxima",
+      "correctExplanation": "P(all work) = 0.99\u2074 \u2248 0.9606. All links must work for the series system.",
+      "distractors": [
+        {
+          "answer": "0.99",
+          "explanation": "This is a single link reliability."
+        },
+        {
+          "answer": "0.96",
+          "explanation": "This rounds too aggressively from the precise value."
+        },
+        {
+          "answer": "0.040",
+          "explanation": "This is approximately P(system failure), not reliability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A poker hand of 5 cards is dealt from 52 without replacement. How many possible hands exist?",
+      "correct": "C(52,5) = ",
+      "correctExplanation": "Order does not matter in a hand, so combinations are used: 52!/(5!\u00d747!).",
+      "distractors": [
+        {
+          "answer": "52\u2075",
+          "explanation": "This counts ordered selections with replacement."
+        },
+        {
+          "answer": "52 \u00d7 51 \u00d7",
+          "explanation": "This counts ordered arrangements (permutations), not hands."
+        },
+        {
+          "answer": "52 \u00d7 5",
+          "explanation": "This multiplies rather than using combinations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "Two events A and B are such that P(A) = 0.3, P(B) = 0.4, and P(A|B) = 0.5. Are A and B independent?",
+      "correct": "No, because P(A|B) \u2260 P(A)",
+      "correctExplanation": "P(A|B) = 0.5 \u2260 0.3 = P(A). Independence requires P(A|B) = P(A).",
+      "distractors": [
+        {
+          "answer": "Yes, because P(A|B) > P(A)",
+          "explanation": "Greater conditional probability indicates positive association, not independence."
+        },
+        {
+          "answer": "Yes, because neither equals zero",
+          "explanation": "Non-zero probabilities do not guarantee independence."
+        },
+        {
+          "answer": "Cannot determine without P(A\u2229B)",
+          "explanation": "P(A\u2229B) = P(A|B) \u00d7 P(B) = 0.2, so it is determined."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A manufacturing line has a 3% defect rate. Items are tested independently. What is the minimum number of items to test to have at least a 95% probability of finding at least one defect?",
+      "correct": "99",
+      "correctExplanation": "P(\u22651) = 1 \u2212 0.97\u207f \u2265 0.95. So 0.97\u207f \u2264 0.05. n \u2265 ln(0.05)/ln(0.97) \u2248 98.4, so n = 99.",
+      "distractors": [
+        {
+          "answer": "50",
+          "explanation": "0.97\u2075\u2070 \u2248 0.218, giving only 78% confidence."
+        },
+        {
+          "answer": "34",
+          "explanation": "This uses an incorrect formula."
+        },
+        {
+          "answer": "150",
+          "explanation": "This overshoots; 99 items already exceed the threshold."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "In quality control, a batch of 100 items has 5 defective. A sample of 10 is drawn without replacement. What is the probability that the sample contains no defectives?",
+      "correct": "C(95,10)/C(",
+      "correctExplanation": "The hypergeometric distribution gives P = C(95,10)\u00d7C(5,0)/C(100,10).",
+      "distractors": [
+        {
+          "answer": "0.95\u00b9\u2070",
+          "explanation": "This assumes independence with replacement."
+        },
+        {
+          "answer": "(95/100)\u00b9\u2070",
+          "explanation": "This uses a binomial approximation ignoring the finite population."
+        },
+        {
+          "answer": "5/100",
+          "explanation": "This gives P(one defective in one draw)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A password consists of 4 independent random digits (0-9). What is the probability that all 4 digits are different?",
+      "correct": "0.504",
+      "correctExplanation": "P = (10/10)(9/10)(8/10)(7/10) = 5040/10000 = 0.504.",
+      "distractors": [
+        {
+          "answer": "1.0",
+          "explanation": "This assumes all digits must be different, which is not guaranteed."
+        },
+        {
+          "answer": "0.01",
+          "explanation": "This is far too low for the probability."
+        },
+        {
+          "answer": "0.656",
+          "explanation": "This uses an incorrect product of fractions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "An experiment involves flipping a biased coin (P(H) = 0.6) until the first head appears. What is P(first head on the third flip)?",
+      "correct": "0.096",
+      "correctExplanation": "P(TTH) = 0.4 \u00d7 0.4 \u00d7 0.6 = 0.096. Two tails then a head.",
+      "distractors": [
+        {
+          "answer": "0.216",
+          "explanation": "This is 0.6\u00b3, the probability of three heads."
+        },
+        {
+          "answer": "0.064",
+          "explanation": "This is 0.4\u00b3, the probability of three tails."
+        },
+        {
+          "answer": "0.6",
+          "explanation": "This is P(H) on any single flip."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "In a birthday problem, what is the minimum group size needed for a greater than 50% probability of at least two people sharing a birthday?",
+      "correct": "23",
+      "correctExplanation": "With 23 people, P(at least one match) \u2248 50.7%. The calculation uses without-replacement logic for unique birthdays.",
+      "distractors": [
+        {
+          "answer": "183",
+          "explanation": "This is half of 365, a common but incorrect intuition."
+        },
+        {
+          "answer": "365",
+          "explanation": "This guarantees a match by pigeonhole, but 50% is reached much sooner."
+        },
+        {
+          "answer": "50",
+          "explanation": "This overshoots the 50% threshold significantly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A system has two parallel subsystems. Subsystem 1 has components A (0.9) and B (0.8) in series. Subsystem 2 has component C (0.95). What is the overall system reliability?",
+      "correct": "Approxima",
+      "correctExplanation": "Sub1 = 0.9\u00d70.8 = 0.72. Parallel: P = 1 \u2212 (1\u22120.72)(1\u22120.95) = 1 \u2212 0.28\u00d70.05 = 1 \u2212 0.014 = 0.986.",
+      "distractors": [
+        {
+          "answer": "0.72",
+          "explanation": "This is Subsystem 1 reliability alone."
+        },
+        {
+          "answer": "0.95",
+          "explanation": "This is Subsystem 2 reliability alone."
+        },
+        {
+          "answer": "0.684",
+          "explanation": "This multiplies all three components in series."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "Events A, B, C are mutually independent with P(A) = 0.2, P(B) = 0.3, P(C) = 0.5. What is P(A\u222aB\u222aC)?",
+      "correct": "0.72",
+      "correctExplanation": "P(A\u222aB\u222aC) = 1 \u2212 P(A')P(B')P(C') = 1 \u2212 0.8\u00d70.7\u00d70.5 = 1 \u2212 0.28 = 0.72.",
+      "distractors": [
+        {
+          "answer": "1.0",
+          "explanation": "This adds the probabilities, which overcounts."
+        },
+        {
+          "answer": "0.03",
+          "explanation": "This is P(A\u2229B\u2229C), the joint probability."
+        },
+        {
+          "answer": "0.28",
+          "explanation": "This is P(none occur), not P(at least one)."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The geometric distribution models the number of {{blank:1}} until the first success, with P(first success on trial k) = (1\u2212p)^(k\u22121) \u00d7 {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "trials",
+          "correctExplanation": "The geometric distribution counts trials until the first success.",
+          "distractors": [
+            {
+              "answer": "successes",
+              "explanation": "We model trials to reach the first success, not count multiple successes.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "failures",
+              "explanation": "The count includes the success trial itself, not just failures.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "p",
+          "correctExplanation": "The final factor p represents the probability of success on the kth trial.",
+          "distractors": [
+            {
+              "answer": "(1\u2212p)",
+              "explanation": "Using (1\u2212p) again would give P(k failures), not first success at k.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "k",
+              "explanation": "k is the trial number, not a probability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "In a series system, overall reliability equals the {{blank:1}} of individual component reliabilities, so adding components {{blank:2}} system reliability.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "product",
+          "correctExplanation": "Series systems require all components to work, so probabilities multiply.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "Summing reliabilities can exceed 1 and is not correct for series systems.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "average",
+              "explanation": "Averaging does not account for the requirement that all components work.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "decreases",
+          "correctExplanation": "Each additional component multiplied into the product (each < 1) reduces the overall reliability.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "More series components mean more points of failure.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "does not affect",
+              "explanation": "Each additional component's reliability factor reduces the product.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "In a parallel system, overall reliability equals 1 \u2212 product of individual {{blank:1}}, so adding components {{blank:2}} system reliability.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "failure probabilities",
+          "correctExplanation": "Parallel failure requires all components to fail simultaneously.",
+          "distractors": [
+            {
+              "answer": "reliabilities",
+              "explanation": "Using reliabilities directly gives the series formula, not parallel.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "success rates",
+              "explanation": "Success rates are the reliabilities, leading to the wrong formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "increases",
+          "correctExplanation": "Additional parallel paths reduce the chance of total failure.",
+          "distractors": [
+            {
+              "answer": "decreases",
+              "explanation": "More parallel components add redundancy, improving reliability.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "does not change",
+              "explanation": "Redundancy always improves parallel system reliability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The birthday problem illustrates that coincidences are more {{blank:1}} than intuition suggests, because the number of {{blank:2}} grows rapidly with group size.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "common",
+          "correctExplanation": "People underestimate coincidence probability because they think linearly, not combinatorially.",
+          "distractors": [
+            {
+              "answer": "rare",
+              "explanation": "The birthday problem shows coincidences are surprisingly common.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "random",
+              "explanation": "Randomness is inherent; the surprise is how common matches are.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "pairwise comparisons",
+          "correctExplanation": "With n people, there are C(n,2) pairs, which grows quadratically.",
+          "distractors": [
+            {
+              "answer": "birthdays",
+              "explanation": "The number of possible birthdays is fixed at 365.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "people",
+              "explanation": "The number of people is given; it is the pairs that grow rapidly.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "The hypergeometric distribution differs from the binomial because it models sampling {{blank:1}} replacement, making the trials {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "without",
+          "correctExplanation": "Hypergeometric sampling removes items, changing subsequent probabilities.",
+          "distractors": [
+            {
+              "answer": "with",
+              "explanation": "Sampling with replacement follows a binomial distribution.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "before",
+              "explanation": "'Before replacement' is not standard terminology.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "dependent",
+          "correctExplanation": "Without replacement, each draw changes the composition for subsequent draws.",
+          "distractors": [
+            {
+              "answer": "independent",
+              "explanation": "Independent trials characterise the binomial, not hypergeometric.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "identical",
+              "explanation": "Trials are not identical because probabilities change.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "For independent events, the probability of a specific sequence of outcomes is found by {{blank:1}} the individual probabilities, regardless of the {{blank:2}} in which they occur.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "multiplying",
+          "correctExplanation": "Independence allows direct multiplication of individual probabilities for joint events.",
+          "distractors": [
+            {
+              "answer": "adding",
+              "explanation": "Addition is for alternative outcomes (or), not sequential (and).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "averaging",
+              "explanation": "Averaging probabilities has no standard role in sequence calculations.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "order",
+          "correctExplanation": "P(ABC) = P(A)P(B)P(C) regardless of which event occurs first.",
+          "distractors": [
+            {
+              "answer": "size",
+              "explanation": "The magnitude of probabilities does not affect the multiplication rule.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "number",
+              "explanation": "The number of events affects the product but not the method.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Conditional independence means events A and B are independent {{blank:1}} a third event C, written as P(A\u2229B|C) = P(A|C) \u00d7 {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "given",
+          "correctExplanation": "Conditional independence holds within the restricted sample space defined by C.",
+          "distractors": [
+            {
+              "answer": "without",
+              "explanation": "Omitting C describes marginal independence, not conditional.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "despite",
+              "explanation": "'Despite' implies overriding, which is not the correct conditional concept.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "P(B|C)",
+          "correctExplanation": "Both probabilities are conditioned on C in the definition of conditional independence.",
+          "distractors": [
+            {
+              "answer": "P(B)",
+              "explanation": "Using unconditional P(B) mixes conditional and marginal probabilities.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "P(A|C)",
+              "explanation": "Using P(A|C) twice would square it rather than involving B.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "In risk analysis, the probability of at least one failure in n independent components each with failure rate q is 1 \u2212 (1\u2212q)^n, which {{blank:1}} as n increases and approaches {{blank:2}} for large n.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "increases",
+          "correctExplanation": "More components mean more chances for at least one failure.",
+          "distractors": [
+            {
+              "answer": "decreases",
+              "explanation": "More components increase the chance of at least one failure.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "stays constant",
+              "explanation": "The formula depends on n and changes as n increases.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "As n \u2192 \u221e, (1\u2212q)^n \u2192 0, so 1 \u2212 (1\u2212q)^n \u2192 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "The probability approaches 1, not 0, as n grows.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "q",
+              "explanation": "q is the individual failure rate, not the limiting value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "The law of total probability states that P(A) = \u03a3 P(A|B\u1d62) \u00d7 P(B\u1d62) where {B\u1d62} forms a {{blank:1}} of the sample space. This is essential for calculating {{blank:2}} probabilities.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "partition",
+          "correctExplanation": "A partition divides the sample space into mutually exclusive, exhaustive subsets.",
+          "distractors": [
+            {
+              "answer": "subset",
+              "explanation": "A single subset does not cover the entire sample space.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "union",
+              "explanation": "A union combines sets; a partition separates them.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "marginal",
+          "correctExplanation": "Total probability converts conditional probabilities into the unconditional (marginal) probability of A.",
+          "distractors": [
+            {
+              "answer": "conditional",
+              "explanation": "Conditional probabilities are inputs to the formula, not the output.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "joint",
+              "explanation": "Joint probabilities are intermediate terms, not the final result.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "In a Markov chain, the probability of the next state depends only on the {{blank:1}} state, not on the full history. This property is called {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "current",
+          "correctExplanation": "The Markov property says the future depends only on the present, not the past.",
+          "distractors": [
+            {
+              "answer": "initial",
+              "explanation": "Dependence on the initial state only would ignore all intermediate transitions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "previous",
+              "explanation": "'Previous' could mean any earlier state; 'current' specifically means the most recent.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "memorylessness",
+          "correctExplanation": "The Markov property means the process has no memory of how it reached the current state.",
+          "distractors": [
+            {
+              "answer": "independence",
+              "explanation": "Markov chains have sequential dependence on the current state; they are not fully independent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "stationarity",
+              "explanation": "Stationarity means transition probabilities are time-invariant, a different property.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Monte Carlo simulation estimates probabilities by running many {{blank:1}} trials and calculating the proportion of favourable outcomes, with accuracy improving as the number of trials {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "random",
+          "correctExplanation": "Monte Carlo methods use random sampling to estimate probabilities.",
+          "distractors": [
+            {
+              "answer": "deterministic",
+              "explanation": "Deterministic methods give exact answers without random trials.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sequential",
+              "explanation": "While trials run in sequence, the key property is randomness.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "increases",
+          "correctExplanation": "By the law of large numbers, more trials give a proportion closer to the true probability.",
+          "distractors": [
+            {
+              "answer": "decreases",
+              "explanation": "Fewer trials give less reliable estimates.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "stabilises",
+              "explanation": "The number of trials does not stabilise; it is the estimate that stabilises.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The difference between permutations and combinations is that permutations consider {{blank:1}} while combinations do not, so P(n,r) = {{blank:2}} \u00d7 C(n,r).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "order",
+          "correctExplanation": "Permutations count distinct arrangements where order matters.",
+          "distractors": [
+            {
+              "answer": "size",
+              "explanation": "Both permutations and combinations use the same n and r values.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "replacement",
+              "explanation": "Replacement is a separate concept from ordering.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "r!",
+          "correctExplanation": "Each combination can be arranged in r! ways, so P(n,r) = r! \u00d7 C(n,r).",
+          "distractors": [
+            {
+              "answer": "n!",
+              "explanation": "n! overcounts because not all n items are arranged.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2",
+              "explanation": "The factor is r!, not a constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

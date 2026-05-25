@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10ASP04",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to solve simple trigonometric equations.",
+    "generatedAt": "2026-05-23T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to solve simple trigonometric equations.",
+    "y": [
+      "Solving trigonometric equations is essential for finding angles in applied problems involving periodic phenomena.",
+      "Understanding that trigonometric equations can have multiple solutions within a given domain develops mathematical reasoning.",
+      "These skills are prerequisite for VCE Mathematical Methods and applied mathematics."
+    ],
+    "eg": [
+      "Solving: sin(x) = 0.5 for 0° ≤ x ≤ 360° → x = 30° or x = 150°.",
+      "Solving: cos(x) = –√2/2 for 0° ≤ x ≤ 360°.",
+      "Solving: tan(x) = 1 and finding all solutions in the given domain.",
+      "Using the unit circle to identify all solutions of a trigonometric equation.",
+      "Solving: 2sin(x) – 1 = 0 → sin(x) = ½.",
+      "Interpreting solutions in context: 'At what times of day is the tide at a certain height?'"
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The equation sin(x) = 0.5 has exactly one solution for 0° ≤ x ≤ 360°.",
+      "correct": "False",
+      "correctExplanation": "sin(x) = 0.5 has two solutions: x = 30° and x = 150°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "There are two solutions in the given domain."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The reference angle is always an acute angle between 0° and 90°.",
+      "correct": "False",
+      "correctExplanation": "Reference angles are always between 0° and 90°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "A reference angle is the acute angle between the terminal side and the x-axis."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "cos(x) = 0 has solutions at x = 0° and x = 180°.",
+      "correct": "False",
+      "correctExplanation": "cos(x) = 0 at x = 90° and x = 270°, not at 0° and 180°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Cosine is zero at 90° and 270°, not at 0° and 180°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "tan(x) = 0 when sin(x) = 0.",
+      "correct": "True",
+      "correctExplanation": "Since tan(x) = sin(x)/cos(x), tan(x) = 0 when sin(x) = 0 (provided cos(x) ≠ 0).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Tangent equals zero when sine is zero."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The equation sin(x) = 2 has no solution.",
+      "correct": "True",
+      "correctExplanation": "The range of sin(x) is [−1, 1], so sin(x) = 2 has no solution.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Sine cannot exceed 1, so sin(x) = 2 is impossible."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "For 0° ≤ x ≤ 360°, the equation cos(x) = 1 has two solutions.",
+      "correct": "False",
+      "correctExplanation": "cos(x) = 1 has only one solution in this domain: x = 0° (or equivalently x = 360°).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "cos(x) = 1 only at x = 0° in the standard domain."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "tan(x) = 1 when x = 45° or x = 225°.",
+      "correct": "True",
+      "correctExplanation": "tan(45°) = 1 and tan(225°) = 1 because tangent is positive in Q1 and Q3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Tangent equals 1 at 45° and 225°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The equation sin(x) = −1 has the solution x = 90°.",
+      "correct": "False",
+      "correctExplanation": "sin(90°) = 1, not −1. sin(x) = −1 at x = 270°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "sin(−1) occurs at 270°, not 90°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "cos(x) = −1 has the solution x = 180° for 0° ≤ x ≤ 360°.",
+      "correct": "True",
+      "correctExplanation": "cos(180°) = −1, which is the only solution in this domain.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Cosine equals −1 only at 180°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The equation cos(x) = 0.5 has solutions in the third and fourth quadrants.",
+      "correct": "False",
+      "correctExplanation": "cos(x) = 0.5 is positive, so the solutions are in Q1 and Q4 where cosine is positive: x = 60° and x = 300°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Positive cosine solutions are in Q1 and Q4, not Q3 and Q4."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "sin(x) = sin(180° − x) is true for all values of x.",
+      "correct": "True",
+      "correctExplanation": "This is the supplementary angle identity: sin(θ) = sin(180° − θ).",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The identity sin(x) = sin(180° − x) holds for all x."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The equation tan(x) = −1 has no solutions for 0° ≤ x ≤ 360°.",
+      "correct": "False",
+      "correctExplanation": "tan(x) = −1 at x = 135° (Q2) and x = 315° (Q4).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "tan(x) = −1 has two solutions: 135° and 315°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "How many solutions does sin(x) = 0.5 have for 0° ≤ x ≤ 360°?",
+      "correct": "two solutions in that domain",
+      "correctExplanation": "sin(x) = 0.5 at x = 30° and x = 150°.",
+      "distractors": [
+        {
+          "answer": "one solution in that domain only",
+          "explanation": "Sine gives two angles for most values in [−1, 1]."
+        },
+        {
+          "answer": "three solutions in the given domain",
+          "explanation": "Sine equals a positive value in exactly two quadrants."
+        },
+        {
+          "answer": "no solutions exist in that domain",
+          "explanation": "0.5 is within the range of sine, so solutions exist."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "What is the reference angle for solving sin(x) = 0.5?",
+      "correct": "30 degrees from the exact value table",
+      "correctExplanation": "sin(30°) = 0.5, so 30° is the reference angle.",
+      "distractors": [
+        {
+          "answer": "60 degrees from the wrong exact value",
+          "explanation": "sin(60°) = √3/2, not 0.5."
+        },
+        {
+          "answer": "45 degrees from the wrong exact value",
+          "explanation": "sin(45°) = √2/2, not 0.5."
+        },
+        {
+          "answer": "90 degrees from the maximum of sine",
+          "explanation": "sin(90°) = 1, not 0.5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "In which quadrants is sin(x) positive?",
+      "correct": "quadrants 1 and 2 for positive sine",
+      "correctExplanation": "The y-coordinate is positive above the x-axis, which is Q1 and Q2.",
+      "distractors": [
+        {
+          "answer": "quadrants 1 and 4 for positive values here",
+          "explanation": "Q4 has negative sine (y < 0)."
+        },
+        {
+          "answer": "quadrants 2 and 3 for positive values here",
+          "explanation": "Q3 has negative sine (y < 0)."
+        },
+        {
+          "answer": "quadrants 3 and 4 for positive values here",
+          "explanation": "Both Q3 and Q4 have negative sine."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "What are the solutions of cos(x) = 0 for 0° ≤ x ≤ 360°?",
+      "correct": "x = 90° and x = 270° for cosine zero",
+      "correctExplanation": "cos(x) = 0 at the top and bottom of the unit circle.",
+      "distractors": [
+        {
+          "answer": "x = 0° and x = 180° for cosine zero here",
+          "explanation": "cos(0°) = 1 and cos(180°) = −1, not 0."
+        },
+        {
+          "answer": "x = 45° and x = 225° for cosine zero here",
+          "explanation": "cos(45°) = √2/2, not 0."
+        },
+        {
+          "answer": "x = 0° and x = 360° for cosine zero here",
+          "explanation": "cos(0°) = cos(360°) = 1, not 0."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "What are the solutions of tan(x) = 1 for 0° ≤ x ≤ 360°?",
+      "correct": "x = 45° and x = 225° for tan equal 1",
+      "correctExplanation": "tan is positive in Q1 and Q3. The reference angle for tan = 1 is 45°.",
+      "distractors": [
+        {
+          "answer": "x = 45° only as the single solution here",
+          "explanation": "Tangent repeats every 180°, giving a second solution at 225°."
+        },
+        {
+          "answer": "x = 135° and x = 315° for tan equal 1",
+          "explanation": "tan(135°) = −1, not 1."
+        },
+        {
+          "answer": "x = 90° and x = 270° where tan is undefined",
+          "explanation": "Tangent is undefined at these angles, not equal to 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "sin(x) = −0.5 has solutions in which quadrants?",
+      "correct": "quadrants 3 and 4 where sine is negative",
+      "correctExplanation": "Sine is negative below the x-axis, which is Q3 and Q4.",
+      "distractors": [
+        {
+          "answer": "quadrants 1 and 2 where sine is positive here",
+          "explanation": "Positive sine is in Q1 and Q2; negative is in Q3 and Q4."
+        },
+        {
+          "answer": "quadrants 2 and 3 for negative sine values",
+          "explanation": "Q2 has positive sine."
+        },
+        {
+          "answer": "quadrants 1 and 4 for negative sine values",
+          "explanation": "Q1 has positive sine."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "If cos(x) = √3/2, what is the reference angle?",
+      "correct": "30 degrees from the exact value table",
+      "correctExplanation": "cos(30°) = √3/2, making 30° the reference angle.",
+      "distractors": [
+        {
+          "answer": "60 degrees from the wrong exact value",
+          "explanation": "cos(60°) = 1/2, not √3/2."
+        },
+        {
+          "answer": "45 degrees from the wrong exact value",
+          "explanation": "cos(45°) = √2/2, not √3/2."
+        },
+        {
+          "answer": "90 degrees from the maximum of cosine",
+          "explanation": "cos(90°) = 0, not √3/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "For 0° ≤ x ≤ 360°, how many solutions does cos(x) = −1 have?",
+      "correct": "exactly one solution at x = 180°",
+      "correctExplanation": "cos(180°) = −1, and this is the only angle in the domain with this value.",
+      "distractors": [
+        {
+          "answer": "two solutions at x = 90° and x = 270°",
+          "explanation": "cos(90°) = 0 and cos(270°) = 0, not −1."
+        },
+        {
+          "answer": "no solutions because cosine is always positive",
+          "explanation": "Cosine can be negative in Q2 and Q3."
+        },
+        {
+          "answer": "exactly one solution at x = 270° overall",
+          "explanation": "cos(270°) = 0, not −1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "What value of x satisfies sin(x) = 1 for 0° ≤ x ≤ 360°?",
+      "correct": "x = 90 degrees as the only solution",
+      "correctExplanation": "sin(90°) = 1, and this is the only solution in the domain.",
+      "distractors": [
+        {
+          "answer": "x = 0 degrees as the only solution here",
+          "explanation": "sin(0°) = 0, not 1."
+        },
+        {
+          "answer": "x = 180 degrees as the only solution",
+          "explanation": "sin(180°) = 0, not 1."
+        },
+        {
+          "answer": "x = 45 degrees as the only solution here",
+          "explanation": "sin(45°) = √2/2, not 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "cos(x) = 0.5 has solutions in which quadrants?",
+      "correct": "quadrants 1 and 4 where cosine is positive",
+      "correctExplanation": "Cosine is positive on the right side of the y-axis (Q1 and Q4).",
+      "distractors": [
+        {
+          "answer": "quadrants 1 and 2 where angles are small",
+          "explanation": "Q2 has negative cosine."
+        },
+        {
+          "answer": "quadrants 2 and 3 where cosine is negative",
+          "explanation": "Those quadrants have negative cosine, not positive."
+        },
+        {
+          "answer": "quadrants 3 and 4 where angles are large",
+          "explanation": "Q3 has negative cosine."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "tan(x) = √3 has what reference angle?",
+      "correct": "60 degrees from the exact value table",
+      "correctExplanation": "tan(60°) = √3, so 60° is the reference angle.",
+      "distractors": [
+        {
+          "answer": "30 degrees from the wrong exact value",
+          "explanation": "tan(30°) = 1/√3, not √3."
+        },
+        {
+          "answer": "45 degrees from the wrong exact value",
+          "explanation": "tan(45°) = 1, not √3."
+        },
+        {
+          "answer": "90 degrees where tangent is undefined",
+          "explanation": "tan(90°) is undefined, not √3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Why does sin(x) = k (for −1 < k < 1) always have two solutions in [0°, 360°]?",
+      "correct": "sine has the same value at two angles",
+      "correctExplanation": "sin(θ) = sin(180° − θ), so each value occurs twice per cycle.",
+      "distractors": [
+        {
+          "answer": "sine is always positive in all quadrants here",
+          "explanation": "Sine is negative in Q3 and Q4."
+        },
+        {
+          "answer": "the equation has a unique solution each time",
+          "explanation": "Most sine equations have two solutions per cycle."
+        },
+        {
+          "answer": "the unit circle has only one intersection",
+          "explanation": "A horizontal line cuts the unit circle at two points."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "To solve sin(x) = 0.5, the reference angle is {{blank:1}}° and the two solutions are x = 30° and x = {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "30",
+          "correctExplanation": "sin(30°) = 0.5 is the reference angle.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "sin(60°) = √3/2, not 0.5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "sin(45°) = √2/2, not 0.5.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "150",
+          "correctExplanation": "The second solution is 180° − 30° = 150°.",
+          "distractors": [
+            {
+              "answer": "210",
+              "explanation": "210° is in Q3 where sine is negative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "330",
+              "explanation": "330° is in Q4 where sine is negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "cos(x) = 0 at x = {{blank:1}}° and x = {{blank:2}}° in the domain 0° ≤ x ≤ 360°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "90",
+          "correctExplanation": "cos(90°) = 0 at the top of the unit circle.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "cos(0°) = 1, not 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "180",
+              "explanation": "cos(180°) = −1, not 0.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "270",
+          "correctExplanation": "cos(270°) = 0 at the bottom of the unit circle.",
+          "distractors": [
+            {
+              "answer": "360",
+              "explanation": "cos(360°) = 1, not 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "180",
+              "explanation": "cos(180°) = −1, not 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "When solving cos(x) = −0.5, solutions are found in the quadrants where cosine is negative.",
+      "correct": "True",
+      "correctExplanation": "Cosine is negative in Q2 and Q3, so solutions of cos(x) = −0.5 are in these quadrants.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Negative cosine values correspond to solutions in Q2 and Q3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "The equation sin(x) = 0 has exactly two solutions for 0° ≤ x ≤ 360°.",
+      "correct": "False",
+      "correctExplanation": "sin(x) = 0 at x = 0°, 180° and 360°. Including both endpoints gives three, though 0° and 360° are often considered the same.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "sin(x) = 0 at 0°, 180° and 360° — more than two points."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "The general solution for tan(x) = k adds multiples of 180° to the principal value.",
+      "correct": "True",
+      "correctExplanation": "Since tan has period 180°, all solutions are x = α + 180°n where α is the principal value.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Tangent repeats every 180°, so adding 180°n gives all solutions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "If sin(x) = −√2/2, the reference angle is 30°.",
+      "correct": "False",
+      "correctExplanation": "sin(45°) = √2/2, so the reference angle is 45°, not 30°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The reference angle for √2/2 is 45°, not 30°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The equation cos(x) = 2 has no solutions because 2 is outside the range of cosine.",
+      "correct": "True",
+      "correctExplanation": "The range of cos(x) is [−1, 1], so cos(x) = 2 has no solution.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Cosine values are between −1 and 1; 2 is outside this range."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "When solving sin(x) = k, the two solutions always add to 360°.",
+      "correct": "False",
+      "correctExplanation": "The two solutions of sin(x) = k are x = α and x = 180° − α, which add to 180°, not 360°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The solutions sum to 180°, not 360°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "The equation 2 sin(x) − 1 = 0 has four solutions for 0° ≤ x ≤ 360°.",
+      "correct": "False",
+      "correctExplanation": "2 sin(x) = 1 gives sin(x) = 0.5, which has exactly two solutions: 30° and 150°.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "sin(x) = 0.5 has two solutions, not four."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "For cos(x) = k where −1 < k < 0, both solutions are in Q1.",
+      "correct": "False",
+      "correctExplanation": "Negative cosine means the solutions are in Q2 and Q3 where x-coordinates are negative, not Q1.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Negative cosine solutions are in Q2 and Q3, not Q1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Solve sin(x) = −0.5 for 0° ≤ x ≤ 360°. What are the two solutions?",
+      "correct": "x = 210° and x = 330° in Q3 and Q4",
+      "correctExplanation": "Reference angle 30°. Sine is negative in Q3 (180° + 30°) and Q4 (360° − 30°).",
+      "distractors": [
+        {
+          "answer": "x = 30° and x = 150° in Q1 and Q2 here",
+          "explanation": "Those are solutions for sin(x) = +0.5."
+        },
+        {
+          "answer": "x = 150° and x = 210° in Q2 and Q3 here",
+          "explanation": "150° gives sin = +0.5, not −0.5."
+        },
+        {
+          "answer": "x = 270° only as the single solution here",
+          "explanation": "sin(270°) = −1, not −0.5; there are two solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Why does cos(x) = 0.5 have solutions in Q1 and Q4?",
+      "correct": "cosine is positive where x-coordinate is positive",
+      "correctExplanation": "The x-coordinate is positive on the right side of the y-axis (Q1 and Q4).",
+      "distractors": [
+        {
+          "answer": "cosine is positive in Q1 and Q2 for all angles",
+          "explanation": "Cosine is negative in Q2."
+        },
+        {
+          "answer": "cosine is always positive for all angles here",
+          "explanation": "Cosine is negative in Q2 and Q3."
+        },
+        {
+          "answer": "the solutions must be in adjacent quadrants",
+          "explanation": "Q1 and Q4 are not adjacent; they are on the same side."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "Solve cos(x) = −√2/2 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 135° and x = 225° in Q2 and Q3",
+      "correctExplanation": "Reference angle 45°. Cosine is negative in Q2 (180° − 45°) and Q3 (180° + 45°).",
+      "distractors": [
+        {
+          "answer": "x = 45° and x = 315° in Q1 and Q4 here",
+          "explanation": "Those are solutions for cos(x) = +√2/2."
+        },
+        {
+          "answer": "x = 45° and x = 225° in Q1 and Q3 here",
+          "explanation": "cos(45°) = +√2/2, not −√2/2."
+        },
+        {
+          "answer": "x = 90° and x = 270° where cos equals zero",
+          "explanation": "cos(90°) = 0, not −√2/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "What is the general solution for sin(x) = k where the reference angle is α?",
+      "correct": "x = α + 360°n or x = (180° − α) + 360°n",
+      "correctExplanation": "Sine has two solutions per cycle, at α and 180° − α, plus multiples of 360°.",
+      "distractors": [
+        {
+          "answer": "x = α + 180°n for all integer values of n",
+          "explanation": "Adding 180° gives alternating sign changes; the correct period is 360°."
+        },
+        {
+          "answer": "x = α + 90°n for all integer values of n here",
+          "explanation": "90° is not the period of sine."
+        },
+        {
+          "answer": "x = α only as the unique solution for sine",
+          "explanation": "Sine equations have infinitely many solutions via periodicity."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Solve tan(x) = −1 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 135° and x = 315° in Q2 and Q4",
+      "correctExplanation": "Reference angle 45°. Tangent is negative in Q2 (180° − 45°) and Q4 (360° − 45°).",
+      "distractors": [
+        {
+          "answer": "x = 45° and x = 225° in Q1 and Q3 here",
+          "explanation": "Those are solutions for tan(x) = +1."
+        },
+        {
+          "answer": "x = 90° and x = 270° where tan undefined",
+          "explanation": "Tangent is undefined at these angles."
+        },
+        {
+          "answer": "x = 180° only as the single solution here",
+          "explanation": "tan(180°) = 0, not −1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Why does the equation sin(x) = 1.5 have no solutions?",
+      "correct": "the range of sine is from −1 to 1",
+      "correctExplanation": "Since −1 ≤ sin(x) ≤ 1, the value 1.5 is outside the range.",
+      "distractors": [
+        {
+          "answer": "sine only takes integer values between −1 and 1",
+          "explanation": "Sine takes all real values in [−1, 1], not just integers."
+        },
+        {
+          "answer": "1.5 must be converted to radians before solving",
+          "explanation": "1.5 as a sine value is outside the range regardless of angle units."
+        },
+        {
+          "answer": "sine can equal 1.5 at angles beyond 360°",
+          "explanation": "The range of sine is [−1, 1] for all angles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "The equation 2 cos(x) + 1 = 0 simplifies to cos(x) = ?",
+      "correct": "−1/2 by rearranging the equation",
+      "correctExplanation": "2 cos(x) = −1, so cos(x) = −1/2.",
+      "distractors": [
+        {
+          "answer": "1/2 by dividing both sides by 2 only",
+          "explanation": "The equation gives −1/2, not 1/2."
+        },
+        {
+          "answer": "−2 by subtracting 1 from both sides here",
+          "explanation": "Correct rearrangement gives cos(x) = −1/2, not −2."
+        },
+        {
+          "answer": "0 because the equation equals zero overall",
+          "explanation": "Setting the equation to zero gives cos(x) = −1/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "For the equation tan(x) = k, how far apart are consecutive solutions?",
+      "correct": "180° apart due to the period of tangent",
+      "correctExplanation": "Tangent has period 180°, so consecutive solutions differ by 180°.",
+      "distractors": [
+        {
+          "answer": "360° apart like sine and cosine functions",
+          "explanation": "Tangent has period 180°, not 360°."
+        },
+        {
+          "answer": "90° apart for all tangent equations here",
+          "explanation": "90° is not the period of tangent."
+        },
+        {
+          "answer": "they vary depending on the value of k given",
+          "explanation": "The distance between solutions is always 180° for tangent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Solve cos(x) = −1 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 180° as the only solution in domain",
+      "correctExplanation": "cos(180°) = −1, and this is unique in the domain.",
+      "distractors": [
+        {
+          "answer": "x = 0° and x = 360° as the solutions here",
+          "explanation": "cos(0°) = cos(360°) = 1, not −1."
+        },
+        {
+          "answer": "x = 90° and x = 270° for cosine of −1",
+          "explanation": "cos(90°) = 0 and cos(270°) = 0."
+        },
+        {
+          "answer": "no solution exists in the given domain here",
+          "explanation": "cos(180°) = −1, so a solution does exist."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "Solve sin(x) = √3/2 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 60° and x = 120° in Q1 and Q2",
+      "correctExplanation": "Reference angle 60°. Sine is positive in Q1 (60°) and Q2 (180° − 60° = 120°).",
+      "distractors": [
+        {
+          "answer": "x = 30° and x = 150° for sine of √3/2",
+          "explanation": "sin(30°) = 1/2, not √3/2."
+        },
+        {
+          "answer": "x = 60° only as the single solution here",
+          "explanation": "There are two solutions per cycle."
+        },
+        {
+          "answer": "x = 240° and x = 300° in Q3 and Q4 here",
+          "explanation": "Those are solutions for sin(x) = −√3/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Explain why sin(30°) = sin(150°).",
+      "correct": "both have reference angle 30° with positive sine",
+      "correctExplanation": "150° is in Q2 with reference angle 30°, and sine is positive in Q1 and Q2.",
+      "distractors": [
+        {
+          "answer": "sine is periodic with period 120° for all angles",
+          "explanation": "Sine has period 360°, not 120°."
+        },
+        {
+          "answer": "all angles in the first two quadrants are equal",
+          "explanation": "Angles give different sine values; only these two share a value."
+        },
+        {
+          "answer": "30° and 150° are the same angle on the circle",
+          "explanation": "They are different positions on the unit circle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "For cos(x) = k where 0 < k < 1, the two solutions in [0°, 360°] are:",
+      "correct": "x = α and x = 360° − α for reference α",
+      "correctExplanation": "Cosine is positive in Q1 (α) and Q4 (360° − α).",
+      "distractors": [
+        {
+          "answer": "x = α and x = 180° − α in Q1 and Q2 here",
+          "explanation": "180° − α is in Q2 where cosine is negative."
+        },
+        {
+          "answer": "x = α and x = 180° + α in Q1 and Q3 here",
+          "explanation": "180° + α is in Q3 where cosine is negative."
+        },
+        {
+          "answer": "x = α and x = α + 180° in Q1 and Q3 here",
+          "explanation": "α + 180° puts the angle in Q3 where cosine is negative."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "When solving sin(x) = k for k > 0, solutions are in Q{{blank:1}} and Q{{blank:2}} where sine is positive.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "Sine is positive in Q1 where both x and y are positive.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Sine is negative in Q3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "Sine is negative in Q4.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Sine is positive in Q2 where y > 0.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "Sine is negative in Q3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "Sine is negative in Q4.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "The general solution for tan(x) = k is x = α + {{blank:1}}°n, where α is the principal value and n is any {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "180",
+          "correctExplanation": "Tangent has period 180°, so solutions are 180° apart.",
+          "distractors": [
+            {
+              "answer": "360",
+              "explanation": "360° is the period of sine and cosine, not tangent.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "90° is not the period of any standard trig function.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "integer",
+          "correctExplanation": "n ranges over all integers to generate all solutions.",
+          "distractors": [
+            {
+              "answer": "positive number",
+              "explanation": "n must include negative integers and zero as well.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "fraction",
+              "explanation": "n must be an integer for the general solution formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "The equation sin(x) = k has no solution when |k| > {{blank:1}} because the {{blank:2}} of sine is [−1, 1].",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "The maximum absolute value of sine is 1.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Sine cannot exceed 1 in absolute value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "0",
+              "explanation": "Sine can equal values up to 1 in absolute value.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "range",
+          "correctExplanation": "The range defines the set of possible output values.",
+          "distractors": [
+            {
+              "answer": "domain",
+              "explanation": "The domain of sine is all real numbers; the range is [−1, 1].",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "period",
+              "explanation": "The period is how often the function repeats, not its output values.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "For cos(x) = −0.5, the reference angle is {{blank:1}}° and solutions are in Q2 (x = 120°) and Q3 (x = {{blank:2}}°).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "cos(60°) = 0.5, so the reference angle is 60°.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "cos(30°) = √3/2, not 0.5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "120",
+              "explanation": "120° is a solution, not the reference angle.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "240",
+          "correctExplanation": "180° + 60° = 240° is the Q3 solution.",
+          "distractors": [
+            {
+              "answer": "300",
+              "explanation": "300° is in Q4 where cosine is positive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "210",
+              "explanation": "180° + 30° = 210° uses the wrong reference angle.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "To solve 2 sin(x) − √3 = 0, first rearrange to sin(x) = {{blank:1}}, then find the reference angle of {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√3/2",
+          "correctExplanation": "2 sin(x) = √3, so sin(x) = √3/2.",
+          "distractors": [
+            {
+              "answer": "2√3",
+              "explanation": "Dividing by 2 gives √3/2, not 2√3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√3",
+              "explanation": "Dividing both sides by 2 gives √3/2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "60",
+          "correctExplanation": "sin(60°) = √3/2 is the reference angle.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "sin(30°) = 1/2, not √3/2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "sin(45°) = √2/2, not √3/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "The two solutions of sin(x) = k (for 0 < k < 1) in [0°, 360°] are x = α and x = {{blank:1}}° − α, which sum to {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "180",
+          "correctExplanation": "The supplementary angle identity gives the second solution at 180° − α.",
+          "distractors": [
+            {
+              "answer": "360",
+              "explanation": "360° − α gives a Q4 solution where sine is negative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "90° − α gives the complement, not the second sine solution.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "180",
+          "correctExplanation": "α + (180° − α) = 180°.",
+          "distractors": [
+            {
+              "answer": "360",
+              "explanation": "The two solutions sum to 180°, not 360°.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "The sum is 180°, not 90°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The equation 2 sin(x) = 1 has solutions x = 30° and x = 150° for 0° ≤ x ≤ 360°.",
+      "correct": "True",
+      "correctExplanation": "2 sin(x) = 1 gives sin(x) = 0.5. Solutions: x = 30° and x = 150°.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "sin(x) = 0.5 does give x = 30° and x = 150°."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The equation cos(2x) = 0.5 has exactly two solutions for 0° ≤ x ≤ 360°.",
+      "correct": "False",
+      "correctExplanation": "Let u = 2x. Then cos(u) = 0.5 for 0° ≤ u ≤ 720°, giving u = 60°, 300°, 420°, 660°, so x = 30°, 150°, 210°, 330° — four solutions.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "cos(2x) = 0.5 has four solutions because the domain for u doubles."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Solve cos(x) = −√3/2 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 150° and x = 210° in Q2 and Q3",
+      "correctExplanation": "Reference angle 30°. Cosine is negative in Q2 (180° − 30°) and Q3 (180° + 30°).",
+      "distractors": [
+        {
+          "answer": "x = 30° and x = 330° in Q1 and Q4 here",
+          "explanation": "Those are solutions for cos(x) = +√3/2."
+        },
+        {
+          "answer": "x = 120° and x = 240° in Q2 and Q3 here",
+          "explanation": "Reference angle is 30° (cos = √3/2), not 60°."
+        },
+        {
+          "answer": "x = 60° and x = 300° in Q1 and Q4 here",
+          "explanation": "Those are solutions for cos(x) = +1/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Solve 2 cos(x) + √3 = 0 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 150° and x = 210° from cos = −√3/2",
+      "correctExplanation": "cos(x) = −√3/2. Reference angle 30°, negative in Q2 and Q3.",
+      "distractors": [
+        {
+          "answer": "x = 30° and x = 330° from cos = √3/2 here",
+          "explanation": "The negative sign means Q2 and Q3, not Q1 and Q4."
+        },
+        {
+          "answer": "x = 120° and x = 240° from cos = −1/2",
+          "explanation": "cos(x) = −√3/2, not −1/2."
+        },
+        {
+          "answer": "x = 60° and x = 300° from cos = 1/2 here",
+          "explanation": "cos(x) = −√3/2, not 1/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "Solve tan(x) = √3 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 60° and x = 240° in Q1 and Q3",
+      "correctExplanation": "Reference angle 60°. Tangent is positive in Q1 (60°) and Q3 (180° + 60°).",
+      "distractors": [
+        {
+          "answer": "x = 30° and x = 210° using wrong reference",
+          "explanation": "tan(30°) = 1/√3, not √3."
+        },
+        {
+          "answer": "x = 120° and x = 300° in Q2 and Q4 here",
+          "explanation": "Tangent is negative in Q2 and Q4."
+        },
+        {
+          "answer": "x = 60° only as a single solution overall",
+          "explanation": "Tangent repeats every 180°, giving two solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Solve sin²(x) = 1/4 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 30°, 150°, 210°, 330° from sin = ±1/2",
+      "correctExplanation": "sin(x) = ±1/2 gives four solutions with reference angle 30°.",
+      "distractors": [
+        {
+          "answer": "x = 30° and x = 150° only from sin = 1/2",
+          "explanation": "The square root gives both positive and negative values."
+        },
+        {
+          "answer": "x = 60° and x = 120° from sin = √3/2 here",
+          "explanation": "sin²(x) = 1/4 gives sin(x) = ±1/2, not √3/2."
+        },
+        {
+          "answer": "x = 90° only where sin = 1 as a solution",
+          "explanation": "sin(90°) = 1, so sin²(90°) = 1, not 1/4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Solve √2 sin(x) − 1 = 0 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 45° and x = 135° from sin = √2/2",
+      "correctExplanation": "sin(x) = 1/√2 = √2/2. Reference angle 45°, positive in Q1 and Q2.",
+      "distractors": [
+        {
+          "answer": "x = 45° only as the single solution here",
+          "explanation": "sin(x) = √2/2 has two solutions per cycle."
+        },
+        {
+          "answer": "x = 30° and x = 150° from sin = 1/2 here",
+          "explanation": "√2 sin(x) = 1 gives sin(x) = √2/2, not 1/2."
+        },
+        {
+          "answer": "x = 60° and x = 120° from sin = √3/2 here",
+          "explanation": "sin(x) = √2/2, not √3/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Solve cos(x) = sin(x) for 0° ≤ x ≤ 360°.",
+      "correct": "x = 45° and x = 225° where tan = 1",
+      "correctExplanation": "Dividing by cos(x): tan(x) = 1, giving x = 45° and x = 225°.",
+      "distractors": [
+        {
+          "answer": "x = 0° and x = 180° where both equal zero",
+          "explanation": "sin(0°) = 0 but cos(0°) = 1, so they are not equal."
+        },
+        {
+          "answer": "x = 90° where sin = 1 and cos = 0 overall",
+          "explanation": "sin ≠ cos at 90°."
+        },
+        {
+          "answer": "x = 45° only as the single solution overall",
+          "explanation": "tan(x) = 1 at 45° and 225°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "How many solutions does sin(3x) = 0.5 have for 0° ≤ x ≤ 360°?",
+      "correct": "six solutions from the tripled frequency",
+      "correctExplanation": "Let u = 3x: 0° ≤ u ≤ 1080°. sin(u) = 0.5 has 2 solutions per 360°, so 6 total.",
+      "distractors": [
+        {
+          "answer": "two solutions from the standard sine result",
+          "explanation": "The factor of 3 triples the number of solutions."
+        },
+        {
+          "answer": "three solutions from the coefficient of x",
+          "explanation": "The coefficient triples the frequency, giving 6 solutions."
+        },
+        {
+          "answer": "one solution as sine is a simple function",
+          "explanation": "The tripled argument increases the number of solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "Solve 2 sin²(x) − sin(x) − 1 = 0 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 90°, 210°, 330° from the factorisation",
+      "correctExplanation": "Factor: (2 sin(x) + 1)(sin(x) − 1) = 0. sin(x) = −1/2 gives 210°, 330°. sin(x) = 1 gives 90°.",
+      "distractors": [
+        {
+          "answer": "x = 30° and x = 150° from sin = 1/2 only",
+          "explanation": "The factorisation gives sin = 1 and sin = −1/2."
+        },
+        {
+          "answer": "x = 90° only from sin(x) = 1 as a solution",
+          "explanation": "sin(x) = −1/2 also gives two more solutions."
+        },
+        {
+          "answer": "no solutions exist for this quadratic equation",
+          "explanation": "The quadratic factors and has three solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Solve tan(x) = −√3 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 120° and x = 300° in Q2 and Q4",
+      "correctExplanation": "Reference angle 60°. Tangent is negative in Q2 (180° − 60°) and Q4 (360° − 60°).",
+      "distractors": [
+        {
+          "answer": "x = 60° and x = 240° in Q1 and Q3 here",
+          "explanation": "Those are solutions for tan(x) = +√3."
+        },
+        {
+          "answer": "x = 150° and x = 330° using reference 30°",
+          "explanation": "The reference angle is 60° (tan = √3), not 30°."
+        },
+        {
+          "answer": "x = 120° only as the single solution here",
+          "explanation": "Tangent has two solutions per full cycle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Solve 2 cos(x) − 1 = 0 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 60° and x = 300° from cos = 1/2",
+      "correctExplanation": "cos(x) = 1/2. Reference angle 60°, positive in Q1 and Q4.",
+      "distractors": [
+        {
+          "answer": "x = 120° and x = 240° from cos = −1/2",
+          "explanation": "cos(x) = +1/2, so solutions are in Q1 and Q4."
+        },
+        {
+          "answer": "x = 60° only as the single solution here",
+          "explanation": "Cosine equations with |k| < 1 have two solutions."
+        },
+        {
+          "answer": "x = 30° and x = 330° from cos = √3/2 here",
+          "explanation": "cos(x) = 1/2, not √3/2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A Ferris wheel height model gives sin(θ) = 0.5. If 0° ≤ θ ≤ 360° represents one revolution, at what angles is the rider at this height?",
+      "correct": "θ = 30° and θ = 150° during the revolution",
+      "correctExplanation": "sin(θ) = 0.5 has solutions at 30° and 150°.",
+      "distractors": [
+        {
+          "answer": "θ = 60° and θ = 120° during the revolution",
+          "explanation": "sin(60°) = √3/2, not 0.5."
+        },
+        {
+          "answer": "θ = 30° only as the single angle position",
+          "explanation": "There are two positions where the height matches."
+        },
+        {
+          "answer": "θ = 210° and θ = 330° at this height level",
+          "explanation": "Those give sin = −0.5; the height is below the midline."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Solve cos²(x) − cos(x) = 0 for 0° ≤ x ≤ 360°.",
+      "correct": "x = 0°, 90°, 270°, 360° by factoring",
+      "correctExplanation": "cos(x)(cos(x) − 1) = 0: cos(x) = 0 gives 90°, 270°; cos(x) = 1 gives 0°, 360°.",
+      "distractors": [
+        {
+          "answer": "x = 0° and x = 360° only from cos = 1",
+          "explanation": "cos(x) = 0 also gives solutions at 90° and 270°."
+        },
+        {
+          "answer": "x = 90° and x = 270° only from cos = 0",
+          "explanation": "cos(x) = 1 also gives solutions at 0° and 360°."
+        },
+        {
+          "answer": "x = 180° only where cos = −1 as a solution",
+          "explanation": "cos(180°)(cos(180°) − 1) = (−1)(−2) = 2 ≠ 0."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "To solve sin(x) = −√3/2, the reference angle is {{blank:1}}° and the solutions in Q3 and Q4 are x = 240° and x = {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "sin(60°) = √3/2, so the reference angle is 60°.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "sin(30°) = 1/2, not √3/2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "sin(45°) = √2/2, not √3/2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "300",
+          "correctExplanation": "360° − 60° = 300° is the Q4 solution.",
+          "distractors": [
+            {
+              "answer": "120",
+              "explanation": "120° is in Q2 where sine is positive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "330",
+              "explanation": "330° uses reference 30°, not 60°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Solving 2 cos(x) + 1 = 0 gives cos(x) = {{blank:1}}, with solutions x = 120° and x = {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "−1/2",
+          "correctExplanation": "2 cos(x) = −1, so cos(x) = −1/2.",
+          "distractors": [
+            {
+              "answer": "1/2",
+              "explanation": "The negative sign gives cos(x) = −1/2, not +1/2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−2",
+              "explanation": "Dividing by 2 gives −1/2, not −2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "240",
+          "correctExplanation": "180° + 60° = 240° is the Q3 solution.",
+          "distractors": [
+            {
+              "answer": "300",
+              "explanation": "300° is in Q4 where cosine is positive.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "180",
+              "explanation": "cos(180°) = −1, not −1/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "The equation tan(x) = −1 has reference angle {{blank:1}}° and solutions x = 135° and x = {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "45",
+          "correctExplanation": "tan(45°) = 1, so the reference angle is 45°.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "tan(30°) = 1/√3, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "60",
+              "explanation": "tan(60°) = √3, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "315",
+          "correctExplanation": "360° − 45° = 315° is the Q4 solution.",
+          "distractors": [
+            {
+              "answer": "225",
+              "explanation": "tan(225°) = +1, not −1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "270",
+              "explanation": "tan(270°) is undefined.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Solving sin²(x) = 3/4 gives sin(x) = ±{{blank:1}}, producing {{blank:2}} solutions in [0°, 360°].",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√3/2",
+          "correctExplanation": "√(3/4) = √3/2.",
+          "distractors": [
+            {
+              "answer": "3/4",
+              "explanation": "The square root of 3/4 is √3/2, not 3/4.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3/2",
+              "explanation": "3/2 > 1, which is impossible for sine.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "four",
+          "correctExplanation": "sin = +√3/2 gives 60°, 120°; sin = −√3/2 gives 240°, 300°.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Both positive and negative values produce solutions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "six",
+              "explanation": "sin(x) = ±√3/2 gives exactly four solutions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "To solve cos(x) = sin(x), divide both sides by cos(x) to get {{blank:1}} = 1, giving x = 45° and x = {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "tan(x)",
+          "correctExplanation": "sin(x)/cos(x) = tan(x).",
+          "distractors": [
+            {
+              "answer": "cos(x)",
+              "explanation": "Dividing sin/cos gives tan, not cos.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "sin(x)",
+              "explanation": "sin(x)/cos(x) = tan(x), not sin(x).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "225",
+          "correctExplanation": "tan(x) = 1 in Q1 (45°) and Q3 (225°).",
+          "distractors": [
+            {
+              "answer": "135",
+              "explanation": "tan(135°) = −1, not +1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "315",
+              "explanation": "tan(315°) = −1, not +1.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "The equation 2 sin(x) − 1 = 0 gives sin(x) = {{blank:1}}, with solutions x = {{blank:2}}° and x = 150°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.5",
+          "correctExplanation": "2 sin(x) = 1, so sin(x) = 0.5.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Dividing by 2 gives 0.5, not 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "sin(x) = 1/2 = 0.5, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "30",
+          "correctExplanation": "sin(30°) = 0.5 is the Q1 solution.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "sin(60°) = √3/2, not 0.5.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "sin(45°) = √2/2, not 0.5.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "For sin(2x) = 1, let u = 2x. Then u = {{blank:1}}° and u = 450°, giving x = 45° and x = {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "90",
+          "correctExplanation": "sin(u) = 1 when u = 90°.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "sin(0°) = 0, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "180",
+              "explanation": "sin(180°) = 0, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "225",
+          "correctExplanation": "u = 450° gives x = 450°/2 = 225°.",
+          "distractors": [
+            {
+              "answer": "270",
+              "explanation": "270° = 540°/2 where sin(540°) = 0.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "135",
+              "explanation": "135° = 270°/2 where sin(270°) = −1.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "Factoring 2 sin²(x) − sin(x) − 1 = 0 gives (2 sin(x) + 1)({{blank:1}}) = 0, so sin(x) = −1/2 or sin(x) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sin(x) − 1",
+          "correctExplanation": "The quadratic factors into (2 sin x + 1)(sin x − 1).",
+          "distractors": [
+            {
+              "answer": "sin(x) + 1",
+              "explanation": "(2sin x + 1)(sin x + 1) = 2sin²x + 3sin x + 1, which is wrong.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2 sin(x) − 1",
+              "explanation": "(2sin x + 1)(2sin x − 1) = 4sin²x − 1, which is wrong.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "sin(x) − 1 = 0 gives sin(x) = 1.",
+          "distractors": [
+            {
+              "answer": "−1",
+              "explanation": "−1 comes from 2 sin x + 1 = 0, giving sin = −1/2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1/2",
+              "explanation": "1/2 is not the solution from this factor.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Solving cos(x) = 1/2 for 0° ≤ x ≤ 360° gives x = {{blank:1}}° (Q1) and x = {{blank:2}}° (Q4).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "cos(60°) = 1/2.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "cos(30°) = √3/2, not 1/2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "cos(45°) = √2/2, not 1/2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "300",
+          "correctExplanation": "360° − 60° = 300° is the Q4 solution.",
+          "distractors": [
+            {
+              "answer": "240",
+              "explanation": "240° is in Q3 where cosine is negative.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "120",
+              "explanation": "120° is in Q2 where cosine is negative.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "The equation tan²(x) = 3 gives tan(x) = ±{{blank:1}}, with {{blank:2}} solutions in [0°, 360°].",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "√3",
+          "correctExplanation": "√3 is the square root of 3.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "3 is the square, not the square root.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3/2",
+              "explanation": "3/2 is not the square root of 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "four",
+          "correctExplanation": "tan = +√3 at 60°, 240°; tan = −√3 at 120°, 300°.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Both positive and negative values produce solutions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "one",
+              "explanation": "Tangent equations with ± give multiple solutions.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "A wave function gives sin(θ) = −1/2 for 0° ≤ θ ≤ 360°. The solutions are θ = {{blank:1}}° and θ = {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "210",
+          "correctExplanation": "180° + 30° = 210° is the Q3 solution.",
+          "distractors": [
+            {
+              "answer": "150",
+              "explanation": "sin(150°) = +1/2, not −1/2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "sin(30°) = +1/2, not −1/2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "330",
+          "correctExplanation": "360° − 30° = 330° is the Q4 solution.",
+          "distractors": [
+            {
+              "answer": "270",
+              "explanation": "sin(270°) = −1, not −1/2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "300",
+              "explanation": "300° uses reference 60°, not 30°.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "To solve cos²(x) = 1, take the square root: cos(x) = ±1. Then cos(x) = 1 gives x = {{blank:1}}° and cos(x) = −1 gives x = {{blank:2}}°.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "cos(0°) = 1.",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "cos(90°) = 0, not 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "cos(45°) = √2/2, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "180",
+          "correctExplanation": "cos(180°) = −1.",
+          "distractors": [
+            {
+              "answer": "270",
+              "explanation": "cos(270°) = 0, not −1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "360",
+              "explanation": "cos(360°) = 1, not −1.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A student solves sin(x) = −0.5 and gets x = −30°. Explain the error and give the correct solutions for 0° ≤ x ≤ 360°.",
+      "correct": "−30° is outside the domain; use 210° and 330°",
+      "correctExplanation": "The solutions in [0°, 360°] are 180° + 30° = 210° and 360° − 30° = 330°.",
+      "distractors": [
+        {
+          "answer": "−30° is a valid solution in the given domain",
+          "explanation": "−30° is outside the specified domain of 0° to 360°."
+        },
+        {
+          "answer": "the correct answer is x = 30° and x = 150°",
+          "explanation": "Those are solutions for sin(x) = +0.5, not −0.5."
+        },
+        {
+          "answer": "sin(x) = −0.5 has no solutions anywhere",
+          "explanation": "sin(x) = −0.5 has valid solutions at 210° and 330°."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "The equation sin(x) = cos(x) can be solved by dividing by cos(x). Why must we check that cos(x) ≠ 0?",
+      "correct": "division by zero is undefined in mathematics",
+      "correctExplanation": "If cos(x) = 0, the division is invalid. Checking: sin(90°) ≠ cos(90°), so no solutions are lost.",
+      "distractors": [
+        {
+          "answer": "cos(x) is always nonzero for all values here",
+          "explanation": "cos(90°) = 0 and cos(270°) = 0."
+        },
+        {
+          "answer": "dividing by cos(x) changes the equation type",
+          "explanation": "Division simplifies but requires cos(x) ≠ 0."
+        },
+        {
+          "answer": "checking is unnecessary since tan is defined",
+          "explanation": "Tan is undefined where cos = 0, so checking is essential."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "Explain why 2 sin²(x) + sin(x) − 1 = 0 can be solved as a quadratic. What substitution is used?",
+      "correct": "let u = sin(x) to form 2u² + u − 1 = 0",
+      "correctExplanation": "Substituting u = sin(x) creates a standard quadratic that can be factored.",
+      "distractors": [
+        {
+          "answer": "let u = x to form 2u² + u − 1 = 0 directly",
+          "explanation": "The substitution replaces sin(x), not x, with u."
+        },
+        {
+          "answer": "let u = 2 sin(x) to simplify the equation",
+          "explanation": "u = sin(x) is the correct substitution."
+        },
+        {
+          "answer": "quadratic methods cannot be used for trig here",
+          "explanation": "Trig equations in sin²(x) are standard quadratics in sin(x)."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Solve sin(x) = 0.6 for 0° ≤ x ≤ 360°. If the calculator gives 36.87°, what is the second solution?",
+      "correct": "180° − 36.87° = 143.13° in Q2",
+      "correctExplanation": "For positive sine, the second solution is 180° minus the reference angle.",
+      "distractors": [
+        {
+          "answer": "360° − 36.87° = 323.13° in Q4 instead",
+          "explanation": "323.13° is in Q4 where sine is negative."
+        },
+        {
+          "answer": "36.87° + 180° = 216.87° in Q3 as answer",
+          "explanation": "216.87° gives sin = −0.6, not +0.6."
+        },
+        {
+          "answer": "36.87° is the only solution in the domain",
+          "explanation": "Sine equations have two solutions per cycle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "Analyse why cos(x) = k and cos(x) = −k (for 0 < k < 1) together have exactly four solutions in [0°, 360°].",
+      "correct": "each equation gives two solutions in different quadrants",
+      "correctExplanation": "cos = k gives solutions in Q1 and Q4; cos = −k gives solutions in Q2 and Q3.",
+      "distractors": [
+        {
+          "answer": "each equation gives one solution only here",
+          "explanation": "Cosine equations with |k| < 1 each have two solutions."
+        },
+        {
+          "answer": "the positive equation gives all four solutions",
+          "explanation": "Only the pair of equations together gives four."
+        },
+        {
+          "answer": "the equations have the same solutions overall",
+          "explanation": "Positive and negative k give solutions in different quadrants."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "How many solutions does 2 cos²(x) − cos(x) − 1 = 0 have for 0° ≤ x ≤ 360°?",
+      "correct": "three solutions from the factored equation",
+      "correctExplanation": "Factor: (2 cos x + 1)(cos x − 1) = 0. cos = −1/2 gives 120°, 240°. cos = 1 gives 0°. Total: 3.",
+      "distractors": [
+        {
+          "answer": "two solutions from cos = −1/2 only overall",
+          "explanation": "cos = 1 also gives a solution at 0°."
+        },
+        {
+          "answer": "four solutions from two quadratic factors",
+          "explanation": "cos = 1 gives only one solution, not two."
+        },
+        {
+          "answer": "one solution at x = 0° from cos",
+          "explanation": "cos = −1/2 gives two additional solutions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A student writes the general solution of sin(x) = 0 as x = 360°n. Is this complete?",
+      "correct": "no, x = 180°n includes all zeros of sine",
+      "correctExplanation": "sin(x) = 0 at every multiple of 180°, not just 360°.",
+      "distractors": [
+        {
+          "answer": "yes, 360°n captures all solutions correctly",
+          "explanation": "This misses solutions at 180°, 540°, etc."
+        },
+        {
+          "answer": "no, the general solution is x = 90°n overall",
+          "explanation": "sin(90°) = 1, not 0."
+        },
+        {
+          "answer": "no, sin(x) = 0 has no general solution here",
+          "explanation": "sin(x) = 0 has the general solution x = 180°n."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "Compare solving sin(x) = 0.5 and cos(x) = 0.5 for 0° ≤ x ≤ 360°. How do the solution pairs differ?",
+      "correct": "sin gives 30° and 150°; cos gives 60° and 300°",
+      "correctExplanation": "Sine solutions are in Q1/Q2; cosine solutions are in Q1/Q4 with different reference angles.",
+      "distractors": [
+        {
+          "answer": "both give identical solutions at 30° and 150°",
+          "explanation": "Cosine and sine have different solution patterns."
+        },
+        {
+          "answer": "both give solutions at 60° and 120° overall",
+          "explanation": "sin(60°) = √3/2, not 0.5."
+        },
+        {
+          "answer": "sin has solutions in Q1/Q4, cos in Q1/Q2",
+          "explanation": "sin is positive in Q1/Q2; cos is positive in Q1/Q4."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "The equation sin(x) = cos(2x) can be solved by using the identity cos(2x) = 1 − 2sin²(x). What type of equation results?",
+      "correct": "a quadratic equation in sin(x) to solve",
+      "correctExplanation": "Substituting: sin(x) = 1 − 2sin²(x), giving 2sin²(x) + sin(x) − 1 = 0.",
+      "distractors": [
+        {
+          "answer": "a linear equation in sin(x) to solve here",
+          "explanation": "The identity introduces sin²(x), making it quadratic."
+        },
+        {
+          "answer": "an equation that has no solutions at all",
+          "explanation": "The resulting quadratic has factorable solutions."
+        },
+        {
+          "answer": "a cubic equation in sin(x) to solve overall",
+          "explanation": "The highest power is sin²(x), making it quadratic."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Why does the equation sin(2x) = 0.5 for 0° ≤ x ≤ 360° have more solutions than sin(x) = 0.5?",
+      "correct": "the substitution u = 2x doubles the domain",
+      "correctExplanation": "For u = 2x, the domain becomes 0° ≤ u ≤ 720°, giving twice as many solutions.",
+      "distractors": [
+        {
+          "answer": "sin(2x) is a different function with more zeros",
+          "explanation": "The extra solutions come from the extended domain, not extra zeros."
+        },
+        {
+          "answer": "doubling x halves the number of solutions here",
+          "explanation": "Doubling x doubles, not halves, the solutions."
+        },
+        {
+          "answer": "both equations have the same number of answers",
+          "explanation": "sin(2x) = 0.5 has four solutions vs two for sin(x) = 0.5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "A student solves tan(x) = 2 using a calculator and gets x = 63.43°. Find all solutions in [0°, 360°].",
+      "correct": "x = 63.43° and x = 243.43° from adding 180°",
+      "correctExplanation": "Tangent has period 180°, so the second solution is 63.43° + 180° = 243.43°.",
+      "distractors": [
+        {
+          "answer": "x = 63.43° is the only solution in the domain",
+          "explanation": "Tangent repeats every 180°, giving a second solution."
+        },
+        {
+          "answer": "x = 63.43° and x = 116.57° from subtraction",
+          "explanation": "116.57° = 180° − 63.43° applies to sine, not tangent."
+        },
+        {
+          "answer": "x = 63.43° and x = 296.57° from 360° minus",
+          "explanation": "360° − 63.43° applies to cosine, not tangent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "Justify why cos(x) = −2 has no solution, using the unit circle.",
+      "correct": "the unit circle has radius 1, limiting cosine",
+      "correctExplanation": "The x-coordinate on the unit circle ranges from −1 to 1, so −2 is unreachable.",
+      "distractors": [
+        {
+          "answer": "−2 is a valid cosine value for large angles",
+          "explanation": "Cosine is bounded by [−1, 1] for all angles."
+        },
+        {
+          "answer": "the unit circle only covers the first quadrant",
+          "explanation": "The unit circle covers all four quadrants."
+        },
+        {
+          "answer": "cos = −2 occurs at angles beyond 360° here",
+          "explanation": "Cosine is bounded by [−1, 1] regardless of the angle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "The equation cos²(x) − sin²(x) = 0 is equivalent to cos(2x) = 0. Solve for 0° ≤ x ≤ 360°.",
+      "correct": "x = 45°, 135°, 225°, 315° from 2x = 90° + 180°n",
+      "correctExplanation": "cos(2x) = 0 when 2x = 90°, 270°, 450°, 630°, giving x = 45°, 135°, 225°, 315°.",
+      "distractors": [
+        {
+          "answer": "x = 0° and x = 180° from cos = ±1 only here",
+          "explanation": "cos(2x) = 0, not cos(2x) = ±1."
+        },
+        {
+          "answer": "x = 90° and x = 270° from sin = ±1 only here",
+          "explanation": "The equation is cos(2x) = 0, solved via 2x."
+        },
+        {
+          "answer": "x = 45° only as the single solution overall",
+          "explanation": "There are four solutions from the doubled angle."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A projectile is launched at angle θ. The range is proportional to sin(2θ). For what θ in [0°, 90°] is the range maximised?",
+      "correct": "θ = 45° because sin(90°) = 1 is the maximum",
+      "correctExplanation": "sin(2θ) is maximised when 2θ = 90°, so θ = 45°.",
+      "distractors": [
+        {
+          "answer": "θ = 90° because it is the largest angle here",
+          "explanation": "sin(180°) = 0, giving zero range."
+        },
+        {
+          "answer": "θ = 30° because it gives the best balance here",
+          "explanation": "sin(60°) = √3/2 < 1, so 30° is not optimal."
+        },
+        {
+          "answer": "θ = 0° because horizontal gives maximum range",
+          "explanation": "sin(0°) = 0, giving zero range."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "To solve sin(x) = cos(x), divide by cos(x) to get tan(x) = {{blank:1}}. This requires checking that cos(x) ≠ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1",
+          "correctExplanation": "sin(x)/cos(x) = tan(x) = 1.",
+          "distractors": [
+            {
+              "answer": "0",
+              "explanation": "sin(x) = cos(x) gives tan = 1, not 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1",
+              "explanation": "tan = −1 would mean sin = −cos.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "Division by cos(x) requires cos(x) ≠ 0 to avoid undefined expressions.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "cos(x) = 1 is a valid value; the concern is cos(x) = 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "−1",
+              "explanation": "cos(x) = −1 is valid; only cos = 0 causes division issues.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The equation 2 sin²(x) − 1 = 0 can be written as sin²(x) = {{blank:1}}, giving sin(x) = ±{{blank:2}}, with four solutions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1/2",
+          "correctExplanation": "2 sin²(x) = 1, so sin²(x) = 1/2.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "Dividing by 2 gives 1/2, not 2.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "sin²(x) = 1 would give sin = ±1, not the correct equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√2/2",
+          "correctExplanation": "√(1/2) = 1/√2 = √2/2.",
+          "distractors": [
+            {
+              "answer": "1/2",
+              "explanation": "1/2 is the value of sin², not sin itself.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "√3/2",
+              "explanation": "√(1/2) = √2/2, not √3/2.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "When solving sin(2x) = k for 0° ≤ x ≤ 360°, substitute u = 2x so the domain becomes 0° ≤ u ≤ {{blank:1}}°, potentially {{blank:2}} the number of solutions.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "720",
+          "correctExplanation": "2 × 360° = 720° is the new domain for u.",
+          "distractors": [
+            {
+              "answer": "360",
+              "explanation": "The domain is doubled, not unchanged.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "180",
+              "explanation": "180° would halve the domain, not double it.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "doubling",
+          "correctExplanation": "The doubled domain can contain twice as many solutions.",
+          "distractors": [
+            {
+              "answer": "halving",
+              "explanation": "More domain means more solutions, not fewer.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tripling",
+              "explanation": "The factor of 2 doubles, not triples, the domain.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The quadratic 2 cos²(x) + cos(x) − 1 = 0 factors as (2 cos(x) − 1)({{blank:1}}) = 0, giving cos(x) = 1/2 or cos(x) = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cos(x) + 1",
+          "correctExplanation": "(2cos x − 1)(cos x + 1) = 2cos²x + 2cos x − cos x − 1 = 2cos²x + cos x − 1. ✓",
+          "distractors": [
+            {
+              "answer": "cos(x) − 1",
+              "explanation": "(2cos x − 1)(cos x − 1) = 2cos²x − 3cos x + 1, which is wrong.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2 cos(x) + 1",
+              "explanation": "(2cos x − 1)(2cos x + 1) = 4cos²x − 1, which is wrong.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "−1",
+          "correctExplanation": "cos(x) + 1 = 0 gives cos(x) = −1.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "cos = 1 comes from a different factorisation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "cos = 0 is not a factor of this equation.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "A projectile range formula involves sin(2θ). Maximum range occurs at θ = {{blank:1}}° because sin({{blank:2}}°) = 1.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "45",
+          "correctExplanation": "2θ = 90° when θ = 45°, maximising sin(2θ).",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "sin(180°) = 0, giving zero range.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "sin(60°) = √3/2 < 1, not the maximum.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "90",
+          "correctExplanation": "sin(90°) = 1, the maximum of the sine function.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "sin(180°) = 0, not the maximum.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "sin(45°) = √2/2, not 1.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "The general solution for cos(x) = k is x = ±α + {{blank:1}}°n, reflecting the {{blank:2}} property of cosine.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "360",
+          "correctExplanation": "Cosine has period 360°, so solutions repeat every 360°.",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "180° is the period of tangent, not cosine.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "90° is not the period of cosine.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "even",
+          "correctExplanation": "cos(−x) = cos(x), so both +α and −α give valid solutions.",
+          "distractors": [
+            {
+              "answer": "odd",
+              "explanation": "Odd describes sine: sin(−x) = −sin(x).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "periodic",
+              "explanation": "While cosine is periodic, the ±α comes from the even property.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Solving cos²(x) − sin²(x) = 0 is equivalent to solving {{blank:1}} = 0, using the double angle identity for {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "cos(2x)",
+          "correctExplanation": "cos²(x) − sin²(x) = cos(2x) by the double angle identity.",
+          "distractors": [
+            {
+              "answer": "sin(2x)",
+              "explanation": "sin(2x) = 2sin(x)cos(x), not cos² − sin².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tan(2x)",
+              "explanation": "tan(2x) is sin(2x)/cos(2x), not cos² − sin².",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "cosine",
+          "correctExplanation": "The identity cos(2x) = cos²(x) − sin²(x) is the double angle formula for cosine.",
+          "distractors": [
+            {
+              "answer": "sine",
+              "explanation": "The sine double angle formula is sin(2x) = 2sin(x)cos(x).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tangent",
+              "explanation": "The tangent double angle formula is different.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "When solving trig equations graphically, the solutions of sin(x) = 0.5 correspond to the x-coordinates where the graph of y = sin(x) intersects the {{blank:1}} line y = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "horizontal",
+          "correctExplanation": "A horizontal line at y = 0.5 intersects the sine curve.",
+          "distractors": [
+            {
+              "answer": "vertical",
+              "explanation": "A vertical line would give a specific x-value, not solve for x.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "diagonal",
+              "explanation": "A diagonal line is not used for this type of intersection.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.5",
+          "correctExplanation": "The line y = 0.5 intersects y = sin(x) at the solutions.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "y = 1 intersects at x = 90° only.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "y = 0 gives the zeros of sine, not the solutions for sin = 0.5.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A student loses solutions by cancelling sin(x) from both sides of sin(x) cos(x) = sin(x). The correct approach is to {{blank:1}} all terms to one side and {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "move",
+          "correctExplanation": "Move sin(x) to the left: sin(x)cos(x) − sin(x) = 0.",
+          "distractors": [
+            {
+              "answer": "divide",
+              "explanation": "Dividing by sin(x) loses the solutions where sin(x) = 0.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "add",
+              "explanation": "Adding does not help isolate the solutions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "factor",
+          "correctExplanation": "sin(x)(cos(x) − 1) = 0 gives sin(x) = 0 or cos(x) = 1.",
+          "distractors": [
+            {
+              "answer": "expand",
+              "explanation": "The expression is already in factored form after rearranging.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "differentiate",
+              "explanation": "Differentiation is a calculus technique, not algebraic solving.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "The equation cos(x) = sin(x) can be rewritten using the identity sin(x) = cos({{blank:1}}° − x), giving cos(x) = cos(90° − x). This means x = 90° − x + 360°n or x = −(90° − x) + 360°n, simplifying to x = {{blank:2}}° + 180°n.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "90",
+          "correctExplanation": "The co-function identity: sin(x) = cos(90° − x).",
+          "distractors": [
+            {
+              "answer": "180",
+              "explanation": "cos(180° − x) = −cos(x), not sin(x).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "cos(45° − x) is not equal to sin(x) in general.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "45",
+          "correctExplanation": "From x = 90° − x: 2x = 90°, so x = 45°.",
+          "distractors": [
+            {
+              "answer": "90",
+              "explanation": "90° comes from the identity, not the final answer.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "30",
+              "explanation": "30° does not satisfy cos(x) = sin(x).",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "For tan²(x) − 3 = 0, we get tan(x) = ±√3. The positive solutions have reference angle {{blank:1}}°, giving {{blank:2}} total solutions in [0°, 360°].",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "60",
+          "correctExplanation": "tan(60°) = √3, so the reference angle is 60°.",
+          "distractors": [
+            {
+              "answer": "30",
+              "explanation": "tan(30°) = 1/√3, not √3.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "45",
+              "explanation": "tan(45°) = 1, not √3.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "four",
+          "correctExplanation": "tan = √3 at 60°, 240°; tan = −√3 at 120°, 300°.",
+          "distractors": [
+            {
+              "answer": "two",
+              "explanation": "Both ± values produce solutions.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "six",
+              "explanation": "Each ± value gives exactly two solutions, totalling four.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "The equation 2 sin(x) cos(x) = 0 can be solved by noting this equals {{blank:1}} = 0, or by setting each factor to {{blank:2}} separately.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "sin(2x)",
+          "correctExplanation": "The double angle identity: 2sin(x)cos(x) = sin(2x).",
+          "distractors": [
+            {
+              "answer": "cos(2x)",
+              "explanation": "cos(2x) = cos²(x) − sin²(x), not 2sin(x)cos(x).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "tan(2x)",
+              "explanation": "tan(2x) = 2tan(x)/(1 − tan²(x)), not 2sin(x)cos(x).",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "zero",
+          "correctExplanation": "Setting sin(x) = 0 or cos(x) = 0 gives all solutions.",
+          "distractors": [
+            {
+              "answer": "one",
+              "explanation": "Setting to one gives different equations.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "infinity",
+              "explanation": "Functions cannot equal infinity.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

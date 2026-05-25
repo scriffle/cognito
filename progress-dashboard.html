@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VC2 Student Progress Dashboard</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #242836;
+  --border: #2e3347;
+  --text: #e4e6f0;
+  --text2: #9298b4;
+  --accent: #6c8cff;
+  --accent2: #4a6adf;
+  --green: #4ade80;
+  --red: #f87171;
+  --orange: #fb923c;
+  --yellow: #fbbf24;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --radius: 10px;
+  --transition: 0.15s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+    --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+    --accent: #4a6adf; --accent2: #3554c9;
+  }
+}
+[data-theme="light"] {
+  --bg: #f5f6fa; --surface: #ffffff; --surface2: #eef0f6;
+  --border: #d8dbe6; --text: #1a1d27; --text2: #5c6280;
+  --accent: #4a6adf; --accent2: #3554c9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.5;
+  min-height: 100vh; min-height: 100dvh;
+}
+
+.skip-link {
+  position: absolute; top: -40px; left: 0; background: var(--accent);
+  color: #fff; padding: 8px 16px; z-index: 1000; font-size: 14px;
+  border-radius: 0 0 8px 0; text-decoration: none;
+}
+.skip-link:focus { top: 0; }
+
+.app-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; border-bottom: 1px solid var(--border);
+  background: var(--surface); position: sticky; top: 0; z-index: 50;
+  flex-wrap: wrap;
+}
+.header-title { font-size: 16px; font-weight: 600; flex: 1; min-width: 200px; }
+.header-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+.btn {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text2);
+  cursor: pointer; padding: 6px 12px; border-radius: 6px; font-size: 12px;
+  font-weight: 600; min-height: 36px; transition: all var(--transition);
+  text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+}
+.btn:hover { border-color: var(--accent); color: var(--text); }
+.btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+main { max-width: 1400px; margin: 0 auto; padding: 20px; }
+
+.disclaimer {
+  background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.25);
+  border-radius: var(--radius); padding: 12px 16px; margin-bottom: 20px;
+  font-size: 13px; color: var(--yellow); line-height: 1.6;
+}
+
+/* Landing / upload zone */
+.landing { text-align: center; padding: 60px 20px; }
+.landing h2 { font-size: 24px; margin-bottom: 8px; }
+.landing p { color: var(--text2); font-size: 14px; margin-bottom: 24px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+.drop-zone {
+  border: 2px dashed var(--border); border-radius: var(--radius);
+  padding: 40px; margin: 0 auto 24px; max-width: 500px; cursor: pointer;
+  transition: all var(--transition);
+}
+.drop-zone:hover, .drop-zone.drag-over {
+  border-color: var(--accent); background: rgba(108, 140, 255, 0.05);
+}
+.drop-zone p { margin-bottom: 8px; }
+.drop-zone input { display: none; }
+
+.sample-picker { margin-top: 24px; }
+.sample-picker h3 { font-size: 14px; color: var(--text2); margin-bottom: 12px; }
+.sample-cards { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.sample-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; cursor: pointer; transition: all var(--transition);
+  min-width: 160px; text-align: left;
+}
+.sample-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.sample-card .name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+.sample-card .desc { font-size: 11px; color: var(--text2); }
+
+/* Summary cards */
+.summary-row {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px; margin-bottom: 20px;
+}
+.summary-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px;
+}
+.summary-card .label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.summary-card .value { font-size: 20px; font-weight: 700; }
+.summary-card .detail { font-size: 12px; color: var(--text2); margin-top: 4px; }
+.trend-up { color: var(--green); }
+.trend-down { color: var(--red); }
+.trend-flat { color: var(--yellow); }
+
+/* Filter bar */
+.filter-bar {
+  display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; align-items: center;
+}
+.filter-bar label { font-size: 12px; color: var(--text2); font-weight: 600; }
+.filter-group { display: flex; gap: 4px; flex-wrap: wrap; }
+.filter-chip {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text2);
+  padding: 4px 10px; border-radius: 16px; font-size: 11px; cursor: pointer;
+  transition: all var(--transition); user-select: none;
+}
+.filter-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.filter-chip:hover { border-color: var(--accent); }
+
+/* Tabs */
+.tab-bar {
+  display: flex; gap: 0; margin-bottom: 20px; border-bottom: 1px solid var(--border);
+}
+.tab-btn {
+  background: none; border: none; color: var(--text2); padding: 10px 20px;
+  font-size: 13px; font-weight: 600; cursor: pointer; border-bottom: 2px solid transparent;
+  transition: all var(--transition);
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* Radar chart */
+.radar-container {
+  display: flex; justify-content: center; align-items: center;
+  padding: 20px; position: relative;
+}
+.radar-container canvas { max-width: 600px; max-height: 600px; }
+.radar-legend {
+  display: flex; gap: 16px; justify-content: center; margin-top: 16px; flex-wrap: wrap;
+}
+.radar-legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+.radar-legend-swatch { width: 12px; height: 12px; border-radius: 3px; }
+
+/* Bar chart */
+.bar-group { margin-bottom: 16px; }
+.bar-group-label {
+  font-size: 13px; font-weight: 600; margin-bottom: 6px;
+  display: flex; align-items: center; gap: 8px;
+}
+.bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.bar-level-label { font-size: 11px; color: var(--text2); width: 50px; text-align: right; flex-shrink: 0; }
+.bar-track {
+  flex: 1; height: 24px; background: var(--surface2); border-radius: 4px;
+  overflow: hidden; position: relative;
+}
+.bar-fill {
+  height: 100%; border-radius: 4px; transition: width 0.6s ease;
+  display: flex; align-items: center; padding-left: 8px;
+  font-size: 11px; font-weight: 600; color: #fff; min-width: 32px;
+}
+.bar-sort-controls { display: flex; gap: 8px; margin-bottom: 16px; }
+
+/* Growth timeline */
+.timeline-table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  font-size: 13px;
+}
+.timeline-table th {
+  background: var(--surface); padding: 10px 12px; text-align: center;
+  font-size: 12px; font-weight: 600; color: var(--text2);
+  border-bottom: 1px solid var(--border); position: sticky; top: 52px; z-index: 10;
+}
+.timeline-table th:first-child { text-align: left; min-width: 180px; }
+.timeline-table td {
+  padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: center;
+  vertical-align: middle;
+}
+.timeline-table td:first-child { text-align: left; font-weight: 600; font-size: 13px; }
+.timeline-table tr:hover td { background: var(--surface2); }
+
+.state-pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 600;
+  cursor: pointer; transition: all var(--transition);
+}
+.state-pill:hover { transform: scale(1.05); }
+.state-above { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+.state-at, .state-meeting { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+.state-below, .state-approaching { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+
+.arrow-cell { font-size: 12px; width: 28px; text-align: center; font-weight: 700; }
+.arrow-up { color: var(--green); }
+.arrow-down { color: var(--red); }
+.arrow-flat { color: var(--text2); opacity: 0.6; }
+
+/* Drill-down panel */
+.drill-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+  z-index: 100; justify-content: flex-end;
+}
+.drill-overlay.open { display: flex; }
+.drill-panel {
+  width: 420px; max-width: 90vw; background: var(--surface);
+  border-left: 1px solid var(--border); padding: 24px;
+  overflow-y: auto; animation: slideIn 0.2s ease;
+}
+@keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
+.drill-panel h3 { font-size: 16px; margin-bottom: 4px; }
+.drill-panel .drill-sub { font-size: 12px; color: var(--text2); margin-bottom: 16px; }
+.drill-close {
+  position: absolute; top: 16px; right: 16px; background: none; border: none;
+  color: var(--text2); font-size: 20px; cursor: pointer;
+}
+.bloom-bars { margin-bottom: 20px; }
+.bloom-bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.bloom-bar-label { font-size: 12px; width: 80px; color: var(--text2); }
+.bloom-bar-track { flex: 1; height: 20px; background: var(--surface2); border-radius: 4px; overflow: hidden; }
+.bloom-bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 6px; font-size: 10px; color: #fff; font-weight: 600; }
+
+.descriptor-list { list-style: none; }
+.descriptor-list li {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12px;
+}
+.descriptor-list li:last-child { border-bottom: none; }
+.descriptor-code { font-family: monospace; color: var(--accent); }
+
+/* Tooltip */
+.chart-tooltip {
+  display: none; position: fixed; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: 8px 12px; font-size: 12px; z-index: 200;
+  pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Print styles */
+@media print {
+  .app-header, .filter-bar, .tab-bar, .btn, .drop-zone, .sample-picker,
+  .drill-overlay, .disclaimer { display: none !important; }
+  body { background: #fff; color: #000; }
+  .tab-panel { display: block !important; page-break-inside: avoid; margin-bottom: 24px; }
+  .summary-card { border: 1px solid #ccc; }
+  .bar-track { background: #eee; }
+  .timeline-table th { background: #f5f5f5; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main { padding: 12px; }
+  .summary-row { grid-template-columns: 1fr 1fr; }
+  .radar-container canvas { max-width: 100%; }
+  .drill-panel { width: 100vw; }
+  .tab-btn { padding: 8px 12px; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="app-header">
+  <span class="header-title">📊 Student Progress Dashboard</span>
+  <div class="header-right">
+    <span id="studentName" style="font-size:13px; color:var(--text2)"></span>
+    <button class="btn" id="changeStudentBtn" style="display:none" onclick="resetStudent()">Change Student</button>
+    <button class="btn" id="exportBtn" style="display:none" onclick="exportPNG()">Export PNG</button>
+    <button class="btn" onclick="window.print()">Print</button>
+    <button class="btn" onclick="toggleTheme()" id="themeBtn">Light</button>
+    <a href="index.html" class="btn">Home</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="disclaimer">
+    <strong>Diagnostic Preview.</strong> This dashboard shows progress across year levels based on VC2 diagnostic assessments.
+    Results are indicative and should be interpreted alongside classroom observations and teacher judgement.
+  </div>
+
+  <!-- Landing / Upload -->
+  <div id="landing" class="landing">
+    <h2>View Student Progress</h2>
+    <p>Upload a student results JSON file, or load from your browser's saved assessment data.</p>
+
+    <div class="drop-zone" id="dropZone">
+      <p>Drop student JSON file here</p>
+      <p style="font-size:12px; color:var(--text2)">or click to browse</p>
+      <input type="file" id="fileInput" accept=".json">
+    </div>
+
+    <button class="btn" id="localStorageBtn" style="display:none" onclick="loadFromLocalStorage()">
+      Load from Browser (saved assessments)
+    </button>
+
+    <div class="sample-picker">
+      <h3>Or try a sample student</h3>
+      <div class="sample-cards" id="sampleCards"></div>
+    </div>
+  </div>
+
+  <!-- Dashboard (hidden until data loaded) -->
+  <div id="dashboard" style="display:none">
+    <!-- Summary cards -->
+    <div class="summary-row" id="summaryRow"></div>
+
+    <!-- Filters -->
+    <div class="filter-bar">
+      <label>Year Levels:</label>
+      <div class="filter-group" id="levelFilters"></div>
+      <label style="margin-left:16px">Areas:</label>
+      <div class="filter-group" id="areaFilters"></div>
+      <label style="margin-left:16px">
+        <input type="checkbox" id="multiLevelOnly" onchange="toggleMultiLevel()" style="margin-right:4px; vertical-align:middle">
+        <span style="font-size:12px; color:var(--text2); cursor:pointer">Multi-level only</span>
+      </label>
+    </div>
+
+    <!-- View tabs -->
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="radar" onclick="switchTab('radar')">Radar Chart</button>
+      <button class="tab-btn" data-tab="bars" onclick="switchTab('bars')">Bar Comparison</button>
+      <button class="tab-btn" data-tab="timeline" onclick="switchTab('timeline')">Growth Timeline</button>
+    </div>
+
+    <div id="tab-radar" class="tab-panel active">
+      <div class="radar-container">
+        <canvas id="radarCanvas" width="600" height="600"></canvas>
+      </div>
+      <div class="radar-legend" id="radarLegend"></div>
+    </div>
+
+    <div id="tab-bars" class="tab-panel">
+      <div class="bar-sort-controls">
+        <label style="font-size:12px; color:var(--text2); font-weight:600">Sort by:</label>
+        <button class="btn active" data-sort="name" onclick="sortBars('name')">Area Name</button>
+        <button class="btn" data-sort="growth" onclick="sortBars('growth')">Best Growth</button>
+        <button class="btn" data-sort="weakest" onclick="sortBars('weakest')">Weakest</button>
+      </div>
+      <div id="barChartArea"></div>
+    </div>
+
+    <div id="tab-timeline" class="tab-panel">
+      <div style="overflow-x:auto">
+        <table class="timeline-table" id="timelineTable"></table>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Drill-down panel -->
+<div class="drill-overlay" id="drillOverlay" onclick="closeDrill(event)">
+  <div class="drill-panel" id="drillPanel" onclick="event.stopPropagation()"></div>
+</div>
+
+<!-- Tooltip -->
+<div class="chart-tooltip" id="tooltip"></div>
+
+<script>
+// ============ CONSTANTS ============
+const LEVEL_COLORS = {
+  7:  { fill: 'rgba(108,140,255,0.25)', stroke: '#6c8cff', solid: '#6c8cff' },
+  8:  { fill: 'rgba(74,222,128,0.20)',  stroke: '#4ade80', solid: '#4ade80' },
+  9:  { fill: 'rgba(251,191,36,0.20)',  stroke: '#fbbf24', solid: '#fbbf24' },
+  10: { fill: 'rgba(167,139,250,0.25)', stroke: '#a78bfa', solid: '#a78bfa' },
+};
+
+const BLOOM_LABELS = {
+  toLevel2: 'Remember',
+  toLevel3: 'Understand',
+  toLevel4: 'Apply',
+  toLevel5: 'Analyse',
+};
+
+const BLOOM_COLORS = ['#6c8cff', '#4ade80', '#fbbf24', '#a78bfa'];
+
+const STATE_ORDER = { 'above-standard': 3, 'meeting-confirmed': 2, 'at-standard': 2, 'approaching': 1, 'below-standard': 0 };
+
+const AREA_CODE_MAP = {
+  E: 'English', M: 'Mathematics', S: 'Science',
+  HP: 'Health & PE', HG: 'Geography', HH: 'History',
+  CC: 'Civics & Citizenship', CE: 'Economics & Business',
+  CI: 'Intercultural', CP: 'Critical & Creative Thinking',
+  AMU: 'Music', ADA: 'Dance', ADR: 'Drama',
+  AMA: 'Media Arts', AVA: 'Visual Arts', AVC: 'Visual Communication',
+  TDE: 'Design & Tech', TDI: 'Digital Tech',
+};
+
+const SAMPLES = [
+  { file: 'amara-chen.json', name: 'Amara Chen', desc: 'Strong across all areas, steady growth' },
+  { file: 'zara-williams.json', name: 'Zara Williams', desc: 'Humanities strength, STEM improving' },
+  { file: 'liam-torres.json', name: 'Liam Torres', desc: 'Significant growth from below-standard' },
+];
+
+// ============ STATE ============
+let studentData = null;
+let processedData = null;  // { byLevel: {7: {area: {pct, state, descriptors, bloom}}}, areas: Set, levels: Set }
+let activeLevels = new Set();
+let activeAreas = new Set();
+let currentSort = 'name';
+
+// ============ THEME ============
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : (current === 'light' ? '' : 'dark');
+  if (next) html.setAttribute('data-theme', next);
+  else html.removeAttribute('data-theme');
+  document.getElementById('themeBtn').textContent = next === 'dark' ? 'Light' : 'Dark';
+  if (processedData) renderAll();
+}
+
+// ============ DATA LOADING ============
+function initLanding() {
+  const cards = document.getElementById('sampleCards');
+  cards.innerHTML = SAMPLES.map(s => `
+    <div class="sample-card" onclick="loadSample('${s.file}')">
+      <div class="name">${s.name}</div>
+      <div class="desc">${s.desc}</div>
+    </div>
+  `).join('');
+
+  const lsBtn = document.getElementById('localStorageBtn');
+  try {
+    const raw = localStorage.getItem('vc2-knowledge-check');
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.results && Object.keys(parsed.results).length > 0) {
+        lsBtn.style.display = 'inline-flex';
+        const count = Object.keys(parsed.results).length;
+        lsBtn.textContent = `Load from Browser (${count} assessments saved)`;
+      }
+    }
+  } catch(e) {}
+
+  const dropZone = document.getElementById('dropZone');
+  const fileInput = document.getElementById('fileInput');
+
+  dropZone.addEventListener('click', () => fileInput.click());
+  dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+  dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+  dropZone.addEventListener('drop', e => {
+    e.preventDefault();
+    dropZone.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file) readFile(file);
+  });
+  fileInput.addEventListener('change', e => {
+    if (e.target.files[0]) readFile(e.target.files[0]);
+  });
+}
+
+function readFile(file) {
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const data = JSON.parse(e.target.result);
+      if (data.results) {
+        loadStudent(data);
+      } else {
+        alert('Invalid file format. Expected a student results JSON file.');
+      }
+    } catch(err) {
+      alert('Could not parse JSON file: ' + err.message);
+    }
+  };
+  reader.readAsText(file);
+}
+
+function loadFromLocalStorage() {
+  try {
+    const raw = localStorage.getItem('vc2-knowledge-check');
+    const parsed = JSON.parse(raw);
+    loadStudent({ name: 'My Progress', description: 'Loaded from browser', results: parsed.results || {} });
+  } catch(e) {
+    alert('Could not load saved data.');
+  }
+}
+
+async function loadSample(filename) {
+  try {
+    const resp = await fetch('sample-students/' + filename);
+    const data = await resp.json();
+    loadStudent(data);
+  } catch(e) {
+    alert('Could not load sample: ' + e.message);
+  }
+}
+
+// ============ DATA PROCESSING ============
+function extractAreaFromCode(code) {
+  const stripped = code.replace(/^VC2/, '');
+  const match = stripped.match(/^([A-Z]+?)(\d)/);
+  if (!match) return null;
+  return match[1];
+}
+
+function extractLevelFromCode(code) {
+  const stripped = code.replace(/^VC2/, '');
+  const match = stripped.match(/[A-Z]+?(\d+)/);
+  if (!match) return null;
+  return parseInt(match[1], 10);
+}
+
+function areaCodeToName(code) {
+  return AREA_CODE_MAP[code] || code;
+}
+
+function stateToScore(state) {
+  if (state === 'above-standard') return 3;
+  if (state === 'meeting-confirmed' || state === 'at-standard') return 2;
+  if (state === 'approaching') return 1;
+  return 0;
+}
+
+function processStudentData(data) {
+  const byLevel = {};
+  const allAreas = new Set();
+  const allLevels = new Set();
+
+  for (const [code, result] of Object.entries(data.results)) {
+    const areaCode = extractAreaFromCode(code);
+    const level = extractLevelFromCode(code);
+    if (!areaCode || !level || level < 1 || level > 10) continue;
+
+    const areaName = areaCodeToName(areaCode);
+    allAreas.add(areaName);
+    allLevels.add(level);
+
+    if (!byLevel[level]) byLevel[level] = {};
+    if (!byLevel[level][areaName]) {
+      byLevel[level][areaName] = { descriptors: [], totalCorrect: 0, totalQuestions: 0, bloom: {}, states: [] };
+    }
+
+    const entry = byLevel[level][areaName];
+    entry.descriptors.push(code);
+    entry.states.push(result.state);
+
+    const latestAttempt = result.attempts && result.attempts.length > 0
+      ? result.attempts[result.attempts.length - 1]
+      : null;
+
+    if (latestAttempt && latestAttempt.answers) {
+      for (const ans of latestAttempt.answers) {
+        entry.totalQuestions++;
+        if (ans.correct) entry.totalCorrect++;
+        if (!entry.bloom[ans.bloomKey]) entry.bloom[ans.bloomKey] = { correct: 0, total: 0 };
+        entry.bloom[ans.bloomKey].total++;
+        if (ans.correct) entry.bloom[ans.bloomKey].correct++;
+      }
+    }
+  }
+
+  for (const level of Object.keys(byLevel)) {
+    for (const area of Object.keys(byLevel[level])) {
+      const e = byLevel[level][area];
+      e.pct = e.totalQuestions > 0 ? Math.round((e.totalCorrect / e.totalQuestions) * 100) : 0;
+      const aboveCount = e.states.filter(s => s === 'above-standard').length;
+      const meetCount = e.states.filter(s => s === 'at-standard' || s === 'meeting-confirmed').length;
+      const total = e.states.length;
+      if (aboveCount / total >= 0.5) e.overallState = 'above-standard';
+      else if ((aboveCount + meetCount) / total >= 0.5) e.overallState = 'at-standard';
+      else e.overallState = 'below-standard';
+    }
+  }
+
+  return { byLevel, areas: allAreas, levels: allLevels };
+}
+
+// ============ LOAD STUDENT ============
+function loadStudent(data) {
+  studentData = data;
+  processedData = processStudentData(data);
+
+  document.getElementById('landing').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+  document.getElementById('studentName').textContent = data.name || 'Student';
+  document.getElementById('changeStudentBtn').style.display = 'inline-flex';
+  document.getElementById('exportBtn').style.display = 'inline-flex';
+
+  activeLevels = new Set(processedData.levels);
+  activeAreas = new Set(processedData.areas);
+
+  buildFilters();
+  renderAll();
+}
+
+function resetStudent() {
+  studentData = null;
+  processedData = null;
+  document.getElementById('landing').style.display = '';
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('studentName').textContent = '';
+  document.getElementById('changeStudentBtn').style.display = 'none';
+  document.getElementById('exportBtn').style.display = 'none';
+}
+
+// ============ FILTERS ============
+function buildFilters() {
+  const levelContainer = document.getElementById('levelFilters');
+  const areaContainer = document.getElementById('areaFilters');
+
+  const sortedLevels = [...processedData.levels].sort((a, b) => a - b);
+  levelContainer.innerHTML = sortedLevels.map(l => `
+    <span class="filter-chip active" data-level="${l}" onclick="toggleLevel(${l}, this)">Year ${l}</span>
+  `).join('');
+
+  const sortedAreas = [...processedData.areas].sort();
+  areaContainer.innerHTML = sortedAreas.map(a => `
+    <span class="filter-chip active" data-area="${a}" onclick="toggleArea('${a}', this)">${a}</span>
+  `).join('');
+}
+
+function toggleLevel(level, el) {
+  if (activeLevels.has(level)) { activeLevels.delete(level); el.classList.remove('active'); }
+  else { activeLevels.add(level); el.classList.add('active'); }
+  renderAll();
+}
+
+function toggleArea(area, el) {
+  if (activeAreas.has(area)) { activeAreas.delete(area); el.classList.remove('active'); }
+  else { activeAreas.add(area); el.classList.add('active'); }
+  renderAll();
+}
+
+// ============ RENDER ALL ============
+function renderAll() {
+  renderSummary();
+  renderRadar();
+  renderBars();
+  renderTimeline();
+}
+
+// ============ SUMMARY CARDS ============
+function renderSummary() {
+  const container = document.getElementById('summaryRow');
+  const levels = [...activeLevels].sort((a, b) => a - b);
+  const areas = [...activeAreas].sort();
+
+  if (levels.length < 2) {
+    container.innerHTML = `
+      <div class="summary-card"><div class="label">Note</div><div class="value" style="font-size:14px">Select at least 2 year levels to see growth trends</div></div>
+    `;
+    return;
+  }
+
+  const firstLevel = levels[0];
+  const lastLevel = levels[levels.length - 1];
+
+  let totalFirst = 0, totalLast = 0, countFirst = 0, countLast = 0;
+  let bestGrowthArea = null, bestGrowth = -Infinity;
+  let weakestArea = null, weakestScore = Infinity;
+  let descriptorCounts = {};
+
+  for (const area of areas) {
+    const first = processedData.byLevel[firstLevel]?.[area];
+    const last = processedData.byLevel[lastLevel]?.[area];
+
+    if (first) { totalFirst += first.pct; countFirst++; }
+    if (last) { totalLast += last.pct; countLast++; }
+
+    if (first && last) {
+      const growth = last.pct - first.pct;
+      if (growth > bestGrowth) { bestGrowth = growth; bestGrowthArea = area; }
+    }
+    if (last && last.pct < weakestScore) { weakestScore = last.pct; weakestArea = area; }
+
+    for (const l of levels) {
+      const d = processedData.byLevel[l]?.[area];
+      if (d) descriptorCounts[l] = (descriptorCounts[l] || 0) + d.descriptors.length;
+    }
+  }
+
+  const avgFirst = countFirst ? Math.round(totalFirst / countFirst) : 0;
+  const avgLast = countLast ? Math.round(totalLast / countLast) : 0;
+  const overallGrowth = avgLast - avgFirst;
+
+  const trendClass = overallGrowth > 2 ? 'trend-up' : overallGrowth < -2 ? 'trend-down' : 'trend-flat';
+  const trendIcon = overallGrowth > 2 ? '↑' : overallGrowth < -2 ? '↓' : '→';
+  const trendLabel = overallGrowth > 2 ? 'Improving' : overallGrowth < -2 ? 'Declining' : 'Steady';
+
+  container.innerHTML = `
+    <div class="summary-card">
+      <div class="label">Overall Trend (Year ${firstLevel}→${lastLevel})</div>
+      <div class="value ${trendClass}">${trendIcon} ${trendLabel}</div>
+      <div class="detail">${avgFirst}% → ${avgLast}% (${overallGrowth > 0 ? '+' : ''}${overallGrowth}%)</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Strongest Growth</div>
+      <div class="value trend-up">${bestGrowthArea || '—'}</div>
+      <div class="detail">${bestGrowth !== -Infinity ? '+' + bestGrowth + '%' : 'N/A'}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Focus Area</div>
+      <div class="value trend-down">${weakestArea || '—'}</div>
+      <div class="detail">${weakestScore !== Infinity ? weakestScore + '% at Year ' + lastLevel : 'N/A'}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Descriptors Assessed</div>
+      <div class="value">${Object.values(descriptorCounts).reduce((a,b)=>a+b,0)}</div>
+      <div class="detail">${levels.map(l => 'Yr' + l + ': ' + (descriptorCounts[l]||0)).join(', ')}</div>
+    </div>
+  `;
+}
+
+// ============ RADAR CHART ============
+function renderRadar() {
+  const canvas = document.getElementById('radarCanvas');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const size = 600;
+  canvas.width = size * dpr;
+  canvas.height = size * dpr;
+  canvas.style.width = size + 'px';
+  canvas.style.height = size + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  ctx.clearRect(0, 0, size, size);
+
+  const areas = [...activeAreas].sort();
+  const levels = [...activeLevels].sort((a, b) => a - b);
+  if (areas.length < 3 || levels.length < 1) {
+    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--text2');
+    ctx.font = '14px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('Select at least 3 learning areas and 1 year level', size/2, size/2);
+    document.getElementById('radarLegend').innerHTML = '';
+    return;
+  }
+
+  const cx = size / 2, cy = size / 2;
+  const maxR = size / 2 - 80;
+  const n = areas.length;
+  const angleStep = (2 * Math.PI) / n;
+  const startAngle = -Math.PI / 2;
+
+  const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text2').trim();
+  const gridColor = getComputedStyle(document.documentElement).getPropertyValue('--border').trim();
+
+  // Grid rings
+  for (let ring = 1; ring <= 4; ring++) {
+    const r = (ring / 4) * maxR;
+    ctx.beginPath();
+    for (let i = 0; i <= n; i++) {
+      const a = startAngle + i * angleStep;
+      const x = cx + r * Math.cos(a);
+      const y = cy + r * Math.sin(a);
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.strokeStyle = gridColor;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+
+    ctx.fillStyle = textColor;
+    ctx.font = '10px system-ui';
+    ctx.textAlign = 'right';
+    ctx.fillText((ring * 25) + '%', cx - 4, cy - r + 4);
+  }
+
+  // Axis lines and labels
+  for (let i = 0; i < n; i++) {
+    const a = startAngle + i * angleStep;
+    const x = cx + maxR * Math.cos(a);
+    const y = cy + maxR * Math.sin(a);
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(x, y);
+    ctx.strokeStyle = gridColor;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+
+    const lx = cx + (maxR + 20) * Math.cos(a);
+    const ly = cy + (maxR + 20) * Math.sin(a);
+    ctx.fillStyle = textColor;
+    ctx.font = '11px system-ui';
+    ctx.textAlign = Math.cos(a) > 0.1 ? 'left' : Math.cos(a) < -0.1 ? 'right' : 'center';
+    ctx.textBaseline = Math.sin(a) > 0.1 ? 'top' : Math.sin(a) < -0.1 ? 'bottom' : 'middle';
+
+    const label = areas[i].length > 16 ? areas[i].substring(0, 14) + '…' : areas[i];
+    ctx.fillText(label, lx, ly);
+  }
+
+  // Data polygons
+  for (const level of levels) {
+    const colors = LEVEL_COLORS[level] || LEVEL_COLORS[7];
+    const points = [];
+
+    for (let i = 0; i < n; i++) {
+      const area = areas[i];
+      const d = processedData.byLevel[level]?.[area];
+      const pct = d ? d.pct : 0;
+      const r = (pct / 100) * maxR;
+      const a = startAngle + i * angleStep;
+      points.push({ x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) });
+    }
+
+    ctx.beginPath();
+    points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    ctx.closePath();
+    ctx.fillStyle = colors.fill;
+    ctx.fill();
+    ctx.strokeStyle = colors.stroke;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    for (const p of points) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 3, 0, 2 * Math.PI);
+      ctx.fillStyle = colors.stroke;
+      ctx.fill();
+    }
+  }
+
+  // Legend
+  const legend = document.getElementById('radarLegend');
+  legend.innerHTML = levels.map(l => {
+    const c = LEVEL_COLORS[l] || LEVEL_COLORS[7];
+    return `<div class="radar-legend-item"><span class="radar-legend-swatch" style="background:${c.solid}"></span>Year ${l}</div>`;
+  }).join('');
+
+  // Canvas hover tooltip
+  canvas.onmousemove = e => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const tooltip = document.getElementById('tooltip');
+
+    let found = false;
+    for (const level of levels) {
+      for (let i = 0; i < n; i++) {
+        const area = areas[i];
+        const d = processedData.byLevel[level]?.[area];
+        const pct = d ? d.pct : 0;
+        const r = (pct / 100) * maxR;
+        const a = startAngle + i * angleStep;
+        const px = cx + r * Math.cos(a);
+        const py = cy + r * Math.sin(a);
+        const dist = Math.sqrt((mx - px) ** 2 + (my - py) ** 2);
+        if (dist < 10) {
+          tooltip.style.display = 'block';
+          tooltip.style.left = (e.clientX + 12) + 'px';
+          tooltip.style.top = (e.clientY - 8) + 'px';
+          tooltip.innerHTML = `<strong>${area}</strong> — Year ${level}<br>${pct}% correct (${d ? d.overallState : 'N/A'})`;
+          found = true;
+          break;
+        }
+      }
+      if (found) break;
+    }
+    if (!found) tooltip.style.display = 'none';
+  };
+  canvas.onmouseleave = () => document.getElementById('tooltip').style.display = 'none';
+}
+
+// ============ BAR CHART ============
+function renderBars() {
+  const container = document.getElementById('barChartArea');
+  let areas = [...activeAreas].sort();
+  const levels = [...activeLevels].sort((a, b) => a - b);
+  const multiOnly = document.getElementById('multiLevelOnly')?.checked;
+  if (multiOnly) areas = areas.filter(a => getAreaLevelCount(a) >= 2);
+
+  let areaData = areas.map(area => {
+    const levelData = levels.map(l => {
+      const d = processedData.byLevel[l]?.[area];
+      return { level: l, pct: d ? d.pct : null, state: d ? d.overallState : null, area, data: d };
+    });
+    const validPcts = levelData.filter(d => d.pct !== null);
+    const growth = validPcts.length >= 2 ? validPcts[validPcts.length - 1].pct - validPcts[0].pct : 0;
+    const lastPct = validPcts.length > 0 ? validPcts[validPcts.length - 1].pct : 0;
+    return { area, levels: levelData, growth, lastPct };
+  });
+
+  if (currentSort === 'growth') areaData.sort((a, b) => b.growth - a.growth);
+  else if (currentSort === 'weakest') areaData.sort((a, b) => a.lastPct - b.lastPct);
+
+  container.innerHTML = areaData.map(ad => {
+    const bars = ad.levels.filter(d => d.pct !== null).map(d => {
+      const colors = LEVEL_COLORS[d.level] || LEVEL_COLORS[7];
+      const stateOpacity = d.state === 'above-standard' ? '1' : d.state === 'below-standard' ? '0.7' : '0.85';
+      return `
+        <div class="bar-row">
+          <span class="bar-level-label">Year ${d.level}</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:${d.pct}%; background:${colors.solid}; opacity:${stateOpacity}"
+                 onclick="openDrill('${d.area}', ${d.level})"
+                 title="${d.area} Year ${d.level}: ${d.pct}%">
+              ${d.pct}%
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    const growthBadge = ad.growth > 0
+      ? `<span class="trend-up" style="font-size:11px">+${ad.growth}%</span>`
+      : ad.growth < 0
+        ? `<span class="trend-down" style="font-size:11px">${ad.growth}%</span>`
+        : '';
+
+    return `
+      <div class="bar-group">
+        <div class="bar-group-label">${ad.area} ${growthBadge}</div>
+        ${bars}
+      </div>
+    `;
+  }).join('');
+}
+
+function sortBars(mode) {
+  currentSort = mode;
+  document.querySelectorAll('.bar-sort-controls .btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.sort === mode);
+  });
+  renderBars();
+}
+
+// ============ GROWTH TIMELINE ============
+function getAreaLevelCount(area) {
+  const levels = [...activeLevels];
+  return levels.filter(l => processedData.byLevel[l]?.[area]).length;
+}
+
+function renderTimeline() {
+  const table = document.getElementById('timelineTable');
+  let areas = [...activeAreas].sort();
+  const levels = [...activeLevels].sort((a, b) => a - b);
+  const multiOnly = document.getElementById('multiLevelOnly')?.checked;
+
+  if (multiOnly) {
+    areas = areas.filter(a => getAreaLevelCount(a) >= 2);
+  }
+
+  let headerCols = '<th>Learning Area</th>';
+  for (let i = 0; i < levels.length; i++) {
+    headerCols += `<th>Year ${levels[i]}</th>`;
+    if (i < levels.length - 1) headerCols += '<th class="arrow-cell"></th>';
+  }
+
+  if (areas.length === 0) {
+    table.innerHTML = `<thead><tr>${headerCols}</tr></thead><tbody><tr><td colspan="${1 + levels.length * 2}" style="text-align:center; padding:40px; color:var(--text2)">No learning areas with data across multiple year levels</td></tr></tbody>`;
+    return;
+  }
+
+  let rows = '';
+  for (const area of areas) {
+    let cols = `<td>${area}</td>`;
+    for (let i = 0; i < levels.length; i++) {
+      const l = levels[i];
+      const d = processedData.byLevel[l]?.[area];
+      if (d) {
+        const stateClass = d.overallState === 'above-standard' ? 'state-above'
+          : d.overallState === 'below-standard' ? 'state-below' : 'state-at';
+        cols += `<td><span class="state-pill ${stateClass}" onclick="openDrill('${area}', ${l})">${d.pct}%</span></td>`;
+      } else {
+        cols += '<td style="color:var(--text2)">—</td>';
+      }
+
+      if (i < levels.length - 1) {
+        const curr = d ? d.pct : null;
+        const nextD = processedData.byLevel[levels[i + 1]]?.[area];
+        const next = nextD ? nextD.pct : null;
+        if (curr !== null && next !== null) {
+          const diff = next - curr;
+          const cls = diff > 2 ? 'arrow-up' : diff < -2 ? 'arrow-down' : 'arrow-flat';
+          const arrow = diff > 2 ? '▲' : diff < -2 ? '▼' : '▸';
+          const label = diff > 0 ? `+${diff}` : diff < 0 ? `${diff}` : '=';
+          cols += `<td class="arrow-cell ${cls}" title="${label}%">${arrow}</td>`;
+        } else {
+          cols += '<td class="arrow-cell"></td>';
+        }
+      }
+    }
+    rows += `<tr>${cols}</tr>`;
+  }
+
+  table.innerHTML = `<thead><tr>${headerCols}</tr></thead><tbody>${rows}</tbody>`;
+}
+
+let multiLevelFilter = false;
+function toggleMultiLevel() {
+  renderAll();
+}
+
+// ============ DRILL-DOWN PANEL ============
+function openDrill(area, level) {
+  const d = processedData.byLevel[level]?.[area];
+  if (!d) return;
+
+  const panel = document.getElementById('drillPanel');
+  const overlay = document.getElementById('drillOverlay');
+
+  const bloomBars = Object.entries(BLOOM_LABELS).map(([key, label], i) => {
+    const b = d.bloom[key];
+    const pct = b ? Math.round((b.correct / b.total) * 100) : 0;
+    const total = b ? b.total : 0;
+    const correct = b ? b.correct : 0;
+    return `
+      <div class="bloom-bar-row">
+        <span class="bloom-bar-label">${label}</span>
+        <div class="bloom-bar-track">
+          <div class="bloom-bar-fill" style="width:${pct}%; background:${BLOOM_COLORS[i]}">${pct}%</div>
+        </div>
+        <span style="font-size:11px; color:var(--text2); width:40px">${correct}/${total}</span>
+      </div>
+    `;
+  }).join('');
+
+  const descriptorItems = d.descriptors.map(code => {
+    const result = studentData.results[code];
+    const state = result ? result.state : 'unknown';
+    const stateClass = state === 'above-standard' ? 'state-above'
+      : (state === 'at-standard' || state === 'meeting-confirmed') ? 'state-at' : 'state-below';
+    return `<li><span class="descriptor-code">${code}</span><span class="state-pill ${stateClass}" style="font-size:10px">${state}</span></li>`;
+  }).join('');
+
+  panel.innerHTML = `
+    <button class="drill-close" onclick="closeDrill()">&times;</button>
+    <h3>${area} — Year ${level}</h3>
+    <div class="drill-sub">${d.pct}% correct across ${d.descriptors.length} descriptors</div>
+
+    <h4 style="font-size:13px; margin-bottom:8px">Performance by Bloom's Level</h4>
+    <div class="bloom-bars">${bloomBars}</div>
+
+    <h4 style="font-size:13px; margin-bottom:8px">Descriptors (${d.descriptors.length})</h4>
+    <ul class="descriptor-list">${descriptorItems}</ul>
+  `;
+
+  overlay.classList.add('open');
+}
+
+function closeDrill(e) {
+  if (e && e.target !== document.getElementById('drillOverlay')) return;
+  document.getElementById('drillOverlay').classList.remove('open');
+}
+
+// ============ EXPORT ============
+function exportPNG() {
+  const activeTab = document.querySelector('.tab-panel.active');
+  if (!activeTab) return;
+
+  const canvas = document.createElement('canvas');
+  const rect = activeTab.getBoundingClientRect();
+  canvas.width = rect.width * 2;
+  canvas.height = rect.height * 2;
+
+  alert('PNG export: For best results, use your browser\'s built-in screenshot tool or Print to PDF.');
+}
+
+// ============ TABS ============
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === 'tab-' + tab));
+  if (tab === 'radar') renderRadar();
+}
+
+// ============ INIT ============
+document.addEventListener('DOMContentLoaded', () => {
+  initLanding();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10AST01",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning to calculate and interpret mean and standard deviation, and use them to compare data sets.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning to calculate and interpret mean and standard deviation, and use them to compare data sets.",
+    "y": [
+      "Standard deviation quantifies how spread out data values are from the mean — it is the most widely used measure of variability in statistics.",
+      "Comparing datasets using both centre (mean) and spread (standard deviation) provides a more complete picture than either measure alone.",
+      "These statistics are used universally in research, quality control, finance, medicine and education."
+    ],
+    "eg": [
+      "Calculating the standard deviation of a dataset and interpreting what a larger or smaller value means.",
+      "Comparing two classes: 'Both have a mean score of 75, but Class A has σ = 5 while Class B has σ = 15.'",
+      "Using the mean and standard deviation to identify unusual values (beyond 2 standard deviations).",
+      "Calculating these statistics using a calculator or spreadsheet.",
+      "Interpreting: 'A manufacturing process has mean length 50 mm and σ = 0.3 mm. Is a part at 51 mm acceptable?'",
+      "Comparing the variability of two investment options using standard deviation as a measure of risk."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The mean is calculated by multiplying all values in a data set.",
+      "correct": "False",
+      "correctExplanation": "The mean is calculated by summing all values and dividing by the number of values.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The mean uses addition and division, not multiplication."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "Standard deviation measures the spread of data around the mean.",
+      "correct": "True",
+      "correctExplanation": "Standard deviation quantifies how far data values typically are from the mean.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Standard deviation does not measure spread around the mean."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "A small standard deviation indicates the data is widely spread.",
+      "correct": "False",
+      "correctExplanation": "A small standard deviation means data values are clustered close to the mean.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Small SD means data is clustered near the mean."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The deviations from the mean always sum to zero.",
+      "correct": "True",
+      "correctExplanation": "Positive and negative deviations cancel out, giving a sum of zero.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Deviations from the mean do not sum to zero."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "The standard deviation of a data set can be negative.",
+      "correct": "False",
+      "correctExplanation": "Standard deviation is always non-negative because it involves squaring deviations and taking a square root.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Standard deviation is always zero or positive."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The formula for population standard deviation divides by n.",
+      "correct": "True",
+      "correctExplanation": "Population SD uses σ = √(Σ(xᵢ − x̄)²/n), dividing by the total number of values.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Population SD divides by n."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Sample standard deviation divides by n instead of n − 1.",
+      "correct": "False",
+      "correctExplanation": "Sample SD divides by n − 1 to correct for bias when estimating from a sample.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sample SD uses n − 1, not n."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The mean of 3, 5, 7, 9, 11 is 7.",
+      "correct": "True",
+      "correctExplanation": "Sum = 35, divided by 5 gives 7.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The mean is not 7."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "Standard deviation has the same units as the original data.",
+      "correct": "True",
+      "correctExplanation": "Because SD is the square root of variance, it returns to the original units.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "SD does not share units with the data."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "Variance is calculated by taking the square root of the sum of deviations.",
+      "correct": "False",
+      "correctExplanation": "Variance is the average of squared deviations; standard deviation is the square root of variance.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Variance uses squared deviations divided by n, not a square root."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "Adding a constant to every value in a data set changes the standard deviation.",
+      "correct": "False",
+      "correctExplanation": "Adding a constant shifts all values equally, so the spread (and SD) remains unchanged.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Adding a constant does not change the spread."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The mean of a data set is always one of the data values.",
+      "correct": "False",
+      "correctExplanation": "The mean can fall between data values; for example, the mean of 2 and 5 is 3.5.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The mean is not necessarily a data value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "The mean of 4, 6, 8, 10, 12 is:",
+      "correct": "8",
+      "correctExplanation": "Sum = 40, n = 5, mean = 40/5 = 8.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "This is the fourth value, not the mean."
+        },
+        {
+          "answer": "6",
+          "explanation": "This is the second value, not the mean."
+        },
+        {
+          "answer": "40",
+          "explanation": "This is the sum, not the mean."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "Standard deviation measures:",
+      "correct": "the typical distance of data values fr",
+      "correctExplanation": "SD quantifies how spread out data is relative to the mean.",
+      "distractors": [
+        {
+          "answer": "the range of the data set",
+          "explanation": "Range uses only the maximum and minimum, not the mean."
+        },
+        {
+          "answer": "the most frequent data value",
+          "explanation": "This describes the mode, not SD."
+        },
+        {
+          "answer": "the middle value of the data set",
+          "explanation": "This describes the median, not SD."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which formula gives the population standard deviation?",
+      "correct": "σ = √(Σ(xᵢ − x̄)²/n)",
+      "correctExplanation": "Population SD divides the sum of squared deviations by n.",
+      "distractors": [
+        {
+          "answer": "σ = Σ(xᵢ − x̄)/n",
+          "explanation": "This gives the mean deviation, which is always zero."
+        },
+        {
+          "answer": "σ = Σxᵢ/n",
+          "explanation": "This is the formula for the mean, not SD."
+        },
+        {
+          "answer": "σ = √(Σxᵢ²/n)",
+          "explanation": "This omits the subtraction of the mean."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "If all values in a data set are identical, the standard deviation is:",
+      "correct": "0",
+      "correctExplanation": "No deviation from the mean exists when all values are equal.",
+      "distractors": [
+        {
+          "answer": "1",
+          "explanation": "SD is zero, not one, when there is no spread."
+        },
+        {
+          "answer": "equal",
+          "explanation": "SD measures spread, not central tendency."
+        },
+        {
+          "answer": "undefined",
+          "explanation": "SD is well-defined as zero for identical values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Sample standard deviation uses n − 1 in the denominator because:",
+      "correct": "it corrects for bias in estimating population SD",
+      "correctExplanation": "Using n − 1 (Bessel's correction) provides an unbiased estimate of population variance.",
+      "distractors": [
+        {
+          "answer": "it makes the calculation simpler",
+          "explanation": "n − 1 actually makes the formula slightly more complex."
+        },
+        {
+          "answer": "samples always have one fewer value",
+          "explanation": "The sample size is n, not n − 1."
+        },
+        {
+          "answer": "it ensures the result is always positive",
+          "explanation": "The square root ensures positivity, not the denominator."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "The deviation of a data value from the mean is:",
+      "correct": "xᵢ − x̄",
+      "correctExplanation": "Deviation is the difference between the value and the mean.",
+      "distractors": [
+        {
+          "answer": "xᵢ + x̄",
+          "explanation": "This adds the value and the mean."
+        },
+        {
+          "answer": "xᵢ × x̄",
+          "explanation": "This multiplies the value and the mean."
+        },
+        {
+          "answer": "x̄ / xᵢ",
+          "explanation": "This divides the mean by the value."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "Variance is related to standard deviation by:",
+      "correct": "variance = SD²",
+      "correctExplanation": "Variance is the square of the standard deviation.",
+      "distractors": [
+        {
+          "answer": "variance = SD × 2",
+          "explanation": "This doubles SD rather than squaring it."
+        },
+        {
+          "answer": "variance = √SD",
+          "explanation": "This takes the root instead of squaring."
+        },
+        {
+          "answer": "variance = SD / n",
+          "explanation": "This divides SD by n."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "A data set with a large standard deviation has values that are:",
+      "correct": "spread widely from the mean",
+      "correctExplanation": "Large SD indicates high variability and wide spread.",
+      "distractors": [
+        {
+          "answer": "all close to the mean",
+          "explanation": "Close values give a small SD, not large."
+        },
+        {
+          "answer": "all equal to the mean",
+          "explanation": "Equal values give SD = 0."
+        },
+        {
+          "answer": "always positive",
+          "explanation": "SD measures spread, not the sign of values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "The mean of 10, 20, 30, 40, 50 is:",
+      "correct": "30",
+      "correctExplanation": "Sum = 150, n = 5, mean = 150/5 = 30.",
+      "distractors": [
+        {
+          "answer": "25",
+          "explanation": "This is the median of a different set."
+        },
+        {
+          "answer": "50",
+          "explanation": "This is the maximum, not the mean."
+        },
+        {
+          "answer": "150",
+          "explanation": "This is the sum, not the mean."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "Which measure describes the centre of a data set?",
+      "correct": "mean",
+      "correctExplanation": "The mean is a measure of central tendency.",
+      "distractors": [
+        {
+          "answer": "standard d",
+          "explanation": "SD measures spread, not centre."
+        },
+        {
+          "answer": "range",
+          "explanation": "Range measures spread, not centre."
+        },
+        {
+          "answer": "variance",
+          "explanation": "Variance measures spread, not centre."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Before calculating standard deviation, it is necessary to first find the:",
+      "correct": "mean",
+      "correctExplanation": "The mean is needed to calculate deviations from it.",
+      "distractors": [
+        {
+          "answer": "median",
+          "explanation": "The median is not used in SD calculations."
+        },
+        {
+          "answer": "mode",
+          "explanation": "The mode is not part of the SD formula."
+        },
+        {
+          "answer": "range",
+          "explanation": "Range is not needed for SD."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Squaring the deviations before averaging ensures:",
+      "correct": "positive and negative deviations do not",
+      "correctExplanation": "Squaring removes signs, preventing deviations from summing to zero.",
+      "distractors": [
+        {
+          "answer": "the result is always negative",
+          "explanation": "Squaring produces non-negative values."
+        },
+        {
+          "answer": "the mean becomes larger",
+          "explanation": "Squaring deviations does not change the mean."
+        },
+        {
+          "answer": "the data set gets smaller",
+          "explanation": "Squaring is part of SD calculation, not data reduction."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The mean is calculated by {{blank:1}} all values and dividing by the {{blank:2}} of values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "summing",
+          "correctExplanation": "The mean adds all values before dividing.",
+          "distractors": [
+            {
+              "answer": "multiplying",
+              "explanation": "Multiplication is not used in mean calculation.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "subtracting",
+              "explanation": "Subtraction is not the operation for calculating the mean.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "number",
+          "correctExplanation": "The divisor is the total count of values in the data set.",
+          "distractors": [
+            {
+              "answer": "largest",
+              "explanation": "Dividing by the largest value does not give the mean.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "square",
+              "explanation": "The square of the count is not used.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "Standard deviation measures the typical {{blank:1}} of data values from the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "distance",
+          "correctExplanation": "SD quantifies how far values typically are from the central value.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "SD is not the sum of distances.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "product",
+              "explanation": "SD does not involve multiplying distances.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "mean",
+          "correctExplanation": "Deviations are measured from the mean.",
+          "distractors": [
+            {
+              "answer": "median",
+              "explanation": "SD uses the mean, not the median.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "SD uses the mean, not the mode.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "A data set with SD = 2 is more consistent than one with SD = 8.",
+      "correct": "True",
+      "correctExplanation": "A smaller SD indicates values are closer to the mean, meaning greater consistency.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "A data set with smaller SD is more consistent."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Outliers have no effect on the mean or standard deviation.",
+      "correct": "False",
+      "correctExplanation": "Outliers inflate both the mean and the standard deviation.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Outliers significantly affect both measures."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Two data sets with the same mean always have the same standard deviation.",
+      "correct": "False",
+      "correctExplanation": "Data sets can have equal means but different spreads, giving different SDs.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Equal means do not imply equal SDs."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "Multiplying every value in a data set by 2 doubles the standard deviation.",
+      "correct": "True",
+      "correctExplanation": "Scaling all values by a constant k multiplies the SD by |k|.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Scaling by 2 doubles the SD."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "The standard deviation is always larger than the range.",
+      "correct": "False",
+      "correctExplanation": "The SD is typically much smaller than the range because it measures average spread, not total spread.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "SD is almost always smaller than the range."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "When comparing two data sets, the one with a higher mean is always the better performer.",
+      "correct": "False",
+      "correctExplanation": "A higher mean might come with a larger SD, indicating inconsistency; both measures must be considered.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Both mean and SD are needed for meaningful comparison."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "Adding an outlier far above the mean increases the standard deviation.",
+      "correct": "True",
+      "correctExplanation": "The outlier creates a large squared deviation, increasing the overall SD.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "An extreme outlier increases the SD."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Population SD is always larger than sample SD for the same data.",
+      "correct": "False",
+      "correctExplanation": "Population SD divides by n, while sample SD divides by n − 1, making sample SD slightly larger.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Sample SD is slightly larger due to dividing by n − 1."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Data set A has mean 50 and SD 3. Data set B has mean 50 and SD 10. Which is more consistent?",
+      "correct": "Data set A",
+      "correctExplanation": "A has a smaller SD, indicating less variability and greater consistency.",
+      "distractors": [
+        {
+          "answer": "Data set B",
+          "explanation": "B has larger SD, meaning more variability."
+        },
+        {
+          "answer": "They are equally co",
+          "explanation": "Different SDs mean different levels of consistency."
+        },
+        {
+          "answer": "Cannot be determined",
+          "explanation": "SD directly measures consistency."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "The mean of 2, 4, 6, 8, 10 is 6. What is the sum of squared deviations?",
+      "correct": "40",
+      "correctExplanation": "(2−6)² + (4−6)² + (6−6)² + (8−6)² + (10−6)² = 16+4+0+4+16 = 40.",
+      "distractors": [
+        {
+          "answer": "20",
+          "explanation": "This sums absolute deviations instead of squared ones."
+        },
+        {
+          "answer": "8",
+          "explanation": "This uses the average squared deviation (variance)."
+        },
+        {
+          "answer": "0",
+          "explanation": "Squared deviations are always positive; their sum is not zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "For the data set {2, 4, 6, 8, 10}, the population SD is:",
+      "correct": "√8 ≈ 2.83",
+      "correctExplanation": "Variance = 40/5 = 8, SD = √8 ≈ 2.83.",
+      "distractors": [
+        {
+          "answer": "√10 ≈ 3.16",
+          "explanation": "This divides by n−1 (sample SD), not n."
+        },
+        {
+          "answer": "8",
+          "explanation": "This is the variance, not the SD."
+        },
+        {
+          "answer": "40",
+          "explanation": "This is the sum of squared deviations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "Adding 100 to a data set {5, 10, 15, 20, 25} changes the mean to:",
+      "correct": "29.2",
+      "correctExplanation": "New sum = 75 + 100 = 175, n = 6, mean = 175/6 ≈ 29.2.",
+      "distractors": [
+        {
+          "answer": "15",
+          "explanation": "This is the original mean, unchanged."
+        },
+        {
+          "answer": "25",
+          "explanation": "This is the original maximum."
+        },
+        {
+          "answer": "100",
+          "explanation": "This is the added value, not the new mean."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "If every value in a data set is multiplied by 3, the new SD is:",
+      "correct": "3 times the original SD",
+      "correctExplanation": "Scaling by k multiplies SD by |k|.",
+      "distractors": [
+        {
+          "answer": "the same as the original SD",
+          "explanation": "Multiplication changes the spread."
+        },
+        {
+          "answer": "9 times the original SD",
+          "explanation": "This is the effect on variance, not SD."
+        },
+        {
+          "answer": "the original SD plus 3",
+          "explanation": "SD is scaled multiplicatively, not additively."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Why is the mean sensitive to outliers?",
+      "correct": "It uses every data value in its calculation",
+      "correctExplanation": "Each value contributes to the sum, so extreme values pull the mean toward them.",
+      "distractors": [
+        {
+          "answer": "It only uses the middle values",
+          "explanation": "This describes the median, not the mean."
+        },
+        {
+          "answer": "It ignores extreme values",
+          "explanation": "The mean includes all values, including extremes."
+        },
+        {
+          "answer": "It uses the most frequent value",
+          "explanation": "This describes the mode, not the mean."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "A class test has mean 72 and SD 5. A student scoring 82 is how many SDs above the mean?",
+      "correct": "2",
+      "correctExplanation": "(82 − 72)/5 = 10/5 = 2 standard deviations.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "This is the raw difference, not in SD units."
+        },
+        {
+          "answer": "1",
+          "explanation": "82 − 72 = 10, and 10/5 = 2, not 1."
+        },
+        {
+          "answer": "5",
+          "explanation": "This is the SD value itself, not the z-score."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "Two athletes have the same mean score. Athlete A has SD = 1; Athlete B has SD = 5. Which is more reliable?",
+      "correct": "Athlete A",
+      "correctExplanation": "Lower SD means less variability and more consistent performance.",
+      "distractors": [
+        {
+          "answer": "Athlete B",
+          "explanation": "Higher SD means more variability."
+        },
+        {
+          "answer": "Both are equally reliable",
+          "explanation": "Different SDs indicate different reliability."
+        },
+        {
+          "answer": "Neither is reliable",
+          "explanation": "SD provides direct evidence of reliability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "The effect of removing an outlier from a data set is:",
+      "correct": "the SD typically decreases",
+      "correctExplanation": "The extreme squared deviation is removed, reducing overall spread.",
+      "distractors": [
+        {
+          "answer": "the SD always increases",
+          "explanation": "Removing an outlier reduces spread, not increases it."
+        },
+        {
+          "answer": "the SD stays the same",
+          "explanation": "The outlier contributed to the spread."
+        },
+        {
+          "answer": "the mean stays the same",
+          "explanation": "The mean also changes when an outlier is removed."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "For symmetric data without outliers, the best measure of spread is:",
+      "correct": "standard",
+      "correctExplanation": "SD uses all data and is most informative for symmetric distributions.",
+      "distractors": [
+        {
+          "answer": "range",
+          "explanation": "Range uses only two values and is less informative."
+        },
+        {
+          "answer": "IQR",
+          "explanation": "IQR is better for skewed data or data with outliers."
+        },
+        {
+          "answer": "mean",
+          "explanation": "Mean measures centre, not spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "The variance of a data set is 25. The standard deviation is:",
+      "correct": "5",
+      "correctExplanation": "SD = √variance = √25 = 5.",
+      "distractors": [
+        {
+          "answer": "25",
+          "explanation": "This is the variance, not the SD."
+        },
+        {
+          "answer": "625",
+          "explanation": "This squares the variance instead of taking the root."
+        },
+        {
+          "answer": "12.5",
+          "explanation": "This halves the variance."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "When comparing exam results across two schools, reporting only the mean is insufficient because:",
+      "correct": "it ignores how spread out the",
+      "correctExplanation": "The mean alone does not reveal variability; SD is needed for a complete picture.",
+      "distractors": [
+        {
+          "answer": "the mean is always inaccurate",
+          "explanation": "The mean is a valid measure but incomplete alone."
+        },
+        {
+          "answer": "medians are always better",
+          "explanation": "Medians are not always superior to means."
+        },
+        {
+          "answer": "schools never have comparable means",
+          "explanation": "Schools can have similar or identical means."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "A data set with a small SD has values that are {{blank:1}} near the mean, indicating {{blank:2}} performance.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "clustered",
+          "correctExplanation": "Small SD means values are tightly grouped around the mean.",
+          "distractors": [
+            {
+              "answer": "scattered",
+              "explanation": "Scattered values produce a large SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "randomly placed",
+              "explanation": "Random placement produces variable SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "consistent",
+          "correctExplanation": "Clustering near the mean indicates reliability and consistency.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "Variable performance produces large SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unpredictable",
+              "explanation": "Unpredictable results show high variability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "Multiplying every value in a data set by k multiplies the mean by {{blank:1}} and the SD by {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "k",
+          "correctExplanation": "The mean scales linearly with the constant.",
+          "distractors": [
+            {
+              "answer": "k²",
+              "explanation": "The mean scales by k, not k².",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "The mean does change when values are scaled.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "|k|",
+          "correctExplanation": "SD scales by the absolute value of k since SD is non-negative.",
+          "distractors": [
+            {
+              "answer": "k²",
+              "explanation": "This is how variance scales, not SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "SD does not become zero from scaling.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "Adding a constant c to every value in a data set changes the mean to {{blank:1}} but leaves the SD {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x̄ + c",
+          "correctExplanation": "Adding c shifts every value and thus the mean by c.",
+          "distractors": [
+            {
+              "answer": "x̄",
+              "explanation": "The mean does change when a constant is added.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "x̄ × c",
+              "explanation": "The mean shifts additively, not multiplicatively.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "unchanged",
+          "correctExplanation": "Adding a constant shifts all values equally, so the spread remains the same.",
+          "distractors": [
+            {
+              "answer": "doubled",
+              "explanation": "Adding a constant does not change the spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "halved",
+              "explanation": "The SD is not affected by adding a constant.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "The population SD formula uses {{blank:1}} in the denominator, while the sample SD formula uses {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "n",
+          "correctExplanation": "Population SD divides by the total number of values.",
+          "distractors": [
+            {
+              "answer": "n − 1",
+              "explanation": "n − 1 is used for sample SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n + 1",
+              "explanation": "n + 1 is not used in any SD formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "n − 1",
+          "correctExplanation": "Sample SD uses Bessel's correction to reduce bias.",
+          "distractors": [
+            {
+              "answer": "n",
+              "explanation": "n is used for population SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2n",
+              "explanation": "2n is not used in any SD formula.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "Outliers {{blank:1}} the mean and {{blank:2}} the standard deviation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "inflate",
+          "correctExplanation": "Extreme values pull the mean away from the centre of the main data.",
+          "distractors": [
+            {
+              "answer": "reduce",
+              "explanation": "Outliers pull the mean toward the extreme, not toward zero.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "do not affect",
+              "explanation": "Outliers significantly affect the mean.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "inflate",
+          "correctExplanation": "Large deviations from the mean increase the SD.",
+          "distractors": [
+            {
+              "answer": "reduce",
+              "explanation": "Outliers increase spread, not reduce it.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "do not affect",
+              "explanation": "Outliers significantly increase SD.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "To compare two data sets meaningfully, report both the {{blank:1}} (for centre) and the {{blank:2}} (for spread).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "mean",
+          "correctExplanation": "The mean describes the central tendency.",
+          "distractors": [
+            {
+              "answer": "range",
+              "explanation": "Range measures spread, not centre.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "variance",
+              "explanation": "Variance measures spread, not centre.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "standard deviation",
+          "correctExplanation": "SD describes how spread out the data is around the mean.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "Mean measures centre, not spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "Mode measures frequency, not spread.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "The data set {10, 10, 10, 10, 50} has a population SD of 16.",
+      "correct": "True",
+      "correctExplanation": "Mean = 18, deviations: −8,−8,−8,−8,32. Sum of squares = 64+64+64+64+1024=1280. Var=256, SD=16.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The population SD is 16."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "For the data set {5, 10, 15, 20, 25}, the sample SD is √(50/4) = √12.5 ≈ 3.54.",
+      "correct": "False",
+      "correctExplanation": "Mean = 15. Sum of squared deviations = 100+25+0+25+100 = 250. Sample var = 250/4 = 62.5. SD = √62.5 ≈ 7.91.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The sample SD is √62.5 ≈ 7.91, not √12.5."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "The data set {4, 7, 8, 10, 11} has mean 8. The population SD is:",
+      "correct": "√6 ≈ 2.45",
+      "correctExplanation": "Sum of squared deviations = 16+1+0+4+9 = 30. Var = 30/5 = 6. SD = √6.",
+      "distractors": [
+        {
+          "answer": "√7.5 ≈ 2.74",
+          "explanation": "This uses n−1, giving sample SD."
+        },
+        {
+          "answer": "6",
+          "explanation": "This is the variance, not the SD."
+        },
+        {
+          "answer": "30",
+          "explanation": "This is the sum of squared deviations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "Class A has mean 75 and SD 4. Class B has mean 72 and SD 12. Which class performed more consistently?",
+      "correct": "Class A",
+      "correctExplanation": "SD = 4 indicates consistent scores clustered near the mean.",
+      "distractors": [
+        {
+          "answer": "Class B",
+          "explanation": "SD = 12 indicates wide variability."
+        },
+        {
+          "answer": "They are equally c",
+          "explanation": "Different SDs show different consistency levels."
+        },
+        {
+          "answer": "Cannot compare without",
+          "explanation": "Mean and SD are sufficient for comparison."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A data set {3, 5, 7, 9, 11} has mean 7. If 100 is added to the set, the new mean is approximately:",
+      "correct": "22.5",
+      "correctExplanation": "New sum = 35 + 100 = 135, n = 6, mean = 135/6 = 22.5.",
+      "distractors": [
+        {
+          "answer": "7",
+          "explanation": "The mean changes when a new value is added."
+        },
+        {
+          "answer": "107",
+          "explanation": "This adds 100 to the old mean."
+        },
+        {
+          "answer": "17",
+          "explanation": "This is not the correct calculation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "The population SD of {10, 20, 30, 40, 50} is:",
+      "correct": "√200 ≈ 14.14",
+      "correctExplanation": "Mean = 30. Deviations²: 400+100+0+100+400 = 1000. Var = 200. SD = √200.",
+      "distractors": [
+        {
+          "answer": "√250 ≈ 15.81",
+          "explanation": "This uses n−1 (sample SD)."
+        },
+        {
+          "answer": "200",
+          "explanation": "This is the variance, not SD."
+        },
+        {
+          "answer": "1000",
+          "explanation": "This is the sum of squared deviations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "Data set X: mean 60, SD 2. Data set Y: mean 55, SD 8. A manager wanting reliable performance chooses:",
+      "correct": "Data set X",
+      "correctExplanation": "Higher mean and lower SD indicate better and more consistent performance.",
+      "distractors": [
+        {
+          "answer": "Data set Y",
+          "explanation": "Lower mean and higher SD indicate worse and less consistent performance."
+        },
+        {
+          "answer": "Either set, since both",
+          "explanation": "The means differ by 5, and the SDs differ by 6."
+        },
+        {
+          "answer": "Neither, since SD is",
+          "explanation": "SD is directly relevant to reliability."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "A student's test scores are 80, 82, 78, 81, 79. The mean is 80. The population SD is:",
+      "correct": "√2 ≈ 1.41",
+      "correctExplanation": "Deviations²: 0+4+4+1+1=10. Var = 10/5 = 2. SD = √2.",
+      "distractors": [
+        {
+          "answer": "√2.5 ≈ 1.58",
+          "explanation": "This uses sample SD with n−1."
+        },
+        {
+          "answer": "2",
+          "explanation": "This is the variance, not SD."
+        },
+        {
+          "answer": "10",
+          "explanation": "This is the sum of squared deviations."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "The data set {1, 2, 3, 4, 5} is transformed to {2, 4, 6, 8, 10}. The SD of the new set is:",
+      "correct": "twice the original SD",
+      "correctExplanation": "Each value is multiplied by 2, so SD doubles.",
+      "distractors": [
+        {
+          "answer": "the same as the original",
+          "explanation": "Multiplication changes the spread."
+        },
+        {
+          "answer": "four times the original",
+          "explanation": "This is how variance changes, not SD."
+        },
+        {
+          "answer": "half the original SD",
+          "explanation": "Multiplication by 2 doubles, not halves."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "For {2, 2, 2, 2, 2, 100}, the mean is 18.3 and the SD is high. The best summary measure would be:",
+      "correct": "median and IQR",
+      "correctExplanation": "The outlier 100 makes mean and SD misleading; median and IQR resist outliers.",
+      "distractors": [
+        {
+          "answer": "mean and SD",
+          "explanation": "The outlier inflates both mean and SD."
+        },
+        {
+          "answer": "mode only",
+          "explanation": "Mode (2) ignores the outlier but lacks spread info."
+        },
+        {
+          "answer": "range only",
+          "explanation": "Range (98) is even more inflated by the outlier."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "The SD of {5, 5, 5, 5} is 0. Adding the value 15 changes the SD to approximately:",
+      "correct": "4",
+      "correctExplanation": "New mean = 7. Deviations²: 4+4+4+4+64 = 80. Var = 16. SD = 4.",
+      "distractors": [
+        {
+          "answer": "0",
+          "explanation": "Adding a different value introduces spread."
+        },
+        {
+          "answer": "10",
+          "explanation": "This is the difference 15−5, not the SD."
+        },
+        {
+          "answer": "2",
+          "explanation": "This underestimates the spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "A data set is transformed by subtracting 10 from every value. The effect on mean and SD is:",
+      "correct": "mean decreases by 10; SD stays the same",
+      "correctExplanation": "Subtracting a constant shifts the mean but does not change the spread.",
+      "distractors": [
+        {
+          "answer": "both decrease by 10",
+          "explanation": "SD is unaffected by adding or subtracting constants."
+        },
+        {
+          "answer": "mean stays the same; SD decreases by 10",
+          "explanation": "The mean shifts; SD does not change."
+        },
+        {
+          "answer": "both stay the same",
+          "explanation": "The mean does shift by the constant."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "Factory A produces bolts with mean length 50 mm and SD 0.2 mm. Factory B has mean 50 mm and SD 1.5 mm. Which has tighter quality control?",
+      "correct": "Factory A",
+      "correctExplanation": "SD 0.2 indicates bolts are very close to the target, showing tight control.",
+      "distractors": [
+        {
+          "answer": "Factory B",
+          "explanation": "SD 1.5 indicates more variability."
+        },
+        {
+          "answer": "Both are equally precise",
+          "explanation": "Different SDs show different precision levels."
+        },
+        {
+          "answer": "Neither meets qualit",
+          "explanation": "SD alone does not indicate whether standards are met."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "The data set {20, 20, 20, 20, 20} has SD 0. Replacing one 20 with 30 changes the SD to approximately:",
+      "correct": "√16",
+      "correctExplanation": "New mean = 22. Deviations²: 4+4+4+4+64 = 80. Var = 80/5 = 16. SD = 4.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "This is the change in the replaced value."
+        },
+        {
+          "answer": "2",
+          "explanation": "This underestimates the effect."
+        },
+        {
+          "answer": "0",
+          "explanation": "The set is no longer uniform."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "For the data set {6, 8, 10, 12, 14}, the mean is {{blank:1}} and the population SD is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "10",
+          "correctExplanation": "Sum = 50, n = 5, mean = 10.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This is not the mean of the set.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "50",
+              "explanation": "This is the sum, not the mean.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√8 ≈ 2.83",
+          "correctExplanation": "Deviations²: 16+4+0+4+16 = 40. Var = 8. SD = √8.",
+          "distractors": [
+            {
+              "answer": "√10 ≈ 3.16",
+              "explanation": "This uses n−1 (sample SD).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "8",
+              "explanation": "This is the variance, not SD.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Data set A has mean 40 and SD 3. Data set B has mean 38 and SD 9. Set A is more {{blank:1}} because its SD is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "consistent",
+          "correctExplanation": "Lower SD means less variability and more consistency.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "Lower SD indicates less variability.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "central",
+              "explanation": "Consistency relates to spread, not the position of the mean.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "smaller",
+          "correctExplanation": "SD 3 < SD 9, so Set A has less spread.",
+          "distractors": [
+            {
+              "answer": "larger",
+              "explanation": "Set A has the smaller SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal",
+              "explanation": "The SDs are 3 and 9, which are not equal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "The data set {100, 100, 100, 100, 200} has mean {{blank:1}} and the outlier 200 inflates the SD to approximately {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "120",
+          "correctExplanation": "Sum = 600, n = 5, mean = 120.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "This ignores the outlier's effect on the mean.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "200",
+              "explanation": "This is the outlier, not the mean.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "40",
+          "correctExplanation": "Deviations²: 400+400+400+400+6400 = 8000. Var = 1600. SD = 40.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "This underestimates the spread.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "80",
+              "explanation": "This overestimates the spread.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Adding 5 to every value in a data set changes the mean from 20 to {{blank:1}} and leaves the SD {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "25",
+          "correctExplanation": "Adding 5 shifts the mean by 5: 20 + 5 = 25.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "The mean does change when a constant is added.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "100",
+              "explanation": "This multiplies rather than adds.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "unchanged",
+          "correctExplanation": "Adding a constant does not affect the spread.",
+          "distractors": [
+            {
+              "answer": "increased by 5",
+              "explanation": "SD does not change when a constant is added.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "doubled",
+              "explanation": "Adding a constant has no effect on SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "For {3, 3, 3, 3, 3}, the SD is {{blank:1}}. After multiplying every value by 4, the new SD is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "All values are identical, so there is no spread.",
+          "distractors": [
+            {
+              "answer": "3",
+              "explanation": "The SD is zero for identical values.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "1",
+              "explanation": "The SD is zero, not one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "All values become 12, still identical, so SD remains zero.",
+          "distractors": [
+            {
+              "answer": "12",
+              "explanation": "This is the new value, not the SD.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "4",
+              "explanation": "Multiplying zero by 4 gives zero.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "A class with mean 65 and SD 10 has more {{blank:1}} scores than a class with mean 65 and SD 3, which has more {{blank:2}} scores.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "variable",
+          "correctExplanation": "SD 10 indicates wide spread and high variability.",
+          "distractors": [
+            {
+              "answer": "consistent",
+              "explanation": "SD 10 is large, indicating variability, not consistency.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "central",
+              "explanation": "Centrality relates to the mean, not the SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "consistent",
+          "correctExplanation": "SD 3 indicates tight clustering near the mean.",
+          "distractors": [
+            {
+              "answer": "variable",
+              "explanation": "SD 3 is small, indicating consistency.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "extreme",
+              "explanation": "Small SD means fewer extreme values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "The sample SD of {1, 3, 5, 7, 9} uses n − 1 = {{blank:1}} in the denominator, giving SD = {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "n = 5 values, so n − 1 = 4.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "This is n, not n − 1.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "3",
+              "explanation": "n − 1 = 4, not 3.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√10 ≈ 3.16",
+          "correctExplanation": "Mean = 5. Sum of squared deviations = 40. Sample var = 40/4 = 10. SD = √10.",
+          "distractors": [
+            {
+              "answer": "√8 = 2.83",
+              "explanation": "This uses n = 5 (population SD).",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "10",
+              "explanation": "This is the variance, not SD.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "For skewed data with outliers, the {{blank:1}} is a better measure of centre than the mean, and the {{blank:2}} is better than SD for spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "median",
+          "correctExplanation": "The median resists outliers because it uses positional ranking.",
+          "distractors": [
+            {
+              "answer": "mode",
+              "explanation": "Mode measures frequency, not central tendency in a robust way.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "range",
+              "explanation": "Range measures spread, not centre.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "IQR",
+          "correctExplanation": "IQR measures the middle 50% and is resistant to outliers.",
+          "distractors": [
+            {
+              "answer": "range",
+              "explanation": "Range is inflated by outliers.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "variance",
+              "explanation": "Variance is even more sensitive to outliers than SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "Team A scores: {50, 52, 48, 51, 49}. Mean = {{blank:1}}, SD ≈ {{blank:2}}, showing high consistency.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "Sum = 250, n = 5, mean = 50.",
+          "distractors": [
+            {
+              "answer": "51",
+              "explanation": "The mean is 50, not 51.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "49",
+              "explanation": "The mean is 50, not 49.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1.41",
+          "correctExplanation": "Deviations²: 0+4+4+1+1 = 10. Var = 2. SD = √2 ≈ 1.41.",
+          "distractors": [
+            {
+              "answer": "10",
+              "explanation": "This is the sum of squared deviations.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "2",
+              "explanation": "This is the variance, not SD.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Removing an outlier from a data set typically {{blank:1}} the mean toward the main cluster and {{blank:2}} the SD.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "shifts",
+          "correctExplanation": "The mean moves toward the remaining values when the outlier is removed.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "The mean may increase or decrease depending on the outlier's position.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "freezes",
+              "explanation": "The mean always changes when a value is removed.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "decreases",
+          "correctExplanation": "Removing the extreme value reduces the overall spread.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "Removing an outlier reduces spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "has no effect on",
+              "explanation": "The outlier's removal does affect SD.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "Data set {2, 4, 6, 8, 10} is multiplied by 3 to give {6, 12, 18, 24, 30}. The new mean is {{blank:1}} and the new SD is {{blank:2}} times the original.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "18",
+          "correctExplanation": "Original mean = 6, multiplied by 3 gives 18.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "The mean changes when values are scaled.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "90",
+              "explanation": "This is the sum, not the mean.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "3",
+          "correctExplanation": "Scaling by 3 multiplies SD by 3.",
+          "distractors": [
+            {
+              "answer": "9",
+              "explanation": "This is how variance scales, not SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "1",
+              "explanation": "SD does change when values are multiplied.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "The variance of {1, 5, 9} is {{blank:1}} and the population SD is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "32/3 ≈ 10.67",
+          "correctExplanation": "Mean = 5. Deviations²: 16+0+16 = 32. Var = 32/3.",
+          "distractors": [
+            {
+              "answer": "16",
+              "explanation": "This uses only one squared deviation.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "32",
+              "explanation": "This is the sum of squared deviations, not variance.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√(32/3) ≈ 3.27",
+          "correctExplanation": "SD = √variance = √(32/3).",
+          "distractors": [
+            {
+              "answer": "32/3 ≈ 10.67",
+              "explanation": "This is the variance, not SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "4",
+              "explanation": "This is the deviation of one value, not the SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A researcher replaces one value in a data set of 100 values with an extreme outlier. The SD will:",
+      "correct": "increase slightly for moderate outlie",
+      "correctExplanation": "The squared deviation of the outlier contributes to the sum, with impact proportional to its distance from the mean.",
+      "distractors": [
+        {
+          "answer": "always double",
+          "explanation": "The SD increase depends on the outlier's magnitude."
+        },
+        {
+          "answer": "remain unchanged since n is large",
+          "explanation": "Even with large n, extreme outliers affect SD."
+        },
+        {
+          "answer": "decrease due to the new value",
+          "explanation": "Adding an extreme value increases, not decreases, SD."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Data set A: {50, 50, 50, 50, 50}. Data set B: {10, 30, 50, 70, 90}. Both have mean 50. The ratio of their SDs (B to A) is:",
+      "correct": "undefined",
+      "correctExplanation": "Set A has SD = 0, so the ratio involves division by zero.",
+      "distractors": [
+        {
+          "answer": "1",
+          "explanation": "The SDs are not equal."
+        },
+        {
+          "answer": "5",
+          "explanation": "Set A's SD is zero, making the ratio undefined."
+        },
+        {
+          "answer": "infinity",
+          "explanation": "While the ratio approaches infinity, it is technically undefined."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A data set has mean 100 and SD 15. After removing the single highest value, the mean drops to 98. This suggests the removed value was:",
+      "correct": "substantially above the o",
+      "correctExplanation": "A value well above 100 would pull the mean down when removed.",
+      "distractors": [
+        {
+          "answer": "close to 100",
+          "explanation": "Removing a value near the mean would barely change it."
+        },
+        {
+          "answer": "below the mean",
+          "explanation": "Removing a below-mean value would increase the mean."
+        },
+        {
+          "answer": "exactly equal to the mean",
+          "explanation": "Removing a mean-equal value shifts the mean minimally."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "Two factories produce nails. Factory X: mean 50 mm, SD 0.5. Factory Y: mean 50 mm, SD 2.0. The coefficient of variation (CV = SD/mean) for X is:",
+      "correct": "1%",
+      "correctExplanation": "CV = 0.5/50 = 0.01 = 1%.",
+      "distractors": [
+        {
+          "answer": "4%",
+          "explanation": "This is Factory Y's CV (2/50 = 4%)."
+        },
+        {
+          "answer": "50%",
+          "explanation": "This would require SD = 25."
+        },
+        {
+          "answer": "0.5%",
+          "explanation": "0.5/50 = 0.01 = 1%, not 0.5%."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "A data set is split into two halves. Each half has mean 40 and SD 5. The combined set has mean 40 and SD:",
+      "correct": "5",
+      "correctExplanation": "When both halves have identical means and SDs, the combined SD equals the individual SD.",
+      "distractors": [
+        {
+          "answer": "10",
+          "explanation": "SDs do not add when combining equal groups."
+        },
+        {
+          "answer": "2.5",
+          "explanation": "SDs do not halve when combining groups."
+        },
+        {
+          "answer": "√50",
+          "explanation": "This adds variances incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A distribution has mean 70 and SD 10. Using the empirical rule, approximately 68% of values fall between:",
+      "correct": "60 and 80",
+      "correctExplanation": "68% fall within ±1 SD of the mean: 70 ± 10.",
+      "distractors": [
+        {
+          "answer": "50 and 90",
+          "explanation": "This is ±2 SDs (about 95%)."
+        },
+        {
+          "answer": "40 and 100",
+          "explanation": "This is ±3 SDs (about 99.7%)."
+        },
+        {
+          "answer": "65 and 75",
+          "explanation": "This is only ±0.5 SDs."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A researcher claims SD = 0 means all values are identical. This claim is:",
+      "correct": "correct",
+      "correctExplanation": "SD = 0 implies every deviation from the mean is zero, so all values equal the mean.",
+      "distractors": [
+        {
+          "answer": "incorrect; SD = 0 is impossible",
+          "explanation": "SD = 0 occurs when all values are identical."
+        },
+        {
+          "answer": "only true for n > 10",
+          "explanation": "The relationship holds for any sample size."
+        },
+        {
+          "answer": "true only for population SD,",
+          "explanation": "Both population and sample SD are zero when all values are identical."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "A negatively skewed distribution has most values clustered at the high end with a long left tail. In this case:",
+      "correct": "mean < median",
+      "correctExplanation": "The left tail pulls the mean below the median.",
+      "distractors": [
+        {
+          "answer": "mean > median",
+          "explanation": "This describes positive skew, not negative skew."
+        },
+        {
+          "answer": "mean = median",
+          "explanation": "This occurs for symmetric distributions."
+        },
+        {
+          "answer": "SD = 0",
+          "explanation": "Skewed distributions have non-zero SD."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Data set {1, 2, 3, ..., 100} has mean 50.5. Removing the value 100 changes the mean to approximately:",
+      "correct": "49.5",
+      "correctExplanation": "New sum = 5050 − 100 = 4950, n = 99, mean = 4950/99 = 50.",
+      "distractors": [
+        {
+          "answer": "50.5",
+          "explanation": "The mean changes when a value is removed."
+        },
+        {
+          "answer": "51",
+          "explanation": "The mean decreases, not increases, when the highest value is removed."
+        },
+        {
+          "answer": "1",
+          "explanation": "This is the minimum, not the new mean."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "Two athletes train for 20 weeks. Their weekly distances (km) have means A: 42, B: 40 and SDs A: 8, B: 2. For a team relay requiring consistent runners:",
+      "correct": "Athlete B is the better choice",
+      "correctExplanation": "Despite a lower mean, B's SD of 2 shows far more consistent training.",
+      "distractors": [
+        {
+          "answer": "Athlete A is the better choice",
+          "explanation": "A's high SD = 8 indicates unreliable weekly distances."
+        },
+        {
+          "answer": "Both are equally suitable",
+          "explanation": "The large SD difference makes B clearly more consistent."
+        },
+        {
+          "answer": "Neither is suitable",
+          "explanation": "Both athletes train meaningful distances."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "The SD of {a, a, a, b, b, b} where a < b can be simplified to:",
+      "correct": "½(b − a)√",
+      "correctExplanation": "With equal counts, the deviation is ±(b−a)/2, giving a clean expression.",
+      "distractors": [
+        {
+          "answer": "b − a",
+          "explanation": "This is the range, not the SD."
+        },
+        {
+          "answer": "0",
+          "explanation": "The values differ, so SD is not zero."
+        },
+        {
+          "answer": "(a + b)/2",
+          "explanation": "This is the mean, not the SD."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "A Likert scale survey (1–5) has mean 3.2 and SD 1.1. A researcher adds 2 to all responses (new scale 3–7). The new mean and SD are:",
+      "correct": "5.2 and 1.1",
+      "correctExplanation": "Adding 2 shifts the mean by 2 but leaves SD unchanged.",
+      "distractors": [
+        {
+          "answer": "5.2 and 3.1",
+          "explanation": "SD does not increase when a constant is added."
+        },
+        {
+          "answer": "3.2 and 1.1",
+          "explanation": "The mean shifts when values are changed."
+        },
+        {
+          "answer": "5.2 and 2.2",
+          "explanation": "SD doubles only when values are multiplied by 2."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "Combining two groups (n₁ = n₂ = 50) with means 60 and 80, each with SD 10, gives a combined SD:",
+      "correct": "greater than 10",
+      "correctExplanation": "The between-group variation (means differ by 20) adds to the within-group variation.",
+      "distractors": [
+        {
+          "answer": "exactly 10",
+          "explanation": "The differing means contribute additional variability."
+        },
+        {
+          "answer": "exactly 20",
+          "explanation": "The combined SD is not simply the sum of mean differences."
+        },
+        {
+          "answer": "less than 10",
+          "explanation": "The combined SD cannot be less than the individual SDs when means differ."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "A z-score of −2.5 for a student's mark in a test with mean 70 and SD 4 means the mark is:",
+      "correct": "60",
+      "correctExplanation": "z = (x − μ)/σ → x = μ + zσ = 70 + (−2.5)(4) = 60.",
+      "distractors": [
+        {
+          "answer": "80",
+          "explanation": "This uses z = +2.5 instead of −2.5."
+        },
+        {
+          "answer": "67.5",
+          "explanation": "This subtracts 2.5 from the mean instead of 2.5 × SD."
+        },
+        {
+          "answer": "65",
+          "explanation": "This subtracts 5 instead of 10."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The coefficient of variation (CV) is calculated as {{blank:1}} ÷ {{blank:2}} × 100%, allowing comparison of spread across data sets with different units.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "SD",
+          "correctExplanation": "CV uses SD as the numerator.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "The mean is the denominator, not numerator.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "variance",
+              "explanation": "Variance is SD², not what CV uses.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "mean",
+          "correctExplanation": "CV divides SD by the mean to standardise the spread.",
+          "distractors": [
+            {
+              "answer": "SD",
+              "explanation": "SD is the numerator, not denominator.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "The number of values is not part of CV.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "The z-score formula z = (x − {{blank:1}}) ÷ {{blank:2}} measures how many standard deviations a value is from the mean.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "x̄",
+          "correctExplanation": "The z-score subtracts the mean from the value.",
+          "distractors": [
+            {
+              "answer": "σ",
+              "explanation": "The SD is the divisor, not what is subtracted.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "The sample size is not part of the z-score numerator.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "σ",
+          "correctExplanation": "Dividing by SD standardises the distance.",
+          "distractors": [
+            {
+              "answer": "x̄",
+              "explanation": "The mean is subtracted, not divided.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "n",
+              "explanation": "The sample size is not the divisor in z-scores.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "When combining two data sets with different means, the combined SD is {{blank:1}} than the individual SDs because the {{blank:2}} adds extra variability.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "greater",
+          "correctExplanation": "The difference between group means contributes additional spread.",
+          "distractors": [
+            {
+              "answer": "less",
+              "explanation": "The combined SD cannot decrease when means differ.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal to or less",
+              "explanation": "Differing means always increase the combined SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "difference between group means",
+          "correctExplanation": "Between-group variation inflates the combined SD.",
+          "distractors": [
+            {
+              "answer": "combined sample size",
+              "explanation": "Sample size does not add variability.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "average of the SDs",
+              "explanation": "Averaging SDs does not describe the additional variability.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "The empirical rule states that for a normal distribution, approximately {{blank:1}}% of data falls within 1 SD and {{blank:2}}% within 2 SDs of the mean.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "68",
+          "correctExplanation": "About 68% of data falls within ±1 SD of the mean.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "50% is the median split, not the ±1 SD range.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "95",
+              "explanation": "95% is within ±2 SDs.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "95",
+          "correctExplanation": "About 95% of data falls within ±2 SDs of the mean.",
+          "distractors": [
+            {
+              "answer": "68",
+              "explanation": "68% is within ±1 SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "99.7",
+              "explanation": "99.7% is within ±3 SDs.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "For negatively skewed data, the mean is pulled {{blank:1}} by the tail, so the median is a {{blank:2}} measure of centre.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "lower",
+          "correctExplanation": "The long left tail pulls the mean below the median.",
+          "distractors": [
+            {
+              "answer": "higher",
+              "explanation": "A left tail pulls the mean lower, not higher.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "to zero",
+              "explanation": "The mean is not pulled to zero by skew.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "better",
+          "correctExplanation": "The median resists the influence of the skewed tail.",
+          "distractors": [
+            {
+              "answer": "worse",
+              "explanation": "The median is more representative for skewed data.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "identical",
+              "explanation": "Mean and median differ in skewed distributions.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "A factory's bolt lengths have mean 50 mm and SD 0.3 mm. The CV is {{blank:1}}%, indicating {{blank:2}} relative variability.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0.6",
+          "correctExplanation": "CV = 0.3/50 × 100 = 0.6%.",
+          "distractors": [
+            {
+              "answer": "6",
+              "explanation": "This is 10 times the correct value.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "30",
+              "explanation": "This is the SD percentage, not CV.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "low",
+          "correctExplanation": "0.6% CV indicates very consistent production.",
+          "distractors": [
+            {
+              "answer": "high",
+              "explanation": "0.6% is a very low CV.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "moderate",
+              "explanation": "0.6% is low, not moderate.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "Removing an outlier from a data set shifts the mean {{blank:1}} the main cluster and {{blank:2}} the SD.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "toward",
+          "correctExplanation": "The mean moves toward the remaining values when the extreme is removed.",
+          "distractors": [
+            {
+              "answer": "away from",
+              "explanation": "Removing an outlier pulls the mean toward, not away from, the cluster.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "parallel to",
+              "explanation": "Parallel is not meaningful in this context.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "decreases",
+          "correctExplanation": "The extreme squared deviation is removed, reducing the spread.",
+          "distractors": [
+            {
+              "answer": "increases",
+              "explanation": "Removing an outlier reduces, not increases, SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "does not affect",
+              "explanation": "Removing an outlier does change the SD.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "A z-score of +1.5 means a value is {{blank:1}} standard deviations {{blank:2}} the mean.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.5",
+          "correctExplanation": "The z-score directly states the number of SDs.",
+          "distractors": [
+            {
+              "answer": "0.15",
+              "explanation": "This misreads the z-score scale.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "15",
+              "explanation": "This is 10 times the z-score.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "above",
+          "correctExplanation": "A positive z-score indicates the value is above the mean.",
+          "distractors": [
+            {
+              "answer": "below",
+              "explanation": "Negative z-scores indicate below the mean.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal to",
+              "explanation": "A z-score of 0 indicates equal to the mean.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "When all values are multiplied by k, the variance changes by a factor of {{blank:1}} and the SD changes by a factor of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "k²",
+          "correctExplanation": "Variance scales by the square of the constant.",
+          "distractors": [
+            {
+              "answer": "k",
+              "explanation": "This is how SD scales, not variance.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "2k",
+              "explanation": "Variance scales by k², not 2k.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "|k|",
+          "correctExplanation": "SD scales by the absolute value of the constant.",
+          "distractors": [
+            {
+              "answer": "k²",
+              "explanation": "This is how variance scales, not SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "k/2",
+              "explanation": "SD scales by |k|, not k/2.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "Data set {1, 1, 1, 1, 100} has mean 20.8. The large SD is caused by the value {{blank:1}}, which has a squared deviation of {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "100",
+          "correctExplanation": "100 is the extreme outlier pulling the mean and inflating SD.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "The value 1 is close to many other values.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "20.8",
+              "explanation": "This is the mean, not a data value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "(100 − 20.8)² = 6272.64",
+          "correctExplanation": "The squared deviation of 100 from 20.8 is 79.2² ≈ 6272.6.",
+          "distractors": [
+            {
+              "answer": "100² = 10000",
+              "explanation": "This squares the value itself, not its deviation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "79.2",
+              "explanation": "This is the deviation, not the squared deviation.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "Comparing athlete performances across different sports requires {{blank:1}} rather than raw SD, because the sports have different {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "coefficient of variation",
+          "correctExplanation": "CV standardises SD relative to the mean, enabling cross-sport comparison.",
+          "distractors": [
+            {
+              "answer": "raw SD values",
+              "explanation": "Raw SD cannot compare across different scales.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "variance",
+              "explanation": "Variance has squared units and is not directly comparable.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "scales and means",
+          "correctExplanation": "Different sports produce results on different scales (e.g. seconds vs metres).",
+          "distractors": [
+            {
+              "answer": "sample sizes",
+              "explanation": "Sample size does not necessitate CV usage.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "rules",
+              "explanation": "Different rules do not directly affect the choice of spread measure.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "For symmetric distributions, approximately {{blank:1}}% of data falls within 3 SDs of the mean, and values beyond this range are considered {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "99.7",
+          "correctExplanation": "The empirical rule states 99.7% of data falls within ±3 SDs.",
+          "distractors": [
+            {
+              "answer": "95",
+              "explanation": "95% is within ±2 SDs.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "68",
+              "explanation": "68% is within ±1 SD.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "outliers",
+          "correctExplanation": "Values beyond ±3 SDs are statistically rare and often classified as outliers.",
+          "distractors": [
+            {
+              "answer": "typical",
+              "explanation": "Values beyond 3 SDs are extremely rare, not typical.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "average",
+              "explanation": "Values beyond 3 SDs are far from average.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}

@@ -1,0 +1,2824 @@
+{
+  "_meta": {
+    "code": "VC2M10AST02",
+    "level": 10,
+    "area": "Mathematics",
+    "ageBand": "15-16",
+    "keyKnowledge": "We are learning about different measures of spread and how useful each one is for different distributions.",
+    "generatedAt": "2026-05-24T00:00:00Z",
+    "specVersions": {
+      "mcq_rules": "1.0",
+      "tf_rules": "1.0",
+      "cloze_spec": "2.1",
+      "addendum": "1.2"
+    }
+  },
+  "_source": {
+    "w": "We are learning about different measures of spread and how useful each one is for different distributions.",
+    "y": [
+      "Different measures of spread (range, IQR, standard deviation) are suited to different situations — choosing wisely is a key statistical skill.",
+      "Understanding the strengths and limitations of each measure prevents misleading conclusions.",
+      "This knowledge is essential for interpreting research data, financial reports and quality control statistics."
+    ],
+    "eg": [
+      "Comparing range (sensitive to outliers) with IQR (resistant to outliers) for a dataset with extreme values.",
+      "Explaining why standard deviation is preferred for approximately normal distributions.",
+      "Choosing IQR and median to describe a heavily skewed distribution.",
+      "Calculating and comparing all three measures of spread for a given dataset.",
+      "Discussing: 'A report uses range to describe salary spread, but IQR would be more informative. Why?'",
+      "Using measures of spread to compare the consistency of two manufacturing processes."
+    ]
+  },
+  "toLevel2": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 2,
+      "question": "The range is calculated as the maximum value minus the minimum value.",
+      "correct": "False",
+      "correctExplanation": "Range is not max − min.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Range = max − min, giving the total spread of the data."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 2,
+      "question": "The IQR uses all data values in its calculation.",
+      "correct": "False",
+      "correctExplanation": "The IQR uses only Q1 and Q3 (the 25th and 75th percentiles), ignoring extreme values.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "IQR uses only Q1 and Q3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 2,
+      "question": "Standard deviation is resistant to outliers.",
+      "correct": "False",
+      "correctExplanation": "SD uses all data values including outliers, making it sensitive to extreme values.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "SD is sensitive to outliers."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 2,
+      "question": "The IQR measures the spread of the middle 50% of data.",
+      "correct": "True",
+      "correctExplanation": "IQR = Q3 − Q1, capturing the range of the central half of the data set.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "IQR does not measure the middle 50%."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 2,
+      "question": "Range is the most informative measure of spread because it uses all data values.",
+      "correct": "False",
+      "correctExplanation": "Range uses only the two extreme values and ignores the distribution of all other data points.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Range uses only max and min, not all values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 2,
+      "question": "The IQR is resistant to outliers.",
+      "correct": "True",
+      "correctExplanation": "Because IQR uses only Q1 and Q3, extreme values do not affect it.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "IQR is not resistant to outliers."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 2,
+      "question": "Standard deviation uses every data value in its calculation.",
+      "correct": "True",
+      "correctExplanation": "SD is calculated from the deviations of all data values from the mean.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "SD does not use every value."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 2,
+      "question": "The range and IQR always give the same value for a data set.",
+      "correct": "False",
+      "correctExplanation": "The range spans the entire data set while the IQR spans only the middle 50%, so they differ.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Range and IQR measure different aspects of spread."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 9,
+      "bloomsLevel": 2,
+      "question": "For symmetric data without outliers, standard deviation is the preferred measure of spread.",
+      "correct": "True",
+      "correctExplanation": "SD uses all data effectively when the distribution is symmetric and free of extreme values.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "SD is not preferred for symmetric data."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 10,
+      "bloomsLevel": 2,
+      "question": "The IQR is calculated as Q1 minus Q3.",
+      "correct": "False",
+      "correctExplanation": "IQR = Q3 − Q1, not Q1 − Q3, to give a positive value.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "IQR is Q3 − Q1, not Q1 − Q3."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 11,
+      "bloomsLevel": 2,
+      "question": "A data set with a large range necessarily has a large standard deviation.",
+      "correct": "False",
+      "correctExplanation": "A large range can result from a single outlier while most values are clustered, giving a small SD.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Range and SD can behave differently."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 12,
+      "bloomsLevel": 2,
+      "question": "The range is the simplest measure of spread to calculate.",
+      "correct": "True",
+      "correctExplanation": "Range requires only subtracting the minimum from the maximum.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Range is not the simplest measure."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 2,
+      "question": "The range of {3, 7, 12, 15, 20} is:",
+      "correct": "17",
+      "correctExplanation": "Range = 20 − 3 = 17.",
+      "distractors": [
+        {
+          "answer": "20",
+          "explanation": "This is the maximum value, not the range."
+        },
+        {
+          "answer": "3",
+          "explanation": "This is the minimum value, not the range."
+        },
+        {
+          "answer": "12",
+          "explanation": "This is the median, not the range."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 2,
+      "question": "IQR stands for:",
+      "correct": "interquartile range",
+      "correctExplanation": "IQR is the difference between the third and first quartiles.",
+      "distractors": [
+        {
+          "answer": "inter-quintile range",
+          "explanation": "Quintiles divide data into fifths, not quarters."
+        },
+        {
+          "answer": "internal quality ratio",
+          "explanation": "This is not a statistical term."
+        },
+        {
+          "answer": "interquartile ratio",
+          "explanation": "IQR is a range (difference), not a ratio."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 2,
+      "question": "Which measure of spread uses only the maximum and minimum values?",
+      "correct": "range",
+      "correctExplanation": "Range = max − min, using only the two extreme values.",
+      "distractors": [
+        {
+          "answer": "IQR",
+          "explanation": "IQR uses Q1 and Q3, not max and min."
+        },
+        {
+          "answer": "standard ",
+          "explanation": "SD uses all values and the mean."
+        },
+        {
+          "answer": "variance",
+          "explanation": "Variance uses all values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 2,
+      "question": "The IQR of a data set is Q3 − Q1. If Q1 = 12 and Q3 = 28, the IQR is:",
+      "correct": "16",
+      "correctExplanation": "IQR = 28 − 12 = 16.",
+      "distractors": [
+        {
+          "answer": "40",
+          "explanation": "This adds Q1 and Q3 instead of subtracting."
+        },
+        {
+          "answer": "20",
+          "explanation": "This is neither Q1, Q3, nor their difference."
+        },
+        {
+          "answer": "28",
+          "explanation": "This is Q3, not the IQR."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 2,
+      "question": "Which measure of spread is most affected by outliers?",
+      "correct": "range",
+      "correctExplanation": "Range uses extreme values directly, so one outlier drastically changes it.",
+      "distractors": [
+        {
+          "answer": "IQR",
+          "explanation": "IQR ignores extreme values."
+        },
+        {
+          "answer": "median",
+          "explanation": "Median measures centre, not spread."
+        },
+        {
+          "answer": "mode",
+          "explanation": "Mode measures frequency, not spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 2,
+      "question": "Standard deviation is best described as:",
+      "correct": "the typical distance of values from the mean",
+      "correctExplanation": "SD measures average deviation from the mean.",
+      "distractors": [
+        {
+          "answer": "the difference between max and min",
+          "explanation": "This describes the range."
+        },
+        {
+          "answer": "the middle value of the data set",
+          "explanation": "This describes the median."
+        },
+        {
+          "answer": "the spread of the middle 50%",
+          "explanation": "This describes the IQR."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 2,
+      "question": "For skewed data with outliers, the best measure of spread is:",
+      "correct": "IQR",
+      "correctExplanation": "IQR resists outliers and focuses on the central data.",
+      "distractors": [
+        {
+          "answer": "range",
+          "explanation": "Range is heavily distorted by outliers."
+        },
+        {
+          "answer": "standard",
+          "explanation": "SD is inflated by outliers in skewed data."
+        },
+        {
+          "answer": "mean",
+          "explanation": "Mean measures centre, not spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 2,
+      "question": "Which measure of spread uses the mean in its calculation?",
+      "correct": "standard",
+      "correctExplanation": "SD calculates deviations from the mean.",
+      "distractors": [
+        {
+          "answer": "range",
+          "explanation": "Range uses max and min, not the mean."
+        },
+        {
+          "answer": "IQR",
+          "explanation": "IQR uses Q1 and Q3, not the mean."
+        },
+        {
+          "answer": "mode",
+          "explanation": "Mode measures frequency, not spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 21,
+      "bloomsLevel": 2,
+      "question": "The IQR is calculated from:",
+      "correct": "the first and third quartiles",
+      "correctExplanation": "IQR = Q3 − Q1.",
+      "distractors": [
+        {
+          "answer": "the mean and median",
+          "explanation": "Mean and median are measures of centre."
+        },
+        {
+          "answer": "the maximum and minimum",
+          "explanation": "These give the range, not the IQR."
+        },
+        {
+          "answer": "every value in the data set",
+          "explanation": "IQR uses only Q1 and Q3."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 22,
+      "bloomsLevel": 2,
+      "question": "A data set has range 50, IQR 10, and SD 8. The most extreme spread is shown by:",
+      "correct": "the range",
+      "correctExplanation": "Range = 50 is the largest value and captures the widest spread.",
+      "distractors": [
+        {
+          "answer": "the IQR",
+          "explanation": "IQR = 10 measures only the middle 50%."
+        },
+        {
+          "answer": "the SD",
+          "explanation": "SD = 8 measures typical deviation from the mean."
+        },
+        {
+          "answer": "all three are",
+          "explanation": "Each measures spread differently."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 23,
+      "bloomsLevel": 2,
+      "question": "Quartile 1 (Q1) is the value below which __ % of data falls:",
+      "correct": "25%",
+      "correctExplanation": "Q1 marks the 25th percentile.",
+      "distractors": [
+        {
+          "answer": "50%",
+          "explanation": "This is the median (Q2)."
+        },
+        {
+          "answer": "75%",
+          "explanation": "This is Q3."
+        },
+        {
+          "answer": "10%",
+          "explanation": "This is the 10th percentile."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 24,
+      "bloomsLevel": 2,
+      "question": "Which pair of summary statistics is most appropriate for skewed data?",
+      "correct": "median and IQR",
+      "correctExplanation": "Median resists skew for centre; IQR resists it for spread.",
+      "distractors": [
+        {
+          "answer": "mean and SD",
+          "explanation": "Mean and SD are distorted by skew and outliers."
+        },
+        {
+          "answer": "mean and range",
+          "explanation": "Both are sensitive to extreme values."
+        },
+        {
+          "answer": "mode and range",
+          "explanation": "Mode is not a robust centre; range is affected by outliers."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 2,
+      "sentence": "The three main measures of spread are {{blank:1}}, {{blank:2}} and standard deviation.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "range",
+          "correctExplanation": "Range = max − min is the simplest measure of spread.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "Mean measures centre, not spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "Mode measures frequency, not spread.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "IQR",
+          "correctExplanation": "IQR = Q3 − Q1 measures the spread of the middle 50%.",
+          "distractors": [
+            {
+              "answer": "median",
+              "explanation": "Median measures centre, not spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "frequency",
+              "explanation": "Frequency counts occurrences, not spread.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 2,
+      "sentence": "The range uses only the {{blank:1}} and {{blank:2}} values, making it the simplest but crudest measure of spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "maximum",
+          "correctExplanation": "Range = max − min starts with the largest value.",
+          "distractors": [
+            {
+              "answer": "mean",
+              "explanation": "Mean is not used in the range calculation.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "median",
+              "explanation": "Median is not part of the range formula.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "minimum",
+          "correctExplanation": "The minimum is subtracted from the maximum.",
+          "distractors": [
+            {
+              "answer": "mode",
+              "explanation": "Mode is not part of the range formula.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "Q1",
+              "explanation": "Q1 is used in IQR, not range.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel3": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 3,
+      "question": "The IQR is always smaller than the range for any data set.",
+      "correct": "False",
+      "correctExplanation": "IQR cannot exceed range.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "The IQR spans only the middle 50%, while the range spans the full extent, so IQR ≤ range."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 3,
+      "question": "Adding an outlier to a data set affects the IQR as much as the range.",
+      "correct": "False",
+      "correctExplanation": "Outliers directly change max or min (affecting range) but usually do not alter Q1 or Q3 (leaving IQR unchanged).",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "IQR is resistant to outliers; range is not."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 3,
+      "bloomsLevel": 3,
+      "question": "Standard deviation is appropriate for all types of distributions.",
+      "correct": "False",
+      "correctExplanation": "SD is most informative for symmetric distributions; for skewed data, IQR is often preferred.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "SD is best for symmetric data."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 4,
+      "bloomsLevel": 3,
+      "question": "The choice of spread measure can change the conclusions drawn from data.",
+      "correct": "True",
+      "correctExplanation": "Different measures emphasise different aspects of spread, potentially leading to different interpretations.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "The choice of measure does not affect conclusions."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 5,
+      "bloomsLevel": 3,
+      "question": "Range provides the most detailed picture of how data is distributed.",
+      "correct": "False",
+      "correctExplanation": "Range uses only two extreme values and reveals nothing about the distribution between them.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "Range tells nothing about the internal distribution."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 6,
+      "bloomsLevel": 3,
+      "question": "For data set {10, 12, 13, 14, 15, 60}, the IQR gives a more accurate picture of typical spread than the range.",
+      "correct": "True",
+      "correctExplanation": "IQR ignores the outlier 60, while range = 50 is misleadingly large.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "IQR is more representative when outliers are present."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 7,
+      "bloomsLevel": 3,
+      "question": "A symmetric distribution with no outliers makes SD, IQR and range all equally useful.",
+      "correct": "False",
+      "correctExplanation": "Even for symmetric data, range is crude (uses only two values) and SD is most informative.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "SD is preferred even for symmetric data because it uses all values."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 8,
+      "bloomsLevel": 3,
+      "question": "Increasing the sample size generally makes the range larger.",
+      "correct": "True",
+      "correctExplanation": "More data values increase the chance of observing more extreme values, widening the range.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "Larger samples tend to have a wider range."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 3,
+      "question": "Data set: {10, 12, 13, 14, 15, 60}. Range = 50, IQR = 2, SD ≈ 17.8. Which measure best represents the typical spread?",
+      "correct": "IQR = 2",
+      "correctExplanation": "Most values cluster near 10–15; IQR captures this, while range and SD are inflated by 60.",
+      "distractors": [
+        {
+          "answer": "Range = 50",
+          "explanation": "The outlier 60 makes the range misleading."
+        },
+        {
+          "answer": "SD ≈ 17.8",
+          "explanation": "SD is inflated by the outlier's large squared deviation."
+        },
+        {
+          "answer": "All three are e",
+          "explanation": "The outlier makes range and SD misleading."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 3,
+      "question": "Why is the range considered the crudest measure of spread?",
+      "correct": "It uses only two extreme values",
+      "correctExplanation": "Range ignores the distribution of all values between max and min.",
+      "distractors": [
+        {
+          "answer": "It requires complex calculations",
+          "explanation": "Range is the simplest calculation."
+        },
+        {
+          "answer": "It resists outliers",
+          "explanation": "Range is heavily affected by outliers."
+        },
+        {
+          "answer": "It uses every data value",
+          "explanation": "Range uses only the max and min."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 3,
+      "question": "For symmetric data with no outliers, the preferred pair of summary statistics is:",
+      "correct": "mean and SD",
+      "correctExplanation": "Both mean and SD use all data and are most informative for symmetric distributions.",
+      "distractors": [
+        {
+          "answer": "median and IQR",
+          "explanation": "These are preferred for skewed data or data with outliers."
+        },
+        {
+          "answer": "mode and range",
+          "explanation": "Mode is not a robust centre; range is crude."
+        },
+        {
+          "answer": "median and range",
+          "explanation": "Range is crude and median is not needed for symmetric data."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 3,
+      "question": "An outlier is added to a data set. Which measure of spread changes the least?",
+      "correct": "IQR",
+      "correctExplanation": "IQR uses only Q1 and Q3, which are typically unaffected by a single outlier.",
+      "distractors": [
+        {
+          "answer": "range",
+          "explanation": "Range changes dramatically when an extreme value is added."
+        },
+        {
+          "answer": "SD",
+          "explanation": "SD is inflated by the outlier's squared deviation."
+        },
+        {
+          "answer": "variance",
+          "explanation": "Variance is even more sensitive than SD to outliers."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 3,
+      "question": "Why does SD use squared deviations rather than raw deviations?",
+      "correct": "Raw deviations sum to zero",
+      "correctExplanation": "Positive and negative deviations cancel out, so squaring prevents cancellation.",
+      "distractors": [
+        {
+          "answer": "Squaring makes the calculation faster",
+          "explanation": "Squaring adds a computational step."
+        },
+        {
+          "answer": "Raw deviations are always negative",
+          "explanation": "Raw deviations can be positive or negative."
+        },
+        {
+          "answer": "Squaring ensures the result is zero",
+          "explanation": "Squaring produces positive values, not zero."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 3,
+      "question": "Two data sets have the same range but different IQRs. This means:",
+      "correct": "one has more concentrated central data",
+      "correctExplanation": "A smaller IQR indicates values are tighter around the median.",
+      "distractors": [
+        {
+          "answer": "they have identical distributions",
+          "explanation": "Same range does not imply same distribution."
+        },
+        {
+          "answer": "their means must be equal",
+          "explanation": "Range and IQR do not determine the mean."
+        },
+        {
+          "answer": "the range calculation is wrong",
+          "explanation": "Different IQRs with same range is valid."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 15,
+      "bloomsLevel": 3,
+      "question": "For income data (typically right-skewed), which measure of spread is most appropriate?",
+      "correct": "IQR",
+      "correctExplanation": "Income data has a long right tail with high earners; IQR resists these outliers.",
+      "distractors": [
+        {
+          "answer": "range",
+          "explanation": "Extreme incomes make the range misleadingly large."
+        },
+        {
+          "answer": "SD",
+          "explanation": "SD is inflated by high-income outliers."
+        },
+        {
+          "answer": "mean",
+          "explanation": "Mean measures centre, not spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 16,
+      "bloomsLevel": 3,
+      "question": "If the IQR is very small compared to the range, this suggests:",
+      "correct": "the data has extreme outliers",
+      "correctExplanation": "A small IQR with large range indicates most data is clustered but extremes exist.",
+      "distractors": [
+        {
+          "answer": "the data is uniformly distributed",
+          "explanation": "Uniform data has proportional IQR and range."
+        },
+        {
+          "answer": "all values are identical",
+          "explanation": "Identical values give IQR = 0 and range = 0."
+        },
+        {
+          "answer": "the data has no spread at all",
+          "explanation": "A non-zero range means there is some spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 17,
+      "bloomsLevel": 3,
+      "question": "Standard deviation is measured in the same units as the data because:",
+      "correct": "it takes the square root of variance",
+      "correctExplanation": "Variance has squared units; the square root returns to original units.",
+      "distractors": [
+        {
+          "answer": "it adds all values together",
+          "explanation": "Addition is part of the mean, not the unit restoration."
+        },
+        {
+          "answer": "it uses the median instead of mean",
+          "explanation": "SD uses the mean, not the median."
+        },
+        {
+          "answer": "it divides by n",
+          "explanation": "Division by n affects magnitude, not units."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 18,
+      "bloomsLevel": 3,
+      "question": "The range of a data set is 40 and the IQR is 10. This data set most likely has:",
+      "correct": "outliers or a long tail",
+      "correctExplanation": "The large gap between range and IQR suggests extreme values beyond the central cluster.",
+      "distractors": [
+        {
+          "answer": "a perfectly symmetric distribution",
+          "explanation": "Symmetric data can have proportional range and IQR."
+        },
+        {
+          "answer": "no variability",
+          "explanation": "Range 40 indicates variability."
+        },
+        {
+          "answer": "all values clustered at the centre",
+          "explanation": "A range of 40 indicates spread beyond the centre."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 19,
+      "bloomsLevel": 3,
+      "question": "Which statement about spread measures is correct?",
+      "correct": "Range ≥ IQR for any data set",
+      "correctExplanation": "Range spans the full data while IQR spans only the middle 50%.",
+      "distractors": [
+        {
+          "answer": "IQR is always greater than SD",
+          "explanation": "This is not universally true."
+        },
+        {
+          "answer": "SD is always greater than range",
+          "explanation": "Range typically exceeds SD."
+        },
+        {
+          "answer": "Range uses quartiles in its formula",
+          "explanation": "Range uses only max and min."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 20,
+      "bloomsLevel": 3,
+      "question": "When reporting spread for a data set with a strong positive skew:",
+      "correct": "IQR is preferred over SD",
+      "correctExplanation": "IQR resists the influence of the long right tail.",
+      "distractors": [
+        {
+          "answer": "SD is preferred over IQR",
+          "explanation": "SD is distorted by the right tail."
+        },
+        {
+          "answer": "range is the best choice",
+          "explanation": "Range is maximally affected by the skew."
+        },
+        {
+          "answer": "no measure of spread is needed",
+          "explanation": "Spread is always relevant for data summary."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 3,
+      "sentence": "The IQR is resistant to outliers because it uses only {{blank:1}} and {{blank:2}}, ignoring extreme values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "Q1",
+          "correctExplanation": "Q1 marks the 25th percentile, unaffected by extremes.",
+          "distractors": [
+            {
+              "answer": "max",
+              "explanation": "Max is used in range, not IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mean",
+              "explanation": "Mean is used in SD, not IQR.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "Q3",
+          "correctExplanation": "Q3 marks the 75th percentile, unaffected by extremes.",
+          "distractors": [
+            {
+              "answer": "min",
+              "explanation": "Min is used in range, not IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "SD",
+              "explanation": "SD is a separate measure, not a quartile.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 3,
+      "sentence": "For symmetric data, SD is preferred because it uses {{blank:1}} data values, while for skewed data, {{blank:2}} is preferred because it resists outliers.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "all",
+          "correctExplanation": "SD incorporates every value through deviations from the mean.",
+          "distractors": [
+            {
+              "answer": "only two",
+              "explanation": "Range uses only two values, not SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "half the",
+              "explanation": "SD does not use only half the data.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "IQR",
+          "correctExplanation": "IQR focuses on the middle 50% and ignores extremes.",
+          "distractors": [
+            {
+              "answer": "range",
+              "explanation": "Range is more affected by outliers than IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "SD",
+              "explanation": "SD is sensitive to outliers.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 3,
+      "sentence": "A large range with a small IQR suggests the data set contains {{blank:1}}, making the {{blank:2}} a misleading measure of typical spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "outliers",
+          "correctExplanation": "Outliers push the range far beyond the IQR.",
+          "distractors": [
+            {
+              "answer": "no variability",
+              "explanation": "Variability exists; it is just concentrated in extremes.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "identical values",
+              "explanation": "Identical values produce range = 0.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "range",
+          "correctExplanation": "Range is inflated by outliers, misrepresenting the central spread.",
+          "distractors": [
+            {
+              "answer": "IQR",
+              "explanation": "IQR correctly represents the central spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "median",
+              "explanation": "Median measures centre, not spread.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 3,
+      "sentence": "Variance has {{blank:1}} units (e.g. cm²) while SD has {{blank:2}} units (e.g. cm), making SD easier to interpret.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "squared",
+          "correctExplanation": "Squaring deviations produces squared units.",
+          "distractors": [
+            {
+              "answer": "original",
+              "explanation": "Original units describe SD, not variance.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "no",
+              "explanation": "Variance does have units.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "original",
+          "correctExplanation": "Taking the square root returns variance to the original measurement units.",
+          "distractors": [
+            {
+              "answer": "squared",
+              "explanation": "Squared units describe variance, not SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "doubled",
+              "explanation": "SD does not have doubled units.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 3,
+      "sentence": "The three measures of spread — range, IQR and SD — rank from {{blank:1}} (using fewest values) to {{blank:2}} (using all values).",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "range",
+          "correctExplanation": "Range uses only max and min (two values).",
+          "distractors": [
+            {
+              "answer": "SD",
+              "explanation": "SD uses all values, not the fewest.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "IQR",
+              "explanation": "IQR uses Q1 and Q3, which depend on more values than just two.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "SD",
+          "correctExplanation": "SD uses every value through deviations from the mean.",
+          "distractors": [
+            {
+              "answer": "range",
+              "explanation": "Range uses the fewest values.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "IQR",
+              "explanation": "IQR uses positional values, but SD uses all.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 3,
+      "sentence": "For data with outliers, the {{blank:1}} overstates the spread while the {{blank:2}} provides a more robust measure.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "range",
+          "correctExplanation": "Range is directly inflated by extreme values.",
+          "distractors": [
+            {
+              "answer": "IQR",
+              "explanation": "IQR is resistant to outliers.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "median",
+              "explanation": "Median measures centre, not spread.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "IQR",
+          "correctExplanation": "IQR ignores extreme values and focuses on the central 50%.",
+          "distractors": [
+            {
+              "answer": "range",
+              "explanation": "Range is inflated by outliers.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mean",
+              "explanation": "Mean measures centre, not spread.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel4": [
+    {
+      "type": "tf",
+      "variant": 1,
+      "bloomsLevel": 4,
+      "question": "For the data set {1, 3, 5, 7, 9, 100}, the IQR is 6.",
+      "correct": "True",
+      "correctExplanation": "Q1 = 3, Q3 = 9. IQR = 9 − 3 = 6. The outlier 100 does not affect Q1 or Q3.",
+      "distractors": [
+        {
+          "answer": "False",
+          "explanation": "IQR = 6, unaffected by the outlier."
+        }
+      ]
+    },
+    {
+      "type": "tf",
+      "variant": 2,
+      "bloomsLevel": 4,
+      "question": "The data set {20, 20, 20, 20, 20} has IQR = 20.",
+      "correct": "False",
+      "correctExplanation": "All values are identical, so Q1 = Q3 = 20 and IQR = 0.",
+      "distractors": [
+        {
+          "answer": "True",
+          "explanation": "IQR = 0 for identical values."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 4,
+      "question": "Data set: {2, 5, 8, 11, 14, 80}. Range = 78, IQR = 9, SD ≈ 27.4. A report should use:",
+      "correct": "median and IQR",
+      "correctExplanation": "The outlier 80 makes range and SD misleading; median and IQR resist it.",
+      "distractors": [
+        {
+          "answer": "mean and SD",
+          "explanation": "Both are inflated by the outlier 80."
+        },
+        {
+          "answer": "mean and range",
+          "explanation": "Both are heavily distorted by the outlier."
+        },
+        {
+          "answer": "range only",
+          "explanation": "Range alone is crude and misleading here."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 4,
+      "question": "The data set {15, 16, 17, 18, 19} has range 4 and IQR 2. Adding the value 50 changes the range to:",
+      "correct": "35",
+      "correctExplanation": "New range = 50 − 15 = 35.",
+      "distractors": [
+        {
+          "answer": "4",
+          "explanation": "The range changes when a new extreme value is added."
+        },
+        {
+          "answer": "50",
+          "explanation": "This is the new maximum, not the range."
+        },
+        {
+          "answer": "52",
+          "explanation": "This adds 50 + 2 incorrectly."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 4,
+      "question": "A symmetric bell-shaped distribution of test scores has mean 70 and SD 5. The range is likely:",
+      "correct": "about 30 (roughly",
+      "correctExplanation": "For symmetric data, almost all values fall within ±3 SDs: 6 × 5 = 30.",
+      "distractors": [
+        {
+          "answer": "exactly 5",
+          "explanation": "5 is the SD, not the range."
+        },
+        {
+          "answer": "exactly 10",
+          "explanation": "10 covers only ±1 SD."
+        },
+        {
+          "answer": "exactly 70",
+          "explanation": "70 is the mean, not the range."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 4,
+      "question": "Data: {3, 4, 5, 6, 7, 8, 9}. Q1 = 4, Q3 = 8. The IQR is:",
+      "correct": "4",
+      "correctExplanation": "IQR = Q3 − Q1 = 8 − 4 = 4.",
+      "distractors": [
+        {
+          "answer": "6",
+          "explanation": "This is the range (9 − 3), not the IQR."
+        },
+        {
+          "answer": "12",
+          "explanation": "This adds Q1 + Q3."
+        },
+        {
+          "answer": "5",
+          "explanation": "This is the median, not the IQR."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 4,
+      "question": "A researcher reports mean = 45, SD = 20, range = 100. Another uses median = 42, IQR = 8. The data is most likely:",
+      "correct": "right-skewed with outliers",
+      "correctExplanation": "Large SD and range vs small IQR suggest outliers pulling the mean right.",
+      "distractors": [
+        {
+          "answer": "perfectly symmetric",
+          "explanation": "Symmetric data would have similar mean and median."
+        },
+        {
+          "answer": "uniform",
+          "explanation": "Uniform data has proportional spread measures."
+        },
+        {
+          "answer": "bimodal with no outliers",
+          "explanation": "Bimodal does not explain the mean-median gap."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 4,
+      "question": "Rainfall data over 30 days: most days 0–5 mm but two days had 80 mm. The best spread summary is:",
+      "correct": "median and IQR",
+      "correctExplanation": "The extreme rainfall days are outliers; IQR captures normal variation.",
+      "distractors": [
+        {
+          "answer": "mean and SD",
+          "explanation": "Both are inflated by the two extreme days."
+        },
+        {
+          "answer": "range",
+          "explanation": "Range = 80, which is misleading for typical rainfall."
+        },
+        {
+          "answer": "mode",
+          "explanation": "Mode measures frequency, not spread."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 4,
+      "question": "For {10, 20, 30, 40, 50}, range = 40, SD ≈ 14.1. Adding 200 changes the range to __ and SD to approximately __:",
+      "correct": "190 and 63.6",
+      "correctExplanation": "Range = 200 − 10 = 190. Recalculated SD ≈ 63.6.",
+      "distractors": [
+        {
+          "answer": "40 and 14.1",
+          "explanation": "Both change when 200 is added."
+        },
+        {
+          "answer": "210 and 200",
+          "explanation": "These values are incorrect."
+        },
+        {
+          "answer": "190 and 14.1",
+          "explanation": "SD changes significantly with the outlier."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 4,
+      "question": "House prices in a suburb: $400K, $420K, $450K, $480K, $500K, $3.2M. The best measure of typical price spread is:",
+      "correct": "IQR",
+      "correctExplanation": "The $3.2M outlier distorts range and SD; IQR captures the main cluster.",
+      "distractors": [
+        {
+          "answer": "range",
+          "explanation": "Range = $2.8M, which is misleading."
+        },
+        {
+          "answer": "SD",
+          "explanation": "SD is inflated by the extreme $3.2M value."
+        },
+        {
+          "answer": "variance",
+          "explanation": "Variance is even more distorted than SD."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 4,
+      "question": "Two classes both have IQR = 5 marks. Class A has range 10; Class B has range 60. This suggests:",
+      "correct": "Class B has extreme outliers",
+      "correctExplanation": "Same IQR with much larger range indicates outliers in Class B.",
+      "distractors": [
+        {
+          "answer": "both classes are identical",
+          "explanation": "Different ranges show different data structures."
+        },
+        {
+          "answer": "Class A has more outliers",
+          "explanation": "Class A's small range suggests no outliers."
+        },
+        {
+          "answer": "IQR is unreliable for Class B",
+          "explanation": "IQR is reliable; range is the misleading measure."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 4,
+      "question": "Temperature data for a week: {18, 19, 20, 21, 22, 20, 19}. Which spread measure is most appropriate?",
+      "correct": "SD",
+      "correctExplanation": "The data is symmetric with no outliers, making SD the best choice.",
+      "distractors": [
+        {
+          "answer": "IQR",
+          "explanation": "IQR is better for skewed data; this data is symmetric."
+        },
+        {
+          "answer": "range",
+          "explanation": "Range is crude and less informative than SD."
+        },
+        {
+          "answer": "none; spread",
+          "explanation": "Spread is always useful for describing data."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 4,
+      "question": "A data set has SD = 0. This means:",
+      "correct": "all values are identical",
+      "correctExplanation": "Zero spread occurs only when every value equals the mean.",
+      "distractors": [
+        {
+          "answer": "the mean is zero",
+          "explanation": "The mean can be any value when SD = 0."
+        },
+        {
+          "answer": "there is one data value",
+          "explanation": "A single value gives undefined sample SD."
+        },
+        {
+          "answer": "the data is skewed",
+          "explanation": "Identical values have no skew."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 4,
+      "question": "Athlete sprint times (seconds): {11.2, 11.3, 11.1, 11.4, 11.2, 15.0}. The 15.0 is a false start time. Report spread using:",
+      "correct": "IQR after removing the",
+      "correctExplanation": "The false start is not valid data; removing it and using IQR gives meaningful spread.",
+      "distractors": [
+        {
+          "answer": "range including 15.0",
+          "explanation": "Including invalid data gives a misleading range."
+        },
+        {
+          "answer": "SD including 15.0",
+          "explanation": "Including invalid data inflates SD."
+        },
+        {
+          "answer": "variance including 15.0",
+          "explanation": "Including invalid data inflates variance even more."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 4,
+      "sentence": "For data {5, 8, 12, 15, 20, 100}, the range is {{blank:1}} but the IQR is approximately {{blank:2}}, showing the outlier's effect.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "95",
+          "correctExplanation": "Range = 100 − 5 = 95.",
+          "distractors": [
+            {
+              "answer": "100",
+              "explanation": "This is the maximum, not the range.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "12",
+              "explanation": "This is the median value.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "12",
+          "correctExplanation": "Q1 ≈ 8, Q3 ≈ 20, IQR ≈ 12. The outlier 100 does not affect the IQR.",
+          "distractors": [
+            {
+              "answer": "95",
+              "explanation": "This is the range, not the IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "50",
+              "explanation": "This is not the IQR.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 4,
+      "sentence": "Symmetric data without outliers is best summarised using {{blank:1}} for centre and {{blank:2}} for spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "mean",
+          "correctExplanation": "Mean uses all values and is most informative for symmetric data.",
+          "distractors": [
+            {
+              "answer": "median",
+              "explanation": "Median is preferred for skewed data.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "mode",
+              "explanation": "Mode measures frequency, not central tendency.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "standard deviation",
+          "correctExplanation": "SD uses all data and is most informative for symmetric distributions.",
+          "distractors": [
+            {
+              "answer": "range",
+              "explanation": "Range is crude and uses only two values.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "IQR",
+              "explanation": "IQR is preferred for skewed data.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 4,
+      "sentence": "For skewed data, use {{blank:1}} instead of mean for centre and {{blank:2}} instead of SD for spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "median",
+          "correctExplanation": "Median resists the pull of skew and outliers.",
+          "distractors": [
+            {
+              "answer": "mode",
+              "explanation": "Mode is not a robust alternative to mean for skewed data.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "range",
+              "explanation": "Range measures spread, not centre.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "IQR",
+          "correctExplanation": "IQR resists outliers that inflate SD.",
+          "distractors": [
+            {
+              "answer": "range",
+              "explanation": "Range is more affected by outliers than SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "variance",
+              "explanation": "Variance is more sensitive to outliers than SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 4,
+      "sentence": "Data: {10, 12, 13, 14, 15, 60}. Range = {{blank:1}}, IQR = {{blank:2}}. The gap between them shows the outlier's impact.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "50",
+          "correctExplanation": "Range = 60 − 10 = 50.",
+          "distractors": [
+            {
+              "answer": "60",
+              "explanation": "This is the maximum, not the range.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "10",
+              "explanation": "This is the minimum.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "2",
+          "correctExplanation": "Q1 = 12, Q3 = 14. IQR = 14 − 12 = 2.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "This is the range.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "13",
+              "explanation": "This is the median.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 4,
+      "sentence": "The range of {1, 2, 3, 4, 5} is {{blank:1}}. Adding 100 to the set changes the range to {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Range = 5 − 1 = 4.",
+          "distractors": [
+            {
+              "answer": "5",
+              "explanation": "This is the maximum, not the range.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "3",
+              "explanation": "This is the median.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "99",
+          "correctExplanation": "New range = 100 − 1 = 99.",
+          "distractors": [
+            {
+              "answer": "4",
+              "explanation": "Range changes when 100 is added.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "100",
+              "explanation": "This is the new value, not the range.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 4,
+      "sentence": "When SD is much larger than IQR relative to the data scale, the distribution likely contains {{blank:1}} that inflate the {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "outliers",
+          "correctExplanation": "Outliers increase SD disproportionately compared to IQR.",
+          "distractors": [
+            {
+              "answer": "modes",
+              "explanation": "Multiple modes do not necessarily inflate SD.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "medians",
+              "explanation": "A data set has one median.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "standard deviation",
+          "correctExplanation": "Outliers increase squared deviations, inflating SD.",
+          "distractors": [
+            {
+              "answer": "IQR",
+              "explanation": "IQR resists outlier influence.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "median",
+              "explanation": "Median resists outlier influence.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 4,
+      "sentence": "A box plot shows whiskers from 5 to 25 with a box from 10 to 18. The range is {{blank:1}} and the IQR is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "20",
+          "correctExplanation": "Range = 25 − 5 = 20.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This is the IQR, not the range.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "25",
+              "explanation": "This is the maximum, not the range.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "8",
+          "correctExplanation": "IQR = Q3 − Q1 = 18 − 10 = 8.",
+          "distractors": [
+            {
+              "answer": "20",
+              "explanation": "This is the range, not the IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "15",
+              "explanation": "This is the median or midpoint.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 4,
+      "sentence": "For {20, 22, 24, 26, 28}, range = 8 and IQR = {{blank:1}}. This data is {{blank:2}}, so SD is appropriate.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "4",
+          "correctExplanation": "Q1 = 22, Q3 = 26. IQR = 26 − 22 = 4.",
+          "distractors": [
+            {
+              "answer": "8",
+              "explanation": "This is the range, not the IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "24",
+              "explanation": "This is the median.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "symmetric",
+          "correctExplanation": "The values are evenly spaced, creating a symmetric distribution.",
+          "distractors": [
+            {
+              "answer": "skewed",
+              "explanation": "Evenly spaced values are symmetric.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "bimodal",
+              "explanation": "There is no clustering at two points.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 4,
+      "sentence": "A researcher comparing two data sets should report both a measure of {{blank:1}} and a measure of {{blank:2}} for a complete picture.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "centre",
+          "correctExplanation": "Centre (mean or median) locates the typical value.",
+          "distractors": [
+            {
+              "answer": "frequency",
+              "explanation": "Frequency counts occurrences, not central tendency.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "correlation",
+              "explanation": "Correlation measures association between variables.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "spread",
+          "correctExplanation": "Spread (SD or IQR) describes variability around the centre.",
+          "distractors": [
+            {
+              "answer": "shape",
+              "explanation": "Shape is informative but not a primary paired measure with centre.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "count",
+              "explanation": "Sample size is context, not a paired measure with centre.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 4,
+      "sentence": "Salary data: {30K, 32K, 35K, 38K, 40K, 250K}. The range is {{blank:1}} but the IQR is approximately {{blank:2}}, showing the CEO salary distorts range.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "220K",
+          "correctExplanation": "Range = 250K − 30K = 220K.",
+          "distractors": [
+            {
+              "answer": "250K",
+              "explanation": "This is the max salary, not the range.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "40K",
+              "explanation": "This is the second-highest regular salary.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "6K",
+          "correctExplanation": "Q1 ≈ 32K, Q3 ≈ 38K. IQR ≈ 6K.",
+          "distractors": [
+            {
+              "answer": "220K",
+              "explanation": "This is the range, not the IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "35K",
+              "explanation": "This is the median.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 4,
+      "sentence": "For {1, 1, 1, 1, 1}, range = {{blank:1}} and IQR = {{blank:2}}, confirming zero spread.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "0",
+          "correctExplanation": "Range = 1 − 1 = 0.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "This is the data value, not the range.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "5",
+              "explanation": "This is the count of values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0",
+          "correctExplanation": "Q1 = Q3 = 1, so IQR = 0.",
+          "distractors": [
+            {
+              "answer": "1",
+              "explanation": "This is the data value, not the IQR.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "5",
+              "explanation": "This is the count, not the IQR.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 4,
+      "sentence": "Comparing two athletes: A has mean time 12.0 s and SD 0.3 s; B has mean 11.5 s and SD 2.0 s. For reliability, choose {{blank:1}} because the SD is {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "Athlete A",
+          "correctExplanation": "A's SD of 0.3 s shows much more consistent times.",
+          "distractors": [
+            {
+              "answer": "Athlete B",
+              "explanation": "B's SD of 2.0 shows high variability.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "neither",
+              "explanation": "SD provides clear evidence for choosing A.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "smaller",
+          "correctExplanation": "SD 0.3 < SD 2.0, indicating greater consistency.",
+          "distractors": [
+            {
+              "answer": "larger",
+              "explanation": "A has the smaller SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal",
+              "explanation": "The SDs are 0.3 and 2.0, not equal.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ],
+  "toLevel5": [
+    {
+      "type": "mc",
+      "variant": 1,
+      "bloomsLevel": 5,
+      "question": "A data set has mean 50, median 50, range 20, IQR 8, SD 5. Which distribution type is most likely?",
+      "correct": "symmetric",
+      "correctExplanation": "Mean = median and moderate IQR/range ratio suggest symmetry.",
+      "distractors": [
+        {
+          "answer": "right-skewed",
+          "explanation": "Mean = median rules out right skew."
+        },
+        {
+          "answer": "left-skewed",
+          "explanation": "Mean = median rules out left skew."
+        },
+        {
+          "answer": "bimodal",
+          "explanation": "Bimodal data often has mean ≠ median."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 2,
+      "bloomsLevel": 5,
+      "question": "Two data sets each have range 100. Set A has IQR 10; Set B has IQR 80. Which has more extreme outliers?",
+      "correct": "Set A",
+      "correctExplanation": "A small IQR with a large range indicates extreme values far from the central cluster.",
+      "distractors": [
+        {
+          "answer": "Set B",
+          "explanation": "B's large IQR means the spread is more evenly distributed."
+        },
+        {
+          "answer": "Both equally",
+          "explanation": "The IQR/range ratio differs significantly."
+        },
+        {
+          "answer": "Cannot determine",
+          "explanation": "IQR vs range ratio indicates outlier presence."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 3,
+      "bloomsLevel": 5,
+      "question": "A survey yields scores: 90% of respondents score 7–9, but 10% score 1. Using mean and SD vs median and IQR gives:",
+      "correct": "very different conclusions about typical spread",
+      "correctExplanation": "The low scores inflate mean/SD but barely affect median/IQR.",
+      "distractors": [
+        {
+          "answer": "identical conclusions",
+          "explanation": "Different measures respond differently to the low scores."
+        },
+        {
+          "answer": "spread measures are irrelevant here",
+          "explanation": "Spread is always relevant for describing data."
+        },
+        {
+          "answer": "mean and SD give smaller spread values",
+          "explanation": "Mean/SD give larger values due to the outliers."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 4,
+      "bloomsLevel": 5,
+      "question": "A researcher uses range to compare variability in rainfall across five cities. The main limitation is:",
+      "correct": "one extreme day per city can",
+      "correctExplanation": "Range depends on the two most extreme values, which may be rare outliers.",
+      "distractors": [
+        {
+          "answer": "range is too complex to calculate",
+          "explanation": "Range is the simplest measure."
+        },
+        {
+          "answer": "range uses too many data values",
+          "explanation": "Range uses only max and min."
+        },
+        {
+          "answer": "range cannot be negative",
+          "explanation": "Non-negativity is a feature, not a limitation."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 5,
+      "bloomsLevel": 5,
+      "question": "For a uniform distribution (equal probability across all values), the IQR is approximately:",
+      "correct": "half the range",
+      "correctExplanation": "For uniform data, Q1 is at 25% and Q3 at 75% of the range, so IQR ≈ range/2.",
+      "distractors": [
+        {
+          "answer": "equal to the range",
+          "explanation": "The IQR spans only the middle 50%."
+        },
+        {
+          "answer": "zero",
+          "explanation": "Uniform data has non-zero spread."
+        },
+        {
+          "answer": "equal to the SD",
+          "explanation": "IQR and SD have different values for uniform distributions."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 6,
+      "bloomsLevel": 5,
+      "question": "A teacher compares test results using SD but a colleague uses IQR. If the data is symmetric, the teacher's choice is:",
+      "correct": "more informative",
+      "correctExplanation": "SD uses all data and is optimal for symmetric distributions.",
+      "distractors": [
+        {
+          "answer": "less informative",
+          "explanation": "SD provides more detail than IQR for symmetric data."
+        },
+        {
+          "answer": "equally informative",
+          "explanation": "SD extracts more information from symmetric data."
+        },
+        {
+          "answer": "incorrect",
+          "explanation": "SD is the standard choice for symmetric data."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 7,
+      "bloomsLevel": 5,
+      "question": "A bimodal distribution has two peaks at 20 and 80 with few values between. The SD will be:",
+      "correct": "large, reflecting the wide",
+      "correctExplanation": "Values cluster far from the overall mean, creating large squared deviations.",
+      "distractors": [
+        {
+          "answer": "small, since each peak",
+          "explanation": "SD is computed from the overall mean, not each peak."
+        },
+        {
+          "answer": "zero",
+          "explanation": "There is clear spread in bimodal data."
+        },
+        {
+          "answer": "equal to the range",
+          "explanation": "SD is typically smaller than range."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 8,
+      "bloomsLevel": 5,
+      "question": "As sample size increases, the range tends to increase while the SD tends to:",
+      "correct": "stabilise",
+      "correctExplanation": "Larger samples give more stable SD estimates, while range captures more extremes.",
+      "distractors": [
+        {
+          "answer": "increase at the same rate",
+          "explanation": "SD stabilises rather than growing like range."
+        },
+        {
+          "answer": "decrease toward zero",
+          "explanation": "SD approaches the population value, not zero."
+        },
+        {
+          "answer": "become equal to the range",
+          "explanation": "SD and range measure different things."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 9,
+      "bloomsLevel": 5,
+      "question": "Income data: mean $80K, median $55K, SD $40K, IQR $25K. The best summary for a government report is:",
+      "correct": "median $55K and IQR $25K",
+      "correctExplanation": "Income is right-skewed; median/IQR resist the high-income tail.",
+      "distractors": [
+        {
+          "answer": "mean $80K and SD $40K",
+          "explanation": "Both are inflated by high earners."
+        },
+        {
+          "answer": "range",
+          "explanation": "Range is even more distorted by extreme incomes."
+        },
+        {
+          "answer": "mean $80K and IQR $25K",
+          "explanation": "Mixing mean with IQR is inconsistent."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 10,
+      "bloomsLevel": 5,
+      "question": "A data set is transformed by squaring every value. The effect on spread measures is:",
+      "correct": "all three measures change in non-pro",
+      "correctExplanation": "Squaring is a non-linear transformation that changes each measure differently.",
+      "distractors": [
+        {
+          "answer": "only the range changes",
+          "explanation": "All measures are affected by non-linear transformations."
+        },
+        {
+          "answer": "none of the measures change",
+          "explanation": "Non-linear transformations change spread."
+        },
+        {
+          "answer": "SD doubles and range doubles",
+          "explanation": "Squaring is not a linear scaling."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 11,
+      "bloomsLevel": 5,
+      "question": "Two schools have the same IQR for maths scores but different SDs. This difference is most likely due to:",
+      "correct": "different amounts of outlier influence",
+      "correctExplanation": "Outliers affect SD but not IQR, causing SD to differ while IQR remains equal.",
+      "distractors": [
+        {
+          "answer": "different sample sizes only",
+          "explanation": "Sample size alone does not explain differing SDs with equal IQR."
+        },
+        {
+          "answer": "a calculation error",
+          "explanation": "Both measures can legitimately differ."
+        },
+        {
+          "answer": "different median values",
+          "explanation": "Different medians affect centre, not the SD-IQR relationship."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 12,
+      "bloomsLevel": 5,
+      "question": "For a normal distribution, approximately what proportion of data falls within ±1 IQR of the median?",
+      "correct": "50%",
+      "correctExplanation": "By definition, the IQR contains the middle 50% of data.",
+      "distractors": [
+        {
+          "answer": "68%",
+          "explanation": "68% falls within ±1 SD, not ±1 IQR."
+        },
+        {
+          "answer": "95%",
+          "explanation": "95% falls within ±2 SDs."
+        },
+        {
+          "answer": "25%",
+          "explanation": "25% falls below Q1, not within the IQR."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 13,
+      "bloomsLevel": 5,
+      "question": "A researcher claims 'range = 0 proves no variability.' This claim is:",
+      "correct": "correct",
+      "correctExplanation": "Range = 0 means max = min, so all values are equal.",
+      "distractors": [
+        {
+          "answer": "incorrect; SD could be non-zero",
+          "explanation": "If range = 0, all values equal, so SD = 0 too."
+        },
+        {
+          "answer": "only true for large samples",
+          "explanation": "Range = 0 implies no variability for any sample size."
+        },
+        {
+          "answer": "dependent on the distribution type",
+          "explanation": "Range = 0 means all values are identical regardless."
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "variant": 14,
+      "bloomsLevel": 5,
+      "question": "For highly skewed data, using mean and SD rather than median and IQR gives a misleading impression of:",
+      "correct": "both centre",
+      "correctExplanation": "Mean is pulled by skew and SD is inflated by extreme deviations.",
+      "distractors": [
+        {
+          "answer": "centre only",
+          "explanation": "SD is also misleading for skewed data."
+        },
+        {
+          "answer": "spread only",
+          "explanation": "Mean is also misleading for skewed data."
+        },
+        {
+          "answer": "neither",
+          "explanation": "Both mean and SD are distorted by skew."
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "variant": 15,
+      "bloomsLevel": 5,
+      "sentence": "The ratio of IQR to range can indicate whether outliers are present: a {{blank:1}} ratio suggests outliers, while a ratio near {{blank:2}} suggests evenly spread data.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "small",
+          "correctExplanation": "A small IQR relative to range means most data is clustered with extremes far out.",
+          "distractors": [
+            {
+              "answer": "large",
+              "explanation": "A large ratio suggests more uniform spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "IQR = 0 means identical values, not outliers.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "0.5",
+          "correctExplanation": "For uniform distributions, IQR ≈ range/2, giving a ratio near 0.5.",
+          "distractors": [
+            {
+              "answer": "1.0",
+              "explanation": "IQR cannot equal range; it is always less.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "0",
+              "explanation": "A ratio of 0 means no central spread.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 16,
+      "bloomsLevel": 5,
+      "sentence": "Range increases with sample size because {{blank:1}} become more likely, while SD {{blank:2}} because it averages over more values.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "extreme values",
+          "correctExplanation": "Larger samples capture rarer extreme observations.",
+          "distractors": [
+            {
+              "answer": "central values",
+              "explanation": "Central values do not increase the range.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "missing values",
+              "explanation": "Missing values reduce, not increase, the sample.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "stabilises",
+          "correctExplanation": "SD converges toward the population value as n grows.",
+          "distractors": [
+            {
+              "answer": "doubles",
+              "explanation": "SD does not double with larger samples.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "becomes zero",
+              "explanation": "SD approaches the population value, not zero.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 17,
+      "bloomsLevel": 5,
+      "sentence": "For a bimodal distribution, SD is {{blank:1}} because values cluster far from the overall mean, while IQR may be {{blank:2}} if both peaks are close.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "large",
+          "correctExplanation": "Values at both peaks deviate substantially from the central mean.",
+          "distractors": [
+            {
+              "answer": "small",
+              "explanation": "The gap between peaks creates large deviations.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Bimodal data has non-zero spread.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "misleadingly small",
+          "correctExplanation": "If peaks are symmetric, Q1 and Q3 may be close, underestimating the true spread.",
+          "distractors": [
+            {
+              "answer": "always large",
+              "explanation": "IQR depends on where Q1 and Q3 fall relative to the peaks.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "equal to the range",
+              "explanation": "IQR is always less than range.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 18,
+      "bloomsLevel": 5,
+      "sentence": "When data is {{blank:1}} distributed, mean and SD are the best summary pair; when data is {{blank:2}}, median and IQR are preferred.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "symmetrically",
+          "correctExplanation": "Symmetric distributions make mean and SD most informative.",
+          "distractors": [
+            {
+              "answer": "randomly",
+              "explanation": "Random distribution is not a standard classification.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "uniformly",
+              "explanation": "Uniform is a subset; the general principle is symmetry.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "skewed or contains outliers",
+          "correctExplanation": "Skew and outliers distort mean and SD, making median and IQR more robust.",
+          "distractors": [
+            {
+              "answer": "perfectly symmetric",
+              "explanation": "Symmetric data favours mean and SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "small",
+              "explanation": "Size alone does not determine the best summary pair.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 19,
+      "bloomsLevel": 5,
+      "sentence": "For a normal distribution, the IQR is approximately {{blank:1}} times the SD, and about {{blank:2}}% of data falls within ±1 SD.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "1.35",
+          "correctExplanation": "For a normal distribution, IQR ≈ 1.35 × SD.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "IQR ≈ 1.35 SD, not 2 SD.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "1",
+              "explanation": "IQR is slightly larger than 1 SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "68",
+          "correctExplanation": "The empirical rule: about 68% falls within ±1 SD.",
+          "distractors": [
+            {
+              "answer": "50",
+              "explanation": "50% is within the IQR, not ±1 SD.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "95",
+              "explanation": "95% is within ±2 SDs.",
+              "misconceptionSource": "documented"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 20,
+      "bloomsLevel": 5,
+      "sentence": "Comparing exam results across two classes, if Class A has a higher mean and lower SD than Class B, Class A has {{blank:1}} performance overall with {{blank:2}} consistency.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "better",
+          "correctExplanation": "Higher mean indicates higher typical scores.",
+          "distractors": [
+            {
+              "answer": "worse",
+              "explanation": "Higher mean means better average performance.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equal",
+              "explanation": "The means differ.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "greater",
+          "correctExplanation": "Lower SD means less variability and more consistent results.",
+          "distractors": [
+            {
+              "answer": "less",
+              "explanation": "Lower SD indicates more consistency.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "unknown",
+              "explanation": "SD directly measures consistency.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 21,
+      "bloomsLevel": 5,
+      "sentence": "A non-linear transformation (e.g. squaring) changes spread measures {{blank:1}}, unlike a linear transformation (adding or multiplying) which changes them {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "unpredictably",
+          "correctExplanation": "Non-linear transformations change each value by a different factor.",
+          "distractors": [
+            {
+              "answer": "not at all",
+              "explanation": "Non-linear transformations do affect spread.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "equally",
+              "explanation": "Non-linear effects are unequal across values.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "predictably",
+          "correctExplanation": "Adding shifts the mean but not SD; multiplying by k scales SD by |k|.",
+          "distractors": [
+            {
+              "answer": "unpredictably",
+              "explanation": "Linear transformations have well-defined effects.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "not at all",
+              "explanation": "Multiplication does affect SD.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 22,
+      "bloomsLevel": 5,
+      "sentence": "The coefficient of variation (CV = SD/mean) allows comparison of spread across data sets with different {{blank:1}}, because it expresses SD as a {{blank:2}} of the mean.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "scales or units",
+          "correctExplanation": "CV standardises spread relative to the mean, enabling cross-scale comparison.",
+          "distractors": [
+            {
+              "answer": "sample sizes",
+              "explanation": "CV is about scale, not sample size.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "shapes",
+              "explanation": "CV addresses scale differences, not distribution shape.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "proportion",
+          "correctExplanation": "CV converts SD into a relative measure.",
+          "distractors": [
+            {
+              "answer": "sum",
+              "explanation": "CV divides, not sums, SD by the mean.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "difference",
+              "explanation": "CV is a ratio, not a difference.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 23,
+      "bloomsLevel": 5,
+      "sentence": "A box plot with long whiskers and a narrow box indicates a {{blank:1}} IQR and a {{blank:2}} range, suggesting outliers.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "small",
+          "correctExplanation": "A narrow box means Q1 and Q3 are close together.",
+          "distractors": [
+            {
+              "answer": "large",
+              "explanation": "A narrow box indicates a small IQR.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "A visible box means IQR is non-zero.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "large",
+          "correctExplanation": "Long whiskers extend to extreme values, creating a wide range.",
+          "distractors": [
+            {
+              "answer": "small",
+              "explanation": "Long whiskers indicate a large range.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "zero",
+              "explanation": "Long whiskers mean non-zero range.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 24,
+      "bloomsLevel": 5,
+      "sentence": "For perfectly uniform data (all values equally likely), the IQR is {{blank:1}} the range, and the SD is approximately range ÷ {{blank:2}}.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "half",
+          "correctExplanation": "Q1 and Q3 split the range into quarters; IQR = Q3 − Q1 = range/2.",
+          "distractors": [
+            {
+              "answer": "equal to",
+              "explanation": "IQR is always less than range.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "one-quarter of",
+              "explanation": "IQR spans two quartiles, not one.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "√12 ≈ 3.46",
+          "correctExplanation": "For a continuous uniform distribution, SD = range/√12.",
+          "distractors": [
+            {
+              "answer": "2",
+              "explanation": "SD ≈ range/3.46, not range/2.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "6",
+              "explanation": "SD ≈ range/3.46, not range/6.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 25,
+      "bloomsLevel": 5,
+      "sentence": "When sample size doubles, the range {{blank:1}} while the SD {{blank:2}}, making range increasingly unreliable for large samples.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "tends to increase",
+          "correctExplanation": "More data increases the chance of capturing extreme values.",
+          "distractors": [
+            {
+              "answer": "stays the same",
+              "explanation": "Range typically grows with sample size.",
+              "misconceptionSource": "documented"
+            },
+            {
+              "answer": "halves",
+              "explanation": "Range does not decrease with more data.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "tends to stabilise",
+          "correctExplanation": "SD converges toward the population parameter.",
+          "distractors": [
+            {
+              "answer": "doubles",
+              "explanation": "SD does not double with sample size.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "becomes zero",
+              "explanation": "SD approaches the population value, not zero.",
+              "misconceptionSource": "teacher-reported"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    },
+    {
+      "type": "cloze",
+      "variant": 26,
+      "bloomsLevel": 5,
+      "sentence": "For a right-skewed distribution, mean > {{blank:1}} and SD > IQR × {{blank:2}} (approximately), because the right tail inflates both mean and SD.",
+      "blanks": [
+        {
+          "id": "1",
+          "correct": "median",
+          "correctExplanation": "The right tail pulls the mean above the median.",
+          "distractors": [
+            {
+              "answer": "mode",
+              "explanation": "Mean may or may not exceed the mode.",
+              "misconceptionSource": "teacher-reported"
+            },
+            {
+              "answer": "range",
+              "explanation": "Mean is almost always smaller than range.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "correct": "1",
+          "correctExplanation": "For right-skewed data, SD typically exceeds IQR because outliers inflate SD.",
+          "distractors": [
+            {
+              "answer": "0.5",
+              "explanation": "This would mean SD > IQR/2, which is too weak a claim.",
+              "misconceptionSource": "inferred"
+            },
+            {
+              "answer": "2",
+              "explanation": "This is too strong; SD is not always > 2 × IQR.",
+              "misconceptionSource": "inferred"
+            }
+          ]
+        }
+      ],
+      "scoring": "partial"
+    }
+  ]
+}
