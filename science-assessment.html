@@ -427,20 +427,14 @@ main { max-width: 860px; margin: 0 auto; padding: 24px 20px; }
   <!-- CONFIGURE VIEW -->
   <section class="view" id="viewConfigure">
     <div class="configure-center">
-      <h2>Configure Assessment</h2>
-      <p class="desc">This assessment adapts to each student. Everyone answers the same opening questions, then continues to harder levels for as long as they keep succeeding — so the number of questions depends on how far each student gets.</p>
+      <h2>Before you begin</h2>
       <div class="configure-card">
-        <h3>Question Breakdown</h3>
-        <div id="configureBreakdown"></div>
-        <div class="trim-control">
-          <label>Question pool size</label>
-          <div class="trim-row">
-            <input type="range" class="trim-slider" id="trimSlider" min="4" max="100" value="100">
-            <span class="trim-value" id="trimValue">100</span>
-          </div>
-          <div style="font-size:12px;color:var(--text2);text-align:center">Sets how many questions are loaded into the pool. Session length adapts to each student regardless of this.</div>
-          <div class="trim-time" id="trimTime">approx. 30 minutes</div>
-        </div>
+        <p style="font-size:16px;margin-bottom:16px;"><strong>What is this?</strong><br>
+        A short science check-in. It asks you questions across different science topics to find out what you already know.</p>
+        <p style="font-size:16px;margin-bottom:16px;"><strong>What is it for?</strong><br>
+        It is <strong>not</strong> a test you can fail. It helps your teacher see what you are good at and what to help you with next.</p>
+        <p style="font-size:16px;margin:0;"><strong>What to do</strong><br>
+        The questions start easier and get harder as you go. Just do your best, take your time, and answer what you can.</p>
       </div>
       <div class="configure-actions">
         <button class="configure-back" id="configureBack">Back</button>
@@ -764,40 +758,9 @@ document.getElementById('startBtn').addEventListener('click', async function() {
   configureStrands = strands;
   configureMaxQuestions = countMaxQuestions(strands);
 
-  renderConfigureView();
   showView('viewConfigure');
   this.disabled = false;
   this.textContent = 'Begin Assessment';
-});
-
-function renderConfigureView() {
-  const total = configureMaxQuestions;
-  const minQ = Math.max(configureStrands.length * 3, 1);
-  let html = '';
-  html += '<div class="configure-stat"><span class="label">Every student answers at least</span><span class="value">' + minQ + ' questions</span></div>';
-  html += '<div class="configure-stat"><span class="label">A student who succeeds throughout answers up to</span><span class="value">' + total + ' questions</span></div>';
-  document.getElementById('configureBreakdown').innerHTML = html;
-
-  const slider = document.getElementById('trimSlider');
-  slider.max = total;
-  slider.min = minQ;
-  slider.value = total;
-  document.getElementById('trimValue').textContent = total;
-  updateTrimTime();
-}
-
-function updateTrimTime() {
-  // Session length is driven by how far the student gates, not by the slider.
-  // ~45s per item (reading + thinking; higher Bloom's and gate transitions take longer).
-  const minQ = Math.max(configureStrands.length * 3, 1);
-  const lo = Math.round(minQ * 45 / 60);
-  const hi = Math.round(configureMaxQuestions * 45 / 60);
-  document.getElementById('trimTime').textContent = 'Session length adapts to each student: approx. ' + lo + '–' + hi + ' minutes';
-}
-
-document.getElementById('trimSlider').addEventListener('input', function() {
-  document.getElementById('trimValue').textContent = this.value;
-  // Session length is performance-driven, so the time range does not change with the slider.
 });
 
 document.getElementById('configureBack').addEventListener('click', () => {
@@ -806,7 +769,7 @@ document.getElementById('configureBack').addEventListener('click', () => {
 
 // Step 2: Configure -> Start test
 document.getElementById('configureStart').addEventListener('click', function() {
-  const target = parseInt(document.getElementById('trimSlider').value);
+  const target = configureMaxQuestions;   // full pool; actual length is gated by performance
   const finalPool = buildPoolToTarget(configureStrands, target);
 
   const l8b2 = finalPool.filter(q => q.level === 8 && q.bloomLevel === 2);
