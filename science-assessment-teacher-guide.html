@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Science Check-in: Teacher Guide</title>
+<style>
+  :root {
+    --bg: #f5f6fa; --card: #ffffff; --border: #e1e4ec; --text: #1a1d27;
+    --muted: #5c6280; --accent: #4a6adf; --accentbg: #eef1fc;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; line-height: 1.6; }
+  .guide { max-width: 760px; margin: 0 auto; padding: 36px 20px 64px; }
+  h1 { font-size: 27px; margin: 0 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 26px; font-size: 15px; }
+  details { background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+  summary { list-style: none; cursor: pointer; padding: 16px 20px; font-size: 17px;
+    font-weight: 600; display: flex; align-items: center; gap: 12px; user-select: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { background: var(--accentbg); }
+  .chev { color: var(--accent); font-weight: 800; font-size: 18px; line-height: 1;
+    transition: transform .15s ease; display: inline-block; }
+  details[open] > summary .chev { transform: rotate(90deg); }
+  .body { padding: 2px 22px 18px 50px; }
+  .body p { margin: 0 0 10px; }
+  .body ul, .body ol { margin: 0 0 8px; padding-left: 20px; }
+  .body li { margin: 6px 0; }
+  .body a { color: var(--accent); font-weight: 600; word-break: break-word; }
+  .code { font-family: ui-monospace, Menlo, Consolas, monospace;
+    background: var(--accentbg); padding: 1px 6px; border-radius: 4px; }
+  .pass { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 22px;
+    font-weight: 700; color: var(--accent); }
+  .callout { background: var(--accentbg); border-radius: 8px; padding: 10px 14px;
+    margin: 8px 0 2px; font-size: 14px; color: var(--text); }
+  strong { font-weight: 700; }
+  @media print { body { background: #fff; } summary:hover { background: none; }
+    details { break-inside: avoid; border-color: #ccc; } }
+</style>
+</head>
+<body>
+<div class="guide">
+  <h1>Science Check-in: Teacher Guide</h1>
+  <p class="sub">A quick how-to for running the science check-in with your class.</p>
+
+  <details>
+    <summary><span class="chev">&rsaquo;</span> What it is and what it assesses</summary>
+    <div class="body">
+      <p>A short adaptive science diagnostic for Years 7 to 10, assessed against the <strong>Victorian Curriculum 2.0 (Science)</strong>. It checks what a student already knows across the science topics. It is not pass or fail. It shows each student's strengths and gaps so you can plan support or extension.</p>
+      <p>The report shows, per Victorian Curriculum 2.0 strand and per level (Levels 7-8 and 9-10), how far the student got across the thinking levels: Remember, Apply, Analyse, and Evaluate.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="chev">&rsaquo;</span> How it works</summary>
+    <div class="body">
+      <p>Every student answers the same opening questions, then continues to more demanding cognitive levels on the Bloom's scale only while they keep getting them right. A student who is struggling finishes sooner. A strong student goes further.</p>
+      <p>Question types: true/false, multiple choice, and cloze (fill in the blank).</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="chev">&rsaquo;</span> Step by step</summary>
+    <div class="body">
+      <ol>
+        <li>Send the student the link by email, or share it as a OneDrive link.</li>
+        <li>The student enters their name and student number (both required), chooses a scope, and presses Begin.
+          <div class="callout"><strong>Tip:</strong> the student number lets you track the same student over time (longitudinal tracking), so keep it consistent.</div>
+        </li>
+        <li>The student works through the questions. No results are shown to them.</li>
+        <li>At the end, enter the passcode to save the responses. The PDF saves automatically.</li>
+        <li>Help the student to find the saved PDF in their Downloads folder (named <span class="code">studentnumber-name-science-responses.pdf</span>).</li>
+        <li>Help the student to press Open email to teacher, type your email address, attach that PDF, and send.</li>
+      </ol>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="chev">&rsaquo;</span> Security and privacy</summary>
+    <div class="body">
+      <ul>
+        <li>Nothing is sent or stored automatically. There is no server and no cloud. The results exist only as the PDF on the device until a person emails it.</li>
+        <li>The student never sees their results. They only see a saved message.</li>
+        <li>The PDF is password-protected. It opens only with the passcode.</li>
+        <li>The email contains no scores. All the detail is inside the locked PDF.</li>
+        <li>Only staff with the passcode can open a student's results.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="chev">&rsaquo;</span> The passcode</summary>
+    <div class="body">
+      <p><span class="pass">3128</span> &nbsp;(Kingswood's postcode).</p>
+      <p>It does two jobs: it saves the responses at the end, and it opens the downloaded PDF. Keep it to staff.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="chev">&rsaquo;</span> What to tell the students</summary>
+    <div class="body">
+      <ul>
+        <li>"This is a science check-in, not a test you can fail."</li>
+        <li>"It helps me see what you already know and what to help you with next."</li>
+        <li>"The questions get harder as you go. Do your best, take your time, and answer what you can. It is fine to guess or skip."</li>
+        <li>"You will not see a score. Your answers come straight to me."</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="chev">&rsaquo;</span> Link</summary>
+    <div class="body">
+      <p>The student assessment is here. Send this link to students by email, or share it as a OneDrive link:</p>
+      <p><a href="https://scriffle.github.io/cognito/science-assessment.html" target="_blank" rel="noopener">https://scriffle.github.io/cognito/science-assessment.html</a></p>
+    </div>
+  </details>
+
+</div>
+</body>
+</html>
