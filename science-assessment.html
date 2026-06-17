@@ -387,6 +387,10 @@ main { max-width: 860px; margin: 0 auto; padding: 24px 20px; }
           <input type="text" id="studentName" placeholder="Enter student name" autocomplete="off" required>
         </div>
         <div class="form-group">
+          <label for="studentNumber">Student Number (school code)</label>
+          <input type="text" id="studentNumber" placeholder="Enter student number" autocomplete="off" required>
+        </div>
+        <div class="form-group">
           <label>Assessment Scope</label>
           <div class="scope-options" id="scopeOptions">
             <label class="scope-option selected" data-scope="key">
@@ -424,16 +428,17 @@ main { max-width: 860px; margin: 0 auto; padding: 24px 20px; }
   <section class="view" id="viewConfigure">
     <div class="configure-center">
       <h2>Configure Assessment</h2>
-      <p class="desc">Review the question selection below. Use the slider to trim the total if you need a shorter session — questions will be removed evenly across strands and levels.</p>
+      <p class="desc">This assessment adapts to each student. Everyone answers the same opening questions, then continues to harder levels for as long as they keep succeeding — so the number of questions depends on how far each student gets.</p>
       <div class="configure-card">
         <h3>Question Breakdown</h3>
         <div id="configureBreakdown"></div>
         <div class="trim-control">
-          <label>Starting questions (more may follow as the student advances)</label>
+          <label>Question pool size</label>
           <div class="trim-row">
             <input type="range" class="trim-slider" id="trimSlider" min="4" max="100" value="100">
             <span class="trim-value" id="trimValue">100</span>
           </div>
+          <div style="font-size:12px;color:var(--text2);text-align:center">Sets how many questions are loaded into the pool. Session length adapts to each student regardless of this.</div>
           <div class="trim-time" id="trimTime">approx. 30 minutes</div>
         </div>
       </div>
@@ -469,7 +474,7 @@ main { max-width: 860px; margin: 0 auto; padding: 24px 20px; }
       <div class="code-entry" id="codeEntry">
         <h3>Teacher Access</h3>
         <input type="password" class="code-input" id="codeInput" maxlength="4" placeholder="----" inputmode="numeric" autocomplete="off">
-        <button class="code-submit" id="codeSubmit">View Results</button>
+        <button class="code-submit" id="codeSubmit">Save Responses</button>
         <div class="code-error" id="codeError">Incorrect code. Please check with your teacher.</div>
       </div>
     </div>
@@ -728,6 +733,7 @@ function buildPoolToTarget(strands, target) {
 // Configure view state
 let configureMaxQuestions = 0;
 let configureName = '';
+let configureNumber = '';
 let configureScope = '';
 let configureStrands = [];
 
@@ -735,6 +741,8 @@ let configureStrands = [];
 document.getElementById('startBtn').addEventListener('click', async function() {
   const name = document.getElementById('studentName').value.trim();
   if (!name) { document.getElementById('studentName').focus(); return; }
+  const studentNumber = document.getElementById('studentNumber').value.trim();
+  if (!studentNumber) { document.getElementById('studentNumber').focus(); return; }
   const scope = document.querySelector('input[name="scope"]:checked').value;
   const strands = SCOPE_STRANDS[scope];
 
@@ -751,6 +759,7 @@ document.getElementById('startBtn').addEventListener('click', async function() {
   await Promise.all(codes.map(c => loadQuestionFile(c)));
 
   configureName = name;
+  configureNumber = studentNumber;
   configureScope = scope;
   configureStrands = strands;
   configureMaxQuestions = countMaxQuestions(strands);
@@ -763,26 +772,32 @@ document.getElementById('startBtn').addEventListener('click', async function() {
 
 function renderConfigureView() {
   const total = configureMaxQuestions;
+  const minQ = Math.max(configureStrands.length * 3, 1);
   let html = '';
-  html += '<div class="configure-stat" style="border-top:2px solid var(--border);padding-top:12px;margin-top:4px"><span class="label" style="font-weight:700;color:var(--text)">Maximum available</span><span class="value" style="font-size:18px">' + total + '</span></div>';
+  html += '<div class="configure-stat"><span class="label">Every student answers at least</span><span class="value">' + minQ + ' questions</span></div>';
+  html += '<div class="configure-stat"><span class="label">A student who succeeds throughout answers up to</span><span class="value">' + total + ' questions</span></div>';
   document.getElementById('configureBreakdown').innerHTML = html;
 
   const slider = document.getElementById('trimSlider');
   slider.max = total;
-  slider.min = Math.max(configureStrands.length * 3, 1);
+  slider.min = minQ;
   slider.value = total;
   document.getElementById('trimValue').textContent = total;
-  updateTrimTime(total);
+  updateTrimTime();
 }
 
-function updateTrimTime(n) {
-  const mins = Math.round(n * 25 / 60);
-  document.getElementById('trimTime').textContent = 'approx. ' + mins + ' minutes';
+function updateTrimTime() {
+  // Session length is driven by how far the student gates, not by the slider.
+  // ~45s per item (reading + thinking; higher Bloom's and gate transitions take longer).
+  const minQ = Math.max(configureStrands.length * 3, 1);
+  const lo = Math.round(minQ * 45 / 60);
+  const hi = Math.round(configureMaxQuestions * 45 / 60);
+  document.getElementById('trimTime').textContent = 'Session length adapts to each student: approx. ' + lo + '–' + hi + ' minutes';
 }
 
 document.getElementById('trimSlider').addEventListener('input', function() {
   document.getElementById('trimValue').textContent = this.value;
-  updateTrimTime(parseInt(this.value));
+  // Session length is performance-driven, so the time range does not change with the slider.
 });
 
 document.getElementById('configureBack').addEventListener('click', () => {
@@ -799,6 +814,7 @@ document.getElementById('configureStart').addEventListener('click', function() {
 
   state = {
     name: configureName,
+    studentNumber: configureNumber,
     scope: configureScope,
     strands: configureStrands,
     fullPool: finalPool,
@@ -974,7 +990,7 @@ function renderQuestion() {
 document.getElementById('confirmBtn').addEventListener('click', () => confirmAnswer(state.selectedAnswer));
 document.getElementById('skipBtn').addEventListener('click', () => confirmAnswer(null));
 
-function confirmAnswer(answer) {
+function confirmAnswer(answer, fast) {
   if (state.finished || state.transitioning) return;
   state.transitioning = true;
   const item = state.queue[state.currentIndex];
@@ -1000,6 +1016,14 @@ function confirmAnswer(answer) {
   const sr = state.strandResults[item.strand][item.level][item.bloomLevel];
   sr.total++;
   if (correct) sr.correct++;
+
+  // Debug fast-path (qwe/asd): skip toast + fade, advance immediately
+  if (fast) {
+    state.currentIndex++;
+    state.transitioning = false;
+    renderQuestion();
+    return;
+  }
 
   // Show toast, then fade and advance
   const toast = document.getElementById('recordedToast');
@@ -1105,8 +1129,7 @@ function checkCode() {
   const input = document.getElementById('codeInput');
   if (input.value === TEACHER_CODE) {
     document.getElementById('codeError').style.display = 'none';
-    renderResults();
-    showView('viewResults');
+    exportResponses();
   } else {
     document.getElementById('codeError').style.display = 'block';
     input.value = '';
@@ -1240,6 +1263,366 @@ function renderResults() {
   el.innerHTML = html;
 }
 
+// ---------------------------------------------------------------------------
+// Export responses: build a PDF on-device, download it, and prepare an email.
+// No server, no storage, no third party — the file never leaves the device
+// until a human attaches it and presses send in their own mail client.
+// ---------------------------------------------------------------------------
+
+const SCOPE_LABELS = { key: 'Key Strands', full: 'Full Coverage', understanding: 'Understanding Only' };
+
+// Collapse anything outside printable ASCII to a safe equivalent so the
+// hand-rolled PDF (and its byte offsets) stay 1 char = 1 byte.
+const ASCII_MAP = {
+  '°': ' deg', '¹': '1', '²': '2', '³': '3',
+  '⁰': '0', '⁴': '4', '⁵': '5', '⁶': '6',
+  '⁷': '7', '⁸': '8', '⁹': '9',
+  '×': 'x', '÷': '/', 'µ': 'u', '→': '->', '←': '<-'
+};
+function sanitizeAscii(s) {
+  s = String(s == null ? '' : s);
+  s = s.replace(/[₀-₉]/g, c => String(c.charCodeAt(0) - 0x2080));
+  s = s.replace(/[°¹²³⁰⁴-⁹×÷µ→←]/g, c => ASCII_MAP[c] || '');
+  s = s.replace(/[‘’‚‛]/g, "'").replace(/[“”„]/g, '"');
+  s = s.replace(/[–—‒]/g, '-').replace(/…/g, '...').replace(/ /g, ' ');
+  return s.replace(/[^\x20-\x7E]/g, '?');
+}
+function pdfEscape(s) { return s.replace(/\\/g, '\\\\').replace(/\(/g, '\\(').replace(/\)/g, '\\)'); }
+
+function wrapText(s, max) {
+  const words = sanitizeAscii(s).split(/\s+/);
+  const out = [];
+  let line = '';
+  for (let w of words) {
+    while (w.length > max) { if (line) { out.push(line); line = ''; } out.push(w.slice(0, max)); w = w.slice(max); }
+    if (!line) line = w;
+    else if ((line + ' ' + w).length <= max) line += ' ' + w;
+    else { out.push(line); line = w; }
+  }
+  if (line) out.push(line);
+  return out.length ? out : [''];
+}
+
+// Assemble a minimal multi-page PDF (Helvetica + Helvetica-Bold) from text lines.
+// --- PDF Standard Security Handler (RC4 128-bit, /V 2 /R 3) for an open password ---
+const PDF_PAD = new Uint8Array([0x28,0xBF,0x4E,0x5E,0x4E,0x75,0x8A,0x41,0x64,0x00,0x4E,0x56,0xFF,0xFA,0x01,0x08,0x2E,0x2E,0x00,0xB6,0xD0,0x68,0x3E,0x80,0x2F,0x0C,0xA9,0xFE,0x64,0x53,0x69,0x7A]);
+function md5(input) {
+  const rol = (x, c) => (x << c) | (x >>> (32 - c));
+  const s = [7,12,17,22,7,12,17,22,7,12,17,22,7,12,17,22, 5,9,14,20,5,9,14,20,5,9,14,20,5,9,14,20, 4,11,16,23,4,11,16,23,4,11,16,23,4,11,16,23, 6,10,15,21,6,10,15,21,6,10,15,21,6,10,15,21];
+  const K = [];
+  for (let i = 0; i < 64; i++) K[i] = Math.floor(Math.abs(Math.sin(i + 1)) * 4294967296) | 0;
+  let a0 = 0x67452301, b0 = 0xefcdab89 | 0, c0 = 0x98badcfe | 0, d0 = 0x10325476;
+  const len = input.length, bitLen = len * 8;
+  const padLen = ((56 - (len + 1) % 64) + 64) % 64;
+  const total = len + 1 + padLen + 8;
+  const msg = new Uint8Array(total);
+  msg.set(input, 0); msg[len] = 0x80;
+  msg[total - 8] = bitLen & 0xff; msg[total - 7] = (bitLen >>> 8) & 0xff; msg[total - 6] = (bitLen >>> 16) & 0xff; msg[total - 5] = (bitLen >>> 24) & 0xff;
+  for (let off = 0; off < total; off += 64) {
+    const M = [];
+    for (let i = 0; i < 16; i++) M[i] = msg[off+i*4] | (msg[off+i*4+1] << 8) | (msg[off+i*4+2] << 16) | (msg[off+i*4+3] << 24);
+    let A = a0, B = b0, C = c0, D = d0;
+    for (let i = 0; i < 64; i++) {
+      let F, g;
+      if (i < 16) { F = (B & C) | (~B & D); g = i; }
+      else if (i < 32) { F = (D & B) | (~D & C); g = (5*i+1) & 15; }
+      else if (i < 48) { F = B ^ C ^ D; g = (3*i+5) & 15; }
+      else { F = C ^ (B | ~D); g = (7*i) & 15; }
+      F = (F + A + K[i] + M[g]) | 0;
+      A = D; D = C; C = B; B = (B + rol(F, s[i])) | 0;
+    }
+    a0 = (a0 + A) | 0; b0 = (b0 + B) | 0; c0 = (c0 + C) | 0; d0 = (d0 + D) | 0;
+  }
+  const out = new Uint8Array(16);
+  [a0, b0, c0, d0].forEach((v, i) => { out[i*4] = v & 0xff; out[i*4+1] = (v >>> 8) & 0xff; out[i*4+2] = (v >>> 16) & 0xff; out[i*4+3] = (v >>> 24) & 0xff; });
+  return out;
+}
+function rc4(key, data) {
+  const S = new Uint8Array(256);
+  for (let i = 0; i < 256; i++) S[i] = i;
+  let j = 0;
+  for (let i = 0; i < 256; i++) { j = (j + S[i] + key[i % key.length]) & 255; const t = S[i]; S[i] = S[j]; S[j] = t; }
+  const out = new Uint8Array(data.length);
+  let a = 0, b = 0;
+  for (let k = 0; k < data.length; k++) { a = (a + 1) & 255; b = (b + S[a]) & 255; const t = S[a]; S[a] = S[b]; S[b] = t; out[k] = data[k] ^ S[(S[a] + S[b]) & 255]; }
+  return out;
+}
+function strBytes(s) { const a = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) a[i] = s.charCodeAt(i) & 0xff; return a; }
+function bytesStr(b) { let s = ''; for (let i = 0; i < b.length; i++) s += String.fromCharCode(b[i]); return s; }
+function catBytes(arrs) { let n = 0; arrs.forEach(a => n += a.length); const o = new Uint8Array(n); let p = 0; arrs.forEach(a => { o.set(a, p); p += a.length; }); return o; }
+function padPw(pw) { const o = new Uint8Array(32); const n = Math.min(pw.length, 32); o.set(pw.subarray(0, n), 0); o.set(PDF_PAD.subarray(0, 32 - n), n); return o; }
+function xorKey(key, x) { const o = new Uint8Array(key.length); for (let i = 0; i < key.length; i++) o[i] = key[i] ^ x; return o; }
+function toHex(b) { let s = ''; for (let i = 0; i < b.length; i++) s += b[i].toString(16).padStart(2, '0'); return s; }
+function pdfEncryptInfo(password, id0) {
+  const pw = strBytes(password), P = -196;
+  let oh = md5(padPw(pw));
+  for (let i = 0; i < 50; i++) oh = md5(oh.subarray(0, 16));
+  const oKey = oh.slice(0, 16);
+  let O = rc4(oKey, padPw(pw));
+  for (let i = 1; i <= 19; i++) O = rc4(xorKey(oKey, i), O);
+  const pB = new Uint8Array([P & 0xff, (P >>> 8) & 0xff, (P >>> 16) & 0xff, (P >>> 24) & 0xff]);
+  let kh = md5(catBytes([padPw(pw), O, pB, id0]));
+  for (let i = 0; i < 50; i++) kh = md5(kh.subarray(0, 16));
+  const key = kh.slice(0, 16);
+  let uh = md5(catBytes([PDF_PAD, id0]));
+  let U16 = rc4(key, uh);
+  for (let i = 1; i <= 19; i++) U16 = rc4(xorKey(key, i), U16);
+  const U = new Uint8Array(32); U.set(U16, 0); U.set(PDF_PAD.subarray(0, 16), 16);
+  return { key, O, U, P };
+}
+function pdfObjectKey(key, objNum) {
+  const ext = new Uint8Array(key.length + 5);
+  ext.set(key, 0);
+  ext[key.length] = objNum & 0xff; ext[key.length + 1] = (objNum >>> 8) & 0xff; ext[key.length + 2] = (objNum >>> 16) & 0xff;
+  ext[key.length + 3] = 0; ext[key.length + 4] = 0;
+  return md5(ext).subarray(0, Math.min(key.length + 5, 16));
+}
+
+function buildPdf(pageStreams, password) {
+  const N = pageStreams.length;
+  const firstContent = 5;
+  const firstPage = 5 + N;
+  let enc = null, encObjNum = 0, id0 = null;
+  if (password) {
+    id0 = new Uint8Array(16);
+    (self.crypto || window.crypto).getRandomValues(id0);
+    enc = pdfEncryptInfo(password, id0);
+    encObjNum = 5 + 2 * N;
+  }
+  const objs = [];
+  objs.push({ num: 1, body: '<< /Type /Catalog /Pages 2 0 R >>' });
+  const kids = [];
+  for (let i = 0; i < N; i++) kids.push((firstPage + i) + ' 0 R');
+  objs.push({ num: 2, body: '<< /Type /Pages /Kids [' + kids.join(' ') + '] /Count ' + N + ' >>' });
+  objs.push({ num: 3, body: '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>' });
+  objs.push({ num: 4, body: '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>' });
+  for (let i = 0; i < N; i++) {
+    let data = pageStreams[i];
+    if (enc) data = bytesStr(rc4(pdfObjectKey(enc.key, firstContent + i), strBytes(data)));
+    objs.push({ num: firstContent + i, body: '<< /Length ' + data.length + ' >>\nstream\n' + data + '\nendstream' });
+  }
+  for (let i = 0; i < N; i++) {
+    objs.push({ num: firstPage + i, body: '<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents ' + (firstContent + i) + ' 0 R >>' });
+  }
+  if (enc) objs.push({ num: encObjNum, body: '<< /Filter /Standard /V 2 /R 3 /Length 128 /P ' + enc.P + ' /O <' + toHex(enc.O) + '> /U <' + toHex(enc.U) + '> >>' });
+  objs.sort((a, b) => a.num - b.num);
+  let pdf = '%PDF-1.4\n';
+  const offsets = [];
+  for (const o of objs) { offsets[o.num] = pdf.length; pdf += o.num + ' 0 obj\n' + o.body + '\nendobj\n'; }
+  const xrefStart = pdf.length;
+  const total = objs.length + 1;
+  pdf += 'xref\n0 ' + total + '\n0000000000 65535 f \n';
+  for (let n = 1; n < total; n++) pdf += String(offsets[n] || 0).padStart(10, '0') + ' 00000 n \n';
+  let trailer = '<< /Size ' + total + ' /Root 1 0 R';
+  if (enc) trailer += ' /Encrypt ' + encObjNum + ' 0 R /ID [<' + toHex(id0) + '> <' + toHex(id0) + '>]';
+  trailer += ' >>';
+  pdf += 'trailer\n' + trailer + '\nstartxref\n' + xrefStart + '\n%%EOF';
+  const bytes = new Uint8Array(pdf.length);
+  for (let i = 0; i < pdf.length; i++) bytes[i] = pdf.charCodeAt(i) & 0xff;
+  return bytes;
+}
+
+function summarise() {
+  const totalQ = state.responses.length;
+  const totalCorrect = state.responses.filter(r => r.correct).length;
+  const totalSkipped = state.responses.filter(r => r.skipped).length;
+  return {
+    totalQ, totalCorrect, totalSkipped,
+    pct: totalQ ? Math.round(totalCorrect / totalQ * 100) : 0,
+    duration: state.endTime ? Math.round((state.endTime - state.startTime) / 60000) : 0,
+    scopeLabel: SCOPE_LABELS[state.scope] || state.scope,
+    dateStr: new Date().toLocaleDateString(),
+    anyL10: state.strands.some(s => BLOOMS_ORDER.some(bl => state.strandResults[s][10][bl].total > 0))
+  };
+}
+
+// Colours (0-1 RGB) used in the PDF, mirroring the on-screen results page.
+const PDF_C = {
+  pass: [0.80, 0.93, 0.80], fail: [0.98, 0.86, 0.86], none: [0.93, 0.93, 0.96],
+  head: [0.90, 0.91, 0.96], band: [0.86, 0.89, 0.97], bandTx: [0.20, 0.30, 0.60],
+  green: [0.13, 0.55, 0.30], red: [0.78, 0.20, 0.20], grey: [0.45, 0.47, 0.55], black: [0, 0, 0]
+};
+function approxW(t, s, bold) { return String(t).length * s * (bold ? 0.55 : 0.50); }
+
+function buildResponsesPDF() {
+  const sum = summarise();
+  const W = 515;                       // content width (A4 595 minus 40pt margins)
+  const rows = [];                     // each: {h, gap, ops:[{k:'rect'|'text', ...}]}
+  const tline = (text, font, size, gap) => rows.push({ h: (size || 11) * 1.5, gap: gap || 0,
+    ops: [{ k: 'text', x: 0, font: font || 'F1', size: size || 11, text: sanitizeAscii(text), colour: PDF_C.black, center: false }] });
+  const grid = (cells, h, gap) => {
+    const ops = [];
+    cells.forEach(c => { if (c.fill) ops.push({ k: 'rect', x: c.x, w: c.w, fill: c.fill }); });
+    cells.forEach(c => {
+      if (c.text == null || c.text === '') return;
+      const t = sanitizeAscii(String(c.text)), s = c.size || 9, font = c.font || 'F1';
+      const x = c.align === 'c' ? c.x + (c.w - approxW(t, s, font === 'F2')) / 2 : c.x + 5;
+      ops.push({ k: 'text', x, font, size: s, text: t, colour: c.colour || PDF_C.black, center: true });
+    });
+    rows.push({ h: h || 16, gap: gap || 0, ops });
+  };
+
+  // --- Header ---
+  tline('VC2 Science Assessment', 'F2', 17);
+  tline('Student Responses Record', 'F2', 12, 2);
+  tline('Student: ' + state.name, 'F1', 11, 12);
+  tline('Student number: ' + (state.studentNumber || '-'), 'F1', 11);
+  tline('Scope: ' + sum.scopeLabel + '     Date: ' + sum.dateStr + '     Duration: ' + sum.duration + ' min', 'F1', 11);
+  tline('Score: ' + sum.totalCorrect + '/' + sum.totalQ + ' (' + sum.pct + '%)     Skipped: ' + sum.totalSkipped, 'F1', 11);
+
+  // --- Strand x Bloom's heatmap ---
+  tline("Strand x Bloom's Level Heatmap", 'F2', 13, 18);
+  const hl = 175, hc = (W - hl) / 4;
+  const bx = bl => hl + BLOOMS_ORDER.indexOf(bl) * hc;
+  grid([{ x: 0, w: hl, text: '' }].concat(BLOOMS_ORDER.map(bl =>
+    ({ x: bx(bl), w: hc, text: BLOOMS_LABELS[bl], font: 'F2', size: 9, align: 'c', fill: PDF_C.head }))), 16, 2);
+  const band = (level, label) => {
+    grid([{ x: 0, w: W, text: label, font: 'F2', size: 9, align: 'l', fill: PDF_C.band, colour: PDF_C.bandTx }], 15, 4);
+    for (const s of state.strands) {
+      const cells = [{ x: 0, w: hl, text: s, font: 'F1', size: 8.5, align: 'l' }];
+      for (const bl of BLOOMS_ORDER) {
+        const sr = state.strandResults[s][level][bl];
+        let text, fill;
+        if (sr.total === 0) { text = '-'; fill = PDF_C.none; }
+        else {
+          const passed = bl < 5 ? (GATE_THRESHOLDS[bl] ? sr.correct >= GATE_THRESHOLDS[bl][0] : sr.correct > 0) : true;
+          text = sr.correct + '/' + sr.total; fill = passed ? PDF_C.pass : PDF_C.fail;
+        }
+        cells.push({ x: bx(bl), w: hc, text, size: 9, align: 'c', fill });
+      }
+      grid(cells, 16, 0);
+    }
+  };
+  band(8, 'Levels 7-8');
+  if (sum.anyL10) band(10, 'Levels 9-10');
+
+  // --- Strand summary table ---
+  tline('Strand Summary', 'F2', 13, 18);
+  const l10 = sum.anyL10, sw0 = l10 ? 155 : 220, ncol = l10 ? 4 : 2, sw = (W - sw0) / ncol;
+  const cx = i => sw0 + i * sw;
+  const heads = l10 ? ['Levels 7-8 Highest', 'Levels 7-8 Score', 'Levels 9-10 Highest', 'Levels 9-10 Score']
+    : ['Levels 7-8 Highest', 'Levels 7-8 Score'];
+  grid([{ x: 0, w: sw0, text: 'Strand', font: 'F2', size: 9, align: 'l', fill: PDF_C.head }].concat(
+    heads.map((h, i) => ({ x: cx(i), w: sw, text: h, font: 'F2', size: 8.5, align: 'c', fill: PDF_C.head }))), 16, 2);
+  for (const s of state.strands) {
+    const sr8 = state.strandResults[s][8];
+    const l8c = BLOOMS_ORDER.reduce((a, bl) => a + sr8[bl].correct, 0);
+    const l8t = BLOOMS_ORDER.reduce((a, bl) => a + sr8[bl].total, 0);
+    const cells = [{ x: 0, w: sw0, text: s, font: 'F1', size: 8.5, align: 'l' },
+      { x: cx(0), w: sw, text: l8t ? (sr8.highestBloom ? BLOOMS_LABELS[sr8.highestBloom] : '-') : '-', size: 9, align: 'c' },
+      { x: cx(1), w: sw, text: l8t ? l8c + '/' + l8t : '-', size: 9, align: 'c' }];
+    if (l10) {
+      const sr10 = state.strandResults[s][10];
+      const l10c = BLOOMS_ORDER.reduce((a, bl) => a + sr10[bl].correct, 0);
+      const l10t = BLOOMS_ORDER.reduce((a, bl) => a + sr10[bl].total, 0);
+      cells.push({ x: cx(2), w: sw, text: l10t ? (sr10.highestBloom ? BLOOMS_LABELS[sr10.highestBloom] : '-') : '-', size: 9, align: 'c' });
+      cells.push({ x: cx(3), w: sw, text: l10t ? l10c + '/' + l10t : '-', size: 9, align: 'c' });
+    }
+    grid(cells, 16, 0);
+  }
+
+  // --- Detailed responses (readable blocks; full Q text + answers) ---
+  tline('Detailed Responses', 'F2', 13, 18);
+  state.responses.forEach((r, i) => {
+    const lvl = r.level === 8 ? 'Levels 7-8' : 'Levels 9-10';
+    const result = r.skipped ? 'Skipped' : (r.correct ? 'Correct' : 'Incorrect');
+    const rc = r.skipped ? PDF_C.grey : (r.correct ? PDF_C.green : PDF_C.red);
+    const head = (i + 1) + '. ' + r.strand + ' - ' + lvl + ' - ' + BLOOMS_LABELS[r.bloomLevel] + ' (' + r.questionType.toUpperCase() + ')';
+    rows.push({ h: 15, gap: 8, ops: [
+      { k: 'text', x: 0, font: 'F2', size: 9.5, text: sanitizeAscii(head), colour: PDF_C.black, center: false },
+      { k: 'text', x: W - approxW(result, 9.5, true) - 2, font: 'F2', size: 9.5, text: result, colour: rc, center: false }
+    ] });
+    wrapText('Q: ' + (r.questionText || ''), 100).forEach(q => tline('   ' + q, 'F1', 9));
+    const ansStr = r.skipped ? '(skipped)' : (typeof r.answer === 'object' && r.answer ? Object.values(r.answer).join(', ') : String(r.answer));
+    tline('   Your answer: ' + ansStr, 'F1', 9);
+    tline('   Correct answer: ' + String(r.correctAnswer), 'F1', 9);
+  });
+
+  // --- Paginate by row, then emit content streams ---
+  const left = 40, topY = 805, bottomY = 45, R = Math.round;
+  const pages = [];
+  let cur = [], y = topY;
+  for (const row of rows) {
+    if (row.gap) y -= row.gap;
+    if (y - row.h < bottomY) { pages.push(cur); cur = []; y = topY; }
+    cur.push({ top: y, h: row.h, ops: row.ops });
+    y -= row.h;
+  }
+  if (cur.length) pages.push(cur);
+  const streams = pages.map((rws, pi) => {
+    let cs = '';
+    for (const r of rws) {
+      const yBot = r.top - r.h;
+      for (const op of r.ops) {
+        if (op.k === 'rect') {
+          const c = op.fill;
+          cs += c[0] + ' ' + c[1] + ' ' + c[2] + ' rg ' + R(left + op.x) + ' ' + R(yBot) + ' ' + R(op.w) + ' ' + R(r.h) + ' re f\n';
+        } else {
+          const baseline = op.center ? yBot + (r.h - op.size) / 2 + op.size * 0.30 : r.top - op.size;
+          const c = op.colour;
+          cs += c[0] + ' ' + c[1] + ' ' + c[2] + ' rg BT /' + op.font + ' ' + op.size + ' Tf ' + R(left + op.x) + ' ' + R(baseline) + ' Td (' + pdfEscape(op.text) + ') Tj ET\n';
+        }
+      }
+    }
+    cs += '0 0 0 rg BT /F1 8 Tf ' + left + ' 28 Td (' + pdfEscape('Page ' + (pi + 1) + ' of ' + pages.length) + ') Tj ET\n';
+    return cs;
+  });
+  return buildPdf(streams, TEACHER_CODE);   // password-protect with the teacher passcode
+}
+
+function cleanPart(s) {
+  return (s || '').trim()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')   // fold accents: Tea
+    .replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-');
+}
+function cleanFileName() {
+  const num = cleanPart(state.studentNumber);
+  const name = cleanPart(state.name) || 'student';
+  return (num ? num + '-' : '') + name + '-science-responses.pdf';
+}
+
+function downloadBytes(bytes, filename) {
+  const url = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' }));
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click();
+  setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 1500);
+}
+
+function buildEmail(filename) {
+  // Generic body only — the results live in the password-protected PDF, never the email.
+  const who = (state.studentNumber ? state.studentNumber + ' ' : '') + state.name;
+  const subject = 'Science Assessment Responses - ' + who;
+  let body = 'Hello,\n\n';
+  body += 'Please find the science assessment responses for ' + who + ' attached.\n\n';
+  body += 'The attached PDF is password-protected. Open it with the class passcode.\n\n';
+  body += 'Before sending, please attach this file from your Downloads folder:\n  ' + filename + '\n';
+  return 'mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+}
+
+function exportResponses() {
+  const filename = cleanFileName();
+  downloadBytes(buildResponsesPDF(), filename);
+  const mailto = buildEmail(filename);
+
+  const el = document.getElementById('viewResults');
+  el.innerHTML =
+    '<div style="max-width:560px;margin:32px auto;display:flex;flex-direction:column;gap:22px;text-align:center;">' +
+      '<h2>Responses saved</h2>' +
+      '<p style="color:var(--text2)">Your answers have been saved to this device. Follow these three steps to send them to your teacher.</p>' +
+      '<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;text-align:left;line-height:1.7;">' +
+        '<p><strong>1.</strong> A file was downloaded to your <strong>Downloads</strong> folder:</p>' +
+        '<p style="font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--surface2);padding:10px 12px;border-radius:6px;margin:8px 0 16px;word-break:break-all;">' + esc(filename) + '</p>' +
+        '<p><strong>2.</strong> Click <strong>Open email to teacher</strong> below.</p>' +
+        '<p><strong>3.</strong> Type your teacher&rsquo;s email address, <strong>attach the file above</strong>, then press send.</p>' +
+      '</div>' +
+      '<a href="' + esc(mailto) + '" style="display:inline-block;padding:14px 32px;background:var(--accent);color:#fff;text-decoration:none;border-radius:var(--radius);font-size:15px;font-weight:600;">Open email to teacher</a>' +
+      '<button id="redownloadBtn" style="background:none;border:none;color:var(--accent);font-size:14px;cursor:pointer;text-decoration:underline;">Download the file again</button>' +
+    '</div>';
+  document.getElementById('redownloadBtn').addEventListener('click', () => downloadBytes(buildResponsesPDF(), filename));
+  showView('viewResults');
+}
+
 // Testing shortcuts: QWE = correct answer, ASD = incorrect answer
 document.addEventListener('keydown', e => {
   heldKeys.add(e.key.toLowerCase());
@@ -1251,8 +1634,16 @@ document.addEventListener('keyup', e => {
 window.addEventListener('blur', () => heldKeys.clear());
 
 function checkShortcut() {
-  if (!state || state.finished) return;
+  // Never fire while typing in a field (the passcode "3128" contains 1/2/3).
+  const ae = document.activeElement;
+  if (ae && /^(input|textarea|select)$/i.test(ae.tagName)) return;
 
+  // Global chords (work from any view):
+  if (heldKeys.has('1') && heldKeys.has('2') && heldKeys.has('3')) { heldKeys.clear(); debugSyntheticResults(); return; }
+  if (heldKeys.has('z') && heldKeys.has('x') && heldKeys.has('c')) { heldKeys.clear(); debugJumpToSaved(); return; }
+
+  // In-test chords:
+  if (!state || state.finished) return;
   if (state.currentIndex >= state.queue.length) return;
 
   if (heldKeys.has('q') && heldKeys.has('w') && heldKeys.has('e')) {
@@ -1290,7 +1681,7 @@ function autoAnswer(selectCorrect) {
     answer = ans;
   }
 
-  // Visually select the answer
+  // Visually reflect the choice (tf, mc, and cloze chips)
   const container = document.getElementById('questionContainer');
   if (q.type === 'tf') {
     container.querySelectorAll('.tf-btn').forEach(b => {
@@ -1300,10 +1691,83 @@ function autoAnswer(selectCorrect) {
     container.querySelectorAll('.mc-option').forEach(o => {
       o.classList.toggle('selected', o.dataset.answer === answer);
     });
+  } else if (q.type === 'cloze' && answer) {
+    Object.keys(answer).forEach(bid => {
+      container.querySelectorAll('.cloze-chip[data-blank-id="' + bid + '"]').forEach(c => {
+        c.classList.toggle('selected', c.dataset.value === answer[bid]);
+      });
+      const blankEl = container.querySelector('.cloze-blank[data-blank-id="' + bid + '"]');
+      if (blankEl) { blankEl.textContent = answer[bid]; blankEl.classList.add('filled'); }
+    });
   }
 
   state.selectedAnswer = answer;
-  setTimeout(() => confirmAnswer(answer), 150);
+  confirmAnswer(answer, true);
+}
+
+// ---------------------------------------------------------------------------
+// Debug key-chords (for authoring/QA only):
+//   qwe = answer correctly + advance     asd = answer incorrectly + advance
+//   zxc = jump to the "Responses saved" export panel (uses real answers so far)
+//   123 = populate a synthetic data set and open the on-screen results page
+// All ignored while a text field is focused (so typing a name or the code is safe).
+// ---------------------------------------------------------------------------
+function blankSr() {
+  return { 2: { correct: 0, total: 0 }, 3: { correct: 0, total: 0 }, 4: { correct: 0, total: 0 }, 5: { correct: 0, total: 0 }, highestBloom: 0, gatedAt: null };
+}
+function pushSynthResp(st, strand, level, bl, type, correct, skipped) {
+  const sr = st.strandResults[strand][level][bl];
+  sr.total++; if (correct) sr.correct++;
+  const ans = type === 'cloze' ? { 1: 'evidence', 2: 'data' } : (type === 'tf' ? 'True' : 'Option A');
+  st.responses.push({
+    strand, level, bloomLevel: bl, code: (STRAND_CDS[strand] || {})[level] || '',
+    questionText: 'Synthetic ' + type.toUpperCase() + ' item — ' + strand + ' (' + BLOOMS_LABELS[bl] + ', ' + (level === 8 ? 'Levels 7-8' : 'Levels 9-10') + ')',
+    questionType: type, answer: skipped ? null : ans,
+    correctAnswer: type === 'cloze' ? 'evidence, data' : (type === 'tf' ? 'True' : 'Option A'),
+    correct: skipped ? false : correct, skipped, timestamp: Date.now()
+  });
+}
+function fillSynthStrand(st, strand, level, highestBloom) {
+  const counts = { 2: 3, 3: 2, 4: 2, 5: 2 };
+  for (const bl of BLOOMS_ORDER) {
+    if (bl > highestBloom) break;
+    for (let i = 0; i < counts[bl]; i++) {
+      const type = ['mc', 'tf', 'cloze'][(i + bl + level) % 3];
+      const skipped = bl === highestBloom && bl < 5 && i === counts[bl] - 1;
+      const correct = bl < highestBloom ? true : (i === 0);
+      pushSynthResp(st, strand, level, bl, type, correct, skipped);
+    }
+    st.strandResults[strand][level].highestBloom = bl;
+    if (bl === highestBloom && bl < 5) st.strandResults[strand][level].gatedAt = bl;
+  }
+}
+function buildSyntheticState() {
+  const strands = SCOPE_STRANDS.key.slice();
+  const st = { name: 'Demo Student', studentNumber: 'S12345', scope: 'key', strands, startTime: Date.now() - 1500000, endTime: Date.now(),
+    responses: [], strandResults: {}, finished: true, fullPool: [], queue: [], currentIndex: 0, transitioning: false };
+  const reach8 = [3, 4, 5, 3, 2, 4, 3];
+  strands.forEach((s, si) => {
+    st.strandResults[s] = { 8: blankSr(), 10: blankSr() };
+    const r8 = reach8[si % reach8.length];
+    fillSynthStrand(st, s, 8, r8);
+    if (r8 >= 4) fillSynthStrand(st, s, 10, [2, 3, 2][si % 3]);
+  });
+  return st;
+}
+function debugSyntheticResults() {
+  state = buildSyntheticState();
+  document.getElementById('headerSubtitle').textContent = state.name + ' (synthetic)';
+  renderResults();
+  showView('viewResults');
+}
+function debugJumpToSaved() {
+  if (!state || !state.responses || state.responses.length === 0) {
+    state = buildSyntheticState();
+  } else {
+    state.finished = true;
+    if (!state.endTime) state.endTime = Date.now();
+  }
+  exportResponses();
 }
 
 })();
